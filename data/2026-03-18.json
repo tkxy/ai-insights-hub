@@ -1,0 +1,176 @@
+{
+  "date": "2026-03-18",
+  "generated_at": "2026-03-18T16:08:00+08:00",
+  "daily_summary": "本周AI行业迎来史无前例的「发布大潮」——7家头部公司（OpenAI、Anthropic、Google、NVIDIA、Canva、Adobe、Perplexity）在同一周内密集发布重磅产品。OpenAI刚发布GPT-5.4 mini和nano小模型，主打速度与成本效率；Anthropic的Claude推出交互式可视化功能；Canva Magic Layers用AI将平面图片拆解为可编辑图层；Figma持续深化AI原型生成能力（Figma Make）并推出组件插槽功能。国内方面，阿里发布「悟空」智能体产品、百度推出搜索SKILL、KIMI新架构引发关注，GPT-5.4一周狂赚10亿美元ARR。设计工具正加速从「辅助创作」走向「理解意图」，AI Agent从云端走向本地成为新趋势。",
+  "design_insights": [
+    {
+      "title": "Canva Magic Layers：AI正在消灭「不可编辑」的概念",
+      "summary": "Canva推出Magic Layers功能，AI可以将任何图片（截图、AI生成图、传单照片）自动拆解为独立可编辑的图层——文本变为可编辑字段，对象变为独立图层，背景与前景自动分离。这意味着「静态图片」和「可编辑文件」之间的边界正在被AI彻底打破。",
+      "implication": "输入法产品可以借鉴这种「将不可编辑变为可编辑」的思路——比如用户收到一张含文字的图片，输入法能否直接识别并提取为可编辑文本？或者将语音消息自动转化为可编辑的文字草稿？降低用户在「信息格式转换」上的摩擦。",
+      "sources": ["Canva", "PopularAiTools"],
+      "source_urls": [
+        {"name": "PopularAiTools: March 2026 AI Launches", "url": "https://popularaitools.ai/ai-launches-march-2026/"}
+      ],
+      "tags": ["设计工具", "图层编辑", "格式转换", "AI识别"]
+    },
+    {
+      "title": "Figma组件插槽+Make：设计系统从「规范约束」走向「智能自由」",
+      "summary": "Figma同时推出组件插槽（Slots）功能和AI原型生成工具Make。插槽允许设计师在不破坏设计系统一致性的前提下自定义组件，Make则能通过自然语言生成交互原型。这代表一种新范式：系统提供框架和约束，AI在框架内自由发挥。",
+      "implication": "输入法的AI帮写功能可以参考这种「约束下的自由」模式——不是完全放开让AI随意生成，而是建立用户的个人表达风格框架（语气、常用句式、表情偏好），在框架内提供灵活的AI补全和改写。既保持个人风格一致性，又提升表达效率。",
+      "sources": ["Figma Blog", "Figma Config 2026"],
+      "source_urls": [
+        {"name": "Figma AI Updates 2026", "url": "https://peerlist.io/princy/articles/figma-ai-updates"},
+        {"name": "Figma Blog", "url": "https://www.figma.com/blog/"}
+      ],
+      "tags": ["设计系统", "AI原型", "个性化框架", "表达风格"]
+    },
+    {
+      "title": "Claude交互式可视化：从「告诉你答案」到「让你看见答案」",
+      "summary": "Anthropic为Claude推出交互式视觉功能——AI不再只输出文字，而是直接生成可交互的图表、数据可视化。用户可以悬停、点击、修改，AI实时更新。这反映了一个趋势：AI输出正从「纯文本」走向「多模态可交互」。",
+      "implication": "输入法的AI帮写可以跳出「只输出文字」的思维——当用户在讨论数据或方案时，帮写功能能否直接生成简单的对比表格、流程图、甚至投票卡片？让输入法从「文字生产工具」进化为「富内容生产工具」。",
+      "sources": ["Anthropic", "PopularAiTools"],
+      "source_urls": [
+        {"name": "Anthropic Claude Sonnet 4.6", "url": "https://www.anthropic.com/news/claude-sonnet-4-6"},
+        {"name": "PopularAiTools: March 2026 AI Launches", "url": "https://popularaitools.ai/ai-launches-march-2026/"}
+      ],
+      "tags": ["可视化", "多模态输出", "交互式AI", "富内容"]
+    },
+    {
+      "title": "Perplexity本地AI Agent：从云端到桌面，AI「入侵」操作系统",
+      "summary": "Perplexity发布Personal Computer产品——运行在Mac mini上的AI代理，拥有对本地文件和应用的持久访问权限，可以全天候监控触发器并主动执行任务。AI Agent正在从云端聊天窗口走向本地操作系统层面，成为真正的「数字员工」。",
+      "implication": "输入法作为操作系统级的入口产品，有天然优势发展本地AI Agent能力——输入法已经能感知用户在哪个App输入、输入什么内容。可以考虑在输入法层面集成轻量级Agent，比如自动整理剪贴板、跨App联动信息、智能快捷指令等。",
+      "sources": ["Perplexity", "PopularAiTools"],
+      "source_urls": [
+        {"name": "PopularAiTools: March 2026 AI Launches", "url": "https://popularaitools.ai/ai-launches-march-2026/"}
+      ],
+      "tags": ["AI Agent", "本地化", "操作系统", "输入入口"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "AI帮写的「场景感知」升级：从App维度到对话维度",
+      "pain_point": "当前输入法的AI帮写对所有场景「一视同仁」，无法区分用户是在给领导汇报还是和朋友闲聊，推荐的内容风格经常不匹配",
+      "opportunity": "参考OpenAI GPT-5.4的记忆功能迭代方向和every.to文章对「一人千面」的探讨，在帮写功能中引入对话级别的场景感知——自动识别当前对话的正式程度、关系亲疏、话题领域，动态调整语气和用词风格",
+      "priority": "高",
+      "evidence": "every.to文章《Why I Turned Off ChatGPT's Memory》引发热议，用户对AI的场景化记忆有强烈的privacy-control需求；GPT-5.4 mini的速度优化使端侧实时推理成为可能",
+      "source_urls": [
+        {"name": "9to5Mac: GPT-5.4 mini/nano", "url": "https://9to5mac.com/2026/03/17/openai-releases-gpt-5-4-mini-and-nano-its-most-capable-small-models-yet/"}
+      ]
+    },
+    {
+      "title": "「图片→可编辑文字」的零摩擦体验",
+      "pain_point": "用户经常收到包含文字的图片（截图、拍照文档、聊天记录截图），需要手动打字或切换OCR工具才能编辑其中的文字内容",
+      "opportunity": "借鉴Canva Magic Layers将图片拆解为可编辑图层的思路，在输入法中集成一键OCR→可编辑文本功能，长按图片即可提取文字到输入框，支持直接编辑和转发",
+      "priority": "高",
+      "evidence": "Canva Magic Layers上线即获得广泛关注；国内用户大量使用截图+图片进行信息传递，格式转换需求刚需",
+      "source_urls": [
+        {"name": "PopularAiTools: March 2026 AI Launches", "url": "https://popularaitools.ai/ai-launches-march-2026/"}
+      ]
+    },
+    {
+      "title": "AI生成「富内容消息」而非纯文字",
+      "pain_point": "AI帮写只能生成纯文字，但实际社交中用户需要表情包、排版、列表甚至简单的可视化内容，目前需要手动添加",
+      "opportunity": "参考Claude交互式可视化的方向，让帮写功能支持生成包含Emoji组合、Markdown列表、简单表格的富文本内容，一键插入到支持富文本的App中",
+      "priority": "中",
+      "evidence": "Claude交互式视觉功能获得极高用户评价；社交平台中表情+文字混合表达已成为主流",
+      "source_urls": [
+        {"name": "Anthropic Claude Sonnet 4.6", "url": "https://www.anthropic.com/news/claude-sonnet-4-6"}
+      ]
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "OpenAI发布GPT-5.4 mini和nano：最强小模型来了",
+      "summary": "OpenAI昨日发布GPT-5.4 mini和nano两款小模型。Mini运行速度超GPT-5 mini的2倍，性能接近完整版GPT-5.4；Nano是系列中最小最便宜的版本，适合分类、数据提取等高吞吐场景。Mini已在ChatGPT和Codex中上线。",
+      "source": "9to5Mac",
+      "source_url": "https://9to5mac.com/2026/03/17/openai-releases-gpt-5-4-mini-and-nano-its-most-capable-small-models-yet/",
+      "category": "AI模型",
+      "relevance": "高"
+    },
+    {
+      "title": "AI发布大潮：7家巨头同一周密集发布重磅产品",
+      "summary": "2026年3月10-14日，Anthropic、OpenAI、Google、NVIDIA、Canva、Adobe、Perplexity七家公司同周发布重磅产品，包括Claude交互式可视化、ChatGPT数学工具、Canva Magic Layers、NVIDIA Nemotron 3 Super等，被称为AI行业最密集的一周。",
+      "source": "PopularAiTools",
+      "source_url": "https://popularaitools.ai/ai-launches-march-2026/",
+      "category": "行业动态",
+      "relevance": "高"
+    },
+    {
+      "title": "GPT-5.4一周狂赚10亿美元ARR，效率飙升32倍",
+      "summary": "GPT-5.4发布仅一周，年化经常性收入突破10亿美元。虽然单次对话成本较高，但效率提升32倍使得企业用户愿意买单。",
+      "source": "量子位",
+      "source_url": "https://www.qbitai.com/",
+      "category": "AI商业",
+      "relevance": "高"
+    },
+    {
+      "title": "Cursor发布新AI编程评测基准，取代SWE-BENCH",
+      "summary": "Cursor推出全新AI编程评测基准，难度远超SWE-BENCH，Claude等头部模型在新基准上面临显著挑战，反映出AI编程能力仍有很大提升空间。",
+      "source": "量子位",
+      "source_url": "https://www.qbitai.com/",
+      "category": "AI开发",
+      "relevance": "中"
+    },
+    {
+      "title": "KIMI新架构让马斯克叹服，17岁高中生作者一战成名",
+      "summary": "KIMI采用的新架构获得马斯克公开称赞，更令人惊讶的是该架构的核心作者是一位17岁的高中生。",
+      "source": "量子位",
+      "source_url": "https://www.qbitai.com/",
+      "category": "AI研究",
+      "relevance": "中"
+    },
+    {
+      "title": "Figma推出组件插槽+Make AI原型生成工具",
+      "summary": "Figma发布组件Slots功能让设计师在保持系统一致性的同时自定义组件，同时Figma Make的AI原型生成能力持续进化，支持自然语言描述生成交互原型。",
+      "source": "Figma Blog",
+      "source_url": "https://www.figma.com/blog/",
+      "category": "设计工具",
+      "relevance": "高"
+    },
+    {
+      "title": "Anthropic发布Claude Sonnet 4.6：最强Sonnet模型",
+      "summary": "Anthropic发布Claude Sonnet 4.6，定位为迄今最强Sonnet模型，在编码、Agent和专业工作场景中达到前沿性能。Every.to评测称其以一半价格提供接近Opus的性能。",
+      "source": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+      "category": "AI模型",
+      "relevance": "中"
+    },
+    {
+      "title": "Every.to评测：Opus 4.6是最佳编程模型，但有些恼人习惯",
+      "summary": "Every.to深度评测Opus 4.6，称其能一次性解决其他模型忽略的问题，并将Agent式并行工作带到非编码任务中。同时GPT-5.4被评价为「速度快、有主见」，足以吸引Opus忠实用户。",
+      "source": "every.to",
+      "source_url": "https://every.to/",
+      "category": "AI评测",
+      "relevance": "中"
+    },
+    {
+      "title": "机器之心：OpenClaw是又一个泡沫吗？Perplexity放弃MCP转用API",
+      "summary": "机器之心探讨OpenClaw热潮是否会成为下一个行业泡沫；同期Perplexity宣布放弃MCP协议转而使用API和CLI，Meta宣布收购AI Agent社交网站Moltbook。",
+      "source": "机器之心",
+      "source_url": "https://www.jiqizhixin.com/",
+      "category": "行业观察",
+      "relevance": "中"
+    },
+    {
+      "title": "英伟达B200算力利用率仅40%，普林斯顿团队出手提升至71%",
+      "summary": "英伟达最强B200芯片面临算力浪费问题（利用率仅40%），普林斯顿大学团队提出优化方案，将利用率显著提升至71%。",
+      "source": "量子位",
+      "source_url": "https://www.qbitai.com/",
+      "category": "AI基础设施",
+      "relevance": "中"
+    }
+  ],
+  "sources_checked": [
+    {"name": "every.to", "status": "ok", "articles_found": 15},
+    {"name": "Product Hunt", "status": "error", "articles_found": 0},
+    {"name": "9to5Mac", "status": "ok", "articles_found": 1},
+    {"name": "Google AI", "status": "ok", "articles_found": 8},
+    {"name": "OpenAI", "status": "error", "articles_found": 0},
+    {"name": "Anthropic", "status": "ok", "articles_found": 4},
+    {"name": "Figma", "status": "ok", "articles_found": 12},
+    {"name": "Creative Boom", "status": "ok", "articles_found": 3},
+    {"name": "量子位", "status": "ok", "articles_found": 14},
+    {"name": "机器之心", "status": "ok", "articles_found": 3},
+    {"name": "PopularAiTools", "status": "ok", "articles_found": 7}
+  ]
+}

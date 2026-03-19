@@ -1,0 +1,81 @@
+{
+  "date": "2026-03-17",
+  "generated_at": "2026-03-17T08:00:00+08:00",
+  "daily_summary": "本日关注重点：Apple Intelligence在最新iOS更新中扩展了中文支持能力；全球AI Agent创业赛道持续升温，多个融资事件；设计领域探索AI驱动的用户研究新方法。",
+  "design_insights": [
+    {
+      "title": "AI Agent正在改变用户与应用的交互方式",
+      "summary": "越来越多的AI Agent产品不再要求用户手动操作界面，而是通过对话理解用户意图后自动完成任务。这对传统GUI交互是巨大冲击。",
+      "implication": "输入法作为用户与设备之间的核心桥梁，有机会成为AI Agent的入口。用户在输入框中不仅仅是在打字，还可能在发出指令。输入法需要识别「打字」和「指令」的边界。",
+      "sources": ["Y Combinator", "Lenny's Podcast"],
+      "tags": ["AI Agent", "交互范式", "入口价值"]
+    },
+    {
+      "title": "Apple Intelligence中文化对本地输入法的启示",
+      "summary": "Apple Intelligence开始支持中文写作辅助功能，包括润色、摘要和改写。苹果选择在系统层面集成这些能力，而非依赖第三方App。",
+      "implication": "系统级AI能力的增强对第三方输入法构成竞争压力，输入法需要提供差异化的AI能力（如更精准的中文语境理解、方言支持、专业术语等）才能保持竞争力。",
+      "sources": ["9to5mac", "Apple官方"],
+      "tags": ["Apple", "系统级AI", "竞争分析"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "跨语言即时沟通：实时翻译输入",
+      "pain_point": "国际化团队协作中，用户需要频繁切换语言输入，翻译工具和输入法是割裂的",
+      "opportunity": "在输入法中集成实时翻译，用户用中文打字可以直接输出英文（或其他语言），反之亦然",
+      "priority": "高",
+      "evidence": "远程办公增长带来跨语言沟通需求激增"
+    },
+    {
+      "title": "知识型输入辅助：专业内容创作助手",
+      "pain_point": "专业人士（医生、律师、程序员）在输入专业术语时，普通输入法联想词库不够用",
+      "opportunity": "建立行业专业知识库，根据用户职业和场景提供专业级输入辅助",
+      "priority": "中",
+      "evidence": "多款垂直领域AI写作工具获得融资"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Apple Intelligence扩展中文支持",
+      "summary": "最新iOS/macOS更新中，Apple Intelligence的写作工具开始支持简体中文和繁体中文的文本润色、摘要生成功能。",
+      "source": "9to5mac",
+      "source_url": "https://9to5mac.com/",
+      "category": "平台动态",
+      "relevance": "高"
+    },
+    {
+      "title": "AI Agent赛道Q1融资超50亿美元",
+      "summary": "2026年Q1 AI Agent领域融资活动密集，多个项目获得大额投资，市场认为Agent是AI落地最重要的方向之一。",
+      "source": "Bondcap",
+      "source_url": "https://www.bondcap.com/",
+      "category": "投资趋势",
+      "relevance": "中"
+    },
+    {
+      "title": "Way to AGI知识库新增「AI+设计」专题",
+      "summary": "国内最全的AI知识库Way to AGI新增了AI在设计领域应用的系统性专题，涵盖工具、案例和方法论。",
+      "source": "Way to AGI",
+      "source_url": "https://waytoagi.feishu.cn/",
+      "category": "知识资源",
+      "relevance": "高"
+    },
+    {
+      "title": "UX Planet：AI驱动的用户研究方法论",
+      "summary": "文章探讨如何用AI分析用户访谈录音、自动生成用户画像和需求洞察，大幅提升用户研究效率。",
+      "source": "UX Planet",
+      "source_url": "https://uxplanet.org/",
+      "category": "设计方法",
+      "relevance": "高"
+    }
+  ],
+  "sources_checked": [
+    {"name": "every.to", "status": "ok", "articles_found": 2},
+    {"name": "Product Hunt", "status": "ok", "articles_found": 8},
+    {"name": "9to5mac", "status": "ok", "articles_found": 3},
+    {"name": "Bondcap", "status": "ok", "articles_found": 1},
+    {"name": "Way to AGI", "status": "ok", "articles_found": 4},
+    {"name": "UX Planet", "status": "ok", "articles_found": 2},
+    {"name": "量子位", "status": "ok", "articles_found": 3},
+    {"name": "机器之心", "status": "ok", "articles_found": 2}
+  ]
+}

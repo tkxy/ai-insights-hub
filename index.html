@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Insights Hub</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=DM+Sans:wght@400;500;700;800;900&display=swap');
+
+  :root {
+    --bg: #ededea;
+    --white: #ffffff;
+    --black: #111111;
+    --text: #111111;
+    --text2: #555555;
+    --text3: #888888;
+    --text4: #aaaaaa;
+    --border: #ddddd8;
+    --tag-bg: #e4e4e0;
+    --card-bg: #ffffff;
+    --accent: #111111;
+    --accent-soft: #f5f5f2;
+    --red: #d44;
+    --red-bg: #fceaea;
+    --orange: #c87b1a;
+    --orange-bg: #fdf3e2;
+    --green: #1a8a5c;
+    --green-bg: #e6f5ee;
+    --blue: #3366cc;
+    --blue-bg: #e8effa;
+    --purple-bg: #c8b8d8;
+    --lime-bg: #d4e4a0;
+    --lavender-bg: #b8c8e8;
+    --radius: 20px;
+    --radius-sm: 14px;
+    --radius-xs: 10px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, 'PingFang SC', 'Helvetica Neue', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ===== HEADER ===== */
+  .header {
+    padding: 0 48px;
+    height: 72px;
+    display: flex; align-items: center; justify-content: space-between;
+    max-width: 1400px; margin: 0 auto;
+  }
+
+  .logo {
+    display: flex; align-items: center; gap: 20px;
+  }
+
+  .logo-mark {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 28px; font-weight: 900; color: var(--black);
+    letter-spacing: -1.5px;
+    line-height: 1;
+  }
+
+  .nav-links {
+    display: flex; align-items: center; gap: 32px;
+  }
+  .nav-link {
+    font-size: 14px; font-weight: 500; color: var(--text2);
+    text-decoration: none; cursor: pointer;
+    transition: color 0.2s;
+  }
+  .nav-link:hover { color: var(--black); }
+
+  .header-right {
+    display: flex; align-items: center; gap: 12px;
+  }
+
+  .date-nav { display: flex; align-items: center; gap: 6px; }
+
+  .date-nav button {
+    background: var(--white);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 9px 20px; border-radius: 100px; cursor: pointer;
+    font-size: 13px; font-weight: 500;
+    font-family: inherit;
+    transition: all 0.2s;
+  }
+  .date-nav button:hover {
+    background: var(--black);
+    color: var(--white);
+    border-color: var(--black);
+  }
+  .date-nav button:active { transform: scale(0.96); }
+
+  .date-nav .current-date {
+    font-size: 13px; font-weight: 600; padding: 0 14px;
+    min-width: 120px; text-align: center; color: var(--text);
+  }
+
+  /* ===== MAIN ===== */
+  .main {
+    max-width: 1400px; margin: 0 auto;
+    padding: 20px 48px 60px;
+  }
+
+  /* ===== HERO SECTION ===== */
+  .hero {
+    margin-bottom: 288px;
+  }
+
+  .hero-left {
+    display: flex; flex-direction: column;
+    justify-content: center;
+    padding: 160px 0;
+  }
+
+  .hero-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    color: var(--black);
+    margin-bottom: 24px;
+    white-space: nowrap;
+  }
+
+  .hero-desc {
+    font-size: 15px; line-height: 1.75;
+    color: var(--text2); max-width: 800px;
+    margin-bottom: 32px;
+  }
+
+  .hero-stats {
+    display: flex; gap: 40px;
+  }
+  .hero-stat-num {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 36px; font-weight: 900; color: var(--black);
+    letter-spacing: -1.5px;
+    line-height: 1;
+  }
+  .hero-stat-label {
+    font-size: 13px; color: var(--text3); margin-top: 6px; font-weight: 500;
+  }
+
+  /* ===== TAB NAV ===== */
+  .tab-nav {
+    display: flex; gap: 8px; margin-bottom: 36px;
+  }
+
+  .tab-btn {
+    padding: 10px 24px; border: none;
+    background: transparent;
+    color: var(--text3); font-size: 14px; font-weight: 500;
+    border-radius: 100px; cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+  }
+  .tab-btn:hover { color: var(--text); background: rgba(0,0,0,0.04); }
+  .tab-btn.active {
+    background: var(--black);
+    color: var(--white);
+    font-weight: 600;
+  }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  /* ===== SECTION ===== */
+  .section { margin-bottom: 40px; }
+
+  .section-header {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  .section-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 28px; font-weight: 900; color: var(--black);
+    letter-spacing: -1px;
+  }
+
+  .section-badge {
+    font-size: 12px;
+    background: var(--tag-bg);
+    color: var(--text2);
+    padding: 6px 16px; border-radius: 100px;
+    font-weight: 600;
+  }
+
+  /* ===== INSIGHT CARDS ===== */
+  .insights-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 20px;
+  }
+
+  .insight-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 32px;
+    transition: transform 0.3s ease;
+    cursor: default;
+  }
+  .insight-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .insight-card .card-label {
+    display: inline-block;
+    font-size: 11px; font-weight: 600; letter-spacing: 0.5px;
+    text-transform: uppercase; color: var(--text2);
+    background: var(--tag-bg);
+    padding: 5px 14px; border-radius: 100px;
+    margin-bottom: 20px;
+  }
+  .insight-card h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px; font-weight: 800; margin-bottom: 12px;
+    line-height: 1.35; color: var(--black); letter-spacing: -0.5px;
+  }
+  .insight-card .summary {
+    font-size: 14px; color: var(--text2); margin-bottom: 20px;
+    line-height: 1.8;
+  }
+
+  .insight-card .implication {
+    background: var(--accent-soft);
+    border-left: 2px solid var(--black);
+    padding: 16px 20px;
+    border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+    margin-bottom: 20px;
+  }
+  .insight-card .implication-label {
+    font-size: 11px; color: var(--text3); font-weight: 600; margin-bottom: 6px;
+    letter-spacing: 0.5px; text-transform: uppercase;
+  }
+  .insight-card .implication p {
+    font-size: 13px; line-height: 1.75; color: var(--text2);
+  }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag {
+    font-size: 12px; padding: 5px 14px; border-radius: 100px;
+    background: var(--tag-bg);
+    color: var(--text3); font-weight: 500;
+    transition: all 0.2s;
+  }
+  .tag:hover {
+    background: var(--black);
+    color: var(--white);
+  }
+
+  /* ===== SOURCE LINKS ===== */
+  .source-links {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    margin-top: 20px; padding-top: 18px;
+    border-top: 1px solid var(--bg);
+  }
+  .source-link {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 12px; color: var(--text3); font-weight: 500;
+    text-decoration: none;
+    padding: 6px 16px; border-radius: 100px;
+    background: var(--accent-soft);
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .source-link:hover {
+    background: var(--black);
+    color: var(--white);
+  }
+  .source-link::before {
+    content: '';
+    display: inline-block;
+    width: 5px; height: 5px; border-radius: 50%;
+    background: var(--text4);
+    transition: background 0.2s;
+  }
+  .source-link:hover::before { background: var(--white); }
+  .source-link-icon {
+    font-size: 11px; transition: transform 0.2s;
+  }
+  .source-link:hover .source-link-icon { transform: translateX(2px); }
+
+  /* ===== DEMAND CARDS ===== */
+  .demand-list { display: flex; flex-direction: column; gap: 16px; }
+
+  .demand-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 32px;
+    display: grid; grid-template-columns: 1fr auto; gap: 24px;
+    transition: transform 0.3s ease;
+  }
+  .demand-card:hover { transform: translateY(-3px); }
+
+  .demand-card h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px; font-weight: 800; margin-bottom: 18px;
+    color: var(--black); letter-spacing: -0.3px;
+  }
+  .demand-meta { display: flex; flex-direction: column; gap: 16px; }
+
+  .demand-field { font-size: 14px; line-height: 1.75; }
+  .demand-field .label {
+    font-size: 11px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 1.5px; margin-bottom: 6px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .demand-field .label::before {
+    content: '';
+    display: inline-block;
+    width: 6px; height: 6px; border-radius: 50%;
+  }
+  .demand-field.pain .label { color: var(--red); }
+  .demand-field.pain .label::before { background: var(--red); }
+  .demand-field.opp .label { color: var(--green); }
+  .demand-field.opp .label::before { background: var(--green); }
+  .demand-field.evi .label { color: var(--blue); }
+  .demand-field.evi .label::before { background: var(--blue); }
+  .demand-field p { color: var(--text2); }
+
+  .priority-badge {
+    align-self: flex-start; padding: 8px 20px; border-radius: 100px;
+    font-size: 12px; font-weight: 600; white-space: nowrap;
+    letter-spacing: 0.5px;
+  }
+  .priority-high {
+    background: var(--red-bg); color: var(--red);
+  }
+  .priority-mid {
+    background: var(--orange-bg); color: var(--orange);
+  }
+
+  /* ===== NEWS CARDS ===== */
+  .news-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px;
+  }
+
+  .news-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 28px;
+    transition: transform 0.3s ease;
+    display: flex; flex-direction: column;
+  }
+  .news-card:hover { transform: translateY(-3px); }
+
+  .news-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+
+  .news-category {
+    font-size: 11px; padding: 5px 14px; border-radius: 100px;
+    background: var(--tag-bg); color: var(--text2); font-weight: 600;
+  }
+
+  .news-relevance { font-size: 11px; font-weight: 600; }
+  .relevance-high { color: var(--red); }
+  .relevance-mid { color: var(--orange); }
+
+  .news-card h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px; font-weight: 800; margin-bottom: 10px;
+    line-height: 1.4; color: var(--black); letter-spacing: -0.3px;
+  }
+  .news-card .summary {
+    font-size: 13px; color: var(--text2); line-height: 1.8; flex: 1;
+  }
+
+  .news-source {
+    font-size: 12px; color: var(--text3); margin-top: 18px;
+    padding-top: 16px; border-top: 1px solid var(--bg);
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .news-source a {
+    color: var(--white); text-decoration: none; font-weight: 600;
+    font-size: 12px;
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--black);
+    padding: 7px 18px; border-radius: 100px;
+    transition: all 0.2s;
+  }
+  .news-source a:hover { gap: 10px; background: #333; }
+  .news-source a::after { content: '\2192'; font-size: 14px; }
+  .news-card-clickable { cursor: pointer; }
+  .news-card-clickable:hover { transform: translateY(-3px); }
+
+  /* ===== LOADING ===== */
+  .loading { text-align: center; padding: 120px; color: var(--text3); }
+  .loading .spinner {
+    width: 32px; height: 32px;
+    border: 2px solid var(--border);
+    border-top-color: var(--black);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    margin: 0 auto 16px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ===== EMPTY STATE ===== */
+  .empty-state {
+    text-align: center; padding: 120px;
+    color: var(--text3);
+    background: var(--white);
+    border-radius: var(--radius);
+  }
+  .empty-state .icon {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 32px; color: var(--text4); margin-bottom: 16px;
+  }
+  .empty-state p { font-size: 14px; font-weight: 400; line-height: 1.8; }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    max-width: 1400px; margin: 0 auto; padding: 24px 48px 48px;
+    text-align: center; color: var(--text4); font-size: 12px;
+    font-weight: 400; letter-spacing: 0.5px;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 900px) {
+    .header { padding: 0 24px; }
+    .nav-links { display: none; }
+    .hero-title { font-size: 40px; }
+    .insights-grid, .news-grid { grid-template-columns: 1fr; }
+    .demand-card { grid-template-columns: 1fr; }
+    .main { padding: 20px 24px 40px; }
+    .section-title { font-size: 22px; }
+  }
+
+  /* ===== ANIMATIONS ===== */
+  .fade-in { animation: fadeIn 0.5s ease-out; }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .insight-card, .demand-card, .news-card {
+    animation: cardIn 0.45s ease-out both;
+  }
+  .insight-card:nth-child(1) { animation-delay: 0.04s; }
+  .insight-card:nth-child(2) { animation-delay: 0.08s; }
+  .insight-card:nth-child(3) { animation-delay: 0.12s; }
+  .insight-card:nth-child(4) { animation-delay: 0.16s; }
+  .demand-card:nth-child(1) { animation-delay: 0.04s; }
+  .demand-card:nth-child(2) { animation-delay: 0.08s; }
+  .demand-card:nth-child(3) { animation-delay: 0.12s; }
+  .news-card:nth-child(1) { animation-delay: 0.04s; }
+  .news-card:nth-child(2) { animation-delay: 0.08s; }
+  .news-card:nth-child(3) { animation-delay: 0.12s; }
+  .news-card:nth-child(4) { animation-delay: 0.16s; }
+
+  @keyframes cardIn {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ===== SCROLLBAR ===== */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.12); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.2); }
+
+  ::selection { background: rgba(0,0,0,0.08); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">
+    <div class="logo-mark">A.</div>
+    <nav class="nav-links">
+      <span class="nav-link">Insights</span>
+      <span class="nav-link">Demands</span>
+      <span class="nav-link">News</span>
+    </nav>
+  </div>
+  <div class="header-right">
+    <div class="date-nav">
+      <button id="prevDay">← 前一天</button>
+      <div class="current-date" id="currentDate">加载中...</div>
+      <button id="nextDay">后一天 →</button>
+    </div>
+  </div>
+</div>
+
+<div class="main" id="app">
+  <div class="loading" id="loadingState">
+    <div class="spinner"></div>
+    <p>正在加载...</p>
+  </div>
+</div>
+
+<div class="footer">
+  AI Insights Hub · 每日 8:00 自动更新
+</div>
+
+<script>
+const DATA_DIR = 'data/';
+let currentDate = new Date();
+
+function formatDate(d) {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
+}
+
+function formatDisplayDate(dateStr) {
+  const d = new Date(dateStr + 'T00:00:00');
+  const weekdays = ['周日','周一','周二','周三','周四','周五','周六'];
+  return `${d.getMonth()+1}月${d.getDate()}日 ${weekdays[d.getDay()]}`;
+}
+
+async function loadData(dateStr) {
+  try {
+    const resp = await fetch(`${DATA_DIR}${dateStr}.json`);
+    if (!resp.ok) return null;
+    return await resp.json();
+  } catch(e) { return null; }
+}
+
+function renderContent(data) {
+  const app = document.getElementById('app');
+  if (!data) {
+    app.innerHTML = `<div class="empty-state fade-in"><div class="icon">--</div><p>该日期暂无数据<br>数据每天 8:00 自动更新</p></div>`;
+    return;
+  }
+
+  let html = '';
+
+  // ===== HERO SECTION =====
+  html += `<div class="hero fade-in">`;
+  html += `<div class="hero-left">`;
+  html += `<h1 class="hero-title">Today's AI Design Insights.</h1>`;
+  html += `<p class="hero-desc">${data.daily_summary}</p>`;
+  html += `<div class="hero-stats">`;
+  html += `<div><div class="hero-stat-num">${data.design_insights.length}</div><div class="hero-stat-label">设计洞察</div></div>`;
+  html += `<div><div class="hero-stat-num">${data.demand_mining.length}</div><div class="hero-stat-label">需求挖掘</div></div>`;
+  html += `<div><div class="hero-stat-num">${data.hot_news.length}</div><div class="hero-stat-label">热点资讯</div></div>`;
+  html += `</div></div>`;
+
+  // ===== TAB NAV =====
+  html += `
+    <div class="tab-nav">
+      <button class="tab-btn active" onclick="switchTab('insights', this)">设计洞察</button>
+      <button class="tab-btn" onclick="switchTab('demands', this)">需求挖掘</button>
+      <button class="tab-btn" onclick="switchTab('news', this)">热点资讯</button>
+    </div>
+  `;
+
+  // ===== TAB: INSIGHTS =====
+  html += `<div class="tab-content active" id="tab-insights"><div class="section fade-in">`;
+  html += `<div class="insights-grid">`;
+  data.design_insights.forEach((ins, i) => {
+    let sourceLinksHtml = '';
+    if (ins.source_urls && ins.source_urls.length > 0) {
+      sourceLinksHtml = `<div class="source-links">${ins.source_urls.map(s => `<a class="source-link" href="${s.url}" target="_blank">${s.name}<span class="source-link-icon">\u2192</span></a>`).join('')}</div>`;
+    } else if (ins.sources && ins.sources.length > 0) {
+      sourceLinksHtml = `<div class="source-links">${ins.sources.map(s => `<span class="source-link" style="cursor:default">${s}</span>`).join('')}</div>`;
+    }
+    html += `
+      <div class="insight-card">
+        <div class="card-label">洞察 #${i+1}</div>
+        <h3>${ins.title}</h3>
+        <div class="summary">${ins.summary}</div>
+        <div class="implication">
+          <div class="implication-label">对输入法的启示</div>
+          <p>${ins.implication}</p>
+        </div>
+        <div class="tags">${ins.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
+        ${sourceLinksHtml}
+      </div>
+    `;
+  });
+  html += `</div></div></div>`;
+
+  // ===== TAB: DEMANDS =====
+  html += `<div class="tab-content" id="tab-demands"><div class="section fade-in">`;
+  html += `<div class="demand-list">`;
+  data.demand_mining.forEach(dm => {
+    const pClass = dm.priority === '高' ? 'priority-high' : 'priority-mid';
+    let evidenceSourceHtml = '';
+    if (dm.source_urls && dm.source_urls.length > 0) {
+      evidenceSourceHtml = `<div class="source-links" style="margin-top:16px;padding-top:14px;">${dm.source_urls.map(s => `<a class="source-link" href="${s.url}" target="_blank">${s.name}<span class="source-link-icon">\u2192</span></a>`).join('')}</div>`;
+    }
+    html += `
+      <div class="demand-card">
+        <div class="demand-meta">
+          <h3>${dm.title}</h3>
+          <div class="demand-field pain">
+            <div class="label">痛点</div>
+            <p>${dm.pain_point}</p>
+          </div>
+          <div class="demand-field opp">
+            <div class="label">机会点</div>
+            <p>${dm.opportunity}</p>
+          </div>
+          <div class="demand-field evi">
+            <div class="label">依据</div>
+            <p>${dm.evidence}</p>
+            ${evidenceSourceHtml}
+          </div>
+        </div>
+        <div class="priority-badge ${pClass}">优先级：${dm.priority}</div>
+      </div>
+    `;
+  });
+  html += `</div></div></div>`;
+
+  // ===== TAB: NEWS =====
+  html += `<div class="tab-content" id="tab-news"><div class="section fade-in">`;
+  html += `<div class="news-grid">`;
+  data.hot_news.forEach(n => {
+    const rClass = n.relevance === '高' ? 'relevance-high' : 'relevance-mid';
+    html += `
+      <div class="news-card">
+        <div class="news-top">
+          <span class="news-category">${n.category}</span>
+          <span class="news-relevance ${rClass}">相关度：${n.relevance}</span>
+        </div>
+        <h3>${n.title}</h3>
+        <div class="summary">${n.summary}</div>
+        <div class="news-source"><span>${n.source}</span><a href="${n.source_url}" target="_blank">阅读原文</a></div>
+      </div>
+    `;
+  });
+  html += `</div></div></div>`;
+
+  app.innerHTML = html;
+}
+
+function switchTab(tabId, btn) {
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + tabId).classList.add('active');
+  btn.classList.add('active');
+}
+
+async function navigate(dateStr) {
+  document.getElementById('currentDate').textContent = formatDisplayDate(dateStr);
+  document.getElementById('app').innerHTML = `<div class="loading"><div class="spinner"></div><p>正在加载...</p></div>`;
+  const data = await loadData(dateStr);
+  renderContent(data);
+}
+
+document.getElementById('prevDay').addEventListener('click', () => {
+  currentDate.setDate(currentDate.getDate() - 1);
+  navigate(formatDate(currentDate));
+});
+
+document.getElementById('nextDay').addEventListener('click', () => {
+  currentDate.setDate(currentDate.getDate() + 1);
+  navigate(formatDate(currentDate));
+});
+
+(async function init() {
+  const now = new Date();
+  currentDate = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const todayStr = formatDate(currentDate);
+  
+  let data = await loadData(todayStr);
+  if (data) { navigate(todayStr); return; }
+  
+  for (let i = 1; i <= 7; i++) {
+    const d = new Date(currentDate);
+    d.setDate(d.getDate() - i);
+    const ds = formatDate(d);
+    data = await loadData(ds);
+    if (data) { currentDate = d; navigate(ds); return; }
+  }
+  navigate(todayStr);
+})();
+</script>
+</body>
+</html>

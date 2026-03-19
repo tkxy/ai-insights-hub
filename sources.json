@@ -1,0 +1,45 @@
+{
+  "sources": [
+    {
+      "category": "AI热点动态",
+      "items": [
+        {"name": "every.to", "url": "https://every.to/", "platform": "官网", "description": "每日AI新闻简报"},
+        {"name": "Product Hunt", "url": "https://www.producthunt.com/", "platform": "官网", "description": "每日AI热门产品"},
+        {"name": "9to5mac", "url": "https://9to5mac.com/", "platform": "官网", "description": "Apple产品动态"}
+      ]
+    },
+    {
+      "category": "分析报告",
+      "items": [
+        {"name": "数字生命卡兹克", "url": "https://mp.weixin.qq.com/s/W_E9wkTBeFYZNr6cW18g2Q", "platform": "公众号", "description": "AI工具深度测评"},
+        {"name": "Founder Park", "url": "https://mp.weixin.qq.com/s/IA450hWP_fRSHVrr6I_EXg", "platform": "公众号", "description": "AI的场景化应用"},
+        {"name": "Way to AGI", "url": "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e", "platform": "飞书知识库", "description": "国内最全AI知识库"},
+        {"name": "Bondcap", "url": "https://www.bondcap.com/#specialreports", "platform": "官网", "description": "AI趋势报告"}
+      ]
+    },
+    {
+      "category": "AI官方",
+      "items": [
+        {"name": "Google AI", "url": "https://ai.google/", "platform": "官网", "description": "Google AI官方指南"},
+        {"name": "OpenAI", "url": "https://openai.com/stories/", "platform": "官网", "description": "AI模型官号"},
+        {"name": "Anthropic", "url": "https://www.anthropic.com/", "platform": "官网", "description": "Claude官号"},
+        {"name": "Figma", "url": "https://www.figma.com/", "platform": "官网", "description": "设计工具AI动态"}
+      ]
+    },
+    {
+      "category": "设计资讯",
+      "items": [
+        {"name": "Creative Boom", "url": "https://www.creativeboom.com/", "platform": "官网", "description": "设计资讯"},
+        {"name": "UX Planet", "url": "https://uxplanet.org/", "platform": "官网", "description": "设计资讯"},
+        {"name": "Awwwards", "url": "https://www.awwwards.com/", "platform": "官网", "description": "设计资讯"}
+      ]
+    },
+    {
+      "category": "国内AI媒体",
+      "items": [
+        {"name": "量子位", "url": "https://www.qbitai.com/", "platform": "官网", "description": "AI资讯"},
+        {"name": "机器之心", "url": "https://www.jiqizhixin.com/", "platform": "官网", "description": "AI资讯"}
+      ]
+    }
+  ]
+}
