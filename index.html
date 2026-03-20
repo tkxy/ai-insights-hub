@@ -149,18 +149,6 @@
   .hero-stat-label {
     font-size: 13px; color: var(--text3); margin-top: 6px; font-weight: 500;
   }
-  .hero-stat-divider {
-    width: 1px; background: var(--border); align-self: stretch; margin: 2px 0;
-  }
-  .hero-stat-num .busuanzi-loading {
-    display: inline-block;
-    width: 20px; height: 20px;
-    border: 2px solid var(--border);
-    border-top-color: var(--black);
-    border-radius: 50%;
-    animation: spin 0.7s linear infinite;
-    vertical-align: middle;
-  }
 
   /* ===== TAB NAV ===== */
   .tab-nav {
@@ -431,12 +419,6 @@
     text-align: center; color: var(--text4); font-size: 12px;
     font-weight: 400; letter-spacing: 0.5px;
   }
-  .footer-stats {
-    display: inline-flex; align-items: center; gap: 16px;
-    margin-top: 8px; font-size: 11px; color: var(--text4);
-  }
-  .footer-stats span { display: inline-flex; align-items: center; gap: 4px; }
-  .footer-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--text4); display: inline-block; }
 
   /* ===== RESPONSIVE ===== */
   @media (max-width: 900px) {
@@ -514,16 +496,7 @@
 
 <div class="footer">
   AI Insights Hub · 每日 8:00 自动更新
-  <div class="footer-stats">
-    <span>👁 本页浏览 <span id="busuanzi_value_page_pv">-</span> 次</span>
-    <span class="footer-dot"></span>
-    <span>🌐 总访问 <span id="busuanzi_value_site_pv">-</span> 次</span>
-    <span class="footer-dot"></span>
-    <span>👤 访客 <span id="busuanzi_value_site_uv">-</span> 人</span>
-  </div>
 </div>
-
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 <script>
 const DATA_DIR = 'data/';
@@ -568,8 +541,6 @@ function renderContent(data) {
   html += `<div><div class="hero-stat-num">${data.design_insights.length}</div><div class="hero-stat-label">设计洞察</div></div>`;
   html += `<div><div class="hero-stat-num">${data.demand_mining.length}</div><div class="hero-stat-label">需求挖掘</div></div>`;
   html += `<div><div class="hero-stat-num">${data.hot_news.length}</div><div class="hero-stat-label">热点资讯</div></div>`;
-  html += `<div class="hero-stat-divider"></div>`;
-  html += `<div><div class="hero-stat-num" id="hero-pv"><span class="busuanzi-loading"></span></div><div class="hero-stat-label">总浏览量</div></div>`;
   html += `</div></div>`;
 
   // ===== TAB NAV =====
@@ -703,37 +674,6 @@ document.getElementById('nextDay').addEventListener('click', () => {
   }
   navigate(todayStr);
 })();
-
-// 同步不蒜子数据到 hero 区域
-function syncBusuanziToHero() {
-  const sitePv = document.getElementById('busuanzi_value_site_pv');
-  const heroPv = document.getElementById('hero-pv');
-  if (sitePv && heroPv && sitePv.textContent && sitePv.textContent !== '-') {
-    heroPv.textContent = sitePv.textContent;
-    return true;
-  }
-  return false;
-}
-
-// 使用 MutationObserver 监听不蒜子数据更新
-const busuanziObserver = new MutationObserver(() => {
-  if (syncBusuanziToHero()) busuanziObserver.disconnect();
-});
-
-// 在每次渲染内容后重新监听
-const origRender = renderContent;
-renderContent = function(data) {
-  origRender(data);
-  // 重新绑定观察器
-  setTimeout(() => {
-    const sitePv = document.getElementById('busuanzi_value_site_pv');
-    if (sitePv) {
-      if (!syncBusuanziToHero()) {
-        busuanziObserver.observe(sitePv, { childList: true, characterData: true, subtree: true });
-      }
-    }
-  }, 100);
-};
 </script>
 </body>
 </html>
