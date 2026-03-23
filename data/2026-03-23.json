@@ -1,7 +1,7 @@
 {
   "date": "2026-03-23",
   "generated_at": "2026-03-23T09:01:00+08:00",
-  "daily_summary": "周一开工，AI领域迎来多条重磅消息。中国AI大模型周调用量突破4.69万亿Token，连续第二周超越美国，全球前三全部由中国模型包揽，摩根大通预测2030年中国AI推理消耗量将达3900千万亿Token。OpenAI计划大规模招聘3500人，年底员工总数将达8000人，标志着AI行业进入规模化商业落地深水区。马斯克正式公布Terafab芯片工厂项目，年产超1太瓦算力，其中80%用于太空——算力主战场正在从地面转向近地轨道。设计领域遭遇重大冲击：谷歌AI设计工具Stitch支持Vibe Design（语音驱动设计），Figma股价两天暴跌12%，AI对创意工具行业的颠覆正在加速。Cursor发布Composer 2自研编程模型，部分基准超越Opus 4.6且成本更低。安全方面，北航团队开源OpenClaw安全防御工具ClawGuard Auditor，梳理9大高危风险缓解措施。中国首个AI开源生态白皮书在南京发布，揭示中国AI人才缺口超500万、顶尖研究员42%赴美的深层挑战。阿里巴巴主席蔡崇信在中国发展高层论坛指出：电网投资+开源模型+工业数据是中国AI三大独特优势。",
+  "daily_summary": "周一开工，AI领域迎来多条重磅消息。OpenAI宣布将ChatGPT、Codex和Atlas浏览器合并为桌面「超级应用」，并收购Python工具公司Astral；小米秘密发布万亿参数MiMo-V2-Pro大模型震惊业界（最初被误认为是DeepSeek的作品），雷军宣布未来三年AI投入超600亿元；Bezos正为Project Prometheus筹集1000亿美元用于AI自动化航空航天和芯片制造；Midjourney V8 Alpha发布，速度提升5倍支持原生2K；Karpathy坦言已数月未写一行代码，AI发展速度让创造者自己都跟不上。中国AI大模型周调用量突破4.69万亿Token连续第二周超越美国，设计领域遭遇重大冲击——Google Stitch支持Vibe Design导致Figma股价暴跌12%。华尔街日报指出AI行业正学会「专注」——从什么都做转向高价值场景深耕。阿里腾讯因未能说清AI盈利路径24小时内市值蒸发660亿美元。",
   "design_insights": [
     {
       "title": "Google Stitch的「Vibe Design」：语音驱动设计正式到来，Figma股价暴跌的警示",
@@ -38,6 +38,40 @@
         {"name": "Cursor套壳Kimi事件", "url": "https://www.qbitai.com/"}
       ],
       "tags": ["AI编程", "自研模型", "信任透明", "成本优化"]
+    },
+    {
+      "title": "OpenAI「超级应用」整合：从工具碎片化到统一入口的产品哲学",
+      "summary": "OpenAI本周宣布将ChatGPT、Codex和Atlas浏览器合并为一个桌面超级应用，同时收购Python工具公司Astral（旗下Ruff、uv等工具）整合进Codex。Codex周活跃用户已超200万。这一动作的本质是：当AI能力足够强大时，用户不需要在多个专业工具间切换，一个统一入口就能覆盖对话、编程、浏览三大场景。华尔街日报同期报道指出AI行业正在学会「专注」——Steve Jobs式的减法哲学正在取代「什么都做」的扩张策略。",
+      "implication": "输入法作为手机上最高频的「入口级」应用，天然具备成为移动端AI超级入口的潜力。OpenAI的整合思路值得参考：1）输入法不应只做「打字工具+AI帮写」，而应整合搜索、翻译、摘要、快捷操作等功能于键盘界面内——用户不需要离开当前App就能完成多种AI任务；2）参考Atlas浏览器的思路，在输入法内置轻量级信息卡片（如输入「北京天气」直接在键盘区显示结果）；3）但要警惕功能膨胀——华尔街日报的「学会专注」提醒我们，超级应用不是功能堆砌，而是精选高频场景的极致体验。",
+      "sources": ["The Neuron", "华尔街日报", "TechCrunch"],
+      "source_urls": [
+        {"name": "The Neuron 本周汇总", "url": "https://www.theneuron.ai/ai-news-digests/arouond-the-horn-digest-weekof-march-21-2026/"},
+        {"name": "OpenAI Astral收购", "url": "https://techcrunch.com/2026/03/"}
+      ],
+      "tags": ["超级应用", "产品整合", "入口战略", "减法哲学"]
+    },
+    {
+      "title": "小米MiMo-V2的「隐身发布」策略：当产品实力成为最好的营销",
+      "summary": "小米本周秘密发布万亿参数大模型MiMo-V2-Pro，结果全网最初误以为是DeepSeek的新模型——直到小米自己揭晓才恍然大悟。雷军随即宣布未来三年AI投入超600亿元，2026年单年超160亿。这个「愚弄整个AI社区」的事件本身就是一次教科书级的产品营销：不靠发布会预热，靠产品实力自发传播，让用户在不知品牌的情况下先认可产品——这比任何广告都有说服力。同期Hugging Face报告显示中国模型下载量占全球41%。",
+      "implication": "这给输入法AI功能的推广提供了一个新思路——「让AI能力先被体验，再被认知」：1）可以在不同渠道低调上线AI新功能的A/B测试，用数据验证效果后再大规模推广，而非「先吹牛再验证」；2）参考小米的策略，输入法的AI帮写可以在特定场景（如微信回复）中默默启用智能推荐，让用户自然发现「这个输入法怎么突然变聪明了」——惊喜感比通知栏弹窗更有效；3）600亿投入说明AI赛道的资本投入仍在加速，输入法AI功能的投入需要跟上节奏。",
+      "sources": ["The Neuron", "财新网", "中国日报"],
+      "source_urls": [
+        {"name": "小米AI大模型三连发", "url": "https://cn.chinadaily.com.cn/a/202603/20/WS69bcf34ea310942cc49a4239.html"},
+        {"name": "雷军600亿AI投入", "url": "https://news.qq.com/rain/a/20260320A0047Z00"},
+        {"name": "Hugging Face开源报告", "url": "https://huggingface.co/blog"}
+      ],
+      "tags": ["产品营销", "隐身发布", "中国大模型", "用户体验"]
+    },
+    {
+      "title": "AI+人类协作增强创造力：ScienceDaily研究颠覆「AI替代论」",
+      "summary": "ScienceDaily 3月16日发表研究表明，在协作场景中AI实际上能增强人类创造力——人机协作产出的创意成果在质量和数量上均优于纯人类或纯AI。同期，Karpathy坦言已数月未写代码，但他强调这不是被替代，而是在重新思考AI能力的边界。Anthropic为Claude免费开放交互式图表功能，也是「增强而非替代」理念的实践——让用户在对话中直接创建和修改可视化内容，降低了数据分析的门槛。",
+      "implication": "「AI增强创造力」的研究结论对输入法AI功能的定位至关重要——不是替代用户思考，而是让用户表达得更好：1）AI帮写的交互应该是「共创」模式而非「代写」模式——先理解用户的表达意图，再提供多个优化版本供选择，保留用户的创意主导权；2）参考Claude的交互式图表功能，输入法可以在AI帮写结果中嵌入可调节的「语气/风格/长度」滑块，让用户参与创作过程而非被动接受；3）产品宣传应强调「让你写得更好」而非「帮你写」，这是用户心理接受度的关键区别。",
+      "sources": ["ScienceDaily", "humAI Blog", "Anthropic"],
+      "source_urls": [
+        {"name": "AI增强创造力研究", "url": "https://www.humai.blog/ai-news-trends-march-2026-complete-monthly-digest/"},
+        {"name": "Anthropic交互式图表", "url": "https://www.anthropic.com/"}
+      ],
+      "tags": ["人机协作", "创造力增强", "AI定位", "共创模式"]
     }
   ],
   "demand_mining": [
@@ -74,92 +108,142 @@
         {"name": "AI开源生态白皮书", "url": "https://news.qq.com/rain/a/20260322A06YRQ00"},
         {"name": "Cursor Composer 2", "url": "https://cursor.com/blog/composer-2"}
       ]
+    },
+    {
+      "title": "输入法作为移动端AI「超级入口」的机会窗口",
+      "pain_point": "OpenAI将ChatGPT+Codex+Atlas合并为桌面超级应用，Google AI Studio推出全栈vibe coding体验，桌面端的AI入口整合已经开始。但移动端仍然是碎片化的——用户需要在ChatGPT App、浏览器、各种AI工具之间来回切换。输入法是移动端唯一跨App存在的系统级组件，却只被当作打字工具",
+      "opportunity": "将输入法升级为移动端AI超级入口：1）在键盘上方增加「AI工具栏」——一键调用摘要、翻译、搜索、计算等高频AI能力，无需切换App；2）智能场景识别——在外卖App中自动提供「AI点评生成」，在邮件App中提供「AI回复」，在社交App中提供「AI帮聊」；3）集成轻量级信息卡片——输入关键词直接在键盘区展示搜索结果或计算结果。这是一个OpenAI、Google都无法轻易触达的独特入口位置",
+      "priority": "高",
+      "evidence": "OpenAI超级应用整合（Codex周活200万+）证明入口聚合是大趋势；Google AI Studio全栈体验说明工具整合是用户需求；Cloudflare CEO预测2027年机器人流量超人类，AI入口争夺将更加激烈",
+      "source_urls": [
+        {"name": "The Neuron: OpenAI超级应用", "url": "https://www.theneuron.ai/ai-news-digests/arouond-the-horn-digest-weekof-march-21-2026/"},
+        {"name": "Google AI Studio更新", "url": "https://aistudio.google.com/"}
+      ]
+    },
+    {
+      "title": "「AI可视化表达」——从纯文字输入到图文混合输出",
+      "pain_point": "Anthropic为Claude免费开放交互式图表功能、Midjourney V8 Alpha速度提升5倍支持原生2K、Microsoft MAI-Image-2在Arena排名第三——AI的视觉生成能力正在爆发式增长。但当前输入法的AI帮写仍然只能输出纯文字，在需要图文混合表达的场景（工作汇报、朋友圈文案配图、社交媒体内容）中能力不足",
+      "opportunity": "拓展AI帮写的输出形态：1）「文字+配图」一键生成——用户描述朋友圈内容，AI同时生成文案和配图建议（可调用Midjourney/DALL-E API）；2）工作场景中的「数据→图表」——用户在聊天中描述数据，AI直接生成可视化图表插入对话；3）表情包智能推荐——根据对话语境AI推荐或生成定制表情包。从「文字输入工具」进化为「表达增强工具」",
+      "priority": "中",
+      "evidence": "Midjourney V8速度5倍提升使即时图片生成成为可能；MAI-Image-2证明图片生成质量已达商用水准；Claude交互式图表功能证明AI视觉输出用户接受度高",
+      "source_urls": [
+        {"name": "Midjourney V8 Alpha", "url": "https://www.midjourney.com/"},
+        {"name": "Claude交互式可视化", "url": "https://www.anthropic.com/"}
+      ]
     }
   ],
   "hot_news": [
     {
       "title": "中国AI大模型周调用量达4.69万亿Token，连续第二周超越美国",
+      "category": "产业数据",
+      "relevance": "高",
       "summary": "据OpenRouter数据，截至3月15日中国AI大模型周调用量达4.69万亿Token，全球前三全部为中国模型。摩根大通预测2030年中国AI推理Token消耗量将从约10千万亿增长至约3900千万亿。中国AI产业正从「拼参数堆算力」转向「拼调用拼落地」。",
-      "impact": "重大",
-      "sources": ["每日经济新闻", "OpenRouter"],
-      "source_urls": [
-        {"name": "每经详细报道", "url": "https://www.nbd.com.cn/articles/2026-03-22/4302872.html"}
-      ]
+      "source": "每日经济新闻",
+      "source_url": "https://www.nbd.com.cn/articles/2026-03-22/4302872.html"
     },
     {
       "title": "Google Stitch支持Vibe Design，Figma股价两天暴跌12%",
+      "category": "设计工具",
+      "relevance": "高",
       "summary": "3月18日谷歌宣布AI设计工具Stitch支持Vibe Design——用语音描述即可生成完整UI和前端代码。Figma股价随后两天暴跌12%。讽刺的是2025年10月双方刚宣布扩大AI合作。设计行业正经历从「画布工具」到「意图理解引擎」的颠覆。",
-      "impact": "重大",
-      "sources": ["量子位", "36氪", "搜狐科技"],
-      "source_urls": [
-        {"name": "量子位详细报道", "url": "https://www.qbitai.com/2026/03/390235.html"},
-        {"name": "Google Stitch vs Figma对比", "url": "https://www.nxcode.io/zh/resources/news/google-stitch-vs-figma-ai-design-comparison-2026"}
-      ]
+      "source": "量子位",
+      "source_url": "https://www.qbitai.com/2026/03/390235.html"
+    },
+    {
+      "title": "OpenAI发布桌面「超级应用」：ChatGPT+Codex+Atlas三合一",
+      "category": "产品发布",
+      "relevance": "高",
+      "summary": "OpenAI宣布将ChatGPT、Codex编程工具和Atlas浏览器合并为一个桌面超级应用，同时收购Python工具公司Astral（Ruff、uv等）集成进Codex。Codex周活跃用户已超200万。这标志着AI从分散的单功能工具转向集成化平台。",
+      "source": "The Neuron",
+      "source_url": "https://www.theneuron.ai/ai-news-digests/arouond-the-horn-digest-weekof-march-21-2026/"
+    },
+    {
+      "title": "小米秘密发布万亿参数MiMo-V2-Pro，雷军宣布3年投入600亿",
+      "category": "大模型",
+      "relevance": "高",
+      "summary": "小米发布三款自研大模型：MiMo-V2-Pro（万亿参数、百万上下文窗口）、MiMo-V2-Omni（全模态）和MiMo-V2-TTS（语音合成）。发布时刻意低调，全网最初误以为是DeepSeek的新模型。雷军宣布2026年AI投入超160亿，未来三年超600亿。",
+      "source": "财新网",
+      "source_url": "https://cn.chinadaily.com.cn/a/202603/20/WS69bcf34ea310942cc49a4239.html"
     },
     {
       "title": "OpenAI计划大规模招聘3500人，年底员工将达8000人",
+      "category": "行业动态",
+      "relevance": "高",
       "summary": "据报道OpenAI计划招聘约3500个岗位，将员工总数从约4500人增至8000人。AI行业已进入规模化商业落地的深水区，人才储备的厚度成为大模型公司在下一轮淘汰赛中胜出的关键变量。",
-      "impact": "重大",
-      "sources": ["每日经济新闻"],
-      "source_urls": [
-        {"name": "每经报道", "url": "https://www.nbd.com.cn/articles/2026-03-22/4302872.html"}
-      ]
+      "source": "每日经济新闻",
+      "source_url": "https://www.nbd.com.cn/articles/2026-03-22/4302872.html"
     },
     {
       "title": "马斯克公布Terafab芯片工厂：年产超1太瓦算力，80%用于太空",
+      "category": "算力基建",
+      "relevance": "高",
       "summary": "3月21日马斯克在X平台宣布SpaceX与特斯拉联合Terafab项目，目标年产超1太瓦量级算力。其中80%用于太空领域，20%用于地面。太空正在成为算力的主战场，最顶尖的算力将优先服务于近地轨道。",
-      "impact": "重大",
-      "sources": ["每日经济新闻"],
-      "source_urls": [
-        {"name": "Terafab项目详情", "url": "https://www.nbd.com.cn/articles/2026-03-22/4302872.html"}
-      ]
+      "source": "每日经济新闻",
+      "source_url": "https://www.nbd.com.cn/articles/2026-03-22/4302872.html"
     },
     {
       "title": "Cursor发布Composer 2自研模型，部分基准超越Opus 4.6",
+      "category": "AI编程",
+      "relevance": "高",
       "summary": "Cursor发布第三代自研编程模型Composer 2，在Terminal-Bench 2.0等基准上超越Anthropic的Opus 4.6，且推理成本更低。同时被曝出套壳Kimi模型事件，创始人称「忘记署名」，引发AI工具信任讨论。",
-      "impact": "重大",
-      "sources": ["Cursor Blog", "The New Stack", "量子位"],
-      "source_urls": [
-        {"name": "Cursor官方博客", "url": "https://cursor.com/blog/composer-2"},
-        {"name": "The New Stack分析", "url": "https://thenewstack.io/cursors-composer-2-beats-opus-46-on-coding-benchmarks-at-a-fraction-of-the-price/"}
-      ]
+      "source": "Cursor Blog",
+      "source_url": "https://cursor.com/blog/composer-2"
+    },
+    {
+      "title": "Bezos筹集1000亿美元：Project Prometheus瞄准AI自动化制造业",
+      "category": "资本动态",
+      "relevance": "中",
+      "summary": "Jeff Bezos正为Project Prometheus项目筹集1000亿美元，计划收购并利用AI自动化航空航天、芯片制造和国防领域的公司。这是有史以来最大规模的AI产业投资之一，标志着AI从软件领域向实体制造业全面渗透。",
+      "source": "The Neuron",
+      "source_url": "https://www.theneuron.ai/ai-news-digests/arouond-the-horn-digest-weekof-march-21-2026/"
+    },
+    {
+      "title": "Midjourney V8 Alpha发布：速度提升5倍，原生2K分辨率",
+      "category": "AI创作",
+      "relevance": "高",
+      "summary": "Midjourney推出V8 Alpha版本，生成速度提升约5倍，支持原生2K分辨率输出，文本渲染质量显著改善。但高级功能价格也涨了4倍，引发社区关于AI创作工具定价策略的讨论。",
+      "source": "Midjourney",
+      "source_url": "https://www.midjourney.com/"
+    },
+    {
+      "title": "阿里腾讯24小时市值蒸发660亿美元：AI盈利叙事遭质疑",
+      "category": "市场动态",
+      "relevance": "高",
+      "summary": "阿里巴巴和腾讯因未能清晰阐述如何从AI投入中获得回报，在24小时内合计市值蒸发660亿美元。这反映了市场对中国科技巨头AI战略的深层焦虑：算力投入巨大，但商业变现路径仍不清晰。",
+      "source": "The Neuron",
+      "source_url": "https://www.theneuron.ai/ai-news-digests/arouond-the-horn-digest-weekof-march-21-2026/"
     },
     {
       "title": "中国首个AI开源生态白皮书发布：AI人才缺口超500万",
-      "summary": "「智汇金陵·AI开源人才峰会暨魔搭开发者大会」在南京举行，发布《中国人工智能开源生态白皮书》。白皮书揭示：全球顶尖AI研究员47%本科毕业于中国但42%赴美，国内AI人才缺口超500万。中国开源生态呈「底层闭源、应用层开源」格局，治理模式待优化。",
-      "impact": "重要",
-      "sources": ["潮新闻", "腾讯新闻"],
-      "source_urls": [
-        {"name": "白皮书详细内容", "url": "https://news.qq.com/rain/a/20260322A06YRQ00"}
-      ]
+      "category": "政策报告",
+      "relevance": "中",
+      "summary": "「智汇金陵·AI开源人才峰会暨魔搭开发者大会」在南京举行，发布《中国人工智能开源生态白皮书》。白皮书揭示：全球顶尖AI研究员47%本科毕业于中国但42%赴美，国内AI人才缺口超500万。中国开源生态呈「底层闭源、应用层开源」格局。",
+      "source": "腾讯新闻",
+      "source_url": "https://news.qq.com/rain/a/20260322A06YRQ00"
     },
     {
       "title": "北航开源OpenClaw安全防御工具ClawGuard Auditor",
-      "summary": "北航复杂关键软件环境重点实验室开源ClawGuard Auditor，针对OpenClaw（龙虾）AI智能体梳理9大高危风险缓解措施。此前CNNVD统计OpenClaw漏洞82个（超危12个、高危21个），国家互联网应急中心也发布了安全风险提示。",
-      "impact": "重要",
-      "sources": ["量子位", "CCTV新闻"],
-      "source_urls": [
-        {"name": "量子位报道", "url": "https://news.qq.com/rain/a/20260321A0455R00"},
-        {"name": "国家互联网应急中心提示", "url": "https://news.cctv.com/2026/03/10/ARTIY2STX6ARYK3N4wCvUbf8260310.shtml"}
-      ]
+      "category": "AI安全",
+      "relevance": "中",
+      "summary": "北航复杂关键软件环境重点实验室开源ClawGuard Auditor，针对OpenClaw AI智能体梳理9大高危风险缓解措施。此前CNNVD统计OpenClaw漏洞82个（超危12个、高危21个），国家互联网应急中心也发布了安全风险提示。",
+      "source": "量子位",
+      "source_url": "https://news.qq.com/rain/a/20260321A0455R00"
     },
     {
       "title": "蔡崇信：电网投资+开源模型+工业数据是中国AI三大优势",
-      "summary": "阿里巴巴主席蔡崇信在中国发展高层论坛2026年年会上表示，AI发展的终极目标不是研发前沿模型，而是推动AI应用普及。中国在电网投资、开源模型普及和庞大工业数据方面具备独特竞争优势。全球AI竞争已从算法比拼转向「算力+电力+数据」综合实力竞争。",
-      "impact": "重要",
-      "sources": ["AIToolly", "新浪财经"],
-      "source_urls": [
-        {"name": "蔡崇信发言详情", "url": "https://aitoolly.com/zh/ai-news/article/2026-03-23-alibaba-chairman-highlights-how-power-grid-investment-and-open-source-models-drive-chinas-ai-sector"}
-      ]
+      "category": "行业观点",
+      "relevance": "中",
+      "summary": "阿里巴巴主席蔡崇信在中国发展高层论坛2026年年会上表示，AI发展的终极目标不是研发前沿模型，而是推动AI应用普及。中国在电网投资、开源模型普及和庞大工业数据方面具备独特竞争优势。",
+      "source": "AIToolly",
+      "source_url": "https://aitoolly.com/zh/ai-news/article/2026-03-23-alibaba-chairman-highlights-how-power-grid-investment-and-open-source-models-drive-chinas-ai-sector"
     },
     {
       "title": "阶跃星辰适配微信生态，StepClaw「龙虾」即插即用",
+      "category": "产品发布",
+      "relevance": "中",
       "summary": "阶跃星辰率先适配微信生态，推出StepClaw「龙虾」产品，主打即插即养即用特性，激活个人聊天场景。这标志着AI智能体正在从开发者工具走向大众消费场景。",
-      "impact": "关注",
-      "sources": ["量子位"],
-      "source_urls": [
-        {"name": "量子位报道", "url": "https://www.qbitai.com/"}
-      ]
+      "source": "量子位",
+      "source_url": "https://www.qbitai.com/"
     }
   ]
 }
