@@ -1,7 +1,7 @@
 {
   "date": "2026-03-21",
   "generated_at": "2026-03-23T09:50:00+08:00",
-  "daily_summary": "周六AI圈持续高产。开发工具领域，Cursor正式发布Composer 2自研编码模型，基于持续预训练+RL构建，在编码基准测试中超越Opus 4.6，成本仅为每百万token 0.50/2.50美元（便宜86%）；LangChain推出Open-SWE开源异步编码代理；WordPress.com允许AI代理直接撰写发布文章引发争议。企业动态方面，微软回滚Windows上部分Copilot AI功能，精简照片、小组件、记事本中的AI入口，承认「AI臃肿」问题并发布Windows质量承诺；五角大楼正式采用Palantir Maven AI作为记录项目；Anthropic否认五角大楼关于其可能在战争期间破坏AI工具的指控。硬件方面，索尼PS5首席架构师Mark Cerny确认未来PlayStation将引入AI帧生成技术。个人智能体操作系统Dreamer（/dev/agents）正式结束隐身状态，提出Agent OS愿景。",
+  "daily_summary": "周六AI圈持续高产。Cursor正式发布Composer 2自研编码模型，在编码基准测试中超越Opus 4.6、成本便宜86%；微软被迫回滚Windows Copilot AI功能，承认「AI臃肿」，发布质量承诺；OpenAI宣布正在开发「AI研究实习生」工具，目标9月上线自动化科研任务；宇树机器人申请上交所科创板IPO融资6.1亿美元，有望成为中国A股首个人形机器人股票；George Hotz的Tiny Corp开始发售tinybox离线AI硬件（顶配3086 TFLOPS / 384GB显存）；五角大楼正式采用Palantir Maven AI作为核心军事系统；LangChain推出Open-SWE开源异步编码代理；WordPress.com允许AI代理直接撰写发布文章引发争议；个人智能体操作系统Dreamer正式亮相提出Agent OS愿景。",
   "design_insights": [
     {
       "title": "微软「AI臃肿」回滚：少即是多，AI产品要克制",
@@ -35,6 +35,28 @@
         {"name": "Dreamer Agent OS", "url": "https://www.latent.space/p/dreamer"}
       ],
       "tags": ["AI内容生成", "Agent OS", "角色转变", "意图表达"]
+    },
+    {
+      "title": "OpenAI「AI研究实习生」：从工具辅助到自主执行的设计范式转变",
+      "summary": "OpenAI首席科学家Jakub Pachocki公布两阶段计划：2026年9月推出「AI研究实习生」——能独立承担多天科研任务的自主系统；2028年3月实现全自动化多智能体研究系统。MIT Technology Review评论称这是OpenAI「all in」自动化研究的标志。这意味着AI正在从「辅助工具」向「自主执行者」角色转变，产品设计的核心命题从「如何帮用户做」变为「如何让AI自己做、用户来审核」。",
+      "implication": "输入法AI功能可以参考这个思路——从「用户打一半AI补全」进化到「用户说意图AI全写」的模式：1）现阶段的AI帮写是「辅助」模式，用户仍需大量参与；2）下一阶段可以引入「全托管」模式——用户只输入一句「帮我回复这封工作邮件，语气要委婉」，AI直接生成完整回复；3）但关键是审核体验——参考OpenAI的「实习生」隐喻，要让用户感觉是在「审核实习生的作品」而非「被AI替代」，心理接受度会高很多。",
+      "sources": ["MIT Technology Review", "SiliconAngle"],
+      "source_urls": [
+        {"name": "OpenAI自动化研究计划", "url": "https://www.technologyreview.com/2026/03/20/1134438/openai-is-throwing-everything-into-building-a-fully-automated-researcher/"},
+        {"name": "OpenAI超级应用+AI实习生", "url": "https://siliconangle.com/2026/03/20/openai-launch-chatgpt-superapp-ai-research-intern/"}
+      ],
+      "tags": ["自主AI", "审核模式", "AI实习生", "全托管写作"]
+    },
+    {
+      "title": "tinybox：当AI算力变成「家电」，个人开发者的设计思维正在改变",
+      "summary": "George Hotz创办的Tiny Corp开始发售tinybox——一台放在车库里就能跑大模型的专用AI计算机。顶配版本拥有3086 TFLOPS FP16性能和384GB GPU显存，基于开源tinygrad框架构建。Prism News评论说这是「把高端AI硬件带到你的车库」。当AI训练和推理的门槛从云端数据中心降到个人桌面，个人开发者和小团队的AI创新能力将大幅跃升——AI正在经历类似PC革命的「去中心化」时刻。",
+      "implication": "AI算力的个人化趋势意味着未来会有大量非专业团队开发垂直AI应用，输入法可能面临更多长尾竞争者。但同时这也是机会：1）输入法可以开放API让个人开发者基于本地模型构建输入法插件——比如某个方言专家用tinybox训练了一个粤语输入模型，可以作为输入法的「方言扩展包」；2）本地化AI推理也意味着更好的隐私保护——「你的输入数据不出设备」将成为卖点。",
+      "sources": ["Hacker News", "Prism News", "AIToolly"],
+      "source_urls": [
+        {"name": "tinybox发布详情", "url": "https://aitoolly.com/ai-news/article/2026-03-22-tiny-corp-unveils-tinybox-high-performance-offline-ai-hardware-supporting-massive-parameter-models"},
+        {"name": "Prism News报道", "url": "https://www.prismnews.com/news/george-hotzs-tiny-corp-brought-high-end-ai-hardware-to-your"}
+      ],
+      "tags": ["AI硬件", "去中心化", "本地推理", "个人开发者"]
     }
   ],
   "demand_mining": [
@@ -70,80 +92,134 @@
         {"name": "WordPress AI发文", "url": "https://techcrunch.com/2026/03/20/wordpress-com-now-lets-ai-agents-write-and-publish-posts-and-more/"},
         {"name": "Dreamer Agent OS", "url": "https://www.latent.space/p/dreamer"}
       ]
+    },
+    {
+      "title": "AI「全托管写作」模式——从帮写到代写的信任设计",
+      "pain_point": "OpenAI的「AI研究实习生」概念揭示了趋势：AI将从辅助执行走向自主执行。但当前输入法AI帮写仍停留在「用户写一半AI补另一半」的初级模式，用户在需要快速回复（如微信群消息轰炸、多个客户同时聊天）时效率仍然不够高",
+      "opportunity": "推出「全托管回复」模式：1）用户只需用语音或简短文字说明意图（如「同意，但要委婉」），AI直接生成完整回复；2）采用OpenAI的「实习生」隐喻做UI设计——显示为「AI草稿」而非直接发送，用户一键确认或微调后发出；3）按场景预设模板（工作群/家庭群/客户群），AI自动匹配合适的语气和措辞。核心是让用户感觉在「指挥」而非「被替代」",
+      "priority": "高",
+      "evidence": "OpenAI计划2026年9月推出AI研究实习生；WordPress已允许AI代理直接发文；Cursor Composer 2证明AI自主执行代码已成现实；用户对快速回复的需求持续增长",
+      "source_urls": [
+        {"name": "OpenAI AI研究实习生", "url": "https://www.technologyreview.com/2026/03/20/1134438/openai-is-throwing-everything-into-building-a-fully-automated-researcher/"},
+        {"name": "WordPress AI发文", "url": "https://techcrunch.com/2026/03/20/wordpress-com-now-lets-ai-agents-write-and-publish-posts-and-more/"}
+      ]
+    },
+    {
+      "title": "本地AI推理——隐私驱动的输入法差异化卖点",
+      "pain_point": "tinybox等本地AI硬件的出现说明AI推理正在从云端走向本地。用户对输入法AI的最大顾虑就是隐私——「我打的每个字都上传到云端了吗？」这个担忧阻碍了很多敏感场景（银行密码、私密聊天、商业机密）中AI功能的使用",
+      "opportunity": "推出「本地AI模式」：1）将轻量级AI模型（如3B参数的输入预测模型）内置到输入法App中，核心功能不需联网；2）敏感场景自动切换到「纯本地」模式并明确提示用户「数据不出设备」；3）在设置中提供「隐私仪表盘」——清晰展示哪些数据在本地处理、哪些上传云端、用户可以一键关闭云端功能。Tiny Corp的成功证明本地AI有强需求",
+      "priority": "中",
+      "evidence": "Tiny Corp tinybox开售（3086 TFLOPS / 384GB显存）证明本地AI算力需求旺盛；苹果持续推进On-Device AI战略；用户隐私敏感度持续提升；输入法是最高频的数据入口之一",
+      "source_urls": [
+        {"name": "tinybox发布", "url": "https://aitoolly.com/ai-news/article/2026-03-22-tiny-corp-unveils-tinybox-high-performance-offline-ai-hardware-supporting-massive-parameter-models"},
+        {"name": "Prism News报道", "url": "https://www.prismnews.com/news/george-hotzs-tiny-corp-brought-high-end-ai-hardware-to-your"}
+      ]
     }
   ],
   "hot_news": [
     {
       "title": "Cursor发布Composer 2自研编码模型：超越Opus 4.6，成本便宜86%",
-      "summary": "Cursor正式发布Composer 2，基于持续预训练+强化学习构建的编码专用模型，在编码基准测试中击败通用大模型Opus 4.6，每百万token成本仅0.50/2.50美元。这是垂直AI模型首次在公开基准上全面超越通用大模型，标志着AI编码工具进入自研模型时代。",
-      "source": "Cursor Blog/The Neuron",
-      "source_url": "https://cursor.com/blog/composer-2",
       "category": "AI工具",
-      "relevance": "高"
+      "relevance": "高",
+      "summary": "Cursor正式发布Composer 2，基于持续预训练+强化学习构建的编码专用模型，在编码基准测试中击败通用大模型Opus 4.6，每百万token成本仅0.50/2.50美元。这是垂直AI模型首次在公开基准上全面超越通用大模型。",
+      "source": "Cursor Blog",
+      "source_url": "https://cursor.com/blog/composer-2"
     },
     {
       "title": "微软回滚Windows Copilot功能：首次承认AI集成过度",
-      "summary": "微软大幅削减Windows 11中的Copilot AI入口，移除照片、小组件、记事本等应用中的AI功能，同步发布Windows质量承诺。这是科技巨头首次公开承认AI过度集成导致用户体验下降，引发行业对AI产品设计克制性的反思。",
-      "source": "TechCrunch AI/The Verge",
-      "source_url": "https://techcrunch.com/2026/03/20/microsoft-rolls-back-some-of-its-copilot-ai-bloat-on-windows/",
       "category": "行业动态",
-      "relevance": "高"
+      "relevance": "高",
+      "summary": "微软大幅削减Windows 11中的Copilot AI入口，移除照片、小组件、记事本等应用中的AI功能，同步发布Windows质量承诺。这是科技巨头首次公开承认AI过度集成导致用户体验下降。",
+      "source": "TechCrunch AI",
+      "source_url": "https://techcrunch.com/2026/03/20/microsoft-rolls-back-some-of-its-copilot-ai-bloat-on-windows/"
     },
     {
-      "title": "五角大楼正式采用Palantir Maven AI作为记录项目",
-      "summary": "五角大楼签署备忘录，正式将Palantir的Maven AI列为记录项目，锁定美军长期使用其武器瞄准AI技术。同时Anthropic否认五角大楼关于其可能在战争期间破坏AI工具的指控，AI军事化应用的伦理争议持续升温。",
-      "source": "The Neuron/Reuters",
-      "source_url": "https://www.theneuron.ai/ai-news-digests/arouond-the-horn-digest-weekof-march-21-2026/",
+      "title": "OpenAI开发「AI研究实习生」：9月上线，2028年实现全自动科研",
+      "category": "AI研究",
+      "relevance": "高",
+      "summary": "OpenAI首席科学家Jakub Pachocki公布两阶段计划：2026年9月推出能独立承担多天科研任务的「AI研究实习生」；长期目标是2028年3月实现全自动化多智能体研究系统。MIT Technology Review称这是OpenAI全力以赴自动化研究的标志。",
+      "source": "MIT Technology Review",
+      "source_url": "https://www.technologyreview.com/2026/03/20/1134438/openai-is-throwing-everything-into-building-a-fully-automated-researcher/"
+    },
+    {
+      "title": "宇树机器人申请上交所IPO融资6.1亿美元，冲击A股人形机器人第一股",
+      "category": "资本动态",
+      "relevance": "高",
+      "summary": "杭州宇树机器人（Unitree Robotics）向上交所科创板提交IPO申请，拟融资42亿元（约6.1亿美元），资金将用于AI模型研究和产能扩张。人形机器人已成为其2025年最大收入来源，有望成为中国A股首个人形机器人股票。",
+      "source": "CNBC",
+      "source_url": "https://www.cnbc.com/2026/03/20/unitree-plans-shanghai-ipo-testing-interest-in-humanoid-robots.html"
+    },
+    {
+      "title": "五角大楼正式采用Palantir Maven AI作为核心军事系统",
       "category": "AI政策",
-      "relevance": "高"
+      "relevance": "高",
+      "summary": "国防部副部长签署备忘录，正式将Palantir的Maven AI列为记录项目，计划2026年9月前将武器目标定位技术嵌入所有美国军事部门。同时Anthropic在法庭文件中否认同意五角大楼破坏其AI工具。",
+      "source": "The Neuron",
+      "source_url": "https://www.theneuron.ai/ai-news-digests/arouond-the-horn-digest-weekof-march-21-2026/"
+    },
+    {
+      "title": "Tiny Corp开售tinybox离线AI硬件：3086 TFLOPS放进车库",
+      "category": "AI硬件",
+      "relevance": "高",
+      "summary": "George Hotz创办的Tiny Corp开始发售tinybox深度学习专用计算机。基于开源tinygrad框架，顶配green v2版本拥有3086 TFLOPS FP16性能和384GB GPU显存。号称「最佳性价比」，让个人和小团队也能在本地运行大模型。",
+      "source": "Hacker News",
+      "source_url": "https://aitoolly.com/ai-news/article/2026-03-22-tiny-corp-unveils-tinybox-high-performance-offline-ai-hardware-supporting-massive-parameter-models"
     },
     {
       "title": "LangChain推出Open-SWE开源异步编码代理",
-      "summary": "LangChain官方发布Open-SWE开源项目，这是一个异步编码代理框架，旨在通过异步处理机制提升AI在软件工程任务中的协作效率。同日多个Claude Code生态工具上线：get-shit-done规范驱动系统、Claude HUD监控插件、learn-claude-code极简教学框架。",
-      "source": "AIToolly/GitHub",
-      "source_url": "https://github.com/langchain-ai/open-swe",
       "category": "AI工具",
-      "relevance": "高"
+      "relevance": "高",
+      "summary": "LangChain官方发布Open-SWE开源项目，异步编码代理框架，提升AI在软件工程任务中的协作效率。同日多个Claude Code生态工具上线：get-shit-done规范驱动系统、Claude HUD监控插件、learn-claude-code极简教学框架。",
+      "source": "GitHub",
+      "source_url": "https://github.com/langchain-ai/open-swe"
     },
     {
       "title": "Dreamer（/dev/agents）正式亮相：个人智能体操作系统",
-      "summary": "由Google前工程副总裁David Singleton领导的/dev/agents项目正式更名为Dreamer并结束隐身状态，提出「个人智能体操作系统」愿景——一个以Agent为核心的OS层。同时宣布1万美元新工具开发奖金计划。",
-      "source": "Latent Space",
-      "source_url": "https://www.latent.space/p/dreamer",
       "category": "AI产品",
-      "relevance": "高"
+      "relevance": "高",
+      "summary": "由Google前工程副总裁David Singleton领导的/dev/agents项目正式更名为Dreamer并结束隐身状态，提出「个人智能体操作系统」愿景——以Agent为核心的OS层，宣布1万美元新工具开发奖金计划。",
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/p/dreamer"
     },
     {
       "title": "WordPress.com允许AI代理直接撰写发布文章",
-      "summary": "WordPress.com推出AI代理功能，允许AI代理直接在平台上撰写并发布文章。虽然提升了发布效率，但引发了关于互联网机器生成内容泛滥的广泛担忧。这标志着内容生产正式进入「人机混合」时代。",
+      "category": "AI应用",
+      "relevance": "高",
+      "summary": "WordPress.com推出AI代理功能，允许AI直接在平台上撰写并发布文章。虽然提升了发布效率，但引发关于互联网机器生成内容泛滥的广泛担忧，标志内容生产正式进入「人机混合」时代。",
       "source": "TechCrunch AI",
-      "source_url": "https://techcrunch.com/2026/03/20/wordpress-com-now-lets-ai-agents-write-and-publish-posts-and-more/",
-      "category": "AI产品",
-      "relevance": "高"
+      "source_url": "https://techcrunch.com/2026/03/20/wordpress-com-now-lets-ai-agents-write-and-publish-posts-and-more/"
+    },
+    {
+      "title": "OpenAI与Criteo合作扩大ChatGPT广告试点",
+      "category": "商业模式",
+      "relevance": "中",
+      "summary": "OpenAI与法国广告技术公司Criteo合作，扩大面向免费和Go级别ChatGPT用户的美国广告试点。标志着OpenAI从纯订阅/API收入转向整合数字广告，试图通过多元化收入流抵消高昂运营成本。",
+      "source": "Tech in Asia",
+      "source_url": "https://aitoolly.com/ai-news/2026-03-22"
     },
     {
       "title": "索尼确认PlayStation将引入AI帧生成技术",
-      "summary": "PS5首席架构师Mark Cerny透露，基于机器学习的帧生成技术将在未来登陆PlayStation平台，利用AI在渲染帧之间生成新帧以提升游戏视觉流畅度。这是主机游戏领域首次官方确认AI帧生成的应用计划。",
-      "source": "The Verge",
-      "source_url": "https://www.theverge.com/news/898283/future-sony-playstation-games-will-use-ai-to-imagine-new-frames",
       "category": "AI应用",
-      "relevance": "中"
+      "relevance": "中",
+      "summary": "PS5首席架构师Mark Cerny透露，基于机器学习的帧生成技术将在未来登陆PlayStation平台，利用AI在渲染帧之间生成新帧以提升游戏视觉流畅度。这是主机游戏领域首次官方确认AI帧生成应用计划。",
+      "source": "The Verge",
+      "source_url": "https://www.theverge.com/news/898283/future-sony-playstation-games-will-use-ai-to-imagine-new-frames"
     },
     {
       "title": "Jeff Bezos筹集1000亿美元Project Prometheus：用AI改造制造业",
-      "summary": "亚马逊创始人Jeff Bezos正在筹集高达1000亿美元的Project Prometheus基金，计划利用AI收购和改造航空航天、芯片制造和国防领域的制造公司。这是迄今为止规模最大的AI+制造业投资计划。",
+      "category": "资本动态",
+      "relevance": "高",
+      "summary": "亚马逊创始人Jeff Bezos正在筹集高达1000亿美元的Project Prometheus基金，计划利用AI收购和改造航空航天、芯片制造和国防领域的制造公司。这是迄今规模最大的AI+制造业投资计划。",
       "source": "The Neuron",
-      "source_url": "https://www.theneuron.ai/ai-news-digests/arouond-the-horn-digest-weekof-march-21-2026/",
-      "category": "投融资",
-      "relevance": "高"
+      "source_url": "https://www.theneuron.ai/ai-news-digests/arouond-the-horn-digest-weekof-march-21-2026/"
     },
     {
       "title": "Rust WASM回归TypeScript：OpenUI解析器重写获3倍性能提升",
-      "summary": "OpenUI团队分享了将Rust WASM解析器用TypeScript重写后获得3倍性能提升的经历。分析指出WASM与JS环境间的「边界税」（内存拷贝、序列化开销）是主要性能瓶颈，为Web性能优化提供了反直觉的案例。",
-      "source": "Hacker News",
-      "source_url": "https://www.openui.com/blog/rust-wasm-parser",
       "category": "技术研究",
-      "relevance": "中"
+      "relevance": "中",
+      "summary": "OpenUI团队将Rust WASM解析器用TypeScript重写后获3倍性能提升。WASM与JS环境间的「边界税」（内存拷贝、序列化开销）是主要瓶颈，为Web性能优化提供了反直觉的案例。",
+      "source": "Hacker News",
+      "source_url": "https://www.openui.com/blog/rust-wasm-parser"
     }
   ],
   "sources_checked": [
