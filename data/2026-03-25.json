@@ -1,7 +1,7 @@
 {
   "date": "2026-03-25",
-  "generated_at": "2026-03-25T08:00:00+08:00",
-  "daily_summary": "今日AI领域多线并进：Anthropic诉五角大楼案在旧金山联邦法院开庭，就AI伦理红线与政府使用权争议进行历史性听证；Google Labs将Stitch升级为AI原生设计平台，支持自然语言直接生成高保真UI；Cursor承认其Composer 2模型底层基于中国Moonshot AI的Kimi K2.5，引发开源许可争议；Luma AI发布Uni-1推理优先图像模型；OpenAI向PE提供17.5%保证回报争夺企业市场；马斯克联合特斯拉、SpaceX、xAI宣布Terafab超级芯片厂计划；Meta收购AI智能体创业公司Dreamer；中关村论坛AI主题日系列活动今日开幕；西湖大学发布搭载全球首个动作泛化大模型的人形机器人泰坦o1。AI政策层面，美国财政部启动AI创新系列计划，白宫AI立法框架持续推进。",
+  "generated_at": "2026-03-25T09:00:00+08:00",
+  "daily_summary": "今日AI领域多线并进、重磅频出：黄仁勋在Lex Fridman播客中宣布AGI已经实现引发全球热议；Anthropic诉五角大楼案在旧金山联邦法院开庭，AI伦理红线与国家安全的历史性对决；Sam Altman辞去核聚变初创公司Helion Energy董事会为OpenAI能源合作铺路；Google Stitch升级为AI原生设计平台；Cursor套壳Kimi K2.5事件持续发酵；字节跳动DeerFlow 2.0超级智能体框架登顶GitHub趋势榜；Mozilla AI推出Cq打造智能体的Stack Overflow；小米三款自研大模型MiMo-V2已全面开放API；Littlebird获1100万美元融资打造实时屏幕理解AI；中关村论坛与AI EXPO Taiwan两场大型AI展会今日同步开幕；OpenAI向PE提供17.5%保证回报；马斯克Terafab超级芯片厂计划；苹果WWDC 2026定档6月8日，Siri AI大升级在望。",
   "design_insights": [
     {
       "title": "Google Stitch重新定义UI设计流程：从文字到高保真界面的AI革命",
@@ -57,6 +57,17 @@
         {"name": "腾讯新闻", "url": "https://news.qq.com/rain/a/20260323A06HWI00"}
       ],
       "tags": ["具身智能", "泛化学习", "人机交互", "风格迁移"]
+    },
+    {
+      "title": "从孤立推理到集体智慧：Mozilla Cq与DeerFlow 2.0揭示AI Agent协作新范式",
+      "summary": "Mozilla AI推出Cq项目，定位为AI编程智能体的Stack Overflow——让多个AI Agent共享过去的学习成果、贡献新知识、避免在隔离环境中重复犯错。与此同时，字节跳动开源的DeerFlow 2.0超级智能体框架支持沙盒、长效记忆和多智能体编排，可处理持续数小时的复杂研究和编码任务。两者共同指向一个趋势：AI系统正从单Agent独立推理，向多Agent协作、知识共享的集体智慧范式演进。Stack Overflow月提问量已从2014年巅峰的20万降至2025年底的3862，AI正在重塑知识生产和消费的方式。",
+      "implication": "这一趋势对输入法AI功能有深远启示：1）输入法AI帮写可借鉴Cq的'集体智慧'理念，建立用户群体的匿名化写作模式库——当某个场景下大量用户选择特定表达方式时，将其沉淀为群体偏好推荐；2）参考DeerFlow的多Agent编排，输入法可在后台同时调用多个专项Agent（语法检查Agent、风格优化Agent、事实核查Agent）协作完成高质量输出；3）长效记忆机制可用于输入法记住用户跨会话的写作偏好和常用表达，实现真正的个性化AI助手。",
+      "sources": ["Mozilla AI Blog", "字节跳动", "The Register"],
+      "source_urls": [
+        {"name": "Mozilla AI Blog", "url": "https://blog.mozilla.ai/cq-stack-overflow-for-agents/"},
+        {"name": "The Register", "url": "https://www.theregister.com/2026/03/24/mozilla_introduces_cq_stack_overflow/"}
+      ],
+      "tags": ["智能体协作", "知识共享", "多Agent架构", "集体智慧"]
     }
   ],
   "demand_mining": [
@@ -102,6 +113,17 @@
       "source_urls": [
         {"name": "Google Stitch Blog", "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/"},
         {"name": "Stitch Guide", "url": "https://www.tinyash.com/blog/google-stitch-ui-design-guide/"}
+      ]
+    },
+    {
+      "title": "基于屏幕上下文的智能输入预测：从Littlebird的实时屏幕理解获取灵感",
+      "pain_point": "用户在输入文字时，输入法无法感知用户当前正在查看的屏幕内容。例如用户在浏览一篇产品评测后想发评论，输入法无法利用屏幕上下文来辅助理解用户意图，导致AI帮写推荐的内容与实际场景脱节。",
+      "opportunity": "参考Littlebird的实时屏幕上下文理解技术，在输入法中引入'屏幕感知输入'功能：1）在用户授权后，AI读取当前屏幕文本内容作为上下文，智能预测用户可能想输入的内容；2）在回复邮件、评论商品、回应消息时，自动提取屏幕关键信息生成更精准的回复建议；3）结合剪贴板历史和屏幕上下文，提供'基于当前工作流'的智能输入补全。需特别注意：必须采用端侧处理、用户显式授权、不存储屏幕数据的隐私优先设计。",
+      "priority": "中",
+      "evidence": "Littlebird获得1100万美元融资验证了屏幕上下文理解的市场需求；其AI实时读取屏幕而非依赖截图的技术路径已获投资者认可；微软Recall功能虽因隐私争议受挫但市场需求真实存在",
+      "source_urls": [
+        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/23/littlebird-raises-11m-to-capture-context-from-your-computer-so-you-can-query-your-data/"},
+        {"name": "Morningstar", "url": "https://www.morningstar.com/news/pr-newswire/20260324fl15139/littlebird-raises-11-million-to-launch-the-only-ai-that-already-knows-what-youre-working-on"}
       ]
     }
   ],
@@ -225,6 +247,70 @@
       "summary": "来自Pause AI和QuitGPT的近200名活动人士在旧金山从Anthropic游行至OpenAI和xAI办公室，要求CEO公开承诺暂停前沿AI开发。这是2026年以来规模最大的AI安全抗议活动，反映出公众对AI军备竞赛的担忧。",
       "source": "Creati.ai",
       "source_url": "https://creati.ai/ai-news/2026-03-24/ai-safety-protesters-march-openai-anthropic-xai-offices-pause-ai-race/"
+    },
+    {
+      "title": "黄仁勋在Lex Fridman播客宣布AGI已实现，引发全球争议",
+      "category": "行业动态",
+      "relevance": "高",
+      "summary": "英伟达CEO黄仁勋在Lex Fridman播客中明确表示「我认为我们已经实现了AGI」，同时断言中国AI进化速度世界第一，预测编程人数将达10亿。他重新定义了AGI的标准，引发业界对AGI定义和实现路径的广泛讨论。",
+      "source": "腾讯新闻",
+      "source_url": "https://news.qq.com/rain/a/20260324A03YV200"
+    },
+    {
+      "title": "Sam Altman辞去Helion Energy董事会，为OpenAI核聚变能源合作铺路",
+      "category": "行业动态",
+      "relevance": "高",
+      "summary": "OpenAI CEO Sam Altman正式辞去核聚变初创公司Helion Energy董事长职务，因两家公司正在探索大规模能源合作。据Axios报道，Helion计划向OpenAI数据中心提供5吉瓦核聚变电力，这将是AI行业首个核聚变供电协议。",
+      "source": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/03/23/sam-altman-openai-fusion-energy-board-helion/"
+    },
+    {
+      "title": "字节跳动DeerFlow 2.0超级智能体框架登顶GitHub趋势榜",
+      "category": "AI工具",
+      "relevance": "高",
+      "summary": "字节跳动开源的DeerFlow 2.0超级智能体框架发布即登顶GitHub Trending，采用MIT许可证。该框架从深度研究工具升级为通用超级Agent引擎，集成沙盒环境、长效记忆和多智能体编排，支持处理持续数小时的复杂研究、编码和创作任务。",
+      "source": "AI工具集",
+      "source_url": "https://ai-bot.cn/deerflow-2-0/"
+    },
+    {
+      "title": "Mozilla AI推出Cq：打造AI编程智能体的Stack Overflow",
+      "category": "AI工具",
+      "relevance": "中",
+      "summary": "Mozilla AI发布开源项目Cq，定位为AI编码智能体的知识共享平台。该平台让AI Agent可以查询过去的学习成果、贡献新知识，避免在隔离环境中重复犯错。背景是Stack Overflow月提问量已从2014年巅峰的20万降至2025年底的3862。",
+      "source": "The Register",
+      "source_url": "https://www.theregister.com/2026/03/24/mozilla_introduces_cq_stack_overflow/"
+    },
+    {
+      "title": "Littlebird获1100万美元融资，打造实时屏幕理解AI助手",
+      "category": "资本动态",
+      "relevance": "中",
+      "summary": "AI初创公司Littlebird宣布完成1100万美元种子轮融资（Lotus Studio领投），其核心产品能实时读取用户电脑屏幕文本（非截图），捕捉连续上下文来回答问题和自动化任务。与微软Recall不同，Littlebird采用隐私优先的纯文本处理方案。",
+      "source": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/03/23/littlebird-raises-11m-to-capture-context-from-your-computer-so-you-can-query-your-data/"
+    },
+    {
+      "title": "苹果WWDC 2026定档6月8日：Siri AI能力将迎重大升级",
+      "category": "行业动态",
+      "relevance": "中",
+      "summary": "苹果正式宣布2026年全球开发者大会（WWDC）定于6月8日至12日举办，预计将为Siri带来基于大语言模型的重大更新，包括更强的自然语言理解、跨应用任务执行和上下文记忆能力，旨在追赶ChatGPT和Gemini的智能助手体验。",
+      "source": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/03/23/apple-wwdc-june-8-12-ai-advancements-siri-developers-conference/"
+    },
+    {
+      "title": "AI EXPO Taiwan 2026今日开幕：聚焦三大AI应用主题",
+      "category": "行业动态",
+      "relevance": "中",
+      "summary": "AI EXPO Taiwan 2026于今日（3月25日）在台北花博公园开幕，为期三天（25-27日），由DIGITIMES等联合主办。展会聚焦三大AI应用主题，将揭晓新的AI产业蓝图，涵盖量子计算、AI基础设施等前沿领域。",
+      "source": "DIGITIMES",
+      "source_url": "https://www.digitimes.com/news/a20260320PD210/2026-taiwan-expo-taipei-technology.html"
+    },
+    {
+      "title": "小米三款自研大模型MiMo-V2全面开放API：旗舰Pro跻身全球第一梯队",
+      "category": "大模型",
+      "relevance": "高",
+      "summary": "小米发布三款自研大模型：万亿参数旗舰基座MiMo-V2-Pro（此前匿名Hunter Alpha）、全模态MiMo-V2-Omni和语音合成MiMo-V2-TTS，已登陆小米miclaw、金山办公等产品并开放API。雷军宣布2026年AI投入将超160亿元。",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/0/930/440.htm"
     }
   ]
 }
