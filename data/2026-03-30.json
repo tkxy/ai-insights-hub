@@ -1,0 +1,208 @@
+{
+  "date": "2026-03-30",
+  "generated_at": "2026-03-30T08:08:00+08:00",
+  "daily_summary": "本周末至周一，AI行业延续密集态势。Bluesky正式发布基于Claude的社交AI助手Attie，让用户用自然语言定制信息流，标志着AI Agent进入社交平台内容分发的核心层。礼来与英矽智能达成27.5亿美元AI制药合作，创下AI药物发现商业化最大单笔交易。xAI全部11位联合创始人已离开，马斯克承认公司需要重建。苹果向iPhone设计团队发放20-40万美元留任奖金以阻止OpenAI挖角，iOS 27将开放第三方AI聊天机器人集成到Siri。亚马逊发布A-Evolve框架，被称为Agentic AI的「PyTorch时刻」。Anthropic内部泄漏文件显示新模型Mythos网络能力远超现有AI。亲AI政治组织Innovation Council Action承诺投入超1亿美元影响2026美国中期选举AI政策。ActivTrak研究报告显示AI普及后职场工作量不减反增，工作碎片化加剧。Harvey AI以110亿美元估值完成2亿美元融资，风投关注点从大模型转向垂直AI应用。",
+  "design_insights": [
+    {
+      "title": "社交平台AI Agent化：从推荐算法到用户可编程信息流",
+      "summary": "Bluesky在Atmosphere大会上正式推出Attie——一款基于Anthropic Claude构建的AI助手应用，允许用户通过自然语言描述构建个性化信息流。Attie基于AT Protocol开放协议，用户无需编程即可定义算法规则，实现对社交内容分发逻辑的直接控制。这意味着AI正在从平台侧的黑箱推荐引擎，转变为用户侧可定义、可调试的内容管理工具。与此同时，OpenAI的Codex Plugins已接入Slack、Figma、Notion等20余种工具，AI Agent的能力触角正从单点对话扩展到多应用协同操作。",
+      "implication": "输入法作为移动端最高频的文字输入入口，其AI帮写功能可借鉴Attie的「用户可定义规则」设计思路。当前帮写功能多是通用prompt驱动，缺乏个性化配置能力。可探索让用户通过自然语言设置个人写作偏好规则，如「正式邮件自动使用敬语」「朋友圈文案偏活泼口语」「工作群消息简洁直接」等。这种可编程的写作人设，既提升帮写结果的匹配度，也创造用户粘性——规则越丰富，迁移成本越高。技术上可参考AT Protocol的规则描述范式，用结构化schema存储用户写作偏好。",
+      "sources": ["TechCrunch", "The Verge", "Gizmodo", "The Neuron"],
+      "source_urls": [
+        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/28/bluesky-leans-into-ai-with-attie-an-app-for-building-custom-feeds/"},
+        {"name": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/903190/bluesky-attie-ai-custom-feeds"},
+        {"name": "Gizmodo", "url": "https://gizmodo.com/bluesky-has-a-new-app-and-its-all-about-ai-2000739514"}
+      ],
+      "tags": ["AI Agent", "社交平台", "个性化推荐", "用户可编程"]
+    },
+    {
+      "title": "AI能力外溢至操作系统层：Siri开放与多模型竞争入口争夺",
+      "summary": "苹果iOS 27将允许Gemini、Claude等第三方AI聊天机器人通过新的扩展系统集成到Siri中运行，App Store将设立独立的AI聊天机器人专区。同时苹果正开发代号「Campos」的自有聊天机器人，底层由Google Gemini驱动。苹果还以20-40万美元留任奖金阻止iPhone产品设计工程师跳槽至OpenAI，已有超过40名苹果硬件及设计人才被挖走。这表明AI大模型的竞争正从应用层下沉到操作系统层，入口争夺已从独立App转向系统级集成。手机厂商正在从「AI功能提供方」变为「AI能力调度平台」。",
+      "implication": "iOS 27开放Siri第三方AI接入后，输入法AI功能将面临新的竞争格局：用户在任何输入场景都可能通过Siri直接调用Claude或Gemini完成写作。输入法的差异化需要从「也能AI帮写」转向「在输入框内提供更丝滑的上下文感知体验」。建议关注三个方向：①强化输入框内的即时AI辅助（不需要切换到Siri），②利用输入法独有的打字上下文信息（当前对话对象、输入习惯、历史用词），③探索与iOS AI扩展系统的兼容接入，争取成为Siri可调用的AI写作插件之一。",
+      "sources": ["IT之家", "MacRumors", "TechTimes", "The Neuron"],
+      "source_urls": [
+        {"name": "MacRumors", "url": "https://www.macrumors.com/2026/03/26/apple-iphone-designer-bonuses/"},
+        {"name": "IT之家", "url": "https://www.toutiao.com/article/7622824099089285670/"},
+        {"name": "TechTimes", "url": "https://www.techtimes.com/articles/315475/20260326/apple-offers-massive-bonuses-iphone-design-team-stop-talent-poaching-openai-rivals.htm"}
+      ],
+      "tags": ["iOS生态", "Siri开放", "入口竞争", "操作系统AI"]
+    },
+    {
+      "title": "AI普及引发工作模式悖论：效率工具反而加剧碎片化",
+      "summary": "ActivTrak生产力实验室发布的《2026职场现状》研究报告揭示一个反直觉的现象：尽管AI工具覆盖率达80%，员工日均专注工作时长却跌至三年最低。邮件和即时沟通耗时激增超100%，周六工作开始时间提前至清晨7:11。工作节奏提速远超组织适配能力，AI效率并未转化为高价值产出，反而催生了更多琐碎沟通和碎片化任务。这一研究引发热议，「AI没减轻负担反而加剧了工作强度」话题曾冲上中文互联网热搜。",
+      "implication": "这一研究为输入法AI帮写功能提供了新的设计视角：用户真正的痛点不是「写不出来」，而是「一天要写太多东西，每一条都要快速处理」。帮写功能的优化方向应从「单次生成质量」向「批量沟通效率」倾斜。具体建议：①针对碎片化场景设计快速回复模板（工作群@、邮件回复、审批意见等），②增加「上下文连续模式」——在同一会话中连续帮写时保持语气和立场一致，③考虑通知消息的智能预回复建议——在用户点进消息前就准备好回复选项，将响应时间从分钟级压缩到秒级。",
+      "sources": ["ActivTrak", "IT之家", "快科技", "Techradar"],
+      "source_urls": [
+        {"name": "IT之家", "url": "https://www.toutiao.com/article/7622824099089285670/"},
+        {"name": "快科技", "url": "https://post.smzdm.com/p/ak8ndqxr/"},
+        {"name": "ITBear", "url": "https://www.itbear.com.cn/html/2026-03/1242885.html"}
+      ],
+      "tags": ["AI效率悖论", "工作碎片化", "生产力研究", "沟通场景"]
+    },
+    {
+      "title": "垂直AI应用进入高估值时代：从大模型到领域Agent的投资转向",
+      "summary": "法律AI公司Harvey以110亿美元估值完成2亿美元融资，红杉资本第三次加注。同期，Intercom发布自研模型Apex 1.0，在客服场景中解决率、速度和成本均超越GPT-5.4和Opus 4.5，100%英语聊天/邮件已由自研模型运行。AI制药领域，礼来与英矽智能签署27.5亿美元合作协议，将AI发现的药物推向全球市场。这三条新闻共同指向一个趋势：AI投资重心正从通用大模型转向「领域专精+Agent执行」，垂直场景的自研小模型在特定指标上已可击败通用大模型。",
+      "implication": "输入法AI帮写本质上也是一个垂直场景应用。Intercom Apex的成功证明，针对特定场景微调的小模型完全可以超越通用大模型。建议评估在高频输入场景（如聊天回复、朋友圈文案、工作汇报）上训练专用小模型的可行性。一方面可以显著降低推理成本和延迟（端侧部署），另一方面可以在特定场景的语气、长度、格式控制上做到比通用大模型更精准。Apex「自行决定哪些操作安全运行」的auto mode设计，也可借鉴到帮写功能中——根据场景自动调整AI介入深度，聊天场景轻量建议，正式文档深度润色。",
+      "sources": ["TechCrunch", "CNBC", "Harvey Blog", "The Neuron"],
+      "source_urls": [
+        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/25/harvey-confirms-11b-valuation-sequoia-triples-down/"},
+        {"name": "CNBC", "url": "https://www.cnbc.com/2026/03/25/legal-ai-startup-harvey-raises-200-million-at-11-billion-valuation.html"},
+        {"name": "CNBC", "url": "https://www.cnbc.com/2026/03/29/eli-lilly-reaches-deal-to-bring-ai-developed-drugs-to-global-market.html"}
+      ],
+      "tags": ["垂直AI", "投资趋势", "领域专用模型", "Agent商业化"]
+    },
+    {
+      "title": "语音AI三线并进：TTS开源化、端侧实时化、跨语言翻译即时化",
+      "summary": "同一周末内语音AI领域出现三个标志性进展：Mistral发布Voxtral TTS——一个3B参数的开源权重TTS模型，支持9种语言和5秒语音克隆，质量超越ElevenLabs商业模型，可运行在智能手表级别硬件上；Cohere推出排名第一的语音转文本模型；Sanas发布支持13种语言的实时翻译系统。开源TTS模型质量首次超越商业闭源产品，意味着语音合成能力正快速平民化和端侧化。与此同时，Moondream Photon实现46毫秒端到端视觉推理，多模态端侧能力正在突破实用门槛。",
+      "implication": "Voxtral TTS的出现意味着高质量语音合成已可在端侧低成本实现。输入法可以探索「帮写→帮说」的能力延伸：在AI帮用户生成文本后，提供一键语音化选项，用于发送语音消息。应用场景包括：开车时口述意图→AI帮写→语音合成发送、老年用户打字困难时的语音辅助、跨语言沟通场景的实时翻译+语音朗读。技术上3B参数模型已可端侧运行，无需云端调用，延迟和隐私都有保障。建议优先关注Voxtral的中文支持进展，评估集成可行性。",
+      "sources": ["The Neuron", "Mistral AI", "MarkTechPost"],
+      "source_urls": [
+        {"name": "The Neuron", "url": "https://www.theneuron.ai/ai-news-digests/-around-the-horn-digest-everything-that-happened-in-ai-this-weekend-march-28-29-2026/"},
+        {"name": "MarkTechPost", "url": "https://www.marktechpost.com/2026/03/29/meet-a-evolve-the-pytorch-moment-for-agentic-ai-systems-replacing-manual-tuning-with-automated-state-mutation-and-self-correction/"}
+      ],
+      "tags": ["语音AI", "TTS开源", "端侧推理", "多模态"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "输入法写作人设规则引擎",
+      "pain_point": "用户在不同场景（工作邮件、朋友圈、家人聊天、客户沟通）中需要截然不同的表达风格，但目前帮写功能只有通用prompt，每次都要手动描述语气要求或事后修改，频繁切换场景时效率很低。尤其是需要在同一时间段内处理多个不同语境的消息（如先回老板再发朋友圈再回家族群），语气切换成本高。",
+      "opportunity": "在帮写功能中增加「写作人设」配置入口。入口位置：帮写面板顶部增加人设切换按钮（类似输入法皮肤切换）。触发条件：用户点击帮写时自动匹配当前对话对象关联的人设，或根据App识别自动推荐。核心能力：用户通过自然语言描述个人写作规则（如「给领导的消息用您称呼，结尾加感谢语」「给闺蜜可以用缩写和emoji」），系统将规则结构化存储并在帮写时自动应用。MVP方案：首期支持3个预设人设（正式/日常/亲密）+ 1个自定义人设，基于规则模板填写，不需要完全自然语言理解。首期场景覆盖：微信聊天、短信、邮件App。",
+      "priority": "高",
+      "evidence": "Bluesky Attie让用户用自然语言定义信息流规则并即时生效，验证了「用户可编程AI规则」的产品模式在消费级产品中可行且受欢迎。ActivTrak研究显示用户每天在碎片化沟通上花费的时间激增100%，多场景快速切换已成为刚需。当前市场上尚未有输入法产品提供场景化人设配置功能，存在先发优势窗口。",
+      "source_urls": [
+        {"name": "TechCrunch - Bluesky Attie", "url": "https://techcrunch.com/2026/03/28/bluesky-leans-into-ai-with-attie-an-app-for-building-custom-feeds/"},
+        {"name": "IT之家 - AI工作碎片化研究", "url": "https://www.toutiao.com/article/7622824099089285670/"}
+      ]
+    },
+    {
+      "title": "消息通知智能预回复卡片",
+      "pain_point": "用户收到工作群@消息、邮件回复、审批请求等通知后，需要点进去阅读上下文再组织回复，一条消息从看到到回完常常需要1-3分钟。ActivTrak数据显示日均沟通耗时激增超100%，大量时间花在「看消息→理解语境→想回复→打字发送」的循环中。尤其在会议间隙或通勤路上，碎片时间处理消息的效率极低。",
+      "opportunity": "在输入法层拦截通知内容，在用户打开聊天窗口时即在输入框上方展示2-3个智能预回复建议卡片。入口位置：输入法键盘上方的悬浮建议栏（类似当前的快捷短语栏位）。触发条件：检测到用户从通知跳转进入聊天窗口时自动触发，读取最近几条消息上下文生成回复建议。核心能力：基于对话上下文的轻量回复生成，支持一键发送和微调编辑。MVP方案：首期仅覆盖微信/钉钉/飞书三个App，预回复建议限制为短回复（50字以内），提供「同意/知晓/追问」三种意图方向。不处理复杂的长篇回复场景。",
+      "priority": "高",
+      "evidence": "ActivTrak《2026职场现状》报告量化了沟通碎片化问题的严重程度。Claude Code已支持通过iMessage控制Agent、Ramp CLI让Agent管理公司财务，证明AI Agent正在渗透日常工作流的即时通讯层。目前主流输入法仅在用户主动触发帮写时提供建议，尚未有产品实现「被动场景下的主动预回复」，这是通知到输入法的原生路径优势。",
+      "source_urls": [
+        {"name": "IT之家 - AI工作碎片化", "url": "https://www.toutiao.com/article/7622824099089285670/"},
+        {"name": "快科技 - AI越普及越忙", "url": "https://post.smzdm.com/p/ak8ndqxr/"},
+        {"name": "The Neuron - 周末AI汇总", "url": "https://www.theneuron.ai/ai-news-digests/-around-the-horn-digest-everything-that-happened-in-ai-this-weekend-march-28-29-2026/"}
+      ]
+    },
+    {
+      "title": "帮写文本一键语音合成发送",
+      "pain_point": "用户在开车、做饭、运动等手不方便打字的场景下需要回复消息，当前只能用语音输入（识别率受环境噪音影响大）或等到有空再回。另一方面，部分社交场景中接收方更偏好收到语音消息（如家庭群、亲密朋友），但用户碍于环境或表达能力不愿录语音。",
+      "opportunity": "在帮写功能生成文本后，增加「转为语音发送」按钮。入口位置：帮写结果卡片右下角，与「发送文本」并列。触发条件：帮写生成文本后自动显示语音化选项；当检测到用户连接蓝牙耳机或处于驾驶模式时，优先高亮语音发送选项。核心能力：调用端侧TTS模型将帮写文本转为用户声纹匹配的语音片段，支持预览后一键发送。MVP方案：首期使用预设的自然语音（非声纹克隆），支持男声/女声切换，仅支持中文。首期场景：微信语音消息发送。声纹克隆作为后续版本功能。",
+      "priority": "中",
+      "evidence": "Mistral Voxtral TTS开源模型在3B参数下已实现超越ElevenLabs的质量，可运行在智能手表级硬件上，证明端侧高质量TTS技术已成熟。Sanas同时发布13种语言实时翻译，多语言语音合成正在标准化。当前国内主流输入法均未提供帮写→语音一体化功能，存在差异化机会。",
+      "source_urls": [
+        {"name": "The Neuron - 语音AI层爆发", "url": "https://www.theneuron.ai/ai-news-digests/-around-the-horn-digest-everything-that-happened-in-ai-this-weekend-march-28-29-2026/"},
+        {"name": "MarkTechPost - A-Evolve", "url": "https://www.marktechpost.com/2026/03/29/meet-a-evolve-the-pytorch-moment-for-agentic-ai-systems-replacing-manual-tuning-with-automated-state-mutation-and-self-correction/"}
+      ]
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Bluesky推出AI助手Attie：基于Claude构建用户可编程信息流",
+      "category": "产品发布",
+      "relevance": "高",
+      "summary": "Bluesky在Atmosphere大会上正式发布Attie，一款基于Anthropic Claude构建的AI助手应用。用户可通过自然语言描述创建个性化信息流和定义算法规则，无需编程能力。Attie基于AT Protocol开放协议，前CEO Jay Graber和CTO Paul Frazee亲自介绍。这是去中心化社交平台首次将AI Agent深度集成到内容分发核心。",
+      "source": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/03/28/bluesky-leans-into-ai-with-attie-an-app-for-building-custom-feeds/"
+    },
+    {
+      "title": "礼来与英矽智能达成27.5亿美元AI制药合作",
+      "category": "资本动态",
+      "relevance": "中",
+      "summary": "美国制药巨头礼来与港股上市公司英矽智能（Insilico Medicine）签署重磅协议，前期支付1.15亿美元，总交易价值可达27.5亿美元。双方将合作利用英矽智能的Pharma.AI药物发现平台，将AI发现的候选药物推向全球市场。这是AI药物发现领域迄今最大的商业化合作交易。",
+      "source": "CNBC",
+      "source_url": "https://www.cnbc.com/2026/03/29/eli-lilly-reaches-deal-to-bring-ai-developed-drugs-to-global-market.html"
+    },
+    {
+      "title": "xAI全部11位联合创始人已离开，马斯克承认需要重建",
+      "category": "行业动态",
+      "relevance": "高",
+      "summary": "马斯克AI公司xAI的最后一位联合创始人Manuel Kroiss（负责预训练团队）于本月确认离职，至此全部11位联合创始人均已离开。马斯克此前承认xAI「一开始没走对路子」，需要从头重建。xAI已被SpaceX收购，目前正在重新招募团队。Grok模型在ARC-AGI-3测试中得分0%，远落后于竞争对手。",
+      "source": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/03/28/elon-musks-last-co-founder-reportedly-leaves-xai/"
+    },
+    {
+      "title": "苹果发放20-40万美元留任奖金，阻止OpenAI挖角iPhone设计团队",
+      "category": "行业动态",
+      "relevance": "高",
+      "summary": "据彭博社报道，苹果于3月26日向iPhone产品设计团队多名成员发放非周期性RSU留任奖金（20-40万美元），以阻止OpenAI的激进挖角行动。超过40名苹果硬件及设计工程师已被OpenAI吸引离职。同时，iOS 27将开放第三方AI聊天机器人（Gemini、Claude等）集成至Siri，App Store将设立AI专区。",
+      "source": "MacRumors",
+      "source_url": "https://www.macrumors.com/2026/03/26/apple-iphone-designer-bonuses/"
+    },
+    {
+      "title": "Anthropic内部泄漏：新模型Mythos网络能力远超所有现有AI",
+      "category": "大模型",
+      "relevance": "高",
+      "summary": "安全研究人员在Anthropic一个未受保护的数据库中发现近3000份未发布文档。泄漏草案显示新模型Mythos（代号Capybara）是Opus之上的新层级，在编码、推理和网络安全方面得分「显著更高」，文档警告其网络能力「远超任何其他AI模型」。受此影响，CrowdStrike和Palo Alto Networks等网络安全股周五分别下跌7%和6%。",
+      "source": "The Neuron",
+      "source_url": "https://www.theneuron.ai/ai-news-digests/-around-the-horn-digest-everything-that-happened-in-ai-this-weekend-march-28-29-2026/"
+    },
+    {
+      "title": "亚马逊发布A-Evolve框架，被称为Agentic AI的「PyTorch时刻」",
+      "category": "AI工具",
+      "relevance": "中",
+      "summary": "亚马逊研究团队发布A-Evolve，一个旨在自动化自主AI Agent开发的通用基础设施框架。它通过自动状态变异和自我纠错机制取代手动调优，使Agent能在运行时自主进化。该框架被业界比作Agentic AI领域的「PyTorch时刻」，有望大幅降低Agent开发门槛。",
+      "source": "MarkTechPost",
+      "source_url": "https://www.marktechpost.com/2026/03/29/meet-a-evolve-the-pytorch-moment-for-agentic-ai-systems-replacing-manual-tuning-with-automated-state-mutation-and-self-correction/"
+    },
+    {
+      "title": "AI普及后职场工作量不减反增：ActivTrak发布2026职场现状报告",
+      "category": "行业动态",
+      "relevance": "高",
+      "summary": "员工行为分析平台ActivTrak发布《2026职场现状》报告，数据显示AI工具覆盖率达80%但员工日均专注工作时长跌至三年最低。邮件和即时沟通耗时激增超100%，周六工作开始时间提前至清晨7:11，工作碎片化严重。AI效率提升被更高的工作节奏吞噬，未转化为减负成果。该话题在中国互联网引发热议。",
+      "source": "IT之家",
+      "source_url": "https://www.toutiao.com/article/7622824099089285670/"
+    },
+    {
+      "title": "亲AI政治组织承诺投入超1亿美元影响2026美国中期选举",
+      "category": "AI政策",
+      "relevance": "中",
+      "summary": "由白宫AI顾问David Sacks支持的亲AI政治组织Innovation Council Action宣布，将投入超1亿美元用于2026年美国中期选举，推动放松AI监管政策。这是AI产业首次以如此大规模资金直接介入选举政治，标志着AI政策博弈进入新阶段。同期，Sanders和AOC提议在国会通过AI法规前禁止新建数据中心。",
+      "source": "Fox News",
+      "source_url": "https://www.foxnews.com/politics/new-pro-ai-group-backed-trump-allies-plans-100m-midterm-spending-push"
+    },
+    {
+      "title": "Harvey AI以110亿美元估值完成2亿美元融资",
+      "category": "资本动态",
+      "relevance": "中",
+      "summary": "法律AI初创公司Harvey完成2亿美元新一轮融资，由GIC和红杉资本联合领投，估值达110亿美元。红杉资本第三次加注Harvey。该公司为律所和企业法务团队提供AI Agent工具，其成功标志着风投关注点正从通用大模型公司转向垂直领域AI应用，领域专精的Agent平台正成为新的高估值赛道。",
+      "source": "CNBC",
+      "source_url": "https://www.cnbc.com/2026/03/25/legal-ai-startup-harvey-raises-200-million-at-11-billion-valuation.html"
+    },
+    {
+      "title": "ARC-AGI-3基准测试：所有前沿模型得分低于1%",
+      "category": "技术研究",
+      "relevance": "中",
+      "summary": "新发布的ARC-AGI-3基准测试设计了100%人类首次尝试即可解决的任务，但所有前沿AI模型得分均低于1%。Gemini 3.1 Pro以0.37%领先，Grok 4.2得分为0%。这一测试再次凸显当前AI系统在真正「新颖推理」能力上与人类的巨大差距，挑战了「AGI已至」的乐观叙事。Symbolica使用Agentica框架在该测试上达到36%，展现出不同技术路线的潜力。",
+      "source": "The Neuron",
+      "source_url": "https://www.theneuron.ai/ai-news-digests/-around-the-horn-digest-everything-that-happened-in-ai-this-weekend-march-28-29-2026/"
+    },
+    {
+      "title": "Mistral发布Voxtral TTS：3B开源TTS模型质量超越ElevenLabs",
+      "category": "产品发布",
+      "relevance": "中",
+      "summary": "Mistral AI发布Voxtral TTS，一个3B参数的开源权重文本转语音模型，支持9种语言和5秒语音克隆功能，在质量评测中超越了ElevenLabs等商业TTS产品。该模型体积小到可运行在智能手表上，是开源TTS模型首次在质量上全面超越闭源商业产品，将加速语音合成能力的平民化和端侧化部署。",
+      "source": "The Neuron",
+      "source_url": "https://www.theneuron.ai/ai-news-digests/-around-the-horn-digest-everything-that-happened-in-ai-this-weekend-march-28-29-2026/"
+    },
+    {
+      "title": "Claude在90分钟内挖出存在20年的安全漏洞",
+      "category": "技术研究",
+      "relevance": "中",
+      "summary": "据量子位报道，Anthropic的Claude模型在90分钟内挖掘出一个存在长达20年的安全漏洞，相关能力已远超人们预期且正在指数级增长。同期，Claudini自主研究系统还发现了针对LLM的最新白盒攻击手法。AI安全研究能力的快速提升既是防御力量，也引发了对AI能力失控的担忧。",
+      "source": "量子位",
+      "source_url": "https://www.qbitai.com/"
+    },
+    {
+      "title": "Intercom发布自研模型Apex 1.0：客服场景超越GPT-5.4",
+      "category": "产品发布",
+      "relevance": "中",
+      "summary": "客服AI公司Intercom发布自研模型Apex 1.0，专为其Fin支持Agent优化。在解决率、响应速度、幻觉率和成本四个维度上均超越了GPT-5.4和Opus 4.5。Intercom宣布100%的英语聊天和邮件现已由Apex运行。这验证了垂直场景专用小模型可在特定指标上击败通用大模型的路线。",
+      "source": "The Neuron",
+      "source_url": "https://www.theneuron.ai/ai-news-digests/-around-the-horn-digest-everything-that-happened-in-ai-this-weekend-march-28-29-2026/"
+    }
+  ]
+}
