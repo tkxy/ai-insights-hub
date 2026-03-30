@@ -1,0 +1,335 @@
+{
+  "date": "2026-03-29",
+  "generated_at": "2026-03-30T09:57:00+08:00",
+  "daily_summary": "3月29日的AI动向更像一次行业分层的集中显影：礼来与英矽智能达成 27.5 亿美元合作，说明垂直 AI 已能进入高价值商业闭环；Intercom Apex 1.0 在客服场景超越 GPT-5.4，Harvey 以 110 亿美元估值继续融资，进一步证明“场景专用模型”比“大而全模型”更容易兑现 ROI。与此同时，A-Evolve 让 Agent 调优迈向自动进化，Voxtral TTS 让高质量语音合成进一步开源与端侧化，ARC-AGI-3 则把所有前沿模型重新拉回现实：在真正陌生的任务上，AI 仍远未达到人类水平。对输入法而言，周日最重要的结论是：未来胜负更取决于场景切分、路由与稳定落地，而不是单一模型名气。",
+  "design_insights": [
+    {
+      "title": "垂直 AI 开始兑现商业价值：专用模型与专用工作流比“大一统模型”更快出结果",
+      "summary": "礼来与英矽智能达成总额 27.5 亿美元的 AI 制药合作，前期即支付 1.15 亿美元；Intercom 的 Apex 1.0 在客服场景下解决率、速度、幻觉率和成本都优于 GPT-5.4 与 Claude；Harvey 则以 110 亿美元估值继续获得资本加注。这三条新闻共同说明，行业的价值中心正在从“谁的通用模型更强”转向“谁能在一个具体场景里稳定把事情做完”。能直接进入业务闭环、被指标验证、被预算购买的垂直 AI，正在拿到更清晰的增长与估值。",
+      "implication": "输入法 AI 也不该只停留在“接一个最强模型做通用帮写”。更值得投入的是把高频表达场景切开，做成可验证的专用能力包，比如工作消息、催进度、请假申请、朋友圈文案、群内通知回复等。产品上可建立轻量路由层：根据 App、文本长度、对象关系和任务意图，自动选择不同的生成策略或小模型。这样既能降低成本，也更容易把体验做稳。对用户来说，他们不在乎底层是哪个模型，只在乎这个场景下是不是又快、又准、又像我。",
+      "sources": [
+        "CNBC",
+        "VentureBeat",
+        "Harvey",
+        "TechCrunch"
+      ],
+      "source_urls": [
+        {
+          "name": "CNBC - Lilly x Insilico",
+          "url": "https://www.cnbc.com/2026/03/29/eli-lilly-reaches-deal-to-bring-ai-developed-drugs-to-global-market.html"
+        },
+        {
+          "name": "VentureBeat - Intercom Apex 1.0",
+          "url": "https://venturebeat.com/technology/intercoms-new-post-trained-fin-apex-1-0-beats-gpt-5-4-and-claude-sonnet-4-6"
+        },
+        {
+          "name": "CNBC - Harvey",
+          "url": "https://www.cnbc.com/2026/03/25/legal-ai-startup-harvey-raises-200-million-at-11-billion-valuation.html"
+        }
+      ],
+      "tags": [
+        "垂直AI",
+        "ROI",
+        "专用模型",
+        "商业化"
+      ]
+    },
+    {
+      "title": "Agent 开发进入自动进化阶段：手动调 prompt 的时代正在松动",
+      "summary": "A-Evolve 试图把 Agent 调优从人工试错改造成自动进化流程：系统先让 Agent 解决任务，再观察日志、定位失效点、修改 prompts/skills/tools/memory 等工作区文件，并在门控验证后自动重载。它不是简单地“再加一层 prompt”，而是在把 Agent 当成可持续迭代的工件处理。与 Stripe Projects、Codex hooks 这类工程基础设施结合后，AI Agent 的开发流程正从临时拼装脚本走向更像软件工程的标准化演进。对行业而言，这意味着 Agent 能更快被规模化复制与优化。",
+      "implication": "对输入法产品，前台交互应尽量简单，但后台能力可以逐步走向多步骤任务化。比如用户只点一次“帮我回”，系统却可在后端完成语境理解、选择话术、检查敏感表述、输出多个候选。A-Evolve 带来的启示不是要把键盘做成开发平台，而是提醒我们：输入法 AI 的竞争力会越来越取决于背后的能力编排与持续优化速度。建议从少数复杂场景先建立可迭代链路，如工作消息、报价说明、正式回复，让系统有能力根据反馈持续微调。",
+      "sources": [
+        "MarkTechPost",
+        "Runloop",
+        "OpenAI GitHub Releases"
+      ],
+      "source_urls": [
+        {
+          "name": "MarkTechPost - A-Evolve",
+          "url": "https://www.marktechpost.com/2026/03/29/meet-a-evolve-the-pytorch-moment-for-agentic-ai-systems-replacing-manual-tuning-with-automated-state-mutation-and-self-correction/"
+        },
+        {
+          "name": "Runloop - Stripe Projects",
+          "url": "https://runloop.ai/blog/runloop-stripe-projects-developer-preview-launch"
+        },
+        {
+          "name": "OpenAI Codex Releases",
+          "url": "https://github.com/openai/codex/releases"
+        }
+      ],
+      "tags": [
+        "Agent工程",
+        "自动进化",
+        "工作区",
+        "后端编排"
+      ]
+    },
+    {
+      "title": "高质量语音合成正在端侧化：文本输出之后，语音正在成为新的表达出口",
+      "summary": "Mistral 发布的 Voxtral TTS 以 4B 开放权重模型切入语音生成，支持 9 种语言，10 秒样本的首包时延约 70ms，并且量化后可在手机与笔记本等边缘设备上运行。公开测试中，它在多语言语音克隆上对 ElevenLabs 呈现明显优势。更关键的是，语音合成能力不再被少数闭源 API 垄断，而在走向可本地部署、低时延、低成本的通用组件。语音因此从附加功能，升级为许多 AI 产品可以重新设计主流程的交互出口。",
+      "implication": "对输入法而言，文本生成之后不必只停在“插入输入框”。完全可以把“帮写后直接转语音发送”做成一个自然延伸动作，尤其适用于开车、做饭、走路等不方便打字但仍需快速回复的场景。产品上建议在帮写结果卡片里并列展示“发送文本”和“转语音”两个动作；首期先用预设自然音色，不急着上声纹克隆。只要体验做顺，输入法就有机会从“写字工具”扩展成“表达方式调度器”。",
+      "sources": [
+        "MarkTechPost",
+        "The Neuron"
+      ],
+      "source_urls": [
+        {
+          "name": "MarkTechPost - Voxtral TTS",
+          "url": "https://www.marktechpost.com/2026/03/28/mistral-ai-releases-voxtral-tts-a-4b-open-weight-streaming-speech-model-for-low-latency-multilingual-voice-generation/"
+        },
+        {
+          "name": "The Neuron",
+          "url": "https://www.theneuron.ai/ai-news-digests/-around-the-horn-digest-everything-that-happened-in-ai-this-weekend-march-28-29-2026/"
+        }
+      ],
+      "tags": [
+        "语音AI",
+        "TTS",
+        "端侧",
+        "表达出口"
+      ]
+    },
+    {
+      "title": "系统级 AI 入口竞争正在前置：输入法必须守住“最后一公里”的上下文优势",
+      "summary": "苹果计划在 iOS 27 中允许 Siri 接入 Claude、Gemini 等第三方聊天机器人，并在系统设置中通过 Extensions 统一管理。与此同时，苹果还通过高额留任奖金阻止 OpenAI 挖角 iPhone 设计团队。入口层的竞争正在从独立 App 下沉到系统级调度：用户未来在任何场景都可能直接通过 Siri 调用不同 AI 完成任务。这意味着“谁先出现在用户面前”不再由单个应用决定，而由操作系统重新分配流量与调用机会。",
+      "implication": "输入法天然拥有一个 Siri 很难完全替代的优势——它就在用户即将表达、但还没表达出来的瞬间。要守住这个位置，关键不是把模型做得比 Siri 更大，而是把输入框上下文做得比 Siri 更细：当前对象是谁、消息长度怎样、用户近期常用语是什么、是在群聊还是单聊。建议后续设计上强化“输入框内即时建议”和“无跳转完成”的体验，减少用户在系统层与输入法层之间来回切换的必要。输入法要成为更懂当下表达意图的微型 AI 入口。",
+      "sources": [
+        "MacRumors",
+        "Macworld"
+      ],
+      "source_urls": [
+        {
+          "name": "MacRumors",
+          "url": "https://www.macrumors.com/2026/03/26/apple-ios-27-siri-chatbot-integration/"
+        },
+        {
+          "name": "Macworld",
+          "url": "https://www.macworld.com/article/3100123/report-ios-27-to-let-siri-work-with-any-third-party-chatbot.html"
+        }
+      ],
+      "tags": [
+        "系统入口",
+        "Siri",
+        "上下文优势",
+        "入口竞争"
+      ]
+    },
+    {
+      "title": "新基准把行业拉回现实：陌生任务上的低分，决定了 AI 该如何被包装成产品",
+      "summary": "ARC-AGI-3 把模型放进没有提示、没有熟悉脚手架的交互式陌生环境里，要求它自己探索目标并高效解决问题。结果所有前沿模型得分都低于 1%，Gemini 3.1 Pro 也只有 0.37%，而无训练的人类可以轻松完成任务。这个结果不是在否定 AI 的实用价值，而是在提醒行业：模型在已知场景里很强，不代表在新场景里同样可靠。真正影响产品体验的，不是宣传里最亮眼的能力，而是模型在受限任务中的可预测性、边界说明和失败处理。",
+      "implication": "输入法 AI 应优先把能力包装在窄而高频、边界清晰的任务里，而不是承诺“什么都能帮你写”。例如礼貌改写、摘要回复、催办提醒、口语转正式等，都比开放式长文写作更容易做稳。交互上应增加更明确的模式标签，让用户知道系统此刻提供的是哪类帮助。对涉及事实、承诺或复杂推理的帮写，建议默认更保守的表达与更明显的人工确认步骤。好产品不是把模型吹成万能，而是把用户风险控制在可接受范围内。",
+      "sources": [
+        "The Decoder",
+        "ARC Prize"
+      ],
+      "source_urls": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/arc-agi-3-offers-2m-to-any-ai-that-matches-untrained-humans-yet-every-frontier-model-scores-below-1/"
+        },
+        {
+          "name": "ARC Prize",
+          "url": "https://arcprize.org/competitions/2026/arc-agi-3"
+        }
+      ],
+      "tags": [
+        "ARC-AGI-3",
+        "可靠性",
+        "能力边界",
+        "产品包装"
+      ]
+    },
+    {
+      "title": "AI 提效不等于体验更顺：工作被加速的同时，也被切成了更多需要秒回的碎片",
+      "summary": "ActivTrak 的 2026 职场报告显示，AI 的确推动了生产率，但并没有让工作自然变轻松；相反，更多任务被压缩成更短、更频繁、更需要即时处理的沟通片段。员工在消息、协作、查找资料与快速回复之间反复切换，工作节奏变得更碎。这种变化意味着，AI 产品真正争夺的不是“能不能做复杂事”，而是“能不能在极短时间内帮用户把眼前的小事先处理掉”。对高频入口产品来说，秒级响应与上下文接续能力的重要性正在抬升。",
+      "implication": "对输入法 AI，最值得抓的不是长链路复杂生成，而是通知栏回复、群聊快速确认、会中短句补全这类微任务。产品可以优先强化“看一眼就能发”的预回复体验：基于通知内容、会话对象、当前时间和最近上下文，生成 1-3 个低风险候选，让用户在 2 秒内完成回复。先把碎片场景做顺，再扩展到更复杂的长文本帮写，用户感知会更强。",
+      "sources": [
+        "ActivTrak"
+      ],
+      "source_urls": [
+        {
+          "name": "ActivTrak",
+          "url": "https://www.activtrak.com/news/state-of-the-workplace-ai-accelerating-work/"
+        }
+      ],
+      "tags": [
+        "工作碎片化",
+        "秒回场景",
+        "通知回复",
+        "高频入口"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "场景专用帮写模型路由",
+      "pain_point": "用户会把完全不同的表达任务都丢给同一个帮写入口：工作消息、催办、朋友圈、请假、报价、群公告。通用模型虽然“都能写一点”，但经常在语气、结构和长度控制上不稳定，结果就是用户仍要反复改。",
+      "opportunity": "在输入法 AI 中增加场景路由层：1）根据 App、对话对象、文本长度和意图识别场景；2）分别调用更适合的模板或小模型策略；3）首期只做工作消息、社交回复、公告通知三类；4）在结果卡片上展示当前采用的场景模式，方便用户纠偏。",
+      "priority": "高",
+      "evidence": "Intercom Apex 1.0 在客服场景已超过 GPT-5.4，Harvey 与礼来/英矽智能案例也都说明，专用模型+专用流程比通用能力更容易形成可验证商业价值。",
+      "source_urls": [
+        {
+          "name": "VentureBeat - Intercom Apex",
+          "url": "https://venturebeat.com/technology/intercoms-new-post-trained-fin-apex-1-0-beats-gpt-5-4-and-claude-sonnet-4-6"
+        },
+        {
+          "name": "CNBC - Harvey",
+          "url": "https://www.cnbc.com/2026/03/25/legal-ai-startup-harvey-raises-200-million-at-11-billion-valuation.html"
+        },
+        {
+          "name": "CNBC - Lilly x Insilico",
+          "url": "https://www.cnbc.com/2026/03/29/eli-lilly-reaches-deal-to-bring-ai-developed-drugs-to-global-market.html"
+        }
+      ]
+    },
+    {
+      "title": "帮写结果一键转语音发送",
+      "pain_point": "很多用户并不是不会写，而是在走路、开车、开会间隙不方便打字；另一些社交场景里，对方更习惯听语音而不是读文字。当前输入法要么只给文字，要么只能用户自己重新录音，表达链路被拆成两段。",
+      "opportunity": "在帮写结果卡片中并排提供“发送文本”和“转语音发送”两个动作：1）触发时机为文本生成完成后；2）先支持预设音色，不做复杂声纹；3）首期仅覆盖中文与微信语音消息；4）当检测到蓝牙耳机、驾驶模式或弱手输入场景时优先高亮该功能。",
+      "priority": "中",
+      "evidence": "Voxtral TTS 已证明高质量语音合成可以开源、低时延并跑在边缘设备上，这使“帮写→帮说”第一次具备了足够现实的产品化基础。",
+      "source_urls": [
+        {
+          "name": "MarkTechPost - Voxtral TTS",
+          "url": "https://www.marktechpost.com/2026/03/28/mistral-ai-releases-voxtral-tts-a-4b-open-weight-streaming-speech-model-for-low-latency-multilingual-voice-generation/"
+        },
+        {
+          "name": "The Neuron - Weekend Digest",
+          "url": "https://www.theneuron.ai/ai-news-digests/-around-the-horn-digest-everything-that-happened-in-ai-this-weekend-march-28-29-2026/"
+        }
+      ]
+    },
+    {
+      "title": "事实型帮写谨慎模式",
+      "pain_point": "当用户让输入法生成带事实判断、时间承诺、专业结论的内容时，模型一旦理解偏差或推理失误，后果往往不是“文案不够好”，而是信息失真或承诺过度。但当前帮写界面通常不会区分这类高风险场景。",
+      "opportunity": "为事实型与承诺型表达增加谨慎模式：1）在识别到时间、金额、专业术语、确认语气时自动触发；2）优先输出保守版本文案，如“建议”“拟定”“待确认”；3）必要时提示用户补充来源或二次确认；4）首期只覆盖工作沟通与正式文本场景。",
+      "priority": "中",
+      "evidence": "ARC-AGI-3 显示前沿模型在陌生任务上依然脆弱，说明把开放能力直接投向高风险表达并不稳妥。对于输入法这类高频入口，边界感本身就是体验的一部分。",
+      "source_urls": [
+        {
+          "name": "The Decoder - ARC-AGI-3",
+          "url": "https://the-decoder.com/arc-agi-3-offers-2m-to-any-ai-that-matches-untrained-humans-yet-every-frontier-model-scores-below-1/"
+        },
+        {
+          "name": "ARC Prize",
+          "url": "https://arcprize.org/competitions/2026/arc-agi-3"
+        }
+      ]
+    },
+    {
+      "title": "消息通知智能预回复卡片",
+      "pain_point": "用户在会议间隙、通勤途中、任务切换中收到大量短消息，最常见需求不是写一段长文，而是快速确认、延后回复、补一句礼貌说明。当前输入法虽然能帮写，但启动成本仍偏高，来不及覆盖这些秒级回复场景。",
+      "opportunity": "在系统通知回复框或输入框顶部提供预回复卡片：1）结合通知内容与最近上下文生成 1-3 个低风险候选；2）优先覆盖“收到/稍后回/我来跟进/稍等一下”这类高频意图；3）支持一键发送或点开再润色；4）首期聚焦微信、企业微信和短信三类高频消息入口。",
+      "priority": "高",
+      "evidence": "ActivTrak 报告显示 AI 提效并未减少协作负担，反而让工作更碎片化；这意味着“快速处理眼前消息”会成为高频刚需，而不是边缘需求。",
+      "source_urls": [
+        {
+          "name": "ActivTrak",
+          "url": "https://www.activtrak.com/news/state-of-the-workplace-ai-accelerating-work/"
+        },
+        {
+          "name": "MacRumors - Siri integration",
+          "url": "https://www.macrumors.com/2026/03/26/apple-ios-27-siri-chatbot-integration/"
+        }
+      ]
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "礼来与英矽智能达成 27.5 亿美元 AI 制药合作",
+      "category": "资本动态",
+      "relevance": "高",
+      "summary": "礼来将向英矽智能支付 1.15 亿美元首付款，总合作规模可达 27.5 亿美元，共同推进 AI 发现药物的全球商业化。这是 AI 药物发现领域截至目前最重磅的商业化合作之一。",
+      "source": "CNBC",
+      "source_url": "https://www.cnbc.com/2026/03/29/eli-lilly-reaches-deal-to-bring-ai-developed-drugs-to-global-market.html"
+    },
+    {
+      "title": "Intercom 发布 Apex 1.0，客服场景指标超过 GPT-5.4",
+      "category": "产品发布",
+      "relevance": "高",
+      "summary": "Intercom 推出后训练模型 Apex 1.0，用于其 Fin 客服智能体。在解决率、响应速度、幻觉率和成本四项核心指标上，Apex 1.0 均优于 GPT-5.4 与 Claude 系列模型，并已大规模上线到真实客户对话中。",
+      "source": "VentureBeat",
+      "source_url": "https://venturebeat.com/technology/intercoms-new-post-trained-fin-apex-1-0-beats-gpt-5-4-and-claude-sonnet-4-6"
+    },
+    {
+      "title": "Harvey 完成 2 亿美元融资，估值升至 110 亿美元",
+      "category": "资本动态",
+      "relevance": "中",
+      "summary": "法律 AI 公司 Harvey 新一轮融资由 GIC 与红杉资本领投，估值达到 110 亿美元。资本市场对垂直 AI 平台的兴趣继续升温，专用场景的商业化叙事正在比通用模型更受买账。",
+      "source": "CNBC",
+      "source_url": "https://www.cnbc.com/2026/03/25/legal-ai-startup-harvey-raises-200-million-at-11-billion-valuation.html"
+    },
+    {
+      "title": "A-Evolve 发布：Agent 开发被称迎来“PyTorch 时刻”",
+      "category": "AI工具",
+      "relevance": "高",
+      "summary": "A-Evolve 提出用自动状态变异、自我纠错和门控回滚替代手工调 prompt 的 Agent 迭代方式。研究者把它比作 Agentic AI 的“PyTorch 时刻”，因为它让 Agent 调优开始具备可扩展、可复用的工程范式。",
+      "source": "MarkTechPost",
+      "source_url": "https://www.marktechpost.com/2026/03/29/meet-a-evolve-the-pytorch-moment-for-agentic-ai-systems-replacing-manual-tuning-with-automated-state-mutation-and-self-correction/"
+    },
+    {
+      "title": "Mistral 发布 Voxtral TTS，4B 开放权重语音模型冲击 ElevenLabs",
+      "category": "产品发布",
+      "relevance": "高",
+      "summary": "Voxtral TTS 支持 9 种语言，量化后可在手机与笔记本上运行，10 秒样本的时延约 70ms，并在多项测试中对 ElevenLabs 展现优势。高质量语音合成正加速从云端 API 走向端侧组件。",
+      "source": "MarkTechPost",
+      "source_url": "https://www.marktechpost.com/2026/03/28/mistral-ai-releases-voxtral-tts-a-4b-open-weight-streaming-speech-model-for-low-latency-multilingual-voice-generation/"
+    },
+    {
+      "title": "ARC-AGI-3 发布：所有前沿模型得分均低于 1%",
+      "category": "技术研究",
+      "relevance": "高",
+      "summary": "ARC-AGI-3 要求模型在没有提示的陌生交互式环境中自己探索目标并解决问题。结果 Gemini 3.1 Pro 也仅得 0.37%，GPT-5.4 和 Opus 4.6 同样低于 1%，再次暴露前沿模型在真正新颖任务上的局限。",
+      "source": "The Decoder",
+      "source_url": "https://the-decoder.com/arc-agi-3-offers-2m-to-any-ai-that-matches-untrained-humans-yet-every-frontier-model-scores-below-1/"
+    },
+    {
+      "title": "xAI 最后一位联合创始人离开，公司被曝从基础重建",
+      "category": "行业动态",
+      "relevance": "中",
+      "summary": "随着 Manuel Kroiss 与 Ross Nordeen 退出，xAI 最初的 11 位联合创始人已全部离开。马斯克承认 xAI “第一次没建对”，公司正在从基础重建。创始团队全员流失让外界对其后续路线和组织稳定性产生更多疑问。",
+      "source": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/03/28/elon-musks-last-co-founder-reportedly-leaves-xai/"
+    },
+    {
+      "title": "苹果计划在 iOS 27 允许 Siri 接入 Claude 与 Gemini",
+      "category": "产品发布",
+      "relevance": "高",
+      "summary": "MacRumors 报道称，苹果计划在 iOS 27、iPadOS 27 与 macOS 27 中通过 Extensions 让 Siri 接入第三方聊天机器人，当前的 ChatGPT 合作将不再独占。系统级 AI 入口竞争进一步升级。",
+      "source": "MacRumors",
+      "source_url": "https://www.macrumors.com/2026/03/26/apple-ios-27-siri-chatbot-integration/"
+    },
+    {
+      "title": "Meta 发布 SAM 3.1，多目标视频跟踪速度提升约 7 倍",
+      "category": "大模型",
+      "relevance": "中",
+      "summary": "SAM 3.1 引入 Object Multiplex 共享内存机制，在单个 H100 上处理 128 个对象时较上一版速度提升约 7 倍，并在多项视频分割与对象跟踪基准上继续提升。视觉基础模型正在朝更高吞吐与更强多目标能力演进。",
+      "source": "Facebook Research",
+      "source_url": "https://github.com/facebookresearch/sam3/blob/main/RELEASE_SAM3p1.md"
+    },
+    {
+      "title": "OpenAI 下一代模型“Spud”据称已完成预训练",
+      "category": "大模型",
+      "relevance": "中",
+      "summary": "周末摘要提到，OpenAI 代号为“Spud”的下一代模型已于 3 月 25 日完成预训练，预计数周内发布。虽然官方尚未确认，但市场已开始提前押注新一轮模型能力跃迁。",
+      "source": "The Neuron",
+      "source_url": "https://www.theneuron.ai/ai-news-digests/-around-the-horn-digest-everything-that-happened-in-ai-this-weekend-march-28-29-2026/"
+    },
+    {
+      "title": "Anthropic 未发布模型 Mythos 的泄漏继续发酵",
+      "category": "大模型",
+      "relevance": "中",
+      "summary": "周末持续发酵的 Mythos/Capybara 泄漏事件显示，该模型在编码、推理和网络安全能力上都显著高于现有 Opus 版本。行业开始重新评估高能力模型的安全外部性与服务成本边界。",
+      "source": "The Neuron",
+      "source_url": "https://www.theneuron.ai/ai-news-digests/-around-the-horn-digest-everything-that-happened-in-ai-this-weekend-march-28-29-2026/"
+    },
+    {
+      "title": "ActivTrak 报告：AI 提效同时加剧了沟通碎片化",
+      "category": "行业动态",
+      "relevance": "中",
+      "summary": "ActivTrak 发布 2026 职场现状报告称，AI 正在加速工作完成速度，但员工也因此面对更多短频快的协作与消息处理任务。生产率提升并没有自动换来更顺滑的工作体验，反而放大了碎片化沟通的管理压力。",
+      "source": "ActivTrak",
+      "source_url": "https://www.activtrak.com/news/state-of-the-workplace-ai-accelerating-work/"
+    }
+  ]
+}

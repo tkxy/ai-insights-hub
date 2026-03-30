@@ -1,0 +1,230 @@
+{
+  "date": "2026-03-28",
+  "generated_at": "2026-03-30T09:57:00+08:00",
+  "daily_summary": "3月28日的AI新闻集中指向“入口前移”和“链路变短”两件事。Bluesky推出Attie，让用户用自然语言直接编排信息流；三星浏览器与Google Search Live则把多模态理解带到浏览与搜索入口；Shopify把商品目录直接接进ChatGPT、Copilot和Gemini，AI开始承接从发现到下单的闭环。与此同时，Stripe Projects、Cline Kanban与Codex Hooks让多智能体协作从实验走向工程化，Anthropic Mythos泄漏与周末服务波动则提醒行业：AI体验不只看能力上限，更看稳定性、边界和可恢复性。对输入法而言，周六最值得看的不是“模型更强”，而是用户正逐步习惯“在入口处把事办完”。",
+  "design_insights": [
+    {
+      "title": "用户可编程规则进入大众产品：从推荐算法到写作规则前台化",
+      "summary": "Bluesky 在 3 月 28 日发布基于 Claude 的 Attie，允许普通用户像聊天一样用自然语言创建信息流和算法规则，不必写代码，也不必理解复杂配置。它把过去由平台黑箱掌控的内容分发逻辑，转成了用户可以描述、修改、复用的规则层。这个变化的关键不只是“AI 帮你生成 feed”，而是“用户第一次被允许直接塑造 feed 的工作方式”。AI 从给结果，走向让用户定义结果生成机制。规则本身也因此成为产品资产，而不再只是后台配置。",
+      "implication": "对输入法 AI 来说，最直接的启发是要把“写作人设/语气规则/对象偏好”从隐藏 prompt 变成用户可见、可改、可复用的前台能力。与其每次帮写都让用户重新说“礼貌一点”“短一点”“像给领导发的”，不如提供规则面板，让用户沉淀可长期生效的表达规则。首期可从 3 个预设人设加 1 个自定义模板起步，并允许用户按联系人或 App 场景自动套用。这样帮写就不是一次性输出，而是逐步形成个人表达操作系统。",
+      "sources": [
+        "TechCrunch",
+        "The Verge"
+      ],
+      "source_urls": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/03/28/bluesky-leans-into-ai-with-attie-an-app-for-building-custom-feeds/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/903190/bluesky-attie-ai-custom-feeds"
+        }
+      ],
+      "tags": [
+        "用户规则",
+        "信息流",
+        "Claude",
+        "个性化"
+      ]
+    },
+    {
+      "title": "搜索框正在进化为上下文助理：浏览器与搜索入口开始理解页面、历史与多标签页",
+      "summary": "三星在 Windows 上推出带 Agentic AI 的 Samsung Browser，并接入 Perplexity 的 Browsing Assist。它不仅能理解当前网页，还能跨标签页总结信息、用自然语言检索历史记录、定位视频中用户想看的片段。与此同时，Google 将 Search Live 扩展到 200 多个国家和地区，让语音+摄像头成为搜索输入的新常态。搜索框和浏览器不再只是“输入关键词、返回链接”的检索工具，而在转向理解当下上下文、主动压缩信息、减少切换操作的前台助理。",
+      "implication": "输入法处在比搜索框更靠近用户表达的入口位置，理应更早承担“上下文助理”角色。对帮写功能而言，这意味着可以在用户输入前后利用已知环境做轻量理解：例如结合最近通知、当前 App、最近输入片段或剪贴板内容，给出更贴近情境的建议。产品上可优先尝试两个方向：一是在候选区上方做“场景提示条”，二是在帮写面板内增加“读懂当前场景”的一行解释，让用户感知到系统并非盲写，而是在理解上下文后给建议。",
+      "sources": [
+        "Samsung Mobile Press",
+        "TechCrunch"
+      ],
+      "source_urls": [
+        {
+          "name": "Samsung Mobile Press",
+          "url": "https://www.samsungmobilepress.com/articles/samsung-browser-windows-agentic-ai"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/03/26/google-is-launching-search-live-globally/"
+        }
+      ],
+      "tags": [
+        "搜索入口",
+        "浏览器AI",
+        "上下文理解",
+        "多模态"
+      ]
+    },
+    {
+      "title": "对话式商业走向闭环：AI 入口开始直接承接发现到下单",
+      "summary": "Shopify 在周末推动 Agentic Storefronts，商家商品目录可直接进入 ChatGPT、Copilot、Google AI Mode 与 Gemini，用户无需退出 AI 对话即可完成发现、比较与购买。其背后的 UCP（Universal Commerce Protocol）则试图把“代理发现商家能力、协商支付与继续交易”的过程标准化。AI 入口不再只负责推荐，它开始承担真正的交易编排职责。对用户来说，路径被压缩成“我说需求—系统理解—直接成交”，中间的跳转、检索和表单负担被尽量折叠。",
+      "implication": "输入法虽然不是电商平台，但完全可能成为服务唤起与任务接力的第一跳入口。对输入法 AI，最有价值的不是直接做支付，而是在用户输入意图时更早识别可行动任务，并通过卡片把参数化结果交接给下游服务。建议优先做“表达到办事”的首屏转译：识别出行、购物、寄件、订位等高频意图，在输入框附近给出一键继续的服务卡片；首期只做少数明确品类，先验证点击与转化，而不是一上来试图包办全部生活服务。",
+      "sources": [
+        "The Paypers",
+        "Shopify Engineering"
+      ],
+      "source_urls": [
+        {
+          "name": "The Paypers",
+          "url": "https://thepaypers.com/payments/news/shopify-launches-agentic-storefronts-across-major-ai-platforms"
+        },
+        {
+          "name": "Shopify Engineering",
+          "url": "https://shopify.engineering/ucp"
+        }
+      ],
+      "tags": [
+        "Agentic Commerce",
+        "服务入口",
+        "交易闭环",
+        "UCP"
+      ]
+    },
+    {
+      "title": "AI 工具链从单点助手走向多智能体流水线，前台交互会越来越像“点一下就完成一串事”",
+      "summary": "Stripe Projects 允许开发者或 AI 代理用 CLI 一次性配置托管、数据库、认证和 AI 服务；Cline Kanban 把多个编码智能体的任务、依赖链和阻塞状态放到统一看板上；Codex 则把 plugins 与 hooks 升级为一等工作流，让脚本能在任务前后挂入生命周期。工具链层正在快速形成“任务拆解—依赖编排—自动执行—结果回写”的标准过程。这意味着用户未来会越来越习惯看到一个简单入口背后完成的是一整串自动化步骤，而不只是一次问答。",
+      "implication": "输入法 AI 的前台体验也该朝“简入口、长链路”升级。用户表面上只点击一次“帮我回”，底层却可以拆成理解语境、选择人设、生成候选、补充事实、检查语气等多个步骤。产品层不必把所有链路都露给用户，但应把“当前系统做了什么”适度可视化，例如给出一步式状态说明或可展开的生成过程，让用户感知稳定和可控。首期可在复杂场景如邮件回复、群公告润色、报价消息中验证这类分步执行体验。",
+      "sources": [
+        "Runloop",
+        "Cline",
+        "OpenAI GitHub Releases"
+      ],
+      "source_urls": [
+        {
+          "name": "Runloop",
+          "url": "https://runloop.ai/blog/runloop-stripe-projects-developer-preview-launch"
+        },
+        {
+          "name": "Cline",
+          "url": "https://cline.ghost.io/announcing-kanban/"
+        },
+        {
+          "name": "OpenAI Codex Releases",
+          "url": "https://github.com/openai/codex/releases"
+        }
+      ],
+      "tags": [
+        "多智能体",
+        "任务编排",
+        "工具链",
+        "生命周期"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "写作人设规则面板",
+      "pain_point": "用户在工作沟通、亲密聊天、朋友圈文案等场景之间频繁切换，但每次使用帮写都要重新交代语气、长度和对象关系。系统没有可复用规则层，导致高频用户越用越像在重复调 prompt，而不是越用越省心。",
+      "opportunity": "在帮写面板顶部增加“人设/规则”入口作为 MVP：1）提供正式、日常、亲密 3 个预设；2）允许用户用一句自然语言补充规则，如“给领导结尾要带感谢”；3）支持按联系人或 App 自动匹配；4）首期只覆盖微信、短信、邮件三个场景，先验证命中率与采纳率。",
+      "priority": "高",
+      "evidence": "Attie 已验证“用户用自然语言定义规则并长期生效”的模式可以进入大众产品；其价值不在一次结果，而在把规则资产前置给用户管理。",
+      "source_urls": [
+        {
+          "name": "TechCrunch - Attie",
+          "url": "https://techcrunch.com/2026/03/28/bluesky-leans-into-ai-with-attie-an-app-for-building-custom-feeds/"
+        },
+        {
+          "name": "The Verge - Attie",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/903190/bluesky-attie-ai-custom-feeds"
+        }
+      ]
+    },
+    {
+      "title": "输入框内服务跳转卡片",
+      "pain_point": "用户在聊天中输入“帮我订一下”“我去机场”“买这个给我看最低价”这类任务性表达时，当前输入法只能帮他把话写顺，不能把任务继续交给服务端完成。用户仍需手动打开电商、地图或浏览器重新检索，路径长且容易中断。",
+      "opportunity": "在候选栏上方增加服务跳转卡片：1）识别购物、出行、订位等明确意图；2）把已识别的关键参数（目的地、商品关键词、时间）带入对应服务；3）首期只接 2-3 个高频服务，不追求全量覆盖；4）用户点击后进入合作方页面完成后续动作，输入法承担意图识别与交接，不承担交易本身。",
+      "priority": "高",
+      "evidence": "Shopify 已把商品目录直接接入 ChatGPT、Copilot 和 Gemini，证明用户正被训练为“在对话入口里完成发现与跳转”；UCP 也在推动代理式交易的标准化。",
+      "source_urls": [
+        {
+          "name": "The Paypers - Shopify Agentic Storefronts",
+          "url": "https://thepaypers.com/payments/news/shopify-launches-agentic-storefronts-across-major-ai-platforms"
+        },
+        {
+          "name": "Shopify Engineering - UCP",
+          "url": "https://shopify.engineering/ucp"
+        }
+      ]
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Bluesky 推出 Attie：用户可用自然语言创建自定义信息流",
+      "category": "产品发布",
+      "relevance": "高",
+      "summary": "Bluesky 在 3 月 28 日发布基于 Claude 的 Attie，用户无需写代码即可通过自然语言定义信息流与算法规则。该产品把社交分发权从平台侧黑箱转向用户侧可配置规则，是 AI Agent 进入社交前台的一次关键尝试。",
+      "source": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/03/28/bluesky-leans-into-ai-with-attie-an-app-for-building-custom-feeds/"
+    },
+    {
+      "title": "Shopify 上线 Agentic Storefronts，商品可直接进入 ChatGPT 与 Gemini",
+      "category": "产品发布",
+      "relevance": "高",
+      "summary": "Shopify 宣布 Agentic Storefronts 正式进入主要 AI 渠道，商家商品目录可在 ChatGPT、Copilot、Google AI Mode 与 Gemini 中被发现与购买。移动端可在 AI 应用内完成购买，桌面端则跳转至商家店面继续结账。",
+      "source": "The Paypers",
+      "source_url": "https://thepaypers.com/payments/news/shopify-launches-agentic-storefronts-across-major-ai-platforms"
+    },
+    {
+      "title": "三星 Browser for Windows 上线 Agentic AI，Perplexity 驱动 Browsing Assist",
+      "category": "AI工具",
+      "relevance": "高",
+      "summary": "三星发布 Windows 版 Samsung Browser，并与 Perplexity 合作引入 Browsing Assist。该功能可理解当前网页、跨标签页总结信息、自然语言搜索浏览历史并定位视频片段，将浏览器从链接容器升级为上下文助理。",
+      "source": "Samsung Mobile Press",
+      "source_url": "https://www.samsungmobilepress.com/articles/samsung-browser-windows-agentic-ai"
+    },
+    {
+      "title": "Google Search Live 扩展至 200 多个国家与地区",
+      "category": "产品发布",
+      "relevance": "高",
+      "summary": "Google 将 Search Live 全球化，支持用户通过语音与摄像头进行实时对话式搜索。多模态搜索不再局限于少数市场，搜索入口进一步从关键词检索转向可视化、可交互的即时助理。",
+      "source": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/03/26/google-is-launching-search-live-globally/"
+    },
+    {
+      "title": "OpenAI Codex 将 plugins 与 hooks 升级为一等工作流",
+      "category": "AI工具",
+      "relevance": "中",
+      "summary": "OpenAI 在 3 月底的 Codex 更新中强化了 plugin 与 hook 机制，支持产品级插件同步、生命周期脚本挂接与更清晰的安装管理。开发者可在任务前后插入确定性脚本，构建更稳定的 Agent 工作流。",
+      "source": "OpenAI GitHub Releases",
+      "source_url": "https://github.com/openai/codex/releases"
+    },
+    {
+      "title": "Stripe Projects 开放开发者预览，AI 代理可通过 CLI 配置真实服务",
+      "category": "AI工具",
+      "relevance": "中",
+      "summary": "Stripe Projects 允许开发者或 AI 代理通过一条 CLI 命令配置托管、数据库、认证与 AI 服务，并把凭证以 agent-ready 方式返回。它试图消除反复打开 Dashboard 与复制密钥的人工步骤，让全栈部署链路更适合 Agent 执行。",
+      "source": "Runloop",
+      "source_url": "https://runloop.ai/blog/runloop-stripe-projects-developer-preview-launch"
+    },
+    {
+      "title": "Cline 发布 Kanban，看板化管理多智能体依赖链",
+      "category": "AI工具",
+      "relevance": "中",
+      "summary": "Cline 在 3 月 26 日推出 Kanban 应用，用于统一管理多个编码智能体任务、依赖关系与阻塞状态，并兼容 Claude Code 与 Codex。它把分散在不同终端的代理执行过程收束到可追踪的任务流水线中。",
+      "source": "Cline",
+      "source_url": "https://cline.ghost.io/announcing-kanban/"
+    },
+    {
+      "title": "Anthropic 未发布模型 Mythos 泄漏，网络安全股应声下跌",
+      "category": "大模型",
+      "relevance": "高",
+      "summary": "安全研究人员在 Anthropic 公开可搜索数据库中发现近 3000 份未发布文档，泄露出位于 Opus 之上的新模型 Mythos/Capybara。文档称其在编码、推理与网络能力上显著更强，市场随即担忧 AI 进攻能力超前，网络安全股下跌 3% 至 7%。",
+      "source": "The Neuron",
+      "source_url": "https://www.theneuron.ai/ai-news-digests/-around-the-horn-digest-everything-that-happened-in-ai-this-weekend-march-28-29-2026/"
+    },
+    {
+      "title": "Waymo 每周付费 Robotaxi 出行达到 50 万次",
+      "category": "行业动态",
+      "relevance": "中",
+      "summary": "Waymo 宣布其在美国 10 个城市的每周付费 Robotaxi 出行达到 50 万次，不到两年增长 10 倍。在车队规模并未同步暴涨的情况下，这一数据表明 Waymo 的调度与运营效率正在快速提升，自动驾驶商业化进入新阶段。",
+      "source": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/03/27/waymo-skyrocketing-ridership-in-one-chart/"
+    },
+    {
+      "title": "Zoox 将 Robotaxi 业务扩展至奥斯汀与迈阿密",
+      "category": "行业动态",
+      "relevance": "中",
+      "summary": "亚马逊旗下 Zoox 宣布将在 2026 年内把 Robotaxi 服务扩展到奥斯汀与迈阿密，继续追赶 Waymo 在自动驾驶商业化上的先发优势。自动驾驶赛道的城市扩张速度正在加快。",
+      "source": "CNBC",
+      "source_url": "https://www.cnbc.com/2026/03/24/amazon-zoox-robotaxi-rides-austin-miami.html"
+    }
+  ]
+}
