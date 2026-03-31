@@ -7,61 +7,121 @@
       "title": "全模态原生架构正在取代多模态拼接方案",
       "summary": "阿里巴巴千问团队发布 Qwen3.5-Omni，这是一个原生端到端的全模态大模型，可同时处理文本、图像、音频和视频输入，并输出文本与实时语音。与此前将不同模态模型拼接的方案不同，Qwen3.5-Omni 采用早期融合训练，在万亿级多模态 token 上联合训练，支持 256k 长上下文和超过 10 小时音频输入。Plus 版本在音频基准测试中声称超越 Gemini 3.1 Pro。更值得注意的是模型意外涌现出「视听 Vibe Coding」能力——观看屏幕录制加语音指令就能生成可运行代码。这标志着 AI 从「理解单一模态」到「在多模态间自由切换」的关键转向。",
       "implication": "对输入法产品而言，全模态原生架构意味着帮写功能可以同时感知用户的文字输入、语音指令、截图内容甚至视频画面。例如用户对着一段会议录音说「帮我总结成邮件」，输入法可以直接理解音频内容并生成文稿，而不需要先走一道语音转文字再走帮写。Qwen3.5-Omni 的声音克隆功能也暗示了一个方向：帮写不止停留在文本层，可以延伸到用用户自己的声音朗读生成内容。建议关注全模态模型在端侧的部署进展，评估将语音+文本+图片混合输入接入帮写流程的可行性。",
-      "sources": ["Qwen Official Blog", "Decrypt", "ToolMesh"],
-      "source_urls": [
-        {"name": "Qwen Official Blog", "url": "https://qwen.ai/blog?id=qwen3.5-omni"},
-        {"name": "Decrypt", "url": "https://decrypt.co/362742/alibaba-qwen-omni-major-upgrade-review"},
-        {"name": "ToolMesh", "url": "https://www.toolmesh.ai/news/qwen3-5-omni-model-released-sota-vibe-coding"}
+      "sources": [
+        "Qwen Official Blog",
+        "Decrypt",
+        "ToolMesh"
       ],
-      "tags": ["全模态AI", "Qwen3.5-Omni", "语音交互", "多模态融合"]
+      "source_urls": [
+        {
+          "name": "Qwen Official Blog",
+          "url": "https://qwen.ai/blog?id=qwen3.5-omni"
+        },
+        {
+          "name": "Decrypt",
+          "url": "https://decrypt.co/362742/alibaba-qwen-omni-major-upgrade-review"
+        },
+        {
+          "name": "ToolMesh",
+          "url": "https://www.toolmesh.ai/news/qwen3-5-omni-model-released-sota-vibe-coding"
+        }
+      ],
+      "tags": [
+        "全模态AI",
+        "Qwen3.5-Omni",
+        "语音交互",
+        "多模态融合"
+      ]
     },
     {
       "title": "AI 编码工具从封闭竞争走向互操作：Codex 主动为 Claude Code 做插件",
       "summary": "OpenAI 为 Codex 引入插件系统，允许开发者打包技能、应用集成和 MCP 服务器为可安装的功能包。更出人意料的是，OpenAI 官方在 GitHub 上发布了 codex-plugin-cc，让 Claude Code 用户可以在自己的工作流中调用 Codex 做代码审查或任务委派。这是 AI 工具从零和竞争转向互操作生态的标志性事件。Anthropic 的 Claude Code 近期也在 Cowork 中推出了 Computer Use，允许 Claude 远程控制 Mac 完成自主操作。两大平台都在把 AI 助手从「单点工具」推向「可编排的协作者」。",
       "implication": "AI 编码工具的互操作趋势对输入法帮写有直接启示：未来帮写功能不应只内嵌一个模型，而是可以按任务类型调度不同能力。例如翻译场景调一个模型、创意写作调另一个模型、专业文档用特定垂类模型。Codex 的插件架构（技能 + 应用集成 + MCP 服务器）可以直接参考：帮写是否可以开放一个插件机制，让第三方模型和服务以标准化方式接入？这比绑死单一模型的方案更有生命力。",
-      "sources": ["ArsTechnica", "GitHub - OpenAI", "ZDNET"],
-      "source_urls": [
-        {"name": "ArsTechnica", "url": "https://arstechnica.com/ai/2026/03/openai-brings-plugins-to-codex-closing-some-of-the-gap-with-claude-code/"},
-        {"name": "GitHub - codex-plugin-cc", "url": "https://github.com/openai/codex-plugin-cc"},
-        {"name": "ZDNET", "url": "https://www.zdnet.com/article/openai-codex-plugins-workflow-automation-upgrade/"}
+      "sources": [
+        "ArsTechnica",
+        "GitHub - OpenAI",
+        "ZDNET"
       ],
-      "tags": ["AI编码工具", "OpenAI Codex", "Claude Code", "插件生态"]
+      "source_urls": [
+        {
+          "name": "ArsTechnica",
+          "url": "https://arstechnica.com/ai/2026/03/openai-brings-plugins-to-codex-closing-some-of-the-gap-with-claude-code/"
+        },
+        {
+          "name": "GitHub - codex-plugin-cc",
+          "url": "https://github.com/openai/codex-plugin-cc"
+        },
+        {
+          "name": "ZDNET",
+          "url": "https://www.zdnet.com/article/openai-codex-plugins-workflow-automation-upgrade/"
+        }
+      ],
+      "tags": [
+        "AI编码工具",
+        "OpenAI Codex",
+        "Claude Code",
+        "插件生态"
+      ]
     },
     {
       "title": "AI 供应链安全事件暴露信任链脆弱性",
       "summary": "热门 AI 网关 LiteLLM 遭遇供应链恶意软件攻击，凭据被窃取后导致未授权访问。更讽刺的是，LiteLLM 此前通过安全合规初创公司 Delve 获得了 SOC 2 和 ISO 27001 认证，但这些认证并未阻止攻击发生。事发后 LiteLLM 与 Delve 正式分手。与此同时，Anthropic 因默认 CMS 设置未加密数据库，意外泄露了近 3000 份内部文档，暴露了尚未发布的 Claude Mythos 模型信息。这两起事件说明：AI 行业的安全信任链——从代码依赖、合规认证到内部文档管理——都存在系统性薄弱环节。",
       "implication": "对输入法产品来说，帮写功能必然涉及用户的敏感文本（私信、邮件草稿、密码相关内容等），供应链安全和数据隔离是底线。LiteLLM 事件提醒我们：如果帮写后端依赖的 SDK 或模型代理中间件被入侵，用户输入可能直接泄露。建议在技术选型时对 AI 中间件做安全审计，避免使用未经验证的第三方代理层；同时在架构层面隔离帮写请求和用户账号凭据，确保即使中间件被攻破也不会连带泄露用户身份信息。",
-      "sources": ["TechCrunch", "LiteLLM Blog", "ComplianceHub"],
-      "source_urls": [
-        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/30/popular-ai-gateway-startup-litellm-ditches-controversial-startup-delve/"},
-        {"name": "LiteLLM Security Blog", "url": "https://docs.litellm.ai/blog/security-update-march-2026"},
-        {"name": "ComplianceHub", "url": "https://compliancehub.wiki/litellm-delve-soc2-trust-chain-compliance-failure-2026/"}
+      "sources": [
+        "TechCrunch",
+        "LiteLLM Blog",
+        "ComplianceHub"
       ],
-      "tags": ["AI安全", "供应链攻击", "合规认证", "数据隔离"]
-    },
-    {
-      "title": "自动驾驶商业化进入指数增长期：Waymo 周付费 50 万次",
-      "summary": "Waymo 宣布每周付费乘次突破 50 万次，覆盖美国 10 个城市，不到一年内翻倍。这意味着自动驾驶正从实验性服务进入大规模商业化运营阶段。与此同时 Waymo 还宣布计划将自动驾驶技术引入个人车辆。另一边，Zoox 扩张到奥斯汀和迈阿密，Serve Robotics 配送机器人在芝加哥撞穿公交站引发抗议，加州确认特斯拉并未运营自动驾驶服务。自动驾驶赛道呈现「头部加速 vs 尾部出事故」的分化格局。",
-      "implication": "自动驾驶的规模化运营直接催生新的输入场景。乘客在 Waymo 内解放了双手和注意力，车内就是一个高价值的信息消费与通讯场景。输入法可以思考：在自动驾驶车内，语音帮写、快速回复消息、语音转文字的需求会显著增加。特别是当 Waymo 计划进入个人车辆后，驾驶者在自动驾驶模式下使用手机输入的行为模式也会变化。这是一个中长期值得关注的场景入口。",
-      "sources": ["InsideEVs", "TechCrunch", "American Bazaar"],
       "source_urls": [
-        {"name": "InsideEVs", "url": "https://insideevs.com/news/791245/waymo-rides-per-week-2026-doubled/"},
-        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/27/waymo-skyrocketing-ridership-in-one-chart/"},
-        {"name": "American Bazaar", "url": "https://americanbazaaronline.com/2026/03/30/waymo-plans-self-driving-tech-for-personal-cars-477859/"}
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/03/30/popular-ai-gateway-startup-litellm-ditches-controversial-startup-delve/"
+        },
+        {
+          "name": "LiteLLM Security Blog",
+          "url": "https://docs.litellm.ai/blog/security-update-march-2026"
+        },
+        {
+          "name": "ComplianceHub",
+          "url": "https://compliancehub.wiki/litellm-delve-soc2-trust-chain-compliance-failure-2026/"
+        }
       ],
-      "tags": ["自动驾驶", "Waymo", "场景入口", "语音交互"]
+      "tags": [
+        "AI安全",
+        "供应链攻击",
+        "合规认证",
+        "数据隔离"
+      ]
     },
     {
       "title": "AI 巨头亏损加剧但估值飙升：行业进入「烧钱换赛道」新阶段",
       "summary": "OpenAI 预计 2026 年亏损 140 亿美元，几乎是早期预估的三倍。Anthropic 的 Coatue 投资演示文稿泄露显示，预计 2026 年在 180 亿美元收入中仍亏损 140 亿 EBITDA，但 2030 年估值瞄准约 2 万亿美元。Anthropic 同时计划最早 10 月 IPO，目标募集超 600 亿美元，由高盛、摩根大通和摩根士丹利承销。ChatGPT Pro 订阅价格已达 200 美元/月。这说明 AI 头部公司的策略是：以巨额亏损换取市场份额和数据飞轮，再通过上市或融资填补缺口。整个行业进入了「先占位再盈利」的烧钱阶段。",
       "implication": "AI 巨头的巨额亏损和高订阅价格意味着：依赖第三方大模型 API 的成本将持续上升。对输入法帮写来说，如果核心能力完全依赖外部 API，成本压力会随着调用量增长不断放大。这进一步论证了端侧模型和混合部署策略的必要性——把高频、低复杂度的帮写请求交给端侧小模型处理，只在复杂场景回退到云端大模型，从而控制 API 调用成本。",
-      "sources": ["European Business Magazine", "Seeking Alpha", "AInvest"],
-      "source_urls": [
-        {"name": "European Business Magazine", "url": "https://europeanbusinessmagazine.com/business/sam-altmans-openai-is-burning-billions-most-users-pay-nothing-as-anthropic-closes-in/"},
-        {"name": "Seeking Alpha", "url": "https://seekingalpha.com/news/4543624-anthropic-raises-2026-revenue-forecast-by-20-to-18b"},
-        {"name": "AInvest", "url": "https://www.ainvest.com/news/openai-14-billion-2026-loss-burn-priced-2603/"}
+      "sources": [
+        "European Business Magazine",
+        "Seeking Alpha",
+        "AInvest"
       ],
-      "tags": ["AI商业化", "烧钱模式", "成本控制", "端侧部署"]
+      "source_urls": [
+        {
+          "name": "European Business Magazine",
+          "url": "https://europeanbusinessmagazine.com/business/sam-altmans-openai-is-burning-billions-most-users-pay-nothing-as-anthropic-closes-in/"
+        },
+        {
+          "name": "Seeking Alpha",
+          "url": "https://seekingalpha.com/news/4543624-anthropic-raises-2026-revenue-forecast-by-20-to-18b"
+        },
+        {
+          "name": "AInvest",
+          "url": "https://www.ainvest.com/news/openai-14-billion-2026-loss-burn-priced-2603/"
+        }
+      ],
+      "tags": [
+        "AI商业化",
+        "烧钱模式",
+        "成本控制",
+        "端侧部署"
+      ]
     }
   ],
   "demand_mining": [
@@ -72,8 +132,14 @@
       "priority": "高",
       "evidence": "Qwen3.5-Omni 的发布证明全模态端到端模型已具备生产级能力，支持 256k 上下文和 10 小时音频。其 Vibe Coding 能力（看屏幕+听语音→生成代码）直接验证了「视觉+语音→结构化输出」的技术路径可行性。同期 Google Gemini 3.1 也支持原生多模态推理。端侧部署方面，Qwen3.5-Omni 提供 Light 版本适合移动端。",
       "source_urls": [
-        {"name": "Qwen Official Blog", "url": "https://qwen.ai/blog?id=qwen3.5-omni"},
-        {"name": "Decrypt - Qwen3.5-Omni Review", "url": "https://decrypt.co/362742/alibaba-qwen-omni-major-upgrade-review"}
+        {
+          "name": "Qwen Official Blog",
+          "url": "https://qwen.ai/blog?id=qwen3.5-omni"
+        },
+        {
+          "name": "Decrypt - Qwen3.5-Omni Review",
+          "url": "https://decrypt.co/362742/alibaba-qwen-omni-major-upgrade-review"
+        }
       ]
     },
     {
@@ -83,20 +149,18 @@
       "priority": "中",
       "evidence": "OpenAI Codex 插件系统上线后 3 天内，连 Anthropic 竞品都主动集成（codex-plugin-cc）。MCP 协议已达 9700 万安装量，所有主要 AI 提供商都支持。这说明 AI 工具的互操作已从趋势变成基础设施，「一个入口调度多个能力」的模式已经被市场验证。",
       "source_urls": [
-        {"name": "ArsTechnica - Codex Plugins", "url": "https://arstechnica.com/ai/2026/03/openai-brings-plugins-to-codex-closing-some-of-the-gap-with-claude-code/"},
-        {"name": "GitHub - codex-plugin-cc", "url": "https://github.com/openai/codex-plugin-cc"},
-        {"name": "Digital Applied - MCP Milestone", "url": "https://www.digitalapplied.com/blog/march-2026-ai-roundup-month-that-changed-everything"}
-      ]
-    },
-    {
-      "title": "帮写文本实时语音预览与发送",
-      "pain_point": "用户在帮写生成文本后，需要在社交场景中切换到语音消息发送时，必须自己朗读一遍帮写结果；或者想确认帮写文案的语气和节奏是否合适，只能靠肉眼默读，无法直观感受实际朗读效果。",
-      "opportunity": "基于 Qwen3.5-Omni 的实时语音生成和声音克隆能力，在帮写结果卡片上增加「语音预览」按钮。用户点击后用自己的声音（预先录制 10 秒采样）朗读帮写文本，满意后可一键转为语音消息发送。入口为帮写结果卡片底部的「语音预览」图标；触发条件为帮写结果生成完成后自动显示；核心能力为 TTS + 声音克隆 + 语音消息封装；MVP 先支持微信语音消息场景，首期用预设音色，声音克隆作为后续迭代。",
-      "priority": "中",
-      "evidence": "Qwen3.5-Omni 已原生支持声音克隆，用户上传语音即可自定义 AI 助手声音，并通过 Realtime API 实现实时流式输出。Mistral Voxtral TTS 以 3B 参数在盲测中击败 ElevenLabs，证明高质量 TTS 已不再是大模型的专利，轻量模型也能胜任。这意味着端侧部署 TTS 在技术上已可行。",
-      "source_urls": [
-        {"name": "Qwen Blog - Voice Clone", "url": "https://qwen.ai/blog?id=qwen3.5-omni"},
-        {"name": "The Neuron - Voxtral TTS", "url": "https://www.theneuron.ai/ai-news-digests/-around-the-horn-digest-everything-that-happened-in-ai-this-weekend-march-28-29-2026/"}
+        {
+          "name": "ArsTechnica - Codex Plugins",
+          "url": "https://arstechnica.com/ai/2026/03/openai-brings-plugins-to-codex-closing-some-of-the-gap-with-claude-code/"
+        },
+        {
+          "name": "GitHub - codex-plugin-cc",
+          "url": "https://github.com/openai/codex-plugin-cc"
+        },
+        {
+          "name": "Digital Applied - MCP Milestone",
+          "url": "https://www.digitalapplied.com/blog/march-2026-ai-roundup-month-that-changed-everything"
+        }
       ]
     }
   ],
@@ -172,14 +236,6 @@
       "summary": "Arm 发布首款自有品牌芯片 AGI CPU，采用 TSMC 3nm 工艺、136 核设计，专为代理式 AI 基础设施打造。Meta 为首发客户计划大规模部署，OpenAI、Cerebras、Cloudflare、SK Telecom 等也已签约。标志着 Arm 从设计授权商转向芯片产品供应商。",
       "source": "Arm 官方",
       "source_url": "https://www.arm.com/zh-cn/company/news/2026/03/introducing-arm-agi-cpu"
-    },
-    {
-      "title": "Sanders 与 AOC 提议禁建新数据中心，直至国会通过 AI 全面监管",
-      "category": "AI政策",
-      "relevance": "中",
-      "summary": "美国参议员 Sanders 和众议员 AOC 提出《AI 数据中心暂停法案》，要求在国会通过全面 AI 监管法规前冻结所有新数据中心建设。提案援引自 2020 年以来电费上涨 31% 以及环境影响为理由。若通过将对 AI 基础设施扩张产生重大影响。",
-      "source": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/03/25/bernie-sanders-and-aoc-propose-a-ban-on-data-center-construction/"
     },
     {
       "title": "苹果 iOS 27 将开放 Siri 第三方 AI 接口，Gemini 和 Claude 均可接入",
