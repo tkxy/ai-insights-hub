@@ -1,0 +1,207 @@
+{
+  "date": "2026-04-01",
+  "generated_at": "2026-04-01T08:00:00+08:00",
+  "daily_summary": "Q2 首日，AI 行业延续 Q1 的高密度节奏。微软正式上线 Copilot Cowork，将 Anthropic Claude 的 Agent 能力注入 Office 365，同时在 Researcher 智能体中引入 Critique 功能，让 GPT 起草、Claude 审核，DRACO 基准提升 13.8%，标志着多模型协作从概念走向产品化。Google Gemini 3.1 Flash Live 语音模型上周全球上线，将音频 AI 对话延伸到 200 个国家。DeepMind 创始人 Hassabis 公开承认超级 AI 存在人类灭绝风险，且竞赛已不可逆转。Mistral AI 获 8.3 亿美元债务融资，将在巴黎近郊建设搭载 13800 块 Nvidia GB300 GPU 的数据中心。智元机器人（AGIBOT）第一万台人形机器人下线，中国工信部同期发布具身智能首份行业标准。AI 输入法赛道持续升温——豆包输入法 Mac 版正式发布，入口之争从移动端蔓延到桌面端。Q1 全球 AI 创投总额突破 2200 亿美元，超过 2025 全年。",
+  "design_insights": [
+    {
+      "title": "多模型协作成为 AI 产品的默认架构",
+      "summary": "微软在 Copilot Researcher 中引入 Critique 功能，由 GPT 起草、Claude 审核，最终输出质量在 DRACO 基准中提升 13.8%，超越 OpenAI、Google、Perplexity 和 Anthropic 的独立深度研究工具。同时 Copilot Cowork 以 Claude 的 Agent 能力驱动长任务自动执行，已通过 Frontier 计划开放。这标志着 AI 产品正在从「单一模型最优」转向「多模型编排」——不同模型各司其职，由平台层统一调度。对用户而言，他们不再需要关心底层用的是哪个模型，产品本身成为交互界面。",
+      "implication": "输入法 AI 帮写可以借鉴多模型编排思路：用速度快的轻量模型做实时候选生成，用推理更强的模型做二次润色/事实核查。例如用户在输入框触发「帮写」后，先用端侧小模型秒出初稿，再异步调用云端大模型做语气调整和事实补全，两步合并后更新候选。这样既保证响应速度，又提升输出质量，用户感知上只是「一次帮写」。",
+      "sources": ["GeekWire", "Microsoft 365 Blog", "WinBuzzer"],
+      "source_urls": [
+        {"name": "GeekWire", "url": "https://www.geekwire.com/2026/gpt-drafts-claude-critiques-microsoft-blends-rival-ai-models-in-new-copilot-upgrade/"},
+        {"name": "Microsoft 365 Blog", "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/30/copilot-cowork-now-available-in-frontier/"},
+        {"name": "WinBuzzer", "url": "https://winbuzzer.com/2026/03/31/microsoft-copilot-cowork-claude-review-gpt-multi-model-xcxwbn/"}
+      ],
+      "tags": ["多模型协作", "AI 产品架构", "质量校验", "平台化"]
+    },
+    {
+      "title": "语音优先 AI 进入毫秒级实时对话时代",
+      "summary": "Google 于 3 月 26 日全球上线 Gemini 3.1 Flash Live 语音模型，专为实时音频对话设计，具备声学细微差别检测、数字精确度和长上下文连贯性，已覆盖 200 个国家。该模型驱动 Gemini Live 和 Search Live 功能升级，并提供企业级 API，开发者可构建「语音优先」智能体。与此同时 Gemini App 月活已达 7.5 亿，两年增长 107 倍，API 请求量 1 月达 850 亿次。语音交互正从「语音转文字」的辅助功能，进化为独立的产品入口。",
+      "implication": "输入法语音输入需要从「准确转录」升级到「实时理解+智能整理」。参考 Gemini Flash Live 的声学理解能力，输入法可以在语音输入过程中做实时断句、自动过滤口头禅和填充词、智能标点，甚至在用户说完后自动生成结构化摘要。此外，语音输入本身可以成为帮写的触发入口——用户口述意图，输入法直接输出润色后的正式文本，省去「说→转文字→再编辑」的中间步骤。",
+      "sources": ["Google AI Blog", "9to5Google", "华尔街见闻"],
+      "source_urls": [
+        {"name": "Google AI Blog", "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/"},
+        {"name": "9to5Google", "url": "https://9to5google.com/2026/03/26/gemini-3-1-flash-live/"},
+        {"name": "华尔街见闻", "url": "https://wallstreetcn.com/articles/3768515"}
+      ],
+      "tags": ["语音AI", "实时对话", "语音优先", "输入入口"]
+    },
+    {
+      "title": "AI 输入法进入「入口争夺战」阶段",
+      "summary": "豆包输入法 Mac 版正式发布，标志着字节跳动将 AI 输入法从移动端延伸到桌面端，依托豆包大模型提供智能续写和内容优化。同期，人人都是产品经理发表深度评测，将讯飞、搜狗、百度、微信、豆包、智谱小凹、Typeless 七款输入法进行横向对比，指出输入法赛道的核心变革方向是从「用户去找功能」转变为「功能来找用户」——在键盘层直接唤起 AI 能力。搜狗凭借全功能免费和深厚词库守住基本盘，讯飞以语音识别和 AI 键差异化，豆包以无广告和语义联想抢占年轻用户。",
+      "implication": "竞品在桌面端发力意味着「AI 帮写」的战场正在从手机键盘延展到 PC 输入框。输入法团队需要关注两个趋势：一是桌面端场景下用户的帮写需求更偏向长文本（邮件、文档、代码注释），需要比移动端更强的上下文理解和格式感知；二是各家都在把 AI 能力前移到键盘层，谁能在不切换 App 的前提下提供最流畅的帮写体验，谁就占住入口。建议优先优化桌面端帮写的触发效率和上下文读取能力。",
+      "sources": ["人人都是产品经理", "Toy's Tech Notes"],
+      "source_urls": [
+        {"name": "人人都是产品经理", "url": "https://www.woshipm.com/share/6361972.html"},
+        {"name": "Toy's Tech Notes", "url": "https://www.80aj.com/2026/03/28/bytedance-doubao-mac-ai/"}
+      ],
+      "tags": ["输入法竞品", "桌面端AI", "入口争夺", "帮写"]
+    },
+    {
+      "title": "AI 安全治理从制度约束转向「内部掌舵」",
+      "summary": "DeepMind 创始人 Demis Hassabis 近日公开承认：正在开发的超级 AI 确实存在导致人类灭绝的风险，且全球 AI 竞赛已进入不可逆转的失控状态。他指出传统的伦理委员会和外部治理机制在商业竞争压力下已实质失效——ChatGPT 在 2022 年的突然崛起打乱了所有公司的安全节奏，迫使 Google 合并研发部门参战，安全标准逐步让位于发展速度。Hassabis 转而采取「个人掌控」策略，通过占据关键决策职位来管理风险。这反映出 AI 安全治理正在从「行业自律」转向「关键个人影响力」。",
+      "implication": "输入法作为日均数十亿次触达的系统级入口，AI 帮写功能的安全边界设计需要前置。在行业安全标准尚未成型的阶段，产品团队应主动建立内部的内容安全红线——包括帮写生成内容的事实核查机制、敏感话题过滤策略、以及用户输入数据的本地化处理方案。这既是风控需要，也是差异化竞争点（参考微信输入法主打隐私保护的策略）。",
+      "sources": ["AIbase", "36氪", "xix.ai"],
+      "source_urls": [
+        {"name": "AIbase", "url": "https://www.aibase.com/news/26707"},
+        {"name": "36氪", "url": "https://www.36kr.com/p/3745998340047366"},
+        {"name": "xix.ai", "url": "https://xix.ai/live/2990"}
+      ],
+      "tags": ["AI安全", "治理失效", "风险管理", "隐私保护"]
+    },
+    {
+      "title": "具身智能进入量产标准化阶段",
+      "summary": "智元机器人（AGIBOT）3 月 30 日宣布第一万台人形机器人下线，从 5000 台到 10000 台仅用三个月，成为全球首批达到该量级的具身智能企业之一。同期中国工信部批准发布首份具身智能行业标准《人工智能 关键基础技术 具身智能基准测试方法》，将于 6 月 1 日正式实施。此前 2 月发布的《人形机器人与具身智能标准体系（2026版）》已覆盖全产业链。这意味着具身智能正在从实验室原型跨越到工业量产，配套标准体系也在同步建立。",
+      "implication": "机器人交互场景中的语言输入需求将快速增长。人形机器人在工厂、医疗、服务场景中需要接收自然语言指令，这些指令往往是口语化的、带噪声的、多语种混合的。输入法团队可以关注两个方向：一是语音指令的结构化理解能力（从「帮我写邮件」延伸到「帮我写机器人控制指令」）；二是在机器人交互界面中提供嵌入式输入方案，为未来的跨设备 AI 助手提供输入基础设施。",
+      "sources": ["PRNewswire", "人民网", "RoboHorizon"],
+      "source_urls": [
+        {"name": "PRNewswire", "url": "https://www.prnewswire.com/apac/news-releases/agibot-reaches-10-000-units-as-real-world-demand-for-robots-accelerates-302728470.html"},
+        {"name": "人民网", "url": "https://news.qq.com/rain/a/20260330A080Q200"},
+        {"name": "RoboHorizon", "url": "https://robohorizon.cn/zh/news/2026/03/agibot-10000-humanoids-mass-production/"}
+      ],
+      "tags": ["具身智能", "量产里程碑", "行业标准", "跨设备交互"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "语音输入智能整理模式",
+      "pain_point": "用户在移动端用语音输入发消息或写笔记时，转录结果充斥口头禅、重复词和断句错误，需要花大量时间手动编辑才能发出去。尤其在嘈杂环境或快速口述场景下，「说完还得改半天」的体验严重拖慢效率。",
+      "opportunity": "在输入法语音输入模块中新增「智能整理」模式。入口：语音输入面板上增加一个「整理」开关，默认关闭。触发条件：用户开启后，语音转文字结果自动经过整理引擎处理。核心能力：自动去除口头禅和填充词、智能断句加标点、同义词合并、语序微调。MVP：先做中文场景的口头禅过滤（「那个」「就是」「然后」等）+ 自动标点，端侧轻量模型即可完成，不依赖云端。首期覆盖微信/备忘录等高频场景。",
+      "priority": "高",
+      "evidence": "Google Gemini 3.1 Flash Live 刚上线毫秒级语音理解，将语音 AI 交互标准提高一个台阶。竞品讯飞输入法已在方言和嘈杂环境语音识别上领先，但「转录后自动整理」尚未成为标配功能。人人都是产品经理评测指出语音输入正从「转录」进化为「理解」，市场窗口已打开。",
+      "source_urls": [
+        {"name": "Google AI Blog", "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/"},
+        {"name": "人人都是产品经理", "url": "https://www.woshipm.com/share/6361972.html"}
+      ]
+    },
+    {
+      "title": "桌面端输入框内帮写快捷面板",
+      "pain_point": "PC 端用户在写邮件、文档、即时消息时，想要 AI 帮写需要切换到独立的 AI 工具（如豆包对话窗、ChatGPT 网页），复制粘贴上下文，再把结果贴回输入框。流程割裂、上下文丢失，写一段 200 字的正式回复可能要在三个窗口间切换四五次。",
+      "opportunity": "在桌面端输入法中实现「输入框内帮写面板」。入口：用户在任意输入框按快捷键（如 Ctrl+Space 双击或自定义热键）唤起浮窗。触发条件：检测到输入框有文字内容时提供「润色/续写/改写」，输入框为空时提供「帮我写…」的意图引导。核心能力：读取当前输入框已有内容作为上下文，用户选择操作后直接在浮窗中预览结果，一键回填。MVP：先支持邮件客户端和主流浏览器中的文本框，做润色和续写两个核心操作。首期不做复杂模板，专注「少点一步、少切一次」的效率提升。",
+      "priority": "高",
+      "evidence": "豆包输入法刚发布 Mac 版，主打智能续写和内容优化，说明字节已在争抢桌面端 AI 输入入口。Typeless 专注桌面端意图理解和语气调整，验证了 PC 输入场景的付费意愿。微软 Copilot Cowork 也在将 AI 能力嵌入 Office 文档流，证明「就地帮写」的产品方向已被头部验证。",
+      "source_urls": [
+        {"name": "Toy's Tech Notes", "url": "https://www.80aj.com/2026/03/28/bytedance-doubao-mac-ai/"},
+        {"name": "人人都是产品经理", "url": "https://www.woshipm.com/share/6361972.html"}
+      ]
+    },
+    {
+      "title": "帮写结果二次校验与来源标注",
+      "pain_point": "用户使用 AI 帮写生成回复或段落后，无法判断内容是否准确、是否有事实性错误。在工作场景（发给客户的邮件、汇报材料）中，用户不敢直接采纳 AI 生成的内容，还得自己逐句核实，帮写的效率优势被「不敢用」大幅削弱。",
+      "opportunity": "在帮写结果展示环节增加「置信度标注」和可选的「二次校验」。入口：帮写结果卡片底部增加「校验」按钮。触发条件：用户点击校验后，用独立模型对生成内容做事实性和语义一致性检查。核心能力：标注哪些句子是高置信度的（直接采纳），哪些存在不确定性（建议用户复核），类似微软 Critique 的「写→审」两步流程。MVP：先在帮写长文本场景（200字以上）中启用，短回复暂不触发。首期聚焦事实类内容（数字、日期、人名）的标注。",
+      "priority": "中",
+      "evidence": "微软 Copilot Researcher 的 Critique 功能证明「GPT 写 + Claude 审」的多模型校验流程可以将深度研究质量提升 13.8%。这个思路完全可以降维到输入法帮写场景。DeepMind Hassabis 的安全警告也在推动行业重视 AI 输出的可信度问题。",
+      "source_urls": [
+        {"name": "GeekWire", "url": "https://www.geekwire.com/2026/gpt-drafts-claude-critiques-microsoft-blends-rival-ai-models-in-new-copilot-upgrade/"},
+        {"name": "AIbase", "url": "https://www.aibase.com/news/26707"}
+      ]
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "微软上线 Copilot Cowork 和 Critique：GPT 起草、Claude 审核，多模型协作进入 Office",
+      "category": "产品发布",
+      "relevance": "高",
+      "summary": "微软推出 Copilot Cowork（Claude 驱动长任务 Agent）和 Researcher Critique 功能（GPT 起草、Claude 审核），DRACO 基准提升 13.8%，超越所有独立深度研究工具。通过 Frontier 计划面向 1500 万付费席位开放。",
+      "source": "GeekWire",
+      "source_url": "https://www.geekwire.com/2026/gpt-drafts-claude-critiques-microsoft-blends-rival-ai-models-in-new-copilot-upgrade/"
+    },
+    {
+      "title": "Mistral AI 获 8.3 亿美元债务融资，将在巴黎建 13800 块 GPU 数据中心",
+      "category": "资本动态",
+      "relevance": "中",
+      "summary": "法国 AI 创企 Mistral AI 从七家银行获得 8.3 亿美元债务融资，用于在巴黎近郊建设搭载 13800 块 Nvidia GB300 GPU 的数据中心，总算力达 44 exaflops。这是欧洲最大的 AI 基础设施投资之一，凸显欧洲在 AI 算力竞赛中的追赶意图。",
+      "source": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/03/30/mistral-ai-raises-830m-in-debt-to-set-up-a-data-center-near-paris/"
+    },
+    {
+      "title": "DeepMind 创始人 Hassabis 公开承认超级 AI 存在人类灭绝风险",
+      "category": "行业动态",
+      "relevance": "高",
+      "summary": "Demis Hassabis 近日公开表示，正在开发的超级 AI 确实存在导致人类灭绝的风险，全球 AI 竞赛已不可逆转。他认为传统伦理委员会和外部治理在商业竞争下已实质失效，转而通过占据关键决策职位来以个人影响力管理风险。言论引发业界对 AI 安全窗口期缩短的担忧。",
+      "source": "AIbase",
+      "source_url": "https://www.aibase.com/news/26707"
+    },
+    {
+      "title": "Google Gemini 3.1 Flash Live 语音模型全球上线，覆盖 200 国",
+      "category": "大模型",
+      "relevance": "高",
+      "summary": "Google 发布 Gemini 3.1 Flash Live，定位为最高质量音频模型，专为毫秒级实时语音对话设计。支持声学细微差别检测、数字精确度和长上下文连贯对话。已通过 Gemini Live API 向开发者开放，驱动 Gemini Live 和 Search Live 功能升级。",
+      "source": "Google AI Blog",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/"
+    },
+    {
+      "title": "智元机器人第一万台人形机器人下线，三个月产量翻倍",
+      "category": "行业动态",
+      "relevance": "中",
+      "summary": "上海智元机器人（AGIBOT）宣布第 10000 台人形机器人下线，从 5000 台到 10000 台仅用三个月，成为全球首批达到万台量级的具身智能企业。产品已应用于制造、物流和服务场景，被视为人形机器人从「炫技」进入真正量产的标志。",
+      "source": "PRNewswire",
+      "source_url": "https://www.prnewswire.com/apac/news-releases/agibot-reaches-10-000-units-as-real-world-demand-for-robots-accelerates-302728470.html"
+    },
+    {
+      "title": "豆包输入法 Mac 版发布，字节以 AI 输入法进军桌面端",
+      "category": "产品发布",
+      "relevance": "高",
+      "summary": "字节跳动旗下豆包输入法正式推出 macOS 客户端，依托豆包大模型提供智能续写和内容优化功能。此举标志着 AI 输入法竞争从移动端蔓延到桌面端，字节希望通过输入法这一高频刚需场景抢占 PC 端 AI 落地入口。",
+      "source": "Toy's Tech Notes",
+      "source_url": "https://www.80aj.com/2026/03/28/bytedance-doubao-mac-ai/"
+    },
+    {
+      "title": "中国工信部发布首份具身智能行业标准，6 月 1 日实施",
+      "category": "AI政策",
+      "relevance": "中",
+      "summary": "工信部批准发布《人工智能 关键基础技术 具身智能基准测试方法》，这是具身智能领域首份行业标准，将于 6 月 1 日正式实施。此前 2 月发布的《人形机器人与具身智能标准体系（2026版）》已覆盖全产业链，中国正在为人形机器人量产建立完整的标准基础设施。",
+      "source": "人民网",
+      "source_url": "https://news.qq.com/rain/a/20260330A080Q200"
+    },
+    {
+      "title": "Q1 全球 AI 创投突破 2200 亿美元，超过 2025 全年",
+      "category": "资本动态",
+      "relevance": "中",
+      "summary": "据 PitchBook 和 CB Insights 数据，2026 年 Q1 全球 AI 创投总额突破 2200 亿美元，其中 2 月单月达 1890 亿美元（含 OpenAI 1100 亿美元超级轮），已超过 2025 全年 AI 投资总额。资金高度集中在头部公司和基础设施领域。",
+      "source": "AI News Grid",
+      "source_url": "https://ainewsgrid.com/blog/ai-startup-funding-hits-220-billion-early-2026"
+    },
+    {
+      "title": "OpenAI 年化收入达 250 亿美元，Q4 IPO 估值瞄准 8400 亿",
+      "category": "资本动态",
+      "relevance": "中",
+      "summary": "OpenAI 年化收入已达 250 亿美元，较两个月前增长 17%。公司正筹备 Q4 2026 IPO，目标估值 8400 亿至 1 万亿美元，将成为科技史上最大规模 IPO 之一。企业客户增长是收入增长主要驱动力。",
+      "source": "Techi",
+      "source_url": "https://www.techi.com/openai-ipo/"
+    },
+    {
+      "title": "Gemini 月活突破 7.5 亿，API 请求量达 850 亿次",
+      "category": "行业动态",
+      "relevance": "中",
+      "summary": "Google Gemini App 月活跃用户已达 7.5 亿，两年增长 107 倍。API 开发者 240 万，2026 年 1 月处理 850 亿次请求。Gemini 3.1 Pro 在 16 项基准中领先 13 项，API 定价仅为 GPT-5.3 的五分之一，以激进的性价比策略争夺企业市场。",
+      "source": "Tech Insider",
+      "source_url": "https://tech-insider.org/google-gemini-750-million-users-march-2026-updates/"
+    },
+    {
+      "title": "欧盟理事会就简化 AI 法规达成立场，推进 Omnibus VII",
+      "category": "AI政策",
+      "relevance": "中",
+      "summary": "欧盟理事会 3 月 13 日就简化 AI 规则提案达成共同立场，作为 Omnibus VII 立法包的一部分。旨在降低中小企业合规负担，同时维持高风险 AI 系统的严格监管要求。CDT Europe 3 月 AI 简报指出欧盟正在平衡创新与监管的节奏。",
+      "source": "EU Council",
+      "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/03/13/council-agrees-position-to-streamline-rules-on-artificial-intelligence/"
+    },
+    {
+      "title": "AI 输入法横评：七款产品从「猜词」进化到「猜意图」",
+      "category": "AI工具",
+      "relevance": "高",
+      "summary": "人人都是产品经理发布深度横评，对比讯飞、搜狗、百度、微信、豆包、智谱小凹、Typeless 七款 AI 输入法。结论是输入法竞争已从打字准确度升级为「入口争夺」，核心变革在于将 AI 能力前移到键盘层，实现「功能来找用户」而非「用户去找功能」。",
+      "source": "人人都是产品经理",
+      "source_url": "https://www.woshipm.com/share/6361972.html"
+    },
+    {
+      "title": "中国机器人公司 Cedarobo 完成约 1400 万美元新一轮融资",
+      "category": "资本动态",
+      "relevance": "中",
+      "summary": "中国人形机器人公司松延动力（Cedarobo）完成新一轮约 1400 万美元融资，由深创投、光速中国、元启资本等参投。公司专注于具身智能机器人研发，此次融资将用于扩大研发和量产能力。",
+      "source": "The AI Insider",
+      "source_url": "https://theaiinsider.tech/2026/03/31/report-chinese-humanoid-robotics-company-cedarobo-raises-14m-usd-in-new-funding-round/"
+    }
+  ]
+}
