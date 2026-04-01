@@ -1,0 +1,204 @@
+{
+  "weekOf": "2026-03-31",
+  "generatedAt": "2026-04-01 10:14",
+  "dataSources": ["2026-03-26", "2026-03-27", "2026-03-28", "2026-03-29", "2026-03-30", "2026-03-31", "2026-04-01"],
+  "stages": {
+    "research": {
+      "label": "桌面研究",
+      "summary": "AI 搜索和自动信息聚合正在把"搜→筛→读→摘"压缩成一步。设计师做趋势调研的方式正在从人肉开 tab 变成喂问题给 AI。",
+      "items": [
+        {
+          "title": "AI 搜索正在重塑信息采集链路：千问、ChatGPT、Gemini 都在抢「发现层」",
+          "source": "2026-03-26 / 2026-03-27",
+          "sourceDetail": "ChatGPT 通过 ACP 协议转型购物平台，千问上线 AI 打车，Gemini 月活 7.5 亿",
+          "insight": "AI 搜索引擎已经不只是"搜得更好"，而是在直接替代设计师做桌面研究的前半段：收集、初筛、结构化。",
+          "action": "把团队的竞品追踪和行业趋势调研分两步：先用 AI 搜索出结构化初稿，再人工做判断和标注。",
+          "tags": ["信息采集", "AI搜索", "效率提升"],
+          "sourceUrls": [
+            {"name": "ChatGPT 购物化", "url": "https://the-decoder.com/chatgpt-is-turning-into-a-shopping-platform-with-product-images-prices-and-comparisons-but-no-checkout/"},
+            {"name": "千问 AI 打车", "url": "https://www.news.cn/tech/20260323/3b76522da0a8493cacda08c34f20367a/c.html"}
+          ]
+        },
+        {
+          "title": "全模态模型让"看图+听录音→出研究笔记"变成一步",
+          "source": "2026-03-31",
+          "sourceDetail": "Qwen3.5-Omni 全模态模型支持 10 小时音频 + 图像 + 视频理解",
+          "insight": "以前做用户访谈整理要先转写再读再归纳。全模态模型可以直接吃录音 + 截图，一次性出结构化洞察初稿。",
+          "action": "下次做用户访谈后，先把录音和截图一起喂给全模态模型试一轮，看初步归纳质量是否可用。",
+          "tags": ["全模态", "访谈整理", "研究效率"],
+          "sourceUrls": [
+            {"name": "Qwen3.5-Omni", "url": "https://qwen.ai/blog?id=qwen3.5-omni"}
+          ]
+        },
+        {
+          "title": "每日自动化信息聚合正在替代"周会人工同步"",
+          "source": "2026-04-01",
+          "sourceDetail": "AI Insights Hub 每天 8:00 自动生成 JSON，企微群推送日报",
+          "insight": "信息流不是靠人每周分享一次"我这周看到了什么"，而是应该做成自动化持续供给。我们自己就是案例。",
+          "action": "持续维护 AI Insights Hub 的信息源质量，让它成为团队的"设计研究底座"。",
+          "tags": ["自动化", "信息流", "团队效率"],
+          "sourceUrls": [
+            {"name": "AI Insights Hub", "url": "https://tkxy.github.io/ai-insights-hub/"}
+          ]
+        }
+      ]
+    },
+    "competitive": {
+      "label": "竞品分析",
+      "summary": "多模态模型让"截图→结构化拆解"变成一句话的事。竞品 UI 数据库也在加速用 AI 搜索替代手动安装截图。",
+      "items": [
+        {
+          "title": "豆包输入法上了 Mac 版，桌面端帮写入口竞争正式开始",
+          "source": "2026-04-01",
+          "sourceDetail": "豆包输入法 Mac 版发布 + 七款 AI 输入法横评",
+          "insight": "竞品已经在抢桌面端帮写入口。豆包依托豆包大模型做智能续写和内容优化，方向跟我们高度重叠。",
+          "action": "拉一次豆包 Mac 版的帮写体验走查，重点看触发方式、上下文读取和回填交互。",
+          "tags": ["竞品动态", "桌面端", "豆包"],
+          "sourceUrls": [
+            {"name": "豆包 Mac 版", "url": "https://www.80aj.com/2026/03/28/bytedance-doubao-mac-ai/"},
+            {"name": "七款输入法横评", "url": "https://www.woshipm.com/share/6361972.html"}
+          ]
+        },
+        {
+          "title": "七款 AI 输入法横评：入口之争从"猜词"升级到"猜意图"",
+          "source": "2026-04-01",
+          "sourceDetail": "人人都是产品经理发布讯飞/搜狗/百度/微信/豆包/智谱小凹/Typeless 横评",
+          "insight": "结论是输入法竞争已从打字准确度升级为入口争夺，核心变革在于把 AI 能力前移到键盘层。搜狗守词库基本盘，讯飞守语音，豆包抢年轻用户。",
+          "action": "把横评结论同步到设计组，标注我们在哪些维度领先、哪些维度有差距。",
+          "tags": ["竞品横评", "入口争夺", "帮写"],
+          "sourceUrls": [
+            {"name": "人人都是产品经理", "url": "https://www.woshipm.com/share/6361972.html"}
+          ]
+        },
+        {
+          "title": "Siri 开放第三方 AI 接入，输入法面临系统级竞争",
+          "source": "2026-03-29 / 2026-03-30",
+          "sourceDetail": "iOS 27 将允许 Siri 接入 Claude、Gemini，苹果发放 20-40 万美元留任奖金防 OpenAI 挖角",
+          "insight": "如果 Siri 可以直接调 Claude 写回复，输入法的帮写优势会被削弱。我们的差异化在于输入框上下文——Siri 不知道你在跟谁聊、聊到哪了。",
+          "action": "把"利用输入框上下文做帮写"作为核心差异化方向，重点优化上下文读取深度。",
+          "tags": ["系统竞争", "Siri", "差异化"],
+          "sourceUrls": [
+            {"name": "MacRumors", "url": "https://www.macrumors.com/2026/03/26/apple-ios-27-siri-chatbot-integration/"}
+          ]
+        }
+      ]
+    },
+    "user_research": {
+      "label": "用户调研",
+      "summary": "用户调研的「重活」正在被压缩。访谈转写、开放题归纳、碎片化场景的痛点捕捉都有了新工具和新数据。",
+      "items": [
+        {
+          "title": "ActivTrak 报告揭示真实用户痛点：AI 提效但工作更碎片化",
+          "source": "2026-03-29 / 2026-03-30",
+          "sourceDetail": "ActivTrak 2026 职场报告：AI 覆盖 80% 但专注时长三年最低，沟通耗时激增 100%",
+          "insight": "用户最大的痛点不是"写不出来"，而是"一天要写太多条、每条都要秒回"。帮写方向应从单次质量转向批量效率。",
+          "action": "把这份报告的核心数据整理到需求文档里，作为"消息通知智能预回复"需求的用研支撑。",
+          "tags": ["用户痛点", "碎片化", "数据支撑"],
+          "sourceUrls": [
+            {"name": "ActivTrak 报告", "url": "https://www.activtrak.com/news/state-of-the-workplace-ai-accelerating-work/"}
+          ]
+        },
+        {
+          "title": "ARC-AGI-3 提醒我们：AI 在陌生场景仍然很脆弱",
+          "source": "2026-03-29",
+          "sourceDetail": "ARC-AGI-3 所有前沿模型得分 <1%，Gemini 3.1 Pro 仅 0.37%",
+          "insight": "不要高估 AI 在新场景的可靠性。帮写应优先在边界清晰的高频任务上做稳，而不是承诺"什么都能写"。",
+          "action": "在帮写功能规划中增加"能力边界说明"，对涉及事实判断的场景增加谨慎模式。",
+          "tags": ["能力边界", "可靠性", "风险控制"],
+          "sourceUrls": [
+            {"name": "ARC-AGI-3", "url": "https://the-decoder.com/arc-agi-3-offers-2m-to-any-ai-that-matches-untrained-humans-yet-every-frontier-model-scores-below-1/"}
+          ]
+        },
+        {
+          "title": "本周日报中"写作人设规则"需求连续 4 天出现",
+          "source": "2026-03-28 ~ 2026-03-31",
+          "sourceDetail": "Bluesky Attie 验证了"用户用自然语言定义规则"的模式",
+          "insight": "从信息源自动聚合的角度看，"写作人设规则面板"是本周被最多天命中的高优需求，值得优先推进。",
+          "action": "把这条信号作为下次需求评审的讨论项，附上 Attie 的产品参考。",
+          "tags": ["需求验证", "写作人设", "重复信号"],
+          "sourceUrls": [
+            {"name": "Bluesky Attie", "url": "https://techcrunch.com/2026/03/28/bluesky-leans-into-ai-with-attie-an-app-for-building-custom-feeds/"}
+          ]
+        }
+      ]
+    },
+    "design_output": {
+      "label": "设计稿输出",
+      "summary": "出稿方式正在被彻底打开。Figma MCP 做双向协作，Stitch 从目标直接生 UI，Pencil/v0 在代码里完成设计。",
+      "items": [
+        {
+          "title": "Figma MCP 升级为双向：代码可以推回画布做 compare",
+          "source": "2026-03 Figma Release Notes",
+          "sourceDetail": "支持 Cursor、Warp、GitHub Copilot 等，UI 可推回 Figma 作为可编辑 frame",
+          "insight": "设计交付不再是单向的。组件命名、变量、状态定义的规范性变得更重要，因为 agent 能不能正确读上下文，取决于你给的结构。",
+          "action": "在下一次设计 review 中，试一次用 MCP 把代码生成的 UI 推回 Figma 做 compare，看流程是否跑得通。",
+          "tags": ["Figma MCP", "双向协作", "设计交付"],
+          "sourceUrls": [
+            {"name": "Figma Release Notes", "url": "https://www.figma.com/release-notes/"}
+          ]
+        },
+        {
+          "title": "Google Stitch 的 Vibe Design：从目标出发直接出高保真 UI",
+          "source": "2026-03 Google Labs",
+          "sourceDetail": "AI 原生画布、语音批评、DESIGN.md 规则文件、自动推演下一屏",
+          "insight": "出稿的起点从 wireframe 变成了"描述目标和约束"。设计师的价值在于写好规则、喂好上下文、快速收敛方向。",
+          "action": "在下次需求评审后，用 Stitch 快速出 2-3 个 vibe 方向，看能不能把"空白页焦虑"的启动时间压下来。",
+          "tags": ["Google Stitch", "Vibe Design", "AI画布"],
+          "sourceUrls": [
+            {"name": "Google Stitch", "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/"}
+          ]
+        },
+        {
+          "title": "多模型协作进入产品化：GPT 起草、Claude 审核，质量提升 13.8%",
+          "source": "2026-04-01",
+          "sourceDetail": "微软 Copilot Cowork + Critique 功能，DRACO 基准提升 13.8%",
+          "insight": "出稿不一定只靠一个模型。快出初稿 + 异步校验的双模型流程已经被微软验证可行，帮写功能也可以这么做。",
+          "action": "评估在帮写流程中引入"初稿+校验"两步的可行性，先在长文本场景试。",
+          "tags": ["多模型协作", "质量校验", "微软Copilot"],
+          "sourceUrls": [
+            {"name": "GeekWire", "url": "https://www.geekwire.com/2026/gpt-drafts-claude-critiques-microsoft-blends-rival-ai-models-in-new-copilot-upgrade/"}
+          ]
+        }
+      ]
+    },
+    "validation": {
+      "label": "设计方案验证",
+      "summary": "验证不用等上线了。AI 预测热力图、可访问性自动 lint、快速原型当天就能拉人测。",
+      "items": [
+        {
+          "title": "帮写的验证指标应该从"好不好看"转向"敢不敢发"",
+          "source": "2026-04-01",
+          "sourceDetail": "微软 Critique 功能 + Hassabis AI 安全警告",
+          "insight": "帮写功能的核心验证不是"文案是否流畅"，而是用户是否敢直接采纳。置信度标注和事实校验应纳入体验验证。",
+          "action": "在下次可用性测试中增加"你会直接发出去还是会再改"这个追问。",
+          "tags": ["验证指标", "信任度", "采纳率"],
+          "sourceUrls": [
+            {"name": "GeekWire - Critique", "url": "https://www.geekwire.com/2026/gpt-drafts-claude-critiques-microsoft-blends-rival-ai-models-in-new-copilot-upgrade/"}
+          ]
+        },
+        {
+          "title": "端侧语音合成已具备产品化条件，"帮写→帮说"可以做验证了",
+          "source": "2026-03-29 / 2026-03-30",
+          "sourceDetail": "Voxtral TTS 4B 开源模型，70ms 首包时延，可在手机运行",
+          "insight": "帮写结果一键转语音发送的技术基础已经成熟。可以做一轮原型验证，看用户在驾驶/走路场景的使用意愿。",
+          "action": "出一个"帮写→转语音"的可交互 prototype，拉 3-5 个用户做快速可用性测试。",
+          "tags": ["语音合成", "原型验证", "场景测试"],
+          "sourceUrls": [
+            {"name": "Voxtral TTS", "url": "https://www.marktechpost.com/2026/03/28/mistral-ai-releases-voxtral-tts-a-4b-open-weight-streaming-speech-model-for-low-latency-multilingual-voice-generation/"}
+          ]
+        },
+        {
+          "title": "垂直场景专用模型已在客服场景超越 GPT-5.4，帮写应走同样路线",
+          "source": "2026-03-29 / 2026-03-30",
+          "sourceDetail": "Intercom Apex 1.0 在解决率、速度、幻觉率、成本上均超 GPT-5.4",
+          "insight": "通用大模型不一定是帮写最优解。针对高频场景训练的专用小模型可能在语气、长度、格式控制上做得更稳。",
+          "action": "梳理帮写最高频的 3 个场景（工作消息/社交回复/朋友圈），评估做场景路由的可行性。",
+          "tags": ["专用模型", "场景路由", "验证方向"],
+          "sourceUrls": [
+            {"name": "Intercom Apex 1.0", "url": "https://venturebeat.com/technology/intercoms-new-post-trained-fin-apex-1-0-beats-gpt-5-4-and-claude-sonnet-4-6"}
+          ]
+        }
+      ]
+    }
+  }
+}
