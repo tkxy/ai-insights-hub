@@ -1,0 +1,216 @@
+{
+  "date": "2026-04-02",
+  "generated_at": "2026-04-02T08:00:00+08:00",
+  "daily_summary": "四月第一个交易日，AI 行业的资本与安全叙事同步升温。Anthropic 估值飙升至 3800 亿美元，投资者从 OpenAI 阵营加速分流，显示市场对「第二极」的押注意愿。与此同时，Anthropic 的 Claude Code 源码因 npm 包意外泄露 51.2 万行代码，暴露了 AI 工具链的供应链安全短板。资本端，Q1 全球 VC 投资达 3000 亿美元历史新高，AI 独占 80%（约 2420 亿），头部集中度进一步加剧。技术端，PrismML 发布首个商用 1-bit 大模型 Bonsai，将 80 亿参数模型压缩至 1.15GB，为端侧 AI 部署打开新路径。Google 发布 3 月 AI 月度总结，Gemini 3.1 Flash-Lite/Live、Lyria 3 Pro 音乐生成、Antigravity 编码智能体等密集上线。Cohere 开源 ASR 模型 Transcribe 登顶 HuggingFace，支持中文在内 14 种语言。小米被曝自研内置大模型的系统级输入法，从底层植入 AI 纠错能力。Salesforce 一口气为 Slack 注入 30 项 AI 新功能。ChatGPT 登陆 Apple CarPlay，AI 助手的车载入口争夺正式开启。",
+  "design_insights": [
+    {
+      "title": "1-bit 量化让大模型塞进手机：端侧 AI 的实用化拐点",
+      "summary": "PrismML 发布 1-Bit Bonsai，这是首个商用 1-bit 大语言模型——将 80 亿参数模型压缩至仅 1.15GB，推理速度提升数倍且几乎不损失质量。传统量化（4-bit、8-bit）已在端侧部署中广泛应用，但 1-bit 将压缩率推到极致，使得在手机、IoT 设备上运行具备完整推理能力的大模型成为现实。这不是学术论文，而是商用产品，意味着端侧 AI 的成本门槛大幅降低。",
+      "implication": "输入法是端侧 AI 的天然落地场景。1-bit 模型的体积（~1GB）完全可以内置在输入法安装包中，实现离线帮写、离线纠错、离线续写。这解决了帮写功能对网络依赖的最大痛点——用户在地铁、飞机、弱网环境下也能获得 AI 辅助输入。建议团队评估 Bonsai 或同类 1-bit 模型在中文帮写场景的可用性，优先用于「短句纠错」和「常用语续写」这类对模型能力要求适中但对延迟要求极高的场景。",
+      "sources": ["PrismML Official", "VentureBeat", "Hacker News"],
+      "source_urls": [
+        {"name": "PrismML Official", "url": "https://www.prismml.com/blog/bonsai-1bit-llm"},
+        {"name": "VentureBeat", "url": "https://venturebeat.com/ai/prismml-bonsai-first-commercial-1bit-llm/"},
+        {"name": "Hacker News", "url": "https://news.ycombinator.com/item?id=44523871"}
+      ],
+      "tags": ["1-bit量化", "端侧AI", "模型压缩", "离线帮写"]
+    },
+    {
+      "title": "AI 工具链源码泄露敲响供应链安全警钟",
+      "summary": "Anthropic 的 Claude Code 工具被发现通过 npm 包意外暴露了约 51.2 万行源代码，包含系统提示词、内部工具架构和安全过滤逻辑。泄露内容在 GitHub 和安全社区迅速传播，引发对 AI 开发工具供应链安全的广泛讨论。这不是黑客攻击，而是包管理和发布流程中的疏忽——恰恰说明即使是顶级 AI 公司，在快速迭代的压力下也会在基础安全环节出纰漏。同时泄露内容也揭示了 Claude Code 内部使用的多层安全过滤机制和 prompt 工程策略。",
+      "implication": "两个维度的启示。一是安全维度：输入法 AI 帮写功能的 prompt 工程和安全过滤逻辑属于核心资产，需要在发布流程中建立代码审计机制，防止类似的包管理泄露。建议将敏感 prompt 和过滤规则从客户端代码中抽离，改为服务端下发。二是技术维度：泄露的 Claude Code 源码中展示的多层安全过滤架构（输入过滤→生成过滤→输出过滤）可以作为输入法帮写内容安全体系的参考模板。",
+      "sources": ["The Verge", "Cybernews", "TechRadar"],
+      "source_urls": [
+        {"name": "The Verge", "url": "https://www.theverge.com/2026/4/1/anthropic-claude-code-source-leak-npm"},
+        {"name": "Cybernews", "url": "https://cybernews.com/security/anthropic-claude-code-source-code-leaked/"},
+        {"name": "TechRadar", "url": "https://www.techradar.com/computing/artificial-intelligence/claude-code-npm-leak-512k-lines"}
+      ],
+      "tags": ["供应链安全", "代码泄露", "AI工具链", "安全架构"]
+    },
+    {
+      "title": "小米系统级 AI 输入法曝光：大模型直接嵌入系统底层",
+      "summary": "小米被曝正在自研一款内置大模型的系统级输入法，最大特点是将 AI 纠错能力直接植入系统底层，而非作为独立 App 或云端调用。这意味着 AI 纠错将在所有输入场景（包括密码框、搜索栏、第三方 App 内）中生效，且延迟极低。小米的策略是利用 MIUI/HyperOS 的系统级权限，让输入法成为 AI 能力的系统基础设施而非独立应用。",
+      "implication": "这是输入法竞争格局的重大变量。小米拥有全球 6 亿月活设备的系统级分发优势，如果其 AI 输入法预装在 HyperOS 中，将直接绕过应用市场的获客竞争。对其他输入法厂商的启示：一是需要加速端侧模型的部署，在系统级输入法普及前建立用户习惯壁垒；二是考虑与手机厂商合作，争取系统级 API 权限（如剪贴板读取、跨应用上下文获取），否则在权限维度上将处于劣势。建议密切追踪小米输入法的发布节奏和技术方案细节。",
+      "sources": ["CNMO", "IT之家", "GizChina"],
+      "source_urls": [
+        {"name": "CNMO", "url": "https://www.cnmo.com/news/xiaomi-self-developed-ai-input-method-2026/"},
+        {"name": "IT之家", "url": "https://www.ithome.com/0/825/607.htm"},
+        {"name": "GizChina", "url": "https://www.gizchina.com/2026/04/01/xiaomi-ai-input-method-built-in-llm/"}
+      ],
+      "tags": ["系统级AI", "输入法竞品", "端侧大模型", "小米"]
+    },
+    {
+      "title": "开源语音识别登顶：Cohere Transcribe 重塑多语言 ASR 格局",
+      "summary": "Cohere 发布开源 ASR 模型 Transcribe，在 HuggingFace 排行榜上登顶第一，支持中文在内的 14 种语言，中文识别准确率显著优于 Whisper v4。模型完全开源，支持本地部署，且针对口语化表达和嘈杂环境做了专门优化。同期微软也开源了 VibeVoice 语音 AI 项目，语音技术的开源化趋势正在加速。",
+      "implication": "Cohere Transcribe 对输入法语音输入是直接利好。开源意味着可以在不依赖商业 API 的前提下获得顶级语音识别能力，且支持本地部署（端侧或私有云），完美契合输入法对隐私和延迟的双重要求。建议评估将 Transcribe 集成到语音输入模块中，替换或补充现有 ASR 引擎，尤其在中文口语化场景和方言场景中进行对比测试。结合昨天提出的「语音输入智能整理模式」需求，Transcribe 可以作为前端识别引擎，后端接 LLM 做整理输出。",
+      "sources": ["Cohere Blog", "HuggingFace", "AI News"],
+      "source_urls": [
+        {"name": "Cohere Blog", "url": "https://cohere.com/blog/transcribe-open-source-asr"},
+        {"name": "HuggingFace", "url": "https://huggingface.co/CohereForAI/transcribe-v1"},
+        {"name": "AI News", "url": "https://www.artificialintelligence-news.com/news/cohere-transcribe-tops-huggingface-open-source-asr/"}
+      ],
+      "tags": ["语音识别", "开源ASR", "多语言", "端侧部署"]
+    },
+    {
+      "title": "AI 助手抢滩车载入口：ChatGPT 登陆 Apple CarPlay",
+      "summary": "OpenAI 宣布 ChatGPT 将通过 iOS 26.4 更新正式支持 Apple CarPlay，用户在驾车时可以通过语音与 ChatGPT 进行多轮对话，获取导航建议、日程查询、消息回复等服务。这是主流 AI 助手首次进入 CarPlay 生态。此前 Alexa+ 也刚刚接入 Uber Eats 和 Grubhub，AI 助手正在从手机/电脑延伸到汽车、智能家居等全场景。",
+      "implication": "车载场景是语音输入的高频刚需场景。ChatGPT 进入 CarPlay 意味着用户会逐渐习惯在驾车时通过语音完成复杂任务（而非简单的语音指令）。输入法需要思考如何在车载场景中提供价值——比如当用户通过 CarPlay 口述消息时，输入法可以在消息 App 端提供「AI 润色后发送」的选项，或者在用户到达目的地后，将驾车途中的语音笔记自动整理成结构化文本。车载场景的核心约束是零触控、高容错、快反馈。",
+      "sources": ["The Verge", "MacRumors", "9to5Mac"],
+      "source_urls": [
+        {"name": "The Verge", "url": "https://www.theverge.com/2026/4/1/chatgpt-apple-carplay-ios-26-4"},
+        {"name": "MacRumors", "url": "https://www.macrumors.com/2026/04/01/chatgpt-carplay-support-ios-26/"},
+        {"name": "9to5Mac", "url": "https://9to5mac.com/2026/04/01/chatgpt-apple-carplay-hands-on/"}
+      ],
+      "tags": ["车载AI", "语音交互", "全场景", "CarPlay"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "端侧离线帮写模式",
+      "pain_point": "用户在地铁、飞机、电梯等弱网或无网环境中使用输入法时，AI 帮写功能完全不可用。这些恰恰是用户频繁打字的场景（通勤时回消息、候机时写邮件），帮写功能的价值在最需要的时候打了折扣。即便有网络，云端调用的 500ms-2s 延迟也让帮写在快节奏输入中显得「卡顿」。",
+      "opportunity": "基于 1-bit 量化技术（如 PrismML Bonsai）在输入法中内置一个约 1GB 的端侧轻量模型，实现完全离线的帮写能力。入口：帮写面板增加「离线模式」标识，在无网时自动切换。核心能力：短句纠错（错别字、语法）、常用语续写（「麻烦您帮我…」→ 自动补全常见请求句式）、语气调整（口语→正式）。MVP：先做中文短句纠错和 top-50 高频场景续写，模型大小控制在 500MB 以内，覆盖 90% 的日常短消息场景。长文本和创意写作仍走云端。",
+      "priority": "高",
+      "evidence": "PrismML Bonsai 证明 1-bit 量化可以将 8B 模型压至 1.15GB 且保持商用质量。小米系统级 AI 输入法也在走端侧路线，说明端侧 AI 输入已被头部厂商验证。用户调研数据普遍显示「弱网不可用」是 AI 功能最大抱怨之一。",
+      "source_urls": [
+        {"name": "PrismML Official", "url": "https://www.prismml.com/blog/bonsai-1bit-llm"},
+        {"name": "GizChina", "url": "https://www.gizchina.com/2026/04/01/xiaomi-ai-input-method-built-in-llm/"}
+      ]
+    },
+    {
+      "title": "帮写安全过滤三层防护体系",
+      "pain_point": "AI 帮写生成的内容可能包含事实错误、不当言论、隐私泄露（如自动补全中暴露用户姓名或联系方式），目前缺乏系统性的内容安全过滤机制。更严重的是，帮写功能的 prompt 和过滤规则如果泄露（参考 Claude Code 事件），竞品可以直接复制安全策略甚至利用漏洞。",
+      "opportunity": "建立帮写内容安全的「输入-生成-输出」三层过滤体系。输入层：对用户输入的上下文做敏感信息脱敏（手机号、身份证号等 PII 自动遮蔽），防止模型在帮写中泄露个人信息。生成层：模型推理时注入安全约束 prompt，过滤违规内容生成。输出层：帮写结果在展示前经过最终审核，标注低置信度内容。MVP：先实现输入层的 PII 脱敏和输出层的敏感词过滤，生成层安全 prompt 优化持续迭代。同时将安全过滤逻辑从客户端抽离至服务端下发，防止源码泄露。",
+      "priority": "高",
+      "evidence": "Anthropic Claude Code 51.2 万行源码泄露事件证明，即使顶级 AI 公司也会在包管理环节出现安全疏忽，安全过滤逻辑一旦暴露将面临被逆向和利用的风险。该事件泄露的多层安全过滤架构本身也验证了分层防护的必要性。",
+      "source_urls": [
+        {"name": "Cybernews", "url": "https://cybernews.com/security/anthropic-claude-code-source-code-leaked/"},
+        {"name": "The Verge", "url": "https://www.theverge.com/2026/4/1/anthropic-claude-code-source-leak-npm"}
+      ]
+    },
+    {
+      "title": "车载/低注意力场景语音帮写",
+      "pain_point": "用户在驾车、做饭、运动等双手不便的场景中，想要回复消息只能用语音输入，但语音转出的文字质量差（口语化、缺标点、表达松散），直接发出去不够正式，手动编辑又做不到。结果要么发了不像样的消息，要么干脆不回。",
+      "opportunity": "开发「语音帮写」模式：用户通过语音输入意图（不是逐字听写），输入法自动理解意图并生成正式文本。入口：语音面板增加「帮写」模式切换（与普通听写并列）。触发条件：用户选择帮写模式后口述。核心流程：ASR 识别语音 → 意图理解提取关键信息 → LLM 生成正式回复 → 用户确认发送。MVP：先做「口述意图→正式回复」的单轮场景。例如用户说「跟王总说明天的会改到下午三点」，输出「王总您好，明天的会议时间调整至下午 3:00，请您知悉。」覆盖微信/短信场景。",
+      "priority": "中",
+      "evidence": "ChatGPT 登陆 Apple CarPlay 证明车载语音 AI 交互需求已被头部验证。Cohere Transcribe 开源提供了高质量的中文 ASR 基础。昨日提出的「语音输入智能整理模式」聚焦转录后整理，本需求更进一步——直接从语音到正式文本，跳过「转录→编辑」环节。",
+      "source_urls": [
+        {"name": "The Verge", "url": "https://www.theverge.com/2026/4/1/chatgpt-apple-carplay-ios-26-4"},
+        {"name": "Cohere Blog", "url": "https://cohere.com/blog/transcribe-open-source-asr"}
+      ]
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Anthropic 估值飙至 3800 亿美元，投资者从 OpenAI 阵营加速分流",
+      "category": "资本动态",
+      "relevance": "高",
+      "summary": "Anthropic 最新估值达 3800 亿美元，而 OpenAI 以 8520 亿美元居首。据 LA Times 报道，多家此前押注 OpenAI 的投资机构正在增持 Anthropic，形成「双头下注」格局。分析师认为 Claude 在企业 API 和开发者工具领域的增长速度已超预期，Anthropic 正成为 AI 赛道公认的「第二极」。",
+      "source": "LA Times",
+      "source_url": "https://www.latimes.com/business/technology/story/2026-04-01/anthropic-380b-valuation-investors-shift-from-openai"
+    },
+    {
+      "title": "Anthropic Claude Code 源码意外泄露：51.2 万行代码经 npm 包暴露",
+      "category": "安全事件",
+      "relevance": "高",
+      "summary": "Anthropic 旗下 AI 编程工具 Claude Code 的完整源代码通过 npm 包意外泄露，共约 51.2 万行，包含系统提示词、内部工具架构、安全过滤逻辑和 API 调用链。泄露并非黑客攻击，而是发布流程中的包管理疏忽。安全研究人员指出泄露内容中的 prompt 工程和安全策略具有极高参考价值，也暴露了 AI 工具快速迭代中的供应链安全短板。",
+      "source": "Cybernews",
+      "source_url": "https://cybernews.com/security/anthropic-claude-code-source-code-leaked/"
+    },
+    {
+      "title": "Q1 全球 VC 投资达 3000 亿美元历史新高，AI 独占 80%",
+      "category": "资本动态",
+      "relevance": "高",
+      "summary": "据 Crunchbase 数据，2026 年 Q1 全球风险投资总额达 3000 亿美元，创历史新高。其中 AI 领域吸纳约 2420 亿美元，占比高达 80%。OpenAI、Anthropic、xAI 三家合计融资超过 1500 亿美元，头部集中度进一步加剧。Non-AI 创业公司融资环境持续收紧。",
+      "source": "Crunchbase",
+      "source_url": "https://news.crunchbase.com/venture/global-vc-q1-2026-record-300-billion-ai/"
+    },
+    {
+      "title": "Google 发布 3 月 AI 月度总结：Gemini 3.1、Lyria 3 Pro、Antigravity 等密集上线",
+      "category": "产品发布",
+      "relevance": "高",
+      "summary": "Google 发布 3 月 AI 更新汇总，包括：Gemini 3.1 Flash-Lite（轻量推理）和 Flash Live（实时语音），Lyria 3 Pro 音乐生成模型，Antigravity 编码智能体，Search Live 覆盖 200+ 国家，Maps 集成 Gemini，Veo 3.1 Lite 低成本视频生成，以及「Switch to Gemini」用户迁移工具。单月更新密度为 Gemini 发布以来最高。",
+      "source": "Google Blog",
+      "source_url": "https://blog.google/technology/ai/google-ai-updates-march-2026/"
+    },
+    {
+      "title": "PrismML 发布首个商用 1-bit 大模型 Bonsai：8B 参数仅 1.15GB",
+      "category": "大模型",
+      "relevance": "高",
+      "summary": "PrismML 推出 1-Bit Bonsai，这是全球首个商用 1-bit 大语言模型。通过极致量化将 80 亿参数模型压缩至 1.15GB，可在消费级硬件上运行，推理速度较传统 4-bit 量化提升 3-5 倍。公司称在多项基准测试中质量损失低于 2%。此举标志着端侧 AI 部署的成本门槛大幅降低。",
+      "source": "VentureBeat",
+      "source_url": "https://venturebeat.com/ai/prismml-bonsai-first-commercial-1bit-llm/"
+    },
+    {
+      "title": "小米自研内置大模型的系统级 AI 输入法曝光",
+      "category": "产品发布",
+      "relevance": "高",
+      "summary": "据多家科技媒体报道，小米正在自研一款系统级输入法，最大特点是将自研大模型直接嵌入 HyperOS 系统底层，实现全局 AI 纠错和智能补全。不同于第三方输入法的应用层方案，小米方案可在所有输入场景中零延迟生效，包括密码框和第三方 App。目前处于内测阶段。",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/0/825/607.htm"
+    },
+    {
+      "title": "Cohere 开源 ASR 模型 Transcribe 登顶 HuggingFace，支持 14 种语言",
+      "category": "开源项目",
+      "relevance": "高",
+      "summary": "Cohere 发布开源自动语音识别模型 Transcribe，在 HuggingFace ASR 排行榜登顶第一，支持包括中文在内的 14 种语言。在中文识别准确率上显著超越 Whisper v4。模型完全开源，支持本地部署，针对口语化表达和嘈杂环境做了专门优化。同期微软也开源了 VibeVoice 语音 AI 项目。",
+      "source": "Cohere Blog",
+      "source_url": "https://cohere.com/blog/transcribe-open-source-asr"
+    },
+    {
+      "title": "Salesforce 为 Slack 注入 30 项 AI 新功能，全面重构企业协作体验",
+      "category": "产品发布",
+      "relevance": "中",
+      "summary": "Salesforce 宣布 Slack 最大规模 AI 升级，一次性推出 30 项 AI 功能，包括频道摘要、智能消息起草、会议纪要生成、跨频道知识检索和自动化工作流。Agentforce 智能体可直接在 Slack 中执行 CRM 任务。这标志着企业IM正从「沟通工具」进化为「AI工作平台」。",
+      "source": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/04/01/salesforce-slack-30-ai-features-agentforce/"
+    },
+    {
+      "title": "ChatGPT 登陆 Apple CarPlay，AI 助手首次进入车载生态",
+      "category": "产品发布",
+      "relevance": "中",
+      "summary": "OpenAI 宣布 ChatGPT 将通过 iOS 26.4 更新支持 Apple CarPlay。用户驾车时可通过语音与 ChatGPT 进行多轮对话，获取导航建议、日程查询和消息回复。这是主流 AI 大模型助手首次进入 CarPlay 生态，标志着 AI 助手从手机/电脑向汽车场景的延伸。",
+      "source": "The Verge",
+      "source_url": "https://www.theverge.com/2026/4/1/chatgpt-apple-carplay-ios-26-4"
+    },
+    {
+      "title": "微软开源 VibeVoice 语音 AI 项目",
+      "category": "开源项目",
+      "relevance": "中",
+      "summary": "微软在 GitHub 开源 VibeVoice 项目，提供语音合成、语音转换和语音增强的一体化工具包。支持多语言、多说话人和情感控制，定位为语音 AI 应用的开源基础设施。社区反响积极，首周 star 数超过 5000。",
+      "source": "Microsoft GitHub",
+      "source_url": "https://github.com/microsoft/VibeVoice"
+    },
+    {
+      "title": "Deep-Live-Cam 2.1 发布：单张照片实时换脸",
+      "category": "AI工具",
+      "relevance": "中",
+      "summary": "开源项目 Deep-Live-Cam 发布 2.1 版本，仅需一张照片即可实现实时视频换脸，且无需 GPU 训练。新版在面部边缘融合和光照一致性上大幅提升。项目在 GitHub 上星标已超 10 万。该技术在创意内容生产中有广泛应用场景，但也引发了深度伪造相关的安全担忧。",
+      "source": "GitHub",
+      "source_url": "https://github.com/hacksider/Deep-Live-Cam/releases/tag/v2.1"
+    },
+    {
+      "title": "LangChain 与 MongoDB 达成战略合作，构建 AI 智能体全栈方案",
+      "category": "行业动态",
+      "relevance": "中",
+      "summary": "LangChain 宣布与 MongoDB 达成深度合作，将 LangChain/LangGraph 框架与 MongoDB Atlas 向量搜索深度集成，提供 AI 智能体的全栈开发和部署方案。合作涵盖向量存储、Agent 记忆持久化和实时数据检索，降低企业构建 RAG 和 Agent 应用的门槛。",
+      "source": "LangChain Blog",
+      "source_url": "https://blog.langchain.dev/langchain-mongodb-ai-agent-partnership/"
+    },
+    {
+      "title": "Yupp AI 烧光 a16z 3300 万美元融资后关停",
+      "category": "资本动态",
+      "relevance": "中",
+      "summary": "社交 AI 初创公司 Yupp AI 宣布关闭运营，此前获得 Andreessen Horowitz 领投的 3300 万美元融资。公司试图打造「AI 社交内容平台」，但未能找到可持续的用户增长和商业模式。这是今年关停的第三家知名 AI 初创公司，反映出 AI 赛道在资本热潮中的泡沫化风险。",
+      "source": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/04/01/yupp-ai-shuts-down-33m-a16z/"
+    },
+    {
+      "title": "Alexa+ 接入 Uber Eats 和 Grubhub，AI 语音助手延伸至外卖场景",
+      "category": "产品发布",
+      "relevance": "低",
+      "summary": "亚马逊 Alexa+ 新增 Uber Eats 和 Grubhub 集成，用户可通过语音完成完整的外卖下单流程——从选择餐厅、浏览菜单到下单付款。此举将 AI 语音助手的覆盖场景从信息查询延伸到交易闭环，标志着语音 AI 在商业化路径上迈出重要一步。",
+      "source": "The Verge",
+      "source_url": "https://www.theverge.com/2026/4/1/alexa-plus-uber-eats-grubhub-integration"
+    }
+  ]
+}
