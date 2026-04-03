@@ -601,6 +601,153 @@
   }
   .empty-state p { font-size: 14px; font-weight: 400; line-height: 1.8; }
 
+  /* ===== KNOWLEDGE BASE ===== */
+  .knowledge-header { margin-bottom: 32px; }
+  .knowledge-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 36px; font-weight: 900; color: var(--black);
+    letter-spacing: -1.5px; line-height: 1.1; margin: 0 0 12px;
+  }
+  .knowledge-desc {
+    font-size: 15px; color: var(--text3); line-height: 1.6; margin: 0;
+  }
+
+  .knowledge-input-area { margin-bottom: 48px; }
+  .knowledge-input-row {
+    display: flex; gap: 12px; align-items: stretch;
+  }
+  .knowledge-url-input {
+    flex: 1; height: 48px; padding: 0 18px;
+    font-size: 15px; font-family: inherit;
+    border: 1.5px solid rgba(17,17,17,0.12);
+    border-radius: var(--radius);
+    background: var(--white);
+    color: var(--black);
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .knowledge-url-input:focus {
+    border-color: var(--black);
+  }
+  .knowledge-url-input::placeholder {
+    color: var(--text4);
+  }
+
+  .knowledge-analyze-btn {
+    height: 48px; padding: 0 28px;
+    font-size: 15px; font-weight: 700; font-family: inherit;
+    background: var(--black); color: var(--white);
+    border: none; border-radius: var(--radius);
+    cursor: pointer;
+    transition: opacity 0.2s;
+    white-space: nowrap;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .knowledge-analyze-btn:hover { opacity: 0.85; }
+  .knowledge-analyze-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+  .analyze-spinner {
+    display: inline-block; width: 14px; height: 14px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-top-color: var(--white);
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+    margin-right: 8px; vertical-align: middle;
+  }
+
+  .knowledge-error {
+    margin-top: 10px; padding: 10px 16px;
+    font-size: 13px; color: #c0392b;
+    background: rgba(192,57,43,0.06);
+    border-radius: var(--radius-sm);
+  }
+
+  .knowledge-cards-header {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px; font-weight: 800; color: var(--black);
+    margin-bottom: 20px; letter-spacing: -0.5px;
+  }
+  .knowledge-cards {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px;
+  }
+
+  .knowledge-card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(252,250,246,0.96) 100%);
+    border: 1px solid rgba(17,17,17,0.08);
+    border-radius: var(--radius);
+    padding: 28px;
+    box-shadow: 0 12px 32px rgba(17,17,17,0.05);
+    animation: cardIn 0.4s ease-out both;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; flex-direction: column; gap: 18px;
+  }
+  .knowledge-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 40px rgba(17,17,17,0.08);
+  }
+
+  .knowledge-card-top {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  }
+  .knowledge-card-time {
+    font-size: 13px; color: var(--text3); font-weight: 500;
+  }
+  .knowledge-card-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px; font-weight: 800; color: var(--black);
+    line-height: 1.35; letter-spacing: -0.5px; margin: 0;
+  }
+  .knowledge-card-title a { color: inherit; text-decoration: none; }
+  .knowledge-card-title a:hover { text-decoration: underline; }
+
+  .knowledge-card-section {
+    padding: 16px 18px;
+    border-radius: var(--radius-sm);
+    background: rgba(17,17,17,0.04);
+    border: 1px solid rgba(17,17,17,0.08);
+  }
+  .knowledge-card-section.action {
+    background: rgba(245,239,228,0.72);
+    border-left: 3px solid var(--black);
+  }
+  .knowledge-card-section-label {
+    font-size: 11px; color: var(--text3); font-weight: 700;
+    margin-bottom: 8px; letter-spacing: 0.5px; text-transform: uppercase;
+  }
+  .knowledge-card-section p {
+    font-size: 14px; line-height: 1.75; color: var(--text2); margin: 0;
+  }
+  .knowledge-card-section.action p {
+    color: var(--black);
+  }
+
+  .knowledge-card-links {
+    display: flex; flex-wrap: wrap; gap: 8px;
+  }
+  .knowledge-card-links a {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-size: 13px; font-weight: 700; color: var(--black);
+    background: var(--white); border: 1px solid rgba(17,17,17,0.12);
+    padding: 6px 14px; border-radius: 100px;
+    text-decoration: none; transition: background 0.2s;
+  }
+  .knowledge-card-links a:hover { background: rgba(17,17,17,0.05); }
+
+  .knowledge-card-footer {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    flex-wrap: wrap;
+  }
+  .knowledge-card-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .knowledge-card-tag {
+    font-size: 12px; padding: 5px 14px; border-radius: 100px;
+    background: rgba(17,17,17,0.05); color: var(--text3); font-weight: 600;
+  }
+  .knowledge-empty {
+    text-align: center; padding: 80px 20px; color: var(--text4);
+  }
+  .knowledge-empty-icon { font-size: 48px; margin-bottom: 16px; }
+  .knowledge-empty p { font-size: 14px; line-height: 1.6; }
+
   /* ===== FOOTER ===== */
   .footer {
     max-width: 1400px; margin: 0 auto; padding: 24px 48px 48px;
@@ -705,6 +852,7 @@
         <button class="nav-link active" onclick="switchPage('insight')">Insight</button>
         <button class="nav-link" onclick="switchPage('map')">Map</button>
         <button class="nav-link" onclick="switchPage('design')">Design</button>
+        <button class="nav-link" onclick="switchPage('knowledge')">FAN</button>
       </nav>
       <button id="voicePlayButton" class="voice-btn" type="button" aria-label="播放资讯" title="播放资讯" style="display:none;">
         <span class="voice-btn-icon">▶</span>
@@ -1444,6 +1592,33 @@
   <div id="design-loading" style="text-align:center;padding:60px 0;color:#888;">正在加载 Design Weekly...</div>
 </div>
 
+<div class="main" id="knowledge-page" style="display:none; max-width:1400px; margin:0 auto; padding:20px 48px 60px;">
+
+  <div class="knowledge-input-area">
+    <div class="knowledge-input-row">
+      <input type="text" id="knowledgeUrlInput" class="knowledge-url-input" placeholder="粘贴文章链接，如 https://..." autocomplete="off" />
+      <button id="knowledgeAnalyzeBtn" class="knowledge-analyze-btn" onclick="analyzeKnowledgeUrl()">
+        <span class="analyze-btn-text">添加</span>
+        <span class="analyze-btn-loading" style="display:none;">
+          <span class="analyze-spinner"></span>分析中...
+        </span>
+      </button>
+    </div>
+    <div id="knowledgeError" class="knowledge-error" style="display:none;"></div>
+  </div>
+
+  <div id="knowledgeCardsHeader" class="knowledge-cards-header" style="display:none;"></div>
+
+  <div id="knowledgeCards" class="knowledge-cards">
+    <!-- 卡片将动态插入 -->
+  </div>
+
+  <div id="knowledgeEmpty" class="knowledge-empty">
+    <div class="knowledge-empty-icon">📚</div>
+    <p>还没有内容，粘贴一个链接开始吧</p>
+  </div>
+</div>
+
 
 <div class="footer">
   AI Insights Hub
@@ -2062,6 +2237,7 @@ function switchPage(id) {
   var app = document.getElementById('app');
   var mapPage = document.getElementById('map-page');
   var designPage = document.getElementById('design-page');
+  var knowledgePage = document.getElementById('knowledge-page');
   var dayNav = document.getElementById('day-nav');
   var monthNav = document.getElementById('month-nav');
   var btns = document.querySelectorAll('.nav-link');
@@ -2070,6 +2246,7 @@ function switchPage(id) {
   app.style.display = id === 'insight' ? 'block' : 'none';
   mapPage.style.display = id === 'map' ? 'block' : 'none';
   designPage.style.display = id === 'design' ? 'block' : 'none';
+  knowledgePage.style.display = id === 'knowledge' ? 'block' : 'none';
   dayNav.style.display = id === 'insight' ? 'flex' : 'none';
   monthNav.style.display = id === 'map' ? 'flex' : 'none';
 
@@ -2082,7 +2259,8 @@ function switchPage(id) {
     btns[i].classList.remove('active');
     if ((id === 'map' && btns[i].textContent === 'Map') ||
         (id === 'insight' && btns[i].textContent === 'Insight') ||
-        (id === 'design' && btns[i].textContent === 'Design')) {
+        (id === 'design' && btns[i].textContent === 'Design') ||
+        (id === 'knowledge' && btns[i].textContent === 'Knowledge')) {
       btns[i].classList.add('active');
     }
   }
@@ -2270,6 +2448,330 @@ switchPage = function(id) {
 if (window.location.hash === '#design') {
   document.addEventListener('DOMContentLoaded', function() { loadDesignWeekly(); });
 }
+
+// ===== KNOWLEDGE BASE (Supabase) =====
+var SUPABASE_URL = 'https://qmkunsumusmpqniktivh.supabase.co';
+var SUPABASE_KEY = 'sb_publishable_FUn6_PZP9-muL1ZN8Ylg3g_dX3MIbsv';
+var SUPABASE_TABLE = '/rest/v1/knowledge_items';
+
+function supaFetch(path, opts) {
+  opts = opts || {};
+  opts.headers = Object.assign({
+    'apikey': SUPABASE_KEY,
+    'Authorization': 'Bearer ' + SUPABASE_KEY,
+    'Content-Type': 'application/json',
+    'Prefer': opts.prefer || ''
+  }, opts.headers || {});
+  return fetch(SUPABASE_URL + SUPABASE_TABLE + (path || ''), opts);
+}
+
+async function getKnowledgeItems() {
+  try {
+    var resp = await supaFetch('?order=publish_date.desc.nullslast,added_at.desc&limit=100', { method: 'GET' });
+    if (!resp.ok) throw new Error(resp.status);
+    return await resp.json();
+  } catch(e) {
+    console.error('Knowledge fetch error:', e);
+    return [];
+  }
+}
+
+async function insertKnowledgeItem(item) {
+  var resp = await supaFetch('', {
+    method: 'POST',
+    prefer: 'return=representation',
+    body: JSON.stringify(item)
+  });
+  if (!resp.ok) {
+    var err = await resp.text();
+    throw new Error('插入失败: ' + err);
+  }
+  return await resp.json();
+}
+
+function formatKnowledgeTime(ts) {
+  var d = new Date(ts);
+  var pad = function(n) { return n < 10 ? '0' + n : '' + n; };
+  return d.getFullYear() + '-' + pad(d.getMonth()+1) + '-' + pad(d.getDate()) + ' ' + pad(d.getHours()) + ':' + pad(d.getMinutes());
+}
+
+function isImaKnowledgeUrl(url) {
+  return /^https?:\/\/ima\.qq\.com\/wiki\//i.test(url || '');
+}
+
+function buildKnowledgeSearchUrl(title) {
+  return 'https://duckduckgo.com/?q=' + encodeURIComponent(title || '');
+}
+
+function getKnowledgeLinkInfo(item) {
+  var rawUrl = item.url || '';
+  if (rawUrl && !isImaKnowledgeUrl(rawUrl)) {
+    return { href: rawUrl, label: '查看原文 →' };
+  }
+  return {
+    href: buildKnowledgeSearchUrl(item.title || ''),
+    label: '搜索原文 →'
+  };
+}
+
+function renderKnowledgeList(items) {
+  var container = document.getElementById('knowledgeCards');
+  var empty = document.getElementById('knowledgeEmpty');
+  var header = document.getElementById('knowledgeCardsHeader');
+
+  if (!items.length) {
+    container.innerHTML = '';
+    empty.style.display = 'block';
+    header.style.display = 'none';
+    return;
+  }
+
+  empty.style.display = 'none';
+  header.style.display = 'block';
+  header.textContent = 'FAN 知识库（' + items.length + '）';
+
+  container.innerHTML = items.map(function(item, idx) {
+    var tags = item.tags || [];
+    var tagsHtml = tags.map(function(t) {
+      return '<span class="knowledge-card-tag">' + t + '</span>';
+    }).join('');
+    var sourceParts = (item.source || '').split('|');
+    var displayTime = item.publish_date || sourceParts[1] || formatKnowledgeTime(item.added_at || item.addedAt);
+    var linkInfo = getKnowledgeLinkInfo(item);
+
+    // 把摘要和要点拆开（用换行分隔）
+    var summary = item.summary || '';
+    var parts = summary.split(/\n\n/);
+    var summaryPart = parts[0] || summary;
+    var insightPart = parts.length > 1 ? parts.slice(1).join('\n\n') : '';
+
+    return '<div class="knowledge-card" style="animation-delay:' + (idx * 0.04) + 's;">' +
+      '<div class="knowledge-card-top">' +
+        '<span class="knowledge-card-time">' + displayTime + '</span>' +
+      '</div>' +
+      '<h3 class="knowledge-card-title"><a href="' + linkInfo.href + '" target="_blank" rel="noreferrer">' + (item.title || '未命名') + '</a></h3>' +
+      '<div class="knowledge-card-section">' +
+        '<div class="knowledge-card-section-label">内容摘要</div>' +
+        '<p>' + summaryPart + '</p>' +
+      '</div>' +
+      (insightPart ? '<div class="knowledge-card-section action">' +
+        '<div class="knowledge-card-section-label">要点</div>' +
+        '<p>' + insightPart + '</p>' +
+      '</div>' : '') +
+      '<div class="knowledge-card-links">' +
+        '<a href="' + linkInfo.href + '" target="_blank" rel="noreferrer">' + linkInfo.label + '</a>' +
+      '</div>' +
+      '<div class="knowledge-card-footer">' +
+        (tagsHtml ? '<div class="knowledge-card-tags">' + tagsHtml + '</div>' : '') +
+      '</div>' +
+    '</div>';
+  }).join('');
+}
+
+async function refreshKnowledgeCards() {
+  var items = await getKnowledgeItems();
+  renderKnowledgeList(items);
+}
+
+function showKnowledgeError(msg) {
+  var el = document.getElementById('knowledgeError');
+  if (msg) {
+    el.textContent = msg;
+    el.style.display = 'block';
+  } else {
+    el.style.display = 'none';
+  }
+}
+
+function setAnalyzeLoading(loading) {
+  var btn = document.getElementById('knowledgeAnalyzeBtn');
+  var textEl = btn.querySelector('.analyze-btn-text');
+  var loadingEl = btn.querySelector('.analyze-btn-loading');
+  var input = document.getElementById('knowledgeUrlInput');
+  btn.disabled = loading;
+  input.disabled = loading;
+  textEl.style.display = loading ? 'none' : 'inline';
+  loadingEl.style.display = loading ? 'inline-flex' : 'none';
+}
+
+// 优先走本地代理（支持微信公众号），降级用 CORS 代理
+var KNOWLEDGE_PROXY = 'http://127.0.0.1:8126';
+
+async function fetchViaLocalProxy(url) {
+  try {
+    var resp = await fetch(KNOWLEDGE_PROXY + '/analyze?url=' + encodeURIComponent(url));
+    if (resp.ok) {
+      var data = await resp.json();
+      if (data.success) return data;
+    }
+  } catch(e) { /* proxy not running, fall through */ }
+  return null;
+}
+
+async function fetchPageContent(url) {
+  var proxies = [
+    'https://api.allorigins.win/raw?url=',
+    'https://corsproxy.io/?'
+  ];
+  for (var i = 0; i < proxies.length; i++) {
+    try {
+      var resp = await fetch(proxies[i] + encodeURIComponent(url));
+      if (resp.ok) return await resp.text();
+    } catch(e) { /* try next */ }
+  }
+  return null;
+}
+
+function extractFromHtml(html) {
+  var doc = new DOMParser().parseFromString(html, 'text/html');
+  var title = '';
+  var ogTitle = doc.querySelector('meta[property="og:title"]');
+  if (ogTitle) title = ogTitle.getAttribute('content');
+  if (!title) { var t = doc.querySelector('title'); if (t) title = t.textContent; }
+  title = (title || '').trim();
+
+  var desc = '';
+  var ogDesc = doc.querySelector('meta[property="og:description"]');
+  if (ogDesc) desc = ogDesc.getAttribute('content');
+  if (!desc) { var md = doc.querySelector('meta[name="description"]'); if (md) desc = md.getAttribute('content'); }
+
+  var body = doc.body;
+  if (body) {
+    body.querySelectorAll('script,style,nav,footer,header,aside,.sidebar,.nav,.footer,.header,.ad,.ads,.comment,.comments').forEach(function(el) { el.remove(); });
+  }
+  var bodyText = (body ? body.textContent : '').replace(/\s+/g, ' ').trim();
+
+  var keywords = '';
+  var mk = doc.querySelector('meta[name="keywords"]');
+  if (mk) keywords = mk.getAttribute('content');
+
+  return { title: title, description: (desc || '').trim(), bodyText: bodyText.slice(0, 3000), keywords: (keywords || '').trim() };
+}
+
+function generateSummaryAndTags(extracted, hostname) {
+  var title = extracted.title || ('来自 ' + hostname + ' 的文章');
+  var summary = extracted.description;
+  if (!summary || summary.length < 30) {
+    summary = (extracted.bodyText || '').slice(0, 300).trim();
+    if (summary.length >= 295) summary += '...';
+  }
+  if (!summary) summary = '暂未提取到内容摘要。';
+
+  var tags = [];
+  if (extracted.keywords) {
+    tags = extracted.keywords.split(/[,，、;；]/).map(function(t) { return t.trim(); }).filter(Boolean).slice(0, 3);
+  }
+  if (tags.length === 0) {
+    ['AI','大模型','LLM','GPT','Claude','Gemini','输入法','设计','产品','技术','开源','发布'].forEach(function(kw) {
+      if ((title + ' ' + summary).indexOf(kw) >= 0 && tags.length < 3) tags.push(kw);
+    });
+  }
+  tags.push(hostname);
+  tags = tags.slice(0, 4);
+  return { title: title, summary: summary, tags: tags };
+}
+
+async function checkUrlExists(url) {
+  try {
+    var resp = await supaFetch('?url=eq.' + encodeURIComponent(url) + '&select=id&limit=1', { method: 'GET' });
+    if (resp.ok) {
+      var rows = await resp.json();
+      return rows.length > 0;
+    }
+  } catch(e) {}
+  return false;
+}
+
+async function analyzeKnowledgeUrl() {
+  var input = document.getElementById('knowledgeUrlInput');
+  var url = (input.value || '').trim();
+  showKnowledgeError('');
+
+  if (!url) { showKnowledgeError('请输入一个链接'); return; }
+  if (!/^https?:\/\/.+/i.test(url)) { showKnowledgeError('请输入有效的 http/https 链接'); return; }
+
+  setAnalyzeLoading(true);
+
+  try {
+    // 去重检查
+    var exists = await checkUrlExists(url);
+    if (exists) {
+      showKnowledgeError('这个链接已经添加过了');
+      setAnalyzeLoading(false);
+      return;
+    }
+
+    var hostname = '';
+    try { hostname = new URL(url).hostname.replace(/^www\./, ''); } catch(e) {}
+
+    var title, summary, tags;
+
+    // 1. 优先走本地代理（支持微信公众号 + AI 总结）
+    var proxyResult = await fetchViaLocalProxy(url);
+    if (proxyResult) {
+      title = proxyResult.title || ('来自 ' + hostname + ' 的文章');
+      // 用 AI 总结的 summary
+      summary = proxyResult.summary || proxyResult.description || '';
+      if (!summary || summary.length < 20) {
+        summary = (proxyResult.body_text || '').slice(0, 300).trim();
+        if (summary.length >= 295) summary += '...';
+      }
+      // AI insight 拼到 summary 后面，用分隔符
+      var insight = proxyResult.insight || '';
+      if (insight) {
+        summary = summary + '\n\n' + insight;
+      }
+      if (!summary) summary = '暂未提取到内容摘要。';
+
+      // 文章发布时间（存到 source 字段后面，用 | 分隔）
+      var publishTime = proxyResult.publish_time || '';
+
+      // 优先用 AI 返回的 tags
+      tags = proxyResult.tags || [];
+      if (!tags.length && proxyResult.keywords) {
+        tags = proxyResult.keywords.split(/[,，、;；]/).map(function(t) { return t.trim(); }).filter(Boolean).slice(0, 3);
+      }
+      if (!tags.length) {
+        ['AI','大模型','LLM','GPT','Claude','Gemini','输入法','设计','产品','技术','开源','发布'].forEach(function(kw) {
+          if ((title + ' ' + summary).indexOf(kw) >= 0 && tags.length < 3) tags.push(kw);
+        });
+      }
+      tags.push(hostname);
+      tags = tags.slice(0, 4);
+
+      // source 里带上发布时间
+      var sourceVal = publishTime ? (hostname + '|' + publishTime) : hostname;
+    } else {
+      // 2. 降级：CORS 代理 + 前端解析
+      var html = await fetchPageContent(url);
+      if (html) {
+        var extracted = extractFromHtml(html);
+        var result = generateSummaryAndTags(extracted, hostname);
+        title = result.title; summary = result.summary; tags = result.tags;
+      } else {
+        title = '来自 ' + hostname + ' 的文章';
+        summary = '无法自动抓取内容（可能是该网站限制了访问）。点击标题可查看原文。';
+        tags = [hostname || '链接'];
+      }
+    }
+
+    await insertKnowledgeItem({ url: url, title: title, summary: summary, tags: tags, source: typeof sourceVal !== 'undefined' ? sourceVal : hostname });
+    await refreshKnowledgeCards();
+    input.value = '';
+  } catch(e) {
+    showKnowledgeError('添加失败：' + (e.message || '未知错误'));
+  } finally {
+    setAnalyzeLoading(false);
+  }
+}
+
+// 回车触发
+document.getElementById('knowledgeUrlInput').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') { analyzeKnowledgeUrl(); }
+});
+
+// 初始加载
+refreshKnowledgeCards();
 </script>
 </body>
 </html>
