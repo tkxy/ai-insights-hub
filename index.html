@@ -55,21 +55,10 @@
     max-width: 1400px; margin: 0 auto;
   }
 
-  .logo {
-    display: flex; align-items: center; gap: 20px;
-  }
-
   .nav-cluster {
     display: flex;
     align-items: center;
     gap: 8px;
-  }
-
-  .logo-mark {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 28px; font-weight: 900; color: var(--black);
-    letter-spacing: -1.5px;
-    line-height: 1;
   }
 
   .nav-links {
@@ -845,20 +834,17 @@
 <body>
 
 <div class="header">
-  <div class="logo">
-    <div class="logo-mark">Y.</div>
-    <div class="nav-cluster">
-      <nav class="nav-links">
-        <button class="nav-link active" data-page="insight" onclick="switchPage('insight')">Insight</button>
-        <button class="nav-link" data-page="map" onclick="switchPage('map')">Map</button>
-        <button class="nav-link" data-page="design" onclick="switchPage('design')">Design</button>
-        <button class="nav-link" data-page="knowledge" onclick="switchPage('knowledge')">FAN</button>
-      </nav>
-      <button id="voicePlayButton" class="voice-btn" type="button" aria-label="播放资讯" title="播放资讯" style="display:none;">
-        <span class="voice-btn-icon">▶</span>
-        <span class="voice-btn-label">播放资讯</span>
-      </button>
-    </div>
+  <div class="nav-cluster">
+    <nav class="nav-links">
+      <button class="nav-link active" data-page="insight" onclick="switchPage('insight')">Insight</button>
+      <button class="nav-link" data-page="map" onclick="switchPage('map')">Map</button>
+      <button class="nav-link" data-page="design" onclick="switchPage('design')">Design</button>
+      <button class="nav-link" data-page="knowledge" onclick="switchPage('knowledge')">FAN</button>
+    </nav>
+    <button id="voicePlayButton" class="voice-btn" type="button" aria-label="播放资讯" title="播放资讯" style="display:none;">
+      <span class="voice-btn-icon">▶</span>
+      <span class="voice-btn-label">播放资讯</span>
+    </button>
   </div>
   <div class="header-right">
     <div class="date-nav" id="day-nav">
