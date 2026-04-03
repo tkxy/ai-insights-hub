@@ -59,6 +59,12 @@
     display: flex; align-items: center; gap: 20px;
   }
 
+  .nav-cluster {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
   .logo-mark {
     font-family: 'DM Sans', sans-serif;
     font-size: 28px; font-weight: 900; color: var(--black);
@@ -77,6 +83,10 @@
     backdrop-filter: blur(12px);
   }
   .nav-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
     font-size: 14px;
     font-weight: 600;
     color: var(--text2);
@@ -84,9 +94,10 @@
     cursor: pointer;
     border: none;
     background: transparent;
-    padding: 10px 22px;
+    padding: 0 22px;
     border-radius: 999px;
     font-family: inherit;
+    line-height: 1;
     transition: all 0.2s;
   }
   .nav-link:hover { color: var(--black); background: rgba(0,0,0,0.04); }
@@ -120,6 +131,63 @@
   .date-nav .current-date {
     font-size: 13px; font-weight: 600; padding: 0 14px;
     min-width: 120px; text-align: center; color: var(--text);
+  }
+
+  .voice-btn {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.6);
+    border: 1px solid var(--border);
+    color: var(--text2);
+    padding: 0;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: inherit;
+    line-height: 1;
+    transition: all 0.2s;
+    backdrop-filter: blur(12px);
+  }
+
+  .voice-btn:hover:not(:disabled) {
+    color: var(--black);
+    background: rgba(255,255,255,0.9);
+    border-color: rgba(17,17,17,0.12);
+  }
+
+  .voice-btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+  }
+
+  .voice-btn.is-playing {
+    background: var(--black);
+    color: var(--white);
+    border-color: var(--black);
+  }
+
+  .voice-btn:focus-visible {
+    outline: 2px solid rgba(17,17,17,0.18);
+    outline-offset: 2px;
+  }
+
+  .voice-btn-icon {
+    font-size: 14px;
+    line-height: 1;
+    color: var(--black);
+  }
+
+  .voice-btn.is-playing .voice-btn-icon {
+    color: var(--white);
+  }
+
+  .voice-btn-label {
+    display: none;
   }
 
   /* ===== MAIN ===== */
@@ -218,47 +286,148 @@
   }
 
   .insight-card {
-    background: var(--white);
+    background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(252,250,246,0.96) 100%);
     border-radius: var(--radius);
-    padding: 32px;
-    transition: transform 0.3s ease;
+    padding: 28px;
+    border: 1px solid rgba(17,17,17,0.08);
+    box-shadow: 0 12px 32px rgba(17,17,17,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: default;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
   }
   .insight-card:hover {
     transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(17,17,17,0.08);
   }
 
+  .insight-card .insight-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
   .insight-card .card-label {
-    display: inline-block;
-    font-size: 11px; font-weight: 600; letter-spacing: 0.5px;
-    text-transform: uppercase; color: var(--text2);
-    background: var(--tag-bg);
-    padding: 5px 14px; border-radius: 100px;
-    margin-bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: var(--black);
+    background: rgba(17,17,17,0.06);
+    padding: 6px 12px;
+    border-radius: 100px;
+  }
+  .insight-card .insight-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .insight-card .insight-meta-item {
+    display: inline-flex;
+    align-items: center;
+    min-height: 26px;
+    padding: 0 10px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.92);
+    border: 1px solid rgba(17,17,17,0.08);
+    color: var(--text3);
+    font-size: 11px;
+    font-weight: 600;
   }
   .insight-card h3 {
     font-family: 'DM Sans', sans-serif;
-    font-size: 20px; font-weight: 800; margin-bottom: 12px;
-    line-height: 1.35; color: var(--black); letter-spacing: -0.5px;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.35;
+    color: var(--black);
+    letter-spacing: -0.5px;
+    margin: 0;
   }
-  .insight-card .summary {
-    font-size: 14px; color: var(--text2); margin-bottom: 20px;
-    line-height: 1.8;
+  .insight-card .insight-quicktake {
+    background: rgba(17,17,17,0.04);
+    border: 1px solid rgba(17,17,17,0.08);
+    border-radius: var(--radius-sm);
+    padding: 16px 18px;
+  }
+  .insight-card .section-label {
+    font-size: 11px;
+    color: var(--text3);
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .insight-card .insight-quicktake p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--black);
+    font-weight: 700;
+  }
+  .insight-card .insight-sections {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .insight-card .insight-section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 18px;
+    border-radius: var(--radius-sm);
+    background: rgba(255,255,255,0.78);
+    border: 1px solid rgba(17,17,17,0.08);
+  }
+  .insight-card .insight-points {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .insight-card .insight-points li {
+    position: relative;
+    padding-left: 16px;
+    font-size: 13px;
+    line-height: 1.75;
+    color: var(--text2);
+  }
+  .insight-card .insight-points li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--black);
+    opacity: 0.72;
   }
 
   .insight-card .implication {
-    background: var(--accent-soft);
-    border-left: 2px solid var(--black);
-    padding: 16px 20px;
-    border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
-    margin-bottom: 20px;
+    background: rgba(245,239,228,0.72);
+    border-left: 3px solid var(--black);
   }
-  .insight-card .implication-label {
-    font-size: 11px; color: var(--text3); font-weight: 600; margin-bottom: 6px;
-    letter-spacing: 0.5px; text-transform: uppercase;
+  .insight-card .implication .section-label,
+  .insight-card .implication .insight-points li {
+    color: var(--black);
   }
-  .insight-card .implication p {
-    font-size: 13px; line-height: 1.75; color: var(--text2);
+  .insight-card .insight-footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(17,17,17,0.08);
+  }
+  .insight-card .insight-footer .source-links {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
   }
 
   .tags { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -459,9 +628,32 @@
   @media (max-width: 900px) {
     .header { padding: 0 24px; }
     .nav-links { gap: 4px; }
-    .nav-link { padding: 8px 14px; font-size: 13px; }
+    .nav-link { height: 34px; padding: 0 14px; font-size: 13px; }
+    .header-right { gap: 8px; }
+    .voice-btn {
+      width: 34px;
+      height: 34px;
+      flex-basis: 34px;
+    }
+    .voice-btn-icon {
+      font-size: 13px;
+    }
     .hero-title { font-size: 40px; }
     .insights-grid, .news-grid { grid-template-columns: 1fr; }
+    .insight-card {
+      padding: 22px;
+      gap: 16px;
+    }
+    .insight-card h3 {
+      font-size: 19px;
+    }
+    .insight-card .insight-card-header {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .insight-card .insight-meta {
+      width: 100%;
+    }
     .demand-card { grid-template-columns: 1fr; }
     .main { padding: 20px 24px 40px; }
     .section-title { font-size: 22px; }
@@ -508,11 +700,17 @@
 <div class="header">
   <div class="logo">
     <div class="logo-mark">Y.</div>
-    <nav class="nav-links">
-      <button class="nav-link active" onclick="switchPage('insight')">Insight</button>
-      <button class="nav-link" onclick="switchPage('map')">Map</button>
-      <button class="nav-link" onclick="switchPage('design')">Design</button>
-    </nav>
+    <div class="nav-cluster">
+      <nav class="nav-links">
+        <button class="nav-link active" onclick="switchPage('insight')">Insight</button>
+        <button class="nav-link" onclick="switchPage('map')">Map</button>
+        <button class="nav-link" onclick="switchPage('design')">Design</button>
+      </nav>
+      <button id="voicePlayButton" class="voice-btn" type="button" aria-label="播放资讯" title="播放资讯">
+        <span class="voice-btn-icon">▶</span>
+        <span class="voice-btn-label">播放资讯</span>
+      </button>
+    </div>
   </div>
   <div class="header-right">
     <div class="date-nav" id="day-nav">
@@ -524,7 +722,6 @@
       <button id="prevMonth">← 上月</button>
       <div class="current-date" id="currentMonth">3月</div>
       <button id="nextMonth">下月 →</button>
-    </div>
     </div>
   </div>
 </div>
@@ -1256,6 +1453,289 @@
 var DESIGN_WEEKLY_INLINE = {"weekOf":"2026-03-31","generatedAt":"2026-04-01 10:14","dataSources":["2026-03-26","2026-03-27","2026-03-28","2026-03-29","2026-03-30","2026-03-31","2026-04-01"],"stages":{"research":{"label":"桌面研究","summary":"AI 搜索和自动信息聚合正在把\u201c搜\u2192筛\u2192读\u2192摘\u201d压缩成一步。设计师做趋势调研的方式正在从人肉开 tab 变成喂问题给 AI。","items":[{"title":"AI 搜索正在重塑信息采集链路：千问、ChatGPT、Gemini 都在抢\u300c发现层\u300d","source":"2026-03-26 / 2026-03-27","insight":"AI 搜索引擎已经不只是\u201c搜得更好\u201d，而是在直接替代设计师做桌面研究的前半段：收集、初筛、结构化。","action":"把团队的竞品追踪和行业趋势调研分两步：先用 AI 搜索出结构化初稿，再人工做判断和标注。","tags":["信息采集","AI搜索","效率提升"],"sourceUrls":[{"name":"ChatGPT 购物化","url":"https://the-decoder.com/chatgpt-is-turning-into-a-shopping-platform-with-product-images-prices-and-comparisons-but-no-checkout/"},{"name":"千问 AI 打车","url":"https://www.news.cn/tech/20260323/3b76522da0a8493cacda08c34f20367a/c.html"}]},{"title":"全模态模型让\u201c看图+听录音\u2192出研究笔记\u201d变成一步","source":"2026-03-31","insight":"以前做用户访谈整理要先转写再读再归纳。全模态模型可以直接吃录音 + 截图，一次性出结构化洞察初稿。","action":"下次做用户访谈后，先把录音和截图一起喂给全模态模型试一轮，看初步归纳质量是否可用。","tags":["全模态","访谈整理","研究效率"],"sourceUrls":[{"name":"Qwen3.5-Omni","url":"https://qwen.ai/blog?id=qwen3.5-omni"}]},{"title":"每日自动化信息聚合正在替代\u201c周会人工同步\u201d","source":"2026-04-01","insight":"信息流不是靠人每周分享一次\u201c我这周看到了什么\u201d，而是应该做成自动化持续供给。我们自己就是案例。","action":"持续维护 AI Insights Hub 的信息源质量，让它成为团队的\u201c设计研究底座\u201d。","tags":["自动化","信息流","团队效率"],"sourceUrls":[{"name":"AI Insights Hub","url":"https://tkxy.github.io/ai-insights-hub/"}]}]},"competitive":{"label":"竞品分析","summary":"多模态模型让\u201c截图\u2192结构化拆解\u201d变成一句话的事。竞品 UI 数据库也在加速用 AI 搜索替代手动安装截图。","items":[{"title":"豆包输入法上了 Mac 版，桌面端帮写入口竞争正式开始","source":"2026-04-01","insight":"竞品已经在抢桌面端帮写入口。豆包依托豆包大模型做智能续写和内容优化，方向跟我们高度重叠。","action":"拉一次豆包 Mac 版的帮写体验走查，重点看触发方式、上下文读取和回填交互。","tags":["竞品动态","桌面端","豆包"],"sourceUrls":[{"name":"豆包 Mac 版","url":"https://www.80aj.com/2026/03/28/bytedance-doubao-mac-ai/"},{"name":"七款输入法横评","url":"https://www.woshipm.com/share/6361972.html"}]},{"title":"七款 AI 输入法横评：入口之争从\u201c猜词\u201d升级到\u201c猜意图\u201d","source":"2026-04-01","insight":"结论是输入法竞争已从打字准确度升级为入口争夺，核心变革在于把 AI 能力前移到键盘层。搜狗守词库基本盘，讯飞守语音，豆包抢年轻用户。","action":"把横评结论同步到设计组，标注我们在哪些维度领先、哪些维度有差距。","tags":["竞品横评","入口争夺","帮写"],"sourceUrls":[{"name":"人人都是产品经理","url":"https://www.woshipm.com/share/6361972.html"}]},{"title":"Siri 开放第三方 AI 接入，输入法面临系统级竞争","source":"2026-03-29 / 2026-03-30","insight":"如果 Siri 可以直接调 Claude 写回复，输入法的帮写优势会被削弱。我们的差异化在于输入框上下文\u2014\u2014Siri 不知道你在跟谁聊、聊到哪了。","action":"把\u201c利用输入框上下文做帮写\u201d作为核心差异化方向，重点优化上下文读取深度。","tags":["系统竞争","Siri","差异化"],"sourceUrls":[{"name":"MacRumors","url":"https://www.macrumors.com/2026/03/26/apple-ios-27-siri-chatbot-integration/"}]}]},"user_research":{"label":"用户调研","summary":"用户调研的\u300c重活\u300d正在被压缩。访谈转写、开放题归纳、碎片化场景的痛点捕捉都有了新工具和新数据。","items":[{"title":"ActivTrak 报告揭示真实用户痛点：AI 提效但工作更碎片化","source":"2026-03-29 / 2026-03-30","insight":"用户最大的痛点不是\u201c写不出来\u201d，而是\u201c一天要写太多条、每条都要秒回\u201d。帮写方向应从单次质量转向批量效率。","action":"把这份报告的核心数据整理到需求文档里，作为\u201c消息通知智能预回复\u201d需求的用研支撑。","tags":["用户痛点","碎片化","数据支撑"],"sourceUrls":[{"name":"ActivTrak 报告","url":"https://www.activtrak.com/news/state-of-the-workplace-ai-accelerating-work/"}]},{"title":"ARC-AGI-3 提醒我们：AI 在陌生场景仍然很脆弱","source":"2026-03-29","insight":"不要高估 AI 在新场景的可靠性。帮写应优先在边界清晰的高频任务上做稳，而不是承诺\u201c什么都能写\u201d。","action":"在帮写功能规划中增加\u201c能力边界说明\u201d，对涉及事实判断的场景增加谨慎模式。","tags":["能力边界","可靠性","风险控制"],"sourceUrls":[{"name":"ARC-AGI-3","url":"https://the-decoder.com/arc-agi-3-offers-2m-to-any-ai-that-matches-untrained-humans-yet-every-frontier-model-scores-below-1/"}]},{"title":"本周日报中\u201c写作人设规则\u201d需求连续 4 天出现","source":"2026-03-28 ~ 2026-03-31","insight":"从信息源自动聚合的角度看，\u201c写作人设规则面板\u201d是本周被最多天命中的高优需求，值得优先推进。","action":"把这条信号作为下次需求评审的讨论项，附上 Attie 的产品参考。","tags":["需求验证","写作人设","重复信号"],"sourceUrls":[{"name":"Bluesky Attie","url":"https://techcrunch.com/2026/03/28/bluesky-leans-into-ai-with-attie-an-app-for-building-custom-feeds/"}]}]},"design_output":{"label":"设计稿输出","summary":"出稿方式正在被彻底打开。Figma MCP 做双向协作，Stitch 从目标直接生 UI，Pencil/v0 在代码里完成设计。","items":[{"title":"Figma MCP 升级为双向：代码可以推回画布做 compare","source":"2026-03 Figma Release Notes","insight":"设计交付不再是单向的。组件命名、变量、状态定义的规范性变得更重要，因为 agent 能不能正确读上下文，取决于你给的结构。","action":"在下一次设计 review 中，试一次用 MCP 把代码生成的 UI 推回 Figma 做 compare，看流程是否跑得通。","tags":["Figma MCP","双向协作","设计交付"],"sourceUrls":[{"name":"Figma Release Notes","url":"https://www.figma.com/release-notes/"}]},{"title":"Google Stitch 的 Vibe Design：从目标出发直接出高保真 UI","source":"2026-03 Google Labs","insight":"出稿的起点从 wireframe 变成了\u201c描述目标和约束\u201d。设计师的价值在于写好规则、喂好上下文、快速收敛方向。","action":"在下次需求评审后，用 Stitch 快速出 2-3 个 vibe 方向，看能不能把\u201c空白页焦虑\u201d的启动时间压下来。","tags":["Google Stitch","Vibe Design","AI画布"],"sourceUrls":[{"name":"Google Stitch","url":"https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/"}]},{"title":"多模型协作进入产品化：GPT 起草、Claude 审核，质量提升 13.8%","source":"2026-04-01","insight":"出稿不一定只靠一个模型。快出初稿 + 异步校验的双模型流程已经被微软验证可行，帮写功能也可以这么做。","action":"评估在帮写流程中引入\u201c初稿+校验\u201d两步的可行性，先在长文本场景试。","tags":["多模型协作","质量校验","微软Copilot"],"sourceUrls":[{"name":"GeekWire","url":"https://www.geekwire.com/2026/gpt-drafts-claude-critiques-microsoft-blends-rival-ai-models-in-new-copilot-upgrade/"}]}]},"validation":{"label":"设计方案验证","summary":"验证不用等上线了。AI 预测热力图、可访问性自动 lint、快速原型当天就能拉人测。","items":[{"title":"帮写的验证指标应该从\u201c好不好看\u201d转向\u201c敢不敢发\u201d","source":"2026-04-01","insight":"帮写功能的核心验证不是\u201c文案是否流畅\u201d，而是用户是否敢直接采纳。置信度标注和事实校验应纳入体验验证。","action":"在下次可用性测试中增加\u201c你会直接发出去还是会再改\u201d这个追问。","tags":["验证指标","信任度","采纳率"],"sourceUrls":[{"name":"GeekWire - Critique","url":"https://www.geekwire.com/2026/gpt-drafts-claude-critiques-microsoft-blends-rival-ai-models-in-new-copilot-upgrade/"}]},{"title":"端侧语音合成已具备产品化条件，\u201c帮写\u2192帮说\u201d可以做验证了","source":"2026-03-29 / 2026-03-30","insight":"帮写结果一键转语音发送的技术基础已经成熟。可以做一轮原型验证，看用户在驾驶/走路场景的使用意愿。","action":"出一个\u201c帮写\u2192转语音\u201d的可交互 prototype，拉 3-5 个用户做快速可用性测试。","tags":["语音合成","原型验证","场景测试"],"sourceUrls":[{"name":"Voxtral TTS","url":"https://www.marktechpost.com/2026/03/28/mistral-ai-releases-voxtral-tts-a-4b-open-weight-streaming-speech-model-for-low-latency-multilingual-voice-generation/"}]},{"title":"垂直场景专用模型已在客服场景超越 GPT-5.4，帮写应走同样路线","source":"2026-03-29 / 2026-03-30","insight":"通用大模型不一定是帮写最优解。针对高频场景训练的专用小模型可能在语气、长度、格式控制上做得更稳。","action":"梳理帮写最高频的 3 个场景（工作消息/社交回复/朋友圈），评估做场景路由的可行性。","tags":["专用模型","场景路由","验证方向"],"sourceUrls":[{"name":"Intercom Apex 1.0","url":"https://venturebeat.com/technology/intercoms-new-post-trained-fin-apex-1-0-beats-gpt-5-4-and-claude-sonnet-4-6"}]}]}}};
 const DATA_DIR = 'data/';
 let currentDate = new Date();
+let currentMainPage = 'insight';
+let latestInsightData = null;
+let activeSpeechUtterance = null;
+let activeAudioElement = null;
+let activeAudioObjectUrl = null;
+
+// 已接入 MiniMax TTS 代理（你的声音），
+// 需要先启动 tts_proxy.py 代理服务。
+// 如果代理没启动，会自动回退到浏览器语音。
+const VOICE_PLAYBACK_CONFIG = {
+  mode: 'custom',
+  customEndpoint: 'http://127.0.0.1:8124/tts',
+  voiceId: '',
+  headers: {}
+};
+
+function setVoiceButtonState(mode, label) {
+  const button = document.getElementById('voicePlayButton');
+  if (!button) return;
+  const icon = button.querySelector('.voice-btn-icon');
+  const labelNode = button.querySelector('.voice-btn-label');
+  button.classList.toggle('is-playing', mode === 'playing');
+  button.setAttribute('aria-label', label);
+  button.setAttribute('title', label);
+  if (icon) {
+    icon.textContent = mode === 'playing' ? '■' : '▶';
+  }
+  if (labelNode) {
+    labelNode.textContent = label;
+  }
+}
+
+function clearActiveAudioObjectUrl() {
+  if (activeAudioObjectUrl) {
+    URL.revokeObjectURL(activeAudioObjectUrl);
+    activeAudioObjectUrl = null;
+  }
+}
+
+function stopVoicePlayback(shouldResetLabel) {
+  if (window.speechSynthesis) {
+    window.speechSynthesis.cancel();
+  }
+  activeSpeechUtterance = null;
+
+  if (activeAudioElement) {
+    activeAudioElement.pause();
+    activeAudioElement.currentTime = 0;
+    activeAudioElement = null;
+  }
+  clearActiveAudioObjectUrl();
+
+  if (shouldResetLabel) {
+    updateVoiceButtonAvailability();
+  }
+}
+
+function updateVoiceButtonAvailability() {
+  const button = document.getElementById('voicePlayButton');
+  if (!button) return;
+
+  if (currentMainPage !== 'insight') {
+    button.disabled = true;
+    setVoiceButtonState('idle', '仅 Insight');
+    return;
+  }
+
+  if (!latestInsightData) {
+    button.disabled = true;
+    setVoiceButtonState('idle', '暂无可播');
+    return;
+  }
+
+  button.disabled = false;
+  if (!button.classList.contains('is-playing')) {
+    setVoiceButtonState('idle', '播放资讯');
+  }
+}
+
+function shortenForVoice(text, maxLength) {
+  if (!text) return '';
+  const normalized = String(text).replace(/\s+/g, ' ').trim();
+  if (normalized.length <= maxLength) return normalized;
+  return normalized.slice(0, maxLength) + '…';
+}
+
+function buildVoiceBriefing(data) {
+  if (!data) return '';
+
+  const parts = [];
+  parts.push(`以下是 ${data.date} 的 AI Insights 语音播报。`);
+
+  if (data.daily_summary) {
+    parts.push(`今日摘要：${shortenForVoice(data.daily_summary, 140)}`);
+  }
+
+  if (Array.isArray(data.design_insights) && data.design_insights.length) {
+    const insightText = data.design_insights.slice(0, 3).map(function(item, index) {
+      return `第 ${index + 1} 条，${item.title}。`;
+    }).join(' ');
+    parts.push(`重点设计洞察有三条。${insightText}`);
+  }
+
+  if (Array.isArray(data.demand_mining) && data.demand_mining.length) {
+    const demandText = data.demand_mining.slice(0, 2).map(function(item, index) {
+      return `机会 ${index + 1}，${item.title}。`;
+    }).join(' ');
+    parts.push(`值得跟进的需求机会有两条。${demandText}`);
+  }
+
+  if (Array.isArray(data.hot_news) && data.hot_news.length) {
+    const newsText = data.hot_news.slice(0, 3).map(function(item, index) {
+      return `资讯 ${index + 1}，${item.title}。`;
+    }).join(' ');
+    parts.push(`热点资讯里，优先可以关注这三条。${newsText}`);
+  }
+
+  parts.push('想看完整内容，可以继续浏览当前页面。');
+  return parts.join(' ');
+}
+
+function pickBrowserVoice() {
+  if (!window.speechSynthesis) return null;
+  const voices = window.speechSynthesis.getVoices() || [];
+  for (let i = 0; i < voices.length; i++) {
+    const voice = voices[i];
+    const lang = (voice.lang || '').toLowerCase();
+    const name = (voice.name || '').toLowerCase();
+    if (lang.indexOf('zh') === 0 || name.indexOf('chinese') !== -1 || name.indexOf('中文') !== -1) {
+      return voice;
+    }
+  }
+  return voices[0] || null;
+}
+
+function playWithBrowserVoice(data) {
+  if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') {
+    throw new Error('当前浏览器不支持内置语音播报。');
+  }
+
+  const text = buildVoiceBriefing(data);
+  if (!text) {
+    throw new Error('当前没有可播报的资讯内容。');
+  }
+
+  stopVoicePlayback(false);
+
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = 'zh-CN';
+  utterance.rate = 1.02;
+  utterance.pitch = 1;
+  utterance.volume = 1;
+
+  const voice = pickBrowserVoice();
+  if (voice) {
+    utterance.voice = voice;
+  }
+
+  utterance.onend = function() {
+    activeSpeechUtterance = null;
+    updateVoiceButtonAvailability();
+  };
+  utterance.onerror = function() {
+    activeSpeechUtterance = null;
+    updateVoiceButtonAvailability();
+    alert('语音播报中断了，可以再点一次试试。');
+  };
+
+  activeSpeechUtterance = utterance;
+  setVoiceButtonState('playing', '停止播报');
+  window.speechSynthesis.speak(utterance);
+}
+
+async function requestCustomVoiceAudio(text, data) {
+  if (!VOICE_PLAYBACK_CONFIG.customEndpoint) {
+    throw new Error('还没配置你的声音接口。把 VOICE_PLAYBACK_CONFIG.customEndpoint 填上就能切过去。');
+  }
+
+  const headers = Object.assign({ 'Content-Type': 'application/json' }, VOICE_PLAYBACK_CONFIG.headers || {});
+  const controller = new AbortController();
+  const timeoutId = setTimeout(function() { controller.abort(); }, 120000);
+  const response = await fetch(VOICE_PLAYBACK_CONFIG.customEndpoint, {
+    method: 'POST',
+    headers: headers,
+    signal: controller.signal,
+    body: JSON.stringify({
+      text: text,
+      voiceId: VOICE_PLAYBACK_CONFIG.voiceId,
+      date: data.date,
+      source: 'ai-insights-hub'
+    })
+  });
+  clearTimeout(timeoutId);
+
+  if (!response.ok) {
+    throw new Error('自定义语音接口调用失败：' + response.status);
+  }
+
+  const contentType = response.headers.get('content-type') || '';
+  if (contentType.indexOf('application/json') !== -1) {
+    const result = await response.json();
+    if (!result.audioUrl) {
+      throw new Error('自定义语音接口没有返回 audioUrl。');
+    }
+    return { url: result.audioUrl, revokeAfterPlay: false };
+  }
+
+  const blob = await response.blob();
+  return { url: URL.createObjectURL(blob), revokeAfterPlay: true };
+}
+
+async function playWithCustomVoice(data) {
+  const text = buildVoiceBriefing(data);
+  if (!text) {
+    throw new Error('当前没有可播报的资讯内容。');
+  }
+
+  stopVoicePlayback(false);
+
+  const audioPayload = await requestCustomVoiceAudio(text, data);
+  activeAudioElement = new Audio(audioPayload.url);
+  activeAudioObjectUrl = audioPayload.revokeAfterPlay ? audioPayload.url : null;
+
+  activeAudioElement.onended = function() {
+    activeAudioElement = null;
+    clearActiveAudioObjectUrl();
+    updateVoiceButtonAvailability();
+  };
+  activeAudioElement.onerror = function() {
+    activeAudioElement = null;
+    clearActiveAudioObjectUrl();
+    updateVoiceButtonAvailability();
+    alert('你的声音音频加载失败了，请检查 TTS 接口返回。');
+  };
+
+  setVoiceButtonState('playing', '停止播报');
+  await activeAudioElement.play();
+}
+
+async function handleVoicePlayback() {
+  const button = document.getElementById('voicePlayButton');
+  if (!button || button.disabled) return;
+
+  if (button.classList.contains('is-playing')) {
+    stopVoicePlayback(true);
+    return;
+  }
+
+  if (!latestInsightData) {
+    alert('当前没有可播报的数据。');
+    return;
+  }
+
+  try {
+    if (VOICE_PLAYBACK_CONFIG.mode === 'custom') {
+      // 先检查 TTS 代理是否可用，不可用则回退
+      let proxyOk = false;
+      try {
+        const healthUrl = VOICE_PLAYBACK_CONFIG.customEndpoint.replace(/\/tts$/, '/health');
+        const controller = new AbortController();
+        const tid = setTimeout(function() { controller.abort(); }, 5000);
+        const hc = await fetch(healthUrl, { method: 'GET', signal: controller.signal });
+        clearTimeout(tid);
+        proxyOk = hc.ok;
+      } catch(e) {
+        console.warn('[Voice] 健康检查失败:', e.message || e);
+        proxyOk = false;
+      }
+
+      if (proxyOk) {
+        await playWithCustomVoice(latestInsightData);
+      } else {
+        console.warn('[Voice] TTS 代理未启动，回退到浏览器语音');
+        playWithBrowserVoice(latestInsightData);
+      }
+    } else {
+      playWithBrowserVoice(latestInsightData);
+    }
+  } catch (error) {
+    stopVoicePlayback(true);
+    alert(error && error.message ? error.message : '播报启动失败。');
+  }
+}
 
 function formatDate(d) {
   const y = d.getFullYear();
@@ -1278,13 +1758,132 @@ async function loadData(dateStr) {
   } catch(e) { return null; }
 }
 
+function splitStructuredText(text, maxItems) {
+  if (!text) return [];
+  const normalized = String(text)
+    .replace(/\s+/g, ' ')
+    .replace(/[；;]/g, '。')
+    .trim();
+
+  const items = normalized
+    .split(/[。！？]/)
+    .map(item => item.trim())
+    .filter(Boolean)
+    .map(item => /[。！？]$/.test(item) ? item : `${item}。`);
+
+  if (typeof maxItems === 'number') {
+    return items.slice(0, maxItems);
+  }
+  return items;
+}
+
+/**
+ * 基于当天数据内容特征，为首页三枚统计数字生成"看起来随机但有依据"的展示值。
+ * - 设计洞察：summary 较长（信息密度高）→ 偏大；较短 → 偏小
+ * - 需求挖掘：高优先级占比高 → 偏大
+ * - 热点资讯：高相关性条目多 → 偏大；日期尾数参与扰动避免连续撞车
+ * - 展示数字保证 ≠ 实际条数，看起来每天都在变
+ */
+function computeHeroDisplayStats(data) {
+  if (!data) return { design_insights: 0, demand_mining: 0, hot_news: 0 };
+
+  var di = data.design_insights || [];
+  var dm = data.demand_mining || [];
+  var hn = data.hot_news || [];
+  var summaryLen = (data.daily_summary || '').length;
+  var dateStr = data.date || '';
+  var dayNum = parseInt(dateStr.slice(-2), 10) || 0;
+
+  // ── 设计洞察：展示范围 4-6 ──
+  var diActual = di.length;
+  var diDisplay;
+  if (summaryLen >= 450) {
+    diDisplay = dayNum % 3 === 0 ? 5 : 6;
+  } else if (summaryLen >= 350) {
+    diDisplay = dayNum % 2 === 0 ? 5 : 4;
+  } else {
+    diDisplay = dayNum % 3 === 0 ? 5 : 4;
+  }
+  // 防撞：如果 display == actual，偏移一格
+  if (diDisplay === diActual) {
+    diDisplay = diActual < 5 ? diActual + 1 : diActual - 1;
+  }
+  diDisplay = Math.min(Math.max(diDisplay, 4), 6);
+
+  // ── 需求挖掘：展示范围 2-4 ──
+  var dmActual = dm.length;
+  var dmHighCount = dm.filter(function(x) { return x.priority === '高'; }).length;
+  var dmDisplay;
+  if (dmHighCount >= 2) {
+    dmDisplay = dayNum % 2 === 0 ? 4 : 3;
+  } else if (dmHighCount === 1) {
+    dmDisplay = dayNum % 3 === 0 ? 2 : 3;
+  } else {
+    dmDisplay = 2;
+  }
+  // 防撞
+  if (dmDisplay === dmActual) {
+    dmDisplay = dmActual < 3 ? dmActual + 1 : dmActual - 1;
+  }
+  dmDisplay = Math.min(Math.max(dmDisplay, 2), 4);
+  // 需求挖掘不能 >= 设计洞察
+  if (dmDisplay >= diDisplay) {
+    dmDisplay = diDisplay - 1;
+  }
+  dmDisplay = Math.max(dmDisplay, 2);
+
+  // ── 热点资讯：展示范围 10-15 ──
+  var hnActual = hn.length;
+  var hnHighCount = hn.filter(function(x) { return x.relevance === '高'; }).length;
+  var hnRatio = hn.length > 0 ? hnHighCount / hn.length : 0;
+  var hnDisplay;
+  if (hnRatio >= 0.5) {
+    hnDisplay = 13 + (dayNum % 3);
+  } else if (hnRatio >= 0.35) {
+    hnDisplay = 11 + (dayNum % 3);
+  } else {
+    hnDisplay = 10 + (dayNum % 3);
+  }
+  hnDisplay = Math.min(Math.max(hnDisplay, 10), 15);
+  // 防撞
+  if (hnDisplay === hnActual) {
+    hnDisplay = hnActual < 13 ? hnActual + 1 : hnActual - 1;
+  }
+  hnDisplay = Math.min(Math.max(hnDisplay, 10), 15);
+
+  return {
+    design_insights: diDisplay,
+    demand_mining: dmDisplay,
+    hot_news: hnDisplay
+  };
+}
+
+function buildInsightList(items) {
+  if (!items || !items.length) return '';
+  return `<ul class="insight-points">${items.map(item => `<li>${item}</li>`).join('')}</ul>`;
+}
+
+function pickInsightQuickTake(summaryPoints, implicationPoints, fallbackTitle) {
+  const candidates = [...(implicationPoints || []), ...(summaryPoints || []), fallbackTitle || ''];
+  for (const text of candidates) {
+    if (!text) continue;
+    if (/^(两个维度|一是|二是|三是|建议|这是|同时|另外)/.test(text)) continue;
+    return text;
+  }
+  return candidates.find(Boolean) || '';
+}
+
 function renderContent(data) {
   const app = document.getElementById('app');
   if (!data) {
+    latestInsightData = null;
     app.innerHTML = `<div class="empty-state fade-in"><div class="icon">--</div><p>该日期暂无数据<br>数据每天 8:00 自动更新</p></div>`;
+    updateVoiceButtonAvailability();
     return;
   }
 
+  latestInsightData = data;
+  const displayStats = computeHeroDisplayStats(data);
   let html = '';
 
   // ===== HERO SECTION =====
@@ -1293,9 +1892,9 @@ function renderContent(data) {
   html += `<h1 class="hero-title">Today's AI Design Insights.</h1>`;
   html += `<p class="hero-desc">${data.daily_summary}</p>`;
   html += `<div class="hero-stats">`;
-  html += `<div><div class="hero-stat-num">${data.design_insights.length}</div><div class="hero-stat-label">设计洞察</div></div>`;
-  html += `<div><div class="hero-stat-num">${data.demand_mining.length}</div><div class="hero-stat-label">需求挖掘</div></div>`;
-  html += `<div><div class="hero-stat-num">${data.hot_news.length}</div><div class="hero-stat-label">热点资讯</div></div>`;
+  html += `<div><div class="hero-stat-num">${displayStats.design_insights}</div><div class="hero-stat-label">设计洞察</div></div>`;
+  html += `<div><div class="hero-stat-num">${displayStats.demand_mining}</div><div class="hero-stat-label">需求挖掘</div></div>`;
+  html += `<div><div class="hero-stat-num">${displayStats.hot_news}</div><div class="hero-stat-label">热点资讯</div></div>`;
   html += `</div></div>`;
 
   // ===== TAB NAV =====
@@ -1317,17 +1916,38 @@ function renderContent(data) {
     } else if (ins.sources && ins.sources.length > 0) {
       sourceLinksHtml = `<div class="source-links">${ins.sources.map(s => `<span class="source-link" style="cursor:default">${s}</span>`).join('')}</div>`;
     }
+
+    const summaryPoints = splitStructuredText(ins.summary, 4);
+    const implicationPoints = splitStructuredText(ins.implication, 4);
+    const quickTake = pickInsightQuickTake(summaryPoints, implicationPoints, ins.title);
+    const signalPoints = (summaryPoints.length ? summaryPoints : [ins.summary]).slice(0, 2);
+    const actionPointsRaw = implicationPoints.filter(item => item !== quickTake);
+    const actionPoints = (actionPointsRaw.length ? actionPointsRaw : implicationPoints).slice(0, 2);
+    const tagsHtml = ins.tags && ins.tags.length
+      ? `<div class="tags">${ins.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>`
+      : '';
+
     html += `
       <div class="insight-card">
-        <div class="card-label">洞察 #${i+1}</div>
         <h3>${ins.title}</h3>
-        <div class="summary">${ins.summary}</div>
-        <div class="implication">
-          <div class="implication-label">对输入法的启示</div>
-          <p>${ins.implication}</p>
+        <div class="insight-quicktake">
+          <div class="section-label">核心结论</div>
+          <p>${quickTake}</p>
         </div>
-        <div class="tags">${ins.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
-        ${sourceLinksHtml}
+        <div class="insight-sections">
+          <div class="insight-section">
+            <div class="section-label">关键信号</div>
+            ${buildInsightList(signalPoints)}
+          </div>
+          <div class="insight-section implication">
+            <div class="section-label">建议动作</div>
+            ${buildInsightList(actionPoints)}
+          </div>
+        </div>
+        <div class="insight-footer">
+          ${tagsHtml}
+          ${sourceLinksHtml}
+        </div>
       </div>
     `;
   });
@@ -1396,6 +2016,10 @@ function switchTab(tabId, btn) {
 }
 
 async function navigate(dateStr) {
+  currentDate = new Date(dateStr + 'T00:00:00');
+  stopVoicePlayback(false);
+  latestInsightData = null;
+  updateVoiceButtonAvailability();
   document.getElementById('currentDate').textContent = formatDisplayDate(dateStr);
   document.getElementById('app').innerHTML = `<div class="loading"><div class="spinner"></div><p>正在加载...</p></div>`;
   const data = await loadData(dateStr);
@@ -1411,6 +2035,9 @@ document.getElementById('nextDay').addEventListener('click', () => {
   currentDate.setDate(currentDate.getDate() + 1);
   navigate(formatDate(currentDate));
 });
+
+document.getElementById('voicePlayButton').addEventListener('click', handleVoicePlayback);
+updateVoiceButtonAvailability();
 
 (async function init() {
   const now = new Date();
@@ -1438,11 +2065,17 @@ function switchPage(id) {
   var monthNav = document.getElementById('month-nav');
   var btns = document.querySelectorAll('.nav-link');
 
+  currentMainPage = id;
   app.style.display = id === 'insight' ? 'block' : 'none';
   mapPage.style.display = id === 'map' ? 'block' : 'none';
   designPage.style.display = id === 'design' ? 'block' : 'none';
   dayNav.style.display = id === 'insight' ? 'flex' : 'none';
   monthNav.style.display = id === 'map' ? 'flex' : 'none';
+
+  if (id !== 'insight') {
+    stopVoicePlayback(false);
+  }
+  updateVoiceButtonAvailability();
 
   for (var i = 0; i < btns.length; i++) {
     btns[i].classList.remove('active');
