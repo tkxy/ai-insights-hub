@@ -849,10 +849,10 @@
     <div class="logo-mark">Y.</div>
     <div class="nav-cluster">
       <nav class="nav-links">
-        <button class="nav-link active" onclick="switchPage('insight')">Insight</button>
-        <button class="nav-link" onclick="switchPage('map')">Map</button>
-        <button class="nav-link" onclick="switchPage('design')">Design</button>
-        <button class="nav-link" onclick="switchPage('knowledge')">FAN</button>
+        <button class="nav-link active" data-page="insight" onclick="switchPage('insight')">Insight</button>
+        <button class="nav-link" data-page="map" onclick="switchPage('map')">Map</button>
+        <button class="nav-link" data-page="design" onclick="switchPage('design')">Design</button>
+        <button class="nav-link" data-page="knowledge" onclick="switchPage('knowledge')">FAN</button>
       </nav>
       <button id="voicePlayButton" class="voice-btn" type="button" aria-label="播放资讯" title="播放资讯" style="display:none;">
         <span class="voice-btn-icon">▶</span>
@@ -1594,7 +1594,7 @@
 
 <div class="main" id="knowledge-page" style="display:none; max-width:1400px; margin:0 auto; padding:20px 48px 60px;">
 
-  <div class="knowledge-input-area">
+  <div class="knowledge-input-area" style="display:none;">
     <div class="knowledge-input-row">
       <input type="text" id="knowledgeUrlInput" class="knowledge-url-input" placeholder="粘贴文章链接，如 https://..." autocomplete="off" />
       <button id="knowledgeAnalyzeBtn" class="knowledge-analyze-btn" onclick="analyzeKnowledgeUrl()">
@@ -1615,7 +1615,7 @@
 
   <div id="knowledgeEmpty" class="knowledge-empty">
     <div class="knowledge-empty-icon">📚</div>
-    <p>还没有内容，粘贴一个链接开始吧</p>
+    <p>当前还没有收录内容</p>
   </div>
 </div>
 
@@ -1953,83 +1953,15 @@ function splitStructuredText(text, maxItems) {
 }
 
 /**
- * 基于当天数据内容特征，为首页三枚统计数字生成"看起来随机但有依据"的展示值。
- * - 设计洞察：summary 较长（信息密度高）→ 偏大；较短 → 偏小
- * - 需求挖掘：高优先级占比高 → 偏大
- * - 热点资讯：高相关性条目多 → 偏大；日期尾数参与扰动避免连续撞车
- * - 展示数字保证 ≠ 实际条数，看起来每天都在变
+ * 头图统计数字与实际列表条数保持一致，避免用户看到的概览和下方内容对不上。
  */
 function computeHeroDisplayStats(data) {
   if (!data) return { design_insights: 0, demand_mining: 0, hot_news: 0 };
 
-  var di = data.design_insights || [];
-  var dm = data.demand_mining || [];
-  var hn = data.hot_news || [];
-  var summaryLen = (data.daily_summary || '').length;
-  var dateStr = data.date || '';
-  var dayNum = parseInt(dateStr.slice(-2), 10) || 0;
-
-  // ── 设计洞察：展示范围 4-6 ──
-  var diActual = di.length;
-  var diDisplay;
-  if (summaryLen >= 450) {
-    diDisplay = dayNum % 3 === 0 ? 5 : 6;
-  } else if (summaryLen >= 350) {
-    diDisplay = dayNum % 2 === 0 ? 5 : 4;
-  } else {
-    diDisplay = dayNum % 3 === 0 ? 5 : 4;
-  }
-  // 防撞：如果 display == actual，偏移一格
-  if (diDisplay === diActual) {
-    diDisplay = diActual < 5 ? diActual + 1 : diActual - 1;
-  }
-  diDisplay = Math.min(Math.max(diDisplay, 4), 6);
-
-  // ── 需求挖掘：展示范围 2-4 ──
-  var dmActual = dm.length;
-  var dmHighCount = dm.filter(function(x) { return x.priority === '高'; }).length;
-  var dmDisplay;
-  if (dmHighCount >= 2) {
-    dmDisplay = dayNum % 2 === 0 ? 4 : 3;
-  } else if (dmHighCount === 1) {
-    dmDisplay = dayNum % 3 === 0 ? 2 : 3;
-  } else {
-    dmDisplay = 2;
-  }
-  // 防撞
-  if (dmDisplay === dmActual) {
-    dmDisplay = dmActual < 3 ? dmActual + 1 : dmActual - 1;
-  }
-  dmDisplay = Math.min(Math.max(dmDisplay, 2), 4);
-  // 需求挖掘不能 >= 设计洞察
-  if (dmDisplay >= diDisplay) {
-    dmDisplay = diDisplay - 1;
-  }
-  dmDisplay = Math.max(dmDisplay, 2);
-
-  // ── 热点资讯：展示范围 10-15 ──
-  var hnActual = hn.length;
-  var hnHighCount = hn.filter(function(x) { return x.relevance === '高'; }).length;
-  var hnRatio = hn.length > 0 ? hnHighCount / hn.length : 0;
-  var hnDisplay;
-  if (hnRatio >= 0.5) {
-    hnDisplay = 13 + (dayNum % 3);
-  } else if (hnRatio >= 0.35) {
-    hnDisplay = 11 + (dayNum % 3);
-  } else {
-    hnDisplay = 10 + (dayNum % 3);
-  }
-  hnDisplay = Math.min(Math.max(hnDisplay, 10), 15);
-  // 防撞
-  if (hnDisplay === hnActual) {
-    hnDisplay = hnActual < 13 ? hnActual + 1 : hnActual - 1;
-  }
-  hnDisplay = Math.min(Math.max(hnDisplay, 10), 15);
-
   return {
-    design_insights: diDisplay,
-    demand_mining: dmDisplay,
-    hot_news: hnDisplay
+    design_insights: (data.design_insights || []).length,
+    demand_mining: (data.demand_mining || []).length,
+    hot_news: (data.hot_news || []).length
   };
 }
 
@@ -2256,20 +2188,23 @@ function switchPage(id) {
   updateVoiceButtonAvailability();
 
   for (var i = 0; i < btns.length; i++) {
+    var pageId = btns[i].getAttribute('data-page');
     btns[i].classList.remove('active');
-    if ((id === 'map' && btns[i].textContent === 'Map') ||
-        (id === 'insight' && btns[i].textContent === 'Insight') ||
-        (id === 'design' && btns[i].textContent === 'Design') ||
-        (id === 'knowledge' && btns[i].textContent === 'Knowledge')) {
+    if (pageId === id) {
       btns[i].classList.add('active');
     }
   }
 
   window.scrollTo(0, 0);
 }
-if (window.location.hash === '#map' || window.location.hash === '#design') {
+if (window.location.hash === '#map' || window.location.hash === '#design' || window.location.hash === '#knowledge') {
   document.addEventListener('DOMContentLoaded', function() {
-    switchPage(window.location.hash === '#design' ? 'design' : 'map');
+    var pageId = window.location.hash === '#design'
+      ? 'design'
+      : window.location.hash === '#knowledge'
+        ? 'knowledge'
+        : 'map';
+    switchPage(pageId);
   });
 }
 
