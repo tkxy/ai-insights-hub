@@ -2314,45 +2314,179 @@ function switchDesignFlow(name) {
 // ===== DESIGN WEEKLY RENDERER =====
 const DESIGN_STAGE_ICONS = {research:'🔍',competitive:'📊',user_research:'🧑‍🤝‍🧑',design_output:'🎨',validation:'✅'};
 const DESIGN_STAGE_NUMS = {research:'01',competitive:'02',user_research:'03',design_output:'04',validation:'05'};
+const DESIGN_STAGE_KEYS = ['research','competitive','user_research','design_output','validation'];
+var designWeeklyState = {
+  mergedData: null,
+  bootstrapPromise: null
+};
 
-async function loadDesignWeekly() {
-  var page = document.getElementById('design-page');
-  var data = null;
-  // try fetch first
-  var files = ['design-weekly-' + formatDate(new Date()) + '.json'];
-  for (var d = 1; d <= 7; d++) {
-    var dt = new Date(); dt.setDate(dt.getDate() - d);
+function buildDesignWeeklyCandidateFiles(daysBack) {
+  var files = [];
+  for (var d = 0; d <= daysBack; d++) {
+    var dt = new Date();
+    dt.setDate(dt.getDate() - d);
     files.push('design-weekly-' + formatDate(dt) + '.json');
   }
-  for (var f = 0; f < files.length; f++) {
+  return files;
+}
+
+function getDesignWeeklyReportKey(report, fallbackKey) {
+  return [report.weekOf || '', report.generatedAt || '', fallbackKey || ''].join('|');
+}
+
+function getDesignWeeklySortValue(report, fallbackKey) {
+  var raw = report.generatedAt || report.weekOf || fallbackKey || '';
+  return String(raw).replace(/[^0-9]/g, '') || '0';
+}
+
+function mergeDesignWeeklyReports(reports) {
+  if (!reports || !reports.length) return null;
+
+  var sorted = reports.slice().sort(function(a, b) {
+    var aKey = getDesignWeeklySortValue(a, a.__fileKey);
+    var bKey = getDesignWeeklySortValue(b, b.__fileKey);
+    if (aKey === bKey) return 0;
+    return aKey > bKey ? -1 : 1;
+  });
+
+  var merged = {
+    weekOf: sorted[0].weekOf || '',
+    generatedAt: sorted[0].generatedAt || '',
+    dataSources: [],
+    stages: {},
+    reportCount: sorted.length,
+    weekLabels: []
+  };
+  var sourceSeen = {};
+  var weekSeen = {};
+
+  for (var i = 0; i < sorted.length; i++) {
+    var report = sorted[i];
+    if (Array.isArray(report.dataSources)) {
+      for (var j = 0; j < report.dataSources.length; j++) {
+        var ds = report.dataSources[j];
+        if (!sourceSeen[ds]) {
+          sourceSeen[ds] = true;
+          merged.dataSources.push(ds);
+        }
+      }
+    }
+    if (report.weekOf && !weekSeen[report.weekOf]) {
+      weekSeen[report.weekOf] = true;
+      merged.weekLabels.push(report.weekOf);
+    }
+  }
+
+  for (var s = 0; s < DESIGN_STAGE_KEYS.length; s++) {
+    var stageKey = DESIGN_STAGE_KEYS[s];
+    var stageInfo = null;
+    var itemSeen = {};
+    var mergedItems = [];
+
+    for (var r = 0; r < sorted.length; r++) {
+      var stage = sorted[r].stages && sorted[r].stages[stageKey];
+      if (!stage) continue;
+
+      if (!stageInfo) {
+        stageInfo = {
+          label: stage.label || '',
+          summary: stage.summary || '',
+          items: []
+        };
+      } else {
+        if (!stageInfo.label && stage.label) stageInfo.label = stage.label;
+        if (!stageInfo.summary && stage.summary) stageInfo.summary = stage.summary;
+      }
+
+      var items = Array.isArray(stage.items) ? stage.items : [];
+      for (var k = 0; k < items.length; k++) {
+        var item = items[k];
+        var itemKey = [item.title || '', item.source || '', item.insight || ''].join('|');
+        if (itemSeen[itemKey]) continue;
+        itemSeen[itemKey] = true;
+        mergedItems.push(item);
+      }
+    }
+
+    if (stageInfo) {
+      stageInfo.items = mergedItems;
+      merged.stages[stageKey] = stageInfo;
+    }
+  }
+
+  return merged;
+}
+
+async function fetchDesignWeeklyReports() {
+  var reports = [];
+  var seen = {};
+
+  function pushReport(report, fallbackKey) {
+    if (!report) return;
+    var key = getDesignWeeklyReportKey(report, fallbackKey);
+    if (seen[key]) return;
+    seen[key] = true;
+    if (fallbackKey) report.__fileKey = fallbackKey;
+    reports.push(report);
+  }
+
+  if (typeof DESIGN_WEEKLY_INLINE !== 'undefined' && DESIGN_WEEKLY_INLINE) {
+    pushReport(DESIGN_WEEKLY_INLINE, 'inline');
+  }
+
+  var files = buildDesignWeeklyCandidateFiles(30);
+  var fetched = await Promise.all(files.map(async function(file) {
     try {
-      var resp = await fetch(DATA_DIR + files[f]);
-      if (resp.ok) { data = await resp.json(); break; }
-    } catch(e) {}
+      var resp = await fetch(DATA_DIR + file, { cache: 'no-cache' });
+      if (!resp.ok) return null;
+      var data = await resp.json();
+      data.__fileKey = file;
+      return data;
+    } catch (e) {
+      return null;
+    }
+  }));
+
+  for (var i = 0; i < fetched.length; i++) {
+    if (fetched[i]) pushReport(fetched[i], fetched[i].__fileKey);
   }
-  // fallback to inline data if fetch fails
-  if (!data && typeof DESIGN_WEEKLY_INLINE !== 'undefined') {
-    data = DESIGN_WEEKLY_INLINE;
+
+  return reports;
+}
+
+function getDesignWeeklyHeaderText(data) {
+  if (data.reportCount > 1) {
+    return 'Design Weekly · 已累计 ' + data.reportCount + ' 期';
   }
-  if (!data) {
-    page.innerHTML = '<div style="text-align:center;padding:60px 0;color:#888;">暂无 Design Weekly 数据。</div>';
-    return;
-  }
-  renderDesignWeekly(data, page);
+  return 'Design Weekly · ' + (data.weekOf || '持续更新');
+}
+
+function getDesignWeeklyMetaText(data) {
+  var parts = [];
+  if (data.generatedAt) parts.push('最近更新 ' + data.generatedAt);
+  if (data.reportCount > 1) parts.push('新增内容只追加，不覆盖旧内容');
+  if (data.dataSources && data.dataSources.length) parts.push('覆盖 ' + data.dataSources.length + ' 天');
+  return parts.join(' · ');
 }
 
 function renderDesignWeekly(data, page) {
-  var stageKeys = ['research','competitive','user_research','design_output','validation'];
-  var stages = data.stages;
-  // Hero
+  var stages = data.stages || {};
+  var stageKeys = DESIGN_STAGE_KEYS.filter(function(key) { return !!stages[key]; });
+
+  if (!stageKeys.length) {
+    page.innerHTML = '<div style="text-align:center;padding:60px 0;color:#888;">暂无 Design Weekly 数据。</div>';
+    return;
+  }
+
+  var headerText = getDesignWeeklyHeaderText(data);
+  var metaText = getDesignWeeklyMetaText(data);
+
   var html = '<section style="background:linear-gradient(135deg,rgba(255,255,255,0.9),rgba(243,239,230,0.92));border:1px solid rgba(0,0,0,0.06);border-radius:32px;padding:72px 36px;box-shadow:0 18px 60px rgba(17,17,17,0.08);margin-bottom:28px;">';
-  html += '<div style="font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#888;margin-bottom:12px;">Design Weekly · ' + data.weekOf + '</div>';
+  html += '<div style="font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#888;margin-bottom:12px;">' + headerText + '</div>';
   html += '<h1 style="font-size:44px;line-height:1.02;letter-spacing:-2px;margin:0 0 18px;">\u201cAI+设计\u201d工作流</h1>';
-  // stage summaries
   html += '<div style="display:grid;gap:10px;margin-bottom:16px;">';
   for (var s = 0; s < stageKeys.length; s++) {
     var sk = stageKeys[s];
-    if (!stages[sk]) continue;
     var st = stages[sk];
     html += '<div style="display:flex;gap:10px;align-items:baseline;">';
     html += '<span style="font-size:13px;font-weight:800;color:#111;white-space:nowrap;min-width:24px;">' + DESIGN_STAGE_NUMS[sk] + '</span>';
@@ -2360,24 +2494,23 @@ function renderDesignWeekly(data, page) {
     html += '</div>';
   }
   html += '</div>';
-  html += '<p style="font-size:13px;color:#888;margin:0;">点击下方维度展开详细内容 ↓</p>';
+  if (metaText) {
+    html += '<p style="font-size:13px;color:#888;margin:0 0 8px;">' + metaText + '</p>';
+  }
+  html += '<p style="font-size:13px;color:#888;margin:0;">页面会预先准备内容，切到 Design 时不再重复加载。</p>';
   html += '</section>';
 
-  // Chips
   html += '<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;" id="design-flow-chips">';
   for (var s = 0; s < stageKeys.length; s++) {
     var sk = stageKeys[s];
-    if (!stages[sk]) continue;
     var st = stages[sk];
     var isFirst = (s === 0);
     html += '<button class="design-chip' + (isFirst ? ' active' : '') + '" data-flow="' + sk + '" onclick="switchDesignFlow(\'' + sk + '\')" style="padding:10px 16px;border-radius:999px;font-size:13px;font-weight:700;cursor:pointer;border:none;font-family:inherit;transition:all 0.2s;background:' + (isFirst ? '#111' : 'rgba(0,0,0,0.05)') + ';color:' + (isFirst ? '#fff' : '#555') + ';">' + DESIGN_STAGE_ICONS[sk] + ' ' + st.label + ' · ' + st.items.length + '</button>';
   }
   html += '</div>';
 
-  // Stage blocks
   for (var s = 0; s < stageKeys.length; s++) {
     var sk = stageKeys[s];
-    if (!stages[sk]) continue;
     var st = stages[sk];
     var isFirst = (s === 0);
     html += '<div class="design-flow-block" data-flow="' + sk + '" style="display:' + (isFirst ? 'block' : 'none') + ';">';
@@ -2388,29 +2521,23 @@ function renderDesignWeekly(data, page) {
     html += '<p style="font-size:14px;color:#555;line-height:1.8;max-width:700px;">' + st.summary + '</p>';
     html += '</div>';
 
-    // Cards
     html += '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;">';
     for (var c = 0; c < st.items.length; c++) {
       var item = st.items[c];
       html += '<div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:flex;flex-direction:column;gap:12px;">';
-      // header
       html += '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">';
       html += '<span style="font-size:12px;font-weight:700;color:#888;">' + (item.source || '') + '</span>';
       if (item.tags && item.tags.length > 0) {
         html += '<span style="padding:5px 10px;border-radius:999px;font-size:11px;font-weight:700;color:#fff;background:#111;white-space:nowrap;">' + item.tags[0] + '</span>';
       }
       html += '</div>';
-      // title
       html += '<h4 style="font-size:17px;font-weight:800;line-height:1.35;">' + item.title + '</h4>';
-      // insight
       if (item.insight) {
         html += '<div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">对我们的启示</strong>' + item.insight + '</div>';
       }
-      // action
       if (item.action) {
         html += '<div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">建议下一步</strong>' + item.action + '</div>';
       }
-      // source links
       if (item.sourceUrls && item.sourceUrls.length > 0) {
         html += '<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px;">';
         for (var u = 0; u < item.sourceUrls.length; u++) {
@@ -2418,7 +2545,6 @@ function renderDesignWeekly(data, page) {
         }
         html += '</div>';
       }
-      // tags
       if (item.tags && item.tags.length > 1) {
         html += '<div style="display:flex;flex-wrap:wrap;gap:6px;">';
         for (var t = 0; t < item.tags.length; t++) {
@@ -2436,18 +2562,58 @@ function renderDesignWeekly(data, page) {
   page.innerHTML = html;
 }
 
-// Auto-load design weekly when switching to design page
+async function initDesignWeekly() {
+  var page = document.getElementById('design-page');
+  if (!page) return null;
+
+  if (designWeeklyState.bootstrapPromise) {
+    return designWeeklyState.bootstrapPromise;
+  }
+
+  designWeeklyState.bootstrapPromise = (async function() {
+    if (typeof DESIGN_WEEKLY_INLINE !== 'undefined' && DESIGN_WEEKLY_INLINE) {
+      designWeeklyState.mergedData = mergeDesignWeeklyReports([DESIGN_WEEKLY_INLINE]);
+      if (designWeeklyState.mergedData) {
+        renderDesignWeekly(designWeeklyState.mergedData, page);
+      }
+    }
+
+    try {
+      var reports = await fetchDesignWeeklyReports();
+      var merged = mergeDesignWeeklyReports(reports);
+      if (merged) {
+        designWeeklyState.mergedData = merged;
+        renderDesignWeekly(merged, page);
+        return merged;
+      }
+    } catch (e) {
+      console.error('Design weekly load error:', e);
+    }
+
+    if (!designWeeklyState.mergedData) {
+      page.innerHTML = '<div style="text-align:center;padding:60px 0;color:#888;">暂无 Design Weekly 数据。</div>';
+    }
+    return designWeeklyState.mergedData;
+  })();
+
+  return designWeeklyState.bootstrapPromise;
+}
+
+async function loadDesignWeekly() {
+  return initDesignWeekly();
+}
+
 var _origSwitchPage = switchPage;
 switchPage = function(id) {
   _origSwitchPage(id);
-  if (id === 'design' && !document.querySelector('#design-page .design-flow-block')) {
-    loadDesignWeekly();
+  if (id === 'design') {
+    initDesignWeekly();
   }
 };
-// Also load on hash
-if (window.location.hash === '#design') {
-  document.addEventListener('DOMContentLoaded', function() { loadDesignWeekly(); });
-}
+
+document.addEventListener('DOMContentLoaded', function() {
+  initDesignWeekly();
+});
 
 // ===== KNOWLEDGE BASE (Supabase) =====
 var SUPABASE_URL = 'https://qmkunsumusmpqniktivh.supabase.co';
