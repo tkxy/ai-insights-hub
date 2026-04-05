@@ -1,0 +1,216 @@
+{
+  "date": "2026-04-05",
+  "generated_at": "2026-04-05T08:00:00+08:00",
+  "daily_summary": "周日AI行业多条重磅消息汇聚。Anthropic Claude Mythos（Opus 5）泄露事件持续发酵，InvestorPlace分析指出泄露文件证实AI正进入「能力指数级增长」阶段，AI基础设施股最为受益，同时SaaS商业模式面临颠覆风险。OpenAI下一代旗舰模型代号「Spud」（疑为GPT-5.5或GPT-6）预训练完成，预计Q2-Q3发布。机器人领域本周集中爆发：Generalist AI发布GEN-1物理AI模型，任务成功率从64%飙升至99%且仅需1小时机器人数据训练；Figure CEO公开确认已与OpenAI分手并将成为直接竞争对手；智元机器人明天（4月7日）正式开启AI发布周。自动驾驶方面出现冰火两重天：Waymo在圣安东尼奥国际机场推出德州首个机器人出租车服务、Uber与WeRide在迪拜启动全无人出租车运营，而百度萝卜快跑在武汉发生大规模系统故障致百余名乘客滞留。微软开源AI Agent治理工具包，覆盖OWASP Agentic十大安全威胁。字节跳动红果短剧因「AI偷脸」事件下架《桃花簪》并处罚出品方。Claude Haiku 3将于4月19日正式下线，Anthropic推动用户迁移至Haiku 4.5。",
+  "design_insights": [
+    {
+      "title": "Claude Mythos泄露引发行业震荡：AI能力即将进入指数增长阶段，基础设施优先于应用层",
+      "summary": "Anthropic的Claude Mythos（内部代号Capybara，定位为Opus 5）在3月27日因CMS配置错误泄露约3000份机密文件后，影响持续扩大。InvestorPlace在4月4日的深度分析中指出，泄露内容证实AI正从线性进步进入「起飞式」的指数级能力增长。Mythos具备10万亿参数规模，在编程、推理和网络安全领域远超当前所有公开模型——据报道，内测中90分钟内攻破了一个存在20年的Linux漏洞。这一泄露直接导致了全球网络安全股的历史性闪崩。同时，Claude Code源码51.2万行TypeScript代码3月31日从npm泄露，暴露了内部架构细节和未发布功能（如「主动模式」和「KAIROS」系统），导致部分开发团队开始转向多模型集成方案AICC。",
+      "implication": "这两起泄露事件对输入法产品的启示是多层的：(1) AI能力在短期内的跃升意味着输入法AI帮写的底层模型能力还会继续大幅提升，产品架构应预留充分的模型切换灵活性，避免与单一模型供应商强绑定；(2) Claude Code泄露中暴露的「主动模式」概念值得关注——未来AI可能从被动响应转向主动提示用户，输入法可以探索「AI主动建议」功能，在用户输入过程中根据上下文主动弹出优化建议；(3) 多模型集成（如AICC方案）正在成为开发趋势，输入法后端可考虑多模型路由架构，根据场景自动切换最优模型（帮写用A、翻译用B、纠错用C），降低单一供应商风险。",
+      "sources": ["InvestorPlace", "Anthropic", "新智元", "36氪", "Seeking Alpha"],
+      "source_urls": [
+        {"name": "InvestorPlace深度分析", "url": "https://investorplace.com/hypergrowthinvesting/2026/04/anthropics-claude-mythos-leak-is-bigger-than-you-think/"},
+        {"name": "36氪报道", "url": "https://www.36kr.com/p/3740796375679236"},
+        {"name": "Seeking Alpha首报", "url": "https://seekingalpha.com/news/4569775-data-leak-reveals-anthropics-latest-secret-model-claude-mythos-report"},
+        {"name": "Coinlive影响分析", "url": "https://www.coinlive.com/zh/news/anthropic-leak-exposes-claude-mythos-sending-cybersecurity-stocks-into-panic"}
+      ],
+      "tags": ["AI能力跃升", "模型架构", "多模型路由", "泄露事件"]
+    },
+    {
+      "title": "物理AI模型突破99%成功率：具身智能从演示走向可靠执行，AI交互范式从纯文本扩向物理世界",
+      "summary": "Generalist AI于4月2日发布GEN-1模型，号称首个通用物理AI模型在简单物理操作任务上达到「精通」水平——平均成功率从此前GEN-0的64%飙升至99%，执行速度快3倍，且每项测试仅需约1小时机器人数据训练（部分测试仅需GEN-0十分之一的数据量）。与此同时，本周机器人领域多条大新闻并发：AGIBOT出货第1万台人形机器人；广西东风柳汽工厂部署100多台人形机器人当「实习生」；UBTech报告人形机器人收入同比暴增23倍；Figure CEO公开宣布与OpenAI分手转为竞争关系，将自建AI；Sanctuary AI展示了零样本灵巧手操作。丰田研究院CEO则警告人形机器人行业正接近「极度膨胀期望峰值」。",
+      "implication": "物理AI从「演示级」迈向「可靠级」对输入法的间接影响在于交互入口的扩展：(1) 随着具身智能普及，未来人与机器人的交互将大量通过语音+文本指令完成，输入法作为文本输入的底层基础设施，需要提前布局「人-机器人指令输入」场景——比如在输入法中集成机器人指令模板、快捷命令面板；(2) 更直接的是，GEN-1的「少数据高成功率」思路可以借鉴到输入法AI的个性化适配上：能否用极少量的用户数据（比如10条历史对话）就让帮写模型精准匹配用户风格？这比当前需要大量历史数据的个性化方案更有吸引力；(3) 智元AI发布周（明天开始）值得持续跟踪，其物理AI自研成果可能带来新的输入交互灵感。",
+      "sources": ["Generalist AI", "RobotToday", "澎湃新闻", "IT之家", "The Robot Report"],
+      "source_urls": [
+        {"name": "Generalist AI官方博客", "url": "https://generalistai.com/blog/apr-02-2026-GEN-1"},
+        {"name": "The Robot Report报道", "url": "https://www.therobotreport.com/generalist-introduces-gen-1-general-purpose-model-for-physical-ai/"},
+        {"name": "RobotToday周报", "url": "https://robottoday.com/article/robottoday-weekly-industry-briefing-march-30-april-4-2026"},
+        {"name": "IT之家报道智元AI发布周", "url": "https://www.ithome.com/0/935/660.htm"}
+      ],
+      "tags": ["具身智能", "物理AI", "少数据学习", "交互入口扩展"]
+    },
+    {
+      "title": "AI Agent治理框架开源化：微软Agent Governance Toolkit为自主智能体设立安全底线",
+      "summary": "微软于4月2日开源了Agent Governance Toolkit（MIT协议），这是首个系统性覆盖OWASP Agentic AI十大安全威胁的运行时治理框架。该工具包提供策略执行、零信任身份验证、执行沙箱和可靠性工程四大核心能力，兼容LangChain、AutoGen等主流Agent框架。这一动作与微软此前发布的Wave 3代理AI功能和Microsoft 365 E7安全套件形成组合拳。与此同时，Databricks发布了《2026 AI Agent现状报告》，Gartner和IDC数据显示62%的企业已开始Agent部署。整个行业正从「Agent能做什么」转向「Agent如何安全地做」，治理和安全正成为Agent落地的最后一公里。",
+      "implication": "AI Agent安全治理的标准化对输入法有两重意义：(1) 输入法如果要做AI Agent功能（如帮用户自动完成跨应用的复杂任务），必须从一开始就内置安全治理——微软的开源工具包可以直接参考其策略执行和沙箱机制，确保Agent不会越权操作用户数据；(2) 更现实的是，Agent治理关注的「权限边界」「身份验证」「执行审计」等概念可以降维应用到输入法的AI帮写功能中：帮写Agent访问了哪些用户数据？做了什么推理？用户能否回溯和撤销？这些透明度设计将成为用户信任的关键。建议技术团队研究微软Agent Governance Toolkit的架构，为输入法AI功能建立类似的治理日志机制。",
+      "sources": ["微软开源博客", "GitHub", "HelpNetSecurity", "Databricks", "Gartner"],
+      "source_urls": [
+        {"name": "微软开源博客公告", "url": "https://opensource.microsoft.com/blog/2026/04/02/introducing-the-agent-governance-toolkit-open-source-runtime-security-for-ai-agents/"},
+        {"name": "GitHub仓库", "url": "https://github.com/microsoft/agent-governance-toolkit"},
+        {"name": "HelpNetSecurity报道", "url": "https://www.helpnetsecurity.com/2026/04/03/microsoft-ai-agent-governance-toolkit/"},
+        {"name": "Databricks AI Agent现状报告", "url": "https://www.databricks.com/resources/ebook/state-of-ai-agents"}
+      ],
+      "tags": ["AI Agent", "安全治理", "开源框架", "OWASP"]
+    },
+    {
+      "title": "「AI偷脸」下架事件敲响警钟：AI生成内容的肖像权与合规审查成为产品必修课",
+      "summary": "字节跳动旗下红果短剧4月3日全面下架AI生成短剧《桃花簪》，该剧因使用真实素人肖像生成AI角色（将其丑化为反派）而引发舆论风暴。红果平台对出品方处以暂停上传15天的处罚。事件核心是：汉服博主发现自己的肖像未经授权被AI生成为短剧中的「贪财好色」角色，72小时内事件从个人投诉升级为全网讨论。中国广电协会演员委员会此前也发布声明严禁未经授权的AI换脸与影视素材魔改。这一事件标志着AI生成内容的版权和肖像权争议从理论讨论进入实际执法阶段，平台方开始承担审查责任。",
+      "implication": "对输入法AI功能的启示非常直接：(1) 输入法如果有AI头像生成、表情包生成、图片创意功能，必须在生成管线中嵌入肖像权合规检查——不能使用未授权的真人面部特征作为训练数据或生成参考；(2) 帮写功能如果涉及引用或模仿他人文风、使用他人作品片段，也需要考虑版权合规标注；(3) 更深层的趋势是，AI生成内容的「来源可追溯」正在成为监管硬要求，输入法在生成任何AI内容时建议添加元数据标记（如内容水印），为将来可能的合规审查预留接口。这是一个典型的「不做不会出事，但出事就是大事」的合规风险点。",
+      "sources": ["IT之家", "中国新闻网", "每日经济新闻", "青年报", "澎湃新闻"],
+      "source_urls": [
+        {"name": "IT之家报道", "url": "https://www.ithome.com/0/935/794.htm"},
+        {"name": "中国新闻网报道", "url": "https://www.chinanews.com.cn/cj/2026/04-03/10598327.shtml"},
+        {"name": "每日经济新闻", "url": "https://www.nbd.com.cn/articles/2026-04-03/4324853.html"},
+        {"name": "青年报报道", "url": "https://news.cyol.com/gb/articles/2026-04/03/content_nylVXwce3L.html"}
+      ],
+      "tags": ["AI合规", "肖像权", "内容审查", "AI生成内容"]
+    },
+    {
+      "title": "Q2 2026 AI模型日历密集：GPT-5.5 Spud、Haiku 3下线、HumanX大会齐聚，模型换代周期明显缩短",
+      "summary": "Q2 2026正在成为AI模型发布的超级密集期。OpenAI下一代旗舰模型代号「Spud」已完成预训练，联合创始人Greg Brockman确认训练完毕，外界推测其为GPT-5.5或GPT-6，预计Q2-Q3发布。Anthropic方面，Claude Haiku 3将于4月19日正式下线，所有调用该模型的应用将自动失败，开发者必须迁移至Haiku 4.5。Google在4月22-24日举办Cloud Next大会。HumanX AI大会明天（4月6日）在旧金山Moscone Center开幕，为期4天。DeepSeek V4预计本月发布。此外，Claude 1M上下文窗口将在4月30日正式GA。Grok 4.20和Llama 4后续版本也在Q2计划中。模型换代从以往的年度迭代压缩到了季度甚至月度级别。",
+      "implication": "模型密集迭代对输入法产品的影响是双刃剑：(1) 好处是可选模型越来越多、能力越来越强，但挑战是模型下线（如Haiku 3下线）会导致依赖单一模型的功能突然中断，输入法必须建立模型版本管理和自动降级机制；(2) 建议建立「AI模型日历」跟踪机制，在关键模型发布或下线前提前做兼容测试和切换准备；(3) GPT-5.5 Spud和DeepSeek V4的发布节点是输入法AI能力大幅升级的窗口期，应提前准备技术对接方案，在新模型发布后快速完成帮写、翻译、纠错等功能的模型升级。建议产品和技术团队每月同步一次AI模型迭代日历，避免被动应对。",
+      "sources": ["FindSkill.ai", "ABHS", "DigitalApplied", "Anthropic", "Geeky Gadgets"],
+      "source_urls": [
+        {"name": "Q2 AI模型日历", "url": "https://findskill.ai/blog/ai-model-calendar-q2-2026/"},
+        {"name": "Spud预训练完成", "url": "https://www.abhs.in/blog/openai-spud-gpt-next-model-pretraining-complete-what-we-know-2026"},
+        {"name": "Haiku 3下线公告", "url": "https://platform.claude.com/docs/en/release-notes/overview"},
+        {"name": "DeepSeek V4与GPT-5.5预览", "url": "https://www.digitalapplied.com/blog/deepseek-v4-gpt-5-5-grok-5-ai-models-q2-2026"}
+      ],
+      "tags": ["模型迭代", "版本管理", "GPT-5.5", "模型日历"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "AI帮写「多模型自动路由」能力",
+      "pain_point": "用户使用输入法AI帮写时，不同场景的最优模型不同（如长文案用大模型、快速回复用轻量模型、翻译用专业模型），但当前只能依赖单一后端模型，导致部分场景效果不佳。同时，模型供应商频繁迭代甚至下线旧模型（如Haiku 3将于4月19日下线），如果强绑定单一模型，用户可能突然遇到功能降级。",
+      "opportunity": "入口位置：帮写功能后端路由层，对用户无感。触发条件：根据用户输入场景（聊天回复/邮件/长文/翻译）自动匹配最优模型。核心能力：建立场景-模型路由表+模型健康度监控+自动降级机制。MVP方案：先做「帮写场景分类器」，根据输入框上下文长度、应用类型、语言自动选择2-3个预设模型中的最优项。首期支持：微信聊天回复（轻量模型）、邮件/文档帮写（大模型）、中英翻译（翻译专用模型）三个场景。",
+      "priority": "高",
+      "evidence": "Claude Mythos泄露加速了多模型格局分化，InvestorPlace指出AI正进入能力指数增长期，意味着模型差异化将更加明显。Claude Code泄露后部分开发团队已开始转向多模型集成方案AICC。Haiku 3将于4月19日下线，所有依赖该模型的应用都必须迁移。GPT-5.5 Spud、DeepSeek V4即将发布，模型选择越来越多但换代越来越快。微信、飞书等主流IM已经在后端使用多模型路由，输入法作为跨应用入口更需要这一能力。",
+      "source_urls": [
+        {"name": "Haiku 3下线公告", "url": "https://platform.claude.com/docs/en/release-notes/overview"},
+        {"name": "InvestorPlace分析多模型趋势", "url": "https://investorplace.com/hypergrowthinvesting/2026/04/anthropics-claude-mythos-leak-is-bigger-than-you-think/"},
+        {"name": "Q2 AI模型日历", "url": "https://findskill.ai/blog/ai-model-calendar-q2-2026/"}
+      ]
+    },
+    {
+      "title": "AI生成内容合规标记与来源水印模块",
+      "pain_point": "用户通过输入法AI帮写生成文本后，在社交平台或工作场景分享时无法区分哪些是AI生成、哪些是用户原创。红果短剧「AI偷脸」下架事件显示，监管机构和平台已开始对AI生成内容追责——如果输入法帮写的内容被用于不当场景（如营销欺诈、虚假评价），输入法可能面临连带合规风险。",
+      "opportunity": "入口位置：帮写功能输出层，对用户可选显示。触发条件：用户使用AI帮写完成文本后，自动在内容元数据中嵌入AI生成标记。核心能力：(1) 隐式水印——在文本元数据层嵌入不可见的AI来源标识，供后续合规审查追溯；(2) 显式标记——用户可选择在文本末尾添加「AI辅助生成」标注。MVP方案：先做隐式水印（在文本Unicode中嵌入零宽字符标记），不影响用户体验，为合规预留接口。首期场景：AI帮写、AI翻译、AI续写三个功能的输出内容。",
+      "priority": "中",
+      "evidence": "红果短剧因AI生成内容侵权被下架并处罚，中国广电协会已发声明严禁未授权AI换脸。全球层面，欧盟AI法案要求AI生成内容必须可标识。国内主流平台（微信、抖音）已开始对AI生成内容添加标签。输入法帮写作为AI生成内容的上游入口，提前做好水印能力可以在监管落地时快速合规，避免被动应对。",
+      "source_urls": [
+        {"name": "IT之家报道红果下架", "url": "https://www.ithome.com/0/935/794.htm"},
+        {"name": "中新网报道", "url": "https://www.chinanews.com.cn/cj/2026/04-03/10598327.shtml"},
+        {"name": "每日经济新闻", "url": "https://www.nbd.com.cn/articles/2026-04-03/4324853.html"}
+      ]
+    },
+    {
+      "title": "输入法AI帮写「少样本个性化适配」",
+      "pain_point": "用户使用AI帮写时，生成内容的风格和用词习惯与自己差异明显（太正式/太随意/用词不像自己），需要大量修改才能发出。当前个性化方案通常需要用户长期使用积累大量数据才能起效，新用户或低频用户体验不佳。",
+      "opportunity": "入口位置：帮写设置页面中的「风格学习」入口 + 帮写功能运行时的风格匹配层。触发条件：用户首次使用帮写时引导上传3-5条自己的典型文字（如微信聊天截图、朋友圈文案），或在前10次帮写中自动学习用户的修改偏好。核心能力：基于少样本学习（few-shot）的个人文风适配模型。MVP方案：用Prompt Engineering方式实现——将用户提供的3-5条样本文本作为系统提示词的一部分，指导模型模仿用户风格生成，无需额外训练。首期场景：微信/QQ聊天回复帮写。",
+      "priority": "高",
+      "evidence": "Generalist AI的GEN-1模型证明了「少数据高成功率」的可行性——仅1小时机器人数据就能达到99%成功率，这一思路可迁移到文本个性化领域。豆包输入法Mac版发布显示竞品正在加速桌面端布局，个性化帮写是差异化竞争的关键。62%企业已部署AI Agent（Gartner/IDC数据），用户对AI生成质量的期望正在从「能用」升级到「像自己写的」。",
+      "source_urls": [
+        {"name": "GEN-1少数据学习", "url": "https://generalistai.com/blog/apr-02-2026-GEN-1"},
+        {"name": "澎湃新闻报道GEN-1", "url": "https://www.thepaper.cn/newsDetail_forward_32893061"},
+        {"name": "AI Agent采用数据", "url": "https://joget.com/ai-agent-adoption-in-2026-what-the-analysts-data-shows/"}
+      ]
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Anthropic Claude Mythos泄露影响持续扩大：InvestorPlace称AI进入「指数级能力增长」阶段",
+      "category": "大模型",
+      "relevance": "高",
+      "summary": "InvestorPlace 4月4日发表深度分析，认为Claude Mythos泄露证实AI能力正从线性增长进入指数级「起飞」阶段。Mythos拥有10万亿参数，内测90分钟攻破20年Linux漏洞。分析指出AI基础设施股最为受益，而传统SaaS商业模式面临被AI原生应用颠覆的风险。此前3月27日泄露事件曾引发全球网络安全股历史性闪崩。",
+      "source": "InvestorPlace",
+      "source_url": "https://investorplace.com/hypergrowthinvesting/2026/04/anthropics-claude-mythos-leak-is-bigger-than-you-think/"
+    },
+    {
+      "title": "OpenAI下一代旗舰模型「Spud」预训练完成，预计Q2-Q3发布",
+      "category": "大模型",
+      "relevance": "高",
+      "summary": "OpenAI联合创始人Greg Brockman确认代号「Spud」的下一代旗舰模型已完成预训练。外界推测为GPT-5.5或GPT-6，预计2026年Q2-Q3公开发布。结合OpenAI刚完成的1220亿美元融资和8520亿美元估值，Spud被视为OpenAI巩固模型领先地位的关键筹码。该模型预计将在推理和多任务能力上实现重大突破。",
+      "source": "ABHS",
+      "source_url": "https://www.abhs.in/blog/openai-spud-gpt-next-model-pretraining-complete-what-we-know-2026"
+    },
+    {
+      "title": "Generalist AI发布GEN-1物理AI模型：任务成功率从64%飙升至99%",
+      "category": "技术研究",
+      "relevance": "高",
+      "summary": "Generalist AI于4月2日发布GEN-1模型，号称首个通用物理AI在简单物理操作任务上达到「精通」水平。平均成功率从GEN-0的64%升至99%，速度快3倍，每项测试仅需约1小时机器人数据训练。部分测试仅需此前模型十分之一的数据量即可达到同等性能，被业界视为具身AI从「演示级」迈向「可靠级」的里程碑。",
+      "source": "Generalist AI",
+      "source_url": "https://generalistai.com/blog/apr-02-2026-GEN-1"
+    },
+    {
+      "title": "Figure CEO公开确认与OpenAI分手：「合作无实质价值，将成为直接竞争对手」",
+      "category": "行业动态",
+      "relevance": "中",
+      "summary": "人形机器人公司Figure CEO Brett Adcock在Shawn Ryan Show中首次公开详述与OpenAI分手始末。Adcock称OpenAI曾联合领投Figure B轮，但合作不到一年即因「技术和战略摩擦」终止，Adcock评价合作「只有品牌光环，没有实际价值」。Figure已转向全面自研AI，并明确将与OpenAI在机器人领域直接竞争。",
+      "source": "Humanoids Daily",
+      "source_url": "https://www.humanoidsdaily.com/news/i-fired-them-brett-adcock-on-the-openai-split-robot-self-repair-and-the-kid-safety-test"
+    },
+    {
+      "title": "百度萝卜快跑武汉大规模系统故障：百余辆无人车路中停摆，乘客滞留引发安全审查",
+      "category": "行业动态",
+      "relevance": "高",
+      "summary": "3月31日晚，百度Apollo Go萝卜快跑在武汉发生大规模系统故障，超过100辆自动驾驶出租车在行驶中突然停止，导致百余名乘客在主要干道滞留，部分乘客被困长达两小时，至少引发一起碰撞事故。武汉交管部门已介入调查。事件再次引发公众对自动驾驶安全可靠性的严重质疑。",
+      "source": "财新网",
+      "source_url": "https://www.caixin.com/2026-04-01/102430030.html"
+    },
+    {
+      "title": "Waymo在圣安东尼奥国际机场推出机器人出租车服务，进军德州",
+      "category": "产品发布",
+      "relevance": "中",
+      "summary": "Waymo于3月31日在圣安东尼奥国际机场推出机器人出租车服务，这是其第四个机场部署点，也是在德州的首次扩展。目前服务面向部分用户通过Waymo One应用开放。与此同时，Uber与WeRide在迪拜Jumeirah和Umm Suqeim区域启动全无人驾驶出租车商业运营，获迪拜交通局正式授权。",
+      "source": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/03/31/uber-weride-dubai-robotaxi-partnership-equity/"
+    },
+    {
+      "title": "微软开源AI Agent治理工具包，覆盖OWASP Agentic十大安全威胁",
+      "category": "AI工具",
+      "relevance": "高",
+      "summary": "微软4月2日开源Agent Governance Toolkit（MIT协议），提供策略执行、零信任身份验证、执行沙箱和可靠性工程四大核心能力，覆盖OWASP Agentic AI十大安全威胁，兼容LangChain、AutoGen等主流Agent框架。这是首个系统性的AI Agent运行时安全治理开源方案，标志着Agent安全从概念讨论进入工程落地阶段。",
+      "source": "微软开源博客",
+      "source_url": "https://opensource.microsoft.com/blog/2026/04/02/introducing-the-agent-governance-toolkit-open-source-runtime-security-for-ai-agents/"
+    },
+    {
+      "title": "字节跳动红果短剧下架《桃花簪》：「AI偷脸」事件推动AI生成内容合规审查加速落地",
+      "category": "AI政策",
+      "relevance": "高",
+      "summary": "字节跳动旗下红果短剧4月3日全面下架AI生成短剧《桃花簪》，原因是出品方未经授权使用真实素人肖像生成AI角色并丑化为反派。出品方被暂停上传剧集15天。此前汉服博主发现自己被「AI偷脸」后引发全网讨论，中国广电协会演员委员会也发声明严禁未授权AI换脸行为。",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/0/935/794.htm"
+    },
+    {
+      "title": "Saronic完成17.5亿美元D轮融资，估值92.5亿美元，扩大AI自主军舰生产",
+      "category": "资本动态",
+      "relevance": "中",
+      "summary": "自主船舶初创公司Saronic Technologies于3月31日完成17.5亿美元D轮融资，估值从上一轮翻倍至92.5亿美元。资金将用于加速Corsair、Mirage和Marauder系列AI自主水面舰艇的生产，服务美国海军。同期，无人机配送公司Manna完成5000万美元B轮，PDW融资超1.1亿美元用于无人机防御系统。",
+      "source": "CNBC",
+      "source_url": "https://www.cnbc.com/2026/03/31/autonomous-boat-startup-saronic-raises-1point75-billion-.html"
+    },
+    {
+      "title": "Claude Haiku 3将于4月19日正式下线，开发者须迁移至Haiku 4.5",
+      "category": "大模型",
+      "relevance": "中",
+      "summary": "Anthropic确认claude-3-haiku-20240307将于2026年4月19日正式退役，届时所有调用该模型的API请求将自动失败。开发者需迁移至Haiku 4.5。同期，Claude 1M上下文窗口将在4月30日正式GA。模型下线周期从年度级缩短至季度级，对依赖特定模型版本的应用带来持续挑战。",
+      "source": "Anthropic",
+      "source_url": "https://platform.claude.com/docs/en/release-notes/overview"
+    },
+    {
+      "title": "HumanX AI大会明日旧金山开幕，为期4天汇聚全球AI决策者",
+      "category": "行业动态",
+      "relevance": "中",
+      "summary": "HumanX 2026 AI大会将于4月6-9日在旧金山Moscone Center South举办。作为全球规模最大的AI决策者峰会之一，预计将有重要产品发布和行业趋势信号。Google Cloud Next（4月22-24日）紧随其后。Q2 2026已成为AI行业会议和模型发布的超级密集期。",
+      "source": "HumanX官网",
+      "source_url": "https://www.humanx.co/"
+    },
+    {
+      "title": "智元机器人明日开启AI发布周：连续5个工作日发布物理AI突破",
+      "category": "产品发布",
+      "relevance": "高",
+      "summary": "智元AGIBOT宣布「智元AI发布周」将于4月7日至14日启动，每个工作日发布一项物理AI自研成果。此前智元已出货第1万台人形机器人，标志着从试点阶段进入跨行业全球部署。同期，广西东风柳汽工厂已部署100多台人形机器人当「实习生」，UBTech报告人形机器人收入同比暴增23倍。",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/0/935/660.htm"
+    },
+    {
+      "title": "Uber与WeRide在迪拜启动全无人驾驶出租车商业运营",
+      "category": "产品发布",
+      "relevance": "中",
+      "summary": "WeRide与Uber于4月2日在迪拜Jumeirah和Umm Suqeim区域启动全无人驾驶出租车收费运营，获迪拜交通局RTA正式授权。乘客可通过Uber应用直接叫车。这是中东地区首个全自动驾驶商业运营服务，标志着自动驾驶出租车服务从中美扩展至中东市场。",
+      "source": "Uber投资者关系",
+      "source_url": "https://investor.uber.com/news-events/news/press-release-details/2026/WeRide-and-Uber-Launch-Fully-Driverless-Robotaxi-Fare-Charging-Operations-in-Dubai-Accelerating-Autonomous-Mobility-in-the-Middle-East-2026-NSiF0EFKhd/default.aspx"
+    }
+  ]
+}
