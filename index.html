@@ -3371,7 +3371,11 @@ function resumeBlog() {
   updateInlineBlogIcon(true);
 
   if (blogCurrentIdx === -1 || blogCurrentIdx >= blogData.dialogue.length) {
-    blogCurrentIdx = 0;
+    // First play or replay: set to -1 so blogAdvance() increments to 0
+    blogCurrentIdx = -1;
+  } else {
+    // Resuming from pause: back up by 1 so blogAdvance() re-plays current segment
+    blogCurrentIdx = Math.max(-1, blogCurrentIdx - 1);
   }
 
   startProgressTimer();
@@ -3471,8 +3475,17 @@ function blogPlayUrl(url, idx) {
 
   try {
     blogAudioEl.playbackRate = blogSpeed;
-    blogAudioEl.play();
+    const playPromise = blogAudioEl.play();
+    if (playPromise && typeof playPromise.catch === 'function') {
+      playPromise.catch(err => {
+        console.warn('Audio play blocked:', err);
+        // Autoplay policy: retry once on next user gesture is not possible here,
+        // so advance to trigger next segment
+        blogAdvance();
+      });
+    }
   } catch(e) {
+    console.warn('Audio play error:', e);
     blogAdvance();
   }
 }
@@ -3500,7 +3513,8 @@ function blogAdvance() {
     const blobData = { data: blogData.data, date: blogData.data.date };
     requestCustomVoiceAudio(text, blobData, 'alex').then(result => {
       blogPlayUrl(result.url, blogCurrentIdx);
-    }).catch(() => {
+    }).catch(err => {
+      console.error('[Podcast] TTS request failed for segment', blogCurrentIdx, err);
       blogCurrentIdx++;
       blogAdvance();
     });
