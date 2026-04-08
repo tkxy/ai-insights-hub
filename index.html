@@ -214,7 +214,73 @@
   }
 
   .hero-stats {
-    display: flex; gap: 40px;
+    display: flex; gap: 40px; align-items: flex-end;
+  }
+  .hero-stats-right {
+    margin-left: auto;
+  }
+  .blog-entry-btn {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: none; color: var(--black);
+    border: none; border-radius: 40px;
+    padding: 0; font-size: 14px; font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer; transition: all 0.2s;
+    white-space: nowrap;
+    margin-bottom: 40px;
+    align-self: flex-start;
+    outline: none;
+  }
+  .blog-entry-btn:focus, .blog-entry-btn:focus-visible {
+    outline: none;
+    box-shadow: none;
+  }
+  .blog-entry-btn:hover {
+    opacity: 0.8;
+  }
+  .blog-entry-btn .blog-entry-play-circle {
+    width: 48px; height: 48px;
+    min-width: 48px; min-height: 48px;
+    max-width: 48px; max-height: 48px;
+    border-radius: 50%;
+    background: #222;
+    border: none;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    font-size: 18px;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+    line-height: 1;
+  }
+  .blog-entry-btn .blog-entry-text {
+    display: flex; flex-direction: column; gap: 1px;
+    text-align: left;
+  }
+  .blog-entry-btn .blog-entry-title {
+    font-size: 14px; font-weight: 700; color: var(--black);
+  }
+  .blog-entry-btn .blog-entry-subtitle {
+    font-size: 12px; font-weight: 400; color: var(--text2);
+  }
+  @keyframes blog-entry-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+  }
+  .blog-entry-btn .blog-entry-eq {
+    display: inline-flex; align-items: flex-end; gap: 2px; height: 14px;
+  }
+  .blog-entry-btn .blog-entry-eq span {
+    display: inline-block; width: 3px; background: #fff; border-radius: 2px;
+    animation: blog-eq-bar 0.8s ease-in-out infinite alternate;
+  }
+  .blog-entry-btn .blog-entry-eq span:nth-child(1) { height: 6px; animation-delay: 0s; }
+  .blog-entry-btn .blog-entry-eq span:nth-child(2) { height: 10px; animation-delay: 0.15s; }
+  .blog-entry-btn .blog-entry-eq span:nth-child(3) { height: 8px; animation-delay: 0.3s; }
+  .blog-entry-btn .blog-entry-eq span:nth-child(4) { height: 12px; animation-delay: 0.1s; }
+  @keyframes blog-eq-bar {
+    0% { transform: scaleY(0.4); }
+    100% { transform: scaleY(1); }
   }
   .hero-stat-num {
     font-family: 'DM Sans', sans-serif;
@@ -760,6 +826,221 @@
     padding-top: 12px;
   }
 
+  /* ===== BLOG (Audio Podcast Player) ===== */
+
+  /* ===== INLINE BLOG PLAYER (embedded in Insight page) ===== */
+  .blog-entry-btn.is-playing {
+    background: #333;
+  }
+
+  .blog-player {
+    background: #111;
+    color: #fff;
+    border-radius: 20px;
+    padding: 28px 32px;
+    margin-bottom: 32px;
+    position: sticky;
+    top: 16px;
+    z-index: 100;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  }
+  .blog-player-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .blog-podcast-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #6C63FF, #FF6B6B);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+  }
+  .blog-ep-info h2 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 4px;
+  }
+  .blog-ep-meta {
+    font-size: 13px;
+    color: rgba(255,255,255,0.55);
+    margin: 0;
+  }
+  .blog-speakers {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .blog-speaker-chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0.5;
+    transition: opacity 0.2s, transform 0.2s;
+    border: 1.5px solid transparent;
+  }
+  .blog-speaker-chip.alex { background: rgba(108,99,255,0.2); color: #a59fff; border-color: rgba(108,99,255,0.3); }
+  .blog-speaker-chip.mia { background: rgba(255,107,107,0.2); color: #ff9f9f; border-color: rgba(255,107,107,0.3); }
+  .blog-speaker-chip.active { opacity: 1; transform: scale(1.05); }
+  .blog-speaker-chip .blog-speaker-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: currentColor;
+    animation: blogPulse 1.2s ease-in-out infinite;
+    display: none;
+  }
+  .blog-speaker-chip.speaking .blog-speaker-dot { display: block; }
+  @keyframes blogPulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.7); }
+  }
+  .blog-controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .blog-play-btn {
+    width: 52px; height: 52px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+    transition: transform 0.15s, box-shadow 0.15s;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  }
+  .blog-play-btn:hover { transform: scale(1.08); box-shadow: 0 6px 20px rgba(0,0,0,0.35); }
+  .blog-play-btn:active { transform: scale(0.95); }
+  .blog-progress-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .blog-progress-bar {
+    width: 100%; height: 4px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .blog-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #6C63FF, #a59fff);
+    border-radius: 2px;
+    width: 0%;
+    transition: width 0.3s linear;
+  }
+  .blog-progress-bar:hover .blog-progress-fill { background: linear-gradient(90deg, #6C63FF, #FF6B6B); }
+  .blog-time-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+    font-variant-numeric: tabular-nums;
+  }
+  .blog-vol-btn {
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.6);
+    cursor: pointer;
+    font-size: 18px;
+    padding: 4px;
+    transition: color 0.2s;
+  }
+  .blog-vol-btn:hover { color: #fff; }
+  .blog-replay-btn {
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.5);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px;
+    transition: color 0.2s, transform 0.2s;
+  }
+  .blog-replay-btn:hover { color: #fff; transform: rotate(-30deg); }
+  .blog-speed-btn {
+    background: none;
+    border: 1.5px solid rgba(255,255,255,0.25);
+    color: rgba(255,255,255,0.7);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 8px;
+    min-width: 42px;
+    text-align: center;
+    transition: all 0.2s;
+  }
+  .blog-speed-btn:hover { border-color: rgba(255,255,255,0.5); color: #fff; }
+
+  /* Transcript list */
+  .blog-transcript { list-style: none; margin: 0; padding: 0; }
+  .blog-transcript-section {
+    font-size: 12px;
+    font-weight: 700;
+    color: #aaa;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 20px 0 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 12px;
+  }
+  .blog-transcript-section:first-child { padding-top: 0; }
+  .blog-episode-row {
+    display: flex;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    cursor: default;
+    transition: background 0.2s;
+    align-items: flex-start;
+  }
+  .blog-episode-row:hover { background: #f7f6f3; }
+  .blog-episode-row.current { background: #f0eefb; }
+  .blog-episode-row.current .blog-row-text { color: #111; font-weight: 600; }
+  .blog-row-speaker {
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .blog-row-speaker.alex { background: #6C63FF; color: #fff; }
+  .blog-row-speaker.mia { background: #FF6B6B; color: #fff; }
+  .blog-row-text {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #444;
+  }
+  .blog-row-time {
+    font-size: 12px;
+    color: #bbb;
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+  .blog-empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #999;
+  }
+  .blog-empty-icon { font-size: 52px; margin-bottom: 14px; }
+
   /* ===== RESPONSIVE ===== */
   @media (max-width: 900px) {
     .header { padding: 0 24px; }
@@ -793,6 +1074,10 @@
     .demand-card { grid-template-columns: 1fr; }
     .main { padding: 20px 24px 40px; }
     .section-title { font-size: 22px; }
+    .blog-player { padding: 20px; border-radius: 16px; }
+    .blog-ep-info h2 { font-size: 15px; }
+    .blog-play-btn { width: 46px; height: 46px; font-size: 18px; }
+    .blog-controls { gap: 12px; }
   }
 
   /* ===== ANIMATIONS ===== */
@@ -1605,6 +1890,13 @@
   </div>
 </div>
 
+<!-- Blog Page: Audio Podcast Player -->
+<div class="main" id="blog-page" style="display:none;">
+  <div class="blog-container" id="blogContent">
+    <!-- Player injected by JS -->
+  </div>
+</div>
+
 
 <div class="footer">
   AI Insights Hub
@@ -1787,7 +2079,7 @@ function playWithBrowserVoice(data) {
   window.speechSynthesis.speak(utterance);
 }
 
-async function requestCustomVoiceAudio(text, data) {
+async function requestCustomVoiceAudio(text, data, voice='alex') {
   if (!VOICE_PLAYBACK_CONFIG.customEndpoint) {
     throw new Error('还没配置你的声音接口。把 VOICE_PLAYBACK_CONFIG.customEndpoint 填上就能切过去。');
   }
@@ -1802,6 +2094,7 @@ async function requestCustomVoiceAudio(text, data) {
     body: JSON.stringify({
       text: text,
       voiceId: VOICE_PLAYBACK_CONFIG.voiceId,
+      voice: voice,  // 'alex' 或 'mia'
       date: data.date,
       source: 'ai-insights-hub'
     })
@@ -1982,6 +2275,7 @@ function renderContent(data) {
   // ===== HERO SECTION =====
   html += `<div class="hero fade-in">`;
   html += `<div class="hero-left">`;
+  html += `<button class="blog-entry-btn" id="inlineBlogBtn" onclick="toggleInlineBlog()"><span class="blog-entry-play-circle" id="inlineBlogIcon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span><div class="blog-entry-text"><span class="blog-entry-title">AI Insights 播客</span><span class="blog-entry-subtitle" id="inlineBlogSub">${data.date || formatDate(currentDate)}</span></div></button>`;
   html += `<h1 class="hero-title">Today's AI Design Insights.</h1>`;
   html += `<p class="hero-desc">${data.daily_summary}</p>`;
   html += `<div class="hero-stats">`;
@@ -2100,6 +2394,61 @@ function renderContent(data) {
   html += `</div></div></div>`;
 
   app.innerHTML = html;
+
+  // Preload ALL podcast segments so playback starts instantly on click
+  preloadBlogSegments(data);
+}
+
+function preloadBlogSegments(data) {
+  try {
+    const dialogue = generateDialogue(data);
+    if (!dialogue || !dialogue.length) return;
+    const dateStr = formatDate(currentDate);
+    blogDataCache[dateStr] = data;
+    // Store dialogue for later use
+    window._preloadedDialogue = dialogue;
+    window._preloadTotal = dialogue.length;
+    window._preloadDone = 0;
+    window._preloadReady = false; // true once segment 0 is cached
+
+    // Preload ALL segments with controlled concurrency (3 parallel)
+    const queue = [];
+    for (let i = 0; i < dialogue.length; i++) {
+      queue.push(i);
+    }
+
+    let active = 0;
+    const MAX_CONCURRENT = 5;
+
+    function processNext() {
+      while (active < MAX_CONCURRENT && queue.length > 0) {
+        const idx = queue.shift();
+        const text = blogStripHtml(dialogue[idx].text);
+        if (!text || blogPreloadCache[idx]) {
+          window._preloadDone++;
+          if (idx === 0) window._preloadReady = true;
+          continue;
+        }
+        active++;
+        const blobData = { data: data, date: data.date };
+        requestCustomVoiceAudio(text, blobData, 'alex').then(result => {
+          blogPreloadCache[idx] = { url: result.url, revoke: result.revokeAfterPlay };
+          window._preloadDone++;
+          if (idx === 0) window._preloadReady = true;
+        }).catch(() => {
+          window._preloadDone++;
+          if (idx === 0) window._preloadReady = true;
+        }).finally(() => {
+          active--;
+          processNext();
+        });
+      }
+    }
+
+    processNext();
+  } catch(e) {
+    console.warn('Blog preload skipped:', e);
+  }
 }
 
 function switchTab(tabId, btn) {
@@ -2112,6 +2461,7 @@ function switchTab(tabId, btn) {
 async function navigate(dateStr) {
   currentDate = new Date(dateStr + 'T00:00:00');
   stopVoicePlayback(false);
+  closeInlineBlog();
   latestInsightData = null;
   updateVoiceButtonAvailability();
   document.getElementById('currentDate').textContent = formatDisplayDate(dateStr);
@@ -2185,11 +2535,10 @@ function switchPage(id) {
 }
 if (window.location.hash === '#map' || window.location.hash === '#design' || window.location.hash === '#knowledge') {
   document.addEventListener('DOMContentLoaded', function() {
-    var pageId = window.location.hash === '#design'
-      ? 'design'
-      : window.location.hash === '#knowledge'
-        ? 'knowledge'
-        : 'map';
+    var h = window.location.hash;
+    var pageId = h === '#design' ? 'design'
+      : h === '#knowledge' ? 'knowledge'
+      : 'map';
     switchPage(pageId);
   });
 }
@@ -2859,6 +3208,470 @@ document.getElementById('knowledgeUrlInput').addEventListener('keydown', functio
 
 // 初始加载
 refreshKnowledgeCards();
+// ===== BLOG: Audio Podcast Player (MiniMax TTS) =====
+const BLOG_HOST_NAME = 'Alex';
+const BLOG_GUEST_NAME = 'Mia';
+
+// Playback state
+let blogData = null;        // { data, dialogue }
+let blogPlaying = false;
+let blogCurrentIdx = -1;
+let blogSpeed = 1.0;
+let blogMuted = false;
+let blogProgressTimer = null;
+
+// Strip HTML tags for TTS input
+function blogStripHtml(html) {
+  return html.replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').trim();
+}
+
+function generateDialogue(data) {
+  if (!data) return [];
+  const msgs = [];
+  const dateDisplay = data.date || '今天';
+
+  // --- Section 1: 开场 + 速览 (合并为一段) ---
+  let openingParts = [`欢迎收听 ${dateDisplay} 的 AI Insights 播报，一起来看看今天有哪些不容错过的 AI 行业动态。`];
+  if (data.daily_summary) {
+    openingParts.push(`先来一个全局速览。`);
+    openingParts.push(data.daily_summary);
+  }
+  msgs.push({ role: 'host', text: openingParts.join(' '), section: '📋 今日速览' });
+
+  // --- Section 2: 深度洞察 (每个话题合并为一段) ---
+  if (data.design_insights && data.design_insights.length > 0) {
+    msgs.push({ role: 'host', text: `今天的深度洞察环节，一共有 ${data.design_insights.length} 个值得关注的话题。`, section: '🔍 深度洞察' });
+    data.design_insights.forEach((item, idx) => {
+      let parts = [`第 ${idx + 1} 个话题：${item.title}。`, item.summary];
+      if (item.implication) parts.push(`我的理解是：${blogStripHtml(item.implication)}`);
+      if (item.action) parts.push(`建议行动：${blogStripHtml(item.action)}`);
+      msgs.push({ role: 'host', text: parts.join(' ') });
+    });
+  }
+
+  // --- Section 3: 需求挖掘 (每个机会合并为一段) ---
+  if (data.demand_mining && data.demand_mining.length > 0) {
+    msgs.push({ role: 'host', text: `接下来是需求挖掘环节，看看今天发现了哪些产品机会。`, section: '💎 需求挖掘' });
+    data.demand_mining.forEach((item, idx) => {
+      let parts = [`第 ${idx + 1} 个机会：${item.title}，优先级：${item.priority || '中'}。`];
+      if (item.pain_point) parts.push(`用户痛点：${blogStripHtml(item.pain_point)}`);
+      if (item.opportunity) parts.push(`产品机会：${blogStripHtml(item.opportunity)}`);
+      msgs.push({ role: 'host', text: parts.join(' ') });
+    });
+  }
+
+  // --- Section 4: 快讯速递 (所有快讯合并为一段) ---
+  if (data.hot_news && data.hot_news.length > 0) {
+    let newsParts = [`最后来一组快讯。`];
+    data.hot_news.forEach((item) => {
+      let t = item.title;
+      if (item.summary) t += '。' + blogStripHtml(item.summary);
+      if (item.source) t += `，来源：${item.source}`;
+      newsParts.push(t);
+    });
+    msgs.push({ role: 'host', text: newsParts.join(' '), section: '⚡ 快讯速递' });
+  }
+
+  // --- Section 5: 结束语 ---
+  msgs.push({ role: 'host', text: `以上就是今天的全部内容，感谢收听，明天见。` });
+  return msgs;
+}
+
+function renderBlogPlayer(dialogue, dateDisplay) {
+  const container = document.getElementById('blogContent');
+  const total = dialogue.length;
+
+  let transcriptHtml = '';
+  let currentSection = null;
+  dialogue.forEach((msg, i) => {
+    if (msg.section && msg.section !== currentSection) {
+      currentSection = msg.section;
+      transcriptHtml += `<div class="blog-transcript-section">${currentSection}</div>`;
+    }
+    const plainText = blogStripHtml(msg.text);
+    const truncated = plainText.length > 80 ? plainText.slice(0, 80) + '…' : plainText;
+    transcriptHtml += `<div class="blog-episode-row" id="brow${i}" data-idx="${i}">
+      <div class="blog-row-speaker alex">🎙️</div>
+      <div class="blog-row-text">${truncated}</div>
+    </div>`;
+  });
+
+  container.innerHTML = `
+<div class="blog-player" id="blogPlayer">
+  <div class="blog-player-header">
+    <div class="blog-podcast-icon">🎙️</div>
+    <div class="blog-ep-info">
+      <h2>AI Insights 播客</h2>
+      <p class="blog-ep-meta">${dateDisplay} · ${BLOG_HOST_NAME} · ${total} 段</p>
+    </div>
+  </div>
+  <div class="blog-controls">
+    <button class="blog-replay-btn" onclick="replayBlog()" title="重播">↺</button>
+    <button class="blog-play-btn" id="blogPlayBtn" onclick="toggleBlogPlay()">▶</button>
+    <div class="blog-progress-wrap">
+      <div class="blog-progress-bar" id="blogProgressBar" onclick="seekBlog(event)">
+        <div class="blog-progress-fill" id="blogProgressFill"></div>
+      </div>
+      <div class="blog-time-row">
+        <span id="blogCurTime">0:00</span>
+        <span id="blogTotalTime">${total > 0 ? '~' + total + '句' : '0句'}</span>
+      </div>
+    </div>
+    <button class="blog-speed-btn" id="blogSpeedBtn" onclick="cycleBlogSpeed()">1×</button>
+    <button class="blog-vol-btn" id="blogVolBtn" onclick="toggleBlogMute()">🔊</button>
+  </div>
+</div>
+<div id="blogTranscriptWrap" style="max-width:720px;margin:0 auto;">
+  <div class="blog-transcript" id="blogTranscript">${transcriptHtml}</div>
+</div>`;
+}
+
+let blogDataCache = {};
+
+async function loadBlogForDate(dateStr) {
+  stopBlog();
+  const container = document.getElementById('blogContent');
+  container.innerHTML = `<div class="blog-empty-state"><div class="blog-empty-icon">⏳</div><p>正在加载...</p></div>`;
+
+  let data = blogDataCache[dateStr];
+  if (!data) {
+    data = await loadData(dateStr);
+    if (data) blogDataCache[dateStr] = data;
+  }
+
+  if (!data) {
+    container.innerHTML = `<div class="blog-empty-state"><div class="blog-empty-icon">🎙️</div><p>该日期暂无数据<br>数据每天 8:00 自动更新</p></div>`;
+    return;
+  }
+
+  const dialogue = generateDialogue(data);
+  const dateDisplay = data.date || dateStr;
+  blogData = { data, dialogue };
+  blogCurrentIdx = -1;
+  blogPausedAt = 0;
+  renderBlogPlayer(dialogue, dateDisplay);
+  // Scroll transcript to top
+  document.getElementById('blogTranscriptWrap') && (document.getElementById('blogTranscriptWrap').scrollTop = 0);
+}
+
+function toggleBlogPlay() {
+  if (!blogData || !blogData.dialogue.length) return;
+  if (blogPlaying) {
+    pauseBlog();
+  } else {
+    resumeBlog();
+  }
+}
+
+function resumeBlog() {
+  if (!blogData || !blogData.dialogue.length) return;
+  blogPlaying = true;
+  const btn = document.getElementById('blogPlayBtn');
+  if (btn) btn.textContent = '⏸';
+  updateInlineBlogIcon(true);
+
+  if (blogCurrentIdx === -1 || blogCurrentIdx >= blogData.dialogue.length) {
+    blogCurrentIdx = 0;
+  }
+
+  startProgressTimer();
+  speakCurrentUtterance();
+}
+
+function pauseBlog() {
+  blogPlaying = false;
+  if (blogAudioEl) blogAudioEl.pause();
+  clearInterval(blogProgressTimer);
+  const btn = document.getElementById('blogPlayBtn');
+  if (btn) btn.textContent = '▶';
+  updateInlineBlogIcon(false);
+}
+
+function stopBlog() {
+  blogPlaying = false;
+  blogCurrentIdx = -1;
+  blogPausedAt = 0;
+  clearInterval(blogProgressTimer);
+  if (blogAudioEl) {
+    blogAudioEl.pause();
+    blogAudioEl = null;
+  }
+  // Revoke blob URLs in cache
+  Object.values(blogPreloadCache).forEach(item => {
+    if (item && item.revoke) URL.revokeObjectURL(item.url);
+  });
+  blogPreloadCache = {};
+  const btn = document.getElementById('blogPlayBtn');
+  if (btn) btn.textContent = '▶';
+  // Clear highlights
+  document.querySelectorAll('.blog-episode-row').forEach(el => el.classList.remove('current'));
+  document.querySelectorAll('.blog-speaker-chip').forEach(el => { el.classList.remove('active', 'speaking'); });
+  const fill = document.getElementById('blogProgressFill');
+  if (fill) fill.style.width = '0%';
+  const cur = document.getElementById('blogCurTime');
+  if (cur) cur.textContent = '0:00';
+  // Reset inline blog icon
+  updateInlineBlogIcon(false);
+}
+
+function replayBlog() {
+  stopBlog();
+  if (blogData && blogData.dialogue.length > 0) {
+    setTimeout(() => resumeBlog(), 100);
+  }
+}
+
+// Blog audio: uses MiniMax TTS (your cloned voice)
+// Audio element + preloading for gapless transitions
+let blogAudioEl = null;       // currently playing Audio element
+let blogPreloadCache = {};    // idx -> { url, revoke }
+let blogPreloadTimer = null;
+
+function blogPreload(idx) {
+  if (!blogData || idx >= blogData.dialogue.length) return;
+  if (blogPreloadCache[idx]) return; // already cached
+  const msg = blogData.dialogue[idx];
+  const text = blogStripHtml(msg.text);
+  if (!text) return;
+  const blobData = { data: blogData.data, date: blogData.data.date };
+  // 统一使用克隆声音
+  requestCustomVoiceAudio(text, blobData, 'alex').then(result => {
+    blogPreloadCache[idx] = { url: result.url, revoke: result.revokeAfterPlay };
+  }).catch(() => { /* silently skip preload failure */ });
+}
+
+function blogPlayUrl(url, idx) {
+  if (blogAudioEl) {
+    blogAudioEl.pause();
+    blogAudioEl = null;
+  }
+  if (!url) {
+    blogAdvance();
+    return;
+  }
+  blogAudioEl = new Audio(url);
+  blogAudioEl.volume = blogMuted ? 0 : 1;
+
+  const msg = blogData.dialogue[idx];
+  // Highlight current row
+  document.querySelectorAll('.blog-episode-row').forEach(el => el.classList.remove('current'));
+  document.querySelectorAll('.blog-speaker-chip').forEach(el => { el.classList.remove('active', 'speaking'); });
+  const row = document.getElementById('brow' + idx);
+  if (row) {
+    row.classList.add('current');
+    row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  blogAudioEl.onended = () => {
+    blogAdvance();
+  };
+  blogAudioEl.onerror = () => {
+    blogAdvance();
+  };
+
+  try {
+    blogAudioEl.playbackRate = blogSpeed;
+    blogAudioEl.play();
+  } catch(e) {
+    blogAdvance();
+  }
+}
+
+function blogAdvance() {
+  if (!blogPlaying || !blogData) return;
+  blogCurrentIdx++;
+  if (blogCurrentIdx >= blogData.dialogue.length) {
+    stopBlog();
+    // Also close inline player if visible
+    closeInlineBlog();
+    return;
+  }
+  // Preload next two segments
+  blogPreload(blogCurrentIdx);
+  blogPreload(blogCurrentIdx + 1);
+  blogPreload(blogCurrentIdx + 2);
+  const cached = blogPreloadCache[blogCurrentIdx];
+  if (cached) {
+    blogPlayUrl(cached.url, blogCurrentIdx);
+  } else {
+    // Not preloaded yet — fetch and play
+    const msg = blogData.dialogue[blogCurrentIdx];
+    const text = blogStripHtml(msg.text);
+    const blobData = { data: blogData.data, date: blogData.data.date };
+    requestCustomVoiceAudio(text, blobData, 'alex').then(result => {
+      blogPlayUrl(result.url, blogCurrentIdx);
+    }).catch(() => {
+      blogCurrentIdx++;
+      blogAdvance();
+    });
+  }
+}
+
+function speakCurrentUtterance() {
+  // Called only for the very first utterance to kick off playback
+  if (!blogPlaying || !blogData) return;
+  blogAdvance();
+}
+
+function startProgressTimer() {
+  clearInterval(blogProgressTimer);
+  blogProgressTimer = setInterval(() => {
+    if (!blogPlaying || !blogData) return;
+    const total = blogData.dialogue.length;
+    const idx = blogCurrentIdx;
+    const pct = total > 0 ? Math.round((idx / total) * 100) : 0;
+    const fill = document.getElementById('blogProgressFill');
+    if (fill) fill.style.width = pct + '%';
+    const cur = document.getElementById('blogCurTime');
+    if (cur) cur.textContent = `${Math.min(idx + 1, total)}/${total}`;
+    // Also update inline player
+    updateInlineProgress();
+  }, 300);
+}
+
+function seekBlog(e) {
+  if (!blogData || !blogData.dialogue.length) return;
+  const bar = document.getElementById('blogProgressBar');
+  if (!bar) return;
+  const rect = bar.getBoundingClientRect();
+  const ratio = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+  const targetIdx = Math.round(ratio * blogData.dialogue.length);
+  const wasPlaying = blogPlaying;
+  pauseBlog();
+  blogCurrentIdx = Math.max(0, Math.min(targetIdx, blogData.dialogue.length - 1));
+  if (wasPlaying) {
+    setTimeout(() => {
+      blogPlaying = true;
+      const btn = document.getElementById('blogPlayBtn');
+      if (btn) btn.textContent = '⏸';
+      startProgressTimer();
+      speakCurrentUtterance();
+    }, 100);
+  }
+}
+
+function cycleBlogSpeed() {
+  const speeds = [0.75, 1.0, 1.25, 1.5];
+  const idx = speeds.indexOf(blogSpeed);
+  blogSpeed = speeds[(idx + 1) % speeds.length];
+  const btn = document.getElementById('blogSpeedBtn');
+  if (btn) btn.textContent = blogSpeed + '×';
+  if (blogAudioEl) blogAudioEl.playbackRate = blogSpeed;
+}
+
+function toggleBlogMute() {
+  blogMuted = !blogMuted;
+  if (blogAudioEl) blogAudioEl.volume = blogMuted ? 0 : 1;
+  const btn = document.getElementById('blogVolBtn');
+  if (btn) btn.textContent = blogMuted ? '🔇' : '🔊';
+}
+
+// Keyboard shortcuts for blog player (works on both blog and insight pages)
+document.addEventListener('keydown', function(e) {
+  if (currentMainPage !== 'blog' && currentMainPage !== 'insight') return;
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+  if (e.code === 'Space' && blogPlaying) {
+    e.preventDefault();
+    toggleBlogPlay();
+  }
+});
+
+// ===== INLINE BLOG PLAYER (embedded in Insight hero section) =====
+let inlineBlogLoading = false;
+
+async function toggleInlineBlog() {
+  const icon = document.getElementById('inlineBlogIcon');
+  if (!icon) return;
+
+  // If already playing, pause
+  if (blogPlaying) {
+    pauseBlog();
+    return;
+  }
+
+  // If paused but has data (was playing before), resume
+  if (!blogPlaying && blogData && blogCurrentIdx >= 0) {
+    resumeBlog();
+    return;
+  }
+
+  // First time — load data and start
+  if (inlineBlogLoading) return;
+  inlineBlogLoading = true;
+
+  // Show loading state on button text only (no opacity change)
+  const subtitle = document.getElementById('inlineBlogSub');
+  const origSubText = subtitle ? subtitle.textContent : '';
+  if (subtitle) subtitle.textContent = '加载中...';
+
+  try {
+    const dateStr = formatDate(currentDate);
+    let data = blogDataCache[dateStr];
+    if (!data) {
+      data = await loadData(dateStr);
+      if (data) blogDataCache[dateStr] = data;
+    }
+
+    if (!data) {
+      inlineBlogLoading = false;
+      if (subtitle) subtitle.textContent = origSubText;
+      return;
+    }
+
+    const dialogue = generateDialogue(data);
+    blogData = { data, dialogue };
+    blogCurrentIdx = -1;
+    blogPausedAt = 0;
+
+    // If preload already cached segment 0, play immediately
+    // Otherwise wait for it (polling every 200ms, max 30s)
+    if (!blogPreloadCache[0]) {
+      // Trigger preload if not started yet
+      if (!window._preloadReady && !window._preloadTotal) {
+        preloadBlogSegments(data);
+      }
+      await new Promise((resolve) => {
+        let waited = 0;
+        const check = setInterval(() => {
+          waited += 100;
+          if (blogPreloadCache[0] || waited >= 8000) {
+            clearInterval(check);
+            resolve();
+          }
+        }, 100);
+      });
+    }
+
+    if (subtitle) subtitle.textContent = origSubText;
+
+    // Start playback
+    resumeBlog();
+  } catch(e) {
+    console.error('Inline blog load error:', e);
+    if (subtitle) subtitle.textContent = origSubText;
+  }
+  inlineBlogLoading = false;
+}
+
+function closeInlineBlog() {
+  stopBlog();
+  updateInlineBlogIcon(false);
+}
+
+function updateInlineBlogIcon(playing) {
+  const icon = document.getElementById('inlineBlogIcon');
+  if (!icon) return;
+  if (playing) {
+    icon.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>';
+  } else {
+    icon.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg>';
+  }
+}
+
+function updateInlineProgress() {
+  // No longer needed — no separate progress bar
+}
+
 </script>
 </body>
 </html>
