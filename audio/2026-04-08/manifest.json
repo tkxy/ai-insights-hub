@@ -1,0 +1,192 @@
+{
+  "date": "2026-04-08",
+  "generated_at": "2026-04-08T11:30:17",
+  "total_segments": 26,
+  "segments": [
+    {
+      "index": 0,
+      "file": "000.mp3",
+      "text": "欢迎收听 2026-04-08 的 AI Insights 播报，一起来看看今天有哪些不容错过的 AI 行业动态。",
+      "section": "",
+      "size": 118325
+    },
+    {
+      "index": 1,
+      "file": "001.mp3",
+      "text": "先来一个全局速览。周三AI行业迎来安全与竞争两大主题叠加的高强度新闻日。Anthropic正式发布Claude Mythos Preview模型并启动Project Glasswing网络安全联盟，联",
+      "section": "📋 今日速览",
+      "size": 1432389
+    },
+    {
+      "index": 2,
+      "file": "002.mp3",
+      "text": "今天的深度洞察环节，一共有 5 个值得关注的话题。",
+      "section": "🔍 深度洞察",
+      "size": 64408
+    },
+    {
+      "index": 3,
+      "file": "003.mp3",
+      "text": "第 1 个话题：Anthropic以'不发布'策略推出最强模型：Project Glasswing开创AI能力输出的安全前置范式。Anthropic于4月7日正式发布Claude Mythos Pre",
+      "section": "",
+      "size": 1090498
+    },
+    {
+      "index": 4,
+      "file": "004.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) Anthropic的策略说明AI能力越强，安全审查和渐进式开放越重要——输入法在上线新的AI帮写功能时，应先在内部和小范围用户测试中验证安全性和准确性，而非急于",
+      "section": "",
+      "size": 724366
+    },
+    {
+      "index": 5,
+      "file": "005.mp3",
+      "text": "第 2 个话题：美国三巨头联手反蒸馏：AI模型知识产权保护从单打独斗走向行业联防。Bloomberg报道，OpenAI、Anthropic和Google三家长期激烈竞争的AI巨头首次通过Frontie",
+      "section": "",
+      "size": 998965
+    },
+    {
+      "index": 6,
+      "file": "006.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) 模型蒸馏争议意味着直接使用海外大模型API存在供应链风险——如果地缘政治紧张升级导致API受限，输入法的AI功能可能面临中断，必须加速布局国产模型替代方案（如G",
+      "section": "",
+      "size": 685496
+    },
+    {
+      "index": 7,
+      "file": "007.mp3",
+      "text": "第 3 个话题：智谱GLM-5.1以754B参数MIT开源：国产大模型从'追赶基准'进入'定义标准'阶段。智谱AI（已更名Z.ai）发布GLM-5.1大模型，参数规模达754B（7540亿），采用MI",
+      "section": "",
+      "size": 1145669
+    },
+    {
+      "index": 8,
+      "file": "008.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) GLM-5.1和Qwen3.6-Plus的崛起为输入法AI功能提供了高质量的国产模型替代——在数据合规和供应链安全方面具有天然优势，建议将国产模型作为主力调用选",
+      "section": "",
+      "size": 711409
+    },
+    {
+      "index": 9,
+      "file": "009.mp3",
+      "text": "第 4 个话题：网易有道发布有道宝库——AI知识库产品从工具走向'思考伙伴'，文档管理与内容再创作融合。4月7日网易有道正式上线首款AI知识库产品有道宝库，定位为AI研究助手与思考伙伴，被业内广泛称为",
+      "section": "",
+      "size": 964692
+    },
+    {
+      "index": 10,
+      "file": "010.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) 有道宝库的'源锁定+零幻觉'机制值得学习——输入法的AI帮写功能如果能够接入用户的知识库或历史文档，就可以做到'基于用户自身资料生成内容'而非凭空创造，大幅降低",
+      "section": "",
+      "size": 788732
+    },
+    {
+      "index": 11,
+      "file": "011.mp3",
+      "text": "第 5 个话题：26人团队发布400B参数开源模型：Arcee Trinity证明AI模型训练的'小团队+开源'路线可行性。TechCrunch于4月7日发布专题报道，聚焦26人美国初创公司Arcee",
+      "section": "",
+      "size": 1001055
+    },
+    {
+      "index": 12,
+      "file": "012.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) 模型合并技术降低了高质量模型的获取门槛——输入法团队可以探索将多个开源模型的优势合并为一个专门针对中文输入辅助场景优化的模型，而非依赖单一大模型；(2) 200",
+      "section": "",
+      "size": 722276
+    },
+    {
+      "index": 13,
+      "file": "013.mp3",
+      "text": "接下来是需求挖掘环节，看看今天发现了哪些产品机会。",
+      "section": "💎 需求挖掘",
+      "size": 82381
+    },
+    {
+      "index": 14,
+      "file": "014.mp3",
+      "text": "第 1 个机会：输入法帮写内容的可信度标注与源引用系统，优先级：高。 用户痛点：用户使用AI帮写生成工作邮件、报告、社交媒体文案时，无法判断AI生成内容的准确性和可靠性。特别是涉及数字、人名、日期、专",
+      "section": "",
+      "size": 1195824
+    },
+    {
+      "index": 15,
+      "file": "015.mp3",
+      "text": "第 2 个机会：基于用户知识库的个性化帮写引擎，优先级：中。 用户痛点：用户在使用输入法AI帮写时，生成的内容缺乏个性化——同一个帮写请求对所有用户输出几乎相同的结果。用户有自己的写作风格、常用表达、",
+      "section": "",
+      "size": 1120173
+    },
+    {
+      "index": 16,
+      "file": "016.mp3",
+      "text": "第 3 个机会：多模型路由与国产模型优先调用策略，优先级：高。 用户痛点：输入法AI功能依赖单一模型API时存在三重风险：(1) 地缘政治风险——三巨头反蒸馏联盟可能导致海外模型API对中国开发者设置",
+      "section": "",
+      "size": 1050374
+    },
+    {
+      "index": 17,
+      "file": "017.mp3",
+      "text": "最后来一组快讯。",
+      "section": "⚡ 快讯速递",
+      "size": 30972
+    },
+    {
+      "index": 18,
+      "file": "018.mp3",
+      "text": "Anthropic发布Claude Mythos Preview并启动Project Glasswing：联合Apple、Microsoft等40+机构利用最强AI模型主动发现零日漏洞。Anthrop",
+      "section": "",
+      "size": 1080049
+    },
+    {
+      "index": 19,
+      "file": "019.mp3",
+      "text": "智谱Z.ai发布GLM-5.1：754B参数MIT开源，宣称SWE-bench Pro超越GPT-5.4和Claude Opus 4.6。智谱AI（已更名Z.ai）发布754B参数GLM-5.1模型，",
+      "section": "",
+      "size": 1098021
+    },
+    {
+      "index": 20,
+      "file": "020.mp3",
+      "text": "Anthropic从微软挖来16年老将Eric Boyd出任基础设施负责人。Anthropic宣布聘用Eric Boyd担任基础设施负责人。Boyd在微软工作16年，曾任AI Platform总裁，负",
+      "section": "",
+      "size": 916627
+    },
+    {
+      "index": 21,
+      "file": "021.mp3",
+      "text": "Arcee AI仅26人团队发布400B参数开源推理模型Trinity Large Thinking。26人美国初创公司Arcee AI发布Trinity Large Thinking模型，400B参",
+      "section": "",
+      "size": 988516
+    },
+    {
+      "index": 22,
+      "file": "022.mp3",
+      "text": "Google Photos全球推送AI增强按钮和视频播放速度控制。Google在全球范围内为Android版Google Photos推出AI Enhance一键增强按钮，提供自动光线和对比度AI调整",
+      "section": "",
+      "size": 809630
+    },
+    {
+      "index": 23,
+      "file": "023.mp3",
+      "text": "智元机器人正式开源AGIBOT WORLD 2026：首个覆盖具身智能全域研究的开源数据集。智元机器人于AI发布周首日宣布开源AGIBOT WORLD 2026数据集，基于精灵G2通用机器人在海量真实",
+      "section": "",
+      "size": 928330
+    },
+    {
+      "index": 24,
+      "file": "024.mp3",
+      "text": "Anthropic研究发现Claude神经网络内部存在'情绪概念'模式：AI模型行为受类情感状态影响。Anthropic发布研究成果，揭示Claude模型的神经网络内部存在代表'情绪概念'（如快乐、恐",
+      "section": "",
+      "size": 998547
+    },
+    {
+      "index": 25,
+      "file": "025.mp3",
+      "text": "以上就是今天的全部内容，感谢收听，明天见。",
+      "section": "",
+      "size": 72350
+    }
+  ],
+  "total_size_bytes": 20820074,
+  "failed": 0,
+  "duration_seconds": 421.1
+}

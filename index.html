@@ -1922,6 +1922,34 @@ const VOICE_PLAYBACK_CONFIG = {
   headers: {}
 };
 
+// ========== 预生成音频支持 ==========
+// manifest 缓存: { '2026-04-08': { segments: [...], ... } | null }
+const audioManifestCache = {};
+
+async function loadAudioManifest(dateStr) {
+  if (dateStr in audioManifestCache) return audioManifestCache[dateStr];
+  try {
+    const resp = await fetch('audio/' + dateStr + '/manifest.json', { cache: 'default' });
+    if (resp.ok) {
+      const manifest = await resp.json();
+      audioManifestCache[dateStr] = manifest;
+      console.log('[Podcast] 预生成音频可用:', dateStr, manifest.total_segments + '段');
+      return manifest;
+    }
+  } catch(e) { /* no pre-generated audio */ }
+  audioManifestCache[dateStr] = null;
+  return null;
+}
+
+function getPregenAudioUrl(dateStr, segIdx) {
+  const manifest = audioManifestCache[dateStr];
+  if (!manifest || !manifest.segments) return null;
+  const seg = manifest.segments.find(s => s.index === segIdx);
+  if (!seg) return null;
+  return 'audio/' + dateStr + '/' + seg.file;
+}
+// ========== 预生成音频支持 END ==========
+
 function setVoiceButtonState(mode, label) {
   const button = document.getElementById('voicePlayButton');
   if (!button) return;
@@ -2410,27 +2438,41 @@ function preloadBlogSegments(data) {
     window._preloadDone = 0;
     window._preloadReady = false;
 
-    const blobData = { data: data, date: data.date };
-
-    // PRIORITY: preload segment 0 FIRST, alone (no concurrency competition)
-    const text0 = blogStripHtml(dialogue[0].text);
-    if (text0 && !blogPreloadCache[0]) {
-      requestCustomVoiceAudio(text0, blobData, 'alex').then(result => {
-        blogPreloadCache[0] = { url: result.url, revoke: result.revokeAfterPlay };
-        window._preloadDone++;
+    // 尝试加载预生成音频 manifest
+    loadAudioManifest(dateStr).then(manifest => {
+      if (manifest && manifest.segments && manifest.segments.length > 0) {
+        // 有预生成音频 → 直接用静态 URL 填充缓存
+        for (let i = 0; i < dialogue.length; i++) {
+          const url = getPregenAudioUrl(dateStr, i);
+          if (url) {
+            blogPreloadCache[i] = { url: url, revoke: false };
+          }
+          window._preloadDone++;
+        }
         window._preloadReady = true;
-        // After segment 0 is done, start loading the rest with 2 concurrent
-        preloadRemaining(dialogue, blobData, 1);
-      }).catch(() => {
-        window._preloadDone++;
-        window._preloadReady = true;
-        preloadRemaining(dialogue, blobData, 1);
-      });
-    } else {
-      window._preloadDone++;
-      window._preloadReady = true;
-      preloadRemaining(dialogue, blobData, 1);
-    }
+        console.log('[Podcast] 全部使用预生成音频，共', dialogue.length, '段');
+      } else {
+        // 无预生成音频 → 走 TTS 实时生成
+        const blobData = { data: data, date: data.date };
+        const text0 = blogStripHtml(dialogue[0].text);
+        if (text0 && !blogPreloadCache[0]) {
+          requestCustomVoiceAudio(text0, blobData, 'alex').then(result => {
+            blogPreloadCache[0] = { url: result.url, revoke: result.revokeAfterPlay };
+            window._preloadDone++;
+            window._preloadReady = true;
+            preloadRemaining(dialogue, blobData, 1);
+          }).catch(() => {
+            window._preloadDone++;
+            window._preloadReady = true;
+            preloadRemaining(dialogue, blobData, 1);
+          });
+        } else {
+          window._preloadDone++;
+          window._preloadReady = true;
+          preloadRemaining(dialogue, blobData, 1);
+        }
+      }
+    });
   } catch(e) {
     console.warn('Blog preload skipped:', e);
   }
@@ -3452,11 +3494,18 @@ let blogPreloadTimer = null;
 function blogPreload(idx) {
   if (!blogData || idx >= blogData.dialogue.length) return;
   if (blogPreloadCache[idx]) return; // already cached
+  // 先尝试预生成音频
+  const dateStr = blogData.data.date || formatDate(currentDate);
+  const pregenUrl = getPregenAudioUrl(dateStr, idx);
+  if (pregenUrl) {
+    blogPreloadCache[idx] = { url: pregenUrl, revoke: false };
+    return;
+  }
   const msg = blogData.dialogue[idx];
   const text = blogStripHtml(msg.text);
   if (!text) return;
   const blobData = { data: blogData.data, date: blogData.data.date };
-  // 统一使用克隆声音
+  // fallback: 实时 TTS
   requestCustomVoiceAudio(text, blobData, 'alex').then(result => {
     blogPreloadCache[idx] = { url: result.url, revoke: result.revokeAfterPlay };
   }).catch(() => { /* silently skip preload failure */ });
@@ -3525,17 +3574,24 @@ function blogAdvance() {
   if (cached) {
     blogPlayUrl(cached.url, blogCurrentIdx);
   } else {
-    // Not preloaded yet — fetch and play
-    const msg = blogData.dialogue[blogCurrentIdx];
-    const text = blogStripHtml(msg.text);
-    const blobData = { data: blogData.data, date: blogData.data.date };
-    requestCustomVoiceAudio(text, blobData, 'alex').then(result => {
-      blogPlayUrl(result.url, blogCurrentIdx);
-    }).catch(err => {
-      console.error('[Podcast] TTS request failed for segment', blogCurrentIdx, err);
-      blogCurrentIdx++;
-      blogAdvance();
-    });
+    // Not preloaded — try pre-generated audio first, then TTS
+    const dateStr = blogData.data.date || formatDate(currentDate);
+    const pregenUrl = getPregenAudioUrl(dateStr, blogCurrentIdx);
+    if (pregenUrl) {
+      blogPreloadCache[blogCurrentIdx] = { url: pregenUrl, revoke: false };
+      blogPlayUrl(pregenUrl, blogCurrentIdx);
+    } else {
+      const msg = blogData.dialogue[blogCurrentIdx];
+      const text = blogStripHtml(msg.text);
+      const blobData = { data: blogData.data, date: blogData.data.date };
+      requestCustomVoiceAudio(text, blobData, 'alex').then(result => {
+        blogPlayUrl(result.url, blogCurrentIdx);
+      }).catch(err => {
+        console.error('[Podcast] TTS request failed for segment', blogCurrentIdx, err);
+        blogCurrentIdx++;
+        blogAdvance();
+      });
+    }
   }
 }
 
@@ -3655,8 +3711,21 @@ async function toggleInlineBlog() {
     blogCurrentIdx = -1;
     blogPausedAt = 0;
 
-    // If preload already cached segment 0, play immediately
-    if (!blogPreloadCache[0]) {
+    const dateStr = formatDate(currentDate);
+
+    // 先尝试加载预生成音频
+    const manifest = await loadAudioManifest(dateStr);
+    if (manifest && manifest.segments && manifest.segments.length > 0) {
+      // 有预生成音频 → 直接填充缓存，秒播
+      for (let i = 0; i < dialogue.length; i++) {
+        const url = getPregenAudioUrl(dateStr, i);
+        if (url) {
+          blogPreloadCache[i] = { url: url, revoke: false };
+        }
+      }
+      window._preloadReady = true;
+    } else if (!blogPreloadCache[0]) {
+      // 无预生成音频 → 走 TTS 预加载
       // Trigger preload if not started yet
       if (!window._preloadReady && !window._preloadTotal) {
         preloadBlogSegments(data);
