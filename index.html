@@ -3711,8 +3711,6 @@ async function toggleInlineBlog() {
     blogCurrentIdx = -1;
     blogPausedAt = 0;
 
-    const dateStr = formatDate(currentDate);
-
     // 先尝试加载预生成音频
     const manifest = await loadAudioManifest(dateStr);
     if (manifest && manifest.segments && manifest.segments.length > 0) {
