@@ -2405,50 +2405,64 @@ function preloadBlogSegments(data) {
     if (!dialogue || !dialogue.length) return;
     const dateStr = formatDate(currentDate);
     blogDataCache[dateStr] = data;
-    // Store dialogue for later use
     window._preloadedDialogue = dialogue;
     window._preloadTotal = dialogue.length;
     window._preloadDone = 0;
-    window._preloadReady = false; // true once segment 0 is cached
+    window._preloadReady = false;
 
-    // Preload ALL segments with controlled concurrency (3 parallel)
-    const queue = [];
-    for (let i = 0; i < dialogue.length; i++) {
-      queue.push(i);
+    const blobData = { data: data, date: data.date };
+
+    // PRIORITY: preload segment 0 FIRST, alone (no concurrency competition)
+    const text0 = blogStripHtml(dialogue[0].text);
+    if (text0 && !blogPreloadCache[0]) {
+      requestCustomVoiceAudio(text0, blobData, 'alex').then(result => {
+        blogPreloadCache[0] = { url: result.url, revoke: result.revokeAfterPlay };
+        window._preloadDone++;
+        window._preloadReady = true;
+        // After segment 0 is done, start loading the rest with 2 concurrent
+        preloadRemaining(dialogue, blobData, 1);
+      }).catch(() => {
+        window._preloadDone++;
+        window._preloadReady = true;
+        preloadRemaining(dialogue, blobData, 1);
+      });
+    } else {
+      window._preloadDone++;
+      window._preloadReady = true;
+      preloadRemaining(dialogue, blobData, 1);
     }
-
-    let active = 0;
-    const MAX_CONCURRENT = 5;
-
-    function processNext() {
-      while (active < MAX_CONCURRENT && queue.length > 0) {
-        const idx = queue.shift();
-        const text = blogStripHtml(dialogue[idx].text);
-        if (!text || blogPreloadCache[idx]) {
-          window._preloadDone++;
-          if (idx === 0) window._preloadReady = true;
-          continue;
-        }
-        active++;
-        const blobData = { data: data, date: data.date };
-        requestCustomVoiceAudio(text, blobData, 'alex').then(result => {
-          blogPreloadCache[idx] = { url: result.url, revoke: result.revokeAfterPlay };
-          window._preloadDone++;
-          if (idx === 0) window._preloadReady = true;
-        }).catch(() => {
-          window._preloadDone++;
-          if (idx === 0) window._preloadReady = true;
-        }).finally(() => {
-          active--;
-          processNext();
-        });
-      }
-    }
-
-    processNext();
   } catch(e) {
     console.warn('Blog preload skipped:', e);
   }
+}
+
+function preloadRemaining(dialogue, blobData, startIdx) {
+  const queue = [];
+  for (let i = startIdx; i < dialogue.length; i++) queue.push(i);
+  let active = 0;
+  const MAX_CONCURRENT = 2;
+
+  function processNext() {
+    while (active < MAX_CONCURRENT && queue.length > 0) {
+      const idx = queue.shift();
+      const text = blogStripHtml(dialogue[idx].text);
+      if (!text || blogPreloadCache[idx]) {
+        window._preloadDone++;
+        continue;
+      }
+      active++;
+      requestCustomVoiceAudio(text, blobData, 'alex').then(result => {
+        blogPreloadCache[idx] = { url: result.url, revoke: result.revokeAfterPlay };
+        window._preloadDone++;
+      }).catch(() => {
+        window._preloadDone++;
+      }).finally(() => {
+        active--;
+        processNext();
+      });
+    }
+  }
+  processNext();
 }
 
 function switchTab(tabId, btn) {
@@ -3230,26 +3244,27 @@ function generateDialogue(data) {
   const msgs = [];
   const dateDisplay = data.date || '今天';
 
-  // --- Section 1: 开场 + 速览 (合并为一段) ---
-  let openingParts = [`欢迎收听 ${dateDisplay} 的 AI Insights 播报，一起来看看今天有哪些不容错过的 AI 行业动态。`];
-  if (data.daily_summary) {
-    openingParts.push(`先来一个全局速览。`);
-    openingParts.push(data.daily_summary);
-  }
-  msgs.push({ role: 'host', text: openingParts.join(' '), section: '📋 今日速览' });
+  // 开场白 (短句，确保秒级 TTS 返回)
+  msgs.push({ role: 'host', text: `欢迎收听 ${dateDisplay} 的 AI Insights 播报，一起来看看今天有哪些不容错过的 AI 行业动态。` });
 
-  // --- Section 2: 深度洞察 (每个话题合并为一段) ---
+  // 今日速览
+  if (data.daily_summary) {
+    msgs.push({ role: 'host', text: `先来一个全局速览。${data.daily_summary}`, section: '📋 今日速览' });
+  }
+
+  // 深度洞察 — 每个话题拆成：标题+摘要 一段，建议 一段
   if (data.design_insights && data.design_insights.length > 0) {
     msgs.push({ role: 'host', text: `今天的深度洞察环节，一共有 ${data.design_insights.length} 个值得关注的话题。`, section: '🔍 深度洞察' });
     data.design_insights.forEach((item, idx) => {
-      let parts = [`第 ${idx + 1} 个话题：${item.title}。`, item.summary];
-      if (item.implication) parts.push(`我的理解是：${blogStripHtml(item.implication)}`);
-      if (item.action) parts.push(`建议行动：${blogStripHtml(item.action)}`);
-      msgs.push({ role: 'host', text: parts.join(' ') });
+      msgs.push({ role: 'host', text: `第 ${idx + 1} 个话题：${item.title}。${item.summary}` });
+      const extras = [];
+      if (item.implication) extras.push(`我的理解是：${blogStripHtml(item.implication)}`);
+      if (item.action) extras.push(`建议行动：${blogStripHtml(item.action)}`);
+      if (extras.length) msgs.push({ role: 'host', text: extras.join(' ') });
     });
   }
 
-  // --- Section 3: 需求挖掘 (每个机会合并为一段) ---
+  // 需求挖掘 — 每个机会一段
   if (data.demand_mining && data.demand_mining.length > 0) {
     msgs.push({ role: 'host', text: `接下来是需求挖掘环节，看看今天发现了哪些产品机会。`, section: '💎 需求挖掘' });
     data.demand_mining.forEach((item, idx) => {
@@ -3260,19 +3275,22 @@ function generateDialogue(data) {
     });
   }
 
-  // --- Section 4: 快讯速递 (所有快讯合并为一段) ---
+  // 快讯速递 — 每 2 条合一段（避免单段太长）
   if (data.hot_news && data.hot_news.length > 0) {
-    let newsParts = [`最后来一组快讯。`];
-    data.hot_news.forEach((item) => {
+    msgs.push({ role: 'host', text: `最后来一组快讯。`, section: '⚡ 快讯速递' });
+    let batch = [];
+    data.hot_news.forEach((item, i) => {
       let t = item.title;
       if (item.summary) t += '。' + blogStripHtml(item.summary);
-      if (item.source) t += `，来源：${item.source}`;
-      newsParts.push(t);
+      batch.push(t);
+      if (batch.length === 2 || i === data.hot_news.length - 1) {
+        msgs.push({ role: 'host', text: batch.join(' ') });
+        batch = [];
+      }
     });
-    msgs.push({ role: 'host', text: newsParts.join(' '), section: '⚡ 快讯速递' });
   }
 
-  // --- Section 5: 结束语 ---
+  // 结束语
   msgs.push({ role: 'host', text: `以上就是今天的全部内容，感谢收听，明天见。` });
   return msgs;
 }
@@ -3638,22 +3656,36 @@ async function toggleInlineBlog() {
     blogPausedAt = 0;
 
     // If preload already cached segment 0, play immediately
-    // Otherwise wait for it (polling every 200ms, max 30s)
     if (!blogPreloadCache[0]) {
       // Trigger preload if not started yet
       if (!window._preloadReady && !window._preloadTotal) {
         preloadBlogSegments(data);
       }
-      await new Promise((resolve) => {
+      // Wait up to 4s for preload to finish segment 0
+      const cached = await new Promise((resolve) => {
         let waited = 0;
         const check = setInterval(() => {
           waited += 100;
-          if (blogPreloadCache[0] || waited >= 8000) {
+          if (blogPreloadCache[0]) {
             clearInterval(check);
-            resolve();
+            resolve(true);
+          } else if (waited >= 4000) {
+            clearInterval(check);
+            resolve(false);
           }
         }, 100);
       });
+      // If still not cached, fire a direct request for segment 0
+      if (!cached && !blogPreloadCache[0]) {
+        try {
+          const text0 = blogStripHtml(dialogue[0].text);
+          const blobData = { data: data, date: data.date };
+          const result = await requestCustomVoiceAudio(text0, blobData, 'alex');
+          blogPreloadCache[0] = { url: result.url, revoke: result.revokeAfterPlay };
+        } catch(e) {
+          console.error('[Podcast] Direct TTS for segment 0 failed:', e);
+        }
+      }
     }
 
     if (subtitle) subtitle.textContent = origSubText;
