@@ -1,0 +1,224 @@
+{
+  "date": "2026-04-08",
+  "generated_at": "2026-04-08T08:00:00+08:00",
+  "daily_summary": "周三AI行业迎来安全与竞争两大主题叠加的高强度新闻日。Anthropic正式发布Claude Mythos Preview模型并启动Project Glasswing网络安全联盟，联合Apple、Microsoft、Google、CrowdStrike等超40家机构，利用其尚未公开发布的最强模型主动发现数千个零日漏洞（含27年OpenBSD远程崩溃漏洞和16年FFmpeg隐藏缺陷），承诺投入1亿美元模型额度+400万美元开源安全捐赠，标志AI安全从被动防御转向攻击性预防。同日，OpenAI、Anthropic、Google三巨头罕见联手，通过Frontier Model Forum共享情报对抗中国AI公司的对抗性模型蒸馏行为。智谱Z.ai发布754B参数GLM-5.1模型，MIT开源许可，在SWE-bench Pro上宣称超越GPT-5.4和Claude Opus 4.6。马斯克修改对OpenAI的1340亿美元诉讼：要求胜诉赔偿金归OpenAI非营利部门并要求Altman退出董事会，审判定于4月27日。Anthropic从微软挖来16年老将Eric Boyd出任基础设施负责人。Arcee AI仅26人团队发布400B参数开源推理模型Trinity Large Thinking。Google Photos全球推送AI增强按钮。网易有道发布AI知识库产品有道宝库，被称为中国版NotebookLM。HumanX AI大会旧金山进入第三天。",
+  "design_insights": [
+    {
+      "title": "Anthropic以'不发布'策略推出最强模型：Project Glasswing开创AI能力输出的安全前置范式",
+      "summary": "Anthropic于4月7日正式发布Claude Mythos Preview，但选择了一条前所未有的路径——不向公众发布，而是通过Project Glasswing计划仅向经过筛选的40多家机构提供受限访问。该模型在SWE-bench Verified达到93.9%（对比Opus 4.6的80.8%），网络安全漏洞复现率83.1%，在过去数周已自主发现数千个零日漏洞，包括存在27年的OpenBSD远程崩溃漏洞和16年FFmpeg隐藏缺陷。创始合作伙伴涵盖Apple、Microsoft、Google、Amazon、CrowdStrike、Palo Alto Networks等12家核心机构，Anthropic承诺1亿美元模型使用额度和400万美元开源安全捐赠。这一策略的核心逻辑是：当AI模型能力强到可以发现并利用软件漏洞时，必须先让防御者获得工具，再考虑公开发布。这标志着AI产品发布从'先发制人抢市场'转向'安全前置再开放'的新范式。",
+      "implication": "对输入法产品的启示：(1) Anthropic的策略说明AI能力越强，安全审查和渐进式开放越重要——输入法在上线新的AI帮写功能时，应先在内部和小范围用户测试中验证安全性和准确性，而非急于全量发布；(2) Mythos的代码安全审计能力极强，输入法开发团队可以将其纳入CI/CD流程，对AI辅助生成的代码进行自动化安全扫描，弥补上一日报道的'45%AI代码含漏洞'问题；(3) 从用户信任角度，输入法可以在AI功能上增加'安全审核标识'——例如帮写生成的内容经过事实核查或合规过滤后标注'已审核'，参考Glasswing的理念将安全作为产品卖点而非隐形成本。",
+      "sources": ["Anthropic官方", "TechCrunch", "CNBC", "Wired"],
+      "source_urls": [
+        {"name": "Anthropic Project Glasswing官方页面", "url": "https://www.anthropic.com/glasswing"},
+        {"name": "TechCrunch详细报道", "url": "https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/"},
+        {"name": "CNBC网络安全分析", "url": "https://www.cnbc.com/2026/04/07/anthropic-claude-mythos-ai-hackers-cyberattacks.html"},
+        {"name": "Wired深度解读", "url": "https://www.wired.com/story/anthropic-mythos-preview-project-glasswing/"}
+      ],
+      "tags": ["Anthropic Mythos", "AI安全", "漏洞发现", "渐进式发布"]
+    },
+    {
+      "title": "美国三巨头联手反蒸馏：AI模型知识产权保护从单打独斗走向行业联防",
+      "summary": "Bloomberg报道，OpenAI、Anthropic和Google三家长期激烈竞争的AI巨头首次通过Frontier Model Forum（2023年与Microsoft共同创立的非营利组织）正式共享情报，联手侦测和遏制中国AI企业的'对抗性模型蒸馏'行为——即通过大量API调用提取美国AI模型的知识来训练自己的模型。美国官员估计此类行为每年给硅谷实验室造成数十亿美元利润损失。Anthropic此前已封禁了涉嫌非法提取Claude输出的中国实验室。三家公司面临的核心挑战是反垄断法对信息共享的限制——它们需要在保护知识产权和避免反竞争指控之间找到平衡。环球时报援引分析称此举更多是地缘政治叙事而非技术问题。这一联盟的形成标志着AI行业竞争格局的结构性转变：头部公司在对外竞争中选择合作，知识产权保护成为行业共识。",
+      "implication": "对输入法产品的启示：(1) 模型蒸馏争议意味着直接使用海外大模型API存在供应链风险——如果地缘政治紧张升级导致API受限，输入法的AI功能可能面临中断，必须加速布局国产模型替代方案（如GLM-5.1、Qwen3.6-Plus）；(2) 反蒸馏措施可能推高模型调用成本或增加使用限制，输入法应建立多模型混合调用策略，在成本和性能间动态切换；(3) 从技术趋势看，头部公司加强API使用监控意味着'模型即服务'的调用方式将更加规范化——输入法团队应确保自身的模型调用符合服务条款，避免被误判为异常使用。",
+      "sources": ["Bloomberg", "Seeking Alpha", "Mercury News", "Global Times"],
+      "source_urls": [
+        {"name": "Seeking Alpha快讯", "url": "https://seekingalpha.com/news/4572880-anthropic-google-openai-team-up-to-fight-model-copying-in-china"},
+        {"name": "Mercury News报道", "url": "https://www.mercurynews.com/2026/04/07/openai-anthropic-google-unite-to-combat-model-copying-in-china/"},
+        {"name": "Gadgets360详细分析", "url": "https://www.gadgets360.com/ai/news/anthropic-google-openai-frontier-model-forum-fighting-ai-model-distillation-attempts-china-report-11322546"},
+        {"name": "Global Times中方视角", "url": "https://www.globaltimes.cn/page/202604/1358378.shtml"}
+      ],
+      "tags": ["模型蒸馏", "知识产权", "AI竞争格局", "地缘政治"]
+    },
+    {
+      "title": "智谱GLM-5.1以754B参数MIT开源：国产大模型从'追赶基准'进入'定义标准'阶段",
+      "summary": "智谱AI（已更名Z.ai）发布GLM-5.1大模型，参数规模达754B（7540亿），采用MIT开源许可证。模型在SWE-bench Pro基准上宣称超越GPT-5.4和Claude Opus 4.6，编程能力达到Claude Opus的94.6%水平，支持200K长文本处理，价格仅为竞品的1/5-1/7。此前智谱已于香港IPO募资约43.5亿港元，GLM-5.1全程在华为昇腾芯片上训练完成。知乎热议'国产大模型杀入决赛圈'，GLM-5.1与阿里Qwen3.6-Plus（100万上下文/SWE-bench国产登顶）形成国产模型双雄格局。值得关注的是GLM-5.1选择MIT而非Apache许可证，商业化更为友好。快科技评测称其首次在编程任务上超越Sonnet 4.5 Thinking。这一发布改变了'中国AI模型只能在开源领域追赶'的叙事，开始在核心编码能力上与闭源头部正面竞争。",
+      "implication": "对输入法产品的启示：(1) GLM-5.1和Qwen3.6-Plus的崛起为输入法AI功能提供了高质量的国产模型替代——在数据合规和供应链安全方面具有天然优势，建议将国产模型作为主力调用选项，海外模型作为备选；(2) GLM-5.1的编程能力接近Claude水平但价格低5-7倍——输入法可以利用成本优势大幅扩大AI功能的免费使用额度，降低用户使用门槛；(3) 200K上下文窗口意味着可以处理更长的写作任务——输入法的AI帮写功能可以从'句子级补全'升级到'文档级创作'，比如帮用户基于会议纪要生成完整报告，或基于历史聊天记录总结关键信息。",
+      "sources": ["VentureBeat", "腾讯云开发者", "快科技", "CSDN"],
+      "source_urls": [
+        {"name": "VentureBeat报道", "url": "https://venturebeat.com/2026/04/07/z-ai-glm-5-1-open-source-model/"},
+        {"name": "腾讯云开发者实测", "url": "https://cloud.tencent.com.cn/developer/article/2649485"},
+        {"name": "快科技评测", "url": "https://finance.sina.com.cn/tech/roll/2026-03-29/doc-inhsrqry4924594.shtml"},
+        {"name": "CSDN深度解析", "url": "https://blog.csdn.net/tzchao111/article/details/159735328"}
+      ],
+      "tags": ["GLM-5.1", "国产大模型", "开源", "华为昇腾"]
+    },
+    {
+      "title": "网易有道发布有道宝库——AI知识库产品从工具走向'思考伙伴'，文档管理与内容再创作融合",
+      "summary": "4月7日网易有道正式上线首款AI知识库产品有道宝库，定位为AI研究助手与思考伙伴，被业内广泛称为'中国版NotebookLM'。核心能力包括：支持PDF/网页/公众号/B站视频等50+种来源格式上传，AI深度理解后实现精准问答且零幻觉输出（采用源锁定机制），一键生成播客脚本、PPT、脑图、信息图等多模态内容。与Google NotebookLM的关键差异在于：原生中文支持、无需翻墙、支持更多国内内容源（如公众号和B站）。36氪、创黑马等多家媒体报道了这一产品，普遍认为有道宝库在中文知识管理领域填补了NotebookLM的空白。产品的核心设计理念从'存储文档'转向'理解并再创作文档'，AI不只是帮你找信息，而是帮你把信息转化为可用的输出。",
+      "implication": "对输入法产品的启示：(1) 有道宝库的'源锁定+零幻觉'机制值得学习——输入法的AI帮写功能如果能够接入用户的知识库或历史文档，就可以做到'基于用户自身资料生成内容'而非凭空创造，大幅降低幻觉风险并提升个性化程度；(2) 多格式输入→多模态输出的产品范式对输入法有直接启发——用户可以在输入框中粘贴一段文字，AI帮写不只生成纯文本，还能一键转为要点列表、邮件格式、社交媒体文案等多种风格；(3) 有道宝库支持B站视频和公众号内容源，说明用户的知识获取路径日益多样化——输入法可以探索'剪贴板智能识别'功能，当用户复制网页内容或视频链接时，自动提取摘要并提供基于该内容的帮写建议。",
+      "sources": ["36氪", "创黑马", "有道宝库官方", "腾讯新闻"],
+      "source_urls": [
+        {"name": "36氪快讯", "url": "https://m.36kr.com/newsflashes/3756223215420169"},
+        {"name": "创黑马深度分析", "url": "https://www.iheima.com/article-395935.html"},
+        {"name": "有道宝库官网", "url": "https://baoku.youdao.com/"},
+        {"name": "腾讯新闻报道", "url": "https://news.qq.com/rain/a/20260407A0431200"}
+      ],
+      "tags": ["AI知识库", "NotebookLM", "文档管理", "内容再创作"]
+    },
+    {
+      "title": "26人团队发布400B参数开源模型：Arcee Trinity证明AI模型训练的'小团队+开源'路线可行性",
+      "summary": "TechCrunch于4月7日发布专题报道，聚焦26人美国初创公司Arcee AI发布的Trinity Large Thinking模型——400B参数规模、Apache开源许可、训练预算约2000万美元。该模型采用模型合并（model merging）技术而非传统从零训练，在推理任务上表现出色，已在OpenClaw用户群中获得快速普及。这一案例与数天前报道的JustPaid（9人+7个AI Agent）形成呼应：AI时代的高质量输出不再需要庞大团队。Arcee的策略核心是利用开源生态中已有的高质量模型权重，通过合并和微调实现性能突破，大幅降低了训练成本。Let's Data Science报道称，Arcee正在吸引越来越多的企业客户，特别是那些不信任闭源模型数据处理方式的公司。这一趋势表明开源LLM正在从'大公司副产品'转变为独立商业化力量。",
+      "implication": "对输入法产品的启示：(1) 模型合并技术降低了高质量模型的获取门槛——输入法团队可以探索将多个开源模型的优势合并为一个专门针对中文输入辅助场景优化的模型，而非依赖单一大模型；(2) 2000万美元训练400B参数的案例说明端侧和垂直场景模型的训练成本正在快速下降——输入法可以投入适度资源训练一个专门的'中文表达辅助模型'，聚焦帮写、纠错、风格转换等核心场景，性能可能超过通用大模型在这些任务上的表现；(3) 企业客户选择开源模型的数据安全考虑同样适用于输入法——如果输入法使用开源模型在本地运行AI功能，可以将'数据不出设备'作为核心卖点。",
+      "sources": ["TechCrunch", "Let's Data Science", "National Today", "AI Productivity"],
+      "source_urls": [
+        {"name": "TechCrunch专题报道", "url": "https://techcrunch.com/2026/04/07/i-cant-help-rooting-for-tiny-open-source-ai-model-maker-arcee/"},
+        {"name": "Let's Data Science发布详情", "url": "https://letsdatascience.com/news/arcee-releases-trinity-large-thinking-model-de5b4b32"},
+        {"name": "National Today报道", "url": "https://nationaltoday.com/us/ca/san-francisco/news/2026/04/07/tiny-open-source-ai-startup-arcee-releases-powerful-new-model/"},
+        {"name": "AI Productivity分析", "url": "https://aiproductivity.ai/news/arcee-open-source-llm-small-team/"}
+      ],
+      "tags": ["开源LLM", "模型合并", "小团队创新", "Arcee AI"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "输入法帮写内容的可信度标注与源引用系统",
+      "pain_point": "用户使用AI帮写生成工作邮件、报告、社交媒体文案时，无法判断AI生成内容的准确性和可靠性。特别是涉及数字、人名、日期、专业术语时，用户不知道哪些内容是AI'编造'的，哪些有依据。上周Veracode报告45%的AI生成代码含漏洞，联邦法官AI辅助起草裁决错误率达17-33%——用户对AI生成内容的信任正在快速下降。",
+      "opportunity": "在输入法帮写功能中增加'内容可信度标注层'。入口：帮写结果展示区右上角增加'查看可信度'开关。触发条件：AI帮写生成超过50字的内容后自动激活。核心能力：(1) 对生成内容中的关键信息（数字/日期/人名/机构名）自动标注置信度色彩（绿=高/黄=需确认/红=可能不准确），(2) 若帮写基于用户粘贴的原文生成，标注哪些句子有原文依据、哪些是AI推理补充。MVP版本：先做数字和日期的置信度标注，后续扩展到事实核查。参考Anthropic Project Glasswing的安全前置理念——将'安全审核'从隐性成本转为用户可见的产品卖点。",
+      "priority": "高",
+      "evidence": "Veracode测试45%的AI生成代码含安全漏洞且多年未改善，60%联邦法官使用AI但错误率17-33%，NYT报道企业正紧急建AI输出审查流程。有道宝库以'源锁定+零幻觉'为核心卖点获得市场认可，说明用户对AI输出准确性的需求已被验证为产品差异化方向。Anthropic的Project Glasswing将安全检测能力作为Mythos的首发应用场景，证明'信任保障'是AI产品的高优先级功能。",
+      "source_urls": [
+        {"name": "Anthropic Project Glasswing", "url": "https://www.anthropic.com/glasswing"},
+        {"name": "有道宝库官方", "url": "https://baoku.youdao.com/"},
+        {"name": "Fortune AI安全分析", "url": "https://fortune.com/2026/04/07/openai-drama-sam-altman-ipo-anthropic-cybersecurity-risks-eye-on-ai/"}
+      ]
+    },
+    {
+      "title": "基于用户知识库的个性化帮写引擎",
+      "pain_point": "用户在使用输入法AI帮写时，生成的内容缺乏个性化——同一个帮写请求对所有用户输出几乎相同的结果。用户有自己的写作风格、常用表达、专业术语和历史文档，但AI帮写无法利用这些信息。有道宝库的上线验证了这一痛点：用户愿意上传50+种格式的文档来获取个性化的AI输出。",
+      "opportunity": "在输入法中构建轻量级'个人表达库'，作为帮写的上下文增强层。入口：输入法设置页新增'我的表达库'模块。触发条件：用户开启后，帮写请求自动融合个人表达库上下文。核心能力：(1) 自动从用户历史输入中提取高频表达模式和专业词汇（端侧处理，数据不上传），(2) 帮写时自动匹配用户的写作风格和用词习惯。MVP：先做'常用短语和签名档'的自动收集和帮写融合，后续扩展到写作风格迁移。首期场景：工作邮件和微信消息——这是用户使用帮写最频繁的两个场景，也是个性化需求最强的场景。",
+      "priority": "中",
+      "evidence": "有道宝库上线即被称为'中国版NotebookLM'，核心卖点是基于用户上传资料的个性化AI输出，36氪、创黑马等多家媒体均肯定了这一方向的市场需求。Google AI Edge Eloquent支持从Gmail导入个人关键词提升语音识别准确率——'个人数据增强AI'已成为头部厂商的共识方向。Arcee等开源模型的成本下降使得在端侧运行个性化模型成为可能。",
+      "source_urls": [
+        {"name": "有道宝库官方", "url": "https://baoku.youdao.com/"},
+        {"name": "36氪报道", "url": "https://m.36kr.com/newsflashes/3756223215420169"},
+        {"name": "9to5Google Eloquent报道", "url": "https://9to5google.com/2026/04/06/google-ai-edge-eloquent-app/"}
+      ]
+    },
+    {
+      "title": "多模型路由与国产模型优先调用策略",
+      "pain_point": "输入法AI功能依赖单一模型API时存在三重风险：(1) 地缘政治风险——三巨头反蒸馏联盟可能导致海外模型API对中国开发者设置更多限制，(2) 成本风险——闭源模型定价受供应商控制，(3) 体验风险——单一模型在不同任务类型上表现不均衡。当前GLM-5.1（MIT开源/价格1/5~1/7）和Qwen3.6-Plus（100万上下文）已达到接近闭源头部水平。",
+      "opportunity": "构建输入法后端的'模型路由层'，根据任务类型、成本和可用性自动选择最优模型。入口：对用户透明，后端自动路由。触发条件：每次帮写请求根据内容类型和长度自动分发。核心能力：(1) 简单补全（<20字）走端侧小模型（零延迟零成本），(2) 标准帮写（20-200字）优先调用GLM-5.1或Qwen3.6-Plus（成本低/中文优化好），(3) 复杂长文创作（>200字）动态选择性能最优模型。MVP：先实现'端侧+国产云模型'双通道路由，当国产模型不可用时自动fallback到海外模型。此举既降低70%以上的模型调用成本，也建立了供应链冗余。",
+      "priority": "高",
+      "evidence": "OpenAI/Anthropic/Google通过Frontier Model Forum联手反蒸馏，Bloomberg估计蒸馏每年造成数十亿美元损失，海外API供应链风险上升。GLM-5.1编程能力达Claude Opus 94.6%但价格为1/5~1/7（快科技评测、CSDN分析）。Anthropic限制Claude订阅用于第三方Agent工具，转向按token付费——模型调用策略需要更精细化管理。",
+      "source_urls": [
+        {"name": "Bloomberg反蒸馏报道", "url": "https://seekingalpha.com/news/4572880-anthropic-google-openai-team-up-to-fight-model-copying-in-china"},
+        {"name": "GLM-5.1实测", "url": "https://cloud.tencent.com.cn/developer/article/2649485"},
+        {"name": "Fortune AI行业分析", "url": "https://fortune.com/2026/04/07/openai-drama-sam-altman-ipo-anthropic-cybersecurity-risks-eye-on-ai/"}
+      ]
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Anthropic发布Claude Mythos Preview并启动Project Glasswing：联合Apple、Microsoft等40+机构利用最强AI模型主动发现零日漏洞",
+      "category": "产品发布",
+      "relevance": "高",
+      "summary": "Anthropic正式发布Claude Mythos Preview模型，不向公众开放，而是通过Project Glasswing计划向Apple、Microsoft、Google、CrowdStrike等超40家机构提供受限访问。模型SWE-bench Verified达93.9%，已自主发现数千个零日漏洞，包括27年OpenBSD远程崩溃漏洞。Anthropic承诺投入1亿美元模型额度和400万美元开源安全捐赠。",
+      "source": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/"
+    },
+    {
+      "title": "OpenAI、Anthropic、Google三巨头通过Frontier Model Forum联手对抗中国AI模型蒸馏",
+      "category": "行业动态",
+      "relevance": "高",
+      "summary": "Bloomberg报道，三大AI巨头首次正式合作，通过2023年创立的Frontier Model Forum共享情报，侦测和遏制中国AI公司对其模型的对抗性蒸馏行为。美国官员估计此行为每年造成数十亿美元损失。Anthropic已封禁涉嫌非法提取Claude输出的中国实验室。面临反垄断法对信息共享的限制挑战。",
+      "source": "Bloomberg",
+      "source_url": "https://seekingalpha.com/news/4572880-anthropic-google-openai-team-up-to-fight-model-copying-in-china"
+    },
+    {
+      "title": "智谱Z.ai发布GLM-5.1：754B参数MIT开源，宣称SWE-bench Pro超越GPT-5.4和Claude Opus 4.6",
+      "category": "大模型",
+      "relevance": "高",
+      "summary": "智谱AI（已更名Z.ai）发布754B参数GLM-5.1模型，采用MIT开源许可证，在SWE-bench Pro上宣称超越GPT-5.4和Claude Opus 4.6，编程能力达Claude Opus的94.6%。全程在华为昇腾芯片训练，价格仅为竞品的1/5-1/7，支持200K长文本处理。快科技评测称其首次在编程任务上超越Sonnet 4.5 Thinking。",
+      "source": "VentureBeat",
+      "source_url": "https://cloud.tencent.com.cn/developer/article/2649485"
+    },
+    {
+      "title": "马斯克修改对OpenAI的1340亿美元诉讼：要求赔偿金归非营利部门并要求Altman退出董事会",
+      "category": "行业动态",
+      "relevance": "中",
+      "summary": "马斯克修订对OpenAI的诉讼请求，要求若胜诉，1340亿美元赔偿金支付给OpenAI的非营利部门而非自己，并要求Sam Altman被移出OpenAI非营利董事会。OpenAI则致函加州和特拉华州总检察长，要求调查Musk的'反竞争行为'。审判定于4月27日开始。",
+      "source": "Gizmodo",
+      "source_url": "https://gizmodo.com/musk-changes-openai-lawsuit-so-that-if-he-wins-the-134-billion-openais-nonprofit-gets-it-2000743663"
+    },
+    {
+      "title": "Anthropic从微软挖来16年老将Eric Boyd出任基础设施负责人",
+      "category": "行业动态",
+      "relevance": "中",
+      "summary": "Anthropic宣布聘用Eric Boyd担任基础设施负责人。Boyd在微软工作16年，曾任AI Platform总裁，负责Azure AI平台和Foundry业务。此次招聘正值Anthropic面临AI代理工具激增导致的计算资源紧张，同时正在扩大与Google和Broadcom的芯片合作。",
+      "source": "CRN",
+      "source_url": "https://www.crn.com/news/ai/2026/anthropic-taps-microsoft-azure-ai-veteran-for-infrastructure-role"
+    },
+    {
+      "title": "OpenAI内部风波持续：CFO反对IPO时间表、《纽约客》质疑Altman诚实度、CMO离职",
+      "category": "行业动态",
+      "relevance": "中",
+      "summary": "Fortune Eye on AI报道OpenAI面临多重内部危机：CFO Sarah Friar私下反对Altman的IPO时间表并质疑6000亿美元支出计划的可持续性；《纽约客》长文质疑Altman诚实度；CMO Kate Rouch离职、COO Brad Lightcap转任'特别项目'、Fidji Simo因健康问题休假。尽管内部动荡，OpenAI上周仍完成1220亿美元融资，估值8520亿美元。",
+      "source": "Fortune",
+      "source_url": "https://fortune.com/2026/04/07/openai-drama-sam-altman-ipo-anthropic-cybersecurity-risks-eye-on-ai/"
+    },
+    {
+      "title": "Arcee AI仅26人团队发布400B参数开源推理模型Trinity Large Thinking",
+      "category": "大模型",
+      "relevance": "中",
+      "summary": "26人美国初创公司Arcee AI发布Trinity Large Thinking模型，400B参数规模，Apache开源许可证，训练预算约2000万美元。模型采用模型合并技术而非从零训练，专注推理任务，已在OpenClaw用户群中获得快速普及。TechCrunch专题报道称其证明了'小团队+开源+模型合并'路线的可行性。",
+      "source": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/04/07/i-cant-help-rooting-for-tiny-open-source-ai-model-maker-arcee/"
+    },
+    {
+      "title": "网易有道发布AI知识库产品有道宝库：中国版NotebookLM，支持50+格式一键生成播客和PPT",
+      "category": "AI工具",
+      "relevance": "高",
+      "summary": "网易有道正式上线首款AI知识库产品有道宝库，定位AI研究助手与思考伙伴。支持PDF、网页、公众号、B站视频等50+种来源格式上传，采用源锁定机制实现零幻觉问答，可一键生成播客脚本、PPT、脑图、信息图。被业内称为中国版NotebookLM，核心优势在于原生中文支持和国内内容源兼容。",
+      "source": "36氪",
+      "source_url": "https://m.36kr.com/newsflashes/3756223215420169"
+    },
+    {
+      "title": "Google Photos全球推送AI增强按钮和视频播放速度控制",
+      "category": "产品发布",
+      "relevance": "中",
+      "summary": "Google在全球范围内为Android版Google Photos推出AI Enhance一键增强按钮，提供自动光线和对比度AI调整功能。同时新增视频播放速度控制（0.5x-2x）。9to5Google报道该功能正在全球滚动推送，是Google将AI能力嵌入消费级应用的又一步。",
+      "source": "9to5Google",
+      "source_url": "https://9to5google.com/2026/04/06/google-photos-adding-ai-enhance-video-playback-speed-control/"
+    },
+    {
+      "title": "Greg Brockman接管OpenAI产品线：专访谈押注文本模型、关停Sora逻辑和Super App战略",
+      "category": "行业动态",
+      "relevance": "中",
+      "summary": "Big Technology发布对OpenAI总裁Greg Brockman的深度专访。Brockman阐述了关停Sora的逻辑（将资源集中在文本模型）、Codex作为AI编程入口的潜力、ChatGPT/Codex/Atlas合并为Super App的计划。他表示OpenAI正从'多线并行'转向'聚焦文本模型+Agent能力'的战略方向。",
+      "source": "Big Technology",
+      "source_url": "https://www.bigtechnology.com/p/openai-president-greg-brockman-doubling"
+    },
+    {
+      "title": "智元机器人正式开源AGIBOT WORLD 2026：首个覆盖具身智能全域研究的开源数据集",
+      "category": "技术研究",
+      "relevance": "中",
+      "summary": "智元机器人于AI发布周首日宣布开源AGIBOT WORLD 2026数据集，基于精灵G2通用机器人在海量真实场景中采集，覆盖五大具身智能研究主题。这是首个覆盖具身智能全域研究的开源数据集，旨在为行业提供贴近真实物理世界的高质量训练数据，推动具身智能从实验室走向产业化。",
+      "source": "界面新闻",
+      "source_url": "https://www.jiemian.com/article/14215335.html"
+    },
+    {
+      "title": "HumanX AI大会旧金山Moscone Center进入第三天：6500名企业领袖聚焦AI治理与企业部署",
+      "category": "行业动态",
+      "relevance": "中",
+      "summary": "HumanX 2026大会（4月6-9日）在旧金山Moscone Center South进入第三天，6500名企业领袖、构建者和投资人参会。作为全球最大的企业AI大会，本届聚焦AI治理框架、企业级AI部署实践和AI安全策略。多项重要公告和合作在大会期间发布。",
+      "source": "HumanX官方",
+      "source_url": "https://www.humanx.co/"
+    },
+    {
+      "title": "Anthropic研究发现Claude神经网络内部存在'情绪概念'模式：AI模型行为受类情感状态影响",
+      "category": "技术研究",
+      "relevance": "中",
+      "summary": "Anthropic发布研究成果，揭示Claude模型的神经网络内部存在代表'情绪概念'（如快乐、恐惧）的激活模式，这些模式会影响模型的输出行为。研究强调这并非'真实情感'，但对模型性能、安全对齐和用户交互设计具有重要意义——理解这些模式有助于预测和控制模型在不同上下文中的表现差异。",
+      "source": "Fortune",
+      "source_url": "https://fortune.com/2026/04/07/openai-drama-sam-altman-ipo-anthropic-cybersecurity-risks-eye-on-ai/"
+    },
+    {
+      "title": "DeepSeek V4确认4月发布：1T参数全面适配华为昇腾芯片，国产算力自主路线加速",
+      "category": "大模型",
+      "relevance": "高",
+      "summary": "多方消息确认DeepSeek V4将于2026年4月正式发布，采用约1万亿参数MoE架构，支持原生多模态输入和100万tokens超长上下文。关键突破在于全面运行在华为昇腾芯片上，底层代码从Nvidia CUDA迁移到华为CANN框架。The Information报道阿里、字节、腾讯等大厂已下单华为AI芯片支持V4运行。",
+      "source": "The Information",
+      "source_url": "https://techstartups.com/2026/04/06/deepseek-v4-model-will-run-on-huawei-chips-as-china-accelerates-ai-independence/"
+    }
+  ]
+}
