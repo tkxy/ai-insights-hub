@@ -1160,9 +1160,48 @@
     <div id="map-clusters-body">
       <!-- 动态渲染：loadAndRenderMapClusters() -->
     </div>
+</div>
+
+<div class="main" id="design-page" style="display:none; max-width:1400px; margin:0 auto; padding:60px 48px 60px;">
+  <div id="design-loading" style="text-align:center;padding:60px 0;color:#888;">正在加载 Design Weekly...</div>
+</div>
+
+<div class="main" id="knowledge-page" style="display:none; max-width:1400px; margin:0 auto; padding:20px 48px 60px;">
+
+  <div class="knowledge-input-area" style="display:none;">
+    <div class="knowledge-input-row">
+      <input type="text" id="knowledgeUrlInput" class="knowledge-url-input" placeholder="粘贴文章链接，如 https://..." autocomplete="off" />
+      <button id="knowledgeAnalyzeBtn" class="knowledge-analyze-btn" onclick="analyzeKnowledgeUrl()">
+        <span class="analyze-btn-text">添加</span>
+        <span class="analyze-btn-loading" style="display:none;">
+          <span class="analyze-spinner"></span>分析中...
+        </span>
+      </button>
+    </div>
+    <div id="knowledgeError" class="knowledge-error" style="display:none;"></div>
   </div>
 
-  <div class="footer">
+  <div id="knowledgeCardsHeader" class="knowledge-cards-header" style="display:none;"></div>
+
+  <div id="knowledgeCards" class="knowledge-cards">
+    <!-- 卡片将动态插入 -->
+  </div>
+
+  <div id="knowledgeEmpty" class="knowledge-empty">
+    <div class="knowledge-empty-icon">📚</div>
+    <p>当前还没有收录内容</p>
+  </div>
+</div>
+
+<!-- Blog Page: Audio Podcast Player -->
+<div class="main" id="blog-page" style="display:none;">
+  <div class="blog-container" id="blogContent">
+    <!-- Player injected by JS -->
+  </div>
+</div>
+
+
+<div class="footer">
   AI Insights Hub
 </div>
 
