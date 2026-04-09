@@ -2,3 +2,16 @@ __pycache__/
 *.pyc
 .DS_Store
 build_standalone.py
+
+# Large binary / env files
+openvoice_env/
+openvoice_repo
+*.m4a
+*.wav
+1_ref.wav
+test_tts.mp3
+test_tts_local.wav
+# mp3 only in root, allow audio/ podcast files
+/*.mp3
+tts_proxy.log
+*.dic

@@ -1,0 +1,164 @@
+{
+  "date": "2026-04-09",
+  "generated_at": "2026-04-09T08:06:29",
+  "total_segments": 22,
+  "segments": [
+    {
+      "index": 0,
+      "file": "000.mp3",
+      "text": "欢迎收听 2026-04-09 的 AI Insights 播报，一起来看看今天有哪些不容错过的 AI 行业动态。",
+      "section": "",
+      "size": 116653
+    },
+    {
+      "index": 1,
+      "file": "001.mp3",
+      "text": "先来一个全局速览。周四AI行业迎来Meta重返前沿模型赛场与多项生态工具整合并行的密集新闻日。Meta Superintelligence Labs正式发布首款前沿大模型Muse Spark，基于全新",
+      "section": "📋 今日速览",
+      "size": 1390175
+    },
+    {
+      "index": 2,
+      "file": "002.mp3",
+      "text": "今天的深度洞察环节，一共有 4 个值得关注的话题。",
+      "section": "🔍 深度洞察",
+      "size": 64826
+    },
+    {
+      "index": 3,
+      "file": "003.mp3",
+      "text": "第 1 个话题：Meta发布Muse Spark闭源前沿模型：开源巨头转向双轨策略，AI产品生态竞争进入'全栈集成'阶段。Meta于4月8日通过Superintelligence Labs发布首款前沿",
+      "section": "",
+      "size": 1148594
+    },
+    {
+      "index": 4,
+      "file": "004.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) Meta将Muse Spark直接嵌入Messenger和WhatsApp的键盘层级（shopping mode可从对话直接唤起），意味着聊天入口正在变成AI交",
+      "section": "",
+      "size": 865218
+    },
+    {
+      "index": 5,
+      "file": "005.mp3",
+      "text": "第 2 个话题：Google Gemini整合NotebookLM推出'笔记本'功能：个人知识库成为AI助手的标准能力层。Google于4月8日在Gemini应用中正式推出'笔记本'(Notebook",
+      "section": "",
+      "size": 1000219
+    },
+    {
+      "index": 6,
+      "file": "006.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) Google将'个人知识库'作为Gemini的核心能力层，说明AI助手的竞争正从'单次对话质量'转向'持续上下文理解'——输入法可以借鉴这一思路，构建用户的'表",
+      "section": "",
+      "size": 785806
+    },
+    {
+      "index": 7,
+      "file": "007.mp3",
+      "text": "第 3 个话题：Poke通过短信将AI Agent带给普通用户：零门槛入口正在重新定义AI产品的分发方式。TechCrunch于4月8日报道，由Spark Capital和General Cataly",
+      "section": "",
+      "size": 936271
+    },
+    {
+      "index": 8,
+      "file": "008.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) Poke验证了一个核心假设——AI Agent最有效的分发方式是嵌入用户已有的通信习惯中，而非创造新入口。输入法作为覆盖所有App的底层输入通道，天然具备比短信",
+      "section": "",
+      "size": 852261
+    },
+    {
+      "index": 9,
+      "file": "009.mp3",
+      "text": "第 4 个话题：Google开源LiteRT-LM端侧推理框架：端侧大模型部署从实验走向生产级标准化。Google AI Edge团队近日正式开源LiteRT-LM，这是一个专为边缘设备打造的生产级高",
+      "section": "",
+      "size": 965946
+    },
+    {
+      "index": 10,
+      "file": "010.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) LiteRT-LM提供了一条标准化的端侧大模型部署路径——输入法团队可以直接基于此框架在Android端部署轻量化AI帮写模型，而不必自研推理引擎，大幅降低端侧",
+      "section": "",
+      "size": 706812
+    },
+    {
+      "index": 11,
+      "file": "011.mp3",
+      "text": "接下来是需求挖掘环节，看看今天发现了哪些产品机会。",
+      "section": "💎 需求挖掘",
+      "size": 81545
+    },
+    {
+      "index": 12,
+      "file": "012.mp3",
+      "text": "第 1 个机会：输入上下文感知的服务唤起卡片，优先级：高。 用户痛点：用户在微信/钉钉等聊天窗口中输入'帮我订明天下午3点去上海的高铁'或'找一个好评多的川菜馆'时，需要手动切换到携程、大众点评等Ap",
+      "section": "",
+      "size": 1038253
+    },
+    {
+      "index": 13,
+      "file": "013.mp3",
+      "text": "第 2 个机会：个人表达知识库与写作风格记忆，优先级：中。 用户痛点：用户在使用AI帮写功能时，每次都需要重新描述自己的写作风格偏好（'写正式一点'、'用我平时的语气'），AI无法记住用户的表达习惯。",
+      "section": "",
+      "size": 1067928
+    },
+    {
+      "index": 14,
+      "file": "014.mp3",
+      "text": "最后来一组快讯。",
+      "section": "⚡ 快讯速递",
+      "size": 31390
+    },
+    {
+      "index": 15,
+      "file": "015.mp3",
+      "text": "Meta发布首款前沿大模型Muse Spark，Artificial Analysis智能指数52分位列前五。Meta Superintelligence Labs正式发布Muse Spark，这是M",
+      "section": "",
+      "size": 972216
+    },
+    {
+      "index": 16,
+      "file": "016.mp3",
+      "text": "Anthropic上诉法院败诉：未能暂停五角大楼'供应链风险'标签，面临矛盾裁决困局。华盛顿特区联邦上诉法院驳回Anthropic暂停五角大楼供应链风险指定的请求，但此裁决与旧金山法院此前授予的初步禁",
+      "section": "",
+      "size": 951736
+    },
+    {
+      "index": 17,
+      "file": "017.mp3",
+      "text": "神秘AI视频模型Happy Horse登顶Artificial Analysis排行榜，开发方成谜。一款名为Happy Horse 1.0的神秘AI视频生成模型在Artificial Analysis",
+      "section": "",
+      "size": 1024461
+    },
+    {
+      "index": 18,
+      "file": "018.mp3",
+      "text": "Spotify将AI提示词播放列表功能扩展至播客推荐，Premium用户可用。Spotify宣布将其AI驱动的Prompted Playlist功能从音乐扩展到播客。Premium用户可通过输入自然语",
+      "section": "",
+      "size": 907432
+    },
+    {
+      "index": 19,
+      "file": "019.mp3",
+      "text": "OpenAI基金会宣布本月敲定超1亿美元阿尔茨海默病研究资助。OpenAI基金会宣布正致力于在4月内敲定超过1亿美元的赠款，涉及六个研究机构，以加速阿尔茨海默病研究。这是基金会此前承诺的10亿美元年度",
+      "section": "",
+      "size": 886952
+    },
+    {
+      "index": 20,
+      "file": "020.mp3",
+      "text": "腾讯发布AI浏览器'龙虾'QBotClaw：支持自由配置主流大模型API。腾讯发布AI驱动浏览器QBotClaw（龙虾），支持用户自由配置国内各主流大模型API Key，打破单一模型绑定。内置X5us",
+      "section": "",
+      "size": 918299
+    },
+    {
+      "index": 21,
+      "file": "021.mp3",
+      "text": "以上就是今天的全部内容，感谢收听，明天见。",
+      "section": "",
+      "size": 73185
+    }
+  ],
+  "total_size_bytes": 16786178,
+  "failed": 0,
+  "duration_seconds": 327.0
+}

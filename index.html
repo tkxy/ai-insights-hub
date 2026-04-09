@@ -1154,751 +1154,15 @@
 
 <div class="main" id="map-page" style="display:none; max-width:1400px; margin:0 auto; padding:20px 48px 60px;">
 
-    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px;"><button class="cluster-chip active" data-cluster="帮写类" onclick="switchCluster('帮写类')" style="padding:8px 14px;border-radius:999px;font-size:13px;font-weight:600;cursor:pointer;border:none;font-family:inherit;transition:all 0.2s;background:#111;color:#fff;">帮写类 · 20</button><button class="cluster-chip" data-cluster="打字/输入类" onclick="switchCluster('打字/输入类')" style="padding:8px 14px;border-radius:999px;font-size:13px;font-weight:600;cursor:pointer;border:none;font-family:inherit;transition:all 0.2s;background:rgba(0,0,0,0.05);color:#555;">打字/输入类 · 13</button><button class="cluster-chip" data-cluster="服务/Agent类" onclick="switchCluster('服务/Agent类')" style="padding:8px 14px;border-radius:999px;font-size:13px;font-weight:600;cursor:pointer;border:none;font-family:inherit;transition:all 0.2s;background:rgba(0,0,0,0.05);color:#555;">服务/Agent类 · 7</button><button class="cluster-chip" data-cluster="安全/信任类" onclick="switchCluster('安全/信任类')" style="padding:8px 14px;border-radius:999px;font-size:13px;font-weight:600;cursor:pointer;border:none;font-family:inherit;transition:all 0.2s;background:rgba(0,0,0,0.05);color:#555;">安全/信任类 · 6</button><button class="cluster-chip" data-cluster="视觉/多模态类" onclick="switchCluster('视觉/多模态类')" style="padding:8px 14px;border-radius:999px;font-size:13px;font-weight:600;cursor:pointer;border:none;font-family:inherit;transition:all 0.2s;background:rgba(0,0,0,0.05);color:#555;">视觉/多模态类 · 5</button><button class="cluster-chip" data-cluster="语音类" onclick="switchCluster('语音类')" style="padding:8px 14px;border-radius:999px;font-size:13px;font-weight:600;cursor:pointer;border:none;font-family:inherit;transition:all 0.2s;background:rgba(0,0,0,0.05);color:#555;">语音类 · 3</button></div>
-
-        <div class="cluster-block" data-cluster="帮写类" style="display:block;background:rgba(255,255,255,0.88);border-radius:24px;border:1px solid rgba(0,0,0,0.06);padding:28px;margin-bottom:18px;">
-          <div style="display:flex;justify-content:space-between;gap:18px;align-items:start;margin-bottom:20px;flex-wrap:wrap;">
-            <div>
-              <div style="font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#888;margin-bottom:10px;">Function cluster</div>
-              <h3 style="font-size:28px;font-weight:900;letter-spacing:-1px;margin-bottom:8px;">帮写类</h3>
-              <p style="font-size:14px;color:#555;line-height:1.8;">聚焦帮写生成、风格控制、素材调用和写作协同。</p>
-            </div>
-            <div style="display:flex;gap:10px;flex-wrap:wrap;">
-              <div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">
-                <div style="font-size:22px;font-weight:800;">20</div>
-                <div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">累计机会</div>
-              </div>
-              <div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">
-                <div style="font-size:22px;font-weight:800;">14</div>
-                <div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">覆盖日期</div>
-              </div>
-              <div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">
-                <div style="font-size:22px;font-weight:800;">11</div>
-                <div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">高优需求</div>
-              </div>
-            </div>
-          </div>
-          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;">
-            
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-18</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">AI帮写的「场景感知」升级：从App维度到对话维度</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>参考OpenAI GPT-5.4的记忆功能迭代方向和every.to文章对「一人千面」的探讨，在帮写功能中引入对话级别的场景感知——自动识别当前对话的正式程度、关系亲疏、话题领域，动态调整语气和用词风格</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>every.to文章《Why I Turned Off ChatGPT's Memory》引发热议，用户对AI的场景化记忆有强烈的privacy-control需求；GPT-5.4 mini的速度优化使端侧实时推理成为可能</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">个性化</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-20</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">AI帮写的「置信度可视化」与推理透明化</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>融合置信度可视化和轻量推理展示：高置信度内容正常展示，低置信度标注提醒色并显示「AI觉得这个表达可能更合适，因为你在和领导聊天」。参考Claude HUD的仪表板理念，在AI帮写面板增加「AI在想什么」的轻量展示。这不仅提升可靠性，也能成为差异化卖点——「最透明的AI输入法」</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>EsoLang-Bench显示LLM在非主流场景准确率从90%骤降到3.8%；Claude HUD插件上线即获热议，说明AI可观测性需求强烈；工信部七部门要求AI生成内容标识；LangChain升级为LangSmith Fleet强调企业级…</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-21</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">AI「全托管写作」模式——从帮写到代写的信任设计</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>推出「全托管回复」模式：1）用户只需用语音或简短文字说明意图（如「同意，但要委婉」），AI直接生成完整回复；2）采用OpenAI的「实习生」隐喻做UI设计——显示为「AI草稿」而非直接发送，用户一键确认或微调后发出；3）按场景预设模板（工作群/家庭群/客户群），AI自动匹配合适的语气和措辞。核心是让用户感觉在「指挥」而…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>OpenAI计划2026年9月推出AI研究实习生；WordPress已允许AI代理直接发文；Cursor Composer 2证明AI自主执行代码已成现实；用户对快速回复的需求持续增长</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">语音</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-22</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">「角色语气」一键切换——面向一人公司的输入法功能</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>输入法内置「角色语气模板」：商务正式/技术专业/亲和销售/创意文案等预设模式，用户一键切换后AI自动调整建议词、句式和语气。进阶功能：根据聊天对象自动推荐语气（检测到是领导→商务正式，检测到是客户→亲和销售）。广东省政策支持一人公司发展意味着这个用户群将快速增长</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>央视报道广东省一人公司模式快速兴起；广东省出台《人工智能一人公司创新发展行动方案》；十五五规划全面实施AI+行动；「单人成军」成为AI时代新趋势</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">个性化</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-22</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">AI帮写「多风格对比」——让用户选择而非被动接受</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>推出「三选一」模式：AI帮写时同时生成三个版本——正式/轻松/简洁（或可自定义风格组合），用户滑动选择最合适的版本。进阶功能：1）记住用户在不同场景的偏好（如微信群偏好轻松、工作邮件偏好正式）自动排序；2）支持「混搭」——选A的开头+B的结尾组合成新版本；3）长按某个版本给出「为什么选/不选」的反馈来训练模型。参考Gr…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Grok 4.20四代理模式幻觉减少65%证明多Agent验证有效；用户调研显示AI帮写最大不满是「只有一个选项」；Midjourney的多图选择模式深受用户欢迎（可类比）</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-23</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">「Vibe输入」——语音意图驱动的全新AI帮写交互范式</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>推出「Vibe输入」模式：用户长按语音键说出意图（如「跟老板解释一下项目延期的原因，语气委婉一些」），AI直接生成完整文本而非逐字听写。参考Stitch的Vibe Design理念：1）意图理解而非语音转文字；2）提供2-3个不同语气版本供选择；3）支持追加修改（「再正式一些」「加个解决方案」）。这将AI帮写从「辅助工…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Google Stitch Vibe Design发布后Figma股价暴跌12%，证明语音/意图驱动范式对传统「手动操作」模式的颠覆力；中国AI周调用量4.69万亿Token证明用户大规模使用AI的意愿已形成</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">语音</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-26</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">AI帮写的分级自治权限系统</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>借鉴Anthropic Claude Code Auto Mode的「安全自治」设计，在输入法AI帮写中引入分级权限系统：1）低风险操作自动执行（如修正明显错别字、补全标点、补充常用词组），无需确认；2）中风险操作提供预览（如改写句式、调整语气），用户可快速扫描后一键确认；3）高风险操作必须确认（如替换整段内容、代发消…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Claude Code Auto Mode的自主安全评估机制获得开发者积极反馈；TechCrunch评价其有效平衡了「速度与安全」；Anthropic收入突破25亿美元证明了企业对高效AI工具的付费意愿</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">安全信任</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-27</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">个人素材库与历史文案调用</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>把"素材沉淀"做成可直接上线的帮写模块：1）自动归档用户采纳过的 AI 帮写结果；2）在帮写面板增加"历史同类文案""常用表达"入口；3）支持手动收藏和按场景打标签；4）在生成前优先召回最近使用过的相似文案；5）首期先覆盖工作消息、社交回复、朋友圈文案三类高频场景。</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>ChatGPT Library 已经把跨会话文件保存做成正式能力，说明用户对"历史内容可复用"有真实需求；多个媒体对这一功能的正面反馈也说明这不是边角功能，而是效率刚需。</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-28</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">写作人设规则面板</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>在帮写面板顶部增加"人设/规则"入口作为 MVP：1）提供正式、日常、亲密 3 个预设；2）允许用户用一句自然语言补充规则，如"给领导结尾要带感谢"；3）支持按联系人或 App 自动匹配；4）首期只覆盖微信、短信、邮件三个场景，先验证命中率与采纳率。</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Attie 已验证"用户用自然语言定义规则并长期生效"的模式可以进入大众产品；其价值不在一次结果，而在把规则资产前置给用户管理。</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">个性化</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-29</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">场景专用帮写模型路由</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>在输入法 AI 中增加场景路由层：1）根据 App、对话对象、文本长度和意图识别场景；2）分别调用更适合的模板或小模型策略；3）首期只做工作消息、社交回复、公告通知三类；4）在结果卡片上展示当前采用的场景模式，方便用户纠偏。</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Intercom Apex 1.0 在客服场景已超过 GPT-5.4，Harvey 与礼来/英矽智能案例也都说明，专用模型+专用流程比通用能力更容易形成可验证商业价值。</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-30</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">输入法写作人设规则引擎</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>在帮写功能中增加「写作人设」配置入口。入口位置：帮写面板顶部增加人设切换按钮（类似输入法皮肤切换）。触发条件：用户点击帮写时自动匹配当前对话对象关联的人设，或根据App识别自动推荐。核心能力：用户通过自然语言描述个人写作规则（如「给领导的消息用您称呼，结尾加感谢语」「给闺蜜可以用缩写和emoji」），系统将规则结构化存…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Bluesky Attie让用户用自然语言定义信息流规则并即时生效，验证了「用户可编程AI规则」的产品模式在消费级产品中可行且受欢迎。ActivTrak研究显示用户每天在碎片化沟通上花费的时间激增100%，多场景快速切换已成为刚需。当前市场…</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-17</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#c87b1a;background:#c87b1a18;">优先级：中</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">知识型输入辅助：专业内容创作助手</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>建立行业专业知识库，根据用户职业和场景提供专业级输入辅助</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>多款垂直领域AI写作工具获得融资</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-22</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#c87b1a;background:#c87b1a18;">优先级：中</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">AI内容原创度检查与合规标识</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>1）AI帮写后提供「原创度评分」，显示内容与已有公开内容的重复度；2）正式场景自动添加「AI辅助生成」隐性标识（可选）；3）提供「去AI痕迹」优化功能，让AI生成内容更自然、更个人化。这三层设计既保护用户又建立差异化竞争力</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Hachette因AI内容嫌疑撤回签约小说；工信部等七部门要求AI生成内容标识；Google实验AI生成搜索标题；AI内容检测工具市场快速增长</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">安全信任</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-24</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#c87b1a;background:#c87b1a18;">优先级：中</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">AI创意写作助手：覆盖歌词/剧本/故事的一站式创作入口</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>在输入法中开发'创意模式'，用户切换到该模式后，可以通过自然语言描述创意大纲，AI自动识别创作类型（歌词/剧本/故事/文案）并生成相应格式的初稿。支持'风格参考'功能（如'参考周杰伦风格写一首情歌歌词'），并提供多版本对比选择。这让输入法成为创作链条的第一环，后续可以对接音乐/视频生成平台。</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>程序员Yapie使用DeepSeek 2小时写歌《七天爱人》登热搜，9个月变现超20万；AI短剧《霍去病》3000元成本5亿播放。AI创作的商业闭环已经跑通。</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-24</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#c87b1a;background:#c87b1a18;">优先级：中</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">AI写作透明度标注：人机协作比例可视化</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>在输入法AI帮写功能中引入'AI参与度标注'：自动追踪用户与AI的协作过程，标记每段文字的来源（用户原创/AI建议采纳/AI生成后用户修改）。生成'创作报告'显示AI参与比例。在学术场景中可导出符合期刊要求的AI使用声明。这既回应了学术诚信需求，也是差异化竞争点。</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>华东师大'AI一作'实验724篇论文揭示人机协作新范式；多国学术机构和期刊开始要求标注AI使用情况；Thomson Reuters警告法律团队不要使用消费级AI工具。</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">安全信任</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-25</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#c87b1a;background:#c87b1a18;">优先级：中</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">输入法AI功能的场景化风格自动切换</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>借鉴Anthropic经济指数报告中揭示的'AI使用场景细分'趋势，在输入法中实现'场景感知的自适应写作风格'：1）根据当前所在App自动识别场景（社交/工作/购物/娱乐）；2）根据聊天对象的历史对话风格自动调整正式程度；3）提供'风格记忆'功能——记住用户在每个群组的表达习惯并自动匹配；4）一键切换风格预设（如'职场…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Anthropic经济指数显示AI在写作辅助场景的使用增长最快；Ramp报告中编程和写作是企业AI应用的两大核心场景</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">个性化</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-25</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#c87b1a;background:#c87b1a18;">优先级：中</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">AI帮写的多变体输出与对比选择</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>参考Google Stitch的'多方向并行探索'设计，在输入法AI帮写中实现'一次生成多变体'功能：1）AI同时生成2-3种不同风格/角度的文本供用户选择；2）支持用户混合编辑——从A方案取开头，从B方案取结尾；3）提供简洁的对比视图让用户快速扫描差异；4）学习用户的选择偏好，逐步优化默认输出方向。这可显著提升AI帮…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Google Stitch的代理管理器设计验证了并行探索多种方案的用户价值；AI编程工具Cursor也采用多候选方案机制提升用户满意度</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">个性化</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-27</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#c87b1a;background:#c87b1a18;">优先级：中</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">离线基础帮写包</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>把基础帮写能力拆成一个端侧可落地的小包：1）端上先承接纠错、短句润色、续写 1 句等轻任务；2）网络差时自动切到离线模式；3）复杂长文继续走云端；4）在设置页明确标注"本地处理/云端处理"的边界；5）首期重点验证响应时延下降和弱网可用性提升。</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>TurboQuant 和 iPhone 17 Pro 跑超大模型这两条新闻共同说明端侧推理门槛正在快速下降；这意味着输入法没必要一上来追求全量离线，但完全有机会先把最常用的一小部分帮写任务下沉到本地。</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-29</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#c87b1a;background:#c87b1a18;">优先级：中</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">事实型帮写谨慎模式</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>为事实型与承诺型表达增加谨慎模式：1）在识别到时间、金额、专业术语、确认语气时自动触发；2）优先输出保守版本文案，如"建议""拟定""待确认"；3）必要时提示用户补充来源或二次确认；4）首期只覆盖工作沟通与正式文本场景。</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>ARC-AGI-3 显示前沿模型在陌生任务上依然脆弱，说明把开放能力直接投向高风险表达并不稳妥。对于输入法这类高频入口，边界感本身就是体验的一部分。</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-31</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#c87b1a;background:#c87b1a18;">优先级：中</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">帮写能力插件化开放框架</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>参考 OpenAI Codex 的插件架构（技能 Skills + 应用集成 App Integrations + MCP 服务器），为帮写功能设计一套插件化框架。入口为帮写设置页的「模型与插件」管理面板；触发条件为用户在帮写时选择特定插件或系统根据输入场景自动匹配；核心能力为标准化的帮写插件接口（输入文本/上下文 →…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>OpenAI Codex 插件系统上线后 3 天内，连 Anthropic 竞品都主动集成（codex-plugin-cc）。MCP 协议已达 9700 万安装量，所有主要 AI 提供商都支持。这说明 AI 工具的互操作已从趋势变成基础设施…</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cluster-block" data-cluster="打字/输入类" style="display:none;background:rgba(255,255,255,0.88);border-radius:24px;border:1px solid rgba(0,0,0,0.06);padding:28px;margin-bottom:18px;">
-          <div style="display:flex;justify-content:space-between;gap:18px;align-items:start;margin-bottom:20px;flex-wrap:wrap;">
-            <div>
-              <div style="font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#888;margin-bottom:10px;">Function cluster</div>
-              <h3 style="font-size:28px;font-weight:900;letter-spacing:-1px;margin-bottom:8px;">打字/输入类</h3>
-              <p style="font-size:14px;color:#555;line-height:1.8;">强调输入框入口、回复效率、键盘操作和即时表达。</p>
-            </div>
-            <div style="display:flex;gap:10px;flex-wrap:wrap;">
-              <div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">
-                <div style="font-size:22px;font-weight:800;">13</div>
-                <div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">累计机会</div>
-              </div>
-              <div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">
-                <div style="font-size:22px;font-weight:800;">9</div>
-                <div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">覆盖日期</div>
-              </div>
-              <div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">
-                <div style="font-size:22px;font-weight:800;">9</div>
-                <div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">高优需求</div>
-              </div>
-            </div>
-          </div>
-          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;">
-            
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-17</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">跨语言即时沟通：实时翻译输入</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>在输入法中集成实时翻译，用户用中文打字可以直接输出英文（或其他语言），反之亦然</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>远程办公增长带来跨语言沟通需求激增</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-20</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">端云协同的Token成本优化架构</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>建立三层AI推理架构：L1端侧（词补全、短语预测，零Token消耗）→ L2边缘（句子级改写、语法纠错，低Token消耗）→ L3云端（长文生成、跨语言翻译，高Token消耗但低频）。Unsloth统一Web UI让本地模型训练变得更简单，结合阿里ATH将Token作为核心经济单位的战略——谁能更高效地使用Token，…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>阿里巴巴成立ATH事业群，Token成为AI基础设施核心经济单位；Unsloth AI推出统一Web UI大幅降低本地模型训练门槛；小米MiMo-V2支持1M超长上下文API；端侧AI芯片性能持续提升</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-21</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">AI功能「介入阈值」智能控制系统</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>设计智能介入机制：1）根据输入场景（聊天/邮件/文档）动态调整AI介入强度；2）根据用户历史行为学习「他什么时候需要AI帮助」；3）提供AI强度滑块让用户自主控制。微软的失败是最好的反面教材——先做好「少而精」再逐步拓展</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>微软回滚Windows Copilot功能引发行业反思；用户对AI过度集成的负面反馈持续增加；WordPress允许AI发文引发对AI内容泛滥的担忧</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-21</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">输入法垂直AI模型自研路径</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>参考Cursor路径建立输入法垂直模型：1）基于通用模型底座做持续预训练（中文输入语料）；2）用真实输入数据做场景微调；3）通过用户采纳/拒绝反馈做强化学习。目标：在中文输入预测准确率上超越通用大模型，同时成本降低80%+</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Cursor Composer 2在编码基准超越Opus 4.6且成本便宜86%；Hugging Face发布一天内构建领域嵌入模型教程；行业趋势从通用走向垂直</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-22</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">输入法作为AI应用普及的「隐形入口」</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>输入法是实现AI应用普及的最佳载体——用户已经在用，不需要额外安装或学习。策略：1）将AI能力嵌入现有输入流程（如智能联想从词级扩展到句级甚至段落级）；2）渐进式引导（先让用户感知到输入法变聪明了，再逐步引入AI帮写等高阶功能）；3）用数据证明价值（如「本月AI帮你省了3小时打字时间」）。目标：让用户在不知不觉中成为A…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>蔡崇信论坛演讲：AI终极目标是应用普及；政策目标2030年AI普及率超90%；中国大模型周调用量4.69万亿Token证明应用层已在爆发；输入法日活覆盖几乎全部手机用户</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-22</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">输入法「首次AI体验」零摩擦设计——破解落地鸿沟</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>设计「零摩擦首次体验」流程：1）智能时机触发——在用户第一次输入超过20个字的长句时自动弹出「AI可以帮你优化这段话」的提示（而非在每次打字时都提示）；2）一键体验——点击后直接展示优化结果，不需要任何设置或学习过程；3）首次价值量化——「AI帮你将51个字精简为28个字，表达更清晰」；4）3天渐进引导——第1天只推荐…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>英国政府签约OpenAI后数月未试用——落地鸿沟是真实且普遍的；微软Copilot因功能过度被迫回滚；产品增长数据显示首次体验质量决定30天留存率</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-23</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">输入法作为移动端AI「超级入口」的机会窗口</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>将输入法升级为移动端AI超级入口：1）在键盘上方增加「AI工具栏」——一键调用摘要、翻译、搜索、计算等高频AI能力，无需切换App；2）智能场景识别——在外卖App中自动提供「AI点评生成」，在邮件App中提供「AI回复」，在社交App中提供「AI帮聊」；3）集成轻量级信息卡片——输入关键词直接在键盘区展示搜索结果或计…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>OpenAI超级应用整合（Codex周活200万+）证明入口聚合是大趋势；Google AI Studio全栈体验说明工具整合是用户需求；Cloudflare CEO预测2027年机器人流量超人类，AI入口争夺将更加激烈</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-29</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">消息通知智能预回复卡片</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>在系统通知回复框或输入框顶部提供预回复卡片：1）结合通知内容与最近上下文生成 1-3 个低风险候选；2）优先覆盖"收到/稍后回/我来跟进/稍等一下"这类高频意图；3）支持一键发送或点开再润色；4）首期聚焦微信、企业微信和短信三类高频消息入口。</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>ActivTrak 报告显示 AI 提效并未减少协作负担，反而让工作更碎片化；这意味着"快速处理眼前消息"会成为高频刚需，而不是边缘需求。</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-30</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">消息通知智能预回复卡片</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>在输入法层拦截通知内容，在用户打开聊天窗口时即在输入框上方展示2-3个智能预回复建议卡片。入口位置：输入法键盘上方的悬浮建议栏（类似当前的快捷短语栏位）。触发条件：检测到用户从通知跳转进入聊天窗口时自动触发，读取最近几条消息上下文生成回复建议。核心能力：基于对话上下文的轻量回复生成，支持一键发送和微调编辑。MVP方案：…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>ActivTrak《2026职场现状》报告量化了沟通碎片化问题的严重程度。Claude Code已支持通过iMessage控制Agent、Ramp CLI让Agent管理公司财务，证明AI Agent正在渗透日常工作流的即时通讯层。目前主流…</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-19</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#c87b1a;background:#c87b1a18;">优先级：中</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">AI动态视觉个性化键盘体验</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>利用端侧AI渲染能力（参考DLSS 5方向），探索动态生成键盘视觉效果——根据时间/天气/情绪/对话内容实时变化键盘外观。先从简单的色彩氛围调节开始（如夜间自动暗色调、节日主题自动切换），逐步向AI生成动态纹理/动效演进</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>NVIDIA DLSS 5实现极低算力的实时神经渲染；RTX PRO Blackwell工作站可本地运行4000 TOPS AI算力；端侧AI芯片性能持续提升，移动端实时AI渲染在2-3年内可期</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">多模态</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-21</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#c87b1a;background:#c87b1a18;">优先级：中</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">本地AI推理——隐私驱动的输入法差异化卖点</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>推出「本地AI模式」：1）将轻量级AI模型（如3B参数的输入预测模型）内置到输入法App中，核心功能不需联网；2）敏感场景自动切换到「纯本地」模式并明确提示用户「数据不出设备」；3）在设置中提供「隐私仪表盘」——清晰展示哪些数据在本地处理、哪些上传云端、用户可以一键关闭云端功能。Tiny Corp的成功证明本地AI有强…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Tiny Corp tinybox开售（3086 TFLOPS / 384GB显存）证明本地AI算力需求旺盛；苹果持续推进On-Device AI战略；用户隐私敏感度持续提升；输入法是最高频的数据入口之一</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-23</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#c87b1a;background:#c87b1a18;">优先级：中</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">面向500万AI人才缺口的「AI辅助学习」输入场景</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>针对开发者和AI学习者群体打造专属输入增强：1）代码片段智能补全——在聊天/笔记场景中输入代码时，提供语法高亮和智能补全；2）技术术语中英混合输入优化——AI开发者频繁中英切换（如「用transformer的attention机制」），输入法应无缝支持；3）学习笔记自动结构化——输入散乱笔记后，AI自动整理为知识卡片格…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>AI开源生态白皮书数据：AI人才缺口500万+，头部项目中国开发者占比18.7%仅为美国的一半；魔搭社区大会吸引2000+开发者参与；Cursor Composer 2 等AI编程工具快速普及</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-25</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#c87b1a;background:#c87b1a18;">优先级：中</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">基于屏幕上下文的智能输入预测：从Littlebird的实时屏幕理解获取灵感</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>参考Littlebird的实时屏幕上下文理解技术，在输入法中引入'屏幕感知输入'功能：1）在用户授权后，AI读取当前屏幕文本内容作为上下文，智能预测用户可能想输入的内容；2）在回复邮件、评论商品、回应消息时，自动提取屏幕关键信息生成更精准的回复建议；3）结合剪贴板历史和屏幕上下文，提供'基于当前工作流'的智能输入补全。…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Littlebird获得1100万美元融资验证了屏幕上下文理解的市场需求；其AI实时读取屏幕而非依赖截图的技术路径已获投资者认可；微软Recall功能虽因隐私争议受挫但市场需求真实存在</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">多模态</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cluster-block" data-cluster="服务/Agent类" style="display:none;background:rgba(255,255,255,0.88);border-radius:24px;border:1px solid rgba(0,0,0,0.06);padding:28px;margin-bottom:18px;">
-          <div style="display:flex;justify-content:space-between;gap:18px;align-items:start;margin-bottom:20px;flex-wrap:wrap;">
-            <div>
-              <div style="font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#888;margin-bottom:10px;">Function cluster</div>
-              <h3 style="font-size:28px;font-weight:900;letter-spacing:-1px;margin-bottom:8px;">服务/Agent类</h3>
-              <p style="font-size:14px;color:#555;line-height:1.8;">把输入法延伸为服务入口、任务发起器和协作枢纽。</p>
-            </div>
-            <div style="display:flex;gap:10px;flex-wrap:wrap;">
-              <div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">
-                <div style="font-size:22px;font-weight:800;">7</div>
-                <div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">累计机会</div>
-              </div>
-              <div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">
-                <div style="font-size:22px;font-weight:800;">6</div>
-                <div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">覆盖日期</div>
-              </div>
-              <div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">
-                <div style="font-size:22px;font-weight:800;">5</div>
-                <div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">高优需求</div>
-              </div>
-            </div>
-          </div>
-          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;">
-            
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-19</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">输入法作为'微型智能体入口'的平台化升级</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>借鉴OpenClaw'智能体操作系统'的理念，将输入法打造为移动端轻量级智能体入口。输入法可以开放技能插件接口，让第三方开发者构建针对输入场景的专属Agent（如：自动识别聊天对象并调整语气的'社交Agent'、实时翻译并适配文化语境的'跨语言Agent'、帮助整理和总结聊天记录的'记忆Agent'）</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>NVIDIA GTC 2026将OpenClaw定义为智能体界的Android，黄仁勋称其为下一个ChatGPT；腾讯紧急开发微信AI智能体对标；NemoClaw让开发者一条命令即可部署安全的24/7数字员工——智能体生态化已成行业共识</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-24</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">输入法Agent化：从文本输入到任务发起中心</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>输入法作为全场景覆盖的输入入口，可以成为'轻量级Agent触发器'：用户在任意输入框中通过特定手势或关键词唤起Agent模式，输入法理解用户意图后调用后端Agent完成任务（如'帮我查一下明天北京到上海的高铁'→直接返回结果嵌入对话）。先从信息查询类轻任务切入，逐步扩展到文件操作类重任务。</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Anthropic Claude Cowork新增Projects功能和计算机控制能力，微软Copilot Cowork接入M365，阿里悟空定位企业级Agent平台——各大厂商都在抢占Agent入口，输入法作为移动端最高频入口具有差异化优…</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-26</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">输入法AI帮写的「对话式商品推荐」能力</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>在输入法AI帮写中增加「智能商品识别与推荐」模块：1）当AI检测到用户正在输入或回复与购物相关的内容时，自动在候选区展示相关商品卡片（含图片、价格、评分）；2）支持用户一键将商品信息以格式化卡片形式发送给聊天对象；3）提供比价和优惠信息聚合，帮用户在对话中即时做出购买决策。这将输入法从纯文字工具升级为「对话中的商业助手…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>ChatGPT通过ACP协议接入沃尔玛、Target等零售商实现对话式购物；Gap成为首家在Gemini中提供即时结账的时尚品牌；41%的消费者已使用AI进行产品发现</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">多模态</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-27</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">输入框内服务唤起卡片（打车/外卖/快递）</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>做一个键盘顶部的服务唤起卡片作为首期 MVP：1）识别出行、订餐、快递查询等高频意图词；2）在候选栏上方展示对应快捷卡片；3）点击后带着已识别的参数跳转到高德/美团/快递服务页；4）首期只做打车、外卖、查快递三个场景，先验证点击率和转化率，再决定是否扩品类。</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>千问已上线 AI 打车，滴滴推出 90+ 服务标签的 AI 出行助手，说明"输入一句话直接办事"已经从概念变成真实产品动作；ChatGPT 也在把购物能力前置到对话入口。</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-28</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">输入框内服务跳转卡片</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>在候选栏上方增加服务跳转卡片：1）识别购物、出行、订位等明确意图；2）把已识别的关键参数（目的地、商品关键词、时间）带入对应服务；3）首期只接 2-3 个高频服务，不追求全量覆盖；4）用户点击后进入合作方页面完成后续动作，输入法承担意图识别与交接，不承担交易本身。</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Shopify 已把商品目录直接接入 ChatGPT、Copilot 和 Gemini，证明用户正被训练为"在对话入口里完成发现与跳转"；UCP 也在推动代理式交易的标准化。</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-21</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#c87b1a;background:#c87b1a18;">优先级：中</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">意图表达层——输入法的Agent时代进化</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>将输入法从「文字输入工具」升级为「意图表达中枢」：用户可以通过输入法用自然语言描述意图，输入法理解后路由到合适的AI Agent执行。例如用户输入「帮我给领导写个请假邮件」，输入法自动生成邮件内容并一键发送。这让输入法成为Agent OS的入口而非被替代</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>WordPress.com允许AI代理直接发文；Dreamer提出个人Agent OS愿景；Claude新增Projects功能强化Agent上下文管理；行业共识Agent化是下一阶段</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">语音</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-26</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#c87b1a;background:#c87b1a18;">优先级：中</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">输入法AI从帮写到帮做：Agent能力的渐进式引入</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>在输入法中渐进式引入Agent能力：1）第一阶段「帮写+帮发」——AI生成文本后，用户一键发送到当前聊天窗口，无需复制粘贴；2）第二阶段「帮写+帮搜」——AI根据聊天上下文自动搜索相关信息（如对方提到的餐厅地址、电影时间）嵌入回复；3）第三阶段「帮写+帮做」——AI完成跨应用任务链，如根据对话内容自动创建日历事件、设置…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>OpenAI关停Sora将资源全面转向AI代理和超级应用；DeepSeek 17个Agent岗位显示Agent产品化成为行业共识；OpenAI将ChatGPT桌面应用、Codex和Atlas浏览器整合为超级应用</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cluster-block" data-cluster="安全/信任类" style="display:none;background:rgba(255,255,255,0.88);border-radius:24px;border:1px solid rgba(0,0,0,0.06);padding:28px;margin-bottom:18px;">
-          <div style="display:flex;justify-content:space-between;gap:18px;align-items:start;margin-bottom:20px;flex-wrap:wrap;">
-            <div>
-              <div style="font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#888;margin-bottom:10px;">Function cluster</div>
-              <h3 style="font-size:28px;font-weight:900;letter-spacing:-1px;margin-bottom:8px;">安全/信任类</h3>
-              <p style="font-size:14px;color:#555;line-height:1.8;">涉及安全、透明、合规、事实性与用户信任的底层能力。</p>
-            </div>
-            <div style="display:flex;gap:10px;flex-wrap:wrap;">
-              <div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">
-                <div style="font-size:22px;font-weight:800;">6</div>
-                <div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">累计机会</div>
-              </div>
-              <div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">
-                <div style="font-size:22px;font-weight:800;">6</div>
-                <div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">覆盖日期</div>
-              </div>
-              <div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">
-                <div style="font-size:22px;font-weight:800;">4</div>
-                <div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">高优需求</div>
-              </div>
-            </div>
-          </div>
-          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;">
-            
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-19</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">AI功能的安全信任体系建设</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>率先建立输入法AI功能的'信任架构'：可视化的权限管理面板（用户一目了然AI能访问什么）、操作审计日志、敏感操作二次确认机制。将安全可控作为差异化卖点，让用户放心使用AI增强功能</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Claude Claudy Day三连锁漏洞可通过广告链接窃取用户数据；美国司法部称Anthropic的安全限制使其不适合军事用途——说明AI安全已上升到国家层面；输入法直接接触用户所有输入内容，安全信任是基础</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">安全信任</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-20</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">AI操作的「安全回滚」与内容质量保障机制</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>设计双重保障系统：1）AI操作安全回滚——所有AI执行操作自动创建还原点，AI发送消息标记为「AI生成」并支持快速撤回；2）AI内容质量保障层——关键场景（工作邮件、正式文档）自动触发二次校验，涉及事实性内容时提示用户核实。参考六巨头为开源安全投资的思路，输入法也需要一个「内容安全网」</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Meta AI Agent错误建议导致2小时未授权数据访问；六大科技巨头联投1250万美元应对AI引发的开源安全危机；工信部要求高风险AI应用实施强制安全测评；苹果Xcode 26.3引入AI操作一键撤回</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">服务入口</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-23</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">输入法AI功能的「安全可信层」设计</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>将安全透明度作为产品差异化卖点：1）在AI帮写界面明确标注「本次生成在本地完成/需上传云端」；2）提供「隐私模式」——密码、银行卡号等敏感场景自动关闭AI功能；3）参考ClawGuard Auditor的思路，定期发布AI功能安全审计报告，主动建立信任。在AI信任危机的大环境下，「最安全的AI输入法」比「最聪明的AI输…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>北航开源ClawGuard Auditor梳理9大高危风险；CNNVD统计OpenClaw漏洞82个（超危12个、高危21个）；工信部等七部门AI安全治理行动计划推进中；AI开源生态白皮书强调安全治理迫切性</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">安全信任</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-25</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">AI帮写的模型透明度与信任机制</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>在输入法AI帮写功能中增加'模型透明度'设计：1）在设置页面清晰标注当前使用的AI模型名称和版本；2）提供数据处理方式的简明说明（端侧/云端、是否留存）；3）支持用户自主选择不同模型（如切换国产/海外模型）；4）在AI生成的内容旁标注模型来源水印。这不仅是合规需要，更是建立用户信任的竞争优势。</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Cursor因模型来源不透明遭遇全网批评，VentureBeat称其'暴露了西方开源AI更深层的问题'；Ramp数据显示企业用户越来越看重AI供应商的透明度和可信度</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">安全信任</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-24</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#c87b1a;background:#c87b1a18;">优先级：中</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">AI防伪与反深度伪造输入检测</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>在输入法中集成AI内容检测功能：①接收端——用户收到疑似AI生成的消息时，输入法提供'AI概率检测'快捷入口，一键分析文本/图片是否为AI生成；②发送端——当用户使用AI帮写功能时，自动在消息元数据中嵌入'AI辅助'标记（可选择是否可见），建立可信通信标准。</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>霍启刚AI换脸事件引发社会关注；白宫AI框架虽未出台联邦法规但方向已明确；AI安全和可信度成为各大论坛热议话题。</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">多模态</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-26</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#c87b1a;background:#c87b1a18;">优先级：中</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">端侧AI模型部署：隐私与速度的双重竞争力</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>参考奔驰×智谱的端侧多模态大模型部署经验，加速输入法AI的端侧化策略：1）将核心AI帮写模型的轻量版本部署在手机端，实现离线可用的基础AI能力（如错别字修正、句式补全、常用表达推荐）；2）采用端云协同架构——端侧处理低延迟需求，云端处理复杂推理需求（如长文本改写、专业场景写作）；3）在产品中明确标注「本地处理」标签，增…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>奔驰迈巴赫成功部署端侧多模态大模型，兼顾速度和隐私；VC投资重心从模型层转向基础设施层；快手AIGC广告营收达40亿元证明AI商业化需要稳定可靠的基础设施支撑</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">安全信任</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cluster-block" data-cluster="视觉/多模态类" style="display:none;background:rgba(255,255,255,0.88);border-radius:24px;border:1px solid rgba(0,0,0,0.06);padding:28px;margin-bottom:18px;">
-          <div style="display:flex;justify-content:space-between;gap:18px;align-items:start;margin-bottom:20px;flex-wrap:wrap;">
-            <div>
-              <div style="font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#888;margin-bottom:10px;">Function cluster</div>
-              <h3 style="font-size:28px;font-weight:900;letter-spacing:-1px;margin-bottom:8px;">视觉/多模态类</h3>
-              <p style="font-size:14px;color:#555;line-height:1.8;">结合图片、截图、拍照和屏幕上下文的混合输入能力。</p>
-            </div>
-            <div style="display:flex;gap:10px;flex-wrap:wrap;">
-              <div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">
-                <div style="font-size:22px;font-weight:800;">5</div>
-                <div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">累计机会</div>
-              </div>
-              <div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">
-                <div style="font-size:22px;font-weight:800;">4</div>
-                <div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">覆盖日期</div>
-              </div>
-              <div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">
-                <div style="font-size:22px;font-weight:800;">3</div>
-                <div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">高优需求</div>
-              </div>
-            </div>
-          </div>
-          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;">
-            
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-18</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">「图片→可编辑文字」的零摩擦体验</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>借鉴Canva Magic Layers将图片拆解为可编辑图层的思路，在输入法中集成一键OCR→可编辑文本功能，长按图片即可提取文字到输入框，支持直接编辑和转发</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Canva Magic Layers上线即获得广泛关注；国内用户大量使用截图+图片进行信息传递，格式转换需求刚需</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">多模态</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-26</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">拍照即生成文案：视觉驱动的AI输入新模式</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>参考闲鱼AI相机的5秒商品识别和描述生成能力，在输入法中内置「拍照生文」功能：1）用户在任何输入框场景下拍照或选择相册图片，AI自动识别图片内容并生成多种风格的文案（如「商品描述」「朋友圈文案」「评价吐槽」）；2）支持用户语音补充细节信息，AI综合图片和语音生成更精准的文案；3）提供一键格式化功能，根据目标平台（闲鱼、…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>闲鱼AI相机上线后可5秒完成商品识别和描述生成，大幅提升卖家发布效率；奔驰迈巴赫的多模态大模型证明了视觉+语音+文字融合交互的可行性</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">语音</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-31</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">语音+截图混合输入帮写</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>利用全模态模型（如 Qwen3.5-Omni 的端到端多模态能力），在输入法帮写中支持「语音+截图」混合输入：用户长按帮写按钮 → 说话描述意图 → 同时粘贴或拍一张截图 → 模型综合理解后生成回复。入口位于输入法工具栏的帮写按钮；触发条件为用户选择「看图说话」模式或系统检测到剪贴板有图片；核心能力为语音意图理解 +…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Qwen3.5-Omni 的发布证明全模态端到端模型已具备生产级能力，支持 256k 上下文和 10 小时音频。其 Vibe Coding 能力（看屏幕+听语音→生成代码）直接验证了「视觉+语音→结构化输出」的技术路径可行性。同期 Goog…</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">语音</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-18</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#c87b1a;background:#c87b1a18;">优先级：中</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">AI生成「富内容消息」而非纯文字</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>参考Claude交互式可视化的方向，让帮写功能支持生成包含Emoji组合、Markdown列表、简单表格的富文本内容，一键插入到支持富文本的App中</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Claude交互式视觉功能获得极高用户评价；社交平台中表情+文字混合表达已成为主流</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">多模态</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-23</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#c87b1a;background:#c87b1a18;">优先级：中</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">「AI可视化表达」——从纯文字输入到图文混合输出</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>拓展AI帮写的输出形态：1）「文字+配图」一键生成——用户描述朋友圈内容，AI同时生成文案和配图建议（可调用Midjourney/DALL-E API）；2）工作场景中的「数据→图表」——用户在聊天中描述数据，AI直接生成可视化图表插入对话；3）表情包智能推荐——根据对话语境AI推荐或生成定制表情包。从「文字输入工具」…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Midjourney V8速度5倍提升使即时图片生成成为可能；MAI-Image-2证明图片生成质量已达商用水准；Claude交互式图表功能证明AI视觉输出用户接受度高</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">多模态</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cluster-block" data-cluster="语音类" style="display:none;background:rgba(255,255,255,0.88);border-radius:24px;border:1px solid rgba(0,0,0,0.06);padding:28px;margin-bottom:18px;">
-          <div style="display:flex;justify-content:space-between;gap:18px;align-items:start;margin-bottom:20px;flex-wrap:wrap;">
-            <div>
-              <div style="font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#888;margin-bottom:10px;">Function cluster</div>
-              <h3 style="font-size:28px;font-weight:900;letter-spacing:-1px;margin-bottom:8px;">语音类</h3>
-              <p style="font-size:14px;color:#555;line-height:1.8;">围绕语音输入、语音生成和口述驱动的表达流程。</p>
-            </div>
-            <div style="display:flex;gap:10px;flex-wrap:wrap;">
-              <div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">
-                <div style="font-size:22px;font-weight:800;">3</div>
-                <div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">累计机会</div>
-              </div>
-              <div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">
-                <div style="font-size:22px;font-weight:800;">3</div>
-                <div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">覆盖日期</div>
-              </div>
-              <div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">
-                <div style="font-size:22px;font-weight:800;">1</div>
-                <div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">高优需求</div>
-              </div>
-            </div>
-          </div>
-          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;">
-            
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-25</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#d44;background:#d4418;">优先级：高</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">语音驱动的智能输入：从Google Stitch Voice Canvas获取灵感</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>参考Google Stitch的Voice Canvas功能，在输入法中打造'语音指令式写作'：1）用户可以通过语音描述写作目标，AI自动生成对应风格和格式的文本；2）支持语音实时修改——'把第二段改得更委婉些'、'加一个祝好结尾'；3）提供语音面试式引导——AI通过几个问题快速理解用户写作需求后一键生成完整内容。这将…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Google Stitch的Voice Canvas功能证明了语音驱动创作的可行性，且用户反馈极为积极；移动端长文本输入一直是用户痛点</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">语音</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-29</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#c87b1a;background:#c87b1a18;">优先级：中</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">帮写结果一键转语音发送</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>在帮写结果卡片中并排提供"发送文本"和"转语音发送"两个动作：1）触发时机为文本生成完成后；2）先支持预设音色，不做复杂声纹；3）首期仅覆盖中文与微信语音消息；4）当检测到蓝牙耳机、驾驶模式或弱手输入场景时优先高亮该功能。</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Voxtral TTS 已证明高质量语音合成可以开源、低时延并跑在边缘设备上，这使"帮写→帮说"第一次具备了足够现实的产品化基础。</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">语音</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span></div>
-            </div>
-            <div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="font-size:12px;font-weight:700;color:#888;">03-30</span>
-                <span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#c87b1a;background:#c87b1a18;">优先级：中</span>
-              </div>
-              <h4 style="font-size:17px;font-weight:800;line-height:1.35;">帮写文本一键语音合成发送</h4>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>在帮写功能生成文本后，增加「转为语音发送」按钮。入口位置：帮写结果卡片右下角，与「发送文本」并列。触发条件：帮写生成文本后自动显示语音化选项；当检测到用户连接蓝牙耳机或处于驾驶模式时，优先高亮语音发送选项。核心能力：调用端侧TTS模型将帮写文本转为用户声纹匹配的语音片段，支持预览后一键发送。MVP方案：首期使用预设的自…</div>
-              <div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>Mistral Voxtral TTS开源模型在3B参数下已实现超越ElevenLabs的质量，可运行在智能手表级硬件上，证明端侧高质量TTS技术已成熟。Sanas同时发布13种语言实时翻译，多语言语音合成正在标准化。当前国内主流输入法均未…</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;"><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">语音</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">帮写</span><span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">输入效率</span></div>
-            </div>
-          </div>
-        </div>
-</div>
-
-<div class="main" id="design-page" style="display:none; max-width:1400px; margin:0 auto; padding:60px 48px 60px;">
-  <div id="design-loading" style="text-align:center;padding:60px 0;color:#888;">正在加载 Design Weekly...</div>
-</div>
-
-<div class="main" id="knowledge-page" style="display:none; max-width:1400px; margin:0 auto; padding:20px 48px 60px;">
-
-  <div class="knowledge-input-area" style="display:none;">
-    <div class="knowledge-input-row">
-      <input type="text" id="knowledgeUrlInput" class="knowledge-url-input" placeholder="粘贴文章链接，如 https://..." autocomplete="off" />
-      <button id="knowledgeAnalyzeBtn" class="knowledge-analyze-btn" onclick="analyzeKnowledgeUrl()">
-        <span class="analyze-btn-text">添加</span>
-        <span class="analyze-btn-loading" style="display:none;">
-          <span class="analyze-spinner"></span>分析中...
-        </span>
-      </button>
+    <div id="map-clusters-chips" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px;">
+      <!-- 动态渲染：loadAndRenderMapClusters() -->
     </div>
-    <div id="knowledgeError" class="knowledge-error" style="display:none;"></div>
+    <div id="map-clusters-body">
+      <!-- 动态渲染：loadAndRenderMapClusters() -->
+    </div>
   </div>
 
-  <div id="knowledgeCardsHeader" class="knowledge-cards-header" style="display:none;"></div>
-
-  <div id="knowledgeCards" class="knowledge-cards">
-    <!-- 卡片将动态插入 -->
-  </div>
-
-  <div id="knowledgeEmpty" class="knowledge-empty">
-    <div class="knowledge-empty-icon">📚</div>
-    <p>当前还没有收录内容</p>
-  </div>
-</div>
-
-<!-- Blog Page: Audio Podcast Player -->
-<div class="main" id="blog-page" style="display:none;">
-  <div class="blog-container" id="blogContent">
-    <!-- Player injected by JS -->
-  </div>
-</div>
-
-
-<div class="footer">
+  <div class="footer">
   AI Insights Hub
 </div>
 
@@ -2557,6 +1821,183 @@ updateVoiceButtonAvailability();
   navigate(todayStr);
 })();
 
+// ===== 聚类需求地图动态渲染 =====
+var demandClusterCache = null;
+
+function classifyDemand(item) {
+  var title = item.title || '';
+  if (/安全|信任|可信度|置信度|隐私|透明|合规|防伪|幻觉|回滚|过滤|审核|水印|来源标注|坦诚|事实核查|权限|自治/.test(title))
+    return '安全信任类';
+  if (/模型路由|端云|端侧|离线|成本|降级|冗余|自研|部署|供应商/.test(title))
+    return '基础设施类';
+  if (/个性化|知识库|素材库|人设|风格|语气|历史文案|屏幕上下文/.test(title))
+    return '个性化类';
+  if (/Agent|入口|平台|超级入口|智能体|任务|服务跳转|通知预回复/.test(title))
+    return '平台入口类';
+  return '帮写场景类';
+}
+
+function stripHtml(str) {
+  if (!str) return '';
+  return str.replace(/<[^>]*>/g, '').replace(/\n+/g, ' ').trim();
+}
+
+function getDemandCardHtml(item, index) {
+  var prio = item.priority || '中';
+  var prioColor = prio === '高' ? '#d44' : '#c87b1a';
+  var prioBg = prio === '高' ? '#d4418' : '#c87b1a18';
+  var dateStr = item.date || item.source_date || '04-08';
+  var opp = stripHtml(item.opportunity || item.desc || '');
+  var why = stripHtml(item.why_now || item.reason || '');
+  var tags = (item.tags || []).slice(0, 3);
+  var tagsHtml = tags.map(function(t) {
+    return '<span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">' + t + '</span>';
+  }).join('');
+  var evidenceHtml = '';
+  if (item.source_urls && item.source_urls.length) {
+    var links = item.source_urls.slice(0, 2).map(function(s) {
+      return '<a class="source-link" href="' + s.url + '" target="_blank" style="color:#555;text-decoration:none;font-size:12px;">' + s.name + ' →</a>';
+    }).join('');
+    evidenceHtml = '<div style="margin-top:12px;padding-top:12px;border-top:1px solid rgba(0,0,0,0.06);">' + links + '</div>';
+  }
+  return '<div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:10px;">' +
+    '<div style="display:flex;justify-content:space-between;align-items:center;">' +
+      '<span style="font-size:12px;font-weight:700;color:#888;">' + dateStr + '</span>' +
+      '<span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:' + prioColor + ';background:' + prioBg + ';">优先级：' + prio + '</span>' +
+    '</div>' +
+    '<h4 style="font-size:16px;font-weight:800;line-height:1.35;margin:0;">' + item.title + '</h4>' +
+    (opp ? '<div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>' + opp.substring(0, 120) + (opp.length > 120 ? '…' : '') + '</div>' : '') +
+    (why ? '<div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>' + why.substring(0, 120) + (why.length > 120 ? '…' : '') + '</div>' : '') +
+    (tagsHtml ? '<div style="display:flex;flex-wrap:wrap;gap:6px;">' + tagsHtml + '</div>' : '') +
+    evidenceHtml +
+  '</div>';
+}
+
+function renderDemandMapClusters(clusters) {
+  var chips = [
+    { name: '帮写场景类', icon: '✏️' },
+    { name: '安全信任类', icon: '🔒' },
+    { name: '基础设施类', icon: '⚙️' },
+    { name: '个性化类', icon: '🎨' },
+    { name: '平台入口类', icon: '🚀' }
+  ];
+  var chipsEl = document.getElementById('map-clusters-chips');
+  var bodyEl = document.getElementById('map-clusters-body');
+  if (!chipsEl || !bodyEl) return;
+
+  var firstActive = clusters && clusters.length ? clusters[0].name : '帮写场景类';
+
+  // Render chips
+  var chipsHtml = '';
+  chips.forEach(function(c) {
+    var count = 0;
+    if (clusters) {
+      var cdata = clusters.find(function(x) { return x.name === c.name; });
+      if (cdata) count = cdata.count || cdata.items.length;
+    }
+    var isActive = c.name === firstActive;
+    chipsHtml += '<button class="cluster-chip" data-cluster="' + c.name + '" onclick="switchCluster(\'' + c.name + '\')" style="padding:8px 14px;border-radius:999px;font-size:13px;font-weight:600;cursor:pointer;border:none;font-family:inherit;transition:all 0.2s;background:' + (isActive ? '#111' : 'rgba(0,0,0,0.05)') + ';color:' + (isActive ? '#fff' : '#555') + ';">' + c.icon + ' ' + c.name + ' · ' + count + '</button>';
+  });
+  chipsEl.innerHTML = chipsHtml;
+
+  // Render cluster blocks
+  var bodyHtml = '';
+  var clusterDescs = {
+    '帮写场景类': '聚焦帮写生成、风格控制、素材调用和写作协同。',
+    '安全信任类': '聚焦隐私保护、可信度标注、内容合规审核与安全过滤。',
+    '基础设施类': '聚焦端云协同、模型路由、成本优化与部署架构。',
+    '个性化类': '聚焦用户画像、知识库、风格自适应与人设规则。',
+    '平台入口类': '聚焦 Agent 化、超级入口、跨平台服务跳转。'
+  };
+  chips.forEach(function(c) {
+    var cdata = clusters ? clusters.find(function(x) { return x.name === c.name; }) : null;
+    var items = cdata ? cdata.items : [];
+    var highPri = items.filter(function(x) { return x.priority === '高'; }).length;
+    var isActive = c.name === firstActive;
+    bodyHtml += '<div class="cluster-block" data-cluster="' + c.name + '" style="display:' + (isActive ? 'block' : 'none') + ';background:rgba(255,255,255,0.88);border-radius:24px;border:1px solid rgba(0,0,0,0.06);padding:28px;margin-bottom:18px;">' +
+      '<div style="display:flex;justify-content:space-between;gap:18px;align-items:start;margin-bottom:20px;flex-wrap:wrap;">' +
+        '<div>' +
+          '<div style="font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#888;margin-bottom:10px;">Function cluster</div>' +
+          '<h3 style="font-size:28px;font-weight:900;letter-spacing:-1px;margin-bottom:8px;">' + c.icon + ' ' + c.name + '</h3>' +
+          '<p style="font-size:14px;color:#555;line-height:1.8;">' + (clusterDescs[c.name] || '') + '</p>' +
+        '</div>' +
+        '<div style="display:flex;gap:10px;flex-wrap:wrap;">' +
+          '<div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">' +
+            '<div style="font-size:22px;font-weight:800;">' + items.length + '</div>' +
+            '<div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">累计机会</div>' +
+          '</div>' +
+          '<div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">' +
+            '<div style="font-size:22px;font-weight:800;">' + highPri + '</div>' +
+            '<div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">高优需求</div>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;">';
+    if (items.length === 0) {
+      bodyHtml += '<div style="color:#888;font-size:14px;padding:20px 0;">暂无数据</div>';
+    } else {
+      items.forEach(function(item, i) {
+        bodyHtml += getDemandCardHtml(item, i);
+      });
+    }
+    bodyHtml += '</div></div>';
+  });
+  bodyEl.innerHTML = bodyHtml;
+}
+
+async function loadAndRenderMapClusters() {
+  if (demandClusterCache) {
+    renderDemandMapClusters(demandClusterCache);
+    return;
+  }
+  // Load all available date JSON files
+  var allDemand = [];
+  var dateFiles = [];
+  var now = new Date();
+  for (var d = new Date('2026-03-01'); d <= now; d.setDate(d.getDate() + 1)) {
+    var ds = d.toISOString().split('T')[0];
+    dateFiles.push(DATA_DIR + ds + '.json');
+  }
+
+  // Fetch all files
+  var loaded = 0;
+  var failed = 0;
+  for (var i = 0; i < dateFiles.length; i++) {
+    try {
+      var resp = await fetch(dateFiles[i]);
+      if (resp.ok) {
+        var data = await resp.json();
+        if (data.demand_mining && Array.isArray(data.demand_mining)) {
+          data.demand_mining.forEach(function(item) {
+            item.date = ds || (data.date || '').slice(5);
+            allDemand.push(item);
+          });
+        }
+      } else {
+        failed++;
+      }
+    } catch(e) {}
+    loaded++;
+  }
+
+  // Classify
+  var clusters = {};
+  var clusterNames = ['帮写场景类', '安全信任类', '基础设施类', '个性化类', '平台入口类'];
+  clusterNames.forEach(function(n) { clusters[n] = []; });
+  allDemand.forEach(function(item) {
+    var cat = classifyDemand(item);
+    if (!clusters[cat]) clusters[cat] = [];
+    clusters[cat].push(item);
+  });
+
+  var clusterData = clusterNames.map(function(name) {
+    return { name: name, count: clusters[name].length, items: clusters[name] };
+  });
+
+  demandClusterCache = clusterData;
+  renderDemandMapClusters(clusterData);
+}
+
 function switchPage(id) {
   var app = document.getElementById('app');
   var mapPage = document.getElementById('map-page');
@@ -2574,6 +2015,9 @@ function switchPage(id) {
   dayNav.style.display = id === 'insight' ? 'flex' : 'none';
   monthNav.style.display = id === 'map' ? 'flex' : 'none';
 
+  if (id === 'map') {
+    loadAndRenderMapClusters();
+  }
   if (id !== 'insight') {
     stopVoicePlayback(false);
   }
