@@ -1950,37 +1950,31 @@ async function loadAndRenderMapClusters() {
     renderDemandMapClusters(demandClusterCache);
     return;
   }
-  // Load all available date JSON files
-  var allDemand = [];
-  var dateFiles = [];
+  // Build date list from 03-17 (first data) to today
+  var dateStrs = [];
   var now = new Date();
-  for (var d = new Date('2026-03-01'); d <= now; d.setDate(d.getDate() + 1)) {
-    var ds = d.toISOString().split('T')[0];
-    dateFiles.push(DATA_DIR + ds + '.json');
+  for (var d = new Date('2026-03-17'); d <= now; d.setDate(d.getDate() + 1)) {
+    dateStrs.push(d.toISOString().split('T')[0]);
   }
 
-  // Fetch all files
-  var loaded = 0;
-  var failed = 0;
-  for (var i = 0; i < dateFiles.length; i++) {
-    try {
-      var resp = await fetch(dateFiles[i]);
-      if (resp.ok) {
-        var data = await resp.json();
-        if (data.demand_mining && Array.isArray(data.demand_mining)) {
-          data.demand_mining.forEach(function(item) {
-            item.date = ds || (data.date || '').slice(5);
-            allDemand.push(item);
-          });
-        }
-      } else {
-        failed++;
-      }
-    } catch(e) {}
-    loaded++;
-  }
+  // Parallel fetch all date files
+  var results = await Promise.all(dateStrs.map(function(ds) {
+    return fetch(DATA_DIR + ds + '.json')
+      .then(function(r) { return r.ok ? r.json().then(function(j) { return { date: ds, data: j }; }) : null; })
+      .catch(function() { return null; });
+  }));
 
-  // Classify
+  // Collect all demand_mining items
+  var allDemand = [];
+  results.forEach(function(r) {
+    if (!r || !r.data || !Array.isArray(r.data.demand_mining)) return;
+    r.data.demand_mining.forEach(function(item) {
+      item.date = item.date || r.date.slice(5);
+      allDemand.push(item);
+    });
+  });
+
+  // Classify into clusters
   var clusters = {};
   var clusterNames = ['帮写场景类', '安全信任类', '基础设施类', '个性化类', '平台入口类'];
   clusterNames.forEach(function(n) { clusters[n] = []; });
