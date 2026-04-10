@@ -1898,41 +1898,18 @@ async function loadWeekData(monday) {
     });
   });
 
-  // 生成叙述式周总结：从高相关热点取核心事件，拼成有信息量的摘要段落
-  if (summaries.length || merged.hot_news.length) {
-    // 取高相关度热点的标题，最多取3条作为核心事件
-    const highNews = merged.hot_news
+  // 生成周总结：直接用本周高相关热点的事件标题串成一段叙述，不加抽象评价
+  if (merged.hot_news.length || merged.design_insights.length) {
+    // 取高相关热点前5条的核心事件（冒号前部分）
+    const events = merged.hot_news
       .filter(n => n.relevance === '高')
-      .slice(0, 3)
+      .slice(0, 5)
       .map(n => {
-        // 取标题到第一个冒号/：前（事件核心部分），最多30字
-        const core = n.title.split(/[：:]/)[0];
-        return core.length > 5 ? core.slice(0, 30) : n.title.slice(0, 30);
+        const parts = n.title.split(/[：:]/);
+        return parts[0].slice(0, 35);
       });
 
-    // 取洞察里的核心主题（去重 tags top3）
-    const tagCount = {};
-    merged.design_insights.forEach(ins => {
-      (ins.tags || []).forEach(t => { tagCount[t] = (tagCount[t] || 0) + 1; });
-    });
-    const topThemes = Object.entries(tagCount)
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 3)
-      .map(e => e[0]);
-
-    // 组装叙述段落
-    let summary = '';
-    if (highNews.length >= 2) {
-      summary = `${highNews[0]}、${highNews[1]}`;
-      if (highNews[2]) summary += `、${highNews[2]}`;
-      summary += `——本周 AI 行业多点同时爆发。`;
-    } else if (highNews.length === 1) {
-      summary = `${highNews[0]}是本周 AI 领域最重要的进展。`;
-    }
-    if (topThemes.length) {
-      summary += `洞察层面，${topThemes.join('、')} 是本周反复出现的核心议题。`;
-    }
-    merged.daily_summary = summary;
+    merged.daily_summary = events.join('，') + '。';
   } else {
     merged.daily_summary = '';
   }
