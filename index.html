@@ -116,6 +116,11 @@
     border-color: var(--black);
   }
   .date-nav button:active { transform: scale(0.96); }
+  .date-nav button.go-this-week {
+    background: var(--black); color: var(--white); border-color: var(--black);
+    padding: 9px 16px; font-size: 12px;
+  }
+  .date-nav button.go-this-week:hover { opacity: 0.8; }
 
   .date-nav .current-date {
     font-size: 13px; font-weight: 600; padding: 0 14px;
@@ -1136,6 +1141,7 @@
       <button id="prevDay">← 上一周</button>
       <div class="current-date" id="currentDate">加载中...</div>
       <button id="nextDay">下一周 →</button>
+      <button id="goThisWeek" class="go-this-week" style="display:none;">本周</button>
     </div>
     <div class="date-nav" id="month-nav" style="display:none;">
       <button id="prevMonth">← 上月</button>
@@ -1934,6 +1940,20 @@ async function loadWeekData(monday) {
   return merged._days_loaded > 0 ? merged : null;
 }
 
+// 判断当前是否在本周
+function isCurrentWeek(date) {
+  const now = new Date();
+  const thisMonday = getWeekMonday(new Date(now.getFullYear(), now.getMonth(), now.getDate()));
+  const viewMonday = getWeekMonday(date);
+  return formatDate(thisMonday) === formatDate(viewMonday);
+}
+
+// 更新"本周"按钮可见性
+function updateGoThisWeekBtn() {
+  const btn = document.getElementById('goThisWeek');
+  if (btn) btn.style.display = isCurrentWeek(currentDate) ? 'none' : '';
+}
+
 // 跳到某周（以周一日期字符串为基准）
 async function navigateWeek(mondayDate) {
   currentDate = new Date(mondayDate + 'T00:00:00');
@@ -1941,6 +1961,7 @@ async function navigateWeek(mondayDate) {
   closeInlineBlog();
   latestInsightData = null;
   updateVoiceButtonAvailability();
+  updateGoThisWeekBtn();
 
   const monday = getWeekMonday(currentDate);
   document.getElementById('currentDate').textContent = formatWeekRange(monday);
@@ -1962,6 +1983,13 @@ document.getElementById('nextDay').addEventListener('click', () => {
   monday.setDate(monday.getDate() + 7); // 下一周
   currentDate = monday;
   navigateWeek(formatDate(monday));
+});
+
+document.getElementById('goThisWeek').addEventListener('click', () => {
+  const now = new Date();
+  const thisMonday = getWeekMonday(new Date(now.getFullYear(), now.getMonth(), now.getDate()));
+  currentDate = thisMonday;
+  navigateWeek(formatDate(thisMonday));
 });
 
 document.getElementById('voicePlayButton').addEventListener('click', handleVoicePlayback);
@@ -1988,6 +2016,7 @@ updateVoiceButtonAvailability();
   const mondayStr = formatDate(monday);
   document.getElementById('currentDate').textContent = formatWeekRange(monday);
   document.getElementById('app').innerHTML = `<div class="loading"><div class="spinner"></div><p>正在加载本周数据...</p></div>`;
+  updateGoThisWeekBtn();
   renderContent(data);
 })();
 
