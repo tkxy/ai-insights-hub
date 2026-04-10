@@ -1898,9 +1898,24 @@ async function loadWeekData(monday) {
     });
   });
 
-  merged.daily_summary = summaries.length
-    ? `本周共收录 ${merged._days_loaded} 天数据，${merged.design_insights.length} 条设计洞察，${merged.demand_mining.length} 个需求机会，${merged.hot_news.length} 条热点资讯。`
-    : '';
+  // 生成周总结：每天取 daily_summary 第一句话前35字，串成段落
+  if (summaries.length) {
+    const insightCount = merged.design_insights.length;
+    const demandCount = merged.demand_mining.length;
+    const newsCount = merged.hot_news.length;
+
+    const keyPoints = summaries.map(s => {
+      // 取到第一个句号为止，最多35字
+      const firstSentence = s.split('。')[0];
+      return firstSentence.length > 35 ? firstSentence.slice(0, 35) + '…' : firstSentence;
+    });
+
+    merged.daily_summary =
+      keyPoints.join('；') +
+      `。本周（${merged.week_range}）共沉淀 ${insightCount} 条设计洞察、${demandCount} 个需求机会、${newsCount} 条热点资讯。`;
+  } else {
+    merged.daily_summary = '';
+  }
 
   return merged._days_loaded > 0 ? merged : null;
 }
