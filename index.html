@@ -1600,7 +1600,7 @@ function renderContent(data) {
   const app = document.getElementById('app');
   if (!data) {
     latestInsightData = null;
-    app.innerHTML = `<div class="empty-state fade-in"><div class="icon">--</div><p>该日期暂无数据<br>数据每天 8:00 自动更新</p></div>`;
+    app.innerHTML = `<div class="empty-state fade-in"><div class="icon">--</div><p>本周暂无数据<br>数据每天 8:00 自动更新</p></div>`;
     updateVoiceButtonAvailability();
     return;
   }
@@ -3037,7 +3037,7 @@ async function loadBlogForDate(dateStr) {
   }
 
   if (!data) {
-    container.innerHTML = `<div class="blog-empty-state"><div class="blog-empty-icon">🎙️</div><p>该日期暂无数据<br>数据每天 8:00 自动更新</p></div>`;
+    container.innerHTML = `<div class="blog-empty-state"><div class="blog-empty-icon">🎙️</div><p>本周暂无数据<br>数据每天 8:00 自动更新</p></div>`;
     return;
   }
 
