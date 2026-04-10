@@ -1898,18 +1898,35 @@ async function loadWeekData(monday) {
     });
   });
 
-  // 生成周总结：直接用本周高相关热点的事件标题串成一段叙述，不加抽象评价
-  if (merged.hot_news.length || merged.design_insights.length) {
-    // 取高相关热点前5条的核心事件（冒号前部分）
-    const events = merged.hot_news
-      .filter(n => n.relevance === '高')
-      .slice(0, 5)
-      .map(n => {
-        const parts = n.title.split(/[：:]/);
-        return parts[0].slice(0, 35);
+  // 生成周总结：从洞察 implication 中提取对输入法产品的关键行动建议
+  if (merged.design_insights.length) {
+    const conclusions = [];
+    merged.design_insights.forEach(ins => {
+      const imp = ins.implication || '';
+      // 按分号拆句
+      imp.split(/[；;]/).forEach(s => {
+        s = s.trim().replace(/^\(\d+\)\s*/, ''); // 去编号前缀
+        // 找含"输入法"且有行动建议的句子
+        if (/输入法/.test(s) && /应|可以|必须|建议|需要|可借鉴|加速|规划/.test(s)) {
+          // 取——后面的结论部分
+          if (s.indexOf('——') > -1) s = s.split('——').pop();
+          s = s.trim().replace(/[，,]$/, '');
+          if (s.length >= 15 && s.length <= 50) conclusions.push(s);
+        }
       });
+    });
 
-    merged.daily_summary = events.join('，') + '。';
+    // 去重（前8字相同视为重复）
+    const unique = [];
+    const seen = {};
+    conclusions.forEach(c => {
+      const key = c.slice(0, 8);
+      if (!seen[key]) { seen[key] = true; unique.push(c); }
+    });
+
+    merged.daily_summary = unique.length
+      ? unique.slice(0, 4).join('；') + '。'
+      : '';
   } else {
     merged.daily_summary = '';
   }
