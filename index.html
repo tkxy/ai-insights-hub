@@ -1898,21 +1898,33 @@ async function loadWeekData(monday) {
     });
   });
 
-  // 生成周总结：每天取 daily_summary 第一句话前35字，串成段落
+  // 生成提炼式周总结：从所有洞察的 tags 统计主题，生成主题化描述
   if (summaries.length) {
     const insightCount = merged.design_insights.length;
     const demandCount = merged.demand_mining.length;
     const newsCount = merged.hot_news.length;
 
-    const keyPoints = summaries.map(s => {
-      // 取到第一个句号为止，最多35字
-      const firstSentence = s.split('。')[0];
-      return firstSentence.length > 35 ? firstSentence.slice(0, 35) + '…' : firstSentence;
+    // 统计本周最高频 tags（取 top 4）
+    const tagCount = {};
+    merged.design_insights.forEach(ins => {
+      (ins.tags || []).forEach(t => { tagCount[t] = (tagCount[t] || 0) + 1; });
     });
+    const topTags = Object.entries(tagCount)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 4)
+      .map(e => e[0]);
 
+    // 统计高优需求数
+    const highPriDemands = merged.demand_mining.filter(d => d.priority === '高').length;
+
+    // 组装总结句
+    const tagStr = topTags.length ? `本周核心议题集中在 ${topTags.join('、')} 等方向` : '本周 AI 行业议题密集';
     merged.daily_summary =
-      keyPoints.join('；') +
-      `。本周（${merged.week_range}）共沉淀 ${insightCount} 条设计洞察、${demandCount} 个需求机会、${newsCount} 条热点资讯。`;
+      `${tagStr}，${insightCount} 条设计洞察覆盖` +
+      (merged._days_loaded > 1 ? `连续 ${merged._days_loaded} 天` : '本周') +
+      `的行业动态；需求侧识别出 ${demandCount} 个机会点` +
+      (highPriDemands > 0 ? `，其中 ${highPriDemands} 个高优先级` : '') +
+      `；热点资讯共 ${newsCount} 条。`;
   } else {
     merged.daily_summary = '';
   }
