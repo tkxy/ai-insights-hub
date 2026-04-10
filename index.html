@@ -1898,33 +1898,41 @@ async function loadWeekData(monday) {
     });
   });
 
-  // 生成提炼式周总结：从所有洞察的 tags 统计主题，生成主题化描述
-  if (summaries.length) {
-    const insightCount = merged.design_insights.length;
-    const demandCount = merged.demand_mining.length;
-    const newsCount = merged.hot_news.length;
+  // 生成叙述式周总结：从高相关热点取核心事件，拼成有信息量的摘要段落
+  if (summaries.length || merged.hot_news.length) {
+    // 取高相关度热点的标题，最多取3条作为核心事件
+    const highNews = merged.hot_news
+      .filter(n => n.relevance === '高')
+      .slice(0, 3)
+      .map(n => {
+        // 取标题到第一个冒号/：前（事件核心部分），最多30字
+        const core = n.title.split(/[：:]/)[0];
+        return core.length > 5 ? core.slice(0, 30) : n.title.slice(0, 30);
+      });
 
-    // 统计本周最高频 tags（取 top 4）
+    // 取洞察里的核心主题（去重 tags top3）
     const tagCount = {};
     merged.design_insights.forEach(ins => {
       (ins.tags || []).forEach(t => { tagCount[t] = (tagCount[t] || 0) + 1; });
     });
-    const topTags = Object.entries(tagCount)
+    const topThemes = Object.entries(tagCount)
       .sort((a, b) => b[1] - a[1])
-      .slice(0, 4)
+      .slice(0, 3)
       .map(e => e[0]);
 
-    // 统计高优需求数
-    const highPriDemands = merged.demand_mining.filter(d => d.priority === '高').length;
-
-    // 组装总结句
-    const tagStr = topTags.length ? `本周核心议题集中在 ${topTags.join('、')} 等方向` : '本周 AI 行业议题密集';
-    merged.daily_summary =
-      `${tagStr}，${insightCount} 条设计洞察覆盖` +
-      (merged._days_loaded > 1 ? `连续 ${merged._days_loaded} 天` : '本周') +
-      `的行业动态；需求侧识别出 ${demandCount} 个机会点` +
-      (highPriDemands > 0 ? `，其中 ${highPriDemands} 个高优先级` : '') +
-      `；热点资讯共 ${newsCount} 条。`;
+    // 组装叙述段落
+    let summary = '';
+    if (highNews.length >= 2) {
+      summary = `${highNews[0]}、${highNews[1]}`;
+      if (highNews[2]) summary += `、${highNews[2]}`;
+      summary += `——本周 AI 行业多点同时爆发。`;
+    } else if (highNews.length === 1) {
+      summary = `${highNews[0]}是本周 AI 领域最重要的进展。`;
+    }
+    if (topThemes.length) {
+      summary += `洞察层面，${topThemes.join('、')} 是本周反复出现的核心议题。`;
+    }
+    merged.daily_summary = summary;
   } else {
     merged.daily_summary = '';
   }
