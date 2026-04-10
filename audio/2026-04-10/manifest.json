@@ -1,0 +1,171 @@
+{
+  "date": "2026-04-10",
+  "generated_at": "2026-04-10T08:05:18",
+  "total_segments": 23,
+  "segments": [
+    {
+      "index": 0,
+      "file": "000.mp3",
+      "text": "欢迎收听 2026-04-10 的 AI Insights 播报，一起来看看今天有哪些不容错过的 AI 行业动态。",
+      "section": "",
+      "size": 119161
+    },
+    {
+      "index": 1,
+      "file": "001.mp3",
+      "text": "先来一个全局速览。周五AI行业进入Agent基础设施建设与组织深度调整并行的节奏。Anthropic正式发布Claude Managed Agents公测版，提供全托管Agent构建和部署API，将企",
+      "section": "📋 今日速览",
+      "size": 1290283
+    },
+    {
+      "index": 2,
+      "file": "002.mp3",
+      "text": "今天的深度洞察环节，一共有 5 个值得关注的话题。",
+      "section": "🔍 深度洞察",
+      "size": 66498
+    },
+    {
+      "index": 3,
+      "file": "003.mp3",
+      "text": "第 1 个话题：Anthropic发布Claude Managed Agents：AI Agent从'自建基础设施'走向'全托管平台即服务'。Anthropic于4月8日正式发布Claude Mana",
+      "section": "",
+      "size": 1133548
+    },
+    {
+      "index": 4,
+      "file": "004.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) Managed Agents的'长期会话+断线恢复'能力解决了输入法AI帮写的一个核心痛点——目前帮写每次请求都是独立的，没有上下文延续。输入法可以借鉴这种会话",
+      "section": "",
+      "size": 808794
+    },
+    {
+      "index": 5,
+      "file": "005.mp3",
+      "text": "第 2 个话题：DeepSeek上线专家模式——沉寂半年后的'V4预告'，大模型产品正从单一模型走向模式分层。DeepSeek在沉寂近一年后于4月8日正式上线'专家模式'（Expert Mode）和'",
+      "section": "",
+      "size": 1069600
+    },
+    {
+      "index": 6,
+      "file": "006.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) DeepSeek的模式分层设计直接可借鉴——输入法AI帮写同样可以提供'快速模式'（即时补全/纠错，走端侧小模型，零延迟）和'专家模式'（长文创作/风格改写，走",
+      "section": "",
+      "size": 809212
+    },
+    {
+      "index": 7,
+      "file": "007.mp3",
+      "text": "第 3 个话题：阿里巴巴AI组织架构大调整：大模型事业部升级+AI科学家任CTO，中国大厂AI战略从'部门级'升为'集团级'。4月8日阿里巴巴CEO吴泳铭发布内部信宣布重大AI组织调整：(1) 集团层",
+      "section": "",
+      "size": 1074616
+    },
+    {
+      "index": 8,
+      "file": "008.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) 阿里将通义大模型从实验室升级为事业部，意味着通义模型将获得更多资源投入和更快的产品化迭代——输入法团队如果使用通义模型作为后端，可以预期未来模型能力更新频率加快",
+      "section": "",
+      "size": 780790
+    },
+    {
+      "index": 9,
+      "file": "009.mp3",
+      "text": "第 4 个话题：Tubi在ChatGPT内首发原生应用：流媒体平台用AI重新定义内容发现，'输入即推荐'模式成型。Fox旗下免费流媒体Tubi于4月7日宣布成为首个在ChatGPT内发布原生应用的流媒",
+      "section": "",
+      "size": 973052
+    },
+    {
+      "index": 10,
+      "file": "010.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) Tubi的案例证明'自然语言输入→个性化推荐→服务跳转'的产品链路已经可行且有市场需求——输入法可以在用户输入影视、音乐、餐饮等关键词时，在候选区提供类似的AI",
+      "section": "",
+      "size": 762818
+    },
+    {
+      "index": 11,
+      "file": "011.mp3",
+      "text": "第 5 个话题：Atlassian在Confluence推出Remix可视化AI与第三方Agent集成：企业协作工具正在变成Agent运行平台。Atlassian于4月8日在Confluence中推出",
+      "section": "",
+      "size": 917045
+    },
+    {
+      "index": 12,
+      "file": "012.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) Confluence通过MCP标准接入第三方Agent的模式值得输入法参考——输入法也可以定义一套标准接口，让第三方AI服务（翻译、写作辅助、代码生成）以'技能",
+      "section": "",
+      "size": 801688
+    },
+    {
+      "index": 13,
+      "file": "013.mp3",
+      "text": "接下来是需求挖掘环节，看看今天发现了哪些产品机会。",
+      "section": "💎 需求挖掘",
+      "size": 81545
+    },
+    {
+      "index": 14,
+      "file": "014.mp3",
+      "text": "第 1 个机会：输入法帮写的'快速/专家'双模式切换，优先级：高。 用户痛点：用户在不同场景对帮写的需求截然不同：回复微信消息时需要即时补全（等2秒就嫌慢）；写工作邮件或长文时愿意等10秒换取高质量输",
+      "section": "",
+      "size": 1256010
+    },
+    {
+      "index": 15,
+      "file": "015.mp3",
+      "text": "第 2 个机会：输入法键盘层的第三方AI技能插件框架，优先级：中。 用户痛点：用户在输入框中遇到翻译、格式转换、专业术语查询等需求时，必须复制文本→切换到专用App→操作→复制结果→切回原App粘贴。",
+      "section": "",
+      "size": 1193734
+    },
+    {
+      "index": 16,
+      "file": "016.mp3",
+      "text": "最后来一组快讯。",
+      "section": "⚡ 快讯速递",
+      "size": 28882
+    },
+    {
+      "index": 17,
+      "file": "017.mp3",
+      "text": "Anthropic发布Claude Managed Agents公测版：全托管Agent构建API将开发效率提升10倍。Anthropic正式推出Claude Managed Agents公测版，提供",
+      "section": "",
+      "size": 992278
+    },
+    {
+      "index": 18,
+      "file": "018.mp3",
+      "text": "阿里巴巴重磅AI组织调整：新设集团技术委员会，通义实验室升级为大模型事业部，李飞飞任阿里云CTO。阿里巴巴CEO吴泳铭发布内部信宣布AI相关组织调整。集团层面设立技术委员会由吴泳铭挂帅，通义实验室升级",
+      "section": "",
+      "size": 921643
+    },
+    {
+      "index": 19,
+      "file": "019.mp3",
+      "text": "Atlassian在Confluence推出Remix可视化AI工具和第三方Agent集成。Atlassian为Confluence推出两项AI更新：Remix可视化AI工具（公测）可将文本数据一键转",
+      "section": "",
+      "size": 904924
+    },
+    {
+      "index": 20,
+      "file": "020.mp3",
+      "text": "Adobe推出免费AI学习工具Acrobat Student Spaces，对标Google NotebookLM。Adobe发布Acrobat Student Spaces，一款面向学生的免费AI学",
+      "section": "",
+      "size": 937525
+    },
+    {
+      "index": 21,
+      "file": "021.mp3",
+      "text": "OpenAI发布儿童安全蓝图，应对AI辅助儿童性剥削内容增长。OpenAI发布新的儿童安全蓝图，概述了一系列技术和政策措施以应对AI被用于生成和分发儿童性剥削内容的风险。该蓝图提出了模型训练阶段的安全",
+      "section": "",
+      "size": 815063
+    },
+    {
+      "index": 22,
+      "file": "022.mp3",
+      "text": "以上就是今天的全部内容，感谢收听，明天见。",
+      "section": "",
+      "size": 71514
+    }
+  ],
+  "total_size_bytes": 17810223,
+  "failed": 0,
+  "duration_seconds": 353.7
+}

@@ -1,0 +1,178 @@
+{
+  "date": "2026-04-10",
+  "generated_at": "2026-04-10T08:00:00+08:00",
+  "daily_summary": "周五AI行业进入Agent基础设施建设与组织深度调整并行的节奏。Anthropic正式发布Claude Managed Agents公测版，提供全托管Agent构建和部署API，将企业级Agent开发效率提升10倍，Notion、Rakuten、Asana等已接入。DeepSeek在沉寂大半年后上线'专家模式'和'快速模式'，被视为V4模型发布的前奏，专家模式在代码和推理任务上表现接近此前泄露的V4水平。阿里巴巴CEO吴泳铭宣布重大AI组织架构调整——新设集团技术委员会、通义实验室升级为大模型事业部、李飞飞出任阿里云CTO，信号明确：AI已从创新项目升级为核心战略。Tubi成为首个在ChatGPT内发布原生应用的流媒体平台，用自然语言推荐30万部影视内容。Atlassian在Confluence中推出Remix可视化AI工具和第三方Agent集成（Lovable/Replit/Gamma），企业协作平台正从文档工具演变为AI Agent运行平台。Adobe推出免费AI学习工具Acrobat Student Spaces对标NotebookLM。微软开源Agent Governance Toolkit，为自主运行的AI Agent提供运行时安全治理。GPT-6代号Spud预训练已完成，传闻4月14日可能发布。",
+  "design_insights": [
+    {
+      "title": "Anthropic发布Claude Managed Agents：AI Agent从'自建基础设施'走向'全托管平台即服务'",
+      "summary": "Anthropic于4月8日正式发布Claude Managed Agents公测版，这是一套组合式API套件，核心目标是将企业级AI Agent的构建和部署效率提升10倍。技术架构上采用'大脑与双手解耦'设计——Claude作为控制器负责决策，沙箱环境负责执行，平台自动处理安全环境、状态管理、凭据管理和权限控制。关键能力包括：支持数小时长期会话且断线不丢进度、多智能体协调（一个Agent可启动并指挥其他Agent并行工作，研究预览阶段）、自适应优化（定义成功标准后Agent自我迭代直到达标）。定价为标准token费率加每会话小时0.08美元运行时费用。首批客户Notion已允许团队在工作区内直接向Claude委派并行任务，Rakuten一周内部署了覆盖产品、销售、营销、财务的企业级Agent，Sentry将调试Agent与代码修复Agent配对实现从Bug到修复的闭环。这标志着Agent开发正从'每家自建基础设施'阶段进入'平台即服务'阶段。",
+      "implication": "对输入法产品的启示：(1) Managed Agents的'长期会话+断线恢复'能力解决了输入法AI帮写的一个核心痛点——目前帮写每次请求都是独立的，没有上下文延续。输入法可以借鉴这种会话持久化架构，让AI帮写记住同一篇长文档的编辑历史，用户中途退出后回来继续写时AI能接续上下文；(2) 多Agent协调能力的落地意味着输入法可以设计'帮写Agent链'——第一个Agent负责理解用户意图，第二个Agent查找相关资料，第三个Agent生成文本并校对，最终输出质量远高于单次调用；(3) Agent平台化趋势下，输入法团队应评估是否直接接入Managed Agents作为后端，而非自建Agent执行环境——前者可以将工程重心放在用户体验而非基础设施上。",
+      "sources": ["Anthropic官方博客", "TechCrunch", "华尔街见闻", "知乎"],
+      "source_urls": [
+        {"name": "Anthropic官方公告", "url": "https://claude.com/blog/claude-managed-agents"},
+        {"name": "Anthropic工程博客", "url": "https://www.anthropic.com/engineering/managed-agents"},
+        {"name": "华尔街见闻解读", "url": "https://wallstreetcn.com/articles/3769518"},
+        {"name": "知乎深度解读", "url": "https://zhuanlan.zhihu.com/p/2025622381893304966"}
+      ],
+      "tags": ["Claude Managed Agents", "Agent平台化", "全托管API", "企业级AI"]
+    },
+    {
+      "title": "DeepSeek上线专家模式——沉寂半年后的'V4预告'，大模型产品正从单一模型走向模式分层",
+      "summary": "DeepSeek在沉寂近一年后于4月8日正式上线'专家模式'（Expert Mode）和'快速模式'（Fast Mode），这是其产品首次引入模式分层设计。专家模式被广泛认为是V4模型的早期预览版——多位开发者实测发现其在代码生成和复杂推理任务上表现接近此前泄露的V4 Canary版本，但并非全新架构，而是将此前更强的V3.2模型重新上线并做了优化。快速模式则优先响应速度，适合日常简单问答。TechNode报道V4可能在本月内正式发布，测试界面还显示了视觉模式选项。灰度测试中JSON配置泄露显示DeepSeek正在构建一套包含多个子模型的产品矩阵，而非单一模型。这一分层策略与OpenAI的GPT系列（标准/Thinking/Mini）和Anthropic的Claude系列（Opus/Sonnet/Haiku）异曲同工：大模型产品正从'一个模型打天下'走向'多模式适配多场景'。",
+      "implication": "对输入法产品的启示：(1) DeepSeek的模式分层设计直接可借鉴——输入法AI帮写同样可以提供'快速模式'（即时补全/纠错，走端侧小模型，零延迟）和'专家模式'（长文创作/风格改写，走云端大模型，高质量），用户根据场景自行切换或系统自动判断；(2) V4如果本月发布且保持DeepSeek一贯的极致性价比，将为输入法提供又一个高质量低成本的后端模型选择——加上GLM-5.1和Qwen3.6-Plus，国产模型的多模型路由策略将有更丰富的供给；(3) 模式分层的产品设计降低了用户使用AI的心理门槛——用户不需要理解'模型参数'和'推理深度'，只需要选择'快'还是'精'，输入法应用类似思路简化帮写功能的使用认知。",
+      "sources": ["澎湃新闻", "TechNode", "知乎", "China Crunch"],
+      "source_urls": [
+        {"name": "澎湃新闻分析", "url": "https://www.thepaper.cn/newsDetail_forward_32923338"},
+        {"name": "TechNode英文报道", "url": "https://technode.com/2026/04/08/deepseek-v4-may-launch-this-month-test-interface-suggests-vision-and-expert-modes/"},
+        {"name": "知乎用户讨论", "url": "https://www.zhihu.com/question/2024876426596291384"},
+        {"name": "China Crunch报道", "url": "https://chinacrunch.com/deepseek-adds-expert-mode-ahead-of-v4-rollout/"}
+      ],
+      "tags": ["DeepSeek", "模式分层", "V4预览", "国产大模型"]
+    },
+    {
+      "title": "阿里巴巴AI组织架构大调整：大模型事业部升级+AI科学家任CTO，中国大厂AI战略从'部门级'升为'集团级'",
+      "summary": "4月8日阿里巴巴CEO吴泳铭发布内部信宣布重大AI组织调整：(1) 集团层面新设技术委员会，由吴泳铭亲自挂帅，成员包括CTO吴泽明和阿里云CTO李飞飞；(2) 通义实验室正式升级为通义大模型事业部，继续由周靖人负责；(3) 斯坦福大学AI领域顶尖科学家李飞飞出任阿里云CTO。此次调整信号非常明确：AI已从阿里的创新探索项目升级为集团核心战略，大模型团队的组织地位从'实验室'提升到'事业部'级别。结合此前阿里Qwen3.6-Plus全球调用量登顶、通义千问用户过亿的业务进展，这轮调整是将组织架构匹配到已经成型的AI业务规模。IT之家、每日经济新闻、凤凰科技等多家媒体均重点报道了这一变化，普遍认为这代表中国互联网大厂正在进入AI组织调整的'深水区'——不再是简单设立AI部门，而是让AI渗透到公司治理层面。",
+      "implication": "对输入法产品的启示：(1) 阿里将通义大模型从实验室升级为事业部，意味着通义模型将获得更多资源投入和更快的产品化迭代——输入法团队如果使用通义模型作为后端，可以预期未来模型能力更新频率加快、专项优化（如中文表达场景）更有针对性；(2) 李飞飞任阿里云CTO将推动云+AI一体化，对输入法来说意味着阿里云上的模型推理服务可能在延迟、成本和中文优化方面进一步提升——这是评估国产模型后端时需要跟踪的基础设施变化；(3) 大厂AI组织升级的趋势说明AI产品团队需要在公司内获得更高的组织位置，输入法AI功能团队也应推动将AI帮写从'功能模块'提升为'产品核心'，争取更多资源和决策权。",
+      "sources": ["IT之家", "每日经济新闻", "凤凰科技", "阿里巴巴"],
+      "source_urls": [
+        {"name": "IT之家报道", "url": "https://www.ithome.com/0/937/080.htm"},
+        {"name": "每日经济新闻", "url": "https://www.nbd.com.cn/articles/2026-04-08/4329838.html"},
+        {"name": "凤凰科技", "url": "https://tech.ifeng.com/c/8s9wQhrFBOQ"},
+        {"name": "腾讯新闻", "url": "https://news.qq.com/rain/a/20260408A07O9T00"}
+      ],
+      "tags": ["阿里巴巴", "组织架构", "通义大模型", "AI战略"]
+    },
+    {
+      "title": "Tubi在ChatGPT内首发原生应用：流媒体平台用AI重新定义内容发现，'输入即推荐'模式成型",
+      "summary": "Fox旗下免费流媒体Tubi于4月7日宣布成为首个在ChatGPT内发布原生应用的流媒体平台。用户可以直接在ChatGPT中通过自然语言描述观影偏好（如'适合雨天看的惊悚片'、'像《布达佩斯大饭店》一样的视觉系电影'），Tubi原生应用即时返回匹配内容并支持一键跳转播放。该应用覆盖Tubi超过30万部电影和电视剧。TechCrunch报道指出，这是OpenAI GPT Store/原生应用平台上首个大型流媒体入驻案例，代表内容发现正在从'分类浏览+算法推荐'转向'自然语言对话推荐'的范式转变。Tubi CEO Farhad Massoudi表示'流媒体应该如同跟朋友聊天一样简单'。这一整合对搜索和推荐系统意义深远——当用户习惯在ChatGPT中用自然语言获取推荐，传统的搜索框和推荐算法的入口价值将被分流。",
+      "implication": "对输入法产品的启示：(1) Tubi的案例证明'自然语言输入→个性化推荐→服务跳转'的产品链路已经可行且有市场需求——输入法可以在用户输入影视、音乐、餐饮等关键词时，在候选区提供类似的AI推荐卡片，用户点击即可跳转到对应App；(2) 从竞争角度，ChatGPT正在通过原生应用平台成为新的'超级入口'，这对输入法的入口地位形成潜在威胁——用户可能更倾向于在ChatGPT中完成从提问到消费的全流程，而非通过输入法；(3) 内容推荐的交互方式正在从'点选标签'转向'描述感受'，输入法的AI帮写可以借鉴这种'模糊意图理解'能力——用户不需要精确描述需求，说'帮我写一封不卑不亢的催款邮件'就够了。",
+      "sources": ["TechCrunch", "Tubi官方", "AIToolly", "Advanced Television"],
+      "source_urls": [
+        {"name": "TechCrunch报道", "url": "https://techcrunch.com/2026/04/08/tubi-is-the-first-streamer-to-launch-a-native-app-within-chatgpt/"},
+        {"name": "Tubi官方新闻稿", "url": "https://corporate.tubitv.com/press/tubi-becomes-first-streamer-to-launch-chatgpt-app/"},
+        {"name": "AIToolly报道", "url": "https://aitoolly.com/ai-news/article/2026-04-09-tubi-makes-history-as-the-first-streaming-service-to-launch-a-native-app-integration-within-chatgpt"},
+        {"name": "TheAIInsider", "url": "https://theaiinsider.tech/2026/04/09/tubi-launches-native-chatgpt-app-to-enhance-ai-driven-content-discovery/"}
+      ],
+      "tags": ["ChatGPT原生应用", "内容发现", "自然语言推荐", "流媒体AI"]
+    },
+    {
+      "title": "Atlassian在Confluence推出Remix可视化AI与第三方Agent集成：企业协作工具正在变成Agent运行平台",
+      "summary": "Atlassian于4月8日在Confluence中推出两项重要更新：(1) Remix可视化AI工具进入公测——用户可以将Confluence页面中的文本数据一键转化为图表、信息图、计分卡等可视化资产，无需离开编辑器打开Figma或PowerPoint；(2) 首批引入三个第三方AI Agent集成——Lovable（从文档生成前端原型）、Replit（从需求文档生成可运行代码）、Gamma（从文档生成演示文稿），均通过Model Context Protocol (MCP)标准接入。这意味着Confluence从文档协作工具演变为AI Agent的运行平台——文档不再只是人写人读的静态内容，而是Agent读取需求并直接产出可交付物的'任务描述层'。TechCrunch评论称这代表企业SaaS产品正在从'工具'转向'Agent编排平台'。",
+      "implication": "对输入法产品的启示：(1) Confluence通过MCP标准接入第三方Agent的模式值得输入法参考——输入法也可以定义一套标准接口，让第三方AI服务（翻译、写作辅助、代码生成）以'技能插件'形式接入键盘，用户在任何App的输入框中都能调用这些能力；(2) Remix将文本数据自动转为可视化的能力提示输入法一个新方向——当用户在输入框中粘贴一段数据或表格时，AI帮写不仅能生成文字总结，还可以生成简单的数据可视化图片嵌入聊天消息中；(3) 'Agent读文档→产出交付物'的范式转变意味着未来的输入将越来越多地是给Agent的指令而非给人读的文本，输入法需要同时优化两种输入场景——与人沟通的自然语言输入和给Agent的结构化指令输入。",
+      "sources": ["TechCrunch", "AI Business Review", "AI Chief", "TechResearchOnline"],
+      "source_urls": [
+        {"name": "TechCrunch详细报道", "url": "https://techcrunch.com/2026/04/08/atlassian-confluence-visual-ai-tools-agents/"},
+        {"name": "AI Business Review分析", "url": "https://www.aibusinessreview.org/2026/04/09/atlassian-confluence-third-party-ai-agents-integration/"},
+        {"name": "AI Chief报道", "url": "https://aichief.com/news/atlassian-unleashes-visual-ai-and-third-party-agents-in-confluence/"},
+        {"name": "TechResearchOnline", "url": "https://techresearchonline.com/news/atlassian-confluence-ai-tools-launch-remix-agents/"}
+      ],
+      "tags": ["Atlassian Confluence", "第三方Agent", "MCP协议", "可视化AI"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "输入法帮写的'快速/专家'双模式切换",
+      "pain_point": "用户在不同场景对帮写的需求截然不同：回复微信消息时需要即时补全（等2秒就嫌慢）；写工作邮件或长文时愿意等10秒换取高质量输出。当前帮写功能只有一种模式，要么因为追求质量导致日常短回复场景体验拖沓，要么因为追求速度导致长文创作场景质量不足。用户不得不在'用还是不用帮写'之间纠结。",
+      "opportunity": "在帮写功能入口增加'快速/专家'模式切换。入口位置：帮写按钮长按弹出模式选择气泡，或在帮写设置中设定默认模式。触发条件：默认根据当前输入字数自动判断（<20字走快速模式/≥20字走专家模式），用户可手动覆盖。快速模式核心能力：端侧小模型（如Gemma 4 2B或量化后的LiteRT-LM方案）即时补全，零网络延迟，适合聊天回复和短句纠错。专家模式核心能力：云端大模型（GLM-5.1/Qwen3.6-Plus）深度生成，支持风格控制和长文输出。MVP：先做手动切换+字数自动判断两种触发方式，后续加入基于App类型的自动切换（微信→快速，邮件→专家）。",
+      "priority": "高",
+      "evidence": "DeepSeek于4月8日上线快速模式和专家模式分层设计，用户反响积极（知乎讨论热度前三），验证了'同一产品、多模式适配多场景'的产品逻辑。OpenAI的GPT系列也早已分化为标准/Thinking/Mini三种模式。Google LiteRT-LM开源框架让端侧小模型部署成本大幅下降，技术条件已具备。",
+      "source_urls": [
+        {"name": "DeepSeek专家模式报道", "url": "https://www.thepaper.cn/newsDetail_forward_32923338"},
+        {"name": "知乎用户讨论", "url": "https://www.zhihu.com/question/2024876426596291384"}
+      ]
+    },
+    {
+      "title": "输入法键盘层的第三方AI技能插件框架",
+      "pain_point": "用户在输入框中遇到翻译、格式转换、专业术语查询等需求时，必须复制文本→切换到专用App→操作→复制结果→切回原App粘贴。每天重复多次的'复制-切换-粘贴'操作链路打断工作流，尤其在移动端体验极差。目前输入法的AI能力全部自建，覆盖面有限，无法满足长尾专业场景。",
+      "opportunity": "构建输入法的'AI技能插件'开放框架，允许第三方开发者将AI能力以轻量插件形式接入键盘。入口位置：键盘工具栏新增'技能'按钮，点击展开已安装的AI技能列表。触发条件：用户选中输入框中的文本后点击对应技能，或输入特定前缀命令（如'/translate'）自动触发。核心能力：定义标准化的输入/输出接口（接收选中文本→返回处理结果→插入输入框），第三方通过SDK发布技能。MVP：首期自建3-5个高频技能（中英互译、语气改写、格式整理、摘要生成、专业术语解释），同时开放SDK邀请10家合作方接入。参考Atlassian通过MCP协议接入第三方Agent的模式。",
+      "priority": "中",
+      "evidence": "Atlassian于4月8日通过MCP标准协议在Confluence接入Lovable、Replit、Gamma三个第三方AI Agent，验证了'核心平台+第三方技能'的产品架构可行性。Anthropic Managed Agents提供了Agent标准化部署的基础设施。ChatGPT通过GPT Store和原生应用平台（Tubi首家入驻）构建了AI能力分发生态——输入法作为比ChatGPT更底层的入口，有条件构建类似生态。",
+      "source_urls": [
+        {"name": "Atlassian第三方Agent集成", "url": "https://techcrunch.com/2026/04/08/atlassian-confluence-visual-ai-tools-agents/"},
+        {"name": "Tubi ChatGPT原生应用", "url": "https://techcrunch.com/2026/04/08/tubi-is-the-first-streamer-to-launch-a-native-app-within-chatgpt/"}
+      ]
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Anthropic发布Claude Managed Agents公测版：全托管Agent构建API将开发效率提升10倍",
+      "category": "产品发布",
+      "relevance": "高",
+      "summary": "Anthropic正式推出Claude Managed Agents公测版，提供安全沙箱、长期会话持久化、多Agent协调、凭据管理等全托管能力，开发者无需自建基础设施即可部署生产级AI Agent。定价为标准token费率加每会话小时0.08美元。Notion、Rakuten、Asana、Sentry等已接入，Notion支持在工作区内向Claude委派并行任务。",
+      "source": "Anthropic",
+      "source_url": "https://claude.com/blog/claude-managed-agents"
+    },
+    {
+      "title": "DeepSeek上线专家模式和快速模式：沉寂近一年后首次重大产品更新，V4发布在即",
+      "category": "产品发布",
+      "relevance": "高",
+      "summary": "DeepSeek于4月8日上线专家模式和快速模式，首次引入模式分层设计。专家模式在代码和推理任务上表现接近V4早期泄露版本，快速模式优先响应速度。灰度测试界面还显示视觉模式选项。多方消息称V4本月内发布，将采用约1万亿参数MoE架构并全面运行在华为昇腾芯片上。",
+      "source": "澎湃新闻",
+      "source_url": "https://www.thepaper.cn/newsDetail_forward_32923338"
+    },
+    {
+      "title": "阿里巴巴重磅AI组织调整：新设集团技术委员会，通义实验室升级为大模型事业部，李飞飞任阿里云CTO",
+      "category": "行业动态",
+      "relevance": "高",
+      "summary": "阿里巴巴CEO吴泳铭发布内部信宣布AI相关组织调整。集团层面设立技术委员会由吴泳铭挂帅，通义实验室升级为通义大模型事业部由周靖人负责，斯坦福顶尖AI科学家李飞飞出任阿里云CTO。此次调整将AI从创新项目升级为集团核心战略，标志中国大厂AI组织进入深度调整期。",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/0/937/080.htm"
+    },
+    {
+      "title": "Tubi成为首个在ChatGPT内发布原生应用的流媒体平台",
+      "category": "产品发布",
+      "relevance": "高",
+      "summary": "Fox旗下免费流媒体Tubi在ChatGPT内发布原生应用，用户可通过自然语言描述观影偏好获取个性化推荐并一键跳转播放，覆盖超30万部影视内容。这是ChatGPT原生应用平台上首个大型流媒体入驻案例，标志内容发现正在从算法推荐转向对话式推荐。",
+      "source": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/04/08/tubi-is-the-first-streamer-to-launch-a-native-app-within-chatgpt/"
+    },
+    {
+      "title": "Atlassian在Confluence推出Remix可视化AI工具和第三方Agent集成",
+      "category": "产品发布",
+      "relevance": "高",
+      "summary": "Atlassian为Confluence推出两项AI更新：Remix可视化AI工具（公测）可将文本数据一键转为图表、信息图和计分卡；首批引入Lovable、Replit、Gamma三个第三方AI Agent，通过MCP标准协议接入。用户可在Confluence中直接从文档生成前端原型、可运行代码和演示文稿。",
+      "source": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/04/08/atlassian-confluence-visual-ai-tools-agents/"
+    },
+    {
+      "title": "GPT-6代号Spud预训练已完成，传闻4月14日可能发布",
+      "category": "大模型",
+      "relevance": "高",
+      "summary": "多方消息显示OpenAI内部代号'Spud'的GPT-6已于3月24日在德州Abilene的Stargate超算集群上完成预训练。X平台博主爆料称发布日期可能在4月14日，但尚未得到官方确认。36氪报道GPT-6定位为融合ChatGPT、Codex编程引擎和Atlas浏览器的统一超级应用，将具备自主调用工具和跨平台操作能力。",
+      "source": "36氪",
+      "source_url": "https://www.36kr.com/p/3754726863012361"
+    },
+    {
+      "title": "Adobe推出免费AI学习工具Acrobat Student Spaces，对标Google NotebookLM",
+      "category": "AI工具",
+      "relevance": "中",
+      "summary": "Adobe发布Acrobat Student Spaces，一款面向学生的免费AI学习工具。用户可上传课堂笔记和PDF，AI自动生成学习指南、思维导图、闪卡、测验和播客等多种学习材料，所有回答均附带来源引用。该工具无需登录即可使用，被视为Adobe在教育AI领域对Google NotebookLM的直接回应。",
+      "source": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/04/07/adobe-launches-acrobat-spaces-a-free-ai-powered-study-tool-for-students/"
+    },
+    {
+      "title": "微软开源Agent Governance Toolkit：为自主AI Agent提供运行时安全治理",
+      "category": "AI工具",
+      "relevance": "中",
+      "summary": "微软于4月2日开源Agent Governance Toolkit（MIT许可证），包含7个包、支持5种编程语言，覆盖OWASP Agentic Top 10全部安全威胁。该工具包提供亚毫秒级策略引擎、零信任身份管理、执行沙箱和可靠性工程能力，兼容LangChain、AutoGen等主流Agent框架。GitHub已获超9500星标。",
+      "source": "微软开源博客",
+      "source_url": "https://opensource.microsoft.com/blog/2026/04/02/introducing-the-agent-governance-toolkit-open-source-runtime-security-for-ai-agents/"
+    },
+    {
+      "title": "OpenAI发布儿童安全蓝图，应对AI辅助儿童性剥削内容增长",
+      "category": "AI政策",
+      "relevance": "中",
+      "summary": "OpenAI发布新的儿童安全蓝图，概述了一系列技术和政策措施以应对AI被用于生成和分发儿童性剥削内容的风险。该蓝图提出了模型训练阶段的安全过滤、部署阶段的内容检测、以及与执法机构的合作框架。此举是在AI安全合规压力增大背景下的主动响应。",
+      "source": "AI Flash Report",
+      "source_url": "https://aiflashreport.com/"
+    },
+    {
+      "title": "Databricks联合创始人获ACM大奖并宣称'AGI已经到来'",
+      "category": "行业动态",
+      "relevance": "中",
+      "summary": "Databricks联合创始人获得计算机领域最具声望的ACM奖项之一，并在获奖演讲中表示'AGI已经到来'。这一表态引发行业热议，支持者认为当前大模型已具备跨域任务执行能力，反对者认为真正的AGI需要持续学习和自主目标设定能力，当前模型仍是高级工具。",
+      "source": "AI Flash Report",
+      "source_url": "https://aiflashreport.com/"
+    }
+  ]
+}
