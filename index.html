@@ -1133,9 +1133,9 @@
   </div>
   <div class="header-right">
     <div class="date-nav" id="day-nav">
-      <button id="prevDay">← 前一天</button>
+      <button id="prevDay">← 上一周</button>
       <div class="current-date" id="currentDate">加载中...</div>
-      <button id="nextDay">后一天 →</button>
+      <button id="nextDay">下一周 →</button>
     </div>
     <div class="date-nav" id="month-nav" style="display:none;">
       <button id="prevMonth">← 上月</button>
@@ -1604,10 +1604,11 @@ function renderContent(data) {
   let html = '';
 
   // ===== HERO SECTION =====
+  const weekLabel = data.week_range || formatDisplayDate(data.date || formatDate(currentDate));
   html += `<div class="hero fade-in">`;
   html += `<div class="hero-left">`;
-  html += `<button class="blog-entry-btn" id="inlineBlogBtn" onclick="toggleInlineBlog()"><span class="blog-entry-play-circle" id="inlineBlogIcon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span><div class="blog-entry-text"><span class="blog-entry-title">AI Insights 播客</span><span class="blog-entry-subtitle" id="inlineBlogSub">${data.date || formatDate(currentDate)}</span></div></button>`;
-  html += `<h1 class="hero-title">Today's AI Design Insights.</h1>`;
+  html += `<button class="blog-entry-btn" id="inlineBlogBtn" onclick="toggleInlineBlog()"><span class="blog-entry-play-circle" id="inlineBlogIcon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span><div class="blog-entry-text"><span class="blog-entry-title">AI Insights 播客</span><span class="blog-entry-subtitle" id="inlineBlogSub">${weekLabel}</span></div></button>`;
+  html += `<h1 class="hero-title">This Week's AI Design Insights.</h1>`;
   html += `<p class="hero-desc">${data.daily_summary}</p>`;
   html += `<div class="hero-stats">`;
   html += `<div><div class="hero-stat-num">${displayStats.design_insights}</div><div class="hero-stat-label">设计洞察</div></div>`;
@@ -1644,10 +1645,11 @@ function renderContent(data) {
     const tagsHtml = ins.tags && ins.tags.length
       ? `<div class="tags">${ins.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>`
       : '';
+    const dateBadge = ins._date ? `<span style="font-size:11px;font-weight:700;color:#aaa;letter-spacing:.5px;">${ins._date}</span>` : '';
 
     html += `
       <div class="insight-card">
-        <div class="card-label">洞察 ${i + 1}</div>
+        <div class="card-label" style="display:flex;justify-content:space-between;align-items:center;">洞察 ${i + 1} ${dateBadge}</div>
         <h3>${ins.title}</h3>
         <div class="insight-quicktake">
           <div class="section-label">核心结论</div>
@@ -1681,10 +1683,11 @@ function renderContent(data) {
     if (dm.source_urls && dm.source_urls.length > 0) {
       evidenceSourceHtml = `<div class="source-links" style="margin-top:16px;padding-top:14px;">${dm.source_urls.map(s => `<a class="source-link" href="${s.url}" target="_blank">${s.name}<span class="source-link-icon">\u2192</span></a>`).join('')}</div>`;
     }
+    const dateBadge = dm._date ? `<span style="font-size:11px;font-weight:600;color:#aaa;margin-left:8px;">${dm._date}</span>` : '';
     html += `
       <div class="demand-card">
         <div class="demand-meta">
-          <h3>${dm.title}</h3>
+          <h3>${dm.title}${dateBadge}</h3>
           <div class="demand-field pain">
             <div class="label">痛点</div>
             <p>${dm.pain_point}</p>
@@ -1710,11 +1713,13 @@ function renderContent(data) {
   html += `<div class="news-grid">`;
   data.hot_news.forEach(n => {
     const rClass = n.relevance === '高' ? 'relevance-high' : 'relevance-mid';
+    const dateBadge = n._date ? `<span style="font-size:11px;font-weight:600;color:#aaa;">${n._date}</span>` : '';
     html += `
       <div class="news-card">
         <div class="news-top">
           <span class="news-category">${n.category}</span>
           <span class="news-relevance ${rClass}">相关度：${n.relevance}</span>
+          ${dateBadge}
         </div>
         <h3>${n.title}</h3>
         <div class="summary">${n.summary}</div>
@@ -1829,14 +1834,105 @@ async function navigate(dateStr) {
   renderContent(data);
 }
 
+// ===== 周维度工具函数 =====
+// 获取某日期所在周的周一（ISO：周一为第一天）
+function getWeekMonday(date) {
+  const d = new Date(date);
+  const day = d.getDay(); // 0=Sun, 1=Mon...
+  const diff = day === 0 ? -6 : 1 - day; // 周日往前推6天，其他往前推到周一
+  d.setDate(d.getDate() + diff);
+  d.setHours(0,0,0,0);
+  return d;
+}
+
+// 格式化周范围显示：如 "3月17日 - 3月23日"
+function formatWeekRange(monday) {
+  const sunday = new Date(monday);
+  sunday.setDate(monday.getDate() + 6);
+  const fmt = (d) => `${d.getMonth()+1}月${d.getDate()}日`;
+  return `${fmt(monday)} - ${fmt(sunday)}`;
+}
+
+// 加载并聚合一周数据（并发 fetch 7 天）
+async function loadWeekData(monday) {
+  const dates = [];
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(monday);
+    d.setDate(monday.getDate() + i);
+    dates.push(formatDate(d));
+  }
+
+  const results = await Promise.all(dates.map(ds =>
+    fetch(DATA_DIR + ds + '.json')
+      .then(r => r.ok ? r.json().then(j => ({ date: ds, data: j })) : null)
+      .catch(() => null)
+  ));
+
+  // 合并各天数据
+  const merged = {
+    week_start: formatDate(monday),
+    week_range: formatWeekRange(monday),
+    daily_summary: '',
+    design_insights: [],
+    demand_mining: [],
+    hot_news: [],
+    _days_loaded: 0
+  };
+
+  const summaries = [];
+  results.forEach(r => {
+    if (!r || !r.data) return;
+    merged._days_loaded++;
+    const ds = r.date.slice(5); // MM-DD
+
+    if (r.data.daily_summary) summaries.push(`[${ds}] ${r.data.daily_summary}`);
+
+    (r.data.design_insights || []).forEach(item => {
+      merged.design_insights.push({ ...item, _date: ds });
+    });
+    (r.data.demand_mining || []).forEach(item => {
+      merged.demand_mining.push({ ...item, _date: ds });
+    });
+    (r.data.hot_news || []).forEach(item => {
+      merged.hot_news.push({ ...item, _date: ds });
+    });
+  });
+
+  merged.daily_summary = summaries.length
+    ? `本周共收录 ${merged._days_loaded} 天数据，${merged.design_insights.length} 条设计洞察，${merged.demand_mining.length} 个需求机会，${merged.hot_news.length} 条热点资讯。`
+    : '';
+
+  return merged._days_loaded > 0 ? merged : null;
+}
+
+// 跳到某周（以周一日期字符串为基准）
+async function navigateWeek(mondayDate) {
+  currentDate = new Date(mondayDate + 'T00:00:00');
+  stopVoicePlayback(false);
+  closeInlineBlog();
+  latestInsightData = null;
+  updateVoiceButtonAvailability();
+
+  const monday = getWeekMonday(currentDate);
+  document.getElementById('currentDate').textContent = formatWeekRange(monday);
+  document.getElementById('app').innerHTML = `<div class="loading"><div class="spinner"></div><p>正在加载本周数据...</p></div>`;
+
+  const data = await loadWeekData(monday);
+  renderContent(data);
+}
+
 document.getElementById('prevDay').addEventListener('click', () => {
-  currentDate.setDate(currentDate.getDate() - 1);
-  navigate(formatDate(currentDate));
+  const monday = getWeekMonday(currentDate);
+  monday.setDate(monday.getDate() - 7); // 上一周
+  currentDate = monday;
+  navigateWeek(formatDate(monday));
 });
 
 document.getElementById('nextDay').addEventListener('click', () => {
-  currentDate.setDate(currentDate.getDate() + 1);
-  navigate(formatDate(currentDate));
+  const monday = getWeekMonday(currentDate);
+  monday.setDate(monday.getDate() + 7); // 下一周
+  currentDate = monday;
+  navigateWeek(formatDate(monday));
 });
 
 document.getElementById('voicePlayButton').addEventListener('click', handleVoicePlayback);
@@ -1845,19 +1941,25 @@ updateVoiceButtonAvailability();
 (async function init() {
   const now = new Date();
   currentDate = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  const todayStr = formatDate(currentDate);
-  
-  let data = await loadData(todayStr);
-  if (data) { navigate(todayStr); return; }
-  
-  for (let i = 1; i <= 7; i++) {
-    const d = new Date(currentDate);
-    d.setDate(d.getDate() - i);
-    const ds = formatDate(d);
-    data = await loadData(ds);
-    if (data) { currentDate = d; navigate(ds); return; }
+
+  // 先尝试当前周
+  let monday = getWeekMonday(currentDate);
+  let data = await loadWeekData(monday);
+
+  // 如果当前周完全没数据，往前找最多4周
+  if (!data) {
+    for (let w = 1; w <= 4; w++) {
+      const m = new Date(monday);
+      m.setDate(monday.getDate() - 7 * w);
+      data = await loadWeekData(m);
+      if (data) { monday = m; currentDate = m; break; }
+    }
   }
-  navigate(todayStr);
+
+  const mondayStr = formatDate(monday);
+  document.getElementById('currentDate').textContent = formatWeekRange(monday);
+  document.getElementById('app').innerHTML = `<div class="loading"><div class="spinner"></div><p>正在加载本周数据...</p></div>`;
+  renderContent(data);
 })();
 
 // ===== 聚类需求地图动态渲染 =====
