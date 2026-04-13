@@ -1655,7 +1655,7 @@ function renderContent(data) {
 
     html += `
       <div class="insight-card">
-        <div class="card-label" style="display:flex;justify-content:space-between;align-items:center;">洞察 ${i + 1} ${dateBadge}</div>
+        <div class="card-label" style="display:flex;justify-content:space-between;align-items:center;width:100%;">洞察 ${i + 1} ${dateBadge}</div>
         <h3>${ins.title}</h3>
         <div class="insight-quicktake">
           <div class="section-label">核心结论</div>
@@ -1689,11 +1689,11 @@ function renderContent(data) {
     if (dm.source_urls && dm.source_urls.length > 0) {
       evidenceSourceHtml = `<div class="source-links" style="margin-top:16px;padding-top:14px;">${dm.source_urls.map(s => `<a class="source-link" href="${s.url}" target="_blank">${s.name}<span class="source-link-icon">\u2192</span></a>`).join('')}</div>`;
     }
-    const dateBadge = dm._date ? `<span style="font-size:11px;font-weight:600;color:#aaa;margin-left:8px;">${dm._date}</span>` : '';
     html += `
       <div class="demand-card">
-        <div class="demand-meta">
-          <h3>${dm.title}${dateBadge}</h3>
+        <div class="demand-meta" style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;">
+          <h3 style="margin:0;">${dm.title}</h3>
+          ${dateBadge ? `<span style="font-size:11px;font-weight:600;color:#aaa;white-space:nowrap;padding-top:2px;">${dm._date}</span>` : ''}</div>
           <div class="demand-field pain">
             <div class="label">痛点</div>
             <p>${dm.pain_point}</p>
