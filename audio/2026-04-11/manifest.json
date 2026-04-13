@@ -1,0 +1,164 @@
+{
+  "date": "2026-04-11",
+  "generated_at": "2026-04-13T08:08:05",
+  "total_segments": 22,
+  "segments": [
+    {
+      "index": 0,
+      "file": "000.mp3",
+      "text": "欢迎收听 2026-04-11 的 AI Insights 播报，一起来看看今天有哪些不容错过的 AI 行业动态。",
+      "section": "",
+      "size": 122087
+    },
+    {
+      "index": 1,
+      "file": "001.mp3",
+      "text": "先来一个全局速览。周六AI行业焦点集中在开源Agent工具链爆发与AI芯片供应链博弈。OpenBMB推出无分词器多语言TTS模型VoxCPM2，语音克隆效果接近真人水平；Superpowers框架为A",
+      "section": "📋 今日速览",
+      "size": 899073
+    },
+    {
+      "index": 2,
+      "file": "002.mp3",
+      "text": "今天的深度洞察环节，一共有 4 个值得关注的话题。",
+      "section": "🔍 深度洞察",
+      "size": 66080
+    },
+    {
+      "index": 3,
+      "file": "003.mp3",
+      "text": "第 1 个话题：VoxCPM2无分词器TTS模型发布：语音合成从'拼接文本'走向'端到端原生生成'。OpenBMB推出VoxCPM2，这是一款无需传统分词器的多语言文本转语音系统。传统TTS流程需要先",
+      "section": "",
+      "size": 896983
+    },
+    {
+      "index": 4,
+      "file": "004.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) 无分词器设计直接解决了输入法语音输入中的多语言混合痛点——用户在中文句子中夹杂英文单词时，传统分词器经常在语言切换点出错导致识别失败，端到端架构从根本上消除了这",
+      "section": "",
+      "size": 683824
+    },
+    {
+      "index": 5,
+      "file": "005.mp3",
+      "text": "第 2 个话题：Superpowers框架：AI编程Agent从'代码补全工具'升级为'软件工程全流程管理者'。开发者obra在GitHub发布Superpowers框架，为AI编程Agent提供了一",
+      "section": "",
+      "size": 835543
+    },
+    {
+      "index": 6,
+      "file": "006.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) 模块化技能集的设计思路可以直接应用于输入法AI帮写——将'纠错''续写''改写''翻译''摘要'等能力定义为独立技能模块，根据用户输入场景动态组合，而非用一个大",
+      "section": "",
+      "size": 632415
+    },
+    {
+      "index": 7,
+      "file": "007.mp3",
+      "text": "第 3 个话题：GPT-6倒计时：OpenAI代号Spud 4月14日发布在即，200万token上下文+性能提升40%。GPT-6代号Spud的发布信号密集释放：Polymarket预测市场4月14",
+      "section": "",
+      "size": 936689
+    },
+    {
+      "index": 8,
+      "file": "008.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) 200万token上下文窗口对输入法意味着AI帮写可以'读完'用户手机上的整个聊天历史或长篇文档再生成回复，上下文理解能力的量级提升将彻底改变帮写的体验——从'",
+      "section": "",
+      "size": 663344
+    },
+    {
+      "index": 9,
+      "file": "009.mp3",
+      "text": "第 4 个话题：Anthropic暂停OpenClaw开发者Claude访问权：闭源AI厂商与开源工具生态的边界战争。Anthropic官方暂停了开源AI运行工具OpenClaw创建者Steinber",
+      "section": "",
+      "size": 921225
+    },
+    {
+      "index": 10,
+      "file": "010.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) 闭源模型API随时可能因政策变化被限制——输入法如果重度依赖单一闭源模型作为后端，存在被'断供'风险，需要维护多模型路由能力（至少3家供应商），并在合同层面保障",
+      "section": "",
+      "size": 711409
+    },
+    {
+      "index": 11,
+      "file": "011.mp3",
+      "text": "接下来是需求挖掘环节，看看今天发现了哪些产品机会。",
+      "section": "💎 需求挖掘",
+      "size": 81127
+    },
+    {
+      "index": 12,
+      "file": "012.mp3",
+      "text": "第 1 个机会：多语言混合语音输入模块，优先级：高。 用户痛点：用户在中文对话中夹杂英文品牌名、专业术语或外语单词时，传统基于分词器的语音识别在语言切换点频繁出错，导致用户反复修正或放弃语音输入 产品",
+      "section": "",
+      "size": 712663
+    },
+    {
+      "index": 13,
+      "file": "013.mp3",
+      "text": "第 2 个机会：AI帮写场景化技能包，优先级：高。 用户痛点：当前AI帮写功能是单一通用模式，用户写工作邮件和发朋友圈用的是同一套AI能力，生成质量和风格匹配度不高 产品机会：参考Superpower",
+      "section": "",
+      "size": 713499
+    },
+    {
+      "index": 14,
+      "file": "014.mp3",
+      "text": "第 3 个机会：多模型路由健壮性保障，优先级：中。 用户痛点：Anthropic封禁OpenClaw开发者API访问事件暴露了依赖单一闭源模型的供应链风险，输入法后端如果单一依赖某个模型API，可能面",
+      "section": "",
+      "size": 670031
+    },
+    {
+      "index": 15,
+      "file": "015.mp3",
+      "text": "最后来一组快讯。",
+      "section": "⚡ 快讯速递",
+      "size": 32225
+    },
+    {
+      "index": 16,
+      "file": "016.mp3",
+      "text": "GPT-6代号Spud确认4月14日发布，Polymarket概率78%。OpenAI下一代旗舰模型GPT-6代号Spud在德州Stargate超级集群完成预训练，传闻4月14日发布。核心升级包括20",
+      "section": "",
+      "size": 828856
+    },
+    {
+      "index": 17,
+      "file": "017.mp3",
+      "text": "OpenBMB发布VoxCPM2：无分词器多语言语音克隆TTS模型。OpenBMB推出革命性TTS系统VoxCPM2，无需传统分词器即可实现多语言语音生成和高保真语音克隆。数秒参考音频即可复制说话风格",
+      "section": "",
+      "size": 700542
+    },
+    {
+      "index": 18,
+      "file": "018.mp3",
+      "text": "Anthropic暂停OpenClaw创建者Claude API访问权限。Anthropic官方暂停了开源AI运行工具OpenClaw创建者的Claude访问权限，事件发生在后者测试API兼容性期间。",
+      "section": "",
+      "size": 688421
+    },
+    {
+      "index": 19,
+      "file": "019.mp3",
+      "text": "Archon：首个AI编程基准构建器开源。coleam00开源Archon项目，旨在将不可预测的AI编程过程转变为确定且可重复的流程。通过提供标准化的测试基准构建框架，帮助开发者系统评估AI模型在软件",
+      "section": "",
+      "size": 653731
+    },
+    {
+      "index": 20,
+      "file": "020.mp3",
+      "text": "OpenDataLoader PDF：AI数据准备的开源PDF解析工具。opendataloader-project推出开源PDF解析器，专为AI应用数据准备设计。自动化PDF处理流程，确保文档内容结",
+      "section": "",
+      "size": 653313
+    },
+    {
+      "index": 21,
+      "file": "021.mp3",
+      "text": "以上就是今天的全部内容，感谢收听，明天见。",
+      "section": "",
+      "size": 71932
+    }
+  ],
+  "total_size_bytes": 13175012,
+  "failed": 0,
+  "duration_seconds": 259.9
+}

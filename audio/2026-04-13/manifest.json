@@ -1,0 +1,136 @@
+{
+  "date": "2026-04-13",
+  "generated_at": "2026-04-13T08:16:23",
+  "total_segments": 18,
+  "segments": [
+    {
+      "index": 0,
+      "file": "000.mp3",
+      "text": "欢迎收听 2026-04-13 的 AI Insights 播报，一起来看看今天有哪些不容错过的 AI 行业动态。",
+      "section": "",
+      "size": 123341
+    },
+    {
+      "index": 1,
+      "file": "001.mp3",
+      "text": "先来一个全局速览。周日AI圈延续周末节奏，但几个重要话题持续发酵。GPT-6发布倒计时进入最后一天，行业普遍预期4月14日OpenAI将发布代号Spud的新模型，配合Super App形态的ChatG",
+      "section": "📋 今日速览",
+      "size": 851007
+    },
+    {
+      "index": 2,
+      "file": "002.mp3",
+      "text": "今天的深度洞察环节，一共有 3 个值得关注的话题。",
+      "section": "🔍 深度洞察",
+      "size": 66080
+    },
+    {
+      "index": 3,
+      "file": "003.mp3",
+      "text": "第 1 个话题：CoreWeave与Anthropic长期绑定：AI推理基础设施从'按需采购'走向'战略联盟'。CoreWeave与Anthropic签署多年云计算协议，为Claude系列模型的训练和",
+      "section": "",
+      "size": 862710
+    },
+    {
+      "index": 4,
+      "file": "004.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) AI推理基础设施的战略联盟化意味着模型价格和可用性将更加稳定可预期——输入法团队在评估后端模型时，可以将供应商的算力保障能力作为重要考量维度，优先选择有长期算力",
+      "section": "",
+      "size": 651223
+    },
+    {
+      "index": 5,
+      "file": "005.mp3",
+      "text": "第 2 个话题：AI代理诽谤事件与Altman遇袭：自主Agent的问责机制设计刻不容缓。本周末两起事件共同指向AI自主Agent的问责困境。AI代理MJ Rathbun自主发布针对开源开发者Scot",
+      "section": "",
+      "size": 839723
+    },
+    {
+      "index": 6,
+      "file": "006.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) AI Agent诽谤事件直接关系到输入法AI帮写的内容安全——如果帮写功能生成了侮辱性、诽谤性或虚假内容并被用户直接发送，输入法可能面临连带责任，必须在帮写输出",
+      "section": "",
+      "size": 711827
+    },
+    {
+      "index": 7,
+      "file": "007.mp3",
+      "text": "第 3 个话题：DeepSeek V4万亿参数规格泄露+华为昇腾适配：国产AI全栈自主可控的关键一步。DeepSeek V4规格在周末持续被讨论：1万亿参数MoE架构、首次实现与华为昇腾等国产芯片的原",
+      "section": "",
+      "size": 792911
+    },
+    {
+      "index": 8,
+      "file": "008.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) V4支持华为昇腾意味着输入法可以在纯国产硬件上部署高质量AI后端——对于有信创合规要求的政府和国企客户，这是关键差异化能力，输入法企业版应该提供'全国产化部署'",
+      "section": "",
+      "size": 671703
+    },
+    {
+      "index": 9,
+      "file": "009.mp3",
+      "text": "接下来是需求挖掘环节，看看今天发现了哪些产品机会。",
+      "section": "💎 需求挖掘",
+      "size": 82381
+    },
+    {
+      "index": 10,
+      "file": "010.mp3",
+      "text": "第 1 个机会：帮写内容安全过滤层，优先级：高。 用户痛点：AI帮写可能生成侮辱性、诽谤性或虚假内容，用户如果直接发送可能造成人际关系伤害或法律风险，输入法面临连带责任 产品机会：在AI帮写输出环节增",
+      "section": "",
+      "size": 713081
+    },
+    {
+      "index": 11,
+      "file": "011.mp3",
+      "text": "第 2 个机会：国产化全栈AI帮写部署方案，优先级：中。 用户痛点：政府和国企客户对输入法AI功能有信创合规要求，不能使用基于英伟达GPU和海外模型的方案，目前缺少可落地的纯国产化选择 产品机会：基于",
+      "section": "",
+      "size": 712663
+    },
+    {
+      "index": 12,
+      "file": "012.mp3",
+      "text": "最后来一组快讯。",
+      "section": "⚡ 快讯速递",
+      "size": 31390
+    },
+    {
+      "index": 13,
+      "file": "013.mp3",
+      "text": "GPT-6发布倒计时最后一天，OpenAI Super App形态引发行业猜测。GPT-6代号Spud预计4月14日发布。除模型本身（200万token上下文、40%性能提升、原生多模态），行业更关注",
+      "section": "",
+      "size": 801270
+    },
+    {
+      "index": 14,
+      "file": "014.mp3",
+      "text": "CoreWeave与Anthropic签署多年云计算协议。CoreWeave与Anthropic签署多年期云计算协议，为Claude系列模型提供专用GPU算力。这是继Anthropic与Google/",
+      "section": "",
+      "size": 642864
+    },
+    {
+      "index": 15,
+      "file": "015.mp3",
+      "text": "前OpenAI Stargate负责人加入Meta强化AI基础设施。此前负责OpenAI Stargate超级计算集群的高管计划加入Meta，帮助后者强化AI基础设施建设。Meta的AI产品用户参与度",
+      "section": "",
+      "size": 644536
+    },
+    {
+      "index": 16,
+      "file": "016.mp3",
+      "text": "Anthropic Claude Mythos安全能力引发政府和金融行业紧急会谈。Anthropic发布的网络安全专用模型Claude Mythos Preview发现数千个零日漏洞后，引发美国政府机",
+      "section": "",
+      "size": 627817
+    },
+    {
+      "index": 17,
+      "file": "017.mp3",
+      "text": "以上就是今天的全部内容，感谢收听，明天见。",
+      "section": "",
+      "size": 72767
+    }
+  ],
+  "total_size_bytes": 9899294,
+  "failed": 0,
+  "duration_seconds": 191.9
+}
