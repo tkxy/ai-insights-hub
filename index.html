@@ -1707,9 +1707,11 @@ function renderContent(data) {
     }
     html += `
       <div class="demand-card">
-        <div class="demand-meta" style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;">
-          <h3 style="margin:0;">${dm.title}</h3>
-          ${dateBadge ? `<span style="font-size:11px;font-weight:600;color:#aaa;white-space:nowrap;padding-top:2px;">${dm._date}</span>` : ''}</div>
+        <div class="demand-meta">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;">
+            <h3 style="margin:0;">${dm.title}</h3>
+            ${dm._date ? `<span style="font-size:11px;font-weight:600;color:#aaa;white-space:nowrap;padding-top:2px;">${dm._date}</span>` : ''}
+          </div>
           <div class="demand-field pain">
             <div class="label">痛点</div>
             <p>${dm.pain_point}</p>
