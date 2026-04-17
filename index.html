@@ -342,152 +342,126 @@
 
   /* ===== INSIGHT CARDS ===== */
   .insights-grid {
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 20px;
-  }
-
-  .insight-card {
-    background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(252,250,246,0.96) 100%);
-    border-radius: var(--radius);
-    padding: 28px;
-    border: 1px solid rgba(17,17,17,0.08);
-    box-shadow: 0 12px 32px rgba(17,17,17,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: default;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-  }
-  .insight-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 18px 40px rgba(17,17,17,0.08);
-  }
-
-  .insight-card .insight-card-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-  .insight-card .card-label {
-    display: inline-flex;
-    align-items: center;
-    align-self: flex-start;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
-    color: var(--black);
-    background: rgba(17,17,17,0.06);
-    padding: 6px 12px;
-    border-radius: 100px;
-  }
-  .insight-card .insight-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  .insight-card .insight-meta-item {
-    display: inline-flex;
-    align-items: center;
-    min-height: 26px;
-    padding: 0 10px;
-    border-radius: 999px;
-    background: rgba(255,255,255,0.92);
-    border: 1px solid rgba(17,17,17,0.08);
-    color: var(--text3);
-    font-size: 11px;
-    font-weight: 600;
-  }
-  .insight-card h3 {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 22px;
-    font-weight: 800;
-    line-height: 1.35;
-    color: var(--black);
-    letter-spacing: -0.5px;
-    margin: 0;
-  }
-  .insight-card .insight-quicktake {
-    background: rgba(17,17,17,0.04);
-    border: 1px solid rgba(17,17,17,0.08);
-    border-radius: var(--radius-sm);
-    padding: 16px 18px;
-  }
-  .insight-card .section-label {
-    font-size: 11px;
-    color: var(--text3);
-    font-weight: 700;
-    margin-bottom: 8px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-  }
-  .insight-card .insight-quicktake p {
-    font-size: 15px;
-    line-height: 1.7;
-    color: var(--black);
-    font-weight: 700;
-  }
-  .insight-card .insight-sections {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 12px;
-  }
-  .insight-card .insight-section {
-    display: flex;
-    flex-direction: column;
-    padding: 16px 18px;
-    border-radius: var(--radius-sm);
-    background: rgba(255,255,255,0.78);
-    border: 1px solid rgba(17,17,17,0.08);
-  }
-  .insight-card .insight-points {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .insight-card .insight-points li {
-    position: relative;
-    padding-left: 16px;
-    font-size: 13px;
-    line-height: 1.75;
-    color: var(--text2);
-  }
-  .insight-card .insight-points li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 9px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--black);
-    opacity: 0.72;
+    gap: 24px;
   }
 
-  .insight-card .implication {
-    background: rgba(245,239,228,0.72);
-    border-left: 3px solid var(--black);
+  /* ===== NEW INSIGHT CARD ===== */
+  .insight-card {
+    background: rgba(255,255,255,0.97);
+    border-radius: var(--radius);
+    border: 1px solid rgba(17,17,17,0.08);
+    box-shadow: 0 8px 28px rgba(17,17,17,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+    overflow: hidden;
   }
-  .insight-card .implication .section-label,
-  .insight-card .implication .insight-points li {
-    color: var(--black);
+  .insight-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(17,17,17,0.09);
   }
-  .insight-card .insight-footer {
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding-top: 16px;
-    border-top: 1px solid rgba(17,17,17,0.08);
+
+  /* top strip: index + urgency + tags + date */
+  .insight-card .ic-topbar {
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    padding: 16px 24px 14px;
+    border-bottom: 1px solid rgba(17,17,17,0.06);
+    background: rgba(17,17,17,0.025);
   }
-  .insight-card .insight-footer .source-links {
-    margin-top: 0;
-    padding-top: 0;
-    border-top: none;
+  .insight-card .ic-index {
+    font-size: 11px; font-weight: 800; letter-spacing: 1px;
+    text-transform: uppercase; color: #aaa;
+  }
+  .insight-card .ic-urgency {
+    font-size: 11px; font-weight: 700; padding: 3px 10px;
+    border-radius: 999px; letter-spacing: .3px;
+  }
+  .ic-urgency.high { background: #fde8e8; color: #c0392b; }
+  .ic-urgency.mid  { background: #fef3e2; color: #b7770d; }
+  .ic-urgency.low  { background: rgba(0,0,0,0.05); color: #888; }
+  .insight-card .ic-date { font-size: 11px; color: #bbb; font-weight: 600; margin-left: auto; }
+
+  /* title */
+  .insight-card .ic-title {
+    font-size: 20px; font-weight: 800; line-height: 1.4;
+    letter-spacing: -0.4px; color: var(--black);
+    padding: 20px 24px 0;
+    margin: 0;
+  }
+
+  /* 3-step flow: 事件 → 影响 → 行动 */
+  .ic-flow {
+    display: grid;
+    grid-template-columns: 1fr 28px 1fr 28px 1fr;
+    gap: 0;
+    margin: 18px 24px 0;
+    align-items: stretch;
+  }
+  .ic-flow-arrow {
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; color: #ccc; font-weight: 300; user-select: none;
+  }
+  .ic-flow-step {
+    border-radius: 14px;
+    padding: 14px 16px;
+    display: flex; flex-direction: column; gap: 6px;
+    min-height: 90px;
+  }
+  .ic-flow-step.event   { background: #f0f4ff; }
+  .ic-flow-step.impact  { background: #fff7ed; }
+  .ic-flow-step.action  { background: #f0fdf4; }
+  .ic-flow-step .ic-step-label {
+    font-size: 10px; font-weight: 800; letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .ic-flow-step.event  .ic-step-label { color: #5b7fff; }
+  .ic-flow-step.impact .ic-step-label { color: #d97706; }
+  .ic-flow-step.action .ic-step-label { color: #16a34a; }
+  .ic-flow-step .ic-step-icon { font-size: 18px; line-height: 1; }
+  .ic-flow-step .ic-step-text {
+    font-size: 13px; line-height: 1.6; color: #333; font-weight: 500;
+  }
+
+  /* detail rows */
+  .ic-body {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    padding: 14px 24px 0;
+  }
+  .ic-detail-block {
+    border-radius: 12px; padding: 14px 16px;
+    background: rgba(0,0,0,0.025); border: 1px solid rgba(0,0,0,0.06);
+  }
+  .ic-detail-label {
+    font-size: 10px; font-weight: 800; letter-spacing: 1px;
+    text-transform: uppercase; color: #aaa; margin-bottom: 8px;
+  }
+  .ic-detail-points {
+    list-style: none; margin: 0; padding: 0;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .ic-detail-points li {
+    position: relative; padding-left: 14px;
+    font-size: 13px; line-height: 1.65; color: #444;
+  }
+  .ic-detail-points li::before {
+    content: ''; position: absolute; left: 0; top: 8px;
+    width: 5px; height: 5px; border-radius: 50%;
+    background: #111; opacity: 0.45;
+  }
+
+  /* footer */
+  .insight-card .ic-footer {
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    padding: 14px 24px 18px; margin-top: 14px;
+    border-top: 1px solid rgba(0,0,0,0.06);
+  }
+
+  /* card-label kept for backward compat */
+  .insight-card .card-label { display: none; }
+  .insight-card .section-label {
+    font-size: 11px; color: var(--text3); font-weight: 700;
+    margin-bottom: 8px; letter-spacing: 0.5px; text-transform: uppercase;
   }
 
   .tags { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -1062,20 +1036,10 @@
     }
     .hero-title { font-size: 40px; }
     .insights-grid, .news-grid { grid-template-columns: 1fr; }
-    .insight-card {
-      padding: 22px;
-      gap: 16px;
-    }
-    .insight-card h3 {
-      font-size: 19px;
-    }
-    .insight-card .insight-card-header {
-      align-items: flex-start;
-      flex-direction: column;
-    }
-    .insight-card .insight-meta {
-      width: 100%;
-    }
+    .insight-card .ic-flow { grid-template-columns: 1fr; }
+    .ic-flow-arrow { display: none; }
+    .insight-card .ic-body { grid-template-columns: 1fr; }
+    .insight-card .ic-title { font-size: 17px; }
     .demand-card { grid-template-columns: 1fr; }
     .main { padding: 20px 24px 40px; }
     .section-title { font-size: 22px; }
@@ -1702,46 +1666,98 @@ function renderContent(data) {
   html += `<div class="tab-content active" id="tab-insights"><div class="section fade-in">`;
   html += `<div class="insights-grid">`;
   data.design_insights.forEach((ins, i) => {
+    // Source links
     let sourceLinksHtml = '';
     if (ins.source_urls && ins.source_urls.length > 0) {
-      sourceLinksHtml = `<div class="source-links">${ins.source_urls.map(s => `<a class="source-link" href="${s.url}" target="_blank">${s.name}<span class="source-link-icon">\u2192</span></a>`).join('')}</div>`;
+      sourceLinksHtml = ins.source_urls.slice(0, 3).map(s =>
+        `<a class="source-link" href="${s.url}" target="_blank">${s.name}<span class="source-link-icon">→</span></a>`
+      ).join('');
     } else if (ins.sources && ins.sources.length > 0) {
-      sourceLinksHtml = `<div class="source-links">${ins.sources.map(s => `<span class="source-link" style="cursor:default">${s}</span>`).join('')}</div>`;
+      sourceLinksHtml = ins.sources.slice(0, 3).map(s =>
+        `<span class="source-link" style="cursor:default">${s}</span>`
+      ).join('');
     }
 
-    const summaryPoints = splitStructuredText(ins.summary, 4);
-    const implicationPoints = splitStructuredText(ins.implication, 4);
-    const quickTake = pickInsightQuickTake(summaryPoints, implicationPoints, ins.title);
-    const signalPoints = (summaryPoints.length ? summaryPoints : [ins.summary]).slice(0, 2);
-    const actionPointsRaw = implicationPoints.filter(item => item !== quickTake);
-    const actionPoints = (actionPointsRaw.length ? actionPointsRaw : implicationPoints).slice(0, 2);
+    // Tags
     const tagsHtml = ins.tags && ins.tags.length
-      ? `<div class="tags">${ins.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>`
+      ? ins.tags.map(t => `<span class="tag">${t}</span>`).join('')
       : '';
-    const dateBadge = ins._date ? `<span style="font-size:11px;font-weight:700;color:#aaa;letter-spacing:.5px;">${ins._date}</span>` : '';
+    const dateBadge = ins._date ? `<span class="ic-date">${ins._date}</span>` : '';
+
+    // Urgency: infer from priority field or implication keywords
+    const urgencyText = /必须|立即|加速|降维打击|直接冲击/.test(ins.implication || '') ? '高紧迫' :
+                        /建议|可以|可借鉴/.test(ins.implication || '') ? '中等' : '持续关注';
+    const urgencyClass = urgencyText === '高紧迫' ? 'high' : urgencyText === '中等' ? 'mid' : 'low';
+
+    // Parse summary → event description (first 2 sentences)
+    const summaryPoints = splitStructuredText(ins.summary, 6);
+    const eventText = summaryPoints.slice(0, 1).join('') || ins.summary?.slice(0, 100) || '';
+
+    // Parse implication → impact + actions
+    const implPoints = splitStructuredText(ins.implication, 6);
+    // Impact: first point mentioning "冲击/影响/改变/压力"
+    const impactPoint = implPoints.find(p => /冲击|影响|改变|压力|降维|取代|挤压|颠覆/.test(p))
+      || implPoints[0] || '';
+    // Actions: points with "建议/应/必须/可以/加速/规划"
+    const actionPoints = implPoints.filter(p => /建议|应|必须|可以|加速|规划|尝试|值得|需要/.test(p)).slice(0, 2);
+    const actionText = actionPoints.join(' ') || implPoints.slice(1, 2).join('') || '';
+
+    // Signal bullets (remaining summary points)
+    const signalPoints = summaryPoints.slice(1, 4);
+    // Implication bullets
+    const implBullets = implPoints.slice(0, 3);
 
     html += `
       <div class="insight-card">
-        <div class="card-label" style="display:flex;justify-content:space-between;align-items:center;width:100%;">洞察 ${i + 1} ${dateBadge}</div>
-        <h3>${ins.title}</h3>
-        <div class="insight-quicktake">
-          <div class="section-label">核心结论</div>
-          <p>${quickTake}</p>
+
+        <div class="ic-topbar">
+          <span class="ic-index">洞察 ${String(i + 1).padStart(2, '0')}</span>
+          <span class="ic-urgency ${urgencyClass}">${urgencyText}</span>
+          ${tagsHtml ? `<div class="tags" style="margin:0;">${tagsHtml}</div>` : ''}
+          ${dateBadge}
         </div>
-        <div class="insight-sections">
-          <div class="insight-section">
-            <div class="section-label">关键信号</div>
-            ${buildInsightList(signalPoints)}
+
+        <h3 class="ic-title">${ins.title}</h3>
+
+        <!-- 三步流程图: 事件 → 影响 → 行动 -->
+        <div class="ic-flow">
+          <div class="ic-flow-step event">
+            <span class="ic-step-label">📰 发生了什么</span>
+            <span class="ic-step-text">${eventText.slice(0, 90)}${eventText.length > 90 ? '…' : ''}</span>
           </div>
-          <div class="insight-section implication">
-            <div class="section-label">建议动作</div>
-            ${buildInsightList(actionPoints)}
+          <div class="ic-flow-arrow">→</div>
+          <div class="ic-flow-step impact">
+            <span class="ic-step-label">⚡ 对我们的冲击</span>
+            <span class="ic-step-text">${impactPoint.slice(0, 90)}${impactPoint.length > 90 ? '…' : ''}</span>
+          </div>
+          <div class="ic-flow-arrow">→</div>
+          <div class="ic-flow-step action">
+            <span class="ic-step-label">✅ 建议行动</span>
+            <span class="ic-step-text">${actionText.slice(0, 90)}${actionText.length > 90 ? '…' : ''}</span>
           </div>
         </div>
-        <div class="insight-footer">
-          ${tagsHtml}
-          ${sourceLinksHtml}
+
+        <!-- 详细展开 -->
+        <div class="ic-body">
+          <div class="ic-detail-block">
+            <div class="ic-detail-label">关键信号</div>
+            <ul class="ic-detail-points">
+              ${(signalPoints.length ? signalPoints : summaryPoints.slice(0, 3)).map(p =>
+                `<li>${p}</li>`).join('')}
+            </ul>
+          </div>
+          <div class="ic-detail-block" style="background:rgba(245,239,228,0.5);border-left:3px solid #111;">
+            <div class="ic-detail-label">完整建议</div>
+            <ul class="ic-detail-points">
+              ${implBullets.map(p => `<li>${p}</li>`).join('')}
+            </ul>
+          </div>
         </div>
+
+        <div class="ic-footer">
+          ${sourceLinksHtml ? `<div class="source-links" style="margin:0;padding:0;border:none;">${sourceLinksHtml}</div>` : ''}
+        </div>
+
       </div>
     `;
   });
