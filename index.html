@@ -347,139 +347,109 @@
     gap: 24px;
   }
 
-  /* ===== NEW INSIGHT CARD ===== */
+  /* ===== INSIGHT CARD — editorial vertical layout ===== */
   .insight-card {
     background: #fff;
-    border-radius: 20px;
-    border: 1px solid rgba(17,17,17,0.07);
-    box-shadow: 0 2px 12px rgba(17,17,17,0.04), 0 8px 32px rgba(17,17,17,0.04);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-    cursor: default;
+    border-radius: 18px;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04), 0 6px 24px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s ease;
     overflow: hidden;
   }
   .insight-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 20px rgba(17,17,17,0.07), 0 16px 48px rgba(17,17,17,0.07);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06), 0 12px 36px rgba(0,0,0,0.07);
   }
 
-  /* left accent bar — color by urgency */
-  .insight-card.urgency-high { border-left: 4px solid #e74c3c; }
-  .insight-card.urgency-mid  { border-left: 4px solid #f39c12; }
-  .insight-card.urgency-low  { border-left: 4px solid #bdc3c7; }
-
-  /* top strip: index + urgency + tags + date */
+  /* — meta row: number + urgency dot + date — */
   .insight-card .ic-topbar {
-    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
-    padding: 14px 28px 12px;
-    border-bottom: 1px solid rgba(17,17,17,0.05);
+    display: flex; align-items: center; gap: 10px;
+    padding: 16px 28px 0;
   }
   .insight-card .ic-index {
     font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
-    text-transform: uppercase; color: #c0c0c0;
+    text-transform: uppercase; color: #ccc;
   }
   .insight-card .ic-urgency {
-    font-size: 11px; font-weight: 700; padding: 3px 11px;
-    border-radius: 999px; letter-spacing: .2px;
+    font-size: 11px; font-weight: 700; padding: 2px 10px;
+    border-radius: 999px;
   }
   .ic-urgency.high { background: #fef0f0; color: #c0392b; }
   .ic-urgency.mid  { background: #fef8ec; color: #b7770d; }
   .ic-urgency.low  { background: #f2f2f2; color: #999; }
-  .insight-card .ic-date { font-size: 11px; color: #c8c8c8; font-weight: 600; margin-left: auto; }
+  .insight-card .ic-tags {
+    display: flex; flex-wrap: wrap; gap: 6px;
+  }
+  .insight-card .ic-tags .tag {
+    font-size: 11px; padding: 2px 10px;
+  }
+  .insight-card .ic-date {
+    font-size: 11px; color: #ccc; font-weight: 600; margin-left: auto;
+  }
 
-  /* title */
+  /* — title — */
   .insight-card .ic-title {
-    font-size: 21px; font-weight: 800; line-height: 1.45;
-    letter-spacing: -0.3px; color: #111;
-    padding: 22px 28px 4px;
+    font-size: 20px; font-weight: 800; line-height: 1.5;
+    letter-spacing: -0.2px; color: #111;
+    padding: 14px 28px 0; margin: 0;
+  }
+
+  /* — summary paragraph — */
+  .insight-card .ic-summary {
+    font-size: 14.5px; line-height: 1.8; color: #555;
+    padding: 10px 28px 0;
     margin: 0;
   }
 
-  /* 3-step flow: 事件 → 影响 → 行动 */
-  .ic-flow {
+  /* — three labelled rows — */
+  .ic-rows {
+    display: flex; flex-direction: column; gap: 0;
+    margin: 20px 28px 0;
+  }
+  .ic-row {
     display: grid;
-    grid-template-columns: 1fr 24px 1fr 24px 1fr;
+    grid-template-columns: 90px 1fr;
     gap: 0;
-    margin: 18px 28px 0;
-    align-items: stretch;
+    border-top: 1px solid #f0f0f0;
+    padding: 14px 0;
+    align-items: start;
   }
-  .ic-flow-arrow {
-    display: flex; align-items: center; justify-content: center;
-    font-size: 16px; color: #d0d0d0; user-select: none;
+  .ic-row-label {
+    font-size: 11px; font-weight: 800; letter-spacing: .6px;
+    text-transform: uppercase; padding-top: 2px; flex-shrink: 0;
   }
-  .ic-flow-step {
-    border-radius: 14px;
-    padding: 16px 18px 18px;
+  .ic-row.event  .ic-row-label { color: #5b7fff; }
+  .ic-row.impact .ic-row-label { color: #d48a06; }
+  .ic-row.action .ic-row-label { color: #1a9e4a; }
+  .ic-row-body {
+    font-size: 14px; line-height: 1.75; color: #333;
+  }
+  .ic-row-body ul {
+    margin: 0; padding: 0; list-style: none;
     display: flex; flex-direction: column; gap: 8px;
   }
-  .ic-flow-step.event   { background: #f2f5ff; }
-  .ic-flow-step.impact  { background: #fffbf2; }
-  .ic-flow-step.action  { background: #f3fdf5; }
-  .ic-flow-step .ic-step-label {
-    font-size: 11px; font-weight: 800; letter-spacing: .8px;
-    display: flex; align-items: center; gap: 5px;
+  .ic-row-body ul li {
+    position: relative; padding-left: 14px;
   }
-  .ic-flow-step.event  .ic-step-label { color: #4a6cf7; }
-  .ic-flow-step.impact .ic-step-label { color: #d48a06; }
-  .ic-flow-step.action .ic-step-label { color: #1a9e4a; }
-  .ic-flow-step .ic-step-text {
-    font-size: 13.5px; line-height: 1.7; color: #3a3a3a; font-weight: 500;
-    display: -webkit-box; -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4; overflow: hidden;
-  }
-
-  /* detail section below flow */
-  .ic-body {
-    display: grid; grid-template-columns: 1fr;
-    gap: 0;
-    padding: 20px 28px 0;
-  }
-  .ic-divider {
-    height: 1px; background: rgba(0,0,0,0.05);
-    margin: 18px 28px 0;
-  }
-  .ic-detail-block {
-    padding: 16px 20px;
-    border-radius: 14px;
-  }
-  .ic-detail-block.signals {
-    background: rgba(0,0,0,0.02);
-    border: 1px solid rgba(0,0,0,0.05);
-  }
-  .ic-detail-block.actions {
-    background: rgba(253,248,236,0.7);
-    border: 1px solid rgba(243,183,66,0.2);
-    margin-top: 12px;
-  }
-  .ic-detail-label {
-    font-size: 11px; font-weight: 800; letter-spacing: .8px;
-    text-transform: uppercase; margin-bottom: 10px;
-  }
-  .ic-detail-block.signals .ic-detail-label { color: #999; }
-  .ic-detail-block.actions .ic-detail-label { color: #b7770d; }
-  .ic-detail-points {
-    list-style: none; margin: 0; padding: 0;
-    display: flex; flex-direction: column; gap: 10px;
-  }
-  .ic-detail-points li {
-    position: relative; padding-left: 16px;
-    font-size: 14px; line-height: 1.75; color: #444;
-  }
-  .ic-detail-block.signals .ic-detail-points li::before {
+  .ic-row-body ul li::before {
     content: ''; position: absolute; left: 0; top: 9px;
-    width: 5px; height: 5px; border-radius: 50%;
-    background: #aaa;
+    width: 4px; height: 4px; border-radius: 50%; background: #ccc;
   }
-  .ic-detail-block.actions .ic-detail-points li::before {
-    content: ''; position: absolute; left: 0; top: 9px;
-    width: 5px; height: 5px; border-radius: 50%;
-    background: #d48a06;
+  .ic-row.action .ic-row-body ul li::before { background: #1a9e4a; }
+  /* action row has a subtle highlight */
+  .ic-row.action {
+    background: #f8fef9;
+    border-radius: 12px;
+    margin: 4px -12px;
+    padding: 14px 12px;
+    border-top: none;
   }
+  .ic-row.action + .ic-row { border-top: none; }
 
-  /* footer */
+  /* — footer sources — */
   .insight-card .ic-footer {
-    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
-    padding: 14px 28px 20px; margin-top: 16px;
-    border-top: 1px solid rgba(0,0,0,0.05);
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    padding: 14px 28px 20px; margin-top: 8px;
+    border-top: 1px solid #f4f4f4;
   }
 
   /* card-label kept for backward compat */
@@ -1063,14 +1033,11 @@
     }
     .hero-title { font-size: 40px; }
     .insights-grid, .news-grid { grid-template-columns: 1fr; }
-    .insight-card .ic-flow { grid-template-columns: 1fr; gap: 8px; }
-    .ic-flow-arrow { display: none; }
-    .insight-card .ic-body { grid-template-columns: 1fr; }
-    .insight-card .ic-title { font-size: 18px; padding: 18px 20px 4px; }
-    .insight-card .ic-topbar { padding: 12px 20px 10px; }
-    .insight-card .ic-flow { margin: 14px 20px 0; }
-    .insight-card .ic-body { padding: 14px 20px 0; }
-    .ic-divider { margin: 14px 20px 0; }
+    .insight-card .ic-row { grid-template-columns: 72px 1fr; }
+    .insight-card .ic-title { font-size: 17px; padding: 12px 20px 0; }
+    .insight-card .ic-topbar { padding: 14px 20px 0; }
+    .insight-card .ic-summary { padding: 8px 20px 0; font-size: 13.5px; }
+    .insight-card .ic-rows { margin: 16px 20px 0; }
     .insight-card .ic-footer { padding: 12px 20px 16px; }
     .demand-card { grid-template-columns: 1fr; }
     .main { padding: 20px 24px 40px; }
@@ -1721,69 +1688,62 @@ function renderContent(data) {
                         /建议|可以|可借鉴/.test(ins.implication || '') ? '中等' : '持续关注';
     const urgencyClass = urgencyText === '高紧迫' ? 'high' : urgencyText === '中等' ? 'mid' : 'low';
 
-    // Parse summary → event description (first 2 sentences)
+    // summary → what happened (all points = event context)
     const summaryPoints = splitStructuredText(ins.summary, 6);
-    const eventText = summaryPoints.slice(0, 1).join('') || ins.summary?.slice(0, 100) || '';
 
-    // Parse implication → impact + actions
-    const implPoints = splitStructuredText(ins.implication, 6);
-    // Impact: first point mentioning "冲击/影响/改变/压力"
-    const impactPoint = implPoints.find(p => /冲击|影响|改变|压力|降维|取代|挤压|颠覆/.test(p))
-      || implPoints[0] || '';
-    // Actions: points with "建议/应/必须/可以/加速/规划"
-    const actionPoints = implPoints.filter(p => /建议|应|必须|可以|加速|规划|尝试|值得|需要/.test(p)).slice(0, 2);
-    const actionText = actionPoints.join(' ') || implPoints.slice(1, 2).join('') || '';
+    // implication → split into impact lines vs action lines
+    const implPoints = splitStructuredText(ins.implication, 8);
+    const impactPoints = implPoints.filter(p =>
+      /冲击|影响|改变|压力|降维|取代|挤压|颠覆|意味着|导致|将会|正在/.test(p)
+    );
+    const actionPoints = implPoints.filter(p =>
+      /建议|应该|应当|必须|可以|加速|规划|尝试|值得|需要|应尽|要|去/.test(p)
+    );
+    // fallback: if no clear split, first half = impact, second half = actions
+    const finalImpact = impactPoints.length > 0 ? impactPoints
+      : implPoints.slice(0, Math.ceil(implPoints.length / 2));
+    const finalAction = actionPoints.length > 0 ? actionPoints
+      : implPoints.slice(Math.ceil(implPoints.length / 2));
 
-    // Signal bullets (remaining summary points)
-    const signalPoints = summaryPoints.slice(1, 4);
-    // Implication bullets
-    const implBullets = implPoints.slice(0, 3);
+    // brief summary text (first sentence for the lede paragraph)
+    const summaryLede = summaryPoints[0] || ins.summary?.slice(0, 120) || '';
 
     html += `
-      <div class="insight-card urgency-${urgencyClass}">
+      <div class="insight-card">
 
         <div class="ic-topbar">
           <span class="ic-index">洞察 ${String(i + 1).padStart(2, '0')}</span>
           <span class="ic-urgency ${urgencyClass}">${urgencyText}</span>
-          ${tagsHtml ? `<div class="tags" style="margin:0;">${tagsHtml}</div>` : ''}
+          ${tagsHtml ? `<div class="ic-tags">${tagsHtml}</div>` : ''}
           ${dateBadge}
         </div>
 
         <h3 class="ic-title">${ins.title}</h3>
+        <p class="ic-summary">${summaryLede}</p>
 
-        <!-- 三步流程图: 事件 → 影响 → 行动 -->
-        <div class="ic-flow">
-          <div class="ic-flow-step event">
-            <span class="ic-step-label">📰 发生了什么</span>
-            <span class="ic-step-text">${eventText}</span>
-          </div>
-          <div class="ic-flow-arrow">→</div>
-          <div class="ic-flow-step impact">
-            <span class="ic-step-label">⚡ 对我们的冲击</span>
-            <span class="ic-step-text">${impactPoint}</span>
-          </div>
-          <div class="ic-flow-arrow">→</div>
-          <div class="ic-flow-step action">
-            <span class="ic-step-label">✅ 建议行动</span>
-            <span class="ic-step-text">${actionText}</span>
-          </div>
-        </div>
+        <div class="ic-rows">
 
-        <!-- 详细展开 -->
-        <div class="ic-body">
-          <div class="ic-detail-block signals">
-            <div class="ic-detail-label">关键信号</div>
-            <ul class="ic-detail-points">
-              ${(signalPoints.length ? signalPoints : summaryPoints.slice(0, 3)).map(p =>
-                `<li>${p}</li>`).join('')}
-            </ul>
+          <div class="ic-row event">
+            <div class="ic-row-label">背景事件</div>
+            <div class="ic-row-body">
+              <ul>${summaryPoints.slice(1).map(p => `<li>${p}</li>`).join('') || `<li>${summaryLede}</li>`}</ul>
+            </div>
           </div>
-          <div class="ic-detail-block actions">
-            <div class="ic-detail-label">行动建议</div>
-            <ul class="ic-detail-points">
-              ${implBullets.map(p => `<li>${p}</li>`).join('')}
-            </ul>
+
+          <div class="ic-row impact">
+            <div class="ic-row-label">冲击影响</div>
+            <div class="ic-row-body">
+              <ul>${finalImpact.map(p => `<li>${p}</li>`).join('')}</ul>
+            </div>
           </div>
+
+          <div class="ic-row action">
+            <div class="ic-row-label">建议行动</div>
+            <div class="ic-row-body">
+              <ul>${finalAction.map(p => `<li>${p}</li>`).join('')}</ul>
+            </div>
+          </div>
+
         </div>
 
         <div class="ic-footer">
