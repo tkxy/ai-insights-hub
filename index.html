@@ -1119,6 +1119,57 @@
   ::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.2); }
 
   ::selection { background: rgba(0,0,0,0.08); }
+
+  /* ===== CLUSTER BADGE (demand/news cross-link) ===== */
+  .cluster-badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 9px; border-radius: 999px;
+    font-size: 11px; font-weight: 700; letter-spacing: .3px;
+    background: rgba(0,0,0,0.05); color: #555; cursor: default;
+    margin-top: 10px;
+  }
+  .cluster-badge.has-link { cursor: pointer; }
+  .cluster-badge.has-link:hover { background: rgba(0,0,0,0.10); color: #111; }
+
+  /* ===== TREND INDICATOR ===== */
+  .trend-up   { color: #1a9e3a; font-size: 12px; font-weight: 800; }
+  .trend-down { color: #c44; font-size: 12px; font-weight: 800; }
+  .trend-flat { color: #888; font-size: 12px; font-weight: 700; }
+
+  /* ===== RELEVANCE CONTEXT ===== */
+  .relevance-context { font-size: 11px; color: #888; margin-top: 6px; font-style: italic; }
+
+  /* ===== PODCAST BOOKMARK ===== */
+  .blog-episode-row { position: relative; }
+  .blog-bookmark-btn {
+    position: absolute; right: 0; top: 50%; transform: translateY(-50%);
+    background: none; border: none; cursor: pointer;
+    font-size: 14px; opacity: 0; transition: opacity 0.15s;
+    padding: 4px 6px; border-radius: 6px;
+  }
+  .blog-episode-row:hover .blog-bookmark-btn { opacity: 0.5; }
+  .blog-episode-row:hover .blog-bookmark-btn:hover { opacity: 1; background: rgba(0,0,0,0.06); }
+  .blog-bookmark-btn.bookmarked { opacity: 1 !important; }
+
+  #podcast-bookmarks-wrap {
+    max-width: 720px; margin: 12px auto 0;
+    display: none;
+  }
+  #podcast-bookmarks-wrap.has-items { display: block; }
+  .podcast-bookmarks-title {
+    font-size: 11px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase;
+    color: #888; margin-bottom: 8px;
+  }
+  .podcast-bookmark-item {
+    background: rgba(255,255,255,0.7); border: 1px solid rgba(0,0,0,0.07);
+    border-radius: 12px; padding: 10px 14px; margin-bottom: 6px;
+    font-size: 13px; color: #333; line-height: 1.5;
+    display: flex; justify-content: space-between; align-items: start; gap: 10px;
+  }
+  .podcast-bookmark-item .bm-text { flex: 1; }
+  .podcast-bookmark-item .bm-time { font-size: 11px; font-weight: 700; color: #aaa; white-space: nowrap; padding-top: 2px; }
+  .podcast-bookmark-remove { background: none; border: none; cursor: pointer; color: #bbb; font-size: 14px; padding: 0; }
+  .podcast-bookmark-remove:hover { color: #c44; }
 </style>
 </head>
 <body>
@@ -1705,6 +1756,17 @@ function renderContent(data) {
     if (dm.source_urls && dm.source_urls.length > 0) {
       evidenceSourceHtml = `<div class="source-links" style="margin-top:16px;padding-top:14px;">${dm.source_urls.map(s => `<a class="source-link" href="${s.url}" target="_blank">${s.name}<span class="source-link-icon">\u2192</span></a>`).join('')}</div>`;
     }
+    // Cluster badge: which cluster does this demand belong to?
+    const demandCluster = classifyDemandToCluster(dm.title);
+    const demandClusterBadge = `<button class="cluster-badge has-link" title="在需求地图中查看" onclick="switchPage('map');setTimeout(function(){switchCluster('${demandCluster.name}')},300);">${demandCluster.icon} ${demandCluster.name} · 需求地图</button>`;
+    // Count related news in this week's data
+    const relatedNewsCount = data.hot_news ? data.hot_news.filter(n => {
+      const nc = classifyNewsToCluster(n.title, n.summary);
+      return nc && nc.name === demandCluster.name;
+    }).length : 0;
+    const relatedNewsBadge = relatedNewsCount > 0
+      ? `<button class="cluster-badge has-link" title="切换到资讯标签" onclick="switchToNewsTab()">${relatedNewsCount} 条相关资讯 →</button>`
+      : '';
     html += `
       <div class="demand-card">
         <div class="demand-meta">
@@ -1725,6 +1787,10 @@ function renderContent(data) {
             <p>${dm.evidence}</p>
             ${evidenceSourceHtml}
           </div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px;">
+            ${demandClusterBadge}
+            ${relatedNewsBadge}
+          </div>
         </div>
         <div class="priority-badge ${pClass}">优先级：${dm.priority}</div>
       </div>
@@ -1738,16 +1804,24 @@ function renderContent(data) {
   data.hot_news.forEach(n => {
     const rClass = n.relevance === '高' ? 'relevance-high' : 'relevance-mid';
     const dateBadge = n._date ? `<span style="font-size:11px;font-weight:600;color:#aaa;">${n._date}</span>` : '';
+    // Relevance context: instead of "相关度：高", show "对输入法：高度相关" or "中度相关"
+    const relText = n.relevance === '高' ? '对输入法：高度相关' : '对输入法：中度相关';
+    // Cluster link
+    const newsCluster = classifyNewsToCluster(n.title, n.summary);
+    const clusterBadgeHtml = newsCluster
+      ? `<button class="cluster-badge has-link" title="查看需求地图：${newsCluster.name}" onclick="switchPage('map');setTimeout(function(){switchCluster('${newsCluster.name}')},300);">${newsCluster.icon} ${newsCluster.name}</button>`
+      : '';
     html += `
       <div class="news-card">
         <div class="news-top">
           <span class="news-category">${n.category}</span>
-          <span class="news-relevance ${rClass}">相关度：${n.relevance}</span>
+          <span class="news-relevance ${rClass}">${relText}</span>
           ${dateBadge}
         </div>
         <h3>${n.title}</h3>
         <div class="summary">${n.summary}</div>
         <div class="news-source"><span>${n.source}</span><a href="${n.source_url}" target="_blank">阅读原文</a></div>
+        ${clusterBadgeHtml}
       </div>
     `;
   });
@@ -1844,6 +1918,11 @@ function switchTab(tabId, btn) {
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('tab-' + tabId).classList.add('active');
   btn.classList.add('active');
+}
+
+function switchToNewsTab() {
+  const newsBtn = document.querySelector('.tab-btn[onclick*="news"]');
+  if (newsBtn) switchTab('news', newsBtn);
 }
 
 async function navigate(dateStr) {
@@ -2104,16 +2183,48 @@ function renderDemandMapClusters(clusters) {
 
   var firstActive = clusters && clusters.length ? clusters[0].name : '帮写场景类';
 
+  // Compute trend: count items added in last 14 days vs prior 14 days
+  var now = new Date();
+  function trendForCluster(items) {
+    var recent = 0, older = 0;
+    items.forEach(function(item) {
+      var ds = item.date || item.source_date || '';
+      if (!ds) return;
+      // ds is "MM-DD" or "YYYY-MM-DD"
+      var d;
+      if (/^\d{4}-\d{2}-\d{2}$/.test(ds)) {
+        d = new Date(ds + 'T00:00:00');
+      } else if (/^\d{2}-\d{2}$/.test(ds)) {
+        d = new Date(now.getFullYear() + '-' + ds + 'T00:00:00');
+      } else return;
+      var ageDays = (now - d) / 86400000;
+      if (ageDays <= 14) recent++;
+      else if (ageDays <= 28) older++;
+    });
+    return { recent: recent, older: older };
+  }
+
   // Render chips
   var chipsHtml = '';
   chips.forEach(function(c) {
     var count = 0;
+    var trendHtml = '';
     if (clusters) {
       var cdata = clusters.find(function(x) { return x.name === c.name; });
-      if (cdata) count = cdata.count || cdata.items.length;
+      if (cdata) {
+        count = cdata.count || cdata.items.length;
+        var trend = trendForCluster(cdata.items);
+        if (trend.recent > trend.older + 1) {
+          trendHtml = ' <span class="trend-up">↑' + trend.recent + '</span>';
+        } else if (trend.older > trend.recent + 1) {
+          trendHtml = ' <span class="trend-down">↓</span>';
+        } else if (trend.recent > 0) {
+          trendHtml = ' <span class="trend-flat">→' + trend.recent + '</span>';
+        }
+      }
     }
     var isActive = c.name === firstActive;
-    chipsHtml += '<button class="cluster-chip" data-cluster="' + c.name + '" onclick="switchCluster(\'' + c.name + '\')" style="padding:8px 14px;border-radius:999px;font-size:13px;font-weight:600;cursor:pointer;border:none;font-family:inherit;transition:all 0.2s;background:' + (isActive ? '#111' : 'rgba(0,0,0,0.05)') + ';color:' + (isActive ? '#fff' : '#555') + ';">' + c.icon + ' ' + c.name + ' · ' + count + '</button>';
+    chipsHtml += '<button class="cluster-chip" data-cluster="' + c.name + '" onclick="switchCluster(\'' + c.name + '\')" style="padding:8px 14px;border-radius:999px;font-size:13px;font-weight:600;cursor:pointer;border:none;font-family:inherit;transition:all 0.2s;background:' + (isActive ? '#111' : 'rgba(0,0,0,0.05)') + ';color:' + (isActive ? '#fff' : '#555') + ';">' + c.icon + ' ' + c.name + ' · ' + count + trendHtml + '</button>';
   });
   chipsEl.innerHTML = chipsHtml;
 
@@ -2519,6 +2630,11 @@ function renderDesignWeekly(data, page) {
       if (item.action) {
         html += '<div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">建议下一步</strong>' + item.action + '</div>';
       }
+      // Cross-link to demand cluster
+      var dwCluster = classifyDemandToCluster(item.title);
+      if (dwCluster) {
+        html += '<button class="cluster-badge has-link" title="在需求地图中查看" onclick="switchPage(\'map\');setTimeout(function(){switchCluster(\'' + dwCluster.name + '\')},300);">' + dwCluster.icon + ' ' + dwCluster.name + '</button>';
+      }
       if (item.sourceUrls && item.sourceUrls.length > 0) {
         html += '<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px;">';
         for (var u = 0; u < item.sourceUrls.length; u++) {
@@ -2912,6 +3028,87 @@ async function analyzeKnowledgeUrl() {
   }
 }
 
+// ===== PODCAST BOOKMARKS =====
+var podcastBookmarks = []; // { idx, text, section }
+
+function togglePodcastBookmark(idx, btn) {
+  if (!blogData || !blogData.dialogue) return;
+  var existing = podcastBookmarks.findIndex(function(b) { return b.idx === idx; });
+  if (existing >= 0) {
+    podcastBookmarks.splice(existing, 1);
+    btn.classList.remove('bookmarked');
+  } else {
+    var msg = blogData.dialogue[idx];
+    var plainText = blogStripHtml(msg.text || '');
+    podcastBookmarks.push({ idx: idx, text: plainText, section: msg.section || '' });
+    btn.classList.add('bookmarked');
+  }
+  renderPodcastBookmarks();
+}
+
+function renderPodcastBookmarks() {
+  var wrap = document.getElementById('podcast-bookmarks-wrap');
+  var list = document.getElementById('podcast-bookmarks-list');
+  if (!wrap || !list) return;
+  if (!podcastBookmarks.length) {
+    wrap.classList.remove('has-items');
+    list.innerHTML = '';
+    return;
+  }
+  wrap.classList.add('has-items');
+  list.innerHTML = podcastBookmarks.map(function(bm, i) {
+    var label = bm.section ? '<span style="font-size:10px;font-weight:700;color:#aaa;display:block;margin-bottom:3px;">' + bm.section + '</span>' : '';
+    return '<div class="podcast-bookmark-item">' +
+      '<div class="bm-text">' + label + bm.text.slice(0, 120) + (bm.text.length > 120 ? '…' : '') + '</div>' +
+      '<button class="podcast-bookmark-remove" title="移除" onclick="removePodcastBookmark(' + i + ')">✕</button>' +
+    '</div>';
+  }).join('');
+}
+
+function removePodcastBookmark(i) {
+  var bm = podcastBookmarks[i];
+  if (!bm) return;
+  podcastBookmarks.splice(i, 1);
+  // unmark button
+  var row = document.getElementById('brow' + bm.idx);
+  if (row) {
+    var btn = row.querySelector('.blog-bookmark-btn');
+    if (btn) btn.classList.remove('bookmarked');
+  }
+  renderPodcastBookmarks();
+}
+
+// ===== DEMAND ↔ NEWS CROSS-LINK HELPERS =====
+// Classify news relevance to demand clusters using keywords
+function classifyNewsToCluster(newsTitle, newsSummary) {
+  var text = (newsTitle || '') + ' ' + (newsSummary || '');
+  if (/安全|信任|可信度|置信度|隐私|透明|合规|防伪|幻觉|回滚|过滤|审核|水印|来源标注|坦诚|事实核查|权限|自治/.test(text))
+    return { name: '安全信任类', icon: '🔒' };
+  if (/模型路由|端云|端侧|离线|成本|降级|冗余|自研|部署|供应商|基础设施/.test(text))
+    return { name: '基础设施类', icon: '⚙️' };
+  if (/个性化|知识库|素材库|人设|风格|语气|历史文案|屏幕上下文/.test(text))
+    return { name: '个性化类', icon: '🎨' };
+  if (/Agent|入口|平台|超级入口|智能体|任务|服务跳转|通知预回复/.test(text))
+    return { name: '平台入口类', icon: '🚀' };
+  if (/写作|帮写|生成|创作|文案|排版|改写|续写/.test(text))
+    return { name: '帮写场景类', icon: '✏️' };
+  return null;
+}
+
+// Classify demand item to cluster
+function classifyDemandToCluster(demandTitle) {
+  var title = demandTitle || '';
+  if (/安全|信任|可信度|置信度|隐私|透明|合规|防伪|幻觉|回滚|过滤|审核|水印|来源标注|坦诚|事实核查|权限|自治/.test(title))
+    return { name: '安全信任类', icon: '🔒' };
+  if (/模型路由|端云|端侧|离线|成本|降级|冗余|自研|部署|供应商/.test(title))
+    return { name: '基础设施类', icon: '⚙️' };
+  if (/个性化|知识库|素材库|人设|风格|语气|历史文案|屏幕上下文/.test(title))
+    return { name: '个性化类', icon: '🎨' };
+  if (/Agent|入口|平台|超级入口|智能体|任务|服务跳转|通知预回复/.test(title))
+    return { name: '平台入口类', icon: '🚀' };
+  return { name: '帮写场景类', icon: '✏️' };
+}
+
 // 回车触发
 document.getElementById('knowledgeUrlInput').addEventListener('keydown', function(e) {
   if (e.key === 'Enter') { analyzeKnowledgeUrl(); }
@@ -3008,6 +3205,7 @@ function renderBlogPlayer(dialogue, dateDisplay) {
     transcriptHtml += `<div class="blog-episode-row" id="brow${i}" data-idx="${i}">
       <div class="blog-row-speaker alex">🎙️</div>
       <div class="blog-row-text">${truncated}</div>
+      <button class="blog-bookmark-btn" title="书签：需求线索" onclick="togglePodcastBookmark(${i}, this)">🔖</button>
     </div>`;
   });
 
@@ -3038,6 +3236,10 @@ function renderBlogPlayer(dialogue, dateDisplay) {
 </div>
 <div id="blogTranscriptWrap" style="max-width:720px;margin:0 auto;">
   <div class="blog-transcript" id="blogTranscript">${transcriptHtml}</div>
+</div>
+<div id="podcast-bookmarks-wrap">
+  <div class="podcast-bookmarks-title">🔖 书签 · 需求线索</div>
+  <div id="podcast-bookmarks-list"></div>
 </div>`;
 }
 
