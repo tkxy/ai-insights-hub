@@ -347,119 +347,93 @@
     gap: 24px;
   }
 
-  /* ===== INSIGHT CARD — editorial vertical layout ===== */
+  /* ===== INSIGHT CARD ===== */
+  .insights-grid { gap: 20px; }
   .insight-card {
     background: #fff;
-    border-radius: 18px;
-    border: 1px solid #ebebeb;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.04), 0 6px 24px rgba(0,0,0,0.04);
-    transition: box-shadow 0.2s ease;
+    border-radius: 16px;
+    border: 1px solid #e8e8e8;
     overflow: hidden;
+    transition: box-shadow 0.2s;
   }
   .insight-card:hover {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06), 0 12px 36px rgba(0,0,0,0.07);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
   }
 
-  /* — meta row: number + urgency dot + date — */
-  .insight-card .ic-topbar {
-    display: flex; align-items: center; gap: 10px;
-    padding: 16px 28px 0;
+  /* header band */
+  .ic-head {
+    padding: 20px 28px 18px;
+    border-bottom: 1px solid #f0f0f0;
   }
-  .insight-card .ic-index {
+  .ic-meta {
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+  .ic-num {
     font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
-    text-transform: uppercase; color: #ccc;
+    text-transform: uppercase; color: #c8c8c8;
+    margin-right: 2px;
   }
-  .insight-card .ic-urgency {
-    font-size: 11px; font-weight: 700; padding: 2px 10px;
-    border-radius: 999px;
+  .ic-badge {
+    font-size: 11px; font-weight: 700; padding: 3px 10px;
+    border-radius: 999px; line-height: 1;
   }
-  .ic-urgency.high { background: #fef0f0; color: #c0392b; }
-  .ic-urgency.mid  { background: #fef8ec; color: #b7770d; }
-  .ic-urgency.low  { background: #f2f2f2; color: #999; }
-  .insight-card .ic-tags {
+  .ic-badge.high { background: #fff0f0; color: #d93025; }
+  .ic-badge.mid  { background: #fff8e6; color: #b06000; }
+  .ic-badge.low  { background: #f0f0f0; color: #888; }
+  .ic-date {
+    margin-left: auto; font-size: 11px; color: #ccc; font-weight: 600;
+  }
+  .ic-title {
+    font-size: 19px; font-weight: 800; line-height: 1.5;
+    color: #111; margin: 0 0 10px; letter-spacing: -0.2px;
+  }
+  .ic-tags-row {
     display: flex; flex-wrap: wrap; gap: 6px;
   }
-  .insight-card .ic-tags .tag {
-    font-size: 11px; padding: 2px 10px;
-  }
-  .insight-card .ic-date {
-    font-size: 11px; color: #ccc; font-weight: 600; margin-left: auto;
-  }
-
-  /* — title — */
-  .insight-card .ic-title {
-    font-size: 20px; font-weight: 800; line-height: 1.5;
-    letter-spacing: -0.2px; color: #111;
-    padding: 14px 28px 0; margin: 0;
+  .ic-tags-row .tag {
+    font-size: 11px; padding: 3px 10px; color: #888;
+    background: #f4f4f4; border-radius: 999px;
+    font-weight: 500;
   }
 
-  /* — summary paragraph — */
-  .insight-card .ic-summary {
-    font-size: 14.5px; line-height: 1.8; color: #555;
-    padding: 10px 28px 0;
-    margin: 0;
+  /* body: two sections stacked */
+  .ic-body { padding: 0 28px; }
+
+  .ic-section {
+    padding: 18px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .ic-section:last-child { border-bottom: none; }
+  .ic-section-label {
+    font-size: 11px; font-weight: 800; letter-spacing: 1px;
+    text-transform: uppercase; margin-bottom: 10px;
+  }
+  .ic-section.what .ic-section-label  { color: #aaa; }
+  .ic-section.means .ic-section-label { color: #2563eb; }
+
+  /* summary: plain prose */
+  .ic-prose {
+    font-size: 14px; line-height: 1.85; color: #444; margin: 0;
   }
 
-  /* — three labelled rows — */
-  .ic-rows {
-    display: flex; flex-direction: column; gap: 0;
-    margin: 20px 28px 0;
+  /* implication: numbered items already in text */
+  .ic-impl {
+    font-size: 14px; line-height: 1.85; color: #1a1a1a; margin: 0;
+    background: #f7f9ff;
+    border-radius: 10px;
+    padding: 14px 18px;
   }
-  .ic-row {
-    display: grid;
-    grid-template-columns: 90px 1fr;
-    gap: 0;
-    border-top: 1px solid #f0f0f0;
-    padding: 14px 0;
-    align-items: start;
-  }
-  .ic-row-label {
-    font-size: 11px; font-weight: 800; letter-spacing: .6px;
-    text-transform: uppercase; padding-top: 2px; flex-shrink: 0;
-  }
-  .ic-row.event  .ic-row-label { color: #5b7fff; }
-  .ic-row.impact .ic-row-label { color: #d48a06; }
-  .ic-row.action .ic-row-label { color: #1a9e4a; }
-  .ic-row-body {
-    font-size: 14px; line-height: 1.75; color: #333;
-  }
-  .ic-row-body ul {
-    margin: 0; padding: 0; list-style: none;
-    display: flex; flex-direction: column; gap: 8px;
-  }
-  .ic-row-body ul li {
-    position: relative; padding-left: 14px;
-  }
-  .ic-row-body ul li::before {
-    content: ''; position: absolute; left: 0; top: 9px;
-    width: 4px; height: 4px; border-radius: 50%; background: #ccc;
-  }
-  .ic-row.action .ic-row-body ul li::before { background: #1a9e4a; }
-  /* action row has a subtle highlight */
-  .ic-row.action {
-    background: #f8fef9;
-    border-radius: 12px;
-    margin: 4px -12px;
-    padding: 14px 12px;
-    border-top: none;
-  }
-  .ic-row.action + .ic-row { border-top: none; }
 
-  /* — footer sources — */
-  .insight-card .ic-footer {
-    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
-    padding: 14px 28px 20px; margin-top: 8px;
+  /* footer */
+  .ic-footer {
+    padding: 14px 28px 18px;
+    display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
     border-top: 1px solid #f4f4f4;
   }
 
   /* card-label kept for backward compat */
   .insight-card .card-label { display: none; }
-  .insight-card .section-label {
-    font-size: 11px; color: var(--text3); font-weight: 700;
-    margin-bottom: 8px; letter-spacing: 0.5px; text-transform: uppercase;
-  }
-  /* spacer between insights */
-  .insights-grid { gap: 28px; }
 
   .tags { display: flex; flex-wrap: wrap; gap: 8px; }
   .tag {
@@ -1033,12 +1007,10 @@
     }
     .hero-title { font-size: 40px; }
     .insights-grid, .news-grid { grid-template-columns: 1fr; }
-    .insight-card .ic-row { grid-template-columns: 72px 1fr; }
-    .insight-card .ic-title { font-size: 17px; padding: 12px 20px 0; }
-    .insight-card .ic-topbar { padding: 14px 20px 0; }
-    .insight-card .ic-summary { padding: 8px 20px 0; font-size: 13.5px; }
-    .insight-card .ic-rows { margin: 16px 20px 0; }
-    .insight-card .ic-footer { padding: 12px 20px 16px; }
+    .ic-head { padding: 16px 20px 14px; }
+    .ic-body { padding: 0 20px; }
+    .ic-footer { padding: 12px 20px 16px; }
+    .ic-title { font-size: 17px; }
     .demand-card { grid-template-columns: 1fr; }
     .main { padding: 20px 24px 40px; }
     .section-title { font-size: 22px; }
@@ -1683,73 +1655,35 @@ function renderContent(data) {
       : '';
     const dateBadge = ins._date ? `<span class="ic-date">${ins._date}</span>` : '';
 
-    // Urgency: infer from priority field or implication keywords
+    // Urgency
     const urgencyText = /必须|立即|加速|降维打击|直接冲击/.test(ins.implication || '') ? '高紧迫' :
                         /建议|可以|可借鉴/.test(ins.implication || '') ? '中等' : '持续关注';
     const urgencyClass = urgencyText === '高紧迫' ? 'high' : urgencyText === '中等' ? 'mid' : 'low';
 
-    // summary → what happened (all points = event context)
-    const summaryPoints = splitStructuredText(ins.summary, 6);
-
-    // implication → split into impact lines vs action lines
-    const implPoints = splitStructuredText(ins.implication, 8);
-    const impactPoints = implPoints.filter(p =>
-      /冲击|影响|改变|压力|降维|取代|挤压|颠覆|意味着|导致|将会|正在/.test(p)
-    );
-    const actionPoints = implPoints.filter(p =>
-      /建议|应该|应当|必须|可以|加速|规划|尝试|值得|需要|应尽|要|去/.test(p)
-    );
-    // fallback: if no clear split, first half = impact, second half = actions
-    const finalImpact = impactPoints.length > 0 ? impactPoints
-      : implPoints.slice(0, Math.ceil(implPoints.length / 2));
-    const finalAction = actionPoints.length > 0 ? actionPoints
-      : implPoints.slice(Math.ceil(implPoints.length / 2));
-
-    // brief summary text (first sentence for the lede paragraph)
-    const summaryLede = summaryPoints[0] || ins.summary?.slice(0, 120) || '';
-
     html += `
       <div class="insight-card">
-
-        <div class="ic-topbar">
-          <span class="ic-index">洞察 ${String(i + 1).padStart(2, '0')}</span>
-          <span class="ic-urgency ${urgencyClass}">${urgencyText}</span>
-          ${tagsHtml ? `<div class="ic-tags">${tagsHtml}</div>` : ''}
-          ${dateBadge}
+        <div class="ic-head">
+          <div class="ic-meta">
+            <span class="ic-num">洞察 ${String(i + 1).padStart(2, '0')}</span>
+            <span class="ic-badge ${urgencyClass}">${urgencyText}</span>
+            ${dateBadge}
+          </div>
+          <h3 class="ic-title">${ins.title}</h3>
+          ${tagsHtml ? `<div class="ic-tags-row">${tagsHtml}</div>` : ''}
         </div>
 
-        <h3 class="ic-title">${ins.title}</h3>
-        <p class="ic-summary">${summaryLede}</p>
-
-        <div class="ic-rows">
-
-          <div class="ic-row event">
-            <div class="ic-row-label">背景事件</div>
-            <div class="ic-row-body">
-              <ul>${summaryPoints.slice(1).map(p => `<li>${p}</li>`).join('') || `<li>${summaryLede}</li>`}</ul>
-            </div>
+        <div class="ic-body">
+          <div class="ic-section what">
+            <div class="ic-section-label">事件背景</div>
+            <p class="ic-prose">${ins.summary || ''}</p>
           </div>
-
-          <div class="ic-row impact">
-            <div class="ic-row-label">冲击影响</div>
-            <div class="ic-row-body">
-              <ul>${finalImpact.map(p => `<li>${p}</li>`).join('')}</ul>
-            </div>
+          <div class="ic-section means">
+            <div class="ic-section-label">对我们意味着什么</div>
+            <p class="ic-impl">${(ins.implication || '').replace(/\((\d+)\)/g, '<br><br>（$1）').replace(/^<br><br>/, '')}</p>
           </div>
-
-          <div class="ic-row action">
-            <div class="ic-row-label">建议行动</div>
-            <div class="ic-row-body">
-              <ul>${finalAction.map(p => `<li>${p}</li>`).join('')}</ul>
-            </div>
-          </div>
-
         </div>
 
-        <div class="ic-footer">
-          ${sourceLinksHtml ? `<div class="source-links" style="margin:0;padding:0;border:none;">${sourceLinksHtml}</div>` : ''}
-        </div>
-
+        ${sourceLinksHtml ? `<div class="ic-footer">${sourceLinksHtml}</div>` : ''}
       </div>
     `;
   });
