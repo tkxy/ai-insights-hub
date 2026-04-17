@@ -343,8 +343,9 @@
   /* ===== INSIGHT CARDS ===== */
   .insights-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 24px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
   }
 
   /* ===== INSIGHT CARD ===== */
@@ -1007,6 +1008,7 @@
     }
     .hero-title { font-size: 40px; }
     .insights-grid, .news-grid { grid-template-columns: 1fr; }
+    .insights-grid { grid-template-columns: 1fr; }
     .ic-head { padding: 16px 20px 14px; }
     .ic-body { padding: 0 20px; }
     .ic-footer { padding: 12px 20px 16px; }
