@@ -2110,6 +2110,10 @@ var demandClusterCache = null;
 
 function classifyDemand(item) {
   var title = item.title || '';
+  if (/跨端|多端|PC端|手机端|平板|跨设备|多设备|剪贴板同步|跨屏|接力|跨平台输入|协同输入/.test(title))
+    return '跨端输入类';
+  if (/语音|音频|口述|ASR|语音转文字|语音输入|麦克风|语音识别|录音|朗读|播报|TTS|说话/.test(title))
+    return '语音输入类';
   if (/安全|信任|可信度|置信度|隐私|透明|合规|防伪|幻觉|回滚|过滤|审核|水印|来源标注|坦诚|事实核查|权限|自治/.test(title))
     return '安全信任类';
   if (/模型路由|端云|端侧|离线|成本|降级|冗余|自研|部署|供应商/.test(title))
@@ -2160,6 +2164,8 @@ function getDemandCardHtml(item, index) {
 function renderDemandMapClusters(clusters) {
   var chips = [
     { name: '帮写场景类', icon: '✏️' },
+    { name: '跨端输入类', icon: '📱' },
+    { name: '语音输入类', icon: '🎙️' },
     { name: '安全信任类', icon: '🔒' },
     { name: '基础设施类', icon: '⚙️' },
     { name: '个性化类', icon: '🎨' },
@@ -2220,6 +2226,8 @@ function renderDemandMapClusters(clusters) {
   var bodyHtml = '';
   var clusterDescs = {
     '帮写场景类': '聚焦帮写生成、风格控制、素材调用和写作协同。',
+    '跨端输入类': '聚焦多设备协同输入、跨屏接力、剪贴板同步与跨平台一致性体验。',
+    '语音输入类': '聚焦语音识别、口述转文字、语音指令与语音和文本混合输入场景。',
     '安全信任类': '聚焦隐私保护、可信度标注、内容合规审核与安全过滤。',
     '基础设施类': '聚焦端云协同、模型路由、成本优化与部署架构。',
     '个性化类': '聚焦用户画像、知识库、风格自适应与人设规则。',
@@ -2292,7 +2300,7 @@ async function loadAndRenderMapClusters() {
 
   // Classify into clusters
   var clusters = {};
-  var clusterNames = ['帮写场景类', '安全信任类', '基础设施类', '个性化类', '平台入口类'];
+  var clusterNames = ['帮写场景类', '跨端输入类', '语音输入类', '安全信任类', '基础设施类', '个性化类', '平台入口类'];
   clusterNames.forEach(function(n) { clusters[n] = []; });
   allDemand.forEach(function(item) {
     var cat = classifyDemand(item);
@@ -3070,6 +3078,10 @@ function removePodcastBookmark(i) {
 // Classify news relevance to demand clusters using keywords
 function classifyNewsToCluster(newsTitle, newsSummary) {
   var text = (newsTitle || '') + ' ' + (newsSummary || '');
+  if (/跨端|多端|PC端|手机端|平板|跨设备|多设备|剪贴板同步|跨屏|接力|跨平台输入|协同输入/.test(text))
+    return { name: '跨端输入类', icon: '📱' };
+  if (/语音|音频|口述|ASR|语音转文字|语音输入|麦克风|语音识别|录音|朗读|播报|TTS|说话/.test(text))
+    return { name: '语音输入类', icon: '🎙️' };
   if (/安全|信任|可信度|置信度|隐私|透明|合规|防伪|幻觉|回滚|过滤|审核|水印|来源标注|坦诚|事实核查|权限|自治/.test(text))
     return { name: '安全信任类', icon: '🔒' };
   if (/模型路由|端云|端侧|离线|成本|降级|冗余|自研|部署|供应商|基础设施/.test(text))
@@ -3086,6 +3098,10 @@ function classifyNewsToCluster(newsTitle, newsSummary) {
 // Classify demand item to cluster
 function classifyDemandToCluster(demandTitle) {
   var title = demandTitle || '';
+  if (/跨端|多端|PC端|手机端|平板|跨设备|多设备|剪贴板同步|跨屏|接力|跨平台输入|协同输入/.test(title))
+    return { name: '跨端输入类', icon: '📱' };
+  if (/语音|音频|口述|ASR|语音转文字|语音输入|麦克风|语音识别|录音|朗读|播报|TTS|说话/.test(title))
+    return { name: '语音输入类', icon: '🎙️' };
   if (/安全|信任|可信度|置信度|隐私|透明|合规|防伪|幻觉|回滚|过滤|审核|水印|来源标注|坦诚|事实核查|权限|自治/.test(title))
     return { name: '安全信任类', icon: '🔒' };
   if (/模型路由|端云|端侧|离线|成本|降级|冗余|自研|部署|供应商/.test(title))
