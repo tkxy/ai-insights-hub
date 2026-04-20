@@ -528,6 +528,172 @@
   }
   .source-link:hover .source-link-icon { transform: translateX(2px); }
 
+  /* ===== DESIGN WEEKLY PAGE ===== */
+
+  /* hero */
+  .dw-hero {
+    background: #0f0f0f;
+    border-radius: 28px;
+    padding: 56px 48px;
+    margin-bottom: 24px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  .dw-hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 80% 0%, rgba(99,102,241,0.25) 0%, transparent 55%),
+                radial-gradient(ellipse at 20% 100%, rgba(20,184,166,0.18) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  .dw-hero-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; color: rgba(255,255,255,0.4);
+    margin-bottom: 14px;
+  }
+  .dw-hero-title {
+    font-size: 48px; font-weight: 900; letter-spacing: -2.5px;
+    line-height: 1.0; margin: 0 0 24px;
+  }
+  .dw-hero-title em { font-style: normal; color: rgba(255,255,255,0.35); }
+  .dw-hero-stages {
+    display: flex; flex-direction: column; gap: 8px;
+    position: relative; z-index: 1;
+  }
+  .dw-hero-stage-row {
+    display: grid; grid-template-columns: 20px 120px 1fr;
+    gap: 12px; align-items: baseline;
+  }
+  .dw-hero-stage-num { font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.3); }
+  .dw-hero-stage-name { font-size: 13px; font-weight: 800; color: rgba(255,255,255,0.9); }
+  .dw-hero-stage-summary { font-size: 13px; line-height: 1.6; color: rgba(255,255,255,0.55); }
+  .dw-hero-stage-summary em { font-style: normal; color: rgba(255,255,255,0.9); font-weight: 600; }
+  .dw-hero-meta {
+    font-size: 12px; color: rgba(255,255,255,0.3); margin-top: 28px;
+    position: relative; z-index: 1;
+  }
+
+  /* stage chip nav */
+  .dw-stage-nav {
+    display: flex; gap: 8px; flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .dw-stage-chip {
+    display: inline-flex; align-items: center; gap: 7px;
+    padding: 9px 18px; border-radius: 999px;
+    font-size: 13px; font-weight: 700;
+    cursor: pointer; border: 1.5px solid #e8e8e8;
+    background: #fff; color: #555;
+    font-family: inherit; transition: all 0.18s;
+  }
+  .dw-stage-chip:hover { border-color: #111; color: #111; }
+  .dw-stage-chip.active { background: #0f0f0f; color: #fff; border-color: #0f0f0f; }
+  .dw-stage-chip-count {
+    font-size: 10px; font-weight: 700;
+    background: rgba(0,0,0,0.08); color: inherit;
+    padding: 1px 6px; border-radius: 999px;
+  }
+  .dw-stage-chip.active .dw-stage-chip-count { background: rgba(255,255,255,0.18); }
+
+  /* stage block */
+  .dw-stage-block { display: none; }
+  .dw-stage-block.active { display: block; }
+
+  .dw-stage-header {
+    background: #fff; border-radius: 20px;
+    border: 1px solid #ebebeb;
+    padding: 28px 32px 24px;
+    margin-bottom: 16px;
+  }
+  .dw-stage-eyebrow {
+    font-size: 10px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; color: #bbb; margin-bottom: 10px;
+  }
+  .dw-stage-title { font-size: 30px; font-weight: 900; letter-spacing: -1px; margin: 0 0 10px; }
+  .dw-stage-summary { font-size: 14px; line-height: 1.8; color: #555; max-width: 780px; }
+
+  /* item cards */
+  .dw-items { display: flex; flex-direction: column; gap: 14px; }
+
+  .dw-item {
+    background: #fff; border-radius: 20px;
+    border: 1px solid #ebebeb;
+    display: grid; grid-template-columns: 260px 1fr;
+    overflow: hidden;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .dw-item:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.08); transform: translateY(-1px); }
+
+  /* left panel */
+  .dw-item-left {
+    padding: 24px 22px;
+    background: #f9f9f9;
+    border-right: 1px solid #ebebeb;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .dw-item-source {
+    font-size: 11px; font-weight: 600; color: #aaa;
+  }
+  .dw-item-title {
+    font-size: 15px; font-weight: 800; line-height: 1.45;
+    color: #0a0a0a; letter-spacing: -0.2px;
+  }
+  .dw-item-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: auto; }
+  .dw-item-tag {
+    font-size: 11px; font-weight: 600;
+    padding: 2px 8px; border-radius: 999px;
+    background: #efefef; color: #777;
+  }
+  .dw-item-tag.primary {
+    background: #0f0f0f; color: #fff;
+  }
+  .dw-item-impact {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 10px; font-weight: 700; padding: 3px 9px;
+    border-radius: 999px; width: fit-content;
+  }
+  .dw-impact-automate { background: #eff6ff; color: #2563eb; }
+  .dw-impact-augment  { background: #f0fdf4; color: #16a34a; }
+  .dw-impact-replace  { background: #fef2f2; color: #dc2626; }
+  .dw-impact-risk     { background: #fff7ed; color: #c2410c; }
+  .dw-impact-new      { background: #faf5ff; color: #7c3aed; }
+
+  /* right panel */
+  .dw-item-right {
+    padding: 24px 28px;
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .dw-item-section-label {
+    font-size: 10px; font-weight: 700; letter-spacing: 1.2px;
+    text-transform: uppercase; color: #bbb;
+    margin-bottom: 5px; display: block;
+  }
+  .dw-item-insight {
+    font-size: 13px; line-height: 1.8; color: #333;
+  }
+  .dw-item-action {
+    background: #f8f8f8; border-radius: 12px;
+    padding: 14px 16px;
+    border-left: 3px solid #0f0f0f;
+  }
+  .dw-item-action-text {
+    font-size: 13px; line-height: 1.75; color: #111;
+  }
+  .dw-item-links {
+    display: flex; flex-wrap: wrap; gap: 7px;
+    padding-top: 4px;
+  }
+  .dw-item-link {
+    font-size: 12px; font-weight: 600; color: #444;
+    text-decoration: none;
+    padding: 4px 10px; border-radius: 8px;
+    background: #f0f0f0;
+    transition: all 0.15s;
+    display: inline-flex; align-items: center; gap: 4px;
+  }
+  .dw-item-link:hover { background: #0f0f0f; color: #fff; }
+
   /* ===== DEMAND CARDS ===== */
   .demand-list { display: flex; flex-direction: column; gap: 16px; }
 
@@ -2485,21 +2651,17 @@ function switchCluster(name) {
 }
 
 function switchDesignFlow(name) {
-  var blocks = document.querySelectorAll('.design-flow-block');
+  switchDesignStage(name);
+}
+
+function switchDesignStage(name) {
+  var blocks = document.querySelectorAll('.dw-stage-block');
   for (var i = 0; i < blocks.length; i++) {
-    blocks[i].style.display = blocks[i].getAttribute('data-flow') === name ? 'block' : 'none';
+    blocks[i].classList.toggle('active', blocks[i].getAttribute('data-stage') === name);
   }
-  var chips = document.querySelectorAll('.design-chip');
+  var chips = document.querySelectorAll('.dw-stage-chip');
   for (var i = 0; i < chips.length; i++) {
-    if (chips[i].getAttribute('data-flow') === name) {
-      chips[i].classList.add('active');
-      chips[i].style.background = '#111';
-      chips[i].style.color = '#fff';
-    } else {
-      chips[i].classList.remove('active');
-      chips[i].style.background = 'rgba(0,0,0,0.05)';
-      chips[i].style.color = '#555';
-    }
+    chips[i].classList.toggle('active', chips[i].getAttribute('data-stage') === name);
   }
 }
 
@@ -2661,6 +2823,23 @@ function getDesignWeeklyMetaText(data) {
   return parts.join(' · ');
 }
 
+function classifyItemImpact(item) {
+  var text = (item.insight || '') + ' ' + (item.action || '') + ' ' + (item.title || '');
+  if (/取代|替代|淘汰|消失|不再需要|岗位|裁员/.test(text)) return 'replace';
+  if (/自动|一键|批量|秒级|效率提升|节省|加速|数倍|压缩/.test(text)) return 'automate';
+  if (/风险|安全|漏洞|合规|责任|监管|隐私|信任问题/.test(text)) return 'risk';
+  if (/新能力|前所未有|颠覆|全新|突破|重新定义|从未/.test(text)) return 'new';
+  return 'augment';
+}
+
+const DW_IMPACT_LABELS = {
+  replace:  { label: '角色替代', cls: 'dw-impact-replace' },
+  automate: { label: '流程自动化', cls: 'dw-impact-automate' },
+  augment:  { label: '能力增强',  cls: 'dw-impact-augment' },
+  risk:     { label: '风险预警',  cls: 'dw-impact-risk' },
+  new:      { label: '新范式',    cls: 'dw-impact-new' }
+};
+
 function renderDesignWeekly(data, page) {
   var stages = data.stages || {};
   var stageKeys = DESIGN_STAGE_KEYS.filter(function(key) { return !!stages[key]; });
@@ -2673,87 +2852,113 @@ function renderDesignWeekly(data, page) {
   var headerText = getDesignWeeklyHeaderText(data);
   var metaText = getDesignWeeklyMetaText(data);
 
-  var html = '<section style="background:linear-gradient(135deg,rgba(255,255,255,0.9),rgba(243,239,230,0.92));border:1px solid rgba(0,0,0,0.06);border-radius:32px;padding:72px 36px;box-shadow:0 18px 60px rgba(17,17,17,0.08);margin-bottom:28px;">';
-  html += '<div style="font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#888;margin-bottom:12px;">' + headerText + '</div>';
-  html += '<h1 style="font-size:44px;line-height:1.02;letter-spacing:-2px;margin:0 0 18px;">\u201cAI+设计\u201d工作流</h1>';
-  html += '<div style="display:grid;gap:10px;margin-bottom:16px;">';
+  // ── Hero ──
+  var html = '<div class="dw-hero">';
+  html += '<div class="dw-hero-eyebrow">' + headerText + '</div>';
+  html += '<h1 class="dw-hero-title">AI <em>×</em> 设计工作流</h1>';
+  html += '<div class="dw-hero-stages">';
   for (var s = 0; s < stageKeys.length; s++) {
     var sk = stageKeys[s];
     var st = stages[sk];
-    html += '<div style="display:flex;gap:10px;align-items:baseline;">';
-    html += '<span style="font-size:13px;font-weight:800;color:#111;white-space:nowrap;min-width:24px;">' + DESIGN_STAGE_NUMS[sk] + '</span>';
-    html += '<span style="font-size:14px;line-height:1.7;color:#555;"><strong style="color:#111;">' + st.label + '</strong> — ' + st.summary + ' <span style="color:#888;font-size:12px;">(' + st.items.length + ' 条)</span></span>';
+    // Bold the first clause before — in summary
+    var summaryDisplay = st.summary.replace(/^(.+?)(?=——|—|。)/, '<em>$1</em>');
+    html += '<div class="dw-hero-stage-row">';
+    html += '<span class="dw-hero-stage-num">' + DESIGN_STAGE_NUMS[sk] + '</span>';
+    html += '<span class="dw-hero-stage-name">' + DESIGN_STAGE_ICONS[sk] + '&nbsp;' + st.label + '</span>';
+    html += '<span class="dw-hero-stage-summary">' + summaryDisplay + '</span>';
     html += '</div>';
   }
   html += '</div>';
   if (metaText) {
-    html += '<p style="font-size:13px;color:#888;margin:0 0 8px;">' + metaText + '</p>';
-  }
-  html += '<p style="font-size:13px;color:#888;margin:0;">页面会预先准备内容，切到 Design 时不再重复加载。</p>';
-  html += '</section>';
-
-  html += '<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;" id="design-flow-chips">';
-  for (var s = 0; s < stageKeys.length; s++) {
-    var sk = stageKeys[s];
-    var st = stages[sk];
-    var isFirst = (s === 0);
-    html += '<button class="design-chip' + (isFirst ? ' active' : '') + '" data-flow="' + sk + '" onclick="switchDesignFlow(\'' + sk + '\')" style="padding:10px 16px;border-radius:999px;font-size:13px;font-weight:700;cursor:pointer;border:none;font-family:inherit;transition:all 0.2s;background:' + (isFirst ? '#111' : 'rgba(0,0,0,0.05)') + ';color:' + (isFirst ? '#fff' : '#555') + ';">' + DESIGN_STAGE_ICONS[sk] + ' ' + st.label + ' · ' + st.items.length + '</button>';
+    html += '<div class="dw-hero-meta">' + metaText + '</div>';
   }
   html += '</div>';
 
+  // ── Stage chip nav ──
+  html += '<div class="dw-stage-nav">';
   for (var s = 0; s < stageKeys.length; s++) {
     var sk = stageKeys[s];
     var st = stages[sk];
     var isFirst = (s === 0);
-    html += '<div class="design-flow-block" data-flow="' + sk + '" style="display:' + (isFirst ? 'block' : 'none') + ';">';
-    html += '<section style="background:rgba(255,255,255,0.88);border:1px solid rgba(0,0,0,0.06);border-radius:24px;padding:28px;margin-bottom:18px;">';
-    html += '<div style="margin-bottom:20px;">';
-    html += '<div style="font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#888;margin-bottom:10px;">Workflow stage ' + DESIGN_STAGE_NUMS[sk] + '</div>';
-    html += '<h2 style="font-size:32px;font-weight:900;letter-spacing:-1px;margin:0 0 8px;">' + st.label + '</h2>';
-    html += '<p style="font-size:14px;color:#555;line-height:1.8;max-width:700px;">' + st.summary + '</p>';
+    html += '<button class="dw-stage-chip' + (isFirst ? ' active' : '') + '" data-stage="' + sk + '" onclick="switchDesignStage(\'' + sk + '\')">';
+    html += DESIGN_STAGE_ICONS[sk] + ' ' + st.label;
+    html += '<span class="dw-stage-chip-count">' + st.items.length + '</span>';
+    html += '</button>';
+  }
+  html += '</div>';
+
+  // ── Stage blocks ──
+  for (var s = 0; s < stageKeys.length; s++) {
+    var sk = stageKeys[s];
+    var st = stages[sk];
+    var isFirst = (s === 0);
+
+    html += '<div class="dw-stage-block' + (isFirst ? ' active' : '') + '" data-stage="' + sk + '">';
+
+    // Stage header
+    html += '<div class="dw-stage-header">';
+    html += '<div class="dw-stage-eyebrow">WORKFLOW STAGE ' + DESIGN_STAGE_NUMS[sk] + '</div>';
+    html += '<h2 class="dw-stage-title">' + st.label + '</h2>';
+    html += '<p class="dw-stage-summary">' + st.summary + '</p>';
     html += '</div>';
 
-    html += '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;">';
+    // Items
+    html += '<div class="dw-items">';
     for (var c = 0; c < st.items.length; c++) {
       var item = st.items[c];
-      html += '<div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:flex;flex-direction:column;gap:12px;">';
-      html += '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">';
-      html += '<span style="font-size:12px;font-weight:700;color:#888;">' + (item.source || '') + '</span>';
+      var impact = classifyItemImpact(item);
+      var impactCfg = DW_IMPACT_LABELS[impact] || DW_IMPACT_LABELS.augment;
+
+      html += '<div class="dw-item">';
+
+      // Left panel
+      html += '<div class="dw-item-left">';
+      if (item.source) {
+        html += '<span class="dw-item-source">' + item.source + '</span>';
+      }
+      html += '<h4 class="dw-item-title">' + item.title + '</h4>';
+      html += '<span class="dw-item-impact ' + impactCfg.cls + '">' + impactCfg.label + '</span>';
       if (item.tags && item.tags.length > 0) {
-        html += '<span style="padding:5px 10px;border-radius:999px;font-size:11px;font-weight:700;color:#fff;background:#111;white-space:nowrap;">' + item.tags[0] + '</span>';
+        html += '<div class="dw-item-tags">';
+        for (var t = 0; t < item.tags.length; t++) {
+          html += '<span class="dw-item-tag' + (t === 0 ? ' primary' : '') + '">' + item.tags[t] + '</span>';
+        }
+        html += '</div>';
       }
       html += '</div>';
-      html += '<h4 style="font-size:17px;font-weight:800;line-height:1.35;">' + item.title + '</h4>';
+
+      // Right panel
+      html += '<div class="dw-item-right">';
       if (item.insight) {
-        html += '<div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">对我们的启示</strong>' + item.insight + '</div>';
+        html += '<div>';
+        html += '<span class="dw-item-section-label">对我们的启示</span>';
+        html += '<p class="dw-item-insight">' + item.insight + '</p>';
+        html += '</div>';
       }
       if (item.action) {
-        html += '<div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">建议下一步</strong>' + item.action + '</div>';
+        html += '<div class="dw-item-action">';
+        html += '<span class="dw-item-section-label">建议下一步</span>';
+        html += '<p class="dw-item-action-text">' + item.action + '</p>';
+        html += '</div>';
       }
       // Cross-link to demand cluster
       var dwCluster = classifyDemandToCluster(item.title);
       if (dwCluster) {
-        html += '<button class="cluster-badge has-link" title="在需求地图中查看" onclick="switchPage(\'map\');setTimeout(function(){switchCluster(\'' + dwCluster.name + '\')},300);">' + dwCluster.icon + ' ' + dwCluster.name + '</button>';
+        html += '<button class="cluster-badge has-link" title="在需求地图中查看" onclick="switchPage(\'map\');setTimeout(function(){switchCluster(\'' + dwCluster.name + '\')},300);">' + dwCluster.icon + ' ' + dwCluster.name + ' · 需求地图</button>';
       }
       if (item.sourceUrls && item.sourceUrls.length > 0) {
-        html += '<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px;">';
+        html += '<div class="dw-item-links">';
         for (var u = 0; u < item.sourceUrls.length; u++) {
-          html += '<a href="' + item.sourceUrls[u].url + '" target="_blank" style="font-size:12px;font-weight:700;color:#111;text-decoration:none;padding:4px 8px;border-radius:8px;background:rgba(0,0,0,0.04);">' + item.sourceUrls[u].name + ' →</a>';
+          html += '<a href="' + item.sourceUrls[u].url + '" target="_blank" class="dw-item-link">' + item.sourceUrls[u].name + ' →</a>';
         }
         html += '</div>';
       }
-      if (item.tags && item.tags.length > 1) {
-        html += '<div style="display:flex;flex-wrap:wrap;gap:6px;">';
-        for (var t = 0; t < item.tags.length; t++) {
-          html += '<span style="padding:4px 8px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:11px;font-weight:700;">' + item.tags[t] + '</span>';
-        }
-        html += '</div>';
-      }
-      html += '</div>';
+      html += '</div>'; // dw-item-right
+
+      html += '</div>'; // dw-item
     }
-    html += '</div>';
-    html += '</section>';
-    html += '</div>';
+    html += '</div>'; // dw-items
+    html += '</div>'; // dw-stage-block
   }
 
   page.innerHTML = html;
