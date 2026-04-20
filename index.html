@@ -340,146 +340,125 @@
     font-weight: 600;
   }
 
-  /* ===== DESIGN WORKFLOW TAB ===== */
-
-  /* ── workflow pipeline bar ── */
-  .wf-pipeline {
-    display: flex; gap: 0; margin-bottom: 28px;
-    background: #fff; border-radius: 14px;
-    border: 1px solid #e8e8e8; overflow: hidden;
-  }
-  .wf-stage {
-    flex: 1; padding: 14px 16px; cursor: pointer;
-    border-right: 1px solid #efefef;
-    transition: background 0.18s;
-    position: relative;
-  }
-  .wf-stage:last-child { border-right: none; }
-  .wf-stage:hover { background: #f9f9f9; }
-  .wf-stage.active { background: #0f0f0f; }
-  .wf-stage.active .wf-stage-name { color: #fff; }
-  .wf-stage.active .wf-stage-icon { color: #fff; opacity: 0.85; }
-  .wf-stage.active .wf-stage-count { background: rgba(255,255,255,0.18); color: #fff; }
-  .wf-stage-icon { font-size: 16px; display: block; margin-bottom: 4px; }
-  .wf-stage-name { font-size: 12px; font-weight: 700; color: #111; display: block; margin-bottom: 5px; }
-  .wf-stage-count {
-    font-size: 10px; font-weight: 700; color: #888;
-    background: #f0f0f0; border-radius: 999px;
-    padding: 1px 7px; display: inline-block;
-  }
-  .wf-stage-count.has-items { background: #e8efff; color: #2563eb; }
-
-  /* ── insights layout ── */
+  /* ===== INSIGHT CARDS ===== */
   .insights-grid {
-    display: flex; flex-direction: column; gap: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
   }
 
-  /* ── insight card ── */
+  /* ===== INSIGHT CARD ===== */
+  .insights-grid { gap: 20px; }
   .insight-card {
     background: #fff;
     border-radius: 16px;
     border: 1px solid #e8e8e8;
+    border-top-width: 3px;
     overflow: hidden;
-    transition: box-shadow 0.2s, transform 0.2s;
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    grid-template-rows: 1fr auto;
+    transition: box-shadow 0.2s;
+    display: flex; flex-direction: column;
   }
   .insight-card:hover {
-    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
-    transform: translateY(-1px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
   }
-  .insight-card.ic-hidden { display: none; }
+  .insight-card.urgency-high { border-top-color: #ef4444; }
+  .insight-card.urgency-mid  { border-top-color: #f59e0b; }
+  .insight-card.urgency-low  { border-top-color: #3b82f6; }
 
-  /* ── left sidebar ── */
-  .ic-sidebar {
-    padding: 24px 20px;
-    border-right: 1px solid #f0f0f0;
-    display: flex; flex-direction: column; gap: 16px;
-    background: #fafafa;
-    grid-row: 1 / 3;
+  /* ── header ── */
+  .ic-head {
+    padding: 18px 22px 14px;
+    border-bottom: 1px solid #f0f0f0;
   }
-  .ic-stage-pill {
-    display: inline-flex; align-items: center; gap: 6px;
-    font-size: 11px; font-weight: 700;
-    padding: 4px 10px; border-radius: 999px;
-    width: fit-content;
+  .ic-meta {
+    display: flex; align-items: center; gap: 8px;
+    margin-bottom: 10px;
   }
-  /* stage pill colors per stage */
-  .ic-stage-pill.stage-research   { background: #fdf4e7; color: #b45309; }
-  .ic-stage-pill.stage-ideation   { background: #f0fdf4; color: #15803d; }
-  .ic-stage-pill.stage-ui         { background: #eff6ff; color: #2563eb; }
-  .ic-stage-pill.stage-prototype  { background: #faf5ff; color: #7c3aed; }
-  .ic-stage-pill.stage-delivery   { background: #fff1f2; color: #be123c; }
-  .ic-stage-pill.stage-cross      { background: #f0f0f0; color: #555; }
-
-  .ic-impact-badge {
-    display: inline-flex; align-items: center; gap: 4px;
-    font-size: 10px; font-weight: 700; letter-spacing: 0.5px;
-    padding: 3px 9px; border-radius: 999px; width: fit-content;
+  .ic-num {
+    font-size: 10px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; color: #c8c8c8;
   }
-  .ic-impact-badge.impact-replace   { background: #fef2f2; color: #dc2626; }
-  .ic-impact-badge.impact-automate  { background: #fff7ed; color: #c2410c; }
-  .ic-impact-badge.impact-augment   { background: #eff6ff; color: #1d4ed8; }
-  .ic-impact-badge.impact-new       { background: #f0fdf4; color: #166534; }
-  .ic-impact-badge.impact-risk      { background: #4a1515; color: #fca5a5; }
-
-  .ic-sidebar-signal {
-    flex: 1;
+  .ic-badge {
+    font-size: 10px; font-weight: 700; padding: 2px 8px;
+    border-radius: 999px; letter-spacing: 0.3px;
   }
-  .ic-sidebar-signal-label {
-    font-size: 10px; font-weight: 700; color: #bbb;
-    letter-spacing: 1px; text-transform: uppercase;
-    margin-bottom: 8px; display: block;
-  }
-  .ic-sidebar-signal-text {
-    font-size: 12px; line-height: 1.7; color: #555;
-  }
-
-  .ic-date-small {
-    font-size: 10px; color: #c8c8c8; font-weight: 500; margin-top: auto;
-  }
-
-  /* ── right main body ── */
-  .ic-main {
-    padding: 22px 26px 18px;
-    display: flex; flex-direction: column; gap: 0;
+  .ic-badge.high { background: #fef2f2; color: #dc2626; }
+  .ic-badge.mid  { background: #fffbeb; color: #d97706; }
+  .ic-badge.low  { background: #eff6ff; color: #2563eb; }
+  .ic-date {
+    margin-left: auto; font-size: 11px; color: #c8c8c8; font-weight: 500;
   }
   .ic-title {
-    font-size: 16px; font-weight: 800; line-height: 1.5;
-    color: #0a0a0a; margin: 0 0 16px; letter-spacing: -0.3px;
+    font-size: 15px; font-weight: 800; line-height: 1.55;
+    color: #0f0f0f; margin: 0 0 12px; letter-spacing: -0.2px;
+  }
+  .ic-tags-row {
+    display: flex; flex-wrap: wrap; gap: 5px;
+  }
+  .ic-tags-row .tag {
+    font-size: 11px; padding: 2px 8px; color: #888;
+    background: #f5f5f5; border-radius: 999px; font-weight: 500;
   }
 
-  /* action items */
-  .ic-actions-label {
-    font-size: 10px; font-weight: 700; letter-spacing: 1px;
-    text-transform: uppercase; color: #aaa; margin-bottom: 10px; display: block;
+  /* ── body ── */
+  .ic-body { padding: 0 22px; flex: 1; }
+
+  .ic-section {
+    padding: 14px 0;
+    border-bottom: 1px solid #f2f2f2;
   }
-  .ic-actions {
+  .ic-section:last-child { border-bottom: none; }
+
+  .ic-section-label {
+    font-size: 11px; font-weight: 700;
+    margin-bottom: 10px; display: inline-flex; align-items: center; gap: 5px;
+    padding: 3px 10px; border-radius: 999px;
+    background: #f5f5f5; color: #888;
+  }
+  .ic-section.means .ic-section-label {
+    background: #eff6ff; color: #2563eb;
+  }
+
+  /* summary → scannable bullets */
+  .ic-bullets {
+    list-style: none; margin: 0; padding: 0;
     display: flex; flex-direction: column; gap: 8px;
-    flex: 1;
   }
-  .ic-action-item {
-    display: flex; gap: 10px; align-items: flex-start;
+  .ic-bullets li {
+    font-size: 13px; line-height: 1.75; color: #4a4a4a;
+    padding-left: 14px; position: relative;
   }
-  .ic-action-num {
-    width: 20px; height: 20px; border-radius: 50%;
-    background: #0f0f0f; color: #fff;
-    font-size: 10px; font-weight: 800;
-    display: flex; align-items: center; justify-content: center;
-    flex-shrink: 0; margin-top: 2px;
-  }
-  .ic-action-text {
-    font-size: 13px; line-height: 1.75; color: #222;
-    padding-top: 1px;
+  .ic-bullets li::before {
+    content: '';
+    position: absolute; left: 0; top: 9px;
+    width: 5px; height: 5px; border-radius: 50%;
+    background: #ddd;
   }
 
-  /* ── footer row (source links) ── */
+  /* implication → numbered items with left-border accent */
+  .ic-impl-list {
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .ic-impl-item {
+    border-left: 3px solid #2563eb;
+    border-radius: 0 8px 8px 0;
+    padding: 8px 12px;
+    background: #fafbff;
+  }
+  .ic-impl-num {
+    font-size: 10px; font-weight: 800; color: #2563eb;
+    letter-spacing: 1px; display: block; margin-bottom: 4px;
+  }
+  .ic-impl-text {
+    font-size: 13px; line-height: 1.75; color: #1a1a1a; margin: 0;
+  }
+
+  /* ── footer ── */
   .ic-footer {
-    padding: 10px 26px 14px;
+    padding: 10px 22px 14px;
     display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
     border-top: 1px solid #f2f2f2;
-    grid-column: 2;
   }
 
   .insight-card .card-label { display: none; }
@@ -1850,84 +1829,9 @@ function renderContent(data) {
   `;
 
   // ===== TAB: INSIGHTS =====
-  // Workflow stage classifier
-  function classifyInsightStage(ins) {
-    var text = (ins.title || '') + ' ' + (ins.summary || '') + ' ' + (ins.implication || '');
-    if (/用研|调研|访谈|数据分析|洞察|用户行为|反馈|体验报告|竞品|市场研究|用户画像|问卷|观察|A\/B测|AB测|埋点|用户理解/.test(text)) return 'research';
-    if (/创意|概念|灵感|头脑|方案|构思|创作|生成设计|Ideation|创新|提案|设计方向|探索方向|发散/.test(text)) return 'ideation';
-    if (/界面|UI|视觉|排版|色彩|组件|Design System|设计系统|样式|规范|图标|字体|间距|布局|响应式|深色模式|动效|交互设计|微交互/.test(text)) return 'ui';
-    if (/原型|Prototype|Figma|流程图|线框|可用性测试|演示|Demo|低保真|高保真|走查|评审/.test(text)) return 'prototype';
-    if (/交付|Handoff|开发协作|切图|标注|前端|代码|Dev Mode|实现|上线|部署|自动化测试|回归/.test(text)) return 'delivery';
-    return 'cross';
-  }
-
-  function classifyInsightImpact(ins) {
-    var text = (ins.implication || '') + ' ' + (ins.summary || '');
-    if (/取代|替代|淘汰|被替换|不再需要|消失|裁员|岗位消失/.test(text)) return 'replace';
-    if (/自动化|自动生成|一键|批量|效率提升|节省时间|加速|快速|数倍/.test(text)) return 'automate';
-    if (/风险|安全|合规|责任|监管|隐私|问责|危险/.test(text)) return 'risk';
-    if (/新能力|前所未有|颠覆|全新|创造|突破|重新定义/.test(text)) return 'new';
-    return 'augment';
-  }
-
-  const stageConfig = {
-    all:       { label: '全部',    icon: '◈',  name: '全部洞察' },
-    research:  { label: '用户研究', icon: '🔍', name: '用研阶段' },
-    ideation:  { label: '创意探索', icon: '✦',  name: '创意阶段' },
-    ui:        { label: '界面设计', icon: '▣',  name: 'UI设计' },
-    prototype: { label: '原型验证', icon: '◎',  name: '原型阶段' },
-    delivery:  { label: '开发交付', icon: '⬡',  name: '交付阶段' },
-    cross:     { label: '跨阶段',   icon: '⊕',  name: '跨阶段影响' }
-  };
-
-  const impactConfig = {
-    replace:  { label: '角色替代', cls: 'impact-replace' },
-    automate: { label: '流程自动化', cls: 'impact-automate' },
-    augment:  { label: '能力增强', cls: 'impact-augment' },
-    new:      { label: '新能力涌现', cls: 'impact-new' },
-    risk:     { label: '风险预警', cls: 'impact-risk' }
-  };
-
-  // Compute per-stage counts
-  const stageCounts = { all: 0, research: 0, ideation: 0, ui: 0, prototype: 0, delivery: 0, cross: 0 };
-  const insightStages = [];
-  const insightImpacts = [];
-  data.design_insights.forEach((ins) => {
-    const stage = classifyInsightStage(ins);
-    const impact = classifyInsightImpact(ins);
-    insightStages.push(stage);
-    insightImpacts.push(impact);
-    stageCounts[stage]++;
-    stageCounts.all++;
-  });
-
-  // Pipeline bar
-  const pipelineStages = ['all', 'research', 'ideation', 'ui', 'prototype', 'delivery', 'cross'];
-  let pipelineHtml = `<div class="wf-pipeline" id="wf-pipeline">`;
-  pipelineStages.forEach(key => {
-    const cfg = stageConfig[key];
-    const count = stageCounts[key];
-    const countCls = (key !== 'all' && count > 0) ? 'has-items' : '';
-    const activeCls = key === 'all' ? 'active' : '';
-    pipelineHtml += `
-      <div class="wf-stage ${activeCls}" data-stage="${key}" onclick="filterInsightsByStage('${key}')">
-        <span class="wf-stage-icon">${cfg.icon}</span>
-        <span class="wf-stage-name">${cfg.label}</span>
-        <span class="wf-stage-count ${countCls}">${count} 条</span>
-      </div>`;
-  });
-  pipelineHtml += `</div>`;
-
   html += `<div class="tab-content active" id="tab-insights"><div class="section fade-in">`;
-  html += pipelineHtml;
-  html += `<div class="insights-grid" id="insights-grid">`;
-
+  html += `<div class="insights-grid">`;
   data.design_insights.forEach((ins, i) => {
-    const stage = insightStages[i];
-    const impact = insightImpacts[i];
-    const stageCfg = stageConfig[stage] || stageConfig.cross;
-    const impactCfg = impactConfig[impact] || impactConfig.augment;
-
     // Source links
     let sourceLinksHtml = '';
     if (ins.source_urls && ins.source_urls.length > 0) {
@@ -1940,13 +1844,24 @@ function renderContent(data) {
       ).join('');
     }
 
-    // Signal: take first 1–2 sentences from summary as the core fact
-    const signalSentences = (ins.summary || '')
-      .split(/(?<=[。！？])\s*/)
-      .map(s => s.trim()).filter(s => s.length > 5);
-    const signalText = signalSentences.slice(0, 2).join('') || (ins.summary || '').slice(0, 120);
+    // Tags
+    const tagsHtml = ins.tags && ins.tags.length
+      ? ins.tags.map(t => `<span class="tag">${t}</span>`).join('')
+      : '';
+    const dateBadge = ins._date ? `<span class="ic-date">${ins._date}</span>` : '';
 
-    // Action items from implication
+    // Urgency
+    const urgencyText = /必须|立即|刻不容缓|直接冲击|严重威胁|不得不|迫在眉睫|核心风险|降维打击|加速/.test(ins.implication || '') ? '高紧迫' :
+                        /建议|可以|可借鉴|值得关注|可以考虑|有机会|有潜力|探索|尝试/.test(ins.implication || '') ? '中等' : '持续跟踪';
+    const urgencyClass = urgencyText === '高紧迫' ? 'high' : urgencyText === '中等' ? 'mid' : 'low';
+
+    // summary → split on Chinese sentence endings into scannable bullets
+    const summaryBullets = (ins.summary || '')
+      .split(/(?<=[。！？；])\s*/)
+      .map(s => s.trim())
+      .filter(s => s.length > 4);
+
+    // implication → split on (1)(2)(3) pattern into individual items
     const implItems = (ins.implication || '')
       .split(/(?=\(\d+\))/)
       .map(s => s.trim())
@@ -1956,30 +1871,37 @@ function renderContent(data) {
         return m ? { num: m[1], text: m[2].trim() } : { num: '', text: s };
       });
 
-    const dateStr = ins._date || '';
-
     html += `
-      <div class="insight-card" data-stage="${stage}">
-        <div class="ic-sidebar">
-          <span class="ic-stage-pill stage-${stage}">${stageCfg.icon} ${stageCfg.label}</span>
-          <span class="ic-impact-badge ${impactCfg.cls}">${impactCfg.label}</span>
-          <div class="ic-sidebar-signal">
-            <span class="ic-sidebar-signal-label">信号事实</span>
-            <p class="ic-sidebar-signal-text">${signalText}</p>
+      <div class="insight-card urgency-${urgencyClass}">
+        <div class="ic-head">
+          <div class="ic-meta">
+            <span class="ic-num">洞察 ${String(i + 1).padStart(2, '0')}</span>
+            <span class="ic-badge ${urgencyClass}">${urgencyText}</span>
+            ${dateBadge}
           </div>
-          ${dateStr ? `<span class="ic-date-small">${dateStr}</span>` : ''}
-        </div>
-        <div class="ic-main">
           <h3 class="ic-title">${ins.title}</h3>
-          <span class="ic-actions-label">设计师行动</span>
-          <div class="ic-actions">
-            ${implItems.map(item => `
-              <div class="ic-action-item">
-                <span class="ic-action-num">${item.num}</span>
-                <span class="ic-action-text">${item.text}</span>
-              </div>`).join('')}
+          ${tagsHtml ? `<div class="ic-tags-row">${tagsHtml}</div>` : ''}
+        </div>
+
+        <div class="ic-body">
+          <div class="ic-section what">
+            <span class="ic-section-label">📰 事件背景</span>
+            <ul class="ic-bullets">
+              ${summaryBullets.map(s => `<li>${s}</li>`).join('')}
+            </ul>
+          </div>
+          <div class="ic-section means">
+            <span class="ic-section-label">💡 行动启示</span>
+            <div class="ic-impl-list">
+              ${implItems.map(item => `
+                <div class="ic-impl-item">
+                  ${item.num ? `<span class="ic-impl-num">启示 ${item.num}</span>` : ''}
+                  <p class="ic-impl-text">${item.text}</p>
+                </div>`).join('')}
+            </div>
           </div>
         </div>
+
         ${sourceLinksHtml ? `<div class="ic-footer">${sourceLinksHtml}</div>` : ''}
       </div>
     `;
@@ -2611,24 +2533,6 @@ if (window.location.hash === '#map' || window.location.hash === '#design' || win
       : 'map';
     switchPage(pageId);
   });
-}
-
-function filterInsightsByStage(stage) {
-  // Update pipeline active state
-  var stages = document.querySelectorAll('.wf-stage');
-  for (var i = 0; i < stages.length; i++) {
-    stages[i].classList.toggle('active', stages[i].getAttribute('data-stage') === stage);
-  }
-  // Show/hide cards
-  var cards = document.querySelectorAll('#insights-grid .insight-card');
-  for (var j = 0; j < cards.length; j++) {
-    var cardStage = cards[j].getAttribute('data-stage');
-    if (stage === 'all' || cardStage === stage) {
-      cards[j].classList.remove('ic-hidden');
-    } else {
-      cards[j].classList.add('ic-hidden');
-    }
-  }
 }
 
 function switchCluster(name) {
