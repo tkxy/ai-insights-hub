@@ -1,0 +1,143 @@
+{
+  "date": "2026-04-17",
+  "generated_at": "2026-04-20T10:13:51",
+  "total_segments": 19,
+  "segments": [
+    {
+      "index": 0,
+      "file": "000.mp3",
+      "text": "欢迎收听 2026-04-17 的 AI Insights 播报，一起来看看今天有哪些不容错过的 AI 行业动态。",
+      "section": "",
+      "size": 123341
+    },
+    {
+      "index": 1,
+      "file": "001.mp3",
+      "text": "先来一个全局速览。AI设计工具迎来里程碑——Anthropic Labs推出Claude Design，一个对话驱动的AI设计工具，能将提示词直接转化为原型、线框图和交接就绪的设计产出物。同日Open",
+      "section": "📋 今日速览",
+      "size": 809630
+    },
+    {
+      "index": 2,
+      "file": "002.mp3",
+      "text": "今天的深度洞察环节，一共有 3 个值得关注的话题。",
+      "section": "🔍 深度洞察",
+      "size": 66916
+    },
+    {
+      "index": 3,
+      "file": "003.mp3",
+      "text": "第 1 个话题：Claude Design：AI设计工具的'结构化产出'路线，不生成图片但比图片更有用。Anthropic Labs推出Claude Design，面向付费Claude用户的研究预览工",
+      "section": "",
+      "size": 788314
+    },
+    {
+      "index": 4,
+      "file": "004.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) Claude Design证明了一个重要的产品设计原则——AI不必模仿人类全部能力，而应该精准解决工作流中的特定断裂点。输入法AI帮写也应该找到类似的'断裂点'",
+      "section": "",
+      "size": 787478
+    },
+    {
+      "index": 5,
+      "file": "005.mp3",
+      "text": "第 2 个话题：Claude Cowork引发'SaaSpocalypse'：AI Agent对垂直SaaS的替代效应正在兑现。Anthropic发布的Claude Cowork是一个用于自动化法律任",
+      "section": "",
+      "size": 739830
+    },
+    {
+      "index": 6,
+      "file": "006.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) 'SaaSpocalypse'的启示是：AI平台（ChatGPT/Claude）正在蚕食垂直应用的生存空间——输入法如果只是'输入工具+AI帮写'的简单组合，同",
+      "section": "",
+      "size": 806704
+    },
+    {
+      "index": 7,
+      "file": "007.mp3",
+      "text": "第 3 个话题：腾讯HY-Embodied-0.5：具身智能22项评测16项最佳，国产机器人AI的算法突围。腾讯发布HY-Embodied-0.5具身智能模型，在22项权威评测中拿下16项最佳成绩，全",
+      "section": "",
+      "size": 718514
+    },
+    {
+      "index": 8,
+      "file": "008.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) 具身智能模型的核心是'理解自然语言→规划行动→执行操作'，这个pipeline与输入法AI帮写完全同构——'理解用户意图→规划回复策略→生成文本'。腾讯在具身智",
+      "section": "",
+      "size": 647879
+    },
+    {
+      "index": 9,
+      "file": "009.mp3",
+      "text": "接下来是需求挖掘环节，看看今天发现了哪些产品机会。",
+      "section": "💎 需求挖掘",
+      "size": 82381
+    },
+    {
+      "index": 10,
+      "file": "010.mp3",
+      "text": "第 1 个机会：输入法内置轻量级垂直模板引擎，优先级：高。 用户痛点：用户在写商务邮件、合同条款、客服回复等场景时需要切换到专用SaaS工具，流程割裂且成本高，而AI帮写的通用生成结果缺少行业规范性 ",
+      "section": "",
+      "size": 807122
+    },
+    {
+      "index": 11,
+      "file": "011.mp3",
+      "text": "第 2 个机会：对话式设计原型生成能力，优先级：低。 用户痛点：产品经理和设计师在早期构思阶段需要快速出原型，但从文字描述到可视化原型之间需要较长的制作时间 产品机会：参考Claude Design的",
+      "section": "",
+      "size": 634923
+    },
+    {
+      "index": 12,
+      "file": "012.mp3",
+      "text": "最后来一组快讯。",
+      "section": "⚡ 快讯速递",
+      "size": 32643
+    },
+    {
+      "index": 13,
+      "file": "013.mp3",
+      "text": "Anthropic Labs推出Claude Design：对话驱动的AI设计工具。Anthropic Labs发布Claude Design研究预览，面向付费用户。不生成图片，专注生成结构化设计产出",
+      "section": "",
+      "size": 626563
+    },
+    {
+      "index": 14,
+      "file": "014.mp3",
+      "text": "Claude Cowork引发法律科技股暴跌：'SaaSpocalypse'来临。Anthropic发布Claude Cowork法律自动化Agent，能执行合同审阅、法律研究、文件起草。消息发布后法",
+      "section": "",
+      "size": 633251
+    },
+    {
+      "index": 15,
+      "file": "015.mp3",
+      "text": "腾讯HY-Embodied-0.5具身模型：22项评测16项最佳。腾讯发布HY-Embodied-0.5具身智能模型，22项权威评测中16项最佳。将大语言模型理解能力与机器人物理操作深度融合，机器人从",
+      "section": "",
+      "size": 627399
+    },
+    {
+      "index": 16,
+      "file": "016.mp3",
+      "text": "OpenAI即将失去三位核心高管，战略转型信号加强。消息人士透露OpenAI即将迎来重大人事变动，多位核心高管计划离职。在GPT-6发布后第三天，内部人事动荡的信号与公司战略从研究导向转向商业导向的趋",
+      "section": "",
+      "size": 606501
+    },
+    {
+      "index": 17,
+      "file": "017.mp3",
+      "text": "AI Agent从'对话框'走向'物理世界'：多厂商同步布局。本周讯飞AstronClaw、智元机器人、腾讯HY-Embodied密集发布，共同信号：AI Agent正在从屏幕中的对话框走向眼镜、机器",
+      "section": "",
+      "size": 589783
+    },
+    {
+      "index": 18,
+      "file": "018.mp3",
+      "text": "以上就是今天的全部内容，感谢收听，明天见。",
+      "section": "",
+      "size": 71932
+    }
+  ],
+  "total_size_bytes": 10201104,
+  "failed": 0,
+  "duration_seconds": 371.2
+}

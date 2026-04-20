@@ -1,0 +1,143 @@
+{
+  "date": "2026-04-18",
+  "generated_at": "2026-04-20T10:20:09",
+  "total_segments": 19,
+  "segments": [
+    {
+      "index": 0,
+      "file": "000.mp3",
+      "text": "欢迎收听 2026-04-18 的 AI Insights 播报，一起来看看今天有哪些不容错过的 AI 行业动态。",
+      "section": "",
+      "size": 121251
+    },
+    {
+      "index": 1,
+      "file": "001.mp3",
+      "text": "先来一个全局速览。OpenAI爆发人事地震——Sora创始人Bill Peebles、首席产品官Kevin Weil、企业应用CTO Srinivas Narayan三人同日宣布离职，Sora项目随之",
+      "section": "📋 今日速览",
+      "size": 816735
+    },
+    {
+      "index": 2,
+      "file": "002.mp3",
+      "text": "今天的深度洞察环节，一共有 3 个值得关注的话题。",
+      "section": "🔍 深度洞察",
+      "size": 66498
+    },
+    {
+      "index": 3,
+      "file": "003.mp3",
+      "text": "第 1 个话题：OpenAI三高管同日离职+Sora停摆：研究理想主义vs商业现实的终极博弈。4月18日OpenAI三位核心人物同日离职：Sora之父Bill Peebles、首席产品官Kevin W",
+      "section": "",
+      "size": 814227
+    },
+    {
+      "index": 4,
+      "file": "004.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) OpenAI砍掉Sora聚焦ChatGPT+API的策略说明：在AI行业，'做大而全'不如'做精而强'——输入法不应该盲目扩展AI功能（语音助手、图片生成、视频",
+      "section": "",
+      "size": 759056
+    },
+    {
+      "index": 5,
+      "file": "005.mp3",
+      "text": "第 2 个话题：Sora退场后AI视频赛道进入'战国时代'：Runway和Pika的新机会。OpenAI关停Sora并非AI视频赛道的寒冬，反而开启了'百家争鸣'时代。Runway Gen-3和Pik",
+      "section": "",
+      "size": 865218
+    },
+    {
+      "index": 6,
+      "file": "006.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) Sora的失败和Runway/Pika的崛起再次证明：产品定位比技术能力更重要——输入法AI帮写的定位应该是'打字过程中的无缝辅助'而非'独立的写作工具'，嵌入",
+      "section": "",
+      "size": 601486
+    },
+    {
+      "index": 7,
+      "file": "007.mp3",
+      "text": "第 3 个话题：DeepSeek V4参数量或高于预期60%：国产超大模型的算力自信。B站AI日报爆料DeepSeek V4的参数量可能比此前预期高60%，意味着总参数可能达到1.6万亿甚至更多。结合",
+      "section": "",
+      "size": 738576
+    },
+    {
+      "index": 8,
+      "file": "008.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) V4参数量超预期+成本仅为GPT 1/10，这个组合对输入法来说是最佳性价比选择——建议在V4发布后立即启动中文帮写场景的评测，涵盖聊天续写、邮件改写、多风格写",
+      "section": "",
+      "size": 647879
+    },
+    {
+      "index": 9,
+      "file": "009.mp3",
+      "text": "接下来是需求挖掘环节，看看今天发现了哪些产品机会。",
+      "section": "💎 需求挖掘",
+      "size": 82381
+    },
+    {
+      "index": 10,
+      "file": "010.mp3",
+      "text": "第 1 个机会：帮写聊天配图/表情包生成，优先级：中。 用户痛点：用户在微信聊天中越来越多使用表情包和图片回复，但AI帮写只能生成文字，无法满足'图文混合'的聊天需求 产品机会：在AI帮写结果中增加'",
+      "section": "",
+      "size": 673793
+    },
+    {
+      "index": 11,
+      "file": "011.mp3",
+      "text": "第 2 个机会：AI帮写成本精细化管控，优先级：高。 用户痛点：输入法AI帮写每次调用都消耗云端API额度，但用户对使用频次和成本无感知，导致高频用户成本远超ARPU 产品机会：建立AI帮写的成本分层",
+      "section": "",
+      "size": 644118
+    },
+    {
+      "index": 12,
+      "file": "012.mp3",
+      "text": "最后来一组快讯。",
+      "section": "⚡ 快讯速递",
+      "size": 30554
+    },
+    {
+      "index": 13,
+      "file": "013.mp3",
+      "text": "OpenAI三核心高管同日离职：Sora之父、CPO、企业CTO集体出走。Sora创始人Bill Peebles、首席产品官Kevin Weil、企业应用CTO Srinivas Narayan同日官",
+      "section": "",
+      "size": 647461
+    },
+    {
+      "index": 14,
+      "file": "014.mp3",
+      "text": "DeepSeek V4参数量或比预期高60%，4月下旬发布在即。B站AI日报爆料DeepSeek V4参数量可能比预期高出60%。结合华为昇腾原生适配和极致成本优化，V4被预期将在中文能力上达到GPT",
+      "section": "",
+      "size": 626563
+    },
+    {
+      "index": 15,
+      "file": "015.mp3",
+      "text": "GLM-5.1登顶开源模型排行榜，具备独立编程8小时能力。智谱GLM-5.1在开源模型排行榜持续攀升并登顶，展示了独立编程8小时的能力。国产开源大模型阵营壮大，形成GLM-5.1、MiniMax M2",
+      "section": "",
+      "size": 629907
+    },
+    {
+      "index": 16,
+      "file": "016.mp3",
+      "text": "阿里通义万相发布Wan 2.7-Video：140亿参数视频模型。阿里通义万相发布Wan 2.7-Video，140亿参数结合扩散模型和MoE架构，实现镜头语言、角色动作、场景切换的精细控制。在Sor",
+      "section": "",
+      "size": 581424
+    },
+    {
+      "index": 17,
+      "file": "017.mp3",
+      "text": "行业热议：OpenAI从'AGI使命'转向'收入驱动'意味着什么？。OpenAI的人事地震和战略收缩引发行业深思：当AI领域最具使命感的组织也全面转向商业化，'AGI造福全人类'的叙事还剩多少可信度？",
+      "section": "",
+      "size": 316438
+    },
+    {
+      "index": 18,
+      "file": "018.mp3",
+      "text": "以上就是今天的全部内容，感谢收听，明天见。",
+      "section": "",
+      "size": 72767
+    }
+  ],
+  "total_size_bytes": 9736332,
+  "failed": 0,
+  "duration_seconds": 330.3
+}

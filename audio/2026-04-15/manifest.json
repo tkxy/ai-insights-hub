@@ -1,0 +1,164 @@
+{
+  "date": "2026-04-15",
+  "generated_at": "2026-04-20T10:01:45",
+  "total_segments": 22,
+  "segments": [
+    {
+      "index": 0,
+      "file": "000.mp3",
+      "text": "欢迎收听 2026-04-15 的 AI Insights 播报，一起来看看今天有哪些不容错过的 AI 行业动态。",
+      "section": "",
+      "size": 120833
+    },
+    {
+      "index": 1,
+      "file": "001.mp3",
+      "text": "先来一个全局速览。GPT-6发布次日，全球开发者和用户的首批测评反馈涌入，核心共识是：200万Token上下文和Symphony多模态架构的实际表现超出预期，但Super App功能仍处于灰度测试阶段",
+      "section": "📋 今日速览",
+      "size": 798345
+    },
+    {
+      "index": 2,
+      "file": "002.mp3",
+      "text": "今天的深度洞察环节，一共有 4 个值得关注的话题。",
+      "section": "🔍 深度洞察",
+      "size": 65662
+    },
+    {
+      "index": 3,
+      "file": "003.mp3",
+      "text": "第 1 个话题：科大讯飞AstronClaw'软硬一体'发布：AI Agent从屏幕走向物理世界的产品化路径。科大讯飞在广交会上发布AstronClaw升级版，9项新品涵盖AI眼镜、智能办公本、Gui",
+      "section": "",
+      "size": 745682
+    },
+    {
+      "index": 4,
+      "file": "004.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) 讯飞的'软硬一体'策略是对输入法的降维打击——当AI Agent直接内嵌在眼镜和办公本中时，用户可能不再需要通过输入法来触发AI，输入法必须思考在'后键盘'时代",
+      "section": "",
+      "size": 682570
+    },
+    {
+      "index": 5,
+      "file": "005.mp3",
+      "text": "第 2 个话题：Anthropic封锁第三方代理工具：AI平台的'围墙花园'战略正式开启。Anthropic宣布自4月4日起，Claude Pro和Max订阅不再涵盖通过第三方代理工具（如OpenCl",
+      "section": "",
+      "size": 802942
+    },
+    {
+      "index": 6,
+      "file": "006.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) Anthropic封锁第三方工具的做法预示着模型厂商的API策略将趋向封闭——输入法依赖外部模型API时，需要评估供应商政策变更风险，建议与至少2-3家模型厂商",
+      "section": "",
+      "size": 606919
+    },
+    {
+      "index": 7,
+      "file": "007.mp3",
+      "text": "第 3 个话题：微软MAI三模型齐发：大厂'去OpenAI化'的第二条路线。微软发布三款自研AI模型：MAI-Transcribe-1在25种语言语音识别上击败Whisper和Gemini Flash",
+      "section": "",
+      "size": 618204
+    },
+    {
+      "index": 8,
+      "file": "008.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) MAI-Transcribe-1的多语言语音识别能力值得关注——如果微软将其集成到Windows输入法中，搜狗输入法在语音输入准确率上将面临更大压力，需要持续迭",
+      "section": "",
+      "size": 632415
+    },
+    {
+      "index": 9,
+      "file": "009.mp3",
+      "text": "第 4 个话题：GPT-6首日测评：Symphony架构实测表现与Super App的产品设计启示。GPT-6发布首日，全球开发者社区涌入大量测评。核心反馈：(1) 200万Token上下文在处理整本",
+      "section": "",
+      "size": 691765
+    },
+    {
+      "index": 10,
+      "file": "010.mp3",
+      "text": "我的理解是：对输入法产品的启示：(1) GPT-6的注意力衰减问题提供了技术参考——输入法在构建用户个性化模型时，需要对用户历史数据进行智能摘要而非简单堆砌，确保关键信息不被淹没在超长上下文中；(2)",
+      "section": "",
+      "size": 629907
+    },
+    {
+      "index": 11,
+      "file": "011.mp3",
+      "text": "接下来是需求挖掘环节，看看今天发现了哪些产品机会。",
+      "section": "💎 需求挖掘",
+      "size": 83216
+    },
+    {
+      "index": 12,
+      "file": "012.mp3",
+      "text": "第 1 个机会：AI帮写结果双模型审查机制，优先级：高。 用户痛点：AI帮写偶尔生成不准确的事实、不恰当的语气或有语法问题的内容，用户难以快速判断哪些地方需要修改，信任度下降 产品机会：参考微软Cop",
+      "section": "",
+      "size": 765744
+    },
+    {
+      "index": 13,
+      "file": "013.mp3",
+      "text": "第 2 个机会：输入法AI能力SDK化，优先级：中。 用户痛点：输入法AI帮写能力仅限于输入法自身应用内使用，无法触达智能手表、车载系统、智能电视等新终端，在'后键盘'时代触达面受限 产品机会：将输入",
+      "section": "",
+      "size": 678390
+    },
+    {
+      "index": 14,
+      "file": "014.mp3",
+      "text": "第 3 个机会：垂直领域AI帮写模板库，优先级：中。 用户痛点：不同职业用户的帮写需求差异巨大（律师需要严谨、客服需要温和、销售需要有说服力），通用帮写模型难以满足所有场景 产品机会：构建垂直领域帮写",
+      "section": "",
+      "size": 576408
+    },
+    {
+      "index": 15,
+      "file": "015.mp3",
+      "text": "最后来一组快讯。",
+      "section": "⚡ 快讯速递",
+      "size": 32225
+    },
+    {
+      "index": 16,
+      "file": "016.mp3",
+      "text": "科大讯飞AstronClaw升级发布：9项新品展示'软硬一体'AI Agent。科大讯飞在广交会上发布AstronClaw升级版，推出AI眼镜、智能办公本、Guide01机器人、Loomy桌面助理等9",
+      "section": "",
+      "size": 736905
+    },
+    {
+      "index": 17,
+      "file": "017.mp3",
+      "text": "Anthropic宣布Claude订阅政策重大变更：封锁第三方代理工具。Anthropic宣布自4月4日起，Claude Pro/Max订阅不再涵盖第三方代理工具（OpenClaw、OpenCode等",
+      "section": "",
+      "size": 644536
+    },
+    {
+      "index": 18,
+      "file": "018.mp3",
+      "text": "Copilot上线'Critique'和'Model Council'：多模型协同新范式。Microsoft Copilot新增Critique功能（第二个模型审查回答减少幻觉）和Model Coun",
+      "section": "",
+      "size": 644954
+    },
+    {
+      "index": 19,
+      "file": "019.mp3",
+      "text": "Cohere开源语音识别模型Transcribe，击败Whisper Large v3。Cohere发布开源自动语音识别模型Transcribe，在Hugging Face开源ASR排行榜上击败Whi",
+      "section": "",
+      "size": 606919
+    },
+    {
+      "index": 20,
+      "file": "020.mp3",
+      "text": "中国AI论文引用量首超美国，全球AI专利中国占比持续上升。斯坦福2026 AI指数报告细节持续被解读。中国AI论文引用量历史上首次超越美国，全球AI专利中国占比继续上升。清华、北大等机构在AI基准评测",
+      "section": "",
+      "size": 644118
+    },
+    {
+      "index": 21,
+      "file": "021.mp3",
+      "text": "以上就是今天的全部内容，感谢收听，明天见。",
+      "section": "",
+      "size": 70678
+    }
+  ],
+  "total_size_bytes": 11879337,
+  "failed": 0,
+  "duration_seconds": 392.0
+}
