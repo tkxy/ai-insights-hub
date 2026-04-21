@@ -921,7 +921,9 @@
   .rival-chip[data-rival].active { border-color: transparent; }
 
   .rival-cards {
-    display: flex; flex-direction: column; gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 16px;
   }
   .rival-card {
     background: #fff; border-radius: 16px;
@@ -952,10 +954,7 @@
   }
   .rival-card-body {
     padding: 0 24px 20px;
-    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px;
-  }
-  @media (max-width: 900px) {
-    .rival-card-body { grid-template-columns: 1fr; }
+    display: flex; flex-direction: column; gap: 10px;
   }
   .rival-section {
     background: #fafafa; border-radius: 10px; padding: 14px 16px;
@@ -2543,8 +2542,6 @@ function renderRivalFilterBar(data) {
   var countLabel = '<span class="rival-count-label">' + filtered.length + ' 条</span>';
 
   bar.innerHTML =
-    '<div class="rival-filter-group">' + allBtn + rivalBtns + '</div>' +
-    '<div class="rival-filter-sep"></div>' +
     '<div class="rival-filter-group">' + dimAllBtn + dimBtns + '</div>' +
     '<div style="margin-left:auto;">' + countLabel + '</div>';
 }
