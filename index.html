@@ -986,6 +986,28 @@
   .rival-count-label {
     font-size: 13px; color: #999; font-weight: 500; padding: 0 4px;
   }
+  /* card image */
+  .rival-card-img-wrap {
+    position: relative; width: 100%; height: 180px; overflow: hidden;
+    border-radius: 16px 16px 0 0; background: #f5f5f5;
+  }
+  .rival-card-img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    transition: transform 0.3s;
+  }
+  .rival-card:hover .rival-card-img { transform: scale(1.03); }
+  .rival-card-img-placeholder {
+    width: 100%; height: 100%; display: flex; align-items: center;
+    justify-content: center;
+  }
+  .rival-card-img-overlay {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    padding: 28px 14px 10px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.45));
+    color: #fff; font-size: 12px; font-weight: 600; text-decoration: none;
+    opacity: 0; transition: opacity 0.2s;
+  }
+  .rival-card:hover .rival-card-img-overlay { opacity: 1; }
   .footer {
     max-width: 1400px; margin: 0 auto; padding: 24px 48px 48px;
     text-align: center; color: var(--text4); font-size: 12px;
@@ -2588,7 +2610,26 @@ function renderRivalCards(data) {
       return '<span class="rival-tag">' + t + '</span>';
     }).join('');
 
+    // 配图：优先用第一条 sourceUrl 抓截图，否则用品牌色占位
+    var firstUrl = (e.sourceUrls && e.sourceUrls.length > 0) ? e.sourceUrls[0].url : null;
+    var imgHtml;
+    if (firstUrl) {
+      var thumbUrl = 'https://image.thum.io/get/width/600/crop/360/noanimate/' + firstUrl;
+      imgHtml = '<div class="rival-card-img-wrap">' +
+        '<img class="rival-card-img" src="' + thumbUrl + '" loading="lazy" alt="" ' +
+          'onerror="this.parentNode.innerHTML=\'<div class=\\\"rival-card-img-placeholder\\\" style=\\\"background:' + rival.color.replace('#','%23') + '20\\\"><span style=\\\"font-size:32px\\\">' + rival.icon + '</span></div>\'">' +
+        '<a class="rival-card-img-overlay" href="' + firstUrl + '" target="_blank" rel="noopener">查看原文 →</a>' +
+      '</div>';
+    } else {
+      imgHtml = '<div class="rival-card-img-wrap">' +
+        '<div class="rival-card-img-placeholder" style="background:' + rival.color + '18">' +
+          '<span style="font-size:36px">' + rival.icon + '</span>' +
+        '</div>' +
+      '</div>';
+    }
+
     return '<div class="rival-card">' +
+      imgHtml +
       '<div class="rival-card-header">' +
         '<span class="rival-pill" style="background:' + rival.color + '">' + rival.icon + ' ' + rival.name + '</span>' +
         '<span class="rival-dim-badge">' + dim.icon + ' ' + dim.label + '</span>' +
