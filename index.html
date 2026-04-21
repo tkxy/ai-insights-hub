@@ -2584,6 +2584,11 @@ function getFilteredRivals(data) {
   });
 }
 
+function rivalImgError(img, icon, color) {
+  var wrap = img.parentNode;
+  wrap.innerHTML = '<div class="rival-card-img-placeholder" style="background:' + color + '18"><span style="font-size:36px">' + icon + '</span></div>';
+}
+
 function renderRivalCards(data) {
   var container = document.getElementById('rival-cards');
   var entries = getFilteredRivals(data);
@@ -2617,7 +2622,7 @@ function renderRivalCards(data) {
       var thumbUrl = 'https://image.thum.io/get/width/600/crop/360/noanimate/' + firstUrl;
       imgHtml = '<div class="rival-card-img-wrap">' +
         '<img class="rival-card-img" src="' + thumbUrl + '" loading="lazy" alt="" ' +
-          'onerror="this.parentNode.innerHTML=\'<div class=\\\"rival-card-img-placeholder\\\" style=\\\"background:' + rival.color.replace('#','%23') + '20\\\"><span style=\\\"font-size:32px\\\">' + rival.icon + '</span></div>\'">' +
+          'onerror="rivalImgError(this,\'' + rival.icon + '\',\'' + rival.color + '\')">' +
         '<a class="rival-card-img-overlay" href="' + firstUrl + '" target="_blank" rel="noopener">查看原文 →</a>' +
       '</div>';
     } else {
