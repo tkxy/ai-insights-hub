@@ -2926,8 +2926,11 @@ function renderRivalFilterBar(data) {
     return '<button class="rival-chip' + (active ? ' active' : '') + '" onclick="setRivalView(\'dimension\');setRivalFilter(null,\'' + d.id + '\')">' + d.icon + ' ' + d.label + '</button>';
   }).join('');
 
-  // 新增：竞品报告按钮（切换到报告视图）
-  var reportBtn = '<button class="rival-chip' + (inReport ? ' rreport-chip-accent' : '') + '" onclick="setRivalView(\'report\')">📊 竞品报告</button>';
+  // 竞品报告按钮：默认隐藏，只有 URL 带 ?report 或已经在 report 视图时才显示
+  var reportBtn = '';
+  if (isRivalReportEnabled()) {
+    reportBtn = '<button class="rival-chip' + (inReport ? ' rreport-chip-accent' : '') + '" onclick="setRivalView(\'report\')">📊 竞品报告</button>';
+  }
 
   var countLabel = '';
   if (!inReport) {
@@ -2949,6 +2952,47 @@ function setRivalView(view) {
   renderRivalFilterBar(rivalDataCache);
   applyRivalView();
 }
+
+/* ===== 竞品报告入口开关（默认隐藏，避免误触发生成） ===== */
+function isRivalReportEnabled() {
+  // 任一条件满足即显示按钮：URL ?report / ?report=1；hash 含 report；localStorage 解锁
+  try {
+    var qs = (location.search || '').toLowerCase();
+    if (qs.indexOf('report') !== -1) return true;
+    var h = (location.hash || '').toLowerCase();
+    if (h.indexOf('report') !== -1) return true;
+    if (localStorage.getItem('rivalReportUnlocked') === '1') return true;
+  } catch(e) {}
+  return false;
+}
+
+// 彩蛋：在竞品跟踪 tab 上连点 5 下解锁 / 再点 5 下关闭
+(function setupRivalReportUnlock(){
+  var counter = 0, timer = null;
+  document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.querySelector('[data-page="rival"]');
+    if (!btn) return;
+    btn.addEventListener('click', function() {
+      counter++;
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(function(){ counter = 0; }, 2000);
+      if (counter >= 5) {
+        counter = 0;
+        try {
+          var cur = localStorage.getItem('rivalReportUnlocked') === '1';
+          if (cur) {
+            localStorage.removeItem('rivalReportUnlocked');
+            alert('📊 竞品报告入口已隐藏');
+          } else {
+            localStorage.setItem('rivalReportUnlocked', '1');
+            alert('📊 竞品报告入口已解锁。再连点 5 下可关闭。');
+          }
+          if (rivalDataCache) renderRivalFilterBar(rivalDataCache);
+        } catch(e) {}
+      }
+    });
+  });
+})();
 
 function applyRivalView() {
   var cardsEl = document.getElementById('rival-cards');
