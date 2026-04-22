@@ -2932,18 +2932,8 @@ function renderRivalFilterBar(data) {
     reportBtn = '<button class="rival-chip' + (inReport ? ' rreport-chip-accent' : '') + '" onclick="setRivalView(\'report\')">📊 竞品报告</button>';
   }
 
-  var countLabel = '';
-  if (!inReport) {
-    var filtered = getFilteredRivals(data);
-    countLabel = '<span class="rival-count-label">' + filtered.length + ' 条</span>';
-  } else {
-    var cnt = (rivalReportIndexCache && rivalReportIndexCache.reports) ? rivalReportIndexCache.reports.length : 0;
-    countLabel = '<span class="rival-count-label">' + cnt + ' 份报告</span>';
-  }
-
   bar.innerHTML =
-    '<div class="rival-filter-group">' + dimAllBtn + dimBtns + reportBtn + '</div>' +
-    '<div style="margin-left:auto;">' + countLabel + '</div>';
+    '<div class="rival-filter-group">' + dimAllBtn + dimBtns + reportBtn + '</div>';
 }
 
 function setRivalView(view) {
