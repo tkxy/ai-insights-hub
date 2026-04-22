@@ -1,0 +1,112 @@
+{
+  "weekOf": "2026-04-20",
+  "title": "本周输入法竞品截图深度分析（2026-04-20 ~ 2026-04-26）",
+  "generatedAt": "2026-04-22 17:37",
+  "totalImages": 4,
+  "competitors": [
+    "iOS系统",
+    "其他",
+    "微信输入法",
+    "讯飞输入法"
+  ],
+  "overview": "本周竞品截图聚焦输入法核心交互体验，微信输入法和讯飞输入法均在键盘区集成AI、语音等快捷入口，优化多功能调用效率。语音输入界面设计上，竞品倾向于提供更大、更显眼的入口，简化用户操作。iOS系统键盘则保持简洁，但集成了语音和表情等基础功能。下周关注点：AI功能在输入法中的入口设计与用户触达。",
+  "dimensions": [
+    {
+      "id": "ai功能入口集成",
+      "label": "AI功能入口集成",
+      "icon": "🤖",
+      "summary": "主流输入法将AI功能入口前置，集成在键盘区域，方便用户随时调用。",
+      "screenshots": [
+        {
+          "url": "assets/weekly/2026-04-20/mo8cfinn8x5bvh.png",
+          "title": "微信输入法键盘布局",
+          "competitor": "微信输入法",
+          "competitorName": "微信输入法",
+          "category": "键盘",
+          "caption": "微信输入法键盘集成AI入口"
+        },
+        {
+          "url": "assets/weekly/2026-04-20/mo8c9fs4qlvqzd.png",
+          "title": "讯飞输入法聊天界面",
+          "competitor": "讯飞输入法",
+          "competitorName": "讯飞输入法",
+          "category": "键盘",
+          "caption": "讯飞输入法键盘集成AI入口"
+        },
+        {
+          "url": "assets/weekly/2026-04-20/mo8c9fpyfv81fx.png",
+          "title": "iOS 系统键盘聊天界面",
+          "competitor": "iOS系统",
+          "competitorName": "iOS系统",
+          "category": "键盘",
+          "caption": "iOS系统键盘集成AI相关功能"
+        }
+      ],
+      "what": "微信输入法和讯飞输入法都在键盘上方工具栏集成了AI入口，通过“AI”字样或图标直观展示。iOS系统键盘也通过“Aa”等图标暗示了智能功能。",
+      "insight": "AI已成为输入法的重要竞争力，竞品通过将AI入口前置，意在提升用户对AI功能的认知度和使用率，满足用户对智能化输入的需求。",
+      "implication": "搜狗应考虑在键盘区域优化AI入口的展示形式，探索更具吸引力和易用性的AI功能调用方式，并考虑AI在不同场景下的个性化推荐。"
+    },
+    {
+      "id": "语音输入交互优化",
+      "label": "语音输入交互优化",
+      "icon": "🎤",
+      "summary": "竞品通过放大语音输入按钮和简化界面，提升语音输入的便捷性和用户体验。",
+      "screenshots": [
+        {
+          "url": "assets/weekly/2026-04-20/mo8c9fs7k0x43q.png",
+          "title": "语音输入界面",
+          "competitor": "其他",
+          "competitorName": "其他",
+          "category": "语音",
+          "caption": "大尺寸语音输入按钮"
+        },
+        {
+          "url": "assets/weekly/2026-04-20/mo8c9fs4qlvqzd.png",
+          "title": "讯飞输入法聊天界面",
+          "competitor": "讯飞输入法",
+          "competitorName": "讯飞输入法",
+          "category": "键盘",
+          "caption": "讯飞输入法提供语音入口"
+        }
+      ],
+      "what": "截图2展示了独立的、大尺寸的语音输入按钮，而截图3则在键盘区集成了语音输入入口，两者都旨在降低语音输入的门槛。",
+      "insight": "语音输入已成为用户重要的输入方式，竞品通过优化交互设计，力求让用户更快速、更便捷地完成语音输入，满足用户在特定场景下的高效输入需求。",
+      "implication": "搜狗需持续优化语音输入的用户体验，考虑提供不同尺寸的语音入口，并在语音识别准确率和语种支持上保持领先，同时探索语音与文本结合的创新交互。"
+    },
+    {
+      "id": "多功能快捷入口布局",
+      "label": "多功能快捷入口布局",
+      "icon": "✨",
+      "summary": "输入法键盘区集成多种功能入口，满足用户多样化需求，提升效率。",
+      "screenshots": [
+        {
+          "url": "assets/weekly/2026-04-20/mo8cfinn8x5bvh.png",
+          "title": "微信输入法键盘布局",
+          "competitor": "微信输入法",
+          "competitorName": "微信输入法",
+          "category": "键盘",
+          "caption": "微信输入法多功能入口"
+        },
+        {
+          "url": "assets/weekly/2026-04-20/mo8c9fs4qlvqzd.png",
+          "title": "讯飞输入法聊天界面",
+          "competitor": "讯飞输入法",
+          "competitorName": "讯飞输入法",
+          "category": "键盘",
+          "caption": "讯飞输入法多功能入口"
+        },
+        {
+          "url": "assets/weekly/2026-04-20/mo8c9fpyfv81fx.png",
+          "title": "iOS 系统键盘聊天界面",
+          "competitor": "iOS系统",
+          "competitorName": "iOS系统",
+          "category": "键盘",
+          "caption": "iOS系统键盘多功能入口"
+        }
+      ],
+      "what": "微信输入法、讯飞输入法和iOS系统键盘均在键盘上方或侧边集成了表情、语音、AI、设置等多个功能入口，提供一站式服务。",
+      "insight": "用户在输入场景下需要调用的功能日益多样，竞品通过整合各类入口，旨在减少用户在不同应用间切换的次数，提升输入效率和用户满意度。",
+      "implication": "搜狗应审视现有功能的入口布局，考虑整合常用功能，并根据用户习惯进行个性化设置，同时探索更多创新功能的集成，形成差异化优势。"
+    }
+  ]
+}
