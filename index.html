@@ -1110,6 +1110,68 @@
     font-size: 12px; color: #aaa; font-weight: 600; letter-spacing: 1px;
   }
 
+  /* ===== 执行摘要 + 行动建议 ===== */
+  .rweekly-section-title {
+    font-size: 15px; font-weight: 700; color: #111;
+    margin-bottom: 14px;
+    display: flex; align-items: center; gap: 6px;
+  }
+
+  .rweekly-highlights {
+    background: #fff; border: 1px solid #eef0f5; border-radius: 14px;
+    padding: 22px 24px; margin-bottom: 24px;
+  }
+  .rweekly-highlights-list {
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .rweekly-highlight-item {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 10px 14px;
+    background: #fafbff;
+    border-radius: 10px;
+    border-left: 3px solid #111;
+  }
+  .rweekly-highlight-icon {
+    font-size: 18px; line-height: 1.3; flex-shrink: 0;
+  }
+  .rweekly-highlight-text {
+    font-size: 14px; color: #222; line-height: 1.6; font-weight: 500;
+  }
+
+  .rweekly-actions {
+    background: #fff; border: 1px solid #eef0f5; border-radius: 14px;
+    padding: 22px 24px; margin-top: 8px;
+  }
+  .rweekly-actions-list {
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .rweekly-action-item {
+    background: #fafbff; border-radius: 10px; padding: 14px 16px;
+    border-left: 3px solid #666;
+  }
+  .rweekly-action-item.prio-high { border-left-color: #e53935; background: #fff5f5; }
+  .rweekly-action-item.prio-medium { border-left-color: #f59e0b; background: #fffbf2; }
+  .rweekly-action-item.prio-low { border-left-color: #999; }
+  .rweekly-action-head {
+    display: flex; align-items: center; gap: 8px; margin-bottom: 4px;
+  }
+  .rweekly-action-prio {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.4px;
+    padding: 2px 8px; border-radius: 100px;
+    background: #111; color: #fff;
+    flex-shrink: 0;
+  }
+  .rweekly-action-item.prio-high .rweekly-action-prio { background: #e53935; }
+  .rweekly-action-item.prio-medium .rweekly-action-prio { background: #f59e0b; }
+  .rweekly-action-item.prio-low .rweekly-action-prio { background: #999; }
+  .rweekly-action-title {
+    font-size: 14px; font-weight: 700; color: #111;
+  }
+  .rweekly-action-detail {
+    font-size: 13px; color: #555; line-height: 1.65;
+    margin-top: 4px;
+  }
+
   /* ===== 竞品报告列表/详情 ===== */
   .rreport-chip-accent {
     background: linear-gradient(135deg, #0073F0 0%, #7C3AED 100%) !important;
@@ -2846,6 +2908,21 @@ function renderRivalReportDetail(data) {
   if (data.competitors && data.competitors.length) metaBits.push('🏷 ' + data.competitors.length + ' 个竞品');
   if (data.generatedAt) metaBits.push('🤖 生成于 ' + data.generatedAt);
 
+  // 执行摘要（金句级要点）
+  var highlightsHtml = '';
+  if (Array.isArray(data.highlights) && data.highlights.length) {
+    highlightsHtml = '<div class="rweekly-highlights">' +
+      '<div class="rweekly-section-title">⭐ 执行摘要</div>' +
+      '<div class="rweekly-highlights-list">' +
+      data.highlights.map(function(h) {
+        return '<div class="rweekly-highlight-item">' +
+          '<span class="rweekly-highlight-icon">' + (h.icon || '💡') + '</span>' +
+          '<span class="rweekly-highlight-text">' + escHtml(h.text || '') + '</span>' +
+        '</div>';
+      }).join('') +
+      '</div></div>';
+  }
+
   var dimsHtml = (data.dimensions || []).map(function(dim) {
     var shotsHtml = (dim.screenshots || []).map(function(s) {
       var caption = s.caption || s.title || '';
@@ -2878,6 +2955,26 @@ function renderRivalReportDetail(data) {
     '</div>';
   }).join('');
 
+  // 下周行动建议
+  var actionsHtml = '';
+  if (Array.isArray(data.actions) && data.actions.length) {
+    actionsHtml = '<div class="rweekly-actions">' +
+      '<div class="rweekly-section-title">📌 下周行动建议</div>' +
+      '<div class="rweekly-actions-list">' +
+      data.actions.map(function(a) {
+        var prio = (a.priority || 'medium').toLowerCase();
+        var prioLabel = {high: '高', medium: '中', low: '低'}[prio] || '中';
+        return '<div class="rweekly-action-item prio-' + prio + '">' +
+          '<div class="rweekly-action-head">' +
+            '<span class="rweekly-action-prio">' + prioLabel + '</span>' +
+            '<span class="rweekly-action-title">' + escHtml(a.title || '') + '</span>' +
+          '</div>' +
+          (a.detail ? '<div class="rweekly-action-detail">' + escHtml(a.detail) + '</div>' : '') +
+        '</div>';
+      }).join('') +
+      '</div></div>';
+  }
+
   detailEl.innerHTML =
     '<button class="rreport-back" onclick="closeRivalReportDetail()">← 返回报告列表</button>' +
     '<div class="rweekly-wrap">' +
@@ -2888,7 +2985,9 @@ function renderRivalReportDetail(data) {
       '<div class="rweekly-title">' + escHtml(data.title || '本周输入法竞品截图深度分析') + '</div>' +
       (metaBits.length ? '<div class="rweekly-meta">' + metaBits.join('') + '</div>' : '') +
       (data.overview ? '<div class="rweekly-overview">' + escHtml(data.overview) + '</div>' : '') +
+      highlightsHtml +
       dimsHtml +
+      actionsHtml +
     '</div>' +
     '<div class="rweekly-lightbox" id="rweeklyLightbox" onclick="this.classList.remove(\'show\')"><img id="rweeklyLbImg" src=""></div>';
 }

@@ -3,23 +3,24 @@
     {
       "weekOf": "2026-04-20",
       "title": "本周输入法竞品截图深度分析（2026-04-20 ~ 2026-04-26）",
-      "generatedAt": "2026-04-22 17:37",
-      "totalImages": 4,
+      "generatedAt": "2026-04-23 17:00",
+      "totalImages": 10,
       "competitors": [
         "iOS系统",
+        "typeless",
         "其他",
         "微信输入法",
         "讯飞输入法"
       ],
-      "dimensionCount": 3,
-      "overview": "本周竞品截图聚焦输入法核心交互体验，微信输入法和讯飞输入法均在键盘区集成AI、语音等快捷入口，优化多功能调用效率。语音输入界面设计上，竞品倾向于提供更大、更显眼的入口，简化用户操作。iOS系统键盘则保持简洁，但集成了语音和表情等基础功能。下周关注点：AI功能在输入法中的入口设计与用户触达。",
+      "dimensionCount": 4,
+      "overview": "本周竞品分析聚焦AI对话界面、交互动效及输入法集成功能。AI对话界面设计趋向简洁化与功能模块化，突出AI的智能交互体验。输入法则在键盘区域集成更多AI及快捷功能入口，以提升用户效率。交互动效的创新为产品增添趣味性。下周关注点：AI能力在输入法场景下的深度融合与创新。",
       "thumbs": [
-        "assets/weekly/2026-04-20/mo8cfinn8x5bvh.png",
-        "assets/weekly/2026-04-20/mo8c9fs7k0x43q.png",
-        "assets/weekly/2026-04-20/mo8c9fs4qlvqzd.png",
-        "assets/weekly/2026-04-20/mo8c9fpyfv81fx.png"
+        "assets/weekly/2026-04-20/mob4suf4jbab58.jpg",
+        "assets/weekly/2026-04-20/moa28cembqjw19.jpg",
+        "assets/weekly/2026-04-20/moa28cadlp6xpu.jpg",
+        "assets/weekly/2026-04-20/moa28c54eozlkm.jpg"
       ]
     }
   ],
-  "updatedAt": "2026-04-22 17:37"
+  "updatedAt": "2026-04-23 17:00"
 }
