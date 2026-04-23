@@ -3016,6 +3016,8 @@ function getFilteredRivals(data) {
     var rOk = rivalActiveRival === 'all' || e.rival === rivalActiveRival;
     var dOk = rivalActiveDim === 'all' || e.dimension === rivalActiveDim;
     return rOk && dOk;
+  }).sort(function(a, b) {
+    return (b.date || '').localeCompare(a.date || '');
   });
 }
 
