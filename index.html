@@ -2769,6 +2769,40 @@ function renderDemandMapClusters(clusters) {
     '个性化类': '聚焦用户画像、知识库、风格自适应与人设规则。',
     '平台入口类': '聚焦 Agent 化、超级入口、跨平台服务跳转。'
   };
+  // Helper: parse item.date to { year, month, day } — accepts "MM-DD" or "YYYY-MM-DD"
+  function parseItemDate(ds) {
+    if (!ds) return null;
+    var curYear = now.getFullYear();
+    if (/^\d{4}-\d{2}-\d{2}$/.test(ds)) {
+      return { y: +ds.slice(0,4), m: +ds.slice(5,7), d: +ds.slice(8,10) };
+    }
+    if (/^\d{2}-\d{2}$/.test(ds)) {
+      return { y: curYear, m: +ds.slice(0,2), d: +ds.slice(3,5) };
+    }
+    return null;
+  }
+  // Helper: group items by YYYY-MM, return array sorted desc by month
+  function groupByMonth(items) {
+    var map = {};
+    items.forEach(function(item) {
+      var pd = parseItemDate(item.date);
+      if (!pd) return;
+      var key = pd.y + '-' + String(pd.m).padStart(2, '0');
+      if (!map[key]) map[key] = [];
+      map[key].push({ item: item, sortKey: pd.y * 10000 + pd.m * 100 + pd.d });
+    });
+    var keys = Object.keys(map).sort(function(a, b) { return b.localeCompare(a); });
+    return keys.map(function(k) {
+      // Sort items within month by date desc
+      map[k].sort(function(a, b) { return b.sortKey - a.sortKey; });
+      return { month: k, items: map[k].map(function(x) { return x.item; }) };
+    });
+  }
+  function monthLabel(monthKey) {
+    var parts = monthKey.split('-');
+    return parts[0] + '年' + (+parts[1]) + '月';
+  }
+
   chips.forEach(function(c) {
     var cdata = clusters ? clusters.find(function(x) { return x.name === c.name; }) : null;
     var items = cdata ? cdata.items : [];
@@ -2791,16 +2825,27 @@ function renderDemandMapClusters(clusters) {
             '<div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">高优需求</div>' +
           '</div>' +
         '</div>' +
-      '</div>' +
-      '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;">';
+      '</div>';
+
     if (items.length === 0) {
       bodyHtml += '<div style="color:#888;font-size:14px;padding:20px 0;">暂无数据</div>';
     } else {
-      items.forEach(function(item, i) {
-        bodyHtml += getDemandCardHtml(item, i);
+      var monthGroups = groupByMonth(items);
+      monthGroups.forEach(function(g) {
+        bodyHtml +=
+          '<div style="margin-bottom:28px;">' +
+            '<div style="display:flex;align-items:baseline;gap:10px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid rgba(0,0,0,0.08);">' +
+              '<h4 style="font-size:18px;font-weight:800;letter-spacing:-0.5px;color:#111;">' + monthLabel(g.month) + '</h4>' +
+              '<span style="font-size:12px;color:#888;font-weight:600;">' + g.items.length + ' 条</span>' +
+            '</div>' +
+            '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;">';
+        g.items.forEach(function(item, i) {
+          bodyHtml += getDemandCardHtml(item, i);
+        });
+        bodyHtml += '</div></div>';
       });
     }
-    bodyHtml += '</div></div>';
+    bodyHtml += '</div>';
   });
   bodyEl.innerHTML = bodyHtml;
 }
@@ -3454,7 +3499,7 @@ function switchPage(id) {
   knowledgePage.style.display = id === 'knowledge' ? 'block' : 'none';
   rivalPage.style.display = id === 'rival' ? 'block' : 'none';
   dayNav.style.display = id === 'insight' ? 'flex' : 'none';
-  monthNav.style.display = id === 'map' ? 'flex' : 'none';
+  monthNav.style.display = 'none';
 
   if (id === 'map') {
     loadAndRenderMapClusters();
