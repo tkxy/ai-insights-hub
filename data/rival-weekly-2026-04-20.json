@@ -1,52 +1,192 @@
 {
   "weekOf": "2026-04-20",
-  "title": "本周输入法竞品截图深度分析（2026-04-20 ~ 2026-04-26）",
-  "generatedAt": "2026-04-23 17:00",
-  "totalImages": 10,
+  "title": "本周输入法竞品需求挖掘周报（2026-04-20 ~ 2026-04-26）",
+  "generatedAt": "2026-04-27 15:35",
+  "totalImages": 21,
   "competitors": [
+    "grammarly",
     "iOS系统",
-    "typeless",
     "其他",
-    "微信输入法",
-    "讯飞输入法"
+    "秘塔回响"
   ],
-  "overview": "本周竞品分析聚焦AI对话界面、交互动效及输入法集成功能。AI对话界面设计趋向简洁化与功能模块化，突出AI的智能交互体验。输入法则在键盘区域集成更多AI及快捷功能入口，以提升用户效率。交互动效的创新为产品增添趣味性。下周关注点：AI能力在输入法场景下的深度融合与创新。",
-  "highlights": [
-    {
-      "icon": "🔥",
-      "text": "AI对话界面设计趋向简洁，功能入口卡片化。"
-    },
-    {
-      "icon": "💡",
-      "text": "输入法键盘集成AI、语音入口，提升效率。"
-    },
-    {
-      "icon": "⚠️",
-      "text": "语音输入交互设计，Typeless采用大按钮简化操作。"
-    },
-    {
-      "icon": "⭐",
-      "text": "轮盘式交互探索信息可视化，可借鉴于语音输入。"
-    },
-    {
-      "icon": "📈",
-      "text": "动效设计受用户关注，趣味性是亮点。"
-    }
-  ],
+  "overview": "本周共收集 21 张竞品截图，核心观察到AI能力在文本处理和助手交互方面的深度融合，以及输入法基础功能的精细化升级。这些趋势为搜狗输入法提供了宝贵的借鉴。本次挖掘出 5 个值得搜狗输入法跟进的需求方向。",
   "dimensions": [
     {
-      "id": "ai对话界面功能卡片化",
-      "label": "AI对话界面功能卡片化",
-      "icon": "✨",
-      "summary": "AI对话界面倾向于将各项能力以卡片或图标形式呈现，方便用户选择和使用。",
+      "id": "point-1",
+      "label": "中英双语候选词展示",
+      "icon": "🔴",
+      "summary": "#双语输入 · #候选词 · #效率提升 · #国际化",
       "screenshots": [
+        {
+          "url": "assets/weekly/2026-04-20/modpnp47hsmjqp.jpg",
+          "title": "中英双字输入",
+          "competitor": "iOS系统",
+          "competitorName": "iOS系统",
+          "category": "双语输入",
+          "caption": "输入拼音后，候选词同时显示中英文释义"
+        }
+      ],
+      "what": "双语用户在输入拼音时，需要频繁切换中英文输入法或手动翻译，导致输入效率低下，影响流畅的跨语言沟通和写作体验。",
+      "insight": "搜狗输入法可在拼音输入模式下，智能识别用户意图，在候选词列表中同时展示中文词汇及其对应的英文释义。用户可直接选择中英文词组上屏，尤其适用于商务、学习等需要双语切换的场景。MVP可先支持高频词汇的双语显示。",
+      "implication": "iOS系统输入法已实现中英双字输入功能，在用户输入拼音后，候选词如“苹果”会同时显示“apple”，极大方便了双语用户的快速选择与输入。",
+      "demand_mining": {
+        "title": "中英双语候选词展示",
+        "pain_point": "双语用户在输入拼音时，需要频繁切换中英文输入法或手动翻译，导致输入效率低下，影响流畅的跨语言沟通和写作体验。",
+        "opportunity": "搜狗输入法可在拼音输入模式下，智能识别用户意图，在候选词列表中同时展示中文词汇及其对应的英文释义。用户可直接选择中英文词组上屏，尤其适用于商务、学习等需要双语切换的场景。MVP可先支持高频词汇的双语显示。",
+        "priority": "高",
+        "priority_en": "high",
+        "evidence": "iOS系统输入法已实现中英双字输入功能，在用户输入拼音后，候选词如“苹果”会同时显示“apple”，极大方便了双语用户的快速选择与输入。",
+        "tags": [
+          "双语输入",
+          "候选词",
+          "效率提升",
+          "国际化"
+        ]
+      }
+    },
+    {
+      "id": "point-2",
+      "label": "AI文本智能辅助编辑",
+      "icon": "🔴",
+      "summary": "#AI写作 · #文本润色 · #语法纠错 · #效率提升",
+      "screenshots": [
+        {
+          "url": "assets/weekly/2026-04-20/mocshavyopnq4s.png",
+          "title": "AI 辅助文本处理",
+          "competitor": "grammarly",
+          "competitorName": "grammarly",
+          "category": "AI能力",
+          "caption": "选中文字后提供润色和总结选项"
+        },
+        {
+          "url": "assets/weekly/2026-04-20/mocsf5c6n5riw4.png",
+          "title": "AI 写作助手：文本润色与改写",
+          "competitor": "grammarly",
+          "competitorName": "grammarly",
+          "category": "AI写作助手",
+          "caption": "提供文本润色、改写建议及风格选择"
+        },
+        {
+          "url": "assets/weekly/2026-04-20/mocsduspul3ttx.png",
+          "title": "AI文本润色与纠错",
+          "competitor": "grammarly",
+          "competitorName": "grammarly",
+          "category": "AI能力",
+          "caption": "AI驱动的语法纠错与接受建议"
+        },
+        {
+          "url": "assets/weekly/2026-04-20/moci5xvwpjlmuu.png",
+          "title": "AI语法纠错与建议",
+          "competitor": "其他",
+          "competitorName": "其他",
+          "category": "AI能力",
+          "caption": "AI语法纠错建议及接受更改按钮"
+        }
+      ],
+      "what": "用户在日常写作或聊天时，常因语法错误、表达不准确而困扰，或需耗时润色、总结长文本，手动操作效率低，影响沟通质量。",
+      "insight": "在搜狗输入法的AI助手或文本编辑工具栏中，提供选中文字后的智能辅助功能。包括实时的语法纠错、文本润色、改写建议及长文本总结。MVP可先支持基础的语法检查和润色功能，并提供一键接受建议或生成多种改写版本。",
+      "implication": "Grammarly等竞品已广泛提供选中文字后的AI润色、总结、改写建议和语法纠错功能，能够根据用户需求生成不同风格版本，显著提升写作效率和质量。",
+      "demand_mining": {
+        "title": "AI文本智能辅助编辑",
+        "pain_point": "用户在日常写作或聊天时，常因语法错误、表达不准确而困扰，或需耗时润色、总结长文本，手动操作效率低，影响沟通质量。",
+        "opportunity": "在搜狗输入法的AI助手或文本编辑工具栏中，提供选中文字后的智能辅助功能。包括实时的语法纠错、文本润色、改写建议及长文本总结。MVP可先支持基础的语法检查和润色功能，并提供一键接受建议或生成多种改写版本。",
+        "priority": "高",
+        "priority_en": "high",
+        "evidence": "Grammarly等竞品已广泛提供选中文字后的AI润色、总结、改写建议和语法纠错功能，能够根据用户需求生成不同风格版本，显著提升写作效率和质量。",
+        "tags": [
+          "AI写作",
+          "文本润色",
+          "语法纠错",
+          "效率提升"
+        ]
+      }
+    },
+    {
+      "id": "point-3",
+      "label": "键盘个性化与效率工具面板",
+      "icon": "🟡",
+      "summary": "#键盘设置 · #效率工具 · #个性化 · #文本编辑",
+      "screenshots": [
+        {
+          "url": "assets/weekly/2026-04-20/mocs9otqufbsqn.jpg",
+          "title": "键盘设置",
+          "competitor": "其他",
+          "competitorName": "其他",
+          "category": "设置",
+          "caption": "键盘流行设置：数字行、编辑器面板等"
+        },
+        {
+          "url": "assets/weekly/2026-04-20/mocs9kbnveyd6o.jpg",
+          "title": "Y Keyboard 热门设置",
+          "competitor": "其他",
+          "competitorName": "其他",
+          "category": "设置",
+          "caption": "Y Keyboard热门设置展示"
+        },
+        {
+          "url": "assets/weekly/2026-04-20/mocs9gr0srew74.jpg",
+          "title": "Y Keyboard 流行设置",
+          "competitor": "其他",
+          "competitorName": "其他",
+          "category": "键盘设置",
+          "caption": "浮动模式和额外数字行设置"
+        }
+      ],
+      "what": "用户对输入法键盘的布局和功能有不同偏好，现有设置可能不够灵活。在特定场景下，用户需要快速输入数字或进行文本编辑，但功能入口不便捷。",
+      "insight": "搜狗输入法可在设置中提供更丰富的键盘布局选项，如常驻数字行、浮动键盘模式。同时，集成一个可自定义的“编辑器面板”，提供剪切、复制、粘贴、光标移动等常用文本编辑工具，方便用户在输入过程中进行精细化操作，提升效率。",
+      "implication": "竞品“Y Keyboard”展示了热门设置，包括“Extra numbers row”（额外数字行）、“Editor panel”（编辑器面板）和“Floating mode”（浮动模式），满足用户对键盘布局和效率工具的个性化需求。",
+      "demand_mining": {
+        "title": "键盘个性化与效率工具面板",
+        "pain_point": "用户对输入法键盘的布局和功能有不同偏好，现有设置可能不够灵活。在特定场景下，用户需要快速输入数字或进行文本编辑，但功能入口不便捷。",
+        "opportunity": "搜狗输入法可在设置中提供更丰富的键盘布局选项，如常驻数字行、浮动键盘模式。同时，集成一个可自定义的“编辑器面板”，提供剪切、复制、粘贴、光标移动等常用文本编辑工具，方便用户在输入过程中进行精细化操作，提升效率。",
+        "priority": "中",
+        "priority_en": "medium",
+        "evidence": "竞品“Y Keyboard”展示了热门设置，包括“Extra numbers row”（额外数字行）、“Editor panel”（编辑器面板）和“Floating mode”（浮动模式），满足用户对键盘布局和效率工具的个性化需求。",
+        "tags": [
+          "键盘设置",
+          "效率工具",
+          "个性化",
+          "文本编辑"
+        ]
+      }
+    },
+    {
+      "id": "point-4",
+      "label": "AI助手上下文记忆与多模态能力",
+      "icon": "🔴",
+      "summary": "#AI助手 · #上下文理解 · #多模态 · #效率工具",
+      "screenshots": [
+        {
+          "url": "assets/weekly/2026-04-20/mocslpqqx1s41h.png",
+          "title": "AI记忆升级实践：从金鱼到管家",
+          "competitor": "grammarly",
+          "competitorName": "grammarly",
+          "category": "AI能力",
+          "caption": "AI记忆升级实践：解决会话从零开始"
+        },
+        {
+          "url": "assets/weekly/2026-04-20/mocfk2yrwb2hf7.jpg",
+          "title": "对话界面设计",
+          "competitor": "其他",
+          "competitorName": "其他",
+          "category": "对话界面",
+          "caption": "AI对话界面设计，含多种交互模式"
+        },
+        {
+          "url": "assets/weekly/2026-04-20/mocbzg25i7as0k.jpg",
+          "title": "极简高级UI设计",
+          "competitor": "其他",
+          "competitorName": "其他",
+          "category": "对话界面",
+          "caption": "AI对话界面支持图片生成与文档总结"
+        },
         {
           "url": "assets/weekly/2026-04-20/mob4suf4jbab58.jpg",
           "title": "AI聊天机器人界面",
           "competitor": "其他",
           "competitorName": "其他",
           "category": "对话界面",
-          "caption": "AI聊天机器人，功能入口卡片化展示。"
+          "caption": "AI聊天机器人界面支持文档总结翻译"
         },
         {
           "url": "assets/weekly/2026-04-20/moa28cadlp6xpu.jpg",
@@ -54,126 +194,61 @@
           "competitor": "其他",
           "competitorName": "其他",
           "category": "对话界面",
-          "caption": "两种色调的AI对话界面，功能入口清晰。"
-        },
-        {
-          "url": "assets/weekly/2026-04-20/moa28c54eozlkm.jpg",
-          "title": "对话界面设计-3",
-          "competitor": "其他",
-          "competitorName": "其他",
-          "category": "对话界面",
-          "caption": "通用智能助手与可视化思考助手界面。"
+          "caption": "AI对话界面包含搜索和近期活动"
         }
       ],
-      "what": "竞品展示了多种AI对话界面，将文档总结、翻译、文件处理、图像生成等功能以卡片或图标形式直观地呈现在界面上，用户可直接点击使用。",
-      "insight": "通过卡片化设计，降低了用户理解和使用AI能力的门槛，提升了交互效率和用户体验，满足用户快速获取信息和完成任务的需求。",
-      "implication": "搜狗输入法可探索将AI能力以更具象、易于点击的卡片形式集成到输入法主界面或AI面板中，优化AI功能的可发现性和易用性。"
+      "what": "搜狗AI助手在多轮对话中可能缺乏上下文记忆，导致用户需要重复提供背景信息。同时，用户希望AI助手能处理更多类型的任务，而不限于文本问答。",
+      "insight": "升级搜狗AI助手的上下文理解能力，使其能记忆多轮对话内容，提供更连贯的交互体验。同时，扩展AI助手能力，在聊天界面提供快捷入口，支持文档总结、翻译、图片生成、文件处理等功能，提升AI助手的实用性和智能化水平。",
+      "implication": "Grammarly强调AI记忆升级，解决会话从零开始的痛点。多个竞品AI对话界面展示了文档总结、图片生成、翻译等多种AI能力，并提供便捷入口。",
+      "demand_mining": {
+        "title": "AI助手上下文记忆与多模态能力",
+        "pain_point": "搜狗AI助手在多轮对话中可能缺乏上下文记忆，导致用户需要重复提供背景信息。同时，用户希望AI助手能处理更多类型的任务，而不限于文本问答。",
+        "opportunity": "升级搜狗AI助手的上下文理解能力，使其能记忆多轮对话内容，提供更连贯的交互体验。同时，扩展AI助手能力，在聊天界面提供快捷入口，支持文档总结、翻译、图片生成、文件处理等功能，提升AI助手的实用性和智能化水平。",
+        "priority": "高",
+        "priority_en": "high",
+        "evidence": "Grammarly强调AI记忆升级，解决会话从零开始的痛点。多个竞品AI对话界面展示了文档总结、图片生成、翻译等多种AI能力，并提供便捷入口。",
+        "tags": [
+          "AI助手",
+          "上下文理解",
+          "多模态",
+          "效率工具"
+        ]
+      }
     },
     {
-      "id": "输入法键盘ai与快捷入口",
-      "label": "输入法键盘AI与快捷入口",
-      "icon": "⌨️",
-      "summary": "输入法键盘区域集成AI、语音、表情等功能入口，提升输入效率。",
+      "id": "point-5",
+      "label": "创新交互模式探索",
+      "icon": "🟢",
+      "summary": "#交互创新 · #用户体验 · #效率提升 · #语音输入",
       "screenshots": [
-        {
-          "url": "assets/weekly/2026-04-20/mo8cfinn8x5bvh.png",
-          "title": "微信输入法键盘布局",
-          "competitor": "微信输入法",
-          "competitorName": "微信输入法",
-          "category": "键盘",
-          "caption": "微信输入法集成AI、语音等入口。"
-        },
-        {
-          "url": "assets/weekly/2026-04-20/mo8c9fs4qlvqzd.png",
-          "title": "讯飞输入法聊天界面",
-          "competitor": "讯飞输入法",
-          "competitorName": "讯飞输入法",
-          "category": "键盘",
-          "caption": "讯飞输入法提供QWERTY、语音及粘贴提示。"
-        },
-        {
-          "url": "assets/weekly/2026-04-20/mo8c9fpyfv81fx.png",
-          "title": "iOS 系统键盘聊天界面",
-          "competitor": "iOS系统",
-          "competitorName": "iOS系统",
-          "category": "键盘",
-          "caption": "iOS系统键盘集成语音、表情等功能。"
-        }
-      ],
-      "what": "微信、讯飞及iOS系统输入法均在键盘区域或附近设置了AI、语音输入、表情、文件传输等快捷入口，方便用户在聊天场景下快速调用。",
-      "insight": "将高频使用的辅助功能集成到输入法键盘，可以显著减少用户在不同应用间切换的次数，提升输入和沟通效率，满足用户一体化操作的需求。",
-      "implication": "搜狗输入法应进一步优化AI入口的布局和形式，并考虑集成更多高频快捷功能，如文件传输、快捷回复等，打造更高效的输入体验。"
-    },
-    {
-      "id": "语音输入交互形态",
-      "label": "语音输入交互形态",
-      "icon": "🎤",
-      "summary": "语音输入界面设计多样，注重用户操作的便捷性和视觉反馈。",
-      "screenshots": [
-        {
-          "url": "assets/weekly/2026-04-20/mo8c9fs7k0x43q.png",
-          "title": "语音输入界面",
-          "competitor": "typeless",
-          "competitorName": "typeless",
-          "category": "语音",
-          "caption": "Typeless大尺寸语音输入按钮。"
-        },
-        {
-          "url": "assets/weekly/2026-04-20/mo8c9fs4qlvqzd.png",
-          "title": "讯飞输入法聊天界面",
-          "competitor": "讯飞输入法",
-          "competitorName": "讯飞输入法",
-          "category": "键盘",
-          "caption": "讯飞输入法集成语音输入。"
-        }
-      ],
-      "what": "Typeless的语音输入界面采用大尺寸圆形按钮，突出“点击说话”的交互方式。讯飞输入法也在聊天界面集成了语音输入功能。",
-      "insight": "大尺寸、醒目的语音输入按钮能有效降低用户误触概率，提升语音输入的易用性，尤其适合单手操作场景。清晰的视觉反馈能增强用户信心。",
-      "implication": "搜狗输入法可优化语音输入按钮的尺寸、位置和视觉反馈，探索更便捷的语音唤起和交互方式，并考虑针对不同场景（如单手操作）进行优化。"
-    },
-    {
-      "id": "创新交互动效与可视化",
-      "label": "创新交互动效与可视化",
-      "icon": "💡",
-      "summary": "有趣的动效和信息可视化交互设计吸引用户关注，可启发新功能。",
-      "screenshots": [
-        {
-          "url": "assets/weekly/2026-04-20/moa27javarynkm.jpg",
-          "title": "有趣的交互动效",
-          "competitor": "其他",
-          "competitorName": "其他",
-          "category": "动效参考",
-          "caption": "用户分享的有趣交互动效。"
-        },
         {
           "url": "assets/weekly/2026-04-20/moa1xlp6nkjmrl.jpg",
           "title": "轮盘交互与信息相关性",
           "competitor": "其他",
           "competitorName": "其他",
           "category": "交互创新",
-          "caption": "轮盘式交互可视化信息相关性。"
+          "caption": "轮盘式交互设计，可应用于语音输入"
         }
       ],
-      "what": "用户分享了引起广泛关注的有趣交互动效，以及一种轮盘式的信息可视化交互设计，用于展示信息相关性。",
-      "insight": "新颖有趣的动效和创新的交互方式能有效吸引用户注意力，提升产品趣味性和用户粘性。可视化信息相关性为复杂信息提供直观展示。",
-      "implication": "搜狗输入法可关注并引入更多新颖的交互动效，提升产品活力；同时，探索将轮盘式交互等可视化方式应用于输入法的功能提示或信息关联展示。"
+      "what": "传统输入法或AI助手的交互方式可能不够高效或缺乏趣味性，用户在复杂功能操作时路径较长，或难以直观获取信息，影响使用体验。",
+      "insight": "探索在搜狗输入法或AI助手中引入创新交互模式，如轮盘式菜单。可应用于快速切换输入法功能、AI助手快捷指令或可视化呈现信息相关性，提升用户操作的便捷性和探索乐趣。MVP可尝试在特定场景下提供轮盘式功能选择，收集用户反馈。",
+      "implication": "竞品展示了轮盘式交互设计，并提及可探索应用于语音输入功能，通过可视化方式呈现信息相关性，为用户提供新的交互体验。",
+      "demand_mining": {
+        "title": "创新交互模式探索",
+        "pain_point": "传统输入法或AI助手的交互方式可能不够高效或缺乏趣味性，用户在复杂功能操作时路径较长，或难以直观获取信息，影响使用体验。",
+        "opportunity": "探索在搜狗输入法或AI助手中引入创新交互模式，如轮盘式菜单。可应用于快速切换输入法功能、AI助手快捷指令或可视化呈现信息相关性，提升用户操作的便捷性和探索乐趣。MVP可尝试在特定场景下提供轮盘式功能选择，收集用户反馈。",
+        "priority": "低",
+        "priority_en": "low",
+        "evidence": "竞品展示了轮盘式交互设计，并提及可探索应用于语音输入功能，通过可视化方式呈现信息相关性，为用户提供新的交互体验。",
+        "tags": [
+          "交互创新",
+          "用户体验",
+          "效率提升",
+          "语音输入"
+        ]
+      }
     }
   ],
-  "actions": [
-    {
-      "priority": "high",
-      "title": "优化AI功能入口设计",
-      "detail": "借鉴竞品卡片化设计，在搜狗输入法中设计AI功能入口的卡片样式，提升AI功能的可发现性和易用性，并进行A/B测试。"
-    },
-    {
-      "priority": "medium",
-      "title": "探索键盘AI功能集成",
-      "detail": "研究在搜狗输入法键盘区域集成AI写作、AI摘要等功能入口的可行性，并评估用户对这类入口的偏好。"
-    },
-    {
-      "priority": "low",
-      "title": "研究语音交互优化",
-      "detail": "分析Typeless等竞品的语音输入交互设计，评估搜狗输入法语音输入按钮的易用性，并考虑优化方案。"
-    }
-  ]
+  "highlights": [],
+  "actions": []
 }
