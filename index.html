@@ -2800,74 +2800,134 @@ async function loadAndRenderRivalPage() {
   }
 }
 
-/* ===== 竞品报告列表（多份周报） ===== */
+/* ===== 竞品报告列表（周报 + 产品深度混排） ===== */
+var deepDiveIndexCache = null;
+var deepDiveDetailCache = {};
+
 async function loadAndRenderRivalReportList() {
   var listEl = document.getElementById('rival-report-list');
   listEl.innerHTML = '<div style="color:#888;padding:40px 0;text-align:center;">正在加载报告列表...</div>';
 
+  // 并发拉两个索引
+  var tasks = [];
   if (!rivalReportIndexCache) {
-    try {
-      var resp = await fetch('data/rival-weekly-index.json?t=' + Date.now());
-      if (resp.ok) {
-        rivalReportIndexCache = await resp.json();
-      } else {
-        rivalReportIndexCache = { reports: [] };
-      }
-    } catch(e) {
-      rivalReportIndexCache = { reports: [] };
-    }
+    tasks.push(fetch('data/rival-weekly-index.json?t=' + Date.now())
+      .then(function(r){ return r.ok ? r.json() : { reports: [] }; })
+      .catch(function(){ return { reports: [] }; })
+      .then(function(d){ rivalReportIndexCache = d; }));
   }
+  if (!deepDiveIndexCache) {
+    tasks.push(fetch('data/deep-dive-index.json?t=' + Date.now())
+      .then(function(r){ return r.ok ? r.json() : { reports: [] }; })
+      .catch(function(){ return { reports: [] }; })
+      .then(function(d){ deepDiveIndexCache = d; }));
+  }
+  await Promise.all(tasks);
 
   // 同步刷新计数
   renderRivalFilterBar(rivalDataCache);
 
-  var reports = (rivalReportIndexCache && rivalReportIndexCache.reports) || [];
-  // 按 weekOf 倒序
-  reports = reports.slice().sort(function(a, b) {
-    return (b.weekOf || '').localeCompare(a.weekOf || '');
+  // 合并：周报打 type=weekly，深度打 type=deep-dive
+  var merged = [];
+  (rivalReportIndexCache.reports || []).forEach(function(r) {
+    merged.push({
+      type: 'weekly',
+      id: r.weekOf,
+      sortKey: r.weekOf || '',
+      generatedAt: r.generatedAt || '',
+      raw: r,
+    });
+  });
+  (deepDiveIndexCache.reports || []).forEach(function(r) {
+    merged.push({
+      type: 'deep-dive',
+      id: r.id,
+      sortKey: r.dateOf || '',
+      generatedAt: r.generatedAt || '',
+      raw: r,
+    });
   });
 
-  if (reports.length === 0) {
+  // 按日期倒序
+  merged.sort(function(a, b){
+    return (b.sortKey + ' ' + b.generatedAt).localeCompare(a.sortKey + ' ' + a.generatedAt);
+  });
+
+  if (merged.length === 0) {
     listEl.innerHTML =
       '<div class="rreport-empty">' +
         '<div style="font-size:40px;margin-bottom:12px;">📭</div>' +
         '<div>暂无竞品报告</div>' +
-        '<div class="rreport-empty-hint">在「输入法竞品截图收集」H5 里点 📊 周报按钮，即可生成一份</div>' +
+        '<div class="rreport-empty-hint">周报在 H5 里点 📊 生成；产品深度每周一 09:00 自动生成</div>' +
       '</div>';
     return;
   }
 
-  var html = '<div class="rreport-list">' + reports.map(function(r) {
-    var thumbs = (r.thumbs || []).slice(0, 4);
-    var moreCount = (r.totalImages || 0) - thumbs.length;
-    var thumbsHtml = thumbs.map(function(t) {
-      return '<img class="rreport-card-thumb" src="' + t + '" loading="lazy" onerror="this.style.display=\'none\'">';
-    }).join('');
-    if (moreCount > 0) {
-      thumbsHtml += '<div class="rreport-card-thumb-more">+' + moreCount + '</div>';
-    }
-
-    var stats = [];
-    if (r.totalImages != null) stats.push('<span class="rreport-card-stat">📷 ' + r.totalImages + ' 张</span>');
-    if (r.competitors && r.competitors.length) stats.push('<span class="rreport-card-stat">🏷 ' + r.competitors.length + ' 个竞品</span>');
-    if (r.dimensionCount != null) stats.push('<span class="rreport-card-stat">🔎 ' + r.dimensionCount + ' 个维度</span>');
-
-    var weekLabel = r.weekOf ? r.weekOf.replace(/^\d{4}-/, '') + ' 周' : '';
-
-    return '<div class="rreport-card" onclick="openRivalReportDetail(\'' + r.weekOf + '\')">' +
-      '<div class="rreport-card-head">' +
-        '<span class="rreport-card-badge">📊 竞品报告</span>' +
-        '<span class="rreport-card-week">' + weekLabel + '</span>' +
-        (r.generatedAt ? '<span class="rreport-card-week" style="margin-left:auto;">' + r.generatedAt + '</span>' : '') +
-      '</div>' +
-      '<div class="rreport-card-title">' + escHtml(r.title || '本周输入法竞品截图深度分析') + '</div>' +
-      (r.overview ? '<div class="rreport-card-overview">' + escHtml(r.overview) + '</div>' : '') +
-      (thumbsHtml ? '<div class="rreport-card-thumbs">' + thumbsHtml + '</div>' : '') +
-      '<div class="rreport-card-stats">' + stats.join('') + '</div>' +
-    '</div>';
+  var html = '<div class="rreport-list">' + merged.map(function(m) {
+    return m.type === 'weekly' ? renderWeeklyCard(m.raw) : renderDeepDiveCard(m.raw);
   }).join('') + '</div>';
 
   listEl.innerHTML = html;
+}
+
+function renderWeeklyCard(r) {
+  var thumbs = (r.thumbs || []).slice(0, 4);
+  var moreCount = (r.totalImages || 0) - thumbs.length;
+  var thumbsHtml = thumbs.map(function(t) {
+    return '<img class="rreport-card-thumb" src="' + t + '" loading="lazy" onerror="this.style.display=\'none\'">';
+  }).join('');
+  if (moreCount > 0) {
+    thumbsHtml += '<div class="rreport-card-thumb-more">+' + moreCount + '</div>';
+  }
+
+  var stats = [];
+  if (r.totalImages != null) stats.push('<span class="rreport-card-stat">📷 ' + r.totalImages + ' 张</span>');
+  if (r.competitors && r.competitors.length) stats.push('<span class="rreport-card-stat">🏷 ' + r.competitors.length + ' 个竞品</span>');
+  if (r.dimensionCount != null) stats.push('<span class="rreport-card-stat">🔎 ' + r.dimensionCount + ' 个维度</span>');
+
+  var weekLabel = r.weekOf ? r.weekOf.replace(/^\d{4}-/, '') + ' 周' : '';
+
+  return '<div class="rreport-card" onclick="openRivalReportDetail(\'' + r.weekOf + '\')">' +
+    '<div class="rreport-card-head">' +
+      '<span class="rreport-card-badge">📊 周度总览</span>' +
+      '<span class="rreport-card-week">' + weekLabel + '</span>' +
+      (r.generatedAt ? '<span class="rreport-card-week" style="margin-left:auto;">' + r.generatedAt + '</span>' : '') +
+    '</div>' +
+    '<div class="rreport-card-title">' + escHtml(r.title || '本周输入法竞品截图深度分析') + '</div>' +
+    (r.overview ? '<div class="rreport-card-overview">' + escHtml(r.overview) + '</div>' : '') +
+    (thumbsHtml ? '<div class="rreport-card-thumbs">' + thumbsHtml + '</div>' : '') +
+    '<div class="rreport-card-stats">' + stats.join('') + '</div>' +
+  '</div>';
+}
+
+function renderDeepDiveCard(r) {
+  var thumbs = (r.thumbs || []).slice(0, 4);
+  var moreCount = (r.totalImages || 0) - thumbs.length;
+  var thumbsHtml = thumbs.map(function(t) {
+    return '<img class="rreport-card-thumb" src="' + t + '" loading="lazy" onerror="this.style.display=\'none\'">';
+  }).join('');
+  if (moreCount > 0) {
+    thumbsHtml += '<div class="rreport-card-thumb-more">+' + moreCount + '</div>';
+  }
+
+  var stats = [];
+  stats.push('<span class="rreport-card-stat">🎯 ' + escHtml(r.productName || '') + '</span>');
+  if (r.innovationCount) stats.push('<span class="rreport-card-stat">💡 ' + r.innovationCount + ' 个亮点</span>');
+  if (r.totalImages != null) stats.push('<span class="rreport-card-stat">📷 ' + r.totalImages + ' 张</span>');
+
+  var dateLabel = r.dateOf ? r.dateOf.replace(/^\d{4}-/, '') : '';
+
+  return '<div class="rreport-card" onclick="openDeepDiveDetail(\'' + r.id + '\')">' +
+    '<div class="rreport-card-head">' +
+      '<span class="rreport-card-badge" style="background:#111;color:#fff;">🔬 产品深度</span>' +
+      '<span class="rreport-card-week">' + dateLabel + '</span>' +
+      (r.generatedAt ? '<span class="rreport-card-week" style="margin-left:auto;">' + r.generatedAt + '</span>' : '') +
+    '</div>' +
+    '<div class="rreport-card-title">' + escHtml(r.title || r.productName || '产品深度报告') + '</div>' +
+    (r.subtitle ? '<div class="rreport-card-overview">' + escHtml(r.subtitle) + '</div>' : '') +
+    (thumbsHtml ? '<div class="rreport-card-thumbs">' + thumbsHtml + '</div>' : '') +
+    '<div class="rreport-card-stats">' + stats.join('') + '</div>' +
+  '</div>';
 }
 
 /* ===== 竞品报告详情 ===== */
@@ -2897,6 +2957,126 @@ function closeRivalReportDetail() {
   document.getElementById('rival-report-detail').style.display = 'none';
   document.getElementById('rival-report-list').style.display = 'block';
   window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/* ===== 产品深度报告详情 ===== */
+async function openDeepDiveDetail(id) {
+  var listEl = document.getElementById('rival-report-list');
+  var detailEl = document.getElementById('rival-report-detail');
+  listEl.style.display = 'none';
+  detailEl.style.display = 'block';
+  detailEl.innerHTML = '<div style="color:#888;padding:60px 0;text-align:center;">正在加载报告...</div>';
+
+  var data = deepDiveDetailCache[id];
+  if (!data) {
+    try {
+      // id 形如 typeless-2026-04-27
+      var resp = await fetch('data/deep-dive-' + id + '.json?t=' + Date.now());
+      data = await resp.json();
+      deepDiveDetailCache[id] = data;
+    } catch(e) {
+      detailEl.innerHTML = '<button class="rreport-back" onclick="closeRivalReportDetail()">← 返回报告列表</button><div class="rreport-empty">报告加载失败</div>';
+      return;
+    }
+  }
+  renderDeepDiveDetail(data);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function renderDeepDiveDetail(data) {
+  var detailEl = document.getElementById('rival-report-detail');
+  var ov = data.overview || {};
+  var innovations = data.innovations || [];
+  var vm = data.visualMotion || {};
+  var diff = data.differentiation || {};
+  var takeaways = data.sogouTakeaways || [];
+  var sources = data.sources || [];
+  var screenshots = data.screenshots || [];
+
+  var innovationsHtml = innovations.map(function(ino, idx) {
+    return '<div class="rweekly-dim">' +
+      '<div class="rweekly-dim-head">' +
+        '<span class="rweekly-dim-icon">' + (ino.icon || '💡') + '</span>' +
+        '<span class="rweekly-dim-label">' + escHtml(ino.title || ('创新点 ' + (idx+1))) + '</span>' +
+      '</div>' +
+      (ino.observation ? '<div class="rweekly-dim-block"><div class="rweekly-dim-block-label">观察</div><div class="rweekly-dim-block-text">' + escHtml(ino.observation) + '</div></div>' : '') +
+      (ino.insight ? '<div class="rweekly-dim-block"><div class="rweekly-dim-block-label">设计意图</div><div class="rweekly-dim-block-text">' + escHtml(ino.insight) + '</div></div>' : '') +
+      (ino.sogouImplication ? '<div class="rweekly-dim-block" style="background:#fff7e6;border-left:3px solid #c87b1a;padding:12px 14px;border-radius:10px;margin-top:8px;"><div class="rweekly-dim-block-label" style="color:#c87b1a;">对搜狗的启示</div><div class="rweekly-dim-block-text">' + escHtml(ino.sogouImplication) + '</div></div>' : '') +
+    '</div>';
+  }).join('');
+
+  var screenshotsHtml = screenshots.length ? (
+    '<div class="rweekly-dim">' +
+      '<div class="rweekly-dim-head"><span class="rweekly-dim-icon">📷</span><span class="rweekly-dim-label">截图素材（本周池子）</span></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin-top:12px;">' +
+        screenshots.map(function(s) {
+          return '<figure style="margin:0;">' +
+            '<img src="' + s.url + '" loading="lazy" style="width:100%;border-radius:10px;border:1px solid #eee;display:block;" onerror="this.style.display=\'none\'">' +
+            (s.title ? '<figcaption style="font-size:12px;color:#555;margin-top:6px;line-height:1.4;">' + escHtml(s.title) + '</figcaption>' : '') +
+          '</figure>';
+        }).join('') +
+      '</div>' +
+    '</div>'
+  ) : '';
+
+  var takeawaysHtml = takeaways.length ? (
+    '<div class="rweekly-dim" style="background:linear-gradient(135deg,#111 0%,#333 100%);color:#fff;">' +
+      '<div class="rweekly-dim-head"><span class="rweekly-dim-icon">🎯</span><span class="rweekly-dim-label" style="color:#fff;">对搜狗输入法的启示</span></div>' +
+      '<ol style="margin:12px 0 0 22px;padding:0;line-height:1.75;color:#f5f5f5;">' +
+        takeaways.map(function(t){ return '<li style="margin:8px 0;">' + escHtml(t) + '</li>'; }).join('') +
+      '</ol>' +
+    '</div>'
+  ) : '';
+
+  var sourcesHtml = sources.length ? (
+    '<div style="margin-top:24px;padding:16px 18px;background:#fafaf7;border-radius:12px;border:1px solid #eaeae3;">' +
+      '<div style="font-size:12px;font-weight:700;color:#888;margin-bottom:10px;letter-spacing:0.5px;">📚 资料来源</div>' +
+      '<ul style="margin:0;padding-left:20px;font-size:13px;line-height:1.8;">' +
+        sources.map(function(s){ return '<li><a href="' + s.url + '" target="_blank" rel="noopener" style="color:#3366cc;text-decoration:none;">' + escHtml(s.title) + '</a></li>'; }).join('') +
+      '</ul>' +
+    '</div>'
+  ) : '';
+
+  var overviewChips = [];
+  if (ov.scene) overviewChips.push('<span class="rweekly-chip">场景 · ' + escHtml(ov.scene) + '</span>');
+  if (ov.audience) overviewChips.push('<span class="rweekly-chip">用户 · ' + escHtml(ov.audience) + '</span>');
+  if (ov.team) overviewChips.push('<span class="rweekly-chip">团队 · ' + escHtml(ov.team) + '</span>');
+  if (ov.launchDate) overviewChips.push('<span class="rweekly-chip">时间 · ' + escHtml(ov.launchDate) + '</span>');
+
+  detailEl.innerHTML =
+    '<button class="rreport-back" onclick="closeRivalReportDetail()">← 返回报告列表</button>' +
+    '<div class="rweekly-detail">' +
+      '<div class="rweekly-head">' +
+        '<div class="rweekly-meta">' +
+          '<span class="rreport-card-badge" style="background:#111;color:#fff;">🔬 产品深度</span>' +
+          '<span class="rweekly-week">' + escHtml(data.dateOf || '') + '</span>' +
+          (data.generatedAt ? '<span class="rweekly-week" style="margin-left:auto;">' + escHtml(data.generatedAt) + '</span>' : '') +
+        '</div>' +
+        '<h1 class="rweekly-title" style="margin-top:14px;">' + escHtml(data.title || data.productName || '') + '</h1>' +
+        (data.subtitle ? '<div style="font-size:16px;color:#555;margin-top:6px;line-height:1.6;">' + escHtml(data.subtitle) + '</div>' : '') +
+        (ov.what ? '<div style="font-size:15px;color:#333;margin-top:14px;line-height:1.7;">' + escHtml(ov.what) + '</div>' : '') +
+        (overviewChips.length ? '<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;">' + overviewChips.join('') + '</div>' : '') +
+        (data.selectionReason ? '<div style="font-size:12px;color:#888;margin-top:10px;">🤖 选题理由：' + escHtml(data.selectionReason) + '</div>' : '') +
+      '</div>' +
+      (innovationsHtml ? '<div class="rweekly-section"><div class="rweekly-section-label">核心交互创新</div>' + innovationsHtml + '</div>' : '') +
+      (vm.summary || (vm.highlights && vm.highlights.length) ? (
+        '<div class="rweekly-section"><div class="rweekly-section-label">视觉 / 动效亮点</div>' +
+        '<div class="rweekly-dim">' +
+          (vm.summary ? '<div style="font-size:14px;color:#333;line-height:1.7;">' + escHtml(vm.summary) + '</div>' : '') +
+          (vm.highlights && vm.highlights.length ? '<ul style="margin:10px 0 0 20px;line-height:1.8;color:#555;">' + vm.highlights.map(function(h){return '<li>' + escHtml(h) + '</li>';}).join('') + '</ul>' : '') +
+        '</div></div>'
+      ) : '') +
+      (diff.summary ? (
+        '<div class="rweekly-section"><div class="rweekly-section-label">差异化 / 竞争位</div>' +
+        '<div class="rweekly-dim">' +
+          '<div style="font-size:14px;color:#333;line-height:1.7;">' + escHtml(diff.summary) + '</div>' +
+          (diff.positioning ? '<div style="font-size:13px;color:#888;margin-top:8px;">定位：' + escHtml(diff.positioning) + '</div>' : '') +
+        '</div></div>'
+      ) : '') +
+      (screenshotsHtml ? '<div class="rweekly-section">' + screenshotsHtml + '</div>' : '') +
+      (takeawaysHtml ? '<div class="rweekly-section">' + takeawaysHtml + '</div>' : '') +
+      sourcesHtml +
+    '</div>';
 }
 
 function renderRivalReportDetail(data) {

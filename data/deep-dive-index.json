@@ -1,0 +1,21 @@
+{
+  "reports": [
+    {
+      "id": "mita-echo-2026-04-27",
+      "slug": "mita-echo",
+      "dateOf": "2026-04-27",
+      "productName": "秘塔回响",
+      "title": "秘塔回响：AI语音交互，不止于听写",
+      "subtitle": "言出即法，高效办公与隐私兼顾的AI输入新范式",
+      "generatedAt": "2026-04-27 09:33",
+      "selectionReason": "截图量最高，AI聊天产品常有交互创新。",
+      "thumbs": [
+        "assets/deep-dive/mita-echo-2026-04-27/mocpd924qz1qyt.jpg",
+        "assets/deep-dive/mita-echo-2026-04-27/mocpd8ttronscw.jpg"
+      ],
+      "totalImages": 2,
+      "innovationCount": 5
+    }
+  ],
+  "updatedAt": "2026-04-27 09:33"
+}

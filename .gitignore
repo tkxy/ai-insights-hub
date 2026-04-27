@@ -15,3 +15,4 @@ test_tts_local.wav
 /*.mp3
 tts_proxy.log
 *.dic
+logs/
