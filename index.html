@@ -2878,7 +2878,7 @@ function renderDemandMapClusters(clusters) {
     }).length;
   }
   var curMonthEl = document.getElementById('currentMonth');
-  if (curMonthEl) curMonthEl.textContent = monthLabel(curMonth) + '（' + activeMonthCount + '）';
+  if (curMonthEl) curMonthEl.textContent = monthLabel(curMonth);
   var prevBtn = document.getElementById('prevMonth');
   var nextBtn = document.getElementById('nextMonth');
   if (prevBtn) {
