@@ -3022,7 +3022,19 @@ function renderWeeklyCard(r) {
   if (r.competitors && r.competitors.length) stats.push('<span class="rreport-card-stat">🏷 ' + r.competitors.length + ' 个竞品</span>');
   if (r.dimensionCount != null) stats.push('<span class="rreport-card-stat">🔎 ' + r.dimensionCount + ' 个维度</span>');
 
-  var weekLabel = r.weekOf ? r.weekOf.replace(/^\d{4}-/, '') + ' 周' : '';
+  // 计算周日日期（weekOf + 6 天）
+  var weekLabel = '';
+  if (r.weekOf) {
+    try {
+      var startDate = new Date(r.weekOf + 'T00:00:00');
+      var endDate = new Date(startDate.getTime() + 6 * 86400000);
+      var mm = function(d) { return String(d.getMonth() + 1).padStart(2, '0'); };
+      var dd = function(d) { return String(d.getDate()).padStart(2, '0'); };
+      weekLabel = mm(startDate) + '-' + dd(startDate) + ' → ' + mm(endDate) + '-' + dd(endDate);
+    } catch(e) {
+      weekLabel = r.weekOf.replace(/^\d{4}-/, '') + ' 周';
+    }
+  }
 
   return '<div class="rreport-card" onclick="openRivalReportDetail(\'' + r.weekOf + '\')">' +
     '<div class="rreport-card-head">' +
