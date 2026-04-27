@@ -1,28 +1,4 @@
 {
-  "reports": [
-    {
-      "id": "grammarly-2026-04-27",
-      "slug": "grammarly",
-      "dateOf": "2026-04-27",
-      "productName": "grammarly",
-      "title": "英文写作智能辅助，多场景实时改写润色",
-      "subtitle": "实时检测输入内容，多场景提供写作、润色、改写和总结建议",
-      "generatedAt": "2026-04-27 15:11",
-      "selectionReason": "本周共 4 张截图，关注度较高",
-      "thumbs": [
-        "assets/deep-dive/grammarly-2026-04-27/mocslpqr28bi8h.png",
-        "assets/deep-dive/grammarly-2026-04-27/mocshaw0rbbhk4.png",
-        "assets/deep-dive/grammarly-2026-04-27/mocsf5c6hg9cf7.png",
-        "assets/deep-dive/grammarly-2026-04-27/mocsdusqqaxqfj.png"
-      ],
-      "totalImages": 4,
-      "innovationCount": 4,
-      "highlights": [
-        "实时文本校对与修正",
-        "多维度文本改写选项",
-        "网页内容即时总结与改进"
-      ]
-    }
-  ],
-  "updatedAt": "2026-04-27 15:11"
+  "reports": [],
+  "updatedAt": "2026-04-27 15:37"
 }
