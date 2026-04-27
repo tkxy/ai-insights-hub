@@ -2670,28 +2670,30 @@ function getDemandCardHtml(item, index) {
   var prio = item.priority || '中';
   var prioColor = prio === '高' ? '#d44' : '#c87b1a';
   var prioBg = prio === '高' ? '#d4418' : '#c87b1a18';
-  var dateStr = item.date || item.source_date || '04-08';
   var opp = stripHtml(item.opportunity || item.desc || '');
   var why = stripHtml(item.why_now || item.reason || '');
+  // 合并洞察：优先用 opportunity（机会点），其次 why_now，合并成一段
+  var insightText = '';
+  if (opp) insightText = opp;
+  if (why && opp && why !== opp) insightText += '（' + why + '）';
+  if (!insightText && why) insightText = why;
   var tags = (item.tags || []).slice(0, 3);
   var tagsHtml = tags.map(function(t) {
-    return '<span style="padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:12px;font-weight:700;">' + t + '</span>';
+    return '<span style="padding:4px 10px;border-radius:999px;background:rgba(0,0,0,0.05);color:#555;font-size:11px;font-weight:700;">' + t + '</span>';
   }).join('');
   var evidenceHtml = '';
   if (item.source_urls && item.source_urls.length) {
     var links = item.source_urls.slice(0, 2).map(function(s) {
       return '<a class="source-link" href="' + s.url + '" target="_blank" style="color:#555;text-decoration:none;font-size:12px;">' + s.name + ' →</a>';
     }).join('');
-    evidenceHtml = '<div style="margin-top:12px;padding-top:12px;border-top:1px solid rgba(0,0,0,0.06);">' + links + '</div>';
+    evidenceHtml = '<div style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(0,0,0,0.06);display:flex;flex-wrap:wrap;gap:10px;">' + links + '</div>';
   }
   return '<div style="background:#fcfbf8;border-radius:20px;border:1px solid rgba(0,0,0,0.06);padding:18px;display:grid;gap:10px;">' +
-    '<div style="display:flex;justify-content:space-between;align-items:center;">' +
-      '<span style="font-size:12px;font-weight:700;color:#888;">' + dateStr + '</span>' +
-      '<span style="padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;color:' + prioColor + ';background:' + prioBg + ';">优先级：' + prio + '</span>' +
+    '<div style="display:flex;justify-content:flex-end;align-items:center;">' +
+      '<span style="padding:4px 10px;border-radius:999px;font-size:11px;font-weight:700;color:' + prioColor + ';background:' + prioBg + ';">优先级：' + prio + '</span>' +
     '</div>' +
     '<h4 style="font-size:16px;font-weight:800;line-height:1.35;margin:0;">' + item.title + '</h4>' +
-    (opp ? '<div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">机会点</strong>' + opp.substring(0, 120) + (opp.length > 120 ? '…' : '') + '</div>' : '') +
-    (why ? '<div style="color:#555;font-size:13px;line-height:1.7;"><strong style="display:block;font-size:11px;color:#888;letter-spacing:1px;margin-bottom:4px;">为什么现在</strong>' + why.substring(0, 120) + (why.length > 120 ? '…' : '') + '</div>' : '') +
+    (insightText ? '<div style="color:#333;font-size:13px;line-height:1.7;">' + insightText.substring(0, 180) + (insightText.length > 180 ? '…' : '') + '</div>' : '') +
     (tagsHtml ? '<div style="display:flex;flex-wrap:wrap;gap:6px;">' + tagsHtml + '</div>' : '') +
     evidenceHtml +
   '</div>';
