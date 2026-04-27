@@ -437,8 +437,7 @@
     display: flex; flex-direction: column; gap: 8px;
   }
   .ic-impl-item {
-    border-left: 3px solid #2563eb;
-    border-radius: 0 8px 8px 0;
+    border-radius: 8px;
     padding: 8px 12px;
     background: #fafbff;
   }
@@ -854,7 +853,6 @@
   }
   .knowledge-card-section.action {
     background: rgba(245,239,228,0.72);
-    border-left: 3px solid var(--black);
   }
   .knowledge-card-section-label {
     font-size: 11px; color: var(--text3); font-weight: 700;
@@ -1112,19 +1110,16 @@
   }
   .rweekly-block {
     background: #fafbff; border-radius: 10px; padding: 14px 16px;
-    border-left: 3px solid #0073F0;
   }
   .rweekly-block-label {
-    font-size: 11px; font-weight: 700; color: #0073F0;
+    font-size: 11px; font-weight: 700; color: #555;
     text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;
   }
   .rweekly-block-text {
     font-size: 13px; color: #333; line-height: 1.65;
   }
-  .rweekly-block.insight { border-left-color: #7C3AED; }
-  .rweekly-block.insight .rweekly-block-label { color: #7C3AED; }
-  .rweekly-block.action { border-left-color: #F59E0B; }
-  .rweekly-block.action .rweekly-block-label { color: #F59E0B; }
+  .rweekly-block.insight .rweekly-block-label { color: #555; }
+  .rweekly-block.action .rweekly-block-label { color: #555; }
 
   .rweekly-lightbox {
     position: fixed; inset: 0; background: rgba(0,0,0,0.92);
@@ -1164,7 +1159,6 @@
     padding: 10px 14px;
     background: #fafbff;
     border-radius: 10px;
-    border-left: 3px solid #111;
   }
   .rweekly-highlight-icon {
     font-size: 18px; line-height: 1.3; flex-shrink: 0;
@@ -1182,11 +1176,10 @@
   }
   .rweekly-action-item {
     background: #fafbff; border-radius: 10px; padding: 14px 16px;
-    border-left: 3px solid #666;
   }
-  .rweekly-action-item.prio-high { border-left-color: #e53935; background: #fff5f5; }
-  .rweekly-action-item.prio-medium { border-left-color: #f59e0b; background: #fffbf2; }
-  .rweekly-action-item.prio-low { border-left-color: #999; }
+  .rweekly-action-item.prio-high { background: #fff5f5; }
+  .rweekly-action-item.prio-medium { background: #fffbf2; }
+  .rweekly-action-item.prio-low { }
   .rweekly-action-head {
     display: flex; align-items: center; gap: 8px; margin-bottom: 4px;
   }
@@ -3050,7 +3043,7 @@ function renderDeepDiveDetail(data) {
       '</div>' +
       (ino.observation ? '<div class="rweekly-dim-block"><div class="rweekly-dim-block-label">观察</div><div class="rweekly-dim-block-text">' + escHtml(ino.observation) + '</div></div>' : '') +
       (ino.insight ? '<div class="rweekly-dim-block"><div class="rweekly-dim-block-label">设计意图</div><div class="rweekly-dim-block-text">' + escHtml(ino.insight) + '</div></div>' : '') +
-      (ino.sogouImplication ? '<div class="rweekly-dim-block" style="background:#fff7e6;border-left:3px solid #c87b1a;padding:12px 14px;border-radius:10px;margin-top:8px;"><div class="rweekly-dim-block-label" style="color:#c87b1a;">对搜狗的启示</div><div class="rweekly-dim-block-text">' + escHtml(ino.sogouImplication) + '</div></div>' : '') +
+      (ino.sogouImplication ? '<div class="rweekly-dim-block" style="background:#fff7e6;padding:12px 14px;border-radius:10px;margin-top:8px;"><div class="rweekly-dim-block-label" style="color:#c87b1a;">对搜狗的启示</div><div class="rweekly-dim-block-text">' + escHtml(ino.sogouImplication) + '</div></div>' : '') +
     '</div>';
   }).join('');
 
