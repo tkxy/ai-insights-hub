@@ -465,6 +465,14 @@ def write_report(report, screenshots_meta):
     else:
         idx = {"reports": []}
 
+    # 亮点标题抽取（前 3 条 innovation.title，用于卡片外露）
+    innovations = report.get("innovations", []) or []
+    highlights = []
+    for it in innovations[:3]:
+        t = (it.get("title") or "").strip()
+        if t:
+            highlights.append(t)
+
     entry = {
         "id": f"{slug}-{date_str}",
         "slug": slug,
@@ -476,7 +484,8 @@ def write_report(report, screenshots_meta):
         "selectionReason": report.get("selectionReason", ""),
         "thumbs": [s["url"] for s in screenshots_meta[:4]],
         "totalImages": len(screenshots_meta),
-        "innovationCount": len(report.get("innovations", [])),
+        "innovationCount": len(innovations),
+        "highlights": highlights,
     }
     # 去重：同 id 覆盖
     idx["reports"] = [r for r in idx["reports"] if r.get("id") != entry["id"]]

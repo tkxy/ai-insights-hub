@@ -14,7 +14,12 @@
         "assets/deep-dive/p-d5dc74-2026-04-27/mocpd8ttronscw.jpg"
       ],
       "totalImages": 2,
-      "innovationCount": 4
+      "innovationCount": 4,
+      "highlights": [
+        "AI文本润色多模式",
+        "语音指令与功能集成",
+        "后台持续聆听模式"
+      ]
     },
     {
       "id": "grammarly-2026-04-27",
@@ -32,7 +37,12 @@
         "assets/deep-dive/grammarly-2026-04-27/mocsdusqqaxqfj.png"
       ],
       "totalImages": 4,
-      "innovationCount": 4
+      "innovationCount": 4,
+      "highlights": [
+        "AI记忆：从金鱼到管家",
+        "AI辅助文本处理：选中即服务",
+        "多维度文本润色与风格改写"
+      ]
     }
   ],
   "updatedAt": "2026-04-27 10:06"

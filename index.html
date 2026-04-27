@@ -1230,10 +1230,7 @@
     display: flex; flex-direction: column; gap: 12px;
     position: relative; overflow: hidden;
   }
-  .rreport-card::before {
-    content: ''; position: absolute; left: 0; top: 0; bottom: 0;
-    width: 4px; background: linear-gradient(180deg, #0073F0 0%, #7C3AED 100%);
-  }
+  /* 左侧彩条已移除（保持纯白卡片） */
   .rreport-card:hover {
     box-shadow: 0 6px 24px rgba(0,0,0,0.08);
     transform: translateY(-2px);
@@ -1270,6 +1267,18 @@
   }
   .rreport-card-thumbs {
     display: flex; gap: 4px;
+  }
+  .rreport-card-highlights {
+    list-style: none; padding: 0; margin: 2px 0 0;
+    display: flex; flex-direction: column; gap: 7px;
+  }
+  .rreport-card-highlights li {
+    font-size: 12.5px; color: #333; line-height: 1.55;
+    display: flex; align-items: flex-start; gap: 8px;
+  }
+  .rreport-card-hl-dot {
+    flex: none; width: 5px; height: 5px; border-radius: 50%;
+    background: #111; margin-top: 7px;
   }
   .rreport-card-thumb {
     width: 40px; height: 40px; border-radius: 6px;
@@ -2964,6 +2973,11 @@ function renderDeepDiveCard(r) {
     '</div>' +
     '<div class="rreport-card-title">' + escHtml(r.title || r.productName || '产品深度报告') + '</div>' +
     (r.subtitle ? '<div class="rreport-card-overview">' + escHtml(r.subtitle) + '</div>' : '') +
+    (r.highlights && r.highlights.length ? '<ul class="rreport-card-highlights">' +
+      r.highlights.slice(0, 3).map(function(h) {
+        return '<li><span class="rreport-card-hl-dot"></span>' + escHtml(h) + '</li>';
+      }).join('') +
+    '</ul>' : '') +
     (thumbsHtml ? '<div class="rreport-card-thumbs">' + thumbsHtml + '</div>' : '') +
     '<div class="rreport-card-stats">' + stats.join('') + '</div>' +
   '</div>';
@@ -3251,7 +3265,7 @@ function renderRivalFilterBar(data) {
   }
 
   bar.innerHTML =
-    '<div class="rival-filter-group">' + dimAllBtn + dimBtns + reportBtn + '</div>';
+    '<div class="rival-filter-group">' + dimAllBtn + reportBtn + dimBtns + '</div>';
 }
 
 function setRivalView(view) {
