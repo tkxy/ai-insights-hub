@@ -2711,30 +2711,79 @@ function renderDemandMapClusters(clusters) {
   var bodyEl = document.getElementById('map-clusters-body');
   if (!chipsEl || !bodyEl) return;
 
-  var firstActive = window.mapActiveCluster || (clusters && clusters.length ? clusters[0].name : '帮写场景类');
-
-  // Compute trend: count items added in last 14 days vs prior 14 days
   var now = new Date();
-  function trendForCluster(items) {
+
+  // Helper: parse item.date to { year, month, day } — accepts "MM-DD" or "YYYY-MM-DD"
+  function parseItemDate(ds) {
+    if (!ds) return null;
+    var curYear = now.getFullYear();
+    if (/^\d{4}-\d{2}-\d{2}$/.test(ds)) {
+      return { y: +ds.slice(0,4), m: +ds.slice(5,7), d: +ds.slice(8,10) };
+    }
+    if (/^\d{2}-\d{2}$/.test(ds)) {
+      return { y: curYear, m: +ds.slice(0,2), d: +ds.slice(3,5) };
+    }
+    return null;
+  }
+  function itemMonthKey(item) {
+    var pd = parseItemDate(item.date);
+    if (!pd) return null;
+    return pd.y + '-' + String(pd.m).padStart(2, '0');
+  }
+  // Helper: group items by YYYY-MM, return array sorted desc by month
+  function groupByMonth(items) {
+    var map = {};
+    items.forEach(function(item) {
+      var pd = parseItemDate(item.date);
+      if (!pd) return;
+      var key = pd.y + '-' + String(pd.m).padStart(2, '0');
+      if (!map[key]) map[key] = [];
+      map[key].push({ item: item, sortKey: pd.y * 10000 + pd.m * 100 + pd.d });
+    });
+    var keys = Object.keys(map).sort(function(a, b) { return b.localeCompare(a); });
+    return keys.map(function(k) {
+      map[k].sort(function(a, b) { return b.sortKey - a.sortKey; });
+      return { month: k, items: map[k].map(function(x) { return x.item; }) };
+    });
+  }
+  function monthLabel(monthKey) {
+    var parts = monthKey.split('-');
+    return parts[0] + '年' + (+parts[1]) + '月';
+  }
+
+  // Compute trend within the current month (recent 7 days vs prior 7 days of that month)
+  function trendForItemsInMonth(items, monthKey) {
+    if (!monthKey) return { recent: 0, older: 0 };
+    var parts = monthKey.split('-');
+    var year = +parts[0], month = +parts[1];
     var recent = 0, older = 0;
     items.forEach(function(item) {
-      var ds = item.date || item.source_date || '';
-      if (!ds) return;
-      // ds is "MM-DD" or "YYYY-MM-DD"
-      var d;
-      if (/^\d{4}-\d{2}-\d{2}$/.test(ds)) {
-        d = new Date(ds + 'T00:00:00');
-      } else if (/^\d{2}-\d{2}$/.test(ds)) {
-        d = new Date(now.getFullYear() + '-' + ds + 'T00:00:00');
-      } else return;
-      var ageDays = (now - d) / 86400000;
-      if (ageDays <= 14) recent++;
-      else if (ageDays <= 28) older++;
+      var pd = parseItemDate(item.date);
+      if (!pd) return;
+      if (pd.y !== year || pd.m !== month) return;
+      if (pd.d >= 15) recent++;
+      else older++;
     });
     return { recent: recent, older: older };
   }
 
-  // Render chips
+  // === 1. 全局收集所有可用月份（跨所有 cluster），决定当前月 ===
+  var allItemsFlat = [];
+  (clusters || []).forEach(function(cd) {
+    (cd.items || []).forEach(function(it) { allItemsFlat.push(it); });
+  });
+  var globalGroups = groupByMonth(allItemsFlat);
+  var globalMonths = globalGroups.map(function(g) { return g.month; });
+  var curMonth = window.mapCurrentMonth;
+  if (!curMonth || globalMonths.indexOf(curMonth) === -1) {
+    curMonth = globalMonths[0];
+    window.mapCurrentMonth = curMonth;
+  }
+  var curIdx = globalMonths.indexOf(curMonth);
+
+  var firstActive = window.mapActiveCluster || (clusters && clusters.length ? clusters[0].name : '帮写场景类');
+
+  // === 2. 渲染顶部分类 chips（计数=当月该分类卡片数）===
   var chipsHtml = '';
   chips.forEach(function(c) {
     var count = 0;
@@ -2742,8 +2791,11 @@ function renderDemandMapClusters(clusters) {
     if (clusters) {
       var cdata = clusters.find(function(x) { return x.name === c.name; });
       if (cdata) {
-        count = cdata.count || cdata.items.length;
-        var trend = trendForCluster(cdata.items);
+        var monthItems = (cdata.items || []).filter(function(it) {
+          return itemMonthKey(it) === curMonth;
+        });
+        count = monthItems.length;
+        var trend = trendForItemsInMonth(cdata.items || [], curMonth);
         if (trend.recent > trend.older + 1) {
           trendHtml = ' <span class="trend-up">↑' + trend.recent + '</span>';
         } else if (trend.older > trend.recent + 1) {
@@ -2758,7 +2810,7 @@ function renderDemandMapClusters(clusters) {
   });
   chipsEl.innerHTML = chipsHtml;
 
-  // Render cluster blocks
+  // === 3. 渲染各 cluster block ===
   var bodyHtml = '';
   var clusterDescs = {
     '帮写场景类': '聚焦帮写生成、风格控制、素材调用和写作协同。',
@@ -2769,56 +2821,33 @@ function renderDemandMapClusters(clusters) {
     '个性化类': '聚焦用户画像、知识库、风格自适应与人设规则。',
     '平台入口类': '聚焦 Agent 化、超级入口、跨平台服务跳转。'
   };
-  // Helper: parse item.date to { year, month, day } — accepts "MM-DD" or "YYYY-MM-DD"
-  function parseItemDate(ds) {
-    if (!ds) return null;
-    var curYear = now.getFullYear();
-    if (/^\d{4}-\d{2}-\d{2}$/.test(ds)) {
-      return { y: +ds.slice(0,4), m: +ds.slice(5,7), d: +ds.slice(8,10) };
-    }
-    if (/^\d{2}-\d{2}$/.test(ds)) {
-      return { y: curYear, m: +ds.slice(0,2), d: +ds.slice(3,5) };
-    }
-    return null;
-  }
-  // Helper: group items by YYYY-MM, return array sorted desc by month
-  function groupByMonth(items) {
-    var map = {};
-    items.forEach(function(item) {
-      var pd = parseItemDate(item.date);
-      if (!pd) return;
-      var key = pd.y + '-' + String(pd.m).padStart(2, '0');
-      if (!map[key]) map[key] = [];
-      map[key].push({ item: item, sortKey: pd.y * 10000 + pd.m * 100 + pd.d });
-    });
-    var keys = Object.keys(map).sort(function(a, b) { return b.localeCompare(a); });
-    return keys.map(function(k) {
-      // Sort items within month by date desc
-      map[k].sort(function(a, b) { return b.sortKey - a.sortKey; });
-      return { month: k, items: map[k].map(function(x) { return x.item; }) };
-    });
-  }
-  function monthLabel(monthKey) {
-    var parts = monthKey.split('-');
-    return parts[0] + '年' + (+parts[1]) + '月';
-  }
 
   chips.forEach(function(c) {
     var cdata = clusters ? clusters.find(function(x) { return x.name === c.name; }) : null;
-    var items = cdata ? cdata.items : [];
-    var highPri = items.filter(function(x) { return x.priority === '高'; }).length;
+    var allItems = cdata ? (cdata.items || []) : [];
+    // 当前月该 cluster 的数据
+    var monthItems = allItems.filter(function(it) { return itemMonthKey(it) === curMonth; });
+    // 按日期倒序
+    monthItems.sort(function(a, b) {
+      var pa = parseItemDate(a.date), pb = parseItemDate(b.date);
+      var sa = pa ? (pa.y * 10000 + pa.m * 100 + pa.d) : 0;
+      var sb = pb ? (pb.y * 10000 + pb.m * 100 + pb.d) : 0;
+      return sb - sa;
+    });
+    var highPri = monthItems.filter(function(x) { return x.priority === '高'; }).length;
     var isActive = c.name === firstActive;
+
     bodyHtml += '<div class="cluster-block" data-cluster="' + c.name + '" style="display:' + (isActive ? 'block' : 'none') + ';background:rgba(255,255,255,0.88);border-radius:24px;border:1px solid rgba(0,0,0,0.06);padding:28px;margin-bottom:18px;">' +
       '<div style="display:flex;justify-content:space-between;gap:18px;align-items:start;margin-bottom:20px;flex-wrap:wrap;">' +
         '<div>' +
-          '<div style="font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#888;margin-bottom:10px;">Function cluster</div>' +
+          '<div style="font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#888;margin-bottom:10px;">Function cluster · ' + monthLabel(curMonth) + '</div>' +
           '<h3 style="font-size:28px;font-weight:900;letter-spacing:-1px;margin-bottom:8px;">' + c.icon + ' ' + c.name + '</h3>' +
           '<p style="font-size:14px;color:#555;line-height:1.8;">' + (clusterDescs[c.name] || '') + '</p>' +
         '</div>' +
         '<div style="display:flex;gap:10px;flex-wrap:wrap;">' +
           '<div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">' +
-            '<div style="font-size:22px;font-weight:800;">' + items.length + '</div>' +
-            '<div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">累计机会</div>' +
+            '<div style="font-size:22px;font-weight:800;">' + monthItems.length + '</div>' +
+            '<div style="font-size:11px;font-weight:700;color:#888;margin-top:4px;">当月机会</div>' +
           '</div>' +
           '<div style="background:rgba(0,0,0,0.05);padding:12px 14px;border-radius:18px;min-width:100px;">' +
             '<div style="font-size:22px;font-weight:800;">' + highPri + '</div>' +
@@ -2827,22 +2856,11 @@ function renderDemandMapClusters(clusters) {
         '</div>' +
       '</div>';
 
-    if (items.length === 0) {
-      bodyHtml += '<div style="color:#888;font-size:14px;padding:20px 0;">暂无数据</div>';
+    if (monthItems.length === 0) {
+      bodyHtml += '<div style="color:#888;font-size:14px;padding:20px 0;">' + monthLabel(curMonth) + '暂无此类需求</div>';
     } else {
-      var monthGroups = groupByMonth(items);
-      var availableMonths = monthGroups.map(function(g) { return g.month; });
-      // Determine current month to show
-      var curMonth = window.mapCurrentMonth;
-      if (!curMonth || availableMonths.indexOf(curMonth) === -1) {
-        curMonth = availableMonths[0]; // newest month
-        window.mapCurrentMonth = curMonth;
-      }
-      var curIdx = availableMonths.indexOf(curMonth);
-      var curGroup = monthGroups[curIdx];
-
       bodyHtml += '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;">';
-      curGroup.items.forEach(function(item, i) {
+      monthItems.forEach(function(item, i) {
         bodyHtml += getDemandCardHtml(item, i);
       });
       bodyHtml += '</div>';
@@ -2851,51 +2869,36 @@ function renderDemandMapClusters(clusters) {
   });
   bodyEl.innerHTML = bodyHtml;
 
-  // === 更新顶部月份切换器（只算一次，基于全局所有数据的可用月份）===
-  var allItems = [];
-  (clusters || []).forEach(function(cd) {
-    (cd.items || []).forEach(function(it) { allItems.push(it); });
-  });
-  var globalGroups = groupByMonth(allItems);
-  var globalMonths = globalGroups.map(function(g) { return g.month; });
-  var globalCur = window.mapCurrentMonth;
-  if (!globalCur || globalMonths.indexOf(globalCur) === -1) {
-    globalCur = globalMonths[0];
-    window.mapCurrentMonth = globalCur;
-  }
-  var globalIdx = globalMonths.indexOf(globalCur);
-
-  // 计算当前激活 cluster 在该月的卡片数
+  // === 4. 更新顶部月份切换器 ===
   var activeCdata = clusters && clusters.find(function(x) { return x.name === firstActive; });
-  var activeItemsThisMonth = 0;
+  var activeMonthCount = 0;
   if (activeCdata) {
-    var activeGroups = groupByMonth(activeCdata.items || []);
-    var activeMatch = activeGroups.find(function(g) { return g.month === globalCur; });
-    activeItemsThisMonth = activeMatch ? activeMatch.items.length : 0;
+    activeMonthCount = (activeCdata.items || []).filter(function(it) {
+      return itemMonthKey(it) === curMonth;
+    }).length;
   }
-
   var curMonthEl = document.getElementById('currentMonth');
-  if (curMonthEl) curMonthEl.textContent = monthLabel(globalCur) + '（' + activeItemsThisMonth + '）';
+  if (curMonthEl) curMonthEl.textContent = monthLabel(curMonth) + '（' + activeMonthCount + '）';
   var prevBtn = document.getElementById('prevMonth');
   var nextBtn = document.getElementById('nextMonth');
   if (prevBtn) {
-    prevBtn.disabled = globalIdx >= globalMonths.length - 1;
+    prevBtn.disabled = curIdx >= globalMonths.length - 1;
     prevBtn.style.opacity = prevBtn.disabled ? '0.35' : '1';
     prevBtn.style.cursor = prevBtn.disabled ? 'not-allowed' : 'pointer';
     prevBtn.onclick = function() {
-      if (globalIdx < globalMonths.length - 1) {
-        window.mapCurrentMonth = globalMonths[globalIdx + 1];
+      if (curIdx < globalMonths.length - 1) {
+        window.mapCurrentMonth = globalMonths[curIdx + 1];
         renderDemandMapClusters(clusters);
       }
     };
   }
   if (nextBtn) {
-    nextBtn.disabled = globalIdx <= 0;
+    nextBtn.disabled = curIdx <= 0;
     nextBtn.style.opacity = nextBtn.disabled ? '0.35' : '1';
     nextBtn.style.cursor = nextBtn.disabled ? 'not-allowed' : 'pointer';
     nextBtn.onclick = function() {
-      if (globalIdx > 0) {
-        window.mapCurrentMonth = globalMonths[globalIdx - 1];
+      if (curIdx > 0) {
+        window.mapCurrentMonth = globalMonths[curIdx - 1];
         renderDemandMapClusters(clusters);
       }
     };
