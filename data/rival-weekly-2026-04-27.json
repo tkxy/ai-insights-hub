@@ -1,0 +1,181 @@
+{
+  "weekOf": "2026-04-27",
+  "title": "本周输入法竞品需求挖掘周报（2026-04-27 ~ 2026-05-03）",
+  "generatedAt": "2026-04-27 15:26",
+  "totalImages": 10,
+  "competitors": [
+    "iOS系统",
+    "typeless",
+    "其他",
+    "微信输入法",
+    "讯飞输入法"
+  ],
+  "overview": "本周共收集 10 张竞品截图，核心观察到AI对话界面能力的深度集成、语音输入交互的视觉化与趣味性，以及键盘区多功能入口的便捷化趋势。挖掘出 3 个值得搜狗输入法跟进的需求方向。",
+  "dimensions": [
+    {
+      "id": "point-1",
+      "label": "AI助理多模态能力集成",
+      "icon": "🔴",
+      "summary": "#AI助手 · #多模态 · #效率工具 · #跨应用",
+      "screenshots": [
+        {
+          "url": "assets/weekly/2026-04-27/mob4suf4jbab58.jpg",
+          "title": "AI聊天机器人界面",
+          "competitor": "其他",
+          "competitorName": "其他",
+          "category": "对话界面",
+          "caption": "AI聊天机器人展示文档总结、翻译等能力"
+        },
+        {
+          "url": "assets/weekly/2026-04-27/moa28cembqjw19.jpg",
+          "title": "对话界面质感参考",
+          "competitor": "其他",
+          "competitorName": "其他",
+          "category": "对话界面",
+          "caption": "对话界面展示AI图片生成功能"
+        },
+        {
+          "url": "assets/weekly/2026-04-27/moa28cadlp6xpu.jpg",
+          "title": "对话界面设计-3",
+          "competitor": "其他",
+          "competitorName": "其他",
+          "category": "对话界面",
+          "caption": "AI文本写作和图片生成入口"
+        }
+      ],
+      "what": "用户在聊天、写作时，需要频繁切换应用进行文档总结、翻译、文件处理或图片生成，打断思维流畅性，操作繁琐，降低效率。",
+      "insight": "在输入法AI助手界面，提供文档总结、多语言翻译、文件内容理解、图片生成等能力。MVP可先集成文档总结和翻译功能，通过AI助手入口进入，减少应用切换。",
+      "implication": "其他竞品AI聊天机器人界面展示了文档总结、翻译、文件处理和图片生成等多种能力，表明此方向的价值。",
+      "demand_mining": {
+        "title": "AI助理多模态能力集成",
+        "pain_point": "用户在聊天、写作时，需要频繁切换应用进行文档总结、翻译、文件处理或图片生成，打断思维流畅性，操作繁琐，降低效率。",
+        "opportunity": "在输入法AI助手界面，提供文档总结、多语言翻译、文件内容理解、图片生成等能力。MVP可先集成文档总结和翻译功能，通过AI助手入口进入，减少应用切换。",
+        "priority": "高",
+        "priority_en": "high",
+        "evidence": "其他竞品AI聊天机器人界面展示了文档总结、翻译、文件处理和图片生成等多种能力，表明此方向的价值。",
+        "tags": [
+          "AI助手",
+          "多模态",
+          "效率工具",
+          "跨应用"
+        ]
+      }
+    },
+    {
+      "id": "point-2",
+      "label": "语音输入可视化反馈与交互优化",
+      "icon": "🟡",
+      "summary": "#语音输入 · #视觉反馈 · #交互体验 · #动效",
+      "screenshots": [
+        {
+          "url": "assets/weekly/2026-04-27/moa28cembqjw19.jpg",
+          "title": "对话界面质感参考",
+          "competitor": "其他",
+          "competitorName": "其他",
+          "category": "对话界面",
+          "caption": "对话界面展示语音输入动态视觉"
+        },
+        {
+          "url": "assets/weekly/2026-04-27/moa28c54eozlkm.jpg",
+          "title": "对话界面设计-3",
+          "competitor": "其他",
+          "competitorName": "其他",
+          "category": "对话界面",
+          "caption": "“Voice Pulse”可视化语音助手"
+        },
+        {
+          "url": "assets/weekly/2026-04-27/moa27javarynkm.jpg",
+          "title": "有趣的交互动效",
+          "competitor": "其他",
+          "competitorName": "其他",
+          "category": "动效参考",
+          "caption": "有趣的交互动效提升用户体验"
+        },
+        {
+          "url": "assets/weekly/2026-04-27/moa1xlp6nkjmrl.jpg",
+          "title": "轮盘交互与信息相关性",
+          "competitor": "其他",
+          "competitorName": "其他",
+          "category": "交互创新",
+          "caption": "轮盘式交互可应用于语音功能"
+        },
+        {
+          "url": "assets/weekly/2026-04-27/mo8c9fs7k0x43q.png",
+          "title": "语音输入界面",
+          "competitor": "typeless",
+          "competitorName": "typeless",
+          "category": "语音",
+          "caption": "Typeless大尺寸语音输入按钮"
+        }
+      ],
+      "what": "用户在使用语音输入时，缺乏直观的视觉反馈，不确定系统是否准确识别或正在处理，导致输入体验不够流畅和安心。",
+      "insight": "优化语音输入界面，增加动态波纹、能量球或轮盘式视觉反馈，实时展示语音识别状态和内容相关性。MVP可从简单的语音波纹动效开始，提升用户感知和趣味性。",
+      "implication": "竞品对话界面展示语音输入时的动态视觉效果，Typeless输入法采用大尺寸语音按钮，提升体验。",
+      "demand_mining": {
+        "title": "语音输入可视化反馈与交互优化",
+        "pain_point": "用户在使用语音输入时，缺乏直观的视觉反馈，不确定系统是否准确识别或正在处理，导致输入体验不够流畅和安心。",
+        "opportunity": "优化语音输入界面，增加动态波纹、能量球或轮盘式视觉反馈，实时展示语音识别状态和内容相关性。MVP可从简单的语音波纹动效开始，提升用户感知和趣味性。",
+        "priority": "中",
+        "priority_en": "medium",
+        "evidence": "竞品对话界面展示语音输入时的动态视觉效果，Typeless输入法采用大尺寸语音按钮，提升体验。",
+        "tags": [
+          "语音输入",
+          "视觉反馈",
+          "交互体验",
+          "动效"
+        ]
+      }
+    },
+    {
+      "id": "point-3",
+      "label": "键盘区AI及多功能快捷入口",
+      "icon": "🔴",
+      "summary": "#键盘工具 · #AI帮写 · #快捷操作 · #效率提升",
+      "screenshots": [
+        {
+          "url": "assets/weekly/2026-04-27/mo8cfinn8x5bvh.png",
+          "title": "微信输入法键盘布局",
+          "competitor": "微信输入法",
+          "competitorName": "微信输入法",
+          "category": "键盘",
+          "caption": "微信输入法键盘集成AI、语音等入口"
+        },
+        {
+          "url": "assets/weekly/2026-04-27/mo8c9fs4qlvqzd.png",
+          "title": "讯飞输入法聊天界面",
+          "competitor": "讯飞输入法",
+          "competitorName": "讯飞输入法",
+          "category": "键盘",
+          "caption": "讯飞输入法提供一键粘贴提示"
+        },
+        {
+          "url": "assets/weekly/2026-04-27/mo8c9fpyfv81fx.png",
+          "title": "iOS 系统键盘聊天界面",
+          "competitor": "iOS系统",
+          "competitorName": "iOS系统",
+          "category": "键盘",
+          "caption": "iOS系统键盘提供语音、表情功能"
+        }
+      ],
+      "what": "用户在日常输入场景中，需要快速调用AI帮写、语音输入、表情等功能，但现有入口可能不够便捷，或需要多次点击才能触达。",
+      "insight": "在输入法键盘区上方或侧边，集成AI、语音、表情、快捷粘贴等常用功能的快捷入口，并提供自定义配置选项。MVP可将AI帮写、语音、表情入口固定在键盘工具栏。",
+      "implication": "微信输入法键盘集成AI、语音、表情等多种功能入口；讯飞输入法提供一键粘贴提示，均强化了快捷性。",
+      "demand_mining": {
+        "title": "键盘区AI及多功能快捷入口",
+        "pain_point": "用户在日常输入场景中，需要快速调用AI帮写、语音输入、表情等功能，但现有入口可能不够便捷，或需要多次点击才能触达。",
+        "opportunity": "在输入法键盘区上方或侧边，集成AI、语音、表情、快捷粘贴等常用功能的快捷入口，并提供自定义配置选项。MVP可将AI帮写、语音、表情入口固定在键盘工具栏。",
+        "priority": "高",
+        "priority_en": "high",
+        "evidence": "微信输入法键盘集成AI、语音、表情等多种功能入口；讯飞输入法提供一键粘贴提示，均强化了快捷性。",
+        "tags": [
+          "键盘工具",
+          "AI帮写",
+          "快捷操作",
+          "效率提升"
+        ]
+      }
+    }
+  ],
+  "highlights": [],
+  "actions": []
+}

@@ -3042,7 +3042,7 @@ function renderWeeklyCard(r) {
       '<span class="rreport-card-week">' + weekLabel + '</span>' +
       (r.generatedAt ? '<span class="rreport-card-week" style="margin-left:auto;">' + r.generatedAt + '</span>' : '') +
     '</div>' +
-    '<div class="rreport-card-title">' + escHtml(r.title || '本周输入法竞品截图深度分析') + '</div>' +
+    '<div class="rreport-card-title">' + escHtml(r.title || '本周输入法竞品需求挖掘周报') + '</div>' +
     (r.overview ? '<div class="rreport-card-overview">' + escHtml(r.overview) + '</div>' : '') +
     (thumbsHtml ? '<div class="rreport-card-thumbs">' + thumbsHtml + '</div>' : '') +
     '<div class="rreport-card-stats">' + stats.join('') + '</div>' +
@@ -3274,9 +3274,9 @@ function renderRivalReportDetail(data) {
     var analysis = '';
     if (dim.what || dim.insight || dim.implication) {
       analysis = '<div class="rweekly-analysis">' +
-        (dim.what ? '<div class="rweekly-block"><div class="rweekly-block-label">🔍 现象</div><div class="rweekly-block-text">' + escHtml(dim.what) + '</div></div>' : '') +
-        (dim.insight ? '<div class="rweekly-block insight"><div class="rweekly-block-label">💡 洞察</div><div class="rweekly-block-text">' + escHtml(dim.insight) + '</div></div>' : '') +
-        (dim.implication ? '<div class="rweekly-block action"><div class="rweekly-block-label">⚡ 对搜狗的启示</div><div class="rweekly-block-text">' + escHtml(dim.implication) + '</div></div>' : '') +
+        (dim.what ? '<div class="rweekly-block"><div class="rweekly-block-label">🧩 用户痛点</div><div class="rweekly-block-text">' + escHtml(dim.what) + '</div></div>' : '') +
+        (dim.insight ? '<div class="rweekly-block insight"><div class="rweekly-block-label">💡 产品机会</div><div class="rweekly-block-text">' + escHtml(dim.insight) + '</div></div>' : '') +
+        (dim.implication ? '<div class="rweekly-block action"><div class="rweekly-block-label">📎 证据来源</div><div class="rweekly-block-text">' + escHtml(dim.implication) + '</div></div>' : '') +
       '</div>';
     }
 
@@ -3319,7 +3319,7 @@ function renderRivalReportDetail(data) {
         '<span class="rweekly-badge">📊 竞品报告</span>' +
         '<span class="rweekly-week">' + (data.weekOf || '') + '</span>' +
       '</div>' +
-      '<div class="rweekly-title">' + escHtml(data.title || '本周输入法竞品截图深度分析') + '</div>' +
+      '<div class="rweekly-title">' + escHtml(data.title || '本周输入法竞品需求挖掘周报') + '</div>' +
       (metaBits.length ? '<div class="rweekly-meta">' + metaBits.join('') + '</div>' : '') +
       (data.overview ? '<div class="rweekly-overview">' + escHtml(data.overview) + '</div>' : '') +
       highlightsHtml +

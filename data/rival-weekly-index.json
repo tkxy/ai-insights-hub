@@ -1,6 +1,27 @@
 {
   "reports": [
     {
+      "weekOf": "2026-04-27",
+      "title": "本周输入法竞品需求挖掘周报（2026-04-27 ~ 2026-05-03）",
+      "generatedAt": "2026-04-27 15:26",
+      "totalImages": 10,
+      "competitors": [
+        "iOS系统",
+        "typeless",
+        "其他",
+        "微信输入法",
+        "讯飞输入法"
+      ],
+      "dimensionCount": 3,
+      "overview": "本周共收集 10 张竞品截图，核心观察到AI对话界面能力的深度集成、语音输入交互的视觉化与趣味性，以及键盘区多功能入口的便捷化趋势。挖掘出 3 个值得搜狗输入法跟进的需求方向。",
+      "thumbs": [
+        "assets/weekly/2026-04-27/mob4suf4jbab58.jpg",
+        "assets/weekly/2026-04-27/moa28cembqjw19.jpg",
+        "assets/weekly/2026-04-27/moa28cadlp6xpu.jpg",
+        "assets/weekly/2026-04-27/moa28c54eozlkm.jpg"
+      ]
+    },
+    {
       "weekOf": "2026-04-20",
       "title": "本周输入法竞品截图深度分析（2026-04-20 ~ 2026-04-26）",
       "generatedAt": "2026-04-23 17:00",
@@ -22,5 +43,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-04-23 17:00"
+  "updatedAt": "2026-04-27 15:26"
 }
