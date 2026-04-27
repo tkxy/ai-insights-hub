@@ -3042,17 +3042,9 @@ function setRivalView(view) {
   applyRivalView();
 }
 
-/* ===== 竞品报告入口开关（默认隐藏，避免误触发生成） ===== */
+/* ===== 竞品报告入口（默认显示） ===== */
 function isRivalReportEnabled() {
-  // 任一条件满足即显示按钮：URL ?report / ?report=1；hash 含 report；localStorage 解锁
-  try {
-    var qs = (location.search || '').toLowerCase();
-    if (qs.indexOf('report') !== -1) return true;
-    var h = (location.hash || '').toLowerCase();
-    if (h.indexOf('report') !== -1) return true;
-    if (localStorage.getItem('rivalReportUnlocked') === '1') return true;
-  } catch(e) {}
-  return false;
+  return true;
 }
 
 // 彩蛋：在竞品跟踪 tab 上连点 5 下解锁 / 再点 5 下关闭
@@ -3408,6 +3400,14 @@ function mergeDesignWeeklyReports(reports) {
     }
 
     if (stageInfo) {
+      // Sort items by source date descending (newest first)
+      mergedItems.sort(function(a, b) {
+        var aDate = (a.source || '').match(/(\d{4}-\d{2}-\d{2})/);
+        var bDate = (b.source || '').match(/(\d{4}-\d{2}-\d{2})/);
+        var aStr = aDate ? aDate[1] : '0000-00-00';
+        var bStr = bDate ? bDate[1] : '0000-00-00';
+        return bStr > aStr ? 1 : bStr < aStr ? -1 : 0;
+      });
       stageInfo.items = mergedItems;
       merged.stages[stageKey] = stageInfo;
     }
