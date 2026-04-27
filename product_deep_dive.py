@@ -17,6 +17,7 @@ import re
 import sys
 import json
 import time
+import base64
 import shutil
 import logging
 import hashlib
@@ -161,6 +162,11 @@ def extract_text(resp):
     try:
         return resp["candidates"][0]["content"]["parts"][0]["text"]
     except Exception:
+        try:
+            cand = resp.get("candidates", [{}])[0]
+            log.warning(f"extract_text 失败，candidate finishReason={cand.get('finishReason')}, 内容 parts={cand.get('content',{}).get('parts')}, promptFeedback={resp.get('promptFeedback')}")
+        except Exception:
+            log.warning(f"extract_text 彻底失败，resp keys={list(resp.keys()) if isinstance(resp, dict) else type(resp)}")
         return ""
 
 
@@ -311,97 +317,164 @@ def pick_product(screenshots):
 
 
 # ---------------------- Step 2: 联网搜料 + 生成报告 ----------------------
+def _load_screenshot_as_inline(s):
+    """把一张截图下载成 base64 inlineData，失败返回 None"""
+    src_url = s.get("url", "")
+    if not src_url:
+        return None
+    if src_url.startswith("/"):
+        src_url = H5_API_BASE + src_url
+    try:
+        raw = http_get_bytes(src_url)
+    except Exception as e:
+        log.warning(f"图片下载失败 {src_url}: {e}")
+        return None
+    # 从扩展名粗判 MIME，默认 jpeg
+    ext = (Path(s.get("filename") or src_url).suffix or ".jpg").lower().lstrip(".")
+    mime = {"jpg": "image/jpeg", "jpeg": "image/jpeg", "png": "image/png",
+            "webp": "image/webp", "gif": "image/gif"}.get(ext, "image/jpeg")
+    return {
+        "inlineData": {
+            "mimeType": mime,
+            "data": base64.b64encode(raw).decode("ascii"),
+        }
+    }
+
+
 def generate_report(pick):
-    """用 Gemini + Google Search Grounding 深度调研 + 生成报告"""
+    """用 Gemini multimodal 直接看截图 + Google Search 补公开资料"""
     product = pick["productName"]
     angle = pick.get("focusAngle", "")
 
-    # 截图简要摘要（给 Gemini 当分析素材）
-    shots_brief = []
-    for s in pick["screenshots"][:12]:
-        shots_brief.append({
-            "title": s.get("title", ""),
-            "category": s.get("categoryName", ""),
-            "summary": s.get("summary", ""),
-            "tags": s.get("tags", []),
-        })
+    # === Step A: 把截图图片本体（最多 8 张）准备成 inlineData ===
+    #  太多会撑爆 token（每张 ~300KB base64），8 张通常够讲清楚了
+    shots = pick["screenshots"][:8]
+    image_parts = []
+    shot_index_notes = []  # 给 prompt 里的"图 #N = XX"注脚
+    for i, s in enumerate(shots, 1):
+        part = _load_screenshot_as_inline(s)
+        if not part:
+            continue
+        image_parts.append(part)
+        # 给每张图配一个编号注脚（标题/分类），让模型能引用"图#N"
+        note = f"图 #{i}"
+        if s.get("title"):
+            note += f"｜{s['title']}"
+        if s.get("categoryName"):
+            note += f"（{s['categoryName']}）"
+        shot_index_notes.append(note)
 
-    system_inst = """你是腾讯搜狗输入法的资深设计师 + 竞品研究员。
-你的职责：
-- 读懂截图反映的产品能力
-- 用 Google 搜产品公开资料（官网、媒体评测、版本更新日志、视频 Demo）
-- 交叉验证，写一份**对搜狗输入法团队有借鉴价值**的产品深度报告
+    if not image_parts:
+        raise RuntimeError(f"{product} 没有成功加载任何截图，无法生成报告")
 
-写作要求：
-- 避免官话套话，说人话
-- 对搜狗的启示要**具体可落地**，不要"建议加强 XXX"这种废话
-- 核心交互创新要用"观察-推断-启示"三段式展开"""
+    log.info(f"{product} 直连 Gemini {len(image_parts)} 张截图做 multimodal 分析")
 
-    prompt = f"""请对「{product}」做一份产品深度报告，重点方向：{angle}
+    # === Step B: 反 AI 腔 system 指令 ===
+    system_inst = """你是一个挑剔、写过 10 年产品手记的竞品观察员，帮腾讯搜狗输入法团队读图。
 
-**本周池子里这个产品的截图摘要（供你分析用）**：
-{json.dumps(shots_brief, ensure_ascii=False, indent=2)}
+你的铁律（违反任何一条视为不合格）：
+1. 只写你在截图里**实际看到**的东西。画面没有的不要编。推测、脑补、"这体现了"式的玄学一律不写。
+2. 禁止使用下列词/句式：赋能、打造、构建、深化、无缝、生态、范式、护城河、升级体验、智能化、数字化、价值链、一体化、管家、金鱼、真正做到、实现了 XX 的可能性、为用户提供 XX 价值。
+3. 禁止写"可以借鉴"、"可以探索"、"可以考虑"、"建议加强 XX"这种没承诺的废话。要写就写"搜狗输入法键盘右上角工具栏，在第 3 个位置增加 XX 按钮"这种级别。
+4. 不要排比、不要三段式套话（"传统 XX 是…Grammarly 通过…从而…"）。就用短句和白话。
+5. observation 字段要像目击证人作证：画面左上角是什么、按钮上写了什么字、弹窗出现时覆盖了哪部分界面、配色是什么。用像素和文字说话。
+6. sogouTakeaway 字段必须同时含三要素：【哪个场景】+【搜狗输入法的哪个具体位置 / 模块】+【用户做什么动作会发生什么】。示例："在微信聊天输入时，搜狗候选词栏上方新增一条横行，用户选中自己刚输入的这段文字后，这条横行展示 3 个一键改写选项（更礼貌/更简洁/更有梗）"。
+7. 不要写思考过程、不要自言自语、不要输出 tool_code，直接给 JSON 结果。
 
-**请用 Google 搜索补充以下信息**：
-1. 产品官网 / 发布团队 / 核心定位
-2. 近期版本更新或媒体评测（优先 2026 年最近 3 个月）
-3. 用户口碑 / 差异化卖点
+每句话问自己：如果去掉这句，读者会少什么具体信息？如果少不了什么，就删掉。"""
 
-**输出 JSON（严格格式，不要任何 markdown 或多余文字）**：
+    shot_legend = "\n".join(shot_index_notes)
+
+    prompt = f"""你会看到 {len(image_parts)} 张「{product}」的产品截图。
+重点方向：{angle or "（无，自己判断）"}
+
+截图编号参照：
+{shot_legend}
+
+仔细看图，然后**直接输出 JSON**（不要思考过程、不要 tool_code、不要前言、不要 markdown 围栏）：
 {{
   "productName": "{product}",
   "productSlug": "{pick['productSlug']}",
-  "title": "标题（20字内，要有吸引力）",
-  "subtitle": "副标题（30字内，点出核心看点）",
+  "title": "10-18字标题，要有画面感，不要用'深度解读/全面解析'这类词",
+  "subtitle": "20-30字，点出这个产品最不一样的那一点",
   "overview": {{
-    "what": "一句话说这是什么产品",
-    "scene": "主打场景（3-5个关键词）",
-    "audience": "目标用户（一句话）",
-    "team": "开发团队 / 公司",
-    "launchDate": "首发时间或最新版本时间"
+    "what": "一句话，它是干嘛的，说人话",
+    "scene": "截图里出现的具体使用场景，3-5个词",
+    "audience": "看截图能推断的目标用户，一句话"
   }},
   "innovations": [
     {{
-      "title": "交互创新点标题（短）",
-      "icon": "相关 emoji 一个",
-      "observation": "观察到什么（从截图+资料中看到的具体现象）",
-      "insight": "为什么这样设计（设计意图推断）",
-      "sogouImplication": "对搜狗输入法的启示（具体可落地）",
-      "screenshotHint": "如果有截图对应，简短描述该看哪张（可留空）"
+      "title": "5-10字，名词短语，别用'XX 之道/XX 魔法'这类修辞",
+      "icon": "一个 emoji",
+      "screenshotRef": "图 #N（必填，指明这一条讲的是哪张或哪几张图）",
+      "observation": "照着截图讲：画面里有什么按钮/弹窗/文案/布局，位置在哪，写了什么字。60-120 字，只写看得见的。",
+      "sogouTakeaway": "按铁律第 6 条的三要素格式写，80-140 字。不含场景+位置+动作的直接扣掉。"
     }}
   ],
   "visualMotion": {{
-    "summary": "视觉/动效整体风格一句话",
-    "highlights": ["亮点1", "亮点2", "亮点3"]
+    "summary": "20字内，就事论事说视觉风格（如'大留白+单色强调+无阴影'）",
+    "highlights": ["截图里看到的具体视觉特征1", "特征2", "特征3"]
   }},
   "differentiation": {{
-    "summary": "它和同品类竞品最不一样的点",
-    "positioning": "在市场里占什么位（小众精品/大众旗舰/挑战者...）"
+    "summary": "30字内，和同类产品比，它少做了什么、多做了什么",
+    "positioning": "一句话市场定位"
   }},
   "sogouTakeaways": [
-    "对搜狗输入法团队的核心启示 1（具体，可落地）",
-    "对搜狗输入法团队的核心启示 2",
-    "对搜狗输入法团队的核心启示 3"
+    "给搜狗输入法的具体建议 1：场景+位置+动作三要素，一句就是一个改造工单。不要复述 innovations 里的 takeaway。",
+    "具体建议 2",
+    "具体建议 3"
   ]
 }}
 
-innovations 写 3-5 条，sogouTakeaways 写 3-5 条。语言简洁，避免废话。
+innovations 写 3-5 条，sogouTakeaways 写 3-5 条。整体 **说人话 > 全面**，宁缺毋滥。
 
-**极重要**：直接以左花括号开头输出 JSON 对象，不要任何前言、标题、副标题说明、markdown 代码块围栏或其他文字。整个响应 = 一个合法 JSON。"""
+再次提醒：整个响应 = 一个合法 JSON 对象，以 {{ 开头，以 }} 结尾，不要任何其他文本。"""
 
-    # 启用 Google Search Grounding
-    tools = [{"googleSearch": {}}]
-    contents = [{"parts": [{"text": prompt}]}]
-
-    resp = gemini_call(GEMINI_MODEL, contents, tools=tools, system=system_inst, timeout=240, max_tokens=8192)
+    # Stage A: 只看图 + 出 JSON（不开 grounding，避免 CoT 污染输出）
+    parts = [{"text": prompt}] + image_parts
+    contents = [{"parts": parts}]
+    resp = gemini_call(GEMINI_MODEL, contents, tools=None, system=system_inst, timeout=300, max_tokens=8192)
     text = extract_text(resp)
-    sources = extract_grounding(resp)
+    sources = []
 
     try:
         report = extract_json_block(text)
     except Exception as e:
         log.error(f"报告 JSON 解析失败（前 400 字符）: {text[:400]}")
         raise RuntimeError(f"报告生成失败: {e}")
+
+    # Stage B: grounding 小任务，只补 team / launchDate / 官方 sources
+    # 失败不影响主报告
+    try:
+        fact_prompt = f"""用 Google 搜索「{product}」这个产品，找出以下两个事实信息并以 JSON 返回：
+1. 开发团队 / 公司名（team）
+2. 首发时间或最新版本时间（launchDate，精确到月或年份）
+
+**直接输出 JSON，不要思考过程、不要 tool_code、不要 markdown 围栏**：
+{{
+  "team": "公司/团队名",
+  "launchDate": "2024-10 或 2024 年 10 月"
+}}"""
+        fact_contents = [{"parts": [{"text": fact_prompt}]}]
+        fact_resp = gemini_call(
+            GEMINI_MODEL, fact_contents,
+            tools=[{"googleSearch": {}}],
+            system="你是事实核查员，只用 Google 查证事实，直接输出 JSON，不要废话。",
+            timeout=90, max_tokens=1024,
+        )
+        fact_text = extract_text(fact_resp)
+        try:
+            fact = extract_json_block(fact_text)
+            ov = report.setdefault("overview", {})
+            if fact.get("team"):
+                ov["team"] = fact["team"]
+            if fact.get("launchDate"):
+                ov["launchDate"] = fact["launchDate"]
+        except Exception as je:
+            log.warning(f"{product} 事实查证 JSON 解析失败，跳过: {je}；原文前 200: {fact_text[:200]}")
+        sources = extract_grounding(fact_resp)
+    except Exception as e:
+        log.warning(f"{product} Stage B 事实查证失败（不影响主报告）: {e}")
 
     # 注入元数据
     today = datetime.now()
@@ -549,6 +622,14 @@ def main():
 
         # 2. 挑出所有符合门槛的竞品
         picks = pick_products(screenshots, min_count=min_shots, max_products=max_products)
+
+        # ONLY_PRODUCT=xxx 只跑匹配产品（验证用）
+        only = (os.environ.get("ONLY_PRODUCT") or "").strip().lower()
+        if only:
+            picks = [p for p in picks if only in (p.get("productName","") or "").lower() or only in (p.get("productSlug","") or "").lower()]
+            log.info(f"ONLY_PRODUCT={only} 命中 {len(picks)} 个：" + " | ".join(p["productName"] for p in picks))
+            if not picks:
+                raise RuntimeError(f"ONLY_PRODUCT={only} 没有匹配任何竞品")
 
         # 3. 逐个生成报告
         succeeded = []

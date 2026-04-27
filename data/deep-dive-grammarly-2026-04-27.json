@@ -1,107 +1,69 @@
 {
   "productName": "grammarly",
   "productSlug": "grammarly",
-  "title": "Grammarly：AI写作管家，记忆升级",
-  "subtitle": "从基础纠错到上下文理解，AI深度赋能文本创作",
+  "title": "英文写作智能辅助，多场景实时改写润色",
+  "subtitle": "实时检测输入内容，多场景提供写作、润色、改写和总结建议",
   "overview": {
-    "what": "Grammarly是一款AI驱动的写作助手，旨在帮助用户提升沟通效率和写作质量。",
-    "scene": "邮件撰写,文档编辑,社交媒体,学术写作,跨平台沟通",
-    "audience": "学生、职场人士、内容创作者以及任何需要提升书面沟通能力的用户。",
-    "team": "Superhuman Platform Inc. (原Grammarly Inc.)",
-    "launchDate": "2009年7月1日 (Grammarly首次发布); 2025年10月29日 (公司更名为Superhuman并推出Superhuman Suite)"
+    "what": "一个AI写作助手，能在用户输入或选中文字时，提供语法纠错、文本润色、改写和总结等功能。",
+    "scene": "文档编辑、网页阅读、文本输入框",
+    "audience": "需要提高英文写作效率和准确度的个人用户及专业人士",
+    "team": "Grammarly, Inc. (现为 Superhuman Platform Inc.)",
+    "launchDate": "2009 年 7 月"
   },
   "innovations": [
     {
-      "title": "AI记忆：从金鱼到管家",
-      "icon": "🧠",
-      "observation": "Grammarly的AI助手能够理解会话上下文，避免重复背景信息，实现更流畅的对话体验。例如，在撰写长篇文档时，AI可以记住之前的讨论点和风格要求，在后续修改中保持一致性，而无需用户反复提醒。",
-      "insight": "传统AI助手往往是“无状态”的，每次交互都从零开始，导致用户需要不断提供重复信息。Grammarly通过引入“记忆”机制，让AI能够积累和利用上下文信息，从而提供更智能、更个性化、更像人类助手的体验，极大地提升了用户效率和满意度。",
-      "sogouImplication": "搜狗输入法可以探索在AI对话场景中引入“上下文记忆”功能。例如，在用户与AI助手的多轮对话中，记忆用户偏好、常用表达、对话主题，甚至用户之前输入的特定信息。这可以应用于智能回复、长文本生成、甚至个性化表情推荐等场景，让输入法AI更懂用户。",
-      "screenshotHint": "AI记忆升级实践：从金鱼到管家"
-    },
-    {
-      "title": "AI辅助文本处理：选中即服务",
+      "title": "实时文本校对与修正",
       "icon": "✍️",
-      "observation": "用户选中文字后，Grammarly能立即提供AI润色或总结选项。",
-      "insight": "这种“选中即服务”的交互模式，将AI能力无缝融入用户的编辑流程。它降低了用户使用AI的门槛，无需离开当前编辑环境，也无需复杂的指令，直接针对具体内容提供即时帮助，将AI从一个独立工具变为一个高效的“辅助功能”。",
-      "sogouImplication": "搜狗输入法可在用户选中输入框内文字后，在候选词/工具栏区域弹出“AI润色”、“AI总结”、“AI改写”等快捷操作。这能让用户在不切换应用的情况下，快速利用AI能力优化已输入文本，提升写作效率，尤其适用于社交媒体、邮件等场景的短文本处理。",
-      "screenshotHint": "AI 辅助文本处理"
+      "screenshotRef": "图 #3, 图 #4",
+      "observation": "在文本编辑区，当用户输入文本（如“It's a hard time.wondreful day”）后，页面下方会弹出一个黑底提示框，显示“Pro suggestion - Free sample”。框内直接展示修正后的文本，如“Corrected punctuation and capitalization”，并用下划线高亮改动部分。用户可以选择“Accept”或“Accept all changes to your paragraph”。右侧固定侧边栏会显示更详细的改写版本，如“Cleaned up”、“Better flow”、“More concise”三个标签页。",
+      "sogouTakeaway": "在用户输入英文文本时，搜狗输入法候选词栏下方新增一行提示，当该行文本存在语法或拼写错误时，提示“有修改建议”。用户点击该提示，输入法浮窗内展示修正后的文本，并提供“接受”按钮，用户点击“接受”则替换原文。"
     },
     {
-      "title": "多维度文本润色与风格改写",
-      "icon": "🎨",
-      "observation": "Grammarly不仅提供基础的语法纠错，还能根据用户需求生成不同风格的版本，并提供清晰度、参与度、交付效果等多维度建议。",
-      "insight": "这表明Grammarly深入理解了写作不仅仅是“正确”，更是“有效”和“有风格”。通过提供多维度的优化建议和风格改写能力，它帮助用户超越基础错误，实现更高级的沟通目标，满足了用户在不同场景下对表达效果的精细化需求。",
-      "sogouImplication": "搜狗输入法可升级其AI改写功能，不仅仅是同义句替换，而是提供多种“风格”选项，如“更正式”、“更活泼”、“更简洁”、“更具说服力”等。同时，针对不同场景（如商务邮件、日常聊天），可预设或推荐不同的改写风格，帮助用户一键切换表达，提升沟通效率和表达力。",
-      "screenshotHint": "AI 写作助手：文本润色与改写"
+      "title": "多维度文本改写选项",
+      "icon": "🔄",
+      "screenshotRef": "图 #3",
+      "observation": "在文本编辑时，下方黑色提示框的顶部有“Improve”、“Rephrase”、“Translate”等按钮。当用户选择“Rephrase”或点击“Try different ways to write it”，右侧侧边栏会展示“Cleaned up”、“Better flow”、“More concise”等标签页，每个标签页下提供一个改写后的文本版本，并带有“Insert”按钮，用户点击可将改写内容插入原文。",
+      "sogouTakeaway": "在微信聊天输入时，搜狗输入法键盘右上角工具栏，在第 3 个位置增加“改写”按钮。用户选中自己刚输入的这段英文文字后，点击“改写”按钮，输入法浮窗中弹出“更简洁”、“更礼貌”、“更有趣”等选项，用户点击其中一个选项，浮窗展示改写后的文本，用户点击“插入”则替换原文。"
     },
     {
-      "title": "实时上下文感知与跨平台集成",
-      "icon": "🌐",
-      "observation": "Grammarly作为AI通信助手，可实时分析文本类型（如法律合同、Slack消息），并据此调整建议。它以插件形式无缝集成到浏览器、桌面应用和移动设备上的100多万个应用和网站中。",
-      "insight": "AI的真正价值在于其无处不在的辅助能力。Grammarly通过深度的上下文感知和广泛的平台集成，确保AI辅助在用户最需要的地方即时可用，消除了在不同工具间切换的摩擦，让AI成为用户工作流中“隐形”但不可或缺的一部分。",
-      "sogouImplication": "搜狗输入法应进一步强化其跨应用、跨平台的上下文感知能力。例如，识别用户当前正在撰写的文档类型（邮件、聊天、代码），并据此调整输入法的功能和推荐。同时，加强与主流办公应用、社交应用的深度集成，确保AI功能在任何输入场景下都能无缝触发，提供更精准的输入和写作辅助。",
-      "screenshotHint": "AI文本润色与纠错"
+      "title": "网页内容即时总结与改进",
+      "icon": "📰",
+      "screenshotRef": "图 #2",
+      "observation": "在网页阅读界面，用户选中一段英文文本（如新闻标题），文本上方出现一个小的“G”图标。点击该图标后，屏幕右侧弹出一个半透明的侧边栏。侧边栏顶部显示“Ask about selected text”，内容区域列出“Improve this text”（铅笔图标）和“Summarize this text”（纸张图标）两个选项，供用户对选中的文本进行操作。",
+      "sogouTakeaway": "在浏览器内阅读英文网页时，搜狗输入法在用户选中一段英文文字后，在文字上方浮现一个“G”图标。用户点击该图标，输入法浮窗中弹出“总结摘要”和“改进文本”选项。用户点击“总结摘要”，浮窗内显示该段文字的精简版本，点击“插入”可将总结内容复制到剪贴板。"
+    },
+    {
+      "title": "AI对话上下文记忆",
+      "icon": "🧠",
+      "screenshotRef": "图 #1",
+      "observation": "在WPS文档中，右侧Grammarly面板标题为“我‘帮’你晶出来的这一段内容”，下方文字描述了AI对当前文本的理解能力。它提到AI能够识别“软件（可能是 WPS AI/金山相关）的提示信息”和“零散的数据或界面文字”，并解释了其无法对“文章结构、主题、论点”进行分析的原因是“没有文章正文，只有系统提示和几个数字”。左侧文档内容显示“核心痛点：每次会话从零开始，用户被迫重复背景信息”，并提出“第一次升级：建立基础记忆系统”。",
+      "sogouTakeaway": "在搜狗输入法AI对话窗口中，当用户与AI进行多轮交流时，搜狗输入法AI模型可以记住对话的上下文信息。例如，用户在输入“帮我写一份产品需求文档”后，接着输入“我的：请问该需求是什么产品？”时，AI助手能基于前一句理解后一句的语境，不需要用户重复说明背景信息。"
     }
   ],
   "visualMotion": {
-    "summary": "界面设计简洁、直观，AI建议以突出显示和气泡提示为主，动效流畅不干扰。",
+    "summary": "简洁布局+深色背景强调+圆角卡片",
     "highlights": [
-      "实时高亮错误与建议",
-      "简洁的悬浮气泡解释",
-      "一键采纳/忽略的交互",
-      "AI生成文本的平滑呈现"
+      "深色背景浮窗强调",
+      "圆角边框设计",
+      "图标简洁明了",
+      "少量绿色高亮提示"
     ]
   },
   "differentiation": {
-    "summary": "Grammarly最独特之处在于其深厚的语言学和AI技术积累，能够提供从基础纠错到高级写作风格优化、再到上下文感知和记忆的全面AI写作辅助。",
-    "positioning": "AI写作辅助领域的领导者和大众旗舰产品，正向AI原生生产力平台演进。"
+    "summary": "专注于实时英文文本辅助，多场景深度整合，提供丰富改写建议。",
+    "positioning": "个人和专业英文写作的实时智能辅助工具。"
   },
   "sogouTakeaways": [
-    "深入挖掘用户写作场景，构建“记忆”能力：研究不同场景下用户对输入法AI记忆的需求，例如在邮件回复中记住发件人、主题和之前的沟通内容，在聊天中记住人物关系和对话风格。避免AI每次都是“金鱼记忆”，让AI从“工具”升级为“管家”。",
-    "强化“选中即服务”的AI入口：在搜狗输入法中，当用户选中一段文字时，除了传统的复制粘贴，应立即提供“AI润色”、“AI改写”、“AI总结”等智能选项，并允许用户自定义这些快捷操作，降低AI功能的使用门槛。",
-    "拓展多维度写作风格改写：除了纠错和语法建议，引入“语气调整”、“长度缩减/扩展”、“专业化/口语化”等多种AI改写维度，满足用户在不同沟通场景下的精细化表达需求。可结合用户画像和历史输入习惯，智能推荐改写风格。",
-    "深化跨平台上下文感知与集成：提升输入法对当前应用、文档类型、用户意图的理解能力。例如，在代码编辑器中侧重代码规范检查，在社交应用中侧重表情和流行语推荐，在长文档写作中提供结构化建议，真正实现AI无处不在、无缝衔接的辅助体验。",
-    "探索AI写作过程的可解释性与学习性：Grammarly不仅给出修改建议，还会解释原因。搜狗输入法也可在AI功能中加入简要解释，帮助用户理解AI的逻辑，甚至通过用户采纳/拒绝学习用户偏好，实现更个性化的AI辅助。"
+    "在搜狗输入法AI对话窗口中，用户可以对AI生成的回复进行“更礼貌”、“更简洁”、“更正式”等一键改写，且能实时预览改写效果。",
+    "在搜狗输入法英文输入模式下，当用户输入长句时，输入法候选词栏下方可以显示“Pro suggestion”提示，点击后在浮窗中提供该长句的语法修正和风格优化建议。",
+    "在搜狗输入法工具栏上，新增一个“AI助手”入口。用户点击后，可以粘贴任意文本，选择“总结”、“翻译”、“润色”等功能，AI助手直接在浮窗中给出处理结果。",
+    "在搜狗输入法设置中，新增“AI记忆”开关，用户开启后，AI助手能记住用户在输入法中进行过的常用修改偏好和写作风格，并在后续输入中自动应用。"
   ],
-  "generatedAt": "2026-04-27 10:06",
+  "generatedAt": "2026-04-27 15:11",
   "dateOf": "2026-04-27",
   "reportType": "deep-dive",
   "selectionReason": "本周共 4 张截图，关注度较高",
-  "sources": [
-    {
-      "title": "wikipedia.org",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENHE5awnrGBhPe3PcG6cO5xq2sO1IakjxejEzaatsmFH6S5Din4r-zkHKd0SZ7om_HIpObOBHisiwWTj920xz5kkYFQolMFkFMLnKaLI7p1N21I56JGowtkhu2mLhliCVNTw=="
-    },
-    {
-      "title": "aitoolsdevpro.com",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFItg-JPY0mE_v2XsxwTs7zuNSlWiplopHj1NJ13tRxxUjU1s92J4r9t_MYNhv45nSnGw9lRcQddcy9Vd7nTbQNxzRO8e9JaHLtNbR2sTA-xpQODxsufT7KoQRtYvYvQy0_KQMbcHRNsHFjOtlHg=="
-    },
-    {
-      "title": "masterblogging.com",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWYUTpAY1HWm2lIbmp4SCvuIUAtTwwoUIurZWtbWP0dIl2Q7br9OM_9BrZ5ORKm2ph12RyVM3HTRoNwu-d980dT6Xj2-dwlNHIpPtSY3kRZLaKxo5i3q017W6nh5062G6cQuoNGL3RnN26zSA="
-    },
-    {
-      "title": "grammarist.com",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0STrBxVb6zuV-RpjXai-GWmIschuCNA4IrExJgPnVM5IUuT0u-DHT7yFmVav2u9_8ket61VZbtsAxsiZIUdAw1NxiDCgzYWo31FktJm7dqcOkehUHUBasmXpJ5ttg_ikjjhr79oLjAKa36cO_Knt26g=="
-    },
-    {
-      "title": "catherinenikkel.com",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTdJuwxpwLpEbZVEgyJdC2e7ZlH3mUvi8ZaytRotp9XZbMxXl6XpmNHAD4oCcZup_H1YxHnAT70npLb5SDmdirixr4TYaBYnydCy1FWhzet6vuI3wEcMa9FDu999GppbT9qI3p-o1jj8tvrm0n"
-    },
-    {
-      "title": "deepterm.tech",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFduzwlidoGbyglOX_-V0qrPQFxb4sTQiPxJAWXAL3An_tlNaHjLLv5J15O6bWESLju6zqwAv7zoTNJqHVWWsBjNqsPX94LT8nIq4D4ne35cI2v-74mMm98wOhUnfEdShR0MFJtMIkx41agAOmDIb7EZp15r9CJ6De7tIf_wttokXEvdNsEgdmUq5SIiizU2P0XM7wZcxI="
-    },
-    {
-      "title": "grammarly.com",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGIGjNF0lgqSqKNVAgIQdU1wFSztkijxKi2QxS4r9lvx0JARdIiyTFHUBVB9ISXaaRNlkJOLqRYsTKrdpTBeJeOu4LvqarlAO62_dTc12AlDqK4VVEKfLeNwhY="
-    },
-    {
-      "title": "automateed.com",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqS-emFy5P7SMPWXm4_JtzuCs382dGMnqwilJO0rI0fcIDD8BxpB7yDYqfyVtSeu1gEF3pR4DjN0MJXwYXg10jxrgSCJ12W8qmLvTLQ8BUbZCXnbYDzXz7xaAlSokUDLzYoGVChl3XS8z43tFuHLR1elzvIzA1e9t1_E_xPZaZLlCGRe4phWKp"
-    }
-  ],
+  "sources": [],
   "screenshots": [
     {
       "url": "assets/deep-dive/grammarly-2026-04-27/mocslpqr28bi8h.png",

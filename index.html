@@ -3148,14 +3148,17 @@ function renderDeepDiveDetail(data) {
   var screenshots = data.screenshots || [];
 
   var innovationsHtml = innovations.map(function(ino, idx) {
+    var sogou = ino.sogouTakeaway || ino.sogouImplication || '';
+    var refLabel = ino.screenshotRef ? '<span style="display:inline-block;margin-left:8px;font-size:11px;color:#888;font-weight:500;background:#f2f2ef;padding:2px 7px;border-radius:4px;">' + escHtml(ino.screenshotRef) + '</span>' : '';
     return '<div class="rweekly-dim">' +
       '<div class="rweekly-dim-head">' +
         '<span class="rweekly-dim-icon">' + (ino.icon || '💡') + '</span>' +
         '<span class="rweekly-dim-label">' + escHtml(ino.title || ('创新点 ' + (idx+1))) + '</span>' +
+        refLabel +
       '</div>' +
-      (ino.observation ? '<div class="rweekly-dim-block"><div class="rweekly-dim-block-label">观察</div><div class="rweekly-dim-block-text">' + escHtml(ino.observation) + '</div></div>' : '') +
+      (ino.observation ? '<div class="rweekly-dim-block"><div class="rweekly-dim-block-label">画面观察</div><div class="rweekly-dim-block-text">' + escHtml(ino.observation) + '</div></div>' : '') +
       (ino.insight ? '<div class="rweekly-dim-block"><div class="rweekly-dim-block-label">设计意图</div><div class="rweekly-dim-block-text">' + escHtml(ino.insight) + '</div></div>' : '') +
-      (ino.sogouImplication ? '<div class="rweekly-dim-block" style="background:#fff7e6;padding:12px 14px;border-radius:10px;margin-top:8px;"><div class="rweekly-dim-block-label" style="color:#c87b1a;">对搜狗的启示</div><div class="rweekly-dim-block-text">' + escHtml(ino.sogouImplication) + '</div></div>' : '') +
+      (sogou ? '<div class="rweekly-dim-block" style="background:#fff7e6;padding:12px 14px;border-radius:10px;margin-top:8px;"><div class="rweekly-dim-block-label" style="color:#c87b1a;">对搜狗的落地动作</div><div class="rweekly-dim-block-text">' + escHtml(sogou) + '</div></div>' : '') +
     '</div>';
   }).join('');
 

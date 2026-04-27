@@ -1,34 +1,13 @@
 {
   "reports": [
     {
-      "id": "p-d5dc74-2026-04-27",
-      "slug": "p-d5dc74",
-      "dateOf": "2026-04-27",
-      "productName": "秘塔回响",
-      "title": "秘塔回响：AI语音输入新范式",
-      "subtitle": "语音转写+AI润色+指令，效率工具新标杆",
-      "generatedAt": "2026-04-27 10:06",
-      "selectionReason": "本周共 2 张截图，关注度较高",
-      "thumbs": [
-        "assets/deep-dive/p-d5dc74-2026-04-27/mocpd924qz1qyt.jpg",
-        "assets/deep-dive/p-d5dc74-2026-04-27/mocpd8ttronscw.jpg"
-      ],
-      "totalImages": 2,
-      "innovationCount": 4,
-      "highlights": [
-        "AI文本润色多模式",
-        "语音指令与功能集成",
-        "后台持续聆听模式"
-      ]
-    },
-    {
       "id": "grammarly-2026-04-27",
       "slug": "grammarly",
       "dateOf": "2026-04-27",
       "productName": "grammarly",
-      "title": "Grammarly：AI写作管家，记忆升级",
-      "subtitle": "从基础纠错到上下文理解，AI深度赋能文本创作",
-      "generatedAt": "2026-04-27 10:06",
+      "title": "英文写作智能辅助，多场景实时改写润色",
+      "subtitle": "实时检测输入内容，多场景提供写作、润色、改写和总结建议",
+      "generatedAt": "2026-04-27 15:11",
       "selectionReason": "本周共 4 张截图，关注度较高",
       "thumbs": [
         "assets/deep-dive/grammarly-2026-04-27/mocslpqr28bi8h.png",
@@ -39,11 +18,11 @@
       "totalImages": 4,
       "innovationCount": 4,
       "highlights": [
-        "AI记忆：从金鱼到管家",
-        "AI辅助文本处理：选中即服务",
-        "多维度文本润色与风格改写"
+        "实时文本校对与修正",
+        "多维度文本改写选项",
+        "网页内容即时总结与改进"
       ]
     }
   ],
-  "updatedAt": "2026-04-27 10:06"
+  "updatedAt": "2026-04-27 15:11"
 }
