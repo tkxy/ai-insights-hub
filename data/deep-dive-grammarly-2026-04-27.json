@@ -1,0 +1,131 @@
+{
+  "productName": "grammarly",
+  "productSlug": "grammarly",
+  "title": "Grammarly：AI写作管家，记忆升级",
+  "subtitle": "从基础纠错到上下文理解，AI深度赋能文本创作",
+  "overview": {
+    "what": "Grammarly是一款AI驱动的写作助手，旨在帮助用户提升沟通效率和写作质量。",
+    "scene": "邮件撰写,文档编辑,社交媒体,学术写作,跨平台沟通",
+    "audience": "学生、职场人士、内容创作者以及任何需要提升书面沟通能力的用户。",
+    "team": "Superhuman Platform Inc. (原Grammarly Inc.)",
+    "launchDate": "2009年7月1日 (Grammarly首次发布); 2025年10月29日 (公司更名为Superhuman并推出Superhuman Suite)"
+  },
+  "innovations": [
+    {
+      "title": "AI记忆：从金鱼到管家",
+      "icon": "🧠",
+      "observation": "Grammarly的AI助手能够理解会话上下文，避免重复背景信息，实现更流畅的对话体验。例如，在撰写长篇文档时，AI可以记住之前的讨论点和风格要求，在后续修改中保持一致性，而无需用户反复提醒。",
+      "insight": "传统AI助手往往是“无状态”的，每次交互都从零开始，导致用户需要不断提供重复信息。Grammarly通过引入“记忆”机制，让AI能够积累和利用上下文信息，从而提供更智能、更个性化、更像人类助手的体验，极大地提升了用户效率和满意度。",
+      "sogouImplication": "搜狗输入法可以探索在AI对话场景中引入“上下文记忆”功能。例如，在用户与AI助手的多轮对话中，记忆用户偏好、常用表达、对话主题，甚至用户之前输入的特定信息。这可以应用于智能回复、长文本生成、甚至个性化表情推荐等场景，让输入法AI更懂用户。",
+      "screenshotHint": "AI记忆升级实践：从金鱼到管家"
+    },
+    {
+      "title": "AI辅助文本处理：选中即服务",
+      "icon": "✍️",
+      "observation": "用户选中文字后，Grammarly能立即提供AI润色或总结选项。",
+      "insight": "这种“选中即服务”的交互模式，将AI能力无缝融入用户的编辑流程。它降低了用户使用AI的门槛，无需离开当前编辑环境，也无需复杂的指令，直接针对具体内容提供即时帮助，将AI从一个独立工具变为一个高效的“辅助功能”。",
+      "sogouImplication": "搜狗输入法可在用户选中输入框内文字后，在候选词/工具栏区域弹出“AI润色”、“AI总结”、“AI改写”等快捷操作。这能让用户在不切换应用的情况下，快速利用AI能力优化已输入文本，提升写作效率，尤其适用于社交媒体、邮件等场景的短文本处理。",
+      "screenshotHint": "AI 辅助文本处理"
+    },
+    {
+      "title": "多维度文本润色与风格改写",
+      "icon": "🎨",
+      "observation": "Grammarly不仅提供基础的语法纠错，还能根据用户需求生成不同风格的版本，并提供清晰度、参与度、交付效果等多维度建议。",
+      "insight": "这表明Grammarly深入理解了写作不仅仅是“正确”，更是“有效”和“有风格”。通过提供多维度的优化建议和风格改写能力，它帮助用户超越基础错误，实现更高级的沟通目标，满足了用户在不同场景下对表达效果的精细化需求。",
+      "sogouImplication": "搜狗输入法可升级其AI改写功能，不仅仅是同义句替换，而是提供多种“风格”选项，如“更正式”、“更活泼”、“更简洁”、“更具说服力”等。同时，针对不同场景（如商务邮件、日常聊天），可预设或推荐不同的改写风格，帮助用户一键切换表达，提升沟通效率和表达力。",
+      "screenshotHint": "AI 写作助手：文本润色与改写"
+    },
+    {
+      "title": "实时上下文感知与跨平台集成",
+      "icon": "🌐",
+      "observation": "Grammarly作为AI通信助手，可实时分析文本类型（如法律合同、Slack消息），并据此调整建议。它以插件形式无缝集成到浏览器、桌面应用和移动设备上的100多万个应用和网站中。",
+      "insight": "AI的真正价值在于其无处不在的辅助能力。Grammarly通过深度的上下文感知和广泛的平台集成，确保AI辅助在用户最需要的地方即时可用，消除了在不同工具间切换的摩擦，让AI成为用户工作流中“隐形”但不可或缺的一部分。",
+      "sogouImplication": "搜狗输入法应进一步强化其跨应用、跨平台的上下文感知能力。例如，识别用户当前正在撰写的文档类型（邮件、聊天、代码），并据此调整输入法的功能和推荐。同时，加强与主流办公应用、社交应用的深度集成，确保AI功能在任何输入场景下都能无缝触发，提供更精准的输入和写作辅助。",
+      "screenshotHint": "AI文本润色与纠错"
+    }
+  ],
+  "visualMotion": {
+    "summary": "界面设计简洁、直观，AI建议以突出显示和气泡提示为主，动效流畅不干扰。",
+    "highlights": [
+      "实时高亮错误与建议",
+      "简洁的悬浮气泡解释",
+      "一键采纳/忽略的交互",
+      "AI生成文本的平滑呈现"
+    ]
+  },
+  "differentiation": {
+    "summary": "Grammarly最独特之处在于其深厚的语言学和AI技术积累，能够提供从基础纠错到高级写作风格优化、再到上下文感知和记忆的全面AI写作辅助。",
+    "positioning": "AI写作辅助领域的领导者和大众旗舰产品，正向AI原生生产力平台演进。"
+  },
+  "sogouTakeaways": [
+    "深入挖掘用户写作场景，构建“记忆”能力：研究不同场景下用户对输入法AI记忆的需求，例如在邮件回复中记住发件人、主题和之前的沟通内容，在聊天中记住人物关系和对话风格。避免AI每次都是“金鱼记忆”，让AI从“工具”升级为“管家”。",
+    "强化“选中即服务”的AI入口：在搜狗输入法中，当用户选中一段文字时，除了传统的复制粘贴，应立即提供“AI润色”、“AI改写”、“AI总结”等智能选项，并允许用户自定义这些快捷操作，降低AI功能的使用门槛。",
+    "拓展多维度写作风格改写：除了纠错和语法建议，引入“语气调整”、“长度缩减/扩展”、“专业化/口语化”等多种AI改写维度，满足用户在不同沟通场景下的精细化表达需求。可结合用户画像和历史输入习惯，智能推荐改写风格。",
+    "深化跨平台上下文感知与集成：提升输入法对当前应用、文档类型、用户意图的理解能力。例如，在代码编辑器中侧重代码规范检查，在社交应用中侧重表情和流行语推荐，在长文档写作中提供结构化建议，真正实现AI无处不在、无缝衔接的辅助体验。",
+    "探索AI写作过程的可解释性与学习性：Grammarly不仅给出修改建议，还会解释原因。搜狗输入法也可在AI功能中加入简要解释，帮助用户理解AI的逻辑，甚至通过用户采纳/拒绝学习用户偏好，实现更个性化的AI辅助。"
+  ],
+  "generatedAt": "2026-04-27 10:06",
+  "dateOf": "2026-04-27",
+  "reportType": "deep-dive",
+  "selectionReason": "本周共 4 张截图，关注度较高",
+  "sources": [
+    {
+      "title": "wikipedia.org",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENHE5awnrGBhPe3PcG6cO5xq2sO1IakjxejEzaatsmFH6S5Din4r-zkHKd0SZ7om_HIpObOBHisiwWTj920xz5kkYFQolMFkFMLnKaLI7p1N21I56JGowtkhu2mLhliCVNTw=="
+    },
+    {
+      "title": "aitoolsdevpro.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFItg-JPY0mE_v2XsxwTs7zuNSlWiplopHj1NJ13tRxxUjU1s92J4r9t_MYNhv45nSnGw9lRcQddcy9Vd7nTbQNxzRO8e9JaHLtNbR2sTA-xpQODxsufT7KoQRtYvYvQy0_KQMbcHRNsHFjOtlHg=="
+    },
+    {
+      "title": "masterblogging.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWYUTpAY1HWm2lIbmp4SCvuIUAtTwwoUIurZWtbWP0dIl2Q7br9OM_9BrZ5ORKm2ph12RyVM3HTRoNwu-d980dT6Xj2-dwlNHIpPtSY3kRZLaKxo5i3q017W6nh5062G6cQuoNGL3RnN26zSA="
+    },
+    {
+      "title": "grammarist.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0STrBxVb6zuV-RpjXai-GWmIschuCNA4IrExJgPnVM5IUuT0u-DHT7yFmVav2u9_8ket61VZbtsAxsiZIUdAw1NxiDCgzYWo31FktJm7dqcOkehUHUBasmXpJ5ttg_ikjjhr79oLjAKa36cO_Knt26g=="
+    },
+    {
+      "title": "catherinenikkel.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTdJuwxpwLpEbZVEgyJdC2e7ZlH3mUvi8ZaytRotp9XZbMxXl6XpmNHAD4oCcZup_H1YxHnAT70npLb5SDmdirixr4TYaBYnydCy1FWhzet6vuI3wEcMa9FDu999GppbT9qI3p-o1jj8tvrm0n"
+    },
+    {
+      "title": "deepterm.tech",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFduzwlidoGbyglOX_-V0qrPQFxb4sTQiPxJAWXAL3An_tlNaHjLLv5J15O6bWESLju6zqwAv7zoTNJqHVWWsBjNqsPX94LT8nIq4D4ne35cI2v-74mMm98wOhUnfEdShR0MFJtMIkx41agAOmDIb7EZp15r9CJ6De7tIf_wttokXEvdNsEgdmUq5SIiizU2P0XM7wZcxI="
+    },
+    {
+      "title": "grammarly.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGIGjNF0lgqSqKNVAgIQdU1wFSztkijxKi2QxS4r9lvx0JARdIiyTFHUBVB9ISXaaRNlkJOLqRYsTKrdpTBeJeOu4LvqarlAO62_dTc12AlDqK4VVEKfLeNwhY="
+    },
+    {
+      "title": "automateed.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqS-emFy5P7SMPWXm4_JtzuCs382dGMnqwilJO0rI0fcIDD8BxpB7yDYqfyVtSeu1gEF3pR4DjN0MJXwYXg10jxrgSCJ12W8qmLvTLQ8BUbZCXnbYDzXz7xaAlSokUDLzYoGVChl3XS8z43tFuHLR1elzvIzA1e9t1_E_xPZaZLlCGRe4phWKp"
+    }
+  ],
+  "screenshots": [
+    {
+      "url": "assets/deep-dive/grammarly-2026-04-27/mocslpqr28bi8h.png",
+      "title": "AI记忆升级实践：从金鱼到管家",
+      "caption": "AI助手记忆升级实践，解决会话从零开始、重复背景信息等痛点。",
+      "category": "AI能力"
+    },
+    {
+      "url": "assets/deep-dive/grammarly-2026-04-27/mocshaw0rbbhk4.png",
+      "title": "AI 辅助文本处理",
+      "caption": "选中文字后可选择AI进行润色或总结。",
+      "category": "AI能力"
+    },
+    {
+      "url": "assets/deep-dive/grammarly-2026-04-27/mocsf5c6hg9cf7.png",
+      "title": "AI 写作助手：文本润色与改写",
+      "caption": "提供文本润色、改写建议，并能根据用户需求生成不同风格的版本。",
+      "category": "AI写作助手"
+    },
+    {
+      "url": "assets/deep-dive/grammarly-2026-04-27/mocsdusqqaxqfj.png",
+      "title": "AI文本润色与纠错",
+      "caption": "展示AI驱动的文本纠错、语法检查和润色功能，提供写作改进建议。",
+      "category": "AI能力"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "productName": "秘塔回响",
+  "productSlug": "p-d5dc74",
+  "title": "秘塔回响：AI语音输入新范式",
+  "subtitle": "语音转写+AI润色+指令，效率工具新标杆",
+  "overview": {
+    "what": "秘塔回响是一款由秘塔科技开发的智能AI语音输入键盘，旨在通过语音输入、AI文本润色和智能指令，大幅提升用户输入效率。",
+    "scene": "语音输入, 文本创作, 跨语言沟通, 信息检索, 办公提效",
+    "audience": "追求高效输入的职场人士、内容创作者、学生及多语言沟通用户。",
+    "team": "上海秘塔网络科技有限公司",
+    "launchDate": "最新版本 2026年4月2日 (App Store 1.0.3版本更新日期)"
+  },
+  "innovations": [
+    {
+      "title": "AI文本润色多模式",
+      "icon": "✨",
+      "observation": "秘塔回响内置标准、保守、积极等多种AI润色模式，用户可根据需求选择修正语法、保留原意或深度改写文本。",
+      "insight": "传统语音输入转文字后常需手动修改口语化表达或语法错误。提供多模式润色，精准匹配用户在不同场景（如日常聊天、正式写作）对文本质量和改动程度的需求，降低后期编辑成本，提升内容专业度。",
+      "sogouImplication": "搜狗输入法可借鉴此设计，在语音输入后提供“智能润色”功能入口，并细化润色模式（如：口语转书面语、简洁表达、修正语病），让用户一键选择，减少语音转文字后的手动修改工作。",
+      "screenshotHint": "截图未直接体现，但其功能影响输出文本质量。"
+    },
+    {
+      "title": "语音指令与功能集成",
+      "icon": "🗣️",
+      "observation": "用户在口述内容的同时，可以直接下达“翻译成英文”、“生成思维导图”、“格式化为邮件”等指令，系统能自动执行并输出结果，无需切换应用或手动操作。 此外，还集成了“言出即搜”功能。",
+      "insight": "将语音输入从单纯的“文字转录”提升到“智能助手”层面，通过自然语言处理实现多任务的无缝切换和自动化执行，极大缩短了信息处理和内容创作的工作流，真正做到“言出法随”。",
+      "sogouImplication": "搜狗输入法可探索在语音输入模式下，识别特定指令关键词（如“翻译”、“搜索”、“总结”），并联动搜狗搜索、翻译等自有服务，甚至开放API接口给第三方应用，实现语音控制下的多功能集成，将输入法升级为更智能的生产力工具。",
+      "screenshotHint": "截图未直接体现，但其功能影响输出文本质量。"
+    },
+    {
+      "title": "后台持续聆听模式",
+      "icon": "👂",
+      "observation": "秘塔回响支持后台持续聆听模式，随时准备接收语音指令，无需反复切换应用。",
+      "insight": "提升语音输入的连续性和便捷性，解决用户在多任务场景下频繁唤醒输入法带来的打断感。这对于需要长时间语音记录、会议纪要或边思考边口述的用户体验至关重要。",
+      "sogouImplication": "搜狗输入法可研发并优化“常驻语音助手”模式，允许用户在不同应用间无缝进行语音输入，并提供清晰的隐私提示和手动关闭选项。同时，可结合系统级权限，在满足用户隐私和安全的前提下，探索更深度的后台常驻能力。",
+      "screenshotHint": "截图1显示语音输入状态，但未直接体现持续聆听模式细节。"
+    },
+    {
+      "title": "多语言与方言实时翻译",
+      "icon": "🌍",
+      "observation": "秘塔回响内置超过50种语言与方言的翻译能力，支持“边说边翻译”的实时交互，甚至能将粤语、上海话等方言直接翻译成其他语言。",
+      "insight": "彻底打破语言障碍，尤其在商务沟通、跨境交流和内容本地化方面提供高效解决方案。方言识别和翻译能力进一步拓宽了用户群体，提升了产品普适性。",
+      "sogouImplication": "搜狗输入法在现有翻译功能基础上，应强化语音输入后的实时翻译能力，并拓展对更多方言的支持。可考虑在翻译结果中提供原文与译文的对比展示，并允许用户直接发送，满足国际化和多语言用户的即时沟通需求。",
+      "screenshotHint": "截图未直接体现，但其功能影响输出文本质量。"
+    }
+  ],
+  "visualMotion": {
+    "summary": "整体界面风格简洁直观，注重功能性与效率，动画和状态提示清晰。",
+    "highlights": [
+      "语音输入状态提示清晰 (截图1)",
+      "功能按钮布局合理，便于快速操作 (截图2)",
+      "Apple灵动岛实时录音状态显示 (App Store描述)"
+    ]
+  },
+  "differentiation": {
+    "summary": "秘塔回响最显著的差异化在于其深度融合了AI语音输入、AI文本润色和AI智能指令（包括搜索与翻译），将输入法从单一工具升级为多功能、高效率的AI生产力中枢。它不仅识别快、准确率高，更通过“边说边处理”的交互模式，打破了传统输入法和各类工具之间的操作壁垒。",
+    "positioning": "AI语音输入赛道的挑战者与创新者，主打高效办公和智能创作的小众精品。"
+  },
+  "sogouTakeaways": [
+    "将AI能力深度融入输入工作流，而非简单叠加功能。搜狗应思考如何将自身的AI大模型、搜索、翻译等能力，以更自然、更“无感”的方式融入到用户输入体验中，例如：在输入框内直接提供基于上下文的智能回复建议、文档格式化或内容总结。",
+    "细化语音输入后的“智能处理”选项，满足多元化场景需求。搜狗可以针对不同用户群体（如学生、白领、内容创作者）和不同场景（如社交、邮件、文档），提供更精细化的语音转文字后处理功能，如：自动去除冗余语气词、智能断句、生成会议纪要格式、自动提取关键信息等。",
+    "探索更“主动”的语音交互模式，提升连续性和沉浸感。搜狗可研究在保证隐私的前提下，如何让输入法更智能地感知用户意图，例如：通过轻量级语音唤醒词、预设场景模式，或在特定应用中自动切换到语音输入模式，减少用户手动切换的摩擦。",
+    "强化跨语言和方言的实时处理能力，拓展输入法应用边界。搜狗作为国民级输入法，应进一步巩固和提升其在中文方言识别及多语种实时翻译方面的技术优势，并将其与输入场景深度结合，例如：在海外社交应用中提供即时语音翻译输入，或在方言区用户使用时提供更精准的方言转写与表达优化。",
+    "设计更具前瞻性的“输入+AI助手”产品形态。搜狗输入法可以借鉴这种思路，将输入法打造成一个集成多种AI能力的“超级入口”，不仅仅是文字输入，更是信息获取、内容创作、任务执行的统一平台，从而在未来的AI时代占据更有利的位置。"
+  ],
+  "generatedAt": "2026-04-27 10:06",
+  "dateOf": "2026-04-27",
+  "reportType": "deep-dive",
+  "selectionReason": "本周共 2 张截图，关注度较高",
+  "sources": [
+    {
+      "title": "apple.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRnwL-pPRXzOLFOYNmpdGFVbUzb3jyIk8xSDcb-_r4_Mw3XbwsXErJ3k-ITOupIcmtpX1rcPtvnBAH7QjtUwbX9GnaQXfB0f_zt7K95P_DEN7FD7TKN-9NjU2Wd2ctZaQOLNz_TdpO8b_jXXdSjHv8BNuFvsD7jHt_EgWN_x5vprgnBy8EfRzSpOA="
+    },
+    {
+      "title": "smzdm.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6m_1pgJcdLgyzZ11TVtpG3h8xQ1GCgKPD_VFNggflKJlTPTO4jQNhEvAewlWPsE1va3PQuD3Z-zgW7LN-Xy3loIcQybwndhtAs39cZqO1IyFn-s7ew5Kfkwz02wkXug=="
+    },
+    {
+      "title": "w2solo.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGIiyKPOpxM_PpKXULYEhWbNyc8F_a2SvprXxZWw29YoGH802DxxhuIWRTYKbF6VE13kAYhb6Zxw43L7Kj8rSofTNwA_YyUaCIoF5PcsQLaJi2DCkT0nmGQWwLKkRQ="
+    },
+    {
+      "title": "metaso.cn",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGT9eJ0JiDNEx7_MdCQRt2eW1B81Fybu4RDr1NoHadecUsXcqU9ivO-57K3YxczBkxSb1eIPRacWCKTaZ7h_Zj2a5eFZBpEerHg21sFUMVkTHU="
+    },
+    {
+      "title": "apple.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXeEhp44sFCOvfeeumXcuC_iVrYf4vSXGzfuLlmpt40RWWLMEALN3PCsDMiRuxq3-xoWhJ5PnEyVZcDFk9dpT50C97rFDrWViyFI_tMNwYxUIRjduwo6i8WAcTEvH_4Yf0Qgx5Slhiu-2lNEbyPgwJOnLYuCpYCZ94CYGDHvEiQIZTGa5uM1j5spM="
+    },
+    {
+      "title": "apple.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlJw1wzCZO02yyy1RhXuwJ8yc-T8SV3ZxSOdRuO6yU_SY4E6hy_lzU4CDOlEHprZBVZ4kSkT9tuDlBokRYEV5fi-hCHYEE962-oYhgzW4Puy1Sf3B-pm3r_hF6WleQwoB6YQNNVNa0fJdakgaweUWftyZNCZkfAb8NkzUWp5LDAzOOtABzLlwFcp8="
+    },
+    {
+      "title": "apple.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFk2deF1MA1Mooiw8Arqylixo0nmXYKRy-IqsoLHgo8l4UzRn2thyCXNu9qw3kDa5rgfT7WAwq4Ea5Pt0McZpaAF0yQXOxRaz4BUAM_kbtTWwRhXmgtm1w0HYLjJquoQEHBLSAQwde5ng-8jHANeJGcyalxtynzj-YILMWfxrjFnJgwrBsvoYBW7fk="
+    }
+  ],
+  "screenshots": [
+    {
+      "url": "assets/deep-dive/p-d5dc74-2026-04-27/mocpd924qz1qyt.jpg",
+      "title": "聊天界面",
+      "caption": "聊天界面显示语音输入状态，并提供发送截图的选项。",
+      "category": "聊天"
+    },
+    {
+      "url": "assets/deep-dive/p-d5dc74-2026-04-27/mocpd8ttronscw.jpg",
+      "title": "聊天界面",
+      "caption": "聊天界面，包含文本消息、语音消息、表情和功能按钮。",
+      "category": "聊天"
+    }
+  ]
+}

@@ -1015,6 +1015,45 @@
     font-size: 12px; color: #888; margin-bottom: 20px;
     display: flex; gap: 14px; flex-wrap: wrap;
   }
+  /* ====== 产品深度报告详情页专用 head（块状，不继承 rweekly flex）====== */
+  .rdeep-head {
+    margin-bottom: 24px;
+  }
+  .rdeep-meta-row {
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  .rdeep-date {
+    font-size: 13px; color: #999; font-weight: 500;
+  }
+  .rdeep-date-gen {
+    margin-left: auto; color: #bbb;
+  }
+  .rdeep-title {
+    font-size: 26px; font-weight: 800; color: #111;
+    margin: 0 0 10px; line-height: 1.35;
+  }
+  .rdeep-subtitle {
+    font-size: 16px; color: #555; line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .rdeep-what {
+    font-size: 15px; color: #333; line-height: 1.75;
+    margin-bottom: 16px;
+  }
+  .rdeep-chips {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    margin-bottom: 14px;
+  }
+  .rdeep-reason {
+    font-size: 12px; color: #888; margin-top: 4px;
+    padding-top: 12px; border-top: 1px dashed #eef0f5;
+  }
+  @media (max-width: 640px) {
+    .rdeep-title { font-size: 22px; }
+    .rdeep-subtitle { font-size: 14px; }
+    .rdeep-date-gen { margin-left: 0; }
+  }
   .rweekly-overview {
     background: #fff; border: 1px solid #eef0f5; border-radius: 14px;
     padding: 18px 22px; margin-bottom: 24px;
@@ -3046,17 +3085,17 @@ function renderDeepDiveDetail(data) {
   detailEl.innerHTML =
     '<button class="rreport-back" onclick="closeRivalReportDetail()">← 返回报告列表</button>' +
     '<div class="rweekly-detail">' +
-      '<div class="rweekly-head">' +
-        '<div class="rweekly-meta">' +
+      '<div class="rdeep-head">' +
+        '<div class="rdeep-meta-row">' +
           '<span class="rreport-card-badge" style="background:#111;color:#fff;">🔬 产品深度</span>' +
-          '<span class="rweekly-week">' + escHtml(data.dateOf || '') + '</span>' +
-          (data.generatedAt ? '<span class="rweekly-week" style="margin-left:auto;">' + escHtml(data.generatedAt) + '</span>' : '') +
+          '<span class="rdeep-date">' + escHtml(data.dateOf || '') + '</span>' +
+          (data.generatedAt ? '<span class="rdeep-date rdeep-date-gen">生成于 ' + escHtml(data.generatedAt) + '</span>' : '') +
         '</div>' +
-        '<h1 class="rweekly-title" style="margin-top:14px;">' + escHtml(data.title || data.productName || '') + '</h1>' +
-        (data.subtitle ? '<div style="font-size:16px;color:#555;margin-top:6px;line-height:1.6;">' + escHtml(data.subtitle) + '</div>' : '') +
-        (ov.what ? '<div style="font-size:15px;color:#333;margin-top:14px;line-height:1.7;">' + escHtml(ov.what) + '</div>' : '') +
-        (overviewChips.length ? '<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;">' + overviewChips.join('') + '</div>' : '') +
-        (data.selectionReason ? '<div style="font-size:12px;color:#888;margin-top:10px;">🤖 选题理由：' + escHtml(data.selectionReason) + '</div>' : '') +
+        '<h1 class="rdeep-title">' + escHtml(data.title || data.productName || '') + '</h1>' +
+        (data.subtitle ? '<div class="rdeep-subtitle">' + escHtml(data.subtitle) + '</div>' : '') +
+        (ov.what ? '<div class="rdeep-what">' + escHtml(ov.what) + '</div>' : '') +
+        (overviewChips.length ? '<div class="rdeep-chips">' + overviewChips.join('') + '</div>' : '') +
+        (data.selectionReason ? '<div class="rdeep-reason">🤖 选题理由：' + escHtml(data.selectionReason) + '</div>' : '') +
       '</div>' +
       (innovationsHtml ? '<div class="rweekly-section"><div class="rweekly-section-label">核心交互创新</div>' + innovationsHtml + '</div>' : '') +
       (vm.summary || (vm.highlights && vm.highlights.length) ? (
