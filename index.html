@@ -2711,7 +2711,7 @@ function renderDemandMapClusters(clusters) {
   var bodyEl = document.getElementById('map-clusters-body');
   if (!chipsEl || !bodyEl) return;
 
-  var firstActive = clusters && clusters.length ? clusters[0].name : '帮写场景类';
+  var firstActive = window.mapActiveCluster || (clusters && clusters.length ? clusters[0].name : '帮写场景类');
 
   // Compute trend: count items added in last 14 days vs prior 14 days
   var now = new Date();
@@ -2841,35 +2841,6 @@ function renderDemandMapClusters(clusters) {
       var curIdx = availableMonths.indexOf(curMonth);
       var curGroup = monthGroups[curIdx];
 
-      // Update top-right month nav label and button states
-      var curMonthEl = document.getElementById('currentMonth');
-      if (curMonthEl) curMonthEl.textContent = monthLabel(curMonth) + '（' + curGroup.items.length + '）';
-      var prevBtn = document.getElementById('prevMonth');
-      var nextBtn = document.getElementById('nextMonth');
-      if (prevBtn) {
-        // 上月 = 索引+1（因为列表是倒序，新月在前）
-        prevBtn.disabled = curIdx >= availableMonths.length - 1;
-        prevBtn.style.opacity = prevBtn.disabled ? '0.35' : '1';
-        prevBtn.style.cursor = prevBtn.disabled ? 'not-allowed' : 'pointer';
-        prevBtn.onclick = function() {
-          if (curIdx < availableMonths.length - 1) {
-            window.mapCurrentMonth = availableMonths[curIdx + 1];
-            renderDemandMapClusters(clusters);
-          }
-        };
-      }
-      if (nextBtn) {
-        nextBtn.disabled = curIdx <= 0;
-        nextBtn.style.opacity = nextBtn.disabled ? '0.35' : '1';
-        nextBtn.style.cursor = nextBtn.disabled ? 'not-allowed' : 'pointer';
-        nextBtn.onclick = function() {
-          if (curIdx > 0) {
-            window.mapCurrentMonth = availableMonths[curIdx - 1];
-            renderDemandMapClusters(clusters);
-          }
-        };
-      }
-
       bodyHtml += '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;">';
       curGroup.items.forEach(function(item, i) {
         bodyHtml += getDemandCardHtml(item, i);
@@ -2879,6 +2850,56 @@ function renderDemandMapClusters(clusters) {
     bodyHtml += '</div>';
   });
   bodyEl.innerHTML = bodyHtml;
+
+  // === 更新顶部月份切换器（只算一次，基于全局所有数据的可用月份）===
+  var allItems = [];
+  (clusters || []).forEach(function(cd) {
+    (cd.items || []).forEach(function(it) { allItems.push(it); });
+  });
+  var globalGroups = groupByMonth(allItems);
+  var globalMonths = globalGroups.map(function(g) { return g.month; });
+  var globalCur = window.mapCurrentMonth;
+  if (!globalCur || globalMonths.indexOf(globalCur) === -1) {
+    globalCur = globalMonths[0];
+    window.mapCurrentMonth = globalCur;
+  }
+  var globalIdx = globalMonths.indexOf(globalCur);
+
+  // 计算当前激活 cluster 在该月的卡片数
+  var activeCdata = clusters && clusters.find(function(x) { return x.name === firstActive; });
+  var activeItemsThisMonth = 0;
+  if (activeCdata) {
+    var activeGroups = groupByMonth(activeCdata.items || []);
+    var activeMatch = activeGroups.find(function(g) { return g.month === globalCur; });
+    activeItemsThisMonth = activeMatch ? activeMatch.items.length : 0;
+  }
+
+  var curMonthEl = document.getElementById('currentMonth');
+  if (curMonthEl) curMonthEl.textContent = monthLabel(globalCur) + '（' + activeItemsThisMonth + '）';
+  var prevBtn = document.getElementById('prevMonth');
+  var nextBtn = document.getElementById('nextMonth');
+  if (prevBtn) {
+    prevBtn.disabled = globalIdx >= globalMonths.length - 1;
+    prevBtn.style.opacity = prevBtn.disabled ? '0.35' : '1';
+    prevBtn.style.cursor = prevBtn.disabled ? 'not-allowed' : 'pointer';
+    prevBtn.onclick = function() {
+      if (globalIdx < globalMonths.length - 1) {
+        window.mapCurrentMonth = globalMonths[globalIdx + 1];
+        renderDemandMapClusters(clusters);
+      }
+    };
+  }
+  if (nextBtn) {
+    nextBtn.disabled = globalIdx <= 0;
+    nextBtn.style.opacity = nextBtn.disabled ? '0.35' : '1';
+    nextBtn.style.cursor = nextBtn.disabled ? 'not-allowed' : 'pointer';
+    nextBtn.onclick = function() {
+      if (globalIdx > 0) {
+        window.mapCurrentMonth = globalMonths[globalIdx - 1];
+        renderDemandMapClusters(clusters);
+      }
+    };
+  }
 }
 
 /* ===== RIVAL PAGE ===== */
@@ -3580,6 +3601,9 @@ function switchCluster(name) {
       chips[i].style.color = '#555';
     }
   }
+  // 切换分类后也同步刷新顶部月份计数
+  window.mapActiveCluster = name;
+  if (demandClusterCache) renderDemandMapClusters(demandClusterCache);
 }
 
 function switchDesignFlow(name) { filterDesignByStage(name); }
