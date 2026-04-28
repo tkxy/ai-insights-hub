@@ -18,6 +18,43 @@
         "assets/weekly/2026-04-20/mocslpqqx1s41h.png",
         "assets/weekly/2026-04-20/mocshavyopnq4s.png",
         "assets/weekly/2026-04-20/mocsf5c6n5riw4.png"
+      ],
+      "points": [
+        {
+          "title": "智能双语候选词展示",
+          "icon": "🟡",
+          "priority": "中"
+        },
+        {
+          "title": "全场景AI智能写作辅助",
+          "icon": "🔴",
+          "priority": "高"
+        },
+        {
+          "title": "AI聊天界面与语音输入增强",
+          "icon": "🟡",
+          "priority": "中"
+        },
+        {
+          "title": "键盘功能与个性化设置增强",
+          "icon": "🟡",
+          "priority": "中"
+        },
+        {
+          "title": "实时AI语法纠错与建议",
+          "icon": "🔴",
+          "priority": "高"
+        },
+        {
+          "title": "探索AI对话界面与多模态交互",
+          "icon": "🔴",
+          "priority": "高"
+        },
+        {
+          "title": "提升交互动效与创新体验",
+          "icon": "🟢",
+          "priority": "低"
+        }
       ]
     }
   ],

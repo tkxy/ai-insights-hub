@@ -1322,6 +1322,26 @@
     border: 1px dashed #ddd;
   }
 
+  /* 7 个挖掘点列表（外露关键点） */
+  .rreport-points {
+    list-style: none; padding: 0; margin: 0;
+    display: flex; flex-direction: column; gap: 8px;
+    background: #fafbfc;
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  .rreport-point {
+    display: flex; align-items: flex-start; gap: 10px;
+    font-size: 13.5px; color: #222; line-height: 1.5;
+  }
+  .rreport-point-icon {
+    flex: none; font-size: 12px; line-height: 1.5;
+    width: 16px; text-align: center;
+  }
+  .rreport-point-title {
+    flex: 1; font-weight: 600;
+  }
+
   .rreport-empty {
     text-align: center; padding: 80px 20px;
     color: #aaa; font-size: 14px;
@@ -3092,6 +3112,21 @@ function renderWeeklyCard(r) {
   // overview 去掉开头的"本周共收集 N 张..."（与缩略图区重复）
   var overview = (r.overview || '').replace(/^本周(共)?收集\s*\d+\s*张[^，。]*[，。]\s*/, '');
 
+  // 7 个挖掘点全部外露
+  var points = r.points || [];
+  var pointsHtml = '';
+  if (points.length) {
+    pointsHtml = '<ol class="rreport-points">' +
+      points.map(function(p) {
+        var icon = p.icon || '·';
+        return '<li class="rreport-point">' +
+          '<span class="rreport-point-icon">' + escHtml(icon) + '</span>' +
+          '<span class="rreport-point-title">' + escHtml(p.title || '') + '</span>' +
+        '</li>';
+      }).join('') +
+    '</ol>';
+  }
+
   return '<div class="rreport-card" onclick="openRivalReportDetail(\'' + r.weekOf + '\')">' +
     '<div class="rreport-card-meta">' +
       '<span class="rreport-card-week">' + weekLabel + '</span>' +
@@ -3102,6 +3137,7 @@ function renderWeeklyCard(r) {
       '<span class="rreport-card-headline-num">' + pointCount + '</span>' +
       '<span class="rreport-card-headline-text">个值得跟进的需求方向</span>' +
     '</div>' +
+    pointsHtml +
     (rivalsHtml ? '<div class="rreport-card-rivals">' +
       '<span class="rreport-card-rivals-label">涉及</span>' + rivalsHtml +
     '</div>' : '') +
