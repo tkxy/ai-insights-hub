@@ -1280,6 +1280,48 @@
     display: flex; align-items: center; justify-content: center;
     border: 1px solid #eef0f5;
   }
+  /* === 周报卡片 B 方案：信息重排 === */
+  .rreport-card-meta {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12px; color: #999; font-weight: 500;
+  }
+  .rreport-card-meta-sep { color: #ddd; }
+  .rreport-card-meta-tag {
+    color: #666;
+    background: #f6f7fa;
+    padding: 2px 8px; border-radius: 100px;
+    font-size: 11px; font-weight: 600;
+  }
+  .rreport-card-headline {
+    display: flex; align-items: baseline; gap: 8px;
+    margin: 2px 0 -2px;
+  }
+  .rreport-card-headline-num {
+    font-size: 32px; font-weight: 800; color: #111;
+    line-height: 1; letter-spacing: -0.5px;
+    font-variant-numeric: tabular-nums;
+  }
+  .rreport-card-headline-text {
+    font-size: 15px; font-weight: 600; color: #333;
+  }
+  .rreport-card-rivals {
+    display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  }
+  .rreport-card-rivals-label {
+    font-size: 11.5px; color: #999; font-weight: 500;
+    margin-right: 2px;
+  }
+  .rreport-rival-chip {
+    font-size: 11.5px; color: #333;
+    background: #f6f7fa;
+    padding: 3px 9px; border-radius: 100px;
+    font-weight: 600;
+  }
+  .rreport-rival-chip-more {
+    color: #888; background: #fff;
+    border: 1px dashed #ddd;
+  }
+
   .rreport-empty {
     text-align: center; padding: 80px 20px;
     color: #aaa; font-size: 14px;
@@ -3019,12 +3061,7 @@ function renderWeeklyCard(r) {
     thumbsHtml += '<div class="rreport-card-thumb-more">+' + moreCount + '</div>';
   }
 
-  var stats = [];
-  if (r.totalImages != null) stats.push('<span class="rreport-card-stat">📷 ' + r.totalImages + ' 张</span>');
-  if (r.competitors && r.competitors.length) stats.push('<span class="rreport-card-stat">🏷 ' + r.competitors.length + ' 个竞品</span>');
-  if (r.dimensionCount != null) stats.push('<span class="rreport-card-stat">🔎 ' + r.dimensionCount + ' 个维度</span>');
-
-  // 计算周日日期（weekOf + 6 天）
+  // 周区间标签：04-20 → 04-26
   var weekLabel = '';
   if (r.weekOf) {
     try {
@@ -3034,20 +3071,42 @@ function renderWeeklyCard(r) {
       var dd = function(d) { return String(d.getDate()).padStart(2, '0'); };
       weekLabel = mm(startDate) + '-' + dd(startDate) + ' → ' + mm(endDate) + '-' + dd(endDate);
     } catch(e) {
-      weekLabel = r.weekOf.replace(/^\d{4}-/, '') + ' 周';
+      weekLabel = r.weekOf;
     }
   }
 
+  // 核心数字：挖掘点数（沿用 dimensionCount 字段）
+  var pointCount = r.dimensionCount != null ? r.dimensionCount : (r.pointCount || 0);
+
+  // 竞品名外露：最多展 4 个，多余 +N
+  var rivals = r.competitors || [];
+  var rivalShow = rivals.slice(0, 4);
+  var rivalMore = rivals.length - rivalShow.length;
+  var rivalsHtml = rivalShow.map(function(name) {
+    return '<span class="rreport-rival-chip">' + escHtml(name) + '</span>';
+  }).join('');
+  if (rivalMore > 0) {
+    rivalsHtml += '<span class="rreport-rival-chip rreport-rival-chip-more">+' + rivalMore + '</span>';
+  }
+
+  // overview 去掉开头的"本周共收集 N 张..."（与缩略图区重复）
+  var overview = (r.overview || '').replace(/^本周(共)?收集\s*\d+\s*张[^，。]*[，。]\s*/, '');
+
   return '<div class="rreport-card" onclick="openRivalReportDetail(\'' + r.weekOf + '\')">' +
-    '<div class="rreport-card-head">' +
-      '<span class="rreport-card-badge">📊 周度总览</span>' +
+    '<div class="rreport-card-meta">' +
       '<span class="rreport-card-week">' + weekLabel + '</span>' +
-      (r.generatedAt ? '<span class="rreport-card-week" style="margin-left:auto;">' + r.generatedAt + '</span>' : '') +
+      '<span class="rreport-card-meta-sep">·</span>' +
+      '<span class="rreport-card-meta-tag">周报</span>' +
     '</div>' +
-    '<div class="rreport-card-title">' + escHtml(r.title || '本周输入法竞品需求挖掘周报') + '</div>' +
-    (r.overview ? '<div class="rreport-card-overview">' + escHtml(r.overview) + '</div>' : '') +
+    '<div class="rreport-card-headline">' +
+      '<span class="rreport-card-headline-num">' + pointCount + '</span>' +
+      '<span class="rreport-card-headline-text">个值得跟进的需求方向</span>' +
+    '</div>' +
+    (rivalsHtml ? '<div class="rreport-card-rivals">' +
+      '<span class="rreport-card-rivals-label">涉及</span>' + rivalsHtml +
+    '</div>' : '') +
+    (overview ? '<div class="rreport-card-overview">' + escHtml(overview) + '</div>' : '') +
     (thumbsHtml ? '<div class="rreport-card-thumbs">' + thumbsHtml + '</div>' : '') +
-    '<div class="rreport-card-stats">' + stats.join('') + '</div>' +
   '</div>';
 }
 
@@ -3370,7 +3429,7 @@ function renderRivalFilterBar(data) {
   }
 
   bar.innerHTML =
-    '<div class="rival-filter-group">' + reportBtn + dimBtns + '</div>';
+    '<div class="rival-filter-group">' + dimBtns + reportBtn + '</div>';
 }
 
 function setRivalView(view) {
