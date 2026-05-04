@@ -1,0 +1,147 @@
+{
+  "date": "2026-05-04",
+  "generated_at": "2026-05-04T08:30:00+08:00",
+  "daily_summary": "五四青年节，五一假期最后一天。本周回顾：从4/28马斯克出庭到5/3 Kimi K2.6夺冠，这一周的关键词是'格局分化'。法律层面（OpenAI审判）、生态层面（微软-OpenAI独家终止、OpenAI进军AWS）、模型层面（Kimi K2.6编程夺冠、DeepSeek V4获认可）、基础设施层面（5GW算力协议、TPU第八代、SpaceX自研GPU）全面展开。AI行业已经从'谁的模型最好'的一维竞争，演变为模型+算力+生态+法律+芯片的多维博弈。对输入法来说，本周最重要的信号是：(1) 苹果正在开发Grammarly风格AI键盘——系统级AI输入能力是最大威胁；(2) 中国AI模型全球领先已获认可——国产模型路线完全可行；(3) AI工具定价从订阅转向按量——商业模式需要前瞻布局。",
+  "design_insights": [
+    {
+      "title": "本周回顾：AI竞争从一维走向多维博弈",
+      "summary": "本周AI行业发生了跨越法律、生态、模型、基础设施四个层面的重大事件：马斯克诉OpenAI开审；微软-OpenAI独家终止+OpenAI进军AWS；Kimi K2.6编程夺冠+DeepSeek V4获国际认可；5GW算力协议+TPU第八代+SpaceX自研GPU。行业已从'模型排行榜'的一维竞争演变为多维博弈——赢家将是在模型能力、算力控制、生态分发、法律合规、商业模式上全面占优的玩家。",
+      "implication": "对输入法产品的启示：(1) 多维竞争格局意味着输入法的AI战略不能只关注'接哪个模型'——还要考虑模型供应链稳定性、成本结构、合规性、用户信任等多个维度；(2) 建议制定输入法AI战略全景图：模型选型（DeepSeek V4/Kimi K2.6/GPT-5.5）+ 算力方案（国产/国际）+ 商业模型（按量/订阅）+ 合规框架。",
+      "sources": ["综合总结"],
+      "source_urls": [
+        {"name": "AI Critique总结", "url": "https://www.aicritique.org/us/2026/04/29/ai-developments-in-april-2026/"},
+        {"name": "TLDL本周新闻", "url": "https://www.tldl.io/blog/ai-news-updates-2026"}
+      ],
+      "tags": ["周度总结", "多维博弈", "格局分化"]
+    },
+    {
+      "title": "苹果AI键盘威胁：系统级输入AI是最大竞争变量",
+      "summary": "本周综合苹果相关信号：(1) 苹果正在开发Grammarly风格AI键盘；(2) iOS 27传闻Siri将变独立App+系统级AI深度集成；(3) 苹果内部泄露Claude.md证实深度使用Claude。三个信号叠加指向同一结论：苹果正在构建系统级AI输入能力，这将是第三方输入法面临的最大竞争变量。",
+      "implication": "对输入法产品的启示：(1) 苹果AI键盘的威胁是存亡级别的——如果iOS原生键盘具备了Grammarly级别的语法纠错+AI帮写，第三方输入法在iOS上的价值将被严重削弱；(2) 应对策略：在苹果推出之前，抢先建立用户对搜狗AI帮写的使用习惯和依赖；同时聚焦苹果不会做的功能——如中文方言识别、行业垂直帮写、社交场景化帮写等差异化能力。",
+      "sources": ["Digital Trends", "Wi-Fi Planet", "TLDL"],
+      "source_urls": [
+        {"name": "苹果AI键盘报道", "url": "https://www.digitaltrends.com/phones/apple-is-working-on-its-own-grammarly-inspired-keyboard/"},
+        {"name": "iOS 27传闻", "url": "https://wi-fiplanet.com/ios-27-rumors-a-real-siri-app-snow-leopard-vibes-and-we-promise-the-ai-stuff-is-coming-this-time/"}
+      ],
+      "tags": ["苹果", "AI键盘", "系统级", "竞争威胁"]
+    },
+    {
+      "title": "下周展望：马斯克审判后续、假期结束AI板块反应、WWDC预热",
+      "summary": "下周关注：(1) 马斯克诉OpenAI审判进入关键阶段——可能出现对行业格局有影响的法庭裁定；(2) 五一假期结束后A股AI概念板块的反应——4月底的多个重大事件尚未被市场充分消化；(3) 距WWDC 2026约一个月，苹果可能开始释放AI相关预告；(4) DeepSeek V4全量版本上线时间表；(5) Kimi K2.6编程夺冠后的商业化动向。",
+      "implication": "对输入法产品的启示：下周重点关注苹果WWDC预热中是否包含AI键盘相关内容（直接影响iOS端战略）、DeepSeek V4全量API的稳定性（是否可以正式接入帮写后端）。",
+      "sources": ["综合分析"],
+      "source_urls": [
+        {"name": "行业展望", "url": "https://theaitrack.com/ai-news-may-2026-in-depth-and-concise/"}
+      ],
+      "tags": ["下周展望", "审判", "WWDC", "A股"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "iOS端AI输入法防御策略：抢在苹果之前建立用户粘性",
+      "pain_point": "苹果正在开发AI键盘——如果iOS原生键盘具备AI帮写和语法纠错能力，用户将失去使用第三方输入法的核心理由",
+      "opportunity": "在苹果AI键盘推出前（预计最早iOS 27/28），抢先建立差异化优势：(1) 深度中文优化——苹果AI键盘大概率优先优化英文，中文帮写是我们的护城河；(2) 社交场景深度集成——针对微信/抖音等中国特色社交场景做深度优化，这是苹果不会做的；(3) 方言识别+帮写——中国方言多样性是苹果短期内无法覆盖的；(4) 建立用户数据壁垒——通过学习用户输入习惯提升个性化体验，让切换成本变高。",
+      "priority": "高",
+      "evidence": "苹果开发Grammarly风格AI键盘已被多方报道、iOS 27传闻Siri深度集成系统、苹果内部使用Claude证实AI战略加速"
+    },
+    {
+      "title": "输入法AI战略全景图：五月规划建议",
+      "pain_point": "AI行业变化太快，输入法的AI策略需要一个全局视角来统筹规划",
+      "opportunity": "基于本周的多维度信息，建议五月完成输入法AI战略全景图的制定：(1) 模型选型矩阵——DeepSeek V4-Pro(中文主力)/Kimi K2.6(创意场景)/GPT-5.5(英文场景)的三模型策略；(2) 算力方案——国产算力(华为昇腾)+国际备份(AWS/GCP)的双轨路线；(3) 商业模式——基础免费+AI Credits按量计费的混合定价；(4) 合规框架——数据安全审计+供应链安全评估；(5) 竞品防御——对标苹果AI键盘的差异化策略。",
+      "priority": "高",
+      "evidence": "本周AI行业多维度重大事件密集发生：法律(OpenAI审判)、生态(独家终止)、模型(V4/K2.6)、基础设施(5GW)、竞品(苹果AI键盘)"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "周度总结：AI竞争从一维走向多维博弈",
+      "category": "周度总结",
+      "relevance": "高",
+      "summary": "本周关键事件：马斯克诉OpenAI开审、微软-OpenAI独家终止、Kimi K2.6编程夺冠、5GW算力协议、苹果AI键盘信号。行业从模型竞赛演变为多维博弈。",
+      "source": "综合",
+      "source_urls": [],
+      "tags": ["周度总结", "多维博弈"]
+    },
+    {
+      "title": "苹果AI战略信号密集：AI键盘+iOS 27 Siri独立App+Claude.md泄露",
+      "category": "竞品分析",
+      "relevance": "高",
+      "summary": "本周三个苹果AI信号：开发Grammarly风格AI键盘、iOS 27传闻Siri变独立App、内部Claude.md泄露。苹果正在全面构建系统级AI输入能力。",
+      "source": "Digital Trends / Wi-Fi Planet",
+      "source_urls": ["https://www.digitaltrends.com/phones/apple-is-working-on-its-own-grammarly-inspired-keyboard/"],
+      "tags": ["苹果", "AI键盘", "iOS 27"]
+    },
+    {
+      "title": "中国AI模型全球认可：Kimi K2.6编程夺冠+DeepSeek V4接近前沿",
+      "category": "模型实力",
+      "relevance": "高",
+      "summary": "Kimi K2.6在编程挑战中击败Claude/GPT-5.5/Gemini，DeepSeek V4被Simon Willison评为'接近前沿'。中国AI模型已从追赶者变为领先者。",
+      "source": "TLDL / Hacker News",
+      "source_urls": ["https://www.tldl.io/blog/ai-news-updates-2026"],
+      "tags": ["中国AI", "Kimi", "DeepSeek"]
+    },
+    {
+      "title": "AI工具定价模式变革：GitHub Copilot转按量计费的连锁反应",
+      "category": "商业模式",
+      "relevance": "中",
+      "summary": "GitHub Copilot6月1日转按量计费，可能引发AI工具行业定价模式集体转型。从固定订阅到AI Credits的转变将改变用户对AI工具价值的感知。",
+      "source": "IT之家",
+      "source_urls": ["https://www.ithome.com/0/944/205.htm"],
+      "tags": ["按量计费", "商业模式"]
+    },
+    {
+      "title": "AI算力军备竞赛全面升级：5GW协议+TPU 8+SpaceX自研GPU",
+      "category": "基础设施",
+      "relevance": "中",
+      "summary": "本周算力新闻密集：Anthropic确保5GW+1000亿美元AWS承诺、谷歌TPU第八代开放预订、SpaceX自研GPU。AI算力进入工业级军备竞赛。",
+      "source": "AI Critique",
+      "source_urls": ["https://www.aicritique.org/us/2026/04/29/ai-developments-in-april-2026/"],
+      "tags": ["算力", "军备竞赛"]
+    },
+    {
+      "title": "AI产品伦理红线：Claude Code竞品屏蔽+VS Code强制署名",
+      "category": "伦理争议",
+      "relevance": "中",
+      "summary": "Claude Code检测竞品OpenClaw拒绝服务、VS Code强制Copilot联名署名——两起事件合计引发2585点Hacker News讨论，划出了AI产品竞争的伦理底线。",
+      "source": "TLDL / Hacker News",
+      "source_urls": ["https://www.tldl.io/blog/ai-news-updates-2026"],
+      "tags": ["伦理", "竞争", "底线"]
+    },
+    {
+      "title": "主流输入法2026年初集体升级：AI写作助手转型加速",
+      "category": "竞品动态",
+      "relevance": "高",
+      "summary": "回顾年初：搜狗20.0、讯飞15.0、豆包1.0密集升级。输入法从打字工具向AI写作助手全面转型。语音识别突破98%，AI联想和帮写成核心差异化方向。",
+      "source": "什么值得买",
+      "source_urls": ["https://post.smzdm.com/p/a504pql7/"],
+      "tags": ["输入法", "升级", "转型"]
+    },
+    {
+      "title": "五一假期收官：下周A股AI概念有望迎来事件驱动行情",
+      "category": "市场展望",
+      "relevance": "低",
+      "summary": "五一假期期间海外AI重大事件密集（OpenAI审判、独家终止、算力协议等），节后A股AI概念板块有望迎来事件驱动的估值重估。",
+      "source": "综合",
+      "source_urls": [],
+      "tags": ["A股", "AI概念", "事件驱动"]
+    },
+    {
+      "title": "Typeless中文语音输入持续优化：AI语音输入法赛道升温",
+      "category": "竞品动态",
+      "relevance": "高",
+      "summary": "Typeless持续优化中文语音输入能力，声称比打字快6倍。AI语音输入法赛道参与者增加（Typeless/豆包/讯飞/智谱），语音输入正从辅助功能升级为主要输入方式。",
+      "source": "Typeless官网 / 少数派",
+      "source_urls": ["https://typeless.cc/"],
+      "tags": ["Typeless", "语音输入", "赛道升温"]
+    },
+    {
+      "title": "OpenAI与高通联发科合作AI芯片：移动端前沿AI即将到来",
+      "category": "移动AI",
+      "relevance": "高",
+      "summary": "OpenAI与高通、联发科合作开发移动端AI芯片。一旦成功，将使手机直接运行前沿AI模型成为可能，对输入法等移动端AI应用影响深远。",
+      "source": "Metaverse Planet",
+      "source_urls": ["https://metaverseplanet.net/blog/weekly-ai-news-and-updates-april-28-2026/"],
+      "tags": ["移动芯片", "OpenAI", "高通"]
+    }
+  ]
+}

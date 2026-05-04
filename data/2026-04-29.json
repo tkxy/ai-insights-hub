@@ -1,0 +1,145 @@
+{
+  "date": "2026-04-29",
+  "generated_at": "2026-05-04T08:30:00+08:00",
+  "daily_summary": "周二的主题词是'开放与合作'。第九届数字中国建设峰会在福州开幕，主题为'加快数智技术创新发展，深入推进数字中国建设'，AI板块首次作为独立展区亮相，首展率约65%。微软与OpenAI正式宣布结束云服务独家合作，Azure仍保持主要合作伙伴地位但不再排他。OpenAI随即宣布在AWS上提供GPT-5.5有限预览。中国国内，字节跳动、腾讯、阿里巴巴争相订购华为昇腾950芯片，DeepSeek V4的发布加速了国产AI技术栈的自主化进程。AI日报报道'人工智能+'全面实施信号释放。整体趋势：AI行业从单一供应商绑定走向多云、多模型的开放格局。",
+  "design_insights": [
+    {
+      "title": "数字中国峰会：AI独立展区折射产业级落地加速",
+      "summary": "第九届数字中国建设峰会首次设立独立AI板块，超过6000项技术、产品及项目亮相，首展率65%。新增'产业对接舱'直接连接技术供给与行业需求。这标志着AI在中国已从技术展示走向产业化对接，政府层面将AI视为数字中国建设的核心引擎。",
+      "implication": "对输入法产品的启示：(1) 数字中国峰会的产业对接模式说明To B/To G市场对AI输入工具有真实需求——政务工作者每天大量公文写作、报告撰写，AI帮写的政务垂直版本是一个值得探索的方向；(2) 65%首展率意味着大量新产品涌现——需要关注是否有竞品在峰会上展示了输入法相关的AI能力。",
+      "sources": ["中新社"],
+      "source_urls": [
+        {"name": "数字中国峰会报道", "url": "https://www.chinanews.com/cj/2026/04-29/10613013.shtml"}
+      ],
+      "tags": ["数字中国", "产业落地", "政务AI", "To B"]
+    },
+    {
+      "title": "多云AI时代来临：OpenAI告别微软独家，前沿模型变成公共基础设施",
+      "summary": "微软与OpenAI结束独家协议后，OpenAI立即宣布在AWS上提供服务。据报道亚马逊投资500亿美元，OpenAI承诺8年内在AWS投入1000亿。与此同时谷歌计划向Anthropic投资400亿。前沿AI模型正在从'某家公司的独家产品'变成'多云多平台可用的基础设施'。",
+      "implication": "对输入法产品的启示：(1) 多云意味着输入法的AI后端选择更灵活——可以根据成本、延迟、合规等因素选择不同云上的不同模型，不再被绑死在某个平台；(2) 模型基础设施化会推动API成本进一步下降——这对输入法大规模部署AI帮写功能是利好。",
+      "sources": ["AI Critique", "The AI Track"],
+      "source_urls": [
+        {"name": "AI Critique深度分析", "url": "https://www.aicritique.org/us/2026/04/29/ai-developments-in-april-2026/"}
+      ],
+      "tags": ["多云", "OpenAI", "AWS", "基础设施化"]
+    },
+    {
+      "title": "华为昇腾950抢购潮：中国AI的主权技术栈加速成型",
+      "summary": "DeepSeek V4发布后，字节跳动、腾讯、阿里巴巴等中国互联网巨头争相订购华为昇腾950芯片。在美国出口管制持续收紧的背景下，中国AI的叙事正从'廉价模型'转向'主权技术栈'——从芯片到模型全链条国产化。",
+      "implication": "对输入法产品的启示：(1) 国产算力+国产模型的组合日趋成熟——输入法的AI后端可以更有信心地采用国产方案，既满足合规要求又降低依赖风险；(2) 昇腾生态的壮大意味着未来国产模型的推理成本可能进一步下降——利好输入法AI功能的大规模部署。",
+      "sources": ["AI Critique"],
+      "source_urls": [
+        {"name": "华为昇腾抢购分析", "url": "https://www.aicritique.org/us/2026/04/29/ai-developments-in-april-2026/"}
+      ],
+      "tags": ["华为昇腾", "国产算力", "主权技术栈", "出口管制"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "政务公文AI帮写：输入法切入政务垂直场景",
+      "pain_point": "政务工作者每天需要撰写大量公文、报告、纪要——格式要求严格、术语规范固定，但通用AI帮写往往不符合公文规范",
+      "opportunity": "数字中国峰会释放了AI赋能政务的明确信号。输入法可以提供政务公文帮写功能：(1) 预置公文模板（通知、报告、纪要、批复等）；(2) 公文术语智能联想；(3) 格式自动规范（红头文件格式、段落缩进、字号等）；(4) 敏感词检测和政治合规检查。可以作为To G商业化的切入点。",
+      "priority": "中",
+      "evidence": "数字中国峰会AI独立展区首次亮相、政务AI需求在各地政府采购中持续增长、竞品讯飞已在政务场景布局"
+    },
+    {
+      "title": "国产模型优先策略：降低海外API依赖风险",
+      "pain_point": "输入法AI帮写依赖海外模型API存在合规风险和供应链不确定性——地缘政治变化可能导致API中断",
+      "opportunity": "华为昇腾生态的成熟和DeepSeek V4的强劲表现，为输入法全面采用国产AI后端创造了条件。建议制定'国产模型优先'策略：(1) 主用DeepSeek V4-Pro/Flash作为帮写后端（中文能力国内评测第一）；(2) 备用方案接入通义千问/智谱GLM；(3) 仅在特定场景（英文写作）回退到海外模型。",
+      "priority": "高",
+      "evidence": "华为昇腾950订单激增、DeepSeek V4中文评测登顶国内第一、数字中国峰会强调技术自主可控"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "第九届数字中国建设峰会在福州开幕，AI首次独立设展",
+      "category": "行业会议",
+      "relevance": "高",
+      "summary": "峰会主题'加快数智技术创新发展'，AI板块首次作为独立展区亮相，超6000项技术产品展示，首展率65%。《数字中国发展报告(2025年)》同步发布。",
+      "source": "中新社",
+      "source_urls": ["https://www.chinanews.com/cj/2026/04-29/10613013.shtml"],
+      "tags": ["数字中国", "峰会", "AI展区"]
+    },
+    {
+      "title": "微软与OpenAI正式结束云服务独家合作",
+      "category": "战略合作",
+      "relevance": "高",
+      "summary": "双方重组合作关系：Azure仍是主要云合作伙伴但不再排他，微软保留至2030年20%收入分成。与AGI挂钩的条款被移除。这为OpenAI多云分发扫清了障碍。",
+      "source": "The AI Track",
+      "source_urls": ["https://theaitrack.com/ai-news-may-2026-in-depth-and-concise/"],
+      "tags": ["微软", "OpenAI", "独家终止", "多云"]
+    },
+    {
+      "title": "字节腾讯阿里争抢华为昇腾950芯片，国产AI算力需求爆发",
+      "category": "硬件供应链",
+      "relevance": "高",
+      "summary": "DeepSeek V4发布加速了国产AI技术栈的自主化。字节、腾讯、阿里等巨头争相订购华为昇腾950，中国AI从'廉价模型'转向'主权技术栈'竞争。",
+      "source": "AI Critique",
+      "source_urls": ["https://www.aicritique.org/us/2026/04/29/ai-developments-in-april-2026/"],
+      "tags": ["华为", "昇腾950", "国产算力", "供应链"]
+    },
+    {
+      "title": "OpenAI GPT-5.5登陆AWS：前沿AI进入多云公用事业时代",
+      "category": "战略合作",
+      "relevance": "高",
+      "summary": "OpenAI宣布GPT-5.5、Codex和Bedrock Managed Agents将在AWS提供有限预览。亚马逊投资500亿美元，OpenAI承诺8年内在AWS投入1000亿。",
+      "source": "AI Critique",
+      "source_urls": ["https://www.aicritique.org/us/2026/04/29/ai-developments-in-april-2026/"],
+      "tags": ["OpenAI", "AWS", "GPT-5.5", "多云"]
+    },
+    {
+      "title": "AI赋能医疗健康：上交大安泰称2026年是重要转折点",
+      "category": "行业应用",
+      "relevance": "中",
+      "summary": "中国医药创新促进会在中欧医疗论坛上指出2026年是AI赋能医疗的重要转折点。交大安泰发布《2026年人工智能+行业发展蓝皮书》。",
+      "source": "中新网",
+      "source_urls": ["https://www.chinanews.com/jk/2026/04-28/10612578.shtml"],
+      "tags": ["医疗AI", "行业转折", "蓝皮书"]
+    },
+    {
+      "title": "斯坦福AI指数报告：12张图表解读2026年AI发展现状",
+      "category": "行业报告",
+      "relevance": "中",
+      "summary": "斯坦福大学发布年度AI指数报告，指出顶尖AI模型加速升级，头部AI企业加速上市。报告预计多家AI公司将在2026下半年提交IPO申请。",
+      "source": "腾讯新闻",
+      "source_urls": ["https://news.qq.com/rain/a/20260427A06E5Y00"],
+      "tags": ["斯坦福", "AI报告", "IPO"]
+    },
+    {
+      "title": "AI日报：中央政治局会议提出全面实施'人工智能+'行动",
+      "category": "政策信号",
+      "relevance": "中",
+      "summary": "4月28日政治局会议专题研究经济形势，明确提出深入整治'内卷式'竞争，全面实施'人工智能+'行动，加强算力网、新型电网等新基建。",
+      "source": "多课网",
+      "source_urls": ["https://duoke360.com/post/46193"],
+      "tags": ["政治局", "人工智能+", "政策"]
+    },
+    {
+      "title": "马斯克审判第二天：OpenAI内部邮件曝光",
+      "category": "行业法律",
+      "relevance": "中",
+      "summary": "马斯克诉OpenAI审判进入第二天，法庭公开了大量内部邮件和早期董事会记录。案件焦点集中在OpenAI从非营利到营利转型的决策过程。",
+      "source": "TLDL",
+      "source_urls": ["https://www.tldl.io/blog/ai-news-updates-2026"],
+      "tags": ["马斯克", "OpenAI", "审判", "邮件"]
+    },
+    {
+      "title": "谷歌计划向Anthropic投资高达400亿美元",
+      "category": "投融资",
+      "relevance": "中",
+      "summary": "谷歌计划通过现金和算力支持向Anthropic投资400亿美元（初期100亿+达标后追加300亿），以应对Claude模型及AI基础设施需求增长。",
+      "source": "The AI Track",
+      "source_urls": ["https://theaitrack.com/ai-news-may-2026-in-depth-and-concise/"],
+      "tags": ["谷歌", "Anthropic", "400亿", "投资"]
+    },
+    {
+      "title": "具身智能量产加速：多家创业公司发布新一代人形机器人",
+      "category": "技术前沿",
+      "relevance": "低",
+      "summary": "爱合伙AI创业快讯报道，具身智能领域多家公司发布新一代产品。人形机器人从实验室走向产线，AI技术突破推动商业化落地。",
+      "source": "爱合伙",
+      "source_urls": ["https://www.aihehuo.com/blog/8840-news-2026-04-28"],
+      "tags": ["具身智能", "机器人", "量产"]
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "date": "2026-05-02",
+  "generated_at": "2026-05-04T08:30:00+08:00",
+  "daily_summary": "五一假期第二天，国内市场静默但海外AI动态持续。最受关注的是Simon Willison对DeepSeek V4的深度评测——他的结论是V4性能'几乎接近前沿模型'，这是对中国AI实验室能力的重要认可。Anthropic与AWS签署了新的大规模计算资源协议，确保高达5吉瓦的容量，十年承诺超1000亿美元。这个数字意味着AI竞争已经进入了公用事业级别的工业规模。谷歌第八代TPU芯片（TPU 8t训练版和TPU 8i推理版）在Cloud Next大会后开始接受预订。AI硬件和基础设施的军备竞赛全面升级。对输入法产品来说，算力供给激增意味着AI API成本的下降趋势将持续，大规模AI帮写的经济可行性在进一步改善。",
+  "design_insights": [
+    {
+      "title": "DeepSeek V4独立评测：中国AI模型获国际权威认可",
+      "summary": "知名开发者和AI评论家Simon Willison发布了DeepSeek V4的深度评测，结论是其性能'几乎接近前沿模型'（Hacker News 577点）。Willison的评测以严谨著称，他的正面评价意味着DeepSeek V4已经获得了国际技术社区的认可。V4在编码、推理和中文理解方面的表现尤其亮眼。",
+      "implication": "对输入法产品的启示：(1) DeepSeek V4获得国际权威评测认可，进一步验证了将V4作为输入法帮写后端主力模型的可行性；(2) V4的性价比优势（开源权重+低成本）使得输入法可以在不显著增加成本的情况下提升AI帮写质量；(3) 建议在5月安排V4-Pro的帮写效果A/B测试，对比当前模型。",
+      "sources": ["Simon Willison", "Hacker News"],
+      "source_urls": [
+        {"name": "TLDL DeepSeek V4评测", "url": "https://www.tldl.io/blog/ai-news-updates-2026"}
+      ],
+      "tags": ["DeepSeek V4", "独立评测", "Simon Willison", "国际认可"]
+    },
+    {
+      "title": "5吉瓦AI算力：Anthropic与AWS的工业级计算协议",
+      "summary": "Anthropic与亚马逊签署新协议，确保高达5吉瓦（GW）的计算容量，十年承诺在AWS技术上投入超1000亿美元，同时获得亚马逊50亿美元新投资。'5吉瓦'已经超越了普通数据中心的规模——AI计算正在进入工业基础设施的量级。",
+      "implication": "对输入法产品的启示：(1) AI算力的工业化供给意味着模型推理成本将持续下降——输入法AI帮写的单次调用成本有望在未来1-2年降低50%以上；(2) 算力充裕后，可以考虑更频繁地调用AI——不仅是用户主动触发帮写，还可以做被动的输入预测和智能建议。",
+      "sources": ["AI Critique"],
+      "source_urls": [
+        {"name": "AI Critique分析", "url": "https://www.aicritique.org/us/2026/04/29/ai-developments-in-april-2026/"}
+      ],
+      "tags": ["算力", "5吉瓦", "Anthropic", "AWS"]
+    },
+    {
+      "title": "Deezer数据：44%上传音乐为AI生成，AI内容洪流已来",
+      "summary": "音乐平台Deezer披露，其平台上44%的上传音乐为AI生成。这个数据震撼了创意行业——如果音乐领域接近一半已被AI占据，文字创作、设计等领域的AI渗透只会更快。用户将越来越习惯与AI共创内容。",
+      "implication": "对输入法产品的启示：(1) AI生成内容正在成为'新常态'——用户对'AI帮我写'的接受度在快速提升，帮写功能的使用障碍在降低；(2) 但同时也意味着'AI味'内容的泛滥——输入法帮写需要在'AI辅助'和'保留个人风格'之间找到平衡，避免所有用户的输出都千篇一律。",
+      "sources": ["Metaverse Planet"],
+      "source_urls": [
+        {"name": "Metaverse Planet报道", "url": "https://metaverseplanet.net/blog/weekly-ai-news-and-updates-april-28-2026/"}
+      ],
+      "tags": ["AI内容", "Deezer", "44%", "创意AI"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "个人风格保留的AI帮写：不做千篇一律的输出",
+      "pain_point": "AI帮写的内容越来越容易被识别为'AI味'——缺乏个人特色，所有人用AI写出来的东西都很像",
+      "opportunity": "Deezer 44%音乐AI生成的数据警示我们：AI内容泛滥后，个性化是关键差异点。输入法帮写应该学习用户的个人写作风格：(1) 分析用户历史输入的遣词造句习惯、常用语气词、句式偏好；(2) 在AI帮写时融入用户个人风格——让生成的内容'像我写的'而不是'AI写的'；(3) 提供风格调节滑块：从纯AI到纯个人风格之间可调。",
+      "priority": "高",
+      "evidence": "Deezer 44%音乐为AI生成引发对AI内容同质化的讨论、用户调研显示'不像我写的'是帮写功能最大的弃用原因之一"
+    },
+    {
+      "title": "被动式AI输入预测：不等用户触发，主动提供智能建议",
+      "pain_point": "当前帮写需要用户主动触发——但很多场景下用户不知道或懒得触发，错过了AI帮助的机会",
+      "opportunity": "算力成本持续下降使被动式AI预测成为经济可行的选项。方案：(1) 实时分析用户正在输入的上下文，当检测到用户可能需要帮助时（如停顿超过3秒、反复删改），主动弹出帮写建议；(2) 智能回复预测——在对话场景中，根据对方发来的消息预测用户可能的回复；(3) 灰字预测——类似代码编辑器的行内补全，在光标位置显示灰色预测文字。",
+      "priority": "高",
+      "evidence": "AI算力工业化供给降低推理成本、代码编辑器的行内AI补全体验已被广泛验证、微软Win11任务栏AI集成显示被动式AI是趋势"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Simon Willison评测DeepSeek V4：性能几乎接近前沿模型",
+      "category": "模型评测",
+      "relevance": "高",
+      "summary": "知名开发者Simon Willison发布深度评测，认为DeepSeek V4性能'几乎接近前沿模型'。Hacker News 577点热度，标志中国AI模型获国际技术社区认可。",
+      "source": "TLDL / Hacker News",
+      "source_urls": ["https://www.tldl.io/blog/ai-news-updates-2026"],
+      "tags": ["DeepSeek V4", "评测", "Simon Willison"]
+    },
+    {
+      "title": "Anthropic与AWS签署5吉瓦算力协议：十年1000亿美元承诺",
+      "category": "基础设施",
+      "relevance": "高",
+      "summary": "Anthropic确保高达5GW计算容量，承诺十年内在AWS投入超1000亿美元。亚马逊追加50亿美元投资。AI算力进入公用事业工业级别。",
+      "source": "AI Critique",
+      "source_urls": ["https://www.aicritique.org/us/2026/04/29/ai-developments-in-april-2026/"],
+      "tags": ["Anthropic", "AWS", "5GW", "算力"]
+    },
+    {
+      "title": "谷歌第八代TPU开放预订：TPU 8t训练版 + TPU 8i推理版",
+      "category": "硬件发布",
+      "relevance": "中",
+      "summary": "Google Cloud Next大会后，第八代TPU芯片正式开放预订。分为训练专用（8t）和推理专用（8i）两个版本，推理版本将显著降低AI推理成本。",
+      "source": "AI Critique",
+      "source_urls": ["https://www.aicritique.org/us/2026/04/29/ai-developments-in-april-2026/"],
+      "tags": ["谷歌", "TPU", "第八代", "芯片"]
+    },
+    {
+      "title": "Deezer数据：平台44%上传音乐为AI生成",
+      "category": "行业数据",
+      "relevance": "中",
+      "summary": "音乐平台Deezer披露惊人数据：44%的上传音乐为AI生成。AI内容在创意领域的渗透速度远超预期。",
+      "source": "Metaverse Planet",
+      "source_urls": ["https://metaverseplanet.net/blog/weekly-ai-news-and-updates-april-28-2026/"],
+      "tags": ["Deezer", "AI音乐", "44%"]
+    },
+    {
+      "title": "OpenAI与高通、联发科合作开发移动AI芯片",
+      "category": "硬件合作",
+      "relevance": "高",
+      "summary": "OpenAI正在与高通和联发科合作开发专为移动设备优化的定制AI芯片，旨在将前沿AI能力带到手机端。对输入法等移动端AI应用意义重大。",
+      "source": "Metaverse Planet",
+      "source_urls": ["https://metaverseplanet.net/blog/weekly-ai-news-and-updates-april-28-2026/"],
+      "tags": ["OpenAI", "高通", "联发科", "移动芯片"]
+    },
+    {
+      "title": "默克公司计划向Google Cloud投资10亿美元部署AI",
+      "category": "企业AI",
+      "relevance": "低",
+      "summary": "制药巨头默克宣布计划向Google Cloud投资高达10亿美元，用于AI驱动的药物研发和企业运营。企业级AI采购进入十亿美元级别。",
+      "source": "AI Critique",
+      "source_urls": ["https://www.aicritique.org/us/2026/04/29/ai-developments-in-april-2026/"],
+      "tags": ["默克", "Google Cloud", "企业AI"]
+    },
+    {
+      "title": "AI模型排行榜更新：Claude Opus 4.7持续领跑SWE-bench",
+      "category": "模型排名",
+      "relevance": "中",
+      "summary": "最新AI模型排行榜显示Claude Opus 4.7在SWE-bench Pro上维持64.3%得分领先。GPT-5.5紧随其后，DeepSeek V4在中文任务上独占鳌头。",
+      "source": "Build Fast with AI",
+      "source_urls": ["https://www.buildfastwithai.com/blogs/best-ai-models-may-2026-leaderboard"],
+      "tags": ["排行榜", "Claude", "GPT-5.5", "DeepSeek"]
+    },
+    {
+      "title": "土耳其司法部计划引入AI便利公民法律服务",
+      "category": "政府应用",
+      "relevance": "低",
+      "summary": "土耳其司法部宣布计划引入AI技术便利公民获取法律服务。AI在全球政府服务中的应用范围持续扩大。",
+      "source": "Metaverse Planet",
+      "source_urls": ["https://metaverseplanet.net/blog/weekly-ai-news-and-updates-april-28-2026/"],
+      "tags": ["土耳其", "法律AI", "政府"]
+    },
+    {
+      "title": "Meta Muse Spark模型发布：展示超级智能进展",
+      "category": "模型发布",
+      "relevance": "中",
+      "summary": "Meta发布Muse Spark模型，展示其在超级智能研究方面的最新进展。同时与CoreWeave签署210亿美元计算协议。",
+      "source": "AI Critique",
+      "source_urls": ["https://www.aicritique.org/us/2026/04/29/ai-developments-in-april-2026/"],
+      "tags": ["Meta", "Muse Spark", "超级智能"]
+    },
+    {
+      "title": "AI芯片设计公司Verkor-io：12小时设计出RISC-V处理器",
+      "category": "技术突破",
+      "relevance": "中",
+      "summary": "芯片设计初创Verkor-io利用AI系统Design Conductor，12小时内从零设计出RISC-V处理器VerCore：1.48GHz主频，CoreMark 3261分。AI加速硬件设计已成现实。",
+      "source": "Metaverse Planet",
+      "source_urls": ["https://metaverseplanet.net/blog/weekly-ai-news-and-updates-april-28-2026/"],
+      "tags": ["Verkor-io", "AI芯片设计", "RISC-V", "12小时"]
+    }
+  ]
+}

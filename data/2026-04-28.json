@@ -1,0 +1,172 @@
+{
+  "date": "2026-04-28",
+  "generated_at": "2026-05-04T08:30:00+08:00",
+  "daily_summary": "周一开启新的一周，AI行业以法律和战略合作为主线展开。马斯克在奥克兰出庭，针对OpenAI和微软的联邦诉讼正式开审，这场长达数年的纠纷进入最终阶段。Anthropic发布Claude Connectors，将AI助手延伸到Adobe、Blender、Autodesk Fusion等创意工具链中，标志着AI从对话界面走向专业工具嵌入。《时代》杂志公布2026十大最具影响力AI公司，字节跳动、智谱、阿里巴巴三家中国公司入选。GitHub宣布Copilot将于6月1日从固定订阅转向按量计费。百度在创作者大会上发布Master Agent，将搜索从信息查找升级为任务执行。上海创智学院发布全栈科研基础设施。整体来看，AI行业正从模型竞赛转向生态整合和商业模式优化。",
+  "design_insights": [
+    {
+      "title": "Claude Connectors：AI从对话框走进专业创作工具链",
+      "summary": "Anthropic发布Claude Connectors，为Adobe、Blender、Autodesk Fusion提供原生AI连接器，将Claude助手嵌入设计、音乐、视频、3D建模和实时视觉效果工作流。这不是简单的聊天窗口叠加，而是AI理解工具上下文后在工作流内部提供智能辅助。",
+      "implication": "对输入法产品的启示：(1) 'AI嵌入工具'比'工具调用AI'体验更好——输入法的AI帮写不应该是独立弹窗，而应该无缝融入用户正在编辑的场景（微信对话框、备忘录、邮件正文）中；(2) Claude Connectors的设计思路值得借鉴：AI理解当前工具的上下文（正在编辑什么、用了什么素材），输入法也可以理解用户正在写什么类型的文本，从而提供场景化帮写。",
+      "sources": ["The AI Track", "Anthropic官方"],
+      "source_urls": [
+        {"name": "AI Track报道", "url": "https://theaitrack.com/ai-news-may-2026-in-depth-and-concise/"}
+      ],
+      "tags": ["Claude Connectors", "工具嵌入", "创意工具链", "场景化AI"]
+    },
+    {
+      "title": "GitHub Copilot转按量计费：AI工具定价模式正在重塑",
+      "summary": "GitHub宣布Copilot将于6月1日从固定额度订阅制转向AI Credits按量计费模式。这反映了AI工具行业的定价逻辑正从'功能订阅'走向'使用量付费'。微软此举可能引发连锁反应——当用户按token付费时，会更敏感地感知AI工具的实际价值。",
+      "implication": "对输入法产品的启示：(1) 按量计费是AI功能商业化的趋势之一——输入法的AI帮写功能未来可能需要考虑类似的计费模型：基础免费+高频使用付费，而非简单的VIP订阅；(2) 按量计费让用户对每次AI调用的质量更敏感——帮写功能的每一次输出都必须足够好，否则用户会觉得'不值这个钱'。",
+      "sources": ["IT之家"],
+      "source_urls": [
+        {"name": "IT之家报道", "url": "https://www.ithome.com/0/944/205.htm"}
+      ],
+      "tags": ["按量计费", "商业模式", "Copilot", "定价策略"]
+    },
+    {
+      "title": "《时代》十大AI公司：字节、智谱、阿里入选背后的中国AI力量",
+      "summary": "《时代》杂志公布2026全球十大最具影响力AI公司：字节跳动、亚马逊、智谱、OpenAI、Alphabet、Meta、Anthropic、阿里巴巴、Mistral、Hugging Face。中国企业占据三席，字节跳动凭借豆包生态和TikTok影响力位列榜首。智谱以开源策略和Kimi系列模型获得认可。",
+      "implication": "对输入法产品的启示：(1) 字节跳动入选榜首意味着豆包生态的影响力仍在快速扩大——豆包输入法背后有整个字节AI生态的支撑，这是搜狗面临的最大竞争威胁；(2) 智谱入选说明开源模型的商业影响力已获全球认可——输入法可以考虑接入智谱的Kimi系列作为帮写后端的补充选项。",
+      "sources": ["IT之家", "《时代》杂志"],
+      "source_urls": [
+        {"name": "IT之家报道", "url": "https://news.qq.com/rain/a/20260428A052SL00"}
+      ],
+      "tags": ["《时代》", "十大AI公司", "字节跳动", "智谱"]
+    },
+    {
+      "title": "马斯克诉OpenAI正式开审：AI行业治理的标志性案例",
+      "summary": "马斯克在奥克兰联邦法庭出庭作证，针对OpenAI、Sam Altman、Greg Brockman和微软的诉讼正式开审。目前仅剩两项指控：违反慈善信托和不正当得利。这场审判的结果可能重塑AI行业的公司治理标准和开源承诺的法律约束力。",
+      "implication": "对输入法产品的启示：(1) 此案的走向可能影响OpenAI的商业策略和API定价——如果败诉，OpenAI可能被迫开放更多模型，降低输入法接入成本；(2) AI行业治理标准的变化可能影响数据使用和模型训练的合规要求——输入法的AI功能需要持续关注合规动态。",
+      "sources": ["The AI Track", "TLDL"],
+      "source_urls": [
+        {"name": "AI Track报道", "url": "https://theaitrack.com/ai-news-may-2026-in-depth-and-concise/"},
+        {"name": "AIBars汇总", "url": "https://www.aibars.net/zh/library/ai-news/list"}
+      ],
+      "tags": ["马斯克诉讼", "OpenAI", "行业治理", "法律"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "场景感知帮写：根据用户正在使用的App自动调整AI风格",
+      "pain_point": "用户在不同App中的写作需求差异巨大——微信聊天需要轻松口语化，邮件需要正式商务语气，备忘录需要简洁要点——但当前帮写功能只有一种风格",
+      "opportunity": "借鉴Claude Connectors的思路，输入法可以感知用户当前所在的App类型，自动切换帮写风格：(1) 即时通讯App→口语化、简短、带表情；(2) 邮件App→正式、有结构、礼貌；(3) 笔记App→要点化、简洁；(4) 社交平台→吸引眼球、有话题性。技术上通过读取当前焦点App的Bundle ID即可实现场景识别。",
+      "priority": "高",
+      "evidence": "Claude Connectors对专业工具的场景化嵌入获得行业好评、用户调研显示不同场景对帮写风格的需求差异大"
+    },
+    {
+      "title": "AI功能按量计费模型探索",
+      "pain_point": "当前VIP会员模式下，高频AI用户觉得限制太多，低频用户觉得不值——定价模型无法匹配用户实际使用量",
+      "opportunity": "参考GitHub Copilot的按量计费转型，输入法可以探索'基础免费+AI Credits'模式：每月赠送一定AI调用额度，超出后按次计费。优势：(1) 降低付费门槛吸引更多用户试用；(2) 高频用户贡献更多收入；(3) 按量模型让产品团队有更强动力提升每次AI输出质量。",
+      "priority": "中",
+      "evidence": "GitHub Copilot 6月1日转按量计费、AI工具行业定价模型正在从订阅制向使用量付费迁移"
+    },
+    {
+      "title": "输入法AI能力的模型路由：利用多模型差异化优势",
+      "pain_point": "单一模型无法在所有场景都是最优——某些模型中文理解更好，某些模型创意写作更强，某些模型速度更快",
+      "opportunity": "构建智能模型路由系统：根据用户输入的场景和任务类型，自动选择最优模型。例如：中文帮写用DeepSeek V4-Pro（中文理解强）、英文帮写用GPT-5.5（英文创意好）、快速补全用V4-Flash（性价比高）。技术实现：轻量分类器+路由配置，无需改变用户交互。",
+      "priority": "高",
+      "evidence": "上周三大模型各有优势：GPT-5.5通用推理强、DeepSeek V4中文理解优、Claude Opus编程精度高；多模型策略已成行业趋势"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "马斯克在奥克兰出庭，OpenAI联邦诉讼案正式开审",
+      "category": "行业法律",
+      "relevance": "高",
+      "summary": "埃隆·马斯克连续三天在联邦法庭作证，指控OpenAI、Sam Altman、Greg Brockman和微软违反慈善信托和不正当得利。这是AI行业最重要的法律案件之一。",
+      "source": "The AI Track",
+      "source_urls": ["https://theaitrack.com/ai-news-may-2026-in-depth-and-concise/"],
+      "tags": ["马斯克", "OpenAI", "诉讼", "法律"]
+    },
+    {
+      "title": "Anthropic发布Claude Connectors，AI嵌入Adobe/Blender/Fusion创意工具链",
+      "category": "产品发布",
+      "relevance": "高",
+      "summary": "Anthropic推出面向Adobe、Blender和Autodesk Fusion的连接器，将Claude AI助手嵌入设计、音乐、视频、3D建模和创意教育工作流。标志AI从对话框走向专业工具原生集成。",
+      "source": "Anthropic",
+      "source_urls": ["https://theaitrack.com/ai-news-may-2026-in-depth-and-concise/"],
+      "tags": ["Anthropic", "Claude", "创意工具", "Connectors"]
+    },
+    {
+      "title": "《时代》2026十大最具影响力AI公司：字节跳动、智谱、阿里入选",
+      "category": "行业排名",
+      "relevance": "高",
+      "summary": "字节跳动、亚马逊、智谱、OpenAI、Alphabet、Meta、Anthropic、阿里巴巴、Mistral、Hugging Face入选。中国企业占三席，字节跳动位列榜首。",
+      "source": "IT之家",
+      "source_urls": ["https://news.qq.com/rain/a/20260428A052SL00"],
+      "tags": ["《时代》", "AI公司", "字节跳动", "排名"]
+    },
+    {
+      "title": "GitHub Copilot宣布6月1日转按量计费：AI Credits模式",
+      "category": "商业模式",
+      "relevance": "高",
+      "summary": "微软旗下GitHub宣布Copilot将从固定额度订阅制全面转向按使用量计费模式（AI Credits），这可能引发AI工具行业的定价模式重塑。",
+      "source": "IT之家",
+      "source_urls": ["https://www.ithome.com/0/944/205.htm"],
+      "tags": ["GitHub", "Copilot", "按量计费", "商业模式"]
+    },
+    {
+      "title": "百度创作者大会发布Master Agent：搜索从信息查找升级为任务执行",
+      "category": "产品升级",
+      "relevance": "中",
+      "summary": "百度宣布搜索AI引擎升级核心为Master Agent，将搜索从信息查找升级为任务执行。百度App主动日活同比增长1.6倍，百家号创作者规模增长23%。同时启动'星云计划'向合作伙伴开放AI引擎。",
+      "source": "新浪财经",
+      "source_urls": ["https://finance.sina.com.cn/roll/2026-04-29/doc-inhwaxzu7002312.shtml"],
+      "tags": ["百度", "Master Agent", "搜索", "任务执行"]
+    },
+    {
+      "title": "上海创智学院发布全栈科研基础设施'创奇·智能新基建'",
+      "category": "科研基础设施",
+      "relevance": "低",
+      "summary": "上海创智学院发布从底层算力到顶层科学应用的全栈科研基础设施与运行体系，提出AI智能体从实验室走向产业化的新路径。",
+      "source": "新浪AI热点",
+      "source_urls": ["https://k.sina.cn/article_7857201856_1d45362c001904uhpc.html"],
+      "tags": ["科研", "基础设施", "智能体"]
+    },
+    {
+      "title": "DeepSeek V4中文评测：Pro版登顶国内第一",
+      "category": "模型评测",
+      "relevance": "高",
+      "summary": "AITOP100发布DeepSeek V4中文评测报告，V4-Pro在中文理解、长上下文处理等核心能力上登顶国内评测榜首。开发者社区对V4的中文能力评价积极。",
+      "source": "AITOP100",
+      "source_urls": ["https://www.aitop100.cn/ai-daily-2026-04-28"],
+      "tags": ["DeepSeek", "V4", "中文评测", "国内第一"]
+    },
+    {
+      "title": "国家发改委禁止Meta收购Manus AI，要求撤销交易",
+      "category": "监管政策",
+      "relevance": "中",
+      "summary": "中国国家发改委正式否决Meta对AI智能体初创公司Manus的超20亿美元收购，要求Meta撤销交易。凸显跨境AI投资在国家安全框架下面临的审查压力。",
+      "source": "AITOP100",
+      "source_urls": ["https://www.aitop100.cn/ai-daily-2026-04-28"],
+      "tags": ["Meta", "Manus", "监管", "收购"]
+    },
+    {
+      "title": "福布斯2026全球AI 50强揭晓",
+      "category": "行业排名",
+      "relevance": "中",
+      "summary": "福布斯发布2026年全球AI 50强企业榜单，涵盖大模型、AI应用、AI基础设施等多个赛道。中国企业在榜单中的份额持续增长。",
+      "source": "AITOP100",
+      "source_urls": ["https://www.aitop100.cn/ai-daily-2026-04-28"],
+      "tags": ["福布斯", "AI 50强", "排名"]
+    },
+    {
+      "title": "阿里HappyHorse视频模型亮相",
+      "category": "产品发布",
+      "relevance": "低",
+      "summary": "阿里巴巴发布HappyHorse视频生成模型，在短视频生成质量和速度上取得显著突破。这是阿里在多模态AI领域的最新布局。",
+      "source": "AITOP100",
+      "source_urls": ["https://www.aitop100.cn/ai-daily-2026-04-28"],
+      "tags": ["阿里", "视频生成", "多模态"]
+    },
+    {
+      "title": "OpenAI进军AWS：GPT-5.5和Codex将在亚马逊云上提供服务",
+      "category": "战略合作",
+      "relevance": "高",
+      "summary": "在结束与微软的独家合作后，OpenAI宣布GPT-5.5、Codex和Bedrock Managed Agents将在AWS上提供有限预览。据报道亚马逊向OpenAI投资500亿美元。前沿AI正转变为多云公用事业。",
+      "source": "AI Critique",
+      "source_urls": ["https://www.aicritique.org/us/2026/04/29/ai-developments-in-april-2026/"],
+      "tags": ["OpenAI", "AWS", "多云", "战略合作"]
+    }
+  ]
+}

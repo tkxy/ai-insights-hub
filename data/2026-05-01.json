@@ -1,0 +1,145 @@
+{
+  "date": "2026-05-01",
+  "generated_at": "2026-05-04T08:30:00+08:00",
+  "daily_summary": "五一国际劳动节，中国市场放假但全球AI行业不休息。xAI发布Grok 4.3，马斯克一边出庭告OpenAI一边推模型，姿态相当戏剧化。Hacker News上最热话题是Claude Code被发现如果用户提及竞争对手OpenClaw就会拒绝服务或加价——Anthropic的'护城河'策略引发开发者社区强烈反弹。贝索斯被曝正在筹备新的AI风险投资公司，估值可能达380亿美元。SpaceX向SEC提交文件显示正在自研GPU，减少对英伟达依赖。AI领域的竞争已经从模型能力延伸到芯片自研和资本布局。对于中国市场，五一假期是用户使用输入法高峰期——旅游社交场景下的打字需求激增。",
+  "design_insights": [
+    {
+      "title": "Claude Code的'竞品屏蔽'争议：AI产品的竞争伦理边界",
+      "summary": "Claude Code被发现如果用户的提交信息中提及竞争对手OpenClaw就会拒绝服务或额外收费。这引发了开发者社区的强烈反对（Hacker News 1236点），核心质疑：AI工具是否应该基于用户使用竞品来歧视用户？这触及了AI产品竞争的伦理底线。",
+      "implication": "对输入法产品的启示：(1) 绝对不要做竞品屏蔽——用户在微信里讨论'豆包输入法好用'时，搜狗输入法的AI帮写绝不能因此降低服务质量或拒绝响应，这会被用户发现并引发信任危机；(2) 正面竞争的正确方式是在自己的产品体验上做到更好，而非限制用户选择。",
+      "sources": ["TLDL", "Hacker News"],
+      "source_urls": [
+        {"name": "TLDL报道", "url": "https://www.tldl.io/blog/ai-news-updates-2026"}
+      ],
+      "tags": ["竞争伦理", "Claude Code", "OpenClaw", "用户信任"]
+    },
+    {
+      "title": "xAI Grok 4.3发布：马斯克的AI双线作战",
+      "summary": "在马斯克出庭告OpenAI的同一周，xAI发布了Grok 4.3。马斯克一边在法庭上声称OpenAI背叛了开源承诺，一边通过xAI推出自己的商业AI模型。Grok系列已通过x.ai API对外服务，形成了X社交平台+xAI模型+Grok工具的完整生态。",
+      "implication": "对输入法产品的启示：(1) AI模型的供应商数量持续增加（GPT/Claude/DeepSeek/Gemini/Grok），输入法的模型路由策略需要能快速接入新模型进行评估；(2) Grok的优势在于对社交媒体内容的理解——如果用户在社交场景下使用输入法，Grok可能是一个值得测试的帮写后端选项。",
+      "sources": ["TLDL", "Hacker News"],
+      "source_urls": [
+        {"name": "TLDL报道", "url": "https://www.tldl.io/blog/ai-news-updates-2026"}
+      ],
+      "tags": ["Grok 4.3", "xAI", "马斯克", "模型生态"]
+    },
+    {
+      "title": "SpaceX自研GPU：科技巨头纷纷切入芯片自研",
+      "summary": "SpaceX向SEC提交文件显示正在研发自己的GPU芯片，减少对英伟达等供应商的依赖。继特斯拉、谷歌（TPU）、亚马逊（Trainium/Inferentia）之后，又一科技巨头走上芯片自研路线。这意味着AI算力的供给格局正在被重塑。",
+      "implication": "对输入法产品的启示：芯片自研潮说明AI推理成本仍有大幅下降空间——随着更多芯片选择出现和算力供给增加，AI API的调用成本将持续下降，这对输入法大规模部署AI帮写是长期利好。",
+      "sources": ["TLDL"],
+      "source_urls": [
+        {"name": "TLDL报道", "url": "https://www.tldl.io/blog/ai-news-updates-2026"}
+      ],
+      "tags": ["SpaceX", "GPU自研", "算力", "芯片"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "节假日社交场景帮写：旅行分享、祝福、约饭一键生成",
+      "pain_point": "五一假期用户大量发朋友圈旅行照片、约朋友聚餐、发节日祝福——但很多人不擅长写配文或者懒得想",
+      "opportunity": "节假日是输入法AI帮写的高价值场景。方案：(1) 旅行照片配文帮写——根据地点和照片内容生成朋友圈文案；(2) 约饭帮写——一键生成约饭邀请消息，自动带上餐厅推荐和时间选项；(3) 节日祝福帮写——个性化祝福语生成（不是模板式的群发感）。触发方式：检测到用户正在社交App中输入时，主动推荐帮写。",
+      "priority": "中",
+      "evidence": "五一假期是社交高频期、朋友圈和微信消息量显著增加、用户对旅行配文和祝福语有真实需求"
+    },
+    {
+      "title": "AI竞争透明度：让用户知道帮写在用什么模型",
+      "pain_point": "用户不知道帮写功能背后使用的是哪个AI模型——无法判断帮写质量是否受模型影响",
+      "opportunity": "Claude Code竞品屏蔽事件说明AI透明度是用户信任的关键。输入法可以在帮写功能中增加模型标识：(1) 每次帮写结果底部小字标注'由XX模型生成'；(2) 设置中允许用户选择偏好模型；(3) 定期公布各模型的帮写质量评估报告。这种透明做法可以建立用户信任并形成差异化竞争优势。",
+      "priority": "低",
+      "evidence": "Claude Code/OpenClaw争议引发用户对AI产品透明度的关注、开发者社区对AI工具的信任度敏感"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "xAI发布Grok 4.3，已通过x.ai API对外服务",
+      "category": "模型发布",
+      "relevance": "中",
+      "summary": "马斯克旗下xAI发布Grok系列最新模型Grok 4.3，现已通过x.ai API提供。在马斯克出庭告OpenAI的同一周发布，姿态颇具戏剧性。",
+      "source": "TLDL",
+      "source_urls": ["https://www.tldl.io/blog/ai-news-updates-2026"],
+      "tags": ["xAI", "Grok 4.3", "马斯克"]
+    },
+    {
+      "title": "Claude Code被曝竞品屏蔽：提及OpenClaw即拒绝服务或加价",
+      "category": "行业争议",
+      "relevance": "高",
+      "summary": "Anthropic的Claude Code被发现会根据用户提交信息中是否提及竞争对手OpenClaw来拒绝请求或额外收费。Hacker News热度1236点，开发者社区强烈反对。",
+      "source": "TLDL / Hacker News",
+      "source_urls": ["https://www.tldl.io/blog/ai-news-updates-2026"],
+      "tags": ["Claude Code", "竞品屏蔽", "争议", "伦理"]
+    },
+    {
+      "title": "SpaceX SEC文件显示正在自研GPU芯片",
+      "category": "硬件研发",
+      "relevance": "中",
+      "summary": "SpaceX向美国证券交易委员会提交的文件显示，公司正在研发自己的GPU芯片，旨在减少对英伟达等供应商的依赖。AI算力自主化趋势蔓延。",
+      "source": "TLDL",
+      "source_urls": ["https://www.tldl.io/blog/ai-news-updates-2026"],
+      "tags": ["SpaceX", "GPU", "芯片", "自研"]
+    },
+    {
+      "title": "贝索斯筹备新AI风投公司：估值可能达380亿美元",
+      "category": "投融资",
+      "relevance": "中",
+      "summary": "报道称亚马逊创始人贝索斯正在筹备一家新的AI风险投资公司，估值可能高达380亿美元。这将是AI投资领域规模最大的独立风投之一。",
+      "source": "Metaverse Planet",
+      "source_urls": ["https://metaverseplanet.net/blog/weekly-ai-news-and-updates-april-28-2026/"],
+      "tags": ["贝索斯", "风投", "380亿", "投资"]
+    },
+    {
+      "title": "马斯克诉OpenAI审判第三天：证人交叉质询",
+      "category": "行业法律",
+      "relevance": "中",
+      "summary": "马斯克出庭作证进入第三天，检方对其进行交叉质询，焦点转向马斯克本人在xAI的商业利益与诉讼动机之间的关系。",
+      "source": "AIBars",
+      "source_urls": ["https://www.aibars.net/zh/library/ai-news/list"],
+      "tags": ["马斯克", "OpenAI", "审判"]
+    },
+    {
+      "title": "五一假期：国内AI概念股复盘，节后关注哪些方向",
+      "category": "市场分析",
+      "relevance": "低",
+      "summary": "五一前最后一个交易日，A股AI概念板块小幅调整。券商研报聚焦节后关注方向：AI智能体应用、端侧AI芯片、国产算力。",
+      "source": "综合",
+      "source_urls": [],
+      "tags": ["A股", "AI概念", "五一"]
+    },
+    {
+      "title": "WhatsApp推出AI摘要功能",
+      "category": "产品更新",
+      "relevance": "中",
+      "summary": "Meta为WhatsApp添加AI摘要功能，可自动总结群聊中的长对话。这是即时通讯工具嵌入AI能力的又一案例。",
+      "source": "Metaverse Planet",
+      "source_urls": ["https://metaverseplanet.net/blog/weekly-ai-news-and-updates-april-28-2026/"],
+      "tags": ["WhatsApp", "AI摘要", "即时通讯"]
+    },
+    {
+      "title": "Kimi K2.6开源模型发布",
+      "category": "模型发布",
+      "relevance": "中",
+      "summary": "月之暗面（Moonshot AI/智谱）发布Kimi K2.6开源模型，在编码能力上表现突出，即将在5月初的编程挑战中展示实力。",
+      "source": "Metaverse Planet",
+      "source_urls": ["https://metaverseplanet.net/blog/weekly-ai-news-and-updates-april-28-2026/"],
+      "tags": ["Kimi", "K2.6", "开源"]
+    },
+    {
+      "title": "OpenGame发布：文本生成小游戏平台",
+      "category": "产品发布",
+      "relevance": "低",
+      "summary": "新平台OpenGame允许用户通过文本描述生成可玩的小游戏。这是AI游戏化应用的又一实验。",
+      "source": "Metaverse Planet",
+      "source_urls": ["https://metaverseplanet.net/blog/weekly-ai-news-and-updates-april-28-2026/"],
+      "tags": ["OpenGame", "游戏", "AI生成"]
+    },
+    {
+      "title": "微软将AI代理直接集成进Windows 11任务栏",
+      "category": "产品更新",
+      "relevance": "高",
+      "summary": "微软宣布将AI代理功能直接集成到Windows 11任务栏，用户无需打开任何应用即可调用AI助手。操作系统级AI集成加速。",
+      "source": "Metaverse Planet",
+      "source_urls": ["https://metaverseplanet.net/blog/weekly-ai-news-and-updates-april-28-2026/"],
+      "tags": ["微软", "Windows 11", "AI代理", "任务栏"]
+    }
+  ]
+}
