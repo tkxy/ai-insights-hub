@@ -4171,14 +4171,19 @@ function buildKnowledgeSearchUrl(title) {
   return 'https://duckduckgo.com/?q=' + encodeURIComponent(title || '');
 }
 
+// IMA FAN 知识库分享页（用户可在此查看所有原文）
+var IMA_FAN_KB_URL = 'https://ima.qq.com/wiki/?id=bBfJqosBHNOxVGWp3z8OzSeqVt9Qcun6MuF_F3Oqgak=';
+
 function getKnowledgeLinkInfo(item) {
   var rawUrl = item.url || '';
+  // 1) 如果 item 有具体 URL（且不是 IMA 通用 URL），直接用
   if (rawUrl && !isImaKnowledgeUrl(rawUrl)) {
     return { href: rawUrl, label: '查看原文 →' };
   }
+  // 2) 否则跳到 IMA 知识库分享页（用户可在 IMA 内点开看原文）
   return {
-    href: buildKnowledgeSearchUrl(item.title || ''),
-    label: '搜索原文 →'
+    href: IMA_FAN_KB_URL,
+    label: '在 IMA 中查看 →'
   };
 }
 
