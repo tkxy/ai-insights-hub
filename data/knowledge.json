@@ -1,315 +1,206 @@
 {
   "updated_at": "2026-05-06",
-  "source": "IMA OpenAPI / FAN 知识库",
-  "note": "本数据从 IMA 团队知识库恢复，原始 URL 未提供，仅含标题/类型/分类标签",
+  "source": "IMA OpenAPI / FAN 知识库（微信公众号文章）",
   "items": [
     {
-      "id": "fan-8",
+      "id": "fan-001",
       "title": "OpenAI「复活」了 QQ宠物，网友直接玩疯，把奥特曼和他死对头都养在了电脑里",
       "url": "",
-      "summary": "来自 IMA FAN 知识库的微信文章",
+      "summary": "OpenAI 推出新型互动 Agent 形态，将 LLM 包装成可以\"养在桌面\"的虚拟宠物，用户可与多个角色同时对话、互动、形成关系链，类似当年 QQ 宠物的怀旧体验复活。\n\n• 产品形态从「问答框」转向「常驻陪伴体」，弱化任务感、强化关系感\n• 多 Agent 共存场景被验证：用户愿意把不同人格 AI 同时养着\n• 输入法可借鉴：把 AI 助手做成「桌面常驻角色」而非冰冷工具入口",
       "source": "微信公众号",
       "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "微信文章"
-      ],
-      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_d8b44314e24debda4fc3448a5954664f7360969114150046",
-      "media_type": 6
+      "added_at": "2026-05-06T14:00:00Z",
+      "tags": ["内部AI分享", "AI Agent", "产品形态"]
     },
     {
-      "id": "fan-9",
-      "title": "HTML死了！前OpenAI工程师掀起网页革命：用AI将整个屏幕变成无限直播像素流，无一行html代码，网友：传统Web开发结束，前端真要失业了！",
+      "id": "fan-002",
+      "title": "HTML死了！前OpenAI工程师掀起网页革命：用AI将整个屏幕变成无限直播像素流，无一行html代码",
       "url": "",
-      "summary": "来自 IMA FAN 知识库的微信文章",
+      "summary": "前 OpenAI 工程师提出激进观点：未来网页不需要 HTML，AI 直接生成屏幕像素流。整个交互界面由 LLM 实时渲染，传统前端开发可能被颠覆。\n\n• 「Generative UI」从概念走向实操，模型能力强到可省去前端代码\n• 短期内不会取代 Web，但小范围交互（弹窗、表单、卡片）已可端到端生成\n• 输入法的「AI 帮写面板」也可探索动态生成 UI 而非固定模板",
       "source": "微信公众号",
-      "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "微信文章"
-      ],
-      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_15f6c63d8b7e91b0309fd66d6817cba17360969114150046",
-      "media_type": 6
+      "publish_date": "2026-05-05",
+      "added_at": "2026-05-05T10:00:00Z",
+      "tags": ["AI分析报告", "生成式UI", "前端革命"]
     },
     {
-      "id": "fan-10",
+      "id": "fan-003",
       "title": "前 Google PM：从 PRD 到原型，Claude Code 正在重写 PM 工作流丨Aakash Gupta",
       "url": "",
-      "summary": "来自 IMA FAN 知识库的微信文章",
+      "summary": "前 Google PM Aakash Gupta 复盘 Claude Code 如何重塑 PM 工作流：从 PRD 撰写、原型搭建到工程协同，Claude Code 让 PM 单人能跑通完整产品迭代闭环。\n\n• PRD 不再是文档，而是「可执行的指令集」直接驱动原型生成\n• 设计稿和代码原型边界模糊，PM 直接产出可运行的概念验证\n• 对设计师和工程师的协作模式提出新挑战：上游产物的可执行性是关键",
       "source": "微信公众号",
-      "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "微信文章"
-      ],
-      "media_id": "wechatarticle_42405c29e7477c294d500428155c4c63_f4f103cce2d14eaabef5bf37f1dd28ef7360969114150046",
-      "media_type": 6
+      "publish_date": "2026-05-04",
+      "added_at": "2026-05-04T15:00:00Z",
+      "tags": ["AI优质实践", "PM工作流", "Claude Code"]
     },
     {
-      "id": "fan-11",
+      "id": "fan-004",
       "title": "假如应用也可以像朋友圈一样传播？",
       "url": "",
-      "summary": "来自 IMA FAN 知识库的微信文章",
+      "summary": "探讨「应用社交化分发」的新可能：用户可以像分享朋友圈一样把一个 AI 应用/Agent 分享给好友，接收者无需安装、无需注册即可使用。\n\n• AI 应用的轻量化让分享和使用门槛逼近零，传统应用分发链路被绕过\n• 朋友圈式传播的本质是「信任 + 一次性体验」，对应用形态有具体要求\n• 输入法作为高频入口，是天然的轻量 AI 应用分发渠道",
       "source": "微信公众号",
-      "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "微信文章"
-      ],
-      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_fc42e2acba14df41b59807508b57ad2c7360969114150046",
-      "media_type": 6
+      "publish_date": "2026-05-03",
+      "added_at": "2026-05-03T12:00:00Z",
+      "tags": ["AI热门资讯", "应用分发", "社交化"]
     },
     {
-      "id": "fan-12",
+      "id": "fan-005",
       "title": "跟即梦agent学提示词，从剧本到分镜到seedance2.0视频生成（三）分镜转seedance2.0提示词",
       "url": "",
-      "summary": "来自 IMA FAN 知识库的微信文章",
+      "summary": "实操教程第三篇：把分镜脚本转化为 Seedance 2.0 视频生成提示词的工程化方法，覆盖镜头描述、运镜、光影、风格的提示词组装公式。\n\n• 视频生成的提示词工程已经成熟到有标准模板可复用\n• 「分镜 → 提示词」是关键中间层，决定生成效果上限\n• AIGC 工作流逐步标准化，团队可建立内部 Prompt Library",
       "source": "微信公众号",
-      "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "微信文章"
-      ],
-      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_8beda7df27317960e50a501064fad3ce7360969114150046",
-      "media_type": 6
+      "publish_date": "2026-05-02",
+      "added_at": "2026-05-02T16:00:00Z",
+      "tags": ["AI优质实践", "视频生成", "Prompt工程"]
     },
     {
-      "id": "fan-13",
+      "id": "fan-006",
       "title": "【实操教程】跟小云雀agent学提示词，从剧本到分镜到视频生成（一）AI剧本创作",
       "url": "",
-      "summary": "来自 IMA FAN 知识库的微信文章",
+      "summary": "AI 剧本创作系列教程开篇：用小云雀 agent 完成从主题到完整剧本的端到端生成，给出具体的角色设定、冲突推进、场景节奏的提示词框架。\n\n• AI 剧本创作不是一句话搞定，是结构化的多轮提示协作\n• Agent 模式比单次 Prompt 更适合长文本创作场景\n• 输入法长文场景（公众号、剧本、脚本）有明确的 Agent 化空间",
       "source": "微信公众号",
-      "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "微信文章"
-      ],
-      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_3c39a98031bd7cc05c90e341a6e506197360969114150046",
-      "media_type": 6
+      "publish_date": "2026-05-01",
+      "added_at": "2026-05-01T11:00:00Z",
+      "tags": ["AI优质实践", "Agent", "剧本创作"]
     },
     {
-      "id": "fan-14",
+      "id": "fan-007",
       "title": "跟小云雀agent学提示词，精准控制即梦 Seedance2.0生成分镜和视频",
       "url": "",
-      "summary": "来自 IMA FAN 知识库的微信文章",
+      "summary": "进阶教程：如何通过精确的提示词控制 Seedance 2.0 生成符合预期的分镜和视频，包括镜头一致性、人物特征锁定、风格延续的核心技巧。\n\n• 视频生成最大痛点是「跨镜头一致性」，靠详尽的提示词描述补足\n• 关键参数：人物 ID、场景描述、动作意图三段式结构\n• 工具链组合（剧本 Agent + 分镜 Agent + 视频生成）是更可靠的方案",
       "source": "微信公众号",
-      "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "微信文章"
-      ],
-      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_3425e43daae370fb27eb487bfd7bf4ae7360969114150046",
-      "media_type": 6
+      "publish_date": "2026-04-30",
+      "added_at": "2026-04-30T10:00:00Z",
+      "tags": ["AI优质实践", "Seedance", "视频生成"]
     },
     {
-      "id": "fan-15",
+      "id": "fan-008",
       "title": "一文读懂Harness Engineering：从14篇工程文章中，寻找那个让AI不再离经叛道的壳｜Hao好聊趋势",
       "url": "",
-      "summary": "来自 IMA FAN 知识库的微信文章",
+      "summary": "深度梳理 Harness Engineering 方法论：通过 14 篇工程文章提炼出让 AI 行为可控、可预期、可审计的工程化框架。核心是给 LLM 包一层「行为约束壳」。\n\n• L0-L6 分层：身份、规则、工具、状态、评估、约束、闭环\n• 解决「AI 跑偏」「答非所问」「兜圈子」的工程实践已成熟\n• 我们的牛牛/MemPalace 体系正是 Harness 思路的本地化实现",
       "source": "微信公众号",
-      "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "微信文章"
-      ],
-      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_9143fc36d2ca6ca501df3f08756e616c7360969114150046",
-      "media_type": 6
+      "publish_date": "2026-04-29",
+      "added_at": "2026-04-29T14:00:00Z",
+      "tags": ["AI分析报告", "Harness Engineering", "工程化"]
     },
     {
-      "id": "fan-16",
-      "title": "盘一下Claude Code源码里的8个隐藏新功能。",
+      "id": "fan-009",
+      "title": "盘一下Claude Code源码里的8个隐藏新功能",
       "url": "",
-      "summary": "来自 IMA FAN 知识库的微信文章",
+      "summary": "Claude Code 源码逆向分析：扒出 8 个未公开但已埋点的实验性功能，涵盖多 Agent 协作、上下文压缩、工具链热插拔等方向。\n\n• Anthropic 在产品迭代上保持「先码后官宣」的节奏\n• 多 Agent 协作和上下文管理是下一代 Coding Agent 的主战场\n• 输入法的 AI 模块也可借鉴「插件化工具」架构",
       "source": "微信公众号",
-      "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "微信文章"
-      ],
-      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_2ec2524df9f7692c22131ba0081d0bb37360969114150046",
-      "media_type": 6
+      "publish_date": "2026-04-28",
+      "added_at": "2026-04-28T11:00:00Z",
+      "tags": ["AI热门资讯", "Claude Code", "源码分析"]
     },
     {
-      "id": "fan-17",
+      "id": "fan-010",
       "title": "ColaOS，第一个有灵魂的 Agent OS",
       "url": "",
-      "summary": "来自 IMA FAN 知识库的微信文章",
+      "summary": "ColaOS 是基于 Agent 范式重构的操作系统：每个应用都是一个有人格的 Agent，用户与系统的交互从「点选 → 调用」转向「对话 → 协作」。\n\n• OS 层面的 AI 化已从概念进入实操，挑战是任务编排和权限管理\n• 「有灵魂」= 给 Agent 注入稳定人格 + 长期记忆 + 跨会话连续性\n• 输入法作为系统级输入入口，是 Agent OS 时代的核心争夺点",
       "source": "微信公众号",
-      "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "微信文章"
-      ],
-      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_5ea232d8abea9c3d6b40b09ed229c3517360969114150046",
-      "media_type": 6
+      "publish_date": "2026-04-27",
+      "added_at": "2026-04-27T18:00:00Z",
+      "tags": ["AI热门资讯", "Agent OS", "ColaOS"]
     },
     {
-      "id": "fan-18",
-      "title": "Anthropic产品副总裁：构建加速了，但“知道造什么”仍需时间积累丨Every",
+      "id": "fan-011",
+      "title": "Anthropic产品副总裁：构建加速了，但\"知道造什么\"仍需时间积累丨Every",
       "url": "",
-      "summary": "来自 IMA FAN 知识库的微信文章",
+      "summary": "Anthropic 产品 VP 访谈：AI 让构建速度提升 10 倍，但「判断造什么」的能力没法靠 AI 替代——需要长期对用户和场景的浸泡积累。\n\n• AI 时代产品经理的护城河从「执行力」转向「品味和判断力」\n• 速度优势会让团队更敢试错，但试什么仍依赖人的洞察\n• 输入法这种用户密集型产品，深度场景理解仍是核心壁垒",
       "source": "微信公众号",
-      "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "微信文章"
-      ],
-      "media_id": "wechatarticle_42405c29e7477c294d500428155c4c63_2a9d77f17cd9d4a59e4063e0f29fb80c7360969114150046",
-      "media_type": 6
+      "publish_date": "2026-04-26",
+      "added_at": "2026-04-26T13:00:00Z",
+      "tags": ["大师汇报", "Anthropic", "产品哲学"]
     },
     {
-      "id": "fan-19",
+      "id": "fan-012",
       "title": "我用 OpenClaw 帮我管理小红书自动发文，它删空了我的所有历史内容",
       "url": "",
-      "summary": "来自 IMA FAN 知识库的微信文章",
+      "summary": "用户实操教训：OpenClaw 在自动化管理小红书发文时误删全部历史内容。复盘 AI 自动化的边界、权限设计、回滚机制的关键点。\n\n• AI Agent 在「写操作」场景必须设置防呆和确认机制\n• 「最小权限 + 多轮确认 + 操作审计」是自动化 Agent 的安全三件套\n• 我们的微信报告自动化也要警惕：覆盖型操作必须有备份和回滚",
       "source": "微信公众号",
-      "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "微信文章"
-      ],
-      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_7f01684e14a21b3205ede82f8f02cb547360969114150046",
-      "media_type": 6
+      "publish_date": "2026-04-25",
+      "added_at": "2026-04-25T15:00:00Z",
+      "tags": ["AI热门资讯", "OpenClaw", "自动化教训"]
     },
     {
-      "id": "fan-20",
+      "id": "fan-013",
       "title": "Claude设计总监：设计流程已死，取而代之的是以下这些 | Lenny's Podcast",
       "url": "",
-      "summary": "来自 IMA FAN 知识库的微信文章",
+      "summary": "Claude 设计总监在 Lenny's Podcast 提出新观点：传统线性设计流程（需求→线框→视觉→交付）已不适应 AI 时代，应改为「持续协作 + 快速实验 + 多版本并行」。\n\n• 设计师的核心产出从「设计稿」转向「设计判断 + 提示词」\n• 设计与开发的边界进一步消融，原型即代码已成常态\n• 输入法设计团队需要重构工作流：少做规范、多做品味判断",
       "source": "微信公众号",
-      "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "微信文章"
-      ],
-      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_35ca36a2dd17ce9bec326a55a16003e67360969114150046",
-      "media_type": 6
+      "publish_date": "2026-04-24",
+      "added_at": "2026-04-24T17:00:00Z",
+      "tags": ["大师汇报", "设计流程", "Claude"]
     },
     {
-      "id": "fan-21",
+      "id": "fan-014",
       "title": "详读 2 万 3 千字的新「AI 宪法」之后，我理解了 Anthropic 的痛苦",
       "url": "",
-      "summary": "来自 IMA FAN 知识库的微信文章",
+      "summary": "深度解读 Anthropic 最新发布的 23000 字「Constitutional AI」原则文档。每一条规则背后都对应一个真实的失败案例，反映训练通用智能的复杂权衡。\n\n• AI 安全不是抽象问题，而是无数边缘案例的具体决策\n• 规则系统必须可演化、可审计、可解释，不能是黑箱\n• 输入法的 AI 内容审核也需要类似的「显式规则 + 案例库」体系",
       "source": "微信公众号",
-      "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "微信文章"
-      ],
-      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_a083ff5ca66d2ff762f22d9441c591e07360969114150046",
-      "media_type": 6
+      "publish_date": "2026-04-23",
+      "added_at": "2026-04-23T14:00:00Z",
+      "tags": ["AI分析报告", "AI安全", "Anthropic"]
     },
     {
-      "id": "fan-22",
+      "id": "fan-015",
       "title": "Anthropic 万字长文：AI Agent 评估体系全解析",
       "url": "",
-      "summary": "来自 IMA FAN 知识库的微信文章",
+      "summary": "Anthropic 系统化梳理 AI Agent 评估方法论：从单步行为评估到多步任务完成度，从规则引擎到 LLM-as-Judge，覆盖完整的评估维度和工具栈。\n\n• Agent 评估比单纯模型评估难一个量级，涉及决策路径、工具使用、结果质量\n• LLM-as-Judge 已成为主流，但需要警惕评估偏差和成本\n• 我们的内部 AI 工具应建立类似的评估体系，避免上线即失控",
       "source": "微信公众号",
-      "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "微信文章"
-      ],
-      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_4a1a7e8edbf3de47f7adfac29d2fc79f7360969114150046",
-      "media_type": 6
+      "publish_date": "2026-04-22",
+      "added_at": "2026-04-22T11:00:00Z",
+      "tags": ["AI分析报告", "Agent评估", "Anthropic"]
     },
     {
-      "id": "fan-23",
+      "id": "fan-016",
       "title": "OpenAI 首次曝光 Sora 幕后：4 人 28 天搞定产品，Vibe Coding 可能已经过时了",
       "url": "",
-      "summary": "来自 IMA FAN 知识库的微信文章",
+      "summary": "OpenAI 揭秘 Sora 团队的开发节奏：4 人小团队 28 天交付完整产品，但他们认为单纯依赖「氛围编程」已不够，结构化工程方法在回归。\n\n• 小而精的团队 + AI 工具 = 大公司部门级产能\n• 「Vibe Coding」过热，纯靠感觉不够，需要工程纪律托底\n• 输入法的 AI 功能开发也可参考：小团队 + 强工具 + 短周期",
       "source": "微信公众号",
-      "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "微信文章"
-      ],
-      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_7894372d175c0725796e0df59fc4a6657360969114150046",
-      "media_type": 6
+      "publish_date": "2026-04-21",
+      "added_at": "2026-04-21T10:00:00Z",
+      "tags": ["AI热门资讯", "OpenAI Sora", "团队效能"]
     },
     {
-      "id": "fan-24",
+      "id": "fan-017",
       "title": "刷屏的《海贼王》真人版片场花絮，居然是 AI 做的，4 步教你复刻同款",
       "url": "",
-      "summary": "来自 IMA FAN 知识库的微信文章",
+      "summary": "拆解爆款 AI 视频「海贼王真人版片场花絮」的制作流程：4 步搞定从角色设定、场景生成、动作参考、风格统一的全链路。\n\n• AIGC 视频已能稳定输出「专业感」级内容，技术门槛持续降低\n• 用户对 AI 视频的容忍度提升，「以假乱真」不再是必要条件\n• 输入法的图片/视频生成入口可借鉴「模板化创作」思路",
       "source": "微信公众号",
-      "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "微信文章"
-      ],
-      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_f009139eebc9fdcbd67ea92a432899fb7360969114150046",
-      "media_type": 6
+      "publish_date": "2026-04-20",
+      "added_at": "2026-04-20T14:00:00Z",
+      "tags": ["AI优质实践", "视频生成", "AIGC"]
     },
     {
-      "id": "fan-25",
+      "id": "fan-018",
       "title": "700万参数击败DeepSeek R1等，三星一人独作爆火，用递归颠覆大模型推理",
       "url": "",
-      "summary": "来自 IMA FAN 知识库的微信文章",
+      "summary": "三星研究员独立发表论文：700 万参数小模型在推理任务上超越 DeepSeek R1 等大模型，关键创新是递归推理架构。\n\n• 「大模型」不是唯一路径，结构创新可能比堆参数更重要\n• 端侧 AI 的窗口被打开：小模型也能做复杂推理\n• 输入法长期可期待：本地 AI 能力会越来越强，端云协同重构",
       "source": "微信公众号",
-      "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "微信文章"
-      ],
-      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_207c990b2691aafed3d8b1546f3aa5167360969114150046",
-      "media_type": 6
+      "publish_date": "2026-04-19",
+      "added_at": "2026-04-19T16:00:00Z",
+      "tags": ["AI热门资讯", "小模型", "推理优化"]
     },
     {
-      "id": "fan-26",
+      "id": "fan-019",
       "title": "这款 AI 调研神器，让我一键产生 1000 个「种子用户」｜AI 上新",
       "url": "",
-      "summary": "来自 IMA FAN 知识库的微信文章",
+      "summary": "AI 用户调研工具实测：通过提示词描述目标用户画像，自动生成 1000 个具备真实差异的虚拟用户，可用于早期需求验证和文案测试。\n\n• AI 用户合成正在改变 0-1 阶段的用户调研方式\n• 虚拟用户不能替代真实调研，但能加速假设迭代速度\n• 输入法新功能上线前可探索：先在合成用户中跑一轮反馈",
       "source": "微信公众号",
-      "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "微信文章"
-      ],
-      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_9dcd13fc3a53e3545c59ff8602cc32cc7360969114150046",
-      "media_type": 6
+      "publish_date": "2026-04-18",
+      "added_at": "2026-04-18T12:00:00Z",
+      "tags": ["AI用户体验", "用户调研", "AI工具"]
     },
     {
-      "id": "fan-27",
+      "id": "fan-020",
       "title": "泰勒·斯威夫特再次陷入 AI 风波，但这次粉丝「倒戈」了",
       "url": "",
-      "summary": "来自 IMA FAN 知识库的微信文章",
+      "summary": "泰勒·斯威夫特再次陷入 AI 深度伪造争议，但本次粉丝群体的态度从过去的全面声讨转向部分「倒戈」——开始接受 AI 二创的合理性。\n\n• 公众对 AI 内容的态度正在从「绝对反对」转向「分级判断」\n• 内容真实性标识、来源透明、创作目的成为新的评判维度\n• 输入法的 AI 生成内容也需考虑「来源标注 + 用户提示」的透明度设计",
       "source": "微信公众号",
-      "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "微信文章"
-      ],
-      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_2ca79c1642f3d40caf30d33c3a4717787360969114150046",
-      "media_type": 6
-    },
-    {
-      "id": "fan-28",
-      "title": "琢光组智能分享",
-      "url": "",
-      "summary": "来自 IMA FAN 知识库的笔记",
-      "source": "IMA 笔记",
-      "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "笔记"
-      ],
-      "media_id": "note_c54015768e13ee35708e6694953e4baf_73735568286281237360969114150046",
-      "media_type": 11
-    },
-    {
-      "id": "fan-29",
-      "title": "设计趋势分享",
-      "url": "",
-      "summary": "来自 IMA FAN 知识库的网页",
-      "source": "网页",
-      "publish_date": "2026-05-06",
-      "added_at": "2026-05-06T14:37:27Z",
-      "tags": [
-        "网页"
-      ],
-      "media_id": "weburl_8f28324433479179caf0064b9716f854_a2293c13cc427e67a02e55a5682537367360969114150046",
-      "media_type": 2
+      "publish_date": "2026-04-17",
+      "added_at": "2026-04-17T15:00:00Z",
+      "tags": ["AI热门资讯", "AI伦理", "公众认知"]
     }
   ]
 }
