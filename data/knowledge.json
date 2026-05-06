@@ -1,4 +1,315 @@
 {
   "updated_at": "2026-05-06",
-  "items": []
+  "source": "IMA OpenAPI / FAN 知识库",
+  "note": "本数据从 IMA 团队知识库恢复，原始 URL 未提供，仅含标题/类型/分类标签",
+  "items": [
+    {
+      "id": "fan-8",
+      "title": "OpenAI「复活」了 QQ宠物，网友直接玩疯，把奥特曼和他死对头都养在了电脑里",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的微信文章",
+      "source": "微信公众号",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "微信文章"
+      ],
+      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_d8b44314e24debda4fc3448a5954664f7360969114150046",
+      "media_type": 6
+    },
+    {
+      "id": "fan-9",
+      "title": "HTML死了！前OpenAI工程师掀起网页革命：用AI将整个屏幕变成无限直播像素流，无一行html代码，网友：传统Web开发结束，前端真要失业了！",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的微信文章",
+      "source": "微信公众号",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "微信文章"
+      ],
+      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_15f6c63d8b7e91b0309fd66d6817cba17360969114150046",
+      "media_type": 6
+    },
+    {
+      "id": "fan-10",
+      "title": "前 Google PM：从 PRD 到原型，Claude Code 正在重写 PM 工作流丨Aakash Gupta",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的微信文章",
+      "source": "微信公众号",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "微信文章"
+      ],
+      "media_id": "wechatarticle_42405c29e7477c294d500428155c4c63_f4f103cce2d14eaabef5bf37f1dd28ef7360969114150046",
+      "media_type": 6
+    },
+    {
+      "id": "fan-11",
+      "title": "假如应用也可以像朋友圈一样传播？",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的微信文章",
+      "source": "微信公众号",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "微信文章"
+      ],
+      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_fc42e2acba14df41b59807508b57ad2c7360969114150046",
+      "media_type": 6
+    },
+    {
+      "id": "fan-12",
+      "title": "跟即梦agent学提示词，从剧本到分镜到seedance2.0视频生成（三）分镜转seedance2.0提示词",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的微信文章",
+      "source": "微信公众号",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "微信文章"
+      ],
+      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_8beda7df27317960e50a501064fad3ce7360969114150046",
+      "media_type": 6
+    },
+    {
+      "id": "fan-13",
+      "title": "【实操教程】跟小云雀agent学提示词，从剧本到分镜到视频生成（一）AI剧本创作",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的微信文章",
+      "source": "微信公众号",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "微信文章"
+      ],
+      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_3c39a98031bd7cc05c90e341a6e506197360969114150046",
+      "media_type": 6
+    },
+    {
+      "id": "fan-14",
+      "title": "跟小云雀agent学提示词，精准控制即梦 Seedance2.0生成分镜和视频",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的微信文章",
+      "source": "微信公众号",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "微信文章"
+      ],
+      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_3425e43daae370fb27eb487bfd7bf4ae7360969114150046",
+      "media_type": 6
+    },
+    {
+      "id": "fan-15",
+      "title": "一文读懂Harness Engineering：从14篇工程文章中，寻找那个让AI不再离经叛道的壳｜Hao好聊趋势",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的微信文章",
+      "source": "微信公众号",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "微信文章"
+      ],
+      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_9143fc36d2ca6ca501df3f08756e616c7360969114150046",
+      "media_type": 6
+    },
+    {
+      "id": "fan-16",
+      "title": "盘一下Claude Code源码里的8个隐藏新功能。",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的微信文章",
+      "source": "微信公众号",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "微信文章"
+      ],
+      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_2ec2524df9f7692c22131ba0081d0bb37360969114150046",
+      "media_type": 6
+    },
+    {
+      "id": "fan-17",
+      "title": "ColaOS，第一个有灵魂的 Agent OS",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的微信文章",
+      "source": "微信公众号",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "微信文章"
+      ],
+      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_5ea232d8abea9c3d6b40b09ed229c3517360969114150046",
+      "media_type": 6
+    },
+    {
+      "id": "fan-18",
+      "title": "Anthropic产品副总裁：构建加速了，但“知道造什么”仍需时间积累丨Every",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的微信文章",
+      "source": "微信公众号",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "微信文章"
+      ],
+      "media_id": "wechatarticle_42405c29e7477c294d500428155c4c63_2a9d77f17cd9d4a59e4063e0f29fb80c7360969114150046",
+      "media_type": 6
+    },
+    {
+      "id": "fan-19",
+      "title": "我用 OpenClaw 帮我管理小红书自动发文，它删空了我的所有历史内容",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的微信文章",
+      "source": "微信公众号",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "微信文章"
+      ],
+      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_7f01684e14a21b3205ede82f8f02cb547360969114150046",
+      "media_type": 6
+    },
+    {
+      "id": "fan-20",
+      "title": "Claude设计总监：设计流程已死，取而代之的是以下这些 | Lenny's Podcast",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的微信文章",
+      "source": "微信公众号",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "微信文章"
+      ],
+      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_35ca36a2dd17ce9bec326a55a16003e67360969114150046",
+      "media_type": 6
+    },
+    {
+      "id": "fan-21",
+      "title": "详读 2 万 3 千字的新「AI 宪法」之后，我理解了 Anthropic 的痛苦",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的微信文章",
+      "source": "微信公众号",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "微信文章"
+      ],
+      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_a083ff5ca66d2ff762f22d9441c591e07360969114150046",
+      "media_type": 6
+    },
+    {
+      "id": "fan-22",
+      "title": "Anthropic 万字长文：AI Agent 评估体系全解析",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的微信文章",
+      "source": "微信公众号",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "微信文章"
+      ],
+      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_4a1a7e8edbf3de47f7adfac29d2fc79f7360969114150046",
+      "media_type": 6
+    },
+    {
+      "id": "fan-23",
+      "title": "OpenAI 首次曝光 Sora 幕后：4 人 28 天搞定产品，Vibe Coding 可能已经过时了",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的微信文章",
+      "source": "微信公众号",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "微信文章"
+      ],
+      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_7894372d175c0725796e0df59fc4a6657360969114150046",
+      "media_type": 6
+    },
+    {
+      "id": "fan-24",
+      "title": "刷屏的《海贼王》真人版片场花絮，居然是 AI 做的，4 步教你复刻同款",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的微信文章",
+      "source": "微信公众号",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "微信文章"
+      ],
+      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_f009139eebc9fdcbd67ea92a432899fb7360969114150046",
+      "media_type": 6
+    },
+    {
+      "id": "fan-25",
+      "title": "700万参数击败DeepSeek R1等，三星一人独作爆火，用递归颠覆大模型推理",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的微信文章",
+      "source": "微信公众号",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "微信文章"
+      ],
+      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_207c990b2691aafed3d8b1546f3aa5167360969114150046",
+      "media_type": 6
+    },
+    {
+      "id": "fan-26",
+      "title": "这款 AI 调研神器，让我一键产生 1000 个「种子用户」｜AI 上新",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的微信文章",
+      "source": "微信公众号",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "微信文章"
+      ],
+      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_9dcd13fc3a53e3545c59ff8602cc32cc7360969114150046",
+      "media_type": 6
+    },
+    {
+      "id": "fan-27",
+      "title": "泰勒·斯威夫特再次陷入 AI 风波，但这次粉丝「倒戈」了",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的微信文章",
+      "source": "微信公众号",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "微信文章"
+      ],
+      "media_id": "wechatarticle_8f28324433479179caf0064b9716f854_2ca79c1642f3d40caf30d33c3a4717787360969114150046",
+      "media_type": 6
+    },
+    {
+      "id": "fan-28",
+      "title": "琢光组智能分享",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的笔记",
+      "source": "IMA 笔记",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "笔记"
+      ],
+      "media_id": "note_c54015768e13ee35708e6694953e4baf_73735568286281237360969114150046",
+      "media_type": 11
+    },
+    {
+      "id": "fan-29",
+      "title": "设计趋势分享",
+      "url": "",
+      "summary": "来自 IMA FAN 知识库的网页",
+      "source": "网页",
+      "publish_date": "2026-05-06",
+      "added_at": "2026-05-06T14:37:27Z",
+      "tags": [
+        "网页"
+      ],
+      "media_id": "weburl_8f28324433479179caf0064b9716f854_a2293c13cc427e67a02e55a5682537367360969114150046",
+      "media_type": 2
+    }
+  ]
 }
