@@ -1789,6 +1789,7 @@
   <div id="knowledgeEmpty" class="knowledge-empty">
     <div class="knowledge-empty-icon">📚</div>
     <p>当前还没有收录内容</p>
+    <p style="font-size:12px;color:#aaa;margin-top:8px;">编辑 <code style="background:rgba(0,0,0,0.05);padding:2px 6px;border-radius:4px;">data/knowledge.json</code> 添加条目</p>
   </div>
 </div>
 
@@ -4131,11 +4132,20 @@ function supaFetch(path, opts) {
   return fetch(SUPABASE_URL + SUPABASE_TABLE + (path || ''), opts);
 }
 
+// FAN 知识库：从本地 JSON 读取（替代 Supabase）
 async function getKnowledgeItems() {
   try {
-    var resp = await supaFetch('?order=publish_date.desc.nullslast,added_at.desc&limit=100', { method: 'GET' });
+    var resp = await fetch('data/knowledge.json?t=' + Date.now());
     if (!resp.ok) throw new Error(resp.status);
-    return await resp.json();
+    var data = await resp.json();
+    var items = (data.items || []).slice();
+    // 按 publish_date / added_at 倒序
+    items.sort(function(a, b) {
+      var ka = (a.publish_date || a.added_at || '');
+      var kb = (b.publish_date || b.added_at || '');
+      return kb.localeCompare(ka);
+    });
+    return items;
   } catch(e) {
     console.error('Knowledge fetch error:', e);
     return [];
@@ -4143,16 +4153,8 @@ async function getKnowledgeItems() {
 }
 
 async function insertKnowledgeItem(item) {
-  var resp = await supaFetch('', {
-    method: 'POST',
-    prefer: 'return=representation',
-    body: JSON.stringify(item)
-  });
-  if (!resp.ok) {
-    var err = await resp.text();
-    throw new Error('插入失败: ' + err);
-  }
-  return await resp.json();
+  // 本地 JSON 模式不支持前端写入；如需添加请直接编辑 data/knowledge.json 后 push
+  throw new Error('知识库已迁移到本地 JSON。请直接编辑 data/knowledge.json 后提交。');
 }
 
 function formatKnowledgeTime(ts) {
