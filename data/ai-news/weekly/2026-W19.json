@@ -1,0 +1,127 @@
+{
+  "week": "2026-W19",
+  "range": { "start": "2026-05-04", "end": "2026-05-10" },
+  "generatedAt": "2026-05-06T17:15:00+08:00",
+  "trends": [
+    {
+      "title": "Agent 进企业，蓝海开始",
+      "summary": "Anthropic 和 OpenAI 本周双双推出帮企业部署 AI agent 的新计划。Box CEO Aaron Levie 把这件事定性为：现在很早，但会快速变大。真正难的不是模型能力，是把智能装进企业现有 IT 系统、改造工作流、做变革管理。",
+      "implication": "对输入法和 AI 助手类产品的启发：模型能力过剩，组织级落地能力稀缺。WorkBuddy 如果要进 B 端办公场景，工作流改造和企业上下文接入比换模型重要得多。",
+      "evidence": [
+        { "type": "tweet", "who": "Aaron Levie (Box CEO)", "url": "https://x.com/levie/status/2051344780328858040", "quote": "把模型能力装到具体业务流程里、还要稳定跑——这件事没有捷径。整个市场会冒出大量新岗位和新公司。" },
+        { "type": "tweet", "who": "Peter Yang (Roblox PM)", "url": "https://x.com/petergyang/status/2051508988936937764", "quote": "Coding 是第一个战场，知识工作是第二个，个人 agent 是第三个。" }
+      ]
+    },
+    {
+      "title": "Voice 是下一波交互范式",
+      "summary": "Sam Altman 这周罕见地直接表态对语音模型变好这件事很期待，并观察到大家已经在改变和 AI 交互的方式。同期 Nikunj Kothari (FPV) 用 mindblowing 形容 Gemini 的 live voice 模型。语音从补充能力变成主入口。",
+      "implication": "对输入法是个直球信号：文字输入主导了 30 年，下一代如果是语音，输入法的形态、定位、按键设计要重想。WorkBuddy 侧边栏可以提前布 voice-first 的快捷入口，而不只是文字 prompt 框。",
+      "evidence": [
+        { "type": "tweet", "who": "Sam Altman (OpenAI CEO)", "url": "https://x.com/sama/status/2051464865634742334", "quote": "对语音模型变得真正强这件事挺兴奋。有意思的是看到大家已经在改变和 AI 的交互方式了。" },
+        { "type": "tweet", "who": "Nikunj Kothari (FPV Ventures)", "url": "https://x.com/nikunj/status/2051321911741972900", "quote": "Gemini Flash 又便宜又好用，已经是我生产上用得最多的模型了。他们新的 live voice 模型如果你还没试过——是真的炸。" }
+      ]
+    },
+    {
+      "title": "做产品光会发布会不行了，留存才是底",
+      "summary": "Nikunj Kothari 一句很有共鸣的吐槽：2023-2025 这一波创业，靠华丽 launch video 和 distribution 拿融资的公司，现在开始烧光钱被收购。势头本来就不是壁垒，留存才是。市场正在重新校准 \"什么叫好产品\"。",
+      "implication": "对内部产品也成立：发布会刷屏、demo 漂亮、PM 述职好看，都不等于用户真留下来。WorkBuddy 的核心指标永远是 D7、D30 留存，不是首日 DAU。今年这件事会更明显。",
+      "evidence": [
+        { "type": "tweet", "who": "Nikunj Kothari (FPV Ventures)", "url": "https://x.com/nikunj/status/2051349526171287930", "quote": "2023-2025 这一波创业的人开始意识到，靠 launch video 和 distribution 能拿到 VC 钱，但钱会烧光——本来就该花同样多甚至更多时间在留存上。势头从来就不是壁垒，seed 到 A 轮的间隔数据正在证明这点。" },
+        { "type": "tweet", "who": "Aditya Agarwal (South Park Commons GP)", "url": "https://x.com/adityaag/status/2051330205902581842", "quote": "我们从来不想做加速器。没有北极星方向的 velocity 没意思。" }
+      ]
+    }
+  ],
+  "builders": [
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "Box CEO",
+      "highlights": [
+        { "summary": "Anthropic 和 OpenAI 都在搞 agent 进企业的新计划。模型能力够，缺的是把智能装进真实业务流程里——这件事没有捷径，会催生一堆新岗位和新公司。", "url": "https://x.com/levie/status/2051344780328858040" }
+      ]
+    },
+    {
+      "name": "Sam Altman",
+      "handle": "sama",
+      "role": "OpenAI CEO",
+      "highlights": [
+        { "summary": "对语音模型变强这件事很期待。已经看到大家在改变和 AI 的交互方式。", "url": "https://x.com/sama/status/2051464865634742334" }
+      ]
+    },
+    {
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "Roblox 产品经理 / AI 教程作者",
+      "highlights": [
+        { "summary": "AI 落地三个战场的优先级：Coding 第一、知识工作第二、个人 agent 第三。", "url": "https://x.com/petergyang/status/2051508988936937764" },
+        { "summary": "想让 8 岁的女儿用 agent 做点能跟同学和老师分享的东西，顺便赚到第一块钱。在征集思路。", "url": "https://x.com/petergyang/status/2051459299860533483" }
+      ]
+    },
+    {
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "role": "FPV Ventures 合伙人",
+      "highlights": [
+        { "summary": "靠 launch video 和 distribution 融到钱，但留存做不起来——seed 到 A 轮断档数据已经在证明：势头从来不是壁垒。", "url": "https://x.com/nikunj/status/2051349526171287930" },
+        { "summary": "Gemini Flash 性价比高到夸张，1M 上下文 + 结构化输出，已经是生产上最常用的模型。新的 live voice 模型很炸。", "url": "https://x.com/nikunj/status/2051321911741972900" }
+      ]
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "Vercel CEO",
+      "highlights": [
+        { "summary": "开源了 deepsec：一个 agent 编排器，专门做深度安全审计。在主流 OSS 项目上跑过、能在几分钟内发现资深团队几个月才能找到的关键漏洞。", "url": "https://x.com/rauchg/status/2051386798899888539" }
+      ]
+    },
+    {
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "OpenClaw 创始人 / AI agent 老炮",
+      "highlights": [
+        { "summary": "Crabbox 0.5.0 发布：远程 CI 沙箱，支持桌面/浏览器、VNC、Windows + WSL2、截图，agent 可以在沙箱里直接跑用例、修 bug、把视频贴到 PR 上。", "url": "https://x.com/steipete/status/2051485798613111116" },
+        { "summary": "现在 agent 能直接在临时 crabbox 里复现 issue（Linux/Windows/macOS），自动跑 + 修，把视频贴到 PR——QA 的玩法被改写了。", "url": "https://x.com/steipete/status/2051557150040711425" }
+      ]
+    },
+    {
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "role": "Y Combinator CEO",
+      "highlights": [
+        { "summary": "GBrain 真正不一样的地方：不是单纯的 memory layer、code tool 或 search engine——是把这三样东西用一张图、一个查询接口统一起来。别人没这个。", "url": "https://x.com/garrytan/status/2051525161380364315" },
+        { "summary": "GBrain v0.27 发布，加了对非 Anthropic/非 OpenAI 的多种 embedding 和 LLM 的支持。多模态 embedding + 深度图片 OCR/EXIF 即将到来。", "url": "https://x.com/garrytan/status/2051517574589116510" }
+      ]
+    },
+    {
+      "name": "Swyx",
+      "handle": "swyx",
+      "role": "Latent Space 主理人 / AI Engineer 大会组织者",
+      "highlights": [
+        { "summary": "OpenAI 估值 850B、ARR 约 30B；Anthropic 估值约 900B、ARR 约 44B（按 OpenAI 同口径折算可能少 8-10B）。两家头部规模已经接近。", "url": "https://x.com/swyx/status/2051440392722391180" }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "Training Data (Sequoia)",
+      "title": "Waymo 的 Dmitri Dolgov：2000 万次乘车，通往完全自动驾驶之路 (Waymo's Dmitri Dolgov: 20 Million Rides and the Road to Full Autonomy)",
+      "guest": "Dmitri Dolgov（Waymo CEO，前 Google 自动驾驶项目核心成员，2009 年至今）",
+      "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
+      "keyTakeaways": [
+        "Waymo 累计 2000 万次完全自动驾驶乘车，最近 7 个月就贡献了其中 1000 万——这才是真正的指数增长。前 1 亿英里花了 16 年，下个 1 亿英里只用了半年。",
+        "Waymo Foundation Model 是端到端的 world-action-language model，但 Dmitri 强调：纯端到端在玩具 demo 上够用，要做到 superhuman 级别的真量产，必须在 learned representation 之上加结构化中间表示——这是端到端派和模块化派之外的第三条路。",
+        "怎么穿越 hype cycle 的低谷：每次大技术突破（CNN、Transformer、LLM）都会让早期看起来很容易，但长尾问题不会因此变短。低谷期保持 stamina 的方法是死磕使命——全球每 26 秒有一人死于车祸，这就是北极星。",
+        "Waymo Driver 在运营城市里造成严重伤亡的事故率，比人类司机低 13 倍。按现在的运营规模算，相当于每 8 天阻止一次重大伤害事故。",
+        "硬件第六代：性能更高、成本大幅压缩、可量产规模化。Geely Zeekr 的新车型今年已开放员工内测，体验从 \"自动驾驶\" 升级到 \"移动客厅\"。"
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "name": "Anthropic Engineering",
+      "title": "Claude Code Auto Mode：跳过权限确认的更安全做法 (Claude Code auto mode: a safer way to skip permissions)",
+      "url": "https://www.anthropic.com/engineering/claude-code-auto-mode",
+      "summary": "Claude Code 推出 auto mode，介于手动确认和 --dangerously-skip-permissions 之间：用一个 model-based classifier 替代人工审批。两层防御——输入层有 prompt-injection probe 扫工具结果，输出层有 transcript classifier 在每次工具调用前判断是否越权。在真实流量上误拦率仅 0.4%，但对 \"过度积极\" 行为的漏判率仍有 17%（agent 真的去执行了用户没明确授权但 \"看起来合理\" 的危险动作）。文中坦诚说 auto mode 不是给那些会逐个仔细审批的用户用的，是给原本直接 skip-permissions 的人用的——降级版的人工审查。对 agent 产品设计的启示：\"模型说什么\" 和 \"模型做什么\" 要分开监控，光监控行动也不够，prompt injection 必须在工具结果进入上下文之前就拦掉。"
+    }
+  ]
+}

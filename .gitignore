@@ -16,3 +16,13 @@ test_tts_local.wav
 tts_proxy.log
 *.dic
 logs/
+
+# Local runtime artifacts
+launch.log
+ffmpeg
+ffmpeg.zip
+ffmpeg_wrapper
+
+# IDE / tooling workspace
+.codebuddy/
+.workbuddy/

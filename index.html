@@ -319,6 +319,61 @@
   .tab-content { display: none; }
   .tab-content.active { display: block; }
 
+  /* ===== NEWS PAGE (AI 资讯) ===== */
+  .news-header { margin-bottom: 40px; }
+  .news-title-row { display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-bottom:8px; }
+  .news-h1 { font-family:'DM Sans', sans-serif; font-size:48px; font-weight:800; letter-spacing:-1.5px; color:var(--black); }
+  .news-week-pill { font-size:13px; font-weight:600; padding:6px 14px; border-radius:999px; background:var(--accent-soft); color:var(--text2); border:1px solid var(--border); }
+  .news-subtitle { color:var(--text2); font-size:15px; max-width:720px; line-height:1.6; }
+  .news-week-nav { display:flex; gap:8px; margin-top:16px; }
+  .news-week-btn { font-size:13px; padding:6px 14px; border-radius:999px; background:var(--white); border:1px solid var(--border); color:var(--text2); cursor:pointer; font-family:inherit; transition:all .2s; }
+  .news-week-btn:hover { color:var(--black); background:var(--accent-soft); }
+  .news-week-btn:disabled { opacity:.4; cursor:not-allowed; }
+
+  .news-section-label { font-family:'DM Sans', sans-serif; font-size:13px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--text3); margin-bottom:16px; }
+  .news-section { margin-bottom:56px; }
+
+  .trend-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; }
+  .trend-card { background:var(--card-bg); border:1px solid var(--border); border-radius:var(--radius); padding:24px; display:flex; flex-direction:column; gap:14px; }
+  .trend-num { font-family:'DM Sans', sans-serif; font-size:13px; font-weight:700; color:var(--text3); letter-spacing:1px; }
+  .trend-title { font-family:'DM Sans', sans-serif; font-size:24px; font-weight:800; letter-spacing:-.5px; color:var(--black); line-height:1.25; }
+  .trend-summary { font-size:14px; color:var(--text); line-height:1.65; }
+  .trend-implication { font-size:13px; color:var(--text2); background:var(--accent-soft); padding:12px 14px; border-radius:var(--radius-sm); border-left:3px solid var(--black); line-height:1.6; }
+  .trend-evidence { display:flex; flex-direction:column; gap:8px; padding-top:12px; border-top:1px dashed var(--border); }
+  .trend-evidence-item { font-size:12px; color:var(--text2); line-height:1.55; }
+  .trend-evidence-item .evi-who { font-weight:600; color:var(--text); }
+  .trend-evidence-item a { color:var(--blue); text-decoration:none; word-break:break-all; }
+  .trend-evidence-item a:hover { text-decoration:underline; }
+
+  .builder-grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:14px; }
+  .builder-card { background:var(--card-bg); border:1px solid var(--border); border-radius:var(--radius-sm); padding:20px; }
+  .builder-row { display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:12px; }
+  .builder-name { font-family:'DM Sans', sans-serif; font-size:18px; font-weight:700; color:var(--black); }
+  .builder-handle { font-size:12px; color:var(--text3); }
+  .builder-role { font-size:12px; color:var(--text2); margin-bottom:14px; padding:3px 9px; border-radius:999px; background:var(--accent-soft); display:inline-block; }
+  .builder-highlight { font-size:13px; color:var(--text); line-height:1.65; padding:10px 0; border-top:1px solid var(--border); }
+  .builder-highlight:first-of-type { border-top:none; padding-top:0; }
+  .builder-highlight a { color:var(--blue); font-size:11px; text-decoration:none; display:inline-block; margin-top:4px; }
+  .builder-highlight a:hover { text-decoration:underline; }
+
+  .longform-card { background:var(--card-bg); border:1px solid var(--border); border-radius:var(--radius); padding:24px 28px; margin-bottom:14px; }
+  .longform-meta { display:flex; gap:10px; flex-wrap:wrap; align-items:center; font-size:11px; color:var(--text3); margin-bottom:8px; letter-spacing:.3px; text-transform:uppercase; font-weight:600; }
+  .longform-meta-tag { background:var(--accent-soft); padding:3px 9px; border-radius:999px; }
+  .longform-title { font-family:'DM Sans', sans-serif; font-size:20px; font-weight:700; color:var(--black); line-height:1.35; margin-bottom:6px; }
+  .longform-guest { font-size:13px; color:var(--text2); margin-bottom:14px; }
+  .longform-takeaways { display:flex; flex-direction:column; gap:10px; margin:14px 0; }
+  .longform-takeaway { font-size:14px; color:var(--text); line-height:1.7; padding-left:18px; position:relative; }
+  .longform-takeaway::before { content:''; position:absolute; left:0; top:11px; width:6px; height:6px; border-radius:50%; background:var(--black); }
+  .longform-summary { font-size:14px; color:var(--text); line-height:1.75; }
+  .longform-link { display:inline-block; margin-top:14px; font-size:12px; color:var(--blue); text-decoration:none; }
+  .longform-link:hover { text-decoration:underline; }
+
+  @media (max-width: 900px) {
+    .trend-grid { grid-template-columns:1fr; }
+    .builder-grid { grid-template-columns:1fr; }
+    .news-h1 { font-size:36px; }
+  }
+
   /* ===== SECTION ===== */
   .section { margin-bottom: 40px; }
 
@@ -1723,6 +1778,7 @@
       <button class="nav-link" data-page="design" onclick="switchPage('design')">Design</button>
       <button class="nav-link" data-page="knowledge" onclick="switchPage('knowledge')">FAN</button>
       <button class="nav-link" data-page="rival" onclick="switchPage('rival')">竞品跟踪</button>
+      <button class="nav-link" data-page="news" onclick="switchPage('news')">AI资讯</button>
     </nav>
     <button id="voicePlayButton" class="voice-btn" type="button" aria-label="播放资讯" title="播放资讯" style="display:none;">
       <span class="voice-btn-icon">▶</span>
@@ -1740,6 +1796,12 @@
       <button id="prevMonth">← 上月</button>
       <div class="current-date" id="currentMonth">3月</div>
       <button id="nextMonth">下月 →</button>
+    </div>
+    <div class="date-nav" id="news-week-nav" style="display:none;">
+      <button id="newsPrevWeek" onclick="navNewsWeek(-1)">← 上周</button>
+      <select id="newsWeekSelect" class="current-date" onchange="jumpToNewsWeek(this.value)" style="border:none;outline:none;font:inherit;cursor:pointer;padding:0 8px;background:transparent;"></select>
+      <button id="newsNextWeek" onclick="navNewsWeek(1)">下周 →</button>
+      <button id="newsThisWeek" class="go-this-week" style="display:none;" onclick="navNewsWeek(0)">本周</button>
     </div>
   </div>
 </div>
@@ -1803,6 +1865,12 @@
     <div id="rival-report-list" style="display:none;"></div>
     <div id="rival-report-detail" style="display:none;"></div>
   </div>
+</div>
+
+<!-- AI 资讯 Page: 周维度聚合 AI 大佬动态 -->
+<div class="main" id="news-page" style="display:none; max-width:1400px; margin:0 auto; padding:40px 48px 60px;">
+  <div id="news-loading" style="text-align:center;padding:60px 0;color:#888;">正在加载本周AI资讯...</div>
+  <div id="news-content" style="display:none;"></div>
 </div>
 
 <!-- Blog Page: Audio Podcast Player -->
@@ -3655,6 +3723,7 @@ function switchPage(id) {
   var designPage = document.getElementById('design-page');
   var knowledgePage = document.getElementById('knowledge-page');
   var rivalPage = document.getElementById('rival-page');
+  var newsPage = document.getElementById('news-page');
   var dayNav = document.getElementById('day-nav');
   var monthNav = document.getElementById('month-nav');
   var btns = document.querySelectorAll('.nav-link');
@@ -3665,14 +3734,20 @@ function switchPage(id) {
   designPage.style.display = id === 'design' ? 'block' : 'none';
   knowledgePage.style.display = id === 'knowledge' ? 'block' : 'none';
   rivalPage.style.display = id === 'rival' ? 'block' : 'none';
+  newsPage.style.display = id === 'news' ? 'block' : 'none';
   dayNav.style.display = id === 'insight' ? 'flex' : 'none';
   monthNav.style.display = id === 'map' ? 'flex' : 'none';
+  var newsWeekNav = document.getElementById('news-week-nav');
+  if (newsWeekNav) newsWeekNav.style.display = id === 'news' ? 'flex' : 'none';
 
   if (id === 'map') {
     loadAndRenderMapClusters();
   }
   if (id === 'rival') {
     loadAndRenderRivalPage();
+  }
+  if (id === 'news') {
+    loadAndRenderNewsPage();
   }
   if (id !== 'insight') {
     stopVoicePlayback(false);
@@ -3689,14 +3764,333 @@ function switchPage(id) {
 
   window.scrollTo(0, 0);
 }
-if (window.location.hash === '#map' || window.location.hash === '#design' || window.location.hash === '#knowledge') {
+if (window.location.hash === '#map' || window.location.hash === '#design' || window.location.hash === '#knowledge' || window.location.hash === '#rival' || window.location.hash === '#news') {
   document.addEventListener('DOMContentLoaded', function() {
     var h = window.location.hash;
     var pageId = h === '#design' ? 'design'
       : h === '#knowledge' ? 'knowledge'
+      : h === '#rival' ? 'rival'
+      : h === '#news' ? 'news'
       : 'map';
     switchPage(pageId);
   });
+}
+
+// ========================================================================
+// AI 资讯 Page —— 周维度聚合 AI 大佬动态
+// 数据：data/ai-news/weekly/YYYY-Www.json （由 build_ai_news_weekly.py + LLM 生成）
+// ========================================================================
+
+var aiNewsState = { currentWeek: null, loaded: {}, index: null };
+
+function getCurrentISOWeek() {
+  // 返回当前周的 'YYYY-Www' 标识
+  var d = new Date();
+  d.setHours(0, 0, 0, 0);
+  // ISO 周以周一为起点，周四决定年份
+  d.setDate(d.getDate() + 4 - (d.getDay() || 7));
+  var yearStart = new Date(d.getFullYear(), 0, 1);
+  var weekNum = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+  return d.getFullYear() + '-W' + String(weekNum).padStart(2, '0');
+}
+
+function shiftWeek(weekKey, delta) {
+  // 'YYYY-Www' + delta 周 → 'YYYY-Www'
+  var parts = weekKey.split('-W');
+  var year = parseInt(parts[0], 10);
+  var wk = parseInt(parts[1], 10);
+  // 用 ISO 周一作为基准，加 delta*7 天
+  var jan4 = new Date(year, 0, 4);
+  var firstMonday = new Date(jan4);
+  firstMonday.setDate(jan4.getDate() - ((jan4.getDay() + 6) % 7));
+  var monday = new Date(firstMonday);
+  monday.setDate(firstMonday.getDate() + (wk - 1 + delta) * 7);
+  // 重新计算
+  var d = new Date(monday);
+  d.setHours(0, 0, 0, 0);
+  d.setDate(d.getDate() + 4 - (d.getDay() || 7));
+  var yearStart = new Date(d.getFullYear(), 0, 1);
+  var newWk = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+  return d.getFullYear() + '-W' + String(newWk).padStart(2, '0');
+}
+
+// 加载周索引（所有已生成的周），供下拉使用
+async function loadNewsIndex() {
+  if (aiNewsState.index) return aiNewsState.index;
+  try {
+    var res = await fetch('data/ai-news/weekly/index.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error('no index');
+    aiNewsState.index = await res.json();
+  } catch (e) {
+    aiNewsState.index = { count: 0, weeks: [] };
+  }
+  return aiNewsState.index;
+}
+
+function formatWeekLabel(entry) {
+  // "2026-W19 · 05-04 ~ 05-10"
+  var range = '';
+  if (entry.start && entry.end) {
+    var s = entry.start.slice(5); // MM-DD
+    var e = entry.end.slice(5);
+    range = ' · ' + s + ' ~ ' + e;
+  }
+  return entry.week + range;
+}
+
+function renderNewsWeekNav() {
+  var select = document.getElementById('newsWeekSelect');
+  var prevBtn = document.getElementById('newsPrevWeek');
+  var nextBtn = document.getElementById('newsNextWeek');
+  var thisBtn = document.getElementById('newsThisWeek');
+  if (!select) return;
+
+  var idx = aiNewsState.index;
+  var weeks = (idx && idx.weeks) ? idx.weeks : [];
+  var current = aiNewsState.currentWeek;
+
+  // 确保当前选中项在下拉里（即便没生成过，也显示一个占位）
+  var hasCurrent = weeks.some(function(w) { return w.week === current; });
+  var opts = weeks.slice();
+  if (!hasCurrent && current) {
+    opts.unshift({ week: current, start: null, end: null });
+  }
+
+  var html = '';
+  opts.forEach(function(w) {
+    var sel = (w.week === current) ? ' selected' : '';
+    html += '<option value="' + w.week + '"' + sel + '>' + formatWeekLabel(w) + '</option>';
+  });
+  select.innerHTML = html;
+
+  // 禁用边界按钮：只在已有的周范围里前后切
+  var weekList = weeks.map(function(w) { return w.week; });
+  var curIdx = weekList.indexOf(current);
+  if (curIdx === -1) {
+    // 当前周不在已生成列表里（如今日本周还没跑），允许 prev 跳最近一周，禁用 next
+    prevBtn.disabled = weekList.length === 0;
+    nextBtn.disabled = true;
+  } else {
+    // weekList 是倒序（最新在前）
+    prevBtn.disabled = curIdx >= weekList.length - 1;
+    nextBtn.disabled = curIdx <= 0;
+  }
+
+  // "本周" 按钮：当前不是最新周时才显示
+  var thisWeek = getCurrentISOWeek();
+  thisBtn.style.display = (current !== thisWeek) ? 'inline-block' : 'none';
+}
+
+async function loadAndRenderNewsPage() {
+  var loading = document.getElementById('news-loading');
+  var content = document.getElementById('news-content');
+  if (!aiNewsState.currentWeek) {
+    aiNewsState.currentWeek = getCurrentISOWeek();
+  }
+  loading.style.display = 'block';
+  loading.textContent = '正在加载 ' + aiNewsState.currentWeek + ' 周的AI资讯...';
+  content.style.display = 'none';
+
+  // 先拉索引（让下拉先可切换）
+  await loadNewsIndex();
+
+  // 如果当前周没有数据，且索引里有其它周，自动跳到最新那周
+  var weekKey = aiNewsState.currentWeek;
+  var weeks = aiNewsState.index.weeks || [];
+  var exists = weeks.some(function(w) { return w.week === weekKey; });
+  if (!exists && weeks.length > 0) {
+    aiNewsState.currentWeek = weeks[0].week;
+    weekKey = aiNewsState.currentWeek;
+  }
+
+  renderNewsWeekNav();
+
+  var data = aiNewsState.loaded[weekKey];
+  if (!data) {
+    try {
+      var res = await fetch('data/ai-news/weekly/' + weekKey + '.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      data = await res.json();
+      aiNewsState.loaded[weekKey] = data;
+    } catch (e) {
+      loading.innerHTML = '<div style="color:#888;">' + escapeHtml(weekKey) + ' 周的资讯还没生成。<br><br><span style="font-size:12px;">在终端跑：python3 fetch_ai_news_daily.py && python3 build_ai_news_weekly.py</span></div>';
+      return;
+    }
+  }
+  renderNewsPage(data);
+  loading.style.display = 'none';
+  content.style.display = 'block';
+}
+
+function renderNewsPage(data) {
+  var content = document.getElementById('news-content');
+  var html = '';
+
+  // ---- Header ----
+  html += '<div class="news-header">';
+  html += '  <div class="news-title-row">';
+  html += '    <div class="news-h1">AI 资讯周报</div>';
+  html += '  </div>';
+  html += '  <div class="news-subtitle">追踪 25 位 AI 顶尖 builder（Karpathy、Sam Altman、Aaron Levie、Swyx 等）+ 6 个顶级 AI 播客 + Anthropic / Claude 官方博客的一周动态。PM 视角提炼，聚焦交互范式、产品形态、商业化方向。</div>';
+  html += '</div>';
+
+  // ---- 三大趋势 ----
+  if (data.trends && data.trends.length) {
+    html += '<div class="news-section">';
+    html += '  <div class="news-section-label">本周三大趋势</div>';
+    html += '  <div class="trend-grid">';
+    data.trends.forEach(function(t, i) {
+      html += '<div class="trend-card">';
+      html += '  <div class="trend-num">0' + (i + 1) + ' / TREND</div>';
+      html += '  <div class="trend-title">' + escapeHtml(t.title) + '</div>';
+      html += '  <div class="trend-summary">' + escapeHtml(t.summary) + '</div>';
+      if (t.implication) {
+        html += '  <div class="trend-implication">' + escapeHtml(t.implication) + '</div>';
+      }
+      if (t.evidence && t.evidence.length) {
+        html += '  <div class="trend-evidence">';
+        t.evidence.forEach(function(e) {
+          html += '<div class="trend-evidence-item">';
+          html += '  <span class="evi-who">' + escapeHtml(e.who || '') + '：</span>';
+          html += '  <span>' + escapeHtml(e.quote || '') + '</span><br>';
+          if (e.url) {
+            html += '  <a href="' + escapeHtml(e.url) + '" target="_blank" rel="noopener">' + escapeHtml(e.url) + '</a>';
+          }
+          html += '</div>';
+        });
+        html += '  </div>';
+      }
+      html += '</div>';
+    });
+    html += '  </div>';
+    html += '</div>';
+  }
+
+  // ---- 大佬说了啥 ----
+  if (data.builders && data.builders.length) {
+    html += '<div class="news-section">';
+    html += '  <div class="news-section-label">大佬说了啥</div>';
+    html += '  <div class="builder-grid">';
+    data.builders.forEach(function(b) {
+      html += '<div class="builder-card">';
+      html += '  <div class="builder-row">';
+      html += '    <div>';
+      html += '      <span class="builder-name">' + escapeHtml(b.name || '') + '</span>';
+      if (b.handle) html += ' <span class="builder-handle">@' + escapeHtml(b.handle) + '</span>';
+      html += '    </div>';
+      html += '  </div>';
+      if (b.role) {
+        html += '  <span class="builder-role">' + escapeHtml(b.role) + '</span>';
+      }
+      if (b.highlights && b.highlights.length) {
+        b.highlights.forEach(function(h) {
+          html += '<div class="builder-highlight">';
+          html += '  ' + escapeHtml(h.summary || '');
+          if (h.url) {
+            html += '<br><a href="' + escapeHtml(h.url) + '" target="_blank" rel="noopener">查看原文 →</a>';
+          }
+          html += '</div>';
+        });
+      }
+      html += '</div>';
+    });
+    html += '  </div>';
+    html += '</div>';
+  }
+
+  // ---- 本周播客 ----
+  if (data.podcasts && data.podcasts.length) {
+    html += '<div class="news-section">';
+    html += '  <div class="news-section-label">本周值得听的播客</div>';
+    data.podcasts.forEach(function(p) {
+      html += '<div class="longform-card">';
+      html += '  <div class="longform-meta">';
+      html += '    <span class="longform-meta-tag">PODCAST</span>';
+      if (p.name) html += '<span class="longform-meta-tag">' + escapeHtml(p.name) + '</span>';
+      html += '  </div>';
+      html += '  <div class="longform-title">' + escapeHtml(p.title || '') + '</div>';
+      if (p.guest) html += '<div class="longform-guest">嘉宾：' + escapeHtml(p.guest) + '</div>';
+      if (p.keyTakeaways && p.keyTakeaways.length) {
+        html += '  <div class="longform-takeaways">';
+        p.keyTakeaways.forEach(function(t) {
+          html += '<div class="longform-takeaway">' + escapeHtml(t) + '</div>';
+        });
+        html += '  </div>';
+      }
+      if (p.url) {
+        html += '<a class="longform-link" href="' + escapeHtml(p.url) + '" target="_blank" rel="noopener">收听原文 →</a>';
+      }
+      html += '</div>';
+    });
+    html += '</div>';
+  }
+
+  // ---- 本周博客 ----
+  if (data.blogs && data.blogs.length) {
+    html += '<div class="news-section">';
+    html += '  <div class="news-section-label">本周值得读的博客</div>';
+    data.blogs.forEach(function(b) {
+      html += '<div class="longform-card">';
+      html += '  <div class="longform-meta">';
+      html += '    <span class="longform-meta-tag">BLOG</span>';
+      if (b.name) html += '<span class="longform-meta-tag">' + escapeHtml(b.name) + '</span>';
+      html += '  </div>';
+      html += '  <div class="longform-title">' + escapeHtml(b.title || '') + '</div>';
+      if (b.summary) html += '<div class="longform-summary">' + escapeHtml(b.summary) + '</div>';
+      if (b.url) {
+        html += '<a class="longform-link" href="' + escapeHtml(b.url) + '" target="_blank" rel="noopener">阅读原文 →</a>';
+      }
+      html += '</div>';
+    });
+    html += '</div>';
+  }
+
+  content.innerHTML = html;
+  window.scrollTo(0, 0);
+}
+
+function navNewsWeek(delta) {
+  if (delta === 0) {
+    aiNewsState.currentWeek = getCurrentISOWeek();
+    loadAndRenderNewsPage();
+    return;
+  }
+  // 在已生成周的列表里前后跳，避免跳到空周
+  var weeks = (aiNewsState.index && aiNewsState.index.weeks) ? aiNewsState.index.weeks : [];
+  if (!weeks.length) {
+    aiNewsState.currentWeek = shiftWeek(aiNewsState.currentWeek, delta);
+    loadAndRenderNewsPage();
+    return;
+  }
+  var list = weeks.map(function(w) { return w.week; }); // 倒序，最新在前
+  var curIdx = list.indexOf(aiNewsState.currentWeek);
+  if (curIdx === -1) {
+    // 当前周不在已生成里：往"上一周"就跳到最新一周，往"下一周"不动
+    if (delta < 0) aiNewsState.currentWeek = list[0];
+  } else {
+    // delta=-1(上周)→往旧走，index+1；delta=+1(下周)→往新走，index-1
+    var newIdx = curIdx - delta;
+    if (newIdx >= 0 && newIdx < list.length) {
+      aiNewsState.currentWeek = list[newIdx];
+    }
+  }
+  loadAndRenderNewsPage();
+}
+
+function jumpToNewsWeek(weekKey) {
+  if (!weekKey || weekKey === aiNewsState.currentWeek) return;
+  aiNewsState.currentWeek = weekKey;
+  loadAndRenderNewsPage();
+}
+
+function escapeHtml(s) {
+  if (s == null) return '';
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
 }
 
 function switchCluster(name) {
