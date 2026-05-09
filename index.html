@@ -3828,14 +3828,11 @@ async function loadNewsIndex() {
 }
 
 function formatWeekLabel(entry) {
-  // "2026-W19 · 05-04 ~ 05-10"
-  var range = '';
+  // "05-04 ~ 05-10"（去掉 2026-W19 前缀）
   if (entry.start && entry.end) {
-    var s = entry.start.slice(5); // MM-DD
-    var e = entry.end.slice(5);
-    range = ' · ' + s + ' ~ ' + e;
+    return entry.start.slice(5) + ' ~ ' + entry.end.slice(5);
   }
-  return entry.week + range;
+  return entry.week;
 }
 
 function renderNewsWeekNav() {
