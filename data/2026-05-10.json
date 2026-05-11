@@ -1,0 +1,160 @@
+{
+  "date": "2026-05-10",
+  "generated_at": "2026-05-11T08:30:00+08:00",
+  "daily_summary": "周末复盘日。本周（5月4-10日）是2026年AI行业信息密度最高的一周：GPT-5.5 Instant免费化、xAI-Anthropic算力合作、谷歌全天候Agent、Meta Hatch社交AI、AI终端国标发布、豆包付费、Cloudflare AI裁员、Claude进入Office——几乎每天都有重塑行业格局的事件。总结来看，本周三大趋势明确化：(1) AI默认体验天花板快速抬升——免费用户也能用最强模型，各家纷纷下放最优能力；(2) AI从聊天窗口走向系统级嵌入——Chrome扩展、Office集成、全天候Agent、社交AI代理，AI能力正在渗透到每个应用场景；(3) 商业化窗口正式打开——豆包收费、智谱涨价、OpenAI广告平台，'免费时代'加速收缩。对输入法而言，本周最大的战略信号是：AI正在成为'基础设施级'能力，输入法必须从'带AI功能的打字工具'升级为'AI驱动的表达平台'。",
+  "design_insights": [
+    {
+      "title": "本周回顾：AI从'功能'变成'基础设施'的关键一周",
+      "summary": "本周事件密度之高创2026年之最。核心趋势：GPT-5.5免费化→AI默认体验天花板抬升；Codex Chrome扩展+Claude进Office+Gemini全天候Agent→AI从App走向系统级嵌入；豆包收费+智谱涨价+OpenAI广告→商业化窗口打开。三条趋势交汇指向同一结论：AI正在成为像电力一样的基础设施。",
+      "implication": "对输入法产品的战略级启示：(1) 当AI成为基础设施，输入法的定位需要根本性升级——不是'带AI功能的打字工具'，而是'AI驱动的表达平台'；(2) 具体意味着：每一次用户输入都应被AI增强（不只是用户主动触发帮写时），输入法应该'无感'地让用户表达更好；(3) 竞争格局也在变——对手不只是其他输入法，还包括Chrome扩展、Office AI、系统级Agent等新物种；(4) 建议启动输入法产品战略升级项目，从'功能迭代'思维转向'平台进化'思维。",
+      "sources": ["综合总结"],
+      "source_urls": [
+        {"name": "超级48小时", "url": "https://blog.csdn.net/2603_95827660/article/details/160884858"},
+        {"name": "AI产业日报", "url": "https://blog.csdn.net/haohaizi_liu/article/details/160920042"}
+      ],
+      "tags": ["周度总结", "基础设施", "战略升级"]
+    },
+    {
+      "title": "DeepSeek V4.1多模态版本预告：图像和音频能力即将补齐",
+      "summary": "DeepSeek大幅放开识图模式内测，计划6月发布V4.1多模态全量模型，补齐图像与音频能力并支持MCP协议。这意味着DeepSeek将从纯文本模型进化为全模态模型，与GPT-5.5、Claude、Gemini在多模态能力上全面竞争。",
+      "implication": "对输入法的技术机遇：(1) DeepSeek V4.1支持MCP协议意味着可以更灵活地与输入法后端集成——通过标准协议调用模型的文本/图像/音频能力；(2) 多模态能力可以赋能输入法新场景：拍照→AI理解图片→生成描述/回复；语音→AI理解+改写→文字输出；(3) 6月发布的V4.1应列入技术评估清单。",
+      "sources": ["B站AI日报"],
+      "source_urls": [
+        {"name": "AI行业日报", "url": "https://www.bilibili.com/video/BV1BdRZBaEia/"}
+      ],
+      "tags": ["DeepSeek", "多模态", "V4.1", "MCP"]
+    },
+    {
+      "title": "百度文心5.1发布：参数压缩至三分之一、成本降至6%",
+      "summary": "百度推出文心大模型5.1，参数压缩至5.0的约三分之一，预训练成本降至业界6%。LMSYS搜索榜国内第一、全球第四。这是'模型轻量化'趋势的重要案例——不是更大更强，而是更小更便宜更快。",
+      "implication": "对输入法的技术参考：(1) 文心5.1的轻量化思路与输入法需求高度匹配——输入法需要低延迟、低成本的模型，不一定需要最强大的模型；(2) 参数压缩到三分之一意味着端侧部署的可能性增加——未来可以在手机端本地运行小模型处理简单的帮写/纠错任务，复杂任务才调用云端大模型；(3) 成本降至6%进一步降低了输入法后端模型的使用成本。",
+      "sources": ["B站AI日报"],
+      "source_urls": [
+        {"name": "文心5.1详情", "url": "https://www.bilibili.com/video/BV1BdRZBaEia/"}
+      ],
+      "tags": ["百度", "文心5.1", "轻量化", "成本"]
+    },
+    {
+      "title": "菲尔兹奖得主用ChatGPT 5.5 Pro一小时改进数学上界",
+      "summary": "菲尔兹奖得主Timothy Gowers使用未公开的ChatGPT 5.5 Pro，在1小时内将和集直径上界从指数级改进为多项式界。该数学证明被评为'苦思数周才能产出'的质量。这是AI辅助顶级数学研究的标志性事件。",
+      "implication": "对输入法的间接启示：AI在数学这种高度抽象领域的突破，说明AI的'理解和推理'能力已经到达新水平。这种能力迁移到输入法场景意味着：AI帮写不只能做文字润色，还能做'逻辑改写'——理解用户表达的逻辑，优化论证结构，让表达更有说服力。",
+      "sources": ["B站AI日报"],
+      "source_urls": [
+        {"name": "AI行业日报", "url": "https://www.bilibili.com/video/BV1BdRZBaEia/"}
+      ],
+      "tags": ["GPT-5.5 Pro", "数学", "推理能力"]
+    },
+    {
+      "title": "Claude长时程自主任务成功率翻倍，逼近无人托管部署门槛",
+      "summary": "Claude在长时程自主任务上的成功率对应时长突破16小时，较此前最优模型翻倍，逼近无人托管部署门槛。这意味着AI Agent的可靠性正在达到'放手让它干'的水平。",
+      "implication": "对输入法Agent化的参考：(1) 16小时自主任务成功意味着AI Agent已经具备处理复杂、长期任务的能力——输入法未来可以发展'写作Agent'功能：用户给出一个写作目标（如'帮我写一篇产品分析报告'），Agent自主完成研究、撰写、修改全流程；(2) 但16小时还不够完美——在需要即时反馈的输入法场景中，Agent的可靠性要求更高。",
+      "sources": ["B站AI日报"],
+      "source_urls": [
+        {"name": "AI行业日报", "url": "https://www.bilibili.com/video/BV1BdRZBaEia/"}
+      ],
+      "tags": ["Claude", "Agent", "长时程", "自主任务"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "端云协同帮写架构：简单任务端侧、复杂任务云端",
+      "pain_point": "当前帮写全部依赖云端API调用，导致延迟高（网络请求耗时）、成本高（每次调用都计费）、离线不可用",
+      "opportunity": "借鉴文心5.1轻量化思路，建立端云协同的帮写架构：(1) 端侧小模型处理简单任务（拼写纠错、基础联想、常用表达补全）——离线可用、零延迟、零成本；(2) 云端大模型处理复杂任务（长文改写、创意续写、多语言翻译）——高质量、有算力保障；(3) 智能路由：根据任务复杂度自动选择端侧或云端处理。DeepSeek V4.1支持MCP协议可以作为云端标准接入方案。",
+      "priority": "高",
+      "evidence": "文心5.1参数压缩至三分之一、成本降至6%验证了轻量化模型的可行性；DeepSeek V4.1将支持MCP协议标准化云端接入"
+    },
+    {
+      "title": "输入法战略升级：从'打字工具+AI功能'到'AI表达平台'",
+      "pain_point": "当前输入法的AI功能是'附加能力'——帮写/改写/续写都是独立功能入口，用户需要主动触发。这种模式限制了AI能力的渗透率。",
+      "opportunity": "参考本周'AI成为基础设施'的产业趋势，将输入法升级为AI表达平台：(1) 每次输入都被AI增强——拼写纠错、语法优化、表达润色在输入过程中自动发生，不需要用户主动触发；(2) 场景智能适配——在微信中自动适配聊天风格、在邮件中自动适配正式语调、在社交发布中自动适配吸引力表达；(3) 表达能力扩展——不只是文字，还包括AI生成表情包、AI推荐回复、AI辅助配图等多模态表达能力。",
+      "priority": "高",
+      "evidence": "本周AI系统级嵌入趋势（Chrome扩展+Office集成+全天候Agent+社交AI）说明AI正在从'功能'变成'基础设施'，输入法需要同步升级定位"
+    },
+    {
+      "title": "下周关注清单：WWDC预热+DeepSeek V4全量+马斯克庭审后续",
+      "pain_point": "下周有多个影响输入法战略的关键事件需要跟踪",
+      "opportunity": "下周重点关注：(1) WWDC 2026距离约一个月——苹果是否开始释放AI键盘/iOS 27相关预告（直接影响iOS端战略）；(2) DeepSeek V4全量版本上线时间表和V4.1多模态进展（技术选型依据）；(3) 马斯克诉OpenAI庭审后续和Grok Build发布动态；(4) 豆包收费后的用户反应和留存数据（商业化参考）；(5) AI终端国标落地执行动态。",
+      "priority": "中",
+      "evidence": "距WWDC约一个月进入预热期；DeepSeek V4.1预告6月发布；豆包收费刚公布一周，用户反应数据即将明朗"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "本周回顾：2026年AI行业信息密度最高的一周",
+      "summary": "GPT-5.5免费化、xAI-Anthropic算力合作、谷歌全天候Agent、Meta Hatch、AI国标、豆包付费、Cloudflare裁员、Claude进Office——几乎每天都有格局重塑事件。",
+      "source": "综合",
+      "source_urls": [],
+      "tags": ["周度总结", "密集事件"]
+    },
+    {
+      "title": "Claude长时程任务成功率翻倍，突破16小时无人托管门槛",
+      "summary": "Claude在长时程自主任务上成功率对应时长突破16小时，较此前最优模型翻倍，逼近无人值守部署门槛。",
+      "source": "B站AI日报",
+      "source_urls": [{"name": "AI日报", "url": "https://www.bilibili.com/video/BV1BdRZBaEia/"}],
+      "tags": ["Claude", "Agent", "长时程"]
+    },
+    {
+      "title": "DeepSeek V4.1多模态版本预告，6月发布补齐图像音频能力",
+      "summary": "DeepSeek放开识图内测，计划6月发布V4.1多模态全量模型，支持MCP协议。将从纯文本进化为全模态模型。",
+      "source": "B站AI日报",
+      "source_urls": [{"name": "AI日报", "url": "https://www.bilibili.com/video/BV1BdRZBaEia/"}],
+      "tags": ["DeepSeek", "V4.1", "多模态"]
+    },
+    {
+      "title": "百度发布文心5.1：参数压缩至三分之一，成本降至业界6%",
+      "summary": "文心5.1参数压缩至5.0约三分之一，预训练成本降至业界6%。LMSYS搜索榜国内第一全球第四。轻量化+低成本成新竞争维度。",
+      "source": "B站AI日报",
+      "source_urls": [{"name": "AI日报", "url": "https://www.bilibili.com/video/BV1BdRZBaEia/"}],
+      "tags": ["百度", "文心5.1", "轻量化"]
+    },
+    {
+      "title": "菲尔兹奖得主用ChatGPT 5.5 Pro一小时突破数学难题",
+      "summary": "数学家Timothy Gowers使用GPT-5.5 Pro在1小时内将和集直径上界从指数级改进为多项式界，被评为'苦思数周'水平。",
+      "source": "B站AI日报",
+      "source_urls": [{"name": "AI日报", "url": "https://www.bilibili.com/video/BV1BdRZBaEia/"}],
+      "tags": ["GPT-5.5", "数学", "突破"]
+    },
+    {
+      "title": "DeepSeek价格比美国对手低97%，使用量明显增加",
+      "summary": "南华早报报道DeepSeek降价后使用量显著增长，价格比OpenAI低97%。分析认为此举旨在吸引企业用户和Agent开发者。",
+      "source": "南华早报 / 中国电影新闻",
+      "source_urls": [{"name": "南华早报报道", "url": "https://www.chinafilmnews.cn/Html/china.php?20260510452328.xlsx"}],
+      "tags": ["DeepSeek", "降价", "市场份额"]
+    },
+    {
+      "title": "软银下调OpenAI保证金贷款目标至60亿美元",
+      "summary": "软银将OpenAI保证金贷款目标从100亿美元下调至60亿美元，反映出即使是最大AI投资者也在谨慎管理风险敞口。",
+      "source": "每日经济新闻",
+      "source_urls": [{"name": "每经报道", "url": "https://new.qq.com/rain/a/20260511A0267Y00"}],
+      "tags": ["软银", "OpenAI", "融资"]
+    },
+    {
+      "title": "马斯克入局AI编程：Grok Build即将发布，目标超越Claude",
+      "summary": "SpaceX-xAI即将推出Grok Build桌面编程应用，马斯克称6月将发布新模型超越Claude编程能力。AI编程赛道进入三国争霸。",
+      "source": "腾讯新闻",
+      "source_urls": [{"name": "AI早报", "url": "https://new.qq.com/rain/a/20260511A029HO00"}],
+      "tags": ["马斯克", "Grok Build", "编程"]
+    },
+    {
+      "title": "谷歌DeepMind聘请芝大教授担任AGI经济总监",
+      "summary": "芝加哥大学行为经济学家Alex Imas加入DeepMind担任AGI经济学总监，研究AI对劳动力市场的影响。AGI的经济影响研究正式制度化。",
+      "source": "腾讯新闻",
+      "source_urls": [{"name": "AI早报", "url": "https://new.qq.com/rain/a/20260511A029HO00"}],
+      "tags": ["DeepMind", "AGI经济学", "劳动力"]
+    },
+    {
+      "title": "AI赋能传统产业：从养殖到影视的落地实践",
+      "summary": "CSDN产业日报报道AI在养殖业和影视行业的落地案例。AI商业化正在从科技行业向传统行业渗透，蛋糕在做大。",
+      "source": "CSDN",
+      "source_urls": [{"name": "产业动态", "url": "https://blog.csdn.net/haohaizi_liu/article/details/160920042"}],
+      "tags": ["传统产业", "AI应用", "落地"]
+    },
+    {
+      "title": "算力账单压顶：大模型集体'下海'赚钱",
+      "summary": "证券时报深度分析：从4月初至今是'超级更新月'，OpenAI/Anthropic/DeepSeek/阿里密集发布新版本并加速商业化。大模型从'谁更强'转向'谁先赚钱'。",
+      "source": "证券时报",
+      "source_urls": [{"name": "深度分析", "url": "https://www.stcn.com/article/detail/3895851.html"}],
+      "tags": ["商业化", "算力成本", "盈利"]
+    }
+  ]
+}
