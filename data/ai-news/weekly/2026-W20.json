@@ -1,0 +1,110 @@
+{
+  "week": "2026-W20",
+  "range": { "start": "2026-05-11", "end": "2026-05-17" },
+  "generatedAt": "2026-05-20T10:30:00+08:00",
+  "trends": [
+    {
+      "title": "AI 让人陷入‘双重人格’循环",
+      "summary": "本周湾区 builder 圈集中讨论一个现象：用 AI coding agent 时觉得自己无所不能，刷推特看别人成果时又觉得自己彻底掉队。Zara Zhang 起名‘AI psychosis’，Peter Steinberger（OpenClaw 作者）则反复在公开吐槽‘别看 hacker news 评论’这种自我消耗。",
+      "implication": "用户使用 AI 的情绪体验，正在变成产品差异点。Notion / Linear 这些做‘节制感’的工具会更受欢迎，而那种‘看完就让你 FOMO’的 feed 类 AI 内容会被反弹。AI 助手类产品要避免无意识地‘制造焦虑’。",
+      "evidence": [
+        { "type": "tweet", "who": "Zara Zhang（Builder）", "url": "https://x.com/zarazhangrui/status/2055728641913536762", "quote": "AI psychosis：每天在两种状态里循环——↑ 用完 coding agent 觉得自己无所不能 ↓ 刷完推特觉得自己被时代甩开（cycling between two mental states every single day）" },
+        { "type": "tweet", "who": "Peter Yang（Roblox PM）", "url": "https://x.com/petergyang/status/2055663937061007762", "quote": "卡在湾区 IC7/IC8 的内卷里，就去欧洲小镇或亚洲走一走——别在墓碑上写‘他离了婚、忽视孩子，但好歹在 FAANG 干到了 D2’。" },
+        { "type": "tweet", "who": "Madhu Guru（Google Gemini PM）", "url": "https://x.com/realmadhuguru/status/2055708451670798839", "quote": "湾区把‘野心’和‘满足’当成对立的，好像你想更多就不能现在快乐——这是个陷阱。" }
+      ]
+    },
+    {
+      "title": "Codex 抢人 vs Claude Code：开发者工具的站队战",
+      "summary": "本周 Peter Steinberger（OpenClaw 创始人）公开喊‘还没换 Codex 就赶紧换’，Dan Shipper 则说‘我在挨个把朋友 Codex-pill’。开发者工具市场进入了类似当年 IDE 大战的二选一阶段——Claude Code 和 OpenAI Codex 在抢同一波 power user。",
+      "implication": "开发者工具的口碑战正在白热化，‘换工具’这件事的迁移成本比想象低。对中国做 AI 助手的产品启发：当用户能用一句话拉黑你（‘别用 X 了，用 Y’）时，体验细节比功能堆砌更重要——一次糟糕回复就可能流失。",
+      "evidence": [
+        { "type": "tweet", "who": "Peter Steinberger（OpenClaw / OpenAI）", "url": "https://x.com/steipete/status/2055747016727167035", "quote": "如果你还没切到 Codex，赶紧给 Claude Code 减减肥（deslop your Claude code）。" },
+        { "type": "tweet", "who": "Dan Shipper（Every CEO）", "url": "https://x.com/danshipper/status/2055715359244566552", "quote": "正在一条短信一条短信地把全世界 Codex 化（Successfully Codex-pilling the world one text at a time）。" }
+      ]
+    },
+    {
+      "title": "Personal AI 路线浮出水面：记忆是新护城河",
+      "summary": "Garry Tan（YC CEO）这周开源个人 AI 知识系统 GBrain，主打 8 层记忆架构，1200+ 赞，强势回应了过去几周大家追问的‘personal AI 怎么落地’的问题。对应到 AI&I 播客本周播的‘Claude 团队内部怎么造平台’，记忆和上下文已经是行业共识级的下一个战场。",
+      "implication": "‘一句话问 AI 一句话回’的产品形态正在被淘汰。下一波护城河是：用户跨会话、跨设备的上下文能不能沉淀下来。输入法这种入口型产品有先天优势——你天然知道用户在写什么——但需要把‘临时输入’升级成‘长期记忆’。",
+      "evidence": [
+        { "type": "tweet", "who": "Garry Tan（YC CEO）", "url": "https://x.com/garrytan/status/2055670533451366479", "quote": "GBrain 不是‘RAG 装盒子’，是给 agent 的 8 层知识系统——目的是让你的 OpenClaw 或 Hermes Agent 像‘看穿你’一样懂你。让 personal AI 真正落地。" },
+        { "type": "tweet", "who": "Garry Tan", "url": "https://x.com/garrytan/status/2055670797596012657", "quote": "GBrain 完全开源 MIT 协议，一行命令就能装到你的 agent 里。" },
+        { "type": "podcast", "who": "AI & I（Every）", "url": "https://every.to/podcast", "quote": "Anthropic 平台团队首次系统讲他们怎么造 Claude 的‘平台层’——上下文、记忆、连接器是三件套。" }
+      ]
+    }
+  ],
+  "builders": [
+    {
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "role": "YC 总裁兼 CEO / GBrain 开源作者",
+      "highlights": [
+        { "summary": "开源 GBrain，定位‘personal AI 的知识系统’，目标是让 agent 跨会话懂你。一周内项目获得大量关注。", "url": "https://x.com/garrytan/status/2055670533451366479" },
+        { "summary": "周末长文聊 Foucault/Derrida 式‘思想病毒’怎么腐蚀建造能力，主张‘建造是解药’，一篇 700 赞。", "url": "https://x.com/garrytan/status/2055674791873630650" }
+      ]
+    },
+    {
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "Roblox 产品经理 / 14 万 AI 通讯主理人",
+      "highlights": [
+        { "summary": "提醒 AI 圈别死磕职级和公司，多去‘世界其他地方走走’，3 千赞——是这周最被转的‘反内卷’发言。", "url": "https://x.com/petergyang/status/2055663937061007762" }
+      ]
+    },
+    {
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "OpenClaw 创始人 / 前 PSPDFKit",
+      "highlights": [
+        { "summary": "公开建议‘赶紧从 Claude Code 切到 Codex’，引发关于 AI 编码工具迁移成本的讨论。", "url": "https://x.com/steipete/status/2055747016727167035" },
+        { "summary": "BlackBar 0.2.0 发布——给 Blacksmith CI 做的菜单栏小工具，主打‘24h vCPU 图表 + 紧凑状态徽章’。", "url": "https://x.com/steipete/status/2055685581758206139" }
+      ]
+    },
+    {
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "role": "Builder / follow-builders 项目作者",
+      "highlights": [
+        { "summary": "起名‘AI psychosis’精准描述了一线开发者的双重情绪状态，引发广泛共鸣。", "url": "https://x.com/zarazhangrui/status/2055728641913536762" }
+      ]
+    },
+    {
+      "name": "Madhu Guru",
+      "handle": "realmadhuguru",
+      "role": "Google Gemini / Veo / Nano Banana 产品负责人",
+      "highlights": [
+        { "summary": "罕见地从 PM 角度谈‘野心和满足并不对立’——给湾区 AI 圈提供了一个反思 frame。", "url": "https://x.com/realmadhuguru/status/2055708451670798839" }
+      ]
+    },
+    {
+      "name": "Dan Shipper",
+      "handle": "danshipper",
+      "role": "Every CEO",
+      "highlights": [
+        { "summary": "用‘Codex-pill’这种半玩笑的说法描述自己在游说朋友切换工具——侧面反映 AI 工具的口碑传播路径。", "url": "https://x.com/danshipper/status/2055715359244566552" }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "AI & I by Every",
+      "title": "Claude 平台的内部秘密——和造它的团队聊（The Secrets of Claude's Platform From the Team Who Built It）",
+      "guest": "Anthropic 平台团队",
+      "url": "https://every.to/podcast/the-secrets-of-claude-s-platform",
+      "keyTakeaways": [
+        "Claude 不是‘单个聊天窗’，而是‘平台层 + 多个表面’——同一个模型在 Claude.ai、Claude Code、API 上呈现完全不同的形态。",
+        "‘平台’的核心是上下文管理：怎么把用户的工作产物（代码、文档、对话）持久化下来，让模型每次都能调用。",
+        "团队内部把‘记忆’当作和模型能力同等重要的事——好的记忆系统能让一个 80 分模型表现像 95 分。",
+        "对外部产品的启发：模型只是 1/3 的工作，剩下 2/3 是平台层和上下文工程——这正好和 W21 Anthropic Alex Albert 讲的‘harness 重要性’呼应。"
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "name": "Anthropic Engineering",
+      "title": "Claude Code 最近质量问题的复盘（An update on recent Claude Code quality reports）",
+      "url": "https://www.anthropic.com/engineering",
+      "summary": "Anthropic 这周公开承认 Claude Code 在某段时间内确实有质量回归，给出了内部诊断过程和修复方案。在所有前沿模型公司里这种‘主动认错’的姿态都很少见。对中国做 AI 助手的产品启发：当 AI 体验出问题，与其装看不见，不如把‘我们知道、正在改’亮出来——透明本身是一种产品设计。"
+    }
+  ]
+}

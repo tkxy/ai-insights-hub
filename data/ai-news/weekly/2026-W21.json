@@ -1,0 +1,130 @@
+{
+  "week": "2026-W21",
+  "range": { "start": "2026-05-18", "end": "2026-05-24" },
+  "generatedAt": "2026-05-20T10:30:00+08:00",
+  "trends": [
+    {
+      "title": "AI 写代码：重点从模型转向 harness",
+      "summary": "本周 Anthropic、Cursor、Vercel 一起在讲一个事：模型本身越来越同质化，真正决定体验的是包模型那层‘harness’——上下文怎么塞、规格怎么写、长任务怎么让你一直在场。Peter Yang 整理 Anthropic 内部分享时直接说‘模型和 harness 是耦合的，每个表面都把模型包成不同形态’。Thariq 在 Code with Claude 现场演示了用 HTML 边写边记笔记的工作方式，让长任务的 agent 不再黑盒。",
+      "implication": "对输入法/AI 助手类产品来说，差距不在底层模型选哪家，而在‘上下文管线’——你能不能精准把用户上下文喂给模型，能不能让用户随时打断、修正。harness 才是产品壁垒。",
+      "evidence": [
+        { "type": "tweet", "who": "Peter Yang（Roblox PM）", "url": "https://x.com/petergyang/status/2056381822733595090", "quote": "把模型和 harness 当一个整体来想——每个产品表面都在用不同方式包同一个模型（Think about the model and harness together. The model and the harness are coupled.）" },
+        { "type": "tweet", "who": "Thariq（Anthropic Claude Code）", "url": "https://x.com/trq212/status/2056418157305454805", "quote": "让模型边干活边维护一个 implementation-notes.html，规格再细还是会有未知未知，HTML 给模型一个体面的‘出口’，又让你一直在状态里。" },
+        { "type": "tweet", "who": "Thariq", "url": "https://x.com/trq212/status/2056432663125545082", "quote": "继续我的‘HTML 时代’——用 HTML 让你‘一直在长任务的圈子里’（staying in the loop with long running agents）。" }
+      ]
+    },
+    {
+      "title": "Claude 的产品边界继续往设计/连接器扩",
+      "summary": "Anthropic 这周一边在 London 开 Code with Claude 大会，一边把 Claude Design 的 token 上限直接翻倍，同时官博更新了 Claude Code 质量问题、‘日常生活连接器’和 Managed Agents 内置记忆。看得出 Anthropic 不只想做模型，是想把 Claude 变成‘工作和生活的中枢’。",
+      "implication": "Claude 越来越像一个有连接器、有记忆、有原生设计能力的‘个人 OS’。输入法这种入口型产品要警觉：用户需要的不再是‘一个能问 AI 的框’，而是一个有上下文、有连接器的助手。",
+      "evidence": [
+        { "type": "tweet", "who": "Claude 官方", "url": "https://x.com/claudeai/status/2056460045756309820", "quote": "现在 Claude Design 能做更多了，我们把所有套餐的 token 上限都翻倍。（We've doubled token limits across every plan.）" },
+        { "type": "blog", "who": "Anthropic Engineering", "url": "https://www.anthropic.com/engineering", "quote": "针对最近 Claude Code 输出质量的反馈给出了一个详细复盘。（An update on recent Claude Code quality reports）" },
+        { "type": "blog", "who": "Claude Blog", "url": "https://www.anthropic.com/news", "quote": "新增‘日常生活连接器’与 Managed Agents 内置记忆——把 Claude 接进日历、邮件、文档等日常应用。" }
+      ]
+    },
+    {
+      "title": "AI 焦虑成显学：用 AI 越多，心理越割裂",
+      "summary": "本周一个有意思的现象：好几个一线 builder 同时在讲‘AI 双重人格症’——用 AI 写代码时觉得自己无所不能，刷推特时又觉得全世界都甩开了自己。Zara Zhang 给这种状态起了名字叫‘AI psychosis’，Peter Yang 直接劝大家‘别死磕 IC7/IC8，去欧洲小镇或亚洲走一走’。",
+      "implication": "用户和我们自己一样，正在经历‘工具变强但状态变焦虑’的拉扯。给 AI 助手做产品时，可以少一点‘让你更高效’的话术，多一点‘帮你把事做完然后离开屏幕’的设计——节制感是新差异化。",
+      "evidence": [
+        { "type": "tweet", "who": "Zara Zhang", "url": "https://x.com/zarazhangrui/status/2055728641913536762", "quote": "AI psychosis：每天在两个状态里循环——用完 coding agent 觉得自己天下无敌，刷完推特觉得自己彻底掉队。（cycling between two mental states every single day）" },
+        { "type": "tweet", "who": "Peter Yang", "url": "https://x.com/petergyang/status/2055663937061007762", "quote": "如果你卡在湾区那种 IC7/IC8 的内卷里，去欧洲小镇或者亚洲走一走——别在墓碑上写‘他离了婚、忽视孩子，但好歹在 FAANG 干到了 D2’。" }
+      ]
+    }
+  ],
+  "builders": [
+    {
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "Roblox 产品经理 / 14 万 AI 通讯主理人",
+      "highlights": [
+        { "summary": "整理了 Anthropic Alex Albert 关于‘下一代 Claude 怎么造’的 5 条要点：模型和 harness 一起想、强化学习设计 reward、规格写得越细越好。", "url": "https://x.com/petergyang/status/2056381822733595090" },
+        { "summary": "提醒 AI 圈别死磕职级和公司，多去‘世界其他地方走走’，工具再强也别忘了人。", "url": "https://x.com/petergyang/status/2055663937061007762" }
+      ]
+    },
+    {
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Anthropic Claude Code 团队成员",
+      "highlights": [
+        { "summary": "提出用 HTML 让 agent 边干活边记笔记的实践——长任务时模型把进度、决策点都写进 HTML 文档，用户始终能介入。", "url": "https://x.com/trq212/status/2056418157305454805" },
+        { "summary": "在 Code with Claude 现场分享‘和长任务 agent 同步状态’的设计思路，这条短视频在圈里被反复转。", "url": "https://x.com/trq212/status/2056432663125545082" }
+      ]
+    },
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "Box CEO",
+      "highlights": [
+        { "summary": "agent 落地最大的难点不是模型本身，是‘怎么给 agent 喂受控的上下文’——所有公司都被这个问题卡住。", "url": "https://x.com/levie/status/2056574979236409521" }
+      ]
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "Vercel CEO",
+      "highlights": [
+        { "summary": "Vercel Firewall 现在所有规则全免费，并且全球生效在 ~300ms——为 agent 时代做的‘网络层防护’。", "url": "https://x.com/rauchg/status/2056549825018310707" }
+      ]
+    },
+    {
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "role": "YC 总裁兼 CEO / GBrain 作者",
+      "highlights": [
+        { "summary": "开源个人 AI 知识系统 GBrain（MIT 协议），主打 8 层记忆架构，目标是让 OpenClaw / Hermes Agent 一秒变成‘懂你的人’。", "url": "https://x.com/garrytan/status/2055670533451366479" }
+      ]
+    },
+    {
+      "name": "Sam Altman",
+      "handle": "sama",
+      "role": "OpenAI CEO",
+      "highlights": [
+        { "summary": "罕见地连发夸自己团队：ChatGPT 最近一次更新‘体验提升非常明显’，1.3 万赞。", "url": "https://x.com/sama/status/2056435834333934051" }
+      ]
+    },
+    {
+      "name": "Ryo Lu",
+      "handle": "ryolu_",
+      "role": "Cursor 设计负责人",
+      "highlights": [
+        { "summary": "Cursor 上线 Composer 2.5——主打‘前沿但更省’，长上下文场景下成本压得更狠。", "url": "https://x.com/ryolu_/status/2056417715448156276" }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "No Priors",
+      "title": "Pax Silica：特朗普政府的科技战略——美国负责经济事务的副国务卿 Jacob Helberg 上节目（Pax Silica: Inside the Trump Administration's Tech Strategy）",
+      "guest": "Jacob Helberg（美国副国务卿，经济事务）",
+      "url": "https://www.youtube.com/watch?v=xjlYpGaxIPA",
+      "keyTakeaways": [
+        "Pax Silica 是个 14 国联盟，专门做 AI 供应链的‘联盟级安全’——核心思路是把美国和盟友的私营公司绑成一个生态，而不是政府自己造。",
+        "美国不会搞政府运营的供应链，‘超能力是私营部门和公司’，引用乔布斯说的‘美国产品让全球数十亿用户着迷’。",
+        "第一个落地动作是和菲律宾搞‘前沿部署的工业基地’——把 AI 相关制造和算力放在最早的亚洲盟友那里。",
+        "对 PM 的启发：AI 已经从纯技术议题升级成地缘议题，未来云、模型、芯片的可用性，会越来越和你公司的‘阵营’绑定。"
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "name": "Anthropic Engineering",
+      "title": "Claude Code 最近质量问题的复盘（An update on recent Claude Code quality reports）",
+      "url": "https://www.anthropic.com/engineering",
+      "summary": "Anthropic 罕见地针对‘最近 Claude Code 写代码质量下降’的用户反馈做了详细复盘——承认在某段时间确实有回归，给出了内部诊断和修复路径。这种‘公开认错’的姿态在前沿模型公司里很少见，对建立开发者信任很关键。对做 AI 助手的产品启发是：当 AI 输出有波动时，主动说‘我们知道，正在改’比沉默更值钱。"
+    },
+    {
+      "name": "Claude Blog",
+      "title": "Claude 新增‘日常生活连接器’（New connectors in Claude for everyday life）",
+      "url": "https://www.anthropic.com/news",
+      "summary": "Anthropic 把 Claude 的连接器从‘工作场景’往‘日常生活’扩——新增日历、邮件、文档等日常应用的接入点。意味着 Claude 不再只是写代码助手，而是要做你日常的‘上下文中枢’。对入口型产品（输入法、桌面助手）是直接竞争——用户的‘第一选择 AI’位置，正在被 Claude/ChatGPT 这种通用助手抢。"
+    },
+    {
+      "name": "Claude Blog",
+      "title": "Claude Managed Agents 内置记忆（Built-in memory for Claude Managed Agents）",
+      "url": "https://www.anthropic.com/news",
+      "summary": "Anthropic 给 Managed Agents 加了内置记忆——agent 跨会话能记住上下文，不再需要每次重新 prompt。这是‘个人 AI’路径的关键一步，呼应了 Garry Tan 这周开源 GBrain 的方向：行业共识是‘记忆’是 agent 体验下一个分水岭。给输入法的启发：长期记忆+连接器=新护城河，单纯做‘问一句答一句’的体验很快会被淘汰。"
+    }
+  ]
+}

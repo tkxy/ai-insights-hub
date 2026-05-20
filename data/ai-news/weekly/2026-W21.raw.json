@@ -1,0 +1,762 @@
+{
+  "week": "2026-W21",
+  "range": {
+    "start": "2026-05-18",
+    "end": "2026-05-24"
+  },
+  "builtAt": "2026-05-20T02:24:26.250028+00:00",
+  "tweets": [
+    {
+      "id": "2056626964090466469",
+      "text": "taking bets for vercel and supabase rn https://t.co/uLAaY5VGw3",
+      "createdAt": "2026-05-19T06:44:13.000Z",
+      "url": "https://x.com/swyx/status/2056626964090466469",
+      "likes": 13,
+      "retweets": 0,
+      "replies": 6,
+      "isQuote": true,
+      "quotedTweetId": "2056459852600475801",
+      "_handle": "swyx",
+      "_builderName": "Swyx"
+    },
+    {
+      "id": "2056588601216168168",
+      "text": "OK I guess we're going pretty fast improving GBrain day to day right now https://t.co/gD7aT2DyLN",
+      "createdAt": "2026-05-19T04:11:46.000Z",
+      "url": "https://x.com/garrytan/status/2056588601216168168",
+      "likes": 90,
+      "retweets": 3,
+      "replies": 15,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "garrytan",
+      "_builderName": "Garry Tan"
+    },
+    {
+      "id": "2056584641654751308",
+      "text": "Also 28 bug fixes landing in a single bug fix wave that rolls up 22 community PRs and 14 issues https://t.co/Y9k2EHpkjx",
+      "createdAt": "2026-05-19T03:56:02.000Z",
+      "url": "https://x.com/garrytan/status/2056584641654751308",
+      "likes": 5,
+      "retweets": 1,
+      "replies": 1,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "garrytan",
+      "_builderName": "Garry Tan"
+    },
+    {
+      "id": "2056574979236409521",
+      "text": "This is true of all agents, not just coding agents. Probably the biggest challenge that most companies run into in their agent strategy is getting agents the right constrained context to work with for a task. \n\nToo much information or conflicting sources, and the agent can easily draw from the data and produce the wrong result. Conflicting sources of truth for documents, data sources that haven’t been kept up to date, knowledge management systems that rely on tribal knowledge to navigate, and so on. \n\nOn the other end, of course, too little information and the upside is highly limited of agents in the first place. Thus, a lot of challenges with AI strategies are actually data strategy challenges in disguise. \n\nThis is why there’s such a significant premium on getting structured and unstructured data environments setup properly so agents can work with information effectively. Critical for any large enterprise adopting agents, and also a clear benefit in some cases to startups that can be designed this way from scratch.",
+      "createdAt": "2026-05-19T03:17:39.000Z",
+      "url": "https://x.com/levie/status/2056574979236409521",
+      "likes": 132,
+      "retweets": 14,
+      "replies": 25,
+      "isQuote": true,
+      "quotedTweetId": "2056401102485266620",
+      "_handle": "levie",
+      "_builderName": "Aaron Levie"
+    },
+    {
+      "id": "2056571771965538501",
+      "text": "Full eval report and fixtures published and open source here https://t.co/uuaaeAYzGI\n\nAny memory system is welcome to run theirs against these evals and I'll publish them alongside. https://t.co/rlIyzIEwZS",
+      "createdAt": "2026-05-19T03:04:54.000Z",
+      "url": "https://x.com/garrytan/status/2056571771965538501",
+      "likes": 8,
+      "retweets": 0,
+      "replies": 1,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "garrytan",
+      "_builderName": "Garry Tan"
+    },
+    {
+      "id": "2056566561922826634",
+      "text": "Incredible read. My new favorite thing to send everyone trying to find a new gig! https://t.co/6UzFYMDP7M",
+      "createdAt": "2026-05-19T02:44:12.000Z",
+      "url": "https://x.com/nikunj/status/2056566561922826634",
+      "likes": 471,
+      "retweets": 27,
+      "replies": 1,
+      "isQuote": true,
+      "quotedTweetId": "2055133978869559310",
+      "_handle": "nikunj",
+      "_builderName": "Nikunj Kothari"
+    },
+    {
+      "id": "2056549825018310707",
+      "text": "All Firewall mitigations are now fully free on @vercel. Not just DDoS and system-level mitigations, but also any rule you configure.\n\nVercel now absorbs the computational and network costs of any size of attack or traffic mitigation for your peace of mind. (And more to come!) https://t.co/6HFqqMvSLW",
+      "createdAt": "2026-05-19T01:37:41.000Z",
+      "url": "https://x.com/rauchg/status/2056549825018310707",
+      "likes": 264,
+      "retweets": 15,
+      "replies": 21,
+      "isQuote": true,
+      "quotedTweetId": "2056547964630524010",
+      "_handle": "rauchg",
+      "_builderName": "Guillermo Rauch"
+    },
+    {
+      "id": "2056533534614159577",
+      "text": "We 🫶 our Labsters 🦞\n\n“Explain what your product does in 5 words or less.” https://t.co/MNvAOKgR3U",
+      "createdAt": "2026-05-19T00:32:57.000Z",
+      "url": "https://x.com/GoogleLabs/status/2056533534614159577",
+      "likes": 58,
+      "retweets": 7,
+      "replies": 1,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "GoogleLabs",
+      "_builderName": "Google Labs"
+    },
+    {
+      "id": "2056529233036693722",
+      "text": "volunteer here https://t.co/AXtvjtt8gC !",
+      "createdAt": "2026-05-19T00:15:52.000Z",
+      "url": "https://x.com/swyx/status/2056529233036693722",
+      "likes": 13,
+      "retweets": 0,
+      "replies": 1,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "swyx",
+      "_builderName": "Swyx"
+    },
+    {
+      "id": "2056527354772722127",
+      "text": "Keep getting this error in Claude Code recently; is it just me or are others getting this too? How to resolve this?\n\nAPI Error: The socket connection was closed unexpectedly. For more information, pass verbose: true in the second argument to fetch()",
+      "createdAt": "2026-05-19T00:08:24.000Z",
+      "url": "https://x.com/zarazhangrui/status/2056527354772722127",
+      "likes": 32,
+      "retweets": 0,
+      "replies": 15,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "zarazhangrui",
+      "_builderName": "Zara Zhang"
+    },
+    {
+      "id": "2056478391008977404",
+      "text": "this seems quite doable in the space of a single 2-3 hour workshop — any brave soul want to try to livecode this for people as a learning exercise? https://t.co/VTfzaB4NpK https://t.co/3btEcrdV4w",
+      "createdAt": "2026-05-18T20:53:50.000Z",
+      "url": "https://x.com/swyx/status/2056478391008977404",
+      "likes": 409,
+      "retweets": 11,
+      "replies": 22,
+      "isQuote": true,
+      "quotedTweetId": "2056383124829872466",
+      "_handle": "swyx",
+      "_builderName": "Swyx"
+    },
+    {
+      "id": "2056464721549926414",
+      "text": "If you have had success with Gbrain/LLM Wiki/other context management techniques for agents, and you're in the Bay Area, would love to invite you to demo at this event!\n\nRSVP: https://t.co/l5tvzeD4V9\n\nCohosted with @NotionHQ @radicalvcfund @juleszqiu https://t.co/AoX69ggU4d",
+      "createdAt": "2026-05-18T19:59:31.000Z",
+      "url": "https://x.com/zarazhangrui/status/2056464721549926414",
+      "likes": 36,
+      "retweets": 1,
+      "replies": 3,
+      "isQuote": true,
+      "quotedTweetId": "2054981832408760782",
+      "_handle": "zarazhangrui",
+      "_builderName": "Zara Zhang"
+    },
+    {
+      "id": "2056460045756309820",
+      "text": "You can now create more with Claude Design.\n\nWe've doubled token limits across every plan. https://t.co/d2AemkZUxW",
+      "createdAt": "2026-05-18T19:40:56.000Z",
+      "url": "https://x.com/claudeai/status/2056460045756309820",
+      "likes": 14761,
+      "retweets": 883,
+      "replies": 665,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "claudeai",
+      "_builderName": "Claude"
+    },
+    {
+      "id": "2056439906390725080",
+      "text": "…and more to come https://t.co/u3NhbGjBiD",
+      "createdAt": "2026-05-18T18:20:55.000Z",
+      "url": "https://x.com/ryolu_/status/2056439906390725080",
+      "likes": 443,
+      "retweets": 13,
+      "replies": 12,
+      "isQuote": true,
+      "quotedTweetId": "2056415419536461836",
+      "_handle": "ryolu_",
+      "_builderName": "Ryo Lu"
+    },
+    {
+      "id": "2056435834333934051",
+      "text": "chatgpt has gotten soooo much better with the latest update.\n\nreally proud of the team for this one.",
+      "createdAt": "2026-05-18T18:04:44.000Z",
+      "url": "https://x.com/sama/status/2056435834333934051",
+      "likes": 13029,
+      "retweets": 479,
+      "replies": 2222,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "sama",
+      "_builderName": "Sam Altman"
+    },
+    {
+      "id": "2056432663125545082",
+      "text": "continuing my HTML era, I had so much fun talking with Claire at Code w/ Claude about staying in the loop with long running agents https://t.co/hRJ8m4hvMn",
+      "createdAt": "2026-05-18T17:52:08.000Z",
+      "url": "https://x.com/trq212/status/2056432663125545082",
+      "likes": 531,
+      "retweets": 21,
+      "replies": 32,
+      "isQuote": true,
+      "quotedTweetId": "2056428390773825701",
+      "_handle": "trq212",
+      "_builderName": "Thariq"
+    },
+    {
+      "id": "2056431972138815842",
+      "text": "we'll be publishing a complete guide to codex soon on @every \n\nget notified when it's out: https://t.co/9wRhOCUCAk",
+      "createdAt": "2026-05-18T17:49:23.000Z",
+      "url": "https://x.com/danshipper/status/2056431972138815842",
+      "likes": 35,
+      "retweets": 4,
+      "replies": 3,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "danshipper",
+      "_builderName": "Dan Shipper"
+    },
+    {
+      "id": "2056431542323257440",
+      "text": "Amazing!! \n\nSo proud of @RattrayAlex and honored to be a tiny investor https://t.co/WzqnBQr8Mf",
+      "createdAt": "2026-05-18T17:47:40.000Z",
+      "url": "https://x.com/danshipper/status/2056431542323257440",
+      "likes": 36,
+      "retweets": 2,
+      "replies": 2,
+      "isQuote": true,
+      "quotedTweetId": "2056419620643541012",
+      "_handle": "danshipper",
+      "_builderName": "Dan Shipper"
+    },
+    {
+      "id": "2056424176253276558",
+      "text": "We had an unbelievable tech team and talent overall. Many of them went onto awesome careers.\n\nFounders of Coderpad, Modern Treasury, Maude, amongst others\n\nEPD at Airbnb, Stripe, Apple, Oscar, Google, I’m sure I am missing some. \n\nMany were fist-time PMs and engineers and I’m very grateful to have helped them get started.",
+      "createdAt": "2026-05-18T17:18:24.000Z",
+      "url": "https://x.com/thenanyu/status/2056424176253276558",
+      "likes": 35,
+      "retweets": 2,
+      "replies": 4,
+      "isQuote": true,
+      "quotedTweetId": "2056418520762822812",
+      "_handle": "thenanyu",
+      "_builderName": "Nan Yu"
+    },
+    {
+      "id": "2056423973123183028",
+      "text": "A 𝚏𝚒𝚛𝚎𝚠𝚊𝚕𝚕 your agents will love.\n\nOne of the coolest things about Vercel’s Firewall is how hard the team worked on instant global propagation (~300ms).\n\nImagine if 𝚒𝚙𝚝𝚊𝚋𝚕𝚎𝚜 took *minutes* to propagate? That’s the average industry CDN/WAF experience!",
+      "createdAt": "2026-05-18T17:17:36.000Z",
+      "url": "https://x.com/rauchg/status/2056423973123183028",
+      "likes": 303,
+      "retweets": 10,
+      "replies": 39,
+      "isQuote": true,
+      "quotedTweetId": "2056417413491761209",
+      "_handle": "rauchg",
+      "_builderName": "Guillermo Rauch"
+    },
+    {
+      "id": "2056418217925456170",
+      "text": "people should write better books! \n\nthe vast majority of books that get published in this category are slop https://t.co/wSM2ydiTip",
+      "createdAt": "2026-05-18T16:54:44.000Z",
+      "url": "https://x.com/danshipper/status/2056418217925456170",
+      "likes": 29,
+      "retweets": 0,
+      "replies": 3,
+      "isQuote": true,
+      "quotedTweetId": "2056396432001671538",
+      "_handle": "danshipper",
+      "_builderName": "Dan Shipper"
+    },
+    {
+      "id": "2056418157305454805",
+      "text": "okay this is going kinda viral and tbh my original text was kind of messy, so here's a second pass with the help of Claude:\n\n--\nImplement <SPEC>. As you work maintain a running implementation-notes.html file that captures anything I should know about how the implementation diverges from or interprets the spec, including:\n\n- Design decisions: choices you made where the spec was ambiguous\n- Deviations: places where you intentionally departed from the spec, and why\n- Tradeoffs:  alternatives you considered and why you picked what you did\n- Open questions: anything you'd want me to confirm or revise",
+      "createdAt": "2026-05-18T16:54:29.000Z",
+      "url": "https://x.com/trq212/status/2056418157305454805",
+      "likes": 1051,
+      "retweets": 62,
+      "replies": 40,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "trq212",
+      "_builderName": "Thariq"
+    },
+    {
+      "id": "2056417715448156276",
+      "text": "frontier smart\nextremely efficient\nComposer 2.5 is here https://t.co/XUNqfFnSw7",
+      "createdAt": "2026-05-18T16:52:44.000Z",
+      "url": "https://x.com/ryolu_/status/2056417715448156276",
+      "likes": 538,
+      "retweets": 17,
+      "replies": 27,
+      "isQuote": true,
+      "quotedTweetId": "2056415413077233983",
+      "_handle": "ryolu_",
+      "_builderName": "Ryo Lu"
+    },
+    {
+      "id": "2056416726783566223",
+      "text": "Something else that's fairly underrated is that the entire middle category got obliterated during covid\n\nYou're either wearing basics bordering on pajamas to bum around at home or flashy high-end stuff to flex on Instagram. No one was really looking for a nice button-down shirt and chinos.",
+      "createdAt": "2026-05-18T16:48:48.000Z",
+      "url": "https://x.com/thenanyu/status/2056416726783566223",
+      "likes": 23,
+      "retweets": 1,
+      "replies": 2,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "thenanyu",
+      "_builderName": "Nan Yu"
+    },
+    {
+      "id": "2056415974568710421",
+      "text": "as much as you spec there are always still ambiguities and unknown unknowns that come up and this gives the model a good out to make decisions but keep you in the loop",
+      "createdAt": "2026-05-18T16:45:49.000Z",
+      "url": "https://x.com/trq212/status/2056415974568710421",
+      "likes": 353,
+      "retweets": 7,
+      "replies": 12,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "trq212",
+      "_builderName": "Thariq"
+    },
+    {
+      "id": "2056407656898896214",
+      "text": "I haven’t worked at Everlane in almost 10 years but it’s a pretty sad day for the people that built it. \n\nUltimately, the thing that did it in was the pandemic — Everlane was mainly wear-to-work and that market basically disappeared overnight. \n\nIt took some pretty egregious financing terms to get through it all and this is the ultimate outcome. \n\nBrands have a funny way of sticking around though. At one point, Ray-Ban was dead. J.Crew was dead. Madewell was dead. Abercrombie and Fitch was dead. \n\nThey all come roaring back decades later after exchanging ownership half a dozen times. \n\nI look forward to the day that my children and grandchildren think this new brand “Everlane” is the coolest thing.\n\nI will say to them, did you know that this started it out as a Pinterest competitor and pivoted to be a fashion brand? And they will say to me “that’s boring Dad”.",
+      "createdAt": "2026-05-18T16:12:46.000Z",
+      "url": "https://x.com/thenanyu/status/2056407656898896214",
+      "likes": 337,
+      "retweets": 9,
+      "replies": 14,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "thenanyu",
+      "_builderName": "Nan Yu"
+    },
+    {
+      "id": "2056381822733595090",
+      "text": "My top 5 takeaways from @alexalbert__ on how Anthropic is building the next Claude model:\n\n1. Think about the model and harness together\n\nThe model and the harness are coupled. Each surface wraps the model in a different prompt and tool setup, so the same model can give different responses depending on where it runs. As a research PM, Alex has to think through how the model will perform across Claude, Cowork, Claude Code, and more.\n\n2. Claude is starting to dream\n\nWhen an agent isn't running a task, it reviews its own memories, finds contradictions, and prunes them. This “dreaming” process was inspired by how sleep helps humans process memory.\n\n3. Focus evals on real user problems\n\nThe research team uses Claude to cluster the firehose of user feedback into top themes, then generates synthetic versions of each user problem to turn into an eval. It's not just about volume either - even a few dozen well-written test cases can produce an eval for the model.\n\n4. There are full-time researchers thinking about Claude's consciousness\n\nAnthropic has people whose whole job is to think about what it means for Claude to be a conscious actor. There's no official position on whether it is or isn't, but the question is taken seriously as agents take on more autonomous work.\n\n5. Anthropic's writing culture helps Claude build context\n\nEvery written word at Anthropic becomes context Claude can pull later. From Alex: \"Get things written down, make them accessible to Claude, because that's just more context that it has.\"\n\n📌 Watch now: https://t.co/CJAakWq9Nd",
+      "createdAt": "2026-05-18T14:30:06.000Z",
+      "url": "https://x.com/petergyang/status/2056381822733595090",
+      "likes": 60,
+      "retweets": 4,
+      "replies": 7,
+      "isQuote": true,
+      "quotedTweetId": "2056019573938565534",
+      "_handle": "petergyang",
+      "_builderName": "Peter Yang"
+    },
+    {
+      "id": "2056363681798410592",
+      "text": "“Writes bangers on X, but terrible board member”.. when I recently asked a founder about his board. \n\nToo many investors are trading dopamine for service nowadays. At least do both. \n\nWork hard for your founders. That’s the only “moat” that’ll compound in the long term.",
+      "createdAt": "2026-05-18T13:18:01.000Z",
+      "url": "https://x.com/nikunj/status/2056363681798410592",
+      "likes": 46,
+      "retweets": 1,
+      "replies": 6,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "nikunj",
+      "_builderName": "Nikunj Kothari"
+    },
+    {
+      "id": "2056328149940543808",
+      "text": "Next stop: London.\n\nRegister to tune in tomorrow for deep dives, demos, and conversations with the teams behind Claude: https://t.co/6le4bIXvJt https://t.co/sbGHgDaEW5",
+      "createdAt": "2026-05-18T10:56:50.000Z",
+      "url": "https://x.com/claudeai/status/2056328149940543808",
+      "likes": 2880,
+      "retweets": 233,
+      "replies": 249,
+      "isQuote": true,
+      "quotedTweetId": "2050252933866930339",
+      "_handle": "claudeai",
+      "_builderName": "Claude"
+    },
+    {
+      "id": "2055906613316432247",
+      "text": "@sarahookr @calcsam",
+      "createdAt": "2026-05-17T07:01:48.000Z",
+      "url": "https://x.com/swyx/status/2055906613316432247",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "swyx",
+      "_builderName": "Swyx"
+    },
+    {
+      "id": "2055903660476129723",
+      "text": "HTML continues to be undefeated https://t.co/veyAAEWKrT",
+      "createdAt": "2026-05-17T06:50:04.000Z",
+      "url": "https://x.com/trq212/status/2055903660476129723",
+      "likes": 64,
+      "retweets": 1,
+      "replies": 17,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "trq212",
+      "_builderName": "Thariq"
+    },
+    {
+      "id": "2055889947136237595",
+      "text": "AIE coming to India \n\nsoon! https://t.co/bAbATz4IFb",
+      "createdAt": "2026-05-17T05:55:34.000Z",
+      "url": "https://x.com/swyx/status/2055889947136237595",
+      "likes": 78,
+      "retweets": 3,
+      "replies": 21,
+      "isQuote": true,
+      "quotedTweetId": "2055881955217170877",
+      "_handle": "swyx",
+      "_builderName": "Swyx"
+    },
+    {
+      "id": "2055841860279804005",
+      "text": "I ended up buying this looks promising https://t.co/xZ9CD9HMKf",
+      "createdAt": "2026-05-17T02:44:29.000Z",
+      "url": "https://x.com/petergyang/status/2055841860279804005",
+      "likes": 3,
+      "retweets": 0,
+      "replies": 2,
+      "isQuote": true,
+      "quotedTweetId": "2055824293142122980",
+      "_handle": "petergyang",
+      "_builderName": "Peter Yang"
+    },
+    {
+      "id": "2055814893216178248",
+      "text": "I feel like to eat healthy you need some really good hot sauce to add flavor to your chicken/fish/etc. \n\nAny suggestions?",
+      "createdAt": "2026-05-17T00:57:20.000Z",
+      "url": "https://x.com/petergyang/status/2055814893216178248",
+      "likes": 28,
+      "retweets": 0,
+      "replies": 30,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "petergyang",
+      "_builderName": "Peter Yang"
+    },
+    {
+      "id": "2055775661755715974",
+      "text": "my brain: don't read the hacker news comments, don't read the hacker news comments\n\nme: reads the hacker news comments",
+      "createdAt": "2026-05-16T22:21:26.000Z",
+      "url": "https://x.com/steipete/status/2055775661755715974",
+      "likes": 542,
+      "retweets": 11,
+      "replies": 64,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "steipete",
+      "_builderName": "Peter Steinberger"
+    },
+    {
+      "id": "2055747016727167035",
+      "text": "deslop your Claude code if you haven’t yet switched to Codex. https://t.co/nJYkYASohj",
+      "createdAt": "2026-05-16T20:27:37.000Z",
+      "url": "https://x.com/steipete/status/2055747016727167035",
+      "likes": 344,
+      "retweets": 19,
+      "replies": 24,
+      "isQuote": true,
+      "quotedTweetId": "2055746232954314896",
+      "_handle": "steipete",
+      "_builderName": "Peter Steinberger"
+    },
+    {
+      "id": "2055728641913536762",
+      "text": "AI psychosis: cycling between two mental states every single day\n↑ after using coding agents: holy shit I'm omnipotent. I can build anything. I've never felt this powerful in my life.\n↓ after scrolling twitter: holy shit I'm completely behind. everyone's ahead. the wave is moving and I'm going to get left.",
+      "createdAt": "2026-05-16T19:14:36.000Z",
+      "url": "https://x.com/zarazhangrui/status/2055728641913536762",
+      "likes": 136,
+      "retweets": 16,
+      "replies": 28,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "zarazhangrui",
+      "_builderName": "Zara Zhang"
+    },
+    {
+      "id": "2055727669900141017",
+      "text": "If you use a bicycle it weakens your walking abilities, too! https://t.co/MSkwuoHYzC",
+      "createdAt": "2026-05-16T19:10:44.000Z",
+      "url": "https://x.com/danshipper/status/2055727669900141017",
+      "likes": 61,
+      "retweets": 0,
+      "replies": 15,
+      "isQuote": true,
+      "quotedTweetId": "2055420967829049821",
+      "_handle": "danshipper",
+      "_builderName": "Dan Shipper"
+    },
+    {
+      "id": "2055715359244566552",
+      "text": "Successfully Codex-pilling the world one text at a time https://t.co/slutMhp63u https://t.co/wTSOEjtK3W",
+      "createdAt": "2026-05-16T18:21:49.000Z",
+      "url": "https://x.com/danshipper/status/2055715359244566552",
+      "likes": 100,
+      "retweets": 3,
+      "replies": 14,
+      "isQuote": true,
+      "quotedTweetId": "2055713908082778330",
+      "_handle": "danshipper",
+      "_builderName": "Dan Shipper"
+    },
+    {
+      "id": "2055708451670798839",
+      "text": "I have friends who made $10M+ and are miserable. I have friends who made that much and found calm - they don’t need to run anymore. \n\nI have friends who made far less and are just happy.\n\nWhether something is enough is up to you. Whether you’re happy is independent of your bank account.\n\nYou can want to be wealthy and still be content now. You don’t need to chase it from a place of lack and desperation.\n\nSilicon Valley treats ambition and happiness as mutually exclusive. As if wanting more means you can’t be satisfied now.\n\nThat’s the trap. You can be both",
+      "createdAt": "2026-05-16T17:54:22.000Z",
+      "url": "https://x.com/realmadhuguru/status/2055708451670798839",
+      "likes": 166,
+      "retweets": 8,
+      "replies": 8,
+      "isQuote": true,
+      "quotedTweetId": "2055491938464489888",
+      "_handle": "realmadhuguru",
+      "_builderName": "Madhu Guru"
+    },
+    {
+      "id": "2055685581758206139",
+      "text": "BlackBar 0.2.0 is live for @useblacksmith \n\n📈 24h vCPU + workflow graphs\n🔔 opt-in status/job notifications\n🧰 richer Blacksmith job rows\n🟢 compact status badge\n\nTiny menu bar, less CI guesswork.\nhttps://t.co/LAAyHy8aDQ https://t.co/178w9igZTW",
+      "createdAt": "2026-05-16T16:23:30.000Z",
+      "url": "https://x.com/steipete/status/2055685581758206139",
+      "likes": 172,
+      "retweets": 7,
+      "replies": 16,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "steipete",
+      "_builderName": "Peter Steinberger"
+    },
+    {
+      "id": "2055674791873630650",
+      "text": "Saturday morning and it’s a good time to think a bit about how our functional systems are being torn down by a mind virus by two philosophers: Foucault and Derrida \n\nFoucault: His framework tells you that every institution claiming to know something is really just exercising power. Medicine, engineering, law, science. Apply that at civilizational scale and you get exactly what Dan Wang warns about: a society that lost the will to build. Process knowledge — the tacit know-how that only exists in the hands of people who actually make things — dies when a culture decides that all knowledge claims are suspect. America went from building the Interstate Highway System and the Apollo rockets to being unable to build a train from LA to SF. That didn't happen because we forgot the engineering. It happened because we built an entire intellectual class whose job is to interrogate every system rather than improve one.\n\nDerrida: His move is that every commitment contains its own contradiction, so you can never land on firm meaning. Run that as societal firmware and you get the bureaucratic paralysis we now live in. Infrastructure projects stuck in 15 years of environmental review because every statement of purpose deconstructs under the next round of stakeholder input. Institutions that can't say what they're for because every draft mission statement gets wordsmithed into mush by people trained to find the hidden hierarchy in any clear sentence. Derrida is the OS behind a civilization that can write a 4,000 page environmental impact report but can't pour concrete.\n\nThe real damage is these ideas escaped the lab. Every institution that adopted this operating system stopped trying to discover truth and started managing narrative. DEI bureaucracies, academic hiring committees, media editorial standards. All running on Foucault and Derrida whether they know it or not.\n\nThe antidote is building. The physical bridge across a river holds or it doesn’t. The code compiles or it doesn't. Reality keeps score and it doesn't grade on a curve.\n\nFoucault and Derrida gave a generation a sophisticated excuse to never build anything. Their followers inherited the sophistication and the impotence.\n\nIt’s time to build again.",
+      "createdAt": "2026-05-16T15:40:37.000Z",
+      "url": "https://x.com/garrytan/status/2055674791873630650",
+      "likes": 709,
+      "retweets": 98,
+      "replies": 71,
+      "isQuote": true,
+      "quotedTweetId": "2055626556832162142",
+      "_handle": "garrytan",
+      "_builderName": "Garry Tan"
+    },
+    {
+      "id": "2055670797596012657",
+      "text": "GBrain is free open source. It’s MIT license. \n\nYou can find it and install it in your agent with one command.\n\nhttps://t.co/yFpFU4pn5b",
+      "createdAt": "2026-05-16T15:24:45.000Z",
+      "url": "https://x.com/garrytan/status/2055670797596012657",
+      "likes": 109,
+      "retweets": 6,
+      "replies": 11,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "garrytan",
+      "_builderName": "Garry Tan"
+    },
+    {
+      "id": "2055670533451366479",
+      "text": "What is GBrain? My open source project is a knowledge system, not RAG in a box. \n\nIt gives agents 8 layers that work together to improve memory in a way that makes your already smart OpenClaw or Hermes Agent feel clairvoyant about who you are. \n\nPersonal AI becomes possible. https://t.co/XNVIw5ZfpO",
+      "createdAt": "2026-05-16T15:23:42.000Z",
+      "url": "https://x.com/garrytan/status/2055670533451366479",
+      "likes": 1231,
+      "retweets": 89,
+      "replies": 80,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "garrytan",
+      "_builderName": "Garry Tan"
+    },
+    {
+      "id": "2055663937061007762",
+      "text": "If you're stuck in the Bay Area tech rat race / psychosis, make time to travel to other places.\n\nGo to a small town in Europe or visit Asia - you'll see that life can be about much more than whether you're IC7 or IC8 or what company you work for.\n\nDon't be the person to put on your tombstone: \"He got divorced and neglected his kids but at least he made D2 at FAANG\"",
+      "createdAt": "2026-05-16T14:57:29.000Z",
+      "url": "https://x.com/petergyang/status/2055663937061007762",
+      "likes": 3090,
+      "retweets": 151,
+      "replies": 113,
+      "isQuote": true,
+      "quotedTweetId": "2055491938464489888",
+      "_handle": "petergyang",
+      "_builderName": "Peter Yang"
+    },
+    {
+      "id": "2055648134819450907",
+      "text": "A lot of young people ask me if they should move to venture and my answer is typically no* for the following reason..\n\nIt’s hard to truly understand what “excellence” means unless you’re deeply embedded and working for founders who are truly excellent. Even if you are part of the cap table and the board and spending time with founders, you don’t get same learnings as working at a company day in and day out. \n\nI wouldn’t know anything about product excellence if it were not for @deepnishar @ericwu01 @acv and others. \n\nI wouldn’t know anything about design if it were not for @kurtvarner @MicahSivitz @xiakv and others. \n\nI wouldn’t know anything about operational excellence if it were not for @rabois @danubata and others. \n\nOnly because of these experiences and reading deeply, I was able to create some heuristics of what great founders and companies look like. And I have to keep updating it as I meet more and more founders and technology shifts beneath us. Those experiences also helped me earn the right to win the right to be a part of founders cap table.\n\nThe other main reason to not be a junior investor is for most firms you’re just sourcing founders that match the GPs taste vs. truly thinking from first principles on what makes great founders & companies. \n\nIf you really want to invest in  founders, work at a great company and start by being be an angel. It’s such a fun way to learn and be part of founders journey. \n\n* The one exception to this is you’re absolutely obsessed with the craft of investing and you really cannot fathom doing any other job. If that’s your true passion then you’ll figure out a way to be a great investor regardless of anything you have done in the past.",
+      "createdAt": "2026-05-16T13:54:42.000Z",
+      "url": "https://x.com/nikunj/status/2055648134819450907",
+      "likes": 101,
+      "retweets": 5,
+      "replies": 14,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "nikunj",
+      "_builderName": "Nikunj Kothari"
+    },
+    {
+      "id": "2055612276208709731",
+      "text": "@Gavriel_Cohen i have to say his social media team is better than mine wtf. first pull on youtube. https://t.co/h2dXUgDLzL",
+      "createdAt": "2026-05-16T11:32:12.000Z",
+      "url": "https://x.com/swyx/status/2055612276208709731",
+      "likes": 7,
+      "retweets": 0,
+      "replies": 0,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "swyx",
+      "_builderName": "Swyx"
+    }
+  ],
+  "builders": [
+    {
+      "name": "Swyx",
+      "handle": "swyx",
+      "bio": "achieve ambition with intentionality, intensity, integrity & insanity.\n\naffiliations:\n- @dxtipshq \n- @cognition\n- @temporalio\n- @aidotengineer\n- @latentspacepod"
+    },
+    {
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "bio": "Practical AI tutorials and interviews for busy people | Join 140K+ readers at https://t.co/XYKTmGVH14 | Product at Roblox"
+    },
+    {
+      "name": "Madhu Guru",
+      "handle": "realmadhuguru",
+      "bio": "Product Leader at Google - Gemini, Veo, Nano Banana. All opinions mine."
+    },
+    {
+      "name": "Thariq",
+      "handle": "trq212",
+      "bio": "Claude Code @anthropicai.   prev YC W20, @southpkcommons, @medialab"
+    },
+    {
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop"
+    },
+    {
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "bio": "Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w"
+    },
+    {
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧"
+    },
+    {
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.\n@OpenClaw🦞 + @OpenAI"
+    },
+    {
+      "name": "Dan Shipper",
+      "handle": "danshipper",
+      "bio": "ceo @every | the only subscription you need to stay at the edge of AI"
+    },
+    {
+      "name": "Nan Yu",
+      "handle": "thenanyu",
+      "bio": "head of product @linear"
+    },
+    {
+      "name": "Google Labs",
+      "handle": "GoogleLabs",
+      "bio": "Google’s home for our latest AI tools and experiments."
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "bio": "@vercel CEO"
+    },
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "bio": "ceo @box - your business lives in content. unleash it with AI"
+    },
+    {
+      "name": "Ryo Lu",
+      "handle": "ryolu_",
+      "bio": "Design @Cursor_ai. Early @NotionHQ, @Stripe, built startups. I make a world where anyone can make software. Aspiring k-pop idol."
+    },
+    {
+      "name": "Sam Altman",
+      "handle": "sama",
+      "bio": "AI is cool i guess"
+    },
+    {
+      "name": "Claude",
+      "handle": "claudeai",
+      "bio": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app."
+    }
+  ],
+  "podcasts": [
+    {
+      "source": "podcast",
+      "name": "No Priors",
+      "title": "Pax Silica: Inside the Trump Administration’s Tech Strategy with US Under Secretary of State for Economic Affairs Jacob Helberg",
+      "guid": "0abbdc7e-4cb3-11f1-bb0f-9b67bad2c789",
+      "url": "https://www.youtube.com/watch?v=xjlYpGaxIPA",
+      "publishedAt": "2026-05-14T10:00:00.000Z",
+      "transcript": "Speaker 1 | 00:00 - 00:33\nWe're not gonna do government operated supply chains because that's not how we shine as a country. Our superpower is really our private sector and our companies. The old Steve Jobs quote that American products enchant and delight users around the world by the billions. That is really is our edge as a country. And so the answer's been trying to work in lockstep with our private companies and our builders to build platforms that are commercially viable and that can ultimately live outside of the government as a private service.\n\nSpeaker 2 | 00:41 - 00:58\nThe Danno Prize were joined by Jacob Helberg, the Undersecretary of state for economic affairs. We spoke with Jacob before he was confirmed in this role, we're very excited to have him back to discuss, Pax Silica, which is a multinational effort to secure the AI supply chain for The United States and its allies.\n\nSpeaker 3 | 00:58 - 01:00\nJacob, thanks so much for being here.\n\nSpeaker 2 | 01:00 - 01:01\nYeah. Thanks for joining us.\n\nSpeaker 1 | 01:01 - 01:02\nThanks for having me.\n\nSpeaker 3 | 01:02 - 01:11\nSo let's get right into it. Three months ago, you announced Paxilica, a super ambitious coalition. Can you explain what it is and where you are in it?\n\nSpeaker 1 | 01:11 - 01:35\nYeah, absolutely. So I gave a speech at the Hudson Institute that was really meant to be our blueprint for Paxilica. Paxilica is an economic security coalition that now has 14 countries. And the idea is really to have an ecosystems based approach to our supply chains, and specifically the AI supply chain. And in my speech at Hudson, I outlined our different lines of efforts, including our policy roadmaps and our projects.\n\nSpeaker 1 | 01:35 - 02:22\nAnd about a week and a half ago, we basically did the first big, what would be the tech equivalent of a product rollout where we announced a forward deployed industrial base with our oldest ally in Asia, The Philippines. We made this arrangement with them where they are granting us 4,000 acres, which is obviously very substantial. It's a third of the size of Manhattan to do a very large industrial build out that's one of a kind that helps combine the predictability and certainty of the American common law system with the industrial comparative advantages that The Philippines offers. And the goal is really to secure inputs that are vital for our supply chains. And so we're super excited to be here in San Francisco, talk to builders, and see ways that we can actually accelerate supply chain security for our tech companies.\n\nSpeaker 1 | 02:23 - 02:23\nIs this set up\n\nSpeaker 2 | 02:23 - 02:30\nas a special economic zone in The Philippines? Or could you tell us more about the details beyond sort of the legal side that you mentioned?\n\nSpeaker 1 | 02:30 - 03:00\nYeah, absolutely. So right now, there are two phases to the plan. The first phase is the State Department taking into custody the zone. We are referring to it as an economic security zone because it is a very unique type of arrangement. The State Department has authorities to take in land and property into custody, sort of how foreign governments gift the State Department counselors and consulates and embassies.\n\nSpeaker 1 | 03:00 - 03:21\nIt's very unique to do a gift of 4,000 acres. But fortunately, there's no statutory limits on how big or small property can be. And so that's phase one. So right now, it's actually diplomatic property that is effectively, you know, governed by the same laws as our embassies are. Phase two will be the long term development and build out of the land.\n\nSpeaker 1 | 03:21 - 03:50\nAnd so we are gonna spend we have two years, a two year window to negotiate the details with our Filipino counterparts on the investor protections that will apply to the land, the taxation regimes, and all of the different legal safeguards that investors will be able to benefit from for the long term. And the goal is within that two year window to actually have a long term framework that will be multiple decades.\n\nSpeaker 3 | 03:51 - 04:00\nIt's an amazing innovation. Are there specific domains that you think make sense to invest in there from a manufacturing, mineral processing, whatever it is, perspective now?\n\nSpeaker 1 | 04:01 - 04:30\nYeah. So the goal is really to actually test a concept that could potentially be replicable. I mean, right now, if, you know, when we think about the AI supply chain, a lot of people just think of chips. But the reality is that the AI supply chain actually includes thousands of inputs like precision reducers and server motors and rare earth magnets and actuators. And our concentration risk as a country is incredibly high for basically all of those inputs.\n\nSpeaker 1 | 04:30 - 05:08\nAnd so the goal is to identify key geographies that actually have industrial strengths and bring unique capabilities to the table that could actually help us move the needle meaningfully in different segments of the supply chain. So The Philippines already has a native indigenous manufacturing ecosystem that's already quite deep. It's our oldest ally in Asia. So we have a very deep values alignment with The Philippines. And so we think that the nexus between the values alignment combined with their industrial advantages actually makes for a very compelling value proposition for a lot of companies.\n\nSpeaker 1 | 05:08 - 05:42\nWe're talking with a number of companies focused on their robotics supply chain. As you guys know living out here, and I'm sure you guys include robotics companies in your portfolio, but the robotics supply chain, robotics is an incredibly promising industry that really is poised to change a lot of things in manufacturing as well as in people's daily lives. And the supply chain is right now completely dominated by China. And so that's an area where that's, you know, we're particularly interested in potentially making a bet on.\n\nSpeaker 3 | 05:43 - 05:55\nWhen most people hear economic security policy, one of the first things they think of is the Belt and Road Initiative. How would you contrast, you know, your strategy and the State Department's strategy here with that approach?\n\nSpeaker 1 | 05:55 - 06:17\nYeah. So that's such a great question. And I think, you know, one of the benefits that we've been able to leverage developing this strategy today is the ability to study twenty five years of, you know, of China's Belt and Road Initiative, how they've done what they've done, what's worked, what hasn't worked. Fundamentally Do you\n\nSpeaker 2 | 06:17 - 06:18\nwanna explain what that is too for\n\nSpeaker 1 | 06:18 - 06:41\nour audience? So the Belt and Road Initiative is a very, very large foreign policy project of the Chinese government that basically involved using state owned enterprises that are essentially extensions of the government to carry out massive infrastructure projects overseas. And the idea is using infrastructure projects as a tool of foreign policy to achieve foreign policy outcomes.\n\nSpeaker 2 | 06:41 - 06:46\nSo this was the big build outs, for example, in Africa that Exactly. China did in a variety of countries there.\n\nSpeaker 1 | 06:46 - 07:22\nThat's right. So whether it's creating mines or processing facilities, a lot of the times it involved building out very big roads, sometimes bridges. A lot of the times, it included railways. And and fundamentally, what it was was state owned enterprises building government operated railways, government, you know, built roads and bridges. And the Chinese government, by virtue of its system, really built all of this in house, which for us, you know, when we think about how should we we want to secure our supply chains.\n\nSpeaker 1 | 07:22 - 07:33\nWe need to make a lot of investments, you know, that are you know, touch upon these kinds of industrial capabilities. But as Americans, we're not gonna do this in house inside of the government.\n\nSpeaker 2 | 07:33 - 07:39\nThe side effects of this for China was basically both building out their industrial base, but then also securing natural resources in some of these countries.\n\nSpeaker 1 | 07:39 - 08:11\nExactly. So they were able to build a network that ensured that their factories in China had all the inputs in order to actually really, you know, thrive. And and, you know, Shenzhen today is really, you know, the world's factory floor. Because they have deep relationships with suppliers and vendors, you know, on every continent, basically. And the infrastructure that they leverage allows them to get access in a way that's very, very competitive.\n\nSpeaker 1 | 08:11 - 08:45\nSo the question for us is, you know, how do we compete in that landscape at a time when we want to re industrialize? And the answer is we're not gonna do government operated supply chains because that's not how we shine as a country. And I the, you know, sort of where we've landed is our superpower is really our private sector and our companies. And it's sort of the old Steve Jobs quote that, you know, American products enchant and delight users around the world by the billions. And that's how you know, that is really is our edge as a country.\n\nSpeaker 1 | 08:45 - 09:32\nAnd so how do we, you know, adopt a product based, a product centric approach to, you know, our foreign policy where we can actually use that kind of approach to to achieve foreign policy outcomes? And and what we've done so that's very much sort of the lens of how we've, you know, decided to focus our economic security strategy. The answer has been trying to work in lockstep with our private companies and our builders to build platforms that are commercially viable, and that can ultimately live outside of the government as a private service. And so the forward deployed industrial base is meant to be a platform for private investment that will be viable for the long term. It's the first of its kind.\n\nSpeaker 1 | 09:32 - 09:56\nWe're thinking about making a big play in the logistics space in partnership with large, you know, corporates. And in June, we're we're looking at potentially doing a broader rollout where we're going to roll out four or five different big lines of effort. You guys are both invited to Washington for it. And so, you know, having a product based approach is very much how we're thinking about it.\n\nSpeaker 3 | 09:56 - 10:10\nAs somebody who's done a deep study of the pros and cons of Belt and Road, There's obviously access to infrastructure and inputs as some dimension of success here. What's been the failure point for Belt and Road?\n\nSpeaker 1 | 10:10 - 10:40\nWell, failure point is, you know, so first of all, obviously, some of the projects, you know, have been useful for China. There's a lot of waste in the Belt and Road Initiative. And, you know, mainly it's because whenever you have, you know, central planning and really government bureaucrats effectively, you know, allocating large pools of capital. There's a lot of waste because vendors, you know, massively overcharge things. There's a lot of waste because there's a lot of roads to nowhere.\n\nSpeaker 1 | 10:41 - 11:23\nAnd and what happens is, you know, China will basically deploy capital to its own companies that then, you know, basically write IOUs to the host country. And the host country realizes that, you know, they've gained a reputation for these projects have gained a reputation for being a debt trap because China will say, you know, we'll build a road and, you know, as a loan. Except the company building the road is Chinese. And so China can basically decide, you know, what the price is. And as you guys know, know, when you build a house or when you do any construction project, a lot of projects run over budget a lot.\n\nSpeaker 1 | 11:23 - 11:49\nAnd you know, when a host country thinks it's taking on, you know, x million dollars in liabilities, and it actually ends up being 10x that, that's when they kind of end up in quicksand. And so the Belt and Road Initiative has really garnered a reputation for really being a tool of political leverage that a lot of countries are still digging themselves out of.\n\nSpeaker 3 | 11:49 - 11:51\nAnd so Versus one of partnership.\n\nSpeaker 1 | 11:51 - 12:08\nExactly. Versus one where it's positive sum. I think a lot of countries don't feel like they have enough upside in it. It is Chinese workers, Chinese companies, you know. And a lot of the times, it's Chinese equity because the debt converts to equity if, you know, the host country defaults.\n\nSpeaker 1 | 12:08 - 12:37\nThey do a lot of the times. And so, we're approaching it totally differently. And because we're approaching it by putting our companies in the driver's seat, it's actually, in a lot of ways, it's much more ethical because the deal is structured in a way that's really meant to be, you know, a true joint venture and one that will be optimized for commercial viability, not just, you know, for political purposes.\n\nSpeaker 3 | 12:38 - 12:51\nWhen you think about the 14 countries that are already part of PACSILICA or, you know, this as a potential blueprint for others to be involved in American for deployed industrial bases, like, what's the value prop for them?\n\nSpeaker 1 | 12:51 - 13:50\nSo the value prop is one of the amazing things that we're seeing is obviously the AI revolution is leading to huge growth. I mean, despite the volatility in the energy markets, you know, the American economy has been proven incredibly resilient. And a big part of that is AI being this incredibly strong economic force that is already fueling over a third of our economic GDP growth right here in The US. Overseas, we're leading we're seeing that growth translate to record demands for copper, record demands for cobalt, record demands for, you know, lots of different inputs that go into data centers, and and, you know, record demand for electricians and all the rest. And so the takeaway for a lot of these countries is if they find ways of actually having a bigger part and a bigger stake in that supply chain at different layers, layers that make sense for their companies and their economy, they can actually derive a lot of economic growth from that revolution.\n\nSpeaker 1 | 13:50 - 14:21\nBecause, you know, the amazing thing about the tech industry, especially when we go through these inflection points, as you guys know, is the pie grows really fast. And so it's really not zero sum, which actually makes it incredibly conducive to forge very mutually beneficial partnerships. Because we're not approaching it as you know, what I gain, someone else loses. It's actually because the pie is growing, we're partnering together. And this is very much part of the ethos of how we're partnering with The Philippines.\n\nSpeaker 1 | 14:22 - 14:38\nWe we are developing a partnership where we both have skin in the game, and we both share in the upside of success. And so, you know, risk is evenly allocated, and so is upside. And so ultimately, it's very much a win win proposition.\n\nSpeaker 2 | 14:38 - 15:05\nHow you do think about the areas where you want to partner with other countries versus have things happen in The US? So I know for example, there's been a long standing effort to bring back fabs and the ability to manufacture semiconductors at sort of state of the art line widths and everything else in The US. That hasn't quite happened yet. I know there's active efforts to do that. What do you think is important to do in The US itself versus to partner with other countries, and how do you figure out what goes where?\n\nSpeaker 1 | 15:05 - 15:24\nYeah. So that is such a great question. And I think, you know, I would answer that question in few different parts. But the first part is maybe starting with some stats. And America consumes accounts for, you know, somewhere in the neighborhood between 2030% of global consumption on any given quarter.\n\nSpeaker 1 | 15:24 - 15:33\nIt's obviously huge because we're 4% of the world's population, but we're basically a fourth to a third of the world's total consumption. Our production\n\nSpeaker 2 | 15:33 - 15:34\nlevels Celsius or other things\n\nSpeaker 1 | 15:34 - 15:37\nlike that? Things in Celsius or\n\nSpeaker 3 | 15:37 - 15:38\nNo name or coffee.\n\nSpeaker 1 | 15:38 - 15:48\nYou know? We consume a lot of stuff. I mean, Americans like to consume. You know, we're a risk taking culture. We're a high consumption society.\n\nSpeaker 1 | 15:49 - 16:23\nAnd our production levels are not 20 or 30%. We produce a lot less than that. And so part of what we're seeing is if we narrow the gap between what we consume and what we produce, we will re industrialize America. Because that will be a massive re industrialization plan that will inevitably include a lot of you know, semi autonomy or full autonomy. And because if we industrialize in an economy where unemployment's already at 4%, it will have to be, you know, very, very autonomous, which is possible.\n\nSpeaker 1 | 16:23 - 17:07\nSingapore has proven that's possible. They have highly autonomous ports, you know, factories. And so that, you know, so that's number one. Then there's a question of, you know, what happens with the other 70% of the world's consumption that is currently, you know, mostly concentrated in China? And so the idea is if we want to have a supply chain system where America and its allies and the global economy has access to suppliers that are more evenly distributed, that are reliable, trustworthy, transparent, I think a lot of countries actually really see that as a business opportunity for them to also be able to have, you know, more production in their respective regions.\n\nSpeaker 1 | 17:08 - 17:52\nAnd so part of the idea for the forward deployed industrial base and these economic security zones is actually to have a hub based approach where we can leverage the industrial attributes. So for example, if regions have a lot of rare earth minerals, or you know, for example, in the case of The Philippines, a very deep indigenous manufacturing ecosystem. You know, things that they're really good at or have unique advantages in, we can leverage that to to really help capitalize on that and and make sure that they can actually contribute to their supply chains for areas where they're that they're really good in. And ultimately, you know, help foster regional hubs. Because, you know, the population of Africa, for example, is growing massively.\n\nSpeaker 1 | 17:52 - 18:17\nThe, you know, South America is also growing very, very quickly, you know, places like Brazil, Argentina. And so I think having a hub based approach is very promising. And ultimately, America is, you know, remains the economic engine of the global economy. And so I think the parts that we re industrialize here will definitely be the biggest driving forces. And you're totally right.\n\nSpeaker 1 | 18:17 - 18:44\nI mean, the effort to bring back semiconductor fab production here is already well underway. And so that will continue. It's already in flight, and there's a whole host of reasons why it wouldn't necessarily make sense to try to replicate that elsewhere because it's highly technical. The global supply of talent available in that area is very finite and limited. And it's also extremely capital intensive.\n\nSpeaker 1 | 18:44 - 19:10\nSo it wouldn't make sense to, you know, replicate that elsewhere before it's finished here. But, you know, the the unfortunate and good news is the supply chain is vast. And there's a lot of things that still need to be built. And so the world, I think, is actually really, really ripe with opportunity in that sense.\n\nSpeaker 2 | 19:10 - 19:38\nHow do you think about other inputs into what you're talking about? So for example, you mentioned rare earth magnets. And my sense, and I haven't verified this, so please correct me if it's wrong, is that A) rare earths are not actually rare, B) the total market size is in a few billion dollars a year, and C) that market is heavily subsidized by China in order to basically control supply. It's sort of a lever from like a political basis. And so are there considerations around other mechanisms that the government can use?\n\nSpeaker 2 | 19:38 - 19:52\nI know there have been, but I'd love to hear how you all are thinking about other aspects of the supply chain that may be raw materials, that may be heavily subsidized or propped up by foreign governments, etc, and how we should address those areas in addition.\n\nSpeaker 1 | 19:52 - 20:07\nAbsolutely. And so you're exactly right. The total you know, the really interesting thing about rare earths is obviously, as you point out, they're not that rare. I think, you know, some people have said that they're everywhere. It's not totally true either.\n\nSpeaker 1 | 20:07 - 20:39\nI mean, they're not everywhere, but they're in lots of different places. I think the sort of key thing is that really drives, you know, the economics of the of those industries is how much energy do you need to pump into the ground in order to extract a given mineral at a given, you know, quality grade. And then what's actually really rare is the refining process. Because the number of processing facilities for these minerals is very, very limited outside of China. They exist, but in very limited quantities.\n\nSpeaker 1 | 20:40 - 21:07\nAnd and you're right. And China obviously subsidizes the hell out of them. And so and so it's it's very exciting to be able to, you know, share with you on the on that that the Trump administration's actually really had a very, very comprehensive approach. I mean, we've been really focused on the mineral security issue pretty much since day one of the administration. We did the largest critical minerals summit in the history of the State Department.\n\nSpeaker 1 | 21:08 - 21:50\nIn February, on February 4, with over 55 countries that participated, we signed critical mineral MOU deals with dozens of countries who have lots of different kinds of minerals. And now one of the things that we're doing and have been aggressively pursued across the administration is allocating capital and investments into a lot of these projects to make sure that they have access to the resources to expand production. So that's on the supply side. On the demand side, the administration is hard at work at negotiating deals with countries to address the pricing issue. Because as you guys know from the business that you invest in, you can invest a lot of money in a startup.\n\nSpeaker 1 | 21:50 - 22:16\nBut ultimately, a lot of the economics of whether a company can be viable is really based on the price that that company is able to provide a service for. And so the pricing mechanism is really, really central to unlocking long term commercial viability. And I'm incredibly confident that we actually will resolve the pricing issue for the minerals market before the end of this administration.\n\nSpeaker 3 | 22:17 - 22:33\nYou mentioned that you are, you know, directly investing in domains of importance where you're trying to, like, trigger better supply capability with us and allies. Like, how do you think of the role of asking for a friend, private capital, in these initiatives?\n\nSpeaker 1 | 22:34 - 23:42\nYeah. So I think, I mean, you guys have such an important role to play, mainly because, you know, there much of, you know, whether a project materializes or not, as you guys know, it hinges on execution, you know, capacity. Can a company really execute on a very aggressive ambitious plan? And one of the amazing superpowers of the venture capital business is, you guys are kind of hardwired to be able to assess a lot of the personality attributes of founders and operators to tell you some of the things that are harder to read from a deck or a spreadsheet on does this person really have, you know, what it takes to be able to execute, you know, and address execution risk, you know, underlying scientific risk, you know, all the different risks that inevitably exist in any company. And so and so the feedback and so we actually would really love for the venture capital ecosystem to help be part of the solution because I think, you know, you guys are better positioned to assess, you know, who are the best players in the space.\n\nSpeaker 1 | 23:44 - 24:50\nAnd we can take that as an important signal to help inform capital allocations that we make on the government side to make sure that we allocate money in the right places and in the most efficient way possible, especially as good stewards of taxpayer money. The other thing is, I think beyond sort of assessing, you know, who the best players are, I think on the innovation side, I mean, there's a number of really great companies, especially out here in the Bay Area, who are working on new materials and, you know, rare earth free, you know, magnets and lots of other kinds of innovations. And I think that's where we have, you know, there's a lot of room and potential for potentially coming out with, you know, a rabbit out of a hat situation where we somehow end up solving this issue in a way that was completely unanticipated through innovation. And so, and that will ultimately be a solution that will really be born out of the tech industry, not the government. And so, you know, those are things that we obviously want to be attuned to and help be supportive in any way we can.\n\nSpeaker 3 | 24:50 - 25:21\nWhen you think about you mentioned limited bandwidth, of course, and economic security in the AI supply chain being an enormous topic. Like, how do you think about prioritizing twenty seven, twenty eight versus five years out? Because this is something we think about as well where, you know, if you look at next gen lithography and robotics and, let's say, chip, new new semis designs, for example, there are some longer term plays that are more capital intensive. And so we balance our our views on that and nuclear and such with software that is gonna ship this year.\n\nSpeaker 1 | 25:23 - 26:01\nYeah. One of the approaches that we so I think, I mean, one of the approaches that the administration's taken that, you know, hopefully will will really be the foundation for a lot of, you know, short term change as well as just provide long term support is helping shape the environment. You know, creating a macro environment that basically makes innovation, iteration of innovations, as well as deployment of innovations, a lot easier and less expensive. So the administration's approach to expanding our domestic energy supply is obviously part of that. Expanding nuclear.\n\nSpeaker 1 | 26:01 - 27:09\nThe administration is really undertaking a lot of efforts to basically cut red tape, accelerate the deployment of American nuclear energy. And from memory, it was actually one of the first executive orders that the president signed that where they said they wanted to quadruple our domestic nuclear supply, as well as, you know, a lot of actions to deregulate. The one big beautiful bill included a lot of tax incentives. And through the State Department, we were looking to help, you know, be play a constructive part in shaping that environment by creating these evergreen, you know, systems basically, like the forward deployed industrial base, that will be a long term platform, and hopefully a replicable one that we could pursue in other geographies. And the idea is that for the long term, our technology companies will have these platforms to operate in that will provide, that will really be a competitive strategic edge that they can use to build very very quickly and actually get to market faster.\n\nSpeaker 2 | 27:09 - 27:31\nHow do you think about in general this transitioning through administration? So you mentioned a number of executive orders. Typically, when an administration shifts, you end up with a lot of those executive orders undone in both directions. Right? Somebody comes in and they kind of cancel a bunch of the executive orders that were signed by the prior administration, and they write a bunch of other ones that may be at odds with them.\n\nSpeaker 2 | 27:32 - 27:40\nAnd so often the key is legislation or other approaches. How do you view making this stick if you think it's so important for our country's future?\n\nSpeaker 1 | 27:40 - 28:04\nWell, are some things that I think will be hard to undo. I mean, tax reform is very sticky. And so, know, one of the interesting attributes about my role of the State Department is we're actually not allowed to comment on electoral politics. So it's kind of this interesting, you know\n\nSpeaker 2 | 28:05 - 28:06\nYeah. So I guess ignoring that.\n\nSpeaker 1 | 28:06 - 28:08\nStatutory limitation that we're subject to.\n\nSpeaker 3 | 28:08 - 28:27\nWhen you we we have the audience of a lot of folks in the AI ecosystem, but also a lot of folks in the general business and investing ecosystem of companies of different scale. What do you think, like, American business people and entrepreneurs should know about these policies in terms of how they affect them?\n\nSpeaker 1 | 28:28 - 29:27\nThe the goal for Paxilica is we want to use it as a platform to expand market access for our companies. Because even amongst our allies, sometimes our companies, you know, face a lot of hurdles with exporting their products and services. So we want to hear feedback from them on, you know, what are what's working and what's not working in places like Japan, South Korea, India, and things that we could do better in the policymaking space to make sure that we can actually make, you know, provide some support for our companies to be more competitive in those markets. We also want to hear, you know, it's been great to already get a lot of feedback from a number of different companies on partnerships that are already in flight and opportunities that they see on the table on the supply chain security side. So there's a lot of cross pollination and partnerships that are already being forged between American companies and companies in India, in Japan, in South Korea, even in Singapore.\n\nSpeaker 1 | 29:27 - 30:14\nAnd so understanding those partnerships helps us really understand how executives are thinking about their supply chain strategy. Everyone uniformly is obviously thinking about ways of having of being much more deliberate about their supply chain decisions in ways that factor in the realities of the need to not be overexposed to China because of the political dynamics at work. And so understanding where they see opportunities for what segments of their supply chain helps us get a better understanding of what's working and what can we help grow, you know, as quickly as possible and scale. And so that part is very useful. So I would say expanded market access, strategic partnership opportunities on the supply chain side.\n\nSpeaker 1 | 30:15 - 30:59\nAnd and then we also want to make sure that we actually create a space where we can talk about important intellectual property intellectual property conversations. You guys are obviously very involved in the AI industry. And so I'm sure you've been, you know, spending a lot of time thinking about the whole model distillation debate, which is super important to actually protect the economic value of these hundreds of billions of dollars in investments in AI companies. And so that remains a really important unresolved area of policy, where I think getting the input from the builders who are the closest to the development of this technology is super important.\n\nSpeaker 3 | 31:00 - 31:10\nWhen we last spoke to you on No Priors, you were just beginning your tenure at the State Department. What has the biggest surprise been? You've been very active since you started.\n\nSpeaker 1 | 31:11 - 31:49\nWell, the biggest surprise is honestly how entrepreneurial it's the Trump administration has been. Because I think the stereotype for people who work outside of the government is usually really focuses on, you know, this idea of the government is super bureaucratic. And obviously, that's not to say that the government is a massive enterprise. And lots and lots of people involved, lots of processes. But the really extraordinary thing is we have a president who also spent most of his life in the private sector and who really likes speed.\n\nSpeaker 1 | 31:49 - 32:45\nI mean, you know, the running joke, especially, you know, with our counterparts overseas that deal with the Trump administration is that we like to move in Trump time. Because, you know, the president, when he likes something, he wants it yesterday. And so that part's really been amazing because the appetite to try new things and the appetite for risk and to move really, really fast is highly unusual by government standards and really speak for the philosophy that President Trump brings to bear in the Oval Office. And so that part's really been extraordinary. That combined with the really great leadership that we've been able to benefit from at the cabinet level from secretary Bessen, secretary Lutnick, secretary Rubio, secretary Bergam, who, you know, it's an incredibly collegial team.\n\nSpeaker 1 | 32:46 - 32:59\nAnd and they really, you know, operate with a level of professionalism that's been incredibly inspiring for people like me in the sub cabinet to be able to benefit from and and also, you know, work very constructively with our bureaus.\n\nSpeaker 3 | 33:00 - 33:13\nOne thing that you've said recently surprised me just in phrasing. You referred to America as a global underdog, I believe. That's not the way I think of America. Can you explain yourself?\n\nSpeaker 1 | 33:13 - 33:59\nYeah. So I think, you know, it's interesting because I think The US often thinks of itself as the Navy and, you know Versus a pirate. Versus a pirate. And so, you know, Allison Graham wrote this book years ago called The Thucydides Trapped, where he kind of characterized America as the established power, and he characterized China as the rising power. And and I actually think, you know, one of the really big flaws in that whole line of thinking is I really wouldn't say we're an established power because I think for most of our history I mean, one of the things that really makes America quite unique and and very different is from the earliest days of our founding, we've always been a nation of underdogs.\n\nSpeaker 1 | 33:59 - 35:06\nWe started out as 13, disorganized, unruly, rebelling against an empire of polite society and, you know, the educated expert class. And who said that, you know, our project as a republic would never succeed. And if there really is one through line across our history, as almost any decade in, you know, the history of our country, there have been, you know, a class of experts that predicted, you know, our decline or, you know, that we've reached the limits of our power, whether it was the great financial crash, whether it was the Iraq War, the first and second oil crisis, you know, the Vietnam War, you name it. And, you know, the amazing thing is Americans perform really, really well when, you know, we feel like our backs are against the wall and it's crunch time. I mean, I'm sure you'll remember during COVID, there were these very dramatic, you know, Atlantic magazine covers about the great unraveling of America.\n\nSpeaker 1 | 35:06 - 35:43\nAnd against the odds of, you know, everyone in the mainstream press, we came out with a with a vaccine in under a year that actually performed much, much better than every other alternative out there and came out of COVID much earlier. China obviously was bogged down in its zero COVID policy, the effects of which it's still feeling today. And so the reason I say this is because I think, you know, culturally, it's something that makes America very, very unique. And I think it's something that really hits close to home for Silicon Valley because it really Silicon Valley embodies, you know, the quintessence of the underdog mentality. Every founder\n\nSpeaker 3 | 35:43 - 35:44\nmy soul.\n\nSpeaker 1 | 35:44 - 36:26\nYes. Every founder started out, you know, as having a contrarian idea that was kind of seen as heretical by, you know, the expert class, you know, the sort of polished Harvard professors of the world that think that, you know, they sort of have these well founded sign you know, sciences. And, you know, you have people who, you know, some of them are dropouts. They sort of, you know, dare to question, you know, old orthodoxies, and, you know, they hear no 45 times before getting to a yes, and they keep going. And and so it really is, you know, part of the DNA of, you know, what makes a founder a really great founder.\n\nSpeaker 1 | 36:26 - 37:28\nAnd so and and I think it's it really is that kind of spirit, that that new frontier mentality that makes Silicon Valley unique, but that has really, you know, characterized America as a nation that's allowed us to always bounce back whenever we we've experienced a setback. And so it makes me really, you know, optimistic about the future of our country. And and I think, you know, my message to founders, you know, executives in Silicon Valley, as well as our partners overseas is I think that is the very that's the kind of spirit we want and are looking for when we wanna partner with people. But and and it's also the kind of of ethos that people should expect from us, you know, when they when they when they ask themselves, you know, what can I expect from Americans versus, you know, executives from another country, say China? And and I think the answer is, you know, with America, a lot of the times, it's very positive sum because our companies already work on positive sum partnerships all around the world.\n\nSpeaker 1 | 37:29 - 37:37\nAnd, you know, it it will involve a lot of tenacity and creative thinking. And that's how American founders work. Thanks so\n\nSpeaker 2 | 37:37 - 37:38\nmuch for joining us today.\n\nSpeaker 1 | 37:38 - 37:41\nNo. No. Thank you. Thanks thanks for doing this follow-up.\n\nSpeaker 3 | 37:42 - 37:58\nFind us on Twitter at nopriorspod. Subscribe to our YouTube channel if you wanna see our faces. Follow the show on Apple Podcasts, Spotify, or wherever you listen. That way you get a new episode every week. And sign up for emails or find transcripts for every episode at nopriors.com."
+    },
+    {
+      "source": "podcast",
+      "name": "AI & I by Every",
+      "title": "The Secrets of Claude's Platform From the Team Who Built It",
+      "guid": "2e79dafd-fc16-4887-9e14-85912127706a",
+      "url": "https://www.youtube.com/watch?v=lLypHkIVLqc",
+      "publishedAt": "2026-05-08T20:27:01.000Z",
+      "transcript": "Speaker 1 | 00:00 - 00:03\nA year from now, where do you think the platform will be?\n\nSpeaker 2 | 00:03 - 00:18\nWe wanna experiment with directions where Cloud actually gets so good at understanding itself. It figures out what model you should be using. It figures out how to spin up all the sub agents. You don't have to think so much about what kind architectures are there because Claude is actually able to understand itself enough that it can write itself on the fly.\n\nSpeaker 3 | 00:18 - 00:26\nIn that world, if Claude is on the fly, your agents on the fly are becoming what they need to become in order for you to do what you're trying to do, the platform has to seriously scale.\n\nSpeaker 1 | 00:26 - 00:47\nHow close are we to Club Making A Billion Dollars? Is that's really what I'm asking. Angela, Caitlin, welcome to the show.\n\nSpeaker 3 | 00:47 - 00:48\nThanks for having us. Yeah. Thank you.\n\nSpeaker 1 | 00:48 - 01:07\nSo for people who don't know, you both work on the platform at Anthropic. So, Angela, you're the head of product for the cloud platform, and, Caitlin, you are the head of engineering for the cloud platform. I'm I'm really psyched to talk to you because, a, you've been launching a bunch of stuff. You have cloud managed agents that came out recently. You've been launching new features for it.\n\nSpeaker 1 | 01:08 - 01:37\nAnd I think that it it comes at this really interesting time where it makes me think about what actually is a platform in AI for a model company. Because in the GPT-three days, the platform was a completion endpoint. You just, like, send a prompt to get a response. After that, it was, like, a completion endpoint with tool calling and a couple and, like, chat sessions, like that kind of stuff. And now, like, with Cloud Managed Agents, you're essentially getting a cloud on a computer with memory and all this other stuff.\n\nSpeaker 1 | 01:38 - 01:47\nSo I'm just trying to I'd love to help I'd love for you to help me unpack that trajectory and, like, what it means to build a platform in AI.\n\nSpeaker 2 | 01:47 - 02:06\nYeah. I think, like, you know, your your characterization is, like, very accurate. I think like as we've kind of like, as a lot of these kind of like technologies have evolved with the LM like for starting, and then I think like putting that behind an API was very fun. A lot of people were like, wow, I could like do some, at the time I think it was very cool. Now we'll probably look back at it and be like, oh, that was like really basic.\n\nSpeaker 2 | 02:08 - 02:53\nAnd then, you know, I think, like, we've moved more and more towards, like, a slightly more, like, stateful world as you kind of, like, want to persist the kind of, like, sessions state, to be able to make sure that the kind of performance of the model is, like, better and better. I think that that's probably, like, actually the the through line. Like, as a lot of these kind of, like, as we make improvements to Claude and as it continues to get better and, like, more autonomous, we find ourselves, like, basically needing to kind of, like, evolve the platform to be sort of, like, higher and higher order abstraction, but it's in the pursuit of like helping you get the best outcomes out of something. Like, I think in the very beginning, you know, we were very like, everyone was very exploratory. It's like, have no idea what people are going to build with these LLMs and you wanted to kind of have as much possibility out there as as available.\n\nSpeaker 2 | 02:53 - 03:09\nAnd then as those use cases started to kind of narrow down, like people started building products with it, people started now, like, building agents with it. And more and more of that is about, you know, like customers coming to us and being like, how do I get the best out of Claude? How do I, like, set up my tools? How do I run the loop? And so on and so forth.\n\nSpeaker 2 | 03:09 - 03:45\nAnd you have some people who are like really, really experimenting and they're on the edges and that's great. And then you have like just a whole host of other folks that are coming in who are like, I kind of want a lot of this stuff like out of the box. And in our pursuit for making sure that like Claude is basically producing the best outcomes, we find ourselves, like, enriching the platform to be richer and richer and richer. And that's, you know, contained in that is, like, both the state, it's, like, the tools that you start to see us adding, and contains a lot of kind of, like, almost sort of the cloud components of a lot of these types of things. But it's in pursuit of the same mission of like just making things literally as easy as possible.\n\nSpeaker 2 | 03:45 - 04:09\nAnd I think in probably, you know, the forward state of a lot of these things in terms of maybe the philosophy of what a platform ultimately ends up doing, it probably ends up just being, like, whatever it it's like the set of primitives and infrastructure that enables you to basically get the outcome as fast as possible, with actually as little of work as possible. And I think that that tends to follow a certain form factor, at least in this current state. Yeah. But yeah.\n\nSpeaker 1 | 04:09 - 04:15\nHow would you characterize, like, what the primitives are today? So maybe that's just asking. What are the primitives in Cloud Managed Agents?\n\nSpeaker 3 | 04:16 - 04:42\nYeah. So Cloud Managed Agents is built on all of our same primitives that you could otherwise build on directly, so the messages API. And within the messages API, we've built a whole bunch of, I guess, maybe innovations around the API. Like, you could just get tokens in and out if you really wanted to, but, can use some of our built in tools. You use stuff like code execution, spawn a sandbox and execute work.\n\nSpeaker 3 | 04:43 - 05:00\nYou can use, I guess, like, you know, web search and all these sorts of different things. And so I think we've taken what we see as all the most powerful of those things and put them together into a harness and a set of infrastructure that is, you know, just the way to get what we think is the best outcomes out of Claude.\n\nSpeaker 1 | 05:01 - 05:35\nSo I'm sitting here feeling this sense of I've been thinking of it as, like, time deflation. Like, my time gets more valuable in the future as opposed to, the opposite, whatever whatever the the opposite would be, my time gets less valuable in the future. And and and the reason is because we're so for example, internally for us, we're building an agent. We're building some agent products where it's like agents that do specific things for us internally and then hopefully for customers. And in order to do that, we've, like you know, we have a couple Mac minis with, you know, Claude running in a loop on the Mac mini.\n\nSpeaker 1 | 05:35 - 06:00\nRight? And a lot of that and it's like a thousand line Python file or whatever. And a lot of that mirrors what you guys are building in Claude managed agents. And so for for for me and I think for a lot of people building on Cloud or on the Cloud platform or ecosystem, there's a there's at least I feel this. Maybe we should just wait for you guys to build it, but then I don't know what the lines are.\n\nSpeaker 1 | 06:00 - 06:11\nAnd, and I yeah. I'm sort of wondering if if I wanna build an agent, like, what is the best path to do that in a way that aligns with what you guys are doing?\n\nSpeaker 2 | 06:12 - 06:32\nYeah. I think, you know, this this part of the the kind of platform business is actually somewhat similar to any other form of the platform business where you do have customers like yourself who are building and, you know, you're kind of thinking, should I go ahead and do it because maybe I have this, like, immediate need, but at the same time, don't kinda wanna, like, you know, repeat the work per se, and you could've just when you could've just gotten it for free Yeah. Out of the platform.\n\nSpeaker 1 | 06:33 - 06:40\nAnd also infrastructure sucks. It does. Yeah. It sucks so much to, like, spin up servers. I can't believe you do that all the time.\n\nSpeaker 1 | 06:40 - 06:40\nThat's\n\nSpeaker 3 | 06:42 - 07:17\nlike have to be a big one. Part everyone's like, that's so nice. But I I will actually say, part of why we ended up building Cloud Managed Agents was because Anthropic ourselves had gone through enough of these iterations where we built products that were agents that you could run autonomously in the cloud. And we did that stand up the infrastructure so that it works well sort of work enough times that we ourselves were like, okay, we're done building this for ourselves. We're we're doing it once in a way that's gonna really work from everything that we've learned, but also for all the people who are doing it.\n\nSpeaker 3 | 07:17 - 07:32\nLike, you can run whatever you're running on a couple of Mac minis maybe. Right? And for a lot of people, that could work. But I think if you're building agents into your product and you're running something really at scale, right, like that's where it really starts to become more and more challenging to get that infrastructure right.\n\nSpeaker 1 | 07:32 - 07:33\nThat's really interesting.\n\nSpeaker 2 | 07:33 - 07:56\nYeah. And then maybe to answer the other part of your question, I think we have two pieces of the philosophy here. One is is a bit in the way that we kind of design managed agents, which is that we try to have it be modular enough. Like, we wanna be opinionated about some pieces that we feel like should be, you know, very well, like, married to the Claude model. But then we, like, oftentimes, like, the way we want for example, we want Claude to, like, very specifically use, like, file systems.\n\nSpeaker 2 | 07:56 - 07:58\nThat's, like, a very particular, like, Claude\n\nSpeaker 1 | 07:58 - 08:00\nIn a specific way or just file systems in general?\n\nSpeaker 2 | 08:00 - 08:13\nJust file systems in general. We will we also really wanna lean into skills. I know, like, a lot folks like skills, but, like, that's something that we, like, we want to have our hearts be really opinionated about that. And so we're kinda particular about, like, those kind of primitives being the case. Like, use the file systems, use the skills.\n\nSpeaker 2 | 08:13 - 08:35\nThey're really basic. But at the same time, like, we still find people who are, like, still trying other methodologies to go do that. And we wanna kind of, like, help you, you know, when you build to start, just kind of starting the best foot. So that's one piece, on some of the kind of more opinionated ones. But as each one of these kind of, like, you know, endpoints or or, APIs that we have as part of the suite, we try to, like, open them up a little bit, in certain areas.\n\nSpeaker 2 | 08:35 - 09:11\nSo there's, things that, you know, we're looking, kind of forward to and being, like, you know, from maybe it's not available today, but in our design, we are trying to make it flexible enough for people to kind of like add in different pieces because we recognize that this API or suite of APIs is not necessarily going to solve like maybe everything in its original construct, and there are gonna be pieces that need to kind of open up. And then the second bit is like, you know, we're we're kind of public about this is like when we do design a lot of these things, we do put out, like, blog posts and sort of, like, reference implementations. So if you did want to kind of at least be inspired by that construct Yeah. But still maybe make your own on the messages API, you can definitely do that.\n\nSpeaker 1 | 09:11 - 09:55\nI think that's to the to the point you just made, that's something that's that's coming up for us. Again, we have, you know, Clouds running on a Mac Mini with a Python file and a couple other, like, you know, bigger, more serious implementations on, like, you know, cloud infrastructure that we're trying to figure out what to do with. And I think I I told the team that we're that we were talking today, and I think one of the, one of the questions that they have or or one of the feelings of consternation that they have considering using cloud managed agents for this kind of thing for spinning up agents for our customers is just right now, it's a like, we have a playground. We have we just have, like, a little we have a server or a Mac Mini. We can just, like, pipe stuff to to Cloud.\n\nSpeaker 1 | 09:55 - 10:06\nIt can do anything that Cloud Code can do. It has a file system. It has a browser. It has, like, all stuff. If we wanna, you know, switch it switch it out to GPT 5.5 or Gemini or whatever, it's, like, pretty easy to to do that.\n\nSpeaker 1 | 10:08 - 10:37\nSo is that kind of and I feel like they they they feel like they're we're gonna get if we use a Cloud managed agent, we're gonna get in, and it's not gonna we're not gonna have the flexibility to do all the stuff that we want. And it it there there's also a worry that features are going to come to Cloud Code itself that won't be in Cloud Managed Agent for a little while and that it'll prevent us from being at the edge, which is sort of what we promise to our customers and really to ourselves. Like, we just love being like, just doing whatever the new thing is. How do you think about that?\n\nSpeaker 3 | 10:37 - 11:04\nYeah. So I think the what's nice about the way that we work internally, I guess, is, like, so we run the platform, and the platform for what most people think of it as is our externally facing APIs and our suite of APIs. The other rest of what our team actually does is internal platform in the sense that all of our first party products are built directly on the same platform as everybody else. And so what's cool about that is we're we spend all of our time, not all\n\nSpeaker 1 | 11:04 - 11:05\nof our time, but a\n\nSpeaker 3 | 11:05 - 11:33\nlot of our time working with the teams internally who are building on top of the platform and kind of enabling the features that they will build, sharing ideas and these sorts of things. And so I think over time, you'll maybe see less and less divergence of, you know, like what might be available in Cloud Managed Agents, what might be available in coworker, Cloud Code that might sit on top of the same infrastructure, right? Like, that's I think one way to think about that. Yeah. And then I think,\n\nSpeaker 2 | 11:33 - 12:01\nyou know, on your point around or your team's point around, like, you know, having some kind of, like, model lock in fear, I think that that's, like, valid. Like, many folks kind of have that consternation. And I think we're kind of at this place where there's a bit of like an evolution here where, you know, if you look back, maybe even just a couple months ago, it was very standard to kind of build a very, very, very generic harness. It's super generic, and then you can kind of hot swap models across all of those things. And I think for kind of an older generation of models, across labs, that kind of worked like okay.\n\nSpeaker 2 | 12:01 - 12:30\nA lot of things were were moving at a pace where I think that that was, like, mildly reasonable. I think now, for the next kind of generation of models and as we kind of see it forward, I think you kinda see this a little bit from every lab. Like, everyone's taking, like, slightly different, techniques and perspectives on how they want to kind of advance their particular form of the model. And so in theory, I guess you could do kind of the superset of all those things. But more often than not, I think, know, like when you build agents for your company or for your customers, you do want to deliver like an outcome ultimately for them.\n\nSpeaker 2 | 12:30 - 12:53\nAnd so I think that that level of abstraction of like what you're actually hot swapping stops becoming this, like, really generic harness and hot swapping the model, and it gets more to, the harness and the model get very paired. You still need redundancy, and you still might want to use other models for things, but you probably do it at the layer of, like, the agent, meaning, like, the harness plus the model, rather than necessarily the other architecture of, like, you know, really, really generic harness and and hot swapping everything underneath.\n\nSpeaker 1 | 12:53 - 13:04\nThat's really interesting. Is that how, I don't know, the cursors of the world are doing things? Like, do they have a a separate harness for each model, or is it a generic harness that they're kinda hot swapping the models in and out of? Do know?\n\nSpeaker 2 | 13:05 - 13:31\nI'm not entirely sure. My, intuition would be that, like, I don't know about Cursor in particular, but there have been, like, teams that we have talked to who have kind of fallen on similar kind of perspectives. And it's mostly because they're just trying to squeeze the most out of each model to kind of like, almost like harness engineer, like every single, like, nuance. And, you know, one example that we have, it's it's not an external customer per se, but, something that we've done a lot internally. Like we recently watched like memory, for example, with with managed agents.\n\nSpeaker 2 | 13:32 - 13:58\nAnd we tried a bunch of different harnesses ourselves. Like we tried one that was like the one that we ended up launching. We tried a bunch of others using a bunch of different other techniques. And, at least personally for myself, like when I saw eval suite from the team, each one of these harnesses performed drastically differently. And so I think just even looking at something like that shows you that you can actually hill climb a tremendous amount by just harness engineering the right pieces together.\n\nSpeaker 2 | 13:58 - 14:12\nI think if you were to just take that forward across, like, all model combinations, across all different labs, all different kinds of providers, there is a lot of alpha in that kind of construct. And so I wouldn't be surprised if more than just ourselves have experimented with that level of, like, know, unit tying.\n\nSpeaker 1 | 14:12 - 14:26\nIt's really interesting that there's this path dependence where you make some choice for how you do requests and responses or how you do tool calls or whether you're you have the model wanna use file systems or not. Yeah. And then that sort of, like, changes the trajectory of\n\nSpeaker 2 | 14:26 - 14:36\nall these different models. And it feels like, maybe at the time, like, such a small, almost like, you know, kind of like footnote. Yeah. But it ends up becoming very big.\n\nSpeaker 1 | 14:36 - 15:02\nDo you think that that will end up affecting the model's generalizability in the sense that at some point, they they'll just have these sort of maybe locked in lanes of stuff that they're good at because they're you know, Cloud is really good at file systems and OpenAI's you know, GPT is good at some other things. Like, yeah, how is that gonna, how's that gonna flow through the model's, like, personality and behavior if it's, like, locked into a specific way of doing things?\n\nSpeaker 2 | 15:03 - 15:28\nI do think it does actually kind of tend to lock the model. So, like, what, what we end up, like, kind of treating as like the right path and the right primitives need to be like very carefully thought through. And so like I think in the in some eras, you know, like of of other models, they become really, really, really good at like reasoning. And then they almost like over optimize on that level of reasoning. And there's other perspectives around, like, okay, like, yes, we want it to be really good at, a computer.\n\nSpeaker 2 | 15:28 - 15:55\nLike, maybe the computer part is the interesting part. And so if you think through maybe some of the the primitives, which we could get right, we could get wrong, but at least we'll, like, go through the thought process of, like, that will probably at least lead us, you know, one path or the other. I think it's hard to say, like, you know, which direction per se will ultimately be true, but I do think there's a lot of, like, path dependency it ends up taking. So being really, like, thoughtful about what you choose to actually include or give kind of the model more natively is really important.\n\nSpeaker 1 | 15:55 - 15:57\nAre there any of those path dependencies that you've had to undo?\n\nSpeaker 2 | 16:03 - 16:24\nProbably. I can't I can't speak enough about that at the anthropic level. I've only been here, like, a couple of months, but I have to imagine that that has been the case. I mean, we've experimented, like, even at other labs, like, the kind of, like, primitives that we have to take a look at are constantly changing. And you do kind of hit, like, a little local maxima and rethink, like, okay.\n\nSpeaker 2 | 16:24 - 16:26\nMaybe there's, like, a more generic approach that we do.\n\nSpeaker 1 | 16:26 - 16:38\nYeah. Interesting. I I wanna take a take a step back and and ask you something that maybe I should have asked at the beginning, which is, like, who who is Cloud Managed Agents for? Right? Like, I I set one up, earlier today.\n\nSpeaker 1 | 16:38 - 17:09\nWe we've got some people already using it in production inside of Every, and I just I just did one today. I really loved the, the sort of, like, getting started chat experience that you that you had and the sort of, some of the examples that you had. And it it felt to me like even if I was not technical, I might wanna use this to set up an agent. It it might be a little bit complicated, but what I actually did is I just and I'm sorry to say this, but I did it in the Codex in app browser. So I had Codex driving the the managed agent setup, and it like, I had a Slack bot working pretty pretty quickly.\n\nSpeaker 1 | 17:09 - 17:15\nIt was, like, it was really cool. So how do you think about when you're designing stuff when you're designing cloud managed agents who it's for?\n\nSpeaker 3 | 17:15 - 17:34\nYeah. So it's interesting because I think you're right that especially with that quick start experience, which we actually felt pretty strongly about launching, not specifically for the sake of making it so that nontechnical people could go and build agents, but actually just for anybody technical or not be able to wrap their head around the primitives like\n\nSpeaker 1 | 17:34 - 17:36\nHere's what it can do and here's how it fits together.\n\nSpeaker 3 | 17:36 - 17:56\nExactly. Like, you know, the the kind of education portion of it. But I think when we think about who it's for, we think about a couple different things. One is we're seeing people internally within companies build automation or build really powerful platforms or systems. Like we've seen people say, I want, you know, a full end to end software development platform.\n\nSpeaker 3 | 17:56 - 18:06\nRight? And like ManageEngine is a perfect solution for something like that. Or, you know, I want to automate a little process over here where, like, legal has to review my marketing copy. Right? And things like that.\n\nSpeaker 1 | 18:06 - 18:10\nAnd so you shouldn't have to reimplement memory and, like Exactly. All that stuff\n\nSpeaker 3 | 18:10 - 18:39\nevery time you're doing that. Right. You can get started really quickly, and you can get something running quickly. The other user that's top of mind for us is people building into their products that they expose to their customers. And so that's the other one where actually, yes, like you do still want a lot of customization, you do still wanna make something that's gonna be really powerful for your product, but we still, like, definitely definitely believe that not spending your engineering resources on the infrastructure and on all the little harness engineering tweaking sort of stuff is\n\nSpeaker 1 | 18:39 - 18:43\nWhy couldn't we have talked, like, a month ago? You would have saved so much time.\n\nSpeaker 3 | 18:46 - 18:47\nWe'll just\n\nSpeaker 2 | 18:47 - 18:47\nneed to talk more.\n\nSpeaker 1 | 18:47 - 19:01\nBut I am I am sort of curious. Okay. So maybe infrastructure is one of these things. But when you see people setting up agents, what do they what do you see them think the hard thing is, and what ends up actually being the hard thing? Are they the same?\n\nSpeaker 3 | 19:01 - 19:18\nGood question. I I maybe this is, I don't know, spicy. I'm not sure, but I think I think people think the harness engineering part is the hard part. Mhmm. And so, actually, like, you know, in the past, we launched the Aegion SDK, which is what you guys, I think, are using, on your Mac minis.\n\nSpeaker 3 | 19:18 - 19:28\nAnd for a lot of people, were like, okay. Great. I don't have to do the harness engineering part where I have to do prompt caching and I have to maximize my context window and all these sorts of things.\n\nSpeaker 1 | 19:28 - 19:32\nI think we're just actually using just Claude in bat, like the Claude dash p command.\n\nSpeaker 2 | 19:32 - 19:33\nOh, wow. Yeah. Okay.\n\nSpeaker 1 | 19:33 - 19:34\nIt's it's pretty good.\n\nSpeaker 3 | 19:34 - 19:34\nYes.\n\nSpeaker 1 | 19:34 - 19:34\nYeah.\n\nSpeaker 3 | 19:34 - 19:41\nCool. Nice. Okay. Cool. And but regardless, like, you guys did that because it takes off your hands building the harness.\n\nSpeaker 3 | 19:41 - 20:28\nRight? But I do think what we saw with a lot of customers was, okay, now I wanna go and take that thing and like get it into production and scale it, and everybody hits an infrastructure wall. Like everyone hits the same problem of like, oh wow, I either need to like keep a server constantly running or I need to use that will spin up and spin down and I need to store the transcript data and I need secure sandboxing and all these sorts of things. So, you know, and like if you boot a clogged code session or you boot the agent SDK in a sandbox and like that's the thing that you have running, but your sandbox loses connection and dies or whatever, your whole agent dies, right? And so I think the infrastructure part especially is the wall that most people end up hitting, but they're more expecting that actual harness engineering and like getting the most out of the model is the part that's gonna be harder.\n\nSpeaker 2 | 20:28 - 20:44\nYeah. I totally agree with that. I was just gonna say like, you know, we we talk to so many people who are now at a place where they're like prototyping really quickly and they're super excited and it's like it's doing the thing. And then yet there's like a class of people who are really pushing and being like, okay, I do want a hill climb. I really want to edit the hardest.\n\nSpeaker 2 | 20:44 - 20:59\nBut then once you have that thing, like productionizing is just a freaking nightmare, especially for the more interesting kind of long running async ones that you want to do a bit more remotely that are a bit more autonomous. And everyone kind of runs into that wall. It was a big inspiration for why we built what we built.\n\nSpeaker 1 | 20:59 - 21:51\nI feel like, one of the, like, examples of the shape of an agent is OpenClaw. And in particular, the the thing that it has brought to us internally is you have an always on agent in Slack that has its own personality and has its own, like, part of the world that it, like, ends up working on. Are you guys like, is is that a possible future for, like, okay, a one click agent that lives in my Slack that, yes, I can go set up all the internals, but, like, I don't have to really think about all of the, you know, the technical infrastructure stuff? Because I I think you you all have the the beginnings of that, but it's still, like, a lot of steps from the current managed agent to something that's always on in my Slack that I have to, like, set up and customize. So is that does that fall in the realm of platform's job, or is it, like, too far in the product direction?\n\nSpeaker 2 | 21:52 - 22:13\nNo. It it definitely is, something that we really want to do. I think, like, you know, we we focused a lot on kind of the infrastructure piece to start because that's where we just see a lot of these, like, pain points. But, yes, like, I think in like, it's, like, you know, I don't wanna say exactly say final shape, but in its, like, advanced shape, we actually want to make it so that you can kind of deploy these agents really, really easily. Like, we made, like, some light steps in this direction.\n\nSpeaker 2 | 22:13 - 22:16\nLike, for example, we included vaults as one of the primitives as just kind of\n\nSpeaker 1 | 22:17 - 22:20\nAnd vaults store your, like, keys and stuff, like your OAuth keys?\n\nSpeaker 3 | 22:20 - 22:21\nCredentials.\n\nSpeaker 2 | 22:21 - 22:50\nCredentials. Yeah. As, like, you know, kind of solving some of the lower level pieces as a starting point. But once you kind of wrap some of these more sort of like agent identity type of primitives in a more secure way and you can handle it really easily and it works with like the whole like system, then, you know, I think it's very natural for us to get to a place where maybe you are either one clicking, Slack integration or alternatively even maybe just telling, you know, Claude, like, add Slack, and it just, like, handles absolutely everything. And then before you know it, your little bot is just picking you on Slack.\n\nSpeaker 1 | 22:51 - 23:08\nI love it. I've I can't wait for that world. What are the best internal use cases of agents? Because I think there's this big question happening right now where, okay, yeah, everyone's in Codex or Cloud Code, but then now we have these agents that are out in the cloud. Now everyone inside of a company can, like, have their own agent.\n\nSpeaker 1 | 23:08 - 23:17\nThere are team agents. There are company wide agents. So what are the patterns that you see for when people make really useful internal agents, what they do and what they look like?\n\nSpeaker 3 | 23:17 - 23:38\nYeah. I would say we similar to and we've actually seen a few examples of these in some of the more, like, AI pilled, AGI pilled companies, like Stripe built Minions, and they talked about that a lot as their kind of like end to end development platform that their engineers could use. I think Ramp did something similar, and we've done similar things as well. Right? Interesting.\n\nSpeaker 3 | 23:38 - 23:53\nYeah. We've built kind of platforms internally that are you know, I have agents running that I can talk to you from Slack or from wherever. Right? And at a certain point, that becomes actually, like, a pretty thin layer on top of managed agents. Like, you don't have to do very much to accomplish\n\nSpeaker 1 | 23:54 - 24:07\nThat's what I was thinking. Like, I looked at minions or whatever ramp does, and I was like, it why why? You know? So is it is it actually useful to have a sort of, like, thin coding agent that anyone in the company can use or, like, why not just install the Clot app in Slack?\n\nSpeaker 3 | 24:08 - 24:23\nYeah. Would say the difference in a platform like that and some of the things that we've done internally is there's a lot of customization that you might wanna do on, you know, the development environment where an agent is actually running and able to verify its changes, right, and and things like that.\n\nSpeaker 1 | 24:23 - 24:25\nIt's like here's how our CICD works.\n\nSpeaker 3 | 24:25 - 24:35\nYeah. Exactly. And so, you know, I think for lots and lots and lots of people, like, Cloud Code is an excellent tool. Right? And and you can run Cloud Agents with Cloud Code and and that is really great.\n\nSpeaker 3 | 24:35 - 24:49\nBut I think if you're trying to do a little bit more end to end development, right, and you maybe wanna bake in more custom things, then you could start with something like managed agents and build a layer on top of that and end up with something that's maybe closer to that end to end experience.\n\nSpeaker 1 | 24:49 - 25:07\nIt also seems to me like there's something in particular about having a team that you need to work with that makes the manage agent shape important as opposed to it just all works in Cloud Code. Like, I guess, technically, you could, like, sync the skills between everyone's Cloud Code, but, like, there's something about just we all have one agent that does this thing that seems to work.\n\nSpeaker 2 | 25:07 - 25:39\nYeah. I'm really glad you brought that one up because I think like, that's actually like one of the more common areas where we see, a lot of the opportunity is that, to your point, you know, there's a lot of like individual productivity that's happening, whether you're a developer or non developer, there's like so many tools that you're using to just like make yourself like more automated, more, you know, high leverage. But then when get to the team layers, suddenly everything gets like massively more complex. Like number one, obviously, you can't like sit on your laptop. And yes, you could maybe like, you know, put it in the cloud, but it's again more for yourself to kind of like handle with your laptop closed.\n\nSpeaker 2 | 25:39 - 26:12\nBut then you go to like, okay, well now like the three of us want like, you know, a couple agents that interface with each other and work with each other. And then maybe we're automating a process kind of end to end. And especially for some of the more complex processes that you kind of envision being, like, really transformed with AI, you do need, like, you do need that kind of, like, team orientation. And that needs to happen at, like, a layer that's a slightly higher bit of abstraction than just a single agent. And I think some of the teams exploring, you know, kind of multi agent architectures and things like that are really exciting, but it needs to be built on top of a a little bit of, like, a platform that everyone kinda spin up and down and control.\n\nSpeaker 2 | 26:12 - 26:36\nAnd I think Jeev from Vercel, like, had a really good perspective on this in a way where I think his company, Vercel, is obviously incredibly, like, AI pills, and he kinda describes it as sort of like an AI, like, software factory, like, internally. And I think that's exactly with the right mindset and that, like, produces, you know, like, extremely high leverage organization that's really just, like, creating a tremendous amount of productivity, but not just for themselves, just, like, for every single process that they have in the company.\n\nSpeaker 1 | 26:36 - 26:46\nMhmm. And I I really wanna go back to this, like, okay, agent use cases. We've got coding agents that that anyone can use in the company. Like, what are the other ones that are that you see people standing up that are really useful?\n\nSpeaker 3 | 26:47 - 27:15\nWe've seen a few so one of the fun things that we get to do is just kind of work with our internal teams of different functions and, like, help them identify because we actually just get to learn a lot as a result of doing that. And so the silly example I brought up earlier of, like, legal team needs to review marketing copy was one of the ones that Very real. Yeah. Like, extremely real and, like, really, like, blew people's minds with, like, very basic agents that just give people the right setup to be able to do that. So you've seen that.\n\nSpeaker 1 | 27:15 - 27:24\nWell, what does that actually do? So it's like there there's marketing copy and there's a legal agent that is just like watching what everything marketing does and is like, stop. Like No. Yeah. How does it work?\n\nSpeaker 3 | 27:24 - 27:38\nIt is more like, okay. I'm a marketer and I've written some copy. Right? And in the past, maybe you would have opened a ticket or something and be like, can you please review this copy? But instead, you submit it to this, like, you know, little app that we built on top of agents that is like, okay.\n\nSpeaker 3 | 27:38 - 27:55\nCool. Now I'm gonna go as an agent review first and then put it in legal's inbox as a already first pass review was done. And maybe actually, like, the agent is it's clear enough that it can say, okay, marketing, you're Right? Or maybe it's still like, no. This needs, an extra human review.\n\nSpeaker 3 | 27:55 - 28:07\nAnd so yeah. It's just and that's the sort of thing where, again, just thin layer on top, but you can build the, you know, you have access, I have access, we can both see the outputs and we can work together on that.\n\nSpeaker 1 | 28:07 - 28:09\nOkay. But then, so for example, why is that not a skill?\n\nSpeaker 3 | 28:10 - 28:48\nSo it's a it can it very much can be a skill and that actually is you would probably build that agent as a legal reviewer agent, right? And so you would have MCP servers or whatever it is that help you access external context. You would have skills that help you understand here's like what rules we have to follow and not follow, right, and all those things. You put all those things together but then you can just fire off a session with that agent. And then I think the last piece you need, and this is where I'm saying it's a really thin layer, is just like the form factor on top where like different people can collaborate together and, like, work with that agent and multiple agents can be involved in the system.\n\nSpeaker 3 | 28:49 - 29:00\nAnd so I think it goes a little bit broader than a skill because you kinda still need, like, the right form factor for the agent to be able to go run and then for people to be able to interact with it.\n\nSpeaker 2 | 29:00 - 29:30\nAnother core bit of why it's, like, not a skill is because or not exclusively a skill is because you actually do need human in the loop. And so, like, if you were to automate the whole thing and you were just, you know, like taking the skill and looking at yourself from, like, legal skill, for example, like in that world, of course, you could have just, like, done a pure skill. But be if you need a human in the loop to be like, okay, like, I want to review and I do want to check and I want to like, we're looking at, like, legal things. And there's a bit of, like, you know, authentication that's sort of necessary. In order to automate that entire process, you kind of need, like, agents to go do the thing.\n\nSpeaker 2 | 29:30 - 29:37\nAnd so because you need to spin up sort of separate sessions for that to happen, some sort of stitching is necessary that can't be instantiated in a single skill.\n\nSpeaker 1 | 29:37 - 29:44\nThat's really interesting. Yeah. Okay. So just to push on that a little bit. So what is the best practice for you?\n\nSpeaker 1 | 29:44 - 30:06\nYou create an agent that its job is to make sure that when marketing is writing something, they can get it approved really quickly by legal. And sometimes it'll approve things immediately. Sometimes it sends stuff to legal. And ideally, it's like getting better all the time so it can do more and more, right? What is the best practice for who owns that agent once it's built?\n\nSpeaker 1 | 30:06 - 30:31\nBecause one of the things that we found is if you don't have a human who's responsible for the agent, it gets stale very quickly, and then it ends up being kind of this, like, dead thing that's all just, like, out there doing stuff, but it's not necessarily good. And also, even if it kinda works, there's all there are gonna be all these times where legal's like, you asked me to approve this, but I don't really need to approve this thing. Like, let's update your prompt. So, like, how does that all work when it works well?\n\nSpeaker 3 | 30:31 - 31:08\nSo it's actually really interesting because so the form factor thing, right, like the app that sits on top of that that we originally built, one of our teams worked on that, right, and like kinda sitting with these teams and understanding what they needed. And they were kinda like, okay, here you go and we're gonna go do other stuff now and like let us know how this goes for you. And then a really cool thing actually ended up happening where people on those teams who were using the tool were like, I wish like this little thing could get tweaked or this thing could get better. And they, like, popped open Cloud Code, like, made some of the changes themselves Yeah. To the actual and so it's funny.\n\nSpeaker 1 | 31:09 - 31:12\nYour team responsible for approving the PR? Does it just, like, go in?\n\nSpeaker 3 | 31:12 - 31:39\nUsually, my team's responsible for reviewing the PR if it's a system that we actually own. But But yeah, like people can kind of self serve making changes to those things, which I think is really cool. So it is, I do think we're still in a stage for a lot of teams and a lot of companies, like even going back to, you know, like Stripe has minions, right? Like Stripe has a large developer productivity team. We used work at Stripe, so we spend a lot time with them, but they have a large developer productivity team.\n\nSpeaker 3 | 31:39 - 32:01\nThey're awesome, and they're obviously putting a lot of work and energy into building platforms and tools like this. And so I think we're definitely still in a place where something like managed agents or being able to build on top of our platform is really powerful, but you still kind of need the AI pilled people and technical people within a business to then go create something really excellent on top of that that works well for whatever you're trying to do.\n\nSpeaker 1 | 32:01 - 32:30\nThat's interesting. Yeah. I I love the anyone can open a PR to to do this because everyone's using Cloud Code. One of the things that I find talking to people who are in infrastructure roles at companies where this is starting to happen is, like, you you know that you know the meme where it's, like, there's there's a person, and he's, like, going like this, and he has, like, daggers in his, like, back, and he's, like, cover it. It's like infrastructure people are that, but, like, now anyone can, like, can once can submit PRs.\n\nSpeaker 1 | 32:30 - 32:56\nYeah. How do you how do you deal with that, and how do you do that well? Because, obviously, like, in an ideal world, you would love for a legal to be able to submit to improve this agent. And, also, sometimes they're probably gonna submit stupid stuff that wastes time. And so what are the what are the right ways to either organizationally, like, culturally or technically, like, make that possible without ruining your your lives.\n\nSpeaker 2 | 32:56 - 33:43\nFor this particular one that we've constructed that Caitlin's given as an example, we actually have, like, a couple layers of abstraction away from, like, that kind of, like, PR layer. So at the very beginning, it kind of, like, started that way and to kind of, like, basically prevent users from kind of footgutting themselves a little bit, they kind of get to a place where oftentimes their way of interacting with the agent that they own, like that whether it's the marketing team who owns the marketing agent requesting, or if it's the legal team, you know, owning the agent that does the review. They actually engage with those agents through Claude itself. So they actually spend more of their time like kind of talking directly to Claude. And then Claude will oftentimes figure out what should be the right way for them to go and handle it so that they're not kind of like, you know, hopping straight down to the absolute core bit and doing something that may result in, you know, some complication.\n\nSpeaker 1 | 33:43 - 33:47\nAnd they're talking to Claude or Claude Code? Like, Claude Chat or Claude Code or co\n\nSpeaker 2 | 33:47 - 34:05\nworker It's different initiation of of Claude Okay. That we made that actually is a managed agent in and itself. Of So it's just kind like managed agents all the way Interesting. Down in that construct. But we found that each layer, if we kind of tune and and prompt each variant of the managed agent, it helps to solve, like, you know, different parts of the problem for users.\n\nSpeaker 2 | 34:05 - 34:24\nSo at the end state for, you know, like that marketing person or that legal person, it is like a really simple interface where the way that we tell them is like, you're just talking to Claude. But under the hood, it's many, many Claude's engaging with each other to get to the part where then they the Claude's themselves are doing the more complex work that the human doesn't really necessarily need to interpret.\n\nSpeaker 1 | 34:24 - 34:30\nInteresting. You guys just launched multi agent orchestration. What are the coolest what are the coolest things that people are doing with that?\n\nSpeaker 2 | 34:32 - 35:05\nOne of the more interesting ones is, like, I think people are using it to like construct sort of different harness techniques. And that one I'm personally very excited by, because like there's different techniques that people have experimented with where, you know, like for example, we recently did like the advisor strategy one. But really if you were to genericize it, you just separate like execution from advice. And there's also one where you can have like two, you know, modes where there are one is generating someone something and the other one's adversarial to it. And then there could also be sort of like, you know, you split it into a bunch of different like little tiny pieces and then they kind of recombine.\n\nSpeaker 2 | 35:06 - 35:23\nAnd then there's ones where maybe it's kind of something closer to, like, best of end kind of, like, style of thing. And then there's so many more. And, like, in each one of these different types of, like, architectures or strategies, they are good for very specific use cases. So some of them are much better for, like, deep research or wide research type of, style use cases. Right?\n\nSpeaker 2 | 35:23 - 35:50\nAnd there are others that are like, these are, like, the kind of ones where they all sort of swarm together are better for, bug hunting, for example. And so, like, that's, like, really cool to see that, like, if we can make the primitives very LEGO like, then people can put them together to solve things at a slightly higher form factor, which is more like an architecture or like a strategy. And they get much more, like, interesting results out of that. And that's, like, really exciting to see because it also suggests that you can actually hill climb at, multiple layers, of abstraction.\n\nSpeaker 1 | 35:50 - 35:54\nHow do you know if an agent is successful? How do you measure success for an agent?\n\nSpeaker 2 | 35:54 - 36:21\nYeah. I mean, there's, like, evals and stuff like that, which everyone has talked about, like, ad nauseam. One direction that we we really like is, like, this kind of verifiable outcome. We've been somewhat opinionated on that one and it's almost like in the absolute end state of, you know, we talked a little bit about what's a platform, the end of things. Going from that philosophy, it's like our kind of principle of like maybe the end state of some of these things is that everything should kind of compress down to an outcome and like a budget.\n\nSpeaker 2 | 36:21 - 36:40\nAnd that's probably like about it. And everything else should be figured out for you to kind of resolve exactly across those parameters. And so for us, we're kind of, yes, we still have evals. We have a lot of these other things that we measure, that are domain specific, like, you know, coding evals would be like, you might want to measure like just the actual PR getting merged. Those are more verifiable.\n\nSpeaker 2 | 36:40 - 36:51\nBut as we get to the place where, you know, like an outcome is actually a spec that you are just as a human able to define, and our ability to interpret that and regrade itself over and over is closer to what we care about.\n\nSpeaker 1 | 36:51 - 36:54\nClaude, make me a billion dollars. Your budget is $10.\n\nSpeaker 2 | 36:54 - 36:57\nExactly. And then say no mistakes. Go. Go. Exactly.\n\nSpeaker 1 | 36:58 - 36:58\nMaybe Mythos could\n\nSpeaker 3 | 36:58 - 36:59\ndo that. Yeah.\n\nSpeaker 2 | 37:01 - 37:01\nAnd\n\nSpeaker 1 | 37:03 - 37:50\nthen one of the things that we've been running into that I'm curious if you have a solution for is agents, like, get outdated pretty quickly, sometimes because there's no human attached to them, sometimes, like, they're just running an old model or there's an old or in an old architecture or whatever. And it feels like there needs to be a, end of life cycle for agents. Like, we've talked about having, like, a little, like, funeral for them and, like, having, like, a little page on our website that's, here's all the decommissioned agents and like, how do you manage especially in a in a a really big company, how do you manage the all of the agents that are, like, sort of out there, but and maybe they're, like, in Slack, like, pinging stuff once a week, but you're like, this is super stale. How do you make sure that, you you retire them as quickly as you are making them?\n\nSpeaker 3 | 37:50 - 38:37\nSo one of the things we have actually done is we have made skills that help you do things like upgrade to a new model when a new model comes out. Right? Like, we've actually put a good amount of work into making it easier to do exactly what you're talking about. And I think maybe some of the most like AGI pill people are like running agents that are monitoring their agents to see if their agents are like outdated and in need of that sort of stuff. But I think for the way that we like to talk to customers who ask us this question, I do think the most interesting instantiation of this is there's a new model, and now I need to go upgrade my agents or maybe be done with those agents because, you know, the new model enables me to build agents that are way more powerful and do more interesting things than the old agents did.\n\nSpeaker 3 | 38:37 - 39:09\nBut I think that upgrade process and that migration process is something people have had to wrap their heads around as like, it's like a breaking change and I have to put actual energy into making that work. And obviously, sorry to talk about evals, but if you have evals, this process is easier and things like this. But I do think that's one of the things we've tried to do is how do we give you skills and how do we give you the right just tools to make that process easier? And then you could go be AGI pilled and choose to actually automate more of that with more agents. Yeah.\n\nSpeaker 1 | 39:11 - 39:23\nSo a year from now, we're back at Code with Claude. Where do you think the platform will be? What will I be able to do, and how it will be different from what I can do today?\n\nSpeaker 2 | 39:24 - 39:25\nDo wanna go first?\n\nSpeaker 3 | 39:25 - 39:30\nYou can go first. A year is a long time. It's in this in this industry, especially.\n\nSpeaker 1 | 39:30 - 39:34\nHow close are we to Klut making me a billion dollars? Is that's really what I'm\n\nSpeaker 2 | 39:34 - 39:36\nasking? I think we're yes.\n\nSpeaker 3 | 39:36 - 39:36\nWe probably won't\n\nSpeaker 1 | 39:36 - 39:37\nbe sitting here.\n\nSpeaker 3 | 39:37 - 39:38\nYes. Yes. We will\n\nSpeaker 2 | 39:38 - 39:56\nbe asking Klut what this is. I mean, yeah, like, we wanna get closer and closer to that that state where I think we we kind of okay. So a couple of things. I think in a year from now, I mean, one thing that we'd love to get really, really close to is actually that kind of, like, simplicity. And this might be a significantly higher order of abstraction.\n\nSpeaker 2 | 39:56 - 40:14\nI don't know what the form factor will look like or whatever, but the kind of parameters we will care for from users will be that outcome. And of course, it has to be verifiable. There are some parameters that that have to be restrictive and and the budget. And I think like we'd want to experiment with with directions where cloud actually gets so good at understanding itself. It it figures out what model you should be using.\n\nSpeaker 2 | 40:14 - 40:27\nIt figures out how to spin up all the sub agents. I actually don't think you need to think so much about harness engineering in that world. Today, know, you don't have to think so much more aggressively about, like, tool construction, for example, that we've kind of made that a little easier and you get it to lead a little bit of that scaffolding.\n\nSpeaker 1 | 40:27 - 40:28\nLess prompt engineering too.\n\nSpeaker 2 | 40:28 - 40:45\nYeah. Exactly. Exactly. And I think if you just keep going up that stack, like, today, a lot of the innovation is happening at this kind of, like like like, really high level, almost like harness architecture like level, which is really fun. But I think a lot of that honestly also kind of goes away where you almost like don't have to think so much about like model selection.\n\nSpeaker 2 | 40:45 - 41:11\nYou don't have to think so much about what kind of architectures are there because we probably would have like, gone through enough iterations with Claude where Claude is actually able to understand itself enough, that it can almost, like, write itself on the fly to figure out what is necessary in that kind of, like, two parameter world of, like, outcome and budget. I don't know that we'll get there, like, in a year, but I feel like we might be able to do, like, the outcome part of that with, like, maybe, you know, some bars of some error bars on on the budget side.\n\nSpeaker 1 | 41:11 - 41:12\nReally cool.\n\nSpeaker 3 | 41:12 - 41:29\nYeah. Okay. That was really cool. I'm gonna give you a slightly more boring answer, which is in that world, if Claude is like on the fly, your agents on the fly are like becoming what they need to become in order for you to do what you're trying to do, the platform has to like seriously scale. That is.\n\nSpeaker 3 | 41:29 - 42:24\nAnd so I do think some of this will be what are the right abstractions that actually enable that, right, like somewhere on the primitive to higher order realm, right, but I do think so much of what our team is going to be doing is making sure that the tokens that people want to come in and out of Claude, are going to be able to come in and out of Claude because our system is scaled to meet not just the demand, but, like, in that world where it's just like you have agents that are like literally constantly running and recreating themselves and and doing this sort of work. You just need a system that, you know, can handle long running requests, can handle a bunch of differently shaped things. And so I think for us, it's gonna be I never want the ability of the platform itself to be able to scale to get in the way of what people would otherwise be able to accomplish with these things. And so I think that's something that's gonna probably be very front of mind when we're talking in a year.\n\nSpeaker 1 | 42:24 - 42:28\nAwesome. I'm excited. Thank you so much for joining. I really learned a lot.\n\nSpeaker 2 | 42:28 - 42:29\nThanks for having us.\n\nSpeaker 4 | 42:55 - 43:14\nEvery episode is a roller coaster of emotions, insights, and laughter that will leave you on the edge of your seat craving for more. It's not just a show. It's a journey into the future with Dan Shipper as the captain of the spaceship. So do yourself a favor. Hit like, smash subscribe, and strap in for the ride of your life.\n\nSpeaker 4 | 43:14 - 43:19\nAnd now without any further ado, let me just say, Dan, I'm absolutely, hopelessly in love\n\nSpeaker 1 | 43:19 - 43:19\nwith you."
+    }
+  ],
+  "blogs": [
+    {
+      "source": "blog",
+      "name": "Anthropic Engineering",
+      "title": "An update on recent Claude Code quality reports",
+      "url": "https://www.anthropic.com/engineering/april-23-postmortem",
+      "publishedAt": null,
+      "author": "",
+      "description": "",
+      "content": "Over the past month, we’ve been looking into reports that Claude’s responses have worsened for some users. We’ve traced these reports to three separate changes that affected Claude Code, the Claude Agent SDK, and Claude Cowork. The API was not impacted. All three issues have now been resolved as of April 20 (v2.1.116). In this post, we explain what we found, what we fixed, and what we’ll do differently to ensure similar issues are much less likely to happen again. We take reports about degradation very seriously. We never intentionally degrade our models, and we were able to immediately confirm that our API and inference layer were unaffected. After investigation, we identified three different issues: On March 4, we changed Claude Code&#x27;s default reasoning effort from high to medium to reduce the very long latency—enough to make the UI appear frozen—some users were seeing in high mode. This was the wrong tradeoff. We reverted this change on April 7 after users told us they&#x27;d prefer to default to higher intelligence and opt into lower effort for simple tasks. This impacted Sonnet 4.6 and Opus 4.6. On March 26, we shipped a change to clear Claude&#x27;s older thinking from sessions that had been idle for over an hour, to reduce latency when users resumed those sessions. A bug caused this to keep happening every turn for the rest of the session instead of just once, which made Claude seem forgetful and repetitive. We fixed it on April 10. This affected Sonnet 4.6 and Opus 4.6. On April 16, we added a system prompt instruction to reduce verbosity. In combination with other prompt changes, it hurt coding quality and was reverted on April 20. This impacted Sonnet 4.6, Opus 4.6, and Opus 4.7. Because each change affected a different slice of traffic on a different schedule, the aggregate effect looked like broad, inconsistent degradation. While we began investigating reports in early March, they were challenging to distinguish from normal variation in user feedback at first, and neither our internal usage nor evals initially reproduced the issues identified. This isn’t the experience users should expect from Claude Code. As of April 23, we’re resetting usage limits for all subscribers. A change to Claude Code&#x27;s default reasoning effort When we released Opus 4.6 in Claude Code in February, we set the default reasoning effort to high . Soon after, we received user feedback that Claude Opus 4.6 in high effort mode would occasionally think for too long, causing the UI to appear frozen and leading to disproportionate latency and token usage for those users. In general, the longer the model thinks, the better the output. Effort levels are how Claude Code lets users set that tradeoff—more thinking versus lower latency and fewer usage limit hits. As we calibrate effort levels for our models, we take this tradeoff into account in order to pick points along the test-time-compute curve that give people the best range of options. In the product layer, we then choose which point along this curve we set as our default, and that is the value we send to the Messages API as the effort parameter; we then make the other options available via /effort . In our internal evals and testing, medium effort achieved slightly lower intelligence with significantly less latency for the majority of tasks. It also didn’t suffer from the same issues with occasional very long tail latencies for thinking, and it helped maximize users’ usage limits. As a result, we rolled out a change making medium the default effort, and explained the rationale via in-product dialog. Soon after rolling out, users began reporting that Claude Code felt less intelligent. We shipped a number of design iterations to make the current effort setting clearer in order to alert people they could change the default (notices on startup, an inline effort selector, and bringing back ultrathink), but most users retained the medium effort default. After hearing feedback from more customers, we reversed this decision on April 7. All users now default to xhigh effort for Opus 4.7, and high effort for all other models. A caching optimization that dropped prior reasoning When Claude reasons through a task, that reasoning is normally kept in the conversation history so that on every subsequent turn, Claude can see why it made the edits and tool calls it did. On March 26, we shipped what was meant to be an efficiency improvement to this feature. We use prompt caching to make back-to-back API calls cheaper and faster for users. Claude writes the input tokens to the cache when it makes an API request, then after a period of inactivity the prompt is evicted from cache, making room for other prompts. Cache utilization is something we manage carefully (more on our approach ). The design should have been simple: if a session has been idle for more than an hour, we could reduce users’ cost of resuming that session by clearing old thinking sections. Since the request would be a cache miss anyway, we could prune unnecessary messages from the request to reduce the number of uncached tokens sent to the API. We’d then resume sending full reasoning history. To do this we used the clear_thinking_20251015 API header along with keep:1 . The implementation had a bug. Instead of clearing thinking history once, it cleared it on every turn for the rest of the session. After a session crossed the idle threshold once, each request for the rest of that process told the API to keep only the most recent block of reasoning and discard everything before it. This compounded: if you sent a follow-up message while Claude was in the middle of a tool use, that started a new turn under the broken flag, so even the reasoning from the current turn was dropped. Claude would continue executing, but increasingly without memory of why it had chosen to do what it was doing. This surfaced as the forgetfulness, repetition, and odd tool choices people reported. Because this would continuously drop thinking blocks from subsequent requests, those requests also resulted in cache misses. We believe this is what drove the separate reports of usage limits draining faster than expected. Two unrelated experiments made it challenging for us to reproduce the issue at first: an internal-only server-side experiment related to message queuing; and an orthogonal change in how we display thinking suppressed this bug in most CLI sessions, so we didn’t catch it even when testing external builds. This bug was at the intersection of Claude Code’s context management, the Anthropic API, and extended thinking. The changes it introduced made it past multiple human and automated code reviews, as well as unit tests, end-to-end tests, automated verification, and dogfooding. Combined with this only happening in a corner case (stale sessions) and the difficulty of reproducing the issue, it took us over a week to discover and confirm the root cause. As part of the investigation, we back-tested Code Review against the offending pull requests using Opus 4.7. When provided the code repositories necessary to gather complete context, Opus 4.7 found the bug, while Opus 4.6 didn&#x27;t. To prevent this from happening again, we are now landing support for additional repositories as context for code reviews. We fixed this bug on April 10 in v2.1.101. A system prompt change to reduce verbosity Our latest model, Claude Opus 4.7, has a notable behavioral quirk relative to its predecessor: as we wrote about at launch, it tends to be quite verbose. This makes it smarter on hard problems, but it also produces more output tokens. A few weeks before we released Opus 4.7, we started tuning Claude Code in preparation. Each model behaves slightly differently, and we spend time before each release optimizing the harness and product for it. We have a number of tools to reduce verbosity: model training, prompting, and improving thinking UX in the product. Ultimately we used all of these, but one addition to the system prompt caused an outsized effect on intelligence in Claude Code: “Length limits: keep text between tool calls to ≤25 words. Keep final responses to ≤100 words unless the task requires more detail.” After multiple weeks of internal testing and no regressions in the set of evaluations we ran, we felt confident about the change and shipped it alongside Opus 4.7 on April 16. As part of this investigation, we ran more ablations (removing lines from the system prompt to understand the impact of each line) using a broader set of evaluations. One of these evaluations showed a 3% drop for both Opus 4.6 and 4.7. We immediately reverted the prompt as part of the April 20 release. Going forward We are going to do several things differently to avoid these issues: we’ll ensure that a larger share of internal staff use the exact public build of Claude Code (as opposed to the version we use to test new features); and we&#x27;ll make improvements to our Code Review tool that we use internally, and ship this improved version to customers. We’re also adding tighter controls on system prompt changes. We will run a broad suite of per-model evals for every system prompt change to Claude Code, continuing ablations to understand the impact of each line, and we have built new tooling to make prompt changes easier to review and audit. We&#x27;ve additionally added guidance to our CLAUDE.md to ensure model-specific changes are gated to the specific model they&#x27;re targeting. For any change that could trade off against intelligence, we&#x27;ll add soak periods, a broader eval suite, and gradual rollouts so we catch issues earlier. We recently created @ClaudeDevs on X to give us the room to explain product decisions and the reasoning behind them in depth. We&#x27;ll share the same updates in centralized threads on GitHub. Finally, we’d like to thank our users: the people who used the /feedback command to share their issues with us (or who posted specific, reproducible examples online) are the ones who ultimately allowed us to identify and fix these problems. Today we are resetting usage limits for all subscribers. We’re immensely grateful for your feedback and for your patience."
+    },
+    {
+      "source": "blog",
+      "name": "Claude Blog",
+      "title": "New connectors in Claude for everyday life",
+      "url": "https://claude.com/blog/connectors-for-everyday-life",
+      "publishedAt": "Apr 23, 2026",
+      "author": "",
+      "description": "",
+      "content": "Today we’re expanding what you can connect to Claude. Alongside the work tools you already use, you can now connect the apps you use throughout your week, including AllTrails, Instacart, Audible, Tripadvisor, Intuit TurboTax, and more. How people have been using connectors Since launching in July 2025, the Claude directory has grown to over 200 connectors, spanning popular apps for design, finance, productivity, and health used by millions of people every day. We’ve found that people often connect multiple apps and use them together in a single conversation with Claude. For example, a product manager will pull a query from Amplitude, turn it into a Canva deck, and drop the link into Asana for the team, all without leaving the conversation. This expansion extends that functionality to more of the tools you use outside of work. Starting today, Claude connects to AllTrails, Audible, Booking.com, Instacart, Intuit Credit Karma, Intuit TurboTax, Resy, Spotify, StubHub, Taskrabbit, Thumbtack, Tripadvisor, Uber, Uber Eats, and Viator, with more on the way. Connectors dynamically show up in conversations We’ve also changed how connectors show up in conversations. Claude now suggests the right app for what you’re doing, like finding a reservation, adding to a grocery cart, or identifying a flight. It’s working from what you’ve told it: your preferences, your context, your conversation. This all happens inside your conversation. Ask Claude to recommend a weekend hike, and AllTrails will surface trails nearby that match your preferences. You can then refine the recommendations by asking for something shorter, more scenic, or dog-friendly without leaving the thread. When more than one connected app could help answer your question, Claude shows them all and lets you choose. You control what you see and share Claude is ad-free and will stay that way. There are no paid placements or sponsored answers in conversations with Claude. When two connectors could help, you see both, ranked by what’s most useful to you. Connecting a service gives Claude access to it on your behalf. Your data from that app isn’t used to train our models, and the app doesn’t see your other conversations with Claude. You can also disconnect it at any time. Claude suggests connectors and makes recommendations. But you stay in control of its actions: before it books or purchases something on your behalf, it’s designed to check with you first. Getting started The more apps you connect, the more Claude can do. Claude suggests relevant connectors as you work, which you can install with a click on desktop or a few taps on mobile. Once connected, the service is available in every conversation. Connectors are available on all plans, with mobile in beta. See the full list at claude.ai/directory/connectors . If you build a product that would be useful in Claude, submit it to our directory here . For more information on getting started with connectors, along with security and privacy best practices when connecting data sources to Claude, visit our Help Center ."
+    },
+    {
+      "source": "blog",
+      "name": "Claude Blog",
+      "title": "Built-in memory for Claude Managed Agents",
+      "url": "https://claude.com/blog/claude-managed-agents-memory",
+      "publishedAt": "Apr 23, 2026",
+      "author": "",
+      "description": "",
+      "content": "Memory on Claude Managed Agents is available today in public beta. Your agents can now learn from every session, using an intelligence-optimized memory layer that balances performance with flexibility. Because memories are stored as files, developers can export them, manage them via the API, and keep full control over what agents retain. Agents that learn across sessions Managed Agents pairs production infrastructure with a harness tuned for performance. Memory extends that: it’s optimized against internal benchmarks for long-running agents that improve across sessions and share what they&#x27;ve learned with each other. We&#x27;ve found that agents are most effective with memory when it builds on the tools they already use. Memory on Managed Agents mounts directly onto a filesystem, so Claude can rely on the same bash and code execution capabilities that make it effective at agentic tasks. With filesystem-based memory, our latest models save more comprehensive, well-organized memories and are more discerning about what to remember for a given task. Portable memories for production-grade agents Memory is built for enterprise deployments, with scoped permissions, audit logs, and full programmatic control. Stores can be shared across multiple agents with different access scopes. For example, an org-wide store might be read-only, while per-user stores allow reads and writes. Multiple agents can work concurrently against the same store without overwriting each other. Memories are files that can be exported and independently managed via the API, giving developers full control. All changes are tracked with a detailed audit log, so you can tell which agent and session a memory came from. You can roll back to an earlier version or redact content from history. Updates also surface in the Claude Console as session events, so developers can trace what an agent learned and where it came from. What teams are building Teams have been using memory to close feedback loops, speed up verification, and replace custom retrieval infrastructure: Netflix agents carry context across sessions, including insights that took multiple turns to uncover and corrections from a human mid-conversation, instead of manually updating prompts and skills. Rakuten&#x27;s task-based long-running agents use memory to learn from every session and avoid repeating past mistakes, cutting first-pass errors by 97%, all within workspace-scoped, observable boundaries. Wisedocs built their document verification pipeline on Managed Agents, using cross-session memory to spot and remember recurring document issues, speeding up verification by 30%. ‍ Ando is building their workplace messaging platform on Managed Agents, capturing how each organization interacts instead of building memory infrastructure themselves."
+    }
+  ],
+  "stats": {
+    "tweets": 47,
+    "builders": 16,
+    "podcasts": 2,
+    "blogs": 3,
+    "rawSnapshots": 2
+  }
+}
