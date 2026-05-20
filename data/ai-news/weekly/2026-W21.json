@@ -9,7 +9,7 @@
       "implication": "对输入法/AI 助手类产品来说，差距不在底层模型选哪家，而在‘上下文管线’——你能不能精准把用户上下文喂给模型，能不能让用户随时打断、修正。harness 才是产品壁垒。",
       "evidence": [
         { "type": "tweet", "who": "Peter Yang（Roblox PM）", "url": "https://x.com/petergyang/status/2056381822733595090", "quote": "把模型和 harness 当一个整体来想——每个产品表面都在用不同方式包同一个模型（Think about the model and harness together. The model and the harness are coupled.）" },
-        { "type": "tweet", "who": "Thariq（Anthropic Claude Code）", "url": "https://x.com/trq212/status/2056418157305454805", "quote": "让模型边干活边维护一个 implementation-notes.html，规格再细还是会有未知未知，HTML 给模型一个体面的‘出口’，又让你一直在状态里。" },
+        { "type": "tweet", "who": "Thariq（Anthropic Claude Code）", "url": "https://x.com/trq212/status/2056418157305454805", "quote": "让模型边干活边写一份 implementation-notes.html——因为需求规格写得再细，总会冒出没想到的情况，这时候 HTML 文档就是模型做决策的'出口'，同时也让你随时知道它干到哪了。" },
         { "type": "tweet", "who": "Thariq", "url": "https://x.com/trq212/status/2056432663125545082", "quote": "继续我的‘HTML 时代’——用 HTML 让你‘一直在长任务的圈子里’（staying in the loop with long running agents）。" }
       ]
     },
