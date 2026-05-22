@@ -319,6 +319,25 @@
   .tab-content { display: none; }
   .tab-content.active { display: block; }
 
+  /* ===== GITHUB TAB ===== */
+  .gh-controls { display:flex; gap:8px; margin-bottom:20px; flex-wrap:wrap; }
+  .gh-filter-btn { font-size:13px; padding:6px 14px; border-radius:999px; background:var(--white); border:1px solid var(--border); color:var(--text2); cursor:pointer; font-family:inherit; transition:all .2s; }
+  .gh-filter-btn:hover { color:var(--black); background:var(--accent-soft); }
+  .gh-filter-btn.active { background:var(--black); color:var(--white); border-color:var(--black); }
+  .gh-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); gap:16px; }
+  .gh-card { background:var(--white); border:1px solid var(--border); border-radius:12px; padding:20px; transition:box-shadow .2s, transform .2s; }
+  .gh-card:hover { box-shadow:0 4px 16px rgba(0,0,0,0.06); transform:translateY(-2px); }
+  .gh-card-head { display:flex; align-items:center; gap:8px; margin-bottom:10px; }
+  .gh-card-avatar { width:24px; height:24px; border-radius:50%; }
+  .gh-card-repo { font-weight:700; font-size:15px; color:var(--black); text-decoration:none; }
+  .gh-card-repo:hover { color:#0969da; }
+  .gh-card-desc { font-size:13px; color:var(--text2); line-height:1.5; margin-bottom:12px; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+  .gh-card-meta { display:flex; gap:14px; font-size:12px; color:var(--text2); align-items:center; flex-wrap:wrap; }
+  .gh-card-meta span { display:flex; align-items:center; gap:4px; }
+  .gh-lang-dot { width:10px; height:10px; border-radius:50%; display:inline-block; }
+  .gh-card-stars { color:#e3b341; }
+  .gh-card-topic { font-size:11px; padding:2px 8px; border-radius:999px; background:var(--accent-soft); color:var(--text2); border:1px solid var(--border); }
+
   /* ===== NEWS PAGE (AI 资讯) ===== */
   .news-header { margin-bottom: 40px; }
   .news-title-row { display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-bottom:8px; }
@@ -2318,6 +2337,7 @@ function renderContent(data) {
       <button class="tab-btn active" onclick="switchTab('insights', this)">设计洞察</button>
       <button class="tab-btn" onclick="switchTab('demands', this)">需求挖掘</button>
       <button class="tab-btn" onclick="switchTab('news', this)">热点资讯</button>
+      <button class="tab-btn" onclick="switchTab('github', this)">GitHub</button>
     </div>
   `;
 
@@ -2482,6 +2502,11 @@ function renderContent(data) {
   });
   html += `</div></div></div>`;
 
+  // ===== TAB: GITHUB =====
+  html += `<div class="tab-content" id="tab-github"><div class="section fade-in">`;
+  html += `<div id="github-trending-container"><div class="loading"><div class="spinner"></div><p>正在加载 GitHub Trending...</p></div></div>`;
+  html += `</div></div>`;
+
   app.innerHTML = html;
 
   // Preload ALL podcast segments so playback starts instantly on click
@@ -2573,6 +2598,9 @@ function switchTab(tabId, btn) {
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('tab-' + tabId).classList.add('active');
   btn.classList.add('active');
+  if (tabId === 'github' && !window._ghLoaded) {
+    loadGitHubTrending();
+  }
 }
 
 function switchToNewsTab() {
@@ -5449,6 +5477,104 @@ function updateInlineBlogIcon(playing) {
 
 function updateInlineProgress() {
   // No longer needed — no separate progress bar
+}
+
+// ===== GITHUB TRENDING =====
+var ghTrendingCache = {};
+var ghCurrentPeriod = 'daily';
+
+var GH_LANG_COLORS = {
+  'Python':'#3572A5','JavaScript':'#f1e05a','TypeScript':'#3178c6','Rust':'#dea584',
+  'Go':'#00ADD8','Java':'#b07219','C++':'#f34b7d','C':'#555555','Swift':'#F05138',
+  'Kotlin':'#A97BFF','Ruby':'#701516','PHP':'#4F5D95','Shell':'#89e051','Dart':'#00B4AB',
+  'Jupyter Notebook':'#DA5B0B','HTML':'#e34c26','CSS':'#563d7c','Vue':'#41b883','Svelte':'#ff3e00',
+  'Zig':'#ec915c','Elixir':'#6e4a7e','Lua':'#000080','Scala':'#c22d40','Haskell':'#5e5086'
+};
+
+async function loadGitHubTrending(period) {
+  period = period || ghCurrentPeriod;
+  ghCurrentPeriod = period;
+  var container = document.getElementById('github-trending-container');
+  if (!container) return;
+
+  // 如果有缓存直接渲染
+  if (ghTrendingCache[period]) {
+    renderGitHubTrending(ghTrendingCache[period], period);
+    return;
+  }
+
+  container.innerHTML = '<div class="loading"><div class="spinner"></div><p>正在加载 GitHub Trending...</p></div>';
+
+  try {
+    // 使用 GitHub Search API: 按 stars 排序 + 最近创建/推送
+    var dateOffset = period === 'weekly' ? 7 : period === 'monthly' ? 30 : 1;
+    var since = new Date(Date.now() - dateOffset * 86400000).toISOString().slice(0,10);
+    var url = 'https://api.github.com/search/repositories?q=pushed:>' + since + '+stars:>50&sort=stars&order=desc&per_page=30';
+    var resp = await fetch(url, { headers: { 'Accept': 'application/vnd.github.v3+json' } });
+    if (!resp.ok) throw new Error('GitHub API ' + resp.status);
+    var data = await resp.json();
+    var repos = (data.items || []).map(function(r) {
+      return {
+        name: r.full_name,
+        description: r.description || '暂无描述',
+        url: r.html_url,
+        stars: r.stargazers_count,
+        forks: r.forks_count,
+        language: r.language,
+        avatar: r.owner.avatar_url,
+        topics: (r.topics || []).slice(0,3),
+        todayStars: r.stargazers_count // API doesn't give daily delta, use total
+      };
+    });
+    ghTrendingCache[period] = repos;
+    window._ghLoaded = true;
+    renderGitHubTrending(repos, period);
+  } catch(e) {
+    container.innerHTML = '<div style="color:#888;text-align:center;padding:40px;">加载失败：' + e.message + '<br><br><a href="https://github.com/trending" target="_blank" style="color:#0969da;">直接访问 GitHub Trending →</a></div>';
+  }
+}
+
+function renderGitHubTrending(repos, period) {
+  var container = document.getElementById('github-trending-container');
+  if (!container) return;
+  var html = '';
+
+  // Controls
+  html += '<div class="gh-controls">';
+  ['daily','weekly','monthly'].forEach(function(p) {
+    var label = p === 'daily' ? '今日' : p === 'weekly' ? '本周' : '本月';
+    var cls = p === period ? ' active' : '';
+    html += '<button class="gh-filter-btn' + cls + '" onclick="loadGitHubTrending(\'' + p + '\')">' + label + '</button>';
+  });
+  html += '<a href="https://github.com/trending" target="_blank" class="gh-filter-btn" style="text-decoration:none;">GitHub Trending ↗</a>';
+  html += '</div>';
+
+  // Grid
+  html += '<div class="gh-grid">';
+  repos.forEach(function(r) {
+    var langColor = GH_LANG_COLORS[r.language] || '#888';
+    var langHtml = r.language ? '<span><span class="gh-lang-dot" style="background:' + langColor + '"></span>' + r.language + '</span>' : '';
+    var topicsHtml = r.topics.map(function(t) { return '<span class="gh-card-topic">' + t + '</span>'; }).join(' ');
+    var starsFormatted = r.stars >= 1000 ? (r.stars / 1000).toFixed(1) + 'k' : r.stars;
+    var forksFormatted = r.forks >= 1000 ? (r.forks / 1000).toFixed(1) + 'k' : r.forks;
+
+    html += '<div class="gh-card">';
+    html += '<div class="gh-card-head">';
+    html += '<img class="gh-card-avatar" src="' + r.avatar + '" alt="" loading="lazy">';
+    html += '<a class="gh-card-repo" href="' + r.url + '" target="_blank">' + r.name + '</a>';
+    html += '</div>';
+    html += '<div class="gh-card-desc">' + escapeHtml(r.description) + '</div>';
+    if (topicsHtml) html += '<div style="margin-bottom:10px;display:flex;gap:4px;flex-wrap:wrap;">' + topicsHtml + '</div>';
+    html += '<div class="gh-card-meta">';
+    html += langHtml;
+    html += '<span class="gh-card-stars">★ ' + starsFormatted + '</span>';
+    html += '<span>🍴 ' + forksFormatted + '</span>';
+    html += '</div>';
+    html += '</div>';
+  });
+  html += '</div>';
+
+  container.innerHTML = html;
 }
 
 </script>
