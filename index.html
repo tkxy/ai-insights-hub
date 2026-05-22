@@ -1798,6 +1798,7 @@
       <button class="nav-link" data-page="knowledge" onclick="switchPage('knowledge')">FAN</button>
       <button class="nav-link" data-page="rival" onclick="switchPage('rival')">竞品跟踪</button>
       <button class="nav-link" data-page="news" onclick="switchPage('news')">AI资讯</button>
+      <button class="nav-link" data-page="github" onclick="switchPage('github')">GitHub</button>
     </nav>
     <button id="voicePlayButton" class="voice-btn" type="button" aria-label="播放资讯" title="播放资讯" style="display:none;">
       <span class="voice-btn-icon">▶</span>
@@ -1890,6 +1891,10 @@
 <div class="main" id="news-page" style="display:none; max-width:1400px; margin:0 auto; padding:40px 48px 60px;">
   <div id="news-loading" style="text-align:center;padding:60px 0;color:#888;">正在加载本周AI资讯...</div>
   <div id="news-content" style="display:none;"></div>
+</div>
+
+<div class="main" id="github-page" style="display:none; max-width:1400px; margin:0 auto; padding:40px 48px 60px;">
+  <div id="github-trending-container"><div style="text-align:center;padding:60px 0;color:#888;">正在加载 GitHub Trending...</div></div>
 </div>
 
 <!-- Blog Page: Audio Podcast Player -->
@@ -2337,7 +2342,6 @@ function renderContent(data) {
       <button class="tab-btn active" onclick="switchTab('insights', this)">设计洞察</button>
       <button class="tab-btn" onclick="switchTab('demands', this)">需求挖掘</button>
       <button class="tab-btn" onclick="switchTab('news', this)">热点资讯</button>
-      <button class="tab-btn" onclick="switchTab('github', this)">GitHub</button>
     </div>
   `;
 
@@ -2502,11 +2506,6 @@ function renderContent(data) {
   });
   html += `</div></div></div>`;
 
-  // ===== TAB: GITHUB =====
-  html += `<div class="tab-content" id="tab-github"><div class="section fade-in">`;
-  html += `<div id="github-trending-container"><div class="loading"><div class="spinner"></div><p>正在加载 GitHub Trending...</p></div></div>`;
-  html += `</div></div>`;
-
   app.innerHTML = html;
 
   // Preload ALL podcast segments so playback starts instantly on click
@@ -2598,9 +2597,6 @@ function switchTab(tabId, btn) {
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('tab-' + tabId).classList.add('active');
   btn.classList.add('active');
-  if (tabId === 'github' && !window._ghLoaded) {
-    loadGitHubTrending();
-  }
 }
 
 function switchToNewsTab() {
@@ -3752,6 +3748,7 @@ function switchPage(id) {
   var knowledgePage = document.getElementById('knowledge-page');
   var rivalPage = document.getElementById('rival-page');
   var newsPage = document.getElementById('news-page');
+  var githubPage = document.getElementById('github-page');
   var dayNav = document.getElementById('day-nav');
   var monthNav = document.getElementById('month-nav');
   var btns = document.querySelectorAll('.nav-link');
@@ -3763,6 +3760,7 @@ function switchPage(id) {
   knowledgePage.style.display = id === 'knowledge' ? 'block' : 'none';
   rivalPage.style.display = id === 'rival' ? 'block' : 'none';
   newsPage.style.display = id === 'news' ? 'block' : 'none';
+  githubPage.style.display = id === 'github' ? 'block' : 'none';
   dayNav.style.display = id === 'insight' ? 'flex' : 'none';
   monthNav.style.display = id === 'map' ? 'flex' : 'none';
   var newsWeekNav = document.getElementById('news-week-nav');
@@ -3776,6 +3774,9 @@ function switchPage(id) {
   }
   if (id === 'news') {
     loadAndRenderNewsPage();
+  }
+  if (id === 'github' && !window._ghLoaded) {
+    loadGitHubTrending();
   }
   if (id !== 'insight') {
     stopVoicePlayback(false);
@@ -3792,13 +3793,14 @@ function switchPage(id) {
 
   window.scrollTo(0, 0);
 }
-if (window.location.hash === '#map' || window.location.hash === '#design' || window.location.hash === '#knowledge' || window.location.hash === '#rival' || window.location.hash === '#news') {
+if (window.location.hash === '#map' || window.location.hash === '#design' || window.location.hash === '#knowledge' || window.location.hash === '#rival' || window.location.hash === '#news' || window.location.hash === '#github') {
   document.addEventListener('DOMContentLoaded', function() {
     var h = window.location.hash;
     var pageId = h === '#design' ? 'design'
       : h === '#knowledge' ? 'knowledge'
       : h === '#rival' ? 'rival'
       : h === '#news' ? 'news'
+      : h === '#github' ? 'github'
       : 'map';
     switchPage(pageId);
   });
