@@ -332,6 +332,9 @@
   .gh-card-repo { font-weight:700; font-size:15px; color:var(--black); text-decoration:none; }
   .gh-card-repo:hover { color:#0969da; }
   .gh-card-desc { font-size:13px; color:var(--text2); line-height:1.5; margin-bottom:12px; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+  .gh-card-cn { display:flex; gap:8px; margin-bottom:8px; align-items:baseline; }
+  .gh-cn-label { font-size:11px; font-weight:700; color:var(--white); background:var(--black); padding:2px 8px; border-radius:4px; white-space:nowrap; flex-shrink:0; }
+  .gh-cn-text { font-size:13px; color:var(--text); line-height:1.4; }
   .gh-card-meta { display:flex; gap:14px; font-size:12px; color:var(--text2); align-items:center; flex-wrap:wrap; }
   .gh-card-meta span { display:flex; align-items:center; gap:4px; }
   .gh-lang-dot { width:10px; height:10px; border-radius:50%; display:inline-block; }
@@ -5493,6 +5496,62 @@ var GH_LANG_COLORS = {
   'Zig':'#ec915c','Elixir':'#6e4a7e','Lua':'#000080','Scala':'#c22d40','Haskell':'#5e5086'
 };
 
+// 基于 description/topics/language 生成中文功能和应用描述
+function getChineseInfo(repo) {
+  var desc = (repo.description || '').toLowerCase();
+  var topics = (repo.topics || []).join(' ').toLowerCase();
+  var all = desc + ' ' + topics + ' ' + (repo.name || '').toLowerCase();
+
+  // 关键词→功能/应用映射
+  var rules = [
+    { kw: ['llm','large language','chatbot','gpt','claude','gemini','ollama'], func: 'AI 大语言模型相关工具', usage: '智能对话、文本生成、AI 应用开发' },
+    { kw: ['agent','agentic','autonomous'], func: 'AI Agent / 智能体框架', usage: '自动化任务执行、多步骤推理、工作流编排' },
+    { kw: ['rag','retrieval','vector','embedding','knowledge'], func: '知识检索与增强生成', usage: '企业知识库问答、文档智能搜索、AI 辅助研究' },
+    { kw: ['code','coding','ide','editor','copilot','developer tool'], func: 'AI 编程辅助工具', usage: '代码生成、代码审查、开发效率提升' },
+    { kw: ['image','diffusion','stable','midjourney','comfyui','flux'], func: 'AI 图像生成/处理', usage: '图片创作、设计辅助、视觉内容生产' },
+    { kw: ['video','sora','animation'], func: 'AI 视频生成/处理', usage: '短视频制作、动画生成、视频编辑' },
+    { kw: ['voice','tts','speech','audio','whisper','music'], func: 'AI 语音/音频处理', usage: '语音合成、语音识别、音频创作' },
+    { kw: ['3d','mesh','nerf','gaussian','point cloud'], func: '3D 生成与渲染', usage: '3D 建模、场景重建、游戏/影视制作' },
+    { kw: ['robot','robotics','ros','hardware'], func: '机器人与硬件控制', usage: '机器人开发、物联网、自动化控制' },
+    { kw: ['web','frontend','react','vue','next','nuxt','svelte'], func: '前端开发框架/工具', usage: 'Web 应用开发、UI 构建、前端工程化' },
+    { kw: ['backend','api','server','fastapi','express','microservice'], func: '后端服务/API 框架', usage: '服务端开发、API 设计、微服务架构' },
+    { kw: ['database','sql','postgres','redis','mongo','supabase'], func: '数据库与数据存储', usage: '数据管理、缓存优化、数据持久化' },
+    { kw: ['ml','machine learning','training','fine-tune','model'], func: '机器学习训练/推理', usage: '模型训练、微调、ML 工程化' },
+    { kw: ['security','auth','encrypt','vulnerability','pentest'], func: '安全与认证工具', usage: '网络安全、身份验证、漏洞检测' },
+    { kw: ['cli','terminal','command','shell','dotfile'], func: '命令行工具', usage: '终端效率提升、系统管理、开发者体验' },
+    { kw: ['ui','design','component','tailwind','css','style'], func: 'UI 组件/设计系统', usage: '界面设计、组件复用、设计规范落地' },
+    { kw: ['deploy','docker','kubernetes','k8s','cloud','infra','ci/cd'], func: '部署与基础设施', usage: '应用部署、容器编排、DevOps 流程' },
+    { kw: ['data','analytics','visualization','dashboard','chart'], func: '数据分析与可视化', usage: '数据洞察、报表制作、业务监控' },
+    { kw: ['mobile','ios','android','flutter','react native','swift'], func: '移动端开发', usage: 'App 开发、跨平台应用、移动端体验' },
+    { kw: ['game','unity','unreal','engine'], func: '游戏开发', usage: '游戏引擎、游戏工具、交互体验' },
+    { kw: ['scraper','crawl','spider','automation','playwright','selenium'], func: '爬虫与自动化', usage: '数据采集、浏览器自动化、RPA' },
+    { kw: ['blockchain','web3','crypto','defi','smart contract'], func: '区块链/Web3 工具', usage: '去中心化应用、智能合约、加密资产' },
+    { kw: ['mcp','tool','plugin','extension','integration'], func: '工具集成/插件系统', usage: '能力扩展、工具链接、系统集成' },
+    { kw: ['prompt','template','workflow'], func: 'Prompt 工程/工作流', usage: 'AI 提示词优化、流程自动化' },
+    { kw: ['open source','awesome','list','curated','collection'], func: '开源资源汇总', usage: '技术选型参考、学习资源、社区精选' },
+  ];
+
+  for (var i = 0; i < rules.length; i++) {
+    for (var j = 0; j < rules[i].kw.length; j++) {
+      if (all.indexOf(rules[i].kw[j]) !== -1) {
+        return { func: rules[i].func, usage: rules[i].usage };
+      }
+    }
+  }
+
+  // 按语言兜底
+  var langMap = {
+    'Python': { func: 'Python 开源项目', usage: '数据处理、AI/ML、后端开发、自动化脚本' },
+    'TypeScript': { func: 'TypeScript 开源项目', usage: 'Web 全栈开发、工具链构建' },
+    'JavaScript': { func: 'JavaScript 开源项目', usage: '前端开发、Node.js 应用、全栈工具' },
+    'Rust': { func: 'Rust 高性能工具', usage: '系统编程、高性能服务、CLI 工具' },
+    'Go': { func: 'Go 开源项目', usage: '云原生服务、网络工具、高并发系统' },
+  };
+  if (repo.language && langMap[repo.language]) return langMap[repo.language];
+
+  return { func: '开源工具项目', usage: '开发效率提升、技术探索' };
+}
+
 async function loadGitHubTrending(period) {
   period = period || ghCurrentPeriod;
   ghCurrentPeriod = period;
@@ -5541,10 +5600,14 @@ function renderGitHubTrending(repos, period) {
   if (!container) return;
   var html = '';
 
+  // 页面标题
+  html += '<div style="margin-bottom:24px;"><h2 style="font-size:28px;font-weight:800;margin:0 0 6px;">GitHub 热门项目</h2>';
+  html += '<p style="color:var(--text2);font-size:14px;margin:0;">最新最热的开源项目，含功能说明与应用场景</p></div>';
+
   // Controls
   html += '<div class="gh-controls">';
   ['daily','weekly','monthly'].forEach(function(p) {
-    var label = p === 'daily' ? '今日' : p === 'weekly' ? '本周' : '本月';
+    var label = p === 'daily' ? '今日热门' : p === 'weekly' ? '本周热门' : '本月热门';
     var cls = p === period ? ' active' : '';
     html += '<button class="gh-filter-btn' + cls + '" onclick="loadGitHubTrending(\'' + p + '\')">' + label + '</button>';
   });
@@ -5560,12 +5623,16 @@ function renderGitHubTrending(repos, period) {
     var starsFormatted = r.stars >= 1000 ? (r.stars / 1000).toFixed(1) + 'k' : r.stars;
     var forksFormatted = r.forks >= 1000 ? (r.forks / 1000).toFixed(1) + 'k' : r.forks;
 
+    // 生成中文功能描述和应用场景
+    var cnInfo = getChineseInfo(r);
+
     html += '<div class="gh-card">';
     html += '<div class="gh-card-head">';
     html += '<img class="gh-card-avatar" src="' + r.avatar + '" alt="" loading="lazy">';
     html += '<a class="gh-card-repo" href="' + r.url + '" target="_blank">' + r.name + '</a>';
     html += '</div>';
-    html += '<div class="gh-card-desc">' + escapeHtml(r.description) + '</div>';
+    html += '<div class="gh-card-cn"><div class="gh-cn-label">功能</div><div class="gh-cn-text">' + cnInfo.func + '</div></div>';
+    html += '<div class="gh-card-cn"><div class="gh-cn-label">应用</div><div class="gh-cn-text">' + cnInfo.usage + '</div></div>';
     if (topicsHtml) html += '<div style="margin-bottom:10px;display:flex;gap:4px;flex-wrap:wrap;">' + topicsHtml + '</div>';
     html += '<div class="gh-card-meta">';
     html += langHtml;
