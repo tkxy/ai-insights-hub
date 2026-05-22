@@ -2355,9 +2355,14 @@ function renderContent(data) {
     // Source links
     let sourceLinksHtml = '';
     if (ins.source_urls && ins.source_urls.length > 0) {
-      sourceLinksHtml = ins.source_urls.slice(0, 3).map(s =>
-        `<a class="source-link" href="${s.url}" target="_blank">${s.name}<span class="source-link-icon">→</span></a>`
-      ).join('');
+      sourceLinksHtml = ins.source_urls.slice(0, 3).map((s, idx) => {
+        // 支持字符串数组和对象数组两种格式
+        if (typeof s === 'string') {
+          const label = (ins.sources && ins.sources[idx]) ? ins.sources[idx] : new URL(s).hostname.replace('www.','');
+          return `<a class="source-link" href="${s}" target="_blank">${label}<span class="source-link-icon">→</span></a>`;
+        }
+        return `<a class="source-link" href="${s.url}" target="_blank">${s.name || '来源'}<span class="source-link-icon">→</span></a>`;
+      }).join('');
     } else if (ins.sources && ins.sources.length > 0) {
       sourceLinksHtml = ins.sources.slice(0, 3).map(s =>
         `<span class="source-link" style="cursor:default">${s}</span>`
@@ -2381,8 +2386,8 @@ function renderContent(data) {
       .map(s => s.trim())
       .filter(s => s.length > 4);
 
-    // implication → split on (1)(2)(3) pattern into individual items
-    const implItems = (ins.implication || '')
+    // implication → split on (1)(2)(3) pattern into individual items; fallback: split on sentences
+    let implItems = (ins.implication || '')
       .split(/(?=\(\d+\))/)
       .map(s => s.trim())
       .filter(s => s.length > 5 && /\(\d+\)/.test(s))
@@ -2390,6 +2395,10 @@ function renderContent(data) {
         const m = s.match(/^\((\d+)\)\s*([\s\S]+)$/);
         return m ? { num: m[1], text: m[2].trim() } : { num: '', text: s };
       });
+    // 如果没有(1)(2)(3)格式，按句号拆成条目
+    if (implItems.length === 0 && ins.implication) {
+      implItems = ins.implication.split(/(?<=[。！？])\s*/).map(s => s.trim()).filter(s => s.length > 5).map(s => ({ num: '', text: s }));
+    }
 
     html += `
       <div class="insight-card urgency-${urgencyClass}">
