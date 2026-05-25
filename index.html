@@ -319,27 +319,32 @@
   .tab-content { display: none; }
   .tab-content.active { display: block; }
 
-  /* ===== GITHUB TAB ===== */
-  .gh-controls { display:flex; gap:8px; margin-bottom:20px; flex-wrap:wrap; }
-  .gh-filter-btn { font-size:13px; padding:6px 14px; border-radius:999px; background:var(--white); border:1px solid var(--border); color:var(--text2); cursor:pointer; font-family:inherit; transition:all .2s; }
-  .gh-filter-btn:hover { color:var(--black); background:var(--accent-soft); }
-  .gh-filter-btn.active { background:var(--black); color:var(--white); border-color:var(--black); }
-  .gh-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); gap:16px; }
-  .gh-card { background:var(--white); border:1px solid var(--border); border-radius:12px; padding:20px; transition:box-shadow .2s, transform .2s; }
-  .gh-card:hover { box-shadow:0 4px 16px rgba(0,0,0,0.06); transform:translateY(-2px); }
-  .gh-card-head { display:flex; align-items:center; gap:8px; margin-bottom:10px; }
-  .gh-card-avatar { width:24px; height:24px; border-radius:50%; }
-  .gh-card-repo { font-weight:700; font-size:15px; color:var(--black); text-decoration:none; }
-  .gh-card-repo:hover { color:#0969da; }
-  .gh-card-desc { font-size:13px; color:var(--text2); line-height:1.5; margin-bottom:12px; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
-  .gh-card-cn { display:flex; gap:8px; margin-bottom:8px; align-items:baseline; }
-  .gh-cn-label { font-size:11px; font-weight:700; color:var(--white); background:var(--black); padding:2px 8px; border-radius:4px; white-space:nowrap; flex-shrink:0; }
-  .gh-cn-text { font-size:13px; color:var(--text); line-height:1.4; }
-  .gh-card-meta { display:flex; gap:14px; font-size:12px; color:var(--text2); align-items:center; flex-wrap:wrap; }
-  .gh-card-meta span { display:flex; align-items:center; gap:4px; }
-  .gh-lang-dot { width:10px; height:10px; border-radius:50%; display:inline-block; }
-  .gh-card-stars { color:#e3b341; }
-  .gh-card-topic { font-size:11px; padding:2px 8px; border-radius:999px; background:var(--accent-soft); color:var(--text2); border:1px solid var(--border); }
+  /* ===== GITHUB PICKS ===== */
+  .ghp-header { margin-bottom:32px; }
+  .ghp-title { font-family:'DM Sans',sans-serif; font-size:36px; font-weight:800; letter-spacing:-1px; margin:0 0 8px; color:var(--black); }
+  .ghp-subtitle { font-size:15px; color:var(--text2); margin:0; line-height:1.5; }
+  .ghp-nav { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:36px; padding-bottom:20px; border-bottom:1px solid var(--border); }
+  .ghp-nav-item { font-size:13px; font-weight:600; padding:6px 14px; border-radius:999px; background:var(--white); border:1px solid var(--border); color:var(--text2); text-decoration:none; transition:all .2s; }
+  .ghp-nav-item:hover { color:var(--black); background:var(--accent-soft); border-color:var(--black); }
+  .ghp-section { margin-bottom:48px; }
+  .ghp-section-head { margin-bottom:20px; }
+  .ghp-section-title { font-size:22px; font-weight:700; margin:0 0 6px; color:var(--black); }
+  .ghp-section-desc { font-size:14px; color:var(--text2); margin:0; line-height:1.5; }
+  .ghp-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(360px, 1fr)); gap:16px; }
+  .ghp-card { background:var(--white); border:1px solid var(--border); border-radius:14px; padding:22px; transition:box-shadow .2s, transform .2s; position:relative; }
+  .ghp-card:hover { box-shadow:0 6px 20px rgba(0,0,0,0.06); transform:translateY(-2px); }
+  .ghp-card.ghp-pick { border-color:#e3b341; background:linear-gradient(135deg, #fffef5 0%, var(--white) 100%); }
+  .ghp-pick-badge { position:absolute; top:12px; right:14px; font-size:11px; font-weight:700; color:#b08800; background:#fff8d6; padding:2px 8px; border-radius:4px; }
+  .ghp-card-head { margin-bottom:8px; }
+  .ghp-card-name { font-size:13px; font-weight:600; color:#0969da; text-decoration:none; font-family:'SF Mono','Menlo',monospace; }
+  .ghp-card-name:hover { text-decoration:underline; }
+  .ghp-card-title { font-size:16px; font-weight:700; color:var(--black); margin-bottom:8px; }
+  .ghp-card-desc { font-size:13px; color:var(--text2); line-height:1.5; margin-bottom:12px; }
+  .ghp-card-insight { font-size:13px; line-height:1.6; color:var(--text); background:var(--accent-soft); border-radius:8px; padding:12px 14px; margin-bottom:12px; border-left:3px solid var(--black); }
+  .ghp-insight-label { display:inline-block; font-size:11px; font-weight:700; color:var(--white); background:var(--black); padding:2px 8px; border-radius:4px; margin-right:8px; margin-bottom:4px; vertical-align:middle; }
+  .ghp-card-link { font-size:12px; font-weight:600; color:#0969da; text-decoration:none; }
+  .ghp-card-link:hover { text-decoration:underline; }
+  .ghp-top-picks { margin-top:48px; padding-top:32px; border-top:1px solid var(--border); }
 
   /* ===== NEWS PAGE (AI 资讯) ===== */
   .news-header { margin-bottom: 40px; }
@@ -1897,7 +1902,7 @@
 </div>
 
 <div class="main" id="github-page" style="display:none; max-width:1400px; margin:0 auto; padding:40px 48px 60px;">
-  <div id="github-trending-container"><div style="text-align:center;padding:60px 0;color:#888;">正在加载 GitHub Trending...</div></div>
+  <div id="github-picks-container"><div style="text-align:center;padding:60px 0;color:#888;">正在加载...</div></div>
 </div>
 
 <!-- Blog Page: Audio Podcast Player -->
@@ -3788,7 +3793,7 @@ function switchPage(id) {
     loadAndRenderNewsPage();
   }
   if (id === 'github' && !window._ghLoaded) {
-    loadGitHubTrending();
+    loadGitHubPicks();
   }
   if (id !== 'insight') {
     stopVoicePlayback(false);
@@ -5493,179 +5498,74 @@ function updateInlineProgress() {
   // No longer needed — no separate progress bar
 }
 
-// ===== GITHUB TRENDING =====
-var ghTrendingCache = {};
-var ghCurrentPeriod = 'daily';
+// ===== GITHUB PICKS (策展) =====
+var _ghPicksLoaded = false;
 
-var GH_LANG_COLORS = {
-  'Python':'#3572A5','JavaScript':'#f1e05a','TypeScript':'#3178c6','Rust':'#dea584',
-  'Go':'#00ADD8','Java':'#b07219','C++':'#f34b7d','C':'#555555','Swift':'#F05138',
-  'Kotlin':'#A97BFF','Ruby':'#701516','PHP':'#4F5D95','Shell':'#89e051','Dart':'#00B4AB',
-  'Jupyter Notebook':'#DA5B0B','HTML':'#e34c26','CSS':'#563d7c','Vue':'#41b883','Svelte':'#ff3e00',
-  'Zig':'#ec915c','Elixir':'#6e4a7e','Lua':'#000080','Scala':'#c22d40','Haskell':'#5e5086'
-};
-
-// 基于 description/topics/language 生成中文功能和应用描述
-function getChineseInfo(repo) {
-  var desc = (repo.description || '').toLowerCase();
-  var topics = (repo.topics || []).join(' ').toLowerCase();
-  var all = desc + ' ' + topics + ' ' + (repo.name || '').toLowerCase();
-
-  // 关键词→功能/应用映射
-  var rules = [
-    { kw: ['llm','large language','chatbot','gpt','claude','gemini','ollama'], func: 'AI 大语言模型相关工具', usage: '智能对话、文本生成、AI 应用开发' },
-    { kw: ['agent','agentic','autonomous'], func: 'AI Agent / 智能体框架', usage: '自动化任务执行、多步骤推理、工作流编排' },
-    { kw: ['rag','retrieval','vector','embedding','knowledge'], func: '知识检索与增强生成', usage: '企业知识库问答、文档智能搜索、AI 辅助研究' },
-    { kw: ['code','coding','ide','editor','copilot','developer tool'], func: 'AI 编程辅助工具', usage: '代码生成、代码审查、开发效率提升' },
-    { kw: ['image','diffusion','stable','midjourney','comfyui','flux'], func: 'AI 图像生成/处理', usage: '图片创作、设计辅助、视觉内容生产' },
-    { kw: ['video','sora','animation'], func: 'AI 视频生成/处理', usage: '短视频制作、动画生成、视频编辑' },
-    { kw: ['voice','tts','speech','audio','whisper','music'], func: 'AI 语音/音频处理', usage: '语音合成、语音识别、音频创作' },
-    { kw: ['3d','mesh','nerf','gaussian','point cloud'], func: '3D 生成与渲染', usage: '3D 建模、场景重建、游戏/影视制作' },
-    { kw: ['robot','robotics','ros','hardware'], func: '机器人与硬件控制', usage: '机器人开发、物联网、自动化控制' },
-    { kw: ['web','frontend','react','vue','next','nuxt','svelte'], func: '前端开发框架/工具', usage: 'Web 应用开发、UI 构建、前端工程化' },
-    { kw: ['backend','api','server','fastapi','express','microservice'], func: '后端服务/API 框架', usage: '服务端开发、API 设计、微服务架构' },
-    { kw: ['database','sql','postgres','redis','mongo','supabase'], func: '数据库与数据存储', usage: '数据管理、缓存优化、数据持久化' },
-    { kw: ['ml','machine learning','training','fine-tune','model'], func: '机器学习训练/推理', usage: '模型训练、微调、ML 工程化' },
-    { kw: ['security','auth','encrypt','vulnerability','pentest'], func: '安全与认证工具', usage: '网络安全、身份验证、漏洞检测' },
-    { kw: ['cli','terminal','command','shell','dotfile'], func: '命令行工具', usage: '终端效率提升、系统管理、开发者体验' },
-    { kw: ['ui','design','component','tailwind','css','style'], func: 'UI 组件/设计系统', usage: '界面设计、组件复用、设计规范落地' },
-    { kw: ['deploy','docker','kubernetes','k8s','cloud','infra','ci/cd'], func: '部署与基础设施', usage: '应用部署、容器编排、DevOps 流程' },
-    { kw: ['data','analytics','visualization','dashboard','chart'], func: '数据分析与可视化', usage: '数据洞察、报表制作、业务监控' },
-    { kw: ['mobile','ios','android','flutter','react native','swift'], func: '移动端开发', usage: 'App 开发、跨平台应用、移动端体验' },
-    { kw: ['game','unity','unreal','engine'], func: '游戏开发', usage: '游戏引擎、游戏工具、交互体验' },
-    { kw: ['scraper','crawl','spider','automation','playwright','selenium'], func: '爬虫与自动化', usage: '数据采集、浏览器自动化、RPA' },
-    { kw: ['blockchain','web3','crypto','defi','smart contract'], func: '区块链/Web3 工具', usage: '去中心化应用、智能合约、加密资产' },
-    { kw: ['mcp','tool','plugin','extension','integration'], func: '工具集成/插件系统', usage: '能力扩展、工具链接、系统集成' },
-    { kw: ['prompt','template','workflow'], func: 'Prompt 工程/工作流', usage: 'AI 提示词优化、流程自动化' },
-    { kw: ['open source','awesome','list','curated','collection'], func: '开源资源汇总', usage: '技术选型参考、学习资源、社区精选' },
-  ];
-
-  for (var i = 0; i < rules.length; i++) {
-    for (var j = 0; j < rules[i].kw.length; j++) {
-      if (all.indexOf(rules[i].kw[j]) !== -1) {
-        return { func: rules[i].func, usage: rules[i].usage };
-      }
-    }
-  }
-
-  // 按语言兜底
-  var langMap = {
-    'Python': { func: 'Python 开源项目', usage: '数据处理、AI/ML、后端开发、自动化脚本' },
-    'TypeScript': { func: 'TypeScript 开源项目', usage: 'Web 全栈开发、工具链构建' },
-    'JavaScript': { func: 'JavaScript 开源项目', usage: '前端开发、Node.js 应用、全栈工具' },
-    'Rust': { func: 'Rust 高性能工具', usage: '系统编程、高性能服务、CLI 工具' },
-    'Go': { func: 'Go 开源项目', usage: '云原生服务、网络工具、高并发系统' },
-  };
-  if (repo.language && langMap[repo.language]) return langMap[repo.language];
-
-  return { func: '开源工具项目', usage: '开发效率提升、技术探索' };
-}
-
-async function loadGitHubTrending(period) {
-  period = period || ghCurrentPeriod;
-  ghCurrentPeriod = period;
-  var container = document.getElementById('github-trending-container');
+async function loadGitHubPicks() {
+  if (_ghPicksLoaded) return;
+  var container = document.getElementById('github-picks-container');
   if (!container) return;
-
-  // 如果有缓存直接渲染
-  if (ghTrendingCache[period]) {
-    renderGitHubTrending(ghTrendingCache[period], period);
-    return;
-  }
-
-  container.innerHTML = '<div class="loading"><div class="spinner"></div><p>正在加载 GitHub 热门 AI 项目...</p></div>';
-
+  container.innerHTML = '<div class="loading"><div class="spinner"></div><p>正在加载...</p></div>';
   try {
-    // 聚焦 AI/Agent/LLM 相关的活跃项目
-    var dateOffset = period === 'weekly' ? 7 : period === 'monthly' ? 30 : 2;
-    var since = new Date(Date.now() - dateOffset * 86400000).toISOString().slice(0,10);
-    var queries = [
-      'https://api.github.com/search/repositories?q=topic:ai+pushed:>' + since + '+stars:>1000&sort=stars&order=desc&per_page=15',
-      'https://api.github.com/search/repositories?q=topic:agent+pushed:>' + since + '+stars:>500&sort=stars&order=desc&per_page=10',
-      'https://api.github.com/search/repositories?q=topic:llm+pushed:>' + since + '+stars:>500&sort=stars&order=desc&per_page=10',
-    ];
-    var seen = {};
-    var allRepos = [];
-    for (var qi = 0; qi < queries.length; qi++) {
-      var resp = await fetch(queries[qi], { headers: { 'Accept': 'application/vnd.github.v3+json' } });
-      if (!resp.ok) continue;
-      var data = await resp.json();
-      (data.items || []).forEach(function(r) {
-        if (!seen[r.full_name]) {
-          seen[r.full_name] = true;
-          allRepos.push(r);
-        }
-      });
-    }
-    allRepos.sort(function(a, b) { return b.stargazers_count - a.stargazers_count; });
-    var repos = allRepos.slice(0, 24).map(function(r) {
-      return {
-        name: r.full_name,
-        description: r.description || '暂无描述',
-        url: r.html_url,
-        stars: r.stargazers_count,
-        forks: r.forks_count,
-        language: r.language,
-        avatar: r.owner.avatar_url,
-        topics: (r.topics || []).slice(0,3),
-        todayStars: r.stargazers_count // API doesn't give daily delta, use total
-      };
-    });
-    ghTrendingCache[period] = repos;
+    var resp = await fetch('data/github-picks.json', { cache: 'no-store' });
+    if (!resp.ok) throw new Error('无法加载数据');
+    var data = await resp.json();
+    _ghPicksLoaded = true;
     window._ghLoaded = true;
-    renderGitHubTrending(repos, period);
+    renderGitHubPicks(data);
   } catch(e) {
-    container.innerHTML = '<div style="color:#888;text-align:center;padding:40px;">加载失败：' + e.message + '<br><br><a href="https://github.com/trending" target="_blank" style="color:#0969da;">直接访问 GitHub Trending →</a></div>';
+    container.innerHTML = '<div style="color:#888;text-align:center;padding:40px;">加载失败：' + e.message + '</div>';
   }
 }
 
-function renderGitHubTrending(repos, period) {
-  var container = document.getElementById('github-trending-container');
+function renderGitHubPicks(data) {
+  var container = document.getElementById('github-picks-container');
   if (!container) return;
   var html = '';
 
-  // 页面标题
-  html += '<div style="margin-bottom:24px;"><h2 style="font-size:28px;font-weight:800;margin:0 0 6px;">GitHub 热门项目</h2>';
-  html += '<p style="color:var(--text2);font-size:14px;margin:0;">最新最热的开源项目，含功能说明与应用场景</p></div>';
-
-  // Controls
-  html += '<div class="gh-controls">';
-  ['daily','weekly','monthly'].forEach(function(p) {
-    var label = p === 'daily' ? '今日热门' : p === 'weekly' ? '本周热门' : '本月热门';
-    var cls = p === period ? ' active' : '';
-    html += '<button class="gh-filter-btn' + cls + '" onclick="loadGitHubTrending(\'' + p + '\')">' + label + '</button>';
-  });
-  html += '<a href="https://github.com/trending" target="_blank" class="gh-filter-btn" style="text-decoration:none;">GitHub Trending ↗</a>';
+  // 页头
+  html += '<div class="ghp-header">';
+  html += '<h1 class="ghp-title">' + data.title + '</h1>';
+  html += '<p class="ghp-subtitle">' + data.subtitle + '</p>';
   html += '</div>';
 
-  // Grid
-  html += '<div class="gh-grid">';
-  repos.forEach(function(r) {
-    var langColor = GH_LANG_COLORS[r.language] || '#888';
-    var langHtml = r.language ? '<span><span class="gh-lang-dot" style="background:' + langColor + '"></span>' + r.language + '</span>' : '';
-    var topicsHtml = r.topics.map(function(t) { return '<span class="gh-card-topic">' + t + '</span>'; }).join(' ');
-    var starsFormatted = r.stars >= 1000 ? (r.stars / 1000).toFixed(1) + 'k' : r.stars;
-    var forksFormatted = r.forks >= 1000 ? (r.forks / 1000).toFixed(1) + 'k' : r.forks;
-
-    // 生成中文功能描述和应用场景
-    var cnInfo = getChineseInfo(r);
-
-    html += '<div class="gh-card">';
-    html += '<div class="gh-card-head">';
-    html += '<img class="gh-card-avatar" src="' + r.avatar + '" alt="" loading="lazy">';
-    html += '<a class="gh-card-repo" href="' + r.url + '" target="_blank">' + r.name + '</a>';
-    html += '</div>';
-    html += '<div class="gh-card-cn"><div class="gh-cn-label">功能</div><div class="gh-cn-text">' + cnInfo.func + '</div></div>';
-    html += '<div class="gh-card-cn"><div class="gh-cn-label">应用</div><div class="gh-cn-text">' + cnInfo.usage + '</div></div>';
-    if (topicsHtml) html += '<div style="margin-bottom:10px;display:flex;gap:4px;flex-wrap:wrap;">' + topicsHtml + '</div>';
-    html += '<div class="gh-card-meta">';
-    html += langHtml;
-    html += '<span class="gh-card-stars">★ ' + starsFormatted + '</span>';
-    html += '<span>🍴 ' + forksFormatted + '</span>';
-    html += '</div>';
-    html += '</div>';
+  // 分类导航
+  html += '<div class="ghp-nav">';
+  data.categories.forEach(function(cat) {
+    html += '<a href="#ghp-' + cat.id + '" class="ghp-nav-item">' + cat.icon + ' ' + cat.name + '</a>';
   });
   html += '</div>';
+
+  // 分类内容
+  data.categories.forEach(function(cat) {
+    html += '<section class="ghp-section" id="ghp-' + cat.id + '">';
+    html += '<div class="ghp-section-head">';
+    html += '<h2 class="ghp-section-title">' + cat.icon + ' ' + cat.name + '</h2>';
+    html += '<p class="ghp-section-desc">' + cat.desc + '</p>';
+    html += '</div>';
+    html += '<div class="ghp-grid">';
+    cat.items.forEach(function(item) {
+      var isPick = data.topPicks.picks.indexOf(item.name) !== -1;
+      html += '<div class="ghp-card' + (isPick ? ' ghp-pick' : '') + '">';
+      if (isPick) html += '<span class="ghp-pick-badge">⭐ 推荐</span>';
+      html += '<div class="ghp-card-head">';
+      html += '<a class="ghp-card-name" href="' + item.url + '" target="_blank">' + item.name + '</a>';
+      html += '</div>';
+      html += '<div class="ghp-card-title">' + item.title + '</div>';
+      html += '<div class="ghp-card-desc">' + item.desc + '</div>';
+      html += '<div class="ghp-card-insight"><span class="ghp-insight-label">洞察</span>' + item.insight + '</div>';
+      html += '<a class="ghp-card-link" href="' + item.url + '" target="_blank">查看项目 →</a>';
+      html += '</div>';
+    });
+    html += '</div>';
+    html += '</section>';
+  });
+
+  // Top picks
+  html += '<section class="ghp-top-picks">';
+  html += '<h2 class="ghp-section-title">🎯 ' + data.topPicks.title + '</h2>';
+  html += '<p class="ghp-section-desc">分享主题：<strong>' + data.topPicks.theme + '</strong></p>';
+  html += '</section>';
 
   container.innerHTML = html;
 }

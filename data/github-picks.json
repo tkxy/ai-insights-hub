@@ -1,0 +1,185 @@
+{
+  "updatedAt": "2026-05-25",
+  "title": "下一代 UI 的新材料",
+  "subtitle": "精选改变设计材料本身的开源项目，按技术方向分类策展",
+  "categories": [
+    {
+      "id": "text",
+      "name": "文本 / 排版",
+      "icon": "✍️",
+      "desc": "当文字不再只是网页段落，而是空间材料、可运行的解释系统、有手感的交互载体",
+      "items": [
+        {
+          "name": "countertype/three-text",
+          "title": "3D 文字渲染引擎",
+          "url": "https://github.com/countertype/three-text",
+          "desc": "3D 文字渲染和文字布局，让文字进入 WebGL / WebGPU 空间。",
+          "insight": "当文字进入 3D 后，排版不再只是网页段落，而是空间材料。字体、间距、行高这些平面概念需要被重新定义为体积、深度和光影响应。"
+        },
+        {
+          "name": "motion-canvas/motion-canvas",
+          "title": "代码驱动的动态演示引擎",
+          "url": "https://github.com/motion-canvas/motion-canvas",
+          "desc": "用代码制作动态演示和可视化，支持时间轴编辑和代码动画。",
+          "insight": "设计师正在从「做静态 slides」转向「设计可运行的解释系统」。信息传达的载体从画面变成了过程——好的解释不是一张图，而是一段有节奏的演绎。"
+        },
+        {
+          "name": "steveruizok/perfect-freehand",
+          "title": "压感手绘线条算法",
+          "url": "https://github.com/steveruizok/perfect-freehand",
+          "desc": "将输入点转为平滑、有压感变化的手绘线条，参数化控制笔触粗细和圆润度。",
+          "insight": "「手感」也是界面质量的一部分。线条、笔迹、草图感可以被参数化——这意味着 App 的绘制体验可以像字体一样被精确调校和品牌化。"
+        },
+        {
+          "name": "rough-stuff/rough",
+          "title": "手绘风格图形库（Rough.js）",
+          "url": "https://github.com/rough-stuff/rough",
+          "desc": "Canvas / SVG 手绘风格图形渲染，让精确几何图形看起来像手画的。",
+          "insight": "非精确、草稿感、低保真视觉有时比精致 UI 更利于协作——它降低了表达压力，暗示「这还没定型，欢迎修改」，是一种有设计意图的不完美。"
+        }
+      ]
+    },
+    {
+      "id": "canvas",
+      "name": "画布 / 空间界面",
+      "icon": "🖼️",
+      "desc": "页面式 UI 之外，空间组织正在成为复杂产品的新界面范式",
+      "items": [
+        {
+          "name": "tldraw/tldraw",
+          "title": "无限画布 SDK",
+          "url": "https://github.com/tldraw/tldraw",
+          "desc": "开源无限画布引擎，支持绘制、文本、图片、嵌入，可作为产品基础层。",
+          "insight": "页面式 UI 之外，空间组织正在成为复杂产品的新界面范式。当信息量超过一屏能承载的极限，画布比列表更自然——人的空间记忆远强于序列记忆。"
+        },
+        {
+          "name": "excalidraw/excalidraw",
+          "title": "手绘风协作白板",
+          "url": "https://github.com/excalidraw/excalidraw",
+          "desc": "手绘风格在线白板，支持实时协作、图形绘制、文本和箭头连接。",
+          "insight": "「看起来不正式」的界面反而降低表达压力，适合共创和早期想法。这是刻意的设计选择——草稿感邀请参与，精致感暗示「别碰」。"
+        },
+        {
+          "name": "xyflow/xyflow",
+          "title": "节点式 UI 框架（React Flow）",
+          "url": "https://github.com/xyflow/xyflow",
+          "desc": "构建节点式、流程图式界面的 React 库，用于 AI workflow、数据管线等场景。",
+          "insight": "AI workflow、自动化、低代码产品为什么越来越像流程图——因为复杂逻辑的可理解形式天然是图，而不是代码或表格。节点式 UI 是「让非程序员操控程序逻辑」的交互答案。"
+        },
+        {
+          "name": "InditexTech/weavejs",
+          "title": "实时协作 Canvas 库",
+          "url": "https://github.com/InditexTech/weavejs",
+          "desc": "实时协作 Canvas 应用基础库，处理 CRDT 状态同步、冲突解决和协作感知。",
+          "insight": "多人协作不是「加头像和光标」那么简单，而是状态、冲突、评论、awareness 的系统设计。真正的协作体验需要让每个人既能独立思考，又能感知他人的存在。"
+        },
+        {
+          "name": "fabricjs/fabric.js",
+          "title": "Canvas 对象编辑器",
+          "url": "https://github.com/fabricjs/fabric.js",
+          "desc": "Canvas 可交互对象模型，支持选择、拖拽、旋转、裁剪，是图片/海报编辑器的底层。",
+          "insight": "设计工具、图片编辑器、海报编辑器这类产品的底层模型是「可编辑对象」——理解这一层，就理解了为什么 Figma 和 Canva 的交互语言如此相似。"
+        },
+        {
+          "name": "konvajs/konva",
+          "title": "Canvas 交互框架",
+          "url": "https://github.com/konvajs/konva",
+          "desc": "2D Canvas 交互框架，提供事件系统、图层管理、动画和高性能渲染。",
+          "insight": "当 UI 元素不再是 DOM 而是画布对象时，设计规范要怎么变化？间距不再用 px，状态不再用 class，hover 不再靠 CSS——整套设计语言需要重建。"
+        }
+      ]
+    },
+    {
+      "id": "motion",
+      "name": "动效 / 交互编排",
+      "icon": "✨",
+      "desc": "动效不只是 easing 表，而是可被编排、调试、版本化的设计资产",
+      "items": [
+        {
+          "name": "theatre-js/theatre",
+          "title": "Web 动效设计编辑器（Theatre.js）",
+          "url": "https://github.com/theatre-js/theatre",
+          "desc": "可视化动效编辑器，支持时间轴编排、关键帧调试、实时预览，可集成 Three.js。",
+          "insight": "动效不只是 easing 表，而是可被编排、调试、版本化的设计资产。好的动效工具让设计师像剪辑师一样思考——节奏、节拍、呼吸感都是可调参数。"
+        },
+        {
+          "name": "ibelick/motion-primitives",
+          "title": "动效 UI 原语库",
+          "url": "https://github.com/ibelick/motion-primitives",
+          "desc": "一组可复用的动效交互组件原语，覆盖出现、消失、展开、拖拽等基础模式。",
+          "insight": "未来动效规范可能不是一份说明文档，而是一组可复用的交互组件。就像 design token 把颜色和间距变成了变量，motion primitive 把运动模式变成了乐高积木。"
+        },
+        {
+          "name": "DavidHDev/react-bits",
+          "title": "动态交互 React 组件集",
+          "url": "https://github.com/DavidHDev/react-bits",
+          "desc": "动态、带交互反馈的 React 组件集合，涵盖文字动画、鼠标跟随、滚动效果。",
+          "insight": "网页审美正在从「静态排版」转向「带反馈的视觉行为」。一个按钮不只有样式，还有响应——弹性、延迟、回弹，这些微观行为塑造了产品的性格。"
+        },
+        {
+          "name": "magicuidesign/magicui",
+          "title": "Design Engineer 动效组件库",
+          "url": "https://github.com/magicuidesign/magicui",
+          "desc": "面向 Design Engineer 的品牌动效组件，支持 copy-paste 直接使用。",
+          "insight": "Design Engineer 角色为什么会变重要——因为品牌动效和产品感知质量越来越依赖「设计意图 + 代码实现」的一体化。分开做就会丢失节奏感。"
+        }
+      ]
+    },
+    {
+      "id": "3d",
+      "name": "3D / 空间计算",
+      "icon": "🌐",
+      "desc": "3D 不只是营销页装饰，而可能成为产品交互层",
+      "items": [
+        {
+          "name": "pmndrs/react-three-fiber",
+          "title": "React 式 3D 场景开发",
+          "url": "https://github.com/pmndrs/react-three-fiber",
+          "desc": "用 React 组件写 Three.js 场景，把 3D 开发变成和写 UI 一样的声明式体验。",
+          "insight": "3D 不只是营销页装饰，而可能成为产品交互层。当 3D 场景可以像写组件一样开发，设计师需要开始思考：哪些信息用空间呈现比平面更高效？"
+        },
+        {
+          "name": "pmndrs/uikit",
+          "title": "3D 空间 UI 组件库",
+          "url": "https://github.com/pmndrs/uikit",
+          "desc": "给 react-three-fiber 用的 3D UI 组件：按钮、面板、滚动、布局，在 3D 场景中构建真正的界面。",
+          "insight": "XR / Spatial Computing 里的按钮、面板、滚动、hover 需要被重新定义。二维的交互常识（点击、悬停、聚焦）在三维空间里全部失效——新的设计语言正在被发明。"
+        },
+        {
+          "name": "pmndrs/drei",
+          "title": "3D 场景 Helper 集合",
+          "url": "https://github.com/pmndrs/drei",
+          "desc": "react-three-fiber 的实用工具集：相机控制、环境光、文字、加载器、后处理效果等 100+ helper。",
+          "insight": "当 3D 能组件化，设计师要开始理解「场景组件」和「界面组件」的关系——灯光是组件、阴影是组件、物理碰撞也是组件。设计系统的边界正在扩展到空间维度。"
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "name": "AI / 生成式界面",
+      "icon": "🤖",
+      "desc": "AI 的输出不只是文本，也可能是图表、模拟器、流程图、交互面板",
+      "items": [
+        {
+          "name": "CopilotKit/OpenGenerativeUI",
+          "title": "AI 生成可交互 UI",
+          "url": "https://github.com/CopilotKit/OpenGenerativeUI",
+          "desc": "让 AI 直接生成可交互的 UI 组件作为回复，而不只是文本。",
+          "insight": "AI 回复不一定是文本，也可能是图表、模拟器、流程图、交互面板。这改变了「对话式 AI」的产品形态——输出不再是信息，而是工具。设计师需要为「动态生成的界面」制定规范。"
+        },
+        {
+          "name": "fal-ai-community/infinite-kanvas",
+          "title": "AI 无限画布图像编辑器",
+          "url": "https://github.com/fal-ai-community/infinite-kanvas",
+          "desc": "结合 AI 图像生成的无限画布编辑器，支持局部重绘、延展和风格迁移。",
+          "insight": "生成式设计工具为什么天然适合画布，而不是线性聊天框——因为创作是非线性的、空间的、可回溯的。画布给了 AI 生成物一个「安放和编排」的空间。"
+        }
+      ]
+    }
+  ],
+  "topPicks": {
+    "title": "最适合设计组分享的 5 个项目",
+    "theme": "下一代 UI 的五种新材料：文字、画布、运动、生成与空间",
+    "picks": ["steveruizok/perfect-freehand", "tldraw/tldraw", "theatre-js/theatre", "CopilotKit/OpenGenerativeUI", "pmndrs/uikit"]
+  }
+}
