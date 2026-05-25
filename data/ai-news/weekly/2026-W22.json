@@ -1,0 +1,156 @@
+{
+  "week": "2026-W22",
+  "range": { "start": "2026-05-25", "end": "2026-05-31" },
+  "generatedAt": "2026-05-25T01:01:03Z",
+  "trends": [
+    {
+      "title": "AI 编程产出已超人类总量",
+      "summary": "从去年底主要还跟 LLM 聊天，到现在 AI agent 产出的代码量已经超过人类历史上写的代码总和。半年时间，交互范式从"对话"彻底变成了"干活"。说明 AI 编程不是辅助工具了，而是主要生产力。",
+      "implication": "输入法/AI 助手类产品该思考：用户不再只是问问题，而是让 AI 直接做事。交互设计要从"问答框"转向"任务委派"模式。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Aditya Agarwal (South Park Commons GP, 前 Dropbox CTO)",
+          "url": "https://x.com/adityaag/status/2058233900464238801",
+          "quote": "6个月前我们还只是跟LLM聊天就很开心了。现在是2026年5月，这些LLM产出的代码已经超过我们历史上写的所有代码。(It's May 2026 and these LLMs now have produced more code than we have written over all time.)"
+        },
+        {
+          "type": "tweet",
+          "who": "Guillermo Rauch (Vercel CEO)",
+          "url": "https://x.com/rauchg/status/2058245330836271263",
+          "quote": "晒出你用AI做的最自豪的东西——这条推收到1558条回复，全是真实AI产品URL。(Show me the thing you've built with AI you're most proud of.)"
+        }
+      ]
+    },
+    {
+      "title": "AI 不取代工作，但重新定义工作",
+      "summary": "Aaron Levie 指出一个常见误区：人们总把"AI能完成某任务"等同于"AI能干掉整份工作"。但现实是，当AI自动化了某些任务，工作本身会膨胀——做更多、做更好、或者转向还没自动化的部分。岗位不会消失，但边界会变。",
+      "implication": "对AI助手产品来说，不要定位成"替代人"，而是"让人做到之前做不到的事"。比如输入法AI不该只是替用户写，而是让不擅长写作的人也能产出好内容。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Aaron Levie (Box CEO)",
+          "url": "https://x.com/levie/status/2058223867815227756",
+          "quote": "我们总把任务完成和干掉整个岗位搞混。哪怕AI自动化了岗位里的很多任务，工作定义本身会扩展——做更多、做更好、或者转到还没自动化的部分。(Don't fall into the trap of confusing tasks with jobs.)"
+        },
+        {
+          "type": "tweet",
+          "who": "Amjad Masad (Replit CEO)",
+          "url": "https://x.com/amasad/status/2058418731840159953",
+          "quote": "用Cursor做了三个app觉得已经够快了，但试了Replit做一个Dial，一个周末就搞出MVP，还一次性过了苹果审核——这种事以前从没发生过。(I built the MVP over a single weekend, and it actually got approved by Apple on the very first try.)"
+        }
+      ]
+    },
+    {
+      "title": "推理加速打开新商业模式",
+      "summary": "Cerebras 用整片晶圆做芯片，推理速度远超 GPU 集群，IPO 后市值 630 亿美元。CEO Andrew Feldman 的核心观点：速度不只是"更快"，而是会催生全新的商业模式——就像宽带让 Netflix 从租碟变成制片厂一样。AI 推理速度的质变会带来产品形态的质变。",
+      "implication": "输入法/AI助手现在受限于响应速度，很多体验做不了。如果推理延迟再降一个量级，实时语音、流式理解、多轮感知这些体验就变成可能，产品天花板完全不同。",
+      "evidence": [
+        {
+          "type": "podcast",
+          "who": "No Priors 播客 - Cerebras CEO Andrew Feldman",
+          "url": "https://www.youtube.com/watch?v=jeop9wfb9jU",
+          "quote": "Netflix以前是寄碟的，网速快了以后变成制片厂。速度改变的不只是效率，而是催生全新商业模式。(When the Internet got fast, they became a movie studio. That's what happens with speed.)"
+        },
+        {
+          "type": "tweet",
+          "who": "Garry Tan (YC President & CEO)",
+          "url": "https://x.com/garrytan/status/2058378310254793013",
+          "quote": "Thinking Machines太厉害了，我一个下午就微调了Qwen3.5-397B。快速可用的多模态也会让个人AI变得非常震撼。(Fast usable multimodal is also going to enable very mind-blowing personal AI.)"
+        }
+      ]
+    }
+  ],
+  "builders": [
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "Box CEO",
+      "highlights": [
+        {
+          "summary": "别把"AI能做某任务"等同于"AI能干掉这份工作"，工作定义会随AI能力膨胀而非消失",
+          "url": "https://x.com/levie/status/2058223867815227756"
+        }
+      ]
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "Vercel CEO",
+      "highlights": [
+        {
+          "summary": "发起"晒出你用AI做的最自豪产品"活动，收到1558条真实产品回复，AI编程生态已经非常繁荣",
+          "url": "https://x.com/rauchg/status/2058245330836271263"
+        },
+        {
+          "summary": "统计1400条回复发现：OpenAI在追Anthropic，Codex提及率超过Claude Code，但按模型提及量Anthropic碾压",
+          "url": "https://x.com/rauchg/status/2058353051073970416"
+        }
+      ]
+    },
+    {
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "OpenClaw 创始人，前 iOS 独立开发者",
+      "highlights": [
+        {
+          "summary": "做了个GitHub Dashboard，一个界面看所有repo状态、Issue/PR、版本发布、commit数，676赞说明开发者刚需",
+          "url": "https://x.com/steipete/status/2058381186884411473"
+        },
+        {
+          "summary": "建议让Codex在做大重构时维护一个scratch-log，记录它做的取舍和决策，方便人类事后审查",
+          "url": "https://x.com/steipete/status/2058308112134635528"
+        }
+      ]
+    },
+    {
+      "name": "Amjad Masad",
+      "handle": "amasad",
+      "role": "Replit CEO",
+      "highlights": [
+        {
+          "summary": "Replit用户一个周末用AI做出MVP且一次性过苹果审核，AI编程工具的效率已经让非专业开发者也能快速出活",
+          "url": "https://x.com/amasad/status/2058418731840159953"
+        }
+      ]
+    },
+    {
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "role": "YC President & CEO",
+      "highlights": [
+        {
+          "summary": "用Thinking Machines一个下午微调Qwen3.5-397B，认为快速多模态会让个人AI变得极其震撼",
+          "url": "https://x.com/garrytan/status/2058378310254793013"
+        }
+      ]
+    },
+    {
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Claude Code 工程师 @ Anthropic，前 YC W20",
+      "highlights": [
+        {
+          "summary": "跑"帮我省钱"prompt真的能帮老项目砍云服务成本，463赞说明AI省成本是开发者真需求",
+          "url": "https://x.com/trq212/status/2058377974882210096"
+        }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "No Priors",
+      "title": "Cerebras 630亿美元IPO背后的故事（The Story Behind Cerebras' $63 Billion IPO with Founder and CEO Andrew Feldman）",
+      "guest": "Andrew Feldman (Cerebras 联合创始人兼CEO)",
+      "url": "https://www.youtube.com/watch?v=jeop9wfb9jU",
+      "keyTakeaways": [
+        "Cerebras用整片晶圆做芯片（Wafer-Scale Engine），推理速度远超传统GPU集群，不是快一点而是快很多",
+        "速度改变的不只是效率——Netflix从寄碟变成制片厂就是因为带宽质变，AI推理速度的质变也会催生全新商业模式",
+        "目前AI替代的是可见的SaaS工具（编码、设计），但一旦围绕速度重新组织产品，会出现全新的商业形态和生产力跃升",
+        "Cerebras从做训练芯片转型到做推理，踩中了市场需求切换的节奏——训练市场在缩，推理市场在爆发",
+        "630亿市值说明资本市场认可"推理加速"这个方向，这不仅是芯片故事，是整个AI产品形态的上限问题"
+      ]
+    }
+  ],
+  "blogs": []
+}

@@ -1,0 +1,306 @@
+{
+  "date": "2026-05-25",
+  "fetchedAt": "2026-05-25T01:00:42.033380+00:00",
+  "source": "follow-builders feeds",
+  "x": {
+    "generatedAt": "2026-05-24T07:25:51.477Z",
+    "lookbackHours": 24,
+    "x": [
+      {
+        "source": "x",
+        "name": "Thariq",
+        "handle": "trq212",
+        "bio": "Claude Code @anthropicai.   prev YC W20, @southpkcommons, @medialab",
+        "tweets": [
+          {
+            "id": "2058380417716125966",
+            "text": "this is me cleaning up some leftover services for my old startup @OMMultiverse \n\nwe have a huge legacy codebase and a community that still uses it but I haven't had any time to actually look into cost saving measures myself",
+            "createdAt": "2026-05-24T02:51:49.000Z",
+            "url": "https://x.com/trq212/status/2058380417716125966",
+            "likes": 29,
+            "retweets": 0,
+            "replies": 2,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2058377974882210096",
+            "text": "every now and then I remember you can run the \"please save me money\" prompt and it will actually work https://t.co/5gXnHAwOE8",
+            "createdAt": "2026-05-24T02:42:06.000Z",
+            "url": "https://x.com/trq212/status/2058377974882210096",
+            "likes": 463,
+            "retweets": 11,
+            "replies": 42,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Amjad Masad",
+        "handle": "amasad",
+        "bio": "ceo @replit. civilizationist",
+        "tweets": [
+          {
+            "id": "2058418731840159953",
+            "text": "“I built my first three apps using Cursor and thought that was fast, but trying Replit for Dial completely blew me away. I built the MVP over a single weekend, and it actually got approved by Apple on the very first try—which has never happened to me before.” https://t.co/meAR1zAPLx",
+            "createdAt": "2026-05-24T05:24:03.000Z",
+            "url": "https://x.com/amasad/status/2058418731840159953",
+            "likes": 100,
+            "retweets": 10,
+            "replies": 18,
+            "isQuote": true,
+            "quotedTweetId": "2058203513520361528"
+          },
+          {
+            "id": "2058417703958773965",
+            "text": "100% https://t.co/9hsvgTgudJ",
+            "createdAt": "2026-05-24T05:19:58.000Z",
+            "url": "https://x.com/amasad/status/2058417703958773965",
+            "likes": 22,
+            "retweets": 2,
+            "replies": 5,
+            "isQuote": true,
+            "quotedTweetId": "2058190845225189399"
+          },
+          {
+            "id": "2058292230700372356",
+            "text": "It’s going to be epic! https://t.co/CtSXbyTRfX",
+            "createdAt": "2026-05-23T21:01:23.000Z",
+            "url": "https://x.com/amasad/status/2058292230700372356",
+            "likes": 69,
+            "retweets": 3,
+            "replies": 15,
+            "isQuote": true,
+            "quotedTweetId": "2058292007160750138"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Guillermo Rauch",
+        "handle": "rauchg",
+        "bio": "@vercel CEO",
+        "tweets": [
+          {
+            "id": "2058353051073970416",
+            "text": "Processed 1400 replies\n◾ OpenAI is catching up to Anthropic \n◾ 'Codex' got more mentions than 'Claude Code'\n◾ However, by model mentions, A\\ is mogging https://t.co/BjtqVGmlUg https://t.co/74j8QbxuLX",
+            "createdAt": "2026-05-24T01:03:04.000Z",
+            "url": "https://x.com/rauchg/status/2058353051073970416",
+            "likes": 211,
+            "retweets": 8,
+            "replies": 43,
+            "isQuote": true,
+            "quotedTweetId": "2058245330836271263"
+          },
+          {
+            "id": "2058245330836271263",
+            "text": "Show me the thing you’ve built with AI you’re most proud of. Reply with a working product URL and what model / agent you primarily used.",
+            "createdAt": "2026-05-23T17:55:01.000Z",
+            "url": "https://x.com/rauchg/status/2058245330836271263",
+            "likes": 2195,
+            "retweets": 102,
+            "replies": 1558,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2058239837195628941",
+            "text": "gm 🏃‍♂️ https://t.co/VI6wkRSrTV",
+            "createdAt": "2026-05-23T17:33:12.000Z",
+            "url": "https://x.com/rauchg/status/2058239837195628941",
+            "likes": 385,
+            "retweets": 1,
+            "replies": 31,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Aaron Levie",
+        "handle": "levie",
+        "bio": "ceo @box - your business lives in content. unleash it with AI",
+        "tweets": [
+          {
+            "id": "2058223867815227756",
+            "text": "This is a fantastic post about why jobs aren’t going away in the way some predict. We are constantly making the mistake of confusing task completion with AI with being able to eliminate the whole job. \n\nEven as we can automate one or many tasks within a job, the definition of the job almost inevitably just expands to do vastly more of those tasks, do them at a higher quality, or move on to the type of task that hasn’t been automated yet. \n\nAnd as a result of being able to do more of the tasks or at a higher quality level, the job becomes valuable in a new way. And in many cases for now an entirely new audience as well. \n\nThis will be true for coding, legal work, sales, or marketing. The small business or non-tech company that wants to now take on larger software projects finally can, and they’ll hire to do so. The small business that couldn’t afford a full marketing agency can hire or contract out to a marketer that can do as much as an agency did before now with agents. And so on.\n\nDon’t fall into the trap of confusing tasks with jobs.",
+            "createdAt": "2026-05-23T16:29:44.000Z",
+            "url": "https://x.com/levie/status/2058223867815227756",
+            "likes": 627,
+            "retweets": 84,
+            "replies": 67,
+            "isQuote": true,
+            "quotedTweetId": "2057514494960513272"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Garry Tan",
+        "handle": "garrytan",
+        "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+        "tweets": [
+          {
+            "id": "2058448209027141709",
+            "text": "My newest gbrain-evals just dropped - this is how gbrain does vs other options. https://t.co/yRWm72QEgf is SOTA for reranking and embedding cost, speed, and retrieval success.\n\nGBrain beats MemPalace by 1% on LongMemEval and beats Vector RAG by 38%\n\nhttps://t.co/nIk93HFTHb https://t.co/RIzXFkfFp8",
+            "createdAt": "2026-05-24T07:21:11.000Z",
+            "url": "https://x.com/garrytan/status/2058448209027141709",
+            "likes": 12,
+            "retweets": 0,
+            "replies": 5,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2058378310254793013",
+            "text": "Thinking Machines is impressive. In a couple hours I just fine tuned my own Qwen3.5-397B model this afternoon. \n\nFast usable multimodal is also going to enable very mind-blowing personal AI. https://t.co/mm3laZb766",
+            "createdAt": "2026-05-24T02:43:26.000Z",
+            "url": "https://x.com/garrytan/status/2058378310254793013",
+            "likes": 996,
+            "retweets": 56,
+            "replies": 63,
+            "isQuote": true,
+            "quotedTweetId": "2053938892152435174"
+          },
+          {
+            "id": "2058251537298980992",
+            "text": "We should fight the people who want to stop startups from staying in San Francisco. We want more startups and more prosperity. \n\nI'm fighting back through Garry's List Action, I'm in for $50K, I need 9 more people to match me. Are you in?\n\nhttps://t.co/dDMINuepyc",
+            "createdAt": "2026-05-23T18:19:41.000Z",
+            "url": "https://x.com/garrytan/status/2058251537298980992",
+            "likes": 121,
+            "retweets": 6,
+            "replies": 6,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Nikunj Kothari",
+        "handle": "nikunj",
+        "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+        "tweets": [
+          {
+            "id": "2058338294191227247",
+            "text": "Love spring https://t.co/oLDofrvDmA",
+            "createdAt": "2026-05-24T00:04:26.000Z",
+            "url": "https://x.com/nikunj/status/2058338294191227247",
+            "likes": 2,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2058203594672021769",
+            "text": "Wrote this almost a year ago, and finally starting to see more B2B companies wake up to this opportunity.. \n\nDon’t wait another year. Narratives and vibes are extremely important to stand out amongst the slop 🪄 https://t.co/Hcu1kTqo9H",
+            "createdAt": "2026-05-23T15:09:11.000Z",
+            "url": "https://x.com/nikunj/status/2058203594672021769",
+            "likes": 132,
+            "retweets": 8,
+            "replies": 6,
+            "isQuote": true,
+            "quotedTweetId": "1948884719887667623"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Peter Steinberger",
+        "handle": "steipete",
+        "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.\n@OpenClaw🦞 + @OpenAI",
+        "tweets": [
+          {
+            "id": "2058381186884411473",
+            "text": "I always wanted a GitHub dashboard: See my repos, open Issues/PRs, what version I released last, how many commits since last release.\n\nSo I built one for everyone.\nhttps://t.co/GWCP5wcrDQ https://t.co/DRvjenlVMi",
+            "createdAt": "2026-05-24T02:54:52.000Z",
+            "url": "https://x.com/steipete/status/2058381186884411473",
+            "likes": 676,
+            "retweets": 43,
+            "replies": 58,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2058332234247987379",
+            "text": "codex... made a smiley? :) https://t.co/UJc4X4A8q1",
+            "createdAt": "2026-05-23T23:40:21.000Z",
+            "url": "https://x.com/steipete/status/2058332234247987379",
+            "likes": 275,
+            "retweets": 5,
+            "replies": 47,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2058308112134635528",
+            "text": "Tell codex to maintain a scratch-log while it works on bigger refactors with decisions it had to make, tradeoffs, review fixes, so later on you can read through which tradeoffs the agent made, what you forgot to specify etc.",
+            "createdAt": "2026-05-23T22:04:30.000Z",
+            "url": "https://x.com/steipete/status/2058308112134635528",
+            "likes": 158,
+            "retweets": 4,
+            "replies": 10,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Aditya Agarwal",
+        "handle": "adityaag",
+        "bio": "General Partner @SouthPkCommons, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
+        "tweets": [
+          {
+            "id": "2058233900464238801",
+            "text": "Can you imagine that we lived in a world 6 months (Nov 2025) ago when we would mostly just chat with LLMs and would be so happy about AI??\n\nIt's May 2026 and these LLMs now have produced more code than we have written over all time.",
+            "createdAt": "2026-05-23T17:09:36.000Z",
+            "url": "https://x.com/adityaag/status/2058233900464238801",
+            "likes": 108,
+            "retweets": 6,
+            "replies": 18,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "xBuilders": 8,
+      "totalTweets": 18
+    }
+  },
+  "podcasts": {
+    "generatedAt": "2026-05-24T07:26:27.171Z",
+    "lookbackHours": 336,
+    "podcasts": [
+      {
+        "source": "podcast",
+        "name": "No Priors",
+        "title": "The Story Behind Cerebras’ $63 Billion IPO with Founder and CEO Andrew Feldman",
+        "guid": "d5095690-549d-11f1-8e98-cf1559f73e7f",
+        "url": "https://www.youtube.com/watch?v=jeop9wfb9jU",
+        "publishedAt": "2026-05-21T07:00:00.000Z",
+        "transcript": "Speaker 1 | 00:00 - 00:12\nNetflix used to deliver DVDs and envelopes. And when the Internet got fast, they became a movie studio. Right? It opened up an entirely new business, something fundamentally different. That's what happens with speed.\n\nSpeaker 1 | 00:12 - 00:30\nAnd I think that's what fast AI does. Right now, we're replacing things that everybody can see, like coding, design, the SaaS tools. But once we start sort of fundamentally reorganizing around this, you're gonna see this sort of new business models and fundamental jumps in productivity. I'm eager for that. That's so cool.\n\nSpeaker 2 | 00:37 - 01:01\nToday at No Prize, we have Andrew Feldman, the cofounder and CEO of Cerebras. Cerebras was founded in the mid two thousand tens to focus on new workloads for AI, particularly the machine learning world, and then has made the transition in a very fast inference for the foundation model world that we live in today. Cerebras recently went public and is currently worth about $63,000,000,000 in the stock market. So Andrew, thank you for joining us on Opriors.\n\nSpeaker 1 | 01:01 - 01:03\nOh, what a pleasure. It's good to see you guys again.\n\nSpeaker 2 | 01:03 - 01:12\nYeah. So first of all, congratulations. So your company, Cerebras, just went public. As of today, it's a 60,000,000,000 market cap, which is pretty amazing. Pretty amazing.\n\nSpeaker 2 | 01:12 - 01:27\nYeah. And I think you were with us a year or two ago on the show in one of the earlier episodes, it was a pleasure to talk to you then. Obviously, we're very excited to have you on today. Can you tell us a bit how the business evolved since that time and what you folks just a reminder for our audience what you do, what you're focused on, how you're moving forward?\n\nSpeaker 1 | 01:28 - 01:43\nWe build AI computers. Right? Computers designed to and optimized to accelerate AI workloads. And right now, we're the the fastest at inference, not by a little bit, but by a lot. Fifteen, eighteen, 20x faster than GPUs.\n\nSpeaker 1 | 01:44 - 02:08\nAnd so what happened was starting at about 2025, AI models got smart enough to be useful. People began using them, and you know, we make AI with training, and we use it with inference. So as people began to use it, it began to to sort of be integrated into their day to day work. Speed became fundamentally important, and we were just crushed with demand.\n\nSpeaker 2 | 02:08 - 02:13\nIs it is this faster across the board, is this specific use cases? Faster across the board.\n\nSpeaker 1 | 02:13 - 02:48\nBig models, small models, US models, Chinese models, trillion parameter models, 1,000,000,000 parameter models across the board. And then what happened was at the end of the year, we signed a deal with OpenAI, of one of the biggest deals ever in Silicon Valley, sort of north of $20,000,000,000 And then in March, we signed an agreement with AWS where we will be deployed in their data centers going forward. And so it was just a whirlwind year and a half of chasing the chasing supply and trying to trying to sort of meet\n\nSpeaker 2 | 02:48 - 02:54\nthe demand. And what what shifted in the year and in the last year and a half? Was it the ramp in manufacturing? Was it a new chip design? Was it something else?\n\nSpeaker 2 | 02:54 - 02:55\nCould you help educate What folks on\n\nSpeaker 1 | 02:57 - 03:07\nhappened was we built a really, really fast machine, and for a long time nobody cared. Right? That's because Actually, forgive\n\nSpeaker 3 | 03:07 - 03:14\nme for saying so, but a lot of people objected and said this is just a weird architecture. They called it wrong. Like Cerubis called it wrong.\n\nSpeaker 1 | 03:14 - 03:25\nYeah. Yeah. They did. I think to be radically better, right, you can't build something that is a similar architecture. Right?\n\nSpeaker 1 | 03:25 - 03:52\nYou're not going to get 15 or 20 times better than the GPU with a minor modification to their architecture. And that's probably true across the board, that if you're going to aspire to a radical improvement, your design has to be different. And from the beginning, you know, we chose wafer scale, which means we build a 46,000 square millimeter chip, a chip the size of a dinner plate, whereas everybody else is building chips the size of postage stamps. They told us we were out of our mind. It would never work.\n\nSpeaker 1 | 03:53 - 04:14\nThey listed reasons why it was impossible. But in 2019, we we proved it was possible. We began delivering it, and we improved on it, and we improved on it. But we were fast when AI was a novelty. And when it's a novelty, nobody cares that you're fast because it's not being used.\n\nSpeaker 1 | 04:14 - 04:30\nAnd so from about 2023 to the beginning of '25, sort of people pointed at AI, but nobody used it every day in their work. Mhmm. And once you use something every day in your work, it can't be slow. I mean, how how long will you guys wait for a website to resolve?\n\nSpeaker 3 | 04:30 - 04:31\nYou'll have no attention.\n\nSpeaker 1 | 04:31 - 04:37\nRight. That's exactly right. That that's exactly the way it is. I mean, how big is the market for slow search? It's zero.\n\nSpeaker 1 | 04:37 - 05:00\nHow big is the market for dial up Internet? It's zero. That's how big the market for slow inference will be, but we had to wait until it was smart enough to be useful. And that happened in 2025. And that's why you got this sort of explosion of demand in companies like Cognition and Cursor and Lovable and just all these others that began ramping extraordinary.\n\nSpeaker 1 | 05:00 - 05:11\nMany of the ones you guys have invested in are ramping like crazy, OpenAI and others. And we were right there with the right product.\n\nSpeaker 2 | 05:11 - 05:26\nI think I first met you back in 2016 or something like that. And at the time, people weren't like, saying AI sounded weird, right? You were talking about machine learning, and the models at the time were convolutional neural networks and RNNs and just the emergence of GANs and things\n\nSpeaker 1 | 05:26 - 05:34\nlike that. We were trying to tell the difference between a chair and a cat. Right? That was Quackley's great swarm of his face. Like a cat and or a chair.\n\nSpeaker 1 | 05:34 - 05:38\nLike, woah. Look how far we've come. I mean, it's unbelievable.\n\nSpeaker 2 | 05:38 - 05:57\nYeah. Yeah. What do you think gave you the foresight to build against the market? Because to your point, think a lot of us believed in this market would be really important, and you more than others, right, since you actually started a company in it. But then it took some time for the market to really expand to the point where, to your point now, it's this massive use case, people really care about speed of inference and other things.\n\nSpeaker 2 | 05:58 - 06:00\nWhat gave you the conviction back then to do this?\n\nSpeaker 1 | 06:00 - 06:25\nCombination of of vision, the right cofounders, and a little bit of arrogance, a little bit of luck. You know, we we saw AI on the horizon as a new workload. And as computer architects, new workloads are opportunity. Right? It's very, very hard to to to enter in the x 86 world, right, where there's not nothing new is happening there, and nothing has happened for generations.\n\nSpeaker 1 | 06:26 - 07:02\nBut, you know, when graphics emerged, you got the discrete GPU, and you you you got NVIDIA, and and when when the mobile compute hit, you you got ARM. And it was interesting that that not Intel, not AMD, not all sorts of people who you would have thought have been really well positioned to win in that business, they all got no share. And so we knew that that that this new workload would eat a lot of compute. It would require a new architecture, dedicated architecture, and that ought to be very different. The architecture could not be a derivative of what's existing.\n\nSpeaker 1 | 07:03 - 07:06\nThose were our big bets, and they were a 100% contrarian.\n\nSpeaker 2 | 07:06 - 07:07\nMhmm.\n\nSpeaker 1 | 07:07 - 07:09\nAnd they turned out to be dead right.\n\nSpeaker 2 | 07:09 - 07:12\nWere there moments where you just doubted whether this would work given the\n\nSpeaker 1 | 07:12 - 07:34\ndifferent for sure. Yeah. We had a period you know, we're solving a problem that had never been solved before. I mean, there'd been efforts across the entire seventy year history of the compute industry to build a wafer scale product. In fact, Gene Amdahl, sort of one of fathers of our field, one of the guys on Mount Rushmore of compute, failed miserably to do it.\n\nSpeaker 1 | 07:34 - 07:53\nWe had a period between about 2017, middle of twenty seventeen and middle of twenty nineteen, where we couldn't build it. We were spending about 8,000,000 a month. You're having board meetings every six weeks saying, I can't build it. No, it's still not working. And right, Oof is right.\n\nSpeaker 1 | 07:53 - 08:23\nI mean, that's a huge amount of money and a huge amount of conviction your investors have. And each time we did a failure analysis, we got a little bit better at it. We got a little bit better at it. And then in the summer of of nineteen, we we yielded it, and it began to work. And the first time, we were sitting in a a little makeshift shift office in Downtown Los Altos in a building that was not designed for hardware guys, And we're staring at a computer, which is about as exciting as watching paint dry Mhmm.\n\nSpeaker 1 | 08:23 - 08:31\nAnd it's working. And we just we couldn't speak for half an hour. Right? It's like, nobody had been able to do this, and it's working. And we did this.\n\nSpeaker 2 | 08:31 - 08:42\nThat's amazing. Because that that's the technical side of it, then there's a market side. Right? And also on the market side, to your point, it took time to get to the point where these workloads were really important. So were there moments where you doubted whether the market existed?\n\nSpeaker 1 | 08:42 - 09:08\nYou know, we we solved it, and we solved this sort of the hardest problem in the computer industry, and nobody cared. Nobody. It was like, you know, the first gen, we might have sold a dozen. The second gen, we probably sold 300, and now we're selling in a sense of tens of thousands in the third gen. We had a two or three year period where we were ahead of the market, and absolutely nobody cared that we were blisteringly fast.\n\nSpeaker 3 | 09:08 - 09:21\nAnd you found some pioneering customers that were like atypical in terms of a starting point, right? Were some sovereigns who really bought ahead. Like, how did you think about being resilient to this period of being ahead of demand?\n\nSpeaker 1 | 09:21 - 09:54\nI think there's a path that has been laid down by new computer architectures. And often you begin in the supercompute world because those guys love speed, they don't care if your software is immature. And so we sort of ran the table there. We won at Argonne National Labs and at Lawrence Livermore and at Sandia and in Europe, the European Parallel Computing Center at LRZ. So we ran the table there, and then we we won some guys in in the oil and gas space, and we won some guys in pharma, all of whom have long histories of using extraordinary amounts of compute.\n\nSpeaker 1 | 09:55 - 10:25\nBut then historically, there's this giant chasm because none of them provide the volume to get to mainstream. And we won a sovereign, a g 42, and they became strategic partner and close friends, and they placed a billion dollar order on us. And with that, we were able to sort of transform the company. We're able to change our supply chain. We're able to deploy equipment in big enough clusters that that we could battle test at scale.\n\nSpeaker 1 | 10:25 - 10:42\nYou know, one of the challenges in hardware is your QA lab can't be as big as some of the customers you wanna deploy to. Mhmm. Right? But you can't put a $100,000,000 in your QA lab worth of your own gear. And they worked with us, and we began training models for them.\n\nSpeaker 1 | 10:42 - 10:59\nWe began doing inference with for them. They've been an extraordinary partner. This is Peng, who's CEO G42, and his chairman, Shi Tak Nun. We couldn't ask for better partners. And so we we were able to when OpenAI came along, when AWS came along, we we had the capacity.\n\nSpeaker 1 | 10:59 - 11:09\nWe were ready. Right? We'd battle tested. We'd sort of gotten over the the chasm. We we'd had a bridge, and so we could meet the demand.\n\nSpeaker 1 | 11:09 - 11:09\nYeah.\n\nSpeaker 3 | 11:09 - 11:24\nI think that kind of path dependence is sometimes undervalued in this field because the ability for you to go from a, you know, like tens, $100,000,000 order to 20,000,000,000 of backlog, Like, there's gotta be there's gotta be something in the middle as somebody work. Yeah.\n\nSpeaker 1 | 11:24 - 11:42\nIt's years of work. And and, you know, it's I I think often, and I'm sure many of your listeners are in the software world, and and you guys can scale so fast. Mhmm. Right? But but when you're building things, right, you you have to you wanna double, you gotta call your manufacturing partner, your Centimeters.\n\nSpeaker 1 | 11:42 - 11:49\nYou gotta they have to find power. They have to win the building. They have to add more lines. They have to make test fixtures. Right?\n\nSpeaker 1 | 11:49 - 12:00\nEach step takes real time and effort to to grow. We're gonna try to increase manufacturing 10 x this year. Mhmm. That's about as fast as anybody in the history of hardware.\n\nSpeaker 3 | 12:01 - 12:04\nIt's also majority of the software stack for you guys. That's more scale. Right?\n\nSpeaker 1 | 12:04 - 12:18\nYou know, when when we started the company, Sarah, our one of my cofounders I do remember. I know. We we presented to you. One of my cofounders said, Andrew, it's gonna take about ten years to build a compiler. I said, no.\n\nSpeaker 1 | 12:18 - 12:23\nThat's crazy. That's big company talk. We can do it in five. It takes about ten years. Right?\n\nSpeaker 1 | 12:23 - 12:34\nIt turns out. Takes a long time to build a compiler. It is an extraordinarily difficult piece of software. And now we've got a good software stack.\n\nSpeaker 3 | 12:34 - 12:49\nCan I ask you as an aside, actually, just because you have, for more than a decade, believed that this revolution is going to happen? How much is all of this AI generated coding relevant for Cerberus internally? Hugely.\n\nSpeaker 1 | 12:49 - 13:08\nI would say that that, you know, eight months ago, we weren't spending a thousand dollars in engineering on tokens, and we're we're probably at 25 or 30,000 right now, and it's ripping. I I think it's not useful for everybody. I I think that's the truth. I I think there are some some people who have sort of the perfect mindset for it. Right?\n\nSpeaker 1 | 13:08 - 13:25\nAnd you you they are running eight or 10 agents, seven by 24. They've moved their coding style to being one in which they govern agents, whether they think about how to QA. So they've got a QA agent running. They think about how to sort of remedy some of the weaknesses in the coding models. Right?\n\nSpeaker 1 | 13:25 - 13:42\nThey're often verbose. They often cut out comments. They've really thought about, and it's a type of puzzle that the perfect fit for their mind. And they've gone from being sort of 10x guys to being 100x guys. I think the rest of us, myself included, we're sort of limping along.\n\nSpeaker 1 | 13:42 - 14:02\nWe're trying to figure out how we can make it work for our different jobs, for being the CEO, for being the CFO, for being accountants, for being in marketing. But for a small number, it is such a tool. And then the rest, we try and show them what others are doing, what best practices are.\n\nSpeaker 3 | 14:02 - 14:04\nYou're about 800 people now?\n\nSpeaker 1 | 14:04 - 14:05\n800, eight fifty, yeah.\n\nSpeaker 3 | 14:05 - 14:07\nIt's a lot of market cap per person.\n\nSpeaker 1 | 14:07 - 14:08\nI like that. Yeah.\n\nSpeaker 3 | 14:08 - 14:22\nThat's great. It's a good metric overall. When you think about where to go from here, you know, making business bigger, strategic directions, like what you predict, and where can you go from I think we Besides delivery.\n\nSpeaker 1 | 14:22 - 14:59\nWell, when you've got a backlog that's north of $20,000,000,000 delivery is pretty important every day. I think we have to continue to sort of be fearless. I think one of the malaise of companies as they get to 1,000 to 2,000, 3,000 people is they stop taking the type of risks that they were taking before, right? You move from being a fearless engineering culture to sort of being, what can we get in in the timeframe of the next rev? And I think that's extraordinarily damaging, and we take such pride in doing fearless work.\n\nSpeaker 1 | 14:59 - 15:16\nWe want to hire people who do fearless work. We want to kind of sort of guard that culture that that says we would much rather fail in pursuit of the extraordinary than succeed in the ordinary. That that is a horrible thing to do. And so those are some of the things that worry me. I think recruiting, right?\n\nSpeaker 1 | 15:16 - 15:33\nYou have so many openings, and it's so easy to settle, and it's so easy to just try and put a butt in the seat. Yeah, pretty good. Let's get that butt in the seat. I mean, that is death. And so we think really hard, and I spend a meaningful part of every day in talking to candidates.\n\nSpeaker 1 | 15:33 - 15:36\nThose are things that sort of I worry about and I think about every day.\n\nSpeaker 3 | 15:37 - 16:06\nWe have a lot of founders and leaders who, you know, listen to the podcast who are thinking about maybe they have a successful business and they're managing through the period of waiting for the market or trying to figure out if they're still right. They think about how to hire from 800 to several thousand. There we talked about the managing of your own psychology when you're like, am I right for this decade? How did you like keep and motivate employees when there wasn't external feedback for this long period of time?\n\nSpeaker 1 | 16:06 - 16:32\nWell, first, I have empathy for them. I mean, being CEO is an extraordinarily lonely thing. And you're building a business, you're building a business. You guys know this, that being a leader is lonely, and it's not easy. And people don't like to say that, especially for those of us who like to solve problems, specifically the problems everyone else says can't be solved.\n\nSpeaker 1 | 16:33 - 16:44\nYou sort of you you you gain fire from that chip on your on your shoulder. Right? When when they say it can't be solved, you say in your head, you can't solve it. Right. I thought it was just fine.\n\nSpeaker 1 | 16:44 - 16:50\nNo. That's right. That's exactly right. You You know, you were a top venture firm. You wanted to do it your way.\n\nSpeaker 1 | 16:51 - 17:04\nRight? And so you stepped out doing it your way. And you say to yourself, I can do this, and it's not easy. And that's one thing. The other thing is you have to love the journey.\n\nSpeaker 1 | 17:04 - 17:20\nRight? These things we do are too hard if you don't like the building. Right? That you do this for the money is is a horrible thing. There are way easier ways to make money than than trying to create something extraordinary and compete with somebody as strong as as NVIDIA.\n\nSpeaker 1 | 17:20 - 17:27\nThat is not the easiest path. You you gotta love being a David. Right? I'm a professional David. This is my fifth startup.\n\nSpeaker 1 | 17:27 - 17:47\nI compete against Goliath. That is what I do for a living. And I think to myself that every dollar, every million dollars, every billion dollars we sell, if it wasn't for our brains, their muscle would have taken it in a heartbeat. And you gotta love that. And if you don't love that, it's a very long road.\n\nSpeaker 2 | 17:47 - 18:10\nWhen do you think because there's sort of two views of the world in terms of when to give up on something. And one argument is just going no matter what, and hopefully things work out or eventually they will. The other view of the world is, you should be constantly reassessing whether the journey you're on is the right one. And there are some moments where actually giving up is the smartest possible thing you can do. What's your view on that?\n\nSpeaker 2 | 18:10 - 18:13\nOr how do you think about when's the right time to give up on something?\n\nSpeaker 1 | 18:13 - 18:26\nI think it is clearly the right time to give up when you've laid out a set of hypotheses about what it's gonna take to win, and they all come back negative.\n\nSpeaker 2 | 18:27 - 18:32\nYeah. But I see people kind do this sequentially. Right? They say, oh, I just need to test one more thing, and they test it it doesn't work. So I need to test one more.\n\nSpeaker 2 | 18:32 - 18:33\nAnd so\n\nSpeaker 1 | 18:33 - 18:48\nthe slippery slope is a beast. Yeah. The slippery slope in all things, in ethical situations, in your life. I mean, the slippery slope is really something you have to guard against. Right?\n\nSpeaker 1 | 18:48 - 19:18\nAnd I think sometimes having other former CEOs or other really seasoned entrepreneurs who are on your side and who can share with you remember a year ago, you said, if you got to this point, you didn't have this, and to remind you, so so they pull you back off that slippery slope. Right? They they said, you know, the old frog in the the warm water thing is like, you said if it got this hot, you were gonna get out. Yeah. And it slowly kept getting warmer.\n\nSpeaker 2 | 19:18 - 19:21\nSo it's basically, can other people keep you effectively accountable to\n\nSpeaker 1 | 19:21 - 19:22\nThat's right.\n\nSpeaker 2 | 19:22 - 19:22\nDirections.\n\nSpeaker 1 | 19:22 - 19:45\nAccountable to your own thinking. Yeah. If you understand why it's not working, right, if there are some things that that you can articulate that have to change Yeah. In order for it to work, and and you can put some sort of time frame on it. But that is an extraordinarily hard question.\n\nSpeaker 1 | 19:45 - 19:59\nAnd I I think it's probably the case that lots of efforts ought to be truncated. Yeah. And those people sort of redeploy their efforts to new and different ideas that they have.\n\nSpeaker 2 | 20:00 - 20:11\nYeah. It's kind of like I view it as opportunity cost on life. For some people, it's the best moment of their lives in terms of productivity or things they could do. And so the cost of time is extremely high. In your guys' case, obviously it worked out.\n\nSpeaker 2 | 20:11 - 20:23\nWhat made you all decide to go public? Similarly, there's differing opinions on when to go public, why to go public, what's the benefits, what's the drawbacks. What was that in your mind, and what made you decide to go out now? First, sort of\n\nSpeaker 1 | 20:23 - 20:44\ngoing public is exchanging some professional investors, venture capitalists who specialize in technology investing for a different class of investors, in so doing, reducing your cost of capital a little bit. Right? This is really what's happening. Suddenly, we go from pros like you to my dad. Right?\n\nSpeaker 1 | 20:44 - 21:11\nThat that that's sort of the trade off. And in return for that, you have to agree to to be governed by a set of extraordinarily stringent rules. I think your question is complicated by the fact that there have been, for the first time in history, four or five companies that can raise huge amounts of money without going public, that this was never a thing before OpenAI and Anthropic and Databricks.\n\nSpeaker 2 | 21:11 - 21:16\nDo you know where the option package timeline from for Silicon Valley comes from? It's like a four year timeline.\n\nSpeaker 1 | 21:16 - 21:21\nIt used to be how long it would take you to get public. Exactly. Yeah. Used to be four years. Right?\n\nSpeaker 1 | 21:21 - 21:28\nIt used to be four years. And that was the way you got evaluation in the hundreds of millions. Yeah. Right? But I I think\n\nSpeaker 3 | 21:28 - 21:30\nNow people have a tender cycle.\n\nSpeaker 1 | 21:30 - 21:30\nThat's right.\n\nSpeaker 3 | 21:30 - 21:31\nAt a certain scale.\n\nSpeaker 1 | 21:31 - 21:50\nThat it took us 10. And I I think that changes a lot. Right? What we did is we opened up the secondary market and let people sell, right? If you're gonna bet big chunks your career with us, we thought it would be perfectly reasonable for you to find modest liquidity as you went along.\n\nSpeaker 1 | 21:50 - 21:53\nI think you have to think very differently if it's gonna take you a decade.\n\nSpeaker 2 | 21:53 - 21:54\nMhmm.\n\nSpeaker 1 | 21:54 - 22:38\nBut I think for a very small number of companies, those three in particular, they've been able to raise sort of public market money at public market valuations in the private market. I think for the rest of the world, if you want super high valuations, if you want the legitimacy that comes with it, historically, large companies like doing business with other public companies in The US, and you get a credibility and a legitimacy from having your books audited, from them being able to see who you are, that is different than when you're private. And I think all of those are reasonable reasons. I also think we could offer the public market something unique. Right?\n\nSpeaker 1 | 22:38 - 22:55\nWe would be the first and only for a period of time, AI pure play. We are the only company that you can, a 100% of the revenue, comes in this exact market. There's no gaming. There's no graphics. There's no PC.\n\nSpeaker 1 | 22:55 - 23:17\nThis is it. And that was an opportunity, a differentiator that that we thought was interesting. I I think there are ways around all the other things. You you can deliver returns to your investors. I I think both Elon and Ali have been really creative about allowing employees to sell and and allowing investors who who have ten year funds to to to find some liquidity in the process.\n\nSpeaker 1 | 23:18 - 23:27\nBut I I I think more than anything, for us, it was an opportunity to to graduate from corporate adolescence to corporate adulthood.\n\nSpeaker 3 | 23:28 - 23:41\nCan you talk a little bit about I'm so curious. Like, how did the opening ideal happen? What do you think was the point at which you knew that you were a good fit for them?\n\nSpeaker 1 | 23:41 - 24:12\nI think I spoke to Sam in sort of middle of summer in in '25, and he said for the first time he he said, we're we've been trying so hard just to keep up with demand. We we now see the importance of fast inference. That produced a set of trials and some testing that that was done, and we were so much faster than the than the competition. It felt really good. And when we love talking to super smart customers.\n\nSpeaker 1 | 24:12 - 24:34\nRight? I mean, I I can't I know you do consumer too. I I can't do consumer. I have a rule that if my my mother buys it or uses it, I don't wanna make it or sell it because I I I really want super smart customers who are doing really interesting things with our stuff. And so we got in with some of their guys, and they were like, woah.\n\nSpeaker 1 | 24:34 - 24:49\nThis is we understand now. And at Thanksgiving, the night before Thanksgiving, we signed a term sheet. And, you know, four weeks later, on the December 24, we signed a big master agreement. And so That's\n\nSpeaker 3 | 24:49 - 24:50\nincredibly fast.\n\nSpeaker 1 | 24:50 - 25:04\nYou know what? They can fly. And, you know, we were working seven days a week. I mean, they had several law firm I mean, was a huge For a $20 plus billion deal to do it in four and a half weeks was exceptional.\n\nSpeaker 3 | 25:04 - 25:12\nI actually think that's like a crazy characteristic of this market that I've not personally experienced before, which is everybody's trying to keep up with demand. I and\n\nSpeaker 1 | 25:12 - 25:24\nand I think, you know, I I talked to the guys at at Cognition. Right? They bought Windsurf over a weekend. Right? I I think many of the things that we thought were speed of light weren't.\n\nSpeaker 1 | 25:25 - 25:39\nMhmm. Right? Could be done much faster. And I I think, you know, the the rate at which Elon has been able to build data centers, right? Everybody's, oh, you can't do it that way, except if you're him, in which case you can, or you can't buy a $300,000,000 company in three actually, you can.\n\nSpeaker 1 | 25:39 - 25:56\nYou can't do a deal like this in in twenty four days. But if you work on it every day Mhmm. For eight or ten hours a day, you can. And I I think the art of the possible has been expanded by this push in a way I'd never have expected. And I\n\nSpeaker 3 | 25:56 - 26:00\nthink it's a huge advantage to have the ambition for speed if you believe it is possible.\n\nSpeaker 1 | 26:00 - 26:15\nThat's right. I think we have seen some extraordinary operators in this market build amazing things. Mean, the guys at Cursor and Cognizant, see sort of growth we've never seen before. You can't grow that fast. Well, actually, you can.\n\nSpeaker 1 | 26:15 - 26:25\nYou can't build data centers. You can't do deals. Those were sort of truncated aspirations, which is interesting.\n\nSpeaker 3 | 26:25 - 26:37\nSpeaking about these companies like Cog and Cursor and such, the growth of the open source ecosystem has enabled a generation of companies to do really impressive things.\n\nSpeaker 1 | 26:37 - 26:39\nSuper, super impressive.\n\nSpeaker 3 | 26:39 - 26:55\nYou know, Devin on Cerebras is a really magical experience. Coding on Cerebras is like like, performance at massive speed is really special. How do you how do you think about, you know, open source and post trained workloads and and your perspective on that going forward?\n\nSpeaker 1 | 26:56 - 27:27\nThey have fed this market. Right? When closed source was was too expensive, the open source community has sort of kept the interest alive and kept the flame going. And I I think that that the and pushed the the closed source guys. I I think the the sort of techniques that we saw by some of the Chinese makers, like, woah.\n\nSpeaker 1 | 27:27 - 27:41\nWe we gotta stay ahead of that. Right? We we can't rest on our laurels. We we can't depend on the fact that we have bigger training clusters and more data. And I think that's made for an extraordinarily vibrant ecosystem.\n\nSpeaker 1 | 27:41 - 28:01\nRight? I I think it's made for creativity or and allowed creativity to to to take root and and really produce interesting results. And that's fun to be in the midst of. Right? It's fun to see other people's ideas do interesting things on your hardware.\n\nSpeaker 1 | 28:01 - 28:08\nAnd that's if you don't love that, your infrastructure is not right for you. You gotta love other people's ideas to take flight on on what you built.\n\nSpeaker 3 | 28:08 - 28:19\nWhen you think about experiences you imagine will be possible only on cerebris, is there anything you're excited about in a couple years from now that we should all look out for?\n\nSpeaker 1 | 28:19 - 28:43\nYou know, when I think about what speed does, it doesn't make the existing business models a little better. Right? You know, Netflix used to deliver DVDs and envelopes, and they thought their competition was blockbuster. And when the Internet got fast, they became a movie studio. Right?\n\nSpeaker 1 | 28:43 - 29:01\nThat's what happens with speed. I mean, it wasn't they didn't get better incrementally and more efficient to delivering DVDs. Right? It opened up an entirely new business, something fundamentally different. And then they sort of became a movie movie studio.\n\nSpeaker 1 | 29:01 - 29:31\nThey bought existing movie studios. And and I think that's what what what fast AI does is it will present entirely new sort of business models that are available. I think the easy and the obvious is to replace existing. And we know that when the PC came in, it replaced right, typewriters and general ledger accounting. But the big jump in productivity was when it reorganized how we did work.\n\nSpeaker 1 | 29:31 - 29:44\nAnd you got the cloud. And then with the cloud, you were able to get SaaS. And with SaaS, you were able to get tools that you previously couldn't afford because they were so expensive to the individual company into the small number of seats. Right? Then you've got this massive jump in productivity.\n\nSpeaker 1 | 29:44 - 30:05\nAnd I think AI is in the same way, that right now we're replacing things that everybody can see, like coding, design, right, some of the the SaaS tools. But once we start sort of fundamentally reorganizing around this, you're gonna see this sort of new business models and fundamental jumps in productivity, and I'm\n\nSpeaker 2 | 30:05 - 30:05\neager\n\nSpeaker 1 | 30:05 - 30:06\nfor that. That's so cool.\n\nSpeaker 2 | 30:06 - 30:09\nVery exciting. Thank you so much for joining us today.\n\nSpeaker 1 | 30:09 - 30:12\nGuys, thank you so much for having me on your show. Really appreciate it.\n\nSpeaker 3 | 30:12 - 30:12\nCongratulations.\n\nSpeaker 1 | 30:12 - 30:13\nThank you so much.\n\nSpeaker 3 | 30:16 - 30:32\nFind us on Twitter at no priors pod. Subscribe to our YouTube channel if you wanna see our faces. Follow the show on Apple Podcasts, Spotify, or wherever you listen. That way you get a new episode every week. And sign up for emails or find transcripts for every episode at nopriors.com."
+      }
+    ],
+    "stats": {
+      "podcastEpisodes": 1
+    },
+    "errors": [
+      "Podcast: Transcript error for \"Giving Agents Computers — Ivan Burazin, Daytona\": HTTP 404: {\"status\":\"error\",\"message\":\"Episode not found\"}"
+    ]
+  },
+  "blogs": {
+    "generatedAt": "2026-05-24T07:26:28.760Z",
+    "lookbackHours": 72,
+    "blogs": [],
+    "stats": {
+      "blogPosts": 0
+    }
+  }
+}
