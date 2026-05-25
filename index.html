@@ -5561,11 +5561,6 @@ function renderGitHubPicks(data) {
     html += '</section>';
   });
 
-  // Top picks
-  html += '<section class="ghp-top-picks">';
-  html += '<h2 class="ghp-section-title">🎯 ' + data.topPicks.title + '</h2>';
-  html += '<p class="ghp-section-desc">分享主题：<strong>' + data.topPicks.theme + '</strong></p>';
-  html += '</section>';
 
   container.innerHTML = html;
 }
