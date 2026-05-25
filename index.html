@@ -341,6 +341,11 @@
   .ghp-card-title { font-size:16px; font-weight:700; color:var(--black); margin-bottom:8px; }
   .ghp-card-desc { font-size:13px; color:var(--text2); line-height:1.5; margin-bottom:12px; }
   .ghp-card-insight { font-size:13px; line-height:1.6; color:var(--text); background:var(--accent-soft); border-radius:8px; padding:12px 14px; margin-bottom:12px; border-left:3px solid var(--black); }
+  .ghp-card-cases { font-size:13px; line-height:1.6; margin-bottom:12px; }
+  .ghp-cases-label { display:inline-block; font-size:11px; font-weight:700; color:var(--white); background:#0969da; padding:2px 8px; border-radius:4px; margin-bottom:8px; }
+  .ghp-cases-list { margin:8px 0 0 0; padding-left:18px; color:var(--text2); }
+  .ghp-cases-list li { margin-bottom:6px; }
+  .ghp-cases-list strong { color:var(--text); font-weight:600; }
   .ghp-insight-label { display:inline-block; font-size:11px; font-weight:700; color:var(--white); background:var(--black); padding:2px 8px; border-radius:4px; margin-right:8px; margin-bottom:4px; vertical-align:middle; }
   .ghp-card-link { font-size:12px; font-weight:600; color:#0969da; text-decoration:none; }
   .ghp-card-link:hover { text-decoration:underline; }
@@ -5554,6 +5559,13 @@ function renderGitHubPicks(data) {
       html += '<div class="ghp-card-title">' + item.title + '</div>';
       html += '<div class="ghp-card-desc">' + item.desc + '</div>';
       html += '<div class="ghp-card-insight"><span class="ghp-insight-label">洞察</span>' + item.insight + '</div>';
+      if (item.cases && item.cases.length) {
+        html += '<div class="ghp-card-cases"><span class="ghp-cases-label">应用案例</span><ul class="ghp-cases-list">';
+        item.cases.forEach(function(c) {
+          html += '<li><strong>' + c.name + '</strong>：' + c.desc + '</li>';
+        });
+        html += '</ul></div>';
+      }
       html += '<a class="ghp-card-link" href="' + item.url + '" target="_blank">查看项目 →</a>';
       html += '</div>';
     });
