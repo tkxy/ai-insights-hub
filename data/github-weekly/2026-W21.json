@@ -4,14 +4,46 @@
     "start": "2026-05-18",
     "end": "2026-05-24"
   },
-  "generatedAt": "2026-05-26T09:01:35.196465+00:00",
+  "generatedAt": "2026-05-26T11:35:28.411448+00:00",
   "count": 20,
   "items": [
+    {
+      "name": "facebook/react",
+      "title": "The library for web and native user interfaces.",
+      "url": "https://github.com/facebook/react",
+      "stars": 245272,
+      "forks": 51108,
+      "language": "JavaScript",
+      "topics": [
+        "declarative",
+        "frontend",
+        "javascript",
+        "library",
+        "react"
+      ],
+      "category": "UI / 组件",
+      "insight": "组件库竞争进入差异化阶段，设计工程师需要的不只是样式，还有交互行为和品牌动效。",
+      "cases": [
+        {
+          "name": "设计系统建设",
+          "desc": "企业级组件库的搭建和跨团队规范落地"
+        },
+        {
+          "name": "快速原型搭建",
+          "desc": "用现成组件快速实现产品原型和 Demo"
+        },
+        {
+          "name": "品牌差异化",
+          "desc": "在通用组件上叠加品牌动效和视觉个性"
+        }
+      ],
+      "isNew": false
+    },
     {
       "name": "Snailclimb/JavaGuide",
       "title": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
       "url": "https://github.com/Snailclimb/JavaGuide",
-      "stars": 155887,
+      "stars": 155891,
       "forks": 46133,
       "language": "JavaScript",
       "topics": [
@@ -23,14 +55,28 @@
       ],
       "category": "AI / 生成式",
       "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
       "isNew": false
     },
     {
       "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "title": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
       "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
-      "stars": 138270,
-      "forks": 34444,
+      "stars": 138276,
+      "forks": 34446,
       "language": null,
       "topics": [
         "ai",
@@ -41,14 +87,28 @@
       ],
       "category": "AI / 生成式",
       "insight": "Agent 生态持续扩展——system-prompts-and-models-of-ai-tools 代表了社区对 AI 自主能力的持续探索。",
+      "cases": [
+        {
+          "name": "Prompt 工程优化",
+          "desc": "系统提示词的管理、版本控制和 A/B 测试"
+        },
+        {
+          "name": "AI 应用调优",
+          "desc": "通过 prompt 模板提升生成质量和一致性"
+        },
+        {
+          "name": "团队 Prompt 库",
+          "desc": "跨团队共享和复用高质量提示词"
+        }
+      ],
       "isNew": false
     },
     {
       "name": "microsoft/generative-ai-for-beginners",
       "title": "21 Lessons, Get Started Building with Generative AI ",
       "url": "https://github.com/microsoft/generative-ai-for-beginners",
-      "stars": 111383,
-      "forks": 59757,
+      "stars": 111388,
+      "forks": 59760,
       "language": "Jupyter Notebook",
       "topics": [
         "ai",
@@ -59,14 +119,28 @@
       ],
       "category": "AI / 生成式",
       "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
       "isNew": false
     },
     {
       "name": "github/spec-kit",
       "title": "💫 Toolkit to help you get started with Spec-Driven Development",
       "url": "https://github.com/github/spec-kit",
-      "stars": 105975,
-      "forks": 9379,
+      "stars": 106006,
+      "forks": 9381,
       "language": "Python",
       "topics": [
         "ai",
@@ -77,14 +151,28 @@
       ],
       "category": "AI / 生成式",
       "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
       "isNew": false
     },
     {
       "name": "google-gemini/gemini-cli",
       "title": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
       "url": "https://github.com/google-gemini/gemini-cli",
-      "stars": 104603,
-      "forks": 13865,
+      "stars": 104607,
+      "forks": 13871,
       "language": "TypeScript",
       "topics": [
         "ai",
@@ -95,14 +183,28 @@
       ],
       "category": "AI / 生成式",
       "insight": "Agent 生态持续扩展——gemini-cli 代表了社区对 AI 自主能力的持续探索。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
       "isNew": false
     },
     {
       "name": "rasbt/LLMs-from-scratch",
       "title": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
       "url": "https://github.com/rasbt/LLMs-from-scratch",
-      "stars": 95973,
-      "forks": 14704,
+      "stars": 95991,
+      "forks": 14705,
       "language": "Jupyter Notebook",
       "topics": [
         "ai",
@@ -113,13 +215,27 @@
       ],
       "category": "AI / 生成式",
       "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
       "isNew": false
     },
     {
       "name": "hacksider/Deep-Live-Cam",
       "title": "real time face swap and one-click video deepfake with only a single image",
       "url": "https://github.com/hacksider/Deep-Live-Cam",
-      "stars": 93364,
+      "stars": 93363,
       "forks": 13598,
       "language": "Python",
       "topics": [
@@ -131,14 +247,90 @@
       ],
       "category": "AI / 生成式",
       "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "sveltejs/svelte",
+      "title": "web development for the rest of us",
+      "url": "https://github.com/sveltejs/svelte",
+      "stars": 86621,
+      "forks": 4921,
+      "language": "JavaScript",
+      "topics": [
+        "compiler",
+        "template",
+        "ui"
+      ],
+      "category": "UI / 组件",
+      "insight": "组件库竞争进入差异化阶段，设计工程师需要的不只是样式，还有交互行为和品牌动效。",
+      "cases": [
+        {
+          "name": "设计系统建设",
+          "desc": "企业级组件库的搭建和跨团队规范落地"
+        },
+        {
+          "name": "快速原型搭建",
+          "desc": "用现成组件快速实现产品原型和 Demo"
+        },
+        {
+          "name": "品牌差异化",
+          "desc": "在通用组件上叠加品牌动效和视觉个性"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "ocornut/imgui",
+      "title": "Dear ImGui: Bloat-free Graphical User interface for C++ with minimal dependencies",
+      "url": "https://github.com/ocornut/imgui",
+      "stars": 73457,
+      "forks": 11769,
+      "language": "C++",
+      "topics": [
+        "api",
+        "cplusplus",
+        "framework",
+        "game-development",
+        "game-engine"
+      ],
+      "category": "UI / 组件",
+      "insight": "组件库竞争进入差异化阶段，设计工程师需要的不只是样式，还有交互行为和品牌动效。",
+      "cases": [
+        {
+          "name": "设计系统建设",
+          "desc": "企业级组件库的搭建和跨团队规范落地"
+        },
+        {
+          "name": "快速原型搭建",
+          "desc": "用现成组件快速实现产品原型和 Demo"
+        },
+        {
+          "name": "品牌差异化",
+          "desc": "在通用组件上叠加品牌动效和视觉个性"
+        }
+      ],
       "isNew": false
     },
     {
       "name": "JuliusBrussee/caveman",
       "title": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
       "url": "https://github.com/JuliusBrussee/caveman",
-      "stars": 64857,
-      "forks": 3665,
+      "stars": 64948,
+      "forks": 3669,
       "language": "JavaScript",
       "topics": [
         "ai",
@@ -149,14 +341,28 @@
       ],
       "category": "AI / 生成式",
       "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
       "isNew": false
     },
     {
       "name": "Mintplex-Labs/anything-llm",
       "title": "The all-in-one AI productivity accelerator. On device and privacy first with no annoying setup or configuration.",
       "url": "https://github.com/Mintplex-Labs/anything-llm",
-      "stars": 60625,
-      "forks": 6563,
+      "stars": 60631,
+      "forks": 6562,
       "language": "JavaScript",
       "topics": [
         "ai-agents",
@@ -167,32 +373,28 @@
       ],
       "category": "AI / 生成式",
       "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
-      "isNew": false
-    },
-    {
-      "name": "docling-project/docling",
-      "title": "Get your documents ready for gen AI",
-      "url": "https://github.com/docling-project/docling",
-      "stars": 60377,
-      "forks": 4195,
-      "language": "Python",
-      "topics": [
-        "ai",
-        "convert",
-        "document-parser",
-        "document-parsing",
-        "documents"
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
       ],
-      "category": "AI / 生成式",
-      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
       "isNew": false
     },
     {
       "name": "sansan0/TrendRadar",
       "title": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 +  RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 +  AI 分析简报直推手机，也支持接入 MCP 架构，赋能 AI 自然语言对话分析、情感洞察与趋势预测等。支持 Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。",
       "url": "https://github.com/sansan0/TrendRadar",
-      "stars": 58344,
-      "forks": 24423,
+      "stars": 58351,
+      "forks": 24424,
       "language": "Python",
       "topics": [
         "ai",
@@ -203,14 +405,60 @@
       ],
       "category": "AI / 生成式",
       "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "D4Vinci/Scrapling",
+      "title": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "stars": 54271,
+      "forks": 5220,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "ai-scraping",
+        "automation",
+        "crawler",
+        "crawling"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
       "isNew": false
     },
     {
       "name": "run-llama/llama_index",
       "title": "LlamaIndex is the leading document agent and OCR platform",
       "url": "https://github.com/run-llama/llama_index",
-      "stars": 49671,
-      "forks": 7459,
+      "stars": 49676,
+      "forks": 7460,
       "language": "Python",
       "topics": [
         "agents",
@@ -221,13 +469,27 @@
       ],
       "category": "AI / 生成式",
       "insight": "Agent 生态持续扩展——llama_index 代表了社区对 AI 自主能力的持续探索。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
       "isNew": false
     },
     {
       "name": "huginn/huginn",
       "title": "Create agents that monitor and act on your behalf.  Your agents are standing by!",
       "url": "https://github.com/huginn/huginn",
-      "stars": 49327,
+      "stars": 49328,
       "forks": 4267,
       "language": "Ruby",
       "topics": [
@@ -239,14 +501,28 @@
       ],
       "category": "AI / 生成式",
       "insight": "Agent 生态持续扩展——huginn 代表了社区对 AI 自主能力的持续探索。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
       "isNew": false
     },
     {
       "name": "pixijs/pixijs",
       "title": "The HTML5 Creation Engine: Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.",
       "url": "https://github.com/pixijs/pixijs",
-      "stars": 47249,
-      "forks": 5019,
+      "stars": 47251,
+      "forks": 5020,
       "language": "TypeScript",
       "topics": [
         "canvas",
@@ -257,14 +533,28 @@
       ],
       "category": "3D / 空间计算",
       "insight": "3D/空间技术在 Web 端的可用性持续提升，从营销装饰走向产品交互层。",
+      "cases": [
+        {
+          "name": "产品 3D 展示",
+          "desc": "电商商品、硬件产品的在线 3D 预览和交互"
+        },
+        {
+          "name": "数字孪生",
+          "desc": "园区/工厂的 3D 实时监控和数据叠加"
+        },
+        {
+          "name": "XR 应用界面",
+          "desc": "VR/AR 场景中的空间 UI 和交互设计"
+        }
+      ],
       "isNew": false
     },
     {
       "name": "jeecgboot/JeecgBoot",
       "title": "AI 低代码平台，「低代码 + 零代码」双模式驱动：低代码一键生成前后端代码，零代码 5 分钟搭建系统，AI Skills 一句话画流程、设计表单、生成整套系统。内置 AI聊天、知识库、流程编排、MCP插件等，兼容主流大模型。引领「AI 生成 → 在线配置 → 代码生成 → 手工合并->AI修改」开发模式，消除 Java 项目 80% 的重复工作，提效而不失灵活。",
       "url": "https://github.com/jeecgboot/JeecgBoot",
-      "stars": 46431,
-      "forks": 16005,
+      "stars": 46432,
+      "forks": 16006,
       "language": "Java",
       "topics": [
         "activiti",
@@ -275,13 +565,59 @@
       ],
       "category": "AI / 生成式",
       "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "DavidHDev/react-bits",
+      "title": "An open source collection of animated, interactive & fully customizable React components for building memorable websites.",
+      "url": "https://github.com/DavidHDev/react-bits",
+      "stars": 40000,
+      "forks": 1819,
+      "language": "JavaScript",
+      "topics": [
+        "3d",
+        "animations",
+        "component-library",
+        "components",
+        "components-library"
+      ],
+      "category": "3D / 空间计算",
+      "insight": "3D/空间技术在 Web 端的可用性持续提升，从营销装饰走向产品交互层。",
+      "cases": [
+        {
+          "name": "产品 3D 展示",
+          "desc": "电商商品、硬件产品的在线 3D 预览和交互"
+        },
+        {
+          "name": "数字孪生",
+          "desc": "园区/工厂的 3D 实时监控和数据叠加"
+        },
+        {
+          "name": "XR 应用界面",
+          "desc": "VR/AR 场景中的空间 UI 和交互设计"
+        }
+      ],
       "isNew": false
     },
     {
       "name": "google/langextract",
       "title": "A Python library for extracting structured information from unstructured text using LLMs with precise source grounding and interactive visualization.",
       "url": "https://github.com/google/langextract",
-      "stars": 36558,
+      "stars": 36561,
       "forks": 2519,
       "language": "Python",
       "topics": [
@@ -293,78 +629,20 @@
       ],
       "category": "AI / 生成式",
       "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
-      "isNew": false
-    },
-    {
-      "name": "bytedance/UI-TARS-desktop",
-      "title": "The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra",
-      "url": "https://github.com/bytedance/UI-TARS-desktop",
-      "stars": 35284,
-      "forks": 3547,
-      "language": "TypeScript",
-      "topics": [
-        "agent",
-        "agent-tars",
-        "browser-use",
-        "computer-use",
-        "cowork"
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
       ],
-      "category": "AI / 生成式",
-      "insight": "Agent 生态持续扩展——UI-TARS-desktop 代表了社区对 AI 自主能力的持续探索。",
-      "isNew": false
-    },
-    {
-      "name": "microsoft/graphrag",
-      "title": "A modular graph-based Retrieval-Augmented Generation (RAG) system",
-      "url": "https://github.com/microsoft/graphrag",
-      "stars": 33226,
-      "forks": 3514,
-      "language": "Python",
-      "topics": [
-        "gpt",
-        "gpt-4",
-        "gpt4",
-        "graphrag",
-        "llm"
-      ],
-      "category": "AI / 生成式",
-      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
-      "isNew": false
-    },
-    {
-      "name": "motiondivision/motion",
-      "title": "A modern animation library for React and JavaScript",
-      "url": "https://github.com/motiondivision/motion",
-      "stars": 32090,
-      "forks": 1177,
-      "language": "TypeScript",
-      "topics": [
-        "animation",
-        "animation-js",
-        "motion",
-        "react",
-        "reactanimations"
-      ],
-      "category": "动效 / 交互编排",
-      "insight": "动效工具链正在成熟——从「手动写 CSS transition」到「可编排、可复用的运动组件」。",
-      "isNew": false
-    },
-    {
-      "name": "linshenkx/prompt-optimizer",
-      "title": "An AI prompt optimizer for writing better prompts and getting better AI results.",
-      "url": "https://github.com/linshenkx/prompt-optimizer",
-      "stars": 29871,
-      "forks": 3493,
-      "language": "TypeScript",
-      "topics": [
-        "ai-prompts",
-        "ai-tools",
-        "llm",
-        "prompt",
-        "prompt-engineering"
-      ],
-      "category": "AI / 生成式",
-      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
       "isNew": false
     }
   ]

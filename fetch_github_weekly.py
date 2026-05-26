@@ -131,6 +131,76 @@ def generate_insight(repo: dict) -> str:
     return f"值得关注的活跃项目，上周获得了大量社区关注。"
 
 
+def generate_cases(repo: dict) -> list[dict]:
+    """基于 category 和 description 生成应用案例"""
+    cat = repo.get("_category", "")
+    desc = (repo.get("description") or "").lower()
+    name = (repo.get("full_name") or "").split("/")[-1].lower()
+
+    cases_map = {
+        "AI / 生成式": [
+            {"name": "智能对话产品", "desc": "集成到客服、助手类产品中提升对话质量和自主能力"},
+            {"name": "内容生产工具", "desc": "文案、代码、图片等内容的 AI 辅助生成"},
+            {"name": "企业知识库", "desc": "基于 RAG 的企业文档问答和知识检索"},
+        ],
+        "画布 / 空间界面": [
+            {"name": "协作白板", "desc": "团队脑暴、需求评审、用户旅程图的可视化协作"},
+            {"name": "AI 工作流编排", "desc": "Agent/自动化任务的节点式可视化配置"},
+            {"name": "知识图谱可视化", "desc": "将文档/概念关系以画布形式空间化呈现"},
+        ],
+        "动效 / 交互编排": [
+            {"name": "品牌动效落地", "desc": "产品首页、活动页的入场动画和滚动交互"},
+            {"name": "组件交互反馈", "desc": "按钮、卡片、列表的微交互和状态转换动效"},
+            {"name": "设计系统 Motion Token", "desc": "将动效参数化为设计系统的一部分"},
+        ],
+        "3D / 空间计算": [
+            {"name": "产品 3D 展示", "desc": "电商商品、硬件产品的在线 3D 预览和交互"},
+            {"name": "数字孪生", "desc": "园区/工厂的 3D 实时监控和数据叠加"},
+            {"name": "XR 应用界面", "desc": "VR/AR 场景中的空间 UI 和交互设计"},
+        ],
+        "UI / 组件": [
+            {"name": "设计系统建设", "desc": "企业级组件库的搭建和跨团队规范落地"},
+            {"name": "快速原型搭建", "desc": "用现成组件快速实现产品原型和 Demo"},
+            {"name": "品牌差异化", "desc": "在通用组件上叠加品牌动效和视觉个性"},
+        ],
+        "文本 / 排版": [
+            {"name": "富文本编辑器", "desc": "文档、笔记、CMS 的编辑体验优化"},
+            {"name": "排版动画", "desc": "标题、段落的动态排版和进场效果"},
+            {"name": "多语言适配", "desc": "CJK 文字排版的特殊处理和优化"},
+        ],
+        "开发工具": [
+            {"name": "开发者体验提升", "desc": "CLI 工具、终端美化、开发流程自动化"},
+            {"name": "项目脚手架", "desc": "快速初始化项目结构和配置"},
+            {"name": "调试与监控", "desc": "开发阶段的性能分析和问题定位"},
+        ],
+    }
+
+    # 特殊项目的精确案例
+    if "prompt" in name or "prompt" in desc:
+        return [
+            {"name": "Prompt 工程优化", "desc": "系统提示词的管理、版本控制和 A/B 测试"},
+            {"name": "AI 应用调优", "desc": "通过 prompt 模板提升生成质量和一致性"},
+            {"name": "团队 Prompt 库", "desc": "跨团队共享和复用高质量提示词"},
+        ]
+    if "workflow" in name or "automation" in desc or "n8n" in name:
+        return [
+            {"name": "业务流程自动化", "desc": "将重复性工作编排为自动化流程"},
+            {"name": "AI + 工具编排", "desc": "让 AI 调用多个工具完成复杂任务"},
+            {"name": "数据管线配置", "desc": "ETL/数据同步流程的可视化编排"},
+        ]
+    if "code" in name or "coding" in desc or "copilot" in desc:
+        return [
+            {"name": "编码效率提升", "desc": "代码补全、重构建议、Bug 定位辅助"},
+            {"name": "代码审查自动化", "desc": "PR Review 的 AI 辅助和规范检查"},
+            {"name": "技术文档生成", "desc": "从代码自动生成 API 文档和注释"},
+        ]
+
+    return cases_map.get(cat, [
+        {"name": "技术选型参考", "desc": "了解该领域最新技术方向和社区趋势"},
+        {"name": "团队分享素材", "desc": "适合作为技术分享或设计组内部交流的案例"},
+    ])
+
+
 def main() -> int:
     # 确定目标周
     if len(sys.argv) > 1:
@@ -197,6 +267,7 @@ def main() -> int:
             "topics": (r.get("topics") or [])[:5],
             "category": cat,
             "insight": generate_insight(r),
+            "cases": generate_cases(r),
             "isNew": r["created_at"][:10] >= start_date,
         })
 

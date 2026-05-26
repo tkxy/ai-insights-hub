@@ -5678,6 +5678,13 @@ function renderGhWeekly(data) {
       html += '<div class="ghp-card-title">' + (item.name.split('/')[1] || item.name) + ' <span style="font-size:12px;color:var(--text2);font-weight:400;">★ ' + starsStr + '</span></div>';
       html += '<div class="ghp-card-desc">' + (item.title || '').slice(0, 150) + '</div>';
       html += '<div class="ghp-card-insight"><span class="ghp-insight-label">洞察</span>' + item.insight + '</div>';
+      if (item.cases && item.cases.length) {
+        html += '<div class="ghp-card-cases"><span class="ghp-cases-label">应用案例</span><ul class="ghp-cases-list">';
+        item.cases.forEach(function(c) {
+          html += '<li><strong>' + c.name + '</strong>：' + c.desc + '</li>';
+        });
+        html += '</ul></div>';
+      }
       if (topicsHtml) html += '<div style="margin-bottom:10px;display:flex;gap:4px;flex-wrap:wrap;">' + topicsHtml + '</div>';
       html += '<a class="ghp-card-link" href="' + item.url + '" target="_blank">查看项目 →</a>';
       html += '</div>';
