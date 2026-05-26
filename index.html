@@ -1844,6 +1844,12 @@
       <button id="newsNextWeek" onclick="navNewsWeek(1)">下周 →</button>
       <button id="newsThisWeek" class="go-this-week" style="display:none;" onclick="navNewsWeek(0)">本周</button>
     </div>
+    <div class="date-nav" id="gh-week-nav" style="display:none;">
+      <button id="ghPrevWeek" onclick="navGhWeek(-1)">← 上周</button>
+      <select id="ghWeekSelect" class="current-date" onchange="jumpToGhWeek(this.value)" style="border:none;outline:none;font:inherit;cursor:pointer;padding:0 8px;background:transparent;"></select>
+      <button id="ghNextWeek" onclick="navGhWeek(1)">下周 →</button>
+      <button id="ghThisWeek" class="go-this-week" style="display:none;" onclick="navGhWeek(0)">本周</button>
+    </div>
   </div>
 </div>
 
@@ -3795,6 +3801,8 @@ function switchPage(id) {
   monthNav.style.display = id === 'map' ? 'flex' : 'none';
   var newsWeekNav = document.getElementById('news-week-nav');
   if (newsWeekNav) newsWeekNav.style.display = id === 'news' ? 'flex' : 'none';
+  var ghWeekNav = document.getElementById('gh-week-nav');
+  if (ghWeekNav) ghWeekNav.style.display = id === 'github' ? 'flex' : 'none';
 
   if (id === 'map') {
     loadAndRenderMapClusters();
@@ -5553,27 +5561,85 @@ function switchGhView(view) {
   }
 }
 
-async function loadGhWeekly() {
+var ghWeeklyState = { index: null, currentWeek: null, loaded: {} };
+
+async function loadGhWeekly(weekKey) {
   var container = document.getElementById('ghp-weekly-view');
   if (!container) return;
-  container.innerHTML = '<div class="loading"><div class="spinner"></div><p>正在加载本周热门...</p></div>';
+  container.innerHTML = '<div class="loading"><div class="spinner"></div><p>正在加载...</p></div>';
   try {
-    var idxResp = await fetch('data/github-weekly/index.json', { cache: 'no-store' });
-    if (!idxResp.ok) throw new Error('index not found');
-    var idx = await idxResp.json();
+    // 加载 index（只加载一次）
+    if (!ghWeeklyState.index) {
+      var idxResp = await fetch('data/github-weekly/index.json', { cache: 'no-store' });
+      if (!idxResp.ok) throw new Error('index not found');
+      ghWeeklyState.index = await idxResp.json();
+    }
+    var idx = ghWeeklyState.index;
     if (!idx.weeks || !idx.weeks.length) throw new Error('无数据');
-    var latest = idx.weeks[0];
-    var dataResp = await fetch('data/github-weekly/' + latest.week + '.json', { cache: 'no-store' });
-    if (!dataResp.ok) throw new Error('data not found');
-    var data = await dataResp.json();
+
+    // 确定当前周
+    if (!weekKey) weekKey = idx.weeks[0].week;
+    ghWeeklyState.currentWeek = weekKey;
+
+    // 加载数据（缓存）
+    if (!ghWeeklyState.loaded[weekKey]) {
+      var dataResp = await fetch('data/github-weekly/' + weekKey + '.json', { cache: 'no-store' });
+      if (!dataResp.ok) throw new Error(weekKey + ' 数据未找到');
+      ghWeeklyState.loaded[weekKey] = await dataResp.json();
+    }
     _ghWeeklyLoaded = true;
-    renderGhWeekly(data, idx.weeks);
+    renderGhWeekly(ghWeeklyState.loaded[weekKey]);
+    renderGhWeekNav();
   } catch(e) {
     container.innerHTML = '<div style="color:#888;text-align:center;padding:40px;">暂无数据，周一自动更新</div>';
   }
 }
 
-function renderGhWeekly(data, allWeeks) {
+function renderGhWeekNav() {
+  var select = document.getElementById('ghWeekSelect');
+  var prevBtn = document.getElementById('ghPrevWeek');
+  var nextBtn = document.getElementById('ghNextWeek');
+  var thisBtn = document.getElementById('ghThisWeek');
+  if (!select) return;
+  var idx = ghWeeklyState.index;
+  if (!idx || !idx.weeks) return;
+  var weeks = idx.weeks;
+  var current = ghWeeklyState.currentWeek;
+
+  // 渲染下拉
+  var html = '';
+  weeks.forEach(function(w) {
+    var sel = w.week === current ? ' selected' : '';
+    var label = w.start.slice(5) + ' ~ ' + w.end.slice(5);
+    html += '<option value="' + w.week + '"' + sel + '>' + label + '</option>';
+  });
+  select.innerHTML = html;
+
+  // 前后按钮状态
+  var curIdx = weeks.findIndex(function(w) { return w.week === current; });
+  nextBtn.disabled = curIdx <= 0;
+  prevBtn.disabled = curIdx >= weeks.length - 1;
+  thisBtn.style.display = curIdx > 0 ? 'inline-block' : 'none';
+}
+
+function navGhWeek(delta) {
+  var idx = ghWeeklyState.index;
+  if (!idx || !idx.weeks) return;
+  var weeks = idx.weeks;
+  var current = ghWeeklyState.currentWeek;
+  var curIdx = weeks.findIndex(function(w) { return w.week === current; });
+  if (delta === 0) { loadGhWeekly(weeks[0].week); return; }
+  // weeks 是倒序的，所以 -1 是新 → 旧，+1 是旧 → 新
+  var newIdx = curIdx - delta;
+  if (newIdx < 0 || newIdx >= weeks.length) return;
+  loadGhWeekly(weeks[newIdx].week);
+}
+
+function jumpToGhWeek(weekKey) {
+  if (weekKey && weekKey !== ghWeeklyState.currentWeek) loadGhWeekly(weekKey);
+}
+
+function renderGhWeekly(data) {
   var container = document.getElementById('ghp-weekly-view');
   if (!container) return;
   var html = '';
