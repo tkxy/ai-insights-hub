@@ -1,0 +1,371 @@
+{
+  "week": "2026-W21",
+  "range": {
+    "start": "2026-05-18",
+    "end": "2026-05-24"
+  },
+  "generatedAt": "2026-05-26T09:01:35.196465+00:00",
+  "count": 20,
+  "items": [
+    {
+      "name": "Snailclimb/JavaGuide",
+      "title": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
+      "url": "https://github.com/Snailclimb/JavaGuide",
+      "stars": 155887,
+      "forks": 46133,
+      "language": "JavaScript",
+      "topics": [
+        "agent",
+        "ai",
+        "context-engineering",
+        "deepseek",
+        "interview"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "isNew": false
+    },
+    {
+      "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
+      "title": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
+      "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+      "stars": 138270,
+      "forks": 34444,
+      "language": null,
+      "topics": [
+        "ai",
+        "bolt",
+        "cluely",
+        "copilot",
+        "cursor"
+      ],
+      "category": "AI / 生成式",
+      "insight": "Agent 生态持续扩展——system-prompts-and-models-of-ai-tools 代表了社区对 AI 自主能力的持续探索。",
+      "isNew": false
+    },
+    {
+      "name": "microsoft/generative-ai-for-beginners",
+      "title": "21 Lessons, Get Started Building with Generative AI ",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "stars": 111383,
+      "forks": 59757,
+      "language": "Jupyter Notebook",
+      "topics": [
+        "ai",
+        "azure",
+        "chatgpt",
+        "dall-e",
+        "generative-ai"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "isNew": false
+    },
+    {
+      "name": "github/spec-kit",
+      "title": "💫 Toolkit to help you get started with Spec-Driven Development",
+      "url": "https://github.com/github/spec-kit",
+      "stars": 105975,
+      "forks": 9379,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "copilot",
+        "development",
+        "engineering",
+        "prd"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "isNew": false
+    },
+    {
+      "name": "google-gemini/gemini-cli",
+      "title": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "stars": 104603,
+      "forks": 13865,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "cli",
+        "gemini",
+        "gemini-api"
+      ],
+      "category": "AI / 生成式",
+      "insight": "Agent 生态持续扩展——gemini-cli 代表了社区对 AI 自主能力的持续探索。",
+      "isNew": false
+    },
+    {
+      "name": "rasbt/LLMs-from-scratch",
+      "title": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "stars": 95973,
+      "forks": 14704,
+      "language": "Jupyter Notebook",
+      "topics": [
+        "ai",
+        "artificial-intelligence",
+        "attention-mechanism",
+        "deep-learning",
+        "finetuning"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "isNew": false
+    },
+    {
+      "name": "hacksider/Deep-Live-Cam",
+      "title": "real time face swap and one-click video deepfake with only a single image",
+      "url": "https://github.com/hacksider/Deep-Live-Cam",
+      "stars": 93364,
+      "forks": 13598,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "ai-deep-fake",
+        "ai-face",
+        "ai-webcam",
+        "artificial-intelligence"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "isNew": false
+    },
+    {
+      "name": "JuliusBrussee/caveman",
+      "title": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "stars": 64857,
+      "forks": 3665,
+      "language": "JavaScript",
+      "topics": [
+        "ai",
+        "anthropic",
+        "caveman",
+        "claude",
+        "claude-code"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "isNew": false
+    },
+    {
+      "name": "Mintplex-Labs/anything-llm",
+      "title": "The all-in-one AI productivity accelerator. On device and privacy first with no annoying setup or configuration.",
+      "url": "https://github.com/Mintplex-Labs/anything-llm",
+      "stars": 60625,
+      "forks": 6563,
+      "language": "JavaScript",
+      "topics": [
+        "ai-agents",
+        "custom-ai-agents",
+        "deepseek",
+        "kimi",
+        "llama3"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "isNew": false
+    },
+    {
+      "name": "docling-project/docling",
+      "title": "Get your documents ready for gen AI",
+      "url": "https://github.com/docling-project/docling",
+      "stars": 60377,
+      "forks": 4195,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "convert",
+        "document-parser",
+        "document-parsing",
+        "documents"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "isNew": false
+    },
+    {
+      "name": "sansan0/TrendRadar",
+      "title": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 +  RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 +  AI 分析简报直推手机，也支持接入 MCP 架构，赋能 AI 自然语言对话分析、情感洞察与趋势预测等。支持 Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。",
+      "url": "https://github.com/sansan0/TrendRadar",
+      "stars": 58344,
+      "forks": 24423,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "bark",
+        "data-analysis",
+        "docker",
+        "hot-news"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "isNew": false
+    },
+    {
+      "name": "run-llama/llama_index",
+      "title": "LlamaIndex is the leading document agent and OCR platform",
+      "url": "https://github.com/run-llama/llama_index",
+      "stars": 49671,
+      "forks": 7459,
+      "language": "Python",
+      "topics": [
+        "agents",
+        "application",
+        "data",
+        "fine-tuning",
+        "framework"
+      ],
+      "category": "AI / 生成式",
+      "insight": "Agent 生态持续扩展——llama_index 代表了社区对 AI 自主能力的持续探索。",
+      "isNew": false
+    },
+    {
+      "name": "huginn/huginn",
+      "title": "Create agents that monitor and act on your behalf.  Your agents are standing by!",
+      "url": "https://github.com/huginn/huginn",
+      "stars": 49327,
+      "forks": 4267,
+      "language": "Ruby",
+      "topics": [
+        "agent",
+        "automation",
+        "feed",
+        "feedgenerator",
+        "huginn"
+      ],
+      "category": "AI / 生成式",
+      "insight": "Agent 生态持续扩展——huginn 代表了社区对 AI 自主能力的持续探索。",
+      "isNew": false
+    },
+    {
+      "name": "pixijs/pixijs",
+      "title": "The HTML5 Creation Engine: Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.",
+      "url": "https://github.com/pixijs/pixijs",
+      "stars": 47249,
+      "forks": 5019,
+      "language": "TypeScript",
+      "topics": [
+        "canvas",
+        "canvas2d",
+        "data-visualization",
+        "game",
+        "glsl"
+      ],
+      "category": "3D / 空间计算",
+      "insight": "3D/空间技术在 Web 端的可用性持续提升，从营销装饰走向产品交互层。",
+      "isNew": false
+    },
+    {
+      "name": "jeecgboot/JeecgBoot",
+      "title": "AI 低代码平台，「低代码 + 零代码」双模式驱动：低代码一键生成前后端代码，零代码 5 分钟搭建系统，AI Skills 一句话画流程、设计表单、生成整套系统。内置 AI聊天、知识库、流程编排、MCP插件等，兼容主流大模型。引领「AI 生成 → 在线配置 → 代码生成 → 手工合并->AI修改」开发模式，消除 Java 项目 80% 的重复工作，提效而不失灵活。",
+      "url": "https://github.com/jeecgboot/JeecgBoot",
+      "stars": 46431,
+      "forks": 16005,
+      "language": "Java",
+      "topics": [
+        "activiti",
+        "agent",
+        "ai",
+        "antd",
+        "claude-code"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "isNew": false
+    },
+    {
+      "name": "google/langextract",
+      "title": "A Python library for extracting structured information from unstructured text using LLMs with precise source grounding and interactive visualization.",
+      "url": "https://github.com/google/langextract",
+      "stars": 36558,
+      "forks": 2519,
+      "language": "Python",
+      "topics": [
+        "gemini",
+        "gemini-ai",
+        "gemini-api",
+        "gemini-flash",
+        "gemini-pro"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "isNew": false
+    },
+    {
+      "name": "bytedance/UI-TARS-desktop",
+      "title": "The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra",
+      "url": "https://github.com/bytedance/UI-TARS-desktop",
+      "stars": 35284,
+      "forks": 3547,
+      "language": "TypeScript",
+      "topics": [
+        "agent",
+        "agent-tars",
+        "browser-use",
+        "computer-use",
+        "cowork"
+      ],
+      "category": "AI / 生成式",
+      "insight": "Agent 生态持续扩展——UI-TARS-desktop 代表了社区对 AI 自主能力的持续探索。",
+      "isNew": false
+    },
+    {
+      "name": "microsoft/graphrag",
+      "title": "A modular graph-based Retrieval-Augmented Generation (RAG) system",
+      "url": "https://github.com/microsoft/graphrag",
+      "stars": 33226,
+      "forks": 3514,
+      "language": "Python",
+      "topics": [
+        "gpt",
+        "gpt-4",
+        "gpt4",
+        "graphrag",
+        "llm"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "isNew": false
+    },
+    {
+      "name": "motiondivision/motion",
+      "title": "A modern animation library for React and JavaScript",
+      "url": "https://github.com/motiondivision/motion",
+      "stars": 32090,
+      "forks": 1177,
+      "language": "TypeScript",
+      "topics": [
+        "animation",
+        "animation-js",
+        "motion",
+        "react",
+        "reactanimations"
+      ],
+      "category": "动效 / 交互编排",
+      "insight": "动效工具链正在成熟——从「手动写 CSS transition」到「可编排、可复用的运动组件」。",
+      "isNew": false
+    },
+    {
+      "name": "linshenkx/prompt-optimizer",
+      "title": "An AI prompt optimizer for writing better prompts and getting better AI results.",
+      "url": "https://github.com/linshenkx/prompt-optimizer",
+      "stars": 29871,
+      "forks": 3493,
+      "language": "TypeScript",
+      "topics": [
+        "ai-prompts",
+        "ai-tools",
+        "llm",
+        "prompt",
+        "prompt-engineering"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "isNew": false
+    }
+  ]
+}

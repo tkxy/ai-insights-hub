@@ -350,6 +350,14 @@
   .ghp-card-link { font-size:12px; font-weight:600; color:#0969da; text-decoration:none; }
   .ghp-card-link:hover { text-decoration:underline; }
   .ghp-top-picks { margin-top:48px; padding-top:32px; border-top:1px solid var(--border); }
+  .ghp-view-tabs { display:flex; gap:8px; margin-bottom:28px; }
+  .ghp-view-btn { font-size:14px; font-weight:600; padding:8px 18px; border-radius:999px; border:1px solid var(--border); background:var(--white); color:var(--text2); cursor:pointer; font-family:inherit; transition:all .2s; }
+  .ghp-view-btn:hover { color:var(--black); background:var(--accent-soft); }
+  .ghp-view-btn.active { background:var(--black); color:var(--white); border-color:var(--black); }
+  .ghp-new-badge { position:absolute; top:12px; right:14px; font-size:11px; font-weight:700; color:#1a7f37; background:#dafbe1; padding:2px 8px; border-radius:4px; }
+  .ghp-topic-tag { font-size:11px; padding:2px 8px; border-radius:999px; background:var(--accent-soft); color:var(--text2); border:1px solid var(--border); }
+  .ghp-card-meta { display:flex; gap:12px; font-size:12px; color:var(--text2); margin-top:8px; }
+  .ghp-stars { color:#e3b341; font-weight:600; }
 
   /* ===== NEWS PAGE (AI 资讯) ===== */
   .news-header { margin-bottom: 40px; }
@@ -5505,10 +5513,116 @@ function updateInlineProgress() {
 
 // ===== GITHUB PICKS (策展) =====
 var _ghPicksLoaded = false;
+var _ghWeeklyLoaded = false;
+var _ghCurrentView = 'weekly'; // 'weekly' or 'curated'
 
 async function loadGitHubPicks() {
-  if (_ghPicksLoaded) return;
   var container = document.getElementById('github-picks-container');
+  if (!container) return;
+  window._ghLoaded = true;
+
+  // 渲染切换 tab + 内容区
+  if (!document.getElementById('ghp-view-tabs')) {
+    var wrapper = '<div id="ghp-view-tabs" class="ghp-view-tabs">';
+    wrapper += '<button class="ghp-view-btn active" onclick="switchGhView(\'weekly\')">📅 本周热门</button>';
+    wrapper += '<button class="ghp-view-btn" onclick="switchGhView(\'curated\')">📌 设计策展</button>';
+    wrapper += '</div>';
+    wrapper += '<div id="ghp-weekly-view"></div>';
+    wrapper += '<div id="ghp-curated-view" style="display:none;"></div>';
+    container.innerHTML = wrapper;
+  }
+
+  // 默认加载本周
+  loadGhWeekly();
+}
+
+function switchGhView(view) {
+  _ghCurrentView = view;
+  var tabs = document.querySelectorAll('.ghp-view-btn');
+  tabs.forEach(function(t) { t.classList.remove('active'); });
+  if (view === 'weekly') {
+    tabs[0].classList.add('active');
+    document.getElementById('ghp-weekly-view').style.display = 'block';
+    document.getElementById('ghp-curated-view').style.display = 'none';
+    if (!_ghWeeklyLoaded) loadGhWeekly();
+  } else {
+    tabs[1].classList.add('active');
+    document.getElementById('ghp-weekly-view').style.display = 'none';
+    document.getElementById('ghp-curated-view').style.display = 'block';
+    if (!_ghPicksLoaded) loadGhCurated();
+  }
+}
+
+async function loadGhWeekly() {
+  var container = document.getElementById('ghp-weekly-view');
+  if (!container) return;
+  container.innerHTML = '<div class="loading"><div class="spinner"></div><p>正在加载本周热门...</p></div>';
+  try {
+    var idxResp = await fetch('data/github-weekly/index.json', { cache: 'no-store' });
+    if (!idxResp.ok) throw new Error('index not found');
+    var idx = await idxResp.json();
+    if (!idx.weeks || !idx.weeks.length) throw new Error('无数据');
+    var latest = idx.weeks[0];
+    var dataResp = await fetch('data/github-weekly/' + latest.week + '.json', { cache: 'no-store' });
+    if (!dataResp.ok) throw new Error('data not found');
+    var data = await dataResp.json();
+    _ghWeeklyLoaded = true;
+    renderGhWeekly(data, idx.weeks);
+  } catch(e) {
+    container.innerHTML = '<div style="color:#888;text-align:center;padding:40px;">暂无数据，周一自动更新</div>';
+  }
+}
+
+function renderGhWeekly(data, allWeeks) {
+  var container = document.getElementById('ghp-weekly-view');
+  if (!container) return;
+  var html = '';
+
+  // 标题
+  html += '<div class="ghp-header">';
+  html += '<h1 class="ghp-title">GitHub 本周热门</h1>';
+  html += '<p class="ghp-subtitle">' + data.range.start + ' ~ ' + data.range.end + ' · 共 ' + data.count + ' 个活跃项目</p>';
+  html += '</div>';
+
+  // 按分类分组
+  var groups = {};
+  data.items.forEach(function(item) {
+    var cat = item.category || '其他';
+    if (!groups[cat]) groups[cat] = [];
+    groups[cat].push(item);
+  });
+
+  // 渲染每个分类
+  var catOrder = ['AI / 生成式', '画布 / 空间界面', '动效 / 交互编排', '3D / 空间计算', 'UI / 组件', '文本 / 排版', '开发工具', '其他'];
+  catOrder.forEach(function(cat) {
+    if (!groups[cat]) return;
+    html += '<section class="ghp-section">';
+    html += '<h2 class="ghp-section-title">' + cat + ' <span style="font-size:14px;color:var(--text2);font-weight:400;">(' + groups[cat].length + ')</span></h2>';
+    html += '<div class="ghp-grid">';
+    groups[cat].forEach(function(item) {
+      var starsStr = item.stars >= 1000 ? (item.stars / 1000).toFixed(1) + 'k' : item.stars;
+      var newBadge = item.isNew ? '<span class="ghp-new-badge">🆕 新项目</span>' : '';
+      var topicsHtml = (item.topics || []).slice(0, 3).map(function(t) { return '<span class="ghp-topic-tag">' + t + '</span>'; }).join('');
+
+      html += '<div class="ghp-card">';
+      html += newBadge;
+      html += '<div class="ghp-card-head"><a class="ghp-card-name" href="' + item.url + '" target="_blank">' + item.name + '</a></div>';
+      html += '<div class="ghp-card-desc">' + (item.title || '').slice(0, 120) + '</div>';
+      html += '<div class="ghp-card-insight"><span class="ghp-insight-label">洞察</span>' + item.insight + '</div>';
+      if (topicsHtml) html += '<div style="margin-bottom:8px;display:flex;gap:4px;flex-wrap:wrap;">' + topicsHtml + '</div>';
+      html += '<div class="ghp-card-meta"><span class="ghp-stars">★ ' + starsStr + '</span>';
+      if (item.language) html += '<span>' + item.language + '</span>';
+      html += '</div>';
+      html += '</div>';
+    });
+    html += '</div></section>';
+  });
+
+  container.innerHTML = html;
+}
+
+async function loadGhCurated() {
+  var container = document.getElementById('ghp-curated-view');
   if (!container) return;
   container.innerHTML = '<div class="loading"><div class="spinner"></div><p>正在加载...</p></div>';
   try {
@@ -5516,15 +5630,14 @@ async function loadGitHubPicks() {
     if (!resp.ok) throw new Error('无法加载数据');
     var data = await resp.json();
     _ghPicksLoaded = true;
-    window._ghLoaded = true;
-    renderGitHubPicks(data);
+    renderGitHubPicks(data, container);
   } catch(e) {
     container.innerHTML = '<div style="color:#888;text-align:center;padding:40px;">加载失败：' + e.message + '</div>';
   }
 }
 
-function renderGitHubPicks(data) {
-  var container = document.getElementById('github-picks-container');
+function renderGitHubPicks(data, container) {
+  if (!container) container = document.getElementById('ghp-curated-view');
   if (!container) return;
   var html = '';
 
