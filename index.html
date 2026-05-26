@@ -5519,54 +5519,48 @@ function updateInlineProgress() {
   // No longer needed — no separate progress bar
 }
 
-// ===== GITHUB PICKS (策展) =====
+// ===== GITHUB PICKS (策展 + 本周热门) =====
 var _ghPicksLoaded = false;
 var _ghWeeklyLoaded = false;
-var _ghCurrentView = 'weekly'; // 'weekly' or 'curated'
 
 async function loadGitHubPicks() {
   var container = document.getElementById('github-picks-container');
   if (!container) return;
   window._ghLoaded = true;
 
-  // 渲染切换 tab + 内容区
-  if (!document.getElementById('ghp-view-tabs')) {
-    var wrapper = '<div id="ghp-view-tabs" class="ghp-view-tabs">';
-    wrapper += '<button class="ghp-view-btn active" onclick="switchGhView(\'weekly\')">📅 本周热门</button>';
-    wrapper += '<button class="ghp-view-btn" onclick="switchGhView(\'curated\')">📌 设计策展</button>';
-    wrapper += '</div>';
-    wrapper += '<div id="ghp-weekly-view"></div>';
-    wrapper += '<div id="ghp-curated-view" style="display:none;"></div>';
-    container.innerHTML = wrapper;
-  }
+  container.innerHTML = '<div class="loading"><div class="spinner"></div><p>正在加载...</p></div>';
 
-  // 默认加载本周
-  loadGhWeekly();
-}
+  try {
+    // 加载策展内容
+    var resp = await fetch('data/github-picks.json', { cache: 'no-store' });
+    if (!resp.ok) throw new Error('无法加载');
+    var data = await resp.json();
+    _ghPicksLoaded = true;
 
-function switchGhView(view) {
-  _ghCurrentView = view;
-  var tabs = document.querySelectorAll('.ghp-view-btn');
-  tabs.forEach(function(t) { t.classList.remove('active'); });
-  if (view === 'weekly') {
-    tabs[0].classList.add('active');
-    document.getElementById('ghp-weekly-view').style.display = 'block';
-    document.getElementById('ghp-curated-view').style.display = 'none';
-    if (!_ghWeeklyLoaded) loadGhWeekly();
-  } else {
-    tabs[1].classList.add('active');
-    document.getElementById('ghp-weekly-view').style.display = 'none';
-    document.getElementById('ghp-curated-view').style.display = 'block';
-    if (!_ghPicksLoaded) loadGhCurated();
+    // 加载本周热门
+    loadGhWeekly();
+
+    // 渲染策展
+    renderGitHubPicks(data, container);
+  } catch(e) {
+    container.innerHTML = '<div style="color:#888;text-align:center;padding:40px;">加载失败</div>';
   }
 }
 
 var ghWeeklyState = { index: null, currentWeek: null, loaded: {} };
 
 async function loadGhWeekly(weekKey) {
-  var container = document.getElementById('ghp-weekly-view');
-  if (!container) return;
-  container.innerHTML = '<div class="loading"><div class="spinner"></div><p>正在加载...</p></div>';
+  // 确保容器存在（追加到主容器底部）
+  var container = document.getElementById('ghp-weekly-section');
+  if (!container) {
+    var main = document.getElementById('github-picks-container');
+    if (!main) return;
+    var div = document.createElement('div');
+    div.id = 'ghp-weekly-section';
+    main.appendChild(div);
+    container = div;
+  }
+  container.innerHTML = '<div class="loading"><div class="spinner"></div><p>正在加载本周热门...</p></div>';
   try {
     // 加载 index（只加载一次）
     if (!ghWeeklyState.index) {
@@ -5640,7 +5634,7 @@ function jumpToGhWeek(weekKey) {
 }
 
 function renderGhWeekly(data) {
-  var container = document.getElementById('ghp-weekly-view');
+  var container = document.getElementById('ghp-weekly-section');
   if (!container) return;
   var html = '';
 
@@ -5695,23 +5689,8 @@ function renderGhWeekly(data) {
   container.innerHTML = html;
 }
 
-async function loadGhCurated() {
-  var container = document.getElementById('ghp-curated-view');
-  if (!container) return;
-  container.innerHTML = '<div class="loading"><div class="spinner"></div><p>正在加载...</p></div>';
-  try {
-    var resp = await fetch('data/github-picks.json', { cache: 'no-store' });
-    if (!resp.ok) throw new Error('无法加载数据');
-    var data = await resp.json();
-    _ghPicksLoaded = true;
-    renderGitHubPicks(data, container);
-  } catch(e) {
-    container.innerHTML = '<div style="color:#888;text-align:center;padding:40px;">加载失败：' + e.message + '</div>';
-  }
-}
-
 function renderGitHubPicks(data, container) {
-  if (!container) container = document.getElementById('ghp-curated-view');
+  if (!container) container = document.getElementById('github-picks-container');
   if (!container) return;
   var html = '';
 
