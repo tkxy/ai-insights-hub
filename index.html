@@ -5737,12 +5737,6 @@ function renderGitHubPicks(data, container) {
   if (!container) return;
   var html = '';
 
-  // 页头
-  html += '<div class="ghp-header">';
-  html += '<h1 class="ghp-title">' + data.title + '</h1>';
-  html += '<p class="ghp-subtitle">' + data.subtitle + '</p>';
-  html += '</div>';
-
   // 分类导航
   html += '<div class="ghp-nav">';
   data.categories.forEach(function(cat) {
