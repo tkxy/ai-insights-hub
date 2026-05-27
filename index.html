@@ -5537,11 +5537,11 @@ async function loadGitHubPicks() {
     var data = await resp.json();
     _ghPicksLoaded = true;
 
-    // 加载本周热门
-    loadGhWeekly();
-
-    // 渲染策展
+    // 先渲染昨天的策展卡片（保留洞察 + 应用案例）
     renderGitHubPicks(data, container);
+
+    // 再把本周热门追加到下方，右上角周切换只更新这块
+    loadGhWeekly();
   } catch(e) {
     container.innerHTML = '<div style="color:#888;text-align:center;padding:40px;">加载失败</div>';
   }
@@ -5639,7 +5639,7 @@ function renderGhWeekly(data) {
   var html = '';
 
   // 标题
-  html += '<div class="ghp-header">';
+  html += '<div class="ghp-header" style="margin-top:48px;padding-top:32px;border-top:1px solid var(--border);">';
   html += '<h1 class="ghp-title">GitHub 本周热门</h1>';
   html += '<p class="ghp-subtitle">' + data.range.start + ' ~ ' + data.range.end + ' · 共 ' + data.count + ' 个活跃项目</p>';
   html += '</div>';
