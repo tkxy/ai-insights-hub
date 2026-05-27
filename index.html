@@ -358,6 +358,9 @@
   .ghp-topic-tag { font-size:11px; padding:2px 8px; border-radius:999px; background:var(--accent-soft); color:var(--text2); border:1px solid var(--border); }
   .ghp-card-meta { display:flex; gap:12px; font-size:12px; color:var(--text2); margin-top:8px; }
   .ghp-stars { color:#e3b341; font-weight:600; }
+  .ghp-heat-row { display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin:10px 0 12px; font-size:12px; color:var(--text2); }
+  .ghp-heat-item { display:inline-flex; align-items:center; gap:4px; padding:3px 8px; border-radius:999px; background:var(--accent-soft); border:1px solid var(--border); font-weight:600; }
+  .ghp-heat-item.star { color:#b08800; background:#fff8d6; border-color:#f0df94; }
 
   /* ===== NEWS PAGE (AI 资讯) ===== */
   .news-header { margin-bottom: 40px; }
@@ -5641,6 +5644,28 @@ function jumpToGhWeek(weekKey) {
   if (weekKey && weekKey !== ghWeeklyState.currentWeek) loadGhWeekly(weekKey);
 }
 
+function formatGhNum(n) {
+  n = Number(n || 0);
+  if (n >= 1000000) return (n / 1000000).toFixed(1) + 'm';
+  if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
+  return String(n);
+}
+
+function renderGhHeat(item) {
+  var stars = item.stars || (item.heat && item.heat.stars);
+  var forks = item.forks || (item.heat && item.heat.forks);
+  var watchers = item.watchers || (item.heat && item.heat.watchers);
+  var issues = item.openIssues || (item.heat && item.heat.openIssues);
+  var language = item.language || (item.heat && item.heat.language);
+  var parts = [];
+  if (stars) parts.push('<span class="ghp-heat-item star">★ ' + formatGhNum(stars) + '</span>');
+  if (forks) parts.push('<span class="ghp-heat-item">⑂ ' + formatGhNum(forks) + ' forks</span>');
+  if (watchers) parts.push('<span class="ghp-heat-item">👁 ' + formatGhNum(watchers) + '</span>');
+  if (issues) parts.push('<span class="ghp-heat-item">Issue ' + formatGhNum(issues) + '</span>');
+  if (language) parts.push('<span class="ghp-heat-item">' + language + '</span>');
+  return parts.length ? '<div class="ghp-heat-row">' + parts.join('') + '</div>' : '';
+}
+
 function getGhDefaultCases(category, name, title) {
   var text = ((name || '') + ' ' + (title || '')).toLowerCase();
   if (text.indexOf('prompt') !== -1) {
@@ -5721,8 +5746,9 @@ function renderGhWeekly(data) {
       html += '<div class="ghp-card-head">';
       html += '<a class="ghp-card-name" href="' + item.url + '" target="_blank">' + item.name + '</a>';
       html += '</div>';
-      html += '<div class="ghp-card-title">' + (item.name.split('/')[1] || item.name) + ' <span style="font-size:12px;color:var(--text2);font-weight:400;">★ ' + starsStr + '</span></div>';
+      html += '<div class="ghp-card-title">' + (item.name.split('/')[1] || item.name) + '</div>';
       html += '<div class="ghp-card-desc">' + (item.title || '').slice(0, 150) + '</div>';
+      html += renderGhHeat(item);
       html += '<div class="ghp-card-insight"><span class="ghp-insight-label">洞察</span>' + item.insight + '</div>';
       var cases = (item.cases && item.cases.length) ? item.cases : getGhDefaultCases(item.category, item.name, item.title);
       html += '<div class="ghp-card-cases"><span class="ghp-cases-label">应用案例</span><ul class="ghp-cases-list">';
@@ -5769,6 +5795,7 @@ function renderGitHubPicks(data, container) {
       html += '</div>';
       html += '<div class="ghp-card-title">' + item.title + '</div>';
       html += '<div class="ghp-card-desc">' + item.desc + '</div>';
+      html += renderGhHeat(item);
       html += '<div class="ghp-card-insight"><span class="ghp-insight-label">洞察</span>' + item.insight + '</div>';
       if (item.cases && item.cases.length) {
         html += '<div class="ghp-card-cases"><span class="ghp-cases-label">应用案例</span><ul class="ghp-cases-list">';
