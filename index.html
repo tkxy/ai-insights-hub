@@ -5633,6 +5633,50 @@ function jumpToGhWeek(weekKey) {
   if (weekKey && weekKey !== ghWeeklyState.currentWeek) loadGhWeekly(weekKey);
 }
 
+function getGhDefaultCases(category, name, title) {
+  var text = ((name || '') + ' ' + (title || '')).toLowerCase();
+  if (text.indexOf('prompt') !== -1) {
+    return [
+      { name: 'Prompt 工程优化', desc: '系统提示词的管理、版本控制和 A/B 测试' },
+      { name: '团队 Prompt 库', desc: '跨团队共享和复用高质量提示词' },
+      { name: 'AI 应用调优', desc: '通过 prompt 模板提升生成质量和一致性' }
+    ];
+  }
+  if (text.indexOf('code') !== -1 || text.indexOf('coding') !== -1 || text.indexOf('copilot') !== -1) {
+    return [
+      { name: '编码效率提升', desc: '代码补全、重构建议、Bug 定位辅助' },
+      { name: '代码审查自动化', desc: 'PR Review 的 AI 辅助和规范检查' },
+      { name: '技术文档生成', desc: '从代码自动生成 API 文档和注释' }
+    ];
+  }
+  var map = {
+    'AI / 生成式': [
+      { name: '智能对话产品', desc: '集成到客服、助手类产品中提升对话质量和自主能力' },
+      { name: '内容生产工具', desc: '文案、代码、图片等内容的 AI 辅助生成' },
+      { name: '企业知识库', desc: '基于 RAG 的企业文档问答和知识检索' }
+    ],
+    '画布 / 空间界面': [
+      { name: '协作白板', desc: '团队脑暴、需求评审、用户旅程图的可视化协作' },
+      { name: 'AI 工作流编排', desc: 'Agent/自动化任务的节点式可视化配置' },
+      { name: '知识图谱可视化', desc: '将文档/概念关系以画布形式空间化呈现' }
+    ],
+    '动效 / 交互编排': [
+      { name: '品牌动效落地', desc: '产品首页、活动页的入场动画和滚动交互' },
+      { name: '组件交互反馈', desc: '按钮、卡片、列表的微交互和状态转换动效' },
+      { name: '设计系统 Motion Token', desc: '将动效参数化为设计系统的一部分' }
+    ],
+    '3D / 空间计算': [
+      { name: '产品 3D 展示', desc: '电商商品、硬件产品的在线 3D 预览和交互' },
+      { name: '数字孪生', desc: '园区/工厂的 3D 实时监控和数据叠加' },
+      { name: 'XR 应用界面', desc: 'VR/AR 场景中的空间 UI 和交互设计' }
+    ]
+  };
+  return map[category] || [
+    { name: '技术选型参考', desc: '了解该领域最新技术方向和社区趋势' },
+    { name: '团队分享素材', desc: '作为技术分享或设计组内部交流案例' }
+  ];
+}
+
 function renderGhWeekly(data) {
   var container = document.getElementById('ghp-weekly-section');
   if (!container) return;
@@ -5672,13 +5716,12 @@ function renderGhWeekly(data) {
       html += '<div class="ghp-card-title">' + (item.name.split('/')[1] || item.name) + ' <span style="font-size:12px;color:var(--text2);font-weight:400;">★ ' + starsStr + '</span></div>';
       html += '<div class="ghp-card-desc">' + (item.title || '').slice(0, 150) + '</div>';
       html += '<div class="ghp-card-insight"><span class="ghp-insight-label">洞察</span>' + item.insight + '</div>';
-      if (item.cases && item.cases.length) {
-        html += '<div class="ghp-card-cases"><span class="ghp-cases-label">应用案例</span><ul class="ghp-cases-list">';
-        item.cases.forEach(function(c) {
-          html += '<li><strong>' + c.name + '</strong>：' + c.desc + '</li>';
-        });
-        html += '</ul></div>';
-      }
+      var cases = (item.cases && item.cases.length) ? item.cases : getGhDefaultCases(item.category, item.name, item.title);
+      html += '<div class="ghp-card-cases"><span class="ghp-cases-label">应用案例</span><ul class="ghp-cases-list">';
+      cases.forEach(function(c) {
+        html += '<li><strong>' + c.name + '</strong>：' + c.desc + '</li>';
+      });
+      html += '</ul></div>';
       if (topicsHtml) html += '<div style="margin-bottom:10px;display:flex;gap:4px;flex-wrap:wrap;">' + topicsHtml + '</div>';
       html += '<a class="ghp-card-link" href="' + item.url + '" target="_blank">查看项目 →</a>';
       html += '</div>';
