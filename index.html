@@ -5562,7 +5562,7 @@ async function loadGitHubPicks() {
     // 先渲染昨天的策展卡片（保留洞察 + 应用案例）
     renderGitHubPicks(data, container);
 
-    // 再把本周热门追加到下方，右上角周切换只更新这块
+    // 把周榜放在页面顶部，右上角周切换能直接看到变化
     loadGhWeekly();
   } catch(e) {
     container.innerHTML = '<div style="color:#888;text-align:center;padding:40px;">加载失败</div>';
@@ -5572,14 +5572,14 @@ async function loadGitHubPicks() {
 var ghWeeklyState = { index: null, currentWeek: null, loaded: {} };
 
 async function loadGhWeekly(weekKey) {
-  // 确保容器存在（追加到主容器底部）
+  // 确保容器存在（插到主容器顶部，周切换才会立刻有可见变化）
   var container = document.getElementById('ghp-weekly-section');
   if (!container) {
     var main = document.getElementById('github-picks-container');
     if (!main) return;
     var div = document.createElement('div');
     div.id = 'ghp-weekly-section';
-    main.appendChild(div);
+    main.insertBefore(div, main.firstChild);
     container = div;
   }
   container.innerHTML = '<div class="loading"><div class="spinner"></div><p>正在加载本周热门...</p></div>';
@@ -5724,26 +5724,29 @@ function getGhDefaultCases(category, name, title) {
 }
 
 function renderGhWeeklyRank(data) {
+  var hasWeekly = (data.items || []).some(function(item) { return item.weeklyStars; });
   var items = (data.items || []).slice().sort(function(a, b) {
-    return (b.weeklyStars || 0) - (a.weeklyStars || 0);
+    var av = hasWeekly ? (a.weeklyStars || 0) : (a.stars || 0);
+    var bv = hasWeekly ? (b.weeklyStars || 0) : (b.stars || 0);
+    return bv - av;
   }).slice(0, 7);
   if (!items.length) return '';
-  var max = items[0].weeklyStars || 1;
+  var max = hasWeekly ? (items[0].weeklyStars || 1) : (items[0].stars || 1);
   var colors = ['#f05265','#8b5cf6','#3b82f6','#10b981','#facc15','#38bdf8','#c084fc'];
   var html = '<div class="gh-rank-wrap">';
   html += '<div class="gh-rank-kicker">第' + ((data.week || '').replace('2026-W','')) + '周</div>';
   html += '<h2 class="gh-rank-title">GitHub 爆火项目榜</h2>';
-  html += '<div class="gh-rank-subtitle">TOP 7 · 本周新增星标精选</div>';
+  html += '<div class="gh-rank-subtitle">TOP 7 · ' + (hasWeekly ? '本周新增星标精选' : '历史周总星标参考') + '</div>';
   html += '<div class="gh-rank-list">';
   items.forEach(function(item, idx) {
     var repoName = item.name.split('/')[1] || item.name;
-    var val = item.weeklyStars || 0;
+    var val = hasWeekly ? (item.weeklyStars || 0) : (item.stars || 0);
     var pct = Math.max(6, Math.round(val / max * 100));
     var c = colors[idx % colors.length];
     html += '<div class="gh-rank-item">';
     html += '<div class="gh-rank-num" style="background:' + c + '">#' + (idx + 1) + '</div>';
     html += '<div><div class="gh-rank-name">' + repoName + '</div><div class="gh-rank-bar"><span class="gh-rank-fill" style="width:' + pct + '%;background:' + c + '"></span></div></div>';
-    html += '<div class="gh-rank-stars">+' + formatGhNum(val) + '</div>';
+    html += '<div class="gh-rank-stars">' + (hasWeekly ? '+' : '★ ') + formatGhNum(val) + '</div>';
     html += '</div>';
   });
   html += '</div></div>';
