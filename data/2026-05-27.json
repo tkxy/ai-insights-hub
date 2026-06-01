@@ -1,0 +1,156 @@
+{
+  "date": "2026-05-27",
+  "generated_at": "2026-06-01T08:30:00+08:00",
+  "daily_summary": "5月27日AI行业聚焦模型降价潮与Agent生态：小米MiMo-V2.5 API宣布永久降价最高99%，成为继DeepSeek后第二家大幅永久降价厂商；GPT-5.6规格曝光支持150万Token上下文；DeepSeek估值冲击3500亿元；央视报道智能体加速落地，人形机器人搭载Agent解锁新技能；AI短剧出海产业链全面爆发，一人创作公司即可打造爆款；台积电涨价15%加剧算力供应紧张。全球AI大模型Token调用量28.9万亿，中国AI模型连续四周超美国位居全球首位。",
+  "design_insights": [
+    {
+      "title": "AI模型极致降价对产品体验的重塑",
+      "summary": "小米MiMo-V2.5降幅99%、DeepSeek V4-Pro降75%——当API成本趋近于零时，产品设计不再受调用成本约束，可大胆设计高频、多轮、持续在线的AI交互。",
+      "implication": "输入法AI功能可从'按需触发'转向'持续伴随'模式。当成本不再是瓶颈，每次击键都可经过AI优化：实时语境理解、连续上下文记忆、持续学习用户表达习惯。设计上可去除'AI开关'，让智能成为默认状态。",
+      "sources": ["CSDN/AI领域简报", "掘金"],
+      "source_urls": ["https://blog.csdn.net/txg666/article/details/161479205", "https://juejin.cn/post/7644476634998489097"],
+      "tags": ["成本革命", "持续AI", "默认智能"]
+    },
+    {
+      "title": "150万Token上下文：超长记忆交互设计",
+      "summary": "GPT-5.6支持150万Token上下文窗口，大模型正式进入百万Token时代。这意味着AI可以记住用户数月甚至数年的完整对话历史。",
+      "implication": "输入法可利用超长上下文能力构建'打字历史记忆'——记住用户过去数月的输入内容和表达偏好，实现跨时间的语境理解。设计上需考虑记忆可视化和遗忘控制：用户能看到AI记住了什么，能主动'忘记'敏感内容。",
+      "sources": ["CSDN/AI领域简报"],
+      "source_urls": ["https://blog.csdn.net/txg666/article/details/161479205"],
+      "tags": ["长上下文", "记忆设计", "隐私"]
+    },
+    {
+      "title": "智能体从虚拟到物理世界的交互范式迁移",
+      "summary": "央视报道智能体应用加速落地，人形机器人搭载智能体后解锁服务新技能，AI智能体正从虚拟世界向物理世界渗透。",
+      "implication": "输入法作为文本意图入口，可成为跨虚实世界的Agent指令中心——在手机上打字控制智能家居、在电脑上输入指令调度工作流程机器人。交互设计需考虑物理世界操作的不可逆性和确认机制。",
+      "sources": ["央视《正点财经》"],
+      "source_urls": ["https://news.softunis.com/59726.html"],
+      "tags": ["具身智能", "跨世界交互", "Agent"]
+    },
+    {
+      "title": "一人AI创作工作室的工具链设计启示",
+      "summary": "AI短剧出海领域，AI技术将制作团队从十几人压缩到一人，制作周期大幅缩短成本降低超70%。一人即可完成从编剧到成片的全流程。",
+      "implication": "输入法可定位为一人创作者的'AI创作入口'——输入一段剧情大纲，自动生成分镜脚本；输入会议纪要关键词，自动扩写完整记录。设计重点是降低从'想法'到'成品'的转化步骤。",
+      "sources": ["央视财经"],
+      "source_urls": ["https://news.softunis.com/59726.html"],
+      "tags": ["创作工具", "降低门槛", "一人工作室"]
+    },
+    {
+      "title": "全球AI调用量排名：中国模型领跑的用户体验因素",
+      "summary": "DeepSeek-V4-Flash以3.43万亿Token周调用量位居全球第一，中国AI模型总调用量连续四周超美国。低价+高性能驱动开发者大规模采用。",
+      "implication": "中国大模型生态的成熟为输入法AI功能提供了丰富的本土化模型选择。可根据不同场景（方言识别、网络用语理解、商务文本生成）选择最优的国产模型，同时降低海外模型依赖风险。",
+      "sources": ["野余岭风/每日AI速览"],
+      "source_urls": ["https://www.yeyulingfeng.com/a/682232.html"],
+      "tags": ["中国AI", "模型生态", "本土化"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "输入法AI'常驻模式'产品化需求",
+      "pain_point": "当前输入法AI功能多为'触发式'——需要用户主动选择才启用，导致使用率低、学习成本高。",
+      "opportunity": "AI成本趋零后，输入法可设计'AI默认开启'模式：每次输入自动优化推荐、实时语法检查、智能联想上下文。通过A/B测试逐步扩大AI参与度，让用户在不知不觉中享受AI增强。",
+      "priority": "high",
+      "evidence": "小米MiMo-V2.5降价99%、DeepSeek V4-Pro降75%，模型调用成本已不再是限制高频使用的瓶颈。"
+    },
+    {
+      "title": "超长上下文记忆的隐私安全设计需求",
+      "pain_point": "AI记忆能力增强（150万Token上下文）带来隐私顾虑——用户担心输入法记住敏感信息如密码、私密对话等。",
+      "opportunity": "设计'选择性记忆'机制：用户可标记某些输入场景为'隐身模式'（类似浏览器无痕），在该模式下AI不学习不记忆；同时提供记忆查看和一键清除功能。",
+      "priority": "high",
+      "evidence": "GPT-5.6支持150万Token上下文，大模型记忆能力将极大增强，用户对隐私边界的控制需求同步上升。"
+    },
+    {
+      "title": "AI模型本土化选型的产品策略需求",
+      "pain_point": "输入法AI功能依赖单一模型提供商存在稳定性和政策风险，不同场景对模型能力要求各异。",
+      "opportunity": "建立多模型路由策略：日常输入补全用DeepSeek-V4-Flash（速度快、成本低）、翻译用专业翻译模型、敏感内容过滤用安全模型。多模型冗余也提升服务稳定性。",
+      "priority": "medium",
+      "evidence": "中国AI模型调用量全球领先，DeepSeek/阶跃星辰/小米等多家提供高性价比API，多模型选择已具备条件。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "小米MiMo-V2.5 API永久降价最高99%",
+      "summary": "继DeepSeek后，小米于5月27日零点正式生效新一轮API价格调整，最高降幅达99%，成为第二家大幅永久降价的头部大模型厂商，直接击穿行业价格底线。",
+      "source": "掘金/CSDN",
+      "source_urls": ["https://juejin.cn/post/7644476634998489097"],
+      "tags": ["小米", "价格战", "MiMo"]
+    },
+    {
+      "title": "GPT-5.6规格曝光：150万Token上下文窗口",
+      "summary": "5月27日GPT-5.6信息泄露，支持150万Token上下文窗口。大模型正式进入百万Token时代，上下文窗口成为核心竞争指标。",
+      "source": "CSDN/AI领域简报",
+      "source_urls": ["https://blog.csdn.net/txg666/article/details/161479205"],
+      "tags": ["OpenAI", "GPT-5.6", "长上下文"]
+    },
+    {
+      "title": "DeepSeek估值冲击3500亿元人民币",
+      "summary": "DeepSeek最新估值达3500亿元，获国家大基金首次入场投资，国产AI估值体系一周内被彻底改写。",
+      "source": "CSDN/AI领域简报",
+      "source_urls": ["https://blog.csdn.net/txg666/article/details/161479205"],
+      "tags": ["DeepSeek", "融资", "估值"]
+    },
+    {
+      "title": "央视：智能体加速落地，人形机器人搭载Agent解锁新技能",
+      "summary": "央视《正点财经》报道智能体应用加速落地，人形机器人搭载智能体后能解锁更多服务技能，AI智能体正从虚拟世界向物理世界渗透。",
+      "source": "央视《正点财经》",
+      "source_urls": ["https://news.softunis.com/59726.html"],
+      "tags": ["智能体", "机器人", "物理世界"]
+    },
+    {
+      "title": "中国AI大模型Token调用量全球领跑",
+      "summary": "OpenRouter数据显示全球AI大模型总调用量达28.9万亿Token，中国AI大模型周调用量9.223万亿Token，连续四周超美国位居全球首位。DeepSeek-V4-Flash以3.43万亿位居第一。",
+      "source": "野余岭风/每日AI速览",
+      "source_urls": ["https://www.yeyulingfeng.com/a/682232.html"],
+      "tags": ["调用量", "中国AI", "全球排名"]
+    },
+    {
+      "title": "台积电涨价15%，AI供应链紧张持续至2027年底",
+      "summary": "台积电宣布先进制程涨价15%，叠加AI算力需求暴增，业内预判供应链紧张将持续至2027年底。",
+      "source": "CSDN/AI领域简报",
+      "source_urls": ["https://blog.csdn.net/txg666/article/details/161479205"],
+      "tags": ["台积电", "涨价", "供应链"]
+    },
+    {
+      "title": "央视财经：AI短剧出海订单全年预增50倍",
+      "summary": "AI技术将短剧制作团队压缩至一人，成本降低超70%。一季度AI微短剧产量占全行业95%以上，全年出海订单同比增长50倍。",
+      "source": "央视财经",
+      "source_urls": ["https://news.softunis.com/59726.html"],
+      "tags": ["AI短剧", "出海", "内容产业"]
+    },
+    {
+      "title": "中国限制顶尖AI研究人员出境",
+      "summary": "彭博社报道中国政府对从事先进AI研发的战略重要人士实施出境限制，覆盖阿里巴巴、DeepSeek等民营企业顶级AI专业人士，普通员工不受影响。",
+      "source": "Bloomberg/掘金",
+      "source_urls": ["https://juejin.cn/post/7644476634998489097"],
+      "tags": ["人才管控", "AI安全", "政策"]
+    },
+    {
+      "title": "AMD CEO预测服务器CPU TAM将达1200亿美元",
+      "summary": "AMD CEO苏姿丰在台北演讲预言推理芯片将取代训练芯片成为主流，预测2030年服务器CPU总可寻址市场（TAM）将超过1200亿美元。",
+      "source": "CSDN/AI领域简报",
+      "source_urls": ["https://blog.csdn.net/txg666/article/details/161479205"],
+      "tags": ["AMD", "推理芯片", "市场预测"]
+    },
+    {
+      "title": "上海发布AI短剧产业政策，免工位送算力助创作者出海",
+      "summary": "上海发布加快AI赋能微短剧高质量发展措施，商汤Seko产业基地首批20余家团队入驻，首年工位费全免，提供最高20万元国产算力优惠。",
+      "source": "野余岭风/每日AI速览",
+      "source_urls": ["https://www.yeyulingfeng.com/a/682232.html"],
+      "tags": ["上海政策", "AI短剧", "产业扶持"]
+    },
+    {
+      "title": "人民日报：AI遇见下一代网络，U6GHz成黄金频段",
+      "summary": "《人民日报》刊文指出AI应用对网络上行速率要求提升至50Mbps以上，U6GHz频段被公认为满足AI需求的黄金频段，可支持每平方公里数千万个终端连接。",
+      "source": "人民日报",
+      "source_urls": ["https://www.yeyulingfeng.com/a/682232.html"],
+      "tags": ["6G", "AI网络", "U6GHz"]
+    },
+    {
+      "title": "中国公布51个"人工智能+"能源高价值场景清单",
+      "summary": "央视网消息，中国正式公布51个AI+能源高价值场景清单，涵盖能源全产业链，标志AI技术在能源领域应用进入规范化、规模化阶段。",
+      "source": "央视网",
+      "source_urls": ["https://www.yeyulingfeng.com/a/682232.html"],
+      "tags": ["AI+能源", "场景清单", "产业政策"]
+    }
+  ]
+}

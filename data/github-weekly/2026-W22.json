@@ -1,0 +1,649 @@
+{
+  "week": "2026-W22",
+  "range": {
+    "start": "2026-05-25",
+    "end": "2026-05-31"
+  },
+  "generatedAt": "2026-06-01T01:12:11.501046+00:00",
+  "count": 20,
+  "items": [
+    {
+      "name": "facebook/react",
+      "title": "The library for web and native user interfaces.",
+      "url": "https://github.com/facebook/react",
+      "stars": 245358,
+      "forks": 51143,
+      "language": "JavaScript",
+      "topics": [
+        "declarative",
+        "frontend",
+        "javascript",
+        "library",
+        "react"
+      ],
+      "category": "UI / 组件",
+      "insight": "组件库竞争进入差异化阶段，设计工程师需要的不只是样式，还有交互行为和品牌动效。",
+      "cases": [
+        {
+          "name": "设计系统建设",
+          "desc": "企业级组件库的搭建和跨团队规范落地"
+        },
+        {
+          "name": "快速原型搭建",
+          "desc": "用现成组件快速实现产品原型和 Demo"
+        },
+        {
+          "name": "品牌差异化",
+          "desc": "在通用组件上叠加品牌动效和视觉个性"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "affaan-m/ECC",
+      "title": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "url": "https://github.com/affaan-m/ECC",
+      "stars": 200627,
+      "forks": 30787,
+      "language": "JavaScript",
+      "topics": [
+        "ai-agents",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "developer-tools"
+      ],
+      "category": "AI / 生成式",
+      "insight": "Agent 生态持续扩展——ECC 代表了社区对 AI 自主能力的持续探索。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "Significant-Gravitas/AutoGPT",
+      "title": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "stars": 184681,
+      "forks": 46200,
+      "language": "Python",
+      "topics": [
+        "agentic-ai",
+        "agents",
+        "ai",
+        "artificial-intelligence",
+        "autonomous-agents"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "ollama/ollama",
+      "title": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "url": "https://github.com/ollama/ollama",
+      "stars": 172754,
+      "forks": 16360,
+      "language": "Go",
+      "topics": [
+        "deepseek",
+        "gemma",
+        "gemma3",
+        "glm",
+        "go"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "f/prompts.chat",
+      "title": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+      "url": "https://github.com/f/prompts.chat",
+      "stars": 163117,
+      "forks": 21208,
+      "language": "HTML",
+      "topics": [
+        "ai",
+        "artificial-intelligence",
+        "awesome-list",
+        "chatgpt",
+        "chatgpt-prompts"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "cases": [
+        {
+          "name": "Prompt 工程优化",
+          "desc": "系统提示词的管理、版本控制和 A/B 测试"
+        },
+        {
+          "name": "AI 应用调优",
+          "desc": "通过 prompt 模板提升生成质量和一致性"
+        },
+        {
+          "name": "团队 Prompt 库",
+          "desc": "跨团队共享和复用高质量提示词"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "huggingface/transformers",
+      "title": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+      "url": "https://github.com/huggingface/transformers",
+      "stars": 161125,
+      "forks": 33374,
+      "language": "Python",
+      "topics": [
+        "audio",
+        "deep-learning",
+        "deepseek",
+        "gemma",
+        "glm"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "Snailclimb/JavaGuide",
+      "title": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
+      "url": "https://github.com/Snailclimb/JavaGuide",
+      "stars": 156000,
+      "forks": 46136,
+      "language": "JavaScript",
+      "topics": [
+        "agent",
+        "ai",
+        "context-engineering",
+        "deepseek",
+        "interview"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "open-webui/open-webui",
+      "title": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+      "url": "https://github.com/open-webui/open-webui",
+      "stars": 139411,
+      "forks": 19992,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "llm",
+        "llm-ui",
+        "llm-webui",
+        "llms"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "langchain-ai/langchain",
+      "title": "The agent engineering platform.",
+      "url": "https://github.com/langchain-ai/langchain",
+      "stars": 138133,
+      "forks": 22888,
+      "language": "Python",
+      "topics": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "anthropic",
+        "chatgpt"
+      ],
+      "category": "AI / 生成式",
+      "insight": "Agent 生态持续扩展——langchain 代表了社区对 AI 自主能力的持续探索。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "title": "The API to search, scrape, and interact with the web at scale. 🔥",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "stars": 126904,
+      "forks": 7591,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-crawler",
+        "ai-scraping",
+        "ai-search"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "excalidraw/excalidraw",
+      "title": "Virtual whiteboard for sketching hand-drawn like diagrams",
+      "url": "https://github.com/excalidraw/excalidraw",
+      "stars": 124356,
+      "forks": 13862,
+      "language": "TypeScript",
+      "topics": [
+        "canvas",
+        "collaboration",
+        "diagrams",
+        "drawing",
+        "hacktoberfest"
+      ],
+      "category": "画布 / 空间界面",
+      "insight": "画布型产品持续火热，空间组织正在替代线性列表成为复杂信息的主要交互形式。",
+      "cases": [
+        {
+          "name": "协作白板",
+          "desc": "团队脑暴、需求评审、用户旅程图的可视化协作"
+        },
+        {
+          "name": "AI 工作流编排",
+          "desc": "Agent/自动化任务的节点式可视化配置"
+        },
+        {
+          "name": "知识图谱可视化",
+          "desc": "将文档/概念关系以画布形式空间化呈现"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "shadcn-ui/ui",
+      "title": "A set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks. Open Source. Open Code.",
+      "url": "https://github.com/shadcn-ui/ui",
+      "stars": 115374,
+      "forks": 8964,
+      "language": "TypeScript",
+      "topics": [
+        "base-ui",
+        "components",
+        "laravel",
+        "nextjs",
+        "radix-ui"
+      ],
+      "category": "UI / 组件",
+      "insight": "组件库竞争进入差异化阶段，设计工程师需要的不只是样式，还有交互行为和品牌动效。",
+      "cases": [
+        {
+          "name": "设计系统建设",
+          "desc": "企业级组件库的搭建和跨团队规范落地"
+        },
+        {
+          "name": "快速原型搭建",
+          "desc": "用现成组件快速实现产品原型和 Demo"
+        },
+        {
+          "name": "品牌差异化",
+          "desc": "在通用组件上叠加品牌动效和视觉个性"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "Comfy-Org/ComfyUI",
+      "title": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "stars": 115156,
+      "forks": 13462,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "comfy",
+        "comfyui",
+        "python",
+        "pytorch"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "mrdoob/three.js",
+      "title": "JavaScript 3D Library.",
+      "url": "https://github.com/mrdoob/three.js",
+      "stars": 112778,
+      "forks": 36377,
+      "language": "JavaScript",
+      "topics": [
+        "3d",
+        "augmented-reality",
+        "canvas",
+        "html5",
+        "javascript"
+      ],
+      "category": "3D / 空间计算",
+      "insight": "3D/空间技术在 Web 端的可用性持续提升，从营销装饰走向产品交互层。",
+      "cases": [
+        {
+          "name": "产品 3D 展示",
+          "desc": "电商商品、硬件产品的在线 3D 预览和交互"
+        },
+        {
+          "name": "数字孪生",
+          "desc": "园区/工厂的 3D 实时监控和数据叠加"
+        },
+        {
+          "name": "XR 应用界面",
+          "desc": "VR/AR 场景中的空间 UI 和交互设计"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "microsoft/generative-ai-for-beginners",
+      "title": "21 Lessons, Get Started Building with Generative AI ",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "stars": 111548,
+      "forks": 59873,
+      "language": "Jupyter Notebook",
+      "topics": [
+        "ai",
+        "azure",
+        "chatgpt",
+        "dall-e",
+        "generative-ai"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "github/spec-kit",
+      "title": "💫 Toolkit to help you get started with Spec-Driven Development",
+      "url": "https://github.com/github/spec-kit",
+      "stars": 107360,
+      "forks": 9501,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "copilot",
+        "development",
+        "engineering",
+        "prd"
+      ],
+      "category": "AI / 生成式",
+      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "google-gemini/gemini-cli",
+      "title": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "stars": 104801,
+      "forks": 13963,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "cli",
+        "gemini",
+        "gemini-api"
+      ],
+      "category": "AI / 生成式",
+      "insight": "Agent 生态持续扩展——gemini-cli 代表了社区对 AI 自主能力的持续探索。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "browser-use/browser-use",
+      "title": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
+      "url": "https://github.com/browser-use/browser-use",
+      "stars": 96432,
+      "forks": 10812,
+      "language": "Python",
+      "topics": [
+        "ai-agents",
+        "ai-tools",
+        "browser-automation",
+        "browser-use",
+        "llm"
+      ],
+      "category": "AI / 生成式",
+      "insight": "Agent 生态持续扩展——browser-use 代表了社区对 AI 自主能力的持续探索。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "storybookjs/storybook",
+      "title": "Storybook is the industry standard workshop for building, documenting, and testing UI components in isolation",
+      "url": "https://github.com/storybookjs/storybook",
+      "stars": 90141,
+      "forks": 10104,
+      "language": "TypeScript",
+      "topics": [
+        "angular",
+        "components",
+        "design-systems",
+        "documentation",
+        "html"
+      ],
+      "category": "UI / 组件",
+      "insight": "组件库竞争进入差异化阶段，设计工程师需要的不只是样式，还有交互行为和品牌动效。",
+      "cases": [
+        {
+          "name": "设计系统建设",
+          "desc": "企业级组件库的搭建和跨团队规范落地"
+        },
+        {
+          "name": "快速原型搭建",
+          "desc": "用现成组件快速实现产品原型和 Demo"
+        },
+        {
+          "name": "品牌差异化",
+          "desc": "在通用组件上叠加品牌动效和视觉个性"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "sveltejs/svelte",
+      "title": "web development for the rest of us",
+      "url": "https://github.com/sveltejs/svelte",
+      "stars": 86674,
+      "forks": 4927,
+      "language": "JavaScript",
+      "topics": [
+        "compiler",
+        "template",
+        "ui"
+      ],
+      "category": "UI / 组件",
+      "insight": "组件库竞争进入差异化阶段，设计工程师需要的不只是样式，还有交互行为和品牌动效。",
+      "cases": [
+        {
+          "name": "设计系统建设",
+          "desc": "企业级组件库的搭建和跨团队规范落地"
+        },
+        {
+          "name": "快速原型搭建",
+          "desc": "用现成组件快速实现产品原型和 Demo"
+        },
+        {
+          "name": "品牌差异化",
+          "desc": "在通用组件上叠加品牌动效和视觉个性"
+        }
+      ],
+      "isNew": false
+    }
+  ]
+}

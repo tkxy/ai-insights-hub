@@ -1,0 +1,126 @@
+{
+  "date": "2026-05-31",
+  "generated_at": "2026-06-01T08:30:00+08:00",
+  "daily_summary": "5月31日周六，AI行业迎来本周收官重磅：OpenAI Codex应用更新至26.527版，Computer Use视觉操作正式登陆Windows并支持手机远程控制电脑；世界智能产业博览会闭幕，4天展示200余项创新成果；英特尔联合3DGS斥资223亿在印度建半导体基板厂；AI政策规范玩具产业发展，国家网信办等五部门《拟人化互动服务管理暂行办法》将于7月15日施行；Anthropic Glasswing WolfSSL漏洞CVSS 9.1引发嵌入式设备安全讨论；GitHub Copilot正式从包月转向Token按量计费，AI编程低价时代结束。",
+  "design_insights": [
+    {
+      "title": "Codex Computer Use：AI视觉操控桌面的交互范式",
+      "summary": "OpenAI Codex更新让AI可通过屏幕识别和鼠标键盘控制操作Windows桌面，同时支持手机端远程操控电脑任务。但目前执行需前台运行。",
+      "implication": "Computer Use代表了从'文本交互'到'视觉+操作交互'的升级。输入法可探索类似能力——不仅输入文字，还能根据当前屏幕内容（如看到表格自动建议公式、看到日程自动建议提醒）提供上下文感知的智能输入。",
+      "sources": ["腾讯新闻"],
+      "source_urls": ["https://new.qq.com/rain/a/20260531A02YLX00"],
+      "tags": ["Computer Use", "视觉操控", "屏幕感知"]
+    },
+    {
+      "title": "AI拟人化互动服务的合规设计要求",
+      "summary": "国家网信办等五部门《人工智能拟人化互动服务管理暂行办法》将于7月15日施行，规范AI拟人化交互中的风险。AI玩具市场预计2030年达850亿元。",
+      "implication": "输入法如有AI助手人格化设计（如虚拟形象、个性化语调），需提前对标新规要求：明确标识AI身份、避免误导性拟人表达、未成年人使用限制等。设计审查需前置。",
+      "sources": ["腾讯新闻"],
+      "source_urls": ["https://new.qq.com/rain/a/20260531A02YLX00"],
+      "tags": ["AI合规", "拟人化", "监管"]
+    },
+    {
+      "title": "GitHub Copilot按量计费的UX定价教训",
+      "summary": "Copilot从$29/月固定转为Token按量计费，有用户月费暴涨至$750。业界指出微软前期产品设计培育了高频使用习惯，单方面调价让用户难以接受。",
+      "implication": "输入法AI功能如未来考虑付费模式，应在早期就设计'使用量感知'——让用户清晰了解自己的AI消耗量，避免突然调价的心理落差。可设计仪表盘展示AI调用次数和效率提升数据。",
+      "sources": ["每日经济新闻/腾讯新闻"],
+      "source_urls": ["https://new.qq.com/rain/a/20260601A02I8E00"],
+      "tags": ["定价策略", "UX设计", "付费模式"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "输入法屏幕感知能力：基于当前画面的智能输入",
+      "pain_point": "输入法只关注文本框本身，不了解用户当前屏幕上看到什么内容，无法提供与上下文相关的智能建议。",
+      "opportunity": "引入屏幕内容感知能力（在用户授权前提下）：当用户在邮件App回复时，输入法能感知邮件内容并建议回复；在购物App时能感知商品信息辅助输入评价。",
+      "priority": "medium",
+      "evidence": "OpenAI Codex Computer Use登陆Windows实现屏幕识别+操作控制；Step 3.7 Flash原生多模态可直接解析UI界面。"
+    },
+    {
+      "title": "AI功能付费的透明化设计需求",
+      "pain_point": "AI产品从免费/低价到按量计费的转变容易引发用户反感（GitHub Copilot教训），用户不清楚自己'用了多少AI'。",
+      "opportunity": "输入法AI功能如走付费路线，应从一开始就设计'AI使用仪表盘'：每天AI帮你纠正了X个错字、提升了Y%打字效率、节省了Z分钟——让用户看到AI的价值，为付费建立心理预期。",
+      "priority": "low",
+      "evidence": "GitHub Copilot转按量计费后用户月费从$29暴涨至$750，社区强烈不满，定价透明度成为AI产品关键设计要素。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "OpenAI Codex更新：Computer Use登陆Windows，支持手机远程控制",
+      "summary": "Codex应用26.527版本发布，视觉操作能力正式登陆Windows支持屏幕识别和鼠标键盘控制，同步上线远程控制功能可由手机端操控电脑任务。",
+      "source": "腾讯新闻",
+      "source_urls": ["https://new.qq.com/rain/a/20260531A02YLX00"],
+      "tags": ["OpenAI", "Codex", "Computer Use"]
+    },
+    {
+      "title": "世界智能产业博览会闭幕：200余项创新成果发布",
+      "summary": "2026世界智能产业博览会在天津闭幕，4天展览面积13万平方米，740余家企业参展，集中发布200余项覆盖智能制造、低空经济等领域创新成果。",
+      "source": "腾讯新闻",
+      "source_urls": ["https://new.qq.com/rain/a/20260531A02YLX00"],
+      "tags": ["智能博览会", "天津", "产业成果"]
+    },
+    {
+      "title": "GitHub Copilot正式转向Token按量计费，AI编程低价时代结束",
+      "summary": "6月1日起GitHub Copilot从固定月费调整为Token按量收费。部分开发者月费从$29涨至近$750，社区激烈反响，多用户选择退订。",
+      "source": "每日经济新闻",
+      "source_urls": ["https://new.qq.com/rain/a/20260601A02I8E00"],
+      "tags": ["GitHub", "定价", "AI编程"]
+    },
+    {
+      "title": "英特尔联合3DGS斥资223亿在印度建半导体基板厂",
+      "summary": "英特尔联合3DGS投资约223亿元在印度奥里萨邦建立半导体基板制造厂，预计5-6年完工，主打先进封装玻璃基板。2026年有望成为玻璃基板商业化元年。",
+      "source": "每日经济新闻",
+      "source_urls": ["https://new.qq.com/rain/a/20260601A02I8E00"],
+      "tags": ["英特尔", "印度", "玻璃基板"]
+    },
+    {
+      "title": "五部门AI拟人化互动服务管理办法将于7月15日施行",
+      "summary": "国家网信办等五部门《人工智能拟人化互动服务管理暂行办法》7月15日施行，规范拟人化互动服务风险。AI玩具市场预计2030年达850亿元。",
+      "source": "腾讯新闻",
+      "source_urls": ["https://new.qq.com/rain/a/20260531A02YLX00"],
+      "tags": ["监管", "拟人化AI", "合规"]
+    },
+    {
+      "title": "软银750亿欧元法国AI数据中心计划细节披露",
+      "summary": "软银携手施耐德电气在敦刻尔克打造AI基础设施与机器人制造产业中心，总算力5GW为欧洲最大，首期450亿欧元2031年建成3.1GW算力。",
+      "source": "腾讯新闻",
+      "source_urls": ["https://new.qq.com/rain/a/20260531A02YLX00"],
+      "tags": ["软银", "法国", "算力基建"]
+    },
+    {
+      "title": "WolfSSL CVSS 9.1漏洞引发嵌入式设备安全讨论",
+      "summary": "Project Glasswing发现CVE-2026-5194关键WolfSSL漏洞（CVSS 9.1），影响汽车系统、工业控制器和IoT设备中的嵌入式TLS/SSL库。",
+      "source": "BuildFastWithAI",
+      "source_urls": ["https://www.buildfastwithai.com/blogs/ai-news-today-may-30-2026"],
+      "tags": ["安全", "嵌入式", "IoT"]
+    },
+    {
+      "title": "Anthropic估值逼近万亿美元引发行业估值重估",
+      "summary": "多方信息指Anthropic估值已逼近或超过1万亿美元，CNBC和其他分析指其H轮融资使估值进入万亿级别，引发全球AI企业估值体系重估。",
+      "source": "ZeroNoise AI/CNBC",
+      "source_urls": ["https://zeronoise.ai/posts/geminis-agent-push-anthropics-trillion-dollar-valuation-and-the-open-model-catch-up-7x1f9jmia0/download/pdf"],
+      "tags": ["Anthropic", "估值", "万亿"]
+    },
+    {
+      "title": "COMPUTEX 2026明日开幕：NVIDIA GTC台北先行",
+      "summary": "COMPUTEX 2026 6月1-5日台北举行，NVIDIA GTC台北6月1日率先开幕，黄仁勋将演讲发布下一代AI前沿技术。AMD Helios机柜对标NVL72。",
+      "source": "腾讯新闻/每日经济新闻",
+      "source_urls": ["https://new.qq.com/rain/a/20260601A02I8E00"],
+      "tags": ["COMPUTEX", "NVIDIA", "GTC"]
+    },
+    {
+      "title": "印度劳动力积极拥抱AI：54%对AI招聘有信心",
+      "summary": "超半数印度受访者有信心用AI算法支持无偏见招聘，高于43%全球平均。但53%金融专业人士对技术变革速度感到不安。",
+      "source": "新浪财经",
+      "source_urls": ["https://k.sina.com.cn/article_7857201856_1d45362c0019065nce.html"],
+      "tags": ["印度", "AI招聘", "就业"]
+    },
+    {
+      "title": "博通2031年与Google合作协议巩固AI芯片地位",
+      "summary": "博通披露与Google供应保障协议有效期至2031年，为下一代AI机架提供组件。其定制芯片在稳定负载下总成本比GPU低40-60%。",
+      "source": "新浪财经",
+      "source_urls": ["https://k.sina.com.cn/article_7857201856_1d45362c0019065nce.html"],
+      "tags": ["博通", "Google", "定制芯片"]
+    }
+  ]
+}

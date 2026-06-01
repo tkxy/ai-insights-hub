@@ -1,0 +1,172 @@
+{
+  "week": "2026-W23",
+  "range": { "start": "2026-06-01", "end": "2026-06-07" },
+  "generatedAt": "2026-06-01T01:10:00.000Z",
+  "trends": [
+    {
+      "title": "AI编程从辅助变自主",
+      "summary": "GPT-5.5 发布加上 Codex auto-review、crabbox 等工具链成熟，AI 编程任务从 30-60 分钟的辅助变成了 4-10 小时的自主执行。开发者从「写代码」变成了「管 agent」，效率提升的同时也意味着人要学新的协作方式。",
+      "implication": "输入法/AI 助手类产品可以借鉴 auto-review 的思路——不是帮用户做完，而是做完后解释每步的风险和逻辑，降低新手门槛同时建立信任。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Peter Steinberger (steipete)",
+          "url": "https://x.com/steipete/status/2060678430031597696",
+          "quote": "With GPT 5.5, /goal, autoreview and crabbox my prompts moved from ~30-60min to often 4-10h tasks and my confidence that it's ready is much much higher. Yielding agents is a skill."
+        },
+        {
+          "type": "tweet",
+          "who": "Ryo Lu (Cursor Design)",
+          "url": "https://x.com/ryolu_/status/2060766674203353190",
+          "quote": "What I love about auto-review: Cursor explains the command and risk, makes it much easier for new coders to learn and just do things."
+        },
+        {
+          "type": "tweet",
+          "who": "Thibault Sottiaux (OpenAI Codex)",
+          "url": "https://x.com/thsottiaux/status/2060627747760984429",
+          "quote": "When we go from GPT-5.0 → GPT-5.1 → ... → GPT-5.5, the number incrementing goes with improvements in capabilities and token efficiency. With GPT-5.5 our best model yet."
+        }
+      ]
+    },
+    {
+      "title": "Agent学会自我改进",
+      "summary": "Claude 推出 dreaming 机制——agent 不只是干活，还能在空闲时回顾历史会话、提取模式、自动优化记忆。加上 outcomes 评估和多 agent 编排，agent 开始有了「复盘」和「自我纠错」的能力，不再完全依赖人喂 prompt。",
+      "implication": "输入法的 AI 助手可以类似地做「离线复盘」——分析用户过去一周的交互，发现常见需求和错误习惯，主动建议个性化改进，而不是每次都从零开始。",
+      "evidence": [
+        {
+          "type": "blog",
+          "who": "Claude Blog (Anthropic)",
+          "url": "https://claude.com/blog/new-in-claude-managed-agents",
+          "quote": "Dreaming extends memory by reviewing past sessions to find patterns and help agents self-improve. Dreaming surfaces patterns that a single agent can't see on its own, including recurring mistakes, workflows that agents converge on."
+        },
+        {
+          "type": "tweet",
+          "who": "Peter Steinberger (steipete)",
+          "url": "https://x.com/steipete/status/2060672154727825718",
+          "quote": "I do this with codex all the time. Ask it to review code for bugs and it will tell you all good, tell it there is a bug and it will LOOP AND LOOP and will find issues."
+        }
+      ]
+    },
+    {
+      "title": "AI创造岗位而非消灭",
+      "summary": "Box CEO Aaron Levie 跟大量 CIO/CTO 交流后发现，企业因为 AI 不是在裁员而是在扩招——新岗位（如 FDE、AI 工程师）在增加，效率省下来的钱被重新投入到之前没资源做的业务上。高盛 CEO 也在纽约时报发文表达了同样观点。",
+      "implication": "这对输入法 AI 助手是个利好信号——用户需要的是帮他们做更多事，而不是替代他们。产品定位应该是「让人做更多」，而非「替人做」。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Aaron Levie (Box CEO)",
+          "url": "https://x.com/levie/status/2060923684295221390",
+          "quote": "In the majority of conversations I have with CIOs, CTOs, and CEOs, they are either growing due to AI or at a minimum reinvesting efficiency savings back into the business in new areas."
+        },
+        {
+          "type": "tweet",
+          "who": "Guillermo Rauch (Vercel CEO)",
+          "url": "https://x.com/rauchg/status/2060803480823193840",
+          "quote": "Ship the best product. Use lots of AI, some AI, maybe no AI. Just be the best."
+        }
+      ]
+    }
+  ],
+  "builders": [
+    {
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "OpenClaw 创始人 / OpenAI 合作者",
+      "highlights": [
+        {
+          "summary": "GPT-5.5 + auto-review + crabbox 组合拳让编程任务从半小时拉到 4-10 小时自主执行，「驾驭 agent」正在成为一门新技能",
+          "url": "https://x.com/steipete/status/2060678430031597696"
+        },
+        {
+          "summary": "用 Codex 做代码审查的实操经验：直接问有没有 bug 它说没问题，但告诉它一定有 bug 之后它会反复搜索直到找到",
+          "url": "https://x.com/steipete/status/2060672154727825718"
+        }
+      ]
+    },
+    {
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "OpenAI Codex & ChatGPT 负责人",
+      "highlights": [
+        {
+          "summary": "宣布 GPT-5.5 为当前最强模型，从小版本迭代中同时提升能力和 token 效率（速度更快）",
+          "url": "https://x.com/thsottiaux/status/2060627747760984429"
+        },
+        {
+          "summary": "Codex 用户突破 500 万，为庆祝将提升使用限额",
+          "url": "https://x.com/thsottiaux/status/2060964284117782996"
+        }
+      ]
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "Vercel CEO",
+      "highlights": [
+        {
+          "summary": "核心产品观：做最好的产品就行，多 AI、少 AI、不用 AI 都行，关键是要最好",
+          "url": "https://x.com/rauchg/status/2060803480823193840"
+        },
+        {
+          "summary": "Vercel AI Gateway 支持 Per-API Key 花费上限，帮助企业控制 AI 调用成本",
+          "url": "https://x.com/rauchg/status/2060787704166776927"
+        }
+      ]
+    },
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "Box CEO",
+      "highlights": [
+        {
+          "summary": "跟大量企业高管交流后发现：AI 在创造新岗位而非裁员，效率省下的钱被重新投入之前没资源做的业务",
+          "url": "https://x.com/levie/status/2060923684295221390"
+        }
+      ]
+    },
+    {
+      "name": "Ryo Lu",
+      "handle": "ryolu_",
+      "role": "Cursor 设计师",
+      "highlights": [
+        {
+          "summary": "Cursor auto-review 的价值：不仅帮用户做事，还解释每步的命令和风险，让新开发者也能学能上手",
+          "url": "https://x.com/ryolu_/status/2060766674203353190"
+        }
+      ]
+    },
+    {
+      "name": "Dan Shipper",
+      "handle": "danshipper",
+      "role": "Every CEO",
+      "highlights": [
+        {
+          "summary": "分享 Codex 使用数据：380 亿 token、最长任务 56 小时、连续 41 天使用，显示 AI 编程已深度嵌入工作流",
+          "url": "https://x.com/danshipper/status/2060771279280513362"
+        }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "Unsupervised Learning",
+      "title": "Ep 87: Gemini 联合负责人谈世界模型、强化学习新领域与持续学习（Gemini Co-Lead on World Models, RL's Next Domains & Continual Learning）",
+      "guest": "Oriol Vinyals（Google Gemini 联合负责人）",
+      "url": "https://www.youtube.com/watch?v=NQczevdpxq0",
+      "keyTakeaways": [
+        "多模态模型要真正可用，需要在世界模型上做更多突破——不只是看图说话，而是理解物理世界的因果和时序关系",
+        "记忆能力的提升将是下一个关键方向， Oriol 认为这跟推理能力的提升类似，未来几年会有显著进步",
+        "scaffolding（脚手架）目前的状态是：很多人在搭建，但真正持久有效的模式还没定型，工具链还在快速迭代",
+        "Google IO 发布的一系列产品背后，核心思路是把模型能力做到足够通用，然后在各个产品面上快速落地"
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "name": "Claude Blog (Anthropic)",
+      "title": "Claude Managed Agents 新功能：做梦、结果评估与多 Agent 编排（New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration）",
+      "url": "https://claude.com/blog/new-in-claude-managed-agents",
+      "summary": "Anthropic 给 Claude Managed Agents 加了三个重要功能。Dreaming 让 agent 在空闲时自动回顾历史会话，提取模式并优化记忆，实现自我改进。Outcomes 让开发者定义「成功长什么样」，由独立的 grader 评估结果，不偏不倚。多 agent 编排让多个 agent 协作处理复杂任务。核心思路是：agent 不只干活，还要会复盘、会自我纠错、会分工合作。"
+    }
+  ]
+}

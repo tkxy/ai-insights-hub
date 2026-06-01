@@ -1,0 +1,148 @@
+{
+  "date": "2026-05-25",
+  "generated_at": "2026-06-01T08:30:00+08:00",
+  "daily_summary": "5月25日AI行业迎来多项重大事件：华为在IEEE ISCAS 2026发表主旨演讲正式发布"韬(τ)定律"，这是中国首次在全球半导体领域提出指导产业发展的原创性原则，被视为挑战摩尔定律权威的里程碑；阶跃星辰获近25亿美元融资，国产AI估值加速飙升；Google A2UI（Agent to UI）设计范式被深度解读，推动从固定GUI到Agent生成式界面的转变；小红书AI搜索助手"点点"PC端上线，将真实社区内容与AI搜索深度融合，展示了垂类知识库+AI搜索的差异化路线。",
+  "design_insights": [
+    {
+      "title": "A2UI设计范式：Agent驱动的声明式UI生成",
+      "summary": "Google提出的Agent to UI理念正在重构设计组件逻辑：AI Agent生成结构化JSON描述界面意图，前端原生渲染，形成动态交互循环。从固定控件到按需生成最简可行交互面。",
+      "implication": "输入法产品可借鉴A2UI思路，让AI候选结果不再局限于固定的文字列表，而是根据用户意图动态生成卡片、操作按钮、快捷功能等复合型UI组件，实现输入即交互。",
+      "sources": ["人人都是产品经理", "CSDN"],
+      "source_urls": ["https://www.woshipm.com/share/6401833.html", "https://blog.csdn.net/BytePulse/article/details/160955491"],
+      "tags": ["Agent-UI", "设计范式", "交互创新"]
+    },
+    {
+      "title": "流式UI的体验挑战与布局抖动解法",
+      "summary": "A2UI流式更新中，界面组件逐个"冒出"导致布局抖动、用户"抓不住"界面的问题日益突出。需设计预占位、骨架屏、渐进式展现等策略来维护视觉稳定性。",
+      "implication": "输入法AI功能（如长文本润色、翻译预览）的结果渲染需避免抖动，可预设骨架占位框，流式内容到达后平滑填充，避免候选面板频繁跳动影响打字节奏。",
+      "sources": ["人人都是产品经理"],
+      "source_urls": ["https://www.woshipm.com/share/6401833.html"],
+      "tags": ["流式UI", "体验优化", "输入效率"]
+    },
+    {
+      "title": "小红书'点点'：AI搜索+真实社区生态的信任设计",
+      "summary": "小红书PC端AI搜索助手"点点"将AI生成摘要与原始笔记数据并排展示，用户可一键查看来源做交叉验证，同时支持个人收藏数据接入实现个性化回答。",
+      "implication": "输入法的AI回答/搜索建议可增加'来源溯源'设计，展示信息来自哪篇文章或哪个知识库，提升用户对AI建议的信任度。个性化偏好接入也可让输入预测更精准。",
+      "sources": ["AITOP100"],
+      "source_urls": ["https://www.aitop100.cn/ai-daily-2026-05-29"],
+      "tags": ["AI搜索", "信任设计", "个性化"]
+    },
+    {
+      "title": "SITS 2026：意图锚点与首屏信任建模",
+      "summary": "SITS 2026首次将'可解释性动效'、'意图锚点(Intent Anchors)'和'状态即服务'列为三大基础设计范式，强调长按输入框自动激活隐式请求等轻量级语义交互。",
+      "implication": "输入法本身就是最高频的'意图锚点'入口——用户敲击每一个字都是表达意图。可在输入过程中植入轻量级意图检测，如检测到地址格式自动展示地图卡片，检测到计算表达式即时出结果。",
+      "sources": ["CSDN"],
+      "source_urls": ["https://blog.csdn.net/CompiTide/article/details/160955556"],
+      "tags": ["意图识别", "隐式交互", "输入法入口"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "输入法作为Agent交互入口的产品机会",
+      "pain_point": "当前AI Agent交互主要依赖独立App或浏览器插件，用户需在多个入口间切换，交互链路长且碎片化。",
+      "opportunity": "输入法作为全系统级文本入口，天然具备跨App调用Agent的能力。可将输入法打造为轻量级Agent调度中心，用户在任何输入框中通过特定触发词即可唤起AI能力。",
+      "priority": "high",
+      "evidence": "Google A2UI理念推动Agent生成式界面，SITS 2026将意图锚点列为核心设计范式，输入法作为最高频交互入口天然适配。"
+    },
+    {
+      "title": "AI生成内容的来源可信度标注需求",
+      "pain_point": "AI搜索结果真假难辨，用户对AI回答的信任度不足，特别是涉及专业领域时缺乏验证手段。",
+      "opportunity": "在输入法AI功能（润色、翻译、问答）中加入来源标注和置信度指示，让用户知道AI建议背后的依据，提升使用信心。",
+      "priority": "medium",
+      "evidence": "小红书'点点'以并排展示AI摘要+原始来源获得用户好评；SITS 2026推荐置信区间指示器和溯源高亮为必显元信息。"
+    },
+    {
+      "title": "华为τ定律背后的端侧AI芯片机遇",
+      "pain_point": "大模型能力受限于云端推理，网络延迟和隐私顾虑制约了输入法AI功能的实时响应。",
+      "opportunity": "随着华为τ定律推动端侧算力发展，输入法可加深端侧模型部署，实现离线状态下的智能预测、语义理解和即时翻译。",
+      "priority": "medium",
+      "evidence": "华为ISCAS 2026发布τ定律，42个万卡智算集群建成，推理芯片被预言取代训练芯片成为主流。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "华为发布"韬(τ)定律"：中国首次提出全球半导体产业发展原则",
+      "summary": "华为董事何庭波在IEEE ISCAS 2026发表主旨演讲，正式发布"韬(τ)定律"，这是中国在全球半导体领域首次提出指导产业发展的原创性原则，被业界视为挑战摩尔定律权威的里程碑。A股半导体板块应声暴涨。",
+      "source": "掘金/多家财经媒体",
+      "source_urls": ["https://juejin.cn/post/7644476634998489097"],
+      "tags": ["半导体", "华为", "芯片"]
+    },
+    {
+      "title": "阶跃星辰获近25亿美元融资，国产大模型估值飙升",
+      "summary": "阶跃星辰完成近25亿美元（约170亿人民币）新一轮融资，标志国产AI估值体系加速重塑。此前DeepSeek 700亿元融资、月之暗面136亿元融资接连落地。",
+      "source": "CSDN/AI领域简报",
+      "source_urls": ["https://blog.csdn.net/txg666/article/details/161479205"],
+      "tags": ["融资", "国产大模型", "阶跃星辰"]
+    },
+    {
+      "title": "DeepSeek V4-Pro API永久降价75%，国产大模型价格战白热化",
+      "summary": "DeepSeek宣布V4-Pro API永久降价75%，输入低至0.025元/百万Token。紧随其后小米MiMo-V2.5降幅达99%，行业价格底线被彻底击穿。",
+      "source": "CSDN/AI领域简报",
+      "source_urls": ["https://blog.csdn.net/txg666/article/details/161479205"],
+      "tags": ["价格战", "DeepSeek", "API定价"]
+    },
+    {
+      "title": "Google A2UI设计范式获行业关注：Agent驱动的UI生成时代到来",
+      "summary": "Google提出的Agent to UI理念被深度解析，AI Agent生成声明式JSON描述界面意图，前端原生渲染，实现跨平台一致体验，标志从固定GUI到动态生成式界面的范式转移。",
+      "source": "人人都是产品经理",
+      "source_urls": ["https://www.woshipm.com/share/6401833.html"],
+      "tags": ["设计范式", "Agent-UI", "交互设计"]
+    },
+    {
+      "title": "微软Fara1.5浏览器Agent发布，Claude Code被微软内部禁用",
+      "summary": "5月26日微软发布Fara1.5浏览器Agent，同时内部禁止使用Anthropic的Claude Code工具，显示微软在AI开发工具领域加速自主可控布局。",
+      "source": "CSDN/AI领域简报",
+      "source_urls": ["https://blog.csdn.net/txg666/article/details/161479205"],
+      "tags": ["微软", "Agent", "开发工具"]
+    },
+    {
+      "title": "小红书AI搜索助手"点点"上线PC端，主打真实社区+AI融合",
+      "summary": "小红书将AI搜索助手"点点"延伸至PC端，AI生成摘要与原始笔记并排展示，支持个人收藏导入实现个性化回答，探索垂类知识库AI搜索的差异化路线。",
+      "source": "AITOP100",
+      "source_urls": ["https://www.aitop100.cn/ai-daily-2026-05-29"],
+      "tags": ["AI搜索", "小红书", "社区AI"]
+    },
+    {
+      "title": "GPT-5.6曝光：150万上下文窗口，大模型进入百万Token时代",
+      "summary": "5月27日GPT-5.6信息泄露，支持150万Token上下文窗口。结合此前GPT-5.5全量推送和Gemini 3.5 Flash发布，大模型正式进入百万Token时代。",
+      "source": "CSDN/AI领域简报",
+      "source_urls": ["https://blog.csdn.net/txg666/article/details/161479205"],
+      "tags": ["OpenAI", "GPT-5.6", "上下文窗口"]
+    },
+    {
+      "title": "DeepSeek估值冲击3500亿元，国家大基金首次入场AI",
+      "summary": "DeepSeek最新估值达3500亿元人民币，获国家大基金首次参与投资，标志国产AI领域正式获得国家级产业资本背书。",
+      "source": "CSDN/掘金",
+      "source_urls": ["https://blog.csdn.net/txg666/article/details/161479205"],
+      "tags": ["DeepSeek", "融资", "国家大基金"]
+    },
+    {
+      "title": "SITS 2026将意图锚点列为核心设计范式",
+      "summary": "SITS 2026首次将'可解释性动效'、'意图锚点(Intent Anchors)'和'状态即服务(State-as-a-Service)'列为AI原生交互三大基础设计范式，推动界面从预设控件到动态生成。",
+      "source": "CSDN",
+      "source_urls": ["https://blog.csdn.net/CompiTide/article/details/160955556"],
+      "tags": ["交互设计", "SITS", "设计趋势"]
+    },
+    {
+      "title": "台积电宣布涨价15%，AI算力供应链持续紧张",
+      "summary": "台积电宣布先进制程涨价15%，叠加AI算力需求暴增，供应链紧张预期持续至2027年底。IDC预测今年全球内存芯片营收将翻倍至5950亿美元。",
+      "source": "CSDN/多家财经媒体",
+      "source_urls": ["https://blog.csdn.net/txg666/article/details/161479205"],
+      "tags": ["台积电", "芯片", "供应链"]
+    },
+    {
+      "title": "Thoughtworks发布2026展望：UX进化为交互编排",
+      "summary": "Thoughtworks Looking Glass 2026报告指出，UX正进化为'交互编排'（Interaction Choreography），设计师将跨多种智能系统编排交互体验，而非优化单一界面。",
+      "source": "Thoughtworks",
+      "source_urls": ["https://www.thoughtworks.com/content/dam/thoughtworks/documents/looking-glass-2026/tw_looking_glass_2026_accessible.pdf"],
+      "tags": ["设计趋势", "UX", "Thoughtworks"]
+    },
+    {
+      "title": "中国AI手机元年：小米卢伟冰宣布2026年为AI手机元年",
+      "summary": "小米集团总裁卢伟冰在一季度财报电话会议上表示'2026年可能是AI手机元年'，5G手机出货占比达96.1%，国产品牌占比86.1%。",
+      "source": "每日AI必读资讯",
+      "source_urls": ["https://news.softunis.com/59726.html"],
+      "tags": ["AI手机", "小米", "终端"]
+    }
+  ]
+}

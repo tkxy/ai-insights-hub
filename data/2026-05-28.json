@@ -1,0 +1,141 @@
+{
+  "date": "2026-05-28",
+  "generated_at": "2026-06-01T08:30:00+08:00",
+  "daily_summary": "5月28日AI行业多线并进：Anthropic以9650亿美元估值完成650亿美元H轮融资，超越OpenAI成全球最贵AI创企，年化收入超470亿美元；科大讯飞发布首款AI眼镜主打全场景翻译，售价4299元起；Meta拟成立Enterprise Solutions新部门为企业客户定制AI服务；2026世界智能产业博览会在天津开幕，740余家企业参展；腾讯混元发布Hy-Memory记忆插件解决Agent'三周变笨'问题；阶跃星辰开源Step 3.7 Flash达400 Tokens/秒。",
+  "design_insights": [
+    {
+      "title": "科大讯飞AI眼镜的全场景翻译交互设计",
+      "summary": "讯飞首款AI眼镜主打同声传译、面对面翻译、线上同传、通话翻译和视觉翻译（AR翻译）5种翻译模式，售价4299元起，支持部署多家智能体。",
+      "implication": "输入法在翻译场景的交互可参考讯飞眼镜的'场景自适应'理念——自动识别当前对话场景（面对面/电话/会议/阅读）切换最合适的翻译模式，无需用户手动选择。输入框中检测到外语时自动触发翻译建议。",
+      "sources": ["每日经济新闻/BEYOND Expo"],
+      "source_urls": ["https://gu.qq.com/resources/shy/news/detail-v2/index.html"],
+      "tags": ["AI眼镜", "翻译设计", "场景自适应"]
+    },
+    {
+      "title": "腾讯Hy-Memory：Agent长期记忆的6层架构设计",
+      "summary": "腾讯混元Hy-Memory采用6层记忆框架（L1原始痕迹到L6前瞻意图）+ System1/2双系统 + 演化链机制，解决Agent'三周变笨'问题。记忆密度提升45%、Token消耗降35%。",
+      "implication": "输入法用户画像可借鉴6层记忆架构：L1记录原始输入、L2提取事实偏好、L3构建表达模式、L4形成用户心智模型。通过演化链追踪用户习惯变化（如从正式到随意的语言风格转变），实现真正'越用越懂你'。",
+      "sources": ["AITOP100"],
+      "source_urls": ["https://www.aitop100.cn/ai-daily-2026-05-29"],
+      "tags": ["记忆系统", "用户画像", "个性化"]
+    },
+    {
+      "title": "Meta Enterprise Solutions：企业级AI产品的可复用设计模式",
+      "summary": "Meta计划成立Enterprise Solutions部门，专注帮助企业客户整合AI工具并建立可复用的操作指南和工具，使AI服务随时间规模化。",
+      "implication": "输入法的企业版/B端场景可建立行业模板库——针对法律、医疗、金融等行业预设专业术语库和表达模板，企业管理员可配置团队共享词库和文风规范，让新员工也能快速产出专业级文本。",
+      "sources": ["每日经济新闻/TechCrunch"],
+      "source_urls": ["https://gu.qq.com/resources/shy/news/detail-v2/index.html"],
+      "tags": ["企业AI", "B端设计", "模板化"]
+    },
+    {
+      "title": "400 Token/秒生成速度对实时交互的影响",
+      "summary": "阶跃星辰Step 3.7 Flash达到400 Tokens/秒，在实时对话中用户几乎感觉不到等待延迟。MoE架构196B参数的极速推理重新定义了'实时AI'的体验标准。",
+      "implication": "当AI响应速度逼近人类打字速度，输入法AI辅助从'等AI想完再看结果'变为'边输入边优化'的实时流。设计上可实现打字过程中的实时语法修正、用词建议和风格优化，如同一个随时在旁的文字编辑。",
+      "sources": ["AITOP100"],
+      "source_urls": ["https://www.aitop100.cn/ai-daily-2026-05-29"],
+      "tags": ["实时AI", "速度体验", "即时反馈"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "输入法行业术语库的企业级解决方案",
+      "pain_point": "不同行业（法律/医疗/金融/技术）有大量专业术语，通用输入法对行业用语支持不足，员工需反复手动纠正。",
+      "opportunity": "开发'企业输入法'功能：企业管理员可上传行业词典、设置文风规范（如禁用非正式用语）、配置团队共享联想词库。新员工安装后自动同步，打字即规范。",
+      "priority": "medium",
+      "evidence": "Meta成立Enterprise Solutions部门布局企业AI市场；腾讯Hy-Memory的记忆框架可应用于行业知识库的层级化管理。"
+    },
+    {
+      "title": "输入法用户记忆系统的'演化链'设计",
+      "pain_point": "输入法的个性化学习是单向累积的，不能反映用户习惯的变化——用户从学生变为职场人，输入风格变了但词库还停留在过去。",
+      "opportunity": "借鉴Hy-Memory的演化链机制，输入法记忆系统支持'时代切换'：检测到用户表达风格显著变化时，自动创建新的个性化模型版本，同时保留历史版本供用户切换（如'工作模式'/'生活模式'）。",
+      "priority": "high",
+      "evidence": "腾讯Hy-Memory演化链机制可追踪用户观念变化，通过supersedes指针把新旧记忆串联，既记住最新结论也保留历史。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Anthropic以9650亿美元估值完成650亿H轮，超越OpenAI成全球最贵AI创企",
+      "summary": "Anthropic宣布650亿美元H轮融资，估值9650亿美元接近万亿，超越OpenAI成为全球估值最高AI企业。同步发布Claude Opus 4.8，年化收入超470亿美元。",
+      "source": "腾讯新闻/CNBC",
+      "source_urls": ["https://new.qq.com/rain/a/20260531A02YLX00"],
+      "tags": ["Anthropic", "万亿估值", "融资"]
+    },
+    {
+      "title": "科大讯飞发布首款AI眼镜：全场景翻译，4299元起",
+      "summary": "科大讯飞在BEYOND Expo 2026发布首款自研AI眼镜，主打同声传译、面对面翻译、视觉翻译等全场景翻译能力，支持多个智能体部署，6月15日开启预售。",
+      "source": "每日经济新闻",
+      "source_urls": ["https://gu.qq.com/resources/shy/news/detail-v2/index.html"],
+      "tags": ["讯飞", "AI眼镜", "翻译"]
+    },
+    {
+      "title": "2026世界智能产业博览会天津开幕，展览面积创历届之最",
+      "summary": "世界智能产业博览会5月28-31日在天津举行，展览面积13万平方米创历届之最，740余家企业参展，发布200余项覆盖智能制造、低空经济等领域的创新成果。",
+      "source": "腾讯新闻",
+      "source_urls": ["https://new.qq.com/rain/a/20260531A02YLX00"],
+      "tags": ["智能博览会", "天津", "产业展会"]
+    },
+    {
+      "title": "Meta拟成立Enterprise Solutions部门定制企业AI服务",
+      "summary": "Meta内部备忘录显示将成立Enterprise Solutions新部门，由产品经理和工程师组成，专注帮助企业客户整合AI工具并建立可复用操作指南。",
+      "source": "每日经济新闻/TechCrunch",
+      "source_urls": ["https://gu.qq.com/resources/shy/news/detail-v2/index.html"],
+      "tags": ["Meta", "企业AI", "新部门"]
+    },
+    {
+      "title": "腾讯混元发布Hy-Memory：解决Agent'三周变笨'问题",
+      "summary": "腾讯混元发布专为长期协作Agent设计的记忆插件Hy-Memory，采用6层记忆框架+双系统架构+演化链机制，记忆密度提升45%，Token消耗降低35%。",
+      "source": "AITOP100",
+      "source_urls": ["https://www.aitop100.cn/ai-daily-2026-05-29"],
+      "tags": ["腾讯", "Agent记忆", "Hy-Memory"]
+    },
+    {
+      "title": "阶跃星辰开源Step 3.7 Flash：196B参数，400 Tokens/秒",
+      "summary": "阶跃星辰发布并开源Step 3.7 Flash，196B参数MoE架构，最高生成速度400 Tokens/秒，原生多模态可直接解析UI界面和文档，专为Agent场景设计。",
+      "source": "AITOP100",
+      "source_urls": ["https://www.aitop100.cn/ai-daily-2026-05-29"],
+      "tags": ["阶跃星辰", "开源模型", "Agent"]
+    },
+    {
+      "title": "微博发布Q1财报：月活5.62亿，AI能力成增长引擎",
+      "summary": "微博一季度总营收4.213亿美元同比增6%，月活用户5.62亿同比减4.9%。广告业务回暖，但用户规模持续下滑是长期风险。",
+      "source": "每日经济新闻",
+      "source_urls": ["https://gu.qq.com/resources/shy/news/detail-v2/index.html"],
+      "tags": ["微博", "财报", "用户下滑"]
+    },
+    {
+      "title": "阿里百炼CLI全面开源：一行命令编排全栈AI能力",
+      "summary": "阿里云百炼宣布全面CLI化并开源，将模型调用、工作流编排、知识库检索等能力统一封装为命令行工具，开发者一行命令即可在主流Agent框架中调用。",
+      "source": "AITOP100",
+      "source_urls": ["https://www.aitop100.cn/ai-daily-2026-05-29"],
+      "tags": ["阿里", "百炼CLI", "开源"]
+    },
+    {
+      "title": "自变量团队发布全球首个事件级具身智能世界模型WALL-WM",
+      "summary": "WALL-WM将复杂任务按动作边界切分为具有明确语义的事件，先预演事件导致的视觉变化再翻译为运动轨迹，解决传统VLA模型泛化能力差的问题。",
+      "source": "AITOP100",
+      "source_urls": ["https://www.aitop100.cn/ai-daily-2026-05-29"],
+      "tags": ["具身智能", "世界模型", "机器人"]
+    },
+    {
+      "title": "微软Build大会预告：自研AI模型矩阵浮出水面",
+      "summary": "微软计划在Build大会发布多款自研AI模型，含高性价比代码专用模型（定位Claude平价替代），以及语音转写、逻辑推理、图像生成等垂直场景模型。",
+      "source": "AITOP100",
+      "source_urls": ["https://www.aitop100.cn/ai-daily-2026-05-29"],
+      "tags": ["微软", "自研模型", "Build"]
+    },
+    {
+      "title": "Meta将推出AI聊天机器人订阅服务",
+      "summary": "Meta调整AI产品策略，将其从流量入口推向付费产品，推出WhatsApp Plus（$2.99/月）等多档订阅方案，通过订阅方式寻求广告外的新变现渠道。",
+      "source": "IT之家/TechCrunch",
+      "source_urls": ["https://k.sina.com.cn/article_7857201856_1d45362c0019061bvo.html"],
+      "tags": ["Meta", "订阅", "AI变现"]
+    },
+    {
+      "title": "清华长三角研究院发布'真实场景AI竞技场'",
+      "summary": "RWAI框架及首个'真实场景AI竞技场'发布，将AI应用立项前效果验证周期从2-3个月缩短至两周，已在部分世界500强项目落地。",
+      "source": "野余岭风/每日AI速览",
+      "source_urls": ["https://www.yeyulingfeng.com/a/682232.html"],
+      "tags": ["清华", "AI评测", "产业落地"]
+    }
+  ]
+}

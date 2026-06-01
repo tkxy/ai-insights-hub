@@ -1,0 +1,167 @@
+{
+  "date": "2026-06-01",
+  "generated_at": "2026-06-01T08:30:00+08:00",
+  "type": "design-weekly",
+  "stages": {
+    "research": {
+      "title": "桌面研究",
+      "items": [
+        {
+          "title": "Agent to UI设计范式深度研究：从固定GUI到动态生成界面",
+          "source": "人人都是产品经理/CSDN/SITS 2026",
+          "sourceDetail": "Google A2UI理念、SITS 2026意图锚点范式、Thoughtworks Looking Glass 2026报告",
+          "insight": "2026年交互设计正经历根本性转变：UI不再是预设的静态控件布局，而是由AI Agent根据用户意图实时生成的动态服务界面。SITS 2026将'意图锚点'列为核心范式——用户每个操作都是一个语义触发点，输入法天然是最高频的意图入口。",
+          "action": "启动'输入法AI组件动态生成'预研项目：研究输入场景中哪些时刻适合展示动态UI卡片（如检测到地址时展示地图、检测到时间时展示日历），制定10个典型场景的交互原型。",
+          "tags": ["A2UI", "意图锚点", "动态UI"],
+          "sourceUrls": ["https://www.woshipm.com/share/6401833.html", "https://blog.csdn.net/BytePulse/article/details/160955491"]
+        },
+        {
+          "title": "AI产品UX设计实战指南2026：从对话UI到Agent编排",
+          "source": "wavespace.agency/Thoughtworks",
+          "sourceDetail": "UX design for AI products: A practical guide for 2026, Thoughtworks Looking Glass 2026",
+          "insight": "2026年AI产品设计核心挑战已从'能不能做'转向'信任边界在哪'。个性化是AI最大价值但也是最快破坏信任的方式——区别在于用户是否有控制权。反馈机制应匹配认知负荷：用户沮丧时不要让他额外付出。",
+          "action": "审核当前输入法AI功能的信任设计：1)个性化学习是否有可视化控制面板 2)AI建议被拒绝时的反馈链路是否足够轻量（一键thumbs-down而非填表） 3)用户能否明确感知'AI在学我'。",
+          "tags": ["UX信任", "个性化", "反馈设计"],
+          "sourceUrls": ["https://www.wavespace.agency/blog/ux-design-for-ai-products", "https://www.thoughtworks.com/content/dam/thoughtworks/documents/looking-glass-2026/tw_looking_glass_2026_accessible.pdf"]
+        },
+        {
+          "title": "AI Agent记忆系统设计研究：腾讯Hy-Memory 6层架构解析",
+          "source": "AITOP100/腾讯混元",
+          "sourceDetail": "腾讯混元Hy-Memory发布，6层记忆框架+System1/2双系统+演化链",
+          "insight": "Agent长期记忆的核心痛点是'三周变笨'——信息无分层堆积导致注意力稀释。Hy-Memory的6层架构（L1原始痕迹→L6前瞻意图）和演化链机制（新旧记忆通过supersedes指针串联）为输入法个性化学习系统提供了直接可参考的架构。",
+          "action": "对标Hy-Memory架构评估输入法用户画像系统：当前是否存在信息堆积问题？能否引入分层机制（输入记录→事实提取→偏好模式→用户心智模型）？制定用户画像系统升级方案。",
+          "tags": ["记忆系统", "用户画像", "分层架构"],
+          "sourceUrls": ["https://www.aitop100.cn/ai-daily-2026-05-29"]
+        }
+      ]
+    },
+    "competitive": {
+      "title": "竞品分析",
+      "items": [
+        {
+          "title": "科大讯飞AI眼镜发布：翻译赛道直接威胁输入法翻译功能",
+          "source": "每日经济新闻/BEYOND Expo 2026",
+          "sourceDetail": "科大讯飞5月28日发布首款AI眼镜，4299元起，6月15日预售",
+          "insight": "讯飞AI眼镜主打5种翻译模式（同声传译/面对面/线上同传/通话翻译/AR视觉翻译），直接挑战了输入法翻译功能的使用场景——当用户戴上眼镜就能实时翻译时，还需要在输入法里切换翻译模式吗？讯飞作为输入法同行（讯飞输入法），正在用硬件+AI构建新的翻译交互范式。",
+          "action": "1)评估讯飞眼镜对搜狗翻译输入的替代威胁级别 2)研究输入法翻译功能的不可替代场景（如文字翻译、长文翻译、商务邮件翻译——眼镜只适合口语场景） 3)探索输入法与智能眼镜的协作方案而非对抗。",
+          "tags": ["讯飞", "AI眼镜", "翻译"],
+          "sourceUrls": ["https://gu.qq.com/resources/shy/news/detail-v2/index.html"]
+        },
+        {
+          "title": "OpenAI gpt-realtime-translate + Codex Computer Use：AI平台级竞品对输入入口的包围",
+          "source": "ZeroNoise AI/腾讯新闻",
+          "sourceDetail": "OpenAI 5月30日发布实时翻译模型，5月31日Codex视觉操控登陆Windows",
+          "insight": "OpenAI在一周内连续发布实时语音翻译+桌面视觉操控，正在构建'无需输入法'的AI交互范式——用户对着电脑说话AI直接执行，或AI看屏幕自动操作。这对传统文本输入入口是结构性威胁。输入法需从'文本输入工具'进化为'全模态意图表达中心'。",
+          "action": "1)跟踪Codex Computer Use在中文Windows上的体验和覆盖能力 2)评估语音+视觉操控对键盘输入的替代率 3)制定输入法向'多模态意图中心'进化的3年路线图草案。",
+          "tags": ["OpenAI", "语音翻译", "视觉操控"],
+          "sourceUrls": ["https://zeronoise.ai/posts/geminis-agent-push-anthropics-trillion-dollar-valuation-and-the-open-model-catch-up-7x1f9jmia0/download/pdf", "https://new.qq.com/rain/a/20260531A02YLX00"]
+        },
+        {
+          "title": "Google Gemini全家桶+Managed Agents：系统级AI入口的竞争升级",
+          "source": "ZeroNoise AI/Google I/O 2026",
+          "sourceDetail": "Gemini 3.5 Flash、Spark后台Agent、Omni视频、Daily Brief，$100/月订阅",
+          "insight": "Google将Gemini从单一AI模型扩展为完整产品栈：24/7后台Agent(Spark)自动整合邮件/日历/文件信息，Daily Brief每日推送个性化摘要。当Google把AI深度集成到Android和Chrome时，系统级输入法的差异化窗口正在收窄——Google可以直接在系统层面提供AI输入能力。",
+          "action": "1)体验Google AI Ultra的Daily Brief和Spark后台Agent，分析其对输入法'快速搜索/快速记录'场景的替代程度 2)识别Google无法覆盖的中国本土化场景（微信/支付宝/钉钉集成）作为差异化优势 3)研究如何将输入法的高频触点优势转化为Agent分发入口。",
+          "tags": ["Google", "Gemini", "系统级AI"],
+          "sourceUrls": ["https://zeronoise.ai/posts/geminis-agent-push-anthropics-trillion-dollar-valuation-and-the-open-model-catch-up-7x1f9jmia0/download/pdf"]
+        }
+      ]
+    },
+    "user_research": {
+      "title": "用户调研",
+      "items": [
+        {
+          "title": "AI辅助写作的'过度干预'痛点：用户何时需要AI沉默",
+          "source": "wavespace.agency/OpenClaw工程师警告",
+          "sourceDetail": "AI UX实战指南2026 + OpenClaw工程师公开批评AI代码质量问题",
+          "insight": "AI过度积极的干预正引发反弹：开发者过度依赖AI代码工具导致质量下降，GitHub Copilot按量计费后高使用量用户月费暴涨25倍。映射到输入法场景——AI自动联想/补全过于激进时，用户可能感到被'绑架'而非被'帮助'。",
+          "action": "设计用户调研方案：1)招募20名重度输入法用户 2)跟踪记录一周内AI功能的接受率/拒绝率/关闭率 3)深度访谈'什么时候你希望AI闭嘴'的场景和情绪。输出《AI介入度用户容忍阈值研究报告》。",
+          "tags": ["过度干预", "用户容忍度", "AI沉默"],
+          "sourceUrls": ["https://www.wavespace.agency/blog/ux-design-for-ai-products", "https://www.yeyulingfeng.com/a/682232.html"]
+        },
+        {
+          "title": "跨设备输入一致性体验调研需求",
+          "source": "Meta AI吊坠/讯飞眼镜/小米AI手机",
+          "sourceDetail": "多款AI可穿戴设备密集发布，多设备AI协作成为趋势",
+          "insight": "本周Meta AI吊坠、讯飞AI眼镜、NVIDIA N1X PC芯片等密集发布，用户的输入场景正从单一手机扩展到眼镜/电脑/手表/耳机多设备。调研显示用户在设备切换时最大痛点是'AI记忆断裂'——上一个设备学到的偏好在新设备上丢失。",
+          "action": "设计跨设备调研：1)招募拥有3+联网设备的用户 2)观察他们在不同设备间的输入行为差异 3)测试'统一AI画像同步'功能原型的可接受度和隐私顾虑。",
+          "tags": ["跨设备", "多终端", "用户调研"],
+          "sourceUrls": ["https://new.qq.com/rain/a/20260531A02YLX00"]
+        },
+        {
+          "title": "AI功能定价敏感度：从GitHub Copilot教训看输入法付费设计",
+          "source": "每日经济新闻/开发者社区反馈",
+          "sourceDetail": "GitHub Copilot 6月1日转Token计费，用户费用暴涨至$750/月",
+          "insight": "GitHub Copilot的定价教训证明：AI工具前期低价培育高频使用习惯后突然转按量计费，会引发强烈用户反弹。核心问题是用户对自己的AI消耗量毫无感知。输入法AI功能如有商业化计划，需在早期就建立用户对'AI使用量'的心理认知。",
+          "action": "1)调研用户对输入法AI功能的付费意愿分布 2)测试不同价值展示方式（每日AI纠错数/效率提升百分比/时间节省）对付费转化的影响 3)产出《输入法AI功能商业化可行性调研报告》。",
+          "tags": ["定价", "付费意愿", "价值感知"],
+          "sourceUrls": ["https://new.qq.com/rain/a/20260601A02I8E00"]
+        }
+      ]
+    },
+    "design_output": {
+      "title": "设计稿输出",
+      "items": [
+        {
+          "title": "输入法AI'努力程度'三档切换交互方案设计",
+          "source": "Claude Opus 4.8努力程度控制启发",
+          "sourceDetail": "Anthropic 5月29日发布Opus 4.8，新增质量/速度切换功能",
+          "insight": "Claude Opus 4.8的'努力程度'控制证明：让用户自主选择AI介入深度比一刀切的AI强制开启或关闭体验更好。输入法可设计类似的三档控制：轻触（纠错）→辅助（联想+简润）→深度（重写+风格优化）。",
+          "action": "输出三档AI介入交互设计方案：1)键盘上的切换入口位置（长按AI键/侧滑/快捷设置） 2)不同档位的视觉差异化（如颜色深浅表示AI强度） 3)基于App自动匹配档位的智能规则 4)首次使用的引导流程。",
+          "tags": ["交互设计", "AI分级", "用户控制"],
+          "sourceUrls": ["https://www.aitop100.cn/ai-daily-2026-05-29"]
+        },
+        {
+          "title": "输入法Agent路由系统概念设计",
+          "source": "Google Managed Agents/行业Agent生态竞争",
+          "sourceDetail": "行业从独立模型转向捆绑Agent系统，Google一键创建Agent环境",
+          "insight": "行业最清晰的竞争转向是从standalone models到bundled agent systems。输入法作为全系统文本入口，有天然优势成为Agent调度中心——用户输入意图，输入法路由至对应Agent执行，结果在当前场景内直接呈现。",
+          "action": "设计输入法Agent路由系统概念原型：1)意图检测触发方式（关键词/特殊符号/长按） 2)Agent卡片展示形态（悬浮卡片/嵌入式面板/全屏展开） 3)Agent执行中的状态反馈 4)结果的一键插入/分享交互。",
+          "tags": ["Agent路由", "概念设计", "系统入口"],
+          "sourceUrls": ["https://zeronoise.ai/posts/geminis-agent-push-anthropics-trillion-dollar-valuation-and-the-open-model-catch-up-7x1f9jmia0/download/pdf"]
+        },
+        {
+          "title": "AI使用量仪表盘设计：让用户感知AI价值",
+          "source": "GitHub Copilot定价教训/AI UX 2026指南",
+          "sourceDetail": "从Copilot定价风波提炼的产品设计最佳实践",
+          "insight": "AI产品商业化的第一步不是定价，而是让用户清晰感知到AI为自己创造了多少价值。GitHub Copilot的教训是：用户不知道自己用了多少AI，所以对收费缺乏心理准备。",
+          "action": "设计输入法'AI价值可视化'面板：1)每日AI纠错/优化数据 2)本周效率提升趋势图 3)个性化学习进度（AI对你的理解度%） 4)与普通输入法的对比数据。视觉风格参考健康App的每日活动环。",
+          "tags": ["价值可视化", "仪表盘", "商业化"],
+          "sourceUrls": ["https://new.qq.com/rain/a/20260601A02I8E00"]
+        }
+      ]
+    },
+    "design_validation": {
+      "title": "设计验证",
+      "items": [
+        {
+          "title": "A/B测试方案：AI默认开启 vs 手动触发的用户留存差异",
+          "source": "小米MiMo降价99%/DeepSeek降价75%",
+          "sourceDetail": "API成本趋零使'AI默认开启'成为可行选项",
+          "insight": "当AI调用成本趋近于零（MiMo降99%、DeepSeek降75%），'AI默认开启'在技术经济上已可行。但用户层面是否接受？需通过A/B测试验证'默认AI'vs'手动AI'对DAU、输入效率、卸载率的影响。",
+          "action": "设计A/B测试方案：A组=AI功能默认开启（轻触模式），B组=AI功能需手动激活。观察指标：1)7日留存率 2)平均输入速度变化 3)AI建议接受率 4)设置页AI关闭率 5)NPS评分。测试周期2周，样本量各5万用户。",
+          "tags": ["A/B测试", "默认AI", "数据验证"],
+          "sourceUrls": ["https://blog.csdn.net/txg666/article/details/161479205"]
+        },
+        {
+          "title": "可用性测试：Agent路由系统的意图误判容忍度",
+          "source": "SITS 2026意图识别/Agent交互设计",
+          "sourceDetail": "SITS 2026意图锚点范式，Agent误触发的用户体验影响评估",
+          "insight": "Agent路由系统最大风险是意图误判——用户输入'明天飞北京'时，是在写日记还是在查机票？误触发Agent卡片会打断输入节奏。需测试不同误判率下的用户容忍度阈值。",
+          "action": "设计可用性测试：1)模拟不同误触发率（5%/10%/20%）下的输入体验 2)测量任务完成时间和错误率 3)收集主观满意度（SUS量表） 4)确定'可接受误判率'的上限值。招募15名用户，Wizard of Oz方法模拟Agent行为。",
+          "tags": ["可用性测试", "误判容忍", "Agent"],
+          "sourceUrls": ["https://blog.csdn.net/CompiTide/article/details/160955556"]
+        },
+        {
+          "title": "启发式评审：输入法AI功能的信任与透明度审查",
+          "source": "wavespace AI UX指南/SITS 2026信任建模",
+          "sourceDetail": "2026年AI产品信任设计最佳实践，SITS 2026推荐的四类必显元信息",
+          "insight": "SITS 2026推荐AI产品必须展示四类元信息：置信区间指示器、溯源高亮、反事实编辑入口、资源消耗提示。输入法AI功能是否满足这些信任设计标准？需要系统性审查。",
+          "action": "组织设计团队启发式评审：对标SITS 2026四类元信息要求+wavespace AI UX指南的信任设计原则，逐项检查输入法AI功能：1)用户是否知道AI在工作？ 2)AI建议的来源是否可追溯？ 3)用户能否轻松撤回AI操作？ 4)个性化学习是否透明可控？输出改进清单。",
+          "tags": ["启发式评审", "信任审查", "透明度"],
+          "sourceUrls": ["https://www.wavespace.agency/blog/ux-design-for-ai-products", "https://blog.csdn.net/CompiTide/article/details/160955556"]
+        }
+      ]
+    }
+  }
+}
