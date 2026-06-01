@@ -361,6 +361,17 @@
   .ghp-heat-row { display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin:10px 0 12px; font-size:12px; color:var(--text2); }
   .ghp-heat-item { display:inline-flex; align-items:center; gap:4px; padding:3px 8px; border-radius:999px; background:var(--accent-soft); border:1px solid var(--border); font-weight:600; }
   .ghp-heat-item.star { color:#b08800; background:#fff8d6; border-color:#f0df94; }
+  .gh-rank-wrap { margin:0 0 32px; padding:28px; border-radius:22px; background:linear-gradient(180deg,#fbfcff 0%,#f2f5fb 100%); border:1px solid #e7ebf3; box-shadow:0 14px 36px rgba(15,23,42,.06); }
+  .gh-rank-kicker { text-align:right; color:#9aa3b2; font-size:13px; font-weight:800; margin-bottom:18px; }
+  .gh-rank-title { font-family:'DM Sans',sans-serif; font-size:34px; font-weight:900; letter-spacing:-1px; margin:0 0 4px; color:#101828; }
+  .gh-rank-subtitle { color:#667085; font-size:14px; font-weight:700; margin-bottom:22px; }
+  .gh-rank-list { display:flex; flex-direction:column; gap:10px; }
+  .gh-rank-item { display:grid; grid-template-columns:48px minmax(0,1fr) 76px; align-items:center; gap:12px; padding:10px 14px 10px 10px; background:#fff; border-radius:12px; border:1px solid #edf0f6; box-shadow:0 8px 20px rgba(15,23,42,.06); }
+  .gh-rank-num { width:34px; height:34px; border-radius:10px; color:#fff; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:900; }
+  .gh-rank-name { font-size:15px; font-weight:900; color:#111827; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .gh-rank-bar { height:5px; margin-top:6px; border-radius:999px; background:#e7ebf3; overflow:hidden; }
+  .gh-rank-fill { display:block; height:100%; border-radius:999px; }
+  .gh-rank-stars { font-size:13px; font-weight:900; color:#475467; text-align:right; }
 
   /* ===== NEWS PAGE (AI 资讯) ===== */
   .news-header { margin-bottom: 40px; }
@@ -5712,10 +5723,39 @@ function getGhDefaultCases(category, name, title) {
   ];
 }
 
+function renderGhWeeklyRank(data) {
+  var items = (data.items || []).slice().sort(function(a, b) {
+    return (b.weeklyStars || 0) - (a.weeklyStars || 0);
+  }).slice(0, 7);
+  if (!items.length) return '';
+  var max = items[0].weeklyStars || 1;
+  var colors = ['#f05265','#8b5cf6','#3b82f6','#10b981','#facc15','#38bdf8','#c084fc'];
+  var html = '<div class="gh-rank-wrap">';
+  html += '<div class="gh-rank-kicker">第' + ((data.week || '').replace('2026-W','')) + '周</div>';
+  html += '<h2 class="gh-rank-title">GitHub 爆火项目榜</h2>';
+  html += '<div class="gh-rank-subtitle">TOP 7 · 本周新增星标精选</div>';
+  html += '<div class="gh-rank-list">';
+  items.forEach(function(item, idx) {
+    var repoName = item.name.split('/')[1] || item.name;
+    var val = item.weeklyStars || 0;
+    var pct = Math.max(6, Math.round(val / max * 100));
+    var c = colors[idx % colors.length];
+    html += '<div class="gh-rank-item">';
+    html += '<div class="gh-rank-num" style="background:' + c + '">#' + (idx + 1) + '</div>';
+    html += '<div><div class="gh-rank-name">' + repoName + '</div><div class="gh-rank-bar"><span class="gh-rank-fill" style="width:' + pct + '%;background:' + c + '"></span></div></div>';
+    html += '<div class="gh-rank-stars">+' + formatGhNum(val) + '</div>';
+    html += '</div>';
+  });
+  html += '</div></div>';
+  return html;
+}
+
 function renderGhWeekly(data) {
   var container = document.getElementById('ghp-weekly-section');
   if (!container) return;
   var html = '';
+
+  html += renderGhWeeklyRank(data);
 
   // 标题
   html += '<div class="ghp-header" style="margin-top:48px;padding-top:32px;border-top:1px solid var(--border);">';
