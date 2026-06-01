@@ -5653,12 +5653,14 @@ function formatGhNum(n) {
 
 function renderGhHeat(item) {
   var stars = item.stars || (item.heat && item.heat.stars);
+  var weeklyStars = item.weeklyStars || (item.heat && item.heat.weeklyStars);
   var forks = item.forks || (item.heat && item.heat.forks);
   var watchers = item.watchers || (item.heat && item.heat.watchers);
   var issues = item.openIssues || (item.heat && item.heat.openIssues);
   var language = item.language || (item.heat && item.heat.language);
   var parts = [];
   if (stars) parts.push('<span class="ghp-heat-item star">★ ' + formatGhNum(stars) + '</span>');
+  if (weeklyStars) parts.push('<span class="ghp-heat-item star">本周 +' + formatGhNum(weeklyStars) + '</span>');
   if (forks) parts.push('<span class="ghp-heat-item">⑂ ' + formatGhNum(forks) + ' forks</span>');
   if (watchers) parts.push('<span class="ghp-heat-item">👁 ' + formatGhNum(watchers) + '</span>');
   if (issues) parts.push('<span class="ghp-heat-item">Issue ' + formatGhNum(issues) + '</span>');

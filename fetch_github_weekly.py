@@ -15,7 +15,7 @@ fetch_github_weekly.py — 每周一抓取上周 GitHub 热门项目
 """
 
 from __future__ import annotations
-import json, sys, urllib.request
+import json, sys, urllib.request, re, html
 from datetime import date, timedelta, timezone, datetime
 from pathlib import Path
 
@@ -60,6 +60,69 @@ def gh_search(query: str, per_page: int = 20) -> list[dict]:
     except Exception as e:
         print(f"  ! Search failed: {e}", file=sys.stderr)
         return []
+
+
+
+def parse_count(text: str) -> int:
+    text = (text or '').strip().lower().replace(',', '')
+    if not text:
+        return 0
+    if text.endswith('k'):
+        return int(float(text[:-1]) * 1000)
+    if text.endswith('m'):
+        return int(float(text[:-1]) * 1000000)
+    return int(float(text))
+
+
+def clean_html(fragment: str) -> str:
+    return html.unescape(re.sub(r'\s+', ' ', re.sub(r'<.*?>', '', fragment or '')).strip())
+
+
+def fetch_github_trending_weekly() -> list[dict]:
+    """Scrape https://github.com/trending?since=weekly for actual weekly hot repos.
+    GitHub Search API sorted by total stars is too stable; Trending exposes stars gained this week.
+    """
+    url = 'https://github.com/trending?since=weekly'
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+    with urllib.request.urlopen(req, timeout=25) as resp:
+        page = resp.read().decode('utf-8', 'ignore')
+    articles = re.findall(r'<article class="Box-row">([\s\S]*?)</article>', page)
+    repos = []
+    for a in articles:
+        m = re.search(r'<h2[^>]*>[\s\S]*?<a[^>]*href="/([^"]+)"[^>]*>', a)
+        if not m:
+            continue
+        full_name = m.group(1).strip()
+        desc_m = re.search(r'<p[^>]*>([\s\S]*?)</p>', a)
+        desc = clean_html(desc_m.group(1)) if desc_m else ''
+        lang_m = re.search(r'<span itemprop="programmingLanguage">([^<]+)</span>', a)
+        language = clean_html(lang_m.group(1)) if lang_m else None
+        star_m = re.search(r'aria-label="([0-9,]+) users starred', a)
+        if star_m:
+            stars = parse_count(star_m.group(1))
+        else:
+            link_m = re.search(r'href="/[^"]+/stargazers"[^>]*>([\s\S]*?)</a>', a)
+            if link_m:
+                stars = parse_count(clean_html(link_m.group(1)))
+            else:
+                count_m = re.search(r'<span[^>]*class="[^"]*social-count[^"]*"[^>]*>([\s\S]*?)</span>', a)
+                stars = parse_count(clean_html(count_m.group(1))) if count_m else 0
+        week_m = re.search(r'([0-9,]+) stars? this week', a)
+        weekly_stars = parse_count(week_m.group(1)) if week_m else 0
+        fork_m = re.search(r'/network/members"[^>]*>[\s\S]*?([0-9,.]+[kKmM]?)\s*</a>', a)
+        forks = parse_count(fork_m.group(1)) if fork_m else 0
+        repos.append({
+            'full_name': full_name,
+            'description': desc,
+            'html_url': 'https://github.com/' + full_name,
+            'stargazers_count': stars,
+            'forks_count': forks,
+            'language': language,
+            'topics': [],
+            'weekly_stars': weekly_stars,
+            'created_at': '',
+        })
+    return repos
 
 
 def classify_category(repo: dict) -> str:
@@ -220,34 +283,37 @@ def main() -> int:
     seen = {}
     all_repos = []
 
-    # 1. 上周新创建且有一定 stars 的项目
-    print("  · Searching new repos created last week...")
-    new_repos = gh_search(f"created:{start_date}..{end_date}+stars:>50", per_page=20)
-    for r in new_repos:
-        if r["full_name"] not in seen:
-            seen[r["full_name"]] = True
-            all_repos.append(r)
+    # 1. 优先抓 GitHub Trending weekly（真实本周热度）
+    print("  · Scraping GitHub Trending weekly...")
+    try:
+        for r in fetch_github_trending_weekly():
+            if r["full_name"] not in seen:
+                seen[r["full_name"]] = True
+                all_repos.append(r)
+    except Exception as e:
+        print(f"  ! Trending scrape failed: {e}", file=sys.stderr)
 
-    # 2. AI/Agent 相关活跃项目
-    print("  · Searching AI/Agent active repos...")
-    for topic in ["ai", "agent", "llm"]:
-        items = gh_search(f"topic:{topic}+pushed:{start_date}..{end_date}+stars:>2000", per_page=10)
-        for r in items:
+    # 2. 兜底：上周新创建且有一定 stars 的项目
+    if len(all_repos) < 10:
+        print("  · Searching new repos created last week...")
+        new_repos = gh_search(f"created:{start_date}..{end_date}+stars:>50", per_page=20)
+        for r in new_repos:
             if r["full_name"] not in seen:
                 seen[r["full_name"]] = True
                 all_repos.append(r)
 
-    # 3. 设计/前端相关活跃项目
-    print("  · Searching design/frontend active repos...")
-    for topic in ["canvas", "animation", "3d", "ui"]:
-        items = gh_search(f"topic:{topic}+pushed:{start_date}..{end_date}+stars:>500", per_page=8)
-        for r in items:
-            if r["full_name"] not in seen:
-                seen[r["full_name"]] = True
-                all_repos.append(r)
+    # 3. 兜底：AI/Agent/设计相关活跃项目
+    if len(all_repos) < 20:
+        print("  · Searching AI/Agent/design active repos...")
+        for topic in ["ai", "agent", "llm", "canvas", "animation", "3d", "ui"]:
+            items = gh_search(f"topic:{topic}+pushed:{start_date}..{end_date}+stars:>500", per_page=8)
+            for r in items:
+                if r["full_name"] not in seen:
+                    seen[r["full_name"]] = True
+                    all_repos.append(r)
 
     # 排序
-    all_repos.sort(key=lambda x: x.get("stargazers_count", 0), reverse=True)
+    all_repos.sort(key=lambda x: (x.get("weekly_stars", 0), x.get("stargazers_count", 0)), reverse=True)
 
     # 只保留前 20 个
     top_repos = all_repos[:20]
@@ -261,14 +327,15 @@ def main() -> int:
             "name": r["full_name"],
             "title": r.get("description") or "暂无描述",
             "url": r["html_url"],
-            "stars": r["stargazers_count"],
-            "forks": r["forks_count"],
+            "stars": r.get("stargazers_count", 0),
+            "weeklyStars": r.get("weekly_stars", 0),
+            "forks": r.get("forks_count", 0),
             "language": r.get("language"),
             "topics": (r.get("topics") or [])[:5],
             "category": cat,
             "insight": generate_insight(r),
             "cases": generate_cases(r),
-            "isNew": r["created_at"][:10] >= start_date,
+            "isNew": (r.get("created_at") or "")[:10] >= start_date,
         })
 
     output = {
