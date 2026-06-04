@@ -334,7 +334,9 @@
   .ghp-card { background:var(--white); border:1px solid var(--border); border-radius:14px; padding:22px; transition:box-shadow .2s, transform .2s; position:relative; }
   .ghp-card:hover { box-shadow:0 6px 20px rgba(0,0,0,0.06); transform:translateY(-2px); }
   .ghp-card.ghp-pick { border-color:#e3b341; background:linear-gradient(135deg, #fffef5 0%, var(--white) 100%); }
+  .ghp-card.ghp-rank-card { cursor:pointer; }
   .ghp-pick-badge { position:absolute; top:12px; right:14px; font-size:11px; font-weight:700; color:#b08800; background:#fff8d6; padding:2px 8px; border-radius:4px; }
+  .ghp-rank-badge { position:absolute; top:12px; right:14px; font-size:11px; font-weight:800; color:#fff; padding:3px 9px; border-radius:6px; }
   .ghp-card-head { margin-bottom:8px; }
   .ghp-card-name { font-size:13px; font-weight:600; color:#0969da; text-decoration:none; font-family:'SF Mono','Menlo',monospace; }
   .ghp-card-name:hover { text-decoration:underline; }
@@ -5731,25 +5733,35 @@ function renderGhWeeklyRank(data) {
     return bv - av;
   }).slice(0, 7);
   if (!items.length) return '';
-  var max = hasWeekly ? (items[0].weeklyStars || 1) : (items[0].stars || 1);
   var colors = ['#f05265','#8b5cf6','#3b82f6','#10b981','#facc15','#38bdf8','#c084fc'];
-  var html = '<div class="gh-rank-wrap">';
-  html += '<div class="gh-rank-kicker">第' + ((data.week || '').replace('2026-W','')) + '周</div>';
-  html += '<h2 class="gh-rank-title">GitHub 爆火项目榜</h2>';
-  html += '<div class="gh-rank-subtitle">TOP 7 · ' + (hasWeekly ? '本周新增星标精选' : '历史周总星标参考') + '</div>';
-  html += '<div class="gh-rank-list">';
+  var html = '<section class="ghp-section">';
+  html += '<div class="ghp-section-head">';
+  html += '<h2 class="ghp-section-title">GitHub 爆火项目榜</h2>';
+  html += '<p class="ghp-section-desc">TOP 7 · ' + (hasWeekly ? '本周新增星标精选' : '历史周总星标参考') + ' · 点击卡片查看项目详情</p>';
+  html += '</div>';
+  html += '<div class="ghp-grid">';
   items.forEach(function(item, idx) {
     var repoName = item.name.split('/')[1] || item.name;
-    var val = hasWeekly ? (item.weeklyStars || 0) : (item.stars || 0);
-    var pct = Math.max(6, Math.round(val / max * 100));
     var c = colors[idx % colors.length];
-    html += '<div class="gh-rank-item">';
-    html += '<div class="gh-rank-num" style="background:' + c + '">#' + (idx + 1) + '</div>';
-    html += '<div><div class="gh-rank-name">' + repoName + '</div><div class="gh-rank-bar"><span class="gh-rank-fill" style="width:' + pct + '%;background:' + c + '"></span></div></div>';
-    html += '<div class="gh-rank-stars">' + (hasWeekly ? '+' : '★ ') + formatGhNum(val) + '</div>';
+    var topicsHtml = (item.topics || []).slice(0, 3).map(function(t) { return '<span class="ghp-topic-tag">' + t + '</span>'; }).join('');
+    var cases = (item.cases && item.cases.length) ? item.cases : getGhDefaultCases(item.category, item.name, item.title);
+    html += '<div class="ghp-card ghp-rank-card" onclick="window.open(\'' + item.url + '\', \'_blank\')">';
+    html += '<span class="ghp-rank-badge" style="background:' + c + '">#' + (idx + 1) + '</span>';
+    html += '<div class="ghp-card-head"><a class="ghp-card-name" href="' + item.url + '" target="_blank" onclick="event.stopPropagation()">' + item.name + '</a></div>';
+    html += '<div class="ghp-card-title">' + repoName + '</div>';
+    html += '<div class="ghp-card-desc">' + (item.title || '').slice(0, 150) + '</div>';
+    html += renderGhHeat(item);
+    html += '<div class="ghp-card-insight"><span class="ghp-insight-label">洞察</span>' + item.insight + '</div>';
+    html += '<div class="ghp-card-cases"><span class="ghp-cases-label">应用案例</span><ul class="ghp-cases-list">';
+    cases.forEach(function(ca) {
+      html += '<li><strong>' + ca.name + '</strong>：' + ca.desc + '</li>';
+    });
+    html += '</ul></div>';
+    if (topicsHtml) html += '<div style="margin-bottom:10px;display:flex;gap:4px;flex-wrap:wrap;">' + topicsHtml + '</div>';
+    html += '<a class="ghp-card-link" href="' + item.url + '" target="_blank" onclick="event.stopPropagation()">查看详情 →</a>';
     html += '</div>';
   });
-  html += '</div></div>';
+  html += '</div></section>';
   return html;
 }
 
