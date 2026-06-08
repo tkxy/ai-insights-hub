@@ -1,0 +1,135 @@
+{
+  "date": "2026-06-07",
+  "generated_at": "2026-06-08T08:20:00+08:00",
+  "daily_summary": "OpenAI ChatGPT最大改版消息曝光——将从聊天机器人升级为集成编程工具和AI Agent的'超级应用'，内部员工称'Chat is dead'。OpenAI Codex正式跨出编程领域，发布6款角色插件覆盖62个应用110项技能。英伟达与SK海力士宣布多年期合作开发下一代AI内存。Claude Opus 4.8正式全面可用，动态工作流支持单会话数百并行子Agent。Microsoft Discovery正式GA为企业提供AI搜索。全周AI行业呈现一个明确信号：AI从'对话工具'全面转向'自主执行任务的Agent'。",
+  "design_insights": [
+    {
+      "title": "ChatGPT'超级应用'转型：从对话到任务执行的设计革命",
+      "summary": "OpenAI内部共识'Chat is dead'——未来AI不是回答问题的聊天机器人，而是自主执行任务的智能代理。ChatGPT将整合Codex成为集成编程工具和Agent的超级应用。",
+      "implication": "输入法的定位也应从'帮用户打字'向'帮用户完成意图'转变。不再只是提供文字输入，而是理解用户要做什么然后帮他做到。例如用户输入'下周三和张三吃饭'，输入法不仅完成文字输入，还能一键创建日历事件和发送邀约。",
+      "sources": ["腾讯新闻", "KingyAI"],
+      "source_urls": ["https://new.qq.com/rain/a/20260608A025LR00", "https://kingy.ai/news/ai-launch-tracker-openai-codex-leads-the-june-7-shift-toward-agent-work-beyond-engineering"],
+      "tags": ["超级应用", "意图执行", "范式转变"]
+    },
+    {
+      "title": "Codex角色化设计：62应用110技能的跨职能覆盖",
+      "summary": "OpenAI Codex发布6款角色插件（数据分析/创意制作/销售/产品设计/投资/投行），每个角色整合特定的应用和技能组合，为不同职业用户提供定制化Agent体验。",
+      "implication": "输入法的AI功能也可以角色化：为程序员提供代码片段快速输入和API文档引用；为文案编辑提供修辞优化和SEO建议；为销售提供话术模板和客户画像快速生成。不同角色看到不同的AI能力。",
+      "sources": ["KingyAI", "每日经济新闻"],
+      "source_urls": ["https://kingy.ai/news/ai-launch-tracker-openai-codex-leads-the-june-7-shift-toward-agent-work-beyond-engineering", "https://www.mrjjxw.com/articles/2026-06-03/4415966.html"],
+      "tags": ["角色化", "职业定制", "Codex"]
+    },
+    {
+      "title": "Claude Opus 4.8动态工作流：数百并行子Agent的协作模式",
+      "summary": "Anthropic发布Claude Opus 4.8全面可用，在Claude Code中支持动态工作流运行数百并行子Agent完成复杂任务。",
+      "implication": "多Agent协作模式为输入法AI提供了新思路：用户一个复杂意图可以拆解为多个子Agent并行处理（搜索Agent找信息、写作Agent生成文本、格式Agent排版），最终合成统一结果呈现给用户。",
+      "sources": ["KingyAI"],
+      "source_urls": ["https://kingy.ai/news/ai-launch-tracker-openai-codex-leads-the-june-7-shift-toward-agent-work-beyond-engineering"],
+      "tags": ["多Agent", "并行", "协作"]
+    },
+    {
+      "title": "Microsoft Discovery GA：企业AI搜索的交互范式",
+      "summary": "Microsoft Discovery正式GA，为企业提供AI驱动的智能搜索和知识发现能力，支持跨数据源的统一检索。",
+      "implication": "企业用户在输入法中输入搜索意图时，可以接入企业级AI搜索能力（如对接企业知识库），让输入法成为跨应用知识检索的统一入口。",
+      "sources": ["KingyAI"],
+      "source_urls": ["https://kingy.ai/news/ai-launch-tracker-openai-codex-leads-the-june-7-shift-toward-agent-work-beyond-engineering"],
+      "tags": ["企业搜索", "知识发现", "Discovery"]
+    },
+    {
+      "title": "下一代AI内存：英伟达与SK海力士联合定义硬件演进",
+      "summary": "两大行业巨头达成多年期合作，为Vera Rubin超级计算机、RTX Spark PC和Jetson Thor机器人平台开发专用内存，AI用芯片仿真和数字孪生推动工厂自主化。",
+      "implication": "硬件演进将持续释放AI在端侧的能力上限。输入法团队需要跟踪AIPC硬件路线图，在下一代硬件就绪时第一时间利用新增算力提供差异化AI体验。",
+      "sources": ["腾讯新闻"],
+      "source_urls": ["https://new.qq.com/rain/a/20260608A025LR00"],
+      "tags": ["AI内存", "硬件", "英伟达"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "输入法从'打字工具'到'意图执行器'的产品升级",
+      "pain_point": "用户输入文字后还需要手动执行相关操作（如创建日历、发送邮件、查询信息），输入法止步于文字产出",
+      "opportunity": "检测用户输入中的可执行意图，提供一键执行选项：输入时间地点自动提供创建日程选项，输入地址提供导航选项，输入计算表达式直接显示结果",
+      "priority": "high",
+      "evidence": "OpenAI内部共识'Chat is dead'转向任务执行；Codex 6款角色插件覆盖62应用110技能；微软WAF支持系统级操作"
+    },
+    {
+      "title": "输入法AI能力的角色化定制",
+      "pain_point": "所有用户看到相同的AI功能，但程序员、文案编辑、销售等角色的输入需求差异巨大",
+      "opportunity": "提供角色化AI配置：检测或让用户选择职业角色，针对性提供差异化AI辅助（代码片段/文案模板/话术建议等）",
+      "priority": "medium",
+      "evidence": "OpenAI Codex发布6款角色化插件覆盖不同职业；豆包输入法情境感知已按场景差异化；讯飞输入法AI键接入星火大模型"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "ChatGPT将迎最大改版：升级为'超级应用'",
+      "summary": "OpenAI将ChatGPT从聊天机器人升级为集成编程工具和AI Agent的超级应用，内部员工称'Chat is dead'。",
+      "source": "腾讯新闻",
+      "source_urls": ["https://new.qq.com/rain/a/20260608A025LR00"],
+      "tags": ["OpenAI", "ChatGPT", "超级应用"]
+    },
+    {
+      "title": "英伟达与SK海力士宣布多年期AI内存联合研发",
+      "summary": "为Vera Rubin超级计算机、RTX Spark PC和Jetson Thor机器人平台协同开发专用内存。",
+      "source": "腾讯新闻",
+      "source_urls": ["https://new.qq.com/rain/a/20260608A025LR00"],
+      "tags": ["英伟达", "SK海力士", "AI内存"]
+    },
+    {
+      "title": "OpenAI Codex正式发布6款跨行业角色插件",
+      "summary": "覆盖数据分析、创意制作、销售、产品设计、投资、投行六大领域，整合62个应用110项技能。",
+      "source": "KingyAI",
+      "source_urls": ["https://kingy.ai/news/ai-launch-tracker-openai-codex-leads-the-june-7-shift-toward-agent-work-beyond-engineering"],
+      "tags": ["Codex", "Agent", "跨行业"]
+    },
+    {
+      "title": "Claude Opus 4.8全面可用：单会话支持数百并行子Agent",
+      "summary": "Anthropic最新模型动态工作流能力大幅提升，Claude Code可在单个会话中运行数百个并行子Agent。",
+      "source": "KingyAI",
+      "source_urls": ["https://kingy.ai/news/ai-launch-tracker-openai-codex-leads-the-june-7-shift-toward-agent-work-beyond-engineering"],
+      "tags": ["Claude", "Opus 4.8", "并行"]
+    },
+    {
+      "title": "Microsoft Discovery正式GA：企业AI搜索落地",
+      "summary": "面向所有组织的企业级AI搜索和知识发现产品正式GA，Discovery App进入预览阶段。",
+      "source": "KingyAI",
+      "source_urls": ["https://kingy.ai/news/ai-launch-tracker-openai-codex-leads-the-june-7-shift-toward-agent-work-beyond-engineering"],
+      "tags": ["微软", "Discovery", "企业搜索"]
+    },
+    {
+      "title": "Mistral Search Toolkit发布：可治理的AI检索基础设施",
+      "summary": "Mistral为企业提供可治理的搜索工具包，支持企业级AI检索部署和审计。",
+      "source": "KingyAI",
+      "source_urls": ["https://kingy.ai/news/ai-launch-tracker-openai-codex-leads-the-june-7-shift-toward-agent-work-beyond-engineering"],
+      "tags": ["Mistral", "搜索", "企业"]
+    },
+    {
+      "title": "全周总结：AI行业正式从'对话工具'转向'自主Agent'",
+      "summary": "微软Build、OpenAI Codex、Anthropic论文、Google Gemma、腾讯云大会共同指向同一方向：AI成为可自主执行任务的Agent操作系统。",
+      "source": "KingyAI",
+      "source_urls": ["https://kingy.ai/news/ai-launch-tracker-openai-codex-leads-the-june-7-shift-toward-agent-work-beyond-engineering"],
+      "tags": ["Agent", "行业趋势", "转型"]
+    },
+    {
+      "title": "SpaceX下周正式上市：1千余员工与理财顾问议价布局IPO后财富",
+      "summary": "上千员工抱团与理财顾问议价，提前布局6月12日IPO后的股权解锁财富暴增。",
+      "source": "头条新闻",
+      "source_urls": ["https://www.toutiao.com/article/7646918821604753930"],
+      "tags": ["SpaceX", "员工", "IPO"]
+    },
+    {
+      "title": "GitHub Copilot用户面临Token计价模式调整",
+      "summary": "GitHub Copilot转向Token计价后部分用户面临费用上涨，引发对AI编程工具定价模式的讨论。",
+      "source": "AI News",
+      "source_urls": ["https://www.artificialintelligence-news.com/"],
+      "tags": ["GitHub", "Copilot", "定价"]
+    },
+    {
+      "title": "Anthropic Claude Sonnet 4.8泄露持续获得可信度",
+      "summary": "本周早些时候的Claude Sonnet 4.8模型泄露信息持续得到验证，引发市场对Anthropic模型迭代节奏的关注。",
+      "source": "BuildFastWithAI",
+      "source_urls": ["https://www.buildfastwithai.com/blogs/ai-news-today-june-5-2026"],
+      "tags": ["Anthropic", "泄露", "Sonnet"]
+    }
+  ]
+}

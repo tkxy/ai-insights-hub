@@ -1,0 +1,167 @@
+{
+  "date": "2026-06-08",
+  "generated_at": "2026-06-08T08:20:00+08:00",
+  "type": "design-weekly",
+  "stages": {
+    "research": {
+      "title": "桌面研究",
+      "items": [
+        {
+          "title": "Agent UX 10大设计模式深度研究：从自主性滑块到多模态交接",
+          "source": "Mantlr/BuildFastWithAI",
+          "sourceDetail": "Mantlr发布2026年Agent UX设计指南10大模式、OpenAI Dreaming V3记忆机制分析、IBM Research Agent逻辑论文",
+          "insight": "2026年Agent时代的UX设计核心已从'界面美观'转向'信任架构'。十大模式中最关键的三个：自主性滑块（让用户控制AI干预程度）、操作预览（AI行动前先展示意图）、多模态交接（语音/打字/手写切换不丢上下文）。OpenAI Dreaming V3的'主动记忆+智能遗忘'机制为AI个性化提供了新范式——不只是积累用户偏好，还要能识别过时信息。",
+          "action": "将Agent UX 10大模式映射到输入法场景并制定设计优先级：P0级别立即落地'自主性滑块'（AI干预程度可调）和'操作预览'（AI替换文本前展示对比），P1级别研究'多模态交接'和'活动流'的输入法实现方案。",
+          "tags": ["Agent UX", "设计模式", "信任设计"],
+          "sourceUrls": ["https://mantlr.com/blog/designing-for-ai-agents-ux-patterns-2026", "https://www.buildfastwithai.com/blogs/ai-news-today-june-5-2026"]
+        },
+        {
+          "title": "生成式UI（GenUI）与A2UI协议：界面从模板到流体的技术路径",
+          "source": "搜狐/掘金/Google开源",
+          "sourceDetail": "搜狐GenUI前端革命报告、掘金A2UI协议深度解析（v0.8-v0.10）、CSDN Agent时代Generative UI专题",
+          "insight": "GenUI被定义为2026年前端开发'流体革命'——界面不再预写在代码里，而是根据用户意图由AI毫秒级动态生成。A2UI（Agent-to-User Interface）协议提供了安全实现路径：Agent发送声明式JSON描述界面需求，客户端用本地预审组件库渲染，既灵活又安全。这解决了AI生成UI的三大痛点：直接生成HTML不安全、固定模板不灵活、截图不能交互。",
+          "action": "启动'输入法动态候选区'POC项目：1)定义10个典型场景的候选区动态UI（日期/地址/金额/链接/表情等）2)设计输入法版A2UI协议——AI返回JSON描述候选区形态，客户端用预审组件渲染 3)评估端侧推理延迟是否满足候选区实时切换需求。",
+          "tags": ["GenUI", "A2UI", "动态界面"],
+          "sourceUrls": ["https://www.sohu.com/a/1031125976_122851758", "https://juejin.cn/post/7646788886740746275"]
+        },
+        {
+          "title": "从'对话已死'到'Agent操作系统'：AI产品交互范式大迁移",
+          "source": "腾讯新闻/凤凰科技/KingyAI",
+          "sourceDetail": "OpenAI内部'Chat is dead'共识、无APP手机原型演示（UI即系统）、全周Agent产品密集发布分析",
+          "insight": "OpenAI内部已达成共识：未来AI不是聊天机器人，而是自主执行任务的智能代理。同周演示的无APP手机原型（所有界面由AI实时生成，无需传统App）和微软Agent Mode成为Office默认，共同指向一个方向——'界面'本身正在被'意图理解+即时执行'取代。输入法作为最频繁的人机交互界面之一，面临根本性定位重构。",
+          "action": "组织设计团队Workshop'输入法2027愿景'：核心命题是'当界面可以被AI实时生成时，输入法的价值是什么？'。初步假设：输入法从'文字生产工具'进化为'意图解析+任务分发中枢'——用户的每一次输入都是一个意图信号，输入法负责理解并路由到合适的执行者。",
+          "tags": ["Agent OS", "范式迁移", "意图中枢"],
+          "sourceUrls": ["https://new.qq.com/rain/a/20260608A025LR00", "https://tech.ifeng.com/c/8tc6K0o7Civ"]
+        }
+      ]
+    },
+    "competitive": {
+      "title": "竞品分析",
+      "items": [
+        {
+          "title": "豆包输入法横评登顶：语音识别全面领先，PC端扩张加速",
+          "source": "雷科技横评/虎嗅",
+          "sourceDetail": "雷科技四大AI语音输入法横评（豆包/千问/搜狗/Typeless）详细对比，豆包macOS版5月上线",
+          "insight": "豆包输入法在语音识别速度、中英混说、长文本处理、方言支持四个维度全面领先竞品。核心策略是'只做一件事，把语音做到极致'——图标是豆包+麦克风，设置页首行是语音转文字，首次启用即引导语音体验。技术栈复用豆包App语音模型，重点押注中英混说和复杂声学环境。macOS版已上线（按Fn语音输入），Windows版筹备中。",
+          "action": "1)紧急评估搜狗在横评四维度的具体差距（通过内部测试量化）2)制定'语音输入体验追赶计划'优先补齐中英混说和长文本断句能力 3)发挥腾讯生态优势差异化——与微信语音消息、腾讯文档语音输入打通形成独有体验 4)研究豆包'隐私分级'设计（完整体验vs基础模式）是否值得借鉴。",
+          "tags": ["豆包输入法", "语音", "横评"],
+          "sourceUrls": ["https://caifuhao.eastmoney.com/news/20260605165411719924470", "https://www.huxiu.com/article/4864526.html"]
+        },
+        {
+          "title": "OpenAI Codex跨行业Agent化：对输入法入口的潜在威胁",
+          "source": "KingyAI/每日经济新闻",
+          "sourceDetail": "OpenAI Codex 6款角色插件发布、ChatGPT升级为超级应用计划、Codex将整合进ChatGPT惠及10亿用户",
+          "insight": "OpenAI正在将ChatGPT从聊天机器人改造为全职能工作平台——6款角色插件覆盖62个应用110项技能，用户可以通过对话完成从数据分析到创意制作的全部工作。这对输入法的威胁不是直接竞争，而是'入口替代'：如果用户习惯在ChatGPT内完成一切，包括文字生产，那么独立输入法的使用频率将下降。应对策略是让输入法成为ChatGPT等AI平台'调不动'的本地意图入口。",
+          "action": "1)研究'输入法+AI大平台'的共生模式而非对抗——让搜狗输入法成为用户在任何AI平台内的首选输入方式 2)强化输入法的不可替代性：跨应用上下文（AI平台做不到）、本地隐私（用户不愿全部数据上传）、系统级集成（键盘是OS级入口）3)考虑为AI平台重度用户提供'AI平台增强模式'（快速prompt模板、对话历史引用等）。",
+          "tags": ["OpenAI", "Codex", "入口威胁"],
+          "sourceUrls": ["https://kingy.ai/news/ai-launch-tracker-openai-codex-leads-the-june-7-shift-toward-agent-work-beyond-engineering", "https://www.mrjjxw.com/articles/2026-06-03/4415966.html"]
+        },
+        {
+          "title": "千问输入法+Typeless崛起：AI原生输入的新物种",
+          "source": "雷科技/虎嗅",
+          "sourceDetail": "四大横评中千问输入法语料规整能力分析、Typeless作为macOS专属Agent输入工具在开发者圈爆火",
+          "insight": "千问输入法依托千问App不是独立输入法而是App组件，拥有大模型语料规整和总结排版能力——这意味着它不只是'打字'，而是'输入+整理+排版'一体化。Typeless则以Agent能力在开发者圈爆火，核心是'语音输入+AI Agent执行'的组合——用语音描述意图，Agent自动完成操作。两者代表了AI原生输入工具的两个方向：1)大模型能力直接嵌入输入流程 2)输入工具Agent化。",
+          "action": "1)评估搜狗输入法是否应推出类似千问的'组件模式'——允许其他App调用搜狗的语音+AI能力 2)研究Typeless的Agent模式是否适合在搜狗上实现——尤其是面向开发者群体 3)考虑是否打造'搜狗输入法Pro'面向专业用户提供Agent级输入能力。",
+          "tags": ["千问", "Typeless", "AI原生"],
+          "sourceUrls": ["https://caifuhao.eastmoney.com/news/20260605165411719924470", "https://www.huxiu.com/article/4864526.html"]
+        }
+      ]
+    },
+    "user_research": {
+      "title": "用户调研",
+      "items": [
+        {
+          "title": "AI记忆系统的用户隐私感知研究",
+          "source": "arXiv/BuildFastWithAI",
+          "sourceDetail": "2026年2月arXiv研究：2050条ChatGPT记忆样本中96%由系统单方面创建；EU AI Act 8月生效对记忆系统的影响",
+          "insight": "研究发现96%的AI记忆是系统自动创建而非用户主动要求，这引发严重的用户信任问题。对输入法而言，AI学习用户输入习惯的过程同样是'自动'的，用户可能不知道输入法记住了哪些词汇偏好。EU AI Act 8月生效后，AI产品的透明度要求将更加严格。",
+          "action": "1)在下一版本中增加'AI学习记录'可视化入口——让用户看到输入法学到了哪些词汇和习惯 2)设计'记忆管理'功能：查看/删除/暂停AI学习 3)准备EU AI Act合规评估文档 4)考虑在设置页增加类似豆包'基础打字模式（纯本地不上传）'的隐私选项。",
+          "tags": ["隐私", "AI记忆", "合规"],
+          "sourceUrls": ["https://www.buildfastwithai.com/blogs/ai-news-today-june-5-2026"]
+        },
+        {
+          "title": "PC端语音输入用户行为变化追踪",
+          "source": "虎嗅/Mordor Intelligence",
+          "sourceDetail": "全球语音识别市场2026年225亿美元报告、语音输入从手机到PC扩张趋势分析、艾美奖团队用Willow语音听写处理Slack消息",
+          "insight": "语音输入正从'手机专属'变为'全设备标配'——艾美奖团队用语音听写处理工作消息，这是'白领语音输入'场景从边缘走向主流的标志。中国市场更早热起来，微信电脑版已支持跨场景语音输入。核心洞察：PC语音输入的用户不是'不会打字'，而是'打字太慢/太累'的效率需求驱动。",
+          "action": "1)启动PC端语音输入用户调研（目标样本：100名每日PC办公>4小时的白领用户）2)重点调研：用户在哪些PC场景最想用语音输入？当前不用的阻碍是什么？对'同事能听到'的顾虑如何解决？3)分析搜狗输入法PC端语音输入的DAU/留存数据，找到增长瓶颈。",
+          "tags": ["语音输入", "PC端", "用户行为"],
+          "sourceUrls": ["https://www.huxiu.com/article/4864526.html"]
+        },
+        {
+          "title": "AI输入法用户的'自主性偏好'分层",
+          "source": "Mantlr/豆包输入法",
+          "sourceDetail": "Agent UX自主性滑块设计模式、豆包输入法'完整体验vs基础打字模式'双模设计、讯飞AI键用户反馈",
+          "insight": "用户对AI干预的接受度呈明显分层：一部分用户希望AI越积极越好（自动纠错/续写/推荐），另一部分用户觉得AI干扰打字节奏。豆包输入法已通过'完整体验/基础打字模式'的二选一设计初步解决，但粒度太粗（只有开/关两档）。理想设计应是连续可调的'自主性滑块'。",
+          "action": "1)设计并A/B测试输入法AI'干预程度'3档/5档/连续滑块方案 2)收集用户对不同AI功能（纠错/续写/推荐/润色）的单独开关需求 3)研究是否可以通过用户行为自动学习偏好（频繁忽略AI建议=降低干预程度）。",
+          "tags": ["自主性", "用户分层", "偏好"],
+          "sourceUrls": ["https://mantlr.com/blog/designing-for-ai-agents-ux-patterns-2026"]
+        }
+      ]
+    },
+    "design_output": {
+      "title": "设计稿输出",
+      "items": [
+        {
+          "title": "输入法AI自主性控制面板设计",
+          "source": "内部设计/Agent UX模式参考",
+          "sourceDetail": "基于Mantlr Agent UX自主性滑块模式、豆包双模参考、讯飞AI键交互分析",
+          "insight": "将Agent UX'自主性滑块'模式适配到输入法场景：设计一个用户可调节的AI干预程度控制面板，从'纯打字'到'全AI辅助'分5档递进。每档清晰标注启用的AI功能组合，让用户直观理解选择带来的体验变化。",
+          "action": "1)输出输入法设置页'AI助手'模块的交互原型（5档滑块+各档功能说明）2)设计首次使用引导流程：用3个问题快速推荐初始档位 3)设计AI功能单独开关的二级页面 4)输出视觉稿并准备内部评审。",
+          "tags": ["原型设计", "控制面板", "自主性"],
+          "sourceUrls": ["https://mantlr.com/blog/designing-for-ai-agents-ux-patterns-2026"]
+        },
+        {
+          "title": "动态候选区交互原型：10个典型场景",
+          "source": "内部设计/GenUI+A2UI参考",
+          "sourceDetail": "基于GenUI动态界面理念和A2UI安全协议，设计输入法候选区动态切换方案",
+          "insight": "定义10个候选区动态切换场景并输出交互原型：1)日期输入→迷你日历 2)地址输入→地图卡片 3)金额输入→计算器 4)链接输入→预览卡片 5)表情意图→AI表情推荐 6)代码片段→代码高亮 7)翻译意图→双语对照 8)会议安排→日程卡片 9)电话号码→拨号卡片 10)快递单号→物流追踪。",
+          "action": "1)完成10个场景的交互规格文档（触发条件/UI形态/操作逻辑/回退机制）2)输出高保真Figma原型 3)定义候选区切换动效规范 4)技术评审端侧意图识别+动态渲染的延迟要求（<100ms）。",
+          "tags": ["动态UI", "候选区", "原型"],
+          "sourceUrls": ["https://www.sohu.com/a/1031125976_122851758", "https://juejin.cn/post/7646788886740746275"]
+        },
+        {
+          "title": "语音输入场景化润色交互设计",
+          "source": "内部设计/横评分析参考",
+          "sourceDetail": "基于雷科技横评中千问语料规整优势启发，设计搜狗语音输入后的自动润色交互",
+          "insight": "千问输入法的差异化优势在于语音转写后的语料规整和排版能力。搜狗应在此基础上更进一步：不仅规整格式，还根据输入场景（邮件/聊天/文档/社媒）自动调整文字风格，并提供'原始转写'和'润色后'的对比切换。",
+          "action": "1)设计语音输入结果页的'润色选项条'交互（原文/口语化/正式/简洁 4种风格一键切换）2)设计场景自动识别逻辑（根据当前应用判断风格偏好）3)输出语音输入→润色→确认的完整交互流程原型 4)定义润色过程中的loading状态和错误恢复方案。",
+          "tags": ["语音输入", "润色", "场景化"],
+          "sourceUrls": ["https://caifuhao.eastmoney.com/news/20260605165411719924470"]
+        }
+      ]
+    },
+    "design_validation": {
+      "title": "设计验证",
+      "items": [
+        {
+          "title": "AI自主性偏好分层假设验证计划",
+          "source": "内部验证",
+          "sourceDetail": "基于Agent UX自主性模式研究和豆包/讯飞用户反馈，设计验证实验",
+          "insight": "假设：用户对AI输入辅助的偏好可分为3个明确群体（极简派/适度派/全能派），各群体占比约为20%/50%/30%。验证方法：通过灰度实验向不同用户群体展示不同默认AI干预程度，观察留存率和功能使用率的差异。",
+          "action": "1)设计A/B/C三组实验方案（低/中/高AI干预默认值）2)定义核心指标：7日留存率、AI功能使用频次、手动关闭AI功能的比例 3)制定实验周期和样本量要求 4)预设决策规则：不同结果对应的产品策略调整方向。",
+          "tags": ["实验设计", "A/B测试", "验证"],
+          "sourceUrls": ["https://mantlr.com/blog/designing-for-ai-agents-ux-patterns-2026"]
+        },
+        {
+          "title": "动态候选区技术可行性验证",
+          "source": "内部技术评审",
+          "sourceDetail": "基于端侧推理能力（Gemma 4 QAT/Foundry Local）和A2UI协议，评估动态候选区实现可行性",
+          "insight": "动态候选区的核心技术挑战：1)意图识别延迟必须<50ms（用户打字到候选区切换的感知阈值）2)UI组件渲染必须<100ms 3)端侧模型需在1GB以内以兼容主流设备。Google Gemma 4 QAT已证明1GB模型可在移动端运行，微软Foundry Local提供了端侧推理基础设施。",
+          "action": "1)搭建端侧意图识别模型原型，测量典型场景的推理延迟 2)评估候选区动态渲染在Android/iOS/Windows/macOS各平台的性能表现 3)制定性能不达标场景的降级方案（回退到静态候选列表）4)输出技术可行性评估报告供产品决策。",
+          "tags": ["技术验证", "性能", "端侧"],
+          "sourceUrls": ["https://kingy.ai/news/ai-launch-tracker-openai-codex-leads-the-june-7-shift-toward-agent-work-beyond-engineering"]
+        },
+        {
+          "title": "语音输入润色功能用户测试计划",
+          "source": "内部用户研究",
+          "sourceDetail": "基于横评分析和竞品（千问/豆包）润色能力对比，设计可用性测试",
+          "insight": "需验证的核心问题：1)用户是否理解'润色'概念？2)4种风格切换是否过于复杂？3)场景自动识别准确率是否足够让用户信任？测试方法：邀请15名目标用户（每日语音输入>5次）完成5个典型场景任务，观察操作成功率和满意度。",
+          "action": "1)制定可用性测试招募标准和筛选问卷 2)设计5个测试场景的任务脚本 3)准备高保真可交互原型（Figma prototype）4)安排2周内完成测试并输出分析报告 5)根据测试结果迭代设计方案。",
+          "tags": ["可用性测试", "语音润色", "用户反馈"],
+          "sourceUrls": ["https://caifuhao.eastmoney.com/news/20260605165411719924470"]
+        }
+      ]
+    }
+  }
+}

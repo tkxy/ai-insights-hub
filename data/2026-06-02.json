@@ -1,0 +1,149 @@
+{
+  "date": "2026-06-02",
+  "generated_at": "2026-06-08T08:20:00+08:00",
+  "daily_summary": "微软Build 2026大会在旧金山开幕，一次性发布七款自研AI模型，标志其从依赖OpenAI转向自研生态。核心发布包括编程模型MAI-Code-1-Flash、推理模型MAI-Thinking-1、Project Polaris（将替代GitHub Copilot中的GPT-4）、Windows Agent Framework 1.0开源、Azure Agent Mesh联邦多Agent执行平台、Foundry Local端侧AI推理平台等。OpenAI同日举办'AI上岗'发布会，将Codex从编程工具升级为全行业智能体工作平台，宣布Codex将整合进ChatGPT惠及10亿用户。英伟达黄仁勋宣布RTX Spark AIPC平台，称智能体AI将开启未来十年算力革命。",
+  "design_insights": [
+    {
+      "title": "微软Project Polaris：从对话助手到异步协作者的范式转变",
+      "summary": "Satya Nadella在Build主题演讲中提出AI已从'同步助手'进化为'异步协作者执行长时间任务'，Copilot Workspace支持多仓库模式和SRE自主Agent。",
+      "implication": "输入法的AI能力也应从'即时响应'向'异步智能'演进。例如用户输入一段想法后，AI可在后台异步完善为完整文案/邮件草稿，下次打开时呈现结果，而非强制用户等待实时生成。",
+      "sources": ["BuildFastWithAI", "微软官方"],
+      "source_urls": ["https://www.buildfastwithai.com/blogs/ai-news-today-june-2-2026"],
+      "tags": ["异步AI", "Copilot", "范式转变"]
+    },
+    {
+      "title": "Windows Agent Framework开源：系统级Agent能力民主化",
+      "summary": "微软开源WAF 1.0（MIT协议），支持Agent访问文件系统、网络、UI自动化和进程管理四类OS能力，内置人工审批队列。",
+      "implication": "输入法可研究接入WAF等系统级Agent框架，让用户通过输入法直接调度OS级操作（如'帮我把桌面截图发给张三'），从文字输入工具升级为系统级意图执行器。",
+      "sources": ["BuildFastWithAI", "微软"],
+      "source_urls": ["https://www.buildfastwithai.com/blogs/ai-news-today-june-2-2026"],
+      "tags": ["WAF", "开源", "系统级Agent"]
+    },
+    {
+      "title": "OpenAI Codex跨行业化：6款角色插件覆盖62个应用110项技能",
+      "summary": "OpenAI将Codex从编程工具升级为全行业Agent平台，覆盖数据分析、创意制作、销售、产品设计、投资、投行六大领域，将整合进ChatGPT。",
+      "implication": "AI Agent正从垂直工具向跨职能工作层演进。输入法作为跨应用入口，应参考Codex的角色化设计，为不同职业用户（设计师/程序员/销售）提供差异化的AI输入辅助体验。",
+      "sources": ["每日经济新闻", "KingyAI"],
+      "source_urls": ["https://www.mrjjxw.com/articles/2026-06-03/4415966.html", "https://kingy.ai/news/ai-launch-tracker-openai-codex-leads-the-june-7-shift-toward-agent-work-beyond-engineering"],
+      "tags": ["Codex", "角色化", "跨行业Agent"]
+    },
+    {
+      "title": "Foundry Local端侧推理平台GA：本地AI无需云依赖",
+      "summary": "微软Foundry Local正式GA，支持Windows/macOS/Linux端侧AI推理，数据不离设备、无网络延迟、无Token计费。",
+      "implication": "端侧推理成熟为输入法提供了在本地运行AI模型的基础设施。可利用Foundry Local等平台实现完全离线的AI输入体验，彻底解决隐私担忧和网络延迟问题。",
+      "sources": ["BuildFastWithAI"],
+      "source_urls": ["https://www.buildfastwithai.com/blogs/ai-news-today-june-2-2026"],
+      "tags": ["端侧AI", "离线推理", "隐私"]
+    },
+    {
+      "title": "RTX Spark定义AI PC新范式：本地Agent+云边一体",
+      "summary": "黄仁勋发布RTX Spark AIPC平台，定位为智能体AI终端和云边一体化AI算力平台，支持本地运行大模型与Agent。",
+      "implication": "AIPC算力升级意味着输入法可以在PC端承载更复杂的本地AI能力，如实时语音理解、多模态输入处理、本地知识库检索等，无需依赖云端。",
+      "sources": ["证券时报", "金元证券"],
+      "source_urls": ["https://www.stcn.com/article/detail/3938945.html"],
+      "tags": ["AIPC", "RTX Spark", "端侧算力"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "输入法作为跨应用Agent入口的可行性",
+      "pain_point": "用户完成跨应用任务（如从聊天中提取信息填入表单）需要频繁切换应用和复制粘贴",
+      "opportunity": "利用系统级Agent能力（参考WAF），让输入法成为跨应用任务的统一调度入口，用户只需用自然语言描述意图",
+      "priority": "high",
+      "evidence": "微软WAF开源提供了技术基础；OpenAI Codex的跨应用能力证明了需求真实性；黄仁勋称Agent AI将开启十年算力革命"
+    },
+    {
+      "title": "异步AI写作助手需求",
+      "pain_point": "用户需要实时等待AI生成内容，但很多写作场景（长邮件、报告）更适合后台处理",
+      "opportunity": "参考Copilot Workspace异步模式，让用户简单输入要点后，AI在后台异步完善为完整文稿，下次打开时呈现",
+      "priority": "medium",
+      "evidence": "Nadella Build主题演讲明确提出从'同步助手'到'异步协作者'的范式转变；Copilot Workspace支持长时间自主任务"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "微软Build 2026一次性发布七款自研AI模型",
+      "summary": "包括MAI-Code-1-Flash编程模型、MAI-Thinking-1推理模型、MAI-Image-2等，标志微软从依赖OpenAI转向自研AI生态。",
+      "source": "上海证券报",
+      "source_urls": ["https://www.cnstock.com/commonDetail/724174"],
+      "tags": ["微软", "Build 2026", "自研模型"]
+    },
+    {
+      "title": "Project Polaris将于8月替代GPT-4成为GitHub Copilot默认模型",
+      "summary": "微软自研编程模型Polaris运行在Maia 200自研AI加速器上，专为软件开发场景设计。",
+      "source": "BuildFastWithAI",
+      "source_urls": ["https://www.buildfastwithai.com/blogs/ai-news-today-june-2-2026"],
+      "tags": ["Project Polaris", "GitHub Copilot", "微软"]
+    },
+    {
+      "title": "OpenAI举办'AI上岗'发布会，Codex升级为全行业Agent平台",
+      "summary": "发布6款Codex角色插件覆盖6大行业，宣布未来数周Codex将整合进ChatGPT惠及10亿用户。",
+      "source": "每日经济新闻",
+      "source_urls": ["https://www.mrjjxw.com/articles/2026-06-03/4415966.html"],
+      "tags": ["OpenAI", "Codex", "智能体"]
+    },
+    {
+      "title": "黄仁勋：智能体AI将开启未来十年算力革命",
+      "summary": "发布RTX Spark AIPC平台，称迈威尔科技将成下一个万亿美元公司，Spectrum-X硅光交换机全面量产。",
+      "source": "证券时报",
+      "source_urls": ["https://www.stcn.com/article/detail/3938945.html"],
+      "tags": ["英伟达", "Agent AI", "算力"]
+    },
+    {
+      "title": "迈威尔科技暴涨32%，创2000年以来最佳单日表现",
+      "summary": "受黄仁勋点名'下一个万亿美元公司'提振，将被纳入标普500指数。",
+      "source": "上海证券报",
+      "source_urls": ["https://www.cnstock.com/commonDetail/724174"],
+      "tags": ["迈威尔", "芯片", "暴涨"]
+    },
+    {
+      "title": "Windows Agent Framework 1.0 MIT协议开源",
+      "summary": "支持Agent访问文件系统、网络、UI自动化和进程管理，Visual Studio 2026已内置WAF项目模板。",
+      "source": "BuildFastWithAI",
+      "source_urls": ["https://www.buildfastwithai.com/blogs/ai-news-today-june-2-2026"],
+      "tags": ["微软", "WAF", "开源"]
+    },
+    {
+      "title": "Azure Agent Mesh发布：联邦多Agent跨云执行",
+      "summary": "支持Agent在Azure、AWS、Google Cloud、本地系统和Windows 365间统一编排，带完整审计链路。",
+      "source": "BuildFastWithAI",
+      "source_urls": ["https://www.buildfastwithai.com/blogs/ai-news-today-june-2-2026"],
+      "tags": ["Azure", "多Agent", "混合云"]
+    },
+    {
+      "title": "Foundry Local端侧AI推理平台正式GA",
+      "summary": "支持Windows/macOS/Linux三端，数据不离设备，兼容开源和商用模型，DirectML 2.0统一GPU抽象层。",
+      "source": "BuildFastWithAI",
+      "source_urls": ["https://www.buildfastwithai.com/blogs/ai-news-today-june-2-2026"],
+      "tags": ["端侧AI", "Foundry Local", "微软"]
+    },
+    {
+      "title": "Holo3.1发布：本地运行的计算机操作Agent",
+      "summary": "Hcompany发布可在消费级硬件本地运行的AI Agent，支持鼠标键盘自动化和GUI交互，数据全本地处理。",
+      "source": "Dev.to",
+      "source_urls": ["https://dev.to/vjswamy/latest-ai-model-releases-june-2026-roundup-49j5"],
+      "tags": ["本地Agent", "计算机操作", "开源"]
+    },
+    {
+      "title": "GitHub Copilot App技术预览版开放，新增Canvas和云端功能",
+      "summary": "面向现有Pro/Pro+/Business/Enterprise用户开放，增加可视化画布和浏览器功能。",
+      "source": "KingyAI",
+      "source_urls": ["https://kingy.ai/news/ai-launch-tracker-openai-codex-leads-the-june-7-shift-toward-agent-work-beyond-engineering"],
+      "tags": ["GitHub", "Copilot", "技术预览"]
+    },
+    {
+      "title": "微软Majorana 2量子芯片：12量子比特+20秒寿命",
+      "summary": "目标2029年实现可扩展实用型量子计算机，量子AI+Agent研发成为可能。",
+      "source": "每日经济新闻",
+      "source_urls": ["https://www.mrjjxw.com/articles/2026-06-03/4415966.html"],
+      "tags": ["量子计算", "微软", "Majorana"]
+    },
+    {
+      "title": "马斯克关联公司囤地6000英亩，550亿美元芯片工厂选址浮现",
+      "summary": "WIT Tech在得州购入超6000英亩地皮用于Terafab半导体工厂，总投资上限1190亿美元。",
+      "source": "每日经济新闻",
+      "source_urls": ["https://www.mrjjxw.com/articles/2026-06-03/4415966.html"],
+      "tags": ["马斯克", "芯片", "基建"]
+    }
+  ]
+}
