@@ -5572,6 +5572,26 @@ async function loadGitHubPicks() {
 }
 
 var ghWeeklyState = { index: null, currentWeek: null, loaded: {} };
+var GH_WEEKLY_RAW_BASE = 'https://raw.githubusercontent.com/tkxy/ai-insights-hub/main/data/github-weekly/';
+
+async function fetchGhWeeklyJson(fileName) {
+  var cacheKey = Date.now();
+  var urls = [
+    GH_WEEKLY_RAW_BASE + fileName + '?t=' + cacheKey,
+    'data/github-weekly/' + fileName + '?t=' + cacheKey
+  ];
+  var lastErr = null;
+  for (var i = 0; i < urls.length; i++) {
+    try {
+      var resp = await fetch(urls[i], { cache: 'no-store' });
+      if (!resp.ok) throw new Error('HTTP ' + resp.status);
+      return await resp.json();
+    } catch (e) {
+      lastErr = e;
+    }
+  }
+  throw lastErr || new Error('GitHub weekly data fetch failed');
+}
 
 async function loadGhWeekly(weekKey) {
   // 确保容器存在（插到主容器顶部，周切换才会立刻有可见变化）
@@ -5588,9 +5608,7 @@ async function loadGhWeekly(weekKey) {
   try {
     // 加载 index（只加载一次）
     if (!ghWeeklyState.index) {
-      var idxResp = await fetch('data/github-weekly/index.json?t=' + Date.now(), { cache: 'no-store' });
-      if (!idxResp.ok) throw new Error('index not found');
-      ghWeeklyState.index = await idxResp.json();
+      ghWeeklyState.index = await fetchGhWeeklyJson('index.json');
     }
     var idx = ghWeeklyState.index;
     if (!idx.weeks || !idx.weeks.length) throw new Error('无数据');
@@ -5601,9 +5619,7 @@ async function loadGhWeekly(weekKey) {
 
     // 加载数据（缓存）
     if (!ghWeeklyState.loaded[weekKey]) {
-      var dataResp = await fetch('data/github-weekly/' + weekKey + '.json?t=' + Date.now(), { cache: 'no-store' });
-      if (!dataResp.ok) throw new Error(weekKey + ' 数据未找到');
-      ghWeeklyState.loaded[weekKey] = await dataResp.json();
+      ghWeeklyState.loaded[weekKey] = await fetchGhWeeklyJson(weekKey + '.json');
     }
     _ghWeeklyLoaded = true;
     renderGhWeekly(ghWeeklyState.loaded[weekKey]);
