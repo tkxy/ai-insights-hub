@@ -9,7 +9,7 @@
   "items": [
     {
       "name": "Lum1104/Understand-Anything",
-      "title": "Star Lum1104 / Understand-Anything Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+      "title": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
       "url": "https://github.com/Lum1104/Understand-Anything",
       "stars": 47477,
       "weeklyStars": 22750,
@@ -17,7 +17,7 @@
       "language": "TypeScript",
       "topics": [],
       "category": "AI / 生成式",
-      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "insight": "它的重点不是画图，而是把复杂概念转成能教学的结构图。GitHub 用户追捧这类项目，说明 AI 可视化的价值正在从「看起来厉害」转向「真的帮人理解」。",
       "cases": [
         {
           "name": "编码效率提升",
@@ -36,7 +36,7 @@
     },
     {
       "name": "harry0703/MoneyPrinterTurbo",
-      "title": "Star harry0703 / MoneyPrinterTurbo 利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
+      "title": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
       "url": "https://github.com/harry0703/MoneyPrinterTurbo",
       "stars": 74803,
       "weeklyStars": 15955,
@@ -44,7 +44,7 @@
       "language": "Python",
       "topics": [],
       "category": "AI / 生成式",
-      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "insight": "生成式视频正在从专业创作工具下沉为自动化流水线。一个脚本能把选题、文案、素材、配音、剪辑串起来，意味着内容生产的门槛被压到运营级别。",
       "cases": [
         {
           "name": "智能对话产品",
@@ -63,7 +63,7 @@
     },
     {
       "name": "colbymchenry/codegraph",
-      "title": "Star colbymchenry / codegraph Pre-indexed code knowledge graph for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+      "title": "Pre-indexed code knowledge graph for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
       "url": "https://github.com/colbymchenry/codegraph",
       "stars": 35623,
       "weeklyStars": 13925,
@@ -71,7 +71,7 @@
       "language": "TypeScript",
       "topics": [],
       "category": "AI / 生成式",
-      "insight": "Agent 生态持续扩展——codegraph 代表了社区对 AI 自主能力的持续探索。",
+      "insight": "代码库上下文正在从文本块走向知识图谱。对大型工程来说，先建立代码关系图，再让 AI 推理，比把文件一股脑塞进上下文更可控。",
       "cases": [
         {
           "name": "编码效率提升",
@@ -90,7 +90,7 @@
     },
     {
       "name": "Leonxlnx/taste-skill",
-      "title": "Sponsor Star Leonxlnx / taste-skill Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
+      "title": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
       "url": "https://github.com/Leonxlnx/taste-skill",
       "stars": 30024,
       "weeklyStars": 10813,
@@ -98,7 +98,7 @@
       "language": "Shell",
       "topics": [],
       "category": "AI / 生成式",
-      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "insight": "AI 生成内容的下一阶段不是更能写，而是更像人、更有审美。社区开始把「去 AI 味」「设计品味」「语言质感」做成可复用 skill，说明输出质量正在从功能问题变成风格问题。",
       "cases": [
         {
           "name": "智能对话产品",
@@ -117,7 +117,7 @@
     },
     {
       "name": "rohitg00/ai-engineering-from-scratch",
-      "title": "Sponsor Star rohitg00 / ai-engineering-from-scratch Learn it. Build it. Ship it for others.",
+      "title": "Learn it. Build it. Ship it for others.",
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
       "stars": 25977,
       "weeklyStars": 10586,
@@ -125,7 +125,7 @@
       "language": "Python",
       "topics": [],
       "category": "其他",
-      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "insight": "AI 工程教育内容走热，说明开发者正在从「会调 API」转向系统理解训练、推理、评估、部署全链路。团队内部能力建设会成为 AI 产品速度差异。",
       "cases": [
         {
           "name": "技术选型参考",
@@ -140,7 +140,7 @@
     },
     {
       "name": "affaan-m/ECC",
-      "title": "Sponsor Star affaan-m / ECC The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "title": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "url": "https://github.com/affaan-m/ECC",
       "stars": 200796,
       "weeklyStars": 10473,
@@ -148,7 +148,7 @@
       "language": "JavaScript",
       "topics": [],
       "category": "AI / 生成式",
-      "insight": "Agent 生态持续扩展——ECC 代表了社区对 AI 自主能力的持续探索。",
+      "insight": "Agent 产品竞争开始进入「运行框架」阶段。社区关注的不再只是接哪个模型，而是技能、记忆、安全、评估这些让 Agent 长期稳定工作的底层系统。",
       "cases": [
         {
           "name": "智能对话产品",
@@ -167,7 +167,7 @@
     },
     {
       "name": "microsoft/markitdown",
-      "title": "Star microsoft / markitdown Python tool for converting files and office documents to Markdown.",
+      "title": "Python tool for converting files and office documents to Markdown.",
       "url": "https://github.com/microsoft/markitdown",
       "stars": 135361,
       "weeklyStars": 9353,
@@ -175,7 +175,7 @@
       "language": "Python",
       "topics": [],
       "category": "其他",
-      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "insight": "文档解析正在成为 RAG 和企业 AI 的基础设施。真正难的不是把文件转成文本，而是稳定保留结构、表格、标题层级，让后续问答和总结有可靠上下文。",
       "cases": [
         {
           "name": "技术选型参考",
@@ -190,7 +190,7 @@
     },
     {
       "name": "anthropics/knowledge-work-plugins",
-      "title": "Star anthropics / knowledge-work-plugins Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "title": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "url": "https://github.com/anthropics/knowledge-work-plugins",
       "stars": 18473,
       "weeklyStars": 4944,
@@ -198,7 +198,7 @@
       "language": "Python",
       "topics": [],
       "category": "AI / 生成式",
-      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "insight": "知识工作正在从文件管理变成研究代理。用户需要的不是又一个笔记库，而是能按时间、主题和来源自动整理材料、形成判断的研究系统。",
       "cases": [
         {
           "name": "智能对话产品",
@@ -217,7 +217,7 @@
     },
     {
       "name": "mukul975/Anthropic-Cybersecurity-Skills",
-      "title": "Sponsor Star mukul975 / Anthropic-Cybersecurity-Skills 754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND & NIST AI RMF · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 26 security domains · Apache 2.0",
+      "title": "754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND & NIST AI RMF · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 26 security domains · Apache 2.0",
       "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
       "stars": 12999,
       "weeklyStars": 4896,
@@ -225,7 +225,7 @@
       "language": "Python",
       "topics": [],
       "category": "AI / 生成式",
-      "insight": "Agent 生态持续扩展——Anthropic-Cybersecurity-Skills 代表了社区对 AI 自主能力的持续探索。",
+      "insight": "安全领域走向 skill 化，说明专业 Agent 不再靠一段通用 prompt，而需要可审计的任务清单、知识包和操作流程。",
       "cases": [
         {
           "name": "编码效率提升",
@@ -244,7 +244,7 @@
     },
     {
       "name": "hardikpandya/stop-slop",
-      "title": "Star hardikpandya / stop-slop A skill file for removing AI tells from prose",
+      "title": "A skill file for removing AI tells from prose",
       "url": "https://github.com/hardikpandya/stop-slop",
       "stars": 7783,
       "weeklyStars": 3770,
@@ -252,7 +252,7 @@
       "language": null,
       "topics": [],
       "category": "AI / 生成式",
-      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "insight": "AI 生成内容的下一阶段不是更能写，而是更像人、更有审美。社区开始把「去 AI 味」「设计品味」「语言质感」做成可复用 skill，说明输出质量正在从功能问题变成风格问题。",
       "cases": [
         {
           "name": "智能对话产品",
@@ -271,7 +271,7 @@
     },
     {
       "name": "run-llama/liteparse",
-      "title": "Star run-llama / liteparse A fast, helpful, and open-source document parser",
+      "title": "A fast, helpful, and open-source document parser",
       "url": "https://github.com/run-llama/liteparse",
       "stars": 8389,
       "weeklyStars": 3006,
@@ -279,7 +279,7 @@
       "language": "Rust",
       "topics": [],
       "category": "其他",
-      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "insight": "文档解析是 RAG 的地基。liteparse 这类项目热起来，说明大家已经意识到：答案质量很大程度取决于前面有没有把文档结构解析干净。",
       "cases": [
         {
           "name": "技术选型参考",
@@ -294,7 +294,7 @@
     },
     {
       "name": "microsoft/agent-governance-toolkit",
-      "title": "Star microsoft / agent-governance-toolkit AI Agent Governance Toolkit — Policy enforcement, zero-trust identity, execution sandboxing, and reliability engineering for autonomous AI agents. Covers 10/10 OWASP Agentic Top 10.",
+      "title": "AI Agent Governance Toolkit — Policy enforcement, zero-trust identity, execution sandboxing, and reliability engineering for autonomous AI agents. Covers 10/10 OWASP Agentic Top 10.",
       "url": "https://github.com/microsoft/agent-governance-toolkit",
       "stars": 3581,
       "weeklyStars": 1657,
@@ -302,7 +302,7 @@
       "language": "Python",
       "topics": [],
       "category": "AI / 生成式",
-      "insight": "Agent 生态持续扩展——agent-governance-toolkit 代表了社区对 AI 自主能力的持续探索。",
+      "insight": "Agent 进入企业后，治理会比能力更先成为瓶颈。权限、策略、审计和评估工具被微软单独做成 toolkit，说明 Agent 正在从 demo 走向生产系统。",
       "cases": [
         {
           "name": "智能对话产品",
@@ -321,7 +321,7 @@
     },
     {
       "name": "p-e-w/heretic",
-      "title": "Star p-e-w / heretic Fully automatic censorship removal for language models",
+      "title": "Fully automatic censorship removal for language models",
       "url": "https://github.com/p-e-w/heretic",
       "stars": 22773,
       "weeklyStars": 1417,
@@ -329,7 +329,7 @@
       "language": "Python",
       "topics": [],
       "category": "其他",
-      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "insight": "heretic 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
       "cases": [
         {
           "name": "技术选型参考",
@@ -344,7 +344,7 @@
     },
     {
       "name": "iii-hq/iii",
-      "title": "Star iii-hq / iii Effortlessly compose, extend, and observe every service in real-time for the first time ever.",
+      "title": "Effortlessly compose, extend, and observe every service in real-time for the first time ever.",
       "url": "https://github.com/iii-hq/iii",
       "stars": 17389,
       "weeklyStars": 1394,
@@ -352,7 +352,7 @@
       "language": "Rust",
       "topics": [],
       "category": "其他",
-      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "insight": "iii 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
       "cases": [
         {
           "name": "技术选型参考",
@@ -367,7 +367,7 @@
     },
     {
       "name": "dograh-hq/dograh",
-      "title": "Star dograh-hq / dograh Open source voice AI platform. Self-hosted alternative to Vapi and Retell. On Prem, BYOK across Speech to Speech or LLM/STT/TTS, with a visual workflow builder, MCP native and telephony support.",
+      "title": "Open source voice AI platform. Self-hosted alternative to Vapi and Retell. On Prem, BYOK across Speech to Speech or LLM/STT/TTS, with a visual workflow builder, MCP native and telephony support.",
       "url": "https://github.com/dograh-hq/dograh",
       "stars": 3994,
       "weeklyStars": 1329,
@@ -375,7 +375,7 @@
       "language": "Python",
       "topics": [],
       "category": "AI / 生成式",
-      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "insight": "可解释可视化比炫技图表更有价值。这个方向说明用户要的不是漂亮图，而是能帮助理解复杂概念的交互式解释结构。",
       "cases": [
         {
           "name": "智能对话产品",
@@ -394,7 +394,7 @@
     },
     {
       "name": "ogulcancelik/herdr",
-      "title": "Sponsor Star ogulcancelik / herdr agent multiplexer that lives in your terminal.",
+      "title": "agent multiplexer that lives in your terminal.",
       "url": "https://github.com/ogulcancelik/herdr",
       "stars": 3438,
       "weeklyStars": 1058,
@@ -402,7 +402,7 @@
       "language": "Rust",
       "topics": [],
       "category": "AI / 生成式",
-      "insight": "Agent 生态持续扩展——herdr 代表了社区对 AI 自主能力的持续探索。",
+      "insight": "herdr 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
       "cases": [
         {
           "name": "智能对话产品",
@@ -421,7 +421,7 @@
     },
     {
       "name": "Chachamaru127/claude-code-harness",
-      "title": "Star Chachamaru127 / claude-code-harness Claude Code Dedicated Development Harness - Achieving High-Quality Development Through an Autonomous Plan→Work→Review Cycle",
+      "title": "Claude Code Dedicated Development Harness - Achieving High-Quality Development Through an Autonomous Plan→Work→Review Cycle",
       "url": "https://github.com/Chachamaru127/claude-code-harness",
       "stars": 2390,
       "weeklyStars": 997,
@@ -429,7 +429,7 @@
       "language": "Shell",
       "topics": [],
       "category": "AI / 生成式",
-      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "insight": "claude-code-harness 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
       "cases": [
         {
           "name": "编码效率提升",
@@ -448,7 +448,7 @@
     },
     {
       "name": "revfactory/harness",
-      "title": "Star revfactory / harness A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use.",
+      "title": "A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use.",
       "url": "https://github.com/revfactory/harness",
       "stars": 4677,
       "weeklyStars": 957,
@@ -456,7 +456,7 @@
       "language": "HTML",
       "topics": [],
       "category": "AI / 生成式",
-      "insight": "Agent 生态持续扩展——harness 代表了社区对 AI 自主能力的持续探索。",
+      "insight": "Agent 产品竞争开始进入「运行框架」阶段。社区关注的不再只是接哪个模型，而是技能、记忆、安全、评估这些让 Agent 长期稳定工作的底层系统。",
       "cases": [
         {
           "name": "智能对话产品",
@@ -475,7 +475,7 @@
     },
     {
       "name": "cursor/plugins",
-      "title": "Star cursor / plugins Cursor plugin specification and official plugins",
+      "title": "Cursor plugin specification and official plugins",
       "url": "https://github.com/cursor/plugins",
       "stars": 1620,
       "weeklyStars": 882,
@@ -483,7 +483,7 @@
       "language": "TypeScript",
       "topics": [],
       "category": "其他",
-      "insight": "值得关注的活跃项目，上周获得了大量社区关注。",
+      "insight": "plugins 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
       "cases": [
         {
           "name": "技术选型参考",
@@ -512,7 +512,7 @@
         "react"
       ],
       "category": "UI / 组件",
-      "insight": "组件库竞争进入差异化阶段，设计工程师需要的不只是样式，还有交互行为和品牌动效。",
+      "insight": "UI 组件项目的热度反映出设计工程化继续加速。现在的组件不只是样式复用，还要承载动效、状态、可访问性和品牌表达。",
       "cases": [
         {
           "name": "设计系统建设",

@@ -95,6 +95,8 @@ def fetch_github_trending_weekly() -> list[dict]:
         full_name = m.group(1).strip()
         desc_m = re.search(r'<p[^>]*>([\s\S]*?)</p>', a)
         desc = clean_html(desc_m.group(1)) if desc_m else ''
+        # GitHub trending 的 p 标签里有时会混入 “Sponsor Star owner / repo” 操作文案，清掉再展示
+        desc = re.sub(r'^(Sponsor\s+)?Star\s+[A-Za-z0-9_.-]+\s*/\s*[A-Za-z0-9_.-]+\s*', '', desc).strip()
         lang_m = re.search(r'<span itemprop="programmingLanguage">([^<]+)</span>', a)
         language = clean_html(lang_m.group(1)) if lang_m else None
         star_m = re.search(r'aria-label="([0-9,]+) users starred', a)
@@ -175,23 +177,65 @@ def classify_category(repo: dict) -> str:
 
 
 def generate_insight(repo: dict) -> str:
-    """基于 description 和 category 生成简短中文洞察"""
+    """基于项目语义生成真正的产品/技术洞察，而不是“很火”式废话"""
     desc = repo.get("description") or ""
-    cat = repo.get("_category", "")
-    name = repo.get("full_name", "")
+    full_name = repo.get("full_name", "")
+    text = (full_name + " " + desc).lower()
+    repo_name = (full_name.split("/")[-1] or "这个项目")
 
-    # 简单规则生成
-    if "agent" in desc.lower() or "agent" in cat.lower():
-        return f"Agent 生态持续扩展——{name.split('/')[-1]} 代表了社区对 AI 自主能力的持续探索。"
-    if "canvas" in desc.lower() or "画布" in cat:
-        return "画布型产品持续火热，空间组织正在替代线性列表成为复杂信息的主要交互形式。"
-    if "3d" in cat.lower() or "three" in desc.lower():
-        return "3D/空间技术在 Web 端的可用性持续提升，从营销装饰走向产品交互层。"
-    if "motion" in desc.lower() or "animation" in desc.lower() or "动效" in cat:
-        return "动效工具链正在成熟——从「手动写 CSS transition」到「可编排、可复用的运动组件」。"
-    if "ui" in cat.lower() or "component" in desc.lower():
-        return "组件库竞争进入差异化阶段，设计工程师需要的不只是样式，还有交互行为和品牌动效。"
-    return f"值得关注的活跃项目，上周获得了大量社区关注。"
+    specific = {
+        "Lum1104/Understand-Anything": "它的重点不是画图，而是把复杂概念转成能教学的结构图。GitHub 用户追捧这类项目，说明 AI 可视化的价值正在从「看起来厉害」转向「真的帮人理解」。",
+        "colbymchenry/codegraph": "代码库上下文正在从文本块走向知识图谱。对大型工程来说，先建立代码关系图，再让 AI 推理，比把文件一股脑塞进上下文更可控。",
+        "Panniantong/Agent-Reach": "Agent 正在从聊天窗口走向主动触达和任务执行。值得关注的是它如何把用户目标、外部渠道和自动行动串起来，而不是又做一个问答机器人。",
+        "roboflow/supervision": "视觉 AI 的工程化门槛正在降低。数据标注、检测、追踪、评估这些能力被封装成工具链后，普通产品团队也能更快把 CV 能力嵌进业务流程。",
+        "mukul975/Anthropic-Cybersecurity-Skills": "安全领域走向 skill 化，说明专业 Agent 不再靠一段通用 prompt，而需要可审计的任务清单、知识包和操作流程。",
+        "run-llama/liteparse": "文档解析是 RAG 的地基。liteparse 这类项目热起来，说明大家已经意识到：答案质量很大程度取决于前面有没有把文档结构解析干净。",
+        "microsoft/agent-governance-toolkit": "Agent 进入企业后，治理会比能力更先成为瓶颈。权限、策略、审计和评估工具被微软单独做成 toolkit，说明 Agent 正在从 demo 走向生产系统。"
+    }
+    if full_name in specific:
+        return specific[full_name]
+
+    # 先处理近期 GitHub AI 工程高频项目类型
+    if any(k in text for k in ["tool outputs", "logs", "compress", "token", "context"]):
+        return "AI 工程的瓶颈正在从模型能力转向上下文成本。能压缩日志、工具输出和 RAG chunk 的项目走热，说明开发者开始认真治理「给模型看的信息」，而不是一味堆更大的上下文窗口。"
+    if any(k in text for k in ["markdown", "office documents", "document parser", "parse", "pdf", "docx"]):
+        return "文档解析正在成为 RAG 和企业 AI 的基础设施。真正难的不是把文件转成文本，而是稳定保留结构、表格、标题层级，让后续问答和总结有可靠上下文。"
+    if any(k in text for k in ["agent harness", "performance optimization", "skills", "instincts", "memory", "security"]):
+        return "Agent 产品竞争开始进入「运行框架」阶段。社区关注的不再只是接哪个模型，而是技能、记忆、安全、评估这些让 Agent 长期稳定工作的底层系统。"
+    if any(k in text for k in ["agent that grows", "hermes agent", "hermes webui"]):
+        return "个人 Agent 的方向正在从一次性问答转向可成长系统。它需要记忆、偏好、工具和 UI 承载，像一个长期协作对象，而不是每次都从零开始的聊天窗口。"
+    if any(k in text for k in ["short videos", "video", "moneyprinter", "generate short"]):
+        return "生成式视频正在从专业创作工具下沉为自动化流水线。一个脚本能把选题、文案、素材、配音、剪辑串起来，意味着内容生产的门槛被压到运营级别。"
+    if any(k in text for k in ["good taste", "design language", "slop", "ai tells", "prose"]):
+        return "AI 生成内容的下一阶段不是更能写，而是更像人、更有审美。社区开始把「去 AI 味」「设计品味」「语言质感」做成可复用 skill，说明输出质量正在从功能问题变成风格问题。"
+    if any(k in text for k in ["notebook", "notebook lm", "knowledge", "researches any topic", "last30days"]):
+        return "知识工作正在从文件管理变成研究代理。用户需要的不是又一个笔记库，而是能按时间、主题和来源自动整理材料、形成判断的研究系统。"
+    if any(k in text for k in ["code knowledge graph", "codegraph", "pre-indexed code"]):
+        return "代码库理解正在图谱化。相比把整个仓库塞进上下文，预先建立代码知识图谱更适合大型项目里的定位、影响分析和跨文件推理。"
+    if any(k in text for k in ["governance", "policy", "evaluation", "compliance"]):
+        return "Agent 落地进入治理阶段。企业真正担心的不是能不能调用工具，而是权限边界、策略约束、审计和失败兜底是否可控。"
+    if any(k in text for k in ["cybersecurity", "security skills", "structured cybersecurity"]):
+        return "垂直领域 skill 正在成为 Agent 能力分发方式。安全、法务、研究这类专业任务不适合靠通用 prompt 硬写，而需要结构化知识包和操作流程。"
+    if any(k in text for k in ["graphs that teach", "understand anything", "teach", "visual"]):
+        return "可解释可视化比炫技图表更有价值。这个方向说明用户要的不是漂亮图，而是能帮助理解复杂概念的交互式解释结构。"
+    if any(k in text for k in ["learn it", "from scratch", "engineering"]):
+        return "AI 工程教育内容走热，说明开发者正在从「会调 API」转向系统理解训练、推理、评估、部署全链路。团队内部能力建设会成为 AI 产品速度差异。"
+    if any(k in text for k in ["voice", "vtuber", "hands-free"]):
+        return "AI 交互正在从文字框走向语音和人格化形态。免手操作、实时语音和虚拟形象结合，会让助手更像陪伴式界面，而不是工具面板。"
+
+    # 通用兜底：按类别给可行动洞察
+    cat = repo.get("_category", "")
+    if "AI" in cat:
+        return f"{repo_name} 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。"
+    if "画布" in cat:
+        return "画布型交互继续升温，说明复杂任务更适合空间化组织。对设计来说，画布不是白板皮肤，而是一套选择、拖拽、连接、撤销和协作的基础语言。"
+    if "动效" in cat:
+        return "动效正在从装饰变成产品反馈机制。被关注的动效项目通常不是为了炫，而是让状态变化、因果关系和操作结果更容易被用户感知。"
+    if "3D" in cat:
+        return "3D Web 项目的关注上升，说明空间界面正在从营销页走向真实产品层。设计师需要开始理解场景、视角、遮挡和空间控件，而不只是平面组件。"
+    if "UI" in cat:
+        return "UI 组件项目的热度反映出设计工程化继续加速。现在的组件不只是样式复用，还要承载动效、状态、可访问性和品牌表达。"
+    return f"{repo_name} 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。"
 
 
 def generate_cases(repo: dict) -> list[dict]:
