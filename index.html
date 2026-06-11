@@ -5588,7 +5588,7 @@ async function loadGhWeekly(weekKey) {
   try {
     // 加载 index（只加载一次）
     if (!ghWeeklyState.index) {
-      var idxResp = await fetch('data/github-weekly/index.json', { cache: 'no-store' });
+      var idxResp = await fetch('data/github-weekly/index.json?t=' + Date.now(), { cache: 'no-store' });
       if (!idxResp.ok) throw new Error('index not found');
       ghWeeklyState.index = await idxResp.json();
     }
@@ -5601,7 +5601,7 @@ async function loadGhWeekly(weekKey) {
 
     // 加载数据（缓存）
     if (!ghWeeklyState.loaded[weekKey]) {
-      var dataResp = await fetch('data/github-weekly/' + weekKey + '.json', { cache: 'no-store' });
+      var dataResp = await fetch('data/github-weekly/' + weekKey + '.json?t=' + Date.now(), { cache: 'no-store' });
       if (!dataResp.ok) throw new Error(weekKey + ' 数据未找到');
       ghWeeklyState.loaded[weekKey] = await dataResp.json();
     }
