@@ -5772,59 +5772,8 @@ function renderGhWeeklyRank(data) {
 function renderGhWeekly(data) {
   var container = document.getElementById('ghp-weekly-section');
   if (!container) return;
-  var html = '';
-
-  html += renderGhWeeklyRank(data);
-
-  // 标题
-  html += '<div class="ghp-header" style="margin-top:48px;padding-top:32px;border-top:1px solid var(--border);">';
-  html += '<h1 class="ghp-title">GitHub 本周热门</h1>';
-  html += '<p class="ghp-subtitle">' + data.range.start + ' ~ ' + data.range.end + ' · 共 ' + data.count + ' 个活跃项目</p>';
-  html += '</div>';
-
-  // 按分类分组
-  var groups = {};
-  data.items.forEach(function(item) {
-    var cat = item.category || '其他';
-    if (!groups[cat]) groups[cat] = [];
-    groups[cat].push(item);
-  });
-
-  // 渲染每个分类
-  var catOrder = ['AI / 生成式', '画布 / 空间界面', '动效 / 交互编排', '3D / 空间计算', 'UI / 组件', '文本 / 排版', '开发工具', '其他'];
-  catOrder.forEach(function(cat) {
-    if (!groups[cat]) return;
-    html += '<section class="ghp-section">';
-    html += '<h2 class="ghp-section-title">' + cat + ' <span style="font-size:14px;color:var(--text2);font-weight:400;">(' + groups[cat].length + ')</span></h2>';
-    html += '<div class="ghp-grid">';
-    groups[cat].forEach(function(item) {
-      var starsStr = item.stars >= 1000 ? (item.stars / 1000).toFixed(1) + 'k' : item.stars;
-      var newBadge = item.isNew ? '<span class="ghp-new-badge">🆕 新项目</span>' : '';
-      var topicsHtml = (item.topics || []).slice(0, 3).map(function(t) { return '<span class="ghp-topic-tag">' + t + '</span>'; }).join('');
-
-      html += '<div class="ghp-card">';
-      html += newBadge;
-      html += '<div class="ghp-card-head">';
-      html += '<a class="ghp-card-name" href="' + item.url + '" target="_blank">' + item.name + '</a>';
-      html += '</div>';
-      html += '<div class="ghp-card-title">' + (item.name.split('/')[1] || item.name) + '</div>';
-      html += '<div class="ghp-card-desc">' + (item.title || '').slice(0, 150) + '</div>';
-      html += renderGhHeat(item);
-      html += '<div class="ghp-card-insight"><span class="ghp-insight-label">洞察</span>' + item.insight + '</div>';
-      var cases = (item.cases && item.cases.length) ? item.cases : getGhDefaultCases(item.category, item.name, item.title);
-      html += '<div class="ghp-card-cases"><span class="ghp-cases-label">应用案例</span><ul class="ghp-cases-list">';
-      cases.forEach(function(c) {
-        html += '<li><strong>' + c.name + '</strong>：' + c.desc + '</li>';
-      });
-      html += '</ul></div>';
-      if (topicsHtml) html += '<div style="margin-bottom:10px;display:flex;gap:4px;flex-wrap:wrap;">' + topicsHtml + '</div>';
-      html += '<a class="ghp-card-link" href="' + item.url + '" target="_blank">查看项目 →</a>';
-      html += '</div>';
-    });
-    html += '</div></section>';
-  });
-
-  container.innerHTML = html;
+  // 周榜卡片已包含洞察、案例、热度和详情链接；不再重复渲染分类详情卡片
+  container.innerHTML = renderGhWeeklyRank(data);
 }
 
 function renderGitHubPicks(data, container) {
