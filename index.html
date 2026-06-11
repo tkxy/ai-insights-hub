@@ -4087,47 +4087,35 @@ function renderNewsPage(data) {
     html += '</div>';
   }
 
-  // ---- 本周播客 ----
-  if (data.podcasts && data.podcasts.length) {
+  // ---- 本周长内容：播客 + 博客合并 ----
+  var longforms = [];
+  (data.podcasts || []).forEach(function(p) {
+    longforms.push({ type: 'PODCAST', label: '收听原文 →', name: p.name, title: p.title, guest: p.guest, summary: '', takeaways: p.keyTakeaways || [], url: p.url });
+  });
+  (data.blogs || []).forEach(function(b) {
+    longforms.push({ type: 'BLOG', label: '阅读原文 →', name: b.name, title: b.title, guest: '', summary: b.summary, takeaways: [], url: b.url });
+  });
+  if (longforms.length) {
     html += '<div class="news-section">';
-    html += '  <div class="news-section-label">本周值得听的播客</div>';
-    data.podcasts.forEach(function(p) {
+    html += '  <div class="news-section-label">本周值得花时间看的内容</div>';
+    longforms.forEach(function(item) {
       html += '<div class="longform-card">';
       html += '  <div class="longform-meta">';
-      html += '    <span class="longform-meta-tag">PODCAST</span>';
-      if (p.name) html += '<span class="longform-meta-tag">' + escapeHtml(p.name) + '</span>';
+      html += '    <span class="longform-meta-tag">' + escapeHtml(item.type) + '</span>';
+      if (item.name) html += '<span class="longform-meta-tag">' + escapeHtml(item.name) + '</span>';
       html += '  </div>';
-      html += '  <div class="longform-title">' + escapeHtml(p.title || '') + '</div>';
-      if (p.guest) html += '<div class="longform-guest">嘉宾：' + escapeHtml(p.guest) + '</div>';
-      if (p.keyTakeaways && p.keyTakeaways.length) {
+      html += '  <div class="longform-title">' + escapeHtml(item.title || '') + '</div>';
+      if (item.guest) html += '<div class="longform-guest">嘉宾：' + escapeHtml(item.guest) + '</div>';
+      if (item.summary) html += '<div class="longform-summary">' + escapeHtml(item.summary) + '</div>';
+      if (item.takeaways && item.takeaways.length) {
         html += '  <div class="longform-takeaways">';
-        p.keyTakeaways.forEach(function(t) {
+        item.takeaways.forEach(function(t) {
           html += '<div class="longform-takeaway">' + escapeHtml(t) + '</div>';
         });
         html += '  </div>';
       }
-      if (p.url) {
-        html += '<a class="longform-link" href="' + escapeHtml(p.url) + '" target="_blank" rel="noopener">收听原文 →</a>';
-      }
-      html += '</div>';
-    });
-    html += '</div>';
-  }
-
-  // ---- 本周博客 ----
-  if (data.blogs && data.blogs.length) {
-    html += '<div class="news-section">';
-    html += '  <div class="news-section-label">本周值得读的博客</div>';
-    data.blogs.forEach(function(b) {
-      html += '<div class="longform-card">';
-      html += '  <div class="longform-meta">';
-      html += '    <span class="longform-meta-tag">BLOG</span>';
-      if (b.name) html += '<span class="longform-meta-tag">' + escapeHtml(b.name) + '</span>';
-      html += '  </div>';
-      html += '  <div class="longform-title">' + escapeHtml(b.title || '') + '</div>';
-      if (b.summary) html += '<div class="longform-summary">' + escapeHtml(b.summary) + '</div>';
-      if (b.url) {
-        html += '<a class="longform-link" href="' + escapeHtml(b.url) + '" target="_blank" rel="noopener">阅读原文 →</a>';
+      if (item.url) {
+        html += '<a class="longform-link" href="' + escapeHtml(item.url) + '" target="_blank" rel="noopener">' + item.label + '</a>';
       }
       html += '</div>';
     });
