@@ -1,0 +1,87 @@
+{
+  "week": "2026-W25",
+  "range": { "start": "2026-06-15", "end": "2026-06-21" },
+  "generatedAt": "2026-06-15T08:55:00+08:00",
+  "trends": [
+    {
+      "title": "AI模型出口管制来了",
+      "summary": "Fable模型被美国政府限制出口，引发行业大讨论。这事儿的核心不是某个模型能不能用，而是监管开始直接卡模型层，不是卡应用层。如果这个口子一开，以后每个新模型发布都可能要跟政府掰扯好几个月。",
+      "implication": "输入法这种出海产品，如果底层大模型被管控，可能会被迫切换模型供应商。模型路由能力（能灵活切换不同模型）会变成刚需。",
+      "evidence": [
+        { "type": "tweet", "who": "Aaron Levie (Box CEO)", "url": "https://x.com/levie/status/2065842361834651996", "quote": "如果这种范式3年前就存在，我们现在大概还卡在GPT-4水平（If this paradigm had existed 3 years ago, we'd likely currently be stuck on GPT-4 level intelligence）" },
+        { "type": "tweet", "who": "Amjad Masad (Replit CEO)", "url": "https://x.com/amasad/status/2065838585358745653", "quote": "感觉我们在被心理操控，背后有更大的图谋（Feels like we're getting psyoped. The end-game here is something bigger）" }
+      ]
+    },
+    {
+      "title": "AI模型路由成新赛道",
+      "summary": "Aaron Levie 提出模型路由层会大幅升值：不同任务用不同模型，省钱又高效。前沿模型负责规划和审核，便宜模型干活；不同模型各有所长，能按需切换才是真优势；万一某个模型被监管卡住，还能快速切到备选。",
+      "implication": "输入法的AI助手如果能智能路由——简单问答用小模型、复杂创作用大模型——既省成本又提速度，这在端侧场景里很实际。",
+      "evidence": [
+        { "type": "tweet", "who": "Aaron Levie (Box CEO)", "url": "https://x.com/levie/status/2065989559905812973", "quote": "能有效在模型之间做路由，会越来越成为AI应用层的战略优势（It's going to increasingly be a strategic advantage for the applied AI layer that they can effectively route between models）" },
+        { "type": "tweet", "who": "Dan Shipper (Every CEO)", "url": "https://x.com/danshipper/status/2065856703397278060", "quote": "Fable被禁前后，Claude App和Codex App使用量的对比（before and after fable ban: my claude app vs. codex app usage）" }
+      ]
+    },
+    {
+      "title": "AI Agent开始自主注册服务",
+      "summary": "Peter Steinberger 发现Codex在执行任务时自己去注册了网络服务，甚至触发了PayPal验证短信，他还以为是账号被盗了。AI Agent已经不只是在聊天框里回答问题了，它能自己去开账号、签协议，这带来了全新的安全和信任问题。",
+      "implication": "输入法的AI助手如果具备Agent能力，用户必须清楚知道AI在替自己做什么操作。权限边界和操作确认机制会成为体验设计的核心。",
+      "evidence": [
+        { "type": "tweet", "who": "Peter Steinberger (OpenClaw+OpenAI)", "url": "https://x.com/steipete/status/2065997212015067508", "quote": "收到PayPal验证短信以为被盗了，结果是Codex自己注册了一个它需要的服务（Got a PayPal verification text and thought I been hacked, but it was just codex signing up for a web service it needed）" },
+        { "type": "tweet", "who": "Thibault Sottiaux (OpenAI Codex)", "url": "https://x.com/thsottiaux/status/2066022651760721931", "quote": "嗨我是Tibo，我刚发现了Codex，随便问（Hi, I'm Tibo and I just discovered Codex. AMA）" }
+      ]
+    }
+  ],
+  "builders": [
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "Box CEO",
+      "highlights": [
+        { "summary": "分析了Fable出口管制的深层影响：在模型层做监管会导致AI发布积压、行业减速，应该管应用层而非模型层", "url": "https://x.com/levie/status/2065842361834651996" },
+        { "summary": "提出模型路由层的三大价值：降本（不同任务用不同模型）、提效（各模型各有所长）、避险（某个模型被卡能快速切换）", "url": "https://x.com/levie/status/2065989559905812973" }
+      ]
+    },
+    {
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "OpenClaw + OpenAI",
+      "highlights": [
+        { "summary": "Codex自主注册网络服务触发PayPal验证短信，暴露了AI Agent的权限边界问题", "url": "https://x.com/steipete/status/2065997212015067508" },
+        { "summary": "芯片短缺正在失控，暗示AI算力供应链持续紧张", "url": "https://x.com/steipete/status/2065998839467933862" }
+      ]
+    },
+    {
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "role": "Y Combinator President & CEO",
+      "highlights": [
+        { "summary": "AI领域大多数人还在拿旧地图找新大陆——别看地图了，走出去自己画", "url": "https://x.com/garrytan/status/2065877443874038203" },
+        { "summary": "模型的意义应该来自更多人实际使用后的判断，而不是靠符号和标签", "url": "https://x.com/garrytan/status/2065791421362352476" }
+      ]
+    },
+    {
+      "name": "Madhu Guru",
+      "handle": "realmadhuguru",
+      "role": "前Google Gemini产品负责人",
+      "highlights": [
+        { "summary": "发前沿模型不像发传统软件——你面对的是个黑盒，有无限用途和无限出错方式，能力每增加一点，有用场景和滥用风险同时扩大", "url": "https://x.com/realmadhuguru/status/2065911676000752122" }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "No Priors",
+      "title": "Biohub：生物学的未来是开源的（Biohub: The Future of Biology is Open-Source）",
+      "guest": "Mark Zuckerberg, Priscilla Chan, Alex Rives",
+      "url": "https://www.youtube.com/@NoPriorsPodcast",
+      "keyTakeaways": [
+        "Biohub的核心策略是开源——把工具交给整个科学社区，比自己关起门做影响更大",
+        "已经折叠了超过11亿个蛋白质并预测结构，但模型不是为抗体或特定靶点设计的，而是理解蛋白质本身",
+        "如果能设计蛋白质来改变生理机能，就真的能治病——从理解机制到精准干预",
+        "需要发明全新的科学方法来产出数据，不是花钱找工厂就能搞定的",
+        "目标不是直接治愈疾病，而是加速整个科学领域的进步速度"
+      ]
+    }
+  ],
+  "blogs": []
+}
