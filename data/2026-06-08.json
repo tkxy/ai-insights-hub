@@ -1,0 +1,228 @@
+{
+  "date": "2026-06-08",
+  "generated_at": "2026-06-15T08:37:36+08:00",
+  "daily_summary": "苹果WWDC 2026正式开幕，这是库克作为CEO主持的最后一届WWDC。苹果发布全新Siri AI，由Apple Intelligence驱动，深度整合Gemini技术，从语音命令工具升级为跨平台系统级Agent。新系统iOS 27/macOS 27等着重提升性能与稳定性，app启动速度提升30%。OpenAI更新ChatGPT应用体验，新增交互式图表、全屏写作、邮件直发功能。ChatGPT连接应用新增权限管理。Aviva利用AI阻止2.3亿英镑保险欺诈。",
+  "design_insights": [
+    {
+      "title": "Siri AI从命令工具到意图Agent的范式转变",
+      "summary": "苹果Siri AI不再是简单的语音命令执行器，而是能理解个人上下文、跨App执行复杂任务的系统级Agent。用户通过自然语言即可完成查询、日程安排、邮件撰写等多步骤任务。",
+      "implication": "输入法产品应从单纯文字输入工具向意图理解Agent方向演进。可参考Siri AI的跨App执行能力，让输入法在用户输入时主动预判意图并提供上下文相关的快捷操作入口。",
+      "sources": [
+        "Apple Newsroom",
+        "澎湃新闻"
+      ],
+      "source_urls": [
+        "https://www.apple.com.cn/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/"
+      ],
+      "tags": [
+        "语音助手",
+        "Agent",
+        "意图驱动",
+        "苹果"
+      ]
+    },
+    {
+      "title": "ChatGPT交互式图表：AI对话中的数据可视化",
+      "summary": "ChatGPT新增交互式图表功能，可在对话中直接生成柱状图、折线图、饼图等可视化内容，用户无需离开对话界面即可理解数据趋势。",
+      "implication": "输入法AI助手可探索在对话或写作场景中嵌入轻量级数据可视化能力，让用户在输入过程中快速生成简单图表，提升信息表达效率。",
+      "sources": [
+        "OpenAI Release Notes"
+      ],
+      "source_urls": [
+        "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+      ],
+      "tags": [
+        "数据可视化",
+        "对话交互",
+        "ChatGPT"
+      ]
+    },
+    {
+      "title": "灵动岛交互：系统级AI入口的设计范式",
+      "summary": "Siri AI通过灵动岛向下滑动调用，回复显示在灵动岛区域，实现了AI助手与系统UI的无缝融合，不打断用户当前操作。",
+      "implication": "输入法作为系统级组件，应学习灵动岛的非侵入式交互设计。可在键盘区域设计类似的AI入口，让用户在输入过程中无需切换上下文即可获取AI辅助。",
+      "sources": [
+        "网易新闻",
+        "21经济网"
+      ],
+      "source_urls": [
+        "https://c.m.163.com/news/a/KUVMEPH60512830U.html"
+      ],
+      "tags": [
+        "灵动岛",
+        "非侵入式交互",
+        "系统级AI"
+      ]
+    },
+    {
+      "title": "全屏写作模式：长文本创作的沉浸式体验",
+      "summary": "ChatGPT推出全屏写作模式，支持文档保存到Library、目录导航、撤销重做等功能，将AI对话从短问答扩展到长文档创作场景。",
+      "implication": "输入法可探索长文本辅助写作场景，当检测到用户在进行长篇写作时，提供写作助手模式，包括大纲生成、段落优化、文档结构建议等功能。",
+      "sources": [
+        "OpenAI Release Notes"
+      ],
+      "source_urls": [
+        "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+      ],
+      "tags": [
+        "写作工具",
+        "沉浸式",
+        "长文本"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "跨App意图执行的输入法Agent化",
+      "pain_point": "用户完成复杂任务需要在多个App间频繁切换，如查信息→写邮件→添日历→发消息",
+      "opportunity": "参考Siri AI的跨App能力，输入法可作为意图入口，用户在任何输入框中描述需求，输入法Agent自动调用系统能力完成任务",
+      "priority": "high",
+      "evidence": "苹果WWDC演示中，Siri通过自然语言一次性完成查询照片→识别地点→调用地图→查找联系人消息→规划路线的完整链路"
+    },
+    {
+      "title": "AI辅助邮件撰写的输入场景",
+      "pain_point": "用户在移动端撰写正式邮件时，措辞困难、格式不规范，需要反复修改",
+      "opportunity": "ChatGPT新增直接发送邮件功能说明AI写作→发送的一站式需求强烈，输入法可在邮件App中提供上下文感知的写作辅助",
+      "priority": "medium",
+      "evidence": "ChatGPT为Plus/Pro用户开放Gmail/Outlook邮件直发，验证了AI-to-action的商业价值"
+    },
+    {
+      "title": "个性化AI记忆的输入习惯学习",
+      "pain_point": "AI助手每次对话都需要重新建立上下文，用户重复说明偏好和背景信息",
+      "opportunity": "ChatGPT升级Memory功能，自动维护用户偏好。输入法同样可学习用户输入习惯、常用表达、个人偏好，提供越来越精准的联想和建议",
+      "priority": "medium",
+      "evidence": "ChatGPT Memory升级为自动更新，Plus/Pro用户记忆容量翻倍，验证了持续个性化的用户价值"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "苹果WWDC 2026发布全新Siri AI，深度整合Apple Intelligence",
+      "summary": "苹果发布由Apple Intelligence驱动的Siri AI，从语音命令工具升级为跨平台系统级Agent，支持跨App任务执行、屏幕内容理解、连续对话。这是库克最后一届WWDC。",
+      "source": "Apple Newsroom",
+      "source_urls": [
+        "https://www.apple.com.cn/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/"
+      ],
+      "tags": [
+        "苹果",
+        "Siri AI",
+        "WWDC"
+      ]
+    },
+    {
+      "title": "苹果与谷歌深度合作，Gemini技术驱动新一代苹果基础模型",
+      "summary": "苹果官方确认与谷歌合作引入Gemini系列模型技术，打造Apple Foundation Model(AFM)，既能在设备端运行也支持服务器端推理。",
+      "source": "新浪财经",
+      "source_urls": [
+        "https://finance.sina.com.cn/wm/2026-06-09/doc-iniauvas6490904.shtml"
+      ],
+      "tags": [
+        "苹果",
+        "谷歌",
+        "Gemini"
+      ]
+    },
+    {
+      "title": "ChatGPT应用体验大更新：交互式图表、全屏写作、邮件直发",
+      "summary": "OpenAI更新ChatGPT Web/iOS/Android版本，新增对话内交互式图表、长对话目录导航、全屏写作编辑器，Plus用户可直接通过ChatGPT发送Gmail/Outlook邮件。",
+      "source": "OpenAI Release Notes",
+      "source_urls": [
+        "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+      ],
+      "tags": [
+        "OpenAI",
+        "ChatGPT",
+        "产品更新"
+      ]
+    },
+    {
+      "title": "ChatGPT模型选择器简化：Thinking改名为Medium/High/Extra High",
+      "summary": "OpenAI简化ChatGPT模型选择器，Thinking Standard改为Medium，Extended改为High，Heavy改为Extra High，Thinking Light被移除。",
+      "source": "OpenAI Help Center",
+      "source_urls": [
+        "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+      ],
+      "tags": [
+        "OpenAI",
+        "产品设计"
+      ]
+    },
+    {
+      "title": "OpenAI Codex iOS更新：支持分支选择、环境脚本、内联评论",
+      "summary": "OpenAI Codex移动端新增工作树支持、Codex档案页面（含使用统计和token图表）、目标管理功能以及代码审查内联评论。",
+      "source": "OpenAI Release Notes",
+      "source_urls": [
+        "https://support.openai.com/products/release-notes/"
+      ],
+      "tags": [
+        "OpenAI",
+        "Codex",
+        "开发工具"
+      ]
+    },
+    {
+      "title": "Aviva利用AI阻止2.3亿英镑保险欺诈",
+      "summary": "英国保险巨头Aviva部署AI系统检测复杂保险欺诈，成功阻止超过2.3亿英镑的欺诈索赔，AI在金融风控领域的应用持续深化。",
+      "source": "AI News",
+      "source_urls": [
+        "https://www.artificialintelligence-news.com/"
+      ],
+      "tags": [
+        "AI金融",
+        "风控",
+        "保险"
+      ]
+    },
+    {
+      "title": "iOS 27系统性能大幅提升：App启动快30%，拍照加载快70%",
+      "summary": "苹果2027版软件重点提升性能：App启动速度提升30%、拍照后照片加载速度提升70%、AirDrop传输速度提升80%，网络切换更流畅。",
+      "source": "Apple Newsroom",
+      "source_urls": [
+        "https://www.apple.com.cn/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/"
+      ],
+      "tags": [
+        "苹果",
+        "性能优化",
+        "iOS"
+      ]
+    },
+    {
+      "title": "苹果推出全新家长控制功能：AI时代的儿童数字安全",
+      "summary": "WWDC发布新的儿童账户系统、通信安全暴力内容过滤、娱乐/游戏/社交App每日时间额度，由儿童发展专家参与设计。",
+      "source": "Apple Newsroom",
+      "source_urls": [
+        "https://www.apple.com.cn/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/"
+      ],
+      "tags": [
+        "苹果",
+        "儿童安全",
+        "家长控制"
+      ]
+    },
+    {
+      "title": "苹果Siri AI独立应用上线：对话历史iCloud同步",
+      "summary": "Siri AI推出独立应用，用户可查阅过往对话记录、发起新对话，对话历史通过iCloud在所有设备间私密同步。",
+      "source": "澎湃新闻",
+      "source_urls": [
+        "https://www.thepaper.cn/newsDetail_forward_33339102"
+      ],
+      "tags": [
+        "苹果",
+        "Siri AI",
+        "跨设备"
+      ]
+    },
+    {
+      "title": "Safari Notify Me功能：网页变更智能监控",
+      "summary": "苹果Safari浏览器新增Notify Me功能，用户可让浏览器自动关注网页变更（如产品补货、降价），实现被动信息获取的智能化。",
+      "source": "Apple Newsroom",
+      "source_urls": [
+        "https://www.apple.com.cn/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/"
+      ],
+      "tags": [
+        "苹果",
+        "Safari",
+        "信息监控"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "date": "2026-06-10",
+  "generated_at": "2026-06-15T08:37:36+08:00",
+  "daily_summary": "Anthropic Fable 5正式全面上线，钛媒体等深度解读其分层发售策略（普通用户Fable，受信任者Mythos）。OpenAI宣布ChatGPT进入广告时代，6月22日起Free/Go用户将看到赞助内容。苹果Siri AI引发全球热议：从WWDC解读AI时代4大人机交互趋势——意图驱动、个性化定制、世界模型初现、自然语言主流化。CHI 2026最佳论文提名IAI模型提出AI交互不止prompt。Anthropic CEO呼吁政府有权阻止高风险AI模型部署。",
+  "design_insights": [
+    {
+      "title": "WWDC揭示AI时代四大人机交互趋势",
+      "summary": "设计师从WWDC 2026总结出四大交互趋势：意图优先（自然语言驱动）、个性化定制成为基础能力、世界模型应用初见端倪（空间构图、3D理解）、自然语言交互成为主流入口。",
+      "implication": "输入法正处于这四大趋势的交汇点：它是自然语言的第一入口，可承载个性化定制，可接入世界模型理解用户意图。产品规划应围绕'意图理解→智能执行→个性化适应'的完整链路设计。",
+      "sources": [
+        "优设",
+        "UISDC"
+      ],
+      "source_urls": [
+        "https://www.uisdc.com/wwdc-26-2"
+      ],
+      "tags": [
+        "交互趋势",
+        "意图驱动",
+        "WWDC"
+      ]
+    },
+    {
+      "title": "CHI 2026 IAI模型：AI交互不止写prompt",
+      "summary": "微软亚洲研究院+港科大提出IAI(Interaction-Augmented Instruction)模型，核心论点：AI时代的交互应是'prompt+各种交互形态'的混合体，顶级PM的功力在于知道何时给对话框、何时给物理按钮。",
+      "implication": "输入法AI功能不应仅依赖对话框交互。应设计混合交互模式：短文本用候选词联想，复杂需求用对话，频繁操作用快捷手势。从Prompt Engineering走向Instruction Design。",
+      "sources": [
+        "人人都是产品经理"
+      ],
+      "source_urls": [
+        "https://www.woshipm.com/ai/6405744.html"
+      ],
+      "tags": [
+        "交互设计",
+        "CHI论文",
+        "混合交互"
+      ]
+    },
+    {
+      "title": "ChatGPT广告化：免费AI产品的商业化设计博弈",
+      "summary": "OpenAI宣布6月22日起在ChatGPT免费版投放上下文广告，基于聊天内容进行个性化推荐，标注为'赞助内容'。付费用户不受影响。",
+      "implication": "输入法商业化可参考ChatGPT的分层策略：基础功能免费+非侵入式上下文推荐，高级AI功能付费无广告。但需注意广告与AI建议的界限要清晰，避免用户对AI推荐的信任危机。",
+      "sources": [
+        "SegmentFault"
+      ],
+      "source_urls": [
+        "https://segmentfault.com/a/1190000047843400"
+      ],
+      "tags": [
+        "商业化",
+        "广告",
+        "分层定价"
+      ]
+    },
+    {
+      "title": "AI原生设计系统重构：SITS 2026三大设计信条",
+      "summary": "SITS 2026提出AI原生设计三大信条：意图优先、渐进式代理、可信可溯交互。传统表单被语义化输入层替代，AI从被封装隐藏的能力变为界面的第一公民。",
+      "implication": "输入法应将AI从隐藏在设置菜单中的'辅助功能'提升为键盘界面的第一公民。输入框本身就是语义化输入层，AI理解应实时可见、结果可追溯。",
+      "sources": [
+        "CSDN/SITS 2026"
+      ],
+      "source_urls": [
+        "http://www.hqwc.cn/a/2134203.html"
+      ],
+      "tags": [
+        "设计系统",
+        "AI原生",
+        "意图优先"
+      ]
+    },
+    {
+      "title": "交互的终局是透明：从LUI走向Intent-Centric",
+      "summary": "产品评论指出：下一代AI产品的竞争不在于谁的对话框更好看，而在于谁能让用户感知不到界面的存在却精准交付结果。从LUI走向Intent-Centric是真正的战场。",
+      "implication": "输入法的终极形态可能是'消失的界面'——用户只需表达意图，输入法在后台完成理解、执行、交付，无需用户感知中间过程。这与输入法'从工具到Agent'的方向完全一致。",
+      "sources": [
+        "人人都是产品经理"
+      ],
+      "source_urls": [
+        "https://www.woshipm.com/ai/6405744.html"
+      ],
+      "tags": [
+        "产品哲学",
+        "透明交互",
+        "Intent-Centric"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "AI推荐与广告的信任边界设计",
+      "pain_point": "当AI对话中出现赞助内容时，用户难以区分AI真实建议和付费推广，可能伤害对AI的信任",
+      "opportunity": "输入法如果引入商业化推荐，需要设计清晰的信任标识系统。可探索'AI推荐'vs'赞助推荐'的视觉差异化设计",
+      "priority": "medium",
+      "evidence": "ChatGPT 6月22日上线广告，标注'赞助内容'与AI回答视觉区分；行业顾虑AI选购不符需求引发纠纷"
+    },
+    {
+      "title": "混合交互模式替代纯对话框",
+      "pain_point": "用户在输入法场景中使用纯对话式AI效率低——需要打字描述简单需求，不如直接点选",
+      "opportunity": "参考IAI模型，设计prompt+点选+手势的混合交互。高频操作用快捷入口，低频复杂需求用对话，实现效率最大化",
+      "priority": "high",
+      "evidence": "CHI 2026最佳论文提名IAI模型证明混合交互优于纯对话；苹果Siri结合视觉+语音+点击的多模态交互"
+    },
+    {
+      "title": "世界模型赋能输入法的空间理解能力",
+      "pain_point": "用户拍照分享时需要手动描述图片内容，AI无法主动理解图片的空间和语境信息",
+      "opportunity": "参考苹果空间构图和Vision Pro的世界模型能力，输入法可在用户分享图片时主动理解内容并建议相关文字描述",
+      "priority": "low",
+      "evidence": "WWDC展示空间构图功能和Vision Pro 3D Siri交互，世界模型从实验走向产品化"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Anthropic Fable 5分层发售策略详解：普通用户Fable，受信任者Mythos",
+      "summary": "钛媒体深度解读Fable 5分层发售逻辑：同一底层模型，Fable加安全壳公开发布，敏感领域自动回退Opus 4.8；Mythos解除护栏仅对Project Glasswing伙伴开放。定价$10/$50每百万token。",
+      "source": "钛媒体",
+      "source_urls": [
+        "https://www.tmtpost.com/8021845.html"
+      ],
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "分层发布"
+      ]
+    },
+    {
+      "title": "OpenAI宣布ChatGPT进入广告时代，6月22日上线",
+      "summary": "OpenAI更新隐私政策，6月22日起Free/Go用户将看到基于聊天上下文的赞助内容。Plus/Pro/Enterprise用户不受影响。广告个性化默认开启可手动关闭。",
+      "source": "SegmentFault",
+      "source_urls": [
+        "https://segmentfault.com/a/1190000047843400"
+      ],
+      "tags": [
+        "OpenAI",
+        "广告",
+        "商业化"
+      ]
+    },
+    {
+      "title": "WWDC 2026解读：AI时代4大人机交互趋势",
+      "summary": "设计师从WWDC总结四大趋势：意图优先交互、个性化定制基础化、世界模型初见端倪、自然语言交互主流化。苹果将AI接入所有原生应用和第三方App Intents。",
+      "source": "优设UISDC",
+      "source_urls": [
+        "https://www.uisdc.com/wwdc-26-2"
+      ],
+      "tags": [
+        "WWDC",
+        "交互趋势",
+        "设计"
+      ]
+    },
+    {
+      "title": "Siri AI被评为'苹果版豆包手机'：系统级Agent终于落地",
+      "summary": "21经济网评论称新Siri如同去年豆包手机的系统级AI能力，具备个人情境理解、图像理解、世界知识、屏幕感知、App调用五大能力。",
+      "source": "21经济网",
+      "source_urls": [
+        "https://www.21jingji.com/article/20260610/herald/6a7b1d5d4b3e444955442ecd2b6646e2.html"
+      ],
+      "tags": [
+        "苹果",
+        "Siri AI",
+        "Agent"
+      ]
+    },
+    {
+      "title": "Anthropic CEO呼吁政府有权阻止高风险AI模型部署",
+      "summary": "Anthropic CEO主张借鉴汽车行业监管模式，呼吁政府有权阻止高风险AI模型部署。Mythos网络安全模型采用'门控式发布'策略。",
+      "source": "钛媒体",
+      "source_urls": [
+        "https://www.tmtpost.com/8023189.html"
+      ],
+      "tags": [
+        "AI监管",
+        "Anthropic",
+        "政策"
+      ]
+    },
+    {
+      "title": "CHI 2026论文：AI交互从Prompt Engineering走向Instruction Design",
+      "summary": "微软亚研+港科大IAI模型获CHI最佳论文提名，提出AI交互应是prompt+各种交互形态的混合体，从教用户写prompt到设计工具+情境+控件。",
+      "source": "人人都是产品经理",
+      "source_urls": [
+        "https://www.woshipm.com/ai/6405744.html"
+      ],
+      "tags": [
+        "学术",
+        "交互设计",
+        "CHI"
+      ]
+    },
+    {
+      "title": "SITS 2026提出AI原生设计三大信条：意图优先、渐进代理、可信可溯",
+      "summary": "SITS 2026会议提出AI原生用户体验设计新范式：传统表单被语义化输入层替代，智能成为界面第一公民，用户输入时系统实时推演意图。",
+      "source": "CSDN",
+      "source_urls": [
+        "http://www.hqwc.cn/a/2134203.html"
+      ],
+      "tags": [
+        "设计大会",
+        "AI原生",
+        "UX趋势"
+      ]
+    },
+    {
+      "title": "谷歌转向Intel代工TPU芯片，2028年预计超300万颗",
+      "summary": "谷歌将TPU芯片代工转向Intel，计划2028年生产超300万颗，减少对台积电的依赖，芯片供应链多元化。",
+      "source": "AI前沿早报",
+      "source_urls": [
+        "https://www.toutiao.com/article/7649550962029511202/"
+      ],
+      "tags": [
+        "谷歌",
+        "芯片",
+        "Intel"
+      ]
+    },
+    {
+      "title": "Perplexity逆势而行，计划2028年正式IPO",
+      "summary": "AI搜索引擎Perplexity宣布计划2028年IPO，与大多数AI公司2025-2026集中上市的节奏不同，选择延后上市以积累更多商业验证。",
+      "source": "AI前沿早报",
+      "source_urls": [
+        "https://www.toutiao.com/article/7649550962029511202/"
+      ],
+      "tags": [
+        "Perplexity",
+        "IPO",
+        "AI搜索"
+      ]
+    },
+    {
+      "title": "AI原生UX设计实操指南2026：输入设计、输出设计与对话式UI",
+      "summary": "专业UX指南指出2026年AI产品交互趋势：减少首次输入认知负荷、流式输出成标配、对话不是全部而是入口、个性化必须透明可控。",
+      "source": "Wavespace",
+      "source_urls": [
+        "https://www.wavespace.agency/blog/ux-design-for-ai-products"
+      ],
+      "tags": [
+        "UX设计",
+        "AI产品",
+        "设计指南"
+      ]
+    }
+  ]
+}
