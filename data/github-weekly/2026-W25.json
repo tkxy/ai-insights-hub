@@ -1,0 +1,521 @@
+{
+  "week": "2026-W25",
+  "range": {
+    "start": "2026-06-15",
+    "end": "2026-06-21"
+  },
+  "generatedAt": "2026-06-22T01:07:38.508028+00:00",
+  "count": 20,
+  "items": [
+    {
+      "name": "chopratejas/headroom",
+      "title": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "url": "https://github.com/chopratejas/headroom",
+      "stars": 44411,
+      "weeklyStars": 16102,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "AI 工程的瓶颈正在从模型能力转向上下文成本。能压缩日志、工具输出和 RAG chunk 的项目走热，说明开发者开始认真治理「给模型看的信息」，而不是一味堆更大的上下文窗口。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "Panniantong/Agent-Reach",
+      "title": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "stars": 36866,
+      "weeklyStars": 8233,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "Agent 正在从聊天窗口走向主动触达和任务执行。值得关注的是它如何把用户目标、外部渠道和自动行动串起来，而不是又做一个问答机器人。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "iptv-org/iptv",
+      "title": "Collection of publicly available IPTV channels from all over the world",
+      "url": "https://github.com/iptv-org/iptv",
+      "stars": 127127,
+      "weeklyStars": 7266,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "其他",
+      "insight": "iptv 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
+      "cases": [
+        {
+          "name": "技术选型参考",
+          "desc": "了解该领域最新技术方向和社区趋势"
+        },
+        {
+          "name": "团队分享素材",
+          "desc": "适合作为技术分享或设计组内部交流的案例"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "DeusData/codebase-memory-mcp",
+      "title": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "stars": 10280,
+      "weeklyStars": 6372,
+      "forks": 0,
+      "language": "C",
+      "topics": [],
+      "category": "其他",
+      "insight": "AI 工程的瓶颈正在从模型能力转向上下文成本。能压缩日志、工具输出和 RAG chunk 的项目走热，说明开发者开始认真治理「给模型看的信息」，而不是一味堆更大的上下文窗口。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "addyosmani/agent-skills",
+      "title": "Production-grade engineering skills for AI coding agents.",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "stars": 64768,
+      "weeklyStars": 5610,
+      "forks": 0,
+      "language": "Shell",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "Agent 产品竞争开始进入「运行框架」阶段。社区关注的不再只是接哪个模型，而是技能、记忆、安全、评估这些让 Agent 长期稳定工作的底层系统。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "google-research/timesfm",
+      "title": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
+      "url": "https://github.com/google-research/timesfm",
+      "stars": 24886,
+      "weeklyStars": 4114,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "其他",
+      "insight": "timesfm 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
+      "cases": [
+        {
+          "name": "技术选型参考",
+          "desc": "了解该领域最新技术方向和社区趋势"
+        },
+        {
+          "name": "团队分享素材",
+          "desc": "适合作为技术分享或设计组内部交流的案例"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "NVIDIA/SkillSpector",
+      "title": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks.",
+      "url": "https://github.com/NVIDIA/SkillSpector",
+      "stars": 9029,
+      "weeklyStars": 4055,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "Agent 产品竞争开始进入「运行框架」阶段。社区关注的不再只是接哪个模型，而是技能、记忆、安全、评估这些让 Agent 长期稳定工作的底层系统。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "freeCodeCamp/freeCodeCamp",
+      "title": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "stars": 450075,
+      "weeklyStars": 3294,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "其他",
+      "insight": "freeCodeCamp 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "calesthio/OpenMontage",
+      "title": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "stars": 8742,
+      "weeklyStars": 2867,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "Agent 产品竞争开始进入「运行框架」阶段。社区关注的不再只是接哪个模型，而是技能、记忆、安全、评估这些让 Agent 长期稳定工作的底层系统。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "chatwoot/chatwoot",
+      "title": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
+      "url": "https://github.com/chatwoot/chatwoot",
+      "stars": 33119,
+      "weeklyStars": 2036,
+      "forks": 0,
+      "language": "Ruby",
+      "topics": [],
+      "category": "其他",
+      "insight": "chatwoot 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
+      "cases": [
+        {
+          "name": "技术选型参考",
+          "desc": "了解该领域最新技术方向和社区趋势"
+        },
+        {
+          "name": "团队分享素材",
+          "desc": "适合作为技术分享或设计组内部交流的案例"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "asgeirtj/system_prompts_leaks",
+      "title": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "stars": 44398,
+      "weeklyStars": 1984,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "system_prompts_leaks 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "Prompt 工程优化",
+          "desc": "系统提示词的管理、版本控制和 A/B 测试"
+        },
+        {
+          "name": "AI 应用调优",
+          "desc": "通过 prompt 模板提升生成质量和一致性"
+        },
+        {
+          "name": "团队 Prompt 库",
+          "desc": "跨团队共享和复用高质量提示词"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "n0-computer/iroh",
+      "title": "IP addresses break, dial keys instead. Modular networking stack in Rust.",
+      "url": "https://github.com/n0-computer/iroh",
+      "stars": 10449,
+      "weeklyStars": 1712,
+      "forks": 0,
+      "language": "Rust",
+      "topics": [],
+      "category": "其他",
+      "insight": "iroh 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
+      "cases": [
+        {
+          "name": "技术选型参考",
+          "desc": "了解该领域最新技术方向和社区趋势"
+        },
+        {
+          "name": "团队分享素材",
+          "desc": "适合作为技术分享或设计组内部交流的案例"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "makeplane/plane",
+      "title": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
+      "url": "https://github.com/makeplane/plane",
+      "stars": 52347,
+      "weeklyStars": 1514,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "其他",
+      "insight": "plane 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
+      "cases": [
+        {
+          "name": "技术选型参考",
+          "desc": "了解该领域最新技术方向和社区趋势"
+        },
+        {
+          "name": "团队分享素材",
+          "desc": "适合作为技术分享或设计组内部交流的案例"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "tursodatabase/turso",
+      "title": "Turso is an in-process SQL database, compatible with SQLite.",
+      "url": "https://github.com/tursodatabase/turso",
+      "stars": 20803,
+      "weeklyStars": 1390,
+      "forks": 0,
+      "language": "Rust",
+      "topics": [],
+      "category": "其他",
+      "insight": "turso 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
+      "cases": [
+        {
+          "name": "技术选型参考",
+          "desc": "了解该领域最新技术方向和社区趋势"
+        },
+        {
+          "name": "团队分享素材",
+          "desc": "适合作为技术分享或设计组内部交流的案例"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "withastro/flue",
+      "title": "The sandbox agent framework.",
+      "url": "https://github.com/withastro/flue",
+      "stars": 6297,
+      "weeklyStars": 1272,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "flue 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "Kong/insomnia",
+      "title": "The open-source, cross-platform API client for GraphQL, REST, WebSockets, SSE and gRPC. With Cloud, Local and Git storage.",
+      "url": "https://github.com/Kong/insomnia",
+      "stars": 39513,
+      "weeklyStars": 1006,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "其他",
+      "insight": "insomnia 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
+      "cases": [
+        {
+          "name": "技术选型参考",
+          "desc": "了解该领域最新技术方向和社区趋势"
+        },
+        {
+          "name": "团队分享素材",
+          "desc": "适合作为技术分享或设计组内部交流的案例"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "meshery/meshery",
+      "title": "Meshery, the cloud native manager",
+      "url": "https://github.com/meshery/meshery",
+      "stars": 11223,
+      "weeklyStars": 921,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "其他",
+      "insight": "meshery 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
+      "cases": [
+        {
+          "name": "技术选型参考",
+          "desc": "了解该领域最新技术方向和社区趋势"
+        },
+        {
+          "name": "团队分享素材",
+          "desc": "适合作为技术分享或设计组内部交流的案例"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "LMCache/LMCache",
+      "title": "LMCache: Supercharge Your LLM with the Fastest KV Cache Layer",
+      "url": "https://github.com/LMCache/LMCache",
+      "stars": 9543,
+      "weeklyStars": 506,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "LMCache 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "swc-project/swc",
+      "title": "Rust-based platform for the Web",
+      "url": "https://github.com/swc-project/swc",
+      "stars": 34107,
+      "weeklyStars": 403,
+      "forks": 0,
+      "language": "Rust",
+      "topics": [],
+      "category": "其他",
+      "insight": "swc 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
+      "cases": [
+        {
+          "name": "技术选型参考",
+          "desc": "了解该领域最新技术方向和社区趋势"
+        },
+        {
+          "name": "团队分享素材",
+          "desc": "适合作为技术分享或设计组内部交流的案例"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "react/react",
+      "title": "The library for web and native user interfaces.",
+      "url": "https://github.com/react/react",
+      "stars": 245977,
+      "weeklyStars": 0,
+      "forks": 51079,
+      "language": "JavaScript",
+      "topics": [
+        "declarative",
+        "frontend",
+        "javascript",
+        "library",
+        "react"
+      ],
+      "category": "UI / 组件",
+      "insight": "UI 组件项目的热度反映出设计工程化继续加速。现在的组件不只是样式复用，还要承载动效、状态、可访问性和品牌表达。",
+      "cases": [
+        {
+          "name": "设计系统建设",
+          "desc": "企业级组件库的搭建和跨团队规范落地"
+        },
+        {
+          "name": "快速原型搭建",
+          "desc": "用现成组件快速实现产品原型和 Demo"
+        },
+        {
+          "name": "品牌差异化",
+          "desc": "在通用组件上叠加品牌动效和视觉个性"
+        }
+      ],
+      "isNew": false
+    }
+  ]
+}

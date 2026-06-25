@@ -1,0 +1,119 @@
+{
+  "week": "2026-W26",
+  "range": { "start": "2026-06-22", "end": "2026-06-28" },
+  "generatedAt": "2026-06-22T00:55:00.000Z",
+  "trends": [
+    {
+      "title": "开源模型追上前沿",
+      "summary": "GLM-5.2 在编码任务上表现惊艳，连 Vercel CEO 都说「震惊了」。Box CEO 也指出开源权重模型和前沿模型的差距在缩小而不是拉大，这对应用层是好消息——可以用更便宜的模型跑特定任务，前沿模型负责规划和审核。",
+      "implication": "输入法场景可以做成本分层：简单联想用小模型本地跑，复杂理解再调大模型，降低推理成本的同时保证体验。",
+      "evidence": [
+        { "type": "tweet", "who": "Guillermo Rauch (Vercel CEO)", "url": "https://x.com/rauchg/status/2068517095818809770", "quote": "Genuinely impressed, almost shocked, at how good GLM-5.2 is at coding. This changes things." },
+        { "type": "tweet", "who": "Aaron Levie (Box CEO)", "url": "https://x.com/levie/status/2068434042148782515", "quote": "The more that open weights is able to maintain only a marginal gap from the frontier, instead of a widening gap, the more value that can be created with AI." }
+      ]
+    },
+    {
+      "title": "PM 角色正在分裂",
+      "summary": "前 Google 产品负责人 Madhu Guru 提出 PM 分成两派：旧派 PM 用 AI 加速写文档，Builder PM 用 AI 扩大角色覆盖面——直接跑 Agent 做调研、查日志、出原型。Nikunj 也提醒，AI 变化太快，每周都得重新校准认知，多数人还停在几个月前的印象里。",
+      "implication": "输入法团队的 PM 也该从「写需求文档」转向「用 AI 原型验证假设」，工程师对可跑的 demo 反馈远比看文档积极。",
+      "evidence": [
+        { "type": "tweet", "who": "Madhu Guru (前 Google Gemini PM)", "url": "https://x.com/realmadhuguru/status/2068350509027876876", "quote": "Builder PMs use AI to expand their role across the product lifecycle... Their outputs are increasingly prototypes rather than docs." },
+        { "type": "tweet", "who": "Nikunj Kothari (FPV Ventures)", "url": "https://x.com/nikunj/status/2068411460620042720", "quote": "The biggest problem with AI is that priors need to be reset every few weeks... each person needs to have their own evals of hard tasks and weekly tinker time." }
+      ]
+    },
+    {
+      "title": "Anthropic 公开翻车复盘",
+      "summary": "Anthropic 工程博客承认 Claude Code 近期质量下降，原因是三件独立的事：推理努力从 high 降到 medium、会话空闲后清除旧思考的 bug、加上减冗长的 prompt 改动叠加。三个问题在不同时间影响不同用户，看起来像全面退化。同时他们推出 Managed Agents 自托管沙箱和 MCP 隧道——把「大脑」和「手」拆开，agent 在你自己的基础设施里执行。",
+      "implication": "AI 产品做功能迭代时，多改动叠加的「温水煮青蛙」效应很难追踪，需要有版本对照的评估机制。Managed Agents 的「大脑+手」拆分思路，对输入法侧边栏 AI 助手的架构有参考价值。",
+      "evidence": [
+        { "type": "blog", "who": "Anthropic Engineering", "url": "https://www.anthropic.com/engineering/april-23-postmortem", "quote": "Each change affected a different slice of traffic on a different schedule, the aggregate effect looked like broad, inconsistent degradation." },
+        { "type": "blog", "who": "Claude Blog", "url": "https://claude.com/blog/claude-managed-agents-updates", "quote": "The agent loop stays on Anthropic's infrastructure, while tool execution moves to your own configured environment." }
+      ]
+    }
+  ],
+  "builders": [
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "Vercel CEO",
+      "highlights": [
+        { "summary": "GLM-5.2 的编码能力强到让他震惊，直言「这会改变格局」——Vercel CEO 的背书说明开源模型在代码领域已经不是玩具了", "url": "https://x.com/rauchg/status/2068517095818809770" }
+      ]
+    },
+    {
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "OpenAI Codex & ChatGPT 成员",
+      "highlights": [
+        { "summary": "暗示 Codex App 是用「还行」的前端模型做出来的，等前端能力大幅提升后效果会更炸——3143 赞说明社区很期待", "url": "https://x.com/thsottiaux/status/2068568650924409260" }
+      ]
+    },
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "Box CEO",
+      "highlights": [
+        { "summary": "分析了开源权重和前沿模型的关系：差距没拉大反而在缩小，对应用层是大利好，前沿模型负责规划审核、开源模型负责执行特定任务", "url": "https://x.com/levie/status/2068434042148782515" }
+      ]
+    },
+    {
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "role": "FPV Ventures 合伙人",
+      "highlights": [
+        { "summary": "AI 最大的问题是认知更新跟不上变化，建议每人维护自己的评估集并每周动手测试，同时要持续和一线买家对话——双管齐下才能抓住投资方向", "url": "https://x.com/nikunj/status/2068411460620042720" }
+      ]
+    },
+    {
+      "name": "Madhu Guru",
+      "handle": "realmadhuguru",
+      "role": "前 Google Gemini 产品负责人",
+      "highlights": [
+        { "summary": "提出 PM 角色分裂论：旧派 PM 用 AI 加速老工作流，Builder PM 用 AI 扩大角色边界——输出从文档转向原型，工程师对 demo 的反应远比文档积极", "url": "https://x.com/realmadhuguru/status/2068350509027876876" }
+      ]
+    },
+    {
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "role": "独立开发者，哈佛校友",
+      "highlights": [
+        { "summary": "做了个浏览器扩展把收藏的推文像广告一样注入主信息流——利用「已经每天看 50 次」的位置来改变行为，思路很巧", "url": "https://x.com/zarazhangrui/status/2068568920613953626" },
+        { "summary": "指出 AI proactiveness（主动出击）理论上好听但实际很难做对", "url": "https://x.com/zarazhangrui/status/2068509088452071594" }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "Unsupervised Learning",
+      "title": "AI Vibe Check: 实验室大战，API 可能会消失 & 未来预测",
+      "guest": "Ari (Datalogy, 前 DeepMind/Meta), Rob (Radical Ventures)",
+      "url": "https://www.youtube.com/watch?v=W_iO8XxgD_I",
+      "keyTakeaways": [
+        "Fable 发布后的行业反应以及模型能力进展讨论",
+        "一个很辣的预测：计算资源吃紧的情况下，大模型实验室可能砍掉 API 业务，把算力留给自己的产品",
+        "距离 RSI（可靠超级智能）还有多远的讨论",
+        "SpaceX 正在变成 AI 基础设施公司，算力竞争白热化"
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "name": "Anthropic Engineering",
+      "title": "Claude Code 近期质量下降复盘（An update on recent Claude Code quality reports）",
+      "url": "https://www.anthropic.com/engineering/april-23-postmortem",
+      "summary": "Anthropic 承认 Claude Code 质量下降，追查到三个独立问题：推理默认从 high 降到了 medium、会话空闲后清思考的 bug 导致每轮都清、减冗长 prompt 改动伤害了编码质量。三个问题时间错开、影响范围不同，看起来像全面退化其实不是。全部已修复。教训是：多改动叠加的负面效应比想象中更难定位。"
+    },
+    {
+      "name": "Anthropic Engineering",
+      "title": "规模化托管 Agent：把大脑和手拆开（Scaling Managed Agents: Decoupling the brain from the hands）",
+      "url": "https://www.anthropic.com/engineering/managed-agents",
+      "summary": "介绍了 Managed Agents 的设计哲学：参考操作系统的「进程/文件」抽象思路，把 Agent 拆成 session（只追加日志）、harness（调用 Claude 的循环）和 sandbox（执行环境），各组件可独立替换。关键是：随着模型变强，很多之前给 Agent 加的「辅助逻辑」会变成累赘，需要持续清理。"
+    },
+    {
+      "name": "Claude Blog",
+      "title": "Managed Agents 新功能：自托管沙箱和 MCP 隧道（New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels）",
+      "url": "https://claude.com/blog/claude-managed-agents-updates",
+      "summary": "Managed Agents 现在支持自托管沙箱（在 Cloudflare/Daytona/Modal/Vercel 等上跑）和 MCP 隧道（连接企业内部 MCP 服务器）。Agent 的大脑在 Anthropic 基础设施上跑，但工具执行在你自己的环境里，文件和代码不出你的安全边界。企业用户终于可以让 AI Agent 在自己的围栏里干活了。"
+    }
+  ]
+}
