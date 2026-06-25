@@ -2772,7 +2772,63 @@ async function loadWeekData(monday) {
     merged.daily_summary = '';
   }
 
-  return merged._days_loaded > 0 ? merged : null;
+  if (merged._days_loaded > 0) return merged;
+
+  // 兜底：有些周只生成 design-weekly-YYYY-MM-DD.json，没有 7 天日报 JSON。
+  // 这种情况下直接把周汇总映射成 Insight 页需要的数据结构，避免页面空白。
+  try {
+    const weekResp = await fetchWithTimeout('data/design-weekly-' + formatDate(monday) + '.json?t=' + Date.now(), 8000);
+    if (weekResp && weekResp.ok) {
+      const weekly = await weekResp.json();
+      const stages = weekly.stages || {};
+      const toInsight = (item, stageTitle) => ({
+        title: item.title || '',
+        summary: item.sourceDetail || item.insight || '',
+        implication: item.action || item.insight || '',
+        sources: item.source ? [item.source] : [],
+        source_urls: item.sourceUrls || [],
+        tags: item.tags || [],
+        _date: formatDate(monday).slice(5),
+        _stage: stageTitle || ''
+      });
+      const stageItems = (key) => ((stages[key] && stages[key].items) ? stages[key].items : []);
+      const designItems = []
+        .concat(stageItems('research'))
+        .concat(stageItems('design_output'))
+        .concat(stageItems('design_validation'));
+      const demandItems = []
+        .concat(stageItems('user_research'))
+        .concat(stageItems('design_output'))
+        .slice(0, 6);
+      const newsItems = []
+        .concat(stageItems('competitive'))
+        .concat(stageItems('research'));
+
+      merged._days_loaded = 1;
+      merged.daily_summary = weekly.overview || (designItems.slice(0, 3).map(i => i.title).join('；') + '。');
+      merged.design_insights = designItems.map(item => toInsight(item, 'weekly'));
+      merged.demand_mining = demandItems.map(item => ({
+        title: item.title || '',
+        priority: /必须|紧急|P0|高|核心/.test(item.action || item.insight || '') ? '高' : '中',
+        pain_point: item.insight || item.sourceDetail || '',
+        opportunity: item.action || '',
+        evidence: item.sourceDetail || item.source || '',
+        source_urls: (item.sourceUrls || []).map((url, idx) => ({ name: (item.source || '来源') + (idx ? ' ' + (idx + 1) : ''), url: url })),
+        _date: formatDate(monday).slice(5)
+      }));
+      merged.hot_news = newsItems.map(item => ({
+        title: item.title || '',
+        summary: item.insight || item.sourceDetail || '',
+        source: item.source || '',
+        source_urls: item.sourceUrls || [],
+        tags: item.tags || [],
+        _date: formatDate(monday).slice(5)
+      }));
+      return merged;
+    }
+  } catch (e) {}
+
+  return null;
 }
 
 // 判断当前是否在本周
