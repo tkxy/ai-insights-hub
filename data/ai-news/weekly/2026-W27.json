@@ -1,0 +1,135 @@
+{
+  "week": "2026-W27",
+  "range": { "start": "2026-06-29", "end": "2026-07-05" },
+  "generatedAt": "2026-06-29T08:55:00.000Z",
+  "trends": [
+    {
+      "title": "智能体走进日常",
+      "summary": "AI 智能体从「演示 demo」开始变成真实的工作流搭档。Vercel CEO Guillermo 自拍「我和我的 agents」获近千赞，Peter Yang 周六就被自己的 Hermes agent 发来健康周报——agent 自己跑 Withings + Fitbit + 一个 vibe code 出来的健身 MCP 整合数据。Codex 也在升级：长线程顺滑处理、加了可悬停的导航栏、设置搜索覆盖更多选项。",
+      "implication": "输入法侧的 AI 助手不能只当「偶尔帮忙的工具」，要冲着「每天都会主动交付的搭档」去做——把推送、汇总、提醒这些主动行为做扎实，体感会和现在完全不同。",
+      "evidence": [
+        { "type": "tweet", "who": "Guillermo Rauch (Vercel CEO)", "url": "https://x.com/rauchg/status/2070982746080715052", "quote": "Me and my agents" },
+        { "type": "tweet", "who": "Peter Yang", "url": "https://x.com/petergyang/status/2070906940352520477", "quote": "Every Saturday, Hermes sends me a health check email with top takeaways and stats... pulling data from my smart scale, Fitbit, Google Health, and an MCP server and mobile fitness app I vibe coded." },
+        { "type": "tweet", "who": "Thibault Sottiaux (OpenAI Codex)", "url": "https://x.com/thsottiaux/status/2071071289247244481", "quote": "Tons of improvements landed in Codex. Handles super long threads smoothly. Hoverable navigation rail for previewing and jumping between turns." }
+      ]
+    },
+    {
+      "title": "不会写代码也能做产品",
+      "summary": "Zara Zhang 说自己一年前连 GitHub 怎么用都不熟，现在 GitHub 涨了 10k 粉丝，依然写不出手写代码——但她已经在做 side project 解决自己的痛点。Codex 也在被玩出花：有人拿它「跟植物对话」（让 codex 监测植物状态并自动响应）、Sol 操作场景。这意味着 AI 把产品创作的门槛又往下砍了一截。",
+      "implication": "输入法以后面对的「非程序员创作者」只会越来越多：他们会用自然语言描述需求，期待工具能直接产出能跑的小工具或脚本。AI 助手需要把「从想法到可运行的产物」这条路打通，不能只停留在问答层面。",
+      "evidence": [
+        { "type": "tweet", "who": "Zara Zhang (独立开发者)", "url": "https://x.com/zarazhangrui/status/2070982013822333007", "quote": "Last year I barely knew how GitHub worked. Now I have 10k followers on GitHub (and still can't write code by hand). What a year." },
+        { "type": "tweet", "who": "Thibault Sottiaux (OpenAI Codex)", "url": "https://x.com/thsottiaux/status/2071077932244570112", "quote": "Talking to your plants isn't weird anymore. You can just codex things." },
+        { "type": "tweet", "who": "Zara Zhang (独立开发者)", "url": "https://x.com/zarazhangrui/status/2071116793234813272", "quote": "Btw I'm not an engineer; these are all side projects I built for fun. I just love connecting technology with user problems." }
+      ]
+    },
+    {
+      "title": "AI 成本结构成产品壁垒",
+      "summary": "Box CEO Aaron Levie 说现在 AI 推理成本优化「离不开对底层工作流的深刻理解」——不是简单调调参数就行。Swyx 提了另一个角度：开源模型按美元算 token 性价比更高，所以「保持固定推理预算」做评估的策略对开源更有利。两者放一起看：未来的 AI 产品壁垒不是「用上最大模型」，而是「用合适的成本把效果做出来」。",
+      "implication": "输入法做 AI 功能不能一头扎进「调最大模型」。简单联想、纠错、翻译这种高频低难度任务应该走端侧小模型或开源模型，云端大模型留给复杂理解和规划——把单次交互成本压下来，整体体验和商业化才可持续。",
+      "evidence": [
+        { "type": "tweet", "who": "Aaron Levie (Box CEO)", "url": "https://x.com/levie/status/2070937863806751154", "quote": "None of these [token cost optimizations] happens though without a deep understanding of the underlying work being done in a non-abstract way. A layer between the work itself and the underlying intelligence needs to deeply understand the work." },
+        { "type": "tweet", "who": "Swyx", "url": "https://x.com/swyx/status/2070949306060931312", "quote": "Open models have a lot more dollar per token mileage than closed model APIs. So anyone launching an open model today or situationally incentivized toward open models has a structural advantage." }
+      ]
+    }
+  ],
+  "builders": [
+    {
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "OpenAI Codex & ChatGPT 成员",
+      "highlights": [
+        { "summary": "Codex 一次升级覆盖多个细节：长线程顺滑、可悬停导航栏跳转、设置搜索覆盖面更广——1383 赞说明每个小细节都被开发者看在眼里", "url": "https://x.com/thsottiaux/status/2071071289247244481" },
+        { "summary": "示范了 Codex 的「副业玩法」——用 Codex 跟植物对话（监测状态并自动响应），意味着 AI 编程工具正在从「正经开发」溢出到日常生活的小工具", "url": "https://x.com/thsottiaux/status/2071077932244570112" }
+      ]
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "Vercel CEO",
+      "highlights": [
+        { "summary": "一张「我和我的 agents」的自拍近千赞——Vercel CEO 公开用个人 agents 干活，这个示范比任何 PR 都更能让开发者接受 agents 协作", "url": "https://x.com/rauchg/status/2070982746080715052" },
+        { "summary": "提醒 Mythos / Sol 这类网络安全能力「攻防两端都有用」——一旦被对手拿到，对没意识到潜伏漏洞的公司是严重威胁；AI 安全已经是产品上线必须考虑的事", "url": "https://x.com/rauchg/status/2071047674187714830" }
+      ]
+    },
+    {
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "产品创作者（专注 AI 工具评测与实践）",
+      "highlights": [
+        { "summary": "把 Hermes 健康 agent 跑成了每周六自动发邮件：拉 Withings 智能秤 + Fitbit + Google Health + 一个 vibe code 的健身 MCP，把数据整合成「朝着健康目标」的可执行建议——agent 不只是聊天，而是有固定节律的交付物", "url": "https://x.com/petergyang/status/2070906940352520477" }
+      ]
+    },
+    {
+      "name": "Swyx",
+      "handle": "swyx",
+      "role": "AI 工程领域 KOL，dwarkesh 等播客常客",
+      "highlights": [
+        { "summary": "对「固定推理预算做评估」提出新解读：开源模型按 token 算美元性价比更高，所以这条规则对开源更友好，结构性影响发布策略", "url": "https://x.com/swyx/status/2070949306060931312" }
+      ]
+    },
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "Box CEO",
+      "highlights": [
+        { "summary": "强调 AI token 成本优化离不开对「具体工作流」的理解——在「工作」和「底层智能」之间需要一层能深度理解业务的中介，单纯调参数是省不下钱的", "url": "https://x.com/levie/status/2070937863806751154" }
+      ]
+    },
+    {
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "role": "独立开发者（不会写代码也能做产品的典型代表）",
+      "highlights": [
+        { "summary": "一年前连 GitHub 怎么用都不熟，现在 GitHub 10k 粉丝，依然手写不出代码——靠 AI 工具把想法直接变成可用的 side project，这种「非程序员创作者」群体正在壮大", "url": "https://x.com/zarazhangrui/status/2070982013822333007" }
+      ]
+    },
+    {
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "独立开发者，PSPDFKit 创始人",
+      "highlights": [
+        { "summary": "引用了一句关于「访问封锁」的历史判断：封锁极少能拦住有决心的用户——对 AI 产品来说，闭源保护模型权重的策略在长期是否能跑通，值得打问号", "url": "https://x.com/steipete/status/2071063588329193551" }
+      ]
+    },
+    {
+      "name": "Nan Yu",
+      "handle": "thenanyu",
+      "role": "软件工程师 / 写作者",
+      "highlights": [
+        { "summary": "「如果你遇到的 90% 问题都不值得解决，那 level 1 和 level 6 在体验上 90% 是相同的」——点破了 AI 圈容易把「等级」吹成差距的叙事", "url": "https://x.com/thenanyu/status/2070821322901397645" }
+      ]
+    },
+    {
+      "name": "Matt Turck",
+      "handle": "mattturck",
+      "role": "FirstMark 合伙人，AI/数据领域投资人",
+      "highlights": [
+        { "summary": "梳理了智能眼镜十年史：2013 Google「你真的想要」、2016 微软「企业版要不要」、2023 Meta「看起来正常 + AI」——每次换皮都更接近主流，硬件载体的演进非常值得追踪", "url": "https://x.com/mattturck/status/2070972014945243622" }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "Training Data",
+      "title": "Ngram：让模型持续学习（continual learning）的 NeoLab）",
+      "guest": "Don Biederman & Jesse Lynn（Ngram 联合创始人）",
+      "url": "https://www.youtube.com/watch?v=aiR7F4jqjXY",
+      "keyTakeaways": [
+        "Ngram 的核心主张是「模型应该 always training」——现在大模型卡在「理解新出现的上下文」，不是「原始智能」不够，所以光做预训练+后训练是走不通的",
+        "真正的瓶颈是把新任务/上下文「烤进」模型权重里，而不是塞到 context window 当成外挂记忆",
+        "技术上他们做大量 adapter fine-tuning（LoRA、前缀、微调架构那一套），再用监督微调、RL、on-policy 蒸馏把「对个人/公司有用的信号」持续灌进去",
+        "Ngram 需要 white-box 访问权重才能做个性化定制，所以闭源前沿模型很难直接合作，最舒服的对象是开源 transformer——这反过来又给「开源模型在企业侧有戏」加了一条理由",
+        "「哪些知识外置、哪些内化」是个开放问题——每个人的工具栈都不一样，让模型去理解你那一套 bash、Notion、内部脚本，是后续的关键难题"
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "name": "Claude Blog",
+      "title": "Claude Code now supports artifacts（Claude Code 支持 artifacts）",
+      "url": "https://claude.com/blog/artifacts-in-claude-code",
+      "summary": "Claude Code 现在可以把工作过程直接产出一个可分享的活页面（artifact）：PR 走查、系统说明、仪表盘、发布 checklist 都能边干边自动更新。incident 调查时，Claude 会把失败用例、对应的函数、监控告警、推理过程拼到同一页——同事点开链接就看到同一份信息，不用再「你给我讲讲 agent 查出了啥」。所有 artifact 默认私有，权限/保留期/合规接口都做了企业级管控。这等于把 Claude Code 从「终端工具」变成「可以对外交付的工作台」，对需要把 AI 协作结果同步给团队的开发者是质变。"
+    }
+  ]
+}
