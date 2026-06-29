@@ -1,0 +1,149 @@
+{
+  "date": "2026-06-23",
+  "generated_at": "2026-06-29T08:20:00+08:00",
+  "daily_summary": "2026年6月23日，AI行业多条主线并行推进。OpenAI宣布\"Patch the Planet\"开源安全计划，GPT-5.5-Cyber在CyberGym基准中取得85.6%成绩，联合Trail of Bits等30+开源项目推进AI安全扫描。日本政府宣布未来五年向物理AI投入10万亿日元（约620亿美元），覆盖机器人、自动驾驶、智能制造等17个战略领域。苹果与LM Studio联合宣布四台Mac Studio即可离线运行万亿参数大模型，打破\"大模型必须上云\"的认知。国内方面，流形空间完成近10亿元A轮融资成为\"世界模型\"独角兽，智谱AI市值突破万亿。微软正测试将DeepSeek模型引入Copilot产品线，AI价格战升温。夏季达沃斯在大连启幕，AI成全场焦点。",
+  "design_insights": [
+    {
+      "title": "万亿参数本地运行——端侧AI交互范式变革",
+      "summary": "苹果与LM Studio实现四台Mac Studio本地跑万亿参数模型，端侧大模型推理从不可能变为现实",
+      "implication": "端侧大模型意味着输入法可在不依赖云端的情况下提供强AI能力。建议输入法产品研究本地模型推理的交互时延容忍度，设计\"本地优先+云端增强\"的分层响应策略，兼顾隐私和体验",
+      "sources": ["苹果", "LM Studio"],
+      "source_urls": ["https://www.dolc.de/forum.php?goto=lastpost&mod=redirect&tid=2422537"],
+      "tags": ["端侧AI", "隐私", "输入法架构"]
+    },
+    {
+      "title": "AI安全扫描工作流对产品安全设计的启示",
+      "summary": "OpenAI Patch the Planet实现1天完成原本数周的代码安全扫描，AI+安全工作流效率提升100倍",
+      "implication": "输入法产品的安全审计流程可引入AI辅助扫描机制，对用户输入中的隐私泄露风险进行实时检测。交互层面可设计\"安全输入提示\"——当检测到用户正在输入敏感信息时主动提醒",
+      "sources": ["OpenAI", "Trail of Bits"],
+      "source_urls": ["https://juejin.cn/post/7654069744535011354"],
+      "tags": ["安全", "输入隐私", "AI检测"]
+    },
+    {
+      "title": "物理AI 10万亿投入催生新交互界面需求",
+      "summary": "日本620亿美元投入物理AI，人形机器人、自动驾驶工厂等17个领域需要新的人机交互方式",
+      "implication": "物理AI场景中语音+手势+自然语言混合输入将成为主流。输入法需预研\"多模态输入\"能力，在机器人、车机场景中提供语音+文字无缝切换的输入体验",
+      "sources": ["日本政府", "Reuters"],
+      "source_urls": ["https://www.dolc.de/forum.php?goto=lastpost&mod=redirect&tid=2422537"],
+      "tags": ["物理AI", "多模态", "机器人交互"]
+    },
+    {
+      "title": "Copilot接入DeepSeek——多模型竞争下的成本敏感设计",
+      "summary": "微软因成本压力将DeepSeek引入Copilot，AI产品设计需考虑\"低成本模型+高端模型\"分层调度",
+      "implication": "输入法AI功能应采用分层模型策略：高频低延迟场景（候选词联想）用轻量模型，复杂场景（长文生成、翻译）用高端模型。设计上需对用户透明呈现模型能力差异",
+      "sources": ["微软", "The Information"],
+      "source_urls": ["https://www.dolc.de/forum.php?goto=lastpost&mod=redirect&tid=2422537"],
+      "tags": ["成本优化", "模型分层", "产品策略"]
+    },
+    {
+      "title": "世界模型独角兽崛起——3D场景理解对输入法的潜在影响",
+      "summary": "流形空间近10亿融资主攻三维环境生成与物理世界模拟，AI对空间的理解能力跃升",
+      "implication": "当AI能理解3D空间，输入法在XR/AR场景中的输入交互需重新设计。建议跟踪世界模型技术进展，为\"空间输入\"场景储备交互方案",
+      "sources": ["36氪", "投中网"],
+      "source_urls": ["https://www.dolc.de/forum.php?goto=lastpost&mod=redirect&tid=2422537"],
+      "tags": ["世界模型", "XR输入", "空间交互"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "本地化AI输入——隐私敏感用户的强需求",
+      "pain_point": "用户担心输入内容上传云端被泄露，尤其在金融、医疗、法律等敏感场景",
+      "opportunity": "基于端侧大模型提供完全本地化的AI输入能力（联想、纠错、翻译），零数据上传",
+      "priority": "P1",
+      "evidence": "苹果Mac Studio本地万亿参数模型 + 前日金融AI安全32条，隐私需求从政策到技术双重驱动"
+    },
+    {
+      "title": "AI输入安全提示系统",
+      "pain_point": "用户在聊天中无意输入银行卡号、密码等敏感信息，缺乏实时预警机制",
+      "opportunity": "输入法内置敏感信息检测，在用户输入身份证号、密码等时弹出安全提示",
+      "priority": "P2",
+      "evidence": "OpenAI安全扫描技术成熟，可迁移至输入层进行实时风险检测"
+    },
+    {
+      "title": "多终端统一AI输入法——从手机到机器人",
+      "pain_point": "物理AI终端（机器人、智能家电）缺乏成熟的自然语言输入方案",
+      "opportunity": "输入法SDK适配机器人、车机、智能家电等新终端，提供跨设备一致的AI输入体验",
+      "priority": "P3",
+      "evidence": "日本10万亿物理AI投入 + 中国AI+消费政策双重推动"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "OpenAI发布\"Patch the Planet\"开源安全计划",
+      "summary": "GPT-5.5-Cyber得分85.6%，联合30+开源项目(cURL/Go/Python/Sigstore)推进AI安全扫描，1天完成原本数周工作",
+      "source": "OpenAI",
+      "source_urls": ["https://juejin.cn/post/7654069744535011354"],
+      "tags": ["OpenAI", "安全"]
+    },
+    {
+      "title": "日本政府豪掷10万亿日元押注物理AI",
+      "summary": "未来五年覆盖机器人、自动驾驶工厂、智能制造等17个战略领域，约620亿美元规模",
+      "source": "Reuters",
+      "source_urls": ["https://www.dolc.de/forum.php?goto=lastpost&mod=redirect&tid=2422537"],
+      "tags": ["政策", "物理AI", "日本"]
+    },
+    {
+      "title": "苹果与LM Studio实现四台Mac Studio本地运行万亿参数大模型",
+      "summary": "通过量化压缩技术，打破\"大模型必须上云\"认知，为隐私敏感型AI应用开辟新路径",
+      "source": "苹果",
+      "source_urls": ["https://www.dolc.de/forum.php?goto=lastpost&mod=redirect&tid=2422537"],
+      "tags": ["苹果", "端侧AI"]
+    },
+    {
+      "title": "流形空间完成近10亿元A轮融资，成国内首个\"世界模型\"独角兽",
+      "summary": "由前商汤高管创立，主攻三维环境生成与物理世界模拟，估值突破10亿美元",
+      "source": "36氪",
+      "source_urls": ["https://www.dolc.de/forum.php?goto=lastpost&mod=redirect&tid=2422537"],
+      "tags": ["融资", "世界模型"]
+    },
+    {
+      "title": "智谱AI市值突破万亿，成国内首家万亿市值大模型独角兽",
+      "summary": "GLM系列模型在代码生成、数学推理持续逼近GPT-4水平，国产大模型迎高光时刻",
+      "source": "投中网",
+      "source_urls": ["https://www.dolc.de/forum.php?goto=lastpost&mod=redirect&tid=2422537"],
+      "tags": ["智谱", "国产大模型"]
+    },
+    {
+      "title": "微软Copilot拟引入DeepSeek模型，AI价格战升温",
+      "summary": "出于成本压力，微软测试DeepSeek接入Copilot，或引发大模型价格进一步下探",
+      "source": "The Information",
+      "source_urls": ["https://www.dolc.de/forum.php?goto=lastpost&mod=redirect&tid=2422537"],
+      "tags": ["微软", "DeepSeek", "价格战"]
+    },
+    {
+      "title": "挪威全面禁止小学生使用生成式AI",
+      "summary": "成为全球首个对6-13岁学生使用生成式AI出台强制限制的国家，同时要求学校开展AI素养教育",
+      "source": "Reuters",
+      "source_urls": ["https://www.dolc.de/forum.php?goto=lastpost&mod=redirect&tid=2422537"],
+      "tags": ["监管", "教育"]
+    },
+    {
+      "title": "夏季达沃斯在大连启幕，AI成全场焦点",
+      "summary": "世界经济论坛第十七届新领军者年会，嘉宾热议\"无电力不智能\"，欧美亚对AI泡沫担忧再上桌",
+      "source": "新华网",
+      "source_urls": ["https://yishuo.blog.csdn.net/article/details/162275190"],
+      "tags": ["达沃斯", "行业"]
+    },
+    {
+      "title": "京东开源实时视频交互模型JoyAI-VL-Interaction",
+      "summary": "实现实时视频场景多轮对话与物体识别，可应用于客服导览、远程医疗等场景",
+      "source": "京东技术",
+      "source_urls": ["https://www.dolc.de/forum.php?goto=lastpost&mod=redirect&tid=2422537"],
+      "tags": ["京东", "多模态", "开源"]
+    },
+    {
+      "title": "GPT-5.6今夜正式亮剑预告引爆关注",
+      "summary": "OpenAI确认GPT-5.6即将发布，内测显示推理能力提升25%，前端代码生成能力大幅跃升",
+      "source": "IT之家",
+      "source_urls": ["https://juejin.cn/post/7654069744535011354"],
+      "tags": ["OpenAI", "GPT-5.6"]
+    },
+    {
+      "title": "OpenAI \"Daybreak\"网络安全平台扩展三大新产品",
+      "summary": "GPT-5.5-Cyber、Codex安全插件、Patch the Planet计划，战略对标Anthropic Glasswing",
+      "source": "OpenAI Blog",
+      "source_urls": ["https://juejin.cn/post/7654069744535011354"],
+      "tags": ["OpenAI", "安全", "竞争"]
+    }
+  ]
+}

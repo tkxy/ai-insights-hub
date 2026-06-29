@@ -1,0 +1,141 @@
+{
+  "date": "2026-06-24",
+  "generated_at": "2026-06-29T08:20:00+08:00",
+  "daily_summary": "2026年6月24日，AI产业呈现\"国际宏观对话+国内大厂集体爆发\"双线格局。OpenAI联手博通发布首款定制AI推理芯片Jalapeño，从设计到流片仅9个月，推理成本降低约50%。高通以39.2亿美元收购AI软件公司Modular挑战CUDA生态。字节跳动CEO梁汝波在火山引擎FORCE大会首次公布豆包日均Token调用量突破180万亿、两年暴涨1500倍，豆包专业版正式上线三级阶梯定价。Anthropic推出Claude Tag常驻Slack频道作为虚拟同事。DeepSeek V4.1确认本月正式发布。夏季达沃斯AI议题持续升温，中国大连市政府联手长江商学院举办AI产业发展大会。",
+  "design_insights": [
+    {
+      "title": "豆包专业版三级定价——AI产品付费交互设计参考",
+      "summary": "豆包上线付费专业版采用三级阶梯定价(标准68元/月、加强200元/月、专业版更高)，支持本地电脑操作、浏览器控制、定时任务",
+      "implication": "输入法AI增值功能可参考阶梯定价策略：免费版提供基础AI联想，付费版解锁长文生成、跨应用操作等高级能力。交互设计上需清晰传达各层级差异，避免用户付费后感知不到价值提升",
+      "sources": ["火山引擎", "36氪"],
+      "source_urls": ["https://yishuo.blog.csdn.net/article/details/162275190"],
+      "tags": ["商业化", "付费设计", "豆包竞品"]
+    },
+    {
+      "title": "Claude Tag——AI作为Slack常驻同事的交互范式",
+      "summary": "Anthropic推出Claude Tag可在Slack频道中作为独立身份的虚拟同事，支持多人协作、持续记忆、主动干预",
+      "implication": "AI从\"被调用\"到\"主动参与\"的转变对输入法设计有深刻启示。输入法AI助手可从\"按需唤起\"升级为\"常驻伴侣\"模式——在用户输入过程中主动提供上下文建议，而非等待用户主动触发",
+      "sources": ["Anthropic", "TechCrunch"],
+      "source_urls": ["https://yishuo.blog.csdn.net/article/details/162275190"],
+      "tags": ["Agent", "主动式AI", "交互范式"]
+    },
+    {
+      "title": "Jalapeño芯片9个月流片——AI自举加速产品迭代",
+      "summary": "OpenAI使用自家LLM加速芯片验证、布局规划和热仿真，用模型设计运行模型的芯片，实现9个月设计到流片记录",
+      "implication": "AI自举(self-bootstrapping)趋势意味着产品迭代周期将大幅压缩。输入法产品团队应积极使用AI工具加速设计-开发-测试循环，建立\"AI辅助设计\"工作流",
+      "sources": ["OpenAI", "博通", "The Decoder"],
+      "source_urls": ["https://dev.to/hiroki-ii-ai/ai-daily-digest-june-28-2026-openai-jalapeno-chip-talent-exodus-sk-hynix-294b-ipo-560h"],
+      "tags": ["AI自举", "产品效率", "芯片"]
+    },
+    {
+      "title": "豆包180万亿日均Token——输入法级别的规模化AI调用",
+      "summary": "豆包大模型日均Token调用量突破180万亿，两年暴涨1500倍，AI调用正从实验走向工业化规模",
+      "implication": "如此量级的AI调用验证了\"每次输入都经过AI处理\"的技术可行性。输入法产品应以同等规模思考AI功能——每次键盘弹起都可以触发AI推理，关键是控制延迟和成本",
+      "sources": ["火山引擎", "字节跳动"],
+      "source_urls": ["https://yishuo.blog.csdn.net/article/details/162275190"],
+      "tags": ["规模化", "性能", "豆包"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "AI输入法付费增值功能体系",
+      "pain_point": "输入法AI能力缺乏清晰的付费分级，用户不知道为什么需要付费",
+      "opportunity": "参考豆包三级定价，设计\"基础AI免费+高级AI付费\"分层，付费功能聚焦跨应用操作、长文生成、专业领域适配等高价值场景",
+      "priority": "P1",
+      "evidence": "豆包专业版上线三级定价(68/200/更高)，市场验证AI工具付费意愿存在"
+    },
+    {
+      "title": "输入法常驻AI伴侣模式",
+      "pain_point": "当前输入法AI助手需主动唤起，用户在高频输入时忘记使用AI功能",
+      "opportunity": "参考Claude Tag\"常驻\"模式，输入法AI在用户输入过程中持续观察并主动提供建议(如纠错、润色、补全)，无需用户主动触发",
+      "priority": "P2",
+      "evidence": "Anthropic Claude Tag实现AI常驻协作，65%代码由AI主动生成"
+    },
+    {
+      "title": "基于推理芯片的输入法端侧AI加速",
+      "pain_point": "云端AI输入有延迟和隐私问题，端侧AI性能不足",
+      "opportunity": "针对下一代AI推理芯片(如Jalapeño类)优化输入法端侧模型，实现毫秒级本地AI响应",
+      "priority": "P3",
+      "evidence": "Jalapeño推理成本降50%，专用AI芯片将在2027年普及到终端设备"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "OpenAI联手博通发布首款定制AI推理芯片Jalapeño",
+      "summary": "从设计到流片仅9个月，使用LLM加速芯片设计，推理成本较主流GPU降低约50%，计划2026年底商用",
+      "source": "OpenAI",
+      "source_urls": ["https://dev.to/hiroki-ii-ai/ai-daily-digest-june-28-2026-openai-jalapeno-chip-talent-exodus-sk-hynix-294b-ipo-560h"],
+      "tags": ["芯片", "OpenAI"]
+    },
+    {
+      "title": "高通39.2亿美元全股收购AI软件公司Modular",
+      "summary": "Mojo语言与MAX平台可跨芯片架构运行AI模型，旨在挑战英伟达CUDA生态",
+      "source": "今日头条",
+      "source_urls": ["https://view.inews.qq.com/k/20260625A087DO00"],
+      "tags": ["收购", "高通", "CUDA"]
+    },
+    {
+      "title": "字节火山引擎FORCE大会：豆包日均Token调用180万亿",
+      "summary": "梁汝波首次公布年度关键词\"勇攀高峰\"，豆包两年暴涨1500倍",
+      "source": "火山引擎",
+      "source_urls": ["https://yishuo.blog.csdn.net/article/details/162275190"],
+      "tags": ["字节", "豆包"]
+    },
+    {
+      "title": "豆包正式上线付费专业版，三级阶梯定价",
+      "summary": "支持本地电脑操作、浏览器控制、Skills技能调用、定时任务，标准套餐68元/月起",
+      "source": "36氪",
+      "source_urls": ["https://yishuo.blog.csdn.net/article/details/162275190"],
+      "tags": ["豆包", "付费", "竞品"]
+    },
+    {
+      "title": "Anthropic推出Claude Tag for Slack",
+      "summary": "基于Claude Opus 4.8，可常驻频道作为虚拟同事，支持组织记忆、主动干预、异步交付",
+      "source": "Anthropic",
+      "source_urls": ["https://yishuo.blog.csdn.net/article/details/162275190"],
+      "tags": ["Anthropic", "Agent"]
+    },
+    {
+      "title": "DeepSeek V4.1确认本月正式发布",
+      "summary": "继500亿融资后，DeepSeek加速模型迭代，V4.1定位新一代开源旗舰",
+      "source": "智东西",
+      "source_urls": ["https://yishuo.blog.csdn.net/article/details/162275190"],
+      "tags": ["DeepSeek", "开源"]
+    },
+    {
+      "title": "高通披露数据中心激进目标：2027财年50亿美元收入",
+      "summary": "2029财年超150亿，发布Dragonfly C1000 CPU，Meta、微软为首批客户",
+      "source": "腾讯网",
+      "source_urls": ["https://view.inews.qq.com/k/20260625A087DO00"],
+      "tags": ["高通", "数据中心"]
+    },
+    {
+      "title": "夏季达沃斯AI议题持续升温",
+      "summary": "大连市政府联手长江商学院举办AI产业发展大会，\"无电力不智能\"成热议话题",
+      "source": "新华网",
+      "source_urls": ["https://yishuo.blog.csdn.net/article/details/162275190"],
+      "tags": ["达沃斯", "产业"]
+    },
+    {
+      "title": "企业微信\"大圆\"AI Agent启动内测",
+      "summary": "企微内置AI Agent能力，面向企业协作场景提供智能助手",
+      "source": "36氪",
+      "source_urls": ["https://view.inews.qq.com/k/20260625A087DO00"],
+      "tags": ["企业微信", "Agent"]
+    },
+    {
+      "title": "Gemini 3.5 Flash原生支持电脑操作",
+      "summary": "AI从对话走向实体控制，Google模型直接操控桌面应用",
+      "source": "Google",
+      "source_urls": ["https://view.inews.qq.com/k/20260625A087DO00"],
+      "tags": ["Google", "Computer Use"]
+    },
+    {
+      "title": "特斯拉中国车机接入豆包与DeepSeek双模型",
+      "summary": "车机AI双模型战略，豆包和DeepSeek同时为特斯拉中国用户提供服务",
+      "source": "科技日报",
+      "source_urls": ["https://view.inews.qq.com/k/20260625A087DO00"],
+      "tags": ["特斯拉", "车机AI"]
+    }
+  ]
+}

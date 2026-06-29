@@ -1,0 +1,167 @@
+{
+  "week_start": "2026-06-22",
+  "week_end": "2026-06-28",
+  "generated_at": "2026-06-29T08:20:00+08:00",
+  "stages": {
+    "research": {
+      "title": "桌面研究",
+      "items": [
+        {
+          "title": "GPT-5.6 Sol Ultra多Agent模式对输入法AI架构的启示",
+          "source": "OpenAI 官方公告 / Terminal-Bench 2.1",
+          "sourceDetail": "GPT-5.6 Sol引入Ultra模式，通过调度多个子Agent协同处理复杂任务，在编程基准中达到91.9%。单Agent向多Agent协作的范式转变正在加速",
+          "insight": "输入法AI应从单模型调用升级为多Agent架构——意图识别Agent+内容生成Agent+格式优化Agent协作，突破单一模型的能力瓶颈",
+          "action": "梳理输入法AI功能模块，评估哪些环节可拆分为独立Agent并行处理；设计Agent间协作的超时兜底策略和用户感知方案",
+          "tags": ["多Agent", "架构", "GPT-5.6"],
+          "sourceUrls": ["https://cloud.tencent.com/developer/news/4157047"]
+        },
+        {
+          "title": "DeepSeek DSpark推测解码：推理速度提升85%对实时AI输入的影响",
+          "source": "智东西 / DeepSeek论文",
+          "sourceDetail": "DeepSeek发布DSpark技术，通过置信度调度推测解码将单用户生成速度提升60%-85%，推理优化从\"压缩模型\"转向\"优化推理路径\"",
+          "insight": "速度提升85%使\"打字同步生成段落\"成为可能。输入法可在用户输入首句时即并行生成完整回复/邮件/消息草稿",
+          "action": "与模型团队评估DSpark类推测解码技术在输入法场景的可用性；设计\"边打边生成\"的交互原型——包含草稿预览、一键采纳、局部编辑的完整流程",
+          "tags": ["推理优化", "实时生成", "DeepSeek"],
+          "sourceUrls": ["https://new.qq.com/rain/a/20260628A026A400"]
+        },
+        {
+          "title": "AI模型发布受政府审批——全球AI合规对产品设计的影响",
+          "source": "Bloomberg / OpenAI / 星岛头条",
+          "sourceDetail": "GPT-5.6首次受美国政府要求限制初始访问，仅20个可信合作伙伴获预览权限。Anthropic同步上线身份验证，AI能力与信任级别绑定",
+          "insight": "AI功能地区差异化管控将成常态。输入法AI需预设能力分级开放系统——不同地区/合规要求下动态调整可用AI功能",
+          "action": "调研各地区对AI输入工具的合规要求；设计输入法AI功能的分级开放框架——区分基础能力(全球可用)和高级能力(需合规认证)",
+          "tags": ["合规", "分级开放", "监管"],
+          "sourceUrls": ["https://www.stheadline.com/realtime-finance/3587587/"]
+        }
+      ]
+    },
+    "competitive": {
+      "title": "竞品分析",
+      "items": [
+        {
+          "title": "豆包专业版上线：三级定价+电脑操作+定时任务",
+          "source": "火山引擎FORCE大会 / 36氪",
+          "sourceDetail": "6月24日豆包正式上线付费专业版，基于豆包大模型推出全新办公任务模式。标准68元/月、加强200元/月、专业版更高。支持本地电脑操作、浏览器控制、Skills技能调用、定时任务及内置Office套件。日均Token调用180万亿，两年暴涨1500倍",
+          "insight": "豆包从聊天机器人进化为\"AI操作系统\"——电脑操作+定时任务意味着它正在取代输入法成为用户与设备交互的主入口。三级定价验证AI工具付费市场存在",
+          "action": "【应对】输入法需在\"AI操作入口\"定位上明确差异化：豆包走\"全能助手\"路线，输入法走\"每次输入都AI增强\"的深度路线。建议产品侧快速跟进付费分级策略，先验证用户为输入法AI付费的意愿",
+          "tags": ["豆包", "竞品", "付费", "P0"],
+          "sourceUrls": ["https://yishuo.blog.csdn.net/article/details/162275190"]
+        },
+        {
+          "title": "Claude Tag for Slack——AI嵌入工作流抢占输入入口",
+          "source": "Anthropic / Enterprise",
+          "sourceDetail": "Anthropic推出Claude Tag，基于Opus 4.8可常驻Slack频道作为独立身份虚拟同事。支持多人协作、组织记忆、主动干预、异步交付。内部65%代码由Claude Tag生成。目前面向Enterprise和Team客户",
+          "insight": "Claude Tag模式本质上绕过了输入法——用户在Slack中@claude即可获得AI辅助，无需通过输入法触发。这类\"嵌入式AI\"正在消解输入法作为AI入口的价值",
+          "action": "【应对】输入法需要提供比@claude更低摩擦的AI触达方式。方案：在输入框层面(比Slack更底层)提供AI能力——用户在任何App的输入框中打字就有AI辅助，无需@任何人。强化\"系统级输入入口\"的不可替代性",
+          "tags": ["Anthropic", "Agent", "入口威胁", "P1"],
+          "sourceUrls": ["https://dev.to/hiroki-ii-ai/ai-daily-digest-june-28-2026-openai-jalapeno-chip-talent-exodus-sk-hynix-294b-ipo-560h"]
+        },
+        {
+          "title": "Gemini 3.5 Flash原生支持电脑操作 + 特斯拉车机双模型接入",
+          "source": "Google / 科技日报",
+          "sourceDetail": "Gemini 3.5 Flash原生支持桌面应用操控(Computer Use)，标志Google模型从\"对话\"走向\"执行\"。同日特斯拉中国车机接入豆包与DeepSeek双模型，车机AI双模型策略验证多模型并存趋势",
+          "insight": "Google Computer Use + 特斯拉双模型表明AI正在\"跳过输入法\"直接操控系统。输入法面临被绕过的风险——当AI可以直接操作电脑，用户为什么还需要打字？",
+          "action": "【应对】输入法需在\"操作\"层面建立新价值：1)成为AI操作的确认/编辑层——AI拟定操作，用户在输入法中审核确认；2)提供比Computer Use更精准的\"意图到操作\"转译——用户说目标，输入法完成操作路径规划",
+          "tags": ["Google", "特斯拉", "Computer Use", "P1"],
+          "sourceUrls": ["https://view.inews.qq.com/k/20260625A087DO00"]
+        }
+      ]
+    },
+    "user_research": {
+      "title": "用户调研",
+      "items": [
+        {
+          "title": "企业用户对AI输入安全性的高度敏感",
+          "source": "金融AI安全32条 + 三星ChatGPT企业版部署反馈",
+          "sourceDetail": "本周金融AI安全指导意见落地，同时三星12万员工接入ChatGPT。企业用户同时面临\"想用AI提效\"和\"担心数据泄露\"的矛盾。挪威禁止小学生使用AI也反映公众对AI安全的敏感度",
+          "insight": "企业用户对输入法AI最大的顾虑不是功能不够，而是\"我输入的内容是否安全\"。安全感是企业级AI输入产品的第一设计原则",
+          "action": "设计用户调研问卷聚焦\"AI输入安全感知\"：哪些场景最担心输入内容泄露？对\"本地化AI\"的付费意愿如何？\"安全模式\"vs\"联网模式\"的功能取舍如何？",
+          "tags": ["安全", "企业用户", "调研"],
+          "sourceUrls": ["https://yishuo.blog.csdn.net/article/details/162199968"]
+        },
+        {
+          "title": "用户对AI功能命名和分层的认知研究",
+          "source": "OpenAI Sol/Terra/Luna命名策略 + 豆包三级定价用户反馈",
+          "sourceDetail": "OpenAI从数字命名改为天体命名，豆包三级定价引发用户\"不知道哪个适合我\"的讨论。AI产品分层命名直接影响用户购买决策和使用行为",
+          "insight": "用户对技术化命名(标准/增强/专业)的理解成本高，对场景化命名(创作模式/翻译模式/快速模式)的直觉感知更好",
+          "action": "进行A/B命名测试：将输入法AI功能用\"技术分级\"vs\"场景分级\"两种方式呈现，测量用户理解速度、功能使用率、付费转化率差异",
+          "tags": ["命名", "用户认知", "测试"],
+          "sourceUrls": ["https://www.toutiao.com/a7655986383336505908"]
+        },
+        {
+          "title": "机器人用户对语音输入的新需求发现",
+          "source": "MWC上海人形机器人点球大战 + 越疆家庭机器人预告",
+          "sourceDetail": "MWC上海人形机器人首次真实对抗，越疆预告万元级家庭陪伴机器人。与传统语音助手不同，机器人场景的语音输入需要支持连续多指令、动作确认、环境感知",
+          "insight": "机器人用户的语音输入需求与手机完全不同——需要\"持续性\"(长时间语音控制)、\"多指令\"(连续发出多个动作)、\"确认性\"(机器人需反馈理解情况)",
+          "action": "联系智元或越疆机器人团队，获取家庭机器人用户语音控制的真实痛点数据；设计针对机器人场景的语音输入用户访谈大纲",
+          "tags": ["机器人", "语音", "新场景"],
+          "sourceUrls": ["https://www.toutiao.com/a7655506151563395635"]
+        }
+      ]
+    },
+    "design_output": {
+      "title": "设计稿输出",
+      "items": [
+        {
+          "title": "输入法AI \"边打边生成\" 交互原型",
+          "source": "基于DeepSeek DSpark速度提升85%的技术可行性",
+          "sourceDetail": "推理速度提升至可融入实时输入流后，用户打字过程中AI可同步生成完整回复/邮件/段落。需要设计一套从\"字级联想\"到\"段落级预生成\"的完整交互流程",
+          "insight": "\"边打边生成\"将输入法从\"输入工具\"升级为\"创作伙伴\"。核心设计挑战：如何让用户在打字时感知到AI生成的段落而不被干扰",
+          "action": "输出\"边打边生成\"交互稿：包含触发条件(打字超过N个字/进入特定App)、预览展示方式(浮层/折叠/渐显)、采纳/编辑/忽略操作、与现有候选词联想的关系处理",
+          "tags": ["交互稿", "实时生成", "核心功能"],
+          "sourceUrls": ["https://new.qq.com/rain/a/20260628A026A400"]
+        },
+        {
+          "title": "输入法AI功能付费分层设计方案",
+          "source": "豆包三级定价策略 + OpenAI Sol/Terra/Luna分层",
+          "sourceDetail": "竞品已验证AI工具付费市场存在，输入法需要设计自己的付费分层体系。核心问题：哪些AI功能免费(确保基础体验)，哪些付费(提供增值价值)",
+          "insight": "免费层应覆盖\"输入效率\"(联想/纠错)——保证基础输入体验不降级；付费层聚焦\"创作能力\"(长文生成/邮件代写/多语翻译)——提供明确可量化的价值",
+          "action": "输出付费分层设计文档：1)功能矩阵(免费vs付费)；2)价格锚定策略(参考豆包68元基础)；3)付费触发点交互(何时展示升级入口)；4)试用机制(每天N次免费体验)",
+          "tags": ["商业化", "付费", "设计方案"],
+          "sourceUrls": ["https://yishuo.blog.csdn.net/article/details/162275190"]
+        },
+        {
+          "title": "输入法AI\"安全模式\"交互设计",
+          "source": "金融AI安全32条 + 苹果本地万亿参数模型 + Anthropic身份验证",
+          "sourceDetail": "合规需求+隐私意识+端侧能力三重驱动下，输入法需要一个显性的\"安全模式\"。用户可一键切换到完全本地化AI，所有输入数据零上传",
+          "insight": "\"安全模式\"不仅是功能，更是信任信号。当用户看到\"本地处理·数据不出设备\"的标识时，会更愿意在敏感场景使用AI功能",
+          "action": "输出\"安全模式\"完整交互方案：1)入口设计(状态栏图标/键盘切换)；2)模式内功能范围(哪些AI功能可本地化)；3)视觉差异化(明确区分安全/联网状态)；4)切换动效(传达\"已切换\"的确定感)",
+          "tags": ["安全", "交互稿", "隐私"],
+          "sourceUrls": ["https://yishuo.blog.csdn.net/article/details/162199968"]
+        }
+      ]
+    },
+    "design_validation": {
+      "title": "设计验证",
+      "items": [
+        {
+          "title": "\"常驻AI伴侣\"vs\"按需唤起\"模式对比验证",
+          "source": "Claude Tag常驻Slack验证 + 现有输入法AI唤起率数据",
+          "sourceDetail": "Claude Tag常驻模式在Anthropic内部取得65%代码贡献率。但输入法场景与Slack不同——输入法面积小、频率高、容错低。需验证常驻模式是否适合输入法",
+          "insight": "常驻模式在企业IM(大屏幕、低频)效果好，但在输入法(小屏幕、高频)可能造成干扰。需要找到\"恰到好处的主动度\"",
+          "action": "设计对比实验：A组-AI仅在用户主动触发时出现；B组-AI在检测到可优化时主动提示(但可关闭)。核心指标：AI功能使用率、用户满意度、被关闭率",
+          "tags": ["验证", "实验设计", "主动AI"],
+          "sourceUrls": ["https://dev.to/hiroki-ii-ai/ai-daily-digest-june-28-2026-openai-jalapeno-chip-talent-exodus-sk-hynix-294b-ipo-560h"]
+        },
+        {
+          "title": "输入法AI降级策略用户感知验证",
+          "source": "HBM产能瓶颈预期 + 算力弹性需求",
+          "sourceDetail": "SK Hynix IPO揭示AI硬件瓶颈短期难解，输入法需设计优雅的降级策略。核心问题：用户能否感知到AI从\"高性能\"切到\"轻量级\"？降级是否会影响使用意愿？",
+          "insight": "好的降级应该\"让用户注意不到\"——如果用户能明显感知质量下降，降级就是失败的。需要找到\"质量差异用户感知阈值\"",
+          "action": "设计感知阈值测试：在不告知用户的情况下随机分配高性能/轻量级AI，收集NPS和功能使用率数据；重点关注\"联想准确率下降多少时用户开始不满\"",
+          "tags": ["验证", "降级", "感知阈值"],
+          "sourceUrls": ["https://dev.to/hiroki-ii-ai/ai-daily-digest-june-28-2026-openai-jalapeno-chip-talent-exodus-sk-hynix-294b-ipo-560h"]
+        },
+        {
+          "title": "输入法AI付费分层A/B测试设计",
+          "source": "豆包三级定价 + 输入法用户付费意愿基线数据",
+          "sourceDetail": "豆包68元/月起步验证了AI工具付费市场，但输入法用户群体与AI原生用户可能有差异。需要在输入法场景中独立验证付费意愿和最优价格点",
+          "insight": "输入法付费的关键不是\"多少钱\"，而是\"付费后能感知到什么变化\"。如果付费前后体验差异不明显，付费转化率必然低",
+          "action": "设计分阶段验证方案：Phase 1-小范围灰度付费入口，测量自然转化率；Phase 2-付费后7天留存率；Phase 3-价格敏感度测试(49/68/98三档)。关键前提：确保付费功能体验差异显著可感知",
+          "tags": ["验证", "付费", "A/B测试"],
+          "sourceUrls": ["https://yishuo.blog.csdn.net/article/details/162275190"]
+        }
+      ]
+    }
+  }
+}

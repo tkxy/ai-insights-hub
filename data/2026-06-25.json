@@ -1,0 +1,127 @@
+{
+  "date": "2026-06-25",
+  "generated_at": "2026-06-29T08:20:00+08:00",
+  "daily_summary": "2026年6月25日，英伟达年度股东大会成为全球AI焦点。CEO黄仁勋正式宣告\"AI工厂时代\"到来，Blackwell和Vera Rubin架构进入全面量产。Vera Rubin平台实现45°C全液冷设计，数据中心用水近乎为零。MWC上海今日收官，\"落地\"取代\"炫技\"成为行业最大共识，联想发布首款AI可信一体机，智元机器人进厂量产直播，全球首场人形机器人点球大战成功举办。Anthropic年化收入飙至470亿美元，在B端首次反超OpenAI。英伟达全液冷方案标志着AI基础设施从\"堆算力\"进入\"可持续运营\"阶段。",
+  "design_insights": [
+    {
+      "title": "MWC人形机器人点球大战——机器人交互从Demo到交付",
+      "summary": "MWC上海全球首场人形机器人点球大战成功举办，\"云端大脑+本地身体\"架构跑通，具身智能从演示走向实际交付",
+      "implication": "人形机器人量产意味着语音输入将成为机器人控制的核心交互方式。输入法团队应研究机器人场景下的语音输入优化——噪声环境、多指令解析、动作确认反馈等特殊需求",
+      "sources": ["MWC上海2026", "机器人大讲堂"],
+      "source_urls": ["https://www.toutiao.com/a7655506151563395635"],
+      "tags": ["机器人", "语音输入", "MWC"]
+    },
+    {
+      "title": "Anthropic B端反超OpenAI——企业AI交互体验决胜",
+      "summary": "Anthropic年化收入470亿美元在B端超越OpenAI，Claude Tag、Claude Code等企业级工具成为增长引擎",
+      "implication": "B端AI竞争的胜负手在于\"嵌入式体验\"而非独立App。输入法在企业场景中应学习Claude Tag思路——嵌入用户已有工作流（钉钉、飞书、企微），而非要求用户切换到独立输入界面",
+      "sources": ["Anthropic", "CSDN"],
+      "source_urls": ["https://yishuo.blog.csdn.net/article/details/162341969"],
+      "tags": ["B端", "嵌入式AI", "竞争格局"]
+    },
+    {
+      "title": "AI工厂时代——输入即生产",
+      "summary": "黄仁勋宣告客户购买的\"不是服务器，是能直接创收的AI工厂\"，AI从工具变为生产设施",
+      "implication": "在\"AI工厂\"范式下，输入法可重新定位为\"AI生产入口\"——用户每次输入都是一次AI生产行为(生成文案/代码/创意)。产品叙事从\"打字工具\"升级为\"AI创作入口\"",
+      "sources": ["英伟达", "CSDN"],
+      "source_urls": ["https://yishuo.blog.csdn.net/article/details/162341969"],
+      "tags": ["产品定位", "AI工厂", "输入法叙事"]
+    },
+    {
+      "title": "全液冷零用水——可持续AI设计约束",
+      "summary": "Vera Rubin平台45°C全液冷设计将数据中心用水从每兆瓦260万加仑降至近零，AI可持续性成为设计约束",
+      "implication": "可持续性正成为AI产品的设计约束。输入法产品应关注\"AI推理碳足迹\"话题，在产品中提供\"低碳模式\"选项——如减少不必要的AI调用、优先使用端侧推理",
+      "sources": ["英伟达", "The Verge"],
+      "source_urls": ["https://view.inews.qq.com/k/20260625A087DO00"],
+      "tags": ["可持续", "ESG", "设计约束"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "机器人场景语音输入优化",
+      "pain_point": "人形机器人量产后，机器人操控主要依赖语音，但现有语音输入在噪声、多指令解析场景表现不佳",
+      "opportunity": "输入法语音引擎针对机器人控制场景优化，支持工厂噪声环境、连续多指令解析、动作确认反馈",
+      "priority": "P3",
+      "evidence": "MWC上海人形机器人点球大战 + 智元机器人进厂量产 + 上半年具身智能融资超460亿"
+    },
+    {
+      "title": "嵌入式输入法AI——在用户工作流中消失",
+      "pain_point": "用户不愿为AI功能切换到独立App，需要AI在当前工作流中无缝可用",
+      "opportunity": "输入法AI能力以SDK形式嵌入企业IM(钉钉/飞书/企微)，在输入框内直接提供AI润色、翻译、补全",
+      "priority": "P1",
+      "evidence": "Claude Tag嵌入Slack成功反超、Anthropic B端超OpenAI"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "英伟达股东大会：黄仁勋宣告\"AI工厂时代\"到来",
+      "summary": "Blackwell和Vera Rubin架构进入全面量产，客户购买的\"不是服务器，是能直接创收的AI工厂\"",
+      "source": "英伟达",
+      "source_urls": ["https://yishuo.blog.csdn.net/article/details/162341969"],
+      "tags": ["英伟达", "AI基础设施"]
+    },
+    {
+      "title": "英伟达Vera Rubin平台实现45°C全液冷，数据中心用水近零",
+      "summary": "传统方案每兆瓦年耗水260万加仑，全液冷方案耗水近乎为零，仅约1%时段需辅助制冷",
+      "source": "英伟达",
+      "source_urls": ["https://view.inews.qq.com/k/20260625A087DO00"],
+      "tags": ["英伟达", "可持续"]
+    },
+    {
+      "title": "MWC上海收官：\"落地\"取代\"炫技\"成最大共识",
+      "summary": "联想AI可信一体机、智元机器人量产直播、全球首场人形机器人点球大战成功举办",
+      "source": "MWC上海",
+      "source_urls": ["https://yishuo.blog.csdn.net/article/details/162341969"],
+      "tags": ["MWC", "产业落地"]
+    },
+    {
+      "title": "Anthropic年化收入飙至470亿美元，B端首次反超OpenAI",
+      "summary": "Claude Tag、Claude Code等企业级工具成为增长引擎，B端渗透率超越竞争对手",
+      "source": "CSDN",
+      "source_urls": ["https://yishuo.blog.csdn.net/article/details/162341969"],
+      "tags": ["Anthropic", "B端"]
+    },
+    {
+      "title": "联想发布首款AI可信一体机",
+      "summary": "面向企业端AI部署，集成安全认证、隐私计算、可信执行环境",
+      "source": "联想",
+      "source_urls": ["https://yishuo.blog.csdn.net/article/details/162341969"],
+      "tags": ["联想", "企业AI"]
+    },
+    {
+      "title": "智元机器人工厂量产直播启动",
+      "summary": "具身智能从实验室走向产线，人形机器人量产时代正式开启",
+      "source": "机器人大讲堂",
+      "source_urls": ["https://www.toutiao.com/a7655506151563395635"],
+      "tags": ["机器人", "量产"]
+    },
+    {
+      "title": "中国三项AI政策同日落地：消费、平台经济、金融安全",
+      "summary": "2026正式进入\"制度+规模\"双轮驱动期，监管与创新并行格局愈发清晰",
+      "source": "CSDN",
+      "source_urls": ["https://yishuo.blog.csdn.net/article/details/162341969"],
+      "tags": ["政策", "中国"]
+    },
+    {
+      "title": "全球首场人形机器人点球大战在MWC上海举办",
+      "summary": "\"云端大脑+本地身体\"架构已跑通，具身智能不再是Demo，是在交付",
+      "source": "中国电子报",
+      "source_urls": ["https://www.toutiao.com/a7655506151563395635"],
+      "tags": ["机器人", "MWC"]
+    },
+    {
+      "title": "OpenAI测试新型语音模型Bidi1",
+      "summary": "实现双向并行处理，AI可在说话同时实时监听并响应打断，缩小人机对话与真实沟通的差距",
+      "source": "OpenAI",
+      "source_urls": ["https://xingyun3d.csdn.net/6a3d439e10ee7a33f282815c.html"],
+      "tags": ["语音AI", "OpenAI"]
+    },
+    {
+      "title": "OpenAI Bidi1语音模型测试——实时双向对话",
+      "summary": "AI可同时说话和监听，支持自然打断，人机语音交互体验逼近人际对话",
+      "source": "The Decoder",
+      "source_urls": ["https://xingyun3d.csdn.net/6a3d439e10ee7a33f282815c.html"],
+      "tags": ["语音", "交互"]
+    }
+  ]
+}
