@@ -2796,13 +2796,12 @@ async function loadWeekData(monday) {
         .concat(stageItems('research'))
         .concat(stageItems('design_output'))
         .concat(stageItems('design_validation'));
+      // 周汇总本身是固定 5 个阶段 x 每阶段 3 条；不要把同一阶段重复塞进多个 tab，
+      // 否则头图统计会长期显示 9/6/6 这种模板化数字。
       const demandItems = []
-        .concat(stageItems('user_research'))
-        .concat(stageItems('design_output'))
-        .slice(0, 6);
+        .concat(stageItems('user_research'));
       const newsItems = []
-        .concat(stageItems('competitive'))
-        .concat(stageItems('research'));
+        .concat(stageItems('competitive'));
 
       merged._days_loaded = 1;
       merged.daily_summary = weekly.overview || (designItems.slice(0, 3).map(i => i.title).join('；') + '。');
