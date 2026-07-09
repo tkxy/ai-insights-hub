@@ -1,0 +1,134 @@
+{
+  "date": "2026-07-03",
+  "generated_at": "2026-07-04T08:20:00+08:00",
+  "daily_summary": "2026年7月3日，AI硬件自主竞赛延伸至芯片代工环节。韩国媒体披露Meta正与三星洽谈约65亿美元的芯片代工合同，用三星2nm工艺生产下一代自研芯片MTIA；同日彭博社报道Anthropic也在与三星接触探索自研芯片可能性，并挖来前OpenAI芯片团队成员Clive Chan。至此，OpenAI（Jalapeño）、Meta（MTIA）、Anthropic（研发中）等模型公司集体走向'自研芯片+先进代工'，三星凭借同时具备HBM内存与2nm逻辑代工能力成为关键枢纽。AI产业的竞争重心正从软件模型下沉到硬件供应链的掌控权争夺。",
+  "design_insights": [
+    {
+      "title": "模型公司集体造芯——AI能力供给的长期格局",
+      "summary": "Meta（MTIA）、Anthropic接连布局自研芯片+三星代工",
+      "implication": "未来AI能力供给将高度集中在少数'模型+芯片'一体化巨头手中。输入法的战略定位应是'中立的AI能力聚合器'——不站队任何一家，为用户聚合最优的多方AI能力",
+      "sources": [
+        "DeepTech",
+        "钛媒体"
+      ],
+      "source_urls": [
+        "https://www.tmtpost.com/8052229.html"
+      ],
+      "tags": [
+        "造芯",
+        "格局",
+        "中立聚合"
+      ]
+    },
+    {
+      "title": "三星成AI硬件枢纽——供应链集中的风险",
+      "summary": "三星同时具备HBM与2nm代工，多家AI巨头依赖",
+      "implication": "关键供应链高度集中于少数厂商，存在地缘与产能风险。输入法在做端侧AI芯片适配时应保持跨平台兼容，不押注单一硬件生态",
+      "sources": [
+        "DeepTech"
+      ],
+      "source_urls": [
+        "https://www.toutiao.com/article/7659388340461961766"
+      ],
+      "tags": [
+        "供应链",
+        "风险",
+        "跨平台"
+      ]
+    },
+    {
+      "title": "'输入法成2026最火互联网产品'——赛道价值重估",
+      "summary": "字节/腾讯/阿里/智谱/百度/讯飞集体力推AI输入法",
+      "implication": "输入法从成熟品被重估为AI时代的核心入口，赛道拥挤但价值凸显。差异化不在'有没有AI'，而在'AI输入体验谁更快、更准、更懂场景'——体验细节成为决胜点",
+      "sources": [
+        "澎湃新闻"
+      ],
+      "source_urls": [
+        "https://m.thepaper.cn/newsDetail_forward_33486501"
+      ],
+      "tags": [
+        "赛道",
+        "入口",
+        "差异化"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "中立多方AI能力聚合",
+      "pain_point": "AI能力集中于少数'模型+芯片'巨头，用户被迫站队",
+      "opportunity": "输入法作为中立聚合器，为用户聚合多方最优AI能力，不绑定单一生态",
+      "priority": "P1",
+      "evidence": "OpenAI/Meta/Anthropic集体造芯，能力供给走向巨头集中"
+    },
+    {
+      "title": "跨平台端侧AI适配",
+      "pain_point": "端侧AI芯片生态分裂，绑定单一硬件有风险",
+      "opportunity": "端侧AI能力做跨平台兼容层，适配主流芯片而不押注单一生态",
+      "priority": "P3",
+      "evidence": "三星成AI硬件枢纽，供应链高度集中"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Meta与三星洽谈65亿美元芯片代工合同",
+      "summary": "7月3日韩媒披露，用三星2nm工艺生产下一代自研芯片MTIA",
+      "source": "DeepTech",
+      "source_urls": [
+        "https://www.toutiao.com/article/7659388340461961766"
+      ],
+      "tags": [
+        "Meta",
+        "芯片代工"
+      ]
+    },
+    {
+      "title": "Anthropic接触三星探索自研芯片",
+      "summary": "7月3日彭博社报道，挖来前OpenAI芯片团队Clive Chan",
+      "source": "DeepTech",
+      "source_urls": [
+        "https://www.toutiao.com/article/7659388340461961766"
+      ],
+      "tags": [
+        "Anthropic",
+        "芯片"
+      ]
+    },
+    {
+      "title": "三星成AI硬件关键枢纽",
+      "summary": "同时具备HBM内存与2nm逻辑代工能力，多家AI巨头依赖",
+      "source": "钛媒体",
+      "source_urls": [
+        "https://www.tmtpost.com/8052229.html"
+      ],
+      "tags": [
+        "三星",
+        "供应链"
+      ]
+    },
+    {
+      "title": "输入法成2026年最火互联网产品",
+      "summary": "字节/腾讯/阿里/智谱/百度/讯飞集体力推AI输入法，'老树发新芽'",
+      "source": "澎湃新闻",
+      "source_urls": [
+        "https://m.thepaper.cn/newsDetail_forward_33486501"
+      ],
+      "tags": [
+        "输入法",
+        "赛道"
+      ]
+    },
+    {
+      "title": "模型公司集体走向自研芯片",
+      "summary": "OpenAI、Meta、Anthropic接连布局，竞争下沉到硬件供应链",
+      "source": "DeepTech",
+      "source_urls": [
+        "https://www.toutiao.com/article/7659388340461961766"
+      ],
+      "tags": [
+        "造芯",
+        "行业趋势"
+      ]
+    }
+  ]
+}

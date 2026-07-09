@@ -1,0 +1,146 @@
+{
+  "date": "2026-06-30",
+  "generated_at": "2026-07-01T08:20:00+08:00",
+  "daily_summary": "2026年6月30日，AI产业'去GPU化'与算力自主叙事持续升温。回看6月24日OpenAI与博通联合发布首款自研推理芯片Jalapeño（OpenAI称其为'Intelligence Processor'智能处理器），从设计到流片仅九个月，并签下10GW算力部署协议——一家模型公司开始造芯片，两年前几乎不可想象。这标志着头部AI公司从'租算力'转向'造算力'，试图掌控从芯片到模型的全栈。对下游产品而言，算力自主意味着未来推理成本与可用性将更多由少数几家巨头的自研芯片节奏决定。国产侧，监管收紧与算力突围并行，全球AI格局迎来结构性重构。",
+  "design_insights": [
+    {
+      "title": "OpenAI自研推理芯片Jalapeño——全栈自主重塑成本曲线",
+      "summary": "OpenAI与博通九个月造出首款推理芯片，签10GW部署协议",
+      "implication": "头部lab全栈自主后，API定价与可用性将由其自研芯片节奏主导。输入法不能把AI体验绑死在单一供应商——必须做多模型/多供应商抽象层，一家涨价或限流可无缝切换",
+      "sources": [
+        "DeepTech"
+      ],
+      "source_urls": [
+        "https://www.toutiao.com/article/7659388340461961766"
+      ],
+      "tags": [
+        "自研芯片",
+        "成本",
+        "供应商策略"
+      ]
+    },
+    {
+      "title": "推理专用芯片普及——端侧AI输入迎来窗口",
+      "summary": "Jalapeño专为推理设计，行业推理成本有望持续下探",
+      "implication": "推理成本下降使'高频、低延迟'的输入场景AI化更可行。输入法可更激进地把AI用在每次候选生成、实时纠错、边打边写上，而非仅在'长文'等重场景",
+      "sources": [
+        "DeepTech",
+        "钛媒体"
+      ],
+      "source_urls": [
+        "https://www.tmtpost.com/8052229.html"
+      ],
+      "tags": [
+        "推理成本",
+        "端侧",
+        "实时"
+      ]
+    },
+    {
+      "title": "'智能处理器'去GPU化命名——交互隐喻的迁移",
+      "summary": "OpenAI刻意不叫GPU/AI芯片，而叫Intelligence Processor",
+      "implication": "命名即定位。输入法AI功能的命名也应从'技术词'（大模型、生成式）转向'能力词'（帮你写、帮你改），降低用户理解门槛，让AI能力'处理器化'——无感、常驻、随手可用",
+      "sources": [
+        "钛媒体"
+      ],
+      "source_urls": [
+        "https://www.tmtpost.com/8052229.html"
+      ],
+      "tags": [
+        "命名",
+        "定位",
+        "用户认知"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "输入法多模型/多供应商抽象层",
+      "pain_point": "AI能力绑定单一供应商，一旦涨价、限流或合规下线则被动",
+      "opportunity": "构建统一的模型抽象层，屏蔽底层供应商差异，支持按成本/延迟/合规动态路由",
+      "priority": "P1",
+      "evidence": "OpenAI造芯全栈自主，API定价将由自研芯片节奏主导"
+    },
+    {
+      "title": "高频轻量AI输入（边打边纠错/生成）",
+      "pain_point": "AI输入目前多用于重场景，高频输入仍是传统体验",
+      "opportunity": "借推理成本下降，把AI下沉到每次候选、实时纠错、短句续写",
+      "priority": "P2",
+      "evidence": "Jalapeño等推理专用芯片推动成本持续下探"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "OpenAI发布首款自研推理芯片Jalapeño",
+      "summary": "与博通联合开发，九个月完成设计到流片，称为'Intelligence Processor'",
+      "source": "DeepTech",
+      "source_urls": [
+        "https://www.toutiao.com/article/7659388340461961766"
+      ],
+      "tags": [
+        "芯片",
+        "OpenAI"
+      ]
+    },
+    {
+      "title": "OpenAI签下10GW算力部署协议",
+      "summary": "与博通合作，模型公司大举布局自主算力基础设施",
+      "source": "DeepTech",
+      "source_urls": [
+        "https://www.toutiao.com/article/7659388340461961766"
+      ],
+      "tags": [
+        "算力",
+        "基础设施"
+      ]
+    },
+    {
+      "title": "AI产业围绕OpenAI与Anthropic重组",
+      "summary": "算力流向为线索，几乎所有产业线最终汇向两家头部公司",
+      "source": "DeepTech",
+      "source_urls": [
+        "https://www.toutiao.com/article/7659388340461961766"
+      ],
+      "tags": [
+        "行业格局",
+        "算力"
+      ]
+    },
+    {
+      "title": "Anthropic进入定制AI芯片早期研发",
+      "summary": "洽谈三星、微软、Fractile合作，挖来前OpenAI芯片团队Clive Chan",
+      "source": "钛媒体",
+      "source_urls": [
+        "https://www.tmtpost.com/8052229.html"
+      ],
+      "tags": [
+        "Anthropic",
+        "自研芯片"
+      ]
+    },
+    {
+      "title": "全球AI格局迎来结构性重构",
+      "summary": "监管收紧、国产算力突围、巨额产业融资集中涌现三线并行",
+      "source": "希鸥网",
+      "source_urls": [
+        "https://www.rceo.cn/inews/article.php?id=2631"
+      ],
+      "tags": [
+        "行业趋势",
+        "重构"
+      ]
+    },
+    {
+      "title": "Anthropic估值9650亿美元居非上市AI公司首位",
+      "summary": "5月28日完成65亿H轮，超越OpenAI的8520亿",
+      "source": "钛媒体",
+      "source_urls": [
+        "https://www.tmtpost.com/8052229.html"
+      ],
+      "tags": [
+        "估值",
+        "融资"
+      ]
+    }
+  ]
+}

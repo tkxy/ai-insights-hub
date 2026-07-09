@@ -1,0 +1,133 @@
+{
+  "date": "2026-07-01",
+  "generated_at": "2026-07-02T08:20:00+08:00",
+  "daily_summary": "2026年7月1日，AI基础设施'云化+资产化'加速。彭博社报道Meta正组建名为Meta Compute的云业务部门，计划对外出售AI算力，消息带动Meta股价当天上涨9%，而算力租赁概念股CoreWeave下跌14%、Nebius下跌17%——市场用脚投票，认为大厂自建算力云将挤压第三方租赁市场。这意味着AI算力正从'稀缺采购品'走向'可对外交易的标准化云资源'。对输入法这类高频调用AI的产品而言，算力供给格局的变化最终会传导到API成本与稳定性，多云、多供应商的弹性接入变得更加重要。",
+  "design_insights": [
+    {
+      "title": "Meta Compute入局算力云——AI供给侧的多云新常态",
+      "summary": "Meta组建算力云对外售卖，股价涨9%，租赁股大跌",
+      "implication": "算力供给从少数租赁商走向大厂多云并存。输入法AI后端应采用多云弹性接入，按可用性与成本智能调度，避免绑定单一云导致的稳定性风险",
+      "sources": [
+        "DeepTech"
+      ],
+      "source_urls": [
+        "https://www.toutiao.com/article/7659388340461961766"
+      ],
+      "tags": [
+        "多云",
+        "算力",
+        "弹性"
+      ]
+    },
+    {
+      "title": "算力资产化——AI功能的成本可预测性",
+      "summary": "AI算力走向标准化、可交易的云资源",
+      "implication": "算力成本更透明可预测后，输入法可对AI功能做精细化的成本-体验权衡：高价值场景用强模型，高频场景用轻量模型，把每次AI调用的ROI纳入设计考量",
+      "sources": [
+        "DeepTech"
+      ],
+      "source_urls": [
+        "https://www.toutiao.com/article/7659388340461961766"
+      ],
+      "tags": [
+        "成本",
+        "ROI",
+        "分层"
+      ]
+    },
+    {
+      "title": "租赁股大跌信号——警惕单一依赖的系统性风险",
+      "summary": "CoreWeave跌14%、Nebius跌17%，市场担忧被大厂云挤压",
+      "implication": "过度依赖单一算力/API供应商存在系统性风险。输入法需建立供应商健康度监控与快速切换预案，把'某供应商突然不可用'纳入容灾设计",
+      "sources": [
+        "DeepTech"
+      ],
+      "source_urls": [
+        "https://www.toutiao.com/article/7659388340461961766"
+      ],
+      "tags": [
+        "容灾",
+        "风险",
+        "供应商"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "多云弹性AI后端调度",
+      "pain_point": "绑定单一云/供应商，遇限流或涨价缺乏弹性",
+      "opportunity": "多云接入+按成本/延迟/可用性智能路由，供应商异常时秒级切换",
+      "priority": "P1",
+      "evidence": "Meta Compute入局，算力供给走向多云并存"
+    },
+    {
+      "title": "AI调用成本-体验分层策略",
+      "pain_point": "所有AI调用一视同仁，高频场景成本高、低价值场景浪费强模型",
+      "opportunity": "按场景价值分层调用不同规格模型，最大化每次调用ROI",
+      "priority": "P2",
+      "evidence": "算力资产化使成本更透明可预测"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Meta组建Meta Compute云业务对外售算力",
+      "summary": "7月1日彭博社报道，Meta股价当天上涨9%",
+      "source": "DeepTech",
+      "source_urls": [
+        "https://www.toutiao.com/article/7659388340461961766"
+      ],
+      "tags": [
+        "Meta",
+        "算力云"
+      ]
+    },
+    {
+      "title": "CoreWeave下跌14%、Nebius下跌17%",
+      "summary": "大厂自建算力云挤压第三方租赁市场预期，租赁股承压",
+      "source": "DeepTech",
+      "source_urls": [
+        "https://www.toutiao.com/article/7659388340461961766"
+      ],
+      "tags": [
+        "股价",
+        "算力租赁"
+      ]
+    },
+    {
+      "title": "AI算力走向标准化可交易云资源",
+      "summary": "从稀缺采购品转向对外销售的云服务",
+      "source": "DeepTech",
+      "source_urls": [
+        "https://www.toutiao.com/article/7659388340461961766"
+      ],
+      "tags": [
+        "算力",
+        "资产化"
+      ]
+    },
+    {
+      "title": "巨额产业融资本周集中涌现",
+      "summary": "AI监管收紧的同时资本热度不减",
+      "source": "希鸥网",
+      "source_urls": [
+        "https://www.rceo.cn/inews/article.php?id=2631"
+      ],
+      "tags": [
+        "融资",
+        "行业"
+      ]
+    },
+    {
+      "title": "谷歌以每月9.2亿美元签下xAI算力",
+      "summary": "头部厂商锁定长期算力供给，算力争夺进入长约时代",
+      "source": "DeepTech",
+      "source_urls": [
+        "https://www.toutiao.com/article/7659388340461961766"
+      ],
+      "tags": [
+        "算力",
+        "长约"
+      ]
+    }
+  ]
+}

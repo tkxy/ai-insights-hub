@@ -1,0 +1,133 @@
+{
+  "date": "2026-07-02",
+  "generated_at": "2026-07-03T08:20:00+08:00",
+  "daily_summary": "2026年7月2日，AI落地服务与合规基建同步提速。微软宣布成立Frontier Company，投入25亿美元、配备6000名工程师，专门帮企业客户部署AI——这是巨头把'AI落地'本身做成一门规模化生意的信号，AI竞争从'谁的模型强'延伸到'谁能帮客户真正用起来'。与此同时，国内《人工智能拟人化互动服务管理暂行办法》进入落地窗口，为随后豆包、千问下线用户自建智能体埋下伏笔。整体看，AI行业正从'秀肌肉'转向'拼交付与合规'，产品化、工程化、合规化成为下半场关键词。",
+  "design_insights": [
+    {
+      "title": "微软Frontier押注'AI落地服务'——交付能力成新战场",
+      "summary": "微软投25亿美元、6000工程师专帮企业部署AI",
+      "implication": "模型能力趋同后，'帮用户真正用起来'成为差异化关键。输入法不应只堆AI功能，而要降低使用门槛——把AI能力做成用户无需学习、随手即得的默认体验，交付即体验",
+      "sources": [
+        "DeepTech"
+      ],
+      "source_urls": [
+        "https://www.toutiao.com/article/7659388340461961766"
+      ],
+      "tags": [
+        "交付",
+        "落地",
+        "易用性"
+      ]
+    },
+    {
+      "title": "拟人化互动新规临近——AI人格化设计的边界",
+      "summary": "《AI拟人化互动服务管理暂行办法》进入落地窗口",
+      "implication": "AI拟人化受监管约束。输入法AI助手的人格化设计（拟人语气、角色扮演）需预留合规开关，明确'我是AI'的身份披露，避免过度拟人带来的合规与信任风险",
+      "sources": [
+        "腾讯新闻"
+      ],
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260709A01MCW00"
+      ],
+      "tags": [
+        "拟人化",
+        "合规",
+        "身份披露"
+      ]
+    },
+    {
+      "title": "企业AI工程化——输入法B端场景的机会",
+      "summary": "巨头把企业AI部署做成规模化生意",
+      "implication": "企业办公场景对'安全、可控、可审计'的AI输入需求上升。输入法可拓展B端——企业版输入法支持数据不出域、词库私有化、合规审计，切入企业AI落地链条",
+      "sources": [
+        "DeepTech"
+      ],
+      "source_urls": [
+        "https://www.toutiao.com/article/7659388340461961766"
+      ],
+      "tags": [
+        "B端",
+        "企业",
+        "工程化"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "零学习成本的默认AI输入体验",
+      "pain_point": "AI功能多但用户不知道、不会用，功能利用率低",
+      "opportunity": "把高价值AI能力做成默认开启、随手即得的体验，交付即体验",
+      "priority": "P1",
+      "evidence": "微软Frontier验证'帮用户用起来'比'功能强'更关键"
+    },
+    {
+      "title": "AI人格化合规开关",
+      "pain_point": "拟人化AI助手面临新规约束，过度拟人有合规风险",
+      "opportunity": "人格化设计预留合规开关+清晰身份披露，按地区新规动态调整",
+      "priority": "P2",
+      "evidence": "《AI拟人化互动服务管理暂行办法》进入落地窗口"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "微软成立Frontier Company助企业部署AI",
+      "summary": "7月2日宣布，投入25亿美元、配备6000名工程师",
+      "source": "DeepTech",
+      "source_urls": [
+        "https://www.toutiao.com/article/7659388340461961766"
+      ],
+      "tags": [
+        "微软",
+        "企业AI"
+      ]
+    },
+    {
+      "title": "AI竞争从模型性能转向落地交付",
+      "summary": "巨头把'帮客户用起来'做成规模化生意",
+      "source": "DeepTech",
+      "source_urls": [
+        "https://www.toutiao.com/article/7659388340461961766"
+      ],
+      "tags": [
+        "行业趋势",
+        "落地"
+      ]
+    },
+    {
+      "title": "《AI拟人化互动服务管理暂行办法》进入落地窗口",
+      "summary": "为随后豆包、千问下线用户自建智能体埋下伏笔",
+      "source": "腾讯新闻",
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260709A01MCW00"
+      ],
+      "tags": [
+        "监管",
+        "合规"
+      ]
+    },
+    {
+      "title": "AI行业进入'拼交付与合规'下半场",
+      "summary": "产品化、工程化、合规化成为关键词",
+      "source": "希鸥网",
+      "source_urls": [
+        "https://www.rceo.cn/inews/article.php?id=2631"
+      ],
+      "tags": [
+        "行业趋势",
+        "合规"
+      ]
+    },
+    {
+      "title": "Anthropic洽谈三星2nm代工自研芯片",
+      "summary": "探索硬件自主，前OpenAI芯片团队成员加盟",
+      "source": "钛媒体",
+      "source_urls": [
+        "https://www.tmtpost.com/8052229.html"
+      ],
+      "tags": [
+        "Anthropic",
+        "芯片"
+      ]
+    }
+  ]
+}
