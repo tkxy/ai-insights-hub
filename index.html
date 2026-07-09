@@ -2780,6 +2780,28 @@ async function loadWeekData(monday) {
     const weekResp = await fetchWithTimeout('data/design-weekly-' + formatDate(monday) + '.json?t=' + Date.now(), 8000);
     if (weekResp && weekResp.ok) {
       const weekly = await weekResp.json();
+      const expectedStart = formatDate(monday);
+      const expectedSunday = new Date(monday);
+      expectedSunday.setDate(monday.getDate() + 6);
+      const expectedEnd = formatDate(expectedSunday);
+      const hasExplicitRange = !!(weekly.week_start || weekly.week_end);
+      const rangeMatched = (!weekly.week_start || weekly.week_start === expectedStart) &&
+        (!weekly.week_end || weekly.week_end === expectedEnd);
+      const legacyDateMatched = !weekly.date || weekly.date === expectedStart;
+
+      // 防止把“上一周生成的周报”误挂到“本周周一”下面展示。
+      // 例如 design-weekly-2026-06-29.json 实际覆盖 2026-06-22 ~ 2026-06-28，
+      // 若不校验 week_start/week_end，就会在 6月29日 - 7月5日 误显示 9/3/3。
+      if ((hasExplicitRange && !rangeMatched) || (!hasExplicitRange && !legacyDateMatched)) {
+        console.warn('[Insight] skip mismatched weekly fallback', {
+          requested: expectedStart + ' ~ ' + expectedEnd,
+          weekly_start: weekly.week_start,
+          weekly_end: weekly.week_end,
+          weekly_date: weekly.date
+        });
+        return null;
+      }
+
       const stages = weekly.stages || {};
       const toInsight = (item, stageTitle) => ({
         title: item.title || '',
