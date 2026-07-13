@@ -1,0 +1,89 @@
+{
+  "date": "2026-07-12",
+  "generated_at": "2026-07-12T08:20:00+08:00",
+  "daily_summary": "2026年7月12日（周日），临近WAIC，行业进入最后冲刺。Meta于7月9日发布的多模态推理模型Muse Spark 1.1持续发酵——强化多智能体协作（主智能体拆分任务给子智能体并行执行）、支持最高100万token上下文、可跨应用持续执行长流程任务并自主判断'点击界面/写脚本/批量操作'。回看本周（7/6-7/12）：WAIC预热、GPT-5.6全量发布、百度搭子升级、搜狗适配鸿蒙、AI安全治理趋严，'通用智能体+系统级AI手机'从多方向逼近输入入口。对输入法的核心启示：在'智能体自主执行'成为标配的时代，守住'高频、系统级、隐私可控'护城河，并前瞻布局意图输入与可控可回退的AI体验。",
+  "design_insights": [
+    {
+      "title": "Muse Spark多智能体协作——长上下文的输入承载",
+      "summary": "Meta Muse Spark 1.1支持100万token上下文、多智能体协作",
+      "implication": "超长上下文使'一次输入承载复杂完整意图'成为可能。输入法应支持长文本意图的结构化录入与编辑，并在多智能体执行过程中承接用户的中途干预与修正",
+      "sources": [
+        "IT之家/网易"
+      ],
+      "source_urls": [
+        "https://www.163.com/dy/article/L1M2PN630511B8LM.html"
+      ],
+      "tags": [
+        "长上下文",
+        "多智能体",
+        "意图录入"
+      ]
+    },
+    {
+      "title": "本周复盘：护城河=高频×系统级×隐私可控",
+      "summary": "本周通用智能体与AI手机从多方向逼近输入入口",
+      "implication": "面对智能体逼近，输入法的不可替代性在于：极致高频的使用场景、系统级的深度集成、以及对用户输入隐私的可控保护。战略上应聚焦强化这三大护城河",
+      "sources": [
+        "综合"
+      ],
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260712A02E4S00"
+      ],
+      "tags": [
+        "护城河",
+        "战略",
+        "复盘"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "长意图的结构化录入与中途干预",
+      "pain_point": "复杂长意图难以一次性表达，执行中难以干预",
+      "opportunity": "支持长文本意图结构化录入，多智能体执行中承接用户中途修正",
+      "priority": "P2",
+      "evidence": "Muse Spark 1.1支持100万token上下文与多智能体协作"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Meta发布多模态推理模型Muse Spark 1.1",
+      "summary": "强化多智能体协作，支持100万token上下文，跨应用长流程执行",
+      "source": "IT之家",
+      "source_urls": [
+        "https://www.163.com/dy/article/L1M2PN630511B8LM.html"
+      ],
+      "tags": [
+        "Meta",
+        "Muse Spark",
+        "多智能体"
+      ]
+    },
+    {
+      "title": "AI大模型竞争加剧，安全治理成焦点",
+      "summary": "Claude Code后门、GPT-5.6发布、大模型基准国际标准多线并进",
+      "source": "腾讯网",
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260712A02E4S00"
+      ],
+      "tags": [
+        "大模型",
+        "安全",
+        "治理"
+      ]
+    },
+    {
+      "title": "WAIC进入最后冲刺，超300款产品待首发",
+      "summary": "7月17-20日上海，智能体与AI硬件成最大看点",
+      "source": "综合",
+      "source_urls": [
+        "https://view.inews.qq.com/a/20260711A022ZV00"
+      ],
+      "tags": [
+        "WAIC",
+        "首发",
+        "冲刺"
+      ]
+    }
+  ]
+}

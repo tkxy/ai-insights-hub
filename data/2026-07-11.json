@@ -1,0 +1,109 @@
+{
+  "date": "2026-07-11",
+  "generated_at": "2026-07-11T08:20:00+08:00",
+  "daily_summary": "2026年7月11日，AI安全与治理成为焦点：'仅11天Claude重写百万行代码'引发争议，Zig创始人批评AI生成代码残留2.7万行unsafe块、维护成本巨大；同日中国牵头制定的全球首份大模型基准测试国际标准正式发布。此外Science报道AI智能体可40分钟完成人类60小时实验工作，Cursor被曝秘密开发办公助手'Sand'叫板Claude。对输入法的启示：AI能力的'可靠性与可解释性'正成为用户与监管共同关注点，输入法在引入AI能力时应可控、可验证、可回退，避免'黑盒'式AI造成的信任损耗。",
+  "design_insights": [
+    {
+      "title": "AI可靠性争议——输入AI需可控可回退",
+      "summary": "Claude重写百万行代码残留大量unsafe块引发可靠性质疑",
+      "implication": "AI能力强不等于可靠。输入法引入AI（纠错、改写、翻译）时须提供'可预览、可对比、一键回退'机制，让用户始终掌控，避免AI'自作主张'损害信任",
+      "sources": [
+        "腾讯网"
+      ],
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260711A05DFO00"
+      ],
+      "tags": [
+        "可靠性",
+        "可回退",
+        "可控"
+      ]
+    },
+    {
+      "title": "大模型基准国际标准——评测体系借鉴",
+      "summary": "中国牵头制定全球首份大模型基准测试国际标准发布",
+      "implication": "标准化评测提供了衡量AI能力的统一尺子。输入法应建立自己的AI输入能力评测基准（准确率、延迟、场景覆盖），用数据驱动体验迭代而非主观判断",
+      "sources": [
+        "腾讯网"
+      ],
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260712A02E4S00"
+      ],
+      "tags": [
+        "基准",
+        "评测",
+        "标准"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "AI输入的可预览可回退机制",
+      "pain_point": "AI改写/纠错'自作主张'，用户失去掌控感",
+      "opportunity": "提供可预览、可对比、一键回退的AI输入交互，用户始终掌控",
+      "priority": "P1",
+      "evidence": "Claude重写代码可靠性争议凸显AI可控性需求"
+    },
+    {
+      "title": "AI输入能力评测基准",
+      "pain_point": "输入法AI能力优劣缺乏量化标准",
+      "opportunity": "建立准确率/延迟/场景覆盖的评测基准，数据驱动迭代",
+      "priority": "P2",
+      "evidence": "中国牵头发布大模型基准测试国际标准"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "11天Claude重写百万行代码引可靠性争议",
+      "summary": "Zig创始人批评残留2.7万行unsafe块、维护成本巨大",
+      "source": "腾讯网",
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260711A05DFO00"
+      ],
+      "tags": [
+        "Claude",
+        "可靠性",
+        "代码"
+      ]
+    },
+    {
+      "title": "中国牵头制定全球首份大模型基准测试国际标准",
+      "summary": "为全球大模型性能评估提供统一规范",
+      "source": "腾讯网",
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260712A02E4S00"
+      ],
+      "tags": [
+        "基准",
+        "国际标准",
+        "评测"
+      ]
+    },
+    {
+      "title": "Science：AI智能体40分钟完成人类60小时实验",
+      "summary": "AI自主进行科学实验，科研自动化重大飞跃",
+      "source": "光锥之外AI",
+      "source_urls": [
+        "https://view.inews.qq.com/a/20260711A022ZV00"
+      ],
+      "tags": [
+        "智能体",
+        "科研",
+        "自动化"
+      ]
+    },
+    {
+      "title": "Cursor秘密立项办公助手'Sand'叫板Claude",
+      "summary": "AI编程明星产品扩展至通用办公场景，战略转型",
+      "source": "格物之声",
+      "source_urls": [
+        "https://view.inews.qq.com/a/20260711A022ZV00"
+      ],
+      "tags": [
+        "Cursor",
+        "办公助手",
+        "智能体"
+      ]
+    }
+  ]
+}
