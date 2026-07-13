@@ -1,0 +1,547 @@
+{
+  "week": "2026-W28",
+  "range": {
+    "start": "2026-07-06",
+    "end": "2026-07-12"
+  },
+  "generatedAt": "2026-07-13T01:07:11.214842+00:00",
+  "count": 20,
+  "items": [
+    {
+      "name": "Zackriya-Solutions/meetily",
+      "title": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS & Windows. Understand How to write meeting minutes",
+      "url": "https://github.com/Zackriya-Solutions/meetily",
+      "stars": 23585,
+      "weeklyStars": 7440,
+      "forks": 0,
+      "language": "Rust",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "meetily 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "asgeirtj/system_prompts_leaks",
+      "title": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT GPT-5.6, Codex GPT-5.6, GPT-5.5. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "stars": 56734,
+      "weeklyStars": 7155,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "system_prompts_leaks 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "Prompt 工程优化",
+          "desc": "系统提示词的管理、版本控制和 A/B 测试"
+        },
+        {
+          "name": "AI 应用调优",
+          "desc": "通过 prompt 模板提升生成质量和一致性"
+        },
+        {
+          "name": "团队 Prompt 库",
+          "desc": "跨团队共享和复用高质量提示词"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "iOfficeAI/OfficeCLI",
+      "title": "OfficeCLI is the first and best Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
+      "url": "https://github.com/iOfficeAI/OfficeCLI",
+      "stars": 15429,
+      "weeklyStars": 6978,
+      "forks": 0,
+      "language": "C#",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "OfficeCLI 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "diegosouzapw/OmniRoute",
+      "title": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "stars": 16230,
+      "weeklyStars": 4506,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "AI 工程的瓶颈正在从模型能力转向上下文成本。能压缩日志、工具输出和 RAG chunk 的项目走热，说明开发者开始认真治理「给模型看的信息」，而不是一味堆更大的上下文窗口。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "stablyai/orca",
+      "title": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
+      "url": "https://github.com/stablyai/orca",
+      "stars": 16999,
+      "weeklyStars": 4481,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "orca 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "bradautomates/claude-video",
+      "title": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.",
+      "url": "https://github.com/bradautomates/claude-video",
+      "stars": 7837,
+      "weeklyStars": 4353,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "生成式视频正在从专业创作工具下沉为自动化流水线。一个脚本能把选题、文案、素材、配音、剪辑串起来，意味着内容生产的门槛被压到运营级别。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "usestrix/strix",
+      "title": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+      "url": "https://github.com/usestrix/strix",
+      "stars": 40858,
+      "weeklyStars": 4143,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "strix 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "JuliusBrussee/caveman",
+      "title": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "stars": 88546,
+      "weeklyStars": 3992,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "AI 工程的瓶颈正在从模型能力转向上下文成本。能压缩日志、工具输出和 RAG chunk 的项目走热，说明开发者开始认真治理「给模型看的信息」，而不是一味堆更大的上下文窗口。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "ogulcancelik/herdr",
+      "title": "agent multiplexer that lives in your terminal.",
+      "url": "https://github.com/ogulcancelik/herdr",
+      "stars": 15793,
+      "weeklyStars": 3928,
+      "forks": 0,
+      "language": "Rust",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "herdr 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "ruvnet/RuView",
+      "title": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+      "url": "https://github.com/ruvnet/RuView",
+      "stars": 80257,
+      "weeklyStars": 3763,
+      "forks": 0,
+      "language": "Rust",
+      "topics": [],
+      "category": "其他",
+      "insight": "生成式视频正在从专业创作工具下沉为自动化流水线。一个脚本能把选题、文案、素材、配音、剪辑串起来，意味着内容生产的门槛被压到运营级别。",
+      "cases": [
+        {
+          "name": "技术选型参考",
+          "desc": "了解该领域最新技术方向和社区趋势"
+        },
+        {
+          "name": "团队分享素材",
+          "desc": "适合作为技术分享或设计组内部交流的案例"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "openai/codex-plugin-cc",
+      "title": "Use Codex from Claude Code to review code or delegate tasks.",
+      "url": "https://github.com/openai/codex-plugin-cc",
+      "stars": 28061,
+      "weeklyStars": 2803,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "codex-plugin-cc 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "alibaba/page-agent",
+      "title": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
+      "url": "https://github.com/alibaba/page-agent",
+      "stars": 26222,
+      "weeklyStars": 2666,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "page-agent 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "TencentCloud/CubeSandbox",
+      "title": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
+      "url": "https://github.com/TencentCloud/CubeSandbox",
+      "stars": 9805,
+      "weeklyStars": 2490,
+      "forks": 0,
+      "language": "Rust",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "CubeSandbox 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "facebook/astryx",
+      "title": "An open source design system that's fully customizable and agent ready",
+      "url": "https://github.com/facebook/astryx",
+      "stars": 8187,
+      "weeklyStars": 2397,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "astryx 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "pbakaus/impeccable",
+      "title": "The design language that makes your AI harness better at design.",
+      "url": "https://github.com/pbakaus/impeccable",
+      "stars": 45982,
+      "weeklyStars": 2272,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "AI 生成内容的下一阶段不是更能写，而是更像人、更有审美。社区开始把「去 AI 味」「设计品味」「语言质感」做成可复用 skill，说明输出质量正在从功能问题变成风格问题。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "alirezarezvani/claude-skills",
+      "title": "345 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 330+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.",
+      "url": "https://github.com/alirezarezvani/claude-skills",
+      "stars": 22381,
+      "weeklyStars": 1993,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "Agent 产品竞争开始进入「运行框架」阶段。社区关注的不再只是接哪个模型，而是技能、记忆、安全、评估这些让 Agent 长期稳定工作的底层系统。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "vxcontrol/pentagi",
+      "title": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+      "url": "https://github.com/vxcontrol/pentagi",
+      "stars": 20172,
+      "weeklyStars": 1989,
+      "forks": 0,
+      "language": "Go",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "pentagi 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "wonderwhy-er/DesktopCommanderMCP",
+      "title": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
+      "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+      "stars": 7990,
+      "weeklyStars": 1678,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "DesktopCommanderMCP 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "tt-a1i/archify",
+      "title": "Any agent Skill: generate beautiful architecture diagrams with dark/light theme toggle and PNG/JPEG/WebP/SVG export",
+      "url": "https://github.com/tt-a1i/archify",
+      "stars": 3918,
+      "weeklyStars": 1180,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "archify 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "ChromeDevTools/chrome-devtools-mcp",
+      "title": "Chrome DevTools for coding agents",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "stars": 46770,
+      "weeklyStars": 872,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "chrome-devtools-mcp 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    }
+  ]
+}

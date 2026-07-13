@@ -1,135 +1,133 @@
 {
   "week": "2026-W28",
-  "range": {
-    "start": "2026-07-06",
-    "end": "2026-07-12"
-  },
-  "generatedAt": "2026-07-06T09:28:00+08:00",
+  "range": { "start": "2026-07-06", "end": "2026-07-12" },
+  "generatedAt": "2026-07-13T01:06:00.000+00:00",
   "trends": [
     {
-      "title": "本地云端接力",
-      "summary": "Claude 开始接入 Apple 的 Foundation Models framework，思路很明确：简单任务先在端侧做，复杂推理再交给云端大模型。Cat Wu 提到 Claude 在留存分析里会主动选更合适的方法，说明模型不只是会回答，也开始帮用户判断该怎么做。",
-      "implication": "输入法 AI 可以采用同一套思路：纠错、摘要、提取走本地低延迟，复杂写作和多步任务再交给云端，用户感知会更顺。",
+      "title": "AI能力边界越来越清晰",
+      "summary": "这周有两个方向很有意思：一方面大家都在追问 AI 到底还有什么做不好的，OpenAI Codex 的 Thibault 发了一条推问「Codex 什么东西还做不好、早该做好的」，炸出近 2000 条回复；另一边 Anthropic 的 Cat Wu 展示了 Claude Fable 5 在不需要你提示的情况下自己用了倾向得分匹配来做留存分析。说明模型确实在变聪明，但大家也在重新锚定对它的期待。",
+      "implication": "对输入法/AI 助手来说，核心体验不是「什么都能做」，而是用户最常用的那几件事——纠错、润色、搜索——做到足够可靠。Fable 5 这种「不需要你多说」的判断力，正是 AI 助手应该追求的方向。",
       "evidence": [
         {
-          "type": "blog",
-          "who": "Claude Blog",
-          "url": "https://claude.com/blog/claude-for-foundation-models",
-          "quote": "开发者可以先用 Apple 端侧模型处理快速、本地的任务，再在需要多步推理、代码生成等复杂能力时交给 Claude。（Developers can use this to tap into Apple’s on-device models for fast, local tasks... hand off to Claude when a request calls for multi-step reasoning, code generation, and more.）"
+          "type": "tweet",
+          "who": "Thibault Sottiaux (OpenAI Codex & ChatGPT)",
+          "url": "https://x.com/thsottiaux/status/2073551549494596079",
+          "quote": "什么东西你觉得很惊讶 Codex 到现在还做不好、早该搞定的事？(What is something that you feel is surprising that Codex still can't do well and we should have gotten right a while ago?)"
         },
         {
           "type": "tweet",
-          "who": "Cat Wu",
+          "who": "Cat Wu (Anthropic Claude Code & Cowork)",
           "url": "https://x.com/_catwu/status/2073439890482794966",
-          "quote": "Claude Fable 5 在我的留存分析里，没等我提醒就知道该用倾向得分匹配。（it knew to use propensity score matching... without me asking.）"
+          "quote": "Claude Fable 5 最让我喜欢的一点是它知道在留存分析中应该用 propensity score matching 来匹配相似活跃度的用户做对比，而我根本没提。(Fable 5's improved judgment across all of its work, from writing emails and docs in Cowork to debugging complex errors in Claude Code)"
         }
       ]
     },
     {
-      "title": "AI 流量重排",
-      "summary": "Cloudflare CEO 在播客里说，2026 上半年机器人流量已经超过真人流量，未来几年网络流量可能暴涨。Vercel AI Gateway 的 token 消耗动画也显示，开发者正在大量通过网关调用不同模型，模型流量本身变成了产品基础设施的一部分。",
-      "implication": "输入法做 AI 不能只看单次调用效果，还要设计模型路由、缓存、降级和成本看板；高频输入场景一旦规模化，基础设施能力就是体验上限。",
+      "title": "互联网广告模式正在崩盘",
+      "summary": "Cloudflare CEO Matthew Prince 在 MAD Podcast 上说了个让人后脊发凉的数据：2026 年上半年，机器人和 AI agent 的流量已经超过了人类。五年后互联网流量可能是现在的一千倍。问题是——机器人不点广告。过去 28 年互联网靠广告养活的模式，正被 AI agent 从根本上瓦解。很多公司未来 6-12 个月会因为这事开始裁员。",
+      "implication": "这直接影响所有靠广告变现的产品。输入法如果未来走广告变现路线，需要考虑 agent 流量爆炸带来的冲击。反过来，提供「AI 可用内容」而非「广告曝光」的产品可能会有新的变现机会。",
       "evidence": [
         {
           "type": "podcast",
-          "who": "The MAD Podcast with Matt Turck / Cloudflare CEO",
+          "who": "Matthew Prince (Cloudflare CEO) on The MAD Podcast",
           "url": "https://www.youtube.com/watch?v=UN47z_opfmo",
-          "quote": "2026 上半年，机器人流量已经超过真人流量。（We actually had bot traffic pass human traffic online in the first half of twenty twenty six.）"
+          "quote": "机器人流量已经超过人类流量了。问题是机器人不点广告。未来五年，互联网的商业模式会发生根本性改变。(Bot traffic surpassed human traffic. The problem is bots don't click on ads. The business model of the internet is gonna change radically.)"
         },
         {
           "type": "tweet",
-          "who": "Guillermo Rauch",
+          "who": "Guillermo Rauch (Vercel CEO)",
           "url": "https://x.com/rauchg/status/2073563586270781674",
-          "quote": "Vercel AI Gateway 每月聚合来自数百万开发者的数万亿 token，用来观察各家模型的起伏、Anthropic 的优势和开源权重模型的上升。（aggregates trillions of tokens from millions of developers a month... Anthropic's dominance, and the rise of open weight AI.）"
+          "quote": "我用 Vercel AI Gateway 的数据做了一个 token 花费竞速动画，汇聚了数百万开发者每月数万亿 token 的使用量。Anthropic 的主导地位和开源模型的崛起很有意思。(I animated the token spend race from Vercel AI Gateway usage... Fascinating to see Anthropic's dominance, and the rise of open weight AI.)"
         }
       ]
     },
     {
-      "title": "助手嵌进主产品",
-      "summary": "Codex 正在进入 ChatGPT，说明 AI 编程能力不再只待在独立工具里，而是被塞进更大的入口。Thibault 还公开问用户 Codex 哪些地方还不该做不好，这类高频反馈会让助手能力更快贴近真实工作流。",
-      "implication": "输入法 AI 也要少做孤立入口，多嵌进用户正在打字的地方；同时把失败反馈做轻，让用户能直接告诉 AI 哪一步不对。",
+      "title": "AI 开始深度嵌入操作系统",
+      "summary": "Anthropic 发布了 Claude 对 Apple Foundation Models 框架的支持。开发者可以在 Swift 里用几行代码先跑本机模型做快速任务（摘要、提取），需要复杂推理时再无缝切换到 Claude。最关键的是，框架会返回强类型的 Swift 值，给了 Claude 干净的输入而不是裸文本——这意味着 AI 不再是「对话机器人」，而是操作系统级别的能力组件。",
+      "implication": "AI 助手从「独立 app」变成「系统级能力」是大趋势。输入法的机会在于它本身就是操作系统中最靠近用户的入口之一——如果能把 AI 能力像 Foundation Models 框架这样做成「安静的后端服务」，用户不需要切换 app 就能获得 AI 帮助，体验会好很多。",
       "evidence": [
         {
-          "type": "tweet",
-          "who": "Dan Shipper",
-          "url": "https://x.com/danshipper/status/2073586548545638459",
-          "quote": "听说你喜欢 ChatGPT 里的 Codex。（Yo dawg we heard you like Codex in ChatGPT）"
+          "type": "blog",
+          "who": "Anthropic Claude Blog",
+          "url": "https://claude.com/blog/claude-for-foundation-models",
+          "quote": "Claude 支持 Apple Foundation Models 框架：开发者可以先用本机模型做快速任务，再无缝切换到 Claude 做多步推理和代码生成。框架返回强类型 Swift 值而非裸文本。(Use Apple's on-device models for fast, local tasks, then hand off to Claude when a request calls for multi-step reasoning.)"
         },
         {
           "type": "tweet",
-          "who": "Thibault Sottiaux",
-          "url": "https://x.com/thsottiaux/status/2073551549494596079",
-          "quote": "有什么事情你觉得 Codex 到现在还做不好，而且我们早该做好？（What is something that you feel is surprising that Codex still can't do well and we should have gotten right a while ago?）"
+          "who": "Dan Shipper (Every CEO)",
+          "url": "https://x.com/danshipper/status/2073586548545638459",
+          "quote": "Yo dawg 我听说你喜欢 Codex 在 ChatGPT 里 (Codex in ChatGPT)"
         }
       ]
     }
   ],
   "builders": [
     {
-      "name": "Guillermo Rauch",
-      "handle": "rauchg",
-      "role": "Vercel CEO",
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "OpenAI Codex & ChatGPT 团队成员",
       "highlights": [
         {
-          "summary": "用 Vercel AI Gateway 的真实 token 消耗做可视化，观察不同模型调用量的起伏，也点出开源权重模型正在上升。",
-          "url": "https://x.com/rauchg/status/2073563586270781674"
+          "summary": "发问「Codex 还有哪些事做不好、早该搞定的」，引发近 2000 条回复的社区大讨论，说明 AI coding 工具的用户对产品边界有很高期待",
+          "url": "https://x.com/thsottiaux/status/2073551549494596079"
         }
       ]
     },
     {
       "name": "Cat Wu",
       "handle": "_catwu",
-      "role": "Anthropic Claude Code / Cowork 成员",
+      "role": "Anthropic Claude Code & Cowork 团队成员",
       "highlights": [
         {
-          "summary": "强调 Claude 在实际工作里会主动选择更合适的分析方法，比如留存分析里的倾向得分匹配，体现的是工作判断力而不只是文本生成。",
+          "summary": "分享 Claude Fable 5 做留存分析时自动用了 propensity score matching——没提示过但选对了方法，体现了模型判断力的提升",
           "url": "https://x.com/_catwu/status/2073439890482794966"
         }
       ]
     },
     {
-      "name": "Thibault Sottiaux",
-      "handle": "thsottiaux",
-      "role": "OpenAI Codex & ChatGPT 成员",
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "Vercel CEO",
       "highlights": [
         {
-          "summary": "直接向用户收集 Codex 仍然做不好的事情，说明 AI 工具的改进正在围绕真实失败点快速迭代。",
-          "url": "https://x.com/thsottiaux/status/2073551549494596079"
+          "summary": "用 Vercel AI Gateway 数据做了 token 花费竞速动画，展示了 Anthropic 主导和开源模型崛起两大趋势——直观呈现了模型市场的格局变化",
+          "url": "https://x.com/rauchg/status/2073563586270781674"
         }
       ]
     },
     {
-      "name": "Dan Shipper",
-      "handle": "danshipper",
-      "role": "Every CEO，AI 工具评论者",
+      "name": "Nan Yu",
+      "handle": "thenanyu",
+      "role": "Linear 产品负责人",
       "highlights": [
         {
-          "summary": "关注 Codex 进入 ChatGPT 的产品整合，这代表 AI 编程能力正在从独立工具进入更大的日常入口。",
-          "url": "https://x.com/danshipper/status/2073586548545638459"
+          "summary": "关于 AI 写代码后测试职责怎么变：最好的找 bug 方式是用产品而不是推理代码，代码审查应该关注架构和 API 设计，控制技术债务的增速",
+          "url": "https://x.com/thenanyu/status/2073410299680428445"
         }
       ]
     }
   ],
   "podcasts": [
     {
-      "name": "The MAD Podcast with Matt Turck",
-      "title": "Cloudflare CEO：互联网的商业模式正在失效（Cloudflare CEO: The Internet's Business Model Is Dead）",
-      "guest": "Cloudflare CEO",
+      "name": "The MAD Podcast",
+      "title": "Cloudflare CEO：互联网的商业模式已死（The Internet's Business Model Is Dead）",
+      "guest": "Matthew Prince，Cloudflare 联合创始人兼 CEO",
       "url": "https://www.youtube.com/watch?v=UN47z_opfmo",
       "keyTakeaways": [
-        "机器人流量在 2026 上半年已经超过真人流量，AI 代理会让互联网的访问结构发生变化。",
-        "如果未来几年网络流量放大很多倍，传统按人类浏览、点击和广告来运转的商业模式会被重新挑战。",
-        "对 AI 产品来说，分辨真人、机器人、可信代理会成为基础能力，不再只是安全团队的事情。",
-        "输入法这类高频入口要提前考虑 AI 请求的成本、身份、权限和可解释性，否则规模一上来就会失控。"
+        "2026 年上半年，机器人和 AI agent 流量首次超过人类，未来五年可能会增长一千倍",
+        "互联网过去 28 年靠广告吃饭的商业模式面临崩塌——因为机器人不点广告",
+        "Cloudflare 正在转型为 AI 基础设施公司，Workers + AI Gateway 成为核心产品线",
+        "未来 6-12 个月几乎所有公司都会因为 AI 裁掉一部分团队，需要重新适配组织架构",
+        "AI agent 的安全问题是个全新命题：怎么防止 agent 干了你不让它干的事"
       ]
     }
   ],
   "blogs": [
     {
-      "name": "Claude Blog",
-      "title": "用 Claude 和 Apple Foundation Models framework 构建智能 App（Building intelligent apps for Apple platforms with Claude in the Foundation Models framework）",
+      "name": "Anthropic Claude Blog",
+      "title": "让 Claude 跑在 Apple 系统底层：Foundation Models 框架集成指南（Building intelligent apps for Apple platforms with Claude in the Foundation Models framework）",
       "url": "https://claude.com/blog/claude-for-foundation-models",
-      "summary": "Claude 推出 Swift package，让 Apple 开发者可以在 Foundation Models framework 里调用 Claude。端侧模型负责摘要、提取这类快速本地任务，复杂推理、代码生成、联网搜索和数据分析再交给 Claude。这样用户看到的是一个连续体验，背后按任务难度选择合适模型。对输入法来说，这很适合参考：本地模型保证速度和隐私，云端模型负责复杂生成和多步任务。"
+      "summary": "Anthropic 把 Claude 接入了 Apple 的 Foundation Models 框架，支持 iOS 27 / macOS 27 / iPadOS 27 等。开发者用这个框架可以在 Swift 里用几行代码先跑本机模型处理快速任务（摘要、提取），需要复杂推理和代码生成时再自动切换到 Claude。框架会返回强类型的 Swift 值而不是裸文本，意味着 Claude 拿到的输入已经是结构化、干净的上下文了，而不是用户随手打的字。这本质上是把 AI 从「对话机器人」变成了操作系统级别的能力组件，用户感知不到模型的切换，但能力无缝衔接。"
     }
   ]
 }
