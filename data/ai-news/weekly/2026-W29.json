@@ -1,0 +1,153 @@
+{
+  "week": "2026-W29",
+  "range": {
+    "start": "2026-07-13",
+    "end": "2026-07-19"
+  },
+  "generatedAt": "2026-07-20T00:52:49.223728+00:00",
+  "trends": [
+    {
+      "title": "GPT 5.6 Sol 编程能力再上台阶",
+      "summary": "OpenAI 发布了 GPT 5.6 Sol，Sam Altman 亲自下场说它是目前世界上最好的模型。Thibault 展示了只需要一个 CLI 代理就能让它驱动 Claude Code，前端质量大大提升，甚至有人说「不用再担心满屏 useEffect 了」。这周硅谷 AI 圈的讨论热点基本就是这一个——OpenAI 在编程模型的牌桌上又甩了一张硬牌。",
+      "implication": "对输入法 AI 助手来说，模型的编程能力不是直接卖点，但意味着「用 AI 快速做工具、做原型」的门槛继续下降。输入法团队可以考虑用更强的模型做更智能的联想、更流畅的对话，而不需要大量人工规则。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Sam Altman (OpenAI CEO)",
+          "url": "https://x.com/sama/status/2075983427019612242",
+          "quote": "大量 benchmark 都显示 5.6 Sol 是目前最好的模型，但最可靠的信号是 Elon 又开始追着我了。(There are a lot of benchmarks that suggest 5.6 sol is the best model in the world right now, but the most reliable way to tell is that Elon is obsessed with me again.)"
+        },
+        {
+          "type": "tweet",
+          "who": "Thibault Sottiaux (OpenAI Codex & ChatGPT)",
+          "url": "https://x.com/thsottiaux/status/2076145711922696371",
+          "quote": "GPT 5.6 Sol 速度快、token 高效、后端很能打、前端也很强、不会到处用 useEffect。下一关是什么？(Fast and token efficient, Hardcore at back-end dev, Great at front-end, Does not use useEffect everywhere. What is next?)"
+        },
+        {
+          "type": "tweet",
+          "who": "Zara Zhang (Builder, Harvard CS)",
+          "url": "https://x.com/zarazhangrui/status/2076130810143367453",
+          "quote": "好吧 5.6 Sol 前端真的很强(Ok 5.6 Sol is very good at front end)"
+        }
+      ]
+    },
+    {
+      "title": "AI 降成本反而增加编程需求",
+      "summary": "Swyx 和 Box CEO Aaron Levie 这周都在说同一件事：Jevons 悖论在知识工作领域开始兑现了。写代码的效率因为 AI 大幅提升，单位成本暴跌——但结果不是程序员失业，而是大家想要更多软件，就业岗位反而在增加。Levie 更是指出，这个效应不限于编程，未来会蔓延到所有知识工作领域。AI agent 带来的是「丰裕」，而不是「替代」。",
+      "implication": "输入法 AI 助手的设计思路不应该停留在「帮用户省时间」，而是「帮用户做之前做不了的事」。就像编程效率提升后大家做出更多项目一样，打字效率提升后用户也会产生更多表达和创作需求。AI 输入法的天花板远远没到。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Swyx (AI Engineer)",
+          "url": "https://x.com/swyx/status/2076155833428431012",
+          "quote": "劳动效率提升，知识工作的单位成本普遍下降，总需求和更好知识的需求反而会上升而不是下降。编程不是例外，是先行者。(As the efficiency of labor goes up/unit cost of knowledge work goes broadly down, the demand for total work and better knowledge goes up, not down. What happened to coding isn't the exception; it's the herald.)"
+        },
+        {
+          "type": "tweet",
+          "who": "Aaron Levie (Box CEO)",
+          "url": "https://x.com/levie/status/2076116544980214164",
+          "quote": "AI 本来被预期要取代的工作，反而出现了相反的结果。软件岗位增速超过其他领域。因为现在软件的单位成本低了很多，大家想要更多软件。(The job that AI was supposed to replace is experiencing the opposite of the expected outcome. Software job postings are outpacing other fields.)"
+        }
+      ]
+    },
+    {
+      "title": "没有护城河的时代",
+      "summary": "Booking.com CEO Glenn Fogel 在 No Priors 播客上说了一句很实在的话：「根本不存在护城河这种东西，没有任何地方可以让你免于被创新颠覆。今天的竞争优势明天就可能消失。唯一长期致胜的办法是不停开发新服务。」这句话放到 AI 行业尤其贴切——这周 OpenAI 的 5.6 Sol 刚刚压过竞品，但下一周谁知道呢。",
+      "implication": "输入法这种高频工具，护城河不是某个单一功能（比如语音准确率比对手高 2%），而是持续迭代的速度。豆包一周一个版本、微信输入法密集发版，就是这个逻辑的体现——不跑就会被追上。",
+      "evidence": [
+        {
+          "type": "podcast",
+          "who": "Glenn Fogel (Booking Holdings CEO) on No Priors",
+          "url": "https://www.youtube.com/watch?v=8nj_0wZkbtA",
+          "quote": "根本不存在护城河。没有什么地方能让你免受创新冲击。今天我们有竞争优势，绝对的。但明天它们就可能消失。(There is no such thing as a moat. There is no such thing as somewhere you're gonna be protected against innovation. Today, we have a competitive advantage on areas. Absolutely. But those can go away tomorrow.)"
+        },
+        {
+          "type": "tweet",
+          "who": "Garry Tan (Y Combinator CEO)",
+          "url": "https://x.com/garrytan/status/2075933358660730901",
+          "quote": "可能出问题的环节太多了。但有趣的问题是：如果一切顺利会怎样？(So much could go wrong. But the interesting question is always: what happens if things go right?)"
+        }
+      ]
+    }
+  ],
+  "builders": [
+    {
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "OpenAI Codex & ChatGPT 团队成员",
+      "highlights": [
+        {
+          "summary": "展示只需一个 CLI 代理就能让 GPT 5.6 Sol 驱动 Claude Code，引发 AI 工程圈热议，3800+ 人点赞，直言前端质量、速度、token 效率全面提升",
+          "url": "https://x.com/thsottiaux/status/2076119366647894371"
+        },
+        {
+          "summary": "断言 GPT 5.6 Sol 在速度、后端和前端开发上都做到了顶级，引发 2500+ 点赞和 800+ 讨论",
+          "url": "https://x.com/thsottiaux/status/2076145711922696371"
+        }
+      ]
+    },
+    {
+      "name": "Sam Altman",
+      "handle": "sama",
+      "role": "OpenAI CEO",
+      "highlights": [
+        {
+          "summary": "高调宣称 GPT 5.6 Sol 是目前世界上最好的模型，引用 benchmark 数据和 Elon Musk 的反应作为佐证，获得近 50000 点赞",
+          "url": "https://x.com/sama/status/2075983427019612242"
+        },
+        {
+          "summary": "透露 5.6 Sol 的推理成本中 30% 花在 fable story generation 上，暗示模型能力提升伴随着计算成本的巨大投入",
+          "url": "https://x.com/sama/status/2075982820322025788"
+        }
+      ]
+    },
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "Box CEO",
+      "highlights": [
+        {
+          "summary": "用数据和逻辑论证 AI 不会取代软件工程师：单位成本降低→需求暴增→岗位不减反增。预言这个效应会蔓延到所有知识工作领域",
+          "url": "https://x.com/levie/status/2076116544980214164"
+        }
+      ]
+    },
+    {
+      "name": "Swyx",
+      "handle": "swyx",
+      "role": "AI Engineer, Latent Space 播客主持人",
+      "highlights": [
+        {
+          "summary": "阐述 Jevons 悖论在 AI agent 时代的含义：编程效率提升不会减少岗位，只会增加对更好软件和更多知识工作的总需求",
+          "url": "https://x.com/swyx/status/2076155833428431012"
+        }
+      ]
+    },
+    {
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "role": "Y Combinator CEO",
+      "highlights": [
+        {
+          "summary": "简短但有穿透力的推文——「关键问题不是有多少可能出错，而是如果一切顺利会怎样」，在 AI 行业加速变化的当下引发了 1600+ 点赞和 200+ 讨论",
+          "url": "https://x.com/garrytan/status/2075933358660730901"
+        }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "No Priors",
+      "title": "从 AI 视角看旅行——Booking.com CEO Glenn Fogel 对谈 (Travel Through the Lens of AI with Booking.com CEO Glenn Fogel)",
+      "guest": "Glenn Fogel (Booking Holdings CEO)",
+      "url": "https://www.youtube.com/watch?v=8nj_0wZkbtA",
+      "keyTakeaways": [
+        "Glenn 认为 AI 行业最核心的真相是：没有永久护城河。今天的竞争优势明天就可能消失，长期赢的唯一方法是持续开发新服务，而不是守着一个功能吃老本",
+        "旅游这个行业比表面看起来复杂得多——如果你是外行，以为靠 AI 就能颠覆 Booking，他建议你先认真理解这个业务有多难再投钱",
+        "Booking 作为 20 多年历史的公司，从 2000 年市值几亿美元做到千亿规模，正在用 AI 重新定义旅游搜索和预订体验",
+        "他提醒创业者和产品人：不要高估新技术的短期颠覆力，大公司在复杂行业的护城河往往比看上去深得多——但也不要低估持续创新的必要性"
+      ]
+    }
+  ],
+  "blogs": []
+}

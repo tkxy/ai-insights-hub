@@ -1,0 +1,119 @@
+{
+  "date": "2026-07-14",
+  "generated_at": "2026-07-20T08:20:00+08:00",
+  "daily_summary": "7月14日AI行业聚焦生物科技与教育赛道的AI突破。Chai Discovery完成4亿美元融资、估值38亿美元，AI驱动的蛋白质设计进入商业化快车道。科大讯飞半年报预告显示星火批阅机销量暴增1471%，教育AI成为大模型最先规模化落地的垂直场景。豆包输入法鸿蒙版正式开放内测招募并适配HarmonyOS 5.0+，豆包App被曝内测导航能力由百度提供技术支持，显示AI产品间的能力互补与生态合作趋势。Redis裁员27%研发人员则反映开源基础设施公司在AI浪潮中的转型阵痛。整体来看，AI应用层加速分化——有数据、有场景的垂直赛道率先跑通商业模式，而通用平台产品则加速能力整合与生态扩展。",
+  "design_insights": [
+    {
+      "title": "教育AI爆发验证垂直场景深度适配的价值",
+      "summary": "科大讯飞星火批阅机销量同比增长1471%，证明AI在教育场景的深度适配能产生爆发式增长。关键成功因素包括：精准切入刚需场景（作业批改）、降低教师工作负担、输出结果可验证可信赖。这为AI产品在垂直场景的设计提供了重要参考。",
+      "implication": "输入法可借鉴教育AI的成功路径，在特定垂直场景深度优化：1）针对学生群体提供作文辅助、古诗词补全等教育向功能；2）在办公场景提供邮件/报告模板智能生成；3）场景化深度适配比通用能力堆砌更能驱动用户增长。",
+      "sources": ["科大讯飞公告", "证券时报"],
+      "source_urls": ["https://www.iflytek.com/news/investor/2026-h1-forecast", "https://www.stcn.com/article/detail/1125893.html"],
+      "tags": ["教育AI", "垂直场景", "商业化验证"]
+    },
+    {
+      "title": "豆包App内测导航能力揭示AI产品能力聚合趋势",
+      "summary": "豆包App内测的导航能力由百度提供技术支持，显示AI产品正从'自研全部能力'转向'聚合最优能力'的模式。竞品之间不再是零和博弈，而是在用户体验驱动下寻求能力互补，输入法/AI助手正成为各类服务的统一入口。",
+      "implication": "输入法产品应积极引入外部优质能力，构建'输入法+X'的能力聚合模式：1）接入地图/导航能力，用户输入地址时提供路线预览；2）接入翻译引擎，实现输入即翻译；3）开放插件生态，让第三方服务通过输入法触达用户，降低自研成本同时丰富功能矩阵。",
+      "sources": ["Tech星球", "36氪"],
+      "source_urls": ["https://www.techplanet.cc/article/2026071401", "https://36kr.com/p/2871205831"],
+      "tags": ["能力聚合", "生态合作", "产品策略"]
+    },
+    {
+      "title": "鸿蒙5.0+输入法适配带来系统级AI交互机遇",
+      "summary": "豆包输入法鸿蒙版正式开放内测，适配HarmonyOS 5.0+。鸿蒙5.0的意图框架（Intent Framework）和AI子系统为输入法提供了系统级的上下文感知能力，可实现比Android/iOS更深度的AI功能集成，如全局语义理解、场景自适应输入等。",
+      "implication": "把握鸿蒙生态先发优势：1）利用鸿蒙意图框架，输入法可感知当前App场景自动切换输入模式（聊天/搜索/填表）；2）接入系统级AI能力，减少端侧模型部署成本；3）鸿蒙用户基数快速增长，早期适配可抢占用户心智和系统默认输入法位置。",
+      "sources": ["IT之家", "华为开发者联盟"],
+      "source_urls": ["https://www.ithome.com/0/820/201.htm", "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/input-method-V5"],
+      "tags": ["鸿蒙", "系统级AI", "场景感知"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "场景自适应输入模式切换",
+      "pain_point": "用户在不同应用场景（聊天、搜索、填表、写作）中输入需求差异大，但输入法界面和功能一成不变，无法适配场景",
+      "opportunity": "基于鸿蒙意图框架或系统API，自动识别当前输入场景，动态调整键盘布局、候选词策略、AI辅助功能。如在邮件App中自动提供敬语补全，在搜索框中提供热搜联想",
+      "priority": "P1",
+      "evidence": "豆包输入法鸿蒙版适配HarmonyOS 5.0+，鸿蒙意图框架为场景识别提供系统级支持；竞品已开始布局场景化输入"
+    },
+    {
+      "title": "输入法内嵌第三方服务能力",
+      "pain_point": "用户在输入过程中需要调用外部服务（查地图、翻译、计算）时必须中断输入切换App，流程割裂影响效率",
+      "opportunity": "参考豆包接入百度导航能力的模式，在输入法中嵌入轻量级第三方服务调用，用户无需离开当前输入界面即可完成信息查询和服务触发",
+      "priority": "P1",
+      "evidence": "豆包App内测导航能力由百度提供技术支持，验证了AI产品间能力互补的可行性；用户对输入效率提升有强烈需求"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "豆包输入法鸿蒙版正式开放内测招募",
+      "summary": "豆包输入法HarmonyOS版正式开放内测，适配鸿蒙5.0+系统，支持AI智能输入、语音输入等核心功能。",
+      "source": "IT之家",
+      "source_urls": ["https://www.ithome.com/0/820/201.htm"],
+      "tags": ["输入法", "鸿蒙"]
+    },
+    {
+      "title": "Chai Discovery完成4亿美元融资，估值达38亿美元",
+      "summary": "AI蛋白质设计公司Chai Discovery完成4亿美元新一轮融资，估值38亿美元，资金用于扩大AI药物发现平台。",
+      "source": "TechCrunch",
+      "source_urls": ["https://techcrunch.com/2026/07/14/chai-discovery-400m-funding"],
+      "tags": ["融资", "生物科技AI"]
+    },
+    {
+      "title": "科大讯飞半年报预告：星火批阅机销量同比增长1471%",
+      "summary": "科大讯飞发布2026上半年业绩预告，教育AI产品星火批阅机销量暴增1471%，教育场景成为AI商业化标杆。",
+      "source": "证券时报",
+      "source_urls": ["https://www.stcn.com/article/detail/1125893.html"],
+      "tags": ["教育AI", "商业化"]
+    },
+    {
+      "title": "Redis裁员80人，占研发团队27%",
+      "summary": "开源数据库公司Redis宣布裁员80人，主要影响研发团队，反映开源基础设施公司在AI时代的转型压力。",
+      "source": "The Register",
+      "source_urls": ["https://www.theregister.com/2026/07/14/redis_layoffs"],
+      "tags": ["裁员", "开源"]
+    },
+    {
+      "title": "豆包App内测导航能力由百度提供技术支持",
+      "summary": "字节跳动豆包App正在内测导航功能，底层地图和导航技术由百度地图提供，显示AI巨头间的能力互补合作。",
+      "source": "Tech星球",
+      "source_urls": ["https://www.techplanet.cc/article/2026071401"],
+      "tags": ["豆包", "生态合作"]
+    },
+    {
+      "title": "HarmonyOS 5.0开发者生态持续扩大",
+      "summary": "华为宣布鸿蒙5.0应用生态已覆盖超15万款应用，第三方输入法等关键品类加速适配入驻。",
+      "source": "华为开发者联盟",
+      "source_urls": ["https://developer.huawei.com/consumer/cn/news/2026071401"],
+      "tags": ["鸿蒙", "生态"]
+    },
+    {
+      "title": "AI药物发现赛道融资总额2026上半年超50亿美元",
+      "summary": "据统计2026上半年全球AI药物发现赛道融资总额突破50亿美元，Chai Discovery为最大单笔交易之一。",
+      "source": "动脉网",
+      "source_urls": ["https://vcbeat.top/article/2026071402"],
+      "tags": ["AI医药", "投融资"]
+    },
+    {
+      "title": "讯飞教育AI产品矩阵覆盖K12全学段",
+      "summary": "科大讯飞教育AI产品已覆盖小学至高中全学段，星火批阅机、AI学习机等产品形成完整教育AI解决方案。",
+      "source": "芥末堆",
+      "source_urls": ["https://www.jiemodui.com/N/164825.html"],
+      "tags": ["教育AI", "产品矩阵"]
+    },
+    {
+      "title": "百度地图开放平台AI能力升级",
+      "summary": "百度地图开放平台升级AI导航能力，支持第三方App接入智能路线规划和实时交通预测服务。",
+      "source": "百度AI开放平台",
+      "source_urls": ["https://ai.baidu.com/tech/map/news/202607"],
+      "tags": ["百度", "地图AI"]
+    },
+    {
+      "title": "输入法赛道竞争加剧：鸿蒙成新战场",
+      "summary": "随着鸿蒙生态壮大，搜狗、百度、豆包等主流输入法加速适配鸿蒙系统，争夺新平台用户入口。",
+      "source": "雷锋网",
+      "source_urls": ["https://www.leiphone.com/category/ai/xR7j4K9m2H5p.html"],
+      "tags": ["输入法竞争", "鸿蒙"]
+    }
+  ]
+}

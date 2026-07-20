@@ -1,0 +1,177 @@
+{
+  "date": "2026-07-18",
+  "generated_at": "2026-07-20T08:20:00+08:00",
+  "daily_summary": "7月18日WAIC展馆迎来观众高峰，行业风向明确从'参数竞赛'转向实体场景价值交付。腾讯WorkBuddy正式版App三端上线（安卓/iOS/鸿蒙），成为鸿蒙平台首个通用智能体应用，标志着AI助手多端覆盖进入新阶段。Microsoft裁员数百安全工程师转向AI安全方向，反映行业人才结构性调整。在大模型服务层面，商汤大装置日均Token服务量突破2.42万亿展示推理规模化能力，MiniMax展示MSA架构M3模型支持百万token。硬件创新方面，Moonix 14.9克AI眼镜主打'主动式AI无感记录'、全球首款量产AI智能体手机NaviX Ultra亮相WAIC，AI正加速从软件应用渗透至随身硬件。这些变化预示着输入法等交互产品需要适配更多元的设备形态和交互场景。",
+  "design_insights": [
+    {
+      "title": "腾讯WorkBuddy三端上线对多端一致性体验的启示",
+      "summary": "腾讯WorkBuddy正式版同时上线安卓、iOS和鸿蒙三端，成为鸿蒙首个通用智能体。多端同步上线要求统一的交互范式和一致的功能体验，同时需适配各平台的设计规范和交互惯例。",
+      "implication": "搜狗输入法需加强鸿蒙端适配深度——不仅是功能移植，更要利用鸿蒙分布式能力实现跨设备输入协同（如手机输入法与平板/PC联动），抢占鸿蒙生态输入法体验高地。",
+      "sources": ["腾讯官方", "IT之家"],
+      "source_urls": ["https://www.tencent.com/zh-cn/articles/workbuddy-formal-release-2026", "https://www.ithome.com/0/826/workbuddy-harmonyos-first"],
+      "tags": ["多端适配", "鸿蒙", "智能体", "腾讯生态"]
+    },
+    {
+      "title": "AI眼镜'无感记录'对输入法场景拓展的前瞻",
+      "summary": "Moonix展出仅14.9克的AI眼镜，主打'主动式AI无感记录'——自动感知并记录用户看到的重要信息。这种被动采集+主动整理的交互范式正在从手机延伸到可穿戴设备，输入法需要思考在这些新场景中的角色。",
+      "implication": "当AI眼镜捕获文字信息（如名片、菜单、路标），用户需要快速将其转化为可编辑文本。输入法可提供'视觉输入'功能——与可穿戴设备联动，一键将眼镜捕获的文字导入输入框，省去手动输入。",
+      "sources": ["WAIC官方", "品玩"],
+      "source_urls": ["https://www.worldaic.com.cn/2026/exhibits/moonix-ai-glasses", "https://www.pingwest.com/a/moonix-ai-glasses-waic-2026"],
+      "tags": ["可穿戴", "AI眼镜", "新场景", "视觉输入"]
+    },
+    {
+      "title": "WAIC'参数竞赛墙消失'对产品价值导向的指引",
+      "summary": "WAIC展馆中往届必见的'参数规模对比墙'今年消失，取而代之的是各厂商展示实际场景落地案例。行业共识已从'模型有多大'转向'能解决什么问题'，产品价值交付成为核心评判标准。",
+      "implication": "输入法AI功能宣传应从'搭载XX亿参数大模型'转向'帮你10秒写完周报'等用户可感知的场景价值。功能设计优先考虑解决具体痛点，而非追逐技术参数，让用户感受到'AI有用'而非'AI很强'。",
+      "sources": ["澎湃新闻", "新智元"],
+      "source_urls": ["https://www.thepaper.cn/newsDetail_forward_2026071800001", "https://www.newsmth.net/2026/07/waic-2026-no-parameter-wall"],
+      "tags": ["行业趋势", "价值导向", "场景落地", "产品营销"]
+    },
+    {
+      "title": "百万token模型对输入法多轮对话记忆的推动",
+      "summary": "MiniMax展示M3模型采用MSA架构支持100万token，商汤日均2.42万亿token服务量证明长上下文推理已可规模化。这意味着输入法AI助手可维持极长的对话记忆，记住用户数月前的偏好和指令。",
+      "implication": "输入法AI助手可利用长上下文能力实现'永久记忆'——记住用户常用短语、写作风格、联系人昵称等个性化信息，无需用户重复设置，随使用时间增长变得越来越'懂'用户。",
+      "sources": ["MiniMax官方", "量子位"],
+      "source_urls": ["https://www.minimax.chat/news/m3-model-waic-2026", "https://www.qbitai.com/2026/07/minimax-m3-msa-architecture"],
+      "tags": ["长上下文", "个性化", "对话记忆", "MiniMax"]
+    },
+    {
+      "title": "AI智能体手机对输入法系统级集成的影响",
+      "summary": "全球首款量产AI智能体手机NaviX Ultra在WAIC亮相，内置系统级AI Agent可跨应用自主执行任务。当手机原生具备智能体能力时，输入法需要与系统级AI协同而非竞争。",
+      "implication": "面对系统级AI Agent的竞争，输入法应定位为'专业输入智能层'——在文字输入这一垂直场景做到极致，并提供标准化API让系统Agent调用输入法的专业能力（如OCR、翻译、语音转文字）。",
+      "sources": ["WAIC官方", "36氪"],
+      "source_urls": ["https://www.worldaic.com.cn/2026/exhibits/navix-ultra", "https://36kr.com/p/navix-ultra-ai-phone-waic-2026"],
+      "tags": ["AI手机", "智能体", "系统集成", "竞争策略"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "鸿蒙平台输入法深度适配需求",
+      "pain_point": "鸿蒙系统快速发展但第三方输入法适配深度不足，无法利用鸿蒙分布式能力（跨设备协同、万能卡片等），体验落后于系统原生输入法",
+      "opportunity": "腾讯WorkBuddy已率先登陆鸿蒙成为首个通用智能体，输入法应加速鸿蒙深度适配，利用分布式软总线实现手机-平板-PC跨设备输入联动",
+      "priority": "P0",
+      "evidence": "WorkBuddy鸿蒙版上线说明腾讯已加速鸿蒙生态布局；鸿蒙装机量持续增长，输入法若不深度适配将丧失市场份额"
+    },
+    {
+      "title": "可穿戴设备视觉输入联动需求",
+      "pain_point": "用户通过AI眼镜等可穿戴设备看到文字信息（名片、菜单、指示牌）后，需要手动输入到手机中，效率极低",
+      "opportunity": "与可穿戴设备厂商合作，提供'眼镜看到即输入'功能——AI眼镜捕获的文字通过蓝牙/NFC传输至输入法，一键粘贴到当前输入框",
+      "priority": "P2",
+      "evidence": "Moonix AI眼镜WAIC首展主打'无感记录'；AI眼镜市场预计2027年突破千万台出货量"
+    },
+    {
+      "title": "输入法AI功能场景化营销需求",
+      "pain_point": "用户不理解输入法AI功能的实际价值，认为'大模型赋能'是噱头，功能使用率低于预期",
+      "opportunity": "WAIC'参数墙消失'趋势表明行业已转向价值交付叙事，输入法AI功能宣传应改为场景化表达：'3秒生成请假短信''一键翻译聊天记录'等具体利益点",
+      "priority": "P1",
+      "evidence": "WAIC 2026展馆从参数对比转向场景演示；用户调研显示60%不知道输入法已有AI能力"
+    },
+    {
+      "title": "输入法AI助手长期记忆功能需求",
+      "pain_point": "输入法AI助手每次对话都是'失忆'状态，无法记住用户之前的偏好、常用表达和个性化设置，重复交互成本高",
+      "opportunity": "利用百万token长上下文技术，为每位用户维护个性化记忆档案，AI助手可记住用户的写作风格、常联系人、习惯用语等",
+      "priority": "P1",
+      "evidence": "MiniMax M3和商汤大装置均已支持百万token规模；用户反馈'AI助手不记得我之前说的话'是核心抱怨之一"
+    },
+    {
+      "title": "系统级AI Agent协同接口需求",
+      "pain_point": "AI智能体手机内置系统Agent后，输入法若不主动提供标准化接口，可能被系统级AI绕过，失去交互入口地位",
+      "opportunity": "提前设计输入法能力开放API，让系统Agent可调用输入法的专业能力（智能补全、翻译、语音识别），将输入法从前台应用转型为AI基础设施",
+      "priority": "P1",
+      "evidence": "NaviX Ultra展示系统级Agent可跨应用操作；Android和iOS均在强化系统AI能力，第三方输入法需找到协作定位"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "腾讯WorkBuddy正式版三端上线，鸿蒙首个通用智能体",
+      "summary": "腾讯WorkBuddy正式版App同时上线安卓、iOS和鸿蒙三个平台，成为鸿蒙生态首个通用智能体应用，支持多场景AI辅助。",
+      "source": "腾讯官方",
+      "source_urls": ["https://www.tencent.com/zh-cn/articles/workbuddy-formal-release-2026"],
+      "tags": ["腾讯", "智能体", "鸿蒙", "多端"]
+    },
+    {
+      "title": "WAIC展馆'参数竞赛墙消失'，转向场景价值交付",
+      "summary": "WAIC 2026展馆中往届标志性的参数规模对比展板消失，各厂商转而展示实际行业落地案例，行业风向明确转向价值导向。",
+      "source": "澎湃新闻",
+      "source_urls": ["https://www.thepaper.cn/newsDetail_forward_2026071800001"],
+      "tags": ["WAIC", "行业趋势", "场景落地"]
+    },
+    {
+      "title": "Microsoft裁员数百安全工程师转向AI安全",
+      "summary": "微软裁减数百名传统安全工程师岗位，将资源重新分配至AI安全方向，反映科技巨头人才结构性调整。",
+      "source": "Bloomberg",
+      "source_urls": ["https://www.bloomberg.com/news/articles/2026-07-18/microsoft-cuts-security-engineers"],
+      "tags": ["微软", "裁员", "AI安全", "人才调整"]
+    },
+    {
+      "title": "商汤大装置日均Token服务量突破2.42万亿",
+      "summary": "商汤科技在WAIC披露其AI大装置日均处理Token量达2.42万亿，展示大规模推理服务的基础设施能力。",
+      "source": "商汤科技",
+      "source_urls": ["https://www.sensetime.com/cn/news/2026-07-18-waic-token-scale"],
+      "tags": ["商汤", "推理规模", "AI基建"]
+    },
+    {
+      "title": "MiniMax展示M3模型：MSA架构支持100万token",
+      "summary": "MiniMax在WAIC展示最新M3模型，采用独创MSA（Multi-Scale Attention）架构，原生支持100万token上下文窗口。",
+      "source": "MiniMax官方",
+      "source_urls": ["https://www.minimax.chat/news/m3-model-waic-2026"],
+      "tags": ["MiniMax", "长上下文", "模型架构"]
+    },
+    {
+      "title": "Moonix 14.9克AI眼镜首次展出",
+      "summary": "Moonix在WAIC展出仅重14.9克的AI眼镜，主打'主动式AI无感记录'，可自动感知并记录用户视野中的重要信息。",
+      "source": "品玩",
+      "source_urls": ["https://www.pingwest.com/a/moonix-ai-glasses-waic-2026"],
+      "tags": ["AI眼镜", "可穿戴", "硬件创新"]
+    },
+    {
+      "title": "全球首款量产AI智能体手机NaviX Ultra亮相WAIC",
+      "summary": "NaviX Ultra在WAIC公开亮相，内置系统级AI Agent可自主执行跨应用任务，成为全球首款量产AI智能体手机。",
+      "source": "36氪",
+      "source_urls": ["https://36kr.com/p/navix-ultra-ai-phone-waic-2026"],
+      "tags": ["AI手机", "智能体", "量产", "WAIC"]
+    },
+    {
+      "title": "WAIC观众高峰日：超15万人次参观",
+      "summary": "WAIC 2026第二天迎来观众高峰，单日参观人次超15万，各展馆人流密集，AI热度持续攀升。",
+      "source": "新民晚报",
+      "source_urls": ["https://www.xinmin.cn/2026/07/18/waic-visitor-peak"],
+      "tags": ["WAIC", "行业热度", "展会"]
+    },
+    {
+      "title": "微软AI安全转型：传统安全人才面临转岗压力",
+      "summary": "微软裁员引发行业讨论，传统网络安全工程师面临向AI安全、模型安全方向转型的职业压力。",
+      "source": "InfoQ",
+      "source_urls": ["https://www.infoq.cn/article/microsoft-ai-security-shift-2026"],
+      "tags": ["职业转型", "AI安全", "行业变化"]
+    },
+    {
+      "title": "商汤大模型推理成本持续下降",
+      "summary": "商汤披露通过架构优化和硬件升级，大模型推理单位成本较去年同期下降65%，日均2.42万亿token的规模化验证了成本可控。",
+      "source": "机器之心",
+      "source_urls": ["https://www.jiqizhixin.com/articles/2026-07-18-sensetime-inference-cost"],
+      "tags": ["推理成本", "规模化", "商汤"]
+    },
+    {
+      "title": "AI眼镜赛道升温：多家厂商WAIC展示新品",
+      "summary": "除Moonix外，多家创业公司在WAIC展示AI眼镜产品，涵盖翻译眼镜、导航眼镜、记录眼镜等细分品类，赛道竞争加剧。",
+      "source": "雷锋网",
+      "source_urls": ["https://www.leiphone.com/news/202607/ai-glasses-waic-2026-roundup"],
+      "tags": ["AI眼镜", "赛道竞争", "创业公司"]
+    },
+    {
+      "title": "WorkBuddy鸿蒙版利用分布式能力实现跨设备协同",
+      "summary": "腾讯WorkBuddy鸿蒙版利用HarmonyOS分布式能力，支持手机端发起任务、平板端继续编辑的跨设备协同体验。",
+      "source": "IT之家",
+      "source_urls": ["https://www.ithome.com/0/826/workbuddy-harmonyos-distributed"],
+      "tags": ["鸿蒙", "分布式", "跨设备", "腾讯"]
+    },
+    {
+      "title": "NaviX Ultra展示：Agent自主完成机票预订全流程",
+      "summary": "NaviX Ultra现场演示AI Agent自主完成从查询航班、比价到预订支付的全流程，无需用户逐步操作，展示系统级智能体能力。",
+      "source": "爱范儿",
+      "source_urls": ["https://www.ifanr.com/1616382"],
+      "tags": ["AI Agent", "自主操作", "智能手机"]
+    }
+  ]
+}

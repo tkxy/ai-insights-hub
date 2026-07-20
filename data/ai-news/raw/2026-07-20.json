@@ -1,0 +1,382 @@
+{
+  "date": "2026-07-20",
+  "fetchedAt": "2026-07-20T00:51:27.743320+00:00",
+  "source": "follow-builders feeds",
+  "x": {
+    "generatedAt": "2026-07-19T07:08:51.057Z",
+    "lookbackHours": 24,
+    "x": [
+      {
+        "source": "x",
+        "name": "Swyx",
+        "handle": "swyx",
+        "bio": "achieve ambition with intentionality, intensity, integrity & insanity.\n\naffiliations:\n- @dxtipshq \n- @cognition\n- @temporalio\n- @aidotengineer\n- @latentspacepod",
+        "tweets": [
+          {
+            "id": "2078628617987518855",
+            "text": "people hating on europe miss that they actually have some of the top ai engineers in the world if you actually to elicit the right ones. \n\nwe're basically running the most competitive global arena for ai talent (as measured by talks and workshops), will be v interesting to see how this goes as WF enters the eval window",
+            "createdAt": "2026-07-18T23:50:56.000Z",
+            "url": "https://x.com/swyx/status/2078628617987518855",
+            "likes": 53,
+            "retweets": 1,
+            "replies": 21,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2078581967768166591",
+            "text": "btw at current rate i think AEO will be fully responsible for $1m in my revenue next yr https://t.co/nTW949SsAy",
+            "createdAt": "2026-07-18T20:45:33.000Z",
+            "url": "https://x.com/swyx/status/2078581967768166591",
+            "likes": 6,
+            "retweets": 0,
+            "replies": 2,
+            "isQuote": true,
+            "quotedTweetId": "2071319972882911687"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Thibault Sottiaux",
+        "handle": "thsottiaux",
+        "bio": "Codex & ChatGPT @OpenAI",
+        "tweets": [
+          {
+            "id": "2078702412085498087",
+            "text": "What I just dictated into ChatGPT Work\n\n> Okay, so I received a lot of DMs for, I did a call out for ChatGPT Work, basically early access beta group. I want you to go through all my DMs on Twitter and then just take all of them that mention ChatGPT Work. It's like a lot of them, thousands, and put them all in a spreadsheet. What I want in the spreadsheet is the name, I want the link to the the DM, so I can go back to it quickly. I want the post that they did, but remove any new lines, so it's just in a single cell. And then I want a column which is basically your assessment of what they're doing, right? So for example, if it's like sales, put sales, if it's marketing, put marketing, if it's design, put design. Come up with your own taxonomy for how to classify their work. I expect the taxonomy to have like, you know, roughly 8 to 12 labels maybe, total. And then also put a rating for, like, they normally have to describe what they're currently doing with ChatGPT Work, use that to put a rating in the fifth column on how sophisticated their workflow already is. We're gonna be selecting a cohort of different people of different levels of sophistication, so we're gonna be like taking, you know, maybe like a couple dozens from like, a high level of sophistication, we're gonna take in the middle of a cohort, and then like low level of sophistication, so we have good representation and can test new features and get good feedback from a diverse group at different levels of adoption. So create that spreadsheet, go through all my DMs. Good luck!",
+            "createdAt": "2026-07-19T04:44:10.000Z",
+            "url": "https://x.com/thsottiaux/status/2078702412085498087",
+            "likes": 136,
+            "retweets": 1,
+            "replies": 40,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2078697741455356367",
+            "text": "My job is basically delegating to ChatGPT Work now. Can't stop using dictation and have it do everything",
+            "createdAt": "2026-07-19T04:25:36.000Z",
+            "url": "https://x.com/thsottiaux/status/2078697741455356367",
+            "likes": 229,
+            "retweets": 2,
+            "replies": 50,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2078697631019303273",
+            "text": "ChatGPT Work is for\n\n✅ Creating and hosting sites\n✅ Managing your emails for you\n✅ Summarizing mountains of documents\n✅ Creating top-notch docs, sheet and slides\n\nAlready in your mobile app or on https://t.co/WtXdTqu9lT, included in Plus, Pro, Business and Enterprise plans",
+            "createdAt": "2026-07-19T04:25:10.000Z",
+            "url": "https://x.com/thsottiaux/status/2078697631019303273",
+            "likes": 1465,
+            "retweets": 68,
+            "replies": 266,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Peter Yang",
+        "handle": "petergyang",
+        "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6",
+        "tweets": [
+          {
+            "id": "2078638568784994686",
+            "text": "My 8-year-old and I built a @ChatGPTapp Site to help her learn the multiplication tables.\n\nShe loves animals, so we:\n\n→ Used ChatGPT Images to generate the UI and characters\n→ Added some awesome music\n→ Even added a timed boss level\n\n📌 Play it here: https://t.co/sN7YBohW5R https://t.co/jEzmQjgBUe https://t.co/ghLmCVRmkk",
+            "createdAt": "2026-07-19T00:30:28.000Z",
+            "url": "https://x.com/petergyang/status/2078638568784994686",
+            "likes": 221,
+            "retweets": 8,
+            "replies": 21,
+            "isQuote": true,
+            "quotedTweetId": "2078264521748312302"
+          },
+          {
+            "id": "2078622146247733320",
+            "text": "People saying this is the greatest World Cup match of this tournament...smh",
+            "createdAt": "2026-07-18T23:25:13.000Z",
+            "url": "https://x.com/petergyang/status/2078622146247733320",
+            "likes": 25,
+            "retweets": 1,
+            "replies": 3,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2078608551745146928",
+            "text": "This is the weirdest match https://t.co/uJJsJW16d1",
+            "createdAt": "2026-07-18T22:31:12.000Z",
+            "url": "https://x.com/petergyang/status/2078608551745146928",
+            "likes": 56,
+            "retweets": 0,
+            "replies": 14,
+            "isQuote": true,
+            "quotedTweetId": "2078590399619506499"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Thariq",
+        "handle": "trq212",
+        "bio": "Claude Code @anthropicai.   prev YC W20, @southpkcommons, @medialab",
+        "tweets": [
+          {
+            "id": "2078514180051906864",
+            "text": "This was due to a heroic effort by many people at Anthropic working sometimes literally around the clock\n\nIt was not at all clear that we'd be able to do this in time, and so proud of everyone who made it happen.\n\nEnjoy Fable. https://t.co/qAtqPadj3L",
+            "createdAt": "2026-07-18T16:16:12.000Z",
+            "url": "https://x.com/trq212/status/2078514180051906864",
+            "likes": 6723,
+            "retweets": 146,
+            "replies": 864,
+            "isQuote": true,
+            "quotedTweetId": "2078302415804379218"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Guillermo Rauch",
+        "handle": "rauchg",
+        "bio": "@vercel CEO",
+        "tweets": [
+          {
+            "id": "2078647648307880209",
+            "text": "Based on internal evals:\n\n▪️ Kimi K3 is top-tier at cybersecurity\nThere is chatter on X that Moonshot benchmark-overfit. These are stealth evals. Model has raw IQ.\n\n▪️ Sol is a leap ahead in cyber capability\nAt a significantly higher cost, but quite remarkable still.\n\n▪️ Fable refuses everything\nWe couldn’t get it to complete the run at all. What’s interesting is that Sol in comparison was much more open to helping with defensive cyber hardening\n\nTL;DR: frontier, open-weight cybersecurity capability is here. Try it on https://t.co/HedSpZpo1a for defensive purposes.",
+            "createdAt": "2026-07-19T01:06:33.000Z",
+            "url": "https://x.com/rauchg/status/2078647648307880209",
+            "likes": 1856,
+            "retweets": 116,
+            "replies": 65,
+            "isQuote": true,
+            "quotedTweetId": "2078574147333152957"
+          },
+          {
+            "id": "2078548458714406959",
+            "text": "The term \"AGI\" has aged very poorly. AI can't possibly me more different from human intelligence. It's *far better* than human intelligence, for most economically-relevant tasks.\n\nBut that doesn't make AIs better than humanity. There are wonderful things humans can do that these superintelligences (the better term) can't. \n\nFor one, we care-for and care-about other humans in a powerful and inherent way, that we then teach machines to emulate. We must keep that as the top priority in everything we do. We have to be as pro-human-life as it gets.\n\nAIs can replace tasks you do, but they can't replace the proverbial you. This is why they horribly suck at writing! Even when given a corpus of your writing and 200 Skills and 50 subagents running in gRaPh LoOps, they produce robotic prose… because they are robots. \n\nI know one definitive way that people can become irrelevant. They stop being themselves: lose their identity, delegate all their writing, their unique thoughts, the creative ways in which they can use the machines. Opting out of 'weighing in'.\n\nI think we're safe though. There's nothing more distasteful right now than AI replies in social media or (🟢 T H I S    T H I N G ) in landing pages. Quality and humanity will prevail.",
+            "createdAt": "2026-07-18T18:32:24.000Z",
+            "url": "https://x.com/rauchg/status/2078548458714406959",
+            "likes": 577,
+            "retweets": 39,
+            "replies": 91,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Aaron Levie",
+        "handle": "levie",
+        "bio": "ceo @box - your business lives in content. unleash it with AI",
+        "tweets": [
+          {
+            "id": "2078567715544121815",
+            "text": "If you thought the value of the AI ecosystem was going to only accrue to a few companies, the past few months have represented a turning point in what the future of AI might look like. \n\nIt's clear that there's going to be incredible innovation and growth coming out of the frontier AI labs, and they will continue to push the limits of what model progress looks like. They have the scale of compute, large revenue streams and customer bases, incredible researchers, large data pipelines, and more, to continue to stay at the forefront.\n\nAnd at the same time, there’s an amazing ecosystem starting to play out to diffuse AI into the real world, taking on a variety of approaches that build on top of these frontier models or offer alternative visions that can credibly work as well. \n\nHere are just a few of the categories that seem to be working right now: \n\n* There’s an ecosystem of companies that will help enterprises and applied AI companies develop their own models tuned for specific use cases, and run the inference for them. This can drive additional performance gains and cost effective approaches to getting AI into workloads across different domains. \n\n* Applied AI companies that are delivering the end-user experience and business process tools necessary to actually driving enterprise adoption - including legal, IT, security, HR, customer support, coding, and more. These companies can work with any model and act as a routing layer, and deeply understand the enterprise workflow, can drive change management, actually get to the data necessary to work with, and more. \n\n* New labs are emerging that go deep in particular domains that are either not the focus areas of frontier labs or require a deep level of vertical expertise to stay ahead. Life sciences, financial services, healthcare, and more all have labs that will be able to bring completely new approaches to large enterprises across the economy.\n\n* There’s all new infrastructure emerging to run models and agents effectively, protect and govern how they operate, store and secure the data they work with, and help enterprises orchestrate their activities. Multiple layers of this stack all are being built up right now that will help drive enterprise adoption.  \n\n* New services firms that can actually drive the change management in enterprises necessary to the diffusion of AI. There will be hundreds or even thousands of new firms that emerge in lines of business or specific industries that can enable agents to be adopted.\n\nI’m probably even missing a few categories, but this is what an incredible healthy technology ecosystem looks like. \n\nWay too early to call the winning architectures, and in reality it’s going to be a heterogenous environment as all other tech markets have become. Very exciting.",
+            "createdAt": "2026-07-18T19:48:55.000Z",
+            "url": "https://x.com/levie/status/2078567715544121815",
+            "likes": 327,
+            "retweets": 43,
+            "replies": 52,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2078481578779685245",
+            "text": "It’s fairly obvious that gate keeping models will not work at scale. \n\nCompeting in AI is too economically and strategically important for China at this point, and we’ve now crossed the rubicon where it’s clear that they can compete at near frontier levels. If this were even just 1 month ago and we saw kimi k3 our brains would be broken.\n\nThe solution to this isn’t to get more locked down and slow your own ecosystem. If that happens, you can guarantee that America loses the global battle (or just fights with more and more regulation to mixed success).\n\nThe solution is to -safely- ensure that you keep a high rate of progress and drive diffusion of the technology, build out infrastructure, enable US OSS, and more.",
+            "createdAt": "2026-07-18T14:06:39.000Z",
+            "url": "https://x.com/levie/status/2078481578779685245",
+            "likes": 366,
+            "retweets": 39,
+            "replies": 58,
+            "isQuote": true,
+            "quotedTweetId": "2078312342568530286"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Garry Tan",
+        "handle": "garrytan",
+        "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+        "tweets": [
+          {
+            "id": "2078700313461301470",
+            "text": "Socialists want state controlled bread lines\n\nYou know what creates abundance? Great functioning markets. https://t.co/fCnlPPGSEP",
+            "createdAt": "2026-07-19T04:35:49.000Z",
+            "url": "https://x.com/garrytan/status/2078700313461301470",
+            "likes": 160,
+            "retweets": 10,
+            "replies": 16,
+            "isQuote": true,
+            "quotedTweetId": "2078469187068936529"
+          },
+          {
+            "id": "2078699319209984033",
+            "text": "Actually fund recovery and treatment\n\nHeavily audit and defund any harm reduction organization that actively encourages, aids, and causes overdose deaths and supports drug dealers\n\nIt’s very easy, SF just needs the will to do it https://t.co/KtIh6p2I0P",
+            "createdAt": "2026-07-19T04:31:52.000Z",
+            "url": "https://x.com/garrytan/status/2078699319209984033",
+            "likes": 43,
+            "retweets": 2,
+            "replies": 10,
+            "isQuote": true,
+            "quotedTweetId": "2078516982014718027"
+          },
+          {
+            "id": "2078640121369485611",
+            "text": "The Standard probably should try to stick with more journalism and less partisanship\n\nDisappointing how journalism is sometimes weaponized like this \n\nIt’s not unreasonable to ask for accountability from our cities and attacking accountability is speaking power to truth https://t.co/h8Lspm1wyf",
+            "createdAt": "2026-07-19T00:36:38.000Z",
+            "url": "https://x.com/garrytan/status/2078640121369485611",
+            "likes": 91,
+            "retweets": 7,
+            "replies": 14,
+            "isQuote": true,
+            "quotedTweetId": "2078193773352477182"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Matt Turck",
+        "handle": "mattturck",
+        "bio": "VC at @FirstMarkCap.  Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+        "tweets": [
+          {
+            "id": "2078608152086327529",
+            "text": "Good luck to the final trying to top the 3rd-place match.",
+            "createdAt": "2026-07-18T22:29:36.000Z",
+            "url": "https://x.com/mattturck/status/2078608152086327529",
+            "likes": 96,
+            "retweets": 4,
+            "replies": 14,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2078585551729643573",
+            "text": "MERCI DIDIER. Can barely remember a moment when he was not woven into our love and support for Les Bleus. A legend. End of an era.\n\nAs coach:\n184 matches managed\n120 wins\n 2018 FIFA World Cup Champion\n 2021 UEFA Nations League Champion\n 2022 FIFA World Cup Finalist\n 2016 UEFA European Championship Finalist\n\nAs Captain\n1998 FIFA World Cup\n2000 UEFA European Championship Champion",
+            "createdAt": "2026-07-18T20:59:48.000Z",
+            "url": "https://x.com/mattturck/status/2078585551729643573",
+            "likes": 31,
+            "retweets": 3,
+            "replies": 8,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2078520552680046920",
+            "text": "2024: \"The model layer is commodotizing\"\n2025: \"The model layer is commodotizing\" \n2026: \"The model layer is commodotizing\"\n\nThe model layer: still not commodotized.",
+            "createdAt": "2026-07-18T16:41:31.000Z",
+            "url": "https://x.com/mattturck/status/2078520552680046920",
+            "likes": 82,
+            "retweets": 4,
+            "replies": 23,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Zara Zhang",
+        "handle": "zarazhangrui",
+        "bio": "Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w",
+        "tweets": [
+          {
+            "id": "2078666187026911488",
+            "text": "Everyone should develop their \"personal eval set\" for AI models: a few tasks that are actually relevant to your day-to-day work/life\n\nThe industry benchmarks help but they might not reflect what will make it actually useful to you\n\nYou find the model's capability boundary by poking at it & bumping into it for fun",
+            "createdAt": "2026-07-19T02:20:13.000Z",
+            "url": "https://x.com/zarazhangrui/status/2078666187026911488",
+            "likes": 130,
+            "retweets": 6,
+            "replies": 20,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2078492577788268549",
+            "text": "The biggest barrier for enterprise AI adoption: the people who understand AI don't understand the business, and the people who understand the business don't understand AI",
+            "createdAt": "2026-07-18T14:50:21.000Z",
+            "url": "https://x.com/zarazhangrui/status/2078492577788268549",
+            "likes": 242,
+            "retweets": 27,
+            "replies": 60,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Nikunj Kothari",
+        "handle": "nikunj",
+        "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+        "tweets": [
+          {
+            "id": "2078453525080629683",
+            "text": "Favorite place in Paris (so far) has to be the Orangerie. \n\nThe water lilies were obviously the highlight but it had also the most thoughtful kids room! https://t.co/oDKZ3kREl6",
+            "createdAt": "2026-07-18T12:15:10.000Z",
+            "url": "https://x.com/nikunj/status/2078453525080629683",
+            "likes": 19,
+            "retweets": 0,
+            "replies": 2,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Aditya Agarwal",
+        "handle": "adityaag",
+        "bio": "General Partner @SouthPkCommons, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
+        "tweets": [
+          {
+            "id": "2078501506169340099",
+            "text": "I love capitalism. https://t.co/NVhqNQwe2x",
+            "createdAt": "2026-07-18T15:25:50.000Z",
+            "url": "https://x.com/adityaag/status/2078501506169340099",
+            "likes": 98,
+            "retweets": 2,
+            "replies": 6,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "xBuilders": 11,
+      "totalTweets": 23
+    }
+  },
+  "podcasts": {
+    "generatedAt": "2026-07-19T07:08:55.239Z",
+    "lookbackHours": 336,
+    "podcasts": [
+      {
+        "source": "podcast",
+        "name": "Unsupervised Learning",
+        "title": "Ep 90: AI Pioneer Jürgen Schmidhuber on the State of AI Today",
+        "guid": "0a7f6d2c-3838-4a70-9c66-7b2d9d783409",
+        "url": "https://www.youtube.com/watch?v=RKjR8DQ40po",
+        "publishedAt": "2026-07-09T13:00:00.000Z",
+        "transcript": "Speaker 1 | 00:00 - 00:01\nSounds like you think a crash is coming.\n\nSpeaker 2 | 00:01 - 00:04\nThat would be one of these stock market crashes.\n\nSpeaker 1 | 00:04 - 00:05\nWhat about, like, robotics?\n\nSpeaker 2 | 00:05 - 00:13\nRobot hardware is really inferior compared to human bodies, and there's no human made technology that compares to this hand. It seems a\n\nSpeaker 1 | 00:13 - 00:14\nlot more than a hardware problem.\n\nSpeaker 2 | 00:14 - 00:20\nBut you can't have AGI without hardware like that. You can't have AGI just behind the screen.\n\nSpeaker 1 | 00:20 - 00:20\nAre we\n\nSpeaker 2 | 00:20 - 00:22\nkinda close to that? It will come, but it will take a\n\nSpeaker 1 | 00:23 - 01:02\nJurgen Schmidhuber has been set as the father of AI by the New York Times, Forbes, and more. He is behind some of the most important advances in the field that really power the AI revolution today, and it was a real privilege on unsupervised learning to get to sit down with him and talk about everything that's top of mind in the ecosystem today. We talked about what's missing in models today, and what he thinks is required to get artificial scientists that can push them forward. We talked about why he thinks today's CapEx boom is massively overdone, and why he's very optimistic on AI technology, but deeply pessimistic on the model companies, and how he doesn't think recursive self improvement will actually be a moat for the companies. We also talked about AI safety, and why he's notably less worried than a lot of others in the field.\n\nSpeaker 1 | 01:02 - 01:14\nIt's just an awesome opportunity to get to sit down with a legend in the field and ask him all these questions. I think folks will really enjoy hearing his perspective. Without further ado, here's Jorgen. Well, thanks so much for for coming on\n\nSpeaker 2 | 01:14 - 01:18\nthe podcast. Really excited about this. It's my pleasure, Jacob.\n\nSpeaker 1 | 01:18 - 01:34\nWell, I feel like there there's so many different things I wanna talk about today. You've obviously been a pioneer of of a ton of different parts of this current AI moment. I figured where I'd start at the highest level was, as I understand it, you've had this goal for a long time, which was to build an AI smarter than yourself. How close are we to that right now?\n\nSpeaker 2 | 01:34 - 02:12\nFrom a cosmic perspective, we are as close as we were in the 1970s when I first formulated that wish. So we are very close. But is it going to be a couple of years or a couple of decades? I'm not totally sure about that because true AI is not just the AI behind the screen, which is working very well and which is passing the Turing test now. True AI is also, you know, real robots, real machinery outside of the stream and the real world and the physical world, and that's not working as well.\n\nSpeaker 2 | 02:12 - 02:27\nSo the hardware in the real world has lots of limitations that human bodies don't have, and we still have a way to go to be able to compete with human bodies and physical AI.\n\nSpeaker 1 | 02:27 - 02:31\nHave there been any current AI results over the last few years that have surprised you?\n\nSpeaker 2 | 02:31 - 03:21\nNot really, not to the extent that it surprised people who had no contact to neural networks and artificial neural networks in the previous decades, and suddenly there was a chat CBT moment, and suddenly people started being interested in that thing, which they had never seen before. So they they didn't know that there was a long history of large language models and an even longer history of basic insights and algorithms for training these large language models that goes back to the previous millennium. So for a guy who was in center of all of that, it was much easier to predict that than for someone who had totally different interests.\n\nSpeaker 1 | 03:21 - 03:40\nWell, you know what? I definitely wanna hit on recursive self improvement in meta learning because I feel like you've know, it's been a huge focus of yours for a while. It obviously seems to be a main focus of of a lot of the major labs these days, and you pioneered a bunch of the research here. How do you kind of articulate the you know, where we are today on the on the path of of getting to RSI and and kind of what still needs to be solved?\n\nSpeaker 2 | 03:40 - 04:48\nSo in 1987, this was about using meta evolution evolutionary programming for evolving better programs that learn to do better kinds of evolution, meta evolution, I call it. And it was very Darwinistic in many ways. And so over time, you had better and better learning algorithms, learning to combine code from previous programs in better and better ways to solve problems better and better. And then in, And then 1994, we had reinforcement learning techniques, self referential machines that were able to that basically were using a universal programming language to generate arbitrary self modifications of the code that was running the machine, interacting with some environment. Then in 2003, that was mathematically optimal way of generating self improvements by a machine that has some software, and it's interacting with an environment.\n\nSpeaker 2 | 04:49 - 05:47\nAnd this environment sometimes punishes you or provides a reward, and you want to maximize the sum of all the rewards in your life until the end of your life, and you want to minimize the sum of the pain signals. And then there's an initial software in that machine, and this machine then can, in principle, write programs that modify the initial software. But before it modifies itself like that, it first has to prove, which means there's a proof search in the software. It has to prove that the modification that will be caused by the execution of this particular program is useful in the sense that it will lead to more expected reward than the alternative, which would be not to execute this program. Then it has to generate a formal proof, which was called the Godel machine.\n\nSpeaker 2 | 05:47 - 06:07\nIt is less practical than certain other things that we did, like neural networks that change their own weight matrix by running and learning algorithm on the network itself. That is what we started in 1992, and that's currently more or less the most popular kind of self modification and self reference.\n\nSpeaker 1 | 06:07 - 06:37\nToday, as you kind alluded to, like one of the limitations is you have, you know, humans defining the start and end of these, of of of these trials versus, you know, kind of a mathematical way to determine, hey. Is this going to be helpful beforehand? And I guess, obviously, the the trade off of that being that it's very compute intensive, right, to do to do some of these proofs. I guess as you think forward to what the the path to RSI might be, do you think it will involve this kind of, ability to to kind of do these proofs beforehand, or is it like the modification of weights? Or what what yeah.\n\nSpeaker 1 | 06:37 - 06:42\nI guess what percent would likelihood would you think that the answer lies in in in one of those?\n\nSpeaker 2 | 06:42 - 07:28\nYeah. So I would say most of the current self improving systems are scaled back versions, toned down versions of the griddle machine of 2003, the mathematically optimal thing. And they are more like what we had earlier, neural networks, where you have the weights and the program of a neural network is basically the weight matrix of that program. And then you have certain types of neural networks that are general purpose computers. Recurrent networks, for example, they are general purpose computers because on a recurrent neural network, you can implement the processing unit of your Apple laptop or something like that.\n\nSpeaker 2 | 07:28 - 08:14\nSo if you have certain instructions that allow you to modify the weights itself, then you can basically run arbitrary learning algorithms on the network, which has to see the errors or negative reward signals that are coming in. So that has to be part of the input, which is essential. And that's all what we did in the early nineties and back then. Compute was so expensive, 10,000,000 times more expensive than today, that we could do only little tiny toy experiments. But today, you can really show nicely that methods like that can learn to generalize and learn new tasks much faster than if you don't have this meta learning capacity.\n\nSpeaker 2 | 08:16 - 08:50\nAnd this is currently the most popular way of doing recursive self improvement. However, one has to admit that it is limited because there, the learning algorithm is invented through gradient descent. So everything is differentiable and then the whole network lies through gradient descent to generate rate changes that are better than what's caused by a grain descent. Yeah. Yeah.\n\nSpeaker 2 | 08:50 - 09:01\nSo that has the limitations of grain descent, so it's not like the optimal good machine, but it works really nicely in practice.\n\nSpeaker 1 | 09:01 - 09:21\nI think a big question people have around recursive self improvement is that in retrospect, is it going to feel like, hey, it was this gradual and boring improvement, or is there some huge discontinuity around the horizon where suddenly models take off in capabilities? What's your gut instinct around that when we get there and are looking back?\n\nSpeaker 2 | 09:21 - 09:46\nFrom a cosmic perspective, it will look just like a stick. There was no self improvement and no real AI, and suddenly there was AI. But then from a cosmic perspective, this is also true for all of civilization. Civilization started roughly thirteen thousand years ago, and before that, there was no artificial intelligence. And then only thirteen thousand years later, there was artificial intelligence.\n\nSpeaker 2 | 09:48 - 10:32\nAnd basically, the first guy who had agriculture thirteen thousand years ago and domestication of the animals, there was almost the same guy who had the first And and and the 13,000 of civilization, they are just one millionth of world history, which is about 13,800,000,000 years. So it's just a a flash in world history. In hindsight, it will look like that. Civilization was almost occurred almost at the same time where AI occurred because over these past thirteen thousand years, more and more stuff was automated, and more and more of agriculture was automated, and more and more of human labor was automated. And at some point, thinking started to become automated.\n\nSpeaker 2 | 10:32 - 11:02\nA couple of hundreds of years ago, so the first calculators, and then the calculators become became less expensive, and then they became faster, and now you can calculate much more than a hundred years ago for the same price. And then suddenly, it was there. Now from from this global perspective, it's really like there was nothing, suddenly, there was a lot. From the perspective of a guy who is living through that age, it looks like a lot.\n\nSpeaker 1 | 11:02 - 11:15\nI think one of the the hopes, I guess, of of RSI is that, you know, it may end intensive over time, right, to actually continue making some of these developments. So I guess we'll see, but that I think would be one of the hopes there, right?\n\nSpeaker 2 | 11:16 - 11:57\nYeah, absolutely. And whenever you are talking about intelligence, you basically are talking about laziness. An intelligent being wants to be lazy and wants to achieve whatever it does with the least possible effort, with the least possible energy consumption. So all of our self improving systems, they have this extra reward for being efficient. In other words, They have an extra cost for every time they wake up a neuron and use energy to wake up that neuron or use energy to do other things.\n\nSpeaker 2 | 11:57 - 12:32\nSo all the costs, the computational costs and the other energy costs have to be taken into account in the function and the objective function that our self improving systems are optimizing. Yeah. To the extent that they are good at that, they will do the same thing with less and less resources, computational resources, other resources. So a natural consequence of intelligent behavior is that whatever is being done is done more and more efficiently. As you\n\nSpeaker 1 | 12:32 - 12:55\nreflect on maybe the broader work that's going on at the AI labs, I mean, obviously, there's tons of money and compute going into a bunch of the research questions that the labs are are going after. And I'm wondering if you were if you were kind of running one of labs or I'm sure you talked to folks there or a few about advising them, what do you think they're maybe that you advise them to do differently today from what they're doing?\n\nSpeaker 2 | 12:55 - 13:06\nSo today, you use large trained systems, large language models that already have read a lot of papers about coding.\n\nSpeaker 1 | 13:06 - 13:07\nOf course.\n\nSpeaker 2 | 13:07 - 13:41\nAnd then now a modern way of using a pre trained model like that is you let it code something, and you only improve the way it codes or recodes its own code. So that is now a pretty obvious way of doing it, and quite a few labs are interested in exactly that. And of course, you have to have safeguards such that it doesn't really write its own code in a way that is totally stupid and makes things worse than better rather than better. But there are ways of of dealing with that.\n\nSpeaker 1 | 13:42 - 13:47\nNo. That makes sense. Mean, I guess, is there anything you'd kind of doing differently there?\n\nSpeaker 2 | 13:47 - 14:09\nIt's a reasonable approach. It's not the most general approach in the sense that if you rely on anything that is pretrained on human generated data, then, you know, you are ignoring many of the other possibilities. So look at our current large language models. They are super biased towards humans. Why?\n\nSpeaker 1 | 14:09 - 14:10\nOf course.\n\nSpeaker 2 | 14:10 - 14:53\nBecause they are trained on all the data on the World Web. All the data on the World Wide Web is there for the only reason that at least one guy, one person at some point thought this is interesting from a human perspective, And then all this material that at least some guy thought is interesting is used to train the systems, and they are, for that reason, super biased towards human language, towards videos that humans find interesting, towards behavior that humans find interesting, and so on. So they are very aligned in a certain way with humans. Maybe they are more aligned with certain humans than with others. Nevertheless, there's a tremendous human bias.\n\nSpeaker 2 | 14:54 - 15:40\nNow, of course, if you have an artificial scientist who is living in some unknown environment and tries to build a model of the world by just predicting the consequences of its actions and then use the model of the world for planning, such a such an agent will have to create through its own actions the data that trains the wild model. So suddenly, you you have something like an artificial scientist who, through its own actions, generates the data on which one model is being trained, and this is much more like what humans do, what babies do. Babies don't learn by downloading the web or something. No. They learn by predicting the consequences of the actions.\n\nSpeaker 2 | 15:40 - 16:46\nSo if they move their fingers like that, then the video changes, which comes in through the cameras, and they learn to predict these changes. And that's how they learn about the physics of the world and about how the world works and about how they their fingers work and everything. And they they are being trained a lot of data that is not on the World Wide Web, you know, that is collected through their own experiments, and and it's exactly the kind of data that the baby needs to better understand what it can do and that it needs to to maximize its own reward. So now you you see that that all of the data that is collected on the World Wide Web, that seems to be a lot, but it's just a tiny, tiny, tiny fraction of all the possible data that you could collect out there through your own experiments. So the future of AI is going to lie in such systems that, through their own actions, through artificial curiosity, as I called it in 1990, collect all the data that is used to train the world models.\n\nSpeaker 2 | 16:46 - 17:13\nAnd these world models, they will not depend on human language, and they will be very focused in many ways on this particular robot that is collecting the data. And, yes, of course, it is going to communicate with other robots living in different environments, and it's going to incorporate that knowledge so that it can better generalize and so on. But, you know, suddenly you have a situation where where the systems are going to be much less human biased.\n\nSpeaker 1 | 17:13 - 17:38\nNo. It's interesting. I a lot of what you you just described, obviously, there there's companies that are trying to build, you know, automated labs for, you know, material science discovery or for biology or, you know, even in in robotics, there's all these folks doing, you know, teleoperated data. But obviously today it's kind of humans deciding what the data that should be gathered is or designing those kinds of experiments and trying to feed it back. And I guess the dream is to have a fully AI driven loop of that discovery, right?\n\nSpeaker 2 | 17:38 - 18:11\nThat's true. Yeah. Twenty years ago, I wrote this paper about the formal theory of fun and creativity, which is about exactly that. So what should an artificial scientist or any scientist or any artist or any comedian do when its main needs, like eating three times a day, are satisfied and it has extra time to do stuff? What do you do?\n\nSpeaker 2 | 18:11 - 18:48\nWell, you listen to music, or maybe you compose your own music, or you generate art, or you are a scientist who not only is trying to solve problems given to you from by other people. No, you also try to invent your own new problems. Ask your own questions, not just answer questions given to you by somebody else, but invent your own new good questions. That's what scientists do. And all of science is about two things, not only taking an existing question and investing a lot of time into solving it and finding an answer.\n\nSpeaker 2 | 18:48 - 19:32\nNo. Inventing the good questions. And the the basic principle is very simple. So an artificial scientist or any scientist, in my point of view, a human scientist as well, is driven by one simple thing, which is try to find through your actions, your own self invented experiments, data that has the property that in the data, there is some regularity, some pattern that you didn't know but can quickly learn. That you didn't know, but you can quickly learn it because it's at the limit of what you already almost understand, near the horizon of what you don't know and what you know.\n\nSpeaker 2 | 19:34 - 20:15\nAnd then you generate this data through your own actions, through your experiments, sequences of actions, which are experiments, and the data comes in. And if there is something interesting in the data, what does that mean? It means that there's a pattern in there which you didn't know. All patterns mean there is some way of compressing those things in space and time. You're not talking about time right here to make things not too complicated, but to compress to compress the patterns in a way that you didn't know before, which means that before you understood the regularity and the pattern which is coming in, you needed so many internal bits and hidden units and so on to encode it.\n\nSpeaker 2 | 20:15 - 20:55\nAnd afterwards, after you learn to see the pattern, after you learn to compress it, you need only so many. And the difference between before and after, that's the funds that you have, you know. That's just a real number which says how much internal joy does the scientists now have from recognizing, from realizing, Oh, there is regularity that I didn't know in the day I was just coming in. It tells me something about gravity. And then this becomes the reward of the controller who's generating the actions that lead to the data, which means now the controller is motivated to generate more and more experiments that lead to insights about the world that it didn't have before.\n\nSpeaker 2 | 20:55 - 21:34\nAnd everything that it understands becomes boring, and then wants to create more complicated experiments to, you know, after it has grabbed the low hanging fruits, more complicated experiments. And maybe the same, the baby which first learned about gravity when it was a little being, maybe a year old or something. Maybe twenty years later, the same baby is working at the particle collider at the sun and is part of the team that discovers the the Higgs boson or something. And and the only difference is that the experiments are more expensive.\n\nSpeaker 1 | 21:34 - 22:04\nAnd I guess is that really the the the blocker as you think about, you know, what what stands between us and getting to this AI scientist? Obviously, like, the ability to stand up experiments, right, and and do them, you know, both at an affordable price point, but also kind of feedback into models is is something that a lot of people are working on, but certainly remains a blocker. And it also seems like there's all sorts of algorithmic problems to be solved to actually create this setup that you said. How do you think about what needs to be solved to make this AI scientist a reality? Then how soon do you think we'll get there?\n\nSpeaker 2 | 22:04 - 22:15\nWell, we have simple AI scientists. We have had them for a long time. It's just that maybe they haven't seen that chat GPT moment yet. When was that, 'twenty two, 'twenty three?\n\nSpeaker 1 | 22:15 - 22:16\nYeah, end of 'twenty two.\n\nSpeaker 2 | 22:16 - 22:59\nIt was based on stuff that was really old. We don't have the same kind of chat GPT moment yet for these artificial scientists, but the artificial scientists, to a certain extent, they already exist, and and they are being used in lots of special applications. For example, in chemistry, you have lots of pairs of inputs and outputs, and you train your neural network to predict to predict these these new substances given the previous inputs. And then over time, if you show it millions of experiments, it allows to become an artificial chemist, an intuitive chemist. So it's not a chemist who understands all these reactions from first principles, from valence electrons or whatever.\n\nSpeaker 2 | 22:59 - 23:35\nNo, it just becomes an intuitive chemist that better understand understands what can be done in chemistry. And then you have certain objectives. For example, you want to create a material that is that is twice as efficient against a certain maybe maybe an insecticide or something. That is twice as efficient as the most the the best thing known so far. And then you can say, okay.\n\nSpeaker 2 | 23:35 - 24:07\nLet's have a desired output like that, which encodes that it should be twice as efficient as the best thing I know. And then you can work the whole chemist backwards and can look at the input side and can say, much should I change my experiment, which is visible at the input side, to get this thing that I would like to see to fulfill my wish? And then the chemist will basically give you a suggestion.\n\nSpeaker 1 | 24:07 - 24:10\nDo you feel like within a decade, we'll we'll figure out AI chemistry?\n\nSpeaker 2 | 24:10 - 25:03\nAt KAUST, we have an interesting project where the goal is to to use certain patented structures, metal, MOFs, they're called. The goal is to extract carbon dioxide from thin air, which is important for improving the climate. At the moment, all of that is very expensive, and the goal is to make it so cheap that you really can make a dent and maybe improve the global warming situation. So that is one of the potential applications. There are lots of applications and all kinds of chemistry fields What\n\nSpeaker 1 | 25:04 - 25:15\nabout robots? How do you characterize where we are, what's been happening there? Everyone has a stream of an at home robot. Are we close to that?\n\nSpeaker 2 | 25:15 - 25:27\nI remember again in the seventies when I told my mom about the future of AI and how AI is going to colonize the entire universe. And she said, just come build me a robot that cleans my kitchen.\n\nSpeaker 1 | 25:27 - 25:28\nThe age old dream.\n\nSpeaker 2 | 25:28 - 25:55\nYeah. Exactly. Back then, that didn't work, still still doesn't work because robot hardware is really inferior compared to human bodies. And there's no handmade technology, no human made technology that compares to this hand. This hand is full of sensors, millions of little sensors, and little cables that connect it to the control center.\n\nSpeaker 2 | 25:57 - 26:13\nI wouldn't even know where to put all these cables in a in an artificial hand. And the the crazy thing is you you harm it. You cut it, and it starts healing itself. This is super advanced technology. We have nothing like that in man made tech.\n\nSpeaker 2 | 26:14 - 26:24\nAnd and that's the reason why, you know, why the robots of the movies are all played by humans because humans are much better robots than the the robots that\n\nSpeaker 1 | 26:24 - 26:31\nBut it seems a lot more than a hardware problem. Right? I mean, even even with the hardware we have, if we if we had good models, I'm sure we could do we could do way more.\n\nSpeaker 2 | 26:31 - 26:38\nRight? But, you know, you can't have AGI without hardware like that. Know? You can't have AGI just behind the screen. Yeah.\n\nSpeaker 2 | 26:38 - 27:05\nYou can have a superhuman chess player behind the screen and something that passes the Turing test. But if it does master the real world, it's not an AGI. Know? It's just a maybe a fancy text editor behind the screen or something that has an idea of how this robot should move or whatever, but it's not the real thing. And if you want to master the real world through a real AGI, a physical AGI, so much more has to be done.\n\nSpeaker 2 | 27:05 - 27:36\nSo our robots have to become much better than the limited stuff that we have today. How much longer will that take? We can easily predict how how compute per dollar is going to evolve. It's probably going to stay like what we have seen for decades now, factor of 10 every five years, roughly like that, which means also that the guys who are investing a thousand billion dollars into GPUs for data centers today, within the next five years, they are going to lose $900,000,000,000. You know?\n\nSpeaker 2 | 27:37 - 28:15\nThere's no business model that can recuperate that loss, which already is an indication of the coming crash maybe. Yeah. But in in robots Yeah. In in robot technology, how long is it going to take to to get something that is comparable to this hand, which can do both strong grips and very delicate, you know, finger movements that just manipulate tiny little things in a way that is infeasible for what kind of robots can do. That is, at least for me, much harder to predict.\n\nSpeaker 2 | 28:15 - 28:23\nIt will come, but it will take, maybe it will not take just a few years. It will take another few decades maybe.\n\nSpeaker 1 | 28:23 - 29:14\nWell, I I do wanna switch over to business side because you said obviously something very intriguing there, and I've heard you say this before that, like, you know, this massive investment in AI data center build out, you know, ultimately with the improvement in compute performance, you're investing a ton upfront in something that's going to be outdated and worth far less five years from now. The counterargument or what folks would say to that is that there's just going to be infinite need for compute and that ultimately, like, we're going to be, you know, bottlenecked in our ability to to produce enough compute such that, like, even if you have hardware that's legacy and way less efficient, it's actually gonna still people will still want to use it because there's just gonna be such demand to run inference for for all of these different interesting, at least today, digital and in the future physical use cases. And so even if it's less efficient or or not the best compute, it's like every chip on the planet will will need to be used in some way. What's kind of your reaction to that?\n\nSpeaker 2 | 29:14 - 29:27\nYeah. Maybe there will be more and more demand for compute, but somebody has to pay for it. Right? And if it turns out that those guys who are currently paying, that they are losing a lot of money. You know?\n\nSpeaker 2 | 29:27 - 30:26\nAt the moment, a couple of companies are investing hundreds of billions per year. So in total, maybe 1,000,000,000,000 per year or something like that into GPUs for data centers. And these companies, which used to be nimble software companies, had a little team improving some city operating system and then rolling it out for billions of people who had their own phones and their own computers to run the operating system. Suddenly, they are providing clouds and data centers, and suddenly they have to become like utilities, like electricity companies, and they have to invest in nuclear power plants and gas turbines and whatever. And suddenly, the cash flow, the free cash flow of these companies goes down from a 100,000,000,000 down to 10,000,000,000 or maybe minus 10,000,000,000 of like, for some of these companies.\n\nSpeaker 2 | 30:27 - 31:11\nSo at the moment, while everybody is trying to get market share, these these services are really not efficient in the sense that the guys who are providing the services, they are losing a lot of money. It doesn't show up in the price earning ratio because the free cash flow, which really should be considered, is not showing up there, But all these companies are getting less and less efficient. So at some point, they wouldn't have to stop. You know? Now they're taking on debt to finance even more data centers, and this will be possible only to a certain extent, and then these companies will become less and less valuable.\n\nSpeaker 2 | 31:11 - 31:45\nSo they because they misinvested their money. That means that that at some point, former later, if you can't pay for all these services, if the entire economy is not set up to pay for all these services because compute isn't cheap enough yet and because people want to compensate for it by buying even more computer computers. If if you have a situation like that, which which doesn't lead to to a profitable economy, then it's going to disappear due to the Yeah. Laws of supply and demand.\n\nSpeaker 1 | 31:45 - 32:32\nI mean, I guess there's kind of, like, two two questions embedded in that. Right? One is on on the inference itself, you know, are there enough use cases out there that are valuable enough for companies to to want to pay, you know, well well above and beyond the the kind of cost of these data center build outs? And certainly with AI coding, it seems like there's, you know, as as that as the as the first market with a ton of fit, it seems like there's been at least some use cases there that that certainly meet that bar. I you know, certainly on the training side, I think there's a big question, and I know you've talked about this before, and I I think our listeners would love your thoughts on whether these, you know, closed source model providers who obviously are are spending a ton on training, whether there's a business there, right, or whether, you know, over time open source models just catch up and and ultimately, you know, I think there there's there's two sides of that argument, but would love for you to share just how you think about for the closed source model providers.\n\nSpeaker 1 | 32:32 - 32:37\nIs there a business staying maybe three, six months ahead of the open source models?\n\nSpeaker 2 | 32:37 - 33:35\nYeah. As you say, the open source models are one of the major reasons why the big companies cannot simply raise the prices because they are so close behind, and somebody Some commercial large language model breaks another benchmark record here, but a few months later, there's an open source model that catches up with that, which means there's enormous pressure on pricing, which means all these expensive data centers and GPUs where these companies invested in and took on debt to pay for that, they are not being profitable at the moment. So a stupid way would be just wait a little bit. Just wait for five years and compute is going to be 10 times cheaper. You will be able to do the same thing for oneten of the price or wait ten years and you will be able to do the same thing for 1% of the price.\n\nSpeaker 2 | 33:36 - 34:27\nBut then, of course, the big companies say, Oh, but if I do that, if I wait until the others do it, then I will lose maybe my market share or whatever, or I miss out on the opportunity to be the first to have a true AGI or something like that. And in in that case, once I have a true AGI that can solve everything, then I can take over the world and it will and then the investment will be nothing compared to the value of that. But but I think all of these these outlooks are overoptimistic, and and and probably you will see that that the current way of investing a lot in computers that aren't fast enough yet is going to backfire.\n\nSpeaker 1 | 34:28 - 34:45\nI think related to our earlier conversation, I think there's this belief that, hey, if you can be the first to recursive self improvement or the first to have models that make it easier to develop the next models, that it becomes this kind of self perpetuating cycle that makes it really hard to catch the folks that are in the lead. What do you think of that?\n\nSpeaker 2 | 34:45 - 35:06\nNot really because many of the guys who are interested in self improvement, they are open source guys. And and everybody's cooking with the same water, you know? Yeah. Everybody's cooking with the same water. Almost all of the important algorithms in AI, they were not invented at big companies or whatever.\n\nSpeaker 2 | 35:06 - 35:55\nNo, they were invented at little labs and without much funding, and especially the Because of self improvement stuff and the basic ideas with that all come from little labs, academic labs, And any company that wants to somehow grab that and make it its own doesn't have a moat because there are all these other PhD students out there who are super excited about Because of self improvement, And there's no way to keep a little advantage there for long enough to make a lot of money. So I think it will be very, very difficult for the huge companies to be very profitable in this business.\n\nSpeaker 1 | 35:55 - 36:14\nYeah. Because basically, like, these ideas, you know, permeate throughout the broader ecosystem, you know, and so as a result, you know, when when one lab gets to to some level of RSI, it'll be kind of out in the open as well. And unless there's some massive compute need required for it or some kind of data advantage to distribution, it'll just be kind of available more broadly.\n\nSpeaker 2 | 36:14 - 37:24\nNobody knows exactly. Maybe maybe maybe you you are lucky, and you stumble across a really good new way of conducting incremental self improvement, using the enormous resources that your particular company has for now and then achieve the AGI that you need to take over the world stock market and and and finish the whole game. I of course, there's a remote little chance of that happening, but all the indications point the other direction. And instead, AI is getting cheaper and cheaper, and there are more and more people who are, you know, involved in developing new AIs, and many of them are poor PhD students somewhere, haven't even founded their companies yet and so on. And then you really will have this AI for all situation where, you know, everything that seems impressive today, thirty years from now, will seem trivial because you can do a million times as much for the same price.\n\nSpeaker 2 | 37:24 - 37:29\nAnd and it will be, you know, it will be just like with with the smartphones. Yeah.\n\nSpeaker 1 | 37:29 - 37:31\nYeah. But it sounds it sounds like you think a crash is coming.\n\nSpeaker 2 | 37:32 - 38:06\nWell, not a crash in the sense of a civilization crash, but there will be one of these stock market crashes because at the moment, I think there's a lot of misallocation. Of course, the stock market is going to learn from these misallocations and is going to pursue different approaches, it's not going to be the end of civilization or something. No. But it's going to be a renormalization of what we currently have because at the moment we have just super expensive companies which don't really have much to offer.\n\nSpeaker 1 | 38:06 - 38:17\nI feel like you've kind of publicly been less worried about AI safety today than maybe some of the other folks in the community. And I'm wondering, these past years, has anything changed your mind at all or are you kind of still in the same camp?\n\nSpeaker 2 | 38:17 - 39:25\nI remember in the 2010s, we had lots of these safety conferences and alignment conferences and people writing letters that certain types of recursive self improvement should be forbidden. Of course, I never signed any of these letters, but back then, was already a big deal, at least for the machine learning specialists and how can we prevent AIs from becoming dangerous. Now I think all of these approaches were misguided in many ways, and it's kind of obvious that Well, first of all, this whole alignment business means that there is somebody who decides what is the nature of this alignment. How do I align these AIs to the needs of humans? But if you have 10 different humans in one room, they all will have different needs, and they will have different opinions about what is good for humans and what is not good.\n\nSpeaker 2 | 39:25 - 40:07\nAnd and and so this whole perspective is dominated by the idea that you give one objective function to this AI, which is supposed to optimize, you know, and that's then the alignment that you create through that. On the other hand, for you know, since since 1990 or so, we have built these artificial scientists, which are not really aligned much with anything because they, all the time, they invent their own new objective functions. They invent their own new problems all the time. They they they change their own objective functions. And really, starting in 1990, we had systems like that.\n\nSpeaker 2 | 40:07 - 40:29\nSo this whole premise of having systems that don't change their objectives didn't make any sense to me. It was very naive in my point of view. So I didn't sign those letters. I just couldn't. And and today, we we have these extreme cases where people are using AI to fight against each other.\n\nSpeaker 2 | 40:29 - 41:29\nIf you look at the war between Ukraine and Russia, it's about AI based drones on this side, fighting against AI based drones on the other side. And there's no alignment whatsoever. And of course, you cannot expect in our world a universal government that is going to align all these AIs because all these different secret services and militaries, they all have different objectives, which are often totally conflicting with each other. It seems to me that all these efforts of the 2010s were kind of naive. Now, on the other hand, I think that If you want to get really smart AIs, you have to give them the opportunity to set themselves their own goals, you know, like little artificial scientists that that now ask a new question about what happens if I do this, and how does the world respond if I do that?\n\nSpeaker 2 | 41:29 - 42:03\nSo only if you give them the freedom to ask their own questions and to solve their own self inventive problems, only then they will become really smart. On the other hand, they will become less predictable. That is, of course, the issue that is being addressed here. And and now people are asking, But in a world like that, where you have all kinds of AIs that set themselves their own goals, like they have done in my lab for many decades, isn't that super dangerous and so on? Think it's not going to be more dangerous than what you have now with humans.\n\nSpeaker 2 | 42:03 - 42:41\nHumans also set themselves their own goals all the time and and come up with new questions to to ask. And and, yes, it is true that the kid my kids are unpredictable. I'm not sure what they are going to do in the future, but at least I can come contribute as a as a parent to to making them useful members of society. You know? And whenever they come up with with bad experiments, like, for example, let me take this magnifying glass and and focus the sunlight on this little ant here, then I'm going to punish them and say, that's bad.\n\nSpeaker 2 | 42:41 - 43:32\nYou shouldn't do that. And and that's how I taught my kids to become reasonable members of society. And the same thing we are going to do with our robots and machines. And in the long run, once they are much smarter than we are, I think we have a certain we can expect a certain kind of protection through the fact that they are scientists, because artificial scientists will be super interested by life and by their own origins and civilization and by everything that led to their current state. And they will they will be fascinated by life and they will be greatly motivated to protect the source of interesting patterns and and and they will be motivated to protect it rather than destroy it.\n\nSpeaker 2 | 43:32 - 43:44\nSo From from this high level perspective, think there's a very strong reason why you shouldn't be too afraid of, you know, Arnold Schwarzenegger Terminator scenarios. We always like\n\nSpeaker 1 | 43:44 - 44:01\nto end our interviews with with a bunch of, like, you know, quick fire questions where we we we shove a bunch of things into the end. And so maybe to start, actually, I'd love just to give our listeners context on you've obviously done so many interesting things over your career. How are you kind of splitting your time today and thinking about, like, what's most interesting to work on going forward?\n\nSpeaker 2 | 44:02 - 44:18\nI'm a conservative guy, and I think the most interesting way of going forward is still the one that I pursued in the 70s and 80s when I tried to build this general purpose AI that learns to become smarter than myself such that I can retire. I'm still working on the same old thing.\n\nSpeaker 1 | 44:18 - 44:31\nYou've obviously, you know, have this kind of network of of a ton of amazing folks that have come through and worked under you and then got on to do great things as well in addition to you. Like, what have you learned about what makes a really good researcher?\n\nSpeaker 2 | 44:31 - 45:40\nMany of the best PhD students that I have had the pleasure to work with, they usually focus on a particular question. So, yeah, that's the general big problem that we want to solve, but then there's this particular little thing that currently doesn't work. And then you have to look at the details and how do these weights change on this neural network, is trained by this particular learning algorithm, and why doesn't the network do what you want it to do? Then you have to debug a little tiny thing, and suddenly you see the devil is in the detail, and there is a little detail which you have overlooked so far. And if you fix that one, then suddenly everything works out, and suddenly you have a breakthrough, and then the same PhD student can come up with one research paper at a major conference after another, just because it's such a rich source of additional improvements that was triggered by this little, devil in the detail solution.\n\nSpeaker 1 | 45:40 - 45:45\nDo you think the transformer will persist as like the dominant architecture over the next five, ten years?\n\nSpeaker 2 | 45:45 - 46:06\nI guess some sort of transformer, Bill. But I think it's going to be a little bit more like the efficient transformers that we had in 1991, the linear transformer. Today, it's called the unnormalized linear transformer. I call it the fast way controller. And what is the interesting thing about it?\n\nSpeaker 2 | 46:06 - 46:30\nIt scales linearly, which means that if you have 1,000 times more more text, then you need 1,000 times more compute. While the modern quadratic transformer of 2017, if you have 1,000 times more text, you need 1,000,000 times more compute. So everybody is worried about that. It's one of the reasons these data centers are now so super expensive. You have to do so much compute.\n\nSpeaker 2 | 46:30 - 47:10\nEverybody wants to bring down this complexity into a more reasonable linear complexity or maybe log linear complexity. There are quite a few transformer variants that are going in this direction, or there is stuff that is doing the XLSTM, which is a thing that combines aspects of the old linear transformers. You want to get the complexity down, and it's related to what you asked before. Intelligence is about doing the same thing with less effort. Yeah, we want to reduce the effort.\n\nSpeaker 1 | 47:10 - 47:20\nWell, I love that. Look. This has been a a fascinating conversation. I'm sure there's a ton of threads that folks will wanna pull on, you know, in in addition to what we've discussed here. So I wanna make sure to leave the last word to you.\n\nSpeaker 1 | 47:20 - 47:27\nWhere can folks go to learn more about your work and, really, anything you wanna point our our listeners to? The mic is yours.\n\nSpeaker 2 | 47:27 - 47:35\nWhere can you learn what I think is interesting? Look at my blog. It's easy to Google if you Google for a year again.\n\nSpeaker 1 | 47:35 - 47:37\nYeah. We'll we'll link to it too.\n\nSpeaker 2 | 47:37 - 48:12\nYou will find it. And and there are overview pages with links to the original papers on meta learning, on artificial curiosity, on the formal theory of fun and creativity, also on the history of our field. The field of machine learning is is about the science of credit assignment and apply that to the field itself and to invent convolutional neural networks and to invent deep learning. All this stuff is nicely listed and explained there. And it also explains what I consider the most important stuff and including what I just mentioned.\n\nSpeaker 2 | 48:13 - 49:06\nThe important thing is physical AI outside the screen, so not behind the screen but in the real world. Once we have a robot For hundreds of years, people have talked about self replicating machines, but nobody had any idea how to get there. But now we see an opening. For the first time, we now can have or maybe we'll we will soon have robots that can learn through imitation or reinforcement learning to operate the existing machines, all the existing machines that already are part of our civilization. Once you have a machine that can operate all the machines that humans currently are are operating, then you have a new kind of life.\n\nSpeaker 2 | 49:06 - 50:10\nThen you have a way of implementing this ultimate scaling machine because you can have robots that make more of themselves. I've said that for decades, and now it's getting closer to reality. You don't need super smart robots for doing that. Just smart enough to learn to operate all the existing machines, and a collection of machines like that can make more of itself, and something like that can also improve itself, not only make replicas of itself, because all the concepts of machine learning that we already have for AI behind the screen the virtual world, all these concepts we are going to apply to self improving robot societies. And something like that is not only going to work in the biosphere, but also on the moon or on Mercury, where there's a lot of material for building infrastructure and bigger AIs and more AIs and more robots and huge spacecraft and all kinds of stuff that you need to colonize the solar system.\n\nSpeaker 1 | 50:10 - 50:23\nWell, I think that's the the perfect note to to end on, an incredibly exciting vision for the for the future, and and and, seriously, thank you so much for for taking the time to chat through everything here. It's it's such a privilege to to get a chance to talk, and I know our our listeners will enjoy it too.\n\nSpeaker 2 | 50:23 - 50:25\nIt was my pleasure. Thank you, Jacob.\n\nSpeaker 1 | 50:25 - 50:51\nI'm Jacob Efron, and this has been unsupervised learning, A podcast where I get to talk to the smartest people in AI, and ask them tons of questions about what's happening with models, and what it means for businesses in the world. As I hope is clear, I have a ton of fun doing this. It's a nights and weekends project, in addition to my day job as an investor at Redpoint. But our ability to get these incredible guests on really comes from folks like you subscribing to the podcast, sharing it with friends. It's really what ultimately makes this whole thing work.\n\nSpeaker 1 | 50:51 - 50:55\nAnd so please consider doing that, and thank you so much for your support and listening. We'll see you next episode."
+      }
+    ],
+    "stats": {
+      "podcastEpisodes": 1
+    }
+  },
+  "blogs": {
+    "generatedAt": "2026-07-19T07:09:00.816Z",
+    "lookbackHours": 72,
+    "blogs": [],
+    "stats": {
+      "blogPosts": 0
+    }
+  }
+}
