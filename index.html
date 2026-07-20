@@ -2772,6 +2772,10 @@ async function loadWeekData(monday) {
     merged.daily_summary = '';
   }
 
+  // 补充：无论日报是否已加载，都把新版 AI 资讯周报 data/ai-news/weekly/YYYY-Www.json
+  // 的内容并入（去重），让本周内容尽量完整，而不是日报缺失才用。
+  await mergeAiNewsWeekly(merged, monday);
+
   if (merged._days_loaded > 0) return merged;
 
   // 兜底：有些周只生成 design-weekly-YYYY-MM-DD.json，没有 7 天日报 JSON。
@@ -2850,6 +2854,119 @@ async function loadWeekData(monday) {
   } catch (e) {}
 
   return null;
+}
+
+// 把 data/ai-news/weekly/YYYY-Www.json 的内容并入 merged（追加+去重）。
+// 日报有数据时作为补充，日报为空时则成为主内容。
+async function mergeAiNewsWeekly(merged, monday) {
+  try {
+    const weekKey = toISOWeekKey(monday);
+    const wr = await fetchWithTimeout('data/ai-news/weekly/' + weekKey + '.json?t=' + Date.now(), 8000);
+    if (!wr || !wr.ok) return;
+    const wk = await wr.json();
+
+    // 校验周范围与请求的周一一致，避免错挂
+    const expectedStart = formatDate(monday);
+    if (wk.range && wk.range.start && wk.range.start !== expectedStart) {
+      console.warn('[Insight] skip mismatched ai-news weekly', { requested: expectedStart, got: wk.range.start });
+      return;
+    }
+
+    const trends = wk.trends || [];
+    const builders = wk.builders || [];
+    const podcasts = wk.podcasts || [];
+    const blogs = wk.blogs || [];
+    if (!(trends.length || builders.length || podcasts.length || blogs.length)) return;
+
+    const dtag = formatDate(monday).slice(5);
+
+    // 按标题去重后追加
+    const titleSet = (arr) => new Set((arr || []).map(x => (x.title || '').trim()).filter(Boolean));
+    const seenDesign = titleSet(merged.design_insights);
+    const seenDemand = titleSet(merged.demand_mining);
+    const seenNews = titleSet(merged.hot_news);
+
+    // trends → 设计洞察
+    trends.forEach(t => {
+      const title = (t.title || '').trim();
+      if (!title || seenDesign.has(title)) return;
+      seenDesign.add(title);
+      merged.design_insights.push({
+        title,
+        summary: t.summary || '',
+        implication: t.implication || '',
+        sources: (t.evidence || []).map(e => e.who).filter(Boolean),
+        source_urls: (t.evidence || []).map(e => e.url).filter(Boolean),
+        tags: ['AI趋势'],
+        _date: dtag,
+        _stage: 'ai-news'
+      });
+    });
+
+    // builders → 需求挖掘
+    builders.forEach(b => {
+      const title = (b.name || '') + (b.role ? '（' + b.role + '）' : '');
+      if (!title.trim() || seenDemand.has(title.trim())) return;
+      seenDemand.add(title.trim());
+      merged.demand_mining.push({
+        title,
+        priority: '中',
+        pain_point: (b.highlights && b.highlights[0] && b.highlights[0].summary) || '',
+        opportunity: (b.highlights || []).slice(1).map(h => h.summary).join('；'),
+        evidence: '',
+        source_urls: (b.highlights || []).map((h, idx) => ({ name: (b.name || '来源') + (idx ? ' ' + (idx + 1) : ''), url: h.url })).filter(x => x.url),
+        _date: dtag
+      });
+    });
+
+    // podcasts + blogs → 热点资讯
+    podcasts.forEach(p => {
+      const title = (p.title || p.name || '').trim();
+      if (!title || seenNews.has(title)) return;
+      seenNews.add(title);
+      merged.hot_news.push({
+        title,
+        summary: (p.keyTakeaways || []).join('；'),
+        source: p.name || '播客',
+        source_urls: p.url ? [p.url] : [],
+        tags: p.guest ? ['嘉宾：' + p.guest] : ['播客'],
+        _date: dtag
+      });
+    });
+    blogs.forEach(bl => {
+      const title = (bl.title || '').trim();
+      if (!title || seenNews.has(title)) return;
+      seenNews.add(title);
+      merged.hot_news.push({
+        title,
+        summary: bl.summary || '',
+        source: bl.name || '博客',
+        source_urls: bl.url ? [bl.url] : [],
+        tags: ['博客'],
+        _date: dtag
+      });
+    });
+
+    // 若原本日报为空，用 weekly 撑起 _days_loaded 与摘要
+    if (merged._days_loaded === 0 && merged.design_insights.length) {
+      merged._days_loaded = 1;
+      if (!merged.daily_summary) {
+        const topTitles = trends.map(t => t.title).filter(Boolean).slice(0, 3);
+        merged.daily_summary = topTitles.length ? topTitles.join('；') + '。' : '';
+      }
+    }
+  } catch (e) {}
+}
+
+// date → ISO 周 key，如 '2026-W29'。与后端 build_ai_news_weekly.py 的 iso_week_key 对齐。
+function toISOWeekKey(date) {
+  const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+  // ISO：周四决定年份；周一=1 ... 周日=7
+  const dayNum = d.getUTCDay() || 7;
+  d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+  const weekNo = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+  return d.getUTCFullYear() + '-W' + String(weekNo).padStart(2, '0');
 }
 
 // 判断当前是否在本周
