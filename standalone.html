@@ -1219,15 +1219,19 @@ function renderInsightView(data) {
   html += `<div class="news-grid">`;
   data.hot_news.forEach(n => {
     const rClass = n.relevance === '高' ? 'relevance-high' : 'relevance-mid';
+    const relText = n.relevance === '高' ? '对输入法：高度相关' : '对输入法：中度相关';
+    const category = n.category || (Array.isArray(n.tags) && n.tags.length ? n.tags[0] : '') || 'AI 资讯';
+    const sourceUrl = n.source_url || (Array.isArray(n.source_urls) && n.source_urls.length ? n.source_urls[0] : '');
+    const readLink = sourceUrl ? `<a href="${sourceUrl}" target="_blank" rel="noopener">阅读原文</a>` : '';
     html += `
       <div class="news-card">
         <div class="news-top">
-          <span class="news-category">${n.category}</span>
-          <span class="news-relevance ${rClass}">相关度：${n.relevance}</span>
+          <span class="news-category">${category}</span>
+          <span class="news-relevance ${rClass}">${relText}</span>
         </div>
         <h3>${n.title}</h3>
         <div class="summary">${n.summary}</div>
-        <div class="news-source"><span>${n.source}</span><a href="${n.source_url}" target="_blank">阅读原文</a></div>
+        <div class="news-source"><span>${n.source || ''}</span>${readLink}</div>
       </div>
     `;
   });
