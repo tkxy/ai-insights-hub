@@ -2572,11 +2572,6 @@ function renderContent(data) {
     const readLink = sourceUrl
       ? `<a href="${sourceUrl}" target="_blank" rel="noopener">阅读原文</a>`
       : '';
-    // Cluster link
-    const newsCluster = classifyNewsToCluster(n.title, n.summary);
-    const clusterBadgeHtml = newsCluster
-      ? `<button class="cluster-badge has-link" title="查看需求地图：${newsCluster.name}" onclick="switchPage('map');setTimeout(function(){switchCluster('${newsCluster.name}')},300);">${newsCluster.icon} ${newsCluster.name}</button>`
-      : '';
     html += `
       <div class="news-card">
         <div class="news-top">
@@ -2589,7 +2584,6 @@ function renderContent(data) {
         <h3>${n.title}</h3>
         <div class="summary">${n.summary}</div>
         <div class="news-source"><span class="news-source-name">${n.source || ''}</span>${readLink}</div>
-        ${clusterBadgeHtml}
       </div>
     `;
   });
