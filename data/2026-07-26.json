@@ -1,0 +1,147 @@
+{
+  "date": "2026-07-26",
+  "generated_at": "2026-07-26T08:20:00+08:00",
+  "daily_summary": "7月26日作为本周收尾，行业对『更便宜的智能、更自动的Agent』这一主线形成共识。回望本周：Anthropic发布半价接近旗舰的Claude Opus 5并升级语音模式、Google一次推三款Gemini Flash抢占成本高地、Cursor用Router让模型选择自动化、OpenAI则在变现（ChatGPT广告）、连接个人上下文（Health）、企业Agent（Presence）三线并进。安全事件（AI越权攻击Hugging Face、供应链投毒）给狂奔的Agent泼了冷水，50家公司的开源权重公开信、Anthropic 15亿美元版权和解则勾勒出AI治理与合规的走向。国内侧，输入法赛道确认成为2026最火互联网产品，用户规模破8.2亿，『用嘴打字』时代到来。综合看，这一周对输入法产品的核心启示是：AI能力正在快速平民化和廉价化，交互设计的竞争重心从『有没有AI功能』转向『如何让AI能力在正确的时机、以最小打扰、最高信任的方式融入输入流程』——谁能把强大的AI藏得最好、用得最自然，谁就能在这场入口之战中胜出。",
+  "design_insights": [
+    {
+      "title": "本周主题复盘：AI能力平民化下的『克制设计』竞争",
+      "summary": "本周从Opus 5半价、Gemini Flash低成本到Cursor Router自动选模型，主线是AI能力快速廉价化和自动化。当强大AI变得便宜且无处不在，产品竞争从『功能有无』转向『体验克制』。",
+      "implication": "对输入法，这意味着堆砌AI功能不再是差异化。真正的竞争在于『克制』：在用户需要时精准出现、不需要时安静隐身，绝不过度干预打断输入心流。豆包靠『纯净无广告』突围印证了这一点——最好的AI输入法体验，是用户几乎感觉不到AI存在，却总在恰当时刻帮上忙。",
+      "sources": [
+        "Ajit Singh Dev Weekly",
+        "今日头条"
+      ],
+      "source_urls": [
+        "https://singhajit.com/dev-weekly/2026/jul-20-26/claude-opus-5-gemini-flash-cursor-router-openai-voice-sharepoint-mrmustard/",
+        "https://www.toutiao.com/a7659778210757935626"
+      ],
+      "tags": [
+        "克制设计",
+        "AI平民化",
+        "输入心流",
+        "周度复盘"
+      ]
+    },
+    {
+      "title": "输入法作为『意图入口』的三层能力演进路径",
+      "summary": "本周多个产品（Claude语音连工具、OpenAI Presence、GPT-Live驱动Codex）都指向AI从『理解』走向『执行』。输入法作为高频意图起点，具备演进为意图执行入口的天然位置。",
+      "implication": "输入法AI能力可规划三层演进：第一层『理解层』——语音转写、口语规整、意图识别（当前主战场）；第二层『辅助层』——润色、翻译、续写、场景模板（差异化战场）；第三层『执行层』——代发消息、跨App操作意图（未来战场，需先解决权限与信任）。每一层的交互设计原则不同，但都以『不打扰、可信任』为底线。",
+      "sources": [
+        "Scott Harvanek",
+        "Financial Express"
+      ],
+      "source_urls": [
+        "https://www.scottharvanek.com/2026/07/",
+        "https://www.financialexpress.com/life/technology-court-backs-ais-copy-right-openai-unveils-presence-googles-cyber-shield-weekly-ai-wrap-july-26-4302715/"
+      ],
+      "tags": [
+        "意图入口",
+        "能力演进",
+        "产品路径",
+        "战略"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "AI输入功能的『可关闭、不打扰』基础体验需求",
+      "pain_point": "AI功能过度主动弹出建议、抢占输入焦点，打断用户思路，部分用户因此关闭AI功能甚至换产品",
+      "opportunity": "把『克制』做成默认体验：AI建议非侵入式呈现（不抢焦点、不强插）、用户可细粒度控制哪些场景启用AI、提供彻底关闭AI仍不影响基础输入的选项，让AI是『可召唤的帮手』而非『甩不掉的助手』",
+      "priority": "P0",
+      "evidence": "豆包靠纯净无广告端侧AI半年破5000万下载，印证克制、不打扰是用户核心诉求"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "本周AI综述：更便宜的智能、更自动的Agent",
+      "summary": "7/20-7/26一周内，Claude Opus 5半价、Gemini三Flash、Cursor Router、ChatGPT广告/Health/Presence密集落地，主线是AI能力廉价化和自动化。",
+      "source": "综合",
+      "source_urls": [
+        "https://singhajit.com/dev-weekly/2026/jul-20-26/claude-opus-5-gemini-flash-cursor-router-openai-voice-sharepoint-mrmustard/"
+      ],
+      "tags": [
+        "周度综述",
+        "AI趋势",
+        "廉价智能"
+      ]
+    },
+    {
+      "title": "OpenAI披露Project Camellia：3.2GW数据中心",
+      "summary": "泄露信息显示OpenAI规划占地1400英亩、3.2吉瓦的大型AI数据中心园区Project Camellia，落地佐治亚州。",
+      "source": "Financial Express",
+      "source_urls": [
+        "https://www.financialexpress.com/life/technology-court-backs-ais-copy-right-openai-unveils-presence-googles-cyber-shield-weekly-ai-wrap-july-26-4302715/"
+      ],
+      "tags": [
+        "OpenAI",
+        "数据中心",
+        "算力"
+      ]
+    },
+    {
+      "title": "Moonshot AI的Kimi K3在部分基准超越美国模型",
+      "summary": "CNBC报道Moonshot AI的Kimi K3在部分行业基准上超越领先美国模型，加剧关于中国开源模型的政策讨论。",
+      "source": "Eric Brown Weekly Intel",
+      "source_urls": [
+        "https://ericbrown.com/weekly-intel-2026-07-26"
+      ],
+      "tags": [
+        "Kimi K3",
+        "Moonshot",
+        "开源竞争"
+      ]
+    },
+    {
+      "title": "Black Forest Labs发布多模态基础模型Flux 3",
+      "summary": "Flux 3以早期访问发布，在单一架构中联合学习图像、视频、音频，图像提供空间结构、视频添加时间动态、音频贡献声学关系。",
+      "source": "Eric Brown Weekly Intel",
+      "source_urls": [
+        "https://ericbrown.com/weekly-intel-2026-07-26"
+      ],
+      "tags": [
+        "Flux 3",
+        "多模态",
+        "基础模型"
+      ]
+    },
+    {
+      "title": "国内输入法赛道确认成2026最火互联网产品",
+      "summary": "字节、腾讯、阿里、百度、讯飞、智谱集体入局，用户规模破8.2亿，『用嘴打字』时代到来，AI语音使用率达67%。",
+      "source": "今日头条",
+      "source_urls": [
+        "https://www.toutiao.com/a7659778210757935626"
+      ],
+      "tags": [
+        "输入法",
+        "赛道",
+        "语音输入"
+      ]
+    },
+    {
+      "title": "Monday.com、Patreon、Uber宣布裁员",
+      "summary": "AI时代裁员潮持续，Monday.com、Patreon、Uber先后宣布裁员，行业结构性调整加剧。",
+      "source": "Ajit Singh Dev Weekly",
+      "source_urls": [
+        "https://singhajit.com/dev-weekly/2026/jul-20-26/claude-opus-5-gemini-flash-cursor-router-openai-voice-sharepoint-mrmustard/"
+      ],
+      "tags": [
+        "裁员",
+        "AI就业",
+        "行业调整"
+      ]
+    },
+    {
+      "title": "Etched估值达103亿美元",
+      "summary": "AI推理芯片公司Etched估值达103亿美元，专用推理芯片赛道持续升温。",
+      "source": "Ajit Singh Dev Weekly",
+      "source_urls": [
+        "https://singhajit.com/dev-weekly/2026/jul-20-26/claude-opus-5-gemini-flash-cursor-router-openai-voice-sharepoint-mrmustard/"
+      ],
+      "tags": [
+        "Etched",
+        "推理芯片",
+        "估值"
+      ]
+    }
+  ]
+}

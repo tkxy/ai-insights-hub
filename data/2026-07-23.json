@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-23",
+  "generated_at": "2026-07-23T08:20:00+08:00",
+  "daily_summary": "7月23日焦点转向「AI进入个人上下文」与「语音交互的连接能力」。OpenAI开始向美国18岁以上登录用户推出ChatGPT Health，用户可连接Apple Health、支持的医院系统病历、One Medical或Function Health，ChatGPT在日常对话中调用这些健康上下文（默认需授权确认）；OpenAI承诺健康数据不用于训练模型、不用于广告定向，断开来源的数据30天内删除。同日Anthropic升级Claude语音模式：付费用户可在语音对话中使用Opus或Sonnet（不再局限于速度导向的Haiku）、支持对话中途切换模型；语音模式还能连接Gmail、Google日历、Slack等工具（行动前询问许可），支持11种语言并可中途切换。这两条都指向同一趋势：AI正从『封闭对话框』走向『连接用户真实上下文和工具』，而权限授权、隐私保护成为交互设计的核心。对输入法而言，Claude语音『连接工具+行动前询问』的模式，正是输入法演进为『意图执行入口』时必须解决的信任与权限交互范式。",
+  "design_insights": [
+    {
+      "title": "语音助手连接工具时的「行动前询问」权限交互",
+      "summary": "Claude语音模式可连接Gmail、Google日历、Slack等工具，但在实际行动前会先询问许可；ChatGPT Health调用健康数据也默认需授权确认。",
+      "implication": "当输入法/AI助手从『提供建议』升级为『代替用户执行操作』（发消息、改日程），『行动前明确询问』是维系信任的底线交互。设计上要清晰区分只读建议（无需确认）与写操作（必须确认），且确认要具体（『将发送这条消息给张三』而非笼统的『允许操作吗』），并提供撤销窗口。",
+      "sources": [
+        "Anthropic",
+        "OpenAI"
+      ],
+      "source_urls": [
+        "https://www.scottharvanek.com/2026/07/"
+      ],
+      "tags": [
+        "权限交互",
+        "行动确认",
+        "用户信任",
+        "Agent执行"
+      ]
+    },
+    {
+      "title": "语音对话中途切换模型：让能力匹配任务难度",
+      "summary": "Claude语音模式支持从模型选择器中途切换Opus/Sonnet，硬问题用强模型，简单对话用快模型。",
+      "implication": "语音交互不应绑死单一模型。输入法可借鉴：日常闲聊用极速小模型保证响应，遇到需要深度处理的长内容（写方案、复杂翻译）时无感升级到强模型。中途切换的关键是『不打断对话连续性』——用户不应感知到底层模型的切换，只感受到『它突然变聪明了』。",
+      "sources": [
+        "Anthropic"
+      ],
+      "source_urls": [
+        "https://www.scottharvanek.com/2026/07/"
+      ],
+      "tags": [
+        "模型切换",
+        "语音交互",
+        "能力匹配"
+      ]
+    },
+    {
+      "title": "AI接入个人上下文的隐私边界设计",
+      "summary": "ChatGPT Health连接医疗记录，但承诺不用于训练、不用于广告，断开来源30天内删除数据，默认需授权。",
+      "implication": "输入法天然接触用户海量私密上下文（聊天内容、输入习惯）。要赢得用户放心使用AI功能，必须像ChatGPT Health一样给出明确的隐私承诺并落到交互：本地处理优先、云端数据可查可删、清晰告知哪些数据用于什么。隐私不是法务文档，而应是用户在界面上能看见、能控制的开关。",
+      "sources": [
+        "OpenAI"
+      ],
+      "source_urls": [
+        "https://www.scottharvanek.com/2026/07/"
+      ],
+      "tags": [
+        "隐私设计",
+        "数据控制",
+        "个人上下文",
+        "透明度"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "输入法执行写操作时的确认与撤销机制需求",
+      "pain_point": "当AI输入助手能代发消息、改日程时，用户担心AI理解错误导致误发、误改，产生信任危机",
+      "opportunity": "建立分级确认交互：只读建议直接呈现无需确认；写操作（发送/修改）必须展示具体内容并二次确认；执行后提供短时撤销窗口，让用户始终掌控最终决定权",
+      "priority": "P0",
+      "evidence": "Claude语音『行动前询问许可』、ChatGPT Health默认授权确认，均验证写操作确认是行业共识"
+    },
+    {
+      "title": "输入数据隐私的可视化控制需求",
+      "pain_point": "用户不清楚输入法的AI功能会上传哪些数据、用于什么，隐私担忧抑制AI功能使用意愿",
+      "opportunity": "提供隐私仪表盘：明确标示哪些处理在本地、哪些上云，云端数据可一键查看和删除，并承诺不用于训练/广告，把隐私控制权交还用户",
+      "priority": "P1",
+      "evidence": "ChatGPT Health明确承诺不训练不广告、30天删除，隐私透明化成为AI产品标配"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "OpenAI推出ChatGPT Health连接医疗记录",
+      "summary": "ChatGPT Health向美国18+登录用户推出，可连接Apple Health、医院病历、One Medical等，对话中调用健康上下文，默认需授权。",
+      "source": "OpenAI",
+      "source_urls": [
+        "https://www.scottharvanek.com/2026/07/"
+      ],
+      "tags": [
+        "ChatGPT Health",
+        "医疗数据",
+        "个人上下文"
+      ]
+    },
+    {
+      "title": "Claude语音模式升级：支持Opus/Sonnet+中途切换",
+      "summary": "Anthropic升级Claude语音模式，付费用户可用Opus或Sonnet做语音对话并中途切换模型，超越原速度导向的Haiku。",
+      "source": "Anthropic",
+      "source_urls": [
+        "https://www.scottharvanek.com/2026/07/"
+      ],
+      "tags": [
+        "Claude语音",
+        "模型切换",
+        "Anthropic"
+      ]
+    },
+    {
+      "title": "Claude语音可连接Gmail/日历/Slack并行动前询问",
+      "summary": "Claude语音模式可访问Gmail、Google日历、Slack等连接工具，行动前会先询问许可，支持11种语言中途切换。",
+      "source": "Anthropic",
+      "source_urls": [
+        "https://www.scottharvanek.com/2026/07/"
+      ],
+      "tags": [
+        "工具连接",
+        "权限询问",
+        "多语言"
+      ]
+    },
+    {
+      "title": "ChatGPT Health承诺健康数据不训练不广告",
+      "summary": "OpenAI承诺连接的健康信息及相关对话不用于训练基础模型、不用于广告定向，断开来源的数据30天内删除。",
+      "source": "OpenAI",
+      "source_urls": [
+        "https://www.scottharvanek.com/2026/07/"
+      ],
+      "tags": [
+        "隐私",
+        "数据承诺",
+        "健康"
+      ]
+    },
+    {
+      "title": "每周超3亿人向ChatGPT咨询健康问题",
+      "summary": "OpenAI称每周有超3亿人向ChatGPT咨询健康相关问题，从理解化验单到准备就诊，健康成高频场景。",
+      "source": "OpenAI",
+      "source_urls": [
+        "https://www.scottharvanek.com/2026/07/"
+      ],
+      "tags": [
+        "ChatGPT",
+        "健康咨询",
+        "用户规模"
+      ]
+    },
+    {
+      "title": "Claude语音模式支持11种语言中途切换",
+      "summary": "Claude语音模式支持11种语言并可对话中途切换，在移动、桌面、web端对所有聊天用户开放beta。",
+      "source": "Anthropic",
+      "source_urls": [
+        "https://www.scottharvanek.com/2026/07/"
+      ],
+      "tags": [
+        "多语言",
+        "Claude语音",
+        "beta"
+      ]
+    },
+    {
+      "title": "AMD与Anthropic达成战略合作",
+      "summary": "AMD与Anthropic于7月22日达成战略合作，深化算力与模型层面的协作。",
+      "source": "Scott Harvanek",
+      "source_urls": [
+        "https://www.scottharvanek.com/2026/07/"
+      ],
+      "tags": [
+        "AMD",
+        "Anthropic",
+        "战略合作"
+      ]
+    }
+  ]
+}

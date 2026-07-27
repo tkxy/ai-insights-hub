@@ -1,0 +1,177 @@
+{
+  "date": "2026-07-24",
+  "generated_at": "2026-07-24T08:20:00+08:00",
+  "daily_summary": "7月24日是本周最密集的发布日。Anthropic发布Claude Opus 5——号称以半价接近旗舰Fable 5的智能，定价维持$5/$25每百万token不变，在Frontier-Bench编程基准上得43.3%（是Opus 4.8的两倍多、超过Fable 5的33.7%），成为Claude Max默认模型；同时推出快2.5倍的Fast模式、API自动安全分类回退、以及对话中途换工具不失效prompt缓存等实用特性，1M上下文窗口。同日50家科技公司（含英伟达、微软、Meta、Google、OpenAI等，亚马逊和Anthropic缺席）联署《开放权重与美国AI领导地位》公开信，呼吁勿过早限制开源权重模型。OpenAI则发布Presence企业级架构（把AI Agent直连企业内部系统、跨语音和聊天共享上下文权限），并正式上线ChatGPT Health。法律层面：联邦法官批准Anthropic 15亿美元版权和解（因用盗版书训练Claude，涉48.2万本书、每本约赔3000美元，为史上最大版权赔偿）；德里高院则判OpenAI训练数据构成『合理使用』、驳回ANI禁令请求。主线依旧是『半价的前沿智能』——AI竞争从拼能力转向拼日常使用的经济性。对输入法，Opus 5『半价前沿』进一步压低高质量AI改写/创作的成本门槛。",
+  "design_insights": [
+    {
+      "title": "「半价前沿智能」重塑输入法AI功能的性价比天花板",
+      "summary": "Claude Opus 5以Opus 4.8同价（$5/$25每百万token）达到接近旗舰Fable 5的智能，编程基准得分翻倍，AI竞争焦点从『能力上限』转向『日常使用的经济性』。",
+      "implication": "当高质量AI能力持续降价，输入法可以把过去只敢在高级付费档提供的能力（如整段润色、风格改写、长文生成）下放到更广泛的用户。交互设计的机会点从『限制功能』转向『如何让用户在恰当时机自然发现和使用这些能力』——重点是场景触发的时机设计，而非功能门槛。",
+      "sources": [
+        "Anthropic",
+        "VentureBeat"
+      ],
+      "source_urls": [
+        "https://www.scottharvanek.com/2026/07/",
+        "https://singhajit.com/dev-weekly/2026/jul-20-26/claude-opus-5-gemini-flash-cursor-router-openai-voice-sharepoint-mrmustard/"
+      ],
+      "tags": [
+        "性价比",
+        "能力下放",
+        "Claude Opus 5",
+        "经济性"
+      ]
+    },
+    {
+      "title": "对话中途换工具不失缓存：连续交互的工程体验优化",
+      "summary": "Opus 5支持对话中途更换工具而不使prompt缓存失效——一个开发者比任何基准都更在意的实用特性。",
+      "implication": "这提醒交互设计要关注『连续性』的工程细节。输入法在用户连续输入过程中切换功能（打字→语音→翻译）时，应保持上下文不丢失、不重置。用户切换输入方式时，此前的语境（对话对象、话题）应无缝延续，而非每次都从零开始，这是流畅体验的隐形基础。",
+      "sources": [
+        "Ajit Singh Dev Weekly"
+      ],
+      "source_urls": [
+        "https://singhajit.com/dev-weekly/2026/jul-20-26/claude-opus-5-gemini-flash-cursor-router-openai-voice-sharepoint-mrmustard/"
+      ],
+      "tags": [
+        "上下文连续性",
+        "无缝切换",
+        "体验细节"
+      ]
+    },
+    {
+      "title": "训练数据版权风波对输入法数据合规的警示",
+      "summary": "法官批准Anthropic 15亿美元版权和解（盗版书训练），德里高院则判OpenAI训练构成合理使用——AI训练数据的合规边界正在司法层面被反复界定。",
+      "implication": "输入法若用用户输入数据训练个性化模型，必须前瞻数据合规：明确告知、获取授权、提供退出选项。用户输入的内容（尤其涉及第三方隐私的聊天）不应被默认纳入训练。交互上应让『数据用于改进模型』成为用户可见、可选、可撤回的明确选择，而非藏在协议里的默认勾选。",
+      "sources": [
+        "Eric Brown Weekly Intel",
+        "Financial Express"
+      ],
+      "source_urls": [
+        "https://ericbrown.com/weekly-intel-2026-07-26",
+        "https://www.financialexpress.com/life/technology-court-backs-ais-copy-right-openai-unveils-presence-googles-cyber-shield-weekly-ai-wrap-july-26-4302715/"
+      ],
+      "tags": [
+        "数据合规",
+        "版权",
+        "训练授权",
+        "用户知情"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "输入方式无缝切换的上下文延续需求",
+      "pain_point": "用户在打字、语音、翻译等输入方式间切换时，上下文常被重置，需要重新交代语境，体验割裂",
+      "opportunity": "构建统一的会话上下文层，让用户切换输入方式时保留对话对象、话题、语气等语境，实现『换方式不换脑子』的连续体验",
+      "priority": "P1",
+      "evidence": "Opus 5对话中途换工具不失缓存、Claude语音中途切换模型不断对话，连续性成体验竞争点"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Anthropic发布Claude Opus 5：半价接近旗舰智能",
+      "summary": "Claude Opus 5以Opus 4.8同价达到接近Fable 5的智能，Frontier-Bench得43.3%翻倍，成Claude Max默认模型，1M上下文。",
+      "source": "Anthropic",
+      "source_urls": [
+        "https://www.scottharvanek.com/2026/07/"
+      ],
+      "tags": [
+        "Claude Opus 5",
+        "半价",
+        "前沿模型"
+      ]
+    },
+    {
+      "title": "50家科技公司联署开源权重公开信",
+      "summary": "英伟达、微软、Meta、Google、OpenAI等50家公司联署《开放权重与美国AI领导地位》，呼吁勿过早限制开源模型，亚马逊和Anthropic缺席。",
+      "source": "网易/Scott Harvanek",
+      "source_urls": [
+        "https://www.163.com/dy/article/L2P3R2GT0519QIKK.html"
+      ],
+      "tags": [
+        "开源权重",
+        "公开信",
+        "AI政策"
+      ]
+    },
+    {
+      "title": "OpenAI发布Presence企业级Agent架构",
+      "summary": "OpenAI推出Presence，把AI Agent直连企业内部系统、跨语音和聊天共享上下文与权限，已在BBVA、软银、IAG试点。",
+      "source": "Financial Express",
+      "source_urls": [
+        "https://www.financialexpress.com/life/technology-court-backs-ais-copy-right-openai-unveils-presence-googles-cyber-shield-weekly-ai-wrap-july-26-4302715/"
+      ],
+      "tags": [
+        "Presence",
+        "企业Agent",
+        "OpenAI"
+      ]
+    },
+    {
+      "title": "法官批准Anthropic 15亿美元版权和解",
+      "summary": "联邦法官批准Anthropic 15亿美元版权和解，因用盗版书训练Claude，涉48.2万本书、每本约赔3000美元，为史上最大版权赔偿。",
+      "source": "Eric Brown Weekly Intel",
+      "source_urls": [
+        "https://ericbrown.com/weekly-intel-2026-07-26"
+      ],
+      "tags": [
+        "版权和解",
+        "Anthropic",
+        "训练数据"
+      ]
+    },
+    {
+      "title": "德里高院判OpenAI训练数据构成合理使用",
+      "summary": "德里高院裁定存储新闻内容训练大模型属『合理使用』，驳回ANI禁令请求，为亚洲AI训练版权设下重要先例。",
+      "source": "Financial Express",
+      "source_urls": [
+        "https://www.financialexpress.com/life/technology-court-backs-ais-copy-right-openai-unveils-presence-googles-cyber-shield-weekly-ai-wrap-july-26-4302715/"
+      ],
+      "tags": [
+        "版权",
+        "合理使用",
+        "OpenAI",
+        "判例"
+      ]
+    },
+    {
+      "title": "Claude Opus 5推出Fast模式，快2.5倍",
+      "summary": "Opus 5同步推出快约2.5倍的Fast模式（两倍基础价）、API自动安全回退、对话中途换工具不失缓存等特性。",
+      "source": "Anthropic",
+      "source_urls": [
+        "https://www.scottharvanek.com/2026/07/"
+      ],
+      "tags": [
+        "Fast模式",
+        "Claude Opus 5",
+        "特性"
+      ]
+    },
+    {
+      "title": "黄仁勋发首条X推文为开源信背书",
+      "summary": "英伟达CEO黄仁勋发布个人首条X推文力挺开源信：『世界既需要前沿闭源模型，也需要前沿开源模型』，纳德拉等呼应。",
+      "source": "网易",
+      "source_urls": [
+        "https://www.163.com/dy/article/L2P3R2GT0519QIKK.html"
+      ],
+      "tags": [
+        "黄仁勋",
+        "开源",
+        "英伟达"
+      ]
+    },
+    {
+      "title": "Sakana AI发布Fugu Ultra，SWE-Bench Pro得73.7%",
+      "summary": "东京Sakana AI于7月24日发布Fugu Ultra，在SWE-Bench Pro基准上得73.7%，展现日本AI实力。",
+      "source": "Financial Express",
+      "source_urls": [
+        "https://www.financialexpress.com/life/technology-court-backs-ais-copy-right-openai-unveils-presence-googles-cyber-shield-weekly-ai-wrap-july-26-4302715/"
+      ],
+      "tags": [
+        "Sakana AI",
+        "Fugu Ultra",
+        "编程基准"
+      ]
+    }
+  ]
+}

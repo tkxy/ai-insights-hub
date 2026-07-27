@@ -1,0 +1,161 @@
+{
+  "date": "2026-07-22",
+  "generated_at": "2026-07-22T08:20:00+08:00",
+  "daily_summary": "7月22日主线是「Agent更自动、变现更激进」。Cursor推出Cursor Router——一个请求级分类器，读懂每条编程查询后自动路由到最合适的模型（模型池含Fable 5、Opus 4.8、GPT-5.6 Sol、Grok 4.5等），基于60万+真实请求训练，声称以低30-60%成本达到前沿质量，并提供Intelligence/Balance/Cost三档让团队自选性价比。同日OpenAI动作频频：上线自助广告平台，让品牌在ChatGPT对话中投放『自然融入』的广告（首批广告主含Best Buy、Lowe's、VistaPrint）；并把全双工GPT-Live语音接入Codex，用户可动嘴驱动多个编程Agent、双手离开键盘。变现层面，ChatGPT广告标志着AI对话正式进入商业化广告时代。对输入法而言，两条主线都直接相关：『自动模型路由』印证输入法应无感知按场景选模型；而『对话内自然广告』则给输入法的AI功能商业化提供了新参考——如何在不破坏输入体验的前提下植入商业价值，是交互设计的敏感命题。",
+  "design_insights": [
+    {
+      "title": "「不让用户选模型」是更好的交互——Cursor Router的启示",
+      "summary": "Cursor Router停止要求开发者手动选模型，改为按请求自动路由到最合适的模型，声称前沿质量+成本降30-60%，仅保留Intelligence/Balance/Cost三档粗粒度选择。",
+      "implication": "让用户在『快/好/省』之间手动选模型是把系统复杂度转嫁给用户的懒惰设计。输入法AI应学习Router思路：用户只表达意图（『帮我润色』『翻译』），系统在后台自动选模型和参数。最多暴露一个粗粒度的偏好开关（省电模式/极致效果），而非让用户面对一堆模型名称。",
+      "sources": [
+        "MarkTechPost",
+        "Ajit Singh Dev Weekly"
+      ],
+      "source_urls": [
+        "https://singhajit.com/dev-weekly/2026/jul-20-26/claude-opus-5-gemini-flash-cursor-router-openai-voice-sharepoint-mrmustard/"
+      ],
+      "tags": [
+        "自动路由",
+        "隐藏复杂度",
+        "意图驱动",
+        "交互简化"
+      ]
+    },
+    {
+      "title": "全双工语音驱动Agent：解放双手的交互新形态",
+      "summary": "OpenAI把全双工GPT-Live语音接入Codex，用户可用语音同时驱动多个编程Agent，双手无需碰键盘，实现『动嘴编程』。",
+      "implication": "全双工语音（可随时打断、边听边说）是比传统『按住说话』更自然的交互。输入法可探索类似形态：用户口述意图时，AI实时响应并可被打断修正，而非等用户说完才处理。这对『走路时输入』『多任务并行』场景尤其有价值，也是语音输入从『听写』走向『对话式协作』的关键一跃。",
+      "sources": [
+        "Ajit Singh Dev Weekly"
+      ],
+      "source_urls": [
+        "https://singhajit.com/dev-weekly/2026/jul-20-26/claude-opus-5-gemini-flash-cursor-router-openai-voice-sharepoint-mrmustard/"
+      ],
+      "tags": [
+        "全双工语音",
+        "可打断交互",
+        "解放双手",
+        "对话式"
+      ]
+    },
+    {
+      "title": "对话内原生广告：AI变现与体验的边界博弈",
+      "summary": "OpenAI上线自助广告平台，让品牌在ChatGPT对话中投放『自然融入对话体验』的广告，首批含Best Buy、Lowe's等。",
+      "implication": "AI对话广告是把双刃剑：输入法作为高频入口同样面临变现压力，但历史证明输入法广告极易引发用户反感（豆包正是靠『纯净无广告』突围）。若探索商业化，交互设计必须坚守底线：广告不能出现在核心输入流程中、不能伪装成AI建议、必须清晰可辨且可关闭。信任一旦破坏，用户会立即流失。",
+      "sources": [
+        "Eric Brown Weekly Intel"
+      ],
+      "source_urls": [
+        "https://ericbrown.com/weekly-intel-2026-07-26"
+      ],
+      "tags": [
+        "AI广告",
+        "商业化",
+        "用户信任",
+        "体验边界"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "语音输入的可打断实时协作需求",
+      "pain_point": "传统『按住说话-松开出字』模式无法中途修正，用户说错只能重来，长内容体验割裂",
+      "opportunity": "引入全双工/可打断的语音交互：边说边转写、随时插入修正指令（『刚才那句改成…』）、AI实时响应，让语音输入从单向听写升级为双向协作",
+      "priority": "P1",
+      "evidence": "OpenAI全双工语音接入Codex、Claude语音模式支持mid-conversation模型切换，可打断交互成趋势"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Cursor推出Router：按请求自动选模型省30-60%成本",
+      "summary": "Cursor Router基于60万+真实请求训练，读懂每条查询自动路由到最合适模型，前沿质量下成本降30-60%，提供三档模式。",
+      "source": "MarkTechPost",
+      "source_urls": [
+        "https://singhajit.com/dev-weekly/2026/jul-20-26/claude-opus-5-gemini-flash-cursor-router-openai-voice-sharepoint-mrmustard/"
+      ],
+      "tags": [
+        "Cursor Router",
+        "模型路由",
+        "成本优化"
+      ]
+    },
+    {
+      "title": "OpenAI上线ChatGPT自助广告平台",
+      "summary": "OpenAI推出自助广告平台，品牌可在ChatGPT对话中投放自然融入的广告，首批广告主含Best Buy、Lowe's、VistaPrint。",
+      "source": "Eric Brown Weekly Intel",
+      "source_urls": [
+        "https://ericbrown.com/weekly-intel-2026-07-26"
+      ],
+      "tags": [
+        "ChatGPT广告",
+        "商业化",
+        "OpenAI"
+      ]
+    },
+    {
+      "title": "OpenAI把全双工GPT-Live语音接入Codex",
+      "summary": "OpenAI将全双工语音接入Codex，用户可用语音同时驱动多个编程Agent，双手无需碰键盘。",
+      "source": "Ajit Singh Dev Weekly",
+      "source_urls": [
+        "https://singhajit.com/dev-weekly/2026/jul-20-26/claude-opus-5-gemini-flash-cursor-router-openai-voice-sharepoint-mrmustard/"
+      ],
+      "tags": [
+        "GPT-Live",
+        "语音编程",
+        "Codex"
+      ]
+    },
+    {
+      "title": "Cursor Router模型池含Fable 5、GPT-5.6 Sol、Grok 4.5",
+      "summary": "Router在数百万请求的在线A/B测试中评估，模型池跨越Fable 5、Opus 4.8、GPT-5.6 Sol、Grok 4.5及Cursor自研Composer。",
+      "source": "MarkTechPost",
+      "source_urls": [
+        "https://singhajit.com/dev-weekly/2026/jul-20-26/claude-opus-5-gemini-flash-cursor-router-openai-voice-sharepoint-mrmustard/"
+      ],
+      "tags": [
+        "Cursor",
+        "多模型",
+        "A/B测试"
+      ]
+    },
+    {
+      "title": "AI对话广告时代来临引发体验争议",
+      "summary": "ChatGPT广告标志AI对话正式进入商业化广告阶段，业内对广告如何不破坏对话体验展开讨论。",
+      "source": "Eric Brown Weekly Intel",
+      "source_urls": [
+        "https://ericbrown.com/weekly-intel-2026-07-26"
+      ],
+      "tags": [
+        "AI广告",
+        "用户体验",
+        "行业趋势"
+      ]
+    },
+    {
+      "title": "xAI将Grok 4.5嵌入Microsoft Excel侧边栏",
+      "summary": "xAI发布免费Microsoft 365插件，把Grok 4.5嵌入Excel侧边栏，可自然语言清洗数据、写公式、实时网络检索。",
+      "source": "Financial Express",
+      "source_urls": [
+        "https://www.financialexpress.com/life/technology-court-backs-ais-copy-right-openai-unveils-presence-googles-cyber-shield-weekly-ai-wrap-july-26-4302715/"
+      ],
+      "tags": [
+        "Grok",
+        "Excel",
+        "xAI"
+      ]
+    },
+    {
+      "title": "Travis Kalanick的Atoms融资17亿美元",
+      "summary": "Uber创始人Travis Kalanick的新公司Atoms完成17亿美元融资，物理AI赛道持续吸金。",
+      "source": "Ajit Singh Dev Weekly",
+      "source_urls": [
+        "https://singhajit.com/dev-weekly/2026/jul-20-26/claude-opus-5-gemini-flash-cursor-router-openai-voice-sharepoint-mrmustard/"
+      ],
+      "tags": [
+        "融资",
+        "物理AI",
+        "Atoms"
+      ]
+    }
+  ]
+}
