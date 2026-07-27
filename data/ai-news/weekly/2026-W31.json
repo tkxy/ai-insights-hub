@@ -1,0 +1,169 @@
+{
+  "week": "2026-W31",
+  "range": { "start": "2026-07-27", "end": "2026-08-02" },
+  "generatedAt": "2026-07-27T08:56:00+08:00",
+  "trends": [
+    {
+      "title": "AI Agent「软件工厂」成共识",
+      "summary": "本周多位大佬不约而同在聊同一个概念：未来的产品不是代码，而是那一套能自动写代码、修bug、做QA的AI agent 流水线。Vercel CEO Rauch 直接把话挑明——「工厂才是产品，你的产品有多好，取决于你的 agent 有多强」。Linear 产品负责人 Nan Yu 更进一步，说能做 SoftwareFactory 就能做 SoftwareFactoryFactory，这套逻辑会蔓延到医疗、法律等所有需要「设计并执行意图」的领域。",
+      "implication": "对输入法/AI助手来说，这意味着用户的交互界面不再是输入框和按钮，而是一套能理解意图、自主完成任务的 agent 调度系统。助手类产品得从「回答问题的工具」进化成「能干活的生产线」。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Guillermo Rauch (Vercel CEO)",
+          "url": "https://x.com/rauchg/status/2081123293340520642",
+          "quote": "工厂才是产品。你的产品有多好，只取决于你设置的那些自主维护它的 agent 有多好（The factory is the product. Your product is only as good as the agents you set up to autonomously maintain it.）"
+        },
+        {
+          "type": "tweet",
+          "who": "Nan Yu (Linear 产品负责人)",
+          "url": "https://x.com/thenanyu/status/2081187979024797858",
+          "quote": "如果你能造一个 SoftwareFactory，那你就能造一个 SoftwareFactoryFactory。而且这套逻辑不限于软件，会泛化到公共卫生、法律等领域（If you can make a SoftwareFactory, then you can make a SoftwareFactoryFactory.）"
+        },
+        {
+          "type": "tweet",
+          "who": "Peter Steinberger (OpenClaw/OpenAI)",
+          "url": "https://x.com/steipete/status/2081169373784633552",
+          "quote": "Codex Sol 在理解意图方面变得非常强，已经能发现复杂的行为问题了。以前这种工作流会在上下文压缩边界崩溃或者模型开始偷懒（Sol got insanely good at really understanding intent and is finding complex behavior issues.）"
+        }
+      ]
+    },
+    {
+      "title": "开源权重AI大势已定",
+      "summary": "上周 Google 正式加入开源权重阵营，Box CEO Aaron Levie 称之为「行业的重要时刻」——意味着从 OpenAI 到 Google，主流玩家全部认可了开源路线。Meta 的 Madhu Guru 回顾了过去一个月的发展：DeepSeek、微软-OpenAI 分手、GLM、Kimi、Fable 等事件接连发生，每次都在揭示不同参与者的底牌，整个行业快速收敛到开源权重这个方向。",
+      "implication": "开源模型会加速 AI 能力的平民化。输入法这类高频应用接入 AI 的成本会持续下降，差异化不再来自「模型本身好不好」，而来自「怎么把模型跟用户场景结合得好」。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Aaron Levie (Box CEO)",
+          "url": "https://x.com/levie/status/2081054531908247937",
+          "quote": "Google 加入后，这是对开源权重 AI 的全面背书。对行业来说是个相当大的时刻（Now with Google on board, this is a complete endorsement of open weights AI. Pretty big moment for the industry.）"
+        },
+        {
+          "type": "tweet",
+          "who": "Madhu Guru (Meta AI 高级总监)",
+          "url": "https://x.com/realmadhuguru/status/2081141594892415028",
+          "quote": "我们共同观察了不同方向的一阶和二阶效应，并更新了各自的信念。这就是我们接下来十年解决 AI 社会性大问题的方式（We got a chance to jointly observe the first- and second-order effects of different directions and update our beliefs.）"
+        }
+      ]
+    },
+    {
+      "title": "AI编程：IDE在退，Agent在进",
+      "summary": "OpenAI 的 Thibault Sottiaux 透露 ChatGPT Work 的活跃用户数已经超过 Codex，这意味着人们更倾向于在「通用对话助手」里写代码，而不是专用 IDE。Vercel CEO Rauch 更激进——他做研究已经不用任何 UI 了，全部靠 agent CLI + 文件系统，文件夹可以跨设备同步，想分享成果就让 agent 渲染一个 HTML 部署到 Vercel。",
+      "implication": "AI 交互的「去 UI 化」趋势对输入法是双刃剑：一方面语音/文字交互的权重会上升，另一方面如果用户直接跟 agent 对话而跳过输入框，传统的输入法交互入口需要重新设计。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Thibault Sottiaux (OpenAI Codex & ChatGPT)",
+          "url": "https://x.com/thsottiaux/status/2081198608293187635",
+          "quote": "ChatGPT Work 的活跃用户数已经正式超过了 Codex。干得漂亮（ChatGPT Work officially has overtaken Codex in number of active users. Way to go.）"
+        },
+        {
+          "type": "tweet",
+          "who": "Guillermo Rauch (Vercel CEO)",
+          "url": "https://x.com/rauchg/status/2081103993917649134",
+          "quote": "不用 fancy 应用、知识图谱、UI。agent 可以找到并关联之前的研究。无限扩展。文件夹可以通过 iCloud、git 同步（No fancy apps, knowledge graphs, UIs. The agent can be asked to find and correlate knowledge from previous sessions.）"
+        }
+      ]
+    }
+  ],
+  "builders": [
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "Vercel CEO",
+      "highlights": [
+        {
+          "summary": "提出「软件工厂」概念：产品本身不重要，重要的是那套能自主构建和维护产品的 agent 系统。这套逻辑最早是马斯克在特斯拉验证的，现在对软件行业同样适用。",
+          "url": "https://x.com/rauchg/status/2081123293340520642"
+        },
+        {
+          "summary": "分享了自己的工作流革命：不用任何 fancy UI，全靠 agent CLI + 文件系统做研究。agent 能跨会话关联知识，无限扩展，文件夹可跨设备同步。",
+          "url": "https://x.com/rauchg/status/2081103993917649134"
+        }
+      ]
+    },
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "Box CEO",
+      "highlights": [
+        {
+          "summary": "Google 加入开源权重阵营，标志着行业对开源路线的全面认可。认为这对整个 AI 行业是一个分水岭式的时刻。",
+          "url": "https://x.com/levie/status/2081054531908247937"
+        }
+      ]
+    },
+    {
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "OpenClaw 创始人 + OpenAI",
+      "highlights": [
+        {
+          "summary": "用 Codex Sol 做大规模并行 QA 来准备新版发布。Sol 在理解意图方面进步巨大，以前会在上下文压缩时崩溃或偷懒的 workflow 现在能稳定跑通了。",
+          "url": "https://x.com/steipete/status/2081169373784633552"
+        },
+        {
+          "summary": "分享了一个实战案例：用 12 个子 agent 拆分功能、开 dev gateway、写测试报告、修 root cause——全程自主完成。",
+          "url": "https://x.com/steipete/status/2081169376317932017"
+        }
+      ]
+    },
+    {
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "OpenAI Codex & ChatGPT 团队成员",
+      "highlights": [
+        {
+          "summary": "透露 ChatGPT Work 活跃用户已超过 Codex。通用对话式 AI 在编程场景的受欢迎程度超过了专用 IDE 工具。",
+          "url": "https://x.com/thsottiaux/status/2081198608293187635"
+        }
+      ]
+    },
+    {
+      "name": "Madhu Guru",
+      "handle": "realmadhuguru",
+      "role": "Meta AI 高级总监（前 Google Gemini/Veo 负责人）",
+      "highlights": [
+        {
+          "summary": "深度复盘了过去一个月 AI 行业对开源权重的快速趋同过程。DeepSeek、微软-OpenAI 分手、GLM、Kimi、Fable——每个事件都在暴露不同参与者的真实立场和底牌。",
+          "url": "https://x.com/realmadhuguru/status/2081141594892415028"
+        }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "Unsupervised Learning",
+      "title": "Ep 91: 顶级AI分析师拆解当下的AI炒作周期（Top AI Analyst Unpacks Today's AI Hype Cycle）",
+      "guest": "Benedict Evans（知名科技分析师，独立分析师/ newsletter 作者）",
+      "url": "https://www.youtube.com/watch?v=vDY_ocrkQ5w",
+      "keyTakeaways": [
+        "Benedict Evans 认为把 AI 类比为「电」太笼统——电之前人们也不傻，关键看电之后具体发生了什么改变。对 AI 也需要这种颗粒度的分析。",
+        "关于基础模型的价值归属：Evans 质疑这些 AI 公司能否捕获到他们烧掉的算力对应的商业价值，消费者端 AI 应用目前还没有真正跑通。",
+        "对「AI 替代工作」的讨论：Hinton 十年前说停止培养放射科医生，但他根本不理解放射科医生实际做什么。AI 能力的边界是「锯齿状」的——某些任务极强，某些任务做不了，这让企业采用变得复杂。",
+        "呼吁更诚实的讨论：不要用「颠覆」「革命」这些大词，而是具体分析每个行业里 AI 到底改变了什么、没改变什么。"
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "name": "Anthropic Engineering",
+      "title": "Claude Code 质量下降的事后复盘（An update on recent Claude Code quality reports）",
+      "url": "https://www.anthropic.com/engineering/april-23-postmortem",
+      "summary": "Anthropic 对近期用户反馈的 Claude Code 质量下降问题做了完整复盘。定位到三个独立问题：（1）3月4日把默认推理强度从高调到中，导致代码质量下降——4月7日回滚；（2）3月26日一个清理闲置会话上下文的改动有bug，导致 Claude 在每轮对话中反复遗忘、表现像「失忆」——4月10日修复；（3）4月16日加了一条减少啰嗦感的系统指令，跟其他 prompt 改动叠加后伤害了编码质量——4月20日回滚。三个改动影响不同流量切片、不同时间点，聚合起来看起来像大范围随机退化。值得关注的是 Anthropic 主动承认「从不故意降低模型质量」，并承诺改进变更监控流程——这种透明度在大模型公司里很少见。"
+    },
+    {
+      "name": "Anthropic Engineering",
+      "title": "规模化管理型Agent：把「大脑」和「手」解耦（Scaling Managed Agents: Decoupling the brain from the hands）",
+      "url": "https://www.anthropic.com/engineering/managed-agents",
+      "summary": "Anthropic 发布了 Managed Agents 的架构设计理念。核心思路：把 agent 拆成三个虚拟化组件——会话（事件日志）、执行循环（调用模型并路由工具调用）、沙箱（代码执行环境）。这样每层可以独立演进，后续模型升级不需要改 harness。文章提到一个有趣的发现：Sonnet 4.5 在上下文快满时会提前结束任务（「上下文焦虑」），但 Opus 4.5 完全没有这个问题——说明 harness 中的某些补偿设计会随着模型变强而成为死代码。"
+    },
+    {
+      "name": "Claude Blog",
+      "title": "Claude Managed Agents 新功能：自托管沙箱和 MCP 隧道（New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels）",
+      "url": "https://claude.com/blog/claude-managed-agents-updates",
+      "summary": "Managed Agents 新增两个企业级功能：（1）自托管沙箱——agent 的代码执行可以在企业自己的基础设施上跑，敏感文件不离开企业边界；（2）MCP 隧道——agent 可以连接企业内部的私有 MCP 服务器。Anthropic 的策略很清楚：先让企业开发者用起来，建立信任，再让他们把更多工作流搬到 Managed Agents 上。支持 Cloudflare、Daytona、Modal、Vercel 等沙箱提供商。"
+    }
+  ]
+}
