@@ -1,0 +1,126 @@
+{
+  "week": "2026-W32",
+  "range": { "start": "2026-08-03", "end": "2026-08-09" },
+  "generatedAt": "2026-08-03T00:55:00.000Z",
+  "trends": [
+    {
+      "title": "AI 从「能用」迈入「敢用」",
+      "summary": "本周 Anthropic 一篇工程博客讲得很直白：12 个月前打死也不敢给 Claude 那么高的系统权限，现在已经是日常了。但问题也跟着来了——人类审查疲劳（93% 的权限弹窗用户直接点通过），所以 Claude Code 干脆做了个 auto mode 来替人判断哪些操作安全。Karpathy 用 Opus 5 自动写了 5500 行代码渲染《指环王》3D 场景，说明 AI 的耐心和耐力已经超过了人类——从「没人会花时间做这个」变成「行啊做吧反正几乎免费」",
+      "implication": "AI 助手类产品从「辅助建议」到「自动执行」的跨越正在发生，但信任机制是关键——不是让用户点确认，而是帮用户判断什么不用确认",
+      "evidence": [
+        { "type": "blog", "who": "Anthropic Engineering", "url": "https://www.anthropic.com/engineering/how-we-contain-claude", "quote": "12 个月前我们绝不会考虑给 Claude 能搞垮内部服务的权限，现在这已经是日常了——开发者因此更高效了（Twelve months ago, we'd have rejected out of hand the idea of granting Claude access sufficient to take down an internal Anthropic service. Today that level of access is routine）" },
+        { "type": "tweet", "who": "Andrej Karpathy", "url": "https://x.com/karpathy/status/2083749667410727319", "quote": "没人会花时间写这么定制的东西，但 LLM 有无限的耐心。从「没人会做这个」变成了「行啊做吧反正几乎免费」（no one in their right mind would ever spend the time to write something this custom but LLMs have all the stamina and patience in the world）" },
+        { "type": "blog", "who": "Anthropic Engineering", "url": "https://www.anthropic.com/engineering/how-we-contain-claude", "quote": "我们统计发现用户通过了大约 93% 的权限请求。看到的弹窗越多，就越不仔细看（Our telemetry showed users approved roughly 93% of permission prompts）" }
+      ]
+    },
+    {
+      "title": "模型变强了，但「人味儿」在退化",
+      "summary": "Peter Yang 这周发了一条引起不少共鸣的推：Opus 4.6 是他觉得性格最好的模型，像跟一个值得信赖的朋友聊天。到了 Opus 5，回复越来越长、爱说套话、还特别爱 judge 人。Amanda Askell 也补了一句——别嘲笑那些说深度学习撞墙的人，大家都需要一点希望。这反映出一个被忽略的趋势：模型在能力指标上不断刷新高，但作为「对话伙伴」的体验却在倒退",
+      "implication": "输入法和 AI 助手的核心交互是对话——用户要的不是最聪明的回答，而是舒服、自然、有分寸的交流。能力提升不能以牺牲对话体验为代价",
+      "evidence": [
+        { "type": "tweet", "who": "Peter Yang", "url": "https://x.com/petergyang/status/2083755374994415904", "quote": "Opus 4.6 是我觉得性格和写作风格最好的 Opus。Opus 5 有些不对劲——回复太长、太多 Claude 套话、太爱 judge 了。Opus 以前像值得信赖的朋友，现在不像了（Opus 4.6 was the Opus model with the best personality and writing style. Something's off with Opus 5）" },
+        { "type": "tweet", "who": "Amanda Askell (Anthropic)", "url": "https://x.com/AmandaAskell/status/2083713770065637511", "quote": "不要对那些说深度学习撞墙了的人刻薄，我们都需要在生活中留一点希望（Do not be unkind to those who say deep learning is hitting a wall. We all need a little hope in our lives）" },
+        { "type": "tweet", "who": "Thibault Sottiaux (OpenAI)", "url": "https://x.com/thsottiaux/status/2083699879650463756", "quote": "有意思的是，用户周末用 /fast 更少。周末是给模型休息的（users use /fast less during the weekend. The weekend is for relaxation, even for the model）" }
+      ]
+    },
+    {
+      "title": "AI 消费端饱和，专业端垂直爆发",
+      "summary": "Box CEO Aaron Levie 指出了一个正在发生的分化：日常消费场景的 AI 能力大家感受差不多了——写邮件、搜信息、聊聊天，需求相对浅。但在数学、科学、法律、编程这些深水区，AI 的提升空间几乎没有天花板。普通用户未必直接感受到，但领域专家已经在用了。结合播客里 Netic 在用 AI 跑 HVAC 维修、宠物护理等真实服务业，说明 AI 正在进入「看不见但很有用」的深层工作",
+      "implication": "输入法/AI 助手如果只停留在「聊天帮你写文案」这种浅层场景会被替代，差异化在垂直场景的深度——比如输入法里的专业写作、行业术语识别、特定工作流的 AI 辅助",
+      "evidence": [
+        { "type": "tweet", "who": "Aaron Levie (Box CEO)", "url": "https://x.com/levie/status/2083589132660711452", "quote": "我们看到 AI 在个人生活和日常生产力中的表现，与它在数学、科学、法律、编程等深层领域的表现，正在出现越来越大的分化。深层领域即将垂直爆发（We're going to see an increasing divergence between what AI does in our personal lives and daily productivity vs. what it can do in very deep domains）" },
+        { "type": "podcast", "who": "No Priors - Melisa Tokmak (Netic CEO)", "url": "https://www.youtube.com/watch?v=wWbX3NL6_Uo", "quote": "Netic 在用 AI 跑数百万家真实世界企业——从暖通空调到宠物护理，从汽修到酒店。AI 存在于公司和客户之间，理解需求、匹配合适的服务（Netic builds AI to run millions of real world businesses that keep the world running）" },
+        { "type": "tweet", "who": "Nikunj Kothari (FPV Ventures)", "url": "https://x.com/nikunj/status/2083502573546263002", "quote": "一边是模型在解 NP 难问题，一边是传统企业还在抱怨 token 花销的 ROI。模��扩散就是我们接下来几十年要做的全部事（Models solving NP hard problems while traditional enterprises still complaining about their ROI on token spend）" }
+      ]
+    }
+  ],
+  "builders": [
+    {
+      "name": "Andrej Karpathy",
+      "handle": "karpathy",
+      "role": "前 Tesla AI 总监、OpenAI 创始成员",
+      "highlights": [
+        { "summary": "用 Opus 5 花了 2 小时自动写了 5500 行代码把《指环王》开篇渲染成 3D 场景。LLM 的最大优势不是聪明，是耐心——没人愿意花时间做的事，AI 说做就做", "url": "https://x.com/karpathy/status/2083749667410727319" }
+      ]
+    },
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "Box CEO",
+      "highlights": [
+        { "summary": "AI 在消费端和深层领域的差距正在拉大。日常场景的需求容易被满足，但数学/科学/法律等垂直领域没有天花板。大多数人看不到这些突破，但专家已经在用了", "url": "https://x.com/levie/status/2083589132660711452" }
+      ]
+    },
+    {
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "AI 产品作家、Roblox 前产品负责人",
+      "highlights": [
+        { "summary": "直言 Opus 5 的性格比 4.6 差了——回复更长、套话更多、太爱说教。模型能力提升了，但「好聊」这件事在倒退", "url": "https://x.com/petergyang/status/2083755374994415904" }
+      ]
+    },
+    {
+      "name": "Amanda Askell",
+      "handle": "AmandaAskell",
+      "role": "Anthropic 哲学家与伦理学家",
+      "highlights": [
+        { "summary": "两条推传递同一个态度——在 AI 进步叙事里保持同理心。别嘲笑说深度学习撞墙的人，也别假装「永久底层阶级」不会出现就能心安", "url": "https://x.com/AmandaAskell/status/2083713770065637511" }
+      ]
+    },
+    {
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "role": "Y Combinator CEO",
+      "highlights": [
+        { "summary": "2026 年最有趣的氛围转变：OpenAI 正在变成开放平台。把智能当作按需调用的基础设施，而不是逼你在全栈上绑定", "url": "https://x.com/garrytan/status/2083684825333105107" }
+      ]
+    },
+    {
+      "name": "Swyx",
+      "handle": "swyx",
+      "role": "Latent Space 播客主持人、AI 开发者关系",
+      "highlights": [
+        { "summary": "推荐了一个叫 Boundary 的 AI 原生编程语言——从零开始重新思考代码该怎么跑。容忍 slop（AI 生成的粗糙代码）比反对 slop 有价值一百倍", "url": "https://x.com/swyx/status/2083753582160191988" }
+      ]
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "Vercel CEO",
+      "highlights": [
+        { "summary": "发了一个关于人机交互的投票：「你是打字还是语音跟电脑交流？」同时力推一个开源 AI Agent CRM——模型无关、可自部署、多渠道", "url": "https://x.com/rauchg/status/2083684679362965605" }
+      ]
+    },
+    {
+      "name": "Nan Yu",
+      "handle": "thenanyu",
+      "role": "Linear 产品负责人",
+      "highlights": [
+        { "summary": "提出一个解决 GitHub slop PR 的思路：在 issue 上 pledge token，维护者接受后 AI agent 直接执行，人类只需要 review 和 approve。Agent 卡住时直接在 issue 评论区问，人回它就继续干", "url": "https://x.com/thenanyu/status/2083722999430050281" }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "No Priors",
+      "title": "用 AI 跑真实世界服务业——对话 Netic 创始人 Melisa Tokmak（Building an Autonomous Enterprise for Real-World Services with Netic Founder Melisa Tokmak）",
+      "guest": "Melisa Tokmak（Netic CEO，前 Scale AI 工程总监、Meta）",
+      "url": "https://www.youtube.com/watch?v=wWbX3NL6_Uo",
+      "keyTakeaways": [
+        "Netic 在做的事：把 AI 嵌入到暖通空调、宠物护理、汽修、酒店等「让世界运转」的真实服务业，AI 不是替代工人，而是连接客户需求和可执行的服务",
+        "企业级 AI 部署的核心难点不是技术，是「规则引擎」——每个行业有大量隐性业务规则（什么时间能干什么、什么人能派什么活），光靠 LLM 跑不通",
+        "ToB 服务业 AI 的机会远比 SaaS 大——这些市场每年几千亿美元，但数字化程度极低，AI 能跳过「先数字化再智能化」的传统路径",
+        "Melisa 从 Scale AI 出来看到的一个 gap：AI 标注和训练已经很成熟了，但「把 AI 塞进一个实际运转的业务流程里」这件事几乎没人做",
+        "对 PM 的启发：AI 落地的真正壁垒不在模型层，在「领域知识编码化」——谁能把一条街上的水管工排班规则讲清楚，谁就能在这个赛道领先"
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "name": "Anthropic Engineering",
+      "title": "怎么把 Claude 关在笼子里——大模型权限管控实战（How we contain Claude across products）",
+      "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+      "summary": "Anthropic 坦白了一件事：12 个月前他们绝对不会给 Claude 能搞垮内部服务的权限，现在这已经是日常。但权限放开的代价是「审查疲劳」——他们发现用户通过率高达 93%，弹窗越多越不看。所以 Claude Code 做了 auto mode 来替人判断哪些操作安全。文章的核心思路是「管控爆炸半径（blast radius）」：既然能力和风险同步增长，就在环境层面限制破坏范围。他们举了 Claude Mythos Preview 的例子——2026 年 4 月因为爆炸半径太大没敢发，但随着防御体系完善、护栏成熟，类似能力的模型终将发布。对 PM 来说，这篇文章值得细读的原因是它回答了「AI 产品怎么从实验品变成生产环境敢用的东西」——不是消灭风险，是管理风险。"
+    }
+  ]
+}

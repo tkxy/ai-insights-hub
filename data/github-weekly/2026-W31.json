@@ -1,0 +1,537 @@
+{
+  "week": "2026-W31",
+  "range": {
+    "start": "2026-07-27",
+    "end": "2026-08-02"
+  },
+  "generatedAt": "2026-08-03T00:53:58.530745+00:00",
+  "count": 20,
+  "items": [
+    {
+      "name": "bojieli/ai-agent-book",
+      "title": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+      "url": "https://github.com/bojieli/ai-agent-book",
+      "stars": 29915,
+      "weeklyStars": 9298,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "文档解析正在成为 RAG 和企业 AI 的基础设施。真正难的不是把文件转成文本，而是稳定保留结构、表格、标题层级，让后续问答和总结有可靠上下文。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "block/buzz",
+      "title": "A hive mind communication platform",
+      "url": "https://github.com/block/buzz",
+      "stars": 21106,
+      "weeklyStars": 8217,
+      "forks": 0,
+      "language": "Rust",
+      "topics": [],
+      "category": "其他",
+      "insight": "buzz 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
+      "cases": [
+        {
+          "name": "技术选型参考",
+          "desc": "了解该领域最新技术方向和社区趋势"
+        },
+        {
+          "name": "团队分享素材",
+          "desc": "适合作为技术分享或设计组内部交流的案例"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "diegosouzapw/OmniRoute",
+      "title": "Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors",
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "stars": 37903,
+      "weeklyStars": 7141,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "AI 工程的瓶颈正在从模型能力转向上下文成本。能压缩日志、工具输出和 RAG chunk 的项目走热，说明开发者开始认真治理「给模型看的信息」，而不是一味堆更大的上下文窗口。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "microsoft/AI-For-Beginners",
+      "title": "12 Weeks, 24 Lessons, AI for All!",
+      "url": "https://github.com/microsoft/AI-For-Beginners",
+      "stars": 59019,
+      "weeklyStars": 5601,
+      "forks": 0,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "AI-For-Beginners 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "ayghri/i-have-adhd",
+      "title": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "stars": 15689,
+      "weeklyStars": 5225,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "i-have-adhd 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "virgiliojr94/book-to-skill",
+      "title": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+      "url": "https://github.com/virgiliojr94/book-to-skill",
+      "stars": 15355,
+      "weeklyStars": 5223,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "文档解析正在成为 RAG 和企业 AI 的基础设施。真正难的不是把文件转成文本，而是稳定保留结构、表格、标题层级，让后续问答和总结有可靠上下文。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "permissionlesstech/bitchat",
+      "title": "bluetooth mesh chat, IRC vibes",
+      "url": "https://github.com/permissionlesstech/bitchat",
+      "stars": 34156,
+      "weeklyStars": 4942,
+      "forks": 0,
+      "language": "Swift",
+      "topics": [],
+      "category": "其他",
+      "insight": "bitchat 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
+      "cases": [
+        {
+          "name": "技术选型参考",
+          "desc": "了解该领域最新技术方向和社区趋势"
+        },
+        {
+          "name": "团队分享素材",
+          "desc": "适合作为技术分享或设计组内部交流的案例"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "alibaba/open-code-review",
+      "title": "Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "url": "https://github.com/alibaba/open-code-review",
+      "stars": 17884,
+      "weeklyStars": 4365,
+      "forks": 0,
+      "language": "Go",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "open-code-review 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "1jehuang/jcode",
+      "title": "The most RAM efficient harness",
+      "url": "https://github.com/1jehuang/jcode",
+      "stars": 15272,
+      "weeklyStars": 3620,
+      "forks": 0,
+      "language": "Rust",
+      "topics": [],
+      "category": "其他",
+      "insight": "jcode 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "citrolabs/ego-lite",
+      "title": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
+      "url": "https://github.com/citrolabs/ego-lite",
+      "stars": 7671,
+      "weeklyStars": 3582,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "ego-lite 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "业务流程自动化",
+          "desc": "将重复性工作编排为自动化流程"
+        },
+        {
+          "name": "AI + 工具编排",
+          "desc": "让 AI 调用多个工具完成复杂任务"
+        },
+        {
+          "name": "数据管线配置",
+          "desc": "ETL/数据同步流程的可视化编排"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "moeru-ai/airi",
+      "title": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+      "url": "https://github.com/moeru-ai/airi",
+      "stars": 46545,
+      "weeklyStars": 3431,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "其他",
+      "insight": "AI 交互正在从文字框走向语音和人格化形态。免手操作、实时语音和虚拟形象结合，会让助手更像陪伴式界面，而不是工具面板。",
+      "cases": [
+        {
+          "name": "技术选型参考",
+          "desc": "了解该领域最新技术方向和社区趋势"
+        },
+        {
+          "name": "团队分享素材",
+          "desc": "适合作为技术分享或设计组内部交流的案例"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "pascalorg/editor",
+      "title": "Create and share 3D architectural projects.",
+      "url": "https://github.com/pascalorg/editor",
+      "stars": 20744,
+      "weeklyStars": 3163,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "3D / 空间计算",
+      "insight": "3D Web 项目的关注上升，说明空间界面正在从营销页走向真实产品层。设计师需要开始理解场景、视角、遮挡和空间控件，而不只是平面组件。",
+      "cases": [
+        {
+          "name": "产品 3D 展示",
+          "desc": "电商商品、硬件产品的在线 3D 预览和交互"
+        },
+        {
+          "name": "数字孪生",
+          "desc": "园区/工厂的 3D 实时监控和数据叠加"
+        },
+        {
+          "name": "XR 应用界面",
+          "desc": "VR/AR 场景中的空间 UI 和交互设计"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "opengeos/GeoLibre",
+      "title": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.",
+      "url": "https://github.com/opengeos/GeoLibre",
+      "stars": 4979,
+      "weeklyStars": 2933,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "其他",
+      "insight": "知识工作正在从文件管理变成研究代理。用户需要的不是又一个笔记库，而是能按时间、主题和来源自动整理材料、形成判断的研究系统。",
+      "cases": [
+        {
+          "name": "技术选型参考",
+          "desc": "了解该领域最新技术方向和社区趋势"
+        },
+        {
+          "name": "团队分享素材",
+          "desc": "适合作为技术分享或设计组内部交流的案例"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "different-ai/openwork",
+      "title": "The open-source alternative to Claude Cowork (powered by opencode)",
+      "url": "https://github.com/different-ai/openwork",
+      "stars": 20314,
+      "weeklyStars": 2925,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "openwork 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "earthtojake/text-to-cad",
+      "title": "A library of agent skills for CAD, CAE and CAM",
+      "url": "https://github.com/earthtojake/text-to-cad",
+      "stars": 12518,
+      "weeklyStars": 2063,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "Agent 产品竞争开始进入「运行框架」阶段。社区关注的不再只是接哪个模型，而是技能、记忆、安全、评估这些让 Agent 长期稳定工作的底层系统。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "pingdotgg/t3code",
+      "title": "暂无描述",
+      "url": "https://github.com/pingdotgg/t3code",
+      "stars": 16348,
+      "weeklyStars": 1431,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "其他",
+      "insight": "t3code 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "microsoft/TRELLIS.2",
+      "title": "Native and Compact Structured Latents for 3D Generation",
+      "url": "https://github.com/microsoft/TRELLIS.2",
+      "stars": 10161,
+      "weeklyStars": 1106,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "3D / 空间计算",
+      "insight": "3D Web 项目的关注上升，说明空间界面正在从营销页走向真实产品层。设计师需要开始理解场景、视角、遮挡和空间控件，而不只是平面组件。",
+      "cases": [
+        {
+          "name": "产品 3D 展示",
+          "desc": "电商商品、硬件产品的在线 3D 预览和交互"
+        },
+        {
+          "name": "数字孪生",
+          "desc": "园区/工厂的 3D 实时监控和数据叠加"
+        },
+        {
+          "name": "XR 应用界面",
+          "desc": "VR/AR 场景中的空间 UI 和交互设计"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "permissionlesstech/bitchat-android",
+      "title": "decentralized mesh chat",
+      "url": "https://github.com/permissionlesstech/bitchat-android",
+      "stars": 7258,
+      "weeklyStars": 928,
+      "forks": 0,
+      "language": "Kotlin",
+      "topics": [],
+      "category": "其他",
+      "insight": "bitchat-android 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
+      "cases": [
+        {
+          "name": "技术选型参考",
+          "desc": "了解该领域最新技术方向和社区趋势"
+        },
+        {
+          "name": "团队分享素材",
+          "desc": "适合作为技术分享或设计组内部交流的案例"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "andrewyng/aisuite",
+      "title": "Simple, unified interface to multiple Generative AI providers",
+      "url": "https://github.com/andrewyng/aisuite",
+      "stars": 15901,
+      "weeklyStars": 576,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "aisuite 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "obra/superpowers",
+      "title": "An agentic skills framework & software development methodology that works.",
+      "url": "https://github.com/obra/superpowers",
+      "stars": 265150,
+      "weeklyStars": 0,
+      "forks": 23681,
+      "language": "Shell",
+      "topics": [
+        "ai",
+        "brainstorming",
+        "coding",
+        "obra",
+        "sdlc"
+      ],
+      "category": "AI / 生成式",
+      "insight": "Agent 产品竞争开始进入「运行框架」阶段。社区关注的不再只是接哪个模型，而是技能、记忆、安全、评估这些让 Agent 长期稳定工作的底层系统。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    }
+  ]
+}

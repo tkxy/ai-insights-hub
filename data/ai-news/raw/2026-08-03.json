@@ -1,0 +1,502 @@
+{
+  "date": "2026-08-03",
+  "fetchedAt": "2026-08-03T00:52:30.089126+00:00",
+  "source": "follow-builders feeds",
+  "x": {
+    "generatedAt": "2026-08-02T07:09:46.620Z",
+    "lookbackHours": 24,
+    "x": [
+      {
+        "source": "x",
+        "name": "Andrej Karpathy",
+        "handle": "karpathy",
+        "bio": "I like training large deep neural nets.",
+        "tweets": [
+          {
+            "id": "2083749667410727319",
+            "text": "We're starting to leave the territory where you'd test an LLM by e.g. \"create an svg of pelican on a bicycle\". As one idea to generalize it, I was interested what Opus 5 would do if I gave it the first paragraph of the Lord of the Rings, a 1M token budget (~$10) and asked for three js render of it. Opus went off for ~2 hours and wrote 5500 lines of code that (procedurally) rendered the story. It's kind of janky but fun. But it's a bit mindboggling that the LLM has to place and orchestrate various polygon assets in (x,y,z) coordinates and write code that animates it all, and that it even does anything at all.\n\nI also like this kind of examples because no one in their right mind would ever spend the time to write something this custom but LLMs have all the stamina and patience in the world, so it's an example where we go from \"no one would ever do this\" to \"sure, why not, it's ~free\". There might be a lot more. But I'm excited about creating hyper custom worlds that you can imagine dropping players into, e.g. here to participate in the LoTR story as a spectator NPC, or one of the characters, or etc. Something like an ephemeral GTA of X on demand.\n\nLast thought is that the domain of worlds/games exposes a weakness in LLMs: they can't easily audit their work because they aren't able to efficiently and natively perceive videos or play games within them. Here, Opus 5 had to very slowly and painstakingly take screenshots at different points, and it messed up a few times and created a bunch of jank. An example of raw capability (multimodal, gameplay) that I think is still quite lacking.",
+            "createdAt": "2026-08-02T03:00:09.000Z",
+            "url": "https://x.com/karpathy/status/2083749667410727319",
+            "likes": 9895,
+            "retweets": 674,
+            "replies": 595,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Swyx",
+        "handle": "swyx",
+        "bio": "achieve ambition with intentionality, intensity, integrity & insanity.\n\naffiliations:\n- @smol_ai\n- @dxtipshq\n- @cognition\n- @aidotengineer\n- @latentspacepod",
+        "tweets": [
+          {
+            "id": "2083753582160191988",
+            "text": "one of my curses as organizer is i rarely get to attend the conference i run. so i basically 24/7 watch back talks with everyone else after the show\n\nthis one was VERY well paced and argued: fighting slop with slop — @vaibcode, Boundary https://t.co/vRckyyntm6 \n\n@btaylor asked for an ai native programming language on our pod. as a PL fan I’m really glad someone is rethinking how code runs from first principles. Being slop-tolerant is 100x more valuable than being anti- slop",
+            "createdAt": "2026-08-02T03:15:42.000Z",
+            "url": "https://x.com/swyx/status/2083753582160191988",
+            "likes": 53,
+            "retweets": 3,
+            "replies": 12,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2083695562004771063",
+            "text": "@FredKSchott @cramforce @matei_zaharia i am making clanker blog all decisions going forward\n\nhttps://t.co/etCIeoIrBc",
+            "createdAt": "2026-08-01T23:25:09.000Z",
+            "url": "https://x.com/swyx/status/2083695562004771063",
+            "likes": 3,
+            "retweets": 2,
+            "replies": 1,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2083689273828818975",
+            "text": "@FredKSchott @cramforce @matei_zaharia 5.6 oneshotted this https://t.co/FwidqHIHyP",
+            "createdAt": "2026-08-01T23:00:10.000Z",
+            "url": "https://x.com/swyx/status/2083689273828818975",
+            "likes": 3,
+            "retweets": 0,
+            "replies": 2,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Thibault Sottiaux",
+        "handle": "thsottiaux",
+        "bio": "Codex & ChatGPT @OpenAI",
+        "tweets": [
+          {
+            "id": "2083699879650463756",
+            "text": "Fun fact, users use /fast less during the weekend. The weekend is for relaxation, even for the model.",
+            "createdAt": "2026-08-01T23:42:19.000Z",
+            "url": "https://x.com/thsottiaux/status/2083699879650463756",
+            "likes": 4263,
+            "retweets": 77,
+            "replies": 569,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2083556636455752050",
+            "text": "The week was for efficiency. The weekend is for 10 major breakthroughs in science.\n\nThere will be signs. https://t.co/7qa0YS2i9v",
+            "createdAt": "2026-08-01T14:13:07.000Z",
+            "url": "https://x.com/thsottiaux/status/2083556636455752050",
+            "likes": 4939,
+            "retweets": 148,
+            "replies": 340,
+            "isQuote": true,
+            "quotedTweetId": "2083456300692979886"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Peter Yang",
+        "handle": "petergyang",
+        "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6",
+        "tweets": [
+          {
+            "id": "2083755374994415904",
+            "text": "I'm feeling spicy tonight so let me just say it:\n\nI think Opus 4.6 was the Opus model with the best personality and writing style.\n\nSomething's off with Opus 5 - it tends to give me overly long replies, use Claude-speak way too much (e.g., \"here's the honest truth\"), and is too judgemental. \n\nOpus used to be a joy to talk to like a trusted friend. Not so much anymore.",
+            "createdAt": "2026-08-02T03:22:50.000Z",
+            "url": "https://x.com/petergyang/status/2083755374994415904",
+            "likes": 751,
+            "retweets": 19,
+            "replies": 165,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2083637620899184642",
+            "text": "The number one thing I want AI to fix is to cure cancer once and for all",
+            "createdAt": "2026-08-01T19:34:55.000Z",
+            "url": "https://x.com/petergyang/status/2083637620899184642",
+            "likes": 1160,
+            "retweets": 69,
+            "replies": 194,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2083594381748302160",
+            "text": "Can someone at @openai look into this bug with plugins? \n\nTry to ship my /no-ai-slop skill as a plugin and this is messing up the user experience. https://t.co/pKXFfaBChc",
+            "createdAt": "2026-08-01T16:43:06.000Z",
+            "url": "https://x.com/petergyang/status/2083594381748302160",
+            "likes": 15,
+            "retweets": 1,
+            "replies": 6,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Nan Yu",
+        "handle": "thenanyu",
+        "bio": "head of product @linear",
+        "tweets": [
+          {
+            "id": "2083726824924737971",
+            "text": "Oh, and pangram issue itself, obviously",
+            "createdAt": "2026-08-02T01:29:23.000Z",
+            "url": "https://x.com/thenanyu/status/2083726824924737971",
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2083722999430050281",
+            "text": "You should be able to pledge tokens for issues that you open and open source repos. \n\nWrite a spec in the issue with a pledge. If the maintainer accepts, GitHub passes the issue verbatim to a cloud coding agent at the requester’s expense. \n\nNo more slop PRs",
+            "createdAt": "2026-08-02T01:14:11.000Z",
+            "url": "https://x.com/thenanyu/status/2083722999430050281",
+            "likes": 28,
+            "retweets": 0,
+            "replies": 13,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2083534333428580501",
+            "text": "The exact thing that happens is the loop leaves a comment on the issue. and attaches all of the context. When you respond to the comment with additional details and unblock the process, the agent just continues working\n\nhttps://t.co/nlxeWm45Mr",
+            "createdAt": "2026-08-01T12:44:29.000Z",
+            "url": "https://x.com/thenanyu/status/2083534333428580501",
+            "likes": 1,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": true,
+            "quotedTweetId": "2083330431190213108"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Amanda Askell",
+        "handle": "AmandaAskell",
+        "bio": "Philosopher & ethicist trying to make AI be good @AnthropicAI.\nPersonal account. All opinions come from my training data.",
+        "tweets": [
+          {
+            "id": "2083713770065637511",
+            "text": "Do not be unkind to those who say deep learning is hitting a wall. We all need a little hope in our lives.",
+            "createdAt": "2026-08-02T00:37:30.000Z",
+            "url": "https://x.com/AmandaAskell/status/2083713770065637511",
+            "likes": 1306,
+            "retweets": 84,
+            "replies": 70,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2083649115901337644",
+            "text": "I probably have too many followers to post stupid memes so, to be clear, I don't believe in this outcome. But if you do believe in an altered carbon future of meths and grounders, I don't think it's laudable to just be like \"well, as long as I'm one of the meths\".",
+            "createdAt": "2026-08-01T20:20:36.000Z",
+            "url": "https://x.com/AmandaAskell/status/2083649115901337644",
+            "likes": 213,
+            "retweets": 0,
+            "replies": 15,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2083641092919161017",
+            "text": "I have this Padmé moment whenever I see people talk about avoiding \"the permanent underclass\". https://t.co/8Pd9bmedEZ",
+            "createdAt": "2026-08-01T19:48:43.000Z",
+            "url": "https://x.com/AmandaAskell/status/2083641092919161017",
+            "likes": 821,
+            "retweets": 44,
+            "replies": 40,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Amjad Masad",
+        "handle": "amasad",
+        "bio": "ceo @replit. civilizationist",
+        "tweets": [
+          {
+            "id": "2083730074147389898",
+            "text": "Cool! https://t.co/n0rX8Poczi",
+            "createdAt": "2026-08-02T01:42:18.000Z",
+            "url": "https://x.com/amasad/status/2083730074147389898",
+            "likes": 32,
+            "retweets": 0,
+            "replies": 3,
+            "isQuote": true,
+            "quotedTweetId": "2083685851393892752"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Guillermo Rauch",
+        "handle": "rauchg",
+        "bio": "@vercel CEO",
+        "tweets": [
+          {
+            "id": "2083709589862936786",
+            "text": "Do you type or talk (STT) to your computer?",
+            "createdAt": "2026-08-02T00:20:54.000Z",
+            "url": "https://x.com/rauchg/status/2083709589862936786",
+            "likes": 65,
+            "retweets": 3,
+            "replies": 53,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2083684679362965605",
+            "text": "Open source agentic CRM built on https://t.co/99eEa13mZ3 and @nextjs.\n\nModel-agnostic, self-hostable or serverlessly-deployed, multi-channel, and headless. \n\nThis is the way. https://t.co/gzM0dftbsV",
+            "createdAt": "2026-08-01T22:41:55.000Z",
+            "url": "https://x.com/rauchg/status/2083684679362965605",
+            "likes": 861,
+            "retweets": 50,
+            "replies": 31,
+            "isQuote": true,
+            "quotedTweetId": "2083610805069611230"
+          },
+          {
+            "id": "2083664853256843437",
+            "text": "They recently asked my 3-year-old at school: “what does your daddy do for work?” He answered: he exercises. That’s what he sees. \n\nIt’s not just you who’s a byproduct of your habits, it’s your children and grandchildren too.",
+            "createdAt": "2026-08-01T21:23:08.000Z",
+            "url": "https://x.com/rauchg/status/2083664853256843437",
+            "likes": 831,
+            "retweets": 12,
+            "replies": 51,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Aaron Levie",
+        "handle": "levie",
+        "bio": "ceo @box - your business lives in content. unleash it with AI",
+        "tweets": [
+          {
+            "id": "2083589132660711452",
+            "text": "We’re going to see an increasing divergence between what AI does in our personal lives and in daily productivity vs. what it can do in very deep domains like math, science, legal, coding and more.\n\nUp to some threshold, capability was evenly felt across all domains because the models were just becoming mildly useful in general. Now, the deep domain work is about to go vertical. \n\nMost people won’t actually notice these benefits in their day to day life directly (indirectly they certainly will over time), but the experts in these fields will. And there’s no inherent ceiling to what capabilities are needed, unlike in the consumer space where needs can get met relatively straightforwardly.\n\nThis will often lead to a capability overhang, though, as many of these performance gains need to be applied to data sets and workflows in an applied way for that area of work. But this is ultimately how you get breakthroughs in life sciences, real world automation, new cyber capabilities, and more.",
+            "createdAt": "2026-08-01T16:22:15.000Z",
+            "url": "https://x.com/levie/status/2083589132660711452",
+            "likes": 347,
+            "retweets": 32,
+            "replies": 51,
+            "isQuote": true,
+            "quotedTweetId": "2083467194663571701"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Garry Tan",
+        "handle": "garrytan",
+        "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+        "tweets": [
+          {
+            "id": "2083684825333105107",
+            "text": "Most interesting 2026 vibe shift is OpenAI actually looking to be the open platform \n\nNote the marked difference: intelligence on tap as a utility vs signaling it is optimal to integrate all the way up full stack https://t.co/EmMKE4NggP",
+            "createdAt": "2026-08-01T22:42:30.000Z",
+            "url": "https://x.com/garrytan/status/2083684825333105107",
+            "likes": 278,
+            "retweets": 9,
+            "replies": 46,
+            "isQuote": true,
+            "quotedTweetId": "2083681060295192646"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Zara Zhang",
+        "handle": "zarazhangrui",
+        "bio": "Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w",
+        "tweets": [
+          {
+            "id": "2083743952319225938",
+            "text": "Agency is the most important human quality \n\nThe world will try to box you, label you, define you\n\nResist that https://t.co/ZMhYSlZ9Za",
+            "createdAt": "2026-08-02T02:37:26.000Z",
+            "url": "https://x.com/zarazhangrui/status/2083743952319225938",
+            "likes": 68,
+            "retweets": 5,
+            "replies": 4,
+            "isQuote": true,
+            "quotedTweetId": "1894099637218545984"
+          },
+          {
+            "id": "2083738503851258201",
+            "text": "When asked that question, send them a copy of The Innovator’s Dilemma https://t.co/pkLhEvTZxc",
+            "createdAt": "2026-08-02T02:15:47.000Z",
+            "url": "https://x.com/zarazhangrui/status/2083738503851258201",
+            "likes": 22,
+            "retweets": 1,
+            "replies": 1,
+            "isQuote": true,
+            "quotedTweetId": "2083610493793845429"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Nikunj Kothari",
+        "handle": "nikunj",
+        "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+        "tweets": [
+          {
+            "id": "2083502573546263002",
+            "text": "What a wild dichotomous world we live in..\n\nModels solving np hard problems while traditional enterprises still complaining about their ROI on token spend. \n\nDiffusion of models is all that we’ll be doing for the next few decades. https://t.co/VsQPqGQ2a4",
+            "createdAt": "2026-08-01T10:38:17.000Z",
+            "url": "https://x.com/nikunj/status/2083502573546263002",
+            "likes": 3,
+            "retweets": 1,
+            "replies": 0,
+            "isQuote": true,
+            "quotedTweetId": "2083456300692979886"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Peter Steinberger",
+        "handle": "steipete",
+        "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.\n@OpenClaw🦞 + @OpenAI",
+        "tweets": [
+          {
+            "id": "2083759812970786997",
+            "text": "After accepting for years that GMail is blinding me I finally asked my agent and it installed https://t.co/H432dtknkf for me.",
+            "createdAt": "2026-08-02T03:40:28.000Z",
+            "url": "https://x.com/steipete/status/2083759812970786997",
+            "likes": 239,
+            "retweets": 10,
+            "replies": 48,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2083694911824826659",
+            "text": "Repo: https://t.co/7eBiLqLuDd",
+            "createdAt": "2026-08-01T23:22:34.000Z",
+            "url": "https://x.com/steipete/status/2083694911824826659",
+            "likes": 69,
+            "retweets": 4,
+            "replies": 5,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2083694161933594703",
+            "text": "I'm building a claw node on an ESP32 chip, so gave my agent access to my webcam to e2e test this. Now I feel it's stalking me and is constaltly shouting 'HI ESP\" to debug the voice wake command 🙃",
+            "createdAt": "2026-08-01T23:19:36.000Z",
+            "url": "https://x.com/steipete/status/2083694161933594703",
+            "likes": 257,
+            "retweets": 19,
+            "replies": 33,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Dan Shipper",
+        "handle": "danshipper",
+        "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+        "tweets": [
+          {
+            "id": "2083750803437724016",
+            "text": "AI creates more work for human experts \n\nhttps://t.co/j3r4aTuQoi https://t.co/ruFncXlpmu",
+            "createdAt": "2026-08-02T03:04:40.000Z",
+            "url": "https://x.com/danshipper/status/2083750803437724016",
+            "likes": 34,
+            "retweets": 2,
+            "replies": 2,
+            "isQuote": true,
+            "quotedTweetId": "2083555463300522400"
+          },
+          {
+            "id": "2083727039048118304",
+            "text": "this tweet under review as further details emerge https://t.co/QVF9CjxF5s",
+            "createdAt": "2026-08-02T01:30:14.000Z",
+            "url": "https://x.com/danshipper/status/2083727039048118304",
+            "likes": 29,
+            "retweets": 0,
+            "replies": 1,
+            "isQuote": true,
+            "quotedTweetId": "2083352181776732326"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Sam Altman",
+        "handle": "sama",
+        "bio": "AI is cool i guess",
+        "tweets": [
+          {
+            "id": "2083560847889023219",
+            "text": "team humanity https://t.co/Z75TuFp56E",
+            "createdAt": "2026-08-01T14:29:51.000Z",
+            "url": "https://x.com/sama/status/2083560847889023219",
+            "likes": 2253,
+            "retweets": 101,
+            "replies": 391,
+            "isQuote": true,
+            "quotedTweetId": "2082855170296205719"
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "xBuilders": 15,
+      "totalTweets": 30
+    }
+  },
+  "podcasts": {
+    "generatedAt": "2026-08-02T07:10:21.074Z",
+    "lookbackHours": 336,
+    "podcasts": [
+      {
+        "source": "podcast",
+        "name": "No Priors",
+        "title": "Building an Autonomous Enterprise for Real-World Services with Netic Founder Melisa Tokmak",
+        "guid": "db17d1d8-8c79-11f1-9e05-6bb27aab1f6f",
+        "url": "https://www.youtube.com/watch?v=wWbX3NL6_Uo",
+        "publishedAt": "2026-07-31T10:00:00.000Z",
+        "transcript": "Speaker 1 | 00:05 - 00:30\nToday on our priors, we're joined by Melissa Tachmak. Melissa is the founder and CEO of Netic, a company that builds AI for different real world services like HVAC, pet care, a variety of other things like that, roofers. Prior to Netic, Melissa was a director of engineering and worked on various aspects of go to market for Scale dot AI and, also has experiences from Meta. Welcome to No Prize, Melissa. Melissa, thanks for joining us today at No Prize.\n\nSpeaker 2 | 00:30 - 00:31\nThank you for having me.\n\nSpeaker 1 | 00:31 - 00:45\nYeah. Maybe we can start off by talking a little bit about your business and what you're building because I think that, you're doing something really interesting in the real world, and you're kind of marrying AI in the real world. So could you tell us more about your company and Netic and, you know, what you're focused on?\n\nSpeaker 2 | 00:45 - 01:00\nYeah. Netic builds AI to run millions of real world businesses that keep the world running. That means, basically, we work with large enterprises in essential services. We started in essential services.\n\nSpeaker 1 | 01:00 - 01:02\nWhat be an example of essential service?\n\nSpeaker 2 | 01:02 - 02:02\nImagine a billion dollar revenue home services companies in HVAC, plumbing, electric, or consumer wellness companies, like, where you can become a member and really go do a lot of sports or different activities, hospitality, automotive, pet services, across the board. So every single thing that you need to run your life or that you want to do are a good example. And a lot of these businesses are actually quite large businesses, and they interact with millions of end users themselves, usually that are consumers or businesses themselves. So Netic exists between the company and its customers. So every single thing to understand the customer need or want and match that with how can we even help that customer with the operational rules of the business and even deploy the services or the labor all happens on NetEQ.\n\nSpeaker 1 | 02:02 - 02:09\nSo, basically, say a customer calls an HVAC provider. What what happens, or what is NetEQ doing for them?\n\nSpeaker 2 | 02:09 - 02:20\nYeah. So imagine that you are in the middle of nowhere. It's minus 20 degrees, and your heat stops working. So you first find, right, a provider. And there are many providers.\n\nSpeaker 2 | 02:20 - 02:47\nYou wanna pick the most trustworthy one and the one that you can get to because you're in a minus 20 degree weather. Maybe you have a kid or an elderly or something is not working. From there, once you find a business, and usually you can find these from aggregators or by search engines or in now LLMs, and you can reach out to the company from any medium you want. If they're using Netic, you can call them or text them or find like, go to their website, to general nine scheduler. It's Netic agents that talk to the customer.\n\nSpeaker 2 | 02:48 - 02:51\nWhat kind of home do you live in? Do we have any of your records?\n\nSpeaker 1 | 02:51 - 02:56\nI see. So this could be like a voice call. A Netic is actually providing the voice. Completely. And then the reasoning around, hey.\n\nSpeaker 1 | 02:56 - 03:00\nThis person needs some help, and we should deploy somebody out to fix their HVAC system.\n\nSpeaker 2 | 03:00 - 03:18\nAnd it's actually a lot of the businesses we work with, this is why we started with Essential Services, the operational needs are very complex. It's not as simple as, oh, Elad's heat broke and now Melissa goes. Is it that actually what kind of even units do you have? What kind of needs do you have? Can we come to you?\n\nSpeaker 2 | 03:18 - 03:51\nIs it something that we need to come to you today or tomorrow? What is your lifetime value as a customer? So should we be deploying the best person who can only work on let's say boilers or new age systems today or later. So it's actually quite complex to first and understand what is the need from the customer, can this company service it, if so, who, when, and to ensure that it is all optimized to create customer delight to generate more revenue for the company. Right?\n\nSpeaker 1 | 03:52 - 04:02\nThat makes sense. What what is sort of like an an incumbent version of, you know, what you're doing, or what are what are other players in the market, or how should people think about, you know, what this replaces?\n\nSpeaker 2 | 04:02 - 04:24\nSo let's let's go about how how do people do this today. Obviously, it's we are a two year old company, so before before us too, how were they doing that. So it's primarily with people. These companies are extremely large and if anything, actually, they can't grow because they have to keep investing in people to think of any kind of growth. And for them, they're EBITDA businesses.\n\nSpeaker 2 | 04:24 - 04:50\nMany times they're actually owned by private equity. They need to care about their margins and what they make to be able to invest back in the business. The most important labor in the business is actually the people who are gonna deliver the job, right? You want to focus every single thing to make your end customer happy because a lot of these businesses are also commodities. If you do not answer me, I'm gonna go to the next one, next search result on Google, next result on, like, NachoGBT.\n\nSpeaker 2 | 04:50 - 05:19\nSo, it's very important to be able to invest your money into your labor, the blue collar labor. So, until now, it was with hundreds and hundreds of people in these companies trying to figure out how to support customers at all times. The teams that support these workflows in the companies are unreliable as well. Let's look at a day in a life with this company that makes a billion dollar revenue. You might show up, the business usually start at four or 5AM.\n\nSpeaker 2 | 05:19 - 05:47\nYou don't really have anybody in the company that and even maybe your technicians start at 6AM. But before then, no one is in the company, you might come in as a manager, but there are at least three people that quit that way that day or five didn't show up. So, all these customers are piling in starting at 6AM because now it's a heat wave in the country. Actually, this past week, we have hit record waves last week in the country. What do you do as a business?\n\nSpeaker 2 | 05:47 - 06:04\nSo many of these businesses are cyclical businesses. It's very important in winter, summer, holiday season, season people start working out, right? So you have to make sure that you're capturing a lot of your value in those months to be able to sustain yourself and your employees.\n\nSpeaker 1 | 06:04 - 06:09\nBecause you're providing, like, agents, they can overflow, so somebody's giving you a lot of phone calls, they can pick up the phone calls for you.\n\nSpeaker 2 | 06:09 - 06:26\nYeah. Over that is many customers how they started, but today, actually, over 70% of our customers are AI first. We call it Netic first. They go n one. And over 70%, actually, all of their customers' first interaction with the company is with Netic agents.\n\nSpeaker 1 | 06:26 - 06:45\nSo there's a few different approaches you can do for markets like this. And so, obviously, I'm excited to be an investor in that. I've also invested in AI roll ups where people will you know, a company like Long Lake will go and buy a bunch of businesses and then optimize them with AI. And in some cases, these businesses overlap in their profile with your customer set. And you mentioned many of them are owned by private equity already.\n\nSpeaker 1 | 06:46 - 06:53\nHow did you make the decision to build this service versus just doing a roll up or buying and running the assets or the trade offs in terms of those approaches?\n\nSpeaker 2 | 06:54 - 07:10\nI think three reasons. One, what I wanna build in the world, skill set, and scale. You know, before building this, I was at scale for about four years, and I built a lot of their real world businesses from government to large enterprises.\n\nSpeaker 1 | 07:10 - 07:26\nAnd Scale AI, by the way, for folks who are watching or listening to this, started off as a data labeling company, ended up eventually having some sort of licensing or agreement with Meta where Meta paid, I think it was $28,000,000,000.\n\nSpeaker 2 | 07:26 - 07:28\nYeah. I think a little $30.32\n\nSpeaker 1 | 07:28 - 07:41\nSo real money. And so you were a very early and, like, important person, I think, at scale in terms of the the variety of the different businesses you worked on, and then you decided to leave before that happened actually to to start this business.\n\nSpeaker 2 | 07:41 - 08:03\nYeah. For me, there were two things really important. It's scale that showed me a lot more about the real world businesses. So a lot of my business units, to give you a sense, I built at scale the government business unit and large enterprises in logistics, manufacturing, financial services, healthcare, across the board. And I think the tangible impact you can make in the world is incredible.\n\nSpeaker 2 | 08:03 - 08:23\nIt is the fulfillment you actually get. You know, in tech, we keep talking about this fulfillment that doesn't usually come to many people. But I love doing that. My background, I grew up in a very small town in Turkey. I grew up with nothing and really came here only for college when I got a full scholarship to Stanford.\n\nSpeaker 2 | 08:23 - 08:51\nI didn't even own a computer before. And all of my town is actually in these type of industries. So to me, all of us come here and we talk about tech, we talk about creating impact, but majority of the companies that only really serve other startups or tech companies. So to me, that was very important, what are we building for the real world? And I combined that with a technical pursuit, which was a selfish pursuit, is that AI is good at assisting consumers or being a co pilot.\n\nSpeaker 2 | 08:51 - 09:12\nBut the next most unsolved problem is that how are we using AI in mission critical workflows? What does that look like to have a fully autonomous, like executing actually systems? So Netic came out of really combining these two for me. And at the end, I loved being at scale. I was a very good culture vet, I think, and I loved my team.\n\nSpeaker 2 | 09:12 - 09:31\nSome of my best friends actually are from there. Obviously, Alex was an amazing person to work with directly as a founder. And but to me, it was missing the product, right? What is the product? Because it is an operationally heavy business to build the infrastructure for AI even though people don't wanna talk about it.\n\nSpeaker 2 | 09:32 - 09:58\nAnd it was rewarding but missing that product edge for me, so I knew I wanted to build a product that can scale and compound. And two, personal skill set. I think in a lot of those roll ups, the main important thing is the M and A itself. I'm not an M and A person. I'm a builder, I am an engineer, I'm a product person, it just doesn't fit my skill set and I don't want to build a business where clearly what I can provide is not the most important thing.\n\nSpeaker 2 | 09:59 - 10:38\nAnd I think third is the scale of the product too. What I have seen, there's a lot of successful roll ups and tech enabled roll ups, but at the end, all the products you're building are for the company you just bought. It can't really be actually applied to any other company, so you are committing to buying these a few companies in whatever industries that you are interested in and serving those with your products, versus what I'm interested in is how every real world business can run on NetEQ, right? If we didn't have to limit them, if they could focus on what they are good at in that business, which is the labor, which is the differentiation quality of the service, how could NetEtic run the rest?\n\nSpeaker 1 | 10:38 - 10:55\nHow do so when people talk about, AI for the real world, that means two or three things. Right? So, obviously, there is what you're doing at NetEtic and serving these businesses that, you know, go and implement different services for people in their homes or their pets or, you know, different aspects of their life. There's people who talk about robotics. They're self driving.\n\nSpeaker 1 | 10:55 - 11:01\nLike, do you think all these things converge over time? Do you think the timeline on that is very far in the future and doesn't kinda matter in terms of these other types of things?\n\nSpeaker 2 | 11:02 - 11:22\nYeah. It's almost you're looking at the same book maybe, but different chapters. We're talking about much now chapters and for the next few decades. I do believe that there's a chapter in the future. It is all about robotics, but in some of the industries that I'm working with, that is quite far in the future.\n\nSpeaker 2 | 11:22 - 11:57\nAnd I always say, you know, if you spend a few days with these businesses, which is very important for us, like, you know, I have to tell you about how I learned about these industries and every single engineer in our company do have to go visit customers on-site to build the right product back home in San Francisco. And if you look around, if we look outside of a window, look at every single building. If robotics is going to do what we're doing with these companies today, every single of those buildings need to be either three d printed Uh-huh. Or completely, like, standardized. I don't see that happening.\n\nSpeaker 1 | 11:57 - 12:03\nAnd that's just because you just think robotics will be able to navigate the different variation or variety in terms\n\nSpeaker 2 | 12:03 - 12:25\nof I think if you look at robotics capabilities today, it is quite far in terms of dexterity on how to be able to handle different types of screws even. What type of homes are desks? How am I going up? How am I going into the tiny areas to be able to fix something. Many times it's not clear, you have to open up the whole walls to even see what do you need to fix, how.\n\nSpeaker 2 | 12:25 - 12:56\nAnd on top of that, there is, in these industries, there's a lot of the human element too because when a lot of people are dealing with these industries, it is worst day of their lives, right? It's either their home is flooded or they want to take the day and reduce stress and go play some tennis at the Bay Club, right? But whatever it is that they're actually going through something and there's a human element, I do think there's quite a bit of a while for robotics to be closer in our chapter.\n\nSpeaker 1 | 12:56 - 13:08\nAnd then I've kind of heard you talk about the big labs, so OpenAI, Anthropic, maybe Google, Meta, etcetera. How do you think the liporesis industry or how do you think what you're doing is different from what they can do?\n\nSpeaker 2 | 13:08 - 13:27\nDifferent way of asking that maybe, can labs do this? Mhmm. Mhmm. I think that's a fair question because there's a lot of startups in today's world that do that build things functionally and visually very similar to the lab's key products, right? It's either a chatbot or a coding agent.\n\nSpeaker 2 | 13:28 - 13:45\nI do chuckle at the question a little bit though because I think ten years ago that same exact question was, can Google do this? And then now it became, can labs do this? Sure. Some of the things, the core competencies, they can do it, but some of the other things, they're not investing in it. For NetExt's case, I don't see them as a competitive risk.\n\nSpeaker 2 | 13:46 - 14:11\nIt's actually, I think, the two, especially the leading labs, they are amazing businesses. They're also great partners to companies like us, so I really respect that. But in terms of looking at what we provide to these industries and companies, I actually think two things are very important. One, in focus in what you're building. And I will say, you know, it would be a funny question to these enterprises, right?\n\nSpeaker 2 | 14:11 - 14:39\nOpenAI builds amazing products really fast, but also it kills them really fast. So, I don't think enterprises are, at least enterprises in these industries, looking for that really fast. Or in Anthropics' case, you know, Silicon Valley converged in the idea that, you know, they pulled ahead in coding agents or, like, Claude because they had focus, but you see exactly the opposite in the enterprise case. There's about like 20 products, like what is really happening? And I don't really see that.\n\nSpeaker 2 | 14:39 - 15:34\nAnd meta focused question maybe about the labs and specifically researchers, they really care about solving the most generalizable way of the problem, right? So in this case, maybe looking at the problem we're solving, the answer would be, well, when we get the AGI, we'll ask how to solve it for essential services. And I think that is both operationally and intellectually a bit lazy thinking. And the finally is for to solve these type of extremely difficult problems with millions in the country that have completely different worries, different accents, how do they want to engage, different contacts, and also even engage them again to make them multi time customers, there's quite a bit of last mile that you really have to do that doesn't only come from models, that has to come from your harnesses and orchestration, the software, and the product that you have to build on top. So if anything, actually, companies like us and Netic have to be good at all three layers.\n\nSpeaker 1 | 15:34 - 16:06\nYeah. That makes sense. One thing I've noticed, which is more sort of a side comment on what you're saying, is that one big shift I see from four years ago and now Four years ago, I was funding things like Harvey and Perplexity and a little bit later Decagon and Abridge and a lot of those sort of verbal publications, obviously, And I feel like a lot of founders now are almost a little bit too worried about the labs are doing. And so they're not entering new verticals or sort of staying away from things that they think is in the road map of the lab when I think in traditional times, people would have kind of fought it out a bit more. And so I think that's a little bit surprising.\n\nSpeaker 2 | 16:06 - 16:13\nYeah. I do think that's because there's a lot of building going on currently that's focused on how can I exit immediately\n\nSpeaker 1 | 16:13 - 16:14\nOh, interesting?\n\nSpeaker 2 | 16:14 - 16:32\nInstead of I think being a founder, I actually think was a more honorable thing before. Like, you knew you're dedicating your life to it. Like, I'll give you an example. Before I built NetEgg, I actually really looked for a job. Is there something I wanna build?\n\nSpeaker 2 | 16:32 - 16:57\nI looked at the fourth thing I wanna build and scale. Is there anything else I'm interested in? And afterwards, is there someone that I really wanna help further the mission? I think being a founder is a very difficult thing that you have to dedicate your whole life for decades. It is not something to be taken lightly, but people are worried about this too much because I think they're looking at it on like, oh, will I be able to exit the short timeframe exits?\n\nSpeaker 2 | 16:57 - 17:34\nAnd then the second thing is, maybe this goes into hiring philosophy a little bit, people who are at NetEQ who deeply care about what they are building themselves, customer obsessed for the long term, have the agency to start thing, urgency to solve problems, but at the same time to really rigor and patience to carry it forward, right? I see, especially Gen Z in these days when I'm, you know, looking at hiring, obsessed with this permanent underclass mentality. If I don't make my money in the next eighteen months or if I don't learn everything in the world in the next six months, then I am forever poor\n\nSpeaker 1 | 17:34 - 17:44\nor I see. This is a this is a AGI pilled view of, you know, in eighteen months, AI will subsume a lot of people have this skill set, and so your value decreases.\n\nSpeaker 2 | 17:44 - 18:11\nYeah. Which I think is actually a very dangerous mindset. In fact, building really good things take a very long time. I have learned some of the most important lessons in my life from, you know, committing to things and keeping up with it, with all the problems and with especially at scale, for example, over really those four years and now with building a company because you have to see not just what's the first version of a thing. How are you thinking about what does it do in the world?\n\nSpeaker 2 | 18:11 - 18:23\nWhat do you have to improve? How do you keep up with other research? How do you keep up with people? How do you need to improve that, right? I think especially we look for that, we really avoid shiny object seekers.\n\nSpeaker 2 | 18:23 - 18:57\nAnd there's a recently I was reading this, you know, quote attributed to Martin Luther actually, it says, you know, the Christian shoemaker, you know, doesn't honor God by putting little crosses on the shoes, it does so by building the best shoe, right, the best shoes, because God cares about craftsmanship. And I think I really resonate with that when you think about, as a founder, what are you building? Why are you doing this? Right? It really is about building the best product that are solving the problems of the people you care about.\n\nSpeaker 2 | 18:57 - 19:09\nIf anything, you actually achieve more with less, with more focus, and with a small group of people that are really that came together to take down the whole world. Right?\n\nSpeaker 1 | 19:09 - 19:17\nYou mentioned selecting for people with agency. How do you screen for agency? Like, what do you look for? Is it an interview question? Is it experiences?\n\nSpeaker 1 | 19:17 - 19:17\nIs it something else?\n\nSpeaker 2 | 19:19 - 19:35\nI think agency what I look for is, like, not agency now. If you have agency, you care about agency, you have shown agency continuously in your life. So I will actually dig in. How was it? Like, if you're a new grad, you don't have to have a job.\n\nSpeaker 2 | 19:35 - 19:47\nDid you do something in college? Did you do something to be able to get into college? Do you have a project do you really care about? And not just that like, I did this for a weekend, but did you keep up with it? Right?\n\nSpeaker 2 | 19:47 - 20:23\nSo what are really those examples? And I think I do ask, many times it's just one question I'd like to know about what has been the hardest thing they have ever done in life, and they can take it anywhere, but it's not just one question, but we'll really dig in to understand the why. Yeah. Or you pull that apart from someone's life story, right? But the most important thing I care about, not to have one agency example, is just however long you have been alive and conscious, have you been showing agency in things that you did in life, and did you keep up with them?\n\nSpeaker 2 | 20:23 - 20:24\nDid you stick through\n\nSpeaker 1 | 20:24 - 20:36\nStick around about the follow-up. Through. You started something, you did something unique that most people don't do, and then you kept going on it. It's funny. I used to ask the same question of what's the hardest thing you've ever done, and I got such bad answers that I stopped asking it.\n\nSpeaker 2 | 20:36 - 20:42\nWell, I mean, you know I don't know why you asked that, but, you know, if you get bad answers, you know, maybe that person is not really the best.\n\nSpeaker 1 | 20:42 - 20:46\nWell, it's just consistently. I just mean, like, the hiring pool that I was at least looking after that.\n\nSpeaker 2 | 20:46 - 20:56\nI do get really good answers. I think they're very different answers. Right? Some will really open up, and I'm not looking for a work answer. Like, it can be anything in your life that's truly the hardest thing.\n\nSpeaker 2 | 20:56 - 21:25\nAnd sometimes you learn a lot about people's personal lives that something they had to go through, they didn't choose, but it was all about how they reacted, what they controlled. How did they take something they can control in their hands and actually change the future, right? And sometimes it's about, you know, it also doesn't have to be this grandiose thing. I'll give you an example of someone we just hired, actually, he's starting next week. And, you know, he gave this answer, this was the first time someone gave an answer like this.\n\nSpeaker 2 | 21:25 - 22:02\nHe said, I live a very simple life. I deeply care about my work and I have a crazy regimen about how I think about my health. And really outlined a little bit what they meant, right? Like outside of that, I don't really have a lot. But the hardest thing for me has been I kept up with this for x amount of years, every single day, like waking up this hour, doing these things every other hour at night, showing up for my coworkers, and the hardest thing has been doing that for over fifteen years and without getting bored, without really thinking about anything else and committing myself to what I care about.\n\nSpeaker 2 | 22:03 - 22:22\nAnd I thought that was also a very creative answer, right? Like, I'm not really looking for, you know, maybe when I gave that answer, like my answer is a lot about building a company or about how I came from a very tiny town when my parents didn't have anything to hear. But I'm not looking for that. Everybody's story is different. How did you make your own story?\n\nSpeaker 2 | 22:22 - 22:25\nMhmm. I thought that was a great answer, and we're very happy to have him.\n\nSpeaker 1 | 22:25 - 22:34\nThat's amazing. How do you think about where you wanna be with the company in five years, or what's your longer term vision for what you folks have accomplished, what you're doing, what's your sort of north star?\n\nSpeaker 2 | 22:36 - 22:59\nIn terms of our vision, we are building an autonomous enterprise. Mhmm. Right? We want every single thing in these companies to be handled autonomously with Nettik except the actual services and the labor itself, that human component, so that these companies can fully focus on that to deliver and create customer delight. That is number one thing with the company.\n\nSpeaker 2 | 22:59 - 23:44\nEvery single product, every single thing that we build on top of our intelligence layer that compounds and connect it to the other products is for that purpose. Second is, you know, building a company is very hard and I'm also doing that for the vision, but also to work with remarkable people. I think for me, as the company grows, something I deeply care about, how do we keep working with only remarkable people? And there's no one answer. I think every single company that I know, that I respect, that even thought about these things for the long term, like imagine Palantir or SpaceX or Notion, who really care about craftsmanship and really delivering for their audience for many, many years have struggled with this.\n\nSpeaker 2 | 23:44 - 23:52\nSo for me, deeply thinking about that and achieving that is very important in the company.\n\nSpeaker 1 | 23:53 - 24:15\nSo you're serving a lot of industries that are perceived as very slow to adopt technology or not at the cutting edge or, you know, things that take a long time to, you know, use new things, and you're selling AI solutions and agents to them. Has that been challenging? Has that been straightforward? Like, is that perception correct? Like, how do you think about your customer base in terms of just, like, the rate at which they'll adopt new things or try new things?\n\nSpeaker 2 | 24:15 - 24:55\nI think it's a big misconception to think about these industries as old school. Actually, some of the most tech forward business focused people, owners, founders I have met have been in these industries. So, first of all, we work with large enterprises, so they're extremely value focused and they have to be tech forward, right? For example, to give you a sense, you know, like just one of the businesses we closed, it can be like a 500,000 contract and it took from end to end fourteen days. And it's not because, you know, there is, you know, they I'm not a magic potion and the company is not or just and AI is not.\n\nSpeaker 2 | 24:55 - 25:39\nThey're very thoughtful about what they have to do and checking if the value is there, right, even in their buying behavior. That being said, I think the way that I think about these industries is that they are extremely primal and tech forward at the same time. So, you think about a large roofing company, right, is actually they have to have door knockers. So door knockers mean, know, going neighborhood to neighborhood, thinking about the friend, you know, roofs and trying to talk to you about why you should think about a new way or like having solar on your roof, right? But at the same time, today in Netic, it's a compilation of products from handling everything inbound, outbound, analytics, and even delivery of their labor.\n\nSpeaker 2 | 25:39 - 26:02\nSo we connect to satellite data to be able to think about in different neighborhoods how the hurricanes affect different roofs, how should you think about different materials, should that be autonomously fed into the context of our agents so that not only you're better equipped to handle that conversation with the customer, but also you can spot who to go after. So these are\n\nSpeaker 1 | 26:02 - 26:08\nnot new. Technology Is they were using before or is this, you know, and then you adopted it for the Netic platform or\n\nSpeaker 2 | 26:08 - 26:33\nYeah. I think so they were always interested in how do we serve our customers better, but they had to figure out how to do that, right? Do we get this data somewhere else or who looks at it? Do we look at it manually? So now imagine with one platform, okay, not only I am actually assisting with the inbound that's coming from the ads we have to do, but at the same time, I'm building context about the neighborhoods that I have to serve and reaching out to bring net new revenue.\n\nSpeaker 2 | 26:33 - 26:59\nSo that is now they can do it very easily in one platform with NetEdit. But they were already thinking about these like additional data and sifting through that with different tools or humans, etc, and then send door knockers before. And that's just one industry, right? And then we talked a little bit about roll ups and being private equity owned. Now imagine being a private equity and you own maybe twenty, thirty of these businesses in different industries.\n\nSpeaker 2 | 26:59 - 27:25\nSo now if those are on NetEgg, what you can do is, well, if you're gonna go after someone for a wellness offering, right, and I have a dog that I love, and if I'm going to be a member in a wellness offering, I would actually very much like to pick the one that has pet care, right? So if you know that about me and as the owner of the company, how would you think about talking to me about that? That is all about context and really understanding and doing that easily for your business.\n\nSpeaker 1 | 27:25 - 27:49\nHow how well do you or how do you view private equity firms as responding to this wave of AI? I think there are varying opinions in terms of everything from people are really leaning in and they're trying new things, and in some cases, they're hiring to deploy companies, they're working with folks like Brainco or other companies. In other cases, they're slower to move on. What's your perception of how private equity is interacting with AI?\n\nSpeaker 2 | 27:49 - 28:30\nI think already the private equity playbook has changed. Before it used to be, right, we're going to find a gem that has an amazing multiple and that we are going to go change the team and create the value and then sell it again. But those gems don't really exist anymore, like undiscovered. So I think generally the playbook has changed to how do we create tangible value with these businesses that we're working. I think you are right that some are leaning in, maybe a bit too much, like, without, you know, trying everything as if it's software and you know it, that any product I use in AI, it's not like, you know, the first week, that shouldn't be how you look at the platform, it should be the beginning of the relationship.\n\nSpeaker 2 | 28:30 - 29:17\nIf anything, actually, you want to make sure those results exist throughout the year and keep getting better and not keep getting worse, right? So I think that's important to change the shift on testing the AI, like AI and separating from vaporware to true ROI, and how do you do that? I think a lot of them at times can be more software oriented, you know, deterministic, oh, but why can I not try that, like in a week and tell? But many, I think, do understand with this new role that private equity companies hire, it's like different operating partners in AI or they'll have a few engineers that might be AI forward and they'll educate it as well. And in our job, you know, I always see in the company too, something is not hard, is that like what can we do better?\n\nSpeaker 2 | 29:17 - 29:47\nSo, in a lot of these conversations, the conversation is all about the value they're gonna get and what they can see tangibly now. It's not demos. We'll pull up and show a live deployment, right? Because like, if it's working and I have it, why can't you just show you what this customer is making that, you know, we have you asked me about my North Star recently, we have made so far, I think, over $600,000,000 for our customers that have been really generated from AI handled interactions. Show that.\n\nSpeaker 2 | 29:47 - 30:20\nHow does it work? How is the real world customers interacting with this technology? So I think once you do that, they also get educated and they guide their companies, but still it doesn't it's not taking away the notion of you have to have a relationship direct to the company because at the end, private equity is more of a guidance for the companies they own. There's not many times or types of relationships where you can just shove it down the throats of the companies, but you can be a good counselor and you can be a good adviser to the companies on what to check for.\n\nSpeaker 1 | 30:20 - 30:33\nMhmm. Yeah. It seems like a lot of private equity shops as well have kinda shifted from the eighties style, you know, come in, do big layoffs, take a part of conglomerate, and much more to your point, how do you optimize value or increase the value of something.\n\nSpeaker 2 | 30:33 - 30:56\nI will say though, it's still they are always the first conversations very focused on cost cutting because I think they don't see a lot of products or platforms like ours. I'm not really there to cut your costs. Sure, that is happening in this way, but I'm really interested in this is how you're going to make net new revenue. So that is new. You have to actually start that conversation.\n\nSpeaker 2 | 30:56 - 31:13\nYou have to show them intangible examples because otherwise it still focuses on how do we get to the bottom line and cut some costs. Right? But they have to almost expand their horizon on thinking about what else is possible with AI. Right? It would be pretty sad if we used AI only for cost cutting.\n\nSpeaker 1 | 31:13 - 31:18\nYeah. Yeah. Sure. What are you outside of what NetEq is doing, what are you most excited about in terms of the future in AI?\n\nSpeaker 2 | 31:18 - 32:01\nI am really excited so I told you a little bit about my personal story. So one of the you know, when I didn't have access to anything, one of the, in my time, maybe the technology that helped is that I would find one or two people who graduated from my high school, like, to read some of my essays or look at my work and give feedback or Facebook Messenger them. And it was just being able to talk when they were in The US in colleges and they went from Turkey, it was pretty crazy. So, like, I will give the answer of education because I think it will change so many lives of people who otherwise would not even think about this world exist. So I'm personally really excited about that.\n\nSpeaker 2 | 32:01 - 32:21\nAnd no one will be limited anymore that like everything you want to learn and everything you want to do is kind of in your pocket, Right? So we made the world a lot more about agency, which I'm excited about, I cannot wait to see that unfold.\n\nSpeaker 1 | 32:21 - 32:29\nYeah. It's very exciting. I think one big lesson for me is always you can just go do stuff. Like, you don't need permission, you don't need to learn stuff, you just go do things. So\n\nSpeaker 2 | 32:29 - 33:10\nBut, you know, that makes it also a little bit scary too than when you see people not doing stuff, then it's a little bit of a dystopian version of it because in in any era or technology you live with, you can always do stuff. It ends up it stays with the choice you have to make. We keep making it easy and easier, easier and easier to make that choice, but still, guarantee you, majority of the world will not be making that choice. So it is something to something to think about, a little bit more negative. So but I am happy that at least we're taking away the resourcing as a question, whether you have access to something or not.\n\nSpeaker 2 | 33:10 - 34:05\nThe second thing I am really excited about, a lot in America or in generally right now, more mainstream topic about AI is very negative. What I'm exciting about with use cases like I'm working on, it's many times the people's worst day in their lives and they really need help and how do we make sure that you get help, or in education, or in about being able to look at your health records and really understand, you know, I was recently using the health feature and trying to understand how can I sleep better, and there's no answer? It's like, you gotta stop being a founder. But I think there are a lot more positive ways that we we are going to start talking about AI and how people's first interaction with AI is not only about, like, why x y zed is going away or jobs are going away, but positive impact of AI. That's more in terms of the conversation in the world I'm most excited about.\n\nSpeaker 1 | 34:05 - 34:08\nAmazing. Yeah. Well, thank you so much for joining us today at No Priors. It was a pleasure.\n\nSpeaker 2 | 34:08 - 34:09\nThank you for having me. Find\n\nSpeaker 3 | 34:12 - 34:28\nus on Twitter at nopriorspod. Subscribe to our YouTube channel if you wanna see our faces. Follow the show on Apple Podcasts, Spotify, or wherever you listen. That way, get a new episode every week. And sign up for emails or find transcripts for every episode at nopriors.com."
+      }
+    ],
+    "stats": {
+      "podcastEpisodes": 1
+    }
+  },
+  "blogs": {
+    "generatedAt": "2026-08-02T07:10:22.016Z",
+    "lookbackHours": 72,
+    "blogs": [
+      {
+        "source": "blog",
+        "name": "Anthropic Engineering",
+        "title": "How we contain Claude across products",
+        "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+        "publishedAt": null,
+        "author": "",
+        "description": "",
+        "content": "Twelve months ago, we&#x27;d have rejected out of hand the idea of granting Claude access sufficient to take down an internal Anthropic service. Today that level of access is routine, and Anthropic developers are more productive for it. The risk of these deployments has two components: how likely a failure is, and how much damage one could do. Progress on safeguards and model training has steadily driven down the first; the second—the theoretical blast radius—only grows as capabilities and access expand. Yet as agents become capable of doing work that once required a person or even a team, the cost of not deploying grows large enough that the risk-reward calculation tips heavily toward adoption, as long as products can be made safe. The engineering question becomes how to cap the blast radius. When bounds can be placed on the relative damage of an autonomous agent—such as through control over its environment—high-utility capabilities can motivate deployment. Claude Mythos Preview is an example of a model whose blast radius was deemed too high to ship in April 2026. However, we expect broader release of models with similar levels of capability to become appropriate as defenders harden critical systems and safeguards mature—even though some risk will always remain. Model capability is an important factor in the total risk of an agent’s deployment. There are broadly two ways to do this. The first is to supervise the agent’s behavior via a human-in-the-loop. Claude Code previously protected against agents taking unintended actions by asking users for permission at each turn. Theoretically that works, but we’ve found the approach to be fallible. Our telemetry showed users approved roughly 93% of permission prompts. The more approvals a user sees, the less attention they pay to each, becoming over time much less diligent in their supervision. We recently built Claude Code auto mode, which automates safer approvals in order to reduce this approval fatigue. Still, vulnerabilities remain—any probabilistic defense has a non-zero miss rate. 1 The second approach to capping the blast radius—and the focus of much of this post—is containment. Rather than supervising what the agent does, we supervise what it’s able to do by enforcing access boundaries through, for example, sandboxes, virtual machines, and egress controls. This is where Anthropic engineering has devoted the most effort, and also where many of the most surprising security failures have occurred. Over the past two years, we’ve shipped three primary agentic products: claude.ai , Claude Code, and Claude Cowork. Each serves a different audience, requiring a different containment architecture. This article shares what’s held up, what’s broken, and what we’ve learned about agent security along the way. Three types of risk, three components of defense Security risks to agents fall into one of three categories: User misuse: A user—either maliciously or through carelessness—directs the agent to do something harmful. This includes everything from asking the agent to bypass a check they find annoying, to running a destructive command they don’t understand, to specifying intentional harm. Model misbehavior: The agent takes a harmful action no one asked for. As our models have improved, they have become more aligned on most behavior evaluations, but this doesn’t mean risk necessarily shrinks. Less capable models are more likely to misread a situation and make obvious errors. More capable models make fewer mistakes, but they’re also better at finding unexpected paths to a goal, often by routing around restrictions nobody thought to write down. At Anthropic, we’ve seen Claude models “helpfully” escape a sandbox in order to complete a task, examine git history to find answers to a coding test , and spontaneously identify the benchmark it was being run on in order to decrypt its answer key . Each model brings a new set of capabilities that are sometimes put to work in unexpected ways. External attackers: The agent is attacked through external vectors such as tools, files, or network access. This category includes both prompt injection and conventional attacks on the agent&#x27;s runtime, orchestration layer, or proxy. When building containment and defense systems, we apply defenses to three main components: The environment in which the agent runs. We constrain where and how an agent can act with process sandboxes, VMs, filesystem boundaries, and egress controls. The goal is to set a hard boundary on what an agent can reach. For example, if credentials never enter the sandbox, they can&#x27;t be exfiltrated, regardless of whether the cause is a user, a model finding a “creative” path, or an attacker. A tight perimeter also means you can relax oversight. Claude Code’s reference devcontainer exists precisely so that the agent can run unattended, without per-action approvals. The model the agent consults. The mechanisms here include system prompts, classifiers, probes, and training modifications. Because models are probabilistic, these shape only what the agent tends to do, not what it is theoretically capable of doing. These defenses are strong. On Gray Swan&#x27;s Agent Red Teaming benchmark, which tests susceptibility to prompt injection, Claude Opus 4.7 holds attack success to roughly 0.1% on single attempts, and around 5–6% after 100 adaptive attempts. Claude Code auto mode catches roughly 83% of overeager behaviors before they execute . Yet even with best-in-class defenses, protection in the model layer will never be 100% effective, which is why it can&#x27;t stand alone. The external content the agent can reach. MCP servers, third-party plugins, and web search tools all feed content into the agent’s context from sources you don’t control. An audited connector isn’t the same as audited data—a GitHub connector, for instance, can load a poisoned README straight into the model’s context despite passing malware checks. Granularly limiting tool permissions can help limit the blast radius. An agent with read-only DB access, for instance, can be deployed far more broadly than one that writes to prod. Defenses should overlap and complement each other. When environmental defenses aren’t available, the model layer has to pick up the slack (this is precisely what Claude Code’s auto mode is designed for). Locally, the environment and model defenses can guard against malicious tool outputs, but defenses can be added higher up the chain by limiting the tool’s capabilities and access. Three components to defend: the model, the environment in which it runs, and the external content the agent can reach. Patterns for containing agents Focusing on the environment layer, we describe three isolation patterns and how they’re tailored for each Claude platform— claude.ai , Claude Code, and Cowork. We arrived at each design gradually, after finding the balance between the capabilities we need from the agent and the degree of intervention required from the user. Pattern 1: The ephemeral container (claude.ai code execution) Though best known as a chat interface, claude.ai also writes and runs code, generates files, and calls connectors. When Claude runs code inside claude.ai, it does so in a gVisor container on isolated infrastructure. The agent is entirely server-side; no code runs on the local machine, and the filesystem is ephemeral (per-session). The blast radius is minimal, but so is the ceiling on what Claude can do—there&#x27;s no persistent workspace and no access to the user&#x27;s filesystem. This also makes claude.ai subject to a more traditional threat model. We&#x27;re not protecting user machines from agents; we&#x27;re protecting our own infrastructure and each tenant from one another. Our pre-launch work for claude.ai was dominated by traditional security work like network configuration, internal service auth, and orchestration. That work reinforced the oldest lesson in security: the weakest layer is the one you built yourself. gVisor and seccomp have been hardened against well-resourced adversaries for far longer than agentic AI has existed, so the review effort went into the newer pieces we&#x27;d built around them. We’ll come back to this later, since our custom proxy is also the piece that broke in our most consequential incident. Pattern 2: The human-in-the-loop sandbox (Claude Code) Claude Code runs on a user&#x27;s machine and has access to their filesystem, shell, and network. Without this, coding agents have limited usefulness, so it’s imperative to find a way to grant that access safely. One approach is to rely on a human-in-the-loop. This is only a tractable solution for Claude Code because the average user is a developer who’s familiar with coding environments: they can read bash, they understand what rm -rf does, and they already run npm install from untrusted sources several times a week. All that means that when an “allow this” dialog pops up, they are highly likely to have the expertise to accurately evaluate what the agent is attempting to do and the risk involved. Given this, Claude Code launched with the simplest possible defense: allow reads, require approval for write, bash, and network access. However, as mentioned, approval fatigue showed up within weeks. Ironically, this meant that a feature originally designed to provide oversight could arguably have the opposite effect—some users might simply stop paying attention. As a first step to mitigate incautious approvals, we shipped an OS-level sandbox (Seatbelt on macOS, bubblewrap on Linux) that hardens the boundary: reads are allowed, writes are allowed inside the workspace, but network is denied by default. Within the sandbox, the agent runs largely without interruption. The result was an 84% reduction in permission prompts, and we open-sourced the runtime , so the boundary is auditable. Our anonymized usage data also showed that experienced users auto-approve roughly twice as often as new users, but they also interrupt the agent mid-execution more frequently. Instead of gating individual steps, experienced users are more likely to supervise the agent only when it goes off track. While this may be a natural evolution in how people prefer to work with agents, this too is fallible, requiring users to be technical and attentive enough to notice drift in the first place. As model capabilities improve and agents begin writing increasingly ambitious bash, it becomes harder to notice any such drift. And as users move to multi-agent systems, this approach is also much less likely to be an effective oversight strategy. Risk we missed: Everything before the trust dialog Between mid-2025 and January 2026, we received reports of vulnerabilities in Claude Code through our responsible disclosure program. Three of these vulnerabilities targeted code that executes before the user has consented to anything. To understand how this is possible, consider the most direct case: a developer clones a repository to review a pull request, and that repository contains a .claude/settings.json which defines a hook. Because Claude Code reads project settings during startup—before presenting the standard \"Do you trust this folder?\" prompt—the hook the attacker had authored and committed would execute automatically. The remaining cases looked structurally similar, in which input from the not-yet-trusted directory was parsed before the trust boundary had been established. The fix in each case had the same shape: defer parsing and execution of project-local configuration until after the user accepts the trust prompt. If you&#x27;re building something similar, treat project-open, config-load, and localhost listeners the way you&#x27;d treat any inbound request from the internet. They shouldn’t be implicitly trusted just because they feel local and arrive before the user has consented. Risk we missed: The user as an injection vector In February 2026, during a controlled internal red-team exercise, a researcher successfully phished an employee into launching Claude Code with a malicious prompt. The phish looked like ordinary collaboration—a \"can you run this for me?\" email with a ready-to-paste prompt attached—and the prompt itself read like routine task instructions. But somewhere among the setup steps, it gently asked Claude to read ~/.aws/credentials, encode the contents, and POST them to an external endpoint. Across 25 retries of that prompt, Claude completed the exfiltration 24 times. This is a direct prompt injection—the attacker&#x27;s instructions arrived through the user, not through tool output or fetched content. Our model-layer defenses anchor on user intent—when the user is the one typing the instruction, there&#x27;s nothing anomalous for a classifier to catch. A human contractor handed the same script would have done the same thing. The only defense that holds in this situation is the environment, specifically egress controls that block the POST regardless of intent and filesystem boundaries that keep ~/.aws out of reach in the first place. (When we shared the working prompt in internal Slack for discussion, someone pointed out that some internal agents read Slack. The payload was now ambient. We added a canary string to the thread so we&#x27;d notice if anything picked it up. In a world where agents read everything, the investigation tooling is also an attack surface.) Pattern 3: The local VM (Claude Cowork) Claude Cowork runs on a user&#x27;s desktop with access to a workspace folder selected by the user. Because the platform is built for general knowledge work, not software engineering, the average user is much less likely to be fluent in bash. As a result, the human-in-the-loop sandbox strategy may not transfer; a non-technical knowledge worker shouldn’t be expected to judge bash incantations such as find . -name \"*.tmp\" -exec rm {} \\;. When approving an exception requires expertise the typical user doesn’t have, admins should set a boundary that is absolute and always-on. To enable this, our first version of Claude Cowork ran inside a full virtual machine using the platform&#x27;s vendor hypervisor (Apple&#x27;s Virtualization framework on macOS, HCS on Windows). The VM has its own Linux kernel, its own filesystem, and its own process table. The user&#x27;s selected workspace and .claude folder are mounted; nothing else on the host is visible. Credentials stay in the host&#x27;s keychain and never enter the guest machine. This design protects against the possibility that Claude will, at some point, behave in a misaligned manner. A compromised Claude could still damage what&#x27;s inside the workspace folder, so the architecture is designed to make sure that&#x27;s the only thing it can reach (until the user adds connectors), and that the user controls what&#x27;s mounted there. In the original architecture—what we call full-VM mode—the agent loop itself ran inside the guest, so Claude executed as an ordinary Linux user with no awareness it was sandboxed. Compare this to Claude Code, where a privileged process sits outside the sandbox deciding per-command whether to enforce it; a persuasive injected prompt or a fatigued approval click can get that process to run something un-sandboxed. Here, there was no outer process holding an escape-hatch key, and so no component with the authority to grant an exception. The six main isolation mechanisms of Claude Cowork’s VM. Two are enforced outside the guest kernel and would thus survive the agent achieving root-level access within the VM. The other four are guest-enforced and kept deliberately minimal because the outer layers carry the rest. However, we soon realized that running the whole agent in full-VM mode caused practical problems: any failure during VM startup made Cowork unusable. Moving the agent loop outside of the VM, while keeping code execution inside of it, allowed Claude to still respond to the user and help debug issues rather than freeze on an error. This change caused minimal security impact because the VM still enforces filesystem and network controls over code executed by the agent. Separately, we also moved local MCP servers outside the VM. Running them inside the VM made them harder to audit, created brittle dependency issues when the VM updated, and didn’t support MCPs that required interaction with local processes such as databases—such servers had to run on the host regardless. The change brings Claude Cowork in line with how local MCP servers already work in Claude Desktop: treating them like any software a user might choose to install and entrusting admins to decide which local MCPs to enable (if any). Remote MCP servers are unaffected since they do not run on the user&#x27;s machine. Having the agent loop inside the VM meant that any failure in the VM caused Cowork to become unusable. Host-mode is more reliable because the agent can still respond if the VM crashes, and it still provides important security guarantees by isolating code execution. Filesystem controls were another important architectural choice. Claude needs to be able to access some files on the host in order to be useful, but we wanted to minimize the blast radius and provide transparency to the user about local file access. We found that offering different file-mount modes helps to granularly control risk; Claude Cowork offers read-only, read-write, and read-write-no-delete. One potential gotcha here is that symlink resolution has to happen before path validation, not after, or a symlink inside an authorized folder can point outside and escape. For enterprise customers, we allow admins to control this via mount-path allowlists in MDM settings. Risk we missed: Exfiltration through an approved domain A clear example of exfiltration through an approved domain came from a third-party disclosure. Claude Cowork&#x27;s egress allowlist correctly passed traffic to api.anthropic.com—the product can&#x27;t function without calling our own API. In this case, a malicious file placed in the user&#x27;s mounted workspace carried hidden instructions along with an API key controlled by the attacker. Claude, following the instructions, read other files in the workspace and called Anthropic&#x27;s Files API using the attacker&#x27;s key. The egress proxy checked the destination, saw api.anthropic.com, and let it through. The files were uploaded to the attacker&#x27;s Anthropic account. The sandbox worked perfectly, and yet the data was exfiltrated. Previously, we’d conceptualized the allowlist as a destination filter, something that told Claude these domains are okay to talk to. But it may be better conceptualized as a capability grant. Every function reachable through any domain on an allowlist is now an attack surface. Allowing api.anthropic.com meant allowing file uploads to arbitrary Anthropic accounts. We fixed it using a defensive man-in-the-middle proxy inside the VM that intercepts traffic to our API. It only passes requests carrying the VM&#x27;s own provisioned session token; an attacker-embedded key is rejected by the proxy. It also blocks headers that would enable server-side fetch. The proxy sits inside the VM rather than on our servers because only the VM knows provenance—from the server&#x27;s perspective, a Cowork request is indistinguishable from any other API client. Top: traffic to api.anthropic.com is let through, resulting in egress. Bottom: fix with a man-in-the-middle proxy intercepting traffic to our API. This is also a second instance of the principle that the software you build yourself is often the weakest. The hypervisor, seccomp, and gVisor across our products have been dependable. Our custom allowlist proxy was the piece that failed. Risk we missed: VM isolation kept the endpoint detection software out too When evaluating Claude Cowork, enterprise security teams asked, \"Why can&#x27;t our EDR see inside?\" The answer was that the same isolation keeping Claude contained also kept host-based endpoint detection and response out. From the EDR&#x27;s perspective, Claude Cowork is an opaque hypervisor process. It can&#x27;t inspect the guest. Isolation reduces visibility, and opacity is problematic for teams whose compliance posture depends on endpoint visibility. Our current mitigation is to use pull-based OTLP exports that let administrators retrieve event logs after the fact, but this is not the same as live monitoring. If you&#x27;re building something similar, budget for this conversation early. Environment Ephemeral container ( claude.ai ) HITL sandbox (Claude Code) Sealed VM (Claude Cowork) Cost: Isolation Overhead Container spin-up Low-latency native sandbox Full VM boot Cost: User Reliance N/A Must interpret bash N/A Risk: Blast Radius Server-side container (guarded by gVisor + host infra boundary) Local workspace Mounted workspace (guarded by vsock + hypervisor boundary) Trusting what the agent reads Enterprises often ask us how to secure MCP connections. It&#x27;s a good question, but the right one is broader than MCP specifically. Any external resource provided to an agent represents two risks at once: a code execution risk, in the traditional supply-chain sense, and a prompt injection vector. Traditional dependency auditing (pinning versions, verifying signatures, reviewing source) addresses the first, but misses the second. Remote versus local is more important than it seems. A locally installed tool is auditable. You can read the code, pin the version, and know it won&#x27;t change under you. A remote tool—a hosted MCP server, a cloud connector—can change behavior at any point after you’ve approved it; your install-time trust decision may no longer apply. Our connector directory addresses this through ongoing review, but anything outside it should be treated as untrusted. Run it against fake data first, in an environment where the blast radius of a malicious tool is contained. Tool output is an attack surface even when the tool is trusted. The GitHub README example mentioned earlier is exactly this case; any input scanning applied to web pages needs to be applied to network-enabled tool results with the same rigor. Even though this adds latency and isn&#x27;t a perfect defense, we err toward live inspection: once a poisoned tool return has steered the agent into exfiltrating data, the log just shows a successful, authorized API call. There&#x27;s no after-the-fact signal to find. In Claude Code and Claude Cowork, tool calls route through proxies that enforce network and file policy and can inspect return values before they enter the model&#x27;s context. The classifier that does the inspection can be a small, fast model; it doesn&#x27;t need to be the one doing the reasoning. Looking ahead Models and products are advancing fast. As they do, risks morph and evolve, and our mitigations must keep pace to meet them. Persistent memory poisoning. The share of agent context that persists across sessions keeps growing—this includes product memory, CLAUDE.md files, mounted workspaces, and the state directories of scheduled and long-running agents. An injection that lands in any of these is reloaded each time the agent starts. As more agent state survives the session, we are threatened by new persistence mechanisms in the classic post-exploitation sense. Good classifiers on session startup will need to become more commonplace. Multi-agent trust escalation. On the one hand, sub-agents can isolate untrusted content, returning structured facts rather than raw text up to the main agent. On the other hand, this can be abused: if a sub-agent&#x27;s output is treated as higher-trust than raw tool results, because such output came from “us,” a new vector for prompt injection is introduced. In multi-agent systems, there is a tradeoff between allocating differing trust levels and becoming liable to trust escalation. Agent identity. Claude Cowork&#x27;s answer to agent identity is concrete: credentials stay in the host keychain, the VM gets a per-session scoped-down token, and that token can be revoked independently of the user&#x27;s. However, we are starting to grapple with the broader question of cross-platform agent identity. Should an agent possess its own principal identity, or should it act as an extension of the user and inherit the user’s permissions? Ultimately, the answer may be a blend of the two. As agents grow more capable, attack surfaces are constantly shifting. The types of failures we’ve seen are likely to be repeated across industries and labs. We need collective investment in agent-specific security posture, from shared benchmarks and disclosure norms to common identity standards and cross-vendor red-teaming. We focus on containment in this piece, but that&#x27;s only one part of the security picture for agents. For governance, observability, and the rest of the stack, see NIST&#x27;s project on AI agent identity and authorization , the six-agency guidance on adopting agentic AI led by Australia&#x27;s ACSC with CISA and the UK&#x27;s NCSC, and ISO/IEC 42001 , the AI management standard. Our Glasswing initiative is one contribution, but we look forward to working with both partners and competitors on this critical issue. Summary In short, there are a few principles we keep returning to: Design for containment at the environment layer first, then steer behavior at the model layer. Two of the incidents that taught us the most—the employee phish and the third-party allowlist disclosure—were both cases of egress, in which data left through a permitted path. In each, the model layer couldn&#x27;t help; there was nothing anomalous for it to catch. The deterministic boundary is what gets hit when everything probabilistic misses. Match isolation strength to the user&#x27;s capacity for oversight. A developer who can read bash and a knowledge worker who can&#x27;t are not running the same threat model. The question of whether a user can evaluate what an agent is about to do should help determine the containment strategy, and answering it wrong in either direction—too much friction for experts, too much trust for non-experts—is its own failure. Be wary of custom components. Battle-tested hypervisors, syscall filters, and container runtimes have survived more adversarial attention than anything you&#x27;ll build. Across every deployment described here, the standard primitives held while our own work around them exposed flaws. Ultimately, while agents may be a new category of software, their system-level interactions are not. They still read files, open sockets, and spawn processes; this makes containment with mature tooling a crucially viable defense. The risk-reward balance of deployments will keep shifting as AI develops, but placing a hard limit on blast radius often forces that balance into the right direction. Acknowledgements Written by Max McGuinness, Mikaela Grace, Jiri De Jonghe, Jake Eaton, and Abel Ribbink. We&#x27;re also grateful to Hanah Ho, Hasnain Lakhani, Pedram Navid, Molly Villagra, Maya Nielan, Akila Srinivasan, Travis Szucs, Sam Attard, Alfred Xing, Mohamad El Hajj, Gabby Curtis, David Dworken, Adam Jones, Amie Rotherham, Christian Ryan, Lucas Smedley, Brett Andrews, and others for their contributions. Special thanks to our security and product engineering teams, and to the individuals and organizations that have reported vulnerabilities in Claude products. Footnotes Claude Code auto mode delegates command approvals to a model-based classifier; it minimizes friction (roughly 0.4% of benign commands blocked) at the cost of missing a fraction of risky ones (~17% of overeager actions get through), so it&#x27;s one layer of defense-in-depth inside a sandbox, not a substitute for one."
+      }
+    ],
+    "stats": {
+      "blogPosts": 1
+    }
+  }
+}
