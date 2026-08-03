@@ -1,0 +1,249 @@
+{
+  "date": "2026-07-31",
+  "generated_at": "2026-08-03T08:26:35.149866",
+  "daily_summary": "DeepSeek V4-Flash正式版公测引爆行业：Agent能力从7.3飙升至54.4（涨7.5倍），价格仅¥1/百万输入token，性能逼近Claude Opus 4.8但成本为其几十分之一。字节跳动发布Seedance 2.5视频生成模型，单次生成30秒视频。MiniMax发布H3开源全能视频模型。腾讯混元Hyra攻克50年数学难题。vivo放弃AI眼镜转重仓MR空间计算。深圳龙岗出台AI眼镜产业扶持措施，单企年度补贴最高2000万。",
+  "design_insights": [
+    {
+      "title": "DeepSeek V4-Flash证明后训练可释放巨大Agent潜力",
+      "summary": "参数不变纯靠后训练，DeepSWE从7.3飙升至54.4，MIT许可开源。价格¥1/百万输入token，智能指数得分50。",
+      "implication": "输入法AI不需要追求最大模型——通过精细的后训练和Agent框架优化，中等规模模型就能胜任复杂任务。用DeepSeek V4-Flash作为输入法后端，可以极低成本实现高质量智能功能。",
+      "sources": [
+        "DeepSeek",
+        "互联网思想"
+      ],
+      "source_urls": [
+        "https://dy.163.com/article/L3772K590531G0IB.html"
+      ],
+      "tags": [
+        "DeepSeek",
+        "后训练",
+        "成本革命"
+      ]
+    },
+    {
+      "title": "视频生成进入长叙事时代对内容输入的影响",
+      "summary": "Seedance 2.5单次生成30秒视频，MiniMax H3开源全能视频模型。视频生成从生成片段转向完成创作。",
+      "implication": "输入法需要考虑视频创作场景的输入辅助：用户在视频编辑器中需要快速输入字幕、描述prompt、脚本文本。输入法可提供视频创作专用模式，集成prompt建议和脚本模板。",
+      "sources": [
+        "极客公园",
+        "字节跳动"
+      ],
+      "source_urls": [
+        "https://dy.163.com/article/L380URRK05119FMA.html"
+      ],
+      "tags": [
+        "视频生成",
+        "创作工具",
+        "内容输入"
+      ]
+    },
+    {
+      "title": "AI眼镜产业政策释放对输入法的信号",
+      "summary": "龙岗推出AI眼镜专项扶持单企最高2000万，但vivo放弃AI眼镜转向MR。市场出现分化。",
+      "implication": "穿戴设备输入场景路径不确定——眼镜和MR两条线并行。输入法应做好两手准备：语音输入为眼镜场景优化、手势+空间输入为MR场景预研。不押注单一硬件形态。",
+      "sources": [
+        "21世纪经济报道",
+        "XR控"
+      ],
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260803A0238700"
+      ],
+      "tags": [
+        "AI眼镜",
+        "产业政策",
+        "穿戴设备"
+      ]
+    },
+    {
+      "title": "腾讯混元Hyra攻克50年数学难题的技术深度启示",
+      "summary": "腾讯混元推出Hyra系列模型在形式化数学推理中取得突破。",
+      "implication": "深度推理能力正在下放到更多模型。输入法可利用这类能力为专业用户提供公式输入辅助、数学表达式补全、学术写作中的逻辑校验等高价值功能。",
+      "sources": [
+        "互联网思想",
+        "腾讯混元"
+      ],
+      "source_urls": [
+        "https://dy.163.com/article/L3772K590531G0IB.html"
+      ],
+      "tags": [
+        "腾讯",
+        "数学推理",
+        "专业场景"
+      ]
+    },
+    {
+      "title": "DeepSeek V4-Flash原生支持Responses API的生态效应",
+      "summary": "正式版原生支持Responses API格式并针对性适配Codex，MIT开源含投机解码模块。",
+      "implication": "输入法接入DeepSeek V4-Flash的工程成本极低（标准API），且开源意味着可以针对输入法场景进行定制微调。这为自研AI输入引擎提供了全新的技术路径。",
+      "sources": [
+        "DeepSeek",
+        "新浪财经"
+      ],
+      "source_urls": [
+        "https://dy.163.com/article/L380URRK05119FMA.html"
+      ],
+      "tags": [
+        "API标准化",
+        "开源定制",
+        "技术路径"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "基于DeepSeek V4-Flash的超低成本AI输入引擎",
+      "pain_point": "当前AI功能推理成本高，无法对全量用户免费开放",
+      "opportunity": "用DeepSeek V4-Flash（¥1/百万token）重建输入法AI后端，成本降至原来1/90",
+      "priority": "high",
+      "evidence": "V4-Flash价格仅为Claude的1/90，Agent能力逼近Opus 4.8"
+    },
+    {
+      "title": "视频创作场景的输入辅助模式",
+      "pain_point": "视频创作者需要频繁输入prompt和字幕但缺少专用工具",
+      "opportunity": "开发视频创作输入模式，内置prompt模板、字幕格式化、脚本辅助",
+      "priority": "medium",
+      "evidence": "Seedance 2.5、MiniMax H3等视频生成工具爆发，创作者群体快速增长"
+    },
+    {
+      "title": "穿戴设备双线预研输入方案",
+      "pain_point": "AI眼镜与MR两条路径并行，不确定哪个会成为主流",
+      "opportunity": "同时为眼镜（语音优先）和MR（空间手势）场景准备输入方案",
+      "priority": "low",
+      "evidence": "龙岗扶持AI眼镜产业；vivo转向MR空间计算；市场路径分化"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "DeepSeek V4-Flash正式版公测：Agent能力涨7.5倍",
+      "summary": "DeepSWE从7.3飙升至54.4，价格¥1/百万输入token，MIT开源",
+      "source": "DeepSeek",
+      "source_urls": [
+        "https://dy.163.com/article/L3772K590531G0IB.html"
+      ],
+      "tags": [
+        "DeepSeek",
+        "开源"
+      ]
+    },
+    {
+      "title": "字节跳动发布Seedance 2.5视频生成模型",
+      "summary": "单次生成30秒高质量视频，突破长叙事能力",
+      "source": "极客公园",
+      "source_urls": [
+        "https://dy.163.com/article/L380URRK05119FMA.html"
+      ],
+      "tags": [
+        "字节跳动",
+        "视频生成"
+      ]
+    },
+    {
+      "title": "MiniMax H3开源全能视频模型",
+      "summary": "视频编辑能力全球第一，价格仅为同类旗舰模型三分之一",
+      "source": "互联网思想",
+      "source_urls": [
+        "https://dy.163.com/article/L3772K590531G0IB.html"
+      ],
+      "tags": [
+        "MiniMax",
+        "开源"
+      ]
+    },
+    {
+      "title": "腾讯混元Hyra攻克50年数学难题",
+      "summary": "Hyra系列模型在形式化数学推理取得突破",
+      "source": "互联网思想",
+      "source_urls": [
+        "https://dy.163.com/article/L3772K590531G0IB.html"
+      ],
+      "tags": [
+        "腾讯",
+        "数学"
+      ]
+    },
+    {
+      "title": "OpenAI下调GPT-5.6 Luna和Terra价格",
+      "summary": "Luna降价80%、Terra降价20%，Sol新增Fast模式",
+      "source": "东方证券",
+      "source_urls": [
+        "https://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/search/rptid/838915515971/index.phtml"
+      ],
+      "tags": [
+        "OpenAI",
+        "降价"
+      ]
+    },
+    {
+      "title": "vivo放弃AI眼镜转重仓MR空间计算",
+      "summary": "AI眼镜项目秘密筹备半年后叫停，转向MR战略赛道",
+      "source": "XR控",
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260803A0238700"
+      ],
+      "tags": [
+        "vivo",
+        "战略转型"
+      ]
+    },
+    {
+      "title": "深圳龙岗出台AI眼镜产业专项扶持",
+      "summary": "单企年度补贴最高2000万元，配套480亿元产业基金",
+      "source": "21世纪经济报道",
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260803A0238700"
+      ],
+      "tags": [
+        "政策",
+        "AI眼镜"
+      ]
+    },
+    {
+      "title": "Meta Reality Labs累计亏损约6600亿元仍加码AI眼镜",
+      "summary": "AI眼镜销量增三倍多成最明确增长来源，收缩VR投入",
+      "source": "AR圈",
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260803A0238700"
+      ],
+      "tags": [
+        "Meta",
+        "AI眼镜"
+      ]
+    },
+    {
+      "title": "中方在联合国举行2026世界人工智能大会吹风会",
+      "summary": "29国签署成立世界人工智能合作组织协定",
+      "source": "央视新闻",
+      "source_urls": [
+        "https://www.toutiao.com/article/7669023125169865256/"
+      ],
+      "tags": [
+        "政策",
+        "国际合作"
+      ]
+    },
+    {
+      "title": "DeepSeek V4-Flash乌兰察布扩建1GW算力",
+      "summary": "在推进高效模型同时大幅扩张计算能力",
+      "source": "互联网思想",
+      "source_urls": [
+        "https://dy.163.com/article/L3772K590531G0IB.html"
+      ],
+      "tags": [
+        "算力",
+        "基建"
+      ]
+    },
+    {
+      "title": "江苏AI眼镜赋能远程执法全省推广",
+      "summary": "南通已发放210套，非现场检查占比达50%",
+      "source": "金台资讯",
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260803A0238700"
+      ],
+      "tags": [
+        "应用",
+        "AI眼镜"
+      ]
+    }
+  ]
+}
