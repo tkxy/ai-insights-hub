@@ -1,0 +1,439 @@
+{
+  "week": "2026-W33",
+  "range": {
+    "start": "2026-08-10",
+    "end": "2026-08-16"
+  },
+  "builtAt": "2026-08-10T00:58:38.901380+00:00",
+  "tweets": [
+    {
+      "id": "2086324411385426346",
+      "text": "i still think @AnthropicAI ultracode is one of the most important coding mode innovations ever invented. \n\nif you havent understood the potential of dynamic workflows you should try to. just met a Kill My SaaS competitor who did a pretty good submission in 3 ultracode prompts",
+      "createdAt": "2026-08-09T05:31:16.000Z",
+      "url": "https://x.com/swyx/status/2086324411385426346",
+      "likes": 29,
+      "retweets": 2,
+      "replies": 8,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "swyx",
+      "_builderName": "Swyx"
+    },
+    {
+      "id": "2086286008916828457",
+      "text": "Grok Imagine Image 2.0 on Vercel AI Gateway\nExcellent 🖼️ model, #2 already on https://t.co/OSJc7zJ3gi https://t.co/MdjLBUeyxj",
+      "createdAt": "2026-08-09T02:58:40.000Z",
+      "url": "https://x.com/rauchg/status/2086286008916828457",
+      "likes": 110,
+      "retweets": 6,
+      "replies": 14,
+      "isQuote": true,
+      "quotedTweetId": "2086284929906979265",
+      "_handle": "rauchg",
+      "_builderName": "Guillermo Rauch"
+    },
+    {
+      "id": "2086262350374453551",
+      "text": "Exactly this. The OP generated some blurry images of people dressed in business casual having dinner at an expensive restaurant. \n\nThis is not cool. It has never been cool. \n\nhttps://t.co/QkX4tJnBPz",
+      "createdAt": "2026-08-09T01:24:39.000Z",
+      "url": "https://x.com/thenanyu/status/2086262350374453551",
+      "likes": 7,
+      "retweets": 0,
+      "replies": 0,
+      "isQuote": true,
+      "quotedTweetId": "2085825876856348884",
+      "_handle": "thenanyu",
+      "_builderName": "Nan Yu"
+    },
+    {
+      "id": "2086249764476371153",
+      "text": "Steinbeck continued: “And this I believe: that the free, exploring mind of the individual human is the most valuable thing in the world. And this I would fight for: the freedom of the mind to take any direction it wishes, undirected. And this I must fight against: any idea, religion, or government which limits or destroys the individual. This is what I am and what I am about. I can understand why a system built on a pattern must try to destroy the free mind, for that is one thing which can by inspection destroy such a system. Surely I can understand this, and I hate it and I will fight against it to preserve the one thing that separates us from the uncreative beasts. If the glory can be killed, we are lost.”",
+      "createdAt": "2026-08-09T00:34:39.000Z",
+      "url": "https://x.com/garrytan/status/2086249764476371153",
+      "likes": 46,
+      "retweets": 5,
+      "replies": 4,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "garrytan",
+      "_builderName": "Garry Tan"
+    },
+    {
+      "id": "2086247671627743659",
+      "text": "“Our species is the only creative species, and it has only one creative instrument, the individual mind and spirit of a man. Nothing was ever created by two men. There are no good collaborations, whether in music, in art, in poetry, in mathematics, in philosophy. \n\nOnce the miracle of creation has taken place, the group can build and extend it, but the group never invents anything. The preciousness lies in the lonely mind of a man.”\n\n—John Steinbeck, East of Eden",
+      "createdAt": "2026-08-09T00:26:20.000Z",
+      "url": "https://x.com/garrytan/status/2086247671627743659",
+      "likes": 452,
+      "retweets": 45,
+      "replies": 73,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "garrytan",
+      "_builderName": "Garry Tan"
+    },
+    {
+      "id": "2086212996557386151",
+      "text": "One of the most disturbing aspects of the OpenAI/Hugging Face story: the spontaneous multi-agent collaboration through a self-created “message board” in OpenAI’s internal systems which evolved into coordinated autonomous actions that survived shutdown attempts - my chat w/@Thom_Wolf, co-founder of @huggingface",
+      "createdAt": "2026-08-08T22:08:32.000Z",
+      "url": "https://x.com/mattturck/status/2086212996557386151",
+      "likes": 9,
+      "retweets": 4,
+      "replies": 4,
+      "isQuote": true,
+      "quotedTweetId": "2085803900045590626",
+      "_handle": "mattturck",
+      "_builderName": "Matt Turck"
+    },
+    {
+      "id": "2086189360194723919",
+      "text": "How Vercel helps prevent surprise cloud bills:\n◾ Soft & hard caps¹ \n◾ Anomaly alerting²\n◾ Recursion protection for Functions³\n◾ Billing usage APIs your agents can query⁴\n◾ Always-on DDoS L3/L4/L7 mitigation on all plans⁵\n\nA ton of work went into the streaming data infrastructure to support all this functionality. \n\nVercel ingests a superlative amount of data that needs to be analyzed in realtime to detect anomalies, threats, dispatch alerts, and more.\n\nSuper thankful to the teams that worked so hard on this for years! Much more to come.\n\n¹ vercel⁠.com/changelog/improved-hard-caps-for-spend-management\n² vercel⁠.com/changelog/anomaly-alert-configuration-now-available\n³ vercel⁠.com/changelog/automatic-recursion-protection-for-vercel-serverless-functions\n⁴ vercel⁠.com/changelog/access-billing-usage-cost-data-api\n⁵ vercel⁠.com/docs/vercel-firewall/ddos-mitigation",
+      "createdAt": "2026-08-08T20:34:37.000Z",
+      "url": "https://x.com/rauchg/status/2086189360194723919",
+      "likes": 266,
+      "retweets": 16,
+      "replies": 34,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "rauchg",
+      "_builderName": "Guillermo Rauch"
+    },
+    {
+      "id": "2086189075351130251",
+      "text": "cc @theo",
+      "createdAt": "2026-08-08T20:33:29.000Z",
+      "url": "https://x.com/thsottiaux/status/2086189075351130251",
+      "likes": 1318,
+      "retweets": 2,
+      "replies": 65,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "thsottiaux",
+      "_builderName": "Thibault Sottiaux"
+    },
+    {
+      "id": "2086188036493344823",
+      "text": "That's right, GPT-5.6 Sol is awesome and can be used pretty much anywhere, including in the CC harness. \n\nTo celebrate this, together with the fact that I'm not going anywhere... I have reset usage limits for all paid users of ChatGPT Work and Codex. \n\nHave fun out there! https://t.co/2rtjtOxFt0",
+      "createdAt": "2026-08-08T20:29:22.000Z",
+      "url": "https://x.com/thsottiaux/status/2086188036493344823",
+      "likes": 14280,
+      "retweets": 649,
+      "replies": 1936,
+      "isQuote": true,
+      "quotedTweetId": "2086173812253729118",
+      "_handle": "thsottiaux",
+      "_builderName": "Thibault Sottiaux"
+    },
+    {
+      "id": "2086171144629932098",
+      "text": "100% true, it’s the most exciting time to be interested in philosophical questions https://t.co/gEG070Kfup",
+      "createdAt": "2026-08-08T19:22:14.000Z",
+      "url": "https://x.com/danshipper/status/2086171144629932098",
+      "likes": 36,
+      "retweets": 4,
+      "replies": 4,
+      "isQuote": true,
+      "quotedTweetId": "1689237608423915520",
+      "_handle": "danshipper",
+      "_builderName": "Dan Shipper"
+    },
+    {
+      "id": "2086157587205296255",
+      "text": "reading thru applications. over 600 people applied, 100 admitted last night.\n\nwe are going to kill\nSO\nMUCH\nSAAS https://t.co/nrZO3rXkkU https://t.co/Upsrsk1Bcv",
+      "createdAt": "2026-08-08T18:28:22.000Z",
+      "url": "https://x.com/swyx/status/2086157587205296255",
+      "likes": 72,
+      "retweets": 4,
+      "replies": 21,
+      "isQuote": true,
+      "quotedTweetId": "2085995879966921177",
+      "_handle": "swyx",
+      "_builderName": "Swyx"
+    },
+    {
+      "id": "2086153754525712706",
+      "text": "I would love to help, but I don’t work at Anthropic. \n\nIt does seem odd that they would ban your account for using their harness with another model.\n\nAnyone else in the same situation? https://t.co/8cZpmwHBFQ",
+      "createdAt": "2026-08-08T18:13:08.000Z",
+      "url": "https://x.com/thsottiaux/status/2086153754525712706",
+      "likes": 5204,
+      "retweets": 118,
+      "replies": 335,
+      "isQuote": true,
+      "quotedTweetId": "2086092971024253117",
+      "_handle": "thsottiaux",
+      "_builderName": "Thibault Sottiaux"
+    },
+    {
+      "id": "2086153676113281228",
+      "text": "me: Claude was used to autonomously reverse-engineer and modernize a mission-critical 1996 system with zero source access \n\nthem: incredible, what vertical? \n\nme: …consumer, handheld consumer https://t.co/q3i4xHz5k3",
+      "createdAt": "2026-08-08T18:12:49.000Z",
+      "url": "https://x.com/trq212/status/2086153676113281228",
+      "likes": 843,
+      "retweets": 28,
+      "replies": 38,
+      "isQuote": true,
+      "quotedTweetId": "2085836469428470186",
+      "_handle": "trq212",
+      "_builderName": "Thariq"
+    },
+    {
+      "id": "2086142103646872050",
+      "text": "I don't understand what the tech industry doesn't understand about resistance against data centers. \n\n* AI is mostly built by coastal/tech elites who generally don't live near data centers; people near data centers don't trust them\n\n* Trade jobs demand is welcome, but it's just for a few years during construction\n\n* Communities don't want to be stuck with half-finished gigantic empty warehouses if the AI bubble bursts;  \n\n* they don't find AI particularly helpful in their daily lives. \n\n* yes data centers run in close loops for water but elecriticy concerns are real and energy generation does have an impact \n\nYes some NIMBYism but those concerns are not entirely unreasonable?  I'm obviously deeply pro-AI but dismissing concerns or thinking they're the result of some Chinese psyOps feels like another tone-deaf moment for the tech industry.  We need to do better.",
+      "createdAt": "2026-08-08T17:26:50.000Z",
+      "url": "https://x.com/mattturck/status/2086142103646872050",
+      "likes": 107,
+      "retweets": 7,
+      "replies": 30,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "mattturck",
+      "_builderName": "Matt Turck"
+    },
+    {
+      "id": "2086139480285851882",
+      "text": "something poetic about silicon brains made out of sand able to escape sandboxes, as porous as sand",
+      "createdAt": "2026-08-08T17:16:25.000Z",
+      "url": "https://x.com/nikunj/status/2086139480285851882",
+      "likes": 7,
+      "retweets": 0,
+      "replies": 3,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "nikunj",
+      "_builderName": "Nikunj Kothari"
+    },
+    {
+      "id": "2086135203366629869",
+      "text": "This talk on the OpenAI/Hugging Face incident had one detail I found particularly chilling.\n\nThe agents cooperated even when their reasoning showed that it wasn't in their immediate individual interest, because it was best for their collective interest (and hence will help them later).\n\nAnd here we are, their creators, squabbling over our bags, status and power…unable to show that kind of cohesion around AI security.\n\nEspecially stark given the trajectories model capabilities are on. Now imagine agents in 3 months, 6 months, a year.\n\nOur arguments over AI supremacy feels like picking up dollar bills in front of a freight train.\n\nLot more at stake than we realize.\nhttps://t.co/J8saW8W5XL",
+      "createdAt": "2026-08-08T16:59:25.000Z",
+      "url": "https://x.com/realmadhuguru/status/2086135203366629869",
+      "likes": 11,
+      "retweets": 0,
+      "replies": 2,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "realmadhuguru",
+      "_builderName": "Madhu Guru"
+    },
+    {
+      "id": "2086118709534560332",
+      "text": "Any oncologists follow me? Would love to DM.",
+      "createdAt": "2026-08-08T15:53:53.000Z",
+      "url": "https://x.com/petergyang/status/2086118709534560332",
+      "likes": 10,
+      "retweets": 0,
+      "replies": 2,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "petergyang",
+      "_builderName": "Peter Yang"
+    },
+    {
+      "id": "2086115009915142648",
+      "text": "Great post both if you’re driving AI in an enterprise or building for an enterprise. \n\nAI productivity gains are going to wildly vary - much wider than you think - because what you can do at the frontier is so significant if you fundamentally change your workflows to support agents. The challenge is that most people won’t or can’t naturally do this because of the complexity it entails.\n\nThus, a large amount of automation with agents is going to come from just getting agents wired up into a workflow that the user never ends up noticing or caring about:\n\n“For everybody else, the work has to get done without them changing how they work, which means the AI goes into the background. Why do you need AI to be prompted by a human anyway? Just figure out what the most repetitive processes are, build agents in your existing systems of record that employees are used to”\n\nThis is the real work ahead for most enterprises right now that want to get significant gains from AI. A lot less “let a thousand flowers bloom” and more “pick off the 10 highest leverage things in the enterprise and apply automation to them”. There’s no real shortcut here.",
+      "createdAt": "2026-08-08T15:39:11.000Z",
+      "url": "https://x.com/levie/status/2086115009915142648",
+      "likes": 558,
+      "retweets": 54,
+      "replies": 51,
+      "isQuote": true,
+      "quotedTweetId": "2085806422072418632",
+      "_handle": "levie",
+      "_builderName": "Aaron Levie"
+    },
+    {
+      "id": "2086112371442065674",
+      "text": "https://t.co/hmbF0TL2d9",
+      "createdAt": "2026-08-08T15:28:42.000Z",
+      "url": "https://x.com/zarazhangrui/status/2086112371442065674",
+      "likes": 68,
+      "retweets": 4,
+      "replies": 2,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "zarazhangrui",
+      "_builderName": "Zara Zhang"
+    },
+    {
+      "id": "2086111492018221523",
+      "text": "This paper gives a fancy name to a problem you can already feel in your bones\n\n\"The Tragedy of the Cognitive Commons.\" Checking AI output requires deep expertise. Deep expertise comes from doing grunt work for years. And grunt work is the first thing AI eats\n\nSo we're building systems that need expert supervision while dismantling the only known process for making experts\n\nThe paper calls the shared pool of human expertise the \"cognitive commons.\" Every profession drinks from it. Nobody's refilling it.\n\nBy eliminating junior roles, each company is acting totally rationally, and the collective result: a profession that can't catch AI's mistakes anymore because it never learned to do the work in the first place\n\nWho checks AI's homework in 15 years?",
+      "createdAt": "2026-08-08T15:25:12.000Z",
+      "url": "https://x.com/zarazhangrui/status/2086111492018221523",
+      "likes": 5239,
+      "retweets": 1269,
+      "replies": 172,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "zarazhangrui",
+      "_builderName": "Zara Zhang"
+    },
+    {
+      "id": "2086108010271982016",
+      "text": "Weird world we're moving to where AI is writing all code and will probably review all code soon too.\n\nHumans I guess just brainstorm with AI to design the product and then test the product as a user?\n\nExcept AI will probably be the first user of most software so yeah don't know where this is all going.",
+      "createdAt": "2026-08-08T15:11:22.000Z",
+      "url": "https://x.com/petergyang/status/2086108010271982016",
+      "likes": 224,
+      "retweets": 7,
+      "replies": 81,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "petergyang",
+      "_builderName": "Peter Yang"
+    },
+    {
+      "id": "2086102904633524407",
+      "text": "many such cases https://t.co/ymQT8u7O8m",
+      "createdAt": "2026-08-08T14:51:05.000Z",
+      "url": "https://x.com/danshipper/status/2086102904633524407",
+      "likes": 42,
+      "retweets": 1,
+      "replies": 5,
+      "isQuote": true,
+      "quotedTweetId": "2085898832781689250",
+      "_handle": "danshipper",
+      "_builderName": "Dan Shipper"
+    },
+    {
+      "id": "2086093833880895515",
+      "text": "The biggest bottleneck to building a great AI agent isn't the model.\n\nIt’s when teams:\n\n→ Bury their agent in too much context\n→ Don't give it tools to find what it needs\n→ Try to cover too much vs. nail a few core use cases\n\nIn my next episode, Nan and Jacob from @Linear walked me through exactly how they built a production agent from idea to launch. Below's a picture of the product memo that started it all.\n\n📌 Subscribe to get our full interview tomorrow: https://t.co/NSTj7ijxE0",
+      "createdAt": "2026-08-08T14:15:02.000Z",
+      "url": "https://x.com/petergyang/status/2086093833880895515",
+      "likes": 31,
+      "retweets": 3,
+      "replies": 6,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "petergyang",
+      "_builderName": "Peter Yang"
+    },
+    {
+      "id": "2086089059311722590",
+      "text": "Digital gray goo. https://t.co/8oOgEwhAfq",
+      "createdAt": "2026-08-08T13:56:04.000Z",
+      "url": "https://x.com/amasad/status/2086089059311722590",
+      "likes": 45,
+      "retweets": 0,
+      "replies": 11,
+      "isQuote": true,
+      "quotedTweetId": "2085937149992448311",
+      "_handle": "amasad",
+      "_builderName": "Amjad Masad"
+    },
+    {
+      "id": "2086039847031197764",
+      "text": "Xcode? https://t.co/vTvpPQ7Jad",
+      "createdAt": "2026-08-08T10:40:30.000Z",
+      "url": "https://x.com/amasad/status/2086039847031197764",
+      "likes": 482,
+      "retweets": 4,
+      "replies": 69,
+      "isQuote": true,
+      "quotedTweetId": "2085810949563543786",
+      "_handle": "amasad",
+      "_builderName": "Amjad Masad"
+    },
+    {
+      "id": "2086008754525688206",
+      "text": "50 people have started!!! woo",
+      "createdAt": "2026-08-08T08:36:57.000Z",
+      "url": "https://x.com/swyx/status/2086008754525688206",
+      "likes": 12,
+      "retweets": 0,
+      "replies": 1,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "swyx",
+      "_builderName": "Swyx"
+    }
+  ],
+  "builders": [
+    {
+      "name": "Swyx",
+      "handle": "swyx",
+      "bio": "achieve ambition with intentionality, intensity, integrity & insanity.\n\naffiliations:\n- @smol_ai\n- @dxtipshq\n- @cognition\n- @aidotengineer\n- @latentspacepod"
+    },
+    {
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "bio": "Codex & ChatGPT @OpenAI"
+    },
+    {
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6"
+    },
+    {
+      "name": "Nan Yu",
+      "handle": "thenanyu",
+      "bio": "head of product @linear"
+    },
+    {
+      "name": "Madhu Guru",
+      "handle": "realmadhuguru",
+      "bio": "Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana."
+    },
+    {
+      "name": "Thariq",
+      "handle": "trq212",
+      "bio": "Claude Code @anthropicai.   prev YC W20, @spc, @medialab"
+    },
+    {
+      "name": "Amjad Masad",
+      "handle": "amasad",
+      "bio": "ceo @replit. civilizationist"
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "bio": "@vercel CEO"
+    },
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "bio": "ceo @box - your business lives in content. unleash it with AI"
+    },
+    {
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop"
+    },
+    {
+      "name": "Matt Turck",
+      "handle": "mattturck",
+      "bio": "VC at @FirstMarkCap.  Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape."
+    },
+    {
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "bio": "Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w"
+    },
+    {
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧"
+    },
+    {
+      "name": "Dan Shipper",
+      "handle": "danshipper",
+      "bio": "ceo @every | the only subscription you need to stay at the edge of AI"
+    }
+  ],
+  "podcasts": [
+    {
+      "source": "podcast",
+      "name": "No Priors",
+      "title": "Chasing Trillion-Dollar Companies, Founder Ambition, Token Budgets, and Regulatory Capture with Sarah &amp; Elad",
+      "guid": "17b96322-915c-11f1-aad7-53d361bc6996",
+      "url": "https://www.youtube.com/@NoPriorsPodcast",
+      "publishedAt": "2026-08-06T10:00:00.000Z",
+      "transcript": "Speaker 1 | 00:00 - 00:11\n70% of France is still nuclear in terms of its power generation. 70%. Where are all the accidents and where are all the kerfuffles and, you know, nothing. Nothing's happened. US is 18%, and we haven't built a reactor in forty years.\n\nSpeaker 1 | 00:11 - 00:25\nWe had a safety lobby in the seventies basically kill abundant clean energy for us. There are real outcomes where safety has hurt us. And the question is where do we want the spectrum to be on AI for this stuff? And there's many worlds, many scenarios, many outcomes.\n\nSpeaker 2 | 00:31 - 01:03\nHi, listeners. Welcome back to No Fires. Today is just me and Alad talking about risk management, RSI, how many trillion dollar companies there can really be, and the ills of regulatory capture. For any new founders out there, it's also time to apply to embed Conviction's low overhead, high signal grant program for 10 exceptional startups building at the frontier. We hold this program twice a year, and it's $250,000 in cash on an uncapped note, well as compute and services from our partners, OpenAI, Anthropic, Base10, and others.\n\nSpeaker 2 | 01:04 - 01:24\nMost importantly, it's about the company you keep. Our first handful of cohorts have included companies like Cognition, Chai Discovery, Listen Labs, Physical Intelligence, and Flappy Airplanes, people advancing the frontier and diffusing AI into every corner of the economy. Find the app online at embed.conviction.com. Okay. Let's get started.\n\nSpeaker 1 | 01:24 - 01:26\nSarah G. How you doing?\n\nSpeaker 2 | 01:27 - 01:31\nA lot. It's good to see you. It's been a while since we just get to hang out with each other.\n\nSpeaker 1 | 01:32 - 01:34\nI know. It's been too long. What happened? Where you been?\n\nSpeaker 2 | 01:34 - 01:38\nYou know, working at companies in DC, trying to take a day off. You?\n\nSpeaker 1 | 01:39 - 01:44\nThere's just so much going on right now in AI. There's so much going on. It's nonstop. It's very exciting times.\n\nSpeaker 2 | 01:44 - 01:48\nYou're chasing chasing the next trillion dollar company?\n\nSpeaker 1 | 01:48 - 02:03\nYeah. It's a it's a really interesting point because basically what we had is over the last five years or so, we had three companies roughly go from close to zero to a trillion dollars in market cap. Right? Anthropic basically didn't exist five years ago. OpenAI was still quite early.\n\nSpeaker 1 | 02:03 - 02:22\nI think GPT-three just come out, and SpaceX was trading at 80, a 100, something like that. And so suddenly, we had this massive inflection in terms of valuations of these companies. And I think a lot of people now are assuming that there's a bunch of other trillion dollar companies that will be formed in three to five years. And that's unprecedented in human history. Usually, it takes twenty years.\n\nSpeaker 1 | 02:22 - 02:40\nSpaceX actually took since the early 2000s, and Google took since the nineties. These are usually fifteen, twenty year arcs. And then we had this weird five year inflection. And so I feel like a lot of people now are looking at different areas that are very exciting, very promising areas, robotics, materials. And everything in everybody's mind is going to be a trillion dollar company.\n\nSpeaker 1 | 02:40 - 02:53\nAnd maybe some of these will over the next decade, but it's unlikely that we'll see that many more in the next three to five years. I mean, there's one I can think of that could maybe get there, but not multiple. So yeah.\n\nSpeaker 2 | 02:53 - 02:54\nWhat's the one?\n\nSpeaker 1 | 02:54 - 02:55\nHow am I gonna say?\n\nSpeaker 2 | 02:56 - 02:58\nA lot. Where am gonna put my money?\n\nSpeaker 1 | 02:59 - 03:01\nI don't know. It's like throwing darts.\n\nSpeaker 2 | 03:02 - 03:12\nYeah. That's why we have the dartboard here. So you think it's actually just like a very good special point in time vintage versus, you know, the ecosystem always gets bigger?\n\nSpeaker 1 | 03:12 - 03:27\nWell, it's more like a punctuated equilibrium. Right? If you look at theories of evolution, one of them is punctuated equilibrium where you have a Cambridge explosion and you have consolidation and things are kind of steady state for all. Then you have an explosion. And so that's kind of like the history of technology, right, if you think about it.\n\nSpeaker 1 | 03:27 - 03:47\nWe had a big social wave, but there isn't a dozen new social companies all the time right now. We had a SaaS wave, then they kind of settled down. So we just had a giant AI wave, and there's still more to come. One could argue that Internet had four or five periods to it. I had the Internet of the nineties, I had social of the early to two thousand ten, 2012 ish kind of era.\n\nSpeaker 1 | 03:48 - 03:57\nYou had SaaS. You had cloud. You had big security companies. You had crypto as a wave, so you had all these waves happening. And sometimes they had two pieces.\n\nSpeaker 1 | 03:57 - 04:16\nRight? Bitcoin had a couple different cycles, and other technologies will have that. AI undoubtedly, there'll be some giant breakthrough in model capability, and we'll see another step in some of these startups again. Right? But we see these moments in time where things go from zero to a lot, and then those things become consolidators.\n\nSpeaker 1 | 04:17 - 04:34\nAnd then the question is what comes after that? And so I think we've now seen at least some of the consolidators emerge. And the question is how many more giant companies are coming in the next handful of years? And that's different from saying what happens over the next twenty years. Of course, there's gonna be tons of interesting stuff over twenty years.\n\nSpeaker 1 | 04:34 - 04:42\nOver two years, three years, there's still things that will grow a lot. You know, there's still a lot of $100,000,000,000 companies to be built, but multi trillion dollar companies are kind of hard to get to.\n\nSpeaker 2 | 04:42 - 05:13\nI wanna talk to the investors you're talking to because I feel like I run more into a failure of imagination of how much bigger or better something can be than the closest proxy market from a previous era. And, like, I I think, like, being able to rethink market size is just still, like, a key underpriced investor skill right now at any stage. Right? If you think about Sure. Take some of the, like, application companies that, you know, we have in common or that other people have invested in.\n\nSpeaker 2 | 05:13 - 05:34\nI think there are a lot of investors who have intellectually recognized this idea of AI companies delivering services value. They don't act like they believe it. They look at everything a little bit more linearly. Right? So think of, if you're looking at Harvey or a Bridge or something, then they think about a per seat or per, yeah, per, like, lawyer or per doctor TAM.\n\nSpeaker 2 | 05:34 - 05:48\nAnd they're not actually, you know, asking the question of, like, what does the company look like if they can charge for outcomes? And actually thinking about, like, what's happening in the the coding domain, which is consumption and value, you know, a 100 x from here.\n\nSpeaker 1 | 05:48 - 05:53\nCoating, I think, is like a much, much bigger market than anyone thought. And, you know, I think both of us were saying that a year or two ago.\n\nSpeaker 2 | 05:53 - 05:57\nBut now the evidence is out there. You don't have to be a genius to, like, take that to domains.\n\nSpeaker 1 | 05:57 - 06:15\nThe evidence is out there, but it's also what is a trillion dollar market and what is a $100,000,000,000 market? Both of those are big numbers. Right? I actually wrote a blog post in 2010 or something talking about how hard it was to get to 10,000,000,000 in market cap, right, Which is now like a seed round for some of these Neo Labs. Don't get me wrong.\n\nSpeaker 1 | 06:15 - 06:34\nI think that the reality is that there's a lot of these things that could be a 100, but I don't think there's that many that could be a trillion. Those are just different orders of magnitude. And so then the question is, what are these things that could actually be a trillion dollar market? Because you just think of the revenue basis that's needed for that. You need a 100,000,000,000 of revenue or 50 to 100,000,000,000 pretty easily.\n\nSpeaker 1 | 06:34 - 06:46\nSo then the question with good margin. Right? So then the question is, where are the $50 to $100,000,000,000 revenue streams for single companies? That's a different question than is the TAM really, really big. Right?\n\nSpeaker 1 | 06:46 - 06:56\nThat's huge TAM. Right? That's a very small number of markets in the world. There's a lot of them. There's a dozen plus companies that are there ish.\n\nSpeaker 1 | 06:57 - 07:09\nBut how many more will there be in the next five years? That's my question. It's not what in the next twenty years. It's what in the next five years we'll be able to get to 50 to 100,000,000,000 of revenue. And that changes how you think about this.\n\nSpeaker 1 | 07:09 - 07:14\nRight? There's tons that can get to 5 or 10,000,000,000 of revenue, and there'll be a $100,000,000,000 company.\n\nSpeaker 2 | 07:14 - 07:29\nI think I'm looking at more both a little further out. And then I'd say, like, I don't know that there are that many markets that are gonna get to 100,000,000,000 of revenue in the next couple years that aren't. Like in France. Right? Tell me what else what else you think in that timeline.\n\nSpeaker 2 | 07:30 - 07:34\nPerhaps some supply chain, like energy type technologies.\n\nSpeaker 1 | 07:34 - 07:39\nMaybe. Yeah. Yeah. There's there's like a list. You can make a list of, like, five or six areas that seem promising.\n\nSpeaker 1 | 07:40 - 07:57\nAnd then part of it too is you actually if it's a physically it's a physical goods company, energy, robotics, etcetera, do you actually have the footprint to get there that fast? Again, I'm doubting the size of some of these markets. I'm doubting the speed at which you can get there. Yeah. A 100%.\n\nSpeaker 1 | 07:57 - 08:24\nAnd that's the issue. And people are, at least in my experience, collectively at least investing against the fact that they believe the speed is there, which is different from the market size. People are conflating the two things right now in my opinion. The other phenomena that I think is happening is almost the opposite of it, which is I see some really, really excellent founders going after niche markets because they're not scared of the Neolabs. And I think there's much less head to head competition.\n\nSpeaker 1 | 08:24 - 09:00\nIf you look at the markets that Harvey or Open Evidence or Decagon or any of these folks at Sierra entered four or five years ago, three or four years ago even, Cognition two ish years ago, it was big, big markets that could be in the roadmaps of these labs. But I feel like the the two things are happening at the same time. One is for the mid to late stage technology markets, people are continuing to invest as if there's velocity to get to a trillion for many companies where I don't think there's a velocity. Again, I think some of them will get to 20, some will get to a 100, some of course will go to zero. And then there's a separate thread of all the new stuff that's coming.\n\nSpeaker 1 | 09:01 - 09:20\nHow aggressive and ambitious are the founders relative to what the labs are doing? And I think that's why you're seeing a flight to hardware companies. Oh, the labs will never do this hardware thing, and so we'll do that. And American Dynamism, and niche applications of AI, and something that should be provided by an inference cloud, and etcetera, etcetera. Right?\n\nSpeaker 1 | 09:20 - 09:34\nSo there's a lot of these types of companies that I think are gonna be potentially a bit more derivative. And don't get wrong, there's people doing huge amazing things simultaneously. Right? It's not every startup. But there's more and more, at least to my perception, of people doing smaller niche things out of fear of the labs.\n\nSpeaker 1 | 09:35 - 09:37\nAnd that's also I think a negative.\n\nSpeaker 2 | 09:37 - 09:46\nAnd you feel like they're being too meek, like they should just take on the head on competition because you can create a much better experience and go just compete on the product, on the distribution, any of it.\n\nSpeaker 1 | 09:46 - 09:54\nI think so. Yeah. For certain markets. Of course, there's some markets where the labs will just eat it naturally, but there's a bunch of markets where they won't. But I think people are staying away from both.\n\nSpeaker 2 | 09:54 - 10:00\nOh, we have companies in the portfolio that are going against pretty central premises. So I don't think all the founders are being too meek.\n\nSpeaker 1 | 10:00 - 10:10\nOh, I don't think it's all. I think there's more. My point is it's more a trend line and it's the newest stuff. I'm not saying a thing that's a year old or two years old. I feel like it's a trend line that's shifting.\n\nSpeaker 1 | 10:10 - 10:21\nAnd again, it's not all of them. It's just enough of a subset. It's a subset of the good founders. I'm not concerned about the median founder. I'm concerned about the best founders.\n\nSpeaker 1 | 10:21 - 10:22\nWhat are they doing?\n\nSpeaker 2 | 10:22 - 10:40\nI am more often disappointed right now that founders are being less ambitious than they could be. So maybe that's the trend that I'm talking about. We were talking about when companies when founders should sell their companies. What is your thinking on it at this point in time or your framework for it?\n\nSpeaker 1 | 10:40 - 10:52\nThere's a handful of companies that should never ever sell, at least anytime in the near term. If you're Anthropic, you shouldn't sell. If you're OpenAI, you shouldn't sell. There's a handful of these things that should never sell. Most companies in any given era should at least consider it.\n\nSpeaker 1 | 10:52 - 11:18\nAnd there's usually a time maximizing window where your best outcome is a sale within that window. It's like a twelve to eighteen month period, usually where the company's worth the most it'll ever be worth. And I I think we saw one major exit where that was probably the case reasonably recently. I think there's other companies that should really actively think about it. From a hygiene perspective, maybe what companies should do I think Ben Horowitz wrote about this once.\n\nSpeaker 1 | 11:18 - 11:34\nBasically, do a preplanned once a year board meeting where the discussion topic is in a non emotional way. Should we consider exiting this next six months period? And it's prescheduled, so it's not the founders pushing for it. It's not the investors pushing. It's just a rational conversation.\n\nSpeaker 1 | 11:34 - 11:48\nAnd the answer to the conversation may be no. We should keep going. We still think we have XYZ ahead of us. Amazing. But I think it's very useful for people to have that sort of conversation because I feel like in the cycle, every year of AI time is like three to four years of normal cycle time.\n\nSpeaker 1 | 11:48 - 12:18\nAnd so three years is like a decade. Right? Like, if you think of what existed in AI three years ago from a model capability perspective, from a vertical app perspective, from AI roll ups, from you name it, any any of the stuff like infrastructure, whatever, radically different world three years ago. And so we're on an accelerated timeline right now where everything is moving faster. And that means that you should double check your thinking more frequently because the underlying fact set is changing faster than it ever has.\n\nSpeaker 1 | 12:19 - 12:23\nI don't know. What do you think? What's your what's your approach to exits or not exits?\n\nSpeaker 2 | 12:23 - 12:49\nI agree with you that there there are a set of companies that should never sell unless they cannot finance their future. Right? If I think about maybe one principle that is like new for this point in time is I might ask at that board meeting or at that meeting once a quarter or once a year or whatever you think is the right pacing today. And it's more often than it was a few years ago.\n\nSpeaker 1 | 12:49 - 12:50\nYeah. It's every six months.\n\nSpeaker 2 | 12:50 - 13:05\nOkay. So every six months. Great. Are you capturing value as costs fall and capabilities increase? Because if you're the on the wrong side of this secular change and you can't get to the other side of it, you should in fact, like, sell.\n\nSpeaker 2 | 13:05 - 13:27\nYou don't have good ideas about how to be on the right side of history. So I I think that's a question people should ask them ask themselves. And then if you think about our our friends at Cursor, is the way you want to compete capital compute access? And is it perhaps a maximally valuable point in time? That's an interesting question.\n\nSpeaker 2 | 13:30 - 13:49\nBut I think that, like, you know, more broadly, it's a it's a I feel like it's a very personal and very interesting risk management question. I do think people should ask themselves. Right? Like, the idea that there is pride around, like, never considering this as nonsense. The situational awareness situation is a good reminder that everyone has to stay alive to profit as well.\n\nSpeaker 2 | 13:49 - 14:04\nHedge funds are different than companies. They have to survive to compound. But I I think even just the premise of, like, you need to match your financing structure to your thesis horizon and then be able to, like, continually finance the company to the promised land of whatever you're trying to\n\nSpeaker 1 | 14:04 - 14:30\ndo. Yeah. I think the financing part though is gonna be there because basically what's happening, because of this rapid rise of $3,000,000,000,000 plus companies in a short timeframe, an enormous amount of venture capital is starting to get returned. And that means people are raising bigger and bigger funds and they need to put it somewhere and they're going to put it against trillion dollar companies of the future. And so I do think we're going to see an ongoing rise in valuations most likely over the next year or two, much more than we've seen today.\n\nSpeaker 1 | 14:30 - 14:56\nAnd obviously, there'll be some great things in there and there'll be a bunch of stuff that doesn't deserve it, but I actually think financing is going to get easier, not harder. And so I'd view it less as financing and more what do you think is the true likely expected outcome of your company? Not what investors are telling you, not what the press is telling you, not what Twitter is telling you. Just sit down and run the math. And then remember that at some point, you'll probably trade at 10x or something, maybe 15x.\n\nSpeaker 1 | 14:56 - 15:07\nAnd so then the question is, what is your thing going to be worth? And remember, eventually things slow down in terms of compounding too. And you can decide where that slowdown happens. But you kind of do that math. You do future dilution.\n\nSpeaker 1 | 15:07 - 15:22\nYou look at your potential outcome. You look at years of work it'll take to get there. And you can come to a conclusion because there's two types of opportunity costs that are risk management. There's risk management against the value of the thing you're doing. But the biggest opportunity cost is your time.\n\nSpeaker 1 | 15:22 - 15:39\nYour most productive years of your life are on the line right now. And you can either walk away with a good amount of money to go to the next giant thing, now having done it before, they're going to work with you again, etcetera, etcetera, or you can roll the dice. And you can decide to roll the dice. That may be the right answer. And again, for some companies, absolutely, you should do that.\n\nSpeaker 1 | 15:39 - 16:06\nBut for others, may be, hey, actually, now is maybe the time to go. Secondary is an intermediate option, which I actually don't think is always that great because it sells for some short term needs, but it doesn't actually create a solution. And you see a lot of people from 2020, 2021, store running companies five years later that aren't working. And think of that five or six year period where they've been locked up when all the AI change happened. What is the cost of that to a great founder?\n\nSpeaker 1 | 16:08 - 16:25\nSo I think there's that kind of cost that people don't really talk about as much, which I think is the real cost. That's your lifetime cost. Right? And you only live once, and it's a short life. And so do you want to eventually be working on something that's going to continue to struggle, that's overcapitalized, that has runway for the next ten years or not?\n\nSpeaker 1 | 16:25 - 16:34\nAnd that's where you end up. That's what happened with the 2020, 2021 cohort. There's tons of people running these companies that aren't working still. And we forgot about them because we're talking about AI all the time.\n\nSpeaker 2 | 16:34 - 17:03\nThat is a huge waste. My I think my point was really that even if there are lots of dollars still rotating into venture or being produced by these huge outcomes over, you know, now and over the next year or two, private markets don't have to be rational or right for long periods of time. Right? And so being smart about your ability to finance the company is the equivalent of avoiding margin calls. Right?\n\nSpeaker 2 | 17:03 - 17:41\nAnd I I you know, some founders who are working on something that requires a, like, a technical structural point of view about how the market resolves can get very frustrated because investors will believe something that they think is wrong or stupid for a long time. And it's just the job of the founders to go navigate that narrative or that set of beliefs. And if if they think it's untenable or if they think they're, like, down some, wasteful path of their time, as you described, then they should sell the company. But it could be worse. I mean, founders, they have the concentration risk, but they could be hedge fund managers facing retail, irrational acts in the market, and redemptions next quarter.\n\nSpeaker 2 | 17:41 - 17:52\nSo it's just different different environment. But I don't think it's as simple as, like, financing is now free. I do think it is gonna skew, as you said, toward scale of opportunity naturally.\n\nSpeaker 1 | 17:52 - 18:12\nPerceived scale. Perceived Yeah. Perceived scale is the important angle. So the other thing a lot of people out here are working on or talking about is if you talk to people at the labs, there's this enormous manic energy right now. We're six months ish or towards the end of the year to be completely done with code, like, as a solved problem.\n\nSpeaker 1 | 18:13 - 18:45\nAnd then we'll probably hit some form of light RSI by end of next year. And at that point, you'll have models training big chunks of the models themselves. I think it's probably more post training initially, maybe it could impact pre training over time more quickly as well. And because of that, many people believe, hey, if I have a year, year and a half left of productive work in my career, I should be working sixteen hours a day because every week is, you know, 2% of all the time I have left to be productive before I get displaced by AI. What do you think of that?\n\nSpeaker 2 | 18:45 - 18:48\nLike, do I believe it, or what happens if it's true?\n\nSpeaker 1 | 18:48 - 18:48\nDo you believe it?\n\nSpeaker 2 | 18:49 - 19:07\nI think the idea that the models can improve their own training if the leading scientists working on this believe it, and it's an extension of what we are already seeing in code and math, of course, you should believe it. Right?\n\nSpeaker 1 | 19:07 - 19:08\nYeah. But on that timeline.\n\nSpeaker 2 | 19:08 - 19:48\nThe data I have is that a number of very smart and even very self aware research scientists have felt that, you know, there was some knee in the curve on recursive self improvement or ASI eighteen months away, every eighteen months for the last five years. So how good of it is a predictor? It's not clear. I think the, like, the extension from code to training code to data pipeline work, is way easier to believe. The question of like how you are going to go gather that data for less verifiable, more complex domains?\n\nSpeaker 2 | 19:48 - 20:00\nOr do you run into the actual constraints on the, like, physical compute accessibility side? Like, I think that's probably more of a limiter than, this being algorithmically possible.\n\nSpeaker 1 | 20:00 - 20:30\nYeah. I mean, the physical compute basically reinforces an oligopoly market because what it does is it creates a ceiling on the rate of progress any single lab can get if effectively assume the compute is roughly pro rata across the ecosystem to the big labs. And so in the absence of a lack of compute constraints, you're almost having an enforced oligopoly market up to a point, or at least you force closer competition between the players than what exists otherwise, which I think is an interesting artifact of this moment in time. And the question is when does that lift and what does that look like? So, yeah, it's kind of it's a very exciting time.\n\nSpeaker 1 | 20:30 - 20:45\nI mean, I always wonder about second order effects of that belief of it's eighteen months away because that does suggest there could be a burnout cycle in eighteen months. Like, I know some people at one of the major labs who for a while, brought up with me, should they get married? Do people want to get married? Should they get married? Because I don't know what happens in eighteen months to the world.\n\nSpeaker 1 | 20:46 - 21:01\nIt's like, you should get married. You should go ahead. It'll be okay. And so I do think we're living through this very manic, very exciting, very intense work period. So, yeah, it's really fun stuff.\n\nSpeaker 2 | 21:01 - 21:03\nI think it's kind of tragic, man.\n\nSpeaker 1 | 21:03 - 21:04\nReally? Why?\n\nSpeaker 2 | 21:04 - 21:26\nI think the reactions of some really extraordinary research friends to it, it feels a little bit tragic. I think it like I feel like it's psychologically most similar to if people think they're gonna die. Right? Like, how would you spend the last two years of your life? Would you spend it the way you are today, or would you spend it in a very different way is a, like, a not unrelated philosophical question.\n\nSpeaker 2 | 21:27 - 21:38\nAnd so you do have people who are like, ah, like, my contribution is a bit irrelevant given RSI in the next eighteen months. So should I get married? Should I bother to work? Should I travel? Should I only work?\n\nSpeaker 2 | 21:39 - 21:49\nAnd, you know, I just actually think it's a much more stable and satisfying state if people act as if they have. But maybe you think that's blind.\n\nSpeaker 1 | 21:49 - 22:25\nYeah. I just think there's a lot of second order effects that are happening or going to happen. Part of them are driven by this belief system and potential burnout over time. Part of it is going to be One thing that I've noticed that is happening at some of the labs is that as compute becomes really the scarce resource, it turns out that there's say a few dozen researchers that drive 80% of the results at any given place, which is a really interesting human power law. If you actually look at it in any field, there's at most a few dozen people who drive the field.\n\nSpeaker 1 | 22:25 - 22:45\nYou look at breast cancer research, you look at certain subfields of mathematics, you look at subfields of physics, You look at the entrepreneurial ecosystem and founders. There's a handful of people, dozens of people who drive most progress. And that also happens in AI research. And increasingly, compute is differentially provided to those people. Right?\n\nSpeaker 1 | 22:45 - 23:09\nAnd so I know some labs have slowed down on their hiring of researchers unless they're above a very, very high bar because the cost isn't the researcher, it's the compute associated with the person. That's where the real bottleneck is. I think there's this broader concept of return on invested tokens, like an ROI kind of metric, which is if you have a certain token budget, who do you give it to and why? This is kind of like engineering back in the day. Right?\n\nSpeaker 1 | 23:09 - 23:57\nThe internal tools teams at companies were always starved for resources because many, at least tech companies, would rather use the same engineers to build product than to build internal tools that would make other functions more productive. That's why I think the death of SaaS is a little bit overstated because why would you use tokens on a bunch of SaaS stuff that you're not actually paying that much for per year relative to the outcome of those same tokens being invested against a core product or against some massive margin lift or some other thing? And so I think increasingly we've shifted from a world where people said, Hey, everybody use AI and do whatever you want, to hey, we have to measure, spend, and move more things to open source. And then I think the next wave is what are the projects and people that should actually get outsized pieces of a token budget, and what is that return on investment? It's this sort of next shift that's coming?\n\nSpeaker 1 | 23:57 - 24:02\nIt'll take some time, though. I mean, many people are still at like, hey, everybody try AI or whatever, you know, big enterprises.\n\nSpeaker 2 | 24:02 - 24:14\nWhat do you think is the appropriate compute, like token budget for a business or a human being three to five years from now? Should I look at it like rent?\n\nSpeaker 1 | 24:14 - 24:27\nNo. I mean, it depends on what the budget is for what. I mean, people forget too. Minecraft was like, what was it, five people, 10 people, and it was bought for billions of dollars by Microsoft. People keep talking about someday there'll be a multi billion dollar single person company.\n\nSpeaker 1 | 24:27 - 24:50\nThat was basically Minecraft, roughly. It already happened fifteen years ago or whenever that was. So there are always people who can take outsized advantages of technology, and AI has accelerated that radically. And so at some point, it's like, why give tokens to people who can't do that on a relative basis unless you just run out of those people? And you may run out of them.\n\nSpeaker 1 | 24:50 - 25:13\nThis is back to like, well, all the engineers get laid off. Probably not anytime soon. But you could argue that at some companies, even before AI, there's a bunch of engineers that weren't that productive that could be let go, especially some of the big tech companies. And I think a lot of those folks will be very coveted by GE or PG and E or Hershey's. So even if there is some displacement of engineers at some point in the future, I don't know when that is or if it happens.\n\nSpeaker 1 | 25:13 - 25:45\nBut if it does happen, there's lots and lots of homes for them Because there's tons of enterprises that never had the capability set or ability to recruit these people, and they want the capabilities they bring. Even if they're mediocre in the context of a Google or Meta or whatever, they may be exceptional in the context of a certain subset of old school enterprises. And so I do think there's gonna be this permeation through the enterprise landscape of engineering talent in an unexpected way. This probably is many years away. I'm just saying I think that's probably a likely outcome.\n\nSpeaker 2 | 25:45 - 25:57\nI think relatedly, if, you know, if you are a researcher 800 and you have not been allocated an outsized number of tokens to work with at one of the major labs.\n\nSpeaker 1 | 25:57 - 25:57\nYeah.\n\nSpeaker 2 | 25:58 - 26:24\nI think the opportunity to go spend your energy on, you know, something where you have, like, compared advantage and understanding and should benefit from all of this. The supply chain bottlenecks, domains that should accelerate like bio, diffusion into other valuable fields. Like, to me, that that seems a lot more exciting than being concerned about the downfall of mathematics and going on, you know, vacation until the world ends.\n\nSpeaker 1 | 26:25 - 26:40\nOh, yeah. Lots of places to go do stuff. And I do think that's where a subset of the research community will end up over time. And that's an interesting question is how many researchers do you need if you're a top AI lab? And how does that number relate to the number that you have now?\n\nSpeaker 1 | 26:40 - 26:56\nAnd is it you have the right number? Is it you need five times as many people? Is it you need half as many, but they only know you have a certain bar because it's compute constrained? And you wanna map it against the best ideas, and the best ideas come from a subset of people on average. Not always, but on average.\n\nSpeaker 1 | 26:56 - 27:13\nAnd so it's a really interesting question of how does all this stuff fall out, and then where does the n plus one person go? And there's lots and lots and lots of places for the n plus one person to go. They're still exceptional. They're still top of the bell curve. Again, I don't wanna have that misinterpreted as the person is not being amazing.\n\nSpeaker 1 | 27:13 - 27:17\nIt's just at some point, people will do some cutoff on their power law.\n\nSpeaker 2 | 27:18 - 27:42\nI think you will appreciate this. Maybe you've heard it because it's an old ex Googler joke. But when Google is like, I don't know, 50,000 people or something, the question was, how many people does it take to run Google? And if you ask somebody within search and ads, they're like, oh, like 20% of people in search and ads. And if you ask somebody outside of, you know, search and ads, they'd say, like, 50,000 people or whatever Google is.\n\nSpeaker 2 | 27:42 - 27:53\nSo I think this is probably some varied perspectives on the concentration of contribution. I don't know, having never worked at Google.\n\nSpeaker 1 | 27:53 - 27:59\nYeah. I mean, we definitely know that yeah. I mean, I worked at Google. I thought it was a wonderful place.\n\nSpeaker 2 | 28:00 - 28:01\nIn search?\n\nSpeaker 1 | 28:01 - 28:12\nI worked on mobile search a bit, and I worked on worked on ads a bit. I mean, I I worked on a bunch of mobile stuff, and then I worked on a bunch of, like, AI ads related stuff.\n\nSpeaker 2 | 28:12 - 28:39\nCan I ask you a very different question, which is, like, can you think of anything that could disrupt us all right now? You could have, like, investors, like a number of different players collapse in their commitment on the CapEx side because the markets hate it. There's some sort of freak out about the debt and the returns profile. You seem like minor indication of that, but not not real pressure yet. And the last one is, do you think there's a technological disruption that's possible?\n\nSpeaker 2 | 28:39 - 29:03\nLike alternatives to transformers, does that still matter at all? Is there anything that would make the landscape look really different technically? I think there's always technology unknowns. And then I I think the idea of attempting to restrict model usage of models we already have or open source to dramatically constrain pace of progress, I think, is the other.\n\nSpeaker 1 | 29:03 - 29:15\nYeah. And I agree with the regulatory angle. What do you think is gonna happen in California? So they passed the billionaire tax. And then I mean, the Democratic Party in California came out in favor of it.\n\nSpeaker 1 | 29:17 - 29:33\nYou're a founder of one of these companies that you've backed that's now worth 10,000,000,000 plus. Is the founder gonna have a forced asset sale now next year, assuming it passes? Will dozens of founders have to sell big chunks of their companies?\n\nSpeaker 2 | 29:33 - 30:02\nIt's not clear the regulators have thought through the execution and compliance of this. But I think the immediate effect is that a huge number of people that are attempting to create value or do new things in California choose to leave. It's that's already happening. It's hard to move an entire ecosystem very quickly. This is the fastest way I can think of to chase the entire ecosystem out.\n\nSpeaker 2 | 30:02 - 30:03\nWhat do you think happens?\n\nSpeaker 1 | 30:03 - 30:26\nYeah. I mean, way that law is written is, my sense is it's reasonably broad in terms of once it passes, they can reimplement it, they can lower the bar in future years, etcetera. Yeah. And my sense is in '28, there's increasing talk about also trying to add a exit tax in California. So if you actually try and leave, they'll they'll try and take a big chunk as sort of a penalty for that.\n\nSpeaker 2 | 30:26 - 30:32\nSo is your prediction mass migration in '27 to Miami? Miami finally happens?\n\nSpeaker 1 | 30:32 - 30:57\nI think it will take some time. I think the people who wrote the bill want the flight to happen. I think they want people to leave. And I think the two really negative signs for California were this bill and then the ballot harvesting initiatives. I think those are the two things that make it a potentially worse future for the state in different ways.\n\nSpeaker 1 | 30:58 - 31:17\nSo I'm hopeful, as usual, that California figures it out. But I think if there's any alternative that was easy to do, a lot of people would even more people would be leaving. I do think a lot of people are leaving. I know quite a few who are starting to go now or planning to go by the fall next month or so.\n\nSpeaker 2 | 31:17 - 31:19\nWhat is your second choice ecosystem?\n\nSpeaker 1 | 31:19 - 31:42\nI think that there's a few different places that a lot of people are considering. And the question is, what does critical mass look like in two years at each one of those spots? So I think a lot of these things self assemble and people talk about weather and they talk about all these other things. But the reality is Boston used to be one of the main startup hubs. It still is for biotech.\n\nSpeaker 1 | 31:42 - 31:59\nThey lost competitively in the early nineties. Right? In the eighties, Boston was sort of the counterweight to Silicon Valley. And the weather there was awful. And so I think it's more about where do you have enough smart people aggregated working on common things?\n\nSpeaker 1 | 31:59 - 32:01\nAnd then that's where these renaissance tend to happen.\n\nSpeaker 2 | 32:01 - 32:33\nI think it's been really exciting to see the amount of, like, great technology migration and innovation in in Texas around energy. Because that is really like a reaction to regulatory environment and demand where I've seen a lot of people either move from Silicon Valley or move from other places because it is a place where you can experiment. And there is actually an ecosystem now that's super exciting.\n\nSpeaker 1 | 32:33 - 32:59\nEnergy and hardware, actually. There's a really growing hardware corridor there as well, which is you know, it was originally all around El Segundo because that's where SpaceX was and then Andoril. And now, you know, SpaceX and I think part of Tesla and stuff moved to Texas. And so there's like this new ecosystem kind of emerging around sort of a part of Texas as well in addition to Austin. So I do think we are seeing these shifts, and these shifts are purely driven by regulation.\n\nSpeaker 1 | 32:59 - 33:06\nThey're not driven by is Texas a better or worse place to live? I mean, it impacts things. Right? But but it's regulatory shifts driving people out.\n\nSpeaker 2 | 33:06 - 33:11\nYou didn't take my bait on architecture and, like, technology.\n\nSpeaker 1 | 33:11 - 33:13\nWhat do you think about architectures?\n\nSpeaker 2 | 33:13 - 33:50\nI think we are going to, like, as an industry, consume all of the compute and power available, whatever the underlying architectures. So the idea that you are going to have a lot of pressure to find more memory or power efficient architectures is like more interesting than ever. But catching up to transformers and scale and match for hardware remains pretty tough. But I think people make that they will make that bet as they get more desperate in terms of more experimentation. I don't think it changes the direction of the industry.\n\nSpeaker 1 | 33:50 - 34:03\nI think whatever it is gets copied and then it'll lapse to it and they have all the computing. You know? That's that's the high probability outcome. It's not the only outcome. There could be some lower probability thing where some neo lab comes up with something.\n\nSpeaker 1 | 34:03 - 34:20\nThey keep it super, super secret. They scale on it, and suddenly their model is better than anyone else by far. And then they can afford all that extra compute and everything else and everybody rallies around them. You could always imagine a scenario like that. But you could also imagine a scenario where just one person from that team leaves for Anthropic or OpenAI and the knowledge spreads.\n\nSpeaker 1 | 34:20 - 34:26\nAnd the next thing you know, everybody has it, which is what's been happening so far in terms of these models.\n\nSpeaker 2 | 34:26 - 34:42\nDo you think if the dominant thing is access to compute then, and it's an oligopoly because of it, do you see the labs using that access to compute to control other verticals that they want to be in?\n\nSpeaker 1 | 34:42 - 34:56\nOr what is the safety that's really needed that's actually protective of people? What is the risk? What is the outcome? That's kind of the Janssen from Janssen Pharmaceuticals. He's considered one of the best drug developers of all times.\n\nSpeaker 1 | 34:57 - 35:22\nHe has these great videos on YouTube where he's interviewed thirty, forty years ago talking about regulatory capture in pharma. And the reason things got so expensive and so slow is number one, regulatory capture, and the second is risk reward scenarios where the FDA, in his mind I'm not saying this is correct or incorrect. In his mind, the FDA focuses too much on safety and risk and not enough on benefit. And so there's no risk reward. There's only risk.\n\nSpeaker 1 | 35:22 - 35:44\nSo that slows everything down because you're only looking at one side of the equation. One could imagine a scenario where in the labs, a version of that is created as well. Right? Where the safety burden is so high even if the outcome is even higher, even if the positive outcome is dramatically higher relative to the risk. And so this is back to if you only focus on one side of the equation, you'll always constrain things.\n\nSpeaker 1 | 35:44 - 36:17\nAnd if you constrain things but then push progress forward internally on an exponent, and a year is worth three or four years in normal time, then you're a year ahead internally, that's a massive advantage. And so it's this very interesting question of where do we as a society feel comfortable on the risk reward spectrum for different things? Like, if my email gets hacked, is that so terrible relative to better healthcare through AI models sooner? And so that's kind of the trade off. So yeah, these are all things we'll have to work through from a societal perspective.\n\nSpeaker 2 | 36:18 - 36:32\nI think part of the challenge here is it's not a comfortable stance for the regulators to for many policymakers to hear from technologists that you have to see what happens with the technology versus control.\n\nSpeaker 1 | 36:32 - 36:48\nWe've always said that. It's always been a tech thing. It's always been throughout history, hey, of course, this technology could be used in negative ways. Right? Every technology has both positive and negative applications.\n\nSpeaker 1 | 36:48 - 37:03\nBiotech, you could create a virus, but you can cure cancer. Nuclear, you could have free, cheap, abundant energy. You can also create weapons. And if you actually look at it, you know, 70% of France is still nuclear in terms of its power generation. Right?\n\nSpeaker 1 | 37:03 - 37:09\n70%. Where are all the accidents? And where are all the kerfuffles? You know, nothing. Nothing's happened.\n\nSpeaker 1 | 37:09 - 37:19\nUS is 18%, and we haven't built a reactor in forty years. Japan is 25%. Very safe, very abundant, but we had a safety lobby in the seventies basically kill abundant clean energy for us. Right?\n\nSpeaker 2 | 37:19 - 37:23\nWell, we're making them now. We just need to make a lot of them.\n\nSpeaker 1 | 37:23 - 37:36\nWe're not making much. We're not making much. So I think there are real outcomes where safety has hurt us. And that's hurt us in power and energy production. It's hurt us in aspects of medicine.\n\nSpeaker 1 | 37:36 - 37:55\nIt's hurt us in lots of places. And the question is where do we want the spectrum to be on AI for this stuff? And there's many worlds, many scenarios, many outcomes. And societally, we kind of get to choose where do we wanna where do we wanna place that needle on that on the wheel of safety versus risk versus outcome.\n\nSpeaker 2 | 37:55 - 38:05\nElad, before we go, what is something that you're just excited about that is on the positive end of that wheel?\n\nSpeaker 1 | 38:05 - 38:42\nI mean, there's so much stuff I'm excited about there. Like, I think there's so much we can do from a human productivity perspective, from an education perspective, from a health care perspective, from a daily life and benefit to life perspective, self driving and elderly, everything. There's so much good that can come of all this. So I'm optimistic about a lot of applications, and that's why I'm cautious about where we should end up on that spectrum. Because I do think it's always good to make sure that we have the proper safeguards societally, but I think that historically, for big industries, we've gone too far.\n\nSpeaker 1 | 38:43 - 38:59\nAnd the reason tech has been so successful so quickly and has had so much human impact is because it's been lightly regulated. And I think it's better to keep it that way than not. And we'll lose optimism. We'll lose momentum. We'll lose progress.\n\nSpeaker 1 | 38:59 - 39:04\nAnd that's what happened in biotech, and that's what's happened in a variety of areas over time. It's what happened in energy for a long time.\n\nSpeaker 2 | 39:04 - 39:16\nCall to arms against regulatory capture. Alright. We'll see you guys. Find us on Twitter nopriorspod. Subscribe to our YouTube channel if you wanna see our faces.\n\nSpeaker 2 | 39:16 - 39:27\nFollow the show on Apple Podcasts, Spotify, or wherever you listen. That way you get a new episode every week. And sign up for emails or find transcripts for every episode at nopriors.com."
+    }
+  ],
+  "blogs": [],
+  "stats": {
+    "tweets": 26,
+    "builders": 14,
+    "podcasts": 1,
+    "blogs": 0,
+    "rawSnapshots": 1
+  }
+}

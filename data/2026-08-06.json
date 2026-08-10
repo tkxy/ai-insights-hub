@@ -1,0 +1,148 @@
+{
+  "date": "2026-08-06",
+  "generated_at": "2026-08-10T08:48:00+08:00",
+  "daily_summary": "DeepSeek宣布计划近期整体上调API服务定价且'预计涨幅较大'，引发行业地震——距上次引入峰谷定价仅三周。当前V4-Flash单日调用量达8万亿Token，超过OpenRouter全平台日均规模。同日传出DeepSeek重启80亿美元融资（投前估值5000亿元）并入股宇树科技上海IPO。国产大模型免费时代正式终结：智谱累计提价83%调用量反增400%，阿里拟向Qwen大型商用户收取收益分成。OpenAI则逆向降价，GPT-5.6Luna降价80%抢占免费用户。可灵AI落地近30亿美元融资创全球视频大模型最大额纪录。",
+  "design_insights": [
+    {
+      "title": "大模型定价从'免费午餐'转向价值定价：设计需重新思考AI功能成本",
+      "summary": "DeepSeek大幅涨价+阿里拟向大户收费，标志国产大模型从补贴换量转向价值变现。输入法等下游应用的AI功能调用成本将显著上升。",
+      "implication": "输入法AI功能的成本模型需要重新核算。建议设计上做两件事：1）分层AI能力策略——高频低复杂度任务（联想补全）走端侧小模型，低频高复杂度任务（长文润色）才调用云端大模型；2）设计AI功能的'调用频次感知'，避免不必要的后台模型消耗。",
+      "sources": ["上海证券报", "华尔街见闻"],
+      "source_urls": ["https://finance.sina.cn/2026-08-06/detail-inimkwsx4534482.d.html"],
+      "tags": ["定价", "成本", "分层策略"]
+    },
+    {
+      "title": "AI视频赛道融资井喷：生成式内容进入规模化阶段",
+      "summary": "可灵AI、生数科技、爱诗科技、演语科技新增融资合计近300亿元；可灵AI单笔近30亿美元创全球视频大模型最大额纪录。",
+      "implication": "视频生成能力的成熟意味着输入法'表达辅助'可能需要突破文本边界——用户在社交场景不只需要文字润色，还需要快速生成表情包、短视频回复。输入法的'输出格式'可能需要从纯文本扩展到多模态。",
+      "sources": ["新华网"],
+      "source_urls": ["https://new.qq.com/rain/a/20260807A09UBA00"],
+      "tags": ["视频生成", "多模态", "融资"]
+    },
+    {
+      "title": "DeepSeek V4-Flash正式版Agent能力暴增7.5倍",
+      "summary": "V4-Flash-0731公测版通过后训练和Agent框架优化，DeepSWE得分从7.3升至54.4，TerminalBench达82.7，证明Agent能力提升不需要堆参数。",
+      "implication": "Agent能力不等于大参数模型的发现，对输入法AI功能设计是好消息。意味着可以用较小的模型（如V4-Flash的13B激活参数）实现复杂的Agent工作流，在成本可控的前提下为输入法加入多步骤任务执行能力。",
+      "sources": ["DeepSeek官方"],
+      "source_urls": ["https://finance.sina.cn/2026-08-06/detail-inimkwsx4534482.d.html"],
+      "tags": ["DeepSeek", "Agent", "效率"]
+    },
+    {
+      "title": "OpenAI逆势降价80%争夺免费用户：免费即入口",
+      "summary": "GPT-5.6 Luna输出价从6美元降至1.2美元/百万Token，免费用户获得无限文本聊天，新增Think按钮。",
+      "implication": "OpenAI的策略验证了'把AI能力免费化来抢日活'的逻辑。输入法AI功能也面临类似选择：是把AI能力作为付费卖点，还是作为免费基础体验来留住用户。建议基础AI能力（联想、纠错）免费化，高级能力（长文改写、风格转换）作为增值。",
+      "sources": ["OpenAI官方"],
+      "source_urls": ["https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt"],
+      "tags": ["OpenAI", "定价", "用户增长"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "AI功能成本敏感设计：分层调用策略",
+      "pain_point": "DeepSeek/阿里涨价后，输入法每次AI联想、每次润色都有成本。如果AI功能'默认开启全天候调用'，成本将不可控。",
+      "opportunity": "设计'智能调用阈值'——只在用户明确需要AI辅助时（如停顿超2秒、主动触发、特定场景）才调用大模型，其余时候走本地轻量模型。用户感知不到区别，但成本可降80%+。",
+      "priority": "P1",
+      "evidence": "DeepSeek V4-Flash单日8万亿Token调用量导致容量不足；涨价公告明确'预计涨幅较大'；智谱提价83%证明下游有付费意愿但需匹配价值。"
+    },
+    {
+      "title": "输入法AI功能的'免费vs付费'分层设计",
+      "pain_point": "OpenAI以降价80%争夺免费用户，竞品以免费AI功能为卖点。如果输入法AI功能全部付费化，用户可能流向免费竞品。",
+      "opportunity": "设计三层AI功能体系：L1基础层（联想、纠错、emoji推荐）完全免费走端侧；L2增强层（句子续写、语气调节）有限免费额度；L3专业层（长文改写、多语言翻译、风格迁移）付费订阅。",
+      "priority": "P1",
+      "evidence": "OpenAI将GPT-5.6 Luna免费开放给所有用户+无限文本聊天；豆包输入法以免费AI功能霸榜App Store。"
+    },
+    {
+      "title": "多模态输出能力需求：从文字到视频表达",
+      "pain_point": "社交场景中用户越来越多使用表情包、GIF、短视频回复，纯文字输入法的表达辅助局限于文本。",
+      "opportunity": "在AI视频生成成本快速下降的趋势下（可灵等融资300亿证明供给即将井喷），探索输入法内嵌'一句话生成表情包/动图'能力，从文字表达辅助扩展到多模态表达辅助。",
+      "priority": "P2",
+      "evidence": "可灵AI落地近30亿美元融资，AI视频生成成本快速下降；用户社交表达正从文字向多模态迁移。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "DeepSeek宣布将大幅上调API定价",
+      "summary": "8月6日官方公告'计划近期整体上调API服务定价，预计涨幅较大'，距引入峰谷定价仅三周，单日调用量已达8万亿Token。",
+      "source": "上海证券报/DeepSeek官方",
+      "source_urls": ["https://finance.sina.cn/2026-08-06/detail-inimkwsx4534482.d.html"],
+      "tags": ["DeepSeek", "涨价", "API"]
+    },
+    {
+      "title": "DeepSeek重启80亿美元融资，投前估值5000亿元",
+      "summary": "据《财经》杂志报道，DeepSeek第二轮融资计划募资500亿元，同步认购宇树科技上海IPO并共研人形机器人模型。",
+      "source": "财经杂志",
+      "source_urls": ["https://www.shopex.cn/news/34801"],
+      "tags": ["DeepSeek", "融资", "机器人"]
+    },
+    {
+      "title": "阿里拟向Qwen开源模型大型商用户收费",
+      "summary": "阿里巴巴计划对下一代通义千问开源模型的大型商用用户收取收益分成，打破'免费下载、自由商用'惯例。",
+      "source": "驱动中国/每日经济新闻",
+      "source_urls": ["https://www.163.com/dy/article/L3NM4NTC0512B07B.html"],
+      "tags": ["阿里", "开源收费", "商业化"]
+    },
+    {
+      "title": "OpenAI升级GPT-5.6 Sol并对免费用户开放Luna无限聊天",
+      "summary": "Plus/Pro用户获升级版Sol（错误率降68%）+思考深度滑动条；免费用户默认升级为Luna+无限文本聊天+Think按钮。",
+      "source": "OpenAI官方",
+      "source_urls": ["https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt"],
+      "tags": ["OpenAI", "ChatGPT", "免费化"]
+    },
+    {
+      "title": "AI视频大模型融资密集，可灵AI近30亿美元创纪录",
+      "summary": "近三个月可灵AI、生数科技、爱诗科技、演语科技新增融资合计近300亿元，可灵投后估值有望达180亿美元。",
+      "source": "新华网",
+      "source_urls": ["https://new.qq.com/rain/a/20260807A09UBA00"],
+      "tags": ["视频生成", "融资", "可灵"]
+    },
+    {
+      "title": "月之暗面同步启动融资，估值达500亿美元",
+      "summary": "Kimi月之暗面进行G轮融资，估值约3373亿元人民币，与DeepSeek同步启动大额融资。",
+      "source": "财经杂志",
+      "source_urls": ["https://www.shopex.cn/news/34801"],
+      "tags": ["月之暗面", "融资", "Kimi"]
+    },
+    {
+      "title": "国产大模型集体告别'免费午餐'时代",
+      "summary": "智谱累计提价83%调用量反增400%，DeepSeek大幅涨价，阿里拟收费——行业从'以低价换市场'转向'以价值定价'。",
+      "source": "华尔街见闻/每日经济新闻",
+      "source_urls": ["https://www.163.com/dy/article/L3NM4NTC0512B07B.html"],
+      "tags": ["大模型", "定价", "行业趋势"]
+    },
+    {
+      "title": "DeepSeek V4-Flash因访问量暴增出现容量不足",
+      "summary": "8月4日V4-Flash因前所未有的访问量出现服务降级，OpenRouter周榜显示V4-Flash以6.6万亿Token调用量居首。",
+      "source": "新浪科技",
+      "source_urls": ["https://finance.sina.cn/2026-08-06/detail-inimkwsx4534482.d.html"],
+      "tags": ["DeepSeek", "容量", "热度"]
+    },
+    {
+      "title": "SpaceX联手特斯拉砸168亿美元建超级芯片厂Terafab",
+      "summary": "得州建设超大规模半导体工厂，一期投资168亿美元，目标年产满足1太瓦算力的芯片。",
+      "source": "金十新媒体",
+      "source_urls": ["https://new.qq.com/rain/a/20260807A09UBA00"],
+      "tags": ["SpaceX", "特斯拉", "算力"]
+    },
+    {
+      "title": "AI SSD成大模型推理存储范式转移",
+      "summary": "月之暗面Mooncake与NVIDIA CMX标志推理状态成为AI基础设施一级资源，SSD进入Token生成实时主链路。",
+      "source": "腾讯新闻",
+      "source_urls": ["https://new.qq.com/rain/a/20260807A09UBA00"],
+      "tags": ["存储", "推理", "基础设施"]
+    },
+    {
+      "title": "AMD收购加拿大初创Taalas，将模型权重刻进硅片",
+      "summary": "AMD走上'把模型权重直接蚀刻进硅片'的极端推理路线，收购7个月大的Taalas公司。",
+      "source": "商派ShopeX AI",
+      "source_urls": ["https://www.shopex.cn/news/34801"],
+      "tags": ["AMD", "芯片", "推理优化"]
+    },
+    {
+      "title": "百度智能云居中国AI游戏云市场第一",
+      "summary": "IDC报告显示百度智能云位居中国AI游戏云整体市场第一，份额超第二至第五名总和，基础设施细分达56.4%。",
+      "source": "IDC/腾讯新闻",
+      "source_urls": ["https://new.qq.com/rain/a/20260805A0277900"],
+      "tags": ["百度", "游戏", "云计算"]
+    }
+  ]
+}

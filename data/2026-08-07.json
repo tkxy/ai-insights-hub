@@ -1,0 +1,156 @@
+{
+  "date": "2026-08-07",
+  "generated_at": "2026-08-10T08:48:00+08:00",
+  "daily_summary": "OpenAI在GPT-5发布周年之际密集出招：联合微软、亚马逊发布Agent Plugins1.0标准，ChatGPT免费用户升级GPT-5.6 Luna+无限聊天正式推送，首款AI硬件（甜甜圈形智能音箱，300-400美元）细节曝光。NVIDIA发布Cosmos 3世界物理AI模型。Claude Fable 5登顶MirrorCode编程榜（64%绝对成功率），单次任务最长连续运行19天花费2600美元。Anthropic优化Fable 5生物安全机制减少85%误拦截。AI设计出16种自然界不存在的活病毒引发安全警钟。4万次实测显示人类审批Agent命令时漏掉三分之一威胁。",
+  "design_insights": [
+    {
+      "title": "Agent Plugins标准化：输入法AI能力的'可组合'未来",
+      "summary": "OpenAI Agent Plugins 1.0兼容Skills与MCP Servers，Amazon、微软、Cursor、Vercel组建指导委员会。智能体能力的封装方式将成为行业默认标准。",
+      "implication": "输入法如果能将自身AI能力（智能联想、上下文翻译、风格转换）封装为Agent Plugin，就能被Cursor、ChatGPT等主流Agent平台调用。这意味着输入法可以从'终端用户直接使用'扩展到'被AI Agent调用'——B端收入的全新可能。设计需考虑Plugin的API边界和能力描述。",
+      "sources": ["IT之家", "商派ShopeX AI"],
+      "source_urls": ["https://www.shopex.cn/news/34801"],
+      "tags": ["Agent Plugins", "标准化", "生态"]
+    },
+    {
+      "title": "OpenAI首款AI硬件：纯语音交互的新入口形态",
+      "summary": "彭博爆料OpenAI首款无屏智能音箱形似甜甜圈、冰球大小，售300-400美元，与Jony Ive合作，2027年上市，定位AI原生电脑。",
+      "implication": "无屏AI硬件意味着输入形态从'打字'彻底转向'对话'。输入法在无屏设备上的角色会发生根本变化——不再是键盘工具，而是'语音理解+意图执行'的底层能力。需要前瞻性思考输入法核心技术（语言理解、意图识别）在无屏交互形态中的复用路径。",
+      "sources": ["彭博社", "智通财经"],
+      "source_urls": ["https://new.qq.com/rain/a/20260808A04DNJ00"],
+      "tags": ["AI硬件", "语音交互", "无屏"]
+    },
+    {
+      "title": "Claude Fable 5：19天连续运行揭示Agent设计新挑战",
+      "summary": "Fable 5在MirrorCode编程榜以64%成功率登顶，单次任务最长连续运行19天花费2600美元，在冷门语言Ada仍达61%。",
+      "implication": "超长运行Agent暴露了一个设计问题：当AI任务耗时从秒级扩展到天级，用户如何保持对任务状态的感知和控制？输入法内的AI助手如果执行复杂任务（如帮写长文档、整理会议纪要），需要设计'异步任务管理'的交互——让用户能'先去忙别的，AI做完通知我'。",
+      "sources": ["新智元"],
+      "source_urls": ["https://new.qq.com/rain/a/20260805A0277900"],
+      "tags": ["Agent", "长任务", "异步交互"]
+    },
+    {
+      "title": "人类审批Agent命令漏掉1/3威胁：信任UI的设计警示",
+      "summary": "一项4万次实测显示人类在审批智能体命令时漏掉了三分之一的安全威胁，暴露了'人在回路'机制的实际脆弱性。",
+      "implication": "输入法AI如果需要用户确认操作（如代发消息、代填表单），不能简单弹确认框——用户会'习惯性点确认'。需要设计'差异化审批'：低风险操作静默执行，高风险操作用醒目视觉打断+强制预览，避免'确认疲劳'导致的安全漏洞。",
+      "sources": ["商派ShopeX AI"],
+      "source_urls": ["https://www.shopex.cn/news/34801"],
+      "tags": ["安全", "信任UI", "Agent"]
+    },
+    {
+      "title": "NVIDIA Cosmos 3：物理世界模型赋能AI交互仿真",
+      "summary": "NVIDIA发布Cosmos 3世界物理AI，为自动驾驶、机器人等提供物理世界仿真能力。",
+      "implication": "物理世界模型的成熟意味着UI/UX可以获得更真实的动效仿真工具。输入法键盘的触觉反馈、打字动画等可以参考物理引擎逻辑，让交互'手感'更接近真实物理。虽然较远，但值得纳入技术雷达。",
+      "sources": ["互联网思想"],
+      "source_urls": ["https://www.163.com/dy/article/L3P1P5MS0531G0IB.html"],
+      "tags": ["NVIDIA", "物理仿真", "动效"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "输入法AI能力的Plugin化：从终端工具到平台服务",
+      "pain_point": "输入法AI能力（联想、翻译、纠错）目前只能被终端用户直接使用，无法被外部Agent或工作流调用，限制了能力的商业化空间。",
+      "opportunity": "将输入法核心AI能力封装为Agent Plugin（遵循OpenAI 1.0标准），让ChatGPT、Cursor等Agent平台在需要'文本优化'时自动调用搜狗能力。这打开了B端API收入的全新渠道。",
+      "priority": "P2",
+      "evidence": "OpenAI联合微软/亚马逊发布Agent Plugins 1.0标准，统一封装格式，Codex CLI同步支持插件安装和目录搜索。"
+    },
+    {
+      "title": "异步长任务的交互设计：AI做完通知我",
+      "pain_point": "当前AI辅助都是即时响应模式（用户问→AI答），但实际场景中用户可能需要AI执行耗时任务（整理一周聊天记录、生成年度总结），等待过程体验极差。",
+      "opportunity": "设计'AI后台任务'交互模式：用户在输入法中下达复杂指令后，AI在后台异步执行，完成后以通知形式回传结果。输入法成为'个人AI任务管理器'。",
+      "priority": "P2",
+      "evidence": "Claude Fable 5单次任务运行19天揭示了Agent长任务的真实需求；Cloudflare发布Agent可观测性平台追踪异步执行状态。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "OpenAI发布Agent Plugins 1.0开放标准",
+      "summary": "联合微软、亚马逊、Cursor、Vercel发布统一智能体插件标准，兼容Skills与MCP Servers，Codex CLI 0.147.0同步支持。",
+      "source": "IT之家/OpenAI",
+      "source_urls": ["https://www.shopex.cn/news/34801"],
+      "tags": ["OpenAI", "Agent", "标准"]
+    },
+    {
+      "title": "OpenAI首款AI硬件细节曝光：甜甜圈形无屏音箱",
+      "summary": "彭博爆料与Jony Ive工作室合作，冰球大小，售300-400美元，2027年上市，定位AI原生电脑挑战苹果。",
+      "source": "彭博社/智通财经",
+      "source_urls": ["https://new.qq.com/rain/a/20260808A04DNJ00"],
+      "tags": ["OpenAI", "硬件", "语音"]
+    },
+    {
+      "title": "ChatGPT免费用户正式升级GPT-5.6 Luna+无限文字聊天",
+      "summary": "下周起推送更新，免费用户获无限文本聊天+Think按钮，周活破10亿。",
+      "source": "ZAKER科技/OpenAI",
+      "source_urls": ["https://new.qq.com/rain/a/20260808A04DNJ00"],
+      "tags": ["ChatGPT", "免费化", "用户增长"]
+    },
+    {
+      "title": "NVIDIA发布Cosmos 3世界物理AI",
+      "summary": "开放世界物理仿真模型，为自动驾驶、机器人等提供物理世界理解和预测能力。",
+      "source": "互联网思想",
+      "source_urls": ["https://www.163.com/dy/article/L3P1P5MS0531G0IB.html"],
+      "tags": ["NVIDIA", "世界模型", "物理AI"]
+    },
+    {
+      "title": "Claude Fable 5登顶MirrorCode编程排行榜",
+      "summary": "64%绝对成功率约为GPT-5.6 Sol三倍，冷门语言Ada达61%，单次任务最长连续运行19天花费2600美元。",
+      "source": "新智元",
+      "source_urls": ["https://new.qq.com/rain/a/20260805A0277900"],
+      "tags": ["Anthropic", "编程", "Agent"]
+    },
+    {
+      "title": "Anthropic优化Fable 5生物安全机制，减少85%误拦截",
+      "summary": "重写分类器规则后，日常健康和教育类生物问题不再被错误拦截，但病毒学、毒理学等双重用途研究仍受限。",
+      "source": "IT之家/Anthropic",
+      "source_urls": ["https://www.unite.ai/anthropic-retunes-fable-5s-biology-safeguards-cutting-blocked-queries-85"],
+      "tags": ["Anthropic", "安全", "Fable 5"]
+    },
+    {
+      "title": "AI设计出16种自然界不存在的活病毒",
+      "summary": "安全警钟——AI系统成功设计了16种全新病毒结构，引发对生物安全风险的深度担忧。",
+      "source": "商派ShopeX AI",
+      "source_urls": ["https://www.shopex.cn/news/34801"],
+      "tags": ["安全", "生物", "风险"]
+    },
+    {
+      "title": "人类审批Agent命令漏掉1/3安全威胁",
+      "summary": "4万次实测显示人在回路机制实际脆弱，人类在审批AI命令时存在严重的'确认疲劳'。",
+      "source": "商派ShopeX AI",
+      "source_urls": ["https://www.shopex.cn/news/34801"],
+      "tags": ["安全", "Agent", "人在回路"]
+    },
+    {
+      "title": "OpenAI ChatGPT可调用Adobe70余款创意工具",
+      "summary": "Adobe将Photoshop、Premiere、Acrobat等70余款工具接入ChatGPT，用户可直接在对话中完成创意任务。",
+      "source": "三易生活",
+      "source_urls": ["https://dy.163.com/article/L3OIKN7F0511BE1V.html"],
+      "tags": ["OpenAI", "Adobe", "生态"]
+    },
+    {
+      "title": "DeepMind台风预报模型WeatherNext登Nature",
+      "summary": "开放权重的天气预报AI模型在台风路径预测上达到专业水准，论文发表于Nature。",
+      "source": "TechCrunch/adersaytech",
+      "source_urls": ["https://adersaytech.com/ai-news/ai-news-digest-20260807.html"],
+      "tags": ["DeepMind", "天气", "Nature"]
+    },
+    {
+      "title": "Millennium与Anthropic共建'数字风险分析师'",
+      "summary": "对冲基金Millennium与Anthropic合作，基于Claude和Claude Code开发AI风险分析工具，340+投资团队已使用Claude Code。",
+      "source": "Anthropic",
+      "source_urls": ["https://www.my2cents.ai/news/2026-08-07-anthropic"],
+      "tags": ["Anthropic", "金融", "风险管理"]
+    },
+    {
+      "title": "Claude Code支持自托管环境公测",
+      "summary": "允许企业在自有基础设施上运行Claude Code会话，代码和构建产物留在企业内网，对话和推理走Anthropic服务器。",
+      "source": "Anthropic",
+      "source_urls": ["https://www.my2cents.ai/news/2026-08-07-anthropic"],
+      "tags": ["Anthropic", "企业", "安全"]
+    },
+    {
+      "title": "开源大模型密集发布：2万亿参数级别成新常态",
+      "summary": "Kimi K3、Qwen3.8-Max等超两万亿参数模型密集发布，与顶尖闭源差距缩至2-3个月。",
+      "source": "中国电子报",
+      "source_urls": ["https://new.qq.com/rain/a/20260807A09UBA00"],
+      "tags": ["开源", "大模型", "竞争"]
+    }
+  ]
+}
