@@ -1,0 +1,158 @@
+{
+  "week": "2026-W34",
+  "range": {
+    "start": "2026-08-17",
+    "end": "2026-08-23"
+  },
+  "generatedAt": "2026-08-17T01:20:00.000Z",
+  "trends": [
+    {
+      "title": "成本账要重新算",
+      "summary": "这周有两个声音撞在一起：一边说算力和模型会越来越便宜（便宜到 AGI 未必非要跑在数据中心里），另一边说「便宜」本身也得重新定义——比 token 单价没意义，得看完成一次任务到底花多少钱。有意思的是，两句话一个指向「还会更便宜」，一个指向「别被单价骗了」。",
+      "implication": "给输入法接大模型时，别只盯每百万 token 的单价。同一个润色/翻译任务，不同模型消耗的 token 数能差三成以上，选模型要用真实场景自己测「单个成功结果的花费」，而不是看报价单。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Amjad Masad（Replit CEO）",
+          "url": "https://x.com/amasad/status/2088867492907327573",
+          "quote": "Scaling law 不是物理定律，只是经验关系……现在的 scaling law 说不定是个 bug 而不是特性（Scaling laws are not laws of physics… current scaling laws might be a bug and not a feature）"
+        },
+        {
+          "type": "tweet",
+          "who": "Thibault Sottiaux（OpenAI Codex/ChatGPT）",
+          "url": "https://x.com/thsottiaux/status/2088866513008873560",
+          "quote": "真正该看的是每个成功结果的花费，而不是每百万 token 的单价（What actually matters is price per successful outcome）"
+        }
+      ]
+    },
+    {
+      "title": "下一个爆款是「社交型」AI",
+      "summary": "单机工具型的 AI 产品（比如 ChatGPT 这种文本框）已经被验证得差不多了，圈子里开始集体找「多人网络效应」——让一批做得特别好的人，把门槛拉低、让其他人更容易跟上。这跟当年从搜索工具到 Pinterest/Instagram 的路数很像。",
+      "implication": "输入法自带「人人都用」的土壤，天然适合做「表达能力」层面的多人效应：优质表达模板、高频短语、场景化话术如果能让普通用户一键复用，就是在做输入法的「网络效应」。",
+      "evidence": [
+        {
+          "type": "podcast",
+          "who": "AI & I 播客，嘉宾 Sarah（Benchmark 合伙人、前 Pinterest 早期成员）",
+          "url": "https://www.youtube.com/watch?v=dlI-5W7d7uU",
+          "quote": "下一个多人网络效应式的体验是什么？一定会有人做一个 UGC 社区，让那些做得特别好的人，让其余的人上手容易得多（Someone's gonna create a UGC type community where people who are really good make it so much easier for the rest of us）"
+        },
+        {
+          "type": "tweet",
+          "who": "Nan Yu（Linear 产品负责人）",
+          "url": "https://x.com/thenanyu/status/2088810666958196988",
+          "quote": "我的梦想是坐在公园里跟朋友们录内容，然后让一群 agent 把这些内容变成行动和能跑的软件（record content with the homies… and have a fleet of agents turn that content into actions and working software）"
+        }
+      ]
+    },
+    {
+      "title": "「解释体验」被 AI 重做",
+      "summary": "越来越多人在用 AI 把「看不懂的东西」做成能交互、能上手理解的东西。这背后是一个信号：以前 UX 好是加分项，现在 AI 把体验下限整体抬高了，连 B2B 软件都没借口再做得难用。",
+      "implication": "输入法里「把复杂内容变好懂」的场景可以重点挖——术语解释、一句话讲清一段长文、把难懂的通知翻译成人话，这些都是贴着输入场景的「解释型」能力。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Madhu Guru（Meta AI 高级总监，曾负责 Google Gemini）",
+          "url": "https://x.com/realmadhuguru/status/2088710566689018103",
+          "quote": "B2B 软件再也没有借口把 UX 做得这么烂了。有了 AI，每个软件产品都能、也都应该做到和最好的消费级软件一样好用（There is no longer an excuse for B2B software to have such poor UX）"
+        },
+        {
+          "type": "tweet",
+          "who": "Thariq（Anthropic Claude Code）",
+          "url": "https://x.com/trq212/status/2088721023223132213",
+          "quote": "无水印又不损画质这件事挺反直觉的，我用 Claude 做了个交互小工具帮自己搞懂它怎么运作，分享给大家（I made this artifact with Claude to help me understand how it works）"
+        }
+      ]
+    }
+  ],
+  "builders": [
+    {
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "OpenAI Codex / ChatGPT 成员",
+      "highlights": [
+        {
+          "summary": "指出不同模型的 token 不是同一个计量单位，GPT-5.6 Sol 和 Claude Opus 5 生成同样文本，token 数能差 34.5%，所以「每 token 单价低」不等于「账单低」，得看每个成功结果花多少。",
+          "url": "https://x.com/thsottiaux/status/2088866513008873560"
+        },
+        {
+          "summary": "直接向企业喊话：还在用 Opus 而不用 Sol 的公司，到底卡在哪？价格对你真的不重要吗？透露出模型切换的成本敏感度在上升。",
+          "url": "https://x.com/thsottiaux/status/2088850995430477882"
+        }
+      ]
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "Vercel CEO",
+      "highlights": [
+        {
+          "summary": "点破 React 的成功很大程度是 shadcn 的成功：大家真正想要的是「能调、能重混的高质量组件」，它本质上是给你喂进上下文窗口里重新组合的原料，而不是传统库。",
+          "url": "https://x.com/rauchg/status/2088757738037989755"
+        }
+      ]
+    },
+    {
+      "name": "Amjad Masad",
+      "handle": "amasad",
+      "role": "Replit CEO",
+      "highlights": [
+        {
+          "summary": "反驳「AI 天然会集中权力」：算力性价比 125 年来一直在超指数增长，没理由假设 AGI 永远得靠数据中心。Scaling law 只是经验关系，甚至可能是当前算法低效的体现。",
+          "url": "https://x.com/amasad/status/2088867492907327573"
+        }
+      ]
+    },
+    {
+      "name": "Madhu Guru",
+      "handle": "realmadhuguru",
+      "role": "Meta AI 高级总监，曾负责 Google Gemini",
+      "highlights": [
+        {
+          "summary": "断言 AI 把体验下限抬高了：B2B 软件再没借口难用，每个产品都应该做到和最好消费级软件一样顺手。",
+          "url": "https://x.com/realmadhuguru/status/2088710566689018103"
+        }
+      ]
+    },
+    {
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Anthropic Claude Code 成员",
+      "highlights": [
+        {
+          "summary": "用 Claude 亲手做一个交互小工具来搞懂「无水印且不损画质」是怎么做到的，说明 AI 正在成为「把难懂概念讲明白」的通用工具。",
+          "url": "https://x.com/trq212/status/2088721023223132213"
+        }
+      ]
+    },
+    {
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "AI 实用教程/访谈博主",
+      "highlights": [
+        {
+          "summary": "展示 Riley Brown 用 Codex 跑通整个内容生意的实操：先让 Codex 抓 100 张同赛道高播放缩略图放进 Paper 画布，再把自己的照片混搭出满意封面，流程已经能跑通生产。",
+          "url": "https://x.com/petergyang/status/2088626815166464507"
+        },
+        {
+          "summary": "认同 Dario 的判断：用 AI 治病（并加速医疗监管审批）给人类带来的好处，可能比其它所有事加起来还大 10 倍。",
+          "url": "https://x.com/petergyang/status/2088772605323214999"
+        }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "AI & I by Every",
+      "title": "下一个爆款 AI 产品会是「社交型」的（Why the Next Hit AI Product Will Be Social）",
+      "guest": "Sarah（Benchmark 合伙人，前 Pinterest 早期成员）",
+      "url": "https://www.youtube.com/watch?v=dlI-5W7d7uU",
+      "keyTakeaways": [
+        "技术越成熟，话语权越从「技术天才」滑向「产品天才」——Google 是极客创业，到 Pinterest/Snap/Instagram 时 CEO 压根不是技术出身，是产品天才。",
+        "ChatGPT 本质上和当年的 Google 一样，就是个文本框，背后是一支极其能干但不「social」的团队，社交这条线一直是它的短板。",
+        "下一个大机会是「多人网络效应」：做一个 UGC 社区，让做得特别好的人把门槛降下来，让普通人更容易跟上。",
+        "消费级 AI 的胜负手不是模型，而是谁能先做出「多人一起用、一起变强」的体验。"
+      ]
+    }
+  ],
+  "blogs": []
+}

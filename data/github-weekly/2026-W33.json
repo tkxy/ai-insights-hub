@@ -1,0 +1,563 @@
+{
+  "week": "2026-W33",
+  "range": {
+    "start": "2026-08-10",
+    "end": "2026-08-16"
+  },
+  "generatedAt": "2026-08-17T01:14:46.341102+00:00",
+  "count": 20,
+  "items": [
+    {
+      "name": "cathrynlavery/diagram-design",
+      "title": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "stars": 19544,
+      "weeklyStars": 15600,
+      "forks": 0,
+      "language": "HTML",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "AI 生成内容的下一阶段不是更能写，而是更像人、更有审美。社区开始把「去 AI 味」「设计品味」「语言质感」做成可复用 skill，说明输出质量正在从功能问题变成风格问题。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "PrimeIntellect-ai/prime-agent",
+      "title": "A self-improving RLM agent for coding workflows and long-running autonomous tasks.",
+      "url": "https://github.com/PrimeIntellect-ai/prime-agent",
+      "stars": 16578,
+      "weeklyStars": 6435,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "prime-agent 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "semantica-agi/semantica",
+      "title": "Graph-Native Infrastructure for Context and Accountable AI Systems",
+      "url": "https://github.com/semantica-agi/semantica",
+      "stars": 8187,
+      "weeklyStars": 5284,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "AI 工程的瓶颈正在从模型能力转向上下文成本。能压缩日志、工具输出和 RAG chunk 的项目走热，说明开发者开始认真治理「给模型看的信息」，而不是一味堆更大的上下文窗口。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "TencentCloud/TencentDB-Agent-Memory",
+      "title": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
+      "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "stars": 22238,
+      "weeklyStars": 3637,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "Agent 产品竞争开始进入「运行框架」阶段。社区关注的不再只是接哪个模型，而是技能、记忆、安全、评估这些让 Agent 长期稳定工作的底层系统。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "cactus-compute/needle",
+      "title": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
+      "url": "https://github.com/cactus-compute/needle",
+      "stars": 6583,
+      "weeklyStars": 2950,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "其他",
+      "insight": "needle 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
+      "cases": [
+        {
+          "name": "技术选型参考",
+          "desc": "了解该领域最新技术方向和社区趋势"
+        },
+        {
+          "name": "团队分享素材",
+          "desc": "适合作为技术分享或设计组内部交流的案例"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "addyosmani/agent-skills",
+      "title": "Production-grade engineering skills for AI coding agents.",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "stars": 87765,
+      "weeklyStars": 2882,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "Agent 产品竞争开始进入「运行框架」阶段。社区关注的不再只是接哪个模型，而是技能、记忆、安全、评估这些让 Agent 长期稳定工作的底层系统。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "unslothai/unsloth",
+      "title": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
+      "url": "https://github.com/unslothai/unsloth",
+      "stars": 72592,
+      "weeklyStars": 2645,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "unsloth 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "macro-inc/macro",
+      "title": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+      "url": "https://github.com/macro-inc/macro",
+      "stars": 3410,
+      "weeklyStars": 2588,
+      "forks": 0,
+      "language": "Rust",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "Agent 产品竞争开始进入「运行框架」阶段。社区关注的不再只是接哪个模型，而是技能、记忆、安全、评估这些让 Agent 长期稳定工作的底层系统。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "paperclipai/paperclip",
+      "title": "The open-source app everyone uses to manage agents at work",
+      "url": "https://github.com/paperclipai/paperclip",
+      "stars": 78515,
+      "weeklyStars": 2499,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "paperclip 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "3b1b/manim",
+      "title": "Animation engine for explanatory math videos",
+      "url": "https://github.com/3b1b/manim",
+      "stars": 91355,
+      "weeklyStars": 1978,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "动效 / 交互编排",
+      "insight": "生成式视频正在从专业创作工具下沉为自动化流水线。一个脚本能把选题、文案、素材、配音、剪辑串起来，意味着内容生产的门槛被压到运营级别。",
+      "cases": [
+        {
+          "name": "品牌动效落地",
+          "desc": "产品首页、活动页的入场动画和滚动交互"
+        },
+        {
+          "name": "组件交互反馈",
+          "desc": "按钮、卡片、列表的微交互和状态转换动效"
+        },
+        {
+          "name": "设计系统 Motion Token",
+          "desc": "将动效参数化为设计系统的一部分"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "vitali87/code-graph-rag",
+      "title": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
+      "url": "https://github.com/vitali87/code-graph-rag",
+      "stars": 4429,
+      "weeklyStars": 1686,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "知识工作正在从文件管理变成研究代理。用户需要的不是又一个笔记库，而是能按时间、主题和来源自动整理材料、形成判断的研究系统。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "ToolJet/ToolJet",
+      "title": "ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀",
+      "url": "https://github.com/ToolJet/ToolJet",
+      "stars": 40040,
+      "weeklyStars": 1518,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "ToolJet 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "NVIDIA-NeMo/Switchyard",
+      "title": "Switchyard lets LLM applications route traffic across models and providers while preserving native OpenAI and Anthropic API compatibility - enabling flexible model selection, benchmarking, and cost/performance optimization.",
+      "url": "https://github.com/NVIDIA-NeMo/Switchyard",
+      "stars": 1691,
+      "weeklyStars": 1435,
+      "forks": 0,
+      "language": "Rust",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "Agent 产品竞争开始进入「运行框架」阶段。社区关注的不再只是接哪个模型，而是技能、记忆、安全、评估这些让 Agent 长期稳定工作的底层系统。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "megadose/holehe",
+      "title": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
+      "url": "https://github.com/megadose/holehe",
+      "stars": 13294,
+      "weeklyStars": 1287,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "其他",
+      "insight": "holehe 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
+      "cases": [
+        {
+          "name": "技术选型参考",
+          "desc": "了解该领域最新技术方向和社区趋势"
+        },
+        {
+          "name": "团队分享素材",
+          "desc": "适合作为技术分享或设计组内部交流的案例"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "basecamp/omarchy",
+      "title": "Beautiful, Modern & Opinionated Linux",
+      "url": "https://github.com/basecamp/omarchy",
+      "stars": 25398,
+      "weeklyStars": 759,
+      "forks": 0,
+      "language": "Shell",
+      "topics": [],
+      "category": "其他",
+      "insight": "omarchy 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
+      "cases": [
+        {
+          "name": "技术选型参考",
+          "desc": "了解该领域最新技术方向和社区趋势"
+        },
+        {
+          "name": "团队分享素材",
+          "desc": "适合作为技术分享或设计组内部交流的案例"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "Lightricks/LTX-2",
+      "title": "Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model.",
+      "url": "https://github.com/Lightricks/LTX-2",
+      "stars": 9057,
+      "weeklyStars": 497,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "生成式视频正在从专业创作工具下沉为自动化流水线。一个脚本能把选题、文案、素材、配音、剪辑串起来，意味着内容生产的门槛被压到运营级别。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "obra/superpowers",
+      "title": "An agentic skills framework & software development methodology that works.",
+      "url": "https://github.com/obra/superpowers",
+      "stars": 272819,
+      "weeklyStars": 0,
+      "forks": 24393,
+      "language": "Shell",
+      "topics": [
+        "ai",
+        "brainstorming",
+        "coding",
+        "obra",
+        "sdlc"
+      ],
+      "category": "AI / 生成式",
+      "insight": "Agent 产品竞争开始进入「运行框架」阶段。社区关注的不再只是接哪个模型，而是技能、记忆、安全、评估这些让 Agent 长期稳定工作的底层系统。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "react/react",
+      "title": "The library for web and native user interfaces.",
+      "url": "https://github.com/react/react",
+      "stars": 247310,
+      "weeklyStars": 0,
+      "forks": 51238,
+      "language": "JavaScript",
+      "topics": [
+        "declarative",
+        "frontend",
+        "javascript",
+        "library",
+        "react"
+      ],
+      "category": "UI / 组件",
+      "insight": "UI 组件项目的热度反映出设计工程化继续加速。现在的组件不只是样式复用，还要承载动效、状态、可访问性和品牌表达。",
+      "cases": [
+        {
+          "name": "设计系统建设",
+          "desc": "企业级组件库的搭建和跨团队规范落地"
+        },
+        {
+          "name": "快速原型搭建",
+          "desc": "用现成组件快速实现产品原型和 Demo"
+        },
+        {
+          "name": "品牌差异化",
+          "desc": "在通用组件上叠加品牌动效和视觉个性"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "Significant-Gravitas/AutoGPT",
+      "title": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "stars": 186646,
+      "weeklyStars": 0,
+      "forks": 46067,
+      "language": "Python",
+      "topics": [
+        "agentic-ai",
+        "agents",
+        "ai",
+        "artificial-intelligence",
+        "autonomous-agents"
+      ],
+      "category": "AI / 生成式",
+      "insight": "AutoGPT 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "ollama/ollama",
+      "title": "Get up and running with Kimi-K2.6, GLM-5.2, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "url": "https://github.com/ollama/ollama",
+      "stars": 178720,
+      "weeklyStars": 0,
+      "forks": 17436,
+      "language": "Go",
+      "topics": [
+        "deepseek",
+        "gemma",
+        "gemma3",
+        "glm",
+        "go"
+      ],
+      "category": "AI / 生成式",
+      "insight": "ollama 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    }
+  ]
+}
