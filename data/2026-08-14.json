@@ -1,0 +1,228 @@
+{
+  "date": "2026-08-14",
+  "generated_at": "2026-08-21T16:48:00+08:00",
+  "daily_summary": "这一天的关键词是「速度」与「降价」同时到来。Google DeepMind 发布 Gemini 3.7 Flash，距 3.6 Flash 仅三周，主打编程与智能体任务，输入/输出价格分别为每百万 token 0.75 美元和 3.75 美元，恰为原 3.6 Flash 的一半——三周迭代加价格腰斩，说明这一层级的模型已进入残酷的效率竞赛。OpenAI 联合 Cerebras 推出的 GPT-5.6 Sol Ultrafast 模式则把速度推向另一个极端：输出速度最高达 750 tokens/s，为标准模式的 14 倍且无损质量，在 HLE 测试中仅用 11 小时完成 2500 道题（对照 Fable 5 需 78 小时），突破源于 Cerebras 晶圆级芯片（WSE-3）将模型参数常驻片上 SRAM、消除显存带宽瓶颈。对输入法这类延迟敏感产品，750 tokens/s 意味着「AI 辅助感觉不到等待」从愿望变成工程现实。同日 DeepSeek Harness 开启公测。豆包输入法 iOS 1.5.0 的云词库同步经媒体广泛报道后引发讨论，多家媒体指出这补齐了该产品「重要短板」，主流第三方输入法基本都已标配账号云同步。此外小红书开源 dots.tts 语音合成模型、MiniMax 发布 Music 3.0，生成式语音与音乐能力持续下探。",
+  "design_insights": [
+    {
+      "title": "750 tokens/s：延迟不再是 AI 辅助的借口",
+      "summary": "OpenAI 联合 Cerebras 推出 GPT-5.6 Sol Ultrafast 模式，输出速度最高达 750 tokens/s，较标准模式提升 14 倍且不降低质量。HLE 测试中仅用 11 小时完成全部 2500 道题（Fable 5 需 78 小时）。突破源于 Cerebras 晶圆级芯片架构（WSE-3）将模型参数常驻片上 SRAM，消除显存带宽瓶颈。",
+      "implication": "输入法过去所有「AI 功能不能默认开启」的论证里，延迟是最硬的那条理由——用户打字的肌肉记忆容忍度大概在 50-100ms，而云端大模型往返动辄数百毫秒。750 tokens/s 这个量级意味着一句 20 字的润色结果可以在几十毫秒内流式吐出，延迟不再是设计的硬约束。这直接打开了一批过去被否掉的方案：实时流式润色（用户打字时同步显示优化建议）、边输入边纠错（不等断句就提示）、候选栏内嵌 AI 补全（与传统候选平级竞争排序）。设计上现在就该把这些方案重新捡起来做原型验证，因为算力条件成熟后，抢先定义交互范式的产品会拿到最大红利。",
+      "sources": [
+        "机器之心",
+        "凤凰网科技"
+      ],
+      "source_urls": [
+        "https://openai.com/blog/"
+      ],
+      "tags": [
+        "延迟",
+        "推理加速",
+        "交互机会"
+      ]
+    },
+    {
+      "title": "三周迭代 + 价格腰斩：中间层模型进入效率竞赛",
+      "summary": "Google DeepMind 发布 Gemini 3.7 Flash，距 3.6 Flash 仅三周，主打编程与智能体任务，输入/输出价格分别为每百万 token 0.75 美元和 3.75 美元，为原 3.6 Flash 的一半。",
+      "implication": "三周一迭代、价格直接砍半，说明「够用且便宜」这一层的竞争已经白热化——而这正是输入法最需要的模型层级。对产品规划的含义是：不要基于「当前模型成本」做长期功能取舍决策，因为这个数字每个季度都在跌。过去因成本被判定为「不可行」的功能（如对每条输入都做语义级理解）应该建立定期复评机制，而不是一次否决就永久搁置。设计侧可以更大胆地设想「AI 常在」的形态，把方案先做出来等成本落到位，而不是等成本落了才开始设计。",
+      "sources": [
+        "Google DeepMind Blog"
+      ],
+      "source_urls": [
+        "https://deepmind.google/blog/introducing-gemini-3-7-flash"
+      ],
+      "tags": [
+        "成本",
+        "模型迭代",
+        "产品规划"
+      ]
+    },
+    {
+      "title": "云同步已是输入法标配：不做是短板，做了不算优势",
+      "summary": "多家媒体在报道豆包输入法 1.5.0 时指出，目前主流第三方输入法基本都标配账号云同步功能，这次更新补齐了豆包的「重要短板」。用户长期积累的专业术语、昵称、行业词汇难以重新复刻，云词库同步对多设备用户属于刚需。",
+      "implication": "这条判断很重要——它说明云词库同步是「卫生因素」而非「激励因素」：缺失会被视为短板，具备也不构成差异化。所以我们的资源不该投在把同步做得比豆包更快，而应投在豆包还没有的那一层：从「同步词库」升级到「同步理解」。词库是离散的词条集合，而用户真正的个性化在于表达方式。如果换设备后用户感受到的是「连我说话的调调都记得」，那才是无法平替的体验。行动上建议：同步能力守住基线（确保零丢失、跨平台一致），把创新资源集中投向风格画像与语境记忆。",
+      "sources": [
+        "快科技",
+        "IT之家"
+      ],
+      "source_urls": [
+        "https://m.mydrivers.com/newsview/1143653.html"
+      ],
+      "tags": [
+        "竞品",
+        "差异化",
+        "输入法"
+      ]
+    },
+    {
+      "title": "语音合成能力开源下探，输入法的「读」场景值得重估",
+      "summary": "小红书开源 20 亿参数全连续端到端自回归语音合成模型 dots.tts，在 Seed-TTS-Eval 三个子集上取得最佳平均内容准确度和平均说话人相似度。同日 MiniMax 发布 Music 3.0 开源权重音乐模型。",
+      "implication": "输入法一直只关注「写」，但用户在输入场景里也有「读」的需求——收到长消息想快速听完、检查自己写的长文是否通顺（朗读能暴露书面检查发现不了的语病）、无障碍场景下的读屏需求。20 亿参数的高质量 TTS 已可在端侧运行，这让「输入法内置朗读」从成本上变得可行。特别值得做的是「写完读一遍」功能：用户长文输入完成后一键朗读，这是发现语病最有效的方式，且完全本地处理无隐私顾虑。对视障用户群体更是刚需级能力。",
+      "sources": [
+        "小红书技术"
+      ],
+      "source_urls": [
+        "https://github.com/rednote-hilab"
+      ],
+      "tags": [
+        "语音合成",
+        "无障碍",
+        "新场景"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "实时流式润色：打字过程中同步优化建议",
+      "pain_point": "现有 AI 润色都是「写完 → 点按钮 → 等待 → 查看结果」的割裂流程，打断了输入的连贯节奏，多数用户懒得触发，功能形同虚设。",
+      "opportunity": "利用高速推理能力做实时流式优化：用户打字时，在候选栏上方以极低视觉权重同步显示优化后的表达，采纳则一键替换，不采纳则自然消失。关键约束是绝不阻塞输入、绝不改变主视觉焦点。这是把 AI 从「功能」变成「氛围」的关键一步。",
+      "priority": "P1",
+      "evidence": "GPT-5.6 Sol Ultrafast 模式达 750 tokens/s（标准模式 14 倍）且无损质量，Gemini 3.7 Flash 三周迭代价格腰斩，延迟与成本双重约束正快速解除。"
+    },
+    {
+      "title": "长文输入后一键朗读校对",
+      "pain_point": "用户写完长段文字（工作汇报、重要消息）想检查是否通顺，但反复默读容易「看不出」语病，尤其是重复用词、句式冗长这类问题。",
+      "opportunity": "在长文输入完成后提供一键朗读，用端侧 TTS 本地播放。听觉通道对语病的敏感度远高于视觉复读，且完全本地处理无隐私顾虑。同时天然覆盖视障用户的无障碍刚需。",
+      "priority": "P2",
+      "evidence": "小红书开源 20 亿参数 dots.tts 在 Seed-TTS-Eval 取得最佳内容准确度与说话人相似度，高质量 TTS 端侧化已具可行性。"
+    },
+    {
+      "title": "AI 功能可行性的定期复评机制",
+      "pain_point": "很多有价值的 AI 功能方案因「当前成本/延迟不可行」被一次性否决并永久搁置，但模型成本每季度都在大幅下降，导致机会窗口被错过。",
+      "opportunity": "建立季度复评清单：把因成本或延迟被否的方案单独归档，每季度对照最新模型成本与速度重新评估。设计侧提前把方案做到原型级别，等条件成熟即可快速上线，抢占交互范式定义权。",
+      "priority": "P2",
+      "evidence": "Gemini 3.7 Flash 距 3.6 Flash 仅三周且价格为前代一半；GPT-5.6 Sol Ultrafast 速度提升 14 倍——成本与延迟约束的变化速度以月为单位。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Google DeepMind 发布 Gemini 3.7 Flash，价格为前代一半",
+      "summary": "距 3.6 Flash 仅三周发布，主打编程与智能体任务，输入/输出价格分别为每百万 token 0.75 美元和 3.75 美元，为原 3.6 Flash 的一半。",
+      "source": "Google DeepMind Blog",
+      "source_urls": [
+        "https://deepmind.google/blog/introducing-gemini-3-7-flash"
+      ],
+      "tags": [
+        "Gemini",
+        "降价",
+        "智能体"
+      ]
+    },
+    {
+      "title": "GPT-5.6 Sol Ultrafast 模式：750 tokens/s，速度提升 14 倍",
+      "summary": "OpenAI 联合 Cerebras 推出，输出速度最高达 750 tokens/s，较标准模式提升 14 倍且不降低质量。HLE 测试中仅用 11 小时完成 2500 道题（Fable 5 需 78 小时）。突破源于 Cerebras 晶圆级芯片（WSE-3）将模型参数常驻片上 SRAM，消除显存带宽瓶颈。面向部分客户有限预览。",
+      "source": "机器之心",
+      "source_urls": [
+        "https://openai.com/blog/"
+      ],
+      "tags": [
+        "推理加速",
+        "OpenAI",
+        "Cerebras"
+      ]
+    },
+    {
+      "title": "豆包输入法云词库同步获媒体广泛关注",
+      "summary": "多家媒体报道 iOS 1.5.0 的账号登录与词库云端同步，指出这补齐了豆包输入法「重要短板」。报道同时指出主流第三方输入法基本都已标配账号云同步，且用户长期积累的专业术语、行业词汇难以重新复刻，对多设备用户属刚需。",
+      "source": "快科技",
+      "source_urls": [
+        "https://m.mydrivers.com/newsview/1143653.html"
+      ],
+      "tags": [
+        "输入法",
+        "竞品",
+        "云同步"
+      ]
+    },
+    {
+      "title": "DeepSeek Harness 开启公测",
+      "summary": "8 月 14 日凌晨 DSH 开启公测。作为 MIT 协议开源的智能体运行框架，负责上下文管理、工具调用与任务执行，直接进入 Claude Code、Codex 所在的 AI 编程执行层战场。团队负责人崔添翼强调为预览版本，欢迎开发者反馈。",
+      "source": "网易科技",
+      "source_urls": [
+        "https://www.163.com/dy/article/L49CRG5O0512B07B.html"
+      ],
+      "tags": [
+        "智能体",
+        "开源框架",
+        "DeepSeek"
+      ]
+    },
+    {
+      "title": "小红书开源语音合成模型 dots.tts",
+      "summary": "20 亿参数全连续端到端自回归语音合成模型，在 Seed-TTS-Eval 三个子集上取得最佳平均内容准确度和平均说话人相似度。",
+      "source": "小红书技术",
+      "source_urls": [
+        "https://github.com/rednote-hilab"
+      ],
+      "tags": [
+        "语音合成",
+        "开源",
+        "TTS"
+      ]
+    },
+    {
+      "title": "MiniMax Music 3.0 发布",
+      "summary": "新一代开源权重、生产级全能音乐模型，可根据创意概念和可选歌词一次性完成整首歌的作曲、编曲、演奏与制作，最长支持五分钟。",
+      "source": "MiniMax Blog",
+      "source_urls": [
+        "https://www.minimax.io/blog/minimax-music-3-0-next-generation-open-weights-production-ready-versatile-music-model"
+      ],
+      "tags": [
+        "音乐生成",
+        "开源",
+        "MiniMax"
+      ]
+    },
+    {
+      "title": "SSI 首个模型采用测试时训练路线",
+      "summary": "Ilya 创办的 SSI 发布首个模型，基于测试时训练（TTT），能在推理过程中持续学习，与主流「训练完即冻结」范式形成分野。",
+      "source": "量子位",
+      "source_urls": [
+        "https://ssi.inc/"
+      ],
+      "tags": [
+        "测试时训练",
+        "SSI",
+        "新范式"
+      ]
+    },
+    {
+      "title": "Grok 4.6 发布，跑分超越 GPT-5.6 Sol 与 Fable 5 Max",
+      "summary": "马斯克旗下 xAI 发布 Grok 4.6，跑分超过 GPT-5.6 Sol 和 Fable 5 Max，同步推出 Grok Bot 智能体产品。",
+      "source": "量子位",
+      "source_urls": [
+        "https://x.ai/"
+      ],
+      "tags": [
+        "Grok",
+        "xAI",
+        "智能体"
+      ]
+    },
+    {
+      "title": "巨头签署欧盟 AI 生成内容透明度准则",
+      "summary": "OpenAI、Anthropic、Google 等巨头签署欧盟 AI 生成内容透明度准则，全面推行水印标记，呼应欧盟 AI 法第 50 条透明度义务。",
+      "source": "欧盟委员会",
+      "source_urls": [
+        "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+      ],
+      "tags": [
+        "监管",
+        "水印",
+        "透明度"
+      ]
+    },
+    {
+      "title": "阿里 Qwen3.8-2.4T-A95B 上线硅基流动",
+      "summary": "阿里首次开源的 Max 级旗舰模型 2.4 万亿参数权重上线第三方推理平台，开发者可直接调用，多项跑分超越海外顶尖模型，性能比肩 Claude Fable 5。",
+      "source": "硅基流动",
+      "source_urls": [
+        "https://siliconflow.cn/"
+      ],
+      "tags": [
+        "开源模型",
+        "阿里",
+        "推理平台"
+      ]
+    }
+  ]
+}
