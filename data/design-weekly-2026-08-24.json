@@ -1,0 +1,167 @@
+{
+  "week": "2026-08-17 ~ 2026-08-23",
+  "generated_at": "2026-08-24T08:20:00+08:00",
+  "theme": "AI 模型降价潮 × 输入法赛道竞品加速 × Agent UX 设计方法论成熟",
+  "stages": {
+    "research": {
+      "title": "行业研究与趋势洞察",
+      "items": [
+        {
+          "title": "AI 模型降价潮对应用层的连锁效应分析",
+          "source": "OpenAI/Google/Anthropic 集体降价",
+          "sourceDetail": "GPT-5.6 Sol 降价超20%、Gemini Flash 降30%、Anthropic 同步调价，AI API 成本周均降25%",
+          "insight": "模型成本快速下降正在消除应用层的经济门槛，输入法 AI 功能从「付费特权」向「基础能力」转变的拐点已到",
+          "action": "重新评估输入法 AI 功能的免费/付费分层策略：基础 AI（纠错、简单联想）全面免费化，高级 AI（专业模式、深度写作）保持增值定位",
+          "tags": ["模型降价", "商业化", "功能分层"],
+          "sourceUrls": ["https://openai.com/pricing/sol-update-2026-08", "https://www.theinformation.com/ai-price-war-2026"]
+        },
+        {
+          "title": "输入法赛道竞品一周密集动态全景",
+          "source": "豆包/百度/讯飞/微信输入法",
+          "sourceDetail": "豆包鸿蒙版 v0.9.1 上架（一周百万下载）、百度「超会写」升级、讯飞 AI 会议速记、微信输入法长文本编辑模式",
+          "insight": "竞品策略分化明显：豆包抢平台（鸿蒙）、百度抢场景（写作）、讯飞抢垂直（会议）、微信抢体验（编辑）。搜狗需找到独占位",
+          "action": "定期输出竞品动态跟踪表，按「平台覆盖/场景深度/AI能力/用户数据」四维度对标，识别搜狗的差异化空间",
+          "tags": ["竞品分析", "输入法", "策略"],
+          "sourceUrls": ["https://appgallery.huawei.com/doubao-keyboard", "https://shurufa.baidu.com/ai-write-upgrade"]
+        },
+        {
+          "title": "Apple Intelligence 中文化对第三方输入法的潜在冲击",
+          "source": "Bloomberg Mark Gurman 报道",
+          "sourceDetail": "下一版 iOS 将为 Apple Intelligence 新增中文支持，系统级 AI 助手直接参与文本输入和编辑",
+          "insight": "苹果系统级 AI 集成将压缩第三方输入法基础 AI 功能的生存空间，6-9个月后基础翻译/总结等功能将不再是差异化优势",
+          "action": "提前制定「后 Apple Intelligence」防御策略：聚焦苹果做不到的维度——跨平台数据互通、专业领域深度、社区化内容生态",
+          "tags": ["Apple", "竞争格局", "防御"],
+          "sourceUrls": ["https://www.bloomberg.com/apple-intelligence-chinese"]
+        }
+      ]
+    },
+    "competitive": {
+      "title": "竞品功能对标",
+      "items": [
+        {
+          "title": "豆包输入法鸿蒙版 + 技能连接器：跨端生态布局",
+          "source": "字节跳动产品更新",
+          "sourceDetail": "鸿蒙版 v0.9.1 一周百万下载 + 技能连接器首批支持特斯拉车机，形成手机-PC-车机全终端覆盖",
+          "insight": "豆包正从「输入法产品」进化为「AI 入口平台」，通过跨终端覆盖抢占用户入口。这不仅是功能竞争，是平台战争",
+          "action": "评估搜狗输入法的跨端架构能力：当前是否支持快速适配新平台（鸿蒙/车机/IoT）？若不支持需提前规划技术架构升级",
+          "tags": ["豆包", "跨端", "平台"],
+          "sourceUrls": ["https://www.volcengine.com/doubao-connector", "https://www.doubao.com/news/harmonyos-milestone"]
+        },
+        {
+          "title": "百度输入法「超会写」+ 讯飞 AI 会议速记：垂直场景争夺",
+          "source": "百度/讯飞产品公告",
+          "sourceDetail": "百度联合文心大模型强化 AI 写作（长文续写、风格改写）；讯飞切入会议场景（实时速记+AI摘要）",
+          "insight": "竞品在通用场景之外寻找垂直突破点。百度选择写作、讯飞选择会议，均试图将输入法从工具变为场景入口",
+          "action": "搜狗的垂直场景选择应与专业模式形成协同——法律/医疗/教育等领域不仅有词库优势，还可延伸到场景模板和 AI 辅助功能",
+          "tags": ["百度", "讯飞", "垂直"],
+          "sourceUrls": ["https://shurufa.baidu.com/ai-write-upgrade", "https://www.iflytek.com/keyboard-meeting-notes"]
+        },
+        {
+          "title": "微信输入法长文本编辑模式：从输入到编辑的边界模糊",
+          "source": "微信公开课",
+          "sourceDetail": "微信输入法新增段落级编辑和格式调整，在输入框内即可完成文本精修",
+          "insight": "微信正在将输入法变为轻量编辑器，利用社交场景的高频使用形成用户习惯迁移。这对搜狗构成直接的使用场景挤压",
+          "action": "分析微信输入法长文本编辑的具体功能清单，评估搜狗是跟进（做类似编辑功能）还是差异化（走 AI 生成优先的路线）",
+          "tags": ["微信输入法", "编辑", "直接竞争"],
+          "sourceUrls": ["https://mp.weixin.qq.com/wechat-keyboard-update"]
+        }
+      ]
+    },
+    "user_research": {
+      "title": "用户研究与需求洞察",
+      "items": [
+        {
+          "title": "AI 产品「空白框问题」与首次体验设计",
+          "source": "OpenAI 设计团队 + Product Hunt 社区",
+          "sourceDetail": "OpenAI 设计负责人指出空白框是 AI 产品最大 UX 挑战；社区总结5秒价值感知是激活关键",
+          "insight": "输入法 AI 功能面临同样的冷启动挑战：用户不知道 AI 能做什么、如何开始。当前的引导方式（文字说明页）效果差",
+          "action": "重设计输入法 AI 功能的首次体验：用「即时 demo」替代说明页——用户首次触发时基于当前场景自动展示 AI 效果",
+          "tags": ["冷启动", "引导设计", "用户研究"],
+          "sourceUrls": ["https://www.theverge.com/2026/8/openai-design-superapp", "https://www.producthunt.com/newsletter/ai-onboarding"]
+        },
+        {
+          "title": "用户对输入法 AI 功能的「有感/无感」双重期待",
+          "source": "产品社区讨论 + 竞品反馈",
+          "sourceDetail": "产品分析师提出「无感 AI」理念；用户反馈显示对输入法定位存在认知混乱——既想要智能但不想被打扰",
+          "insight": "用户对输入法 AI 有矛盾需求：希望输入更智能（无感提升）但不希望被 AI 功能打断输入流程（有感干扰）",
+          "action": "建立「无感/有感」双层产品策略：默认全部 AI 增强为无感模式，只在用户主动触发时才进入有感的对话/助手模式",
+          "tags": ["用户矛盾", "产品策略", "分层设计"],
+          "sourceUrls": ["https://www.woshipm.com/invisible-ai-keyboard"]
+        },
+        {
+          "title": "AI 上下文记忆与信任建立的用户心理模型",
+          "source": "AI UX 研究社区 + 渐进式信任研究",
+          "sourceDetail": "用户不清楚 AI 记住了什么导致重复说明；渐进式信任设计可提升采纳率40%",
+          "insight": "用户对 AI 的信任建立需要「可见的证据」——看到 AI 的记忆内容、推理过程、参考来源才会信任输出结果",
+          "action": "在输入法 AI 助手中设计「透明度三件套」：记忆卡片（AI记住了什么）+ 推理过程（为什么推荐这个）+ 来源标注（基于什么信息）",
+          "tags": ["信任", "透明度", "心理模型"],
+          "sourceUrls": ["https://medium.com/ai-ux/context-window-design", "https://www.interaction-design.org/progressive-trust"]
+        }
+      ]
+    },
+    "design_output": {
+      "title": "设计产出与方法论",
+      "items": [
+        {
+          "title": "Agent UX 设计 9 原则 + Human-AI 设计模式库",
+          "source": "NN Group + Google/IDEO",
+          "sourceDetail": "NN Group 发布9维度 Agent 设计原则；Google/IDEO 联合发布30+ AI 交互模式的开源库",
+          "insight": "AI 产品设计方法论正在体系化，从零散经验走向系统框架。输入法 AI 功能设计可直接复用这些经过验证的模式",
+          "action": "整理并内化 Agent UX 9原则和模式库中与输入法最相关的模式（智能建议/渐进披露/错误恢复/置信度展示），建立团队设计检查清单",
+          "tags": ["设计框架", "方法论", "Agent UX"],
+          "sourceUrls": ["https://www.nngroup.com/articles/agentic-ux-principles", "https://ai.google/human-ai-ux-patterns"]
+        },
+        {
+          "title": "输入法键盘上方信息区域的设计原则提炼",
+          "source": "Android 开发者社区讨论 + Material Design 3",
+          "sourceDetail": "输入法 candidate bar 上方空间利用讨论；MD3 更新对话式错误恢复设计指南",
+          "insight": "键盘上方是输入法最核心的信息展示区域，需要严格的优先级系统而非堆砌功能",
+          "action": "输出「键盘上方信息优先级规范」：输入联想（P0）> 实时AI建议（P1）> 场景快捷入口（P2），基于输入状态动态切换而非并排显示",
+          "tags": ["键盘设计", "优先级", "规范"],
+          "sourceUrls": ["https://android-developers.googleblog.com/keyboard-above-space", "https://m3.material.io/conversational-error-recovery"]
+        },
+        {
+          "title": "Generative UI 范式在输入法产品中的设计探索",
+          "source": "Vercel v0 / Claude Artifacts / OpenAI Canvas",
+          "sourceDetail": "AI 动态生成界面成为主流趋势；Canvas 从对话写作进化为画布协作编辑",
+          "insight": "输入法的功能面板不需要是固定布局——可根据用户当前输入场景动态生成最相关的功能组合",
+          "action": "设计概念验证：尝试一个「动态功能面板」原型——输入法检测到用户在写邮件时展示写作工具，检测到在搜索时展示知识卡片",
+          "tags": ["Generative UI", "动态面板", "概念验证"],
+          "sourceUrls": ["https://vercel.com/blog/generative-ui-patterns", "https://openai.com/blog/canvas-collaborative-update"]
+        }
+      ]
+    },
+    "design_validation": {
+      "title": "设计验证与数据反馈",
+      "items": [
+        {
+          "title": "科大讯飞亏损案例：AI 输入法商业化路径的反面验证",
+          "source": "讯飞财报 + 市场分析",
+          "sourceDetail": "讯飞三线作战亏损持续扩大，输入法用户基数大但变现困难",
+          "insight": "讯飞案例验证了「用户量≠商业化成功」。输入法 AI 功能必须在设计之初就考虑变现路径，而非先做免费再想收费",
+          "action": "在专业模式设计方案中明确标注每个功能的商业化属性：免费引流/付费增值/企业定制，确保产品设计与商业目标对齐",
+          "tags": ["商业化", "讯飞", "案例"],
+          "sourceUrls": ["https://finance.sina.com.cn/2026/iflytek-loss"]
+        },
+        {
+          "title": "豆包鸿蒙版一周百万下载的验证信号",
+          "source": "字节跳动数据公告",
+          "sourceDetail": "豆包输入法鸿蒙版上架一周下载突破百万，在 HarmonyOS NEXT 输入法分类排名第一",
+          "insight": "数据验证了鸿蒙生态确实存在输入法需求空白和红利。先进入者获得显著优势",
+          "action": "向产品团队同步鸿蒙生态数据信号，推动搜狗输入法鸿蒙适配优先级评估",
+          "tags": ["鸿蒙", "数据验证", "红利"],
+          "sourceUrls": ["https://www.doubao.com/news/harmonyos-milestone"]
+        },
+        {
+          "title": "AI 产品首次体验设计效果数据：5秒价值感知 → 激活率+60%",
+          "source": "Product Hunt 社区 + UX 研究",
+          "sourceDetail": "数据显示 AI 产品中实现5秒内价值感知的设计可将新用户激活率提升60%",
+          "insight": "「快速展示价值」不是主观感觉而是有数据支撑的设计原则。当前输入法 AI 功能的引导设计远未达到这个标准",
+          "action": "针对输入法 AI 功能的首次体验进行 A/B 测试设计：A组保持当前引导页、B组改为即时 demo 模式，对比激活率和7日留存",
+          "tags": ["数据驱动", "A/B测试", "激活率"],
+          "sourceUrls": ["https://www.producthunt.com/newsletter/ai-onboarding"]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "date": "2026-08-21",
+  "generated_at": "2026-08-24T08:20:00+08:00",
+  "daily_summary": "微信输入法 AI 长文本模式引发产品讨论；Apple Intelligence 新增中文支持传闻升温；设计社区热议 AI 产品的 Onboarding 最佳实践——如何让用户5秒内感知价值。",
+  "design_insights": [
+    {
+      "title": "微信输入法长文本编辑模式：输入法从「输入」到「编辑」的进化",
+      "summary": "微信输入法新增长文本编辑模式，用户可在输入框内进行段落级编辑和格式调整，模糊了输入法与编辑器的边界。",
+      "implication": "微信正在将输入法变为轻量文本编辑器。搜狗需思考是跟进还是差异化——可聚焦「先 AI 生成 → 再精修输出」的工作流，而非单纯扩展编辑功能。",
+      "sources": "微信公开课",
+      "source_urls": ["https://mp.weixin.qq.com/wechat-keyboard-update"],
+      "tags": ["微信输入法", "长文本", "竞品"]
+    },
+    {
+      "title": "AI 产品 Onboarding 最佳实践：5秒内让用户感知价值",
+      "summary": "产品设计社区总结 AI 产品首次使用体验设计要点：必须在5秒内展示 AI 的实际价值输出（而非解释 AI 能做什么），降低认知负荷。",
+      "implication": "输入法 AI 功能的 Onboarding 应改为「立即 demo 效果」模式——用户首次触发 AI 功能时直接基于当前输入生成示例，而非跳转说明页。",
+      "sources": "Product Hunt Newsletter",
+      "source_urls": ["https://www.producthunt.com/newsletter/ai-onboarding"],
+      "tags": ["Onboarding", "首次体验", "UX"]
+    },
+    {
+      "title": "Apple Intelligence 中文支持预期对输入法生态的影响",
+      "summary": "多方信息显示 Apple Intelligence 将在下一版 iOS 中新增中文支持，苹果 AI 助手将直接与第三方输入法形成竞争。",
+      "implication": "Apple Intelligence 中文化将直接冲击第三方输入法的 AI 功能。搜狗需在苹果覆盖不到的垂直领域（专业模式、深度写作）构建差异化护城河。",
+      "sources": "Mark Gurman Bloomberg Newsletter",
+      "source_urls": ["https://www.bloomberg.com/apple-intelligence-chinese"],
+      "tags": ["Apple", "AI助手", "竞争格局"]
+    },
+    {
+      "title": "对话式 UI 的错误恢复设计模式",
+      "summary": "Google Material Design 团队更新了对话式 UI 的错误处理设计指南，强调 AI 生成错误时需提供「一键重试 + 修正引导 + 降级方案」三级恢复机制。",
+      "implication": "输入法 AI 功能出错时（如翻译不准、联想偏差）的恢复体验很关键。需设计优雅的降级方案而非简单报错，保持用户对 AI 的使用信心。",
+      "sources": "Material Design 3 Update",
+      "source_urls": ["https://m3.material.io/conversational-error-recovery"],
+      "tags": ["错误恢复", "对话UI", "Material Design"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "输入法 AI 功能首次体验优化",
+      "pain_point": "新用户首次接触输入法 AI 功能时面对冷启动状态（无历史记录、无个性化），体验远低于老用户",
+      "opportunity": "设计「即时价值展示」的 Onboarding 流程：基于用户当前输入场景实时生成 AI demo，5秒内展示价值而非跳转说明页",
+      "priority": "high",
+      "evidence": "产品设计社区数据显示 AI 产品首次体验中5秒价值感知可提升激活率60%"
+    },
+    {
+      "title": "面对 Apple Intelligence 的差异化防御策略",
+      "pain_point": "Apple Intelligence 中文化后将系统级集成 AI 助手能力，第三方输入法的基础 AI 功能（翻译、总结）优势不再",
+      "opportunity": "在苹果覆盖不到的维度建立壁垒：专业领域深度能力、多平台数据互通、社区化内容生态（如输入法的表情/语录包）",
+      "priority": "high",
+      "evidence": "Bloomberg 报道 Apple Intelligence 下一版将支持中文，时间窗口约6-9个月"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "微信输入法新增长文本编辑模式",
+      "summary": "微信输入法最新版支持在输入框内段落级编辑和格式调整，从输入工具向轻量编辑器进化。",
+      "source": "微信公开课",
+      "source_urls": ["https://mp.weixin.qq.com/wechat-keyboard-update"],
+      "tags": ["微信输入法", "编辑", "功能"]
+    },
+    {
+      "title": "Apple Intelligence 中文支持传闻升温",
+      "summary": "Bloomberg 记者 Gurman 报道苹果下一版 iOS 将为 Apple Intelligence 新增中文支持，AI 助手可直接参与中文输入和文本编辑。",
+      "source": "Bloomberg",
+      "source_urls": ["https://www.bloomberg.com/apple-intelligence-chinese"],
+      "tags": ["Apple", "中文AI", "竞争"]
+    },
+    {
+      "title": "AI 产品 Onboarding 最佳实践发布",
+      "summary": "产品社区总结 AI 产品首次体验设计要点：5秒内展示实际价值输出是关键，不要用文字说明代替实际 demo。",
+      "source": "Product Hunt",
+      "source_urls": ["https://www.producthunt.com/newsletter/ai-onboarding"],
+      "tags": ["产品设计", "Onboarding", "AI"]
+    },
+    {
+      "title": "Material Design 3 更新对话式错误恢复指南",
+      "summary": "Google 更新 MD3 设计系统，新增 AI 对话产品的错误处理设计规范，强调三级恢复机制。",
+      "source": "Material Design",
+      "source_urls": ["https://m3.material.io/conversational-error-recovery"],
+      "tags": ["Material Design", "设计系统", "错误处理"]
+    },
+    {
+      "title": "Galileo AI 获5亿美元 B 轮：AI 设计工具持续升温",
+      "summary": "AI 设计工具 Galileo AI 完成巨额融资，其核心能力是从文本描述直接生成生产级 UI 设计稿。",
+      "source": "TechCrunch",
+      "source_urls": ["https://techcrunch.com/2026/galileo-ai-series-b"],
+      "tags": ["融资", "设计工具", "AI"]
+    },
+    {
+      "title": "讯飞输入法推出 AI 会议速记功能",
+      "summary": "讯飞输入法新版支持会议场景的实时速记和摘要生成，试图在垂直场景找到差异化定位。",
+      "source": "科大讯飞",
+      "source_urls": ["https://www.iflytek.com/keyboard-meeting-notes"],
+      "tags": ["讯飞输入法", "会议", "速记"]
+    },
+    {
+      "title": "Google DeepMind 发布 Gemini 3.7 Pro 技术报告",
+      "summary": "Google DeepMind 发布 Gemini 3.7 Pro 完整技术报告，在推理和代码能力上较前代提升显著。",
+      "source": "DeepMind",
+      "source_urls": ["https://deepmind.google/gemini-3-7-pro-report"],
+      "tags": ["Google", "Gemini", "技术"]
+    },
+    {
+      "title": "中国 AI 芯片自主替代加速：寒武纪新品发布",
+      "summary": "寒武纪发布新一代 AI 推理芯片，性能追平 NVIDIA H100 的80%，国产替代进程加速。",
+      "source": "36氪",
+      "source_urls": ["https://36kr.com/cambricon-new-chip-2026"],
+      "tags": ["芯片", "国产替代", "寒武纪"]
+    },
+    {
+      "title": "OpenAI GPT-5.6 Sol 降价促销持续引发行业连锁反应",
+      "summary": "OpenAI 降价后多家 AI 公司跟进调价，应用开发者成本普降，中小开发者迎来 AI 接入红利期。",
+      "source": "36氪",
+      "source_urls": ["https://36kr.com/ai-pricing-chain-2026"],
+      "tags": ["降价", "开发者", "生态"]
+    }
+  ]
+}

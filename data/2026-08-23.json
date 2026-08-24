@@ -1,0 +1,120 @@
+{
+  "date": "2026-08-23",
+  "generated_at": "2026-08-24T08:20:00+08:00",
+  "daily_summary": "本周回顾：AI 模型降价潮推动应用层爆发、输入法赛道竞品密集更新、Agent UX 设计方法论逐步成熟；Google 发布 NotebookLM Plus 企业版；设计师社区热议 AI 工具链对设计流程的重塑。",
+  "design_insights": [
+    {
+      "title": "Google NotebookLM Plus：AI 知识管理产品的交互范式",
+      "summary": "Google 发布 NotebookLM 企业版，新增团队协作、多源知识整合和 AI 音频播客生成功能。其核心交互是「上传资料 → AI 自动整理 → 多形式输出」。",
+      "implication": "NotebookLM 的「资料输入 → AI 处理 → 多形态输出」模式可应用于输入法：用户输入碎片化文字 → AI 自动整合为结构化内容 → 输出为邮件/文档/社交帖子等。",
+      "sources": "Google Blog",
+      "source_urls": ["https://blog.google/notebooklm-plus-enterprise"],
+      "tags": ["NotebookLM", "知识管理", "交互范式"]
+    },
+    {
+      "title": "AI 工具链对设计流程的重塑：从手动到 AI 辅助评审的转变",
+      "summary": "设计师社区本周热议 AI 对设计流程的改变：Figma AI Critique 自动评审、Galileo AI 一键出稿、AI 用户测试自动化，设计师角色从「执行」转向「策略与判断」。",
+      "implication": "作为交互设计师应关注 AI 工具在自身工作流中的应用：利用 AI 评审加速迭代、用 AI 生成初始方案再人工精修、用 AI 做竞品分析数据收集。提升效率的同时聚焦不可替代的设计判断力。",
+      "sources": "Design Twitter Community",
+      "source_urls": ["https://twitter.com/i/lists/design-ai-tools"],
+      "tags": ["设计流程", "AI工具", "效率"]
+    },
+    {
+      "title": "输入法产品的「无感 AI」设计理念",
+      "summary": "产品分析师提出输入法 AI 功能应追求「无感 AI」——用户不需要主动调用 AI，AI 在后台默默提升输入效率（更准确的联想、更智能的纠错、更贴合语境的建议）。",
+      "implication": "「有感 AI」（如对话助手）和「无感 AI」（如智能联想）是两条路径。搜狗可两手抓：无感 AI 提升基础输入体验留住大众用户，有感 AI 满足深度需求吸引高价值用户。",
+      "sources": "产品经理社区",
+      "source_urls": ["https://www.woshipm.com/invisible-ai-keyboard"],
+      "tags": ["无感AI", "输入法策略", "产品设计"]
+    },
+    {
+      "title": "AI 时代的信息无障碍设计新挑战",
+      "summary": "W3C 发布 AI 产品无障碍设计新指南，指出 AI 动态生成内容带来的屏幕阅读器兼容性、认知负荷和不确定性展示等新挑战。",
+      "implication": "输入法 AI 功能需关注无障碍合规：AI 生成的建议是否可被辅助技术读取、动态变化的联想列表是否给视障用户带来困惑、错误提示是否可感知。",
+      "sources": "W3C WAI",
+      "source_urls": ["https://www.w3.org/WAI/ai-accessibility-guidelines"],
+      "tags": ["无障碍", "W3C", "AI合规"]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "输入法「无感 AI」与「有感 AI」双轨策略设计",
+      "pain_point": "当前输入法 AI 功能定位模糊——想做对话助手又想提升基础输入，两者混在一起导致用户认知混乱",
+      "opportunity": "明确分层：基础层做「无感 AI」（智能联想、自动纠错、语境适配）提升所有用户体验；增值层做「有感 AI」（对话助手、专业模式）满足高级需求",
+      "priority": "high",
+      "evidence": "产品社区讨论显示用户对输入法 AI 功能的定位认知存在困惑，需要清晰的产品分层"
+    },
+    {
+      "title": "AI 动态内容的无障碍合规设计",
+      "pain_point": "输入法 AI 功能生成的动态内容（联想建议、AI 回复）缺乏无障碍支持，视障用户无法正常使用",
+      "opportunity": "按照 W3C AI 无障碍新指南适配，确保 AI 内容可被辅助技术读取，同时作为产品合规亮点",
+      "priority": "low",
+      "evidence": "W3C 发布 AI 产品无障碍新指南，监管趋严"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Google 发布 NotebookLM Plus 企业版",
+      "summary": "NotebookLM 推出企业版，支持团队协作、多源知识整合和 AI 音频播客自动生成。",
+      "source": "Google Blog",
+      "source_urls": ["https://blog.google/notebooklm-plus-enterprise"],
+      "tags": ["Google", "NotebookLM", "企业"]
+    },
+    {
+      "title": "W3C 发布 AI 产品无障碍设计新指南",
+      "summary": "W3C 发布针对 AI 动态生成内容的无障碍设计指南，涵盖屏幕阅读器兼容和认知负荷等新挑战。",
+      "source": "W3C",
+      "source_urls": ["https://www.w3.org/WAI/ai-accessibility-guidelines"],
+      "tags": ["W3C", "无障碍", "规范"]
+    },
+    {
+      "title": "设计师社区热议 AI 工具链对流程的重塑",
+      "summary": "Figma AI 评审、Galileo 出稿、AI 用户测试——设计师角色从执行转向策略与判断的讨论持续升温。",
+      "source": "设计社区",
+      "source_urls": ["https://twitter.com/i/lists/design-ai-tools"],
+      "tags": ["设计工具", "AI辅助", "趋势"]
+    },
+    {
+      "title": "输入法「无感 AI」设计理念引发产品讨论",
+      "summary": "产品分析师提出输入法 AI 应追求「无感」——后台默默提升效率而非强迫用户主动调用。",
+      "source": "人人都是产品经理",
+      "source_urls": ["https://www.woshipm.com/invisible-ai-keyboard"],
+      "tags": ["输入法", "产品理念", "AI"]
+    },
+    {
+      "title": "本周 AI 模型降价潮总结：成本下降推动应用层爆发",
+      "summary": "OpenAI/Google/Anthropic 集体降价，AI API 成本周均下降25%，中小开发者批量接入 AI 能力成为可能。",
+      "source": "The Verge",
+      "source_urls": ["https://www.theverge.com/2026/8/ai-price-drop-summary"],
+      "tags": ["降价", "应用层", "总结"]
+    },
+    {
+      "title": "GitHub Copilot Workspace GA 一周反馈：开发效率提升40%",
+      "summary": "GitHub 公布 Copilot Workspace 全面开放一周数据，参与团队平均开发效率提升40%。",
+      "source": "GitHub Blog",
+      "source_urls": ["https://github.blog/copilot-workspace-metrics"],
+      "tags": ["GitHub", "效率", "数据"]
+    },
+    {
+      "title": "百度文心4.5即将发布：聚焦中文理解和多模态",
+      "summary": "百度确认文心大模型4.5将于9月发布，重点提升中文场景理解和图文视频多模态能力。",
+      "source": "百度",
+      "source_urls": ["https://yiyan.baidu.com/blog/ernie-4-5-preview"],
+      "tags": ["百度", "文心", "预告"]
+    },
+    {
+      "title": "IDC：中国 AI 应用市场2027年突破万亿",
+      "summary": "IDC 最新报告预测中国 AI 应用市场2027年规模将破万亿人民币，教育和办公是最大细分。",
+      "source": "IDC",
+      "source_urls": ["https://www.idc.com/china-ai-market-forecast"],
+      "tags": ["市场", "IDC", "中国"]
+    },
+    {
+      "title": "豆包输入法鸿蒙版一周数据：下载量超百万",
+      "summary": "豆包输入法鸿蒙版上架一周下载量突破百万，在 HarmonyOS NEXT 输入法分类排名第一。",
+      "source": "字节跳动",
+      "source_urls": ["https://www.doubao.com/news/harmonyos-milestone"],
+      "tags": ["豆包", "鸿蒙", "数据"]
+    }
+  ]
+}
