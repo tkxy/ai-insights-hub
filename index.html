@@ -2421,18 +2421,47 @@ function renderContent(data) {
   html += `<div class="insights-grid">`;
   data.design_insights.forEach((ins, i) => {
     // Source links
+    // 数据里 sources 有三种形态：字符串数组、单个字符串、缺失；
+    // source_urls 也有对象数组和字符串数组两种。统一归一化后再渲染，
+    // 避免出现 sources[idx] 取到字符串首字符（只显示一个字母）的问题。
+    const normSources = Array.isArray(ins.sources)
+      ? ins.sources.filter(Boolean).map(s => String(s).trim())
+      : (typeof ins.sources === 'string' && ins.sources.trim()
+          ? ins.sources.split(/[,，、]/).map(s => s.trim()).filter(Boolean)
+          : []);
+
+    const hostOf = (u) => {
+      try { return new URL(u).hostname.replace(/^www\./, ''); }
+      catch (e) { return '来源'; }
+    };
+
     let sourceLinksHtml = '';
     if (ins.source_urls && ins.source_urls.length > 0) {
-      sourceLinksHtml = ins.source_urls.slice(0, 3).map((s, idx) => {
-        // 支持字符串数组和对象数组两种格式
+      // 已被链接消费掉的来源名，避免后面重复渲染
+      const used = new Set();
+      const linked = ins.source_urls.slice(0, 3).map((s, idx) => {
         if (typeof s === 'string') {
-          const label = (ins.sources && ins.sources[idx]) ? ins.sources[idx] : new URL(s).hostname.replace('www.','');
-          return `<a class="source-link" href="${s}" target="_blank">${label}<span class="source-link-icon">→</span></a>`;
+          // 有几个 url 就按序配几个来源名；来源名不足时回退到域名
+          const label = normSources[idx] || hostOf(s);
+          if (normSources[idx]) used.add(normSources[idx]);
+          return `<a class="source-link" href="${s}" target="_blank" rel="noopener">${label}<span class="source-link-icon">→</span></a>`;
         }
-        return `<a class="source-link" href="${s.url}" target="_blank">${s.name || '来源'}<span class="source-link-icon">→</span></a>`;
+        const label = s.name || normSources[idx] || hostOf(s.url || '');
+        if (label) used.add(label);
+        return `<a class="source-link" href="${s.url}" target="_blank" rel="noopener">${label}<span class="source-link-icon">→</span></a>`;
       }).join('');
-    } else if (ins.sources && ins.sources.length > 0) {
-      sourceLinksHtml = ins.sources.slice(0, 3).map(s =>
+
+      // 来源数多于 url 数时（例如 2 个来源只给了 1 个链接），
+      // 把剩下的来源名以不可点击的形式补齐，保证信息完整不丢失。
+      const rest = normSources
+        .filter(nm => !used.has(nm))
+        .slice(0, 3)
+        .map(nm => `<span class="source-link" style="cursor:default">${nm}</span>`)
+        .join('');
+
+      sourceLinksHtml = linked + rest;
+    } else if (normSources.length > 0) {
+      sourceLinksHtml = normSources.slice(0, 3).map(s =>
         `<span class="source-link" style="cursor:default">${s}</span>`
       ).join('');
     }
