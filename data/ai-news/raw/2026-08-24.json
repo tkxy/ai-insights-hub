@@ -1,0 +1,322 @@
+{
+  "date": "2026-08-24",
+  "fetchedAt": "2026-08-24T00:52:23.391198+00:00",
+  "source": "follow-builders feeds",
+  "x": {
+    "generatedAt": "2026-08-23T06:27:32.823Z",
+    "lookbackHours": 24,
+    "x": [
+      {
+        "source": "x",
+        "name": "Thibault Sottiaux",
+        "handle": "thsottiaux",
+        "bio": "Codex & ChatGPT @OpenAI",
+        "tweets": [
+          {
+            "id": "2091407991736332689",
+            "text": "Update on rate limits in Codex. \n\nWe’ve found (a) some inefficiencies when using images in long sessions with multiple compactions (b) high p95+ usage for Computer History (c) a feature that was meant to generate conversation titles that was draining a bit more usage than intended. And we have a tiger team combing through everything and shipping fixes tomorrow. We also found a novel approach to drive efficiency up significantly that is completely unrelated and we will be working on next week.\n\nAs part of some of the fixes tomorrow, we will also do a full reset of the usage for all paid subscriptions.\n\nSee you then.",
+            "createdAt": "2026-08-23T06:11:36.000Z",
+            "url": "https://x.com/thsottiaux/status/2091407991736332689",
+            "likes": 1382,
+            "retweets": 113,
+            "replies": 248,
+            "isQuote": true,
+            "quotedTweetId": "2091033630147854385"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Peter Yang",
+        "handle": "petergyang",
+        "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6",
+        "tweets": [
+          {
+            "id": "2091331251211059468",
+            "text": "If you care about your privacy:\n\n1. Go to https://t.co/yICN6WAe9R in Chrome\n2. Run this prompt in Codex or Claude Code and tell it there's an open tab in your browser\n3. Then pick the ones you want to remove and tell AI to do it\n\nJust disconnected half the apps that should no longer have my Google info.",
+            "createdAt": "2026-08-23T01:06:40.000Z",
+            "url": "https://x.com/petergyang/status/2091331251211059468",
+            "likes": 447,
+            "retweets": 23,
+            "replies": 20,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2091239339204415969",
+            "text": "I’m working on a new AI skill. \n\nIt’s called /fuck-cancer\n\nGoal is to help patients and their family navigate this whole process and stay informed. \n\nWhat should I include in it?",
+            "createdAt": "2026-08-22T19:01:26.000Z",
+            "url": "https://x.com/petergyang/status/2091239339204415969",
+            "likes": 188,
+            "retweets": 5,
+            "replies": 39,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2091187611507499321",
+            "text": "Looks like you can now delete external data (like my 36 Gmail records) if you go to https://t.co/iZVklVswyI and scroll down to Data Privacy.\n\nKudos to the Instinct team for listening and shipping this quickly. \n\nI will always say it like it is, especially when it comes to privacy & trust.",
+            "createdAt": "2026-08-22T15:35:53.000Z",
+            "url": "https://x.com/petergyang/status/2091187611507499321",
+            "likes": 13,
+            "retweets": 0,
+            "replies": 1,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Madhu Guru",
+        "handle": "realmadhuguru",
+        "bio": "Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.",
+        "tweets": [
+          {
+            "id": "2091278899711967441",
+            "text": "Part 1\nhttps://t.co/9PCxjUITL6\n\nPart 2\nhttps://t.co/oMkXFWt9m7\n\nPart 3\nhttps://t.co/dwQ8cOzIrR\n\nPart 4\nhttps://t.co/NeaJzD7dry\n\nPart 5\nhttps://t.co/G0R7ZlEVDt",
+            "createdAt": "2026-08-22T21:38:38.000Z",
+            "url": "https://x.com/realmadhuguru/status/2091278899711967441",
+            "likes": 2,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": true,
+            "quotedTweetId": "2090930137885774324"
+          },
+          {
+            "id": "2091278653435072523",
+            "text": "How to build great evals - part 6\n\nHill climbing on evals is just a fancy way of saying: pick a dimension that matters and optimize for it.\n\nThis could be improving the quality of existing features based on your latest production data on high value user journeys, expanding to adjacent use cases, lowering cost or latency.\n\nThe actual work boils down to better harnesses and model selection through methods like prompt eng, context eng, memory, post training, deterministic old school code etc.\n\nYour failure mode taxonomy (from part 3) is a good compass for where your product struggles and needs some love.\n\nE.g. maybe tool calling failures are your most common problem. You dig in and notice you stuff 20 tools in context, when each task really only needs 3-5. hill climbing here involves context eng to give it the right tools at the right stage and iterate until you get it to good.\n\nOr take the cost reduction goal..\nI’ve written about how I advise launching your product with the best model first. Get the quality as high as you can. Once you know users love the experience, hill climb to get similar quality with a smaller, cheaper, faster model. Same methods - harness, models.\n\nThe important thing is to have evals that tell you whether you are actually moving in the right direction.\n\nMore tomorrow. \n\nSend this to your teammates!\n\nDrop your questions in the comments and I will answer in future posts.",
+            "createdAt": "2026-08-22T21:37:39.000Z",
+            "url": "https://x.com/realmadhuguru/status/2091278653435072523",
+            "likes": 143,
+            "retweets": 8,
+            "replies": 11,
+            "isQuote": true,
+            "quotedTweetId": "2090930137885774324"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Amjad Masad",
+        "handle": "amasad",
+        "bio": "ceo @replit. civilizationist",
+        "tweets": [
+          {
+            "id": "2091346778746757204",
+            "text": "A week has 7 days\n\nThat means 7 ships https://t.co/DFGoTnEy5G",
+            "createdAt": "2026-08-23T02:08:22.000Z",
+            "url": "https://x.com/amasad/status/2091346778746757204",
+            "likes": 70,
+            "retweets": 4,
+            "replies": 12,
+            "isQuote": true,
+            "quotedTweetId": "2091311652494803424"
+          },
+          {
+            "id": "2091217410615644349",
+            "text": "“Pretty soon” turned out to be 3 months. https://t.co/LC19TuXUuP",
+            "createdAt": "2026-08-22T17:34:18.000Z",
+            "url": "https://x.com/amasad/status/2091217410615644349",
+            "likes": 643,
+            "retweets": 43,
+            "replies": 37,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Guillermo Rauch",
+        "handle": "rauchg",
+        "bio": "@vercel CEO",
+        "tweets": [
+          {
+            "id": "2091338152791474331",
+            "text": "AI can do many wonderful things and grant many wishes, but we have only one earth, one California, one Patagonia, one Mendoza. USA and Argentina are two of the freest countries that also happen to have the most glorious land and geography. I'm very long 🇺🇸🇦🇷. We're so early.",
+            "createdAt": "2026-08-23T01:34:05.000Z",
+            "url": "https://x.com/rauchg/status/2091338152791474331",
+            "likes": 735,
+            "retweets": 30,
+            "replies": 27,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2091265836719956474",
+            "text": "cc @windows https://t.co/jwb1iekgRg",
+            "createdAt": "2026-08-22T20:46:43.000Z",
+            "url": "https://x.com/rauchg/status/2091265836719956474",
+            "likes": 57,
+            "retweets": 0,
+            "replies": 2,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2091263423359389951",
+            "text": "San Francisco is a paradise on Earth https://t.co/NqAfgzAnTB",
+            "createdAt": "2026-08-22T20:37:08.000Z",
+            "url": "https://x.com/rauchg/status/2091263423359389951",
+            "likes": 1084,
+            "retweets": 20,
+            "replies": 80,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Aaron Levie",
+        "handle": "levie",
+        "bio": "ceo @box - your business lives in content. unleash it with AI",
+        "tweets": [
+          {
+            "id": "2091359223368315050",
+            "text": "AI diffusion is far more rate limited by having good evals than most realize. The kind of evals that you see for every model release are incredibly helpful, but only tell you the shape of general AI progress and the relative capability level of models.\n\nThe far bigger space over time are evals on all the major workflows that enterprises do, down to the specifics of an individual company. \n\nThis will be a huge space over time because you can’t automate what you can’t assess the progress on. Enterprises will not be able to go just on vibes.",
+            "createdAt": "2026-08-23T02:57:49.000Z",
+            "url": "https://x.com/levie/status/2091359223368315050",
+            "likes": 138,
+            "retweets": 12,
+            "replies": 25,
+            "isQuote": true,
+            "quotedTweetId": "2090500944979243181"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Zara Zhang",
+        "handle": "zarazhangrui",
+        "bio": "Builder. Make something people want, then make people want it. Harvard’17. GitHub: https://t.co/KCuEaje1wd \nYouTube: https://t.co/8xzbGWsHgY",
+        "tweets": [
+          {
+            "id": "2091379220257603593",
+            "text": "There’s a phenomenon where talented individuals can achieve 10x their potential thanks to AI when working on their own thing \n\nBut when the same individual is put into a large organization, they at most increase their potential by 20% (and sometimes it’s even decreased)\n\nThis is why I’m seeing more and more talented people leave large companies. (The only exceptions are probably top AI labs like OpenAI/Anthropic)",
+            "createdAt": "2026-08-23T04:17:16.000Z",
+            "url": "https://x.com/zarazhangrui/status/2091379220257603593",
+            "likes": 147,
+            "retweets": 7,
+            "replies": 14,
+            "isQuote": true,
+            "quotedTweetId": "2090815767180656839"
+          },
+          {
+            "id": "2091338374447763481",
+            "text": "Everyone who’s ahead in using AI thinks they’re behind",
+            "createdAt": "2026-08-23T01:34:58.000Z",
+            "url": "https://x.com/zarazhangrui/status/2091338374447763481",
+            "likes": 336,
+            "retweets": 20,
+            "replies": 53,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Nikunj Kothari",
+        "handle": "nikunj",
+        "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+        "tweets": [
+          {
+            "id": "2091403643815604629",
+            "text": "Few things:\n1) These are Twitter DMs. I try to be helpful to as many cold DMs as I can. This one shouldn’t have passed the bar. \n\n2) Doxxing someone is not my style. I hope they learned their lesson. \n\n3) I can’t stress enough how important it is to find the right people to take advice from. It boils my blood to see many talented young people who actually have substance play these stupid games.",
+            "createdAt": "2026-08-23T05:54:19.000Z",
+            "url": "https://x.com/nikunj/status/2091403643815604629",
+            "likes": 23,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2091381756012511244",
+            "text": "Kids, I don't know what advice you are getting, but ragebaiting investors and then sending them SAFE docs to just wire you money is NOT how investing works.. https://t.co/MSXm6S85Vd",
+            "createdAt": "2026-08-23T04:27:21.000Z",
+            "url": "https://x.com/nikunj/status/2091381756012511244",
+            "likes": 370,
+            "retweets": 4,
+            "replies": 73,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2091220881590927441",
+            "text": "We complain about slop at X, but LinkedIn has stooped to unimaginable levels of slop 🤮 https://t.co/ULMk7CdxGL https://t.co/MP3lxxhTQ5",
+            "createdAt": "2026-08-22T17:48:05.000Z",
+            "url": "https://x.com/nikunj/status/2091220881590927441",
+            "likes": 40,
+            "retweets": 1,
+            "replies": 12,
+            "isQuote": true,
+            "quotedTweetId": "2090886423574688058"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Dan Shipper",
+        "handle": "danshipper",
+        "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+        "tweets": [
+          {
+            "id": "2091361962068254840",
+            "text": "we’re hiring @every!\n\nhttps://t.co/UVzy1MRevu https://t.co/QLoIrG8K5Z",
+            "createdAt": "2026-08-23T03:08:42.000Z",
+            "url": "https://x.com/danshipper/status/2091361962068254840",
+            "likes": 131,
+            "retweets": 3,
+            "replies": 5,
+            "isQuote": true,
+            "quotedTweetId": "2090853094082945216"
+          },
+          {
+            "id": "2091162447029608735",
+            "text": "agent native ftw https://t.co/C1mGoNcXpO",
+            "createdAt": "2026-08-22T13:55:53.000Z",
+            "url": "https://x.com/danshipper/status/2091162447029608735",
+            "likes": 149,
+            "retweets": 1,
+            "replies": 11,
+            "isQuote": true,
+            "quotedTweetId": "2090889137062826240"
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "xBuilders": 9,
+      "totalTweets": 19
+    }
+  },
+  "podcasts": {
+    "generatedAt": "2026-08-23T06:27:36.372Z",
+    "lookbackHours": 336,
+    "podcasts": [
+      {
+        "source": "podcast",
+        "name": "AI & I by Every",
+        "title": "Microsoft’s Vision for an Internet Made for Agents With CTO Kevin Scott (Best of the Pod)",
+        "guid": "7f04c744-6cb4-48c2-a0f9-1a3a46e0137c",
+        "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+        "publishedAt": "2026-08-12T16:55:27.000Z",
+        "transcript": "Speaker 1 | 00:00 - 00:10\nYou're someone who, I think, cares a lot about the craft of things. One of the knocks on, you know, using agents for coding is it gets rid of some of that feeling or something like that. How do you feel about that?\n\nSpeaker 2 | 00:10 - 00:38\nI love the fact that my people, you know, makers, writ large, so software engineers or, you know, mechanical engineers Yeah. Or woodworkers or potters. If you are really passionate about what you do, you're going to have very strong opinions about how you do it. I've been a woodworker for almost as long as I've been a programmer. This is not the first moment in the past four decades where the nature of software development has changed in a nontrivial way.\n\nSpeaker 2 | 00:38 - 01:14\nLike, if agents are gonna be useful, they have to take action on your behalf. Yep. They have to be able to use tools and make changes in systems and consult information sources that are, you know, diverse and rich. And in order for that to, like, really be great, you need an ecosystem that looks a lot like the Internet. If you have a source of information, you already have a website, you already have an API that's doing something for people out there, like, you've gotta figure out how to plumb things through where agents can, like, talk to those things.\n\nSpeaker 2 | 01:14 - 01:30\nLike, one of the things, the CTO that I've been pushing for at Microsoft is, like, I want all of our systems internally to speak a standard protocol to all of the agents that we're writing inside of Microsoft. Be curious. Try And if it works for you, use it. And if it doesn't, don't.\n\nSpeaker 1 | 01:44 - 01:45\nKevin, welcome to the show.\n\nSpeaker 2 | 01:45 - 01:46\nOh, thanks for having me.\n\nSpeaker 1 | 01:46 - 01:54\nOne of the things that's interesting is I was here last year. Yep. And you said two things. There there are two big themes. One was agents are gonna be everywhere.\n\nSpeaker 1 | 01:54 - 02:10\nThat's one of things you said, which I think really came true. That was very prescient. Another thing is I noticed a big emphasis last year on scaling laws. Yep. There were a lot of graphs of, like, we're building big infrastructure, we're building these bigger models, and every two years, we're gonna get these big performance improvements.\n\nSpeaker 2 | 02:10 - 02:10\nYeah.\n\nSpeaker 1 | 02:11 - 02:17\nThis year, the emphasis is really on, the agentic web. Yep. So what has changed? What have we learned from last year to this year?\n\nSpeaker 2 | 02:17 - 03:05\nYeah, think there's a bunch of things that have changed. Like one of the things is that I think, last year people were like really in this state of mind that they were doubting that, the scaling laws were going to continue to work really well. Whereas like, I think, you know, we've demonstrated year after year after year that, they are in tact and working quite well that like that's not a thing that people need to be reminded of, anymore. And I think the other thing too that's happened honestly is that the reasoning capabilities of the models has, actually gotten a little bit ahead of what we're using the models to do in products. So I've, I've been talking a lot lately about this, thing called the capability overhang.\n\nSpeaker 2 | 03:05 - 04:06\nAnd you know, I think we actually have some work to do collectively across the whole industry to close the gap between what the models are actually capable of and like what we're delivering to users, of that capability. So that, that's one of the, one of the like big thematic things why, you know, scaling laws might not be as interesting to talk about at this year's Build As Last. And then the other thing too is that we've just discovered is all of these agents have emerged over the past year. And so like both the number of agents and like the amount of time that people are spending doing stuff inside of these agents or with these agents is that there's a bunch of other stuff other than reasoning that has to get sorted out in order to make them as useful as they should be. So, you know, the things that I was talking about, at the keynote today at Build were, you know, we need better agentic memory, like our agents right now because memory is constrained in a bunch of interesting ways.\n\nSpeaker 2 | 04:08 - 04:36\nThey're a little bit transactional. So like you use them for like one thing and like, you know, memory's coherent across the course of that task. But yeah, then it may or may not completely go away. And like you're starting from scratch, the next time, which really inhibits your ability to delegate increasingly complicated tasks to these things. And then like, there's just this real issue that like, if agents are going to be useful, they have to take action on your behalf.\n\nSpeaker 2 | 04:36 - 05:52\nLike they have to be able to use tools and, like make changes in systems and consult, information sources that are, you know, diverse and rich. In order for that to like really be great, you need, like an ecosystem that looks a lot like the internet where, if you have a source of information, you already have a website, you already have an API that's doing something for people out there. Like you've got to figure out how to plumb things through where agents can like talk to those things, and where, you know, all of the incentives are aligned for everyone to like go have all of this stuff participating in, you know, ways that make sense to them in this agentic web. And so I think that is the big story this year. It's like, you've seen the first glimmers of like real progress with like super awesome, simple open protocols like MCP that are serving the same purpose in this agentic web as HTTP does on the internet and where you have things like NL web that are like serving, you know, the same moral equivalent purpose as HTML does on the internet.\n\nSpeaker 2 | 05:53 - 06:06\nAnd so I think you're going to see these things like simple things that are composable and layering and like just lots of activity in the open community and like a bunch of things hopefully getting to ubiquity so that agents can actually do stuff.\n\nSpeaker 1 | 06:06 - 06:18\nRight. So I I think to to play that back, like one of the things I hear is like we have agents. Agents are starting to work. And in order to make them powerful, agents need access. They need access to like what whatever is out on the internet, whatever is on your computer, all that kind of stuff.\n\nSpeaker 1 | 06:19 - 06:40\nAnd you need, basically, protocols and processes for agents to be able to access that stuff. And so, you're looking at different parts of the stack. Like Absolutely. The runtime layer where where you're, you know, you're building, like, memory and and and all those kind of stuff. And then m p MCP, which allows you to connect into the wider Internet to get inform more information into agents.\n\nSpeaker 1 | 06:40 - 06:48\nYep. I guess, why is that important to Microsoft? And, like, what role do you want to play in that kind of an ecosystem?\n\nSpeaker 2 | 06:48 - 07:41\nWell, look, I think there are, you know, two, maybe three things that are super important. So one is like, make agents and in order for our agents that we're building for folks to be useful, like we need to solve these problems inside of, these agents. And like, even if you sort of scope it down narrowly to enterprise agents, like one of the things as CTO that I've been pushing for at Microsoft is like, I want all of our systems internally to speak a standard protocol to all of the agents that we're writing inside of Microsoft. So that, we're not exposing the entire world to like Conway's law, which is, you know, organization. So Conway's law is like, it's really funky thing in compilers where, you know, guy Conway said that the, the number of stages or passes in your compiler is going to be dictated by the number of teams you have working on the compiler.\n\nSpeaker 1 | 07:41 - 07:42\nYou ship your org chart. Correct.\n\nSpeaker 2 | 07:42 - 08:26\nYou ship your org chart. And so, you know, you, you certainly inside of the confines of a company like Microsoft, like you don't want to be shipping your org chart when you are, building your agents. And like, it's just kind of a horror show to watch, like as a engineer, like all of this inefficient building, like when you don't have like those standard protocols and services that everybody's using. But I think, you know, if you sort of imagine, if you really imagine like what agents could do and like what you, you know, what users, like not me, but like, you know, just people who are hoping these things can be more useful than they are right now. Like you need things to start happening the same way that they were happening, with the web.\n\nSpeaker 2 | 08:26 - 09:10\nAnd like, I kind of see it right now. Like MCP is like a really great example. So it is a really simple protocol that solves a really important problem, not just for people who are making agents and building platform infrastructure, but for, yeah, Users of these systems who want them to be more useful and for people who are providers who are like, Hey, like I want to be participating in this new agentic web is like, people are doing less of one thing, which I knew how to connect to, like how, and they're, you know, they're sort of sitting here using these agents, like how do I get my stuff wired up into this? And like, how does it make sense for me? Like even from a business model perspective, to do that.\n\nSpeaker 2 | 09:10 - 09:34\nAnd so like, that's the two things it's like make our own agents more useful. Then like, we were a platform company, like even more important than the agents that we're going to write ourselves. Like that platform layer that Microsoft has been building in technology for fifty years. Like we just want to make sure that we are helping solve the problems that are emerging as this agentic web is happening.\n\nSpeaker 1 | 09:34 - 09:50\nYeah. It's been it's really cool to see you guys like leaning really hard into MCP and like integrating it into all of Windows and all that kind of stuff. That's really awesome. And it it brings up for me I've been starting to hear rumblings from people who are thinking a lot about MCP that the security model needs a lot of\n\nSpeaker 2 | 09:50 - 09:51\nwork. And\n\nSpeaker 1 | 09:51 - 10:14\nI'm I'm curious, like, for your take on that because you're you're you're making a lot of comparisons between this stack and the Internet stack. And the Internet has a bunch of, like, things in its security model, like the same origin policy that make sure that you like, if a website is serving you serving you code, like, it's only able to execute on its own data. Yep. And MCP doesn't really have that. So like, how do you what do you think the right security model is for this?\n\nSpeaker 2 | 10:14 - 10:55\nWell, I look, I don't know, that I know what exactly the right security model is. But like the interesting thing about MCP is, like it is so coherently simple that it's going to be relatively easy for the community to decide what the security model is. Like, yeah, we, we have a bunch of like enterprise things that we care a lot about and that like, we're doing really good work with, with the MCP team to get done. So like, we need agents to have identities, so that you can build entitlement systems. So you can say this agent is acting on behalf of this person and like, they're entitled to see these resources in this system.\n\nSpeaker 2 | 10:56 - 11:27\nAnd like even having a way for an agent to sort of go query a bunch of systems and say like, These, here's the thing that I would like to do. These are the systems I need to touch in order to do the thing. Like what entitlements do I need to ask for in order to do this? And so I can request permission like from the user, like the person who's delegated this has to me, like, I present to them? Like, can I have permission to these things in order to do this thing you asked me to do?\n\nSpeaker 2 | 11:27 - 11:54\nYes or no? And then for the administrators of all of these systems, you know, like, Hey, is it okay for all of this to be happening? And so like, there's all of that's going to be like relatively straightforward to do, like, not easy, but like relatively straightforward to do on top of MCP. And like, the important thing is like, let's do it in an open way. Like we don't need it to be proprietary, to like our agents or our systems.\n\nSpeaker 2 | 11:54 - 12:01\nLike we've just got to figure out how to get this dime where things kinda work like the web works.\n\nSpeaker 1 | 12:01 - 12:30\nYeah. Well, it's an interesting question for me because I feel like there's there's maybe two potential models or potential go to markets for for AI stuff that that you guys have been talking about. One is this sort of, like, verticalized model where you own the model and you own the UI layer. You do do all the applications and everything between. And and the the thing about that model, which maybe it's sort of you could say the the App Store or Apple iPhone model is is is a good example of that is you can guarantee security in a lot of ways.\n\nSpeaker 1 | 12:30 - 12:41\nAnd an open model, it's harder to do security stuff, but you get much more like innovation basically because there's no central authority. So how did you guys think about making that making that decision?\n\nSpeaker 2 | 12:41 - 13:00\nYeah. So look, I, I know that that's the argument that a lot of people make. Yeah. I, I think it might be a false dichotomy. There, there is a, you know, like a, a thing that you have in these open systems where they are permissionless.\n\nSpeaker 1 | 13:00 - 13:01\nYeah.\n\nSpeaker 2 | 13:01 - 13:54\nAnd like there's a real advantage in having permissionless, innovation. So like the thing that as an individual that excites me most about what's happening right now is the extent to which you can go innovate and build things without having to seek someone's permission, like where you have to have them grant you permission for distributing your things to other people. And, you know, like having all of these like complicated gatekeeping things that are sitting in between you who are the person who had the idea and like the people who might benefit from it. Like, I think some of these like middle layers that we had that have emerged over the past handful of years, like just aren't contributing much value, honestly, to the two parties and the transaction that matter, which is the person who did the hard work to make a thing. Then the people who are going to either spend their attention or their money or some other currency that's valuable to like access the thing.\n\nSpeaker 2 | 13:56 - 15:00\nSo like, I get it kind of excited about that. And so like, that's one of the reasons why we've made the decisions that we want to, but like, I also think that there are ways that you can get real robust security, in these systems, like leveraging some of the AI capability that you have now, that, you know, where you may be able to have better security. Like if you have an agent that you are running, that is attending to your personal security requirements, like these are things I'm willing to share. These are things I'm not willing to share, like, you know, and that has some kind of knowledge of risk assessments and like, yeah, like for instance, like my wife this morning, while I was, while I was getting ready to jump on stage, like I got this flurry of emails, that, because I'm the like backup security account for my wife where like somebody was like fiddling around with two factor authentication on her account. And like the first thing I did was I texted her.\n\nSpeaker 2 | 15:00 - 15:29\nLike I didn't want to email her because somebody might have gained unauthorized access to her email account. I texted her. I was like, Hey, are you screwing around with the configuration? And she's like, yes. And so like, you could imagine like having an agent that is like privy to like a whole bunch of your communication modalities, like being able to like notice that something funky is going on and then like, you know, using a bunch of resources to triangulate, like whether that's legit activity or illegitimate activity.\n\nSpeaker 2 | 15:29 - 15:38\nSo I, I like, I think there's just a bunch of stuff like that that like you, you can have both, right? Like, I don't think it needs to be like, you know, one or the other as you framed it.\n\nSpeaker 1 | 15:38 - 15:52\nYeah. That makes sense. One of the one one other thing that I'm I'm curious about is it just seems pretty clear that software engineering is changing. Yeah. And you're someone who's been involved in software engineering for a long time.\n\nSpeaker 1 | 15:53 - 16:06\nYou're someone who also, I think, cares a lot about, like, the craft of things. Like, the craft of how things are made. We were talking earlier about you're making you do lot of ceramics. You make your own bags. Like, you're you love having your hands in things.\n\nSpeaker 1 | 16:06 - 16:23\nYeah. And I think one of the knocks on, you know, using agents for coding is, like, it gets rid of some of that feeling or something like that, which I don't necessarily agree with. But I'm sort of curious for you, like, as someone who cares about the craft of code, looking into this future of coding with agents, like how does that, how do you feel about that?\n\nSpeaker 2 | 16:23 - 17:08\nWell, so let me start by saying that I, I, I love the fact that my people, and like, when I say my people, I mean, you know, makers, writ large, so software engineers or mechanical engineers or woodworkers or potters, or, you know, just sort of pick your thing where people are trying to create things from raw materials or nothing. If you are really passionate about what you do, you're going to have very strong opinions about how you do it. The tools that you use, the materials that you use, like how things get put together. Is a necessary thing for you to be great at your job. The interesting thing is people have lots and lots of different opinions.\n\nSpeaker 2 | 17:08 - 17:39\nOne of the events you said, I've been doing it for a long time. I am. I'm an old fart. I wrote my first program when I was 12, which means I've been programming for forty one years. And so the thing that you get to see when you've been doing a thing for a very long time is like, this is not the first moment in the past four decades where, the nature of software development has changed in a non trivial way and where people have very strong opinions about the change and what it means.\n\nSpeaker 2 | 17:40 - 18:11\nAnd so, yeah, I think the, the reality is that people will have choice. You know, like I still, when I go into a text editor, I probably shouldn't say this because like we make, you know, Visual Studio Code, like I'm such an old recalcitrant fart, that I still use VI. I use them at least. But like my text editor of choice is like this extremely antiquated thing. And like, I just refuse to go use something different.\n\nSpeaker 2 | 18:11 - 18:50\nEven though I know for sure that that is sub optimizing a part of what I'm doing, but I make the decision anyway, because like I get to choose. And then in other aspects of my making, like either software or something else that I'm doing, like I will be like, okay, the important thing here is not the way that I'm doing this particular part of it. It's the outcome that I'm trying to get to. And like, I'm going to use the most powerful Or most convenient way to go get to the outcome. And like, you know, I don't care who's going to throw rocks at me for doing it.\n\nSpeaker 2 | 18:50 - 19:19\nAnd like, it's literally everywhere. Like I I've been a woodworker for almost as long as I've been a programmer. And when I was a teenager, like the big debate was like, Oh, are you a real woodworker? If you use power tools, like, you know, real woodworkers only use hand tools. Like there's still a little bit of that debate today, but like the real debate is like, are you a real woodworker if you use CNC tools, like computer controlled power tools versus just power tools?\n\nSpeaker 2 | 19:20 - 19:41\nAnd I understand it. Like, I actually think it's interesting the debate itself. But like sometimes like people are going to make different choices because like they value something different than you do. If you value the process more than you value the outcome, like sometimes you'll make different decisions and people who value the outcome more than the process.\n\nSpeaker 1 | 19:41 - 19:52\nAnd I think the like, is it a, are you a real woodworker, a real programmer? You're sort of saying like, you're only real if you do it the way I grew doing it. Yeah. When you ask that question in a lot of ways, you know?\n\nSpeaker 2 | 19:52 - 20:02\nBut it's just so varied. Right? And like, so the, the thing that I will say is like, I would never in a million years tell anyone not to have strong opinions about their craft. Like have them. Like it's great.\n\nSpeaker 2 | 20:02 - 20:40\nLike the, the advice that I would give people and like, this is not me telling them what it's just advice, like things that I've found useful for myself is just have an open mind, you know, when the tools are changing. I can't even tell you like the number of times where I have looked at a new technology in some other like non software, dimension of making that came along where I'm like, Ugh, like I don't want to learn like three d printers. Like I waited forever to learn how to use three d printers and like, I regret it. Like I should have started earlier. Like they're so damn useful for almost everything that I do.\n\nSpeaker 2 | 20:41 - 20:52\nAnd for a whole variety of complicated reasons, like I didn't let myself be curious about that, which is odd. And so, yeah, just like, be curious, try stuff like, and if it works for you, use it. And if it doesn't, don't.\n\nSpeaker 1 | 20:52 - 21:01\nYeah. What do you think is the future of software engineering agents? Like, is there going to be like one agent rule them all or is it, you're just going use many different agents with different tastes or like, how do you see that ecosystem shaping up?\n\nSpeaker 2 | 21:01 - 21:32\nYeah. I look, I think it's going to be a lot of different agents. I mean, like, and it's good to have a lot of agents and like we certainly would get up Copilot and the, you know, get up agent stuff that we're working on. Like, I think we will compete very hard to like be a tool that lots of people will choose because it's very useful to them. But I think it's unrealistic in the universe of developers to like, think that like every developer on the planet is going to snap to using like one tool for like an important part of their job.\n\nSpeaker 2 | 21:32 - 21:55\nLike part of the joy of being a developer is you actually have that choice and you can sort of choose and play around with a bunch of different things and like do irrational things and like do rational things. Like, it's, it's just, you know, it, it, it is one of the very consistent things that I've seen over the past four decades of my programming life is like people choose to change their tools all the time. Yeah.\n\nSpeaker 1 | 21:56 - 22:01\nWhat are the dimensions? Do you have an opinion on the dimensions along which the different agents might differ?\n\nSpeaker 2 | 22:01 - 22:53\nWell, I think the most important thing about, agents is like probably the product making part of them. And so the most interesting startups that I'm seeing right now are not trying to innovate by building some kind of differentiated infrastructure. They're innovating because they think they have an understanding of a problem that someone has that is better than anyone else. And they think that they can pick up infrastructure or modify infrastructure or tune infrastructure to go solve their understanding of that problem in a world class way. So I think that's what we need a lot of right now.\n\nSpeaker 2 | 22:53 - 23:35\nAnd like, that's, what's going to dictate the diversity of agents and like how, like which things get used for what. And I think honestly, because it's so much easier now to like have that nuanced understanding of what someone's problem is and to pick up these tools to go take a swing at solving it, that you're just going to have a lot of companies, like building a lot of things, trying to, you can even see it with the software development tools. It's like crazy how many things have come out over the past year. And like, they're interesting, like all of them. Yeah, it's a lot to respond to when you're a company building software development tools yourself, but like, it's super, super interesting.\n\nSpeaker 2 | 23:35 - 23:49\nIt's like, what we've seen is if you've got some kind of nuanced understanding of what someone needs, like people have like high tolerance and like high interest in like giving things a try. Yeah.\n\nSpeaker 1 | 23:49 - 24:11\nSo we're almost out of time, but, I'm, I'm curious, like let's say it's a year from now, we're back at build. Yep. What are, what are some things that are a hot topic right now, or big questions that people have right now that are not going to matter in a year? And what is going to matter in a year? And what are your, what are your predictions for what we're going to be talking about?\n\nSpeaker 2 | 24:11 - 25:03\nYeah. I think people who are still like hanging onto these ideas that, oh, like the technology's not ready yet because like I, yeah, I tried to do something and it was like marginally too expensive or like it was marginally capable of, you know, doing the thing that I wanted to do. Like, I, I think anyone who is using those as excuses to wait to get started are going to be super behind, because everything's going to get cheaper and everything is going get more capable every year. I know like, and I think this is actually not a hard sell in 2025. Yeah, it was this loud chorus of like, Oh, you know, the progress is gonna, you know, it's about to end and like, everything's going to stop and like, everybody's going to be super disappointed.\n\nSpeaker 2 | 25:04 - 26:05\nLike I, I, I mean, there's still some people out there saying that, but like, I don't think, you know, folks are paying much attention to them anymore. Mostly because like, you know, what, what do you win by paying attention to like some crank who's, saying like, you know, the, the things about to stop, like you're sort of betting on failure and the cost of betting on failure versus betting on optimism is like, is a real big difference there. So yeah, like I, I think we're, we're gonna, we're going to see a ton of progress on, like the level of ambition of problems that people are tackling with agents. And then I think, you know, modalities that are going to be really different is like, is this agentic web starts to get more complete, more plumbed out, and the models reasoning and planning capability get better and better. Like you're going to start to get to the point where you're able to go from this synchronous mode of interaction with agents to asynchronous.\n\nSpeaker 2 | 26:05 - 26:38\nLike right now, of what people do is like they sort of sit down, like they got a thing they want to do, like they issue the prompts, like, and they wait until, you know, the thing comes back, and like, you know, do something with that response. And so I think, you know, by next year, you're going to see people using these agents to like, Hey, go sort this out. And like the agent is going to take a lot of time. It's going to go make a lot of calls out to systems, like the things that it's sort of, like taking action on are going to like take a while to come back. Then they're going to like integrate all of those responses and like do something.\n\nSpeaker 2 | 26:38 - 26:53\nAnd like that whole thing may iterate a bunch of times and then, you know, at some non trivial amount of time later, you're going to sort of say, okay, like here's the, here's the, here's as far as I got, like now it's your turn. Like go take some action now. Sounds like a\n\nSpeaker 1 | 26:53 - 26:54\nfuture I want to be in.\n\nSpeaker 2 | 26:54 - 26:56\nYeah. Me too. Right?\n\nSpeaker 1 | 26:57 - 27:01\nWell, Kevin, thank you so much. It was really, really great to talk to you.\n\nSpeaker 2 | 27:01 - 27:03\nGood to talk to you as well. Thanks for having me on.\n\nSpeaker 3 | 27:11 - 27:23\nOh my gosh, folks. You absolutely positively have to smash that like button and subscribe to AI and I. Why? Because this show is the epitome of awesomeness. It's like finding a treasure chest in your backyard.\n\nSpeaker 3 | 27:23 - 27:46\nBut instead of gold, it's filled with pure unadulterated knowledge bombs about chat GPT. Every episode is a roller coaster of emotions, insights, and laughter that will leave you on the edge of your seat craving for more. It's not just a show. It's a journey into the future with Dan Shipper as the captain of the spaceship. So do yourself a favor.\n\nSpeaker 3 | 27:46 - 27:55\nHit like, smash subscribe, and strap in for the ride of your life. And now without any further ado, let me just say, Dan, I'm absolutely, hopelessly in love with you.\n\nSpeaker 2 | 27:58 - 27:58\nFancy.\n\nSpeaker 1 | 27:59 - 28:01\nThat's how you know it's the real deal.\n\nSpeaker 2 | 28:01 - 28:01\nYeah. Excellent."
+      }
+    ],
+    "stats": {
+      "podcastEpisodes": 1
+    }
+  },
+  "blogs": {
+    "generatedAt": "2026-08-23T06:27:36.614Z",
+    "lookbackHours": 72,
+    "blogs": [],
+    "stats": {
+      "blogPosts": 0
+    }
+  }
+}

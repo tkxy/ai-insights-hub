@@ -1,0 +1,142 @@
+{
+  "week": "2026-W35",
+  "range": {
+    "start": "2026-08-24",
+    "end": "2026-08-30"
+  },
+  "generatedAt": "2026-08-24T01:20:00.000Z",
+  "trends": [
+    {
+      "title": "评估成了真瓶颈",
+      "summary": "这周两个大厂大佬不约而同聊同一件事：模型能力已经不是卡点了，真正拖慢 AI 普及的是「评估」。企业要能度量某个工作流到底被 AI 改进了多少，才敢放手让它自动跑，光靠「感觉不错」是不行的。",
+      "implication": "给输入法做 AI 能力时，别只看「生成得好不好」，要先定一个能反复测的指标（比如润色后用户是否采纳、翻译后是否回改）。没有可度量的尺子，就没法判断改动是变好了还是变差了。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Aaron Levie（Box CEO）",
+          "url": "https://x.com/levie/status/2091359223368315050",
+          "quote": "AI 的普及远比大家以为的更受限于「有没有好的评估」。你不能自动化一件你无法度量进展的事，企业不能只靠感觉（AI diffusion is far more rate limited by having good evals than most realize… you can't automate what you can't assess the progress on）"
+        },
+        {
+          "type": "tweet",
+          "who": "Madhu Guru（Meta AI 高级总监，曾负责 Google Gemini）",
+          "url": "https://x.com/realmadhuguru/status/2091278653435072523",
+          "quote": "在评估上爬山，说白了就是挑一个真正重要的维度去优化它；真正的工作落在更好的测试框架和模型选择上（Hill climbing on evals is just a fancy way of saying: pick a dimension that matters and optimize for it）"
+        }
+      ]
+    },
+    {
+      "title": "Agent 要「原生」",
+      "summary": "从一句「agent native」到微软 CTO 讲「给 agent 造一个像互联网一样的生态」，信号很一致：真正的 agent 产品不是把聊天框塞进老界面里，而是让 agent 能直接动手、用工具、改系统，背后还得有一套通用协议把它们串起来。",
+      "implication": "输入法里的 AI 助手如果只会「回答」，天花板很低。更有价值的是让它顺着输入场景「动手」——补全、改写、帮你把一段话发出去或存起来，动作越贴近输入这件事本身，越像「原生」而非「套壳」。",
+      "evidence": [
+        {
+          "type": "podcast",
+          "who": "Kevin Scott（微软 CTO，AI & I 播客）",
+          "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+          "quote": "如果 agent 要有用，它就得替你动手：能用工具、能在系统里做改动、能去查各种丰富多样的信息来源（If agents are gonna be useful, they have to take action on your behalf）"
+        },
+        {
+          "type": "tweet",
+          "who": "Dan Shipper（Every CEO）",
+          "url": "https://x.com/danshipper/status/2091162447029608735",
+          "quote": "agent 原生，干就完了（agent native ftw）"
+        }
+      ]
+    },
+    {
+      "title": "信任账要公开算",
+      "summary": "两条线撞在一起：OpenAI 主动承认 Codex 的用量统计有坑、承诺全量重置付费订阅额度；另一边有人教大家用 AI 反向清理自己在 Google 和 App 里泄露的数据。共同点是——用户对「AI 到底用了、存了我什么」这笔账，开始要求公开、可查、可撤销。",
+      "implication": "输入法天天接触用户最私密的内容，信任是命根子。AI 能力上线时，把「数据用在哪、怎么删、用量怎么算」讲清楚、给用户一个可撤销的出口，比堆更多功能更能留住人。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Thibault Sottiaux（OpenAI Codex/ChatGPT）",
+          "url": "https://x.com/thsottiaux/status/2091407991736332689",
+          "quote": "我们发现了几处用量统计的低效（长会话里的图片、Computer History、自动生成对话标题），明天会推送修复，并全量重置所有付费订阅的用量（we will also do a full reset of the usage for all paid subscriptions）"
+        },
+        {
+          "type": "tweet",
+          "who": "Peter Yang（AI 实用教程博主）",
+          "url": "https://x.com/petergyang/status/2091331251211059468",
+          "quote": "在乎隐私的话，让 Codex 或 Claude Code 帮你把不再需要访问你 Google 信息的那些应用一个个断掉（Just disconnected half the apps that should no longer have my Google info）"
+        }
+      ]
+    }
+  ],
+  "builders": [
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "Box CEO",
+      "highlights": [
+        {
+          "summary": "点破 AI 普及的真正瓶颈是评估：通用模型的评测只能告诉你大方向，真正拉开差距的是把企业每个具体工作流都做上可度量的评估，否则没法自动化、也没法靠感觉做判断。",
+          "url": "https://x.com/levie/status/2091359223368315050"
+        }
+      ]
+    },
+    {
+      "name": "Madhu Guru",
+      "handle": "realmadhuguru",
+      "role": "Meta AI 高级总监，曾负责 Google Gemini",
+      "highlights": [
+        {
+          "summary": "连写六篇「怎么做评估」，这周讲「爬山」：先给产品建立一套失败模式分类，把它当罗盘，找出最拖后腿的维度（比如工具调用失败）去定向优化，比盲目堆上下文更有效。",
+          "url": "https://x.com/realmadhuguru/status/2091278653435072523"
+        }
+      ]
+    },
+    {
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "OpenAI Codex / ChatGPT 成员",
+      "highlights": [
+        {
+          "summary": "公开承认 Codex 用量统计有漏洞（长会话图片、Computer History、自动生成标题都在偷偷烧额度），并宣布全量重置付费订阅用量，展现的是把「用量账」摆到台面上的姿态。",
+          "url": "https://x.com/thsottiaux/status/2091407991736332689"
+        }
+      ]
+    },
+    {
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "AI 实用教程/访谈博主",
+      "highlights": [
+        {
+          "summary": "教大家用 Codex/Claude Code 反向清理隐私：一键断掉不该再访问你 Google 信息的第三方应用，把「AI 管数据」从抓数据反过来变成清数据。",
+          "url": "https://x.com/petergyang/status/2091331251211059468"
+        },
+        {
+          "summary": "发起一个叫 /fuck-cancer 的 AI 技能，目标是帮患者和家属梳理就医流程、保持信息同步——AI 技能开始往垂直、有真实痛点的方向走，而不是泛泛的问答。",
+          "url": "https://x.com/petergyang/status/2091239339204415969"
+        }
+      ]
+    },
+    {
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "role": "独立 Builder",
+      "highlights": [
+        {
+          "summary": "观察到一个现象：有才华的人自己做项目，AI 能帮他把潜能放大 10 倍；但一进大公司就只剩 20% 甚至更少，所以越来越多人出走，这也解释了 AI 时代的「个体户」潮。",
+          "url": "https://x.com/zarazhangrui/status/2091379220257603593"
+        }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "AI & I by Every",
+      "title": "微软 CTO 眼中的「为 Agent 而生的互联网」（Microsoft's Vision for an Internet Made for Agents With CTO Kevin Scott）",
+      "guest": "Kevin Scott（微软 CTO）",
+      "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+      "keyTakeaways": [
+        "Agent 要有用，就得能替你动手：用工具、改系统、查各种来源，而不是只回一句话。",
+        "微软内部正在推「所有系统用一套标准协议跟 agent 对话」，因为 agent 要真正跑起来，需要一套像互联网一样的生态。",
+        "面对「用 agent 写代码会不会丢掉手艺感」，Kevin Scott 的回应是：真正热爱手艺的人反而更有主见，不冲突。"
+      ]
+    }
+  ],
+  "blogs": []
+}
