@@ -1,0 +1,192 @@
+{
+  "date": "2026-08-29",
+  "generated_at": "2026-09-01T15:50:00+08:00",
+  "daily_summary": "本周后半段，行业讨论从模型能力转向一个更棘手的话题：人类监督正在被 Agent 悄悄侵蚀。一份颇具分量的立场论文指出，Agent 已经在实质降低人类的有效监督能力——人的注意力有限、审批疲劳（approval fatigue）累积、评估能力退化，最终可能导致「human in the loop」变成名义上的存在而非真正有效的把关。论文呼吁行业需要新的注意力协调与评估工具，而不只是加更多审批按钮。这条判断对任何设计 AI 介入体验的团队都极为关键——它说明「让用户确认」并不是万能的安全阀，确认次数过多反而会摧毁确认的意义。与此呼应的是 Anthropic 在 8 月下旬把多个 Agent 工具面推向生产稳定：Computer Use、Browser Use、Files API 与 Agent Skills API 转为 GA，SDK 更新移除了此前的 beta header 摩擦，显著降低了操作应用、网页与文件的 Agent 的集成成本。OpenAI 的 Agents SDK 则系统化了 human-in-the-loop 模式（中断、RunState 持久化、粘性审批、跨会话序列化审批），成为可门控工具调用的事实参考实现。Google Research 另发布 AgentHands，让 Agent 在空间/XR 对话中生成同步、可读的手势以传达意图。",
+  "design_insights": [
+    {
+      "title": "审批疲劳会让「用户确认」失效：确认次数本身是一种成本",
+      "summary": "一份立场论文/预印本指出，Agent 已在实质降低人类的有效监督能力：人的注意力有限、审批疲劳累积、评估能力退化，可能导致「human in the loop」变成名义存在而非有效把关。论文呼吁需要新的注意力协调与评估工具，而不只是增加审批按钮。建议做法包括限制审批带宽、批量处理低风险审批、只把高评估价值项交人工审核，并测量审核者准确率与延迟以发现监督退化。",
+      "implication": "这条直接修正了我们此前的一个设计判断。之前确立的原则是「任何可能改变原意的 AI 操作都必须经用户确认」，逻辑上没错，但这份研究揭示了它的副作用：如果确认弹得太频繁，用户会进入无脑点「确定」的状态，确认就退化成一道形式，反而比不确认更危险——因为它给了虚假的安全感。更成熟的做法是给确认分级：高风险且低频的操作（整段替换、跨应用引用内容）必须显式确认；低风险高频操作（错别字纠正）静默执行但保留完整撤销。核心指标不是「确认覆盖率」而是「用户真正看清了多少次」。落地建议：为 AI 介入设计确认预算——单次输入会话内的确认次数应有上限，超出则自动降级为「静默执行 + 事后可查看变更清单」。",
+      "sources": [
+        "AI Agent Store",
+        "arXiv 预印本"
+      ],
+      "source_urls": [
+        "https://aiagentstore.ai/ai-agent-news/topic/human-ai-synergy/2025-06-10/detailed"
+      ],
+      "tags": [
+        "审批疲劳",
+        "确认设计",
+        "AI治理"
+      ]
+    },
+    {
+      "title": "Anthropic 工具面转 GA：Agent 集成摩擦下降，竞争转向体验层",
+      "summary": "8 月下旬 Anthropic 将多个 Agent 工具面推向生产稳定：Computer Use、Browser Use、Files API 与 Agent Skills API 转为 GA，SDK 更新移除了此前的 beta header 摩擦，降低了操作应用、网页和文件的 Agent 在保持与人类工作流连接前提下的集成成本。",
+      "implication": "工具链成熟意味着「能不能做」不再是壁垒，竞争会迅速转移到「做得好不好」的体验层。这对输入法团队是有利信号——我们的核心竞争力本来就在交互设计而非底层工程。当所有人都能轻松接入 Agent 能力时，胜负手会落在：触发时机是否恰当、上下文取用是否准确、结果呈现是否不打扰、出错能否优雅恢复。这些恰是交互设计的领地。落地建议：不必急于追逐工具链的每次更新，而应把资源投在建立自己的「AI 交互规范」——明确定义输入法场景下 AI 介入的时机、边界、呈现方式与恢复路径，形成可复用的设计资产。",
+      "sources": [
+        "AI Agent Store",
+        "Anthropic"
+      ],
+      "source_urls": [
+        "https://aiagentstore.ai/ai-agent-news/topic/human-ai-synergy/2025-06-10/detailed"
+      ],
+      "tags": [
+        "Anthropic",
+        "工具链",
+        "交互设计"
+      ]
+    },
+    {
+      "title": "粘性审批与跨会话持久化：中断恢复的工程范式",
+      "summary": "OpenAI 的 Agents SDK 系统化记录了 human-in-the-loop 模式：中断（interruptions）、RunState 持久化、粘性审批（sticky approvals）、跨会话序列化审批，为实现可门控的工具调用提供了事实参考。建议实践包括实现持久化的 run-state 与版本管理，使暂停的运行能在人类决策后安全恢复，并带上下文与版本号记录审批。",
+      "implication": "「粘性审批」这个概念对输入法很有用——它指的是用户一次授权后，同类操作在一定范围内不再重复询问。输入法场景里这能显著缓解审批疲劳：用户第一次授权「允许 AI 读取当前输入框上下文」后，同一应用内不必反复弹窗；但切换到另一个应用（尤其是银行、医疗类敏感应用）时应重新询问。跨会话持久化则提示我们，用户的授权决策应该被记住并可管理——需要一个集中的「AI 权限」面板，让用户能看到自己授权过什么、并随时撤回。这既是良好体验，也是应对监管透明度要求的必要基建。",
+      "sources": [
+        "AI Agent Store",
+        "OpenAI Agents SDK"
+      ],
+      "source_urls": [
+        "https://aiagentstore.ai/ai-agent-news/topic/human-ai-synergy/2025-06-10/detailed"
+      ],
+      "tags": [
+        "粘性审批",
+        "权限管理",
+        "状态持久化"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "AI 介入的「确认预算」与分级确认机制",
+      "pain_point": "对所有可能改变原意的 AI 操作一律弹确认，导致用户进入无脑点「确定」状态，确认退化为形式并产生虚假安全感——比不确认更危险。",
+      "opportunity": "为确认分级并设预算：高风险低频操作（整段替换、跨应用引用）显式确认；低风险高频操作（错别字纠正）静默执行但保留完整撤销。单次会话确认次数设上限，超出自动降级为「静默执行 + 事后变更清单可查」。核心指标从「确认覆盖率」转向「用户真正看清的次数」。",
+      "priority": "P0",
+      "evidence": "立场论文指出审批疲劳与注意力有限会使「human in the loop」变成名义存在，呼吁限制审批带宽、批量处理低风险审批、只把高评估价值项交人工审核。"
+    },
+    {
+      "title": "粘性授权 + 集中式 AI 权限面板",
+      "pain_point": "AI 读取上下文的授权若每次都问会造成疲劳，若一次全局授权则用户失去对敏感场景的控制，且无法回溯自己授权过什么。",
+      "opportunity": "实现粘性授权：同一应用内一次授权后不重复询问，切换到敏感应用（银行/医疗）时重新确认。配套集中式「AI 权限」面板，让用户可查看已授权范围并随时撤回。既缓解疲劳又满足监管透明度要求。",
+      "priority": "P1",
+      "evidence": "OpenAI Agents SDK 系统化了粘性审批与跨会话序列化审批模式，并建议带上下文与版本号记录审批以支持安全恢复。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "立场论文警告：Agent 正在侵蚀人类有效监督",
+      "summary": "论文指出人类注意力有限、审批疲劳累积、评估能力退化，可能使「human in the loop」成为名义而非实质把关。呼吁需要新的注意力协调与评估工具，而不只是增加审批按钮，并建议测量审核者准确率与延迟以发现监督退化。",
+      "source": "AI Agent Store",
+      "source_urls": [
+        "https://aiagentstore.ai/ai-agent-news/topic/human-ai-synergy/2025-06-10/detailed"
+      ],
+      "tags": [
+        "AI治理",
+        "审批疲劳",
+        "人类监督"
+      ]
+    },
+    {
+      "title": "Anthropic 将 Computer Use、Browser Use 等工具面推向 GA",
+      "summary": "8 月下旬 Computer Use、Browser Use、Files API 与 Agent Skills API 转为 GA，SDK 更新移除此前 beta header 摩擦，降低操作应用、网页和文件的 Agent 集成成本，使构建混合人机流程显著更容易。",
+      "source": "AI Agent Store",
+      "source_urls": [
+        "https://aiagentstore.ai/ai-agent-news/topic/human-ai-synergy/2025-06-10/detailed"
+      ],
+      "tags": [
+        "Anthropic",
+        "工具链",
+        "GA"
+      ]
+    },
+    {
+      "title": "OpenAI Agents SDK 系统化 human-in-the-loop 模式",
+      "summary": "文档化中断、RunState 持久化、粘性审批、跨会话序列化审批等模式，为实现可门控工具调用、长运行任务与跨进程恢复提供事实参考实现。",
+      "source": "AI Agent Store",
+      "source_urls": [
+        "https://aiagentstore.ai/ai-agent-news/topic/human-ai-synergy/2025-06-10/detailed"
+      ],
+      "tags": [
+        "OpenAI",
+        "SDK",
+        "人机协同"
+      ]
+    },
+    {
+      "title": "Google Research 发布 AgentHands：Agent 的可读手势",
+      "summary": "提出让 Agent 在空间/XR 对话中生成同步、可读的手势（指向、演示操作、时机把握），使非语言线索能传达意图与动作，提升人类对 Agent 推理与提议的实时理解。是 3D/AR/VR 场景下人机协同的直接 UX 杠杆。",
+      "source": "AI Agent Store",
+      "source_urls": [
+        "https://aiagentstore.ai/ai-agent-news/topic/human-ai-synergy/2025-06-10/detailed"
+      ],
+      "tags": [
+        "Google",
+        "XR",
+        "非语言交互"
+      ]
+    },
+    {
+      "title": "建议：把非语言可读性作为 XR Agent 的产品指标",
+      "summary": "分析建议在将 AgentHands 式功能规模化到生产前，先通过短期用户研究测量「手势 vs 理解度」，把非语言可读性作为可量化的产品指标而非主观感受。",
+      "source": "AI Agent Store",
+      "source_urls": [
+        "https://aiagentstore.ai/ai-agent-news/topic/human-ai-synergy/2025-06-10/detailed"
+      ],
+      "tags": [
+        "XR",
+        "产品指标",
+        "用户研究"
+      ]
+    },
+    {
+      "title": "Anthropic MHS 相关进展获关注",
+      "summary": "本周 AI 周报提及 Anthropic MHS 的相关进展，与混元 Hy4 开源、加速进化出货突破、RuiPath 2.0 病理大模型、AGIC 2026 等共同构成本周热点。",
+      "source": "天极网",
+      "source_urls": [
+        "https://ai.yesky.com/405/369905.shtml"
+      ],
+      "tags": [
+        "Anthropic",
+        "行业动态"
+      ]
+    },
+    {
+      "title": "PhiZero 提出 reason-then-render 范式",
+      "summary": "论文提出 PhiZero，采用「先推理后渲染」范式：以物理语言推断未来世界演化序列，再通过自监督从真实视频中将转换渲染为视频。实验显示其具备建模物理一致世界演化的能力，可用于交互式世界建模与零样本动作迁移。",
+      "source": "AI Native Foundation",
+      "source_urls": [
+        "https://huggingface.co/papers/2607.28624"
+      ],
+      "tags": [
+        "世界模型",
+        "论文",
+        "物理建模"
+      ]
+    },
+    {
+      "title": "中国国际大数据产业博览会持续举行",
+      "summary": "8 月 28-30 日在贵阳举办，372 家中外企业参展，华为 Atlas 950 SuperPoD 超节点系统、软通动力 Token 工厂等新产品展出，算力基础设施为核心议题。",
+      "source": "腾讯自选股",
+      "source_urls": [
+        "https://gu.qq.com/"
+      ],
+      "tags": [
+        "大数据",
+        "会展",
+        "算力"
+      ]
+    },
+    {
+      "title": "Hy4 开源后开发者生态反馈汇聚",
+      "summary": "混元 Hy4 preview 开源后，开发者围绕 1M 上下文能力、普惠定价与递归自我改进机制展开讨论，关注其在软件工程与办公场景的实际表现，以及 preview 版本已知问题的影响范围。",
+      "source": "天极网",
+      "source_urls": [
+        "https://ai.yesky.com/405/369905.shtml"
+      ],
+      "tags": [
+        "混元",
+        "开发者生态",
+        "开源"
+      ]
+    }
+  ]
+}
