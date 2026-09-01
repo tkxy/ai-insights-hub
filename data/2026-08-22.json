@@ -7,33 +7,65 @@
       "title": "讯飞 AI 会议速记：输入法切入垂直场景的产品策略分析",
       "summary": "讯飞输入法新增会议速记功能，支持实时语音转写和 AI 摘要生成。这是输入法从通用工具向垂直场景延伸的典型案例。",
       "implication": "输入法绑定高频场景（如会议、邮件）可提升使用黏性。搜狗可评估「专业场景 + 输入法」的产品策略——如法律场景绑定合同模板、医疗场景绑定病历格式。",
-      "sources": "科大讯飞产品公告",
-      "source_urls": ["https://www.iflytek.com/keyboard-meeting-notes"],
-      "tags": ["讯飞", "垂直场景", "会议速记"]
+      "sources": [
+        "科大讯飞产品公告"
+      ],
+      "source_urls": [
+        "https://www.iflytek.com/keyboard-meeting-notes"
+      ],
+      "tags": [
+        "讯飞",
+        "垂直场景",
+        "会议速记"
+      ]
     },
     {
       "title": "AI Agent 上下文管理设计：窗口有限时如何保持对话连贯",
       "summary": "多位 AI 产品设计师分享了上下文窗口管理的 UX 策略：记忆摘要可视化、关键信息固钉、对话分支导航等模式。",
       "implication": "输入法 AI 助手的多轮对话同样面临上下文管理问题。可设计「对话记忆卡片」——将之前对话的关键信息摘要展示在输入框上方，让用户知道 AI 记住了什么。",
-      "sources": "AI UX Community Medium",
-      "source_urls": ["https://medium.com/ai-ux/context-window-design"],
-      "tags": ["上下文管理", "对话设计", "Agent"]
+      "sources": [
+        "AI UX Community Medium"
+      ],
+      "source_urls": [
+        "https://medium.com/ai-ux/context-window-design"
+      ],
+      "tags": [
+        "上下文管理",
+        "对话设计",
+        "Agent"
+      ]
     },
     {
       "title": "OpenAI Canvas 协作编辑器更新：AI 写作从对话走向画布",
       "summary": "OpenAI Canvas 重大更新，新增多人协作编辑、版本历史和 AI 内联建议功能，从对话式写作进化为画布式协作编辑。",
       "implication": "AI 写作工具的形态正从「对话生成」进化为「协作编辑」。输入法的 AI 写作功能也可考虑画布模式——在一个可视化面板中展示多个 AI 生成变体供用户选择。",
-      "sources": "OpenAI Blog",
-      "source_urls": ["https://openai.com/blog/canvas-collaborative-update"],
-      "tags": ["Canvas", "协作编辑", "AI写作"]
+      "sources": [
+        "OpenAI Blog"
+      ],
+      "source_urls": [
+        "https://openai.com/blog/canvas-collaborative-update"
+      ],
+      "tags": [
+        "Canvas",
+        "协作编辑",
+        "AI写作"
+      ]
     },
     {
       "title": "输入法键盘上方空间的信息密度设计原则",
       "summary": "Android 设计社区讨论输入法 candidate bar 上方空间的利用方式——AI 建议、快捷功能、上下文提示如何在有限空间中共存。",
       "implication": "输入法键盘上方是寸土寸金的信息空间。需要建立严格的信息优先级系统：输入联想 > 实时 AI 建议 > 场景快捷入口，避免信息过载导致用户忽略核心功能。",
-      "sources": "Android Dev Community",
-      "source_urls": ["https://android-developers.googleblog.com/keyboard-above-space"],
-      "tags": ["键盘设计", "信息密度", "Android"]
+      "sources": [
+        "Android Dev Community"
+      ],
+      "source_urls": [
+        "https://android-developers.googleblog.com/keyboard-above-space"
+      ],
+      "tags": [
+        "键盘设计",
+        "信息密度",
+        "Android"
+      ]
     }
   ],
   "demand_mining": [
@@ -57,64 +89,118 @@
       "title": "讯飞输入法推出 AI 会议速记功能",
       "summary": "讯飞输入法新版支持会议实时速记和 AI 摘要生成，试图在垂直场景找到差异化突破点。",
       "source": "科大讯飞",
-      "source_urls": ["https://www.iflytek.com/keyboard-meeting-notes"],
-      "tags": ["讯飞", "会议", "AI速记"]
+      "source_urls": [
+        "https://www.iflytek.com/keyboard-meeting-notes"
+      ],
+      "tags": [
+        "讯飞",
+        "会议",
+        "AI速记"
+      ]
     },
     {
       "title": "OpenAI Canvas 协作编辑器重大更新",
       "summary": "Canvas 新增多人协作、版本历史和 AI 内联建议，从对话写作进化为画布协作编辑模式。",
       "source": "OpenAI Blog",
-      "source_urls": ["https://openai.com/blog/canvas-collaborative-update"],
-      "tags": ["OpenAI", "Canvas", "写作"]
+      "source_urls": [
+        "https://openai.com/blog/canvas-collaborative-update"
+      ],
+      "tags": [
+        "OpenAI",
+        "Canvas",
+        "写作"
+      ]
     },
     {
       "title": "AI Agent 上下文窗口管理设计模式发布",
       "summary": "AI UX 社区发布上下文管理最佳实践：记忆摘要可视化、关键信息固钉、对话分支导航等。",
       "source": "AI UX Community",
-      "source_urls": ["https://medium.com/ai-ux/context-window-design"],
-      "tags": ["UX", "上下文", "设计模式"]
+      "source_urls": [
+        "https://medium.com/ai-ux/context-window-design"
+      ],
+      "tags": [
+        "UX",
+        "上下文",
+        "设计模式"
+      ]
     },
     {
       "title": "寒武纪新一代 AI 推理芯片发布",
       "summary": "寒武纪发布新一代 AI 推理芯片，性能达到 NVIDIA H100 的80%，国产 AI 芯片加速追赶。",
       "source": "36氪",
-      "source_urls": ["https://36kr.com/cambricon-new-chip-2026"],
-      "tags": ["寒武纪", "芯片", "国产"]
+      "source_urls": [
+        "https://36kr.com/cambricon-new-chip-2026"
+      ],
+      "tags": [
+        "寒武纪",
+        "芯片",
+        "国产"
+      ]
     },
     {
       "title": "百度文心大模型4.5发布在即",
       "summary": "百度确认文心大模型4.5将于9月发布，重点提升中文理解和多模态能力。",
       "source": "百度",
-      "source_urls": ["https://yiyan.baidu.com/blog/ernie-4-5-preview"],
-      "tags": ["百度", "文心", "大模型"]
+      "source_urls": [
+        "https://yiyan.baidu.com/blog/ernie-4-5-preview"
+      ],
+      "tags": [
+        "百度",
+        "文心",
+        "大模型"
+      ]
     },
     {
       "title": "GitHub Copilot Workspace 全面开放",
       "summary": "GitHub Copilot Workspace 结束内测全面开放，开发者可在 AI 辅助环境中完成从规划到编码全流程。",
       "source": "GitHub Blog",
-      "source_urls": ["https://github.blog/copilot-workspace-ga"],
-      "tags": ["GitHub", "Copilot", "开发"]
+      "source_urls": [
+        "https://github.blog/copilot-workspace-ga"
+      ],
+      "tags": [
+        "GitHub",
+        "Copilot",
+        "开发"
+      ]
     },
     {
       "title": "DeepSeek V4-Flash-Vision 在视觉推理任务中达到 SOTA",
       "summary": "DeepSeek 多模态模型在 VQA、OCR 和图表理解等多项视觉推理任务中刷新最佳成绩。",
       "source": "DeepSeek",
-      "source_urls": ["https://deepseek.com/blog/v4-flash-vision-benchmark"],
-      "tags": ["DeepSeek", "视觉", "SOTA"]
+      "source_urls": [
+        "https://deepseek.com/blog/v4-flash-vision-benchmark"
+      ],
+      "tags": [
+        "DeepSeek",
+        "视觉",
+        "SOTA"
+      ]
     },
     {
       "title": "AI 写作工具月活突破5亿：赛道进入成熟期",
       "summary": "统计显示全球 AI 写作工具月活用户合计突破5亿，包括 ChatGPT、Notion AI、Claude 等产品。",
       "source": "Statista",
-      "source_urls": ["https://www.statista.com/ai-writing-tools-mau-2026"],
-      "tags": ["AI写作", "市场", "统计"]
+      "source_urls": [
+        "https://www.statista.com/ai-writing-tools-mau-2026"
+      ],
+      "tags": [
+        "AI写作",
+        "市场",
+        "统计"
+      ]
     },
     {
       "title": "中国 AI 应用市场规模预计2027年突破万亿",
       "summary": "IDC 报告预测中国 AI 应用市场将在2027年突破万亿人民币规模，教育和办公是最大增长领域。",
       "source": "IDC",
-      "source_urls": ["https://www.idc.com/china-ai-market-forecast"],
-      "tags": ["市场", "预测", "中国"]
+      "source_urls": [
+        "https://www.idc.com/china-ai-market-forecast"
+      ],
+      "tags": [
+        "市场",
+        "预测",
+        "中国"
+      ]
     }
   ]
 }

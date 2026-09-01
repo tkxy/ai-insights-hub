@@ -7,25 +7,49 @@
       "title": "百度输入法「超会写」升级：AI 写作助手的竞品功能对标",
       "summary": "百度输入法联合文心大模型推出新版「超会写」功能，支持长文章续写、风格改写和多场景文案生成，从工具型输入法向写作平台转型。",
       "implication": "输入法 AI 写作功能竞争加剧。搜狗需在写作场景建立差异化——可聚焦「专业领域写作」（法律文书、医疗报告），与专业模式形成协同，而非泛泛做通用写作。",
-      "sources": "百度输入法公告",
-      "source_urls": ["https://shurufa.baidu.com/ai-write-upgrade"],
-      "tags": ["百度输入法", "AI写作", "竞品"]
+      "sources": [
+        "百度输入法公告"
+      ],
+      "source_urls": [
+        "https://shurufa.baidu.com/ai-write-upgrade"
+      ],
+      "tags": [
+        "百度输入法",
+        "AI写作",
+        "竞品"
+      ]
     },
     {
       "title": "Figma AI Design Critique：设计评审工具的智能化趋势",
       "summary": "Figma 发布 AI 设计批注功能，可自动分析设计稿并生成可用性建议、对比度检查和布局优化提示。",
       "implication": "设计工具正在用 AI 自动化传统人工评审流程。输入法团队可关注类似工具提升内部设计评审效率，同时作为「AI + 设计」产品方向的参考。",
-      "sources": "Figma Blog",
-      "source_urls": ["https://www.figma.com/blog/ai-design-critique"],
-      "tags": ["Figma", "设计工具", "AI"]
+      "sources": [
+        "Figma Blog"
+      ],
+      "source_urls": [
+        "https://www.figma.com/blog/ai-design-critique"
+      ],
+      "tags": [
+        "Figma",
+        "设计工具",
+        "AI"
+      ]
     },
     {
       "title": "渐进式信任设计：Agent 产品中最被忽视的 UX 原则",
       "summary": "UX 研究者指出当前 AI Agent 产品普遍缺乏「渐进式信任」设计——直接给出完整结果而非逐步展示过程，导致用户不信任 AI 输出。",
       "implication": "输入法 AI 功能需要引入渐进式信任机制：先展示 AI 的推理过程/参考依据，再给出最终建议，让用户理解并信任 AI 判断。专业模式尤其需要此设计。",
-      "sources": "Interaction Design Foundation",
-      "source_urls": ["https://www.interaction-design.org/progressive-trust"],
-      "tags": ["渐进式信任", "Agent UX", "设计原则"]
+      "sources": [
+        "Interaction Design Foundation"
+      ],
+      "source_urls": [
+        "https://www.interaction-design.org/progressive-trust"
+      ],
+      "tags": [
+        "渐进式信任",
+        "Agent UX",
+        "设计原则"
+      ]
     }
   ],
   "demand_mining": [
@@ -49,57 +73,105 @@
       "title": "百度输入法「超会写」联合文心大模型升级",
       "summary": "百度输入法新版「超会写」功能支持长文续写、风格改写和多场景文案生成，定位从输入工具向写作平台转型。",
       "source": "百度输入法",
-      "source_urls": ["https://shurufa.baidu.com/ai-write-upgrade"],
-      "tags": ["百度输入法", "AI写作", "文心"]
+      "source_urls": [
+        "https://shurufa.baidu.com/ai-write-upgrade"
+      ],
+      "tags": [
+        "百度输入法",
+        "AI写作",
+        "文心"
+      ]
     },
     {
       "title": "Figma 发布 AI Design Critique 设计评审功能",
       "summary": "Figma 上线 AI 自动设计评审，可分析设计稿并生成可用性建议、对比度和布局优化提示。",
       "source": "Figma Blog",
-      "source_urls": ["https://www.figma.com/blog/ai-design-critique"],
-      "tags": ["Figma", "AI工具", "设计"]
+      "source_urls": [
+        "https://www.figma.com/blog/ai-design-critique"
+      ],
+      "tags": [
+        "Figma",
+        "AI工具",
+        "设计"
+      ]
     },
     {
       "title": "Anthropic 年营收 650 亿美元：Claude 企业版驱动增长",
       "summary": "Anthropic 年化营收突破 650 亿美元里程碑，Claude 企业版 API 调用量同比增长 8 倍。",
       "source": "The Information",
-      "source_urls": ["https://www.theinformation.com/anthropic-revenue-2026"],
-      "tags": ["Anthropic", "商业", "营收"]
+      "source_urls": [
+        "https://www.theinformation.com/anthropic-revenue-2026"
+      ],
+      "tags": [
+        "Anthropic",
+        "商业",
+        "营收"
+      ]
     },
     {
       "title": "微信输入法悄然更新：长文本编辑模式上线",
       "summary": "微信输入法在最新版本中新增长文本编辑模式，支持在输入框内进行段落级编辑和格式调整。",
       "source": "微信公开课",
-      "source_urls": ["https://mp.weixin.qq.com/wechat-keyboard-update"],
-      "tags": ["微信输入法", "长文本", "编辑"]
+      "source_urls": [
+        "https://mp.weixin.qq.com/wechat-keyboard-update"
+      ],
+      "tags": [
+        "微信输入法",
+        "长文本",
+        "编辑"
+      ]
     },
     {
       "title": "OpenAI 计划2027年 IPO：估值超3000亿美元",
       "summary": "OpenAI CEO 确认公司 IPO 计划，预计2027年完成上市，当前估值已超过3000亿美元。",
       "source": "Bloomberg",
-      "source_urls": ["https://www.bloomberg.com/openai-ipo-2027"],
-      "tags": ["OpenAI", "IPO", "估值"]
+      "source_urls": [
+        "https://www.bloomberg.com/openai-ipo-2027"
+      ],
+      "tags": [
+        "OpenAI",
+        "IPO",
+        "估值"
+      ]
     },
     {
       "title": "AI 设计工具赛道融资加速：Galileo AI 获5亿美元 B 轮",
       "summary": "AI 设计工具 Galileo AI 完成5亿美元 B 轮融资，产品可从文本描述直接生成高保真设计稿。",
       "source": "TechCrunch",
-      "source_urls": ["https://techcrunch.com/2026/galileo-ai-series-b"],
-      "tags": ["Galileo AI", "融资", "设计工具"]
+      "source_urls": [
+        "https://techcrunch.com/2026/galileo-ai-series-b"
+      ],
+      "tags": [
+        "Galileo AI",
+        "融资",
+        "设计工具"
+      ]
     },
     {
       "title": "渐进式信任：AI 产品设计的被忽视原则",
       "summary": "研究指出 AI 产品普遍缺乏渐进式信任设计，直接抛出结果而不展示过程导致用户信任度低。",
       "source": "IDF",
-      "source_urls": ["https://www.interaction-design.org/progressive-trust"],
-      "tags": ["UX研究", "信任", "设计原则"]
+      "source_urls": [
+        "https://www.interaction-design.org/progressive-trust"
+      ],
+      "tags": [
+        "UX研究",
+        "信任",
+        "设计原则"
+      ]
     },
     {
       "title": "NVIDIA 向 Poolside 投资 70 亿美元加码 AI 编程",
       "summary": "NVIDIA 以70亿美元战略投资 AI 代码生成公司 Poolside，加速 AI 辅助软件开发布局。",
       "source": "Reuters",
-      "source_urls": ["https://www.reuters.com/nvidia-poolside-investment"],
-      "tags": ["NVIDIA", "Poolside", "投资"]
+      "source_urls": [
+        "https://www.reuters.com/nvidia-poolside-investment"
+      ],
+      "tags": [
+        "NVIDIA",
+        "Poolside",
+        "投资"
+      ]
     }
   ]
 }

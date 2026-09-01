@@ -7,33 +7,66 @@
       "title": "科大讯飞亏损困境：AI 输入法商业化的前车之鉴",
       "summary": "科大讯飞陷入教育、医疗、AI三线作战困境，亏损持续扩大。其输入法产品虽有庞大用户基数但变现困难，引发行业对 AI 输入法商业化路径的深入讨论。",
       "implication": "搜狗需警惕「技术领先≠商业成功」。输入法 AI 功能需明确变现路径——会员增值、B端定制、广告流量之间做取舍，避免陷入讯飞式的多线作战泥潭。",
-      "sources": "财报公告, 证券分析",
-      "source_urls": ["https://finance.sina.com.cn/2026/iflytek-loss"],
-      "tags": ["竞品分析", "商业化", "讯飞"]
+      "sources": [
+        "财报公告",
+        "证券分析"
+      ],
+      "source_urls": [
+        "https://finance.sina.com.cn/2026/iflytek-loss"
+      ],
+      "tags": [
+        "竞品分析",
+        "商业化",
+        "讯飞"
+      ]
     },
     {
       "title": "Agent 界面设计 9 原则：AI 助手产品的系统性设计框架",
       "summary": "设计社区发布 Agentic UX 设计原则，涵盖透明度、可控性、渐进式信任、错误恢复等9个维度，为 AI Agent 产品提供完整设计指南。",
       "implication": "输入法 AI 助手属于 Agent 范畴。可直接对照9原则审视当前设计：是否告知用户 AI 在做什么（透明度）、是否允许用户随时退出（可控性）、是否有渐进式功能暴露。",
-      "sources": "Agentic Design Patterns",
-      "source_urls": ["https://www.nngroup.com/articles/agentic-ux-principles"],
-      "tags": ["Agent UX", "设计原则", "AI助手"]
+      "sources": [
+        "Agentic Design Patterns"
+      ],
+      "source_urls": [
+        "https://www.nngroup.com/articles/agentic-ux-principles"
+      ],
+      "tags": [
+        "Agent UX",
+        "设计原则",
+        "AI助手"
+      ]
     },
     {
       "title": "OpenRouter 被 Stripe 收购：模型路由层整合趋势",
       "summary": "支付巨头 Stripe 收购 AI 模型路由平台 OpenRouter，将多模型切换能力整合到支付基础设施中，信号是模型调用将成为通用基础设施。",
       "implication": "多模型切换将变得更容易。输入法可考虑接入多模型路由，根据场景（翻译/写作/问答）动态选择最优模型，而非绑定单一供应商。",
-      "sources": "TechCrunch",
-      "source_urls": ["https://techcrunch.com/2026/08/stripe-openrouter"],
-      "tags": ["基础设施", "多模型", "收购"]
+      "sources": [
+        "TechCrunch"
+      ],
+      "source_urls": [
+        "https://techcrunch.com/2026/08/stripe-openrouter"
+      ],
+      "tags": [
+        "基础设施",
+        "多模型",
+        "收购"
+      ]
     },
     {
       "title": "Human-AI UX Patterns 设计模式库上线",
       "summary": "Google 和 IDEO 联合发布 Human-AI UX Patterns 开源设计模式库，提供 30+ 种经过验证的 AI 产品交互模式。",
       "implication": "输入法 AI 功能设计可直接参考该模式库中的「智能建议」「渐进式披露」「置信度展示」等模式，减少从零设计的成本。",
-      "sources": "Google AI Blog",
-      "source_urls": ["https://ai.google/human-ai-ux-patterns"],
-      "tags": ["设计模式", "Google", "AI UX"]
+      "sources": [
+        "Google AI Blog"
+      ],
+      "source_urls": [
+        "https://ai.google/human-ai-ux-patterns"
+      ],
+      "tags": [
+        "设计模式",
+        "Google",
+        "AI UX"
+      ]
     }
   ],
   "demand_mining": [
@@ -57,71 +90,129 @@
       "title": "科大讯飞三线作战困境：亏损持续扩大",
       "summary": "科大讯飞教育、医疗、AI三线作战导致亏损扩大，市场对其 AI 商业化路径产生质疑。",
       "source": "证券时报",
-      "source_urls": ["https://finance.sina.com.cn/2026/iflytek-loss"],
-      "tags": ["讯飞", "亏损", "AI商业化"]
+      "source_urls": [
+        "https://finance.sina.com.cn/2026/iflytek-loss"
+      ],
+      "tags": [
+        "讯飞",
+        "亏损",
+        "AI商业化"
+      ]
     },
     {
       "title": "Stripe 收购 OpenRouter：模型路由成基础设施",
       "summary": "支付巨头 Stripe 收购 AI 模型路由平台 OpenRouter，整合多模型切换能力到支付和 SaaS 基础设施。",
       "source": "TechCrunch",
-      "source_urls": ["https://techcrunch.com/2026/08/stripe-openrouter"],
-      "tags": ["Stripe", "OpenRouter", "收购"]
+      "source_urls": [
+        "https://techcrunch.com/2026/08/stripe-openrouter"
+      ],
+      "tags": [
+        "Stripe",
+        "OpenRouter",
+        "收购"
+      ]
     },
     {
       "title": "Agentic UX 设计原则发布：9 大核心维度",
       "summary": "设计社区发布面向 AI Agent 产品的系统性设计框架，覆盖透明度、可控性、信任建立等9个关键维度。",
       "source": "NN Group",
-      "source_urls": ["https://www.nngroup.com/articles/agentic-ux-principles"],
-      "tags": ["Agent UX", "设计原则"]
+      "source_urls": [
+        "https://www.nngroup.com/articles/agentic-ux-principles"
+      ],
+      "tags": [
+        "Agent UX",
+        "设计原则"
+      ]
     },
     {
       "title": "Google/IDEO 发布 Human-AI UX Patterns 模式库",
       "summary": "30+ 种经过验证的 AI 产品交互设计模式，覆盖智能建议、渐进披露、错误恢复等场景。",
       "source": "Google AI Blog",
-      "source_urls": ["https://ai.google/human-ai-ux-patterns"],
-      "tags": ["Google", "设计模式", "开源"]
+      "source_urls": [
+        "https://ai.google/human-ai-ux-patterns"
+      ],
+      "tags": [
+        "Google",
+        "设计模式",
+        "开源"
+      ]
     },
     {
       "title": "Generalist AI 发布 GEN-1.5 通用模型",
       "summary": "Generalist AI 发布新一代通用模型 GEN-1.5，支持代码、文本、图像多模态任务。",
       "source": "Generalist AI Blog",
-      "source_urls": ["https://generalist.ai/blog/gen-1-5"],
-      "tags": ["Generalist AI", "通用模型"]
+      "source_urls": [
+        "https://generalist.ai/blog/gen-1-5"
+      ],
+      "tags": [
+        "Generalist AI",
+        "通用模型"
+      ]
     },
     {
       "title": "北京审理首例 AI 模型破坏案",
       "summary": "北京市海淀区法院受理首例恶意攻击 AI 大模型服务案件，涉及 prompt 注入导致服务中断。",
       "source": "法治日报",
-      "source_urls": ["https://www.legaldaily.com.cn/2026/ai-attack-case"],
-      "tags": ["AI安全", "法律", "中国"]
+      "source_urls": [
+        "https://www.legaldaily.com.cn/2026/ai-attack-case"
+      ],
+      "tags": [
+        "AI安全",
+        "法律",
+        "中国"
+      ]
     },
     {
       "title": "OpenAI 确认 2027 年 IPO 计划",
       "summary": "OpenAI CEO Sam Altman 在投资者会议确认公司计划2027年完成 IPO，当前估值超3000亿美元。",
       "source": "Bloomberg",
-      "source_urls": ["https://www.bloomberg.com/openai-ipo-2027"],
-      "tags": ["OpenAI", "IPO", "融资"]
+      "source_urls": [
+        "https://www.bloomberg.com/openai-ipo-2027"
+      ],
+      "tags": [
+        "OpenAI",
+        "IPO",
+        "融资"
+      ]
     },
     {
       "title": "NVIDIA 向 AI 编程公司 Poolside 投资 70 亿美元",
       "summary": "NVIDIA 宣布向 AI 代码生成创业公司 Poolside 投资70亿美元，加码 AI 辅助编程赛道。",
       "source": "Reuters",
-      "source_urls": ["https://www.reuters.com/nvidia-poolside-investment"],
-      "tags": ["NVIDIA", "投资", "AI编程"]
+      "source_urls": [
+        "https://www.reuters.com/nvidia-poolside-investment"
+      ],
+      "tags": [
+        "NVIDIA",
+        "投资",
+        "AI编程"
+      ]
     },
     {
       "title": "群体 AI 概念兴起：多 Agent 协作成新方向",
       "summary": "学术界和工业界开始探索多 AI Agent 协作的群体智能模式，被视为 AGI 的可能路径之一。",
       "source": "Nature Machine Intelligence",
-      "source_urls": ["https://www.nature.com/natmachintell/collective-ai"],
-      "tags": ["群体AI", "多Agent", "研究"]
+      "source_urls": [
+        "https://www.nature.com/natmachintell/collective-ai"
+      ],
+      "tags": [
+        "群体AI",
+        "多Agent",
+        "研究"
+      ]
     },
     {
       "title": "美国多家 AI 公司密集降价：价格战全面爆发",
       "summary": "OpenAI、Anthropic、Google 在一周内先后宣布 API 降价，平均降幅20-40%，AI 算力成本快速下降。",
       "source": "The Information",
-      "source_urls": ["https://www.theinformation.com/ai-price-war-2026"],
-      "tags": ["降价", "AI市场", "竞争"]
+      "source_urls": [
+        "https://www.theinformation.com/ai-price-war-2026"
+      ],
+      "tags": [
+        "降价",
+        "AI市场",
+        "竞争"
+      ]
     }
   ]
 }

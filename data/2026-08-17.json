@@ -7,33 +7,66 @@
       "title": "OpenAI 设计负责人揭示「空白框问题」：输入法 AI 功能的核心 UX 挑战",
       "summary": "OpenAI 产品设计负责人在访谈中指出 AI 产品面临的首要 UX 问题是「一个空白输入框不知道干什么」——用户缺乏明确起点指引，转化率低。",
       "implication": "输入法 AI 助手面临同样挑战：用户打开对话框后不知道能问什么。需要通过预设 prompt 推荐、场景化引导卡片来降低使用门槛。",
-      "sources": "OpenAI Design Team Interview",
-      "source_urls": ["https://www.theverge.com/2026/8/openai-design-superapp"],
-      "tags": ["AI UX", "输入法设计", "引导设计"]
+      "sources": [
+        "OpenAI Design Team Interview"
+      ],
+      "source_urls": [
+        "https://www.theverge.com/2026/8/openai-design-superapp"
+      ],
+      "tags": [
+        "AI UX",
+        "输入法设计",
+        "引导设计"
+      ]
     },
     {
       "title": "豆包输入法鸿蒙版 v0.9.1 上线尝鲜：竞品抢占 HarmonyOS 生态",
       "summary": "字节跳动旗下豆包输入法推出鸿蒙原生版本 v0.9.1，支持 HarmonyOS NEXT 系统，抢先占位鸿蒙应用生态。",
       "implication": "鸿蒙生态输入法竞争已开启。搜狗需评估鸿蒙适配优先级，确保在新平台占据早期用户心智，尤其关注鸿蒙的输入法框架与 Android 的差异。",
-      "sources": "华为应用市场公告",
-      "source_urls": ["https://appgallery.huawei.com/doubao-keyboard"],
-      "tags": ["竞品动态", "鸿蒙", "豆包输入法"]
+      "sources": [
+        "华为应用市场公告"
+      ],
+      "source_urls": [
+        "https://appgallery.huawei.com/doubao-keyboard"
+      ],
+      "tags": [
+        "竞品动态",
+        "鸿蒙",
+        "豆包输入法"
+      ]
     },
     {
       "title": "NVIDIA AVO 满分通过 ARC-AGI-3：推理能力跃迁对端侧 AI 的影响",
       "summary": "NVIDIA 推出的 AVO 模型在 ARC-AGI-3 推理基准上获得满分，成为首个通过该测试的系统，展示了通用推理能力的突破。",
       "implication": "高水平推理能力将逐步下放到端侧设备。输入法产品可期待更强的语义理解和意图预测能力，为专业模式的精准词库推荐提供技术基础。",
-      "sources": "ARC Prize Foundation",
-      "source_urls": ["https://arcprize.org/2026-results"],
-      "tags": ["AI推理", "端侧AI", "技术趋势"]
+      "sources": [
+        "ARC Prize Foundation"
+      ],
+      "source_urls": [
+        "https://arcprize.org/2026-results"
+      ],
+      "tags": [
+        "AI推理",
+        "端侧AI",
+        "技术趋势"
+      ]
     },
     {
       "title": "Generative UI 模式兴起：从固定界面到 AI 动态生成界面",
       "summary": "多家产品开始采用 Generative UI 范式——AI 根据用户意图实时生成界面组件而非展示固定 UI，Vercel v0 和 Claude Artifacts 是典型案例。",
       "implication": "输入法的功能面板设计可借鉴 Generative UI 思路：根据用户当前输入上下文动态生成最相关的功能卡片，而非一成不变的功能列表。",
-      "sources": "Vercel Blog, Anthropic Design Blog",
-      "source_urls": ["https://vercel.com/blog/generative-ui-patterns"],
-      "tags": ["Generative UI", "动态界面", "设计模式"]
+      "sources": [
+        "Vercel Blog",
+        "Anthropic Design Blog"
+      ],
+      "source_urls": [
+        "https://vercel.com/blog/generative-ui-patterns"
+      ],
+      "tags": [
+        "Generative UI",
+        "动态界面",
+        "设计模式"
+      ]
     }
   ],
   "demand_mining": [
@@ -64,71 +97,131 @@
       "title": "NVIDIA AVO 在 ARC-AGI-3 推理基准拿下满分",
       "summary": "NVIDIA 的 AVO 系统成为首个在 ARC-AGI-3 通用推理测试中获得满分的 AI，标志着通用推理能力的重大突破。",
       "source": "ARC Prize Foundation",
-      "source_urls": ["https://arcprize.org/2026-results"],
-      "tags": ["NVIDIA", "推理", "AGI"]
+      "source_urls": [
+        "https://arcprize.org/2026-results"
+      ],
+      "tags": [
+        "NVIDIA",
+        "推理",
+        "AGI"
+      ]
     },
     {
       "title": "豆包输入法鸿蒙版 v0.9.1 上线尝鲜",
       "summary": "字节跳动旗下豆包输入法推出 HarmonyOS NEXT 原生版本，支持 AI 联想与语音输入。",
       "source": "华为应用市场",
-      "source_urls": ["https://appgallery.huawei.com/doubao-keyboard"],
-      "tags": ["豆包", "鸿蒙", "输入法"]
+      "source_urls": [
+        "https://appgallery.huawei.com/doubao-keyboard"
+      ],
+      "tags": [
+        "豆包",
+        "鸿蒙",
+        "输入法"
+      ]
     },
     {
       "title": "OpenAI 设计负责人谈超级应用 UX：空白框是最大敌人",
       "summary": "OpenAI 产品设计主管指出 AI 产品面临的核心 UX 挑战是用户不知道如何开始，需要更好的引导机制。",
       "source": "The Verge",
-      "source_urls": ["https://www.theverge.com/2026/8/openai-design-superapp"],
-      "tags": ["OpenAI", "UX设计", "AI产品"]
+      "source_urls": [
+        "https://www.theverge.com/2026/8/openai-design-superapp"
+      ],
+      "tags": [
+        "OpenAI",
+        "UX设计",
+        "AI产品"
+      ]
     },
     {
       "title": "Generative UI 成为 AI 产品设计新范式",
       "summary": "越来越多产品采用 AI 动态生成界面而非固定 UI 的设计模式，Vercel v0 和 Claude Artifacts 领跑。",
       "source": "Vercel Blog",
-      "source_urls": ["https://vercel.com/blog/generative-ui-patterns"],
-      "tags": ["Generative UI", "设计趋势", "前端"]
+      "source_urls": [
+        "https://vercel.com/blog/generative-ui-patterns"
+      ],
+      "tags": [
+        "Generative UI",
+        "设计趋势",
+        "前端"
+      ]
     },
     {
       "title": "Replit 宣布免费模式全面开放",
       "summary": "Replit 开放 AI 编程助手免费使用，降低开发者入门门槛，加速 AI 辅助编程普及。",
       "source": "Replit Blog",
-      "source_urls": ["https://blog.replit.com/free-tier-2026"],
-      "tags": ["Replit", "AI编程", "免费"]
+      "source_urls": [
+        "https://blog.replit.com/free-tier-2026"
+      ],
+      "tags": [
+        "Replit",
+        "AI编程",
+        "免费"
+      ]
     },
     {
       "title": "xAI 发布 Grok Bot Beta：AI 助手进入聊天机器人领域",
       "summary": "马斯克旗下 xAI 推出独立 Grok Bot 产品，支持多模态对话、代码生成和实时搜索。",
       "source": "xAI Official",
-      "source_urls": ["https://x.ai/blog/grok-bot-beta"],
-      "tags": ["xAI", "Grok", "AI助手"]
+      "source_urls": [
+        "https://x.ai/blog/grok-bot-beta"
+      ],
+      "tags": [
+        "xAI",
+        "Grok",
+        "AI助手"
+      ]
     },
     {
       "title": "教育部发文推进 AI 全学段教育覆盖",
       "summary": "中国教育部发布通知要求2027年前实现人工智能教育全学段覆盖，从小学到研究生全面融入 AI 素养培养。",
       "source": "教育部官网",
-      "source_urls": ["https://www.moe.gov.cn/2026/ai-education"],
-      "tags": ["AI教育", "政策", "中国"]
+      "source_urls": [
+        "https://www.moe.gov.cn/2026/ai-education"
+      ],
+      "tags": [
+        "AI教育",
+        "政策",
+        "中国"
+      ]
     },
     {
       "title": "DeepSeek 发布 V4-Flash-Vision-Exp 多模态模型",
       "summary": "DeepSeek 推出支持视觉理解的新一代多模态模型 V4-Flash-Vision-Exp，在多项视觉推理任务上达到 SOTA。",
       "source": "DeepSeek Blog",
-      "source_urls": ["https://deepseek.com/blog/v4-flash-vision"],
-      "tags": ["DeepSeek", "多模态", "视觉AI"]
+      "source_urls": [
+        "https://deepseek.com/blog/v4-flash-vision"
+      ],
+      "tags": [
+        "DeepSeek",
+        "多模态",
+        "视觉AI"
+      ]
     },
     {
       "title": "Anthropic 年化营收突破 650 亿美元",
       "summary": "据报道 Anthropic 年化营收已达 650 亿美元，Claude 系列产品企业版需求强劲增长。",
       "source": "The Information",
-      "source_urls": ["https://www.theinformation.com/anthropic-revenue-2026"],
-      "tags": ["Anthropic", "营收", "AI商业"]
+      "source_urls": [
+        "https://www.theinformation.com/anthropic-revenue-2026"
+      ],
+      "tags": [
+        "Anthropic",
+        "营收",
+        "AI商业"
+      ]
     },
     {
       "title": "绿色算力大会在乌兰察布召开",
       "summary": "2026绿色算力大会在内蒙古乌兰察布举行，聚焦AI大模型的能源消耗与可持续发展路径。",
       "source": "新华网",
-      "source_urls": ["https://www.xinhuanet.com/2026-08/green-computing"],
-      "tags": ["绿色算力", "可持续", "大会"]
+      "source_urls": [
+        "https://www.xinhuanet.com/2026-08/green-computing"
+      ],
+      "tags": [
+        "绿色算力",
+        "可持续",
+        "大会"
+      ]
     }
   ]
 }

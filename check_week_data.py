@@ -122,6 +122,17 @@ def check_daily(day: date) -> None:
             if not (it.get("title") or "").strip():
                 err(f"[内容] data/{ds}.json {name}[{i}] title 为空")
 
+            # sources / source_urls / tags 必须是数组。
+            # 历史故障：sources 被写成字符串时，页面渲染 sources[idx]
+            # 取到的是字符串首字符，来源标签退化为单个字母（如 "O"、"财"）。
+            for arr_field in ("sources", "source_urls", "tags"):
+                if arr_field in fields and arr_field in it:
+                    val = it[arr_field]
+                    if not isinstance(val, list):
+                        err(f"[类型] data/{ds}.json {name}[{i}].{arr_field} "
+                            f"应为数组，实际是 {type(val).__name__}"
+                            f"（会导致来源标签只显示单个字符）")
+
     # validate.py 中的隐含规则
     if dm and di and not (len(dm) < len(di)):
         err(f"[规则] data/{ds}.json demand_mining({len(dm)}) 必须小于 "
