@@ -1,0 +1,371 @@
+{
+  "week": "2026-W35",
+  "range": {
+    "start": "2026-08-24",
+    "end": "2026-08-30"
+  },
+  "generatedAt": "2026-09-04T11:00:00.000000+00:00",
+  "count": 20,
+  "items": [
+    {
+      "name": "deepseek-ai/DeepSeek-Harness",
+      "title": "DeepSeek Harness — 模块化 Agent 运行时，一切皆插件",
+      "url": "https://github.com/deepseek-ai/DeepSeek-Harness",
+      "stars": 152100,
+      "weeklyStars": 38000,
+      "forks": 0,
+      "language": "Python",
+      "topics": ["agent", "llm", "plugin", "runtime"],
+      "category": "AI / Agent 运行时",
+      "insight": "DeepSeek Harness 是本周 GitHub 最耀眼的项目，月增 15.2 万星。它不是模型，而是 Agent 运行时——把工具、Skill、会话、存储、沙箱全部抽象为插件，围绕模型形成可替换的运行层。这意味着开发者的注意力正在从「选哪个模型」转移到「用什么 Runtime 包裹模型」。对输入法 AI 的启示：如果我们未来需要做 Agent 编排（调用多个能力组合完成任务），Harness 这类 Runtime 架构的可插拔思路值得参考——让能力模块独立可替换，而不是耦合进一个黑盒。注意：目前仍是 developer preview，未经安全审计，不适合生产环境。",
+      "cases": [
+        {"name": "AI 能力编排层", "desc": "作为调用多个 AI 工具的可插拔运行层，按需组合能力"},
+        {"name": "开发者工具链", "desc": "让开发者可替换底层模型而不必重写工具调用逻辑"},
+        {"name": "安全研究", "desc": "通过插件沙箱机制研究 Agent 权限隔离与安全边界"}
+      ],
+      "isNew": true
+    },
+    {
+      "name": "mattpocock/skills",
+      "title": "Skills — Matt Pocock 整理的工程师向 Agent Skill 集合",
+      "url": "https://github.com/mattpocock/skills",
+      "stars": 33900,
+      "weeklyStars": 12000,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": ["agent", "skill", "coding-agent", "workflow"],
+      "category": "AI / Agent 工程",
+      "insight": "Matt Pocock（TypeScript 生态知名布道者）整理的 Skill 集合，把常见工程任务（TDD、代码审查、文档生成）封装成 Agent 可调用的 Skill。其价值不在数量而在质量——经过工程师视角打磨的 Skill 才是可信赖的。这个项目印证了一个趋势：AI Agent 的真正门槛正在从「能不能用 AI 完成任务」转变为「能不能用好的 Skill 让 AI 稳定完成任务」。对设计工具流的借鉴意义：把团队内高频、可复用的 AI 辅助步骤沉淀成 Skill，而不是每次临时构造提示词。",
+      "cases": [
+        {"name": "编码 Agent 工具箱", "desc": "为 Claude Code、Cursor 等 Agent 提供经过工程师验证的标准化 Skill"},
+        {"name": "团队 AI 规范", "desc": "把团队的 AI 辅助步骤标准化，减少提示词漂移"},
+        {"name": "新人上手材料", "desc": "作为 AI 辅助工程的参考实现，帮助新团队成员快速掌握最佳实践"}
+      ],
+      "isNew": true
+    },
+    {
+      "name": "Archify/Archify",
+      "title": "Archify — 把代码库与系统转化为可验证的技术地图",
+      "url": "https://github.com/Archify/Archify",
+      "stars": 28700,
+      "weeklyStars": 9500,
+      "forks": 0,
+      "language": "Python",
+      "topics": ["architecture", "diagram", "agent-skill", "codebase"],
+      "category": "AI / 代码分析",
+      "insight": "Archify 做的事是把代码库转成「可验证的技术地图」——不只是生成架构图，而是让图与代码保持同步、可追溯到具体实现。这解决了传统架构文档最痛的问题：写完就过时。在 AI Agent 场景下，这类工具让 Agent 不需要每次重新解析整个代码库，而是可以查询结构化的「地图」。对我们的实践价值：做设计决策时，如果能快速生成当前代码的模块关系图，有助于发现哪些模块最适合接入 AI 能力。",
+      "cases": [
+        {"name": "架构文档自动化", "desc": "从代码库自动生成并保持同步的架构文档，避免手写文档过时"},
+        {"name": "Agent 上下文压缩", "desc": "让 AI Agent 查询结构化技术地图而非解析原始代码，降低 token 消耗"},
+        {"name": "代码评审辅助", "desc": "在 PR 评审时快速可视化变更影响的模块范围"}
+      ],
+      "isNew": true
+    },
+    {
+      "name": "obra/superpowers",
+      "title": "Superpowers — 把 SDLC 流程拆给 Agent 当 Skill 用的开源框架",
+      "url": "https://github.com/obra/superpowers",
+      "stars": 274969,
+      "weeklyStars": 8200,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": ["agent", "sdlc", "skill", "workflow"],
+      "category": "AI / 开发流程",
+      "insight": "Superpowers 把完整的软件开发生命周期（需求、设计、TDD、代码审查、发布）拆成 Agent 可调用的 Skill，让 AI 按步骤参与整个研发流程，而不是只在单个环节做孤立辅助。这是「Agent 参与工程协作」而非「Agent 替代工程师」的思路——每个 Skill 都可独立使用，也可组合成完整工作流。对我们有参考价值的是它的 Skill 拆分粒度：一个 Skill 对应一个有明确输入/输出的工程步骤，这种颗粒度设计可以复用到任何需要 AI 参与的多步骤流程。",
+      "cases": [
+        {"name": "研发流程 AI 化", "desc": "让 Agent 按 SDLC 阶段介入，从需求梳理到代码审查全程辅助"},
+        {"name": "Skill 库参考", "desc": "作为工程 Skill 设计的参考实现，学习其拆分粒度与接口规范"},
+        {"name": "研发效能度量", "desc": "通过 Skill 调用记录分析研发流程的 AI 介入效果"}
+      ],
+      "isNew": false
+    },
+    {
+      "name": "harry0703/MoneyPrinterTurbo",
+      "title": "MoneyPrinterTurbo — 利用 AI 一键生成高清短视频",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "stars": 119040,
+      "weeklyStars": 7800,
+      "forks": 0,
+      "language": "Python",
+      "topics": ["ai", "video", "automation", "content"],
+      "category": "AI / 生成式",
+      "insight": "MoneyPrinterTurbo 持续高位，周增仍有 7800 星，说明 AI 视频生成工具的需求处于持续扩张期。从架构看它的核心是「把一个复杂多步流程（选题→文案→素材→配音→剪辑）串成自动化流水线」的能力，而非某个单点 AI 技术。对输入法 AI 功能设计的映射：我们也在做类似的事情——把「理解用户输入意图 → 召回相关知识 → 生成候选 → 排序展示」这个流水线做流畅。MoneyPrinterTurbo 的思路是每步独立可替换、支持多种模型后端，这种解耦设计使系统在某个步骤升级时不影响其他步骤。",
+      "cases": [
+        {"name": "内容生产工具", "desc": "自动化生成短视频内容，降低视频创作门槛到运营级别"},
+        {"name": "AI 流水线参考", "desc": "学习多步骤 AI 任务的解耦设计与可替换模块架构"},
+        {"name": "本地化内容", "desc": "支持中文内容创作与平台特化，适合国内短视频生态"}
+      ],
+      "isNew": false
+    },
+    {
+      "name": "volcengine/OpenViking",
+      "title": "OpenViking — 字节火山引擎的 Self-evolving Agent Context Database",
+      "url": "https://github.com/volcengine/OpenViking",
+      "stars": 30217,
+      "weeklyStars": 6400,
+      "forks": 0,
+      "language": "Python",
+      "topics": ["agent", "context-database", "memory", "rag"],
+      "category": "AI / Agent 记忆",
+      "insight": "OpenViking 解决的是 Agent 的「记忆」问题：如何让 Agent 在多轮对话和跨会话中维持连贯的上下文，并随着使用不断进化出更相关的知识。字节开源这个项目颇有策略意味——它对应的是豆包 Agent 需要的底层能力，开源后可以吸引开发者在此之上构建生态。对输入法的直接借鉴：OpenViking 的「可解释上下文」思路（让 Agent 知道某个上下文为什么被召回）可以应用到输入法的个性化词库管理——不只记录用户用了什么词，还记录在什么场景下用，以便在相似场景准确召回。",
+      "cases": [
+        {"name": "Agent 长期记忆", "desc": "为 Agent 提供跨会话持久化且可演化的上下文存储"},
+        {"name": "可解释 RAG", "desc": "让检索结果可追溯到具体来源，提高 Agent 决策的可解释性"},
+        {"name": "个性化知识库", "desc": "随用户使用不断优化的个人知识图谱，越用越准"}
+      ],
+      "isNew": false
+    },
+    {
+      "name": "Ponytail/Ponytail",
+      "title": "Ponytail — 推动 Agent 写出更简单、更小的代码实现",
+      "url": "https://github.com/Ponytail/Ponytail",
+      "stars": 20200,
+      "weeklyStars": 5900,
+      "forks": 0,
+      "language": "Python",
+      "topics": ["agent-behavior", "simplicity", "coding-agent"],
+      "category": "AI / 代码质量",
+      "insight": "Ponytail 反其道而行之——市面上大多数 AI 工具在追求「能实现更复杂的功能」，而 Ponytail 的目标是让 Agent 写出更简单、更小的代码。它的核心洞察是：Agent 生成的代码往往过于繁复，因为模型倾向于展示能力而非寻求简洁。这对设计有很强的启示：AI 辅助写作工具（包括输入法的 AI 润色）也面临同样问题——AI 倾向于把句子写得更长、更复杂、更书面，而不是更准确、更符合用户的原有风格。「推向简洁」是个值得建模的设计目标。",
+      "cases": [
+        {"name": "代码评审辅助", "desc": "在 AI 生成代码后自动检查并建议简化，避免过度工程"},
+        {"name": "Agent 行为约束", "desc": "作为编码 Agent 的后处理步骤，对生成结果施加简洁性约束"},
+        {"name": "代码风格规范", "desc": "帮助团队维持一致的代码简洁性标准"}
+      ],
+      "isNew": true
+    },
+    {
+      "name": "run-llama/Orca",
+      "title": "Orca — 多 Agent 并行开发协调器",
+      "url": "https://github.com/run-llama/Orca",
+      "stars": 18800,
+      "weeklyStars": 5200,
+      "forks": 0,
+      "language": "Python",
+      "topics": ["multi-agent", "parallel", "coordination", "llm"],
+      "category": "AI / Multi-Agent",
+      "insight": "Orca 做的是「Fleet 管理」——协调一批并行运行的编码 Agent，让它们分工协作而不互相干扰。这对应的是上周 yc-software/qm 解决的团队权限问题在单任务层面的延伸：一个复杂任务可以被拆分给多个 Agent 并行处理，Orca 负责协调、合并结果、处理冲突。从架构角度看，这类「Agent 协调器」正在成为独立的基础设施层，类似于分布式系统里的调度器。对我们的意义：未来输入法 AI 若需要同时运行多个推理任务（端侧+云端并行），协调层的设计模式值得借鉴。",
+      "cases": [
+        {"name": "大型代码任务分解", "desc": "把一个大任务拆分给多个 Agent 并行处理，最后合并结果"},
+        {"name": "A/B 方案生成", "desc": "并行生成多个实现方案，再由人或上层 Agent 选择最佳"},
+        {"name": "测试并行化", "desc": "让多个 Agent 并行生成测试用例，提升测试覆盖效率"}
+      ],
+      "isNew": true
+    },
+    {
+      "name": "anthropics/claude-plugins-official",
+      "title": "Claude Plugins Official — Anthropic 官方安全审查插件目录",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "stars": 35722,
+      "weeklyStars": 4800,
+      "forks": 0,
+      "language": "JSON",
+      "topics": ["claude", "plugins", "mcp", "security"],
+      "category": "AI / 工具生态",
+      "insight": "Anthropic 正式发布包含 2282 个经安全审查的 Claude 插件的官方目录，每个插件都经过恶意代码、过度权限、数据处理三方面的安全扫描。这是 AI 插件生态的「官方认证机制」——类似 App Store 的安全审核，解决了开发者对 AI 工具链安全性的核心顾虑。对我们的意义：这标志着 AI Agent 的工具生态正在从「Wild West 阶段」走向「平台管理阶段」，当平台方开始做安全背书，企业采购 AI 能力的阻力会显著降低。",
+      "cases": [
+        {"name": "企业安全合规", "desc": "使用经安全审查的插件，满足企业对 AI 工具链安全性的合规要求"},
+        {"name": "插件发现", "desc": "作为查找可信 Claude 扩展能力的官方入口"},
+        {"name": "生态标准参考", "desc": "参考 Anthropic 的安全审查标准，为自建 AI 工具制定安全规范"}
+      ],
+      "isNew": true
+    },
+    {
+      "name": "openai/codex",
+      "title": "OpenAI Codex CLI — 终端原生的 AI 编码助手",
+      "url": "https://github.com/openai/codex",
+      "stars": 120415,
+      "weeklyStars": 4500,
+      "forks": 0,
+      "language": "Python",
+      "topics": ["ai", "coding", "cli", "terminal"],
+      "category": "AI / 开发工具",
+      "insight": "OpenAI Codex CLI 以 12 万星成为 GitHub 上最多星的 AI 编码 Agent，说明「终端原生」路线受到开发者广泛认可。它的核心优势是轻量（无需 IDE 插件）、可组合（配合 tmux、vim 等工具）、可定制（开源可 Fork）。值得注意的是它已在 2026 年 4 月支持 background computer use，允许多个 Agent 在 macOS 并行工作不干扰用户——这解决了上周日报里提到的 Computer Use「抢光标」问题。对我们的启示：terminal-native 路线的流行说明开发者对「不打断工作流」的 AI 介入有强烈偏好，这和我们「输入时不打断」的设计原则高度一致。",
+      "cases": [
+        {"name": "终端内 AI 编码", "desc": "不离开命令行即可获得 AI 辅助，配合 tmux/vim 等工具无缝集成"},
+        {"name": "自动化脚本生成", "desc": "自然语言描述任务，自动生成并执行 Shell 脚本"},
+        {"name": "代码审查与解释", "desc": "在终端中解释代码、生成测试、重构指定模块"}
+      ],
+      "isNew": false
+    },
+    {
+      "name": "watermarks-remover/watermarks-remover",
+      "title": "Watermarks Remover — 用户内容元数据与来源标记处理工具",
+      "url": "https://github.com/watermarks-remover/watermarks-remover",
+      "stars": 17200,
+      "weeklyStars": 4200,
+      "forks": 0,
+      "language": "Python",
+      "topics": ["privacy", "ai", "image-processing"],
+      "category": "AI / 隐私工具",
+      "insight": "这个项目的爆发指向一个用户需求：随着 AI 生成内容越来越多，用户对「自己内容的来源标记和元数据」的控制需求在增长。项目本身处于法律灰色地带，但它揭示的需求是真实的——用户希望对自己的数字内容有更强的主权，不希望使用工具的痕迹被永久嵌入。对输入法的思考：我们在推 AI 功能时，是否应该更主动地告知用户「AI 处理过的内容会留下什么痕迹」？数据透明度不只是隐私合规要求，也是建立用户信任的主动选择。",
+      "cases": [
+        {"name": "内容版权处理", "desc": "处理用户创作内容上的来源标记，用于内容再发布场景"},
+        {"name": "隐私研究", "desc": "研究 AI 生成内容的元数据嵌入机制与检测方法"},
+        {"name": "数字内容主权", "desc": "了解用户对数字内容透明度的需求，指导产品隐私策略"}
+      ],
+      "isNew": true
+    },
+    {
+      "name": "OmniRoute/OmniRoute",
+      "title": "OmniRoute — 多 AI 工具与模型提供商的统一网关",
+      "url": "https://github.com/OmniRoute/OmniRoute",
+      "stars": 16800,
+      "weeklyStars": 3900,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": ["ai-gateway", "routing", "llm", "multi-provider"],
+      "category": "AI / 基础设施",
+      "insight": "OmniRoute 是 AI 时代的「统一 API 网关」——把调用多个 AI 工具和模型提供商的复杂性封装在一层，让上层应用只面对一个接口。这解决了一个实际工程痛点：当应用需要同时调用 OpenAI、Anthropic、混元、讯飞等多家服务时，每家的 API 规范、错误格式、计费方式都不同，维护成本极高。对我们的意义：如果输入法未来要做多模型并发调用（端侧模型 + 云端模型按场景分流），OmniRoute 这类网关可以极大简化路由逻辑，并提供统一的监控与降级策略。",
+      "cases": [
+        {"name": "多模型路由", "desc": "按任务类型、成本预算、延迟要求自动路由到最合适的模型"},
+        {"name": "成本优化", "desc": "在保证质量的前提下自动选择成本最低的可用模型"},
+        {"name": "灾备降级", "desc": "主模型不可用时自动切换到备用模型，保障服务连续性"}
+      ],
+      "isNew": true
+    },
+    {
+      "name": "modular/modular",
+      "title": "Modular — MAX 推理框架 + Mojo 系统编程语言",
+      "url": "https://github.com/modular/modular",
+      "stars": 27972,
+      "weeklyStars": 3600,
+      "forks": 0,
+      "language": "Mojo",
+      "topics": ["inference", "mojo", "llm", "performance"],
+      "category": "AI / 推理引擎",
+      "insight": "Modular 在本周 AGIC 等行业展会期间持续受关注，其 MAX 推理框架主打「一行命令跑本地大模型」，Mojo 语言则在保留 Python 生态的同时提供接近 C 的性能。关键指标：MAX 对 LLaMA 3 的推理速度可达 PyTorch 的 3-5 倍。这对端侧推理有直接意义——在相同硬件上跑得更快，或者在更小的硬件上达到同样速度。对输入法端侧 AI 路线的影响：如果 MAX 支持移动端，可能改变端侧模型的性能预算计算。值得持续观察其移动端适配进展。",
+      "cases": [
+        {"name": "本地模型加速", "desc": "用 MAX 在本地设备上以更低延迟运行大语言模型"},
+        {"name": "端侧推理优化", "desc": "借助 Mojo 的高性能特性优化移动端 AI 推理速度"},
+        {"name": "研究原型", "desc": "用 Mojo 快速实现高性能 AI 算子原型，验证性能后再移植"}
+      ],
+      "isNew": false
+    },
+    {
+      "name": "cursor/plugins",
+      "title": "Cursor Plugins — Cursor 编辑器官方插件规范与生态",
+      "url": "https://github.com/cursor/plugins",
+      "stars": 4092,
+      "weeklyStars": 3400,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": ["cursor", "plugins", "ide", "ai-coding"],
+      "category": "AI / 开发工具",
+      "insight": "Cursor 发布官方插件规范，意味着 AI 编辑器正在走向成熟的扩展生态——类似 VS Code 的插件体系，但从一开始就针对 AI 场景设计。这标志着 AI 原生 IDE 的竞争正在从「基础功能对比」进入「生态深度」阶段。对工具选型的参考价值：Cursor 的插件规范设计原则（尤其是 AI Agent 与编辑器 UI 的交互协议）可以作为设计其他 AI 工具扩展点时的参考。",
+      "cases": [
+        {"name": "编辑器扩展开发", "desc": "按照官方规范开发 Cursor 插件，集成自定义 AI 能力"},
+        {"name": "工具生态评估", "desc": "评估 Cursor 插件生态成熟度，作为团队工具链选型依据"},
+        {"name": "AI 扩展点设计", "desc": "参考 Cursor 的插件接口规范，设计自己产品的 AI 扩展机制"}
+      ],
+      "isNew": true
+    },
+    {
+      "name": "DSH-Desktop/DSH",
+      "title": "DSH Desktop — DeepSeek Harness 生态的桌面环境",
+      "url": "https://github.com/DSH-Desktop/DSH",
+      "stars": 20400,
+      "weeklyStars": 3100,
+      "forks": 0,
+      "language": "Electron",
+      "topics": ["desktop", "agent", "deepseek", "harness"],
+      "category": "AI / Agent 桌面",
+      "insight": "DSH 是 DeepSeek Harness 的配套桌面应用，把 Agent 运行时封装进桌面环境，让普通用户无需命令行即可使用 Agent 能力。这条「让 CLI 工具变成桌面应用」的路线正在被多个项目复制——说明开发者工具正在走向更广泛的用户群体。对产品设计的启示：技术层面先验证（Harness 的 CLI 形态），产品层面后封装（DSH 的桌面形态）是一种有效的迭代路径，避免了过早做 UI 的沉没成本。",
+      "cases": [
+        {"name": "无门槛 Agent 使用", "desc": "让不熟悉命令行的用户也能使用 DeepSeek Harness 的全部能力"},
+        {"name": "桌面 AI 工作站", "desc": "作为本地 AI Agent 的统一工作入口，管理多个并行 Agent"},
+        {"name": "企业部署", "desc": "通过桌面应用形态简化企业内的 AI Agent 部署与管理"}
+      ],
+      "isNew": true
+    },
+    {
+      "name": "yc-software/qm",
+      "title": "qm — 为创业团队设计的多人 Agent 协作框架",
+      "url": "https://github.com/yc-software/qm",
+      "stars": 12104,
+      "weeklyStars": 2800,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": ["agent", "team", "collaboration", "workspace"],
+      "category": "AI / 团队协作",
+      "insight": "qm 的核心主张一句话：「大多数 Agent 是个人助手的设计，qm 是为创业团队设计的。」每个人有独立的工作空间沙箱、文件存储、密钥视图、权限配置和 Cron 调度，两个人同时让 Agent 跑任务不会互相覆盖。这解决了 Agent 从「个人工具」走向「团队基础设施」时最核心的隔离问题。对输入法的意义：虽然直接相关性低，但它印证了「权限隔离 + 审计可追溯」正在成为 AI 工具进入企业场景的标配门票，这对我们设计 AI 功能的数据治理策略有参考价值。",
+      "cases": [
+        {"name": "创业团队 AI 工作站", "desc": "多人共用 Agent 能力，各自的上下文和权限完全隔离"},
+        {"name": "AI 任务协同", "desc": "在 Slack 频道或项目中拉入 Agent 协作，Agent 只访问共享视图"},
+        {"name": "企业 AI 治理参考", "desc": "参考其权限隔离与审计日志设计，为企业内 AI 工具制定治理规范"}
+      ],
+      "isNew": false
+    },
+    {
+      "name": "nautechsystems/nautilus_trader",
+      "title": "nautilus_trader — Rust 原生生产级量化交易引擎",
+      "url": "https://github.com/nautechsystems/nautilus_trader",
+      "stars": 26450,
+      "weeklyStars": 2600,
+      "forks": 0,
+      "language": "Rust",
+      "topics": ["trading", "rust", "quant", "event-driven"],
+      "category": "其他 / 量化交易",
+      "insight": "nautilus_trader 以 Rust 实现生产级量化交易引擎，以确定性事件驱动架构著称。它在这周上榜不完全因为 AI，而是因为越来越多量化团队在用 AI Agent 替代传统策略代码，而 Rust 原生引擎提供了其他语言难以匹敌的执行确定性和延迟保障。这是「高可靠性领域」选择 Rust 而非 Python 的典型案例，与 OpenLogi 的技术路线异曲同工。",
+      "cases": [
+        {"name": "量化策略执行", "desc": "生产级量化交易策略的执行引擎，极低延迟确定性事件处理"},
+        {"name": "AI 交易 Agent 底座", "desc": "作为 AI Agent 生成交易信号后的可靠执行层"},
+        {"name": "高性能系统参考", "desc": "学习 Rust 原生事件驱动架构的设计模式"}
+      ],
+      "isNew": false
+    },
+    {
+      "name": "AprilNEA/OpenLogi",
+      "title": "OpenLogi — 罗技 Options+ 的本地优先开源替代",
+      "url": "https://github.com/AprilNEA/OpenLogi",
+      "stars": 18118,
+      "weeklyStars": 2400,
+      "forks": 0,
+      "language": "Rust",
+      "topics": ["logitech", "rust", "local-first", "privacy"],
+      "category": "其他 / 开发者工具",
+      "insight": "OpenLogi 是「反云端化」趋势的一个缩影：用户不希望外设驱动需要联网、不希望数据上传到厂商服务器、不希望软件在后台常驻消耗资源。Rust 保证了极低的资源占用，本地优先保证了离线可用。这和输入法的端侧 AI 路线有相同的价值主张：核心功能离线运行、不依赖外部服务、不上传用户数据。用户愿意为 OpenLogi 贡献近 1.5 万星，说明「本地优先」叙事有强烈的用户共鸣。",
+      "cases": [
+        {"name": "隐私优先的外设管理", "desc": "无需联网即可使用罗技鼠标/键盘的完整功能设置"},
+        {"name": "本地优先产品参考", "desc": "学习其如何把「本地优先」作为核心产品差异化叙事"},
+        {"name": "Linux/macOS 优先支持", "desc": "解决官方软件对非 Windows 平台支持不足的问题"}
+      ],
+      "isNew": false
+    },
+    {
+      "name": "mukul975/Anthropic-Cybersecurity-Skills",
+      "title": "Anthropic Cybersecurity Skills — 817 个结构化网络安全 Skill",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "stars": 29855,
+      "weeklyStars": 2200,
+      "forks": 0,
+      "language": "YAML",
+      "topics": ["cybersecurity", "skills", "anthropic", "agent"],
+      "category": "AI / 安全",
+      "insight": "817 个网络安全领域的结构化 Skill，横跨 6 大主流 Agent 框架（LangChain、CrewAI、AutoGen 等）映射。这是垂直领域 Skill 工程的典型案例：把一个领域的专业知识拆分成 Agent 可直接调用的标准化单元，让 Agent 能可靠地在该领域执行专业任务。对我们的启示：输入法场景同样有丰富的垂直领域——法律术语、医疗词汇、科技词汇、金融术语，如果把这些领域知识以 Skill 形式组织，AI 在这些垂直场景的准确性会大幅提升。",
+      "cases": [
+        {"name": "安全 Agent 能力库", "desc": "为安全领域 Agent 提供即用型 Skill，覆盖渗透测试、事件响应、合规审查"},
+        {"name": "跨框架 Skill 标准化", "desc": "参考其跨 6 大框架的 Skill 映射，思考如何设计框架无关的 Skill 规范"},
+        {"name": "垂直领域 AI 赋能", "desc": "学习其垂直领域知识的 Skill 化方法论，迁移到其他专业领域"}
+      ],
+      "isNew": false
+    },
+    {
+      "name": "omlx/oMLX",
+      "title": "oMLX — 让 Apple Silicon 用户一行命令跑本地大模型",
+      "url": "https://github.com/omlx/oMLX",
+      "stars": 11400,
+      "weeklyStars": 2000,
+      "forks": 0,
+      "language": "Python",
+      "topics": ["mlx", "apple-silicon", "local-llm", "inference"],
+      "category": "AI / 端侧推理",
+      "insight": "oMLX 把 Apple MLX 框架的使用门槛压到了「一行命令」的程度，让 M 系列芯片用户无需复杂配置即可在本地运行主流大模型。Apple Silicon 的统一内存架构（CPU/GPU 共享内存）在 AI 推理上有独特优势，MLX 专为此优化。这条路线直接指向「高端 Mac 用户作为本地 AI 的主力设备」的场景。对端侧路线的参考：MLX 在 Apple Silicon 上的推理效率已接近云端中等配置，这为「离线优先、隐私保护」的 AI 产品提供了可行的高端设备基座。",
+      "cases": [
+        {"name": "Mac 本地 AI 开发", "desc": "在 MacBook Pro/Studio 上本地运行 7B-70B 量级模型进行开发测试"},
+        {"name": "隐私敏感场景", "desc": "完全本地运行，数据不离开设备，适合处理敏感文档"},
+        {"name": "低延迟原型验证", "desc": "本地运行避免网络延迟，快速验证 AI 功能交互体验"}
+      ],
+      "isNew": false
+    }
+  ]
+}

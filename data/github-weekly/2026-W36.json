@@ -1,0 +1,389 @@
+{
+  "week": "2026-W36",
+  "range": {
+    "start": "2026-08-31",
+    "end": "2026-09-06"
+  },
+  "generatedAt": "2026-09-04T11:10:00.000000+00:00",
+  "count": 21,
+  "items": [
+    {
+      "name": "deepseek-ai/DeepSeek-Harness",
+      "title": "DeepSeek Harness — 一切皆插件的模块化 Agent 运行时",
+      "url": "https://github.com/deepseek-ai/DeepSeek-Harness",
+      "stars": 209603,
+      "weeklyStars": 58000,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": ["agent", "llm", "plugin", "runtime"],
+      "category": "AI / Agent 运行时",
+      "insight": "DeepSeek Harness 本周总 stars 破 20 万，仍是 GitHub 最快增长的 AI 项目。它的架构核心一句话：模型是可替换插件，运行时（harness）才是真正的产品。这一周社区生态开始爆发：DSH Desktop 提供桌面 UI，各类工具 SDK 开始接入其插件规范。这标志着 Agent 生态正在完成「模型层 → 运行时层」的重心转移——就像移动互联网从「哪个 App」转向「哪个操作系统」那一刻。对输入法 AI 规划的影响：我们过去的技术决策都在问「用哪个模型」，接下来需要多想一层「用什么运行时架构连接多个能力」。Harness 的可插拔设计正好解决这个问题，值得深入研究其架构而非只看其 stars 数。",
+      "cases": [
+        {"name": "多模型 Agent 编排", "desc": "把调用混元/Claude/GPT 的逻辑统一到一个运行时，按场景切换模型而不改上层代码"},
+        {"name": "工具插件管理", "desc": "将输入法的各 AI 功能（润色/续写/语音）封装为独立插件，互不干扰可独立迭代"},
+        {"name": "研发生态追踪", "desc": "作为理解 Agent 基础设施演化趋势的核心参照，追踪其插件生态成熟度"}
+      ],
+      "isNew": false
+    },
+    {
+      "name": "DietrichGebert/ponytail",
+      "title": "Ponytail — 让 Agent 像最懒的高级工程师一样思考",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "stars": 121552,
+      "weeklyStars": 35000,
+      "forks": 0,
+      "language": "Python",
+      "topics": ["agent-behavior", "simplicity", "refactoring", "coding-agent"],
+      "category": "AI / 代码质量",
+      "insight": "Ponytail 的哲学是「最好的代码是你从没写过的代码」，它反向训练 Agent 倾向简洁：识别不必要的复杂性、推荐删除而非添加、在 dead code 上不花时间。这条理念很反直觉，因为所有 AI 工具都在追求「能做更多」，而 Ponytail 追求「做更少」。和上周一样，这对输入法的 AI 润色设计有强烈映射：AI 润色的隐患不是效果差，而是改得太多——把句子改长、改复杂、改成通用书面体，失去用户原有风格和语气。「保留用户原意，只改必要部分」应该成为我们 AI 润色的首要约束，而不是「让它更好听」。",
+      "cases": [
+        {"name": "代码审查辅助", "desc": "在 PR 合并前检测过度工程化的代码，提示可以用更简洁方案替代"},
+        {"name": "AI 润色原则参考", "desc": "用「最小改动原则」约束输入法的 AI 改写行为，保留用户原有语气"},
+        {"name": "重构优先级", "desc": "识别哪些代码应该删除而非改写，聚焦降低认知复杂度"}
+      ],
+      "isNew": false
+    },
+    {
+      "name": "JustVugg/colibri",
+      "title": "Colibri — 纯 C、零依赖，本地运行前沿 MoE 模型",
+      "url": "https://github.com/JustVugg/colibri",
+      "stars": 26699,
+      "weeklyStars": 18000,
+      "forks": 0,
+      "language": "C",
+      "topics": ["llm", "inference", "local", "moe", "zero-dependency"],
+      "category": "AI / 端侧推理",
+      "insight": "Colibri 用纯 C 实现 MoE（Mixture of Experts）模型的推理引擎，零依赖、专家从磁盘流式加载（只加载当前需要的那部分），使大模型能在消费级硬件上运行。这在技术上是个重要突破：MoE 模型（如混元 Hy4 的激活 49B out of 770B）的核心优势就是「整体参数多、单次推理激活少」，Colibri 把这个优势推到了极致——不需要一次性把整个模型加载进内存。对端侧 AI 路线的直接意义：这条思路如果延伸到移动端，有可能让我们在手机上运行质量远超「2B 小模型」的推理引擎，同时不超出内存预算。值得持续关注其移动端适配进展。",
+      "cases": [
+        {"name": "边缘设备推理", "desc": "在内存受限的嵌入式设备或旧硬件上运行大规模 MoE 模型"},
+        {"name": "离线 AI 原型验证", "desc": "完全本地、无网络、无依赖地验证 MoE 模型的推理质量，加速概念验证"},
+        {"name": "端侧架构研究", "desc": "研究流式专家加载的内存管理策略，作为端侧 AI 内存优化的技术参考"}
+      ],
+      "isNew": true
+    },
+    {
+      "name": "xai-org/grok-build",
+      "title": "Grok-Build — xAI 的 Terminal 编码助手与全屏 TUI",
+      "url": "https://github.com/xai-org/grok-build",
+      "stars": 26391,
+      "weeklyStars": 12000,
+      "forks": 0,
+      "language": "Rust",
+      "topics": ["grok", "tui", "terminal", "coding-agent"],
+      "category": "AI / 开发工具",
+      "insight": "xAI 发布了 Grok 的官方 Terminal 编码助手，全屏 TUI（Terminal User Interface），支持鼠标交互，可扩展。这是 OpenAI Codex CLI 之后又一家顶级 AI 厂商走终端原生路线，进一步确认了「Terminal 是 AI 编码助手的核心战场之一」。有意思的是，Grok-Build 选择 Rust 实现，与 OpenAI Codex 相同，Rust 在性能敏感的开发工具领域已成为默认选择。对我们的观察意义：终端原生 AI 助手的快速崛起说明开发者对「最小化干扰、最大化可组合性」的 AI 介入有强烈偏好——这和输入法「不打断当前操作」的设计原则完全一致，是个可以借鉴的叙事框架。",
+      "cases": [
+        {"name": "终端内 AI 编码", "desc": "在不离开终端的情况下调用 Grok 模型辅助编码、调试和解释代码"},
+        {"name": "竞品技术对比", "desc": "对比 Grok-Build 与 Codex CLI、Claude Code 的交互范式，理解终端 AI 助手的设计趋势"},
+        {"name": "TUI 设计参考", "desc": "研究其全屏鼠标支持 TUI 设计，作为终端界面设计的参考实现"}
+      ],
+      "isNew": true
+    },
+    {
+      "name": "freestylefly/awesome-gpt-image-2",
+      "title": "awesome-gpt-image-2 — GPT-Image2 提示词工程的模板与案例库",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "stars": 23635,
+      "weeklyStars": 11300,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": ["gpt-image", "prompt-engineering", "image-generation", "templates"],
+      "category": "AI / 图像生成",
+      "insight": "awesome-gpt-image-2 把 GPT-Image2 的提示词工程沉淀为「Prompt as Code」——可复用的模板库和案例集。它的爆发印证了一件事：当生成式工具的能力足够强，限制创作质量的瓶颈变成了「知道怎么写提示词」，而非「工具能不能做到」。这正是我们在设计 AI 润色功能时也在面对的问题：用户说「帮我改成更正式的」，但他们自己未必能描述清楚「正式」意味着什么，而我们能预设的提示词模板质量，决定了功能的上限。「提示词模板资产化」是一个值得投入的方向。",
+      "cases": [
+        {"name": "图像生成工具链", "desc": "快速复用高质量提示词模板，标准化图像生成工作流"},
+        {"name": "提示词工程学习", "desc": "通过案例库理解 GPT-Image2 的提示词规律，加速上手和调优"},
+        {"name": "内容资产管理参考", "desc": "参考其「提示词资产化」的组织方式，设计自己产品的 AI 配置管理"}
+      ],
+      "isNew": true
+    },
+    {
+      "name": "tt-a1i/archify",
+      "title": "Archify — Agent 产出架构图的可视化与可核验框架",
+      "url": "https://github.com/tt-a1i/archify",
+      "stars": 28700,
+      "weeklyStars": 11000,
+      "forks": 0,
+      "language": "Python",
+      "topics": ["architecture", "diagram", "verification", "agent"],
+      "category": "AI / 代码分析",
+      "insight": "Archify 这周在 W35 基础上继续高增长，说明「让架构变更在合并前可审阅」的需求正在被越来越多团队认可。它的核心价值不是生成架构图（这类工具很多），而是让架构图与代码的一致性可验证——图和代码脱节时给出警告。这对 AI 辅助开发来说格外重要：当 Agent 大量修改代码时，架构级影响可能不在任何单次 diff 里体现。Archify 提供了一个「架构层面的 CI 检查」的设计思路，值得在有 AI 深度参与的代码库里实验。",
+      "cases": [
+        {"name": "架构 CI 检查", "desc": "在 CI 流水线中自动验证代码变更与架构图的一致性，阻断无意识的架构偏移"},
+        {"name": "Agent 变更审查", "desc": "当 AI Agent 提交大量代码变更时，用架构视图快速评估影响范围"},
+        {"name": "技术债可视化", "desc": "定期生成并比对架构图，追踪系统复杂度随时间的变化趋势"}
+      ],
+      "isNew": false
+    },
+    {
+      "name": "openai/codex",
+      "title": "OpenAI Codex CLI — 终端原生的 AI 编码助手",
+      "url": "https://github.com/openai/codex",
+      "stars": 119352,
+      "weeklyStars": 9100,
+      "forks": 0,
+      "language": "Rust",
+      "topics": ["ai", "coding", "cli", "terminal"],
+      "category": "AI / 开发工具",
+      "insight": "Codex CLI 仍保持每周近万星的稳定增长，说明它已从「新鲜感驱动」转向「真实使用驱动」的增长阶段——这是工具类项目最健康的状态。周报 W35 的分析已经覆盖了其核心架构，这周补充一点：Codex 的本地化生态在持续扩展（社区出现了中文 README 和各种集成插件），说明它在中文开发者圈的渗透在加速。这对我们的竞品视野很重要：AI 编码工具的使用习惯正在被这类工具塑造，其中的交互范式（尤其是「如何向 AI 下达任务」的对话设计）会影响用户对所有 AI 工具的期望基线。",
+      "cases": [
+        {"name": "终端 AI 编码", "desc": "在命令行环境中获得 AI 辅助，与 tmux、vim 等工具无缝集成"},
+        {"name": "脚本自动化", "desc": "用自然语言描述任务目标，自动生成并执行 Shell/Python 脚本"},
+        {"name": "交互范式研究", "desc": "研究其「任务描述→执行→确认」的对话设计，理解开发者对 AI 工具的期望模式"}
+      ],
+      "isNew": false
+    },
+    {
+      "name": "Alishahryar1/free-claude-code",
+      "title": "Free Claude Code — 聚合多种 Coding CLI 与免费额度",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "stars": 50925,
+      "weeklyStars": 4657,
+      "forks": 0,
+      "language": "Shell",
+      "topics": ["claude", "free", "coding-agent", "cli"],
+      "category": "AI / 开发工具",
+      "insight": "这类「聚合免费额度」项目的爆发本身就是一个信号：AI 编码工具的使用正在从「尝鲜」走向「日常依赖」，而付费门槛正在成为普及的障碍。50k stars 说明想用但不想付钱的用户基数非常庞大。对产品定价策略的参考：当工具成为依赖后，用户的付费意愿会显著提升——但前提是他们先用过。「先免费建立习惯、再在价值节点商业化」这条路在 AI 工具领域正被反复验证，对我们思考 AI 功能的获客和留存有参考价值。",
+      "cases": [
+        {"name": "低门槛试用", "desc": "让不愿或无法付费的开发者先用上 Claude Code，建立使用习惯"},
+        {"name": "多 API 兼容层", "desc": "统一调用多个提供商的 Claude 兼容 API，降低单点依赖风险"},
+        {"name": "成本管理", "desc": "管理和分配多个账户的免费额度，优化 AI 工具使用成本"}
+      ],
+      "isNew": true
+    },
+    {
+      "name": "basecamp/omarchy",
+      "title": "Omarchy — DHH 打造的现代 opinionated Linux 发行版",
+      "url": "https://github.com/basecamp/omarchy",
+      "stars": 32795,
+      "weeklyStars": 5593,
+      "forks": 0,
+      "language": "Shell",
+      "topics": ["linux", "distro", "productivity", "ai-tools"],
+      "category": "其他 / 开发者工具",
+      "insight": "DHH（Rails 作者、Basecamp 创始人）打造的 Linux 发行版，集成了精心挑选的快捷键体系、主题和 AI 工具链，代表了「强 opinionated 的完整开发环境」路线。这和目前流行的「构建你自己的工具链」路线截然相反——它做的是替你做选择。DHH 在开发者社区的影响力让它引发广泛讨论。从产品哲学看，这是「做减法的勇气」——不给用户选择，而是替用户做好选择。这和豆包输入法删除功能专注 AI 的策略异曲同工：强烈的主张往往比面面俱到更容易建立忠实用户群。",
+      "cases": [
+        {"name": "完整开发环境参考", "desc": "了解有经验的工程师如何配置 AI 辅助的完整开发环境"},
+        {"name": "opinionated 产品设计学习", "desc": "研究其「替用户做选择」的产品哲学，应用到自己的 AI 功能默认配置"},
+        {"name": "Linux 桌面 AI 集成", "desc": "参考其 AI 工具集成方式，了解在 Linux 环境下 AI 工具的最佳实践"}
+      ],
+      "isNew": false
+    },
+    {
+      "name": "volcengine/OpenViking",
+      "title": "OpenViking — 字节火山引擎的 Self-evolving Agent Context Database",
+      "url": "https://github.com/volcengine/OpenViking",
+      "stars": 33994,
+      "weeklyStars": 3078,
+      "forks": 0,
+      "language": "Python",
+      "topics": ["agent", "context-database", "memory", "rag"],
+      "category": "AI / Agent 记忆",
+      "insight": "OpenViking 本周增速相比 W35 有所放缓，但累计 stars 仍在上升，正在从「新项目爆发」进入「稳定增长」阶段。这周值得关注的是字节整体的 Agent 基础设施布局：OpenViking（上下文数据库）+ 豆包工作产品（办公 Agent）+ DeepSeek Harness（运行时参考架构），正在形成完整的 Agent 技术栈叙事。字节的策略是「开源底层、商业化应用层」，OpenViking 作为底层开源项目吸引开发者，同时让豆包的 Agent 能力更可信。",
+      "cases": [
+        {"name": "Agent 长期记忆", "desc": "为 Agent 提供跨会话持久化且可演化的上下文存储"},
+        {"name": "可解释 RAG", "desc": "让检索结果可追溯到具体来源，提高 Agent 决策的可解释性"},
+        {"name": "个性化知识库", "desc": "构建随用户使用不断优化的个人知识图谱，越用越准"}
+      ],
+      "isNew": false
+    },
+    {
+      "name": "santifer/career-ops",
+      "title": "career-ops — 本地扫描职位、评分、改简历、跟踪申请",
+      "url": "https://github.com/santifer/career-ops",
+      "stars": 68980,
+      "weeklyStars": 2611,
+      "forks": 0,
+      "language": "Python",
+      "topics": ["job-search", "ai", "resume", "local-first"],
+      "category": "AI / 个人生产力",
+      "insight": "career-ops 是 AI 个人生产力工具的典型代表：把一个繁琐但有价值的人类任务（求职）用 AI 自动化，而且完全本地运行不上传数据。它的成功（近 7 万星）说明「针对高情绪张力场景的本地 AI 助手」有强烈市场需求——求职是一件用户既希望得到帮助，又极度担心隐私的事情。这对我们的隐私叙事有参考价值：输入法在帮助用户处理的信息，有相当一部分是高情绪张力、高隐私敏感的（求职信、医疗咨询、私人对话），明确承诺这类内容端侧处理是差异化优势。",
+      "cases": [
+        {"name": "AI 求职辅助", "desc": "自动扫描职位列表、匹配简历关键词、生成针对性求职信"},
+        {"name": "本地 AI 工具参考", "desc": "学习其如何在保护用户隐私的同时提供高价值的 AI 辅助能力"},
+        {"name": "高情绪场景设计", "desc": "研究其针对高情绪张力场景（求职）的产品设计，指导类似敏感场景的 UX 决策"}
+      ],
+      "isNew": true
+    },
+    {
+      "name": "chaitanyagiri/munder-difflin",
+      "title": "munder-difflin — 用已有订阅额度运行本地多 Agent 协作",
+      "url": "https://github.com/chaitanyagiri/munder-difflin",
+      "stars": 5099,
+      "weeklyStars": 2017,
+      "forks": 0,
+      "language": "Python",
+      "topics": ["multi-agent", "local", "claude-code", "collaboration"],
+      "category": "AI / Multi-Agent",
+      "insight": "munder-difflin 的定位很实用：用你已有的 Claude/OpenAI 订阅额度，在本地运行多个相互协作的 Agent。它解决的是「多 Agent 系统的门槛」问题——你不需要额外付费，也不需要复杂的基础设施，只需要已有的订阅。这条「低门槛进入 Multi-Agent」的路线正在被开发者快速探索。对我们团队的实际价值：这类工具可以用来快速试验「多个 AI 模块协作完成一个复杂输入法任务」的原型（比如理解意图、生成候选、风格评分三个 Agent 协作），验证成本极低。",
+      "cases": [
+        {"name": "多 Agent 原型验证", "desc": "用低成本方式实验多个 Agent 协作完成复杂任务的效果"},
+        {"name": "Claude Code 生态集成", "desc": "在 Claude Code 工作流中引入多 Agent 分工，加速复杂代码任务"},
+        {"name": "协作模式研究", "desc": "研究多 Agent 之间的任务分配、通信和结果合并策略"}
+      ],
+      "isNew": false
+    },
+    {
+      "name": "msitarzewski/agency-agents",
+      "title": "agency-agents — 一键安装专业 AI Agent 人格到 Claude Code/Cursor",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "stars": 126000,
+      "weeklyStars": 9500,
+      "forks": 0,
+      "language": "Shell",
+      "topics": ["agent", "persona", "claude-code", "cursor", "one-click"],
+      "category": "AI / Agent 工具",
+      "insight": "agency-agents 做的事情是把「专业 AI Agent 人格」打包成一键安装包，推送到 Claude Code、Cursor 等 AI 编程工具。背后的逻辑是：AI 工具的能力上限不只由模型决定，很大程度由「如何构建提示词上下文」决定——而精心设计的 Agent 人格是这一能力的浓缩。其爆火说明开发者既有定制 Agent 行为的强烈需求，又懒于自己调提示词。这对我们设计 AI 功能的「预设风格包」有参考意义：让用户从几个精心调校的「写作风格人格」里选，而不是让他们自己写提示词。",
+      "cases": [
+        {"name": "Agent 能力快速扩展", "desc": "一键给 AI 编码助手增加专业领域知识，如安全审计、性能优化、前端设计"},
+        {"name": "风格预设包设计", "desc": "参考其「一键安装人格」的设计，做输入法 AI 的「写作风格预设」功能"},
+        {"name": "提示词工程推广", "desc": "降低提示词工程门槛，让非技术用户也能使用专业调校的 AI 能力"}
+      ],
+      "isNew": false
+    },
+    {
+      "name": "apache/maka",
+      "title": "Apache Maka — 本地优先 AI Agent 工作区，只追加日志记录全链路",
+      "url": "https://github.com/apache/maka",
+      "stars": 3815,
+      "weeklyStars": 1978,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": ["agent", "local-first", "audit-log", "workspace"],
+      "category": "AI / Agent 工作区",
+      "insight": "Maka 的核心特性是「只追加日志」（append-only log）记录 Agent 的全链路行为，实现完整的可观测性和可审计性。在 AI Agent 大量修改代码、文件、数据的场景下，「能不能溯源每个 Agent 动作」正在成为企业采购的关键因素。这和上周「审批疲劳」研究形成互补：审批疲劳解决的是「用户主动确认」的局限，Maka 解决的是「事后追溯」的能力——两者都是让 AI 介入变得可信的手段，只是在时序上不同（事前 vs 事后）。",
+      "cases": [
+        {"name": "AI 变更审计", "desc": "通过只追加日志完整记录 Agent 做的每一个动作，支持事后审查和回滚"},
+        {"name": "合规场景 AI 工作区", "desc": "为需要满足审计要求的企业提供可信的 AI Agent 工作环境"},
+        {"name": "Agent 行为分析", "desc": "分析 Agent 的历史行为日志，发现低效或错误的决策模式"}
+      ],
+      "isNew": true
+    },
+    {
+      "name": "tashfeenahmed/freellmapi",
+      "title": "freellmapi — 聚合免费模型，统一 OpenAI 兼容 /v1 端点",
+      "url": "https://github.com/tashfeenahmed/freellmapi",
+      "stars": 21198,
+      "weeklyStars": 2014,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": ["llm", "free", "api", "openai-compatible"],
+      "category": "AI / 基础设施",
+      "insight": "freellmapi 的作用是把各家提供的免费 LLM API（包括 HuggingFace 上的开源模型、各种免费额度接口）统一成 OpenAI 兼容格式，让开发者无需改代码就能切换后端。这类「API 兼容层」项目的大量出现，说明「OpenAI API 格式」正在成为事实上的 AI 服务调用标准——类似 POSIX 对 Unix 系统的意义。对我们的技术选型建议：如果未来接入多个 AI 服务，建议内部统一使用 OpenAI 兼容格式的抽象层，避免被单一供应商绑定，也方便用 freellmapi 这类工具做低成本测试。",
+      "cases": [
+        {"name": "开发测试降本", "desc": "在开发和测试阶段使用免费模型，降低 AI 功能开发的成本"},
+        {"name": "多供应商兼容", "desc": "统一 API 格式，让代码可以不修改地切换底层 AI 服务提供商"},
+        {"name": "模型能力横评", "desc": "通过统一接口快速横向比较多个模型在同一任务上的表现"}
+      ],
+      "isNew": true
+    },
+    {
+      "name": "posthog/posthog",
+      "title": "PostHog Autopilot — 产品信号直接转 PR 的 AI 自动化运维",
+      "url": "https://github.com/posthog/posthog",
+      "stars": 26000,
+      "weeklyStars": 1800,
+      "forks": 0,
+      "language": "Python",
+      "topics": ["product-analytics", "ai", "automation", "pr"],
+      "category": "AI / 产品运营",
+      "insight": "PostHog 本周推出的「自动驾驶模式」（Autopilot）能把产品信号（用户流失、功能低使用率、错误率上升）直接转化为 GitHub PR，实现 AI 运维闭环。这是「AI Agent 完成 AI → 分析 → 决策 → 实施」完整环路的早期实践。它的意义不只是功能本身，而在于它展示了「AI 辅助产品迭代」的可能形态：数据发现问题 → Agent 提出代码修复方案 → 人审查并合并。这个闭环对我们的数据驱动迭代很有启发——从「人看数据后决定改什么」到「AI 看数据后提议怎么改，人做最终决策」。",
+      "cases": [
+        {"name": "数据驱动迭代", "desc": "产品信号自动触发改进提案，缩短「发现问题」到「提交修复」的周期"},
+        {"name": "AI 运维参考", "desc": "了解 AI Agent 完整运维闭环的实现方式，作为自动化监控体系的设计参考"},
+        {"name": "功能效果追踪", "desc": "用 PostHog 的分析能力追踪 AI 功能的实际使用效果，驱动功能迭代"}
+      ],
+      "isNew": false
+    },
+    {
+      "name": "OpenHuman/multi-agent-collab",
+      "title": "OpenHuman — 探索「克隆办公室」式的多 Agent 自治协作",
+      "url": "https://github.com/OpenHuman/multi-agent-collab",
+      "stars": 8400,
+      "weeklyStars": 1600,
+      "forks": 0,
+      "language": "Python",
+      "topics": ["multi-agent", "collaboration", "autonomous", "office"],
+      "category": "AI / Multi-Agent",
+      "insight": "OpenHuman 探索的是多个 Agent 扮演不同「虚拟员工」角色（产品经理、开发者、测试）协作完成任务的模式，被称为「克隆办公室」（Cloned Office）。这与 yc-software/qm 的「多人共用 Agent」不同——后者是真实多人的权限隔离，OpenHuman 是单个用户拥有多个 Agent 分饰不同角色。这个模式的有趣之处在于：让不同角色的 Agent 互相质疑和审查对方，可能比单个 Agent 更准确——类似「让两个法学生辩论比一个律师单方面陈述更全面」的道理。",
+      "cases": [
+        {"name": "复杂任务分解", "desc": "把一个复杂项目拆分给不同角色的 Agent，利用角色差异产生更完整的解决方案"},
+        {"name": "方案质量审查", "desc": "让「审查者 Agent」专门挑「执行者 Agent」的毛病，提升输出质量"},
+        {"name": "创意协作原型", "desc": "让不同风格的 Agent 就同一问题给出不同视角，辅助创意决策"}
+      ],
+      "isNew": true
+    },
+    {
+      "name": "AprilNEA/OpenLogi",
+      "title": "OpenLogi — 罗技 Options+ 的本地优先 Rust 替代",
+      "url": "https://github.com/AprilNEA/OpenLogi",
+      "stars": 17218,
+      "weeklyStars": 5946,
+      "forks": 0,
+      "language": "Rust",
+      "topics": ["logitech", "rust", "local-first", "privacy"],
+      "category": "其他 / 开发者工具",
+      "insight": "OpenLogi 在两周内持续高增长（W35 周增 2400，W36 跃升至 5946），说明「本地优先、无账号、无遥测」这三个关键词在用户心中的权重正在快速提升。上周分析了它对「本地优先产品叙事」的借鉴价值，这周要补充一条：OpenLogi 的高增速在一定程度上是对 Logitech 云端依赖策略的反弹——用户在明确表达「我不希望我的鼠标需要联网才能工作」。这种反弹情绪在 AI 时代会更强烈，因为 AI 工具能访问的数据更敏感。",
+      "cases": [
+        {"name": "外设隐私控制", "desc": "无需联网、无需账号即可完整配置罗技鼠标键盘"},
+        {"name": "本地优先产品叙事参考", "desc": "学习如何将「本地优先」作为核心卖点，并让用户真正相信它"},
+        {"name": "用户反弹情绪研究", "desc": "研究其爆发背后的用户情绪，理解在 AI 时代云端依赖的边界在哪里"}
+      ],
+      "isNew": false
+    },
+    {
+      "name": "calesthio/OpenMontage",
+      "title": "OpenMontage — 开源 AI 视频制作系统，实拍风格全流水线",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "stars": 32000,
+      "weeklyStars": 10200,
+      "forks": 0,
+      "language": "Python",
+      "topics": ["video-generation", "ai", "workflow", "agentic"],
+      "category": "AI / 生成式",
+      "insight": "OpenMontage 的技术亮点是区别于传统图片幻灯片式方案——它通过 Agent 编排调研、脚本、素材生成和编辑的完整流水线，能够从免费素材库生成「实拍风格」视频。这和 MoneyPrinterTurbo 是同一赛道，但更强调画面质感和流水线的可解释性。两者并存说明 AI 视频生成工具正在从「能用」进入「分化」阶段：不同用户对质量、速度、本地化的需求不同，各细分赛道都有机会。对 AI 多媒体能力的参考：输入法若未来接入多模态（如语音视频转文字配合 AI 整理），流水线式的能力编排将是必经架构。",
+      "cases": [
+        {"name": "内容创作辅助", "desc": "从主题关键词自动生成完整短视频，包括素材获取、剪辑和配音"},
+        {"name": "多模态流水线参考", "desc": "研究 Agent 编排多个 AI 能力完成复杂生成任务的架构设计"},
+        {"name": "本地 AI 视频创作", "desc": "不依赖商业服务，在本地环境用开源模型完成专业级视频内容生产"}
+      ],
+      "isNew": true
+    },
+    {
+      "name": "DeusData/codebase-memory-mcp",
+      "title": "codebase-memory-mcp — 零依赖单二进制 MCP 服务器，代码库知识图谱",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "stars": 26000,
+      "weeklyStars": 9900,
+      "forks": 0,
+      "language": "C",
+      "topics": ["mcp", "codebase", "knowledge-graph", "tree-sitter"],
+      "category": "AI / 代码分析",
+      "insight": "codebase-memory-mcp 用 tree-sitter 分析代码 AST，在 158 种编程语言中构建代码库的持久化知识图谱，以单一静态二进制运行、零依赖、亚毫秒级查询，相比逐文件探索减少 99% 的 token 消耗。这解决了 AI 编码助手最大的效率瓶颈：让 Agent 理解整个代码库时消耗大量 token 且速度慢。它的架构思路值得关注：预先构建结构化索引，推理时直接查询而非重新解析，这和 Hy4 的「训练时重、推理时轻」异曲同工。",
+      "cases": [
+        {"name": "大代码库 AI 辅助", "desc": "为大型代码库（百万行以上）提供高效的 AI 上下文，避免 token 超限"},
+        {"name": "代码搜索加速", "desc": "亚毫秒级查询代码库结构，快速定位函数定义、调用关系、依赖图"},
+        {"name": "MCP 生态集成", "desc": "作为 MCP 服务器接入 Claude/Cursor 等工具，提供代码库级别的 AI 理解能力"}
+      ],
+      "isNew": true
+    },
+    {
+      "name": "securo-finance/securo",
+      "title": "Securo — 隐私优先、自托管个人财务管理",
+      "url": "https://github.com/securo-finance/securo",
+      "stars": 2455,
+      "weeklyStars": 432,
+      "forks": 0,
+      "language": "Python",
+      "topics": ["finance", "privacy", "self-hosted", "local-first"],
+      "category": "其他 / 个人工具",
+      "insight": "Securo 是财务数据领域「隐私优先 + 自托管」路线的代表，进入热榜说明这一需求稳定但小众。它的上榜没有因为爆发式增长，而是因为稳定的需求积累——财务数据是用户最不愿意上传到云端的数据之一。这和 OpenLogi、career-ops 共同指向的趋势一致：「高隐私敏感场景 + 本地优先」正在成为一个有价值但被大厂忽视的产品方向。对输入法的启示：我们处理的输入数据中有相当比例属于类似的高敏感内容（财务、医疗、个人通信），这类内容的端侧处理价值尤其高。",
+      "cases": [
+        {"name": "个人财务管理", "desc": "完全本地追踪收支、分析消费模式，数据不离开设备"},
+        {"name": "高敏感数据产品参考", "desc": "研究其在高隐私敏感领域的产品定位策略，应用到类似场景的设计决策"},
+        {"name": "自托管产品模式", "desc": "了解自托管产品的用户获取和留存方式，评估类似路线的可行性"}
+      ],
+      "isNew": true
+    }
+  ]
+}
