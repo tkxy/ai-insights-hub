@@ -1,0 +1,211 @@
+{
+  "date": "2026-08-31",
+  "generated_at": "2026-09-07T08:40:00+08:00",
+  "daily_summary": "上周开端的 AI 行业主线从单点模型发布转向生产力入口整合：OpenAI、Anthropic、Google 的新一轮模型与安全消息持续发酵，国内腾讯、字节、阿里围绕办公 Agent 加速组织和产品收敛。对输入法而言，真正值得关注的不是“更会聊天”，而是 AI 正进入邮件、文档、浏览器、桌面和移动系统这些高频输入场景，输入法若只停留在候选词和语音识别，将被更上层的任务型助手截流。",
+  "design_insights": [
+    {
+      "title": "AI 生产力入口从工具竞争走向平台竞争",
+      "summary": "36氪梳理腾讯、字节、阿里等大厂在 AI 办公和 Agent 产品上的组织整合，指出“生产力市场”正在成为大厂新战场。",
+      "implication": "输入法应把 AI 能力从“键盘内功能”升级为“跨应用输入任务入口”：围绕写邮件、写汇报、改口吻、整理会议纪要等高频文本任务提供可直接调用的动作，而不是只放一个聊天按钮。",
+      "sources": [
+        "36氪"
+      ],
+      "source_urls": [
+        "https://www.36kr.com/p/3964624489438728"
+      ],
+      "tags": [
+        "AI办公",
+        "平台入口",
+        "输入法策略"
+      ]
+    },
+    {
+      "title": "个人 AI Agent 正从被动问答转向主动理解场景",
+      "summary": "36氪报道 Violoop 押注物理级个人 AI Agent，强调通过屏幕、键鼠和长期记忆理解用户当前任务。",
+      "implication": "输入法天然处在“用户正在表达什么”的实时上下文里，可先做轻量主动建议：例如识别用户正在写请假、投诉、复盘时，给出低打扰的模板/语气/结构建议，并允许一键关闭。",
+      "sources": [
+        "36氪"
+      ],
+      "source_urls": [
+        "https://www.36kr.com/p/3964567434059016"
+      ],
+      "tags": [
+        "主动式AI",
+        "场景理解",
+        "低打扰"
+      ]
+    },
+    {
+      "title": "模型安全事件把“可控性”推到产品体验中心",
+      "summary": "搜索结果显示 OpenAI Astra 网络安全能力触及 Critical 阈值，Anthropic 也在模型发布中强调企业级防护。",
+      "implication": "输入法 AI 功能涉及用户私密输入，必须把安全控制显性化：高风险操作如发送、复制到外部、跨应用读取前需要明确确认；本地处理、上传范围和历史记忆都要可见可删。",
+      "sources": [
+        "CSDN / FutureTools"
+      ],
+      "source_urls": [
+        "https://fanjun.blog.csdn.net/article/details/164339983",
+        "https://www.futuretools.io/news?utm_source=superhuman&utm_medium=referral"
+      ],
+      "tags": [
+        "安全可控",
+        "隐私",
+        "AI治理"
+      ]
+    },
+    {
+      "title": "医疗和农业等垂直 AI 助手证明“领域上下文”价值",
+      "summary": "FutureTools 摘要中提到 ChatGPT for Healthcare 接入 Epic EHR、John Deere 推出农业助手 JD，均围绕专业上下文工作。",
+      "implication": "专业模式输入法应优先建设领域上下文能力：法律、医疗、教育等场景不是简单词库，而是“术语 + 格式 + 风险提示 + 推荐表达”的组合包。",
+      "sources": [
+        "FutureTools"
+      ],
+      "source_urls": [
+        "https://www.futuretools.io/news?utm_source=superhuman&utm_medium=referral"
+      ],
+      "tags": [
+        "垂直场景",
+        "专业模式",
+        "上下文"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "跨应用写作任务入口",
+      "pain_point": "用户在不同应用中写同类文本时要反复复制、切换 AI 工具，输入流被打断。",
+      "opportunity": "在键盘工具栏提供“当前文本任务识别”入口，根据所在 App 和已有文本推荐改写、提炼、回复、转正式语气等动作。",
+      "priority": "high",
+      "evidence": "36氪关于 AI 生产力市场的报道显示办公 Agent 正从独立工具进入工作流入口。"
+    },
+    {
+      "title": "输入内容隐私可视化控制",
+      "pain_point": "AI 输入涉及聊天、账号、医疗、办公敏感文本，用户很难知道哪些内容会被上传或记住。",
+      "opportunity": "设计“本次处理范围”提示和记忆开关：处理前展示将读取的文本片段，处理后允许撤回上传、删除记忆。",
+      "priority": "high",
+      "evidence": "Astra Critical 安全讨论与医疗数据插件只读限制都表明权限边界需要写进产品。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Anthropic 发布 Claude Fable 5.1 / Mythos 5.1",
+      "summary": "新模型降低典型负载成本，缓存读取降价，并区分通用版与更高风险能力受限版。",
+      "source": "FutureTools / CSDN",
+      "source_urls": [
+        "https://www.futuretools.io/news?utm_source=superhuman&utm_medium=referral",
+        "https://fanjun.blog.csdn.net/article/details/164339983"
+      ],
+      "tags": [
+        "Anthropic",
+        "模型发布"
+      ]
+    },
+    {
+      "title": "OpenAI Astra 被曝触及 Critical 网络安全能力阈值",
+      "summary": "OpenAI 对 Astra 采取更严格发布与防护措施，安全研究关注其可审计性。",
+      "source": "CSDN",
+      "source_urls": [
+        "https://fanjun.blog.csdn.net/article/details/164339983"
+      ],
+      "tags": [
+        "OpenAI",
+        "安全"
+      ]
+    },
+    {
+      "title": "Google 上线 Agentic Video Understanding",
+      "summary": "Gemini 视频理解可动态检索帧、音轨和转写，降低 token 与成本。",
+      "source": "FutureTools",
+      "source_urls": [
+        "https://www.futuretools.io/news?utm_source=superhuman&utm_medium=referral"
+      ],
+      "tags": [
+        "Gemini",
+        "视频理解"
+      ]
+    },
+    {
+      "title": "ChatGPT for Healthcare 接入医疗公共数据和 Epic EHR",
+      "summary": "OpenAI 将医疗公共数据与部分授权 EHR 上下文接入临床工作流。",
+      "source": "FutureTools",
+      "source_urls": [
+        "https://www.futuretools.io/news?utm_source=superhuman&utm_medium=referral"
+      ],
+      "tags": [
+        "医疗AI",
+        "ChatGPT"
+      ]
+    },
+    {
+      "title": "John Deere 测试农业 AI 助手 JD",
+      "summary": "农业设备厂商将农场、机器和运营数据接入问答式助手。",
+      "source": "FutureTools",
+      "source_urls": [
+        "https://www.futuretools.io/news?utm_source=superhuman&utm_medium=referral"
+      ],
+      "tags": [
+        "垂直助手",
+        "农业AI"
+      ]
+    },
+    {
+      "title": "36氪关注“生产力市场”大厂博弈",
+      "summary": "腾讯、字节、阿里等将 AI 办公与 Agent 能力作为商业化新入口。",
+      "source": "36氪",
+      "source_urls": [
+        "https://www.36kr.com/p/3964624489438728"
+      ],
+      "tags": [
+        "AI办公",
+        "商业化"
+      ]
+    },
+    {
+      "title": "Violoop 获亿元级融资，押注物理级个人 AI Agent",
+      "summary": "该硬件通过 HDMI/USB 接入电脑，试图在用户开口前理解任务。",
+      "source": "36氪",
+      "source_urls": [
+        "https://www.36kr.com/p/3964567434059016"
+      ],
+      "tags": [
+        "AI硬件",
+        "个人Agent"
+      ]
+    },
+    {
+      "title": "Meta 检测并禁用篡改指示灯的智能眼镜摄像头",
+      "summary": "Meta 对被篡改录制指示灯的 Ray-Ban 智能眼镜采取软件限制。",
+      "source": "FutureTools",
+      "source_urls": [
+        "https://www.futuretools.io/news?utm_source=superhuman&utm_medium=referral"
+      ],
+      "tags": [
+        "AI硬件",
+        "隐私"
+      ]
+    },
+    {
+      "title": "World Labs 发布 Atlas 空间智能模型",
+      "summary": "Atlas 面向 3D、视频和空间重建，可生成长视频和 360 全景。",
+      "source": "FutureTools",
+      "source_urls": [
+        "https://www.futuretools.io/news?utm_source=superhuman&utm_medium=referral"
+      ],
+      "tags": [
+        "空间智能",
+        "3D生成"
+      ]
+    },
+    {
+      "title": "OpenAI 支持加州青少年 AI 防护法案",
+      "summary": "OpenAI 表态支持年龄适配的 AI 安全护栏。",
+      "source": "FutureTools",
+      "source_urls": [
+        "https://www.futuretools.io/news?utm_source=superhuman&utm_medium=referral"
+      ],
+      "tags": [
+        "AI治理",
+        "青少年保护"
+      ]
+    }
+  ]
+}

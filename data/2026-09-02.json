@@ -1,0 +1,217 @@
+{
+  "date": "2026-09-02",
+  "generated_at": "2026-09-07T08:40:00+08:00",
+  "daily_summary": "9 月 2 日的核心变化是“模型能力、价格和安全边界同时更新”：Claude Fable 5.1、Gemini 3.8 Flash/Cyber、OpenAI Astra 预览和 AI 安全融资，让企业不再只比较模型分数，而要比较成本、可审计性、工具调用稳定性和安全责任。输入法相关启示是，AI 写作和语音输入进入规模化后，产品必须把模型版本、结果可信度、敏感动作确认和失败兜底纳入交互，而不是只追求“生成得更聪明”。",
+  "design_insights": [
+    {
+      "title": "模型高频迭代导致“体验回归测试”成为刚需",
+      "summary": "Google Gemini 3.8 Flash 被报道为六周内第三个 Flash 更新，面向更强工具调用和推理。",
+      "implication": "输入法接入大模型后应建立模型升级灰度：每次升级都验证候选词、纠错、改写、语音转写、敏感拒答等核心链路，避免模型变聪明但体验变不稳定。",
+      "sources": [
+        "AI Weekly / ai0.news"
+      ],
+      "source_urls": [
+        "https://aiweekly.co/ai-news-today/edition/2026-09-02",
+        "https://ai0.news/posts/2026-09-03-daily-digest"
+      ],
+      "tags": [
+        "模型迭代",
+        "质量验证",
+        "输入法测试"
+      ]
+    },
+    {
+      "title": "网安专用模型进入主流，AI 防御成为模型差异化卖点",
+      "summary": "Google Gemini 3.8 Flash Cyber 面向可信防御者开放，HiddenLayer 获 1 亿美元融资。",
+      "implication": "输入法的安全能力也可产品化：对钓鱼链接、诈骗话术、敏感转账表达进行轻量提醒，但必须低打扰且提供“为什么提示”的解释。",
+      "sources": [
+        "AI Weekly"
+      ],
+      "source_urls": [
+        "https://aiweekly.co/ai-news-today/edition/2026-09-02"
+      ],
+      "tags": [
+        "AI安全",
+        "风险提示",
+        "反诈"
+      ]
+    },
+    {
+      "title": "Perplexity 引用垃圾内容争议提醒检索型 AI 要控源",
+      "summary": "ai0.news 摘要提到 Perplexity 被发现引用大量机器生成的低质“best software”页面。",
+      "implication": "输入法中的“边聊边搜/AI 搜索”必须限制信源等级：引用来源要显示、低可信内容不应直接进入候选推荐，尤其是医疗、法律、金融场景。",
+      "sources": [
+        "ai0.news"
+      ],
+      "source_urls": [
+        "https://ai0.news/posts/2026-09-03-daily-digest"
+      ],
+      "tags": [
+        "检索可信度",
+        "来源标注",
+        "AI搜索"
+      ]
+    },
+    {
+      "title": "医疗 AI 只读数据插件提供了安全交互参考",
+      "summary": "OpenAI 的医疗数据插件强调只读、授权和不得输入受保护健康信息。",
+      "implication": "输入法处理专业敏感文本时可采用“只读当前文本 + 不保存 + 明确退出”的临时会话模式，降低用户对云端 AI 的心理门槛。",
+      "sources": [
+        "NeoDrop"
+      ],
+      "source_urls": [
+        "https://neodrop.ai/post/TG8E1AIZI5f"
+      ],
+      "tags": [
+        "只读权限",
+        "敏感场景",
+        "专业输入"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "模型升级后的输入体验回归面板",
+      "pain_point": "AI 功能升级频繁，但输入法基础体验一旦回退用户会立刻流失。",
+      "opportunity": "建立内部评测面板：覆盖语音、纠错、联想、AI改写、专业模式，输出升级前后差异和异常样例。",
+      "priority": "high",
+      "evidence": "Gemini Flash 高频迭代表明模型版本更迭速度可能快于产品测试周期。"
+    },
+    {
+      "title": "AI 搜索/引用可信度提示",
+      "pain_point": "用户在输入中调用搜索时，可能直接采纳未经验证的信息。",
+      "opportunity": "为搜索型建议加可信标签：官方、媒体、社区、低可信，并保留来源链接，专业领域默认要求二次确认。",
+      "priority": "medium",
+      "evidence": "Perplexity 引用低质页面争议说明检索质量会直接影响 AI 输出可信度。"
+    },
+    {
+      "title": "诈骗和高风险语义输入提醒",
+      "pain_point": "输入法能最早看到用户正在输入的转账、验证码、账号等高风险文本。",
+      "opportunity": "在本地规则优先的前提下，识别典型诈骗话术并弹出非阻断提醒，可一键关闭并不上传原文。",
+      "priority": "medium",
+      "evidence": "AI 安全模型和国家反诈 AI 应用趋势都指向入口级风险识别。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Google 发布 Gemini 3.8 Flash Cyber",
+      "summary": "安全专用版本面向可信防御者，强调漏洞发现和自动补丁能力。",
+      "source": "AI Weekly",
+      "source_urls": [
+        "https://aiweekly.co/ai-news-today/edition/2026-09-02"
+      ],
+      "tags": [
+        "Gemini",
+        "AI安全"
+      ]
+    },
+    {
+      "title": "HiddenLayer 获 1 亿美元 B 轮融资",
+      "summary": "AI 安全部署监控需求增长，企业开始监控 agents 及其工具链。",
+      "source": "AI Weekly",
+      "source_urls": [
+        "https://aiweekly.co/ai-news-today/edition/2026-09-02"
+      ],
+      "tags": [
+        "融资",
+        "AI安全"
+      ]
+    },
+    {
+      "title": "Mistral Vibe 免费层默认训练用户提示引发讨论",
+      "summary": "相关帮助文档显示免费用户默认参与训练，企业版默认退出。",
+      "source": "AI Weekly",
+      "source_urls": [
+        "https://aiweekly.co/ai-news-today/edition/2026-09-02"
+      ],
+      "tags": [
+        "隐私",
+        "Mistral"
+      ]
+    },
+    {
+      "title": "Google 避免出售 AdX，但被要求加强广告技术互操作",
+      "summary": "美国法院对 Google 广告技术案作出行为性救济安排。",
+      "source": "AI Weekly",
+      "source_urls": [
+        "https://aiweekly.co/ai-news-today/edition/2026-09-02"
+      ],
+      "tags": [
+        "Google",
+        "监管"
+      ]
+    },
+    {
+      "title": "Conveo 获 5000 万美元 A 轮融资",
+      "summary": "公司使用 AI 自动进行客户访谈并分析市场洞察。",
+      "source": "AI Weekly",
+      "source_urls": [
+        "https://aiweekly.co/ai-news-today/edition/2026-09-02"
+      ],
+      "tags": [
+        "用户研究",
+        "融资"
+      ]
+    },
+    {
+      "title": "Claude Fable 5.1 被报道更便宜且限制更少",
+      "summary": "Anthropic 回应企业对价格和过度防护的反馈。",
+      "source": "AIStart",
+      "source_urls": [
+        "https://aistart.ai/news?utm_source=jryx"
+      ],
+      "tags": [
+        "Claude",
+        "企业AI"
+      ]
+    },
+    {
+      "title": "OpenAI Astra 网络安全能力引发发布前防护讨论",
+      "summary": "OpenAI 对高能力模型采取更谨慎的防护和早期访问策略。",
+      "source": "AIStart",
+      "source_urls": [
+        "https://aistart.ai/news?utm_source=jryx"
+      ],
+      "tags": [
+        "OpenAI",
+        "Astra"
+      ]
+    },
+    {
+      "title": "Hugging Face WebGPU kernels 推进浏览器本地 AI",
+      "summary": "@huggingface/kernels 提供 200 多个 WebGPU kernel。",
+      "source": "AIStart",
+      "source_urls": [
+        "https://aistart.ai/news?utm_source=jryx"
+      ],
+      "tags": [
+        "HuggingFace",
+        "浏览器AI"
+      ]
+    },
+    {
+      "title": "OpenAI Ads 年化收入被报道达 10 亿美元",
+      "summary": "ChatGPT 广告平台成为消费侧商业化信号。",
+      "source": "AIStart",
+      "source_urls": [
+        "https://aistart.ai/news?utm_source=jryx"
+      ],
+      "tags": [
+        "OpenAI",
+        "广告"
+      ]
+    },
+    {
+      "title": "Gemini 视频理解与 Workspace 图片工具同周推进",
+      "summary": "Google 同时强化多模态理解和生产力创作入口。",
+      "source": "NeoDrop",
+      "source_urls": [
+        "https://neodrop.ai/post/TG8E1AIZI5f"
+      ],
+      "tags": [
+        "多模态",
+        "Workspace"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "date": "2026-09-03",
+  "generated_at": "2026-09-07T08:40:00+08:00",
+  "daily_summary": "9 月 3 日的新闻把“可用性”和“可控性”同时推到台前：ChatGPT、Claude、Grok 集体服务异常暴露多模型依赖风险，OpenAI Astra 与 Gemini 3.8 Flash/Cyber 则强化了“更强但更难审计”的能力争议。国内侧，腾讯 WorkBuddy 开放平台、豆包工作多 Agent 与本地 GUI 操作、阿里眼镜版 Agent 说明办公和硬件入口正在融合。输入法需要把自己放进这个入口竞争里，同时给出清晰的失败兜底和权限边界。",
+  "design_insights": [
+    {
+      "title": "多家 AI 服务同时宕机暴露“单供应商依赖”体验风险",
+      "summary": "Economic Times 报道 ChatGPT、Claude、Grok 在 9 月 3 日出现服务中断，部分 Gemini API 用户也受影响。",
+      "implication": "输入法 AI 功能不能把核心输入体验绑死在单一云模型上：基础输入、纠错和常用语必须离线可用，AI 功能需有降级提示和备用模型策略。",
+      "sources": [
+        "Economic Times"
+      ],
+      "source_urls": [
+        "https://economictimes.indiatimes.com/news/international/global-trends/chatgpt-claude-and-grok-suffer-simultaneous-outages-as-gpt-6-astra-rumors-intensify/articleshow/133740702.cms"
+      ],
+      "tags": [
+        "稳定性",
+        "降级策略",
+        "基础输入"
+      ]
+    },
+    {
+      "title": "WorkBuddy 开放平台代表 Agent 入口从单品走向生态",
+      "summary": "腾讯 WorkBuddy 开放平台上线，首批引入超百家伙伴，开放 Skill、Expert、Connector 等能力。",
+      "implication": "输入法可参考平台化思路，把专业词库、AI写作模板、行业表达包做成可扩展能力，而非版本内置；让法律、医疗、教育等领域可以独立迭代。",
+      "sources": [
+        "腾讯新闻 / 36氪"
+      ],
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260903A09FUM00?refer=cp_1009",
+        "https://so.html5.qq.com/page/real/search_news?docid=70000021_6286a99114175052&faker=1"
+      ],
+      "tags": [
+        "WorkBuddy",
+        "生态",
+        "专业模式"
+      ]
+    },
+    {
+      "title": "豆包工作多 Agent 与 Mac GUI 操作降低跨应用门槛",
+      "summary": "报道显示豆包工作上线多 Agents 并行与 Mac 本地 GUI 操作，可在无 MCP/API 情况下完成界面操作。",
+      "implication": "输入法 AI 如果要跨应用辅助，首要不是“大而全代理”，而是可控的小动作：复制当前文本、改写、填回、撤销，每一步都可预览，避免越权操作。",
+      "sources": [
+        "腾讯新闻"
+      ],
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260903A09FUM00?refer=cp_1009",
+        "https://new.qq.com/rain/a/20260904A02OAX00?refer=cp_1009"
+      ],
+      "tags": [
+        "豆包工作",
+        "GUI操作",
+        "可控动作"
+      ]
+    },
+    {
+      "title": "AI 智能体手机和眼镜版 Agent 说明输入入口正在硬件化",
+      "summary": "努比亚 NaviX Ultra 搭载豆包手机助手、阿里 Qoder 眼镜版 Agent 等信息显示 AI 入口正进入手机和眼镜。",
+      "implication": "输入法不应只看手机键盘，而要适配语音、耳机、眼镜、车机等“无键盘输入”场景，统一表达能力和个人词库。",
+      "sources": [
+        "腾讯新闻"
+      ],
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260901A0AS7000?refer=cp_1009",
+        "https://new.qq.com/rain/a/20260903A09FUM00?refer=cp_1009"
+      ],
+      "tags": [
+        "AI硬件",
+        "多端输入",
+        "语音入口"
+      ]
+    },
+    {
+      "title": "Astra 与 Gemini Cyber 让“能力强但不可审计”成为 UX 问题",
+      "summary": "多家摘要提到 Astra 的网络安全关键能力和 Gemini Cyber 的防御能力，安全研究关注推理可见性。",
+      "implication": "输入法 AI 输出不需要展示复杂推理，但必须展示“改了哪里/为什么改/可否恢复原文”，尤其是智能文字整理和专业改写。",
+      "sources": [
+        "ai0.news / Buttondown"
+      ],
+      "source_urls": [
+        "https://ai0.news/posts/2026-09-03-daily-digest",
+        "https://buttondown.com/JacopoCastellano/archive/ai-digest-2026-09-03"
+      ],
+      "tags": [
+        "可审计",
+        "改写透明",
+        "安全UX"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "AI 功能离线兜底",
+      "pain_point": "用户在网络异常或模型宕机时仍需正常输入，不能因 AI 失败影响打字。",
+      "opportunity": "基础输入、词库、常用语、剪贴板、本地纠错必须独立于云模型；AI 不可用时显示轻提示，不阻断输入。",
+      "priority": "high",
+      "evidence": "9 月 3 日多家 AI 服务同时宕机，说明稳定性是生产级入口的底线。"
+    },
+    {
+      "title": "专业模式能力插件化",
+      "pain_point": "专业领域多且变化快，全部写死在版本内会拖慢迭代。",
+      "opportunity": "将专业词库、表达模板、风险提示拆为可独立更新的领域包，并允许用户按需启用不超过 3 个。",
+      "priority": "medium",
+      "evidence": "WorkBuddy 开放平台的 Skill/Expert/Connector 生态给出平台化参考。"
+    },
+    {
+      "title": "AI 改写前后对照",
+      "pain_point": "用户怕 AI 改掉事实或语气，但又需要快速润色。",
+      "opportunity": "智能文字整理结果默认提供“原文/改后/差异高亮/恢复原文”，避免用户丢失控制感。",
+      "priority": "high",
+      "evidence": "豆包输入法智能整理和 Astra 可审计性争议都说明透明改写是关键体验。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "ChatGPT、Claude、Grok 出现同步服务中断",
+      "summary": "多家 AI 平台在 9 月 3 日发生错误率升高或不可用。",
+      "source": "Economic Times",
+      "source_urls": [
+        "https://economictimes.indiatimes.com/news/international/global-trends/chatgpt-claude-and-grok-suffer-simultaneous-outages-as-gpt-6-astra-rumors-intensify/articleshow/133740702.cms"
+      ],
+      "tags": [
+        "宕机",
+        "可靠性"
+      ]
+    },
+    {
+      "title": "OpenAI Astra 安全争议继续升温",
+      "summary": "报道称 Astra 触及 Critical 网络安全阈值，并使用更难监控的推理结构。",
+      "source": "ai0.news",
+      "source_urls": [
+        "https://ai0.news/posts/2026-09-03-daily-digest"
+      ],
+      "tags": [
+        "Astra",
+        "AI安全"
+      ]
+    },
+    {
+      "title": "Google Gemini 3.8 Flash 发布",
+      "summary": "新版本强调更强推理、工具调用和编码能力。",
+      "source": "ai0.news",
+      "source_urls": [
+        "https://ai0.news/posts/2026-09-03-daily-digest"
+      ],
+      "tags": [
+        "Gemini",
+        "模型发布"
+      ]
+    },
+    {
+      "title": "美国政府在纽约时报诉 OpenAI 案中支持 AI 产业立场",
+      "summary": "DOJ 提交意见，认为训练数据限制可能影响美国 AI 竞争力。",
+      "source": "ai0.news",
+      "source_urls": [
+        "https://ai0.news/posts/2026-09-03-daily-digest"
+      ],
+      "tags": [
+        "版权",
+        "监管"
+      ]
+    },
+    {
+      "title": "Perplexity 引用低质机器生成页面引发担忧",
+      "summary": "调查称部分引用来自新建的“best software”页面网络。",
+      "source": "ai0.news",
+      "source_urls": [
+        "https://ai0.news/posts/2026-09-03-daily-digest"
+      ],
+      "tags": [
+        "搜索质量",
+        "Perplexity"
+      ]
+    },
+    {
+      "title": "腾讯 WorkBuddy 开放平台上线",
+      "summary": "首批超百家伙伴接入，覆盖硬件、应用、开发者生态。",
+      "source": "腾讯新闻",
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260903A09FUM00?refer=cp_1009"
+      ],
+      "tags": [
+        "WorkBuddy",
+        "开放平台"
+      ]
+    },
+    {
+      "title": "豆包工作发布多 Agent 并行和 Mac GUI 操作能力",
+      "summary": "产品支持多个 Agent 分工，并可视觉识别本地界面执行操作。",
+      "source": "腾讯新闻",
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260903A09FUM00?refer=cp_1009"
+      ],
+      "tags": [
+        "豆包工作",
+        "多Agent"
+      ]
+    },
+    {
+      "title": "阿里 Qoder 上线眼镜版 Agent",
+      "summary": "阿里云宣布 Qoder 兼容千问和乐奇 AI 眼镜。",
+      "source": "腾讯新闻",
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260903A09FUM00?refer=cp_1009"
+      ],
+      "tags": [
+        "阿里",
+        "AI眼镜"
+      ]
+    },
+    {
+      "title": "长安等车企接入办公 AI Agent",
+      "summary": "车企在研产销服等环节使用千问办公等系统。",
+      "source": "腾讯新闻",
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260903A09FUM00?refer=cp_1009"
+      ],
+      "tags": [
+        "汽车",
+        "办公Agent"
+      ]
+    },
+    {
+      "title": "国内 AI 办公产品月活和组织整合继续升温",
+      "summary": "腾讯、字节、阿里、百度围绕企业 Agent 入口竞争。",
+      "source": "腾讯搜一搜",
+      "source_urls": [
+        "https://so.html5.qq.com/page/real/search_news?docid=70000021_6286a99114175052&faker=1"
+      ],
+      "tags": [
+        "AI办公",
+        "企业服务"
+      ]
+    },
+    {
+      "title": "百度输入法 13.3.12.37 更新提升稳定性",
+      "summary": "小米应用商店显示百度输入法 9 月 2 日更新并继续强调超会写、AI搜索等能力。",
+      "source": "小米应用商店",
+      "source_urls": [
+        "https://m.app.mi.com/detail/192"
+      ],
+      "tags": [
+        "百度输入法",
+        "竞品"
+      ]
+    },
+    {
+      "title": "AI Agent 手机 NaviX Ultra 获入网许可",
+      "summary": "努比亚设备搭载豆包手机助手，计划 9 月上市。",
+      "source": "腾讯新闻",
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260901A0AS7000?refer=cp_1009"
+      ],
+      "tags": [
+        "AI手机",
+        "豆包"
+      ]
+    }
+  ]
+}

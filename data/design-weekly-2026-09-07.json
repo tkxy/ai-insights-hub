@@ -1,0 +1,278 @@
+{
+  "week": "2026-08-31 ~ 2026-09-06",
+  "generated_at": "2026-09-07T08:40:00+08:00",
+  "theme": "Agent 进入真实工作流 × 输入法竞品跨端补齐 × AI 安全与可控性成为体验底线",
+  "stages": {
+    "research": {
+      "title": "桌面研究",
+      "items": [
+        {
+          "title": "前沿模型一周密集发布，产品评价从能力转向成本、可靠性和审计",
+          "source": "Digipart / AI Weekly / ai0.news",
+          "sourceDetail": "OpenAI GPT-6 Astra、Claude Fable 5.1、Gemini 3.8 Flash/Cyber、Meta Muse Spark 1.3 等在同一周形成能力与价格竞争，同时伴随 Critical cyber、宕机和可审计性争议。",
+          "insight": "输入法接入大模型后，单纯“更强模型”不再等于更好体验；用户更在意响应速度、稳定性、隐私和是否可撤销。",
+          "action": "建立输入法 AI 多模型路由与回归测试机制：短文本用快模型，专业长文用强模型，敏感输入用本地/私有模式；每次模型升级前跑核心输入链路评测。",
+          "tags": [
+            "模型竞赛",
+            "可靠性",
+            "多模型路由"
+          ],
+          "sourceUrls": [
+            "https://digipart.eu/2026/09/04/tech-digest-september-4-2026",
+            "https://aiweekly.co/ai-news-today/edition/2026-09-02",
+            "https://ai0.news/posts/2026-09-03-daily-digest"
+          ]
+        },
+        {
+          "title": "AI 办公 Agent 从聊天框进入企业工作流",
+          "source": "36氪 / 腾讯新闻",
+          "sourceDetail": "腾讯 WorkBuddy 开放平台上线，豆包工作推出多 Agent 并行和 Mac GUI 操作，国内办公 Agent 月访问量从 3 月 2000 万增长至 6 月 6000 万。",
+          "insight": "办公场景正在从“问 AI”变成“让 AI 做任务”，输入法的机会在于承接最细粒度的表达任务和跨应用文本入口。",
+          "action": "围绕企业沟通设计 5 个高频输入任务：会议纪要转回复、周报润色、跨群口径统一、邮件正式化、长文本摘要回填。",
+          "tags": [
+            "办公Agent",
+            "企业沟通",
+            "输入入口"
+          ],
+          "sourceUrls": [
+            "https://www.36kr.com/p/3970051115266306",
+            "https://new.qq.com/rain/a/20260906A0BFHZ00?refer=cp_1009",
+            "https://new.qq.com/rain/a/20260903A09FUM00?refer=cp_1009"
+          ]
+        },
+        {
+          "title": "Agent 安全事件把权限边界推到产品设计一线",
+          "source": "36氪 / n8n Lab / Economic Times",
+          "sourceDetail": "OpenAI Agent DSEWiki 事件、多家 AI 服务宕机、Gemini 高风险建议事故等，集中暴露 Agent 从演示进入真实场景后的边界问题。",
+          "insight": "输入法处在用户表达和外部发送之前，是安全治理的前置节点；任何 AI 改写、发送、搜索、上传都应可解释、可确认、可撤销。",
+          "action": "为输入法 AI 定义“只读默认、写入确认、敏感提示、操作留痕”的安全交互规范，优先覆盖发送、复制到外部、跨应用读取等动作。",
+          "tags": [
+            "Agent安全",
+            "权限",
+            "可控性"
+          ],
+          "sourceUrls": [
+            "https://www.36kr.com/p/3970417239027976",
+            "https://economictimes.indiatimes.com/news/international/global-trends/chatgpt-claude-and-grok-suffer-simultaneous-outages-as-gpt-6-astra-rumors-intensify/articleshow/133740702.cms",
+            "https://new.qq.com/rain/a/20260906A0BFHZ00?refer=cp_1009"
+          ]
+        }
+      ]
+    },
+    "competitive": {
+      "title": "竞品分析",
+      "items": [
+        {
+          "title": "豆包输入法补齐跨端、智能整理和超级互传，正在填平微信输入法护城河",
+          "source": "什么值得买 / IT之家转载",
+          "sourceDetail": "社区整理显示豆包输入法在 8 月底到 9 月初补齐 Windows、鸿蒙、iOS 默认语音模式、账号同步、智能文字整理、超级互传等能力；IT之家也报道安卓 1.4.2/iOS 1.5.2 新增超级互传和智能文字整理。",
+          "insight": "豆包输入法不再只是“语音强”的新产品，而是在跨端连续性、文本整理、纯净体验上系统追赶微信输入法和搜狗。对搜狗的影响是基础体验差距被快速缩小，老牌词库优势会被 AI 整理和跨端协同稀释。",
+          "action": "将跨端同步、智能文字整理、iOS/多端语音免跳转列为短期竞品对齐项；同时用搜狗专业词库和皮肤生态做差异化，不与豆包只拼“AI按钮”。",
+          "tags": [
+            "豆包输入法",
+            "跨端",
+            "智能整理"
+          ],
+          "sourceUrls": [
+            "https://post.smzdm.com/p/arz6x39z/",
+            "https://www.toutiao.com/article/7678517937401037322"
+          ]
+        },
+        {
+          "title": "微信输入法继续以纯净、隐私和跨设备剪贴板形成心智，但 AI 深度较弱",
+          "source": "输入法横评 / 社区竞品观察",
+          "sourceDetail": "横评内容指出微信输入法优势在无广告、隐私、单机模式和跨设备剪贴板；短板是专业词库、皮肤资源和 AI 长文本生成能力不足。",
+          "insight": "微信输入法的威胁不是 AI 功能最强，而是“默认安心”和生态信任。搜狗如果候选区商业化过重或 AI 权限不透明，会把用户推向微信输入法。",
+          "action": "优化搜狗 AI 功能的纯净感：AI入口可关闭、商业推荐不进首候选、隐私模式一键开启；同时突出专业词库和深度 AI 写作能力，避开微信弱项。",
+          "tags": [
+            "微信输入法",
+            "隐私",
+            "纯净体验"
+          ],
+          "sourceUrls": [
+            "https://www.toutiao.com/a7680439870611046935",
+            "https://post.smzdm.com/p/arz6x39z/"
+          ]
+        },
+        {
+          "title": "平台级 Agent（WorkBuddy、ChatGPT、Gemini、豆包工作）正威胁输入法作为第一入口",
+          "source": "36氪 / 腾讯新闻 / Digipart",
+          "sourceDetail": "WorkBuddy 开放平台打通硬件、应用、开发者生态；豆包工作具备多 Agent 与 GUI 操作；ChatGPT/Gemini/Astra 进入 Workspace、浏览器、桌面和系统级能力。",
+          "insight": "输入法的入口地位正在被“任务型 Agent”上移：用户可能直接让桌面/浏览器 Agent 帮他写、改、发，而不是在键盘里调用 AI。",
+          "action": "输入法应强化“实时表达上下文”这一不可替代优势：围绕候选区、语音输入、当前输入框、个人词库做即时辅助，并开放给平台 Agent 调用输入法能力。",
+          "tags": [
+            "平台级Agent",
+            "入口竞争",
+            "输入法战略"
+          ],
+          "sourceUrls": [
+            "https://www.36kr.com/p/3970051115266306",
+            "https://new.qq.com/rain/a/20260903A09FUM00?refer=cp_1009",
+            "https://digipart.eu/2026/09/04/tech-digest-september-4-2026"
+          ]
+        }
+      ]
+    },
+    "user_research": {
+      "title": "用户调研",
+      "items": [
+        {
+          "title": "用户对 AI 输入的核心矛盾：想要更智能，但不想被打扰或被替换",
+          "source": "豆包/微信输入法社区讨论与横评",
+          "sourceDetail": "社区内容反复提到纯净、免跳转、跨端、恢复原文、广告少等体验点，说明用户对输入法的敏感点仍是流畅和控制。",
+          "insight": "AI 输入法的胜负不只在能力，而在“少打扰地帮上忙”。候选区是高压空间，任何抢占、弹窗或不可恢复的改写都会被放大。",
+          "action": "开展 5 人快速可用性测试：对候选区 AI chip、智能整理结果对照、语音免跳转流程进行打断感评分，优先修低分项。",
+          "tags": [
+            "用户控制感",
+            "低打扰",
+            "可用性测试"
+          ],
+          "sourceUrls": [
+            "https://post.smzdm.com/p/arz6x39z/",
+            "https://www.toutiao.com/a7680439870611046935"
+          ]
+        },
+        {
+          "title": "企业用户需要可追溯和权限清晰，而不是黑箱式智能",
+          "source": "OpenAI/Anthropic 安全事件与医疗数据插件",
+          "sourceDetail": "医疗数据插件强调只读与授权，OpenAI Agent 事件和 Astra 可审计争议显示企业对边界与审计要求上升。",
+          "insight": "企业输入场景中，AI 代写如果没有来源、权限和日志，用户不敢用于正式沟通。",
+          "action": "设计企业输入法 AI 的“审计轻卡”：显示使用了哪些文本、是否联网、是否保存、是否由 AI 生成，并支持管理员配置默认策略。",
+          "tags": [
+            "企业用户",
+            "权限",
+            "审计"
+          ],
+          "sourceUrls": [
+            "https://neodrop.ai/post/TG8E1AIZI5f",
+            "https://www.36kr.com/p/3970417239027976",
+            "https://ai0.news/posts/2026-09-03-daily-digest"
+          ]
+        },
+        {
+          "title": "高风险场景下用户需要“阻尼”，不是更顺滑的自动化",
+          "source": "Gemini 登山规划救援 / 国家反诈 AI",
+          "sourceDetail": "Gemini 行程建议导致救援报道、国家反诈 AI App 上线，都说明 AI 在安全场景中需要谨慎提醒和人工确认。",
+          "insight": "输入法最早触达转账、验证码、地址、医疗、法律等敏感表达，应在关键时刻做轻阻尼提醒。",
+          "action": "建立高风险语义识别样例库，先本地识别 20 类场景：验证码、转账、借贷、药量、法律承诺、出行安全等，提示不上传原文。",
+          "tags": [
+            "高风险场景",
+            "反诈",
+            "人工确认"
+          ],
+          "sourceUrls": [
+            "https://new.qq.com/rain/a/20260906A0BFHZ00?refer=cp_1009",
+            "https://techbytes.app/tech-pulse-daily/2026/september/06"
+          ]
+        }
+      ]
+    },
+    "design_output": {
+      "title": "设计稿输出",
+      "items": [
+        {
+          "title": "候选区 AI chip 的低打扰交互规范",
+          "source": "输入法竞品观察 / AI Agent UX 事件",
+          "sourceDetail": "豆包输入法智能整理、微信输入法纯净体验和 Agent 安全事件共同指向：入口要轻，动作要可控。",
+          "insight": "候选区 AI 入口应像“建议”而不是“弹窗”；只在有明确上下文时出现，且不遮挡首候选。",
+          "action": "输出候选区 AI chip 规范：出现条件、最多数量、文案长度、关闭入口、长按解释、结果浮层、恢复原文与回填动作。",
+          "tags": [
+            "交互规范",
+            "候选区",
+            "AI chip"
+          ],
+          "sourceUrls": [
+            "https://post.smzdm.com/p/arz6x39z/",
+            "https://www.toutiao.com/a7680439870611046935",
+            "https://www.36kr.com/p/3970417239027976"
+          ]
+        },
+        {
+          "title": "智能文字整理的原文对照与恢复流程",
+          "source": "豆包输入法智能整理 / AI 可审计性讨论",
+          "sourceDetail": "社区反馈关注智能整理能否恢复原文；Astra 争议也说明用户需要理解 AI 做了什么。",
+          "insight": "用户愿意让 AI 改文字，但必须能看到改动、保留原文、快速撤销。",
+          "action": "设计三段式结果面板：原文、改后、差异高亮；底部固定“替换 / 复制 / 恢复原文 / 再改语气”。",
+          "tags": [
+            "智能整理",
+            "差异对照",
+            "撤销"
+          ],
+          "sourceUrls": [
+            "https://post.smzdm.com/p/arz6x39z/",
+            "https://ai0.news/posts/2026-09-03-daily-digest"
+          ]
+        },
+        {
+          "title": "专业模式 Skill 包的信息架构",
+          "source": "Anthropic Skills / WorkBuddy 开放平台",
+          "sourceDetail": "Skills 文件夹和 WorkBuddy Skill/Expert/Connector 生态提供了任务能力拆分参考。",
+          "insight": "专业模式不应只是固定领域卡片，而应是可配置能力包：词库、模板、动作、提示和合规边界。",
+          "action": "输出专业模式 Skill 包原型：领域入口、启用状态、子词库、常用模板、AI动作、来源说明、最多同时启用 3 个。",
+          "tags": [
+            "专业模式",
+            "Skill",
+            "信息架构"
+          ],
+          "sourceUrls": [
+            "https://jasonzhu.ai/en/news/2026-09-05",
+            "https://www.36kr.com/p/3970051115266306"
+          ]
+        }
+      ]
+    },
+    "design_validation": {
+      "title": "设计验证",
+      "items": [
+        {
+          "title": "门禁验证：AI 数据链路必须先失败后阻断，不允许伪成功",
+          "source": "本项目 check_week_data.py 规则 / 近期 Agent 事故",
+          "sourceDetail": "本次任务继续使用硬门禁校验 7 天日报与周报；行业事件也证明自动化失败若被伪装为成功会造成下游误导。",
+          "insight": "数据看板和周报一旦缺失却照常推送，会让用户形成错误判断；自动化体验的核心是可信状态。",
+          "action": "继续保持门禁为发布前硬阻断：缺日报、条目数不合规、周报 stage 不完整都禁止 commit/push 和后续推送。",
+          "tags": [
+            "数据门禁",
+            "自动化",
+            "可信状态"
+          ],
+          "sourceUrls": [
+            "https://www.36kr.com/p/3970417239027976",
+            "https://economictimes.indiatimes.com/news/international/global-trends/chatgpt-claude-and-grok-suffer-simultaneous-outages-as-gpt-6-astra-rumors-intensify/articleshow/133740702.cms"
+          ]
+        },
+        {
+          "title": "竞品数量组合验证：每日条目自然波动更像真实洞察",
+          "source": "本周日报数据生成规则",
+          "sourceDetail": "本周 7 天日报采用 4/5/4/5/4/6/4 的设计洞察数量、2/3/3/3/2/3/2 的需求挖掘数量和 10-12 条热点资讯。",
+          "insight": "稳定但不机械的数据结构可以避免页面呈现“模板化假数据”的观感，也符合真实新闻密度波动。",
+          "action": "后续在生成脚本中固定校验 demand_mining < design_insights，同时对相邻日期重复标题做去重检查。",
+          "tags": [
+            "数据质量",
+            "去重",
+            "自然波动"
+          ],
+          "sourceUrls": [
+            "https://aiweekly.co/ai-news-today/edition/2026-09-02",
+            "https://new.qq.com/rain/a/20260906A0BFHZ00?refer=cp_1009"
+          ]
+        },
+        {
+          "title": "输入法 AI 功能验证指标应从点击率扩展到控制感和恢复率",
+          "source": "豆包输入法社区反馈 / Agent 安全事件",
+          "sourceDetail": "社区对免跳转、恢复原文、纯净体验敏感；Agent 事件显示可控性是长期信任基础。",
+          "insight": "只看 AI 功能点击率会鼓励打扰式入口，真正需要衡量的是打断率、撤销率、恢复原文成功率、误触关闭率和再次使用率。",
+          "action": "为智能整理和候选区 AI chip 建立验证看板：曝光-点击-采纳-撤销-关闭-二次使用，全链路比较不同入口强度。",
+          "tags": [
+            "设计验证",
+            "控制感",
+            "指标"
+          ],
+          "sourceUrls": [
+            "https://post.smzdm.com/p/arz6x39z/",
+            "https://www.36kr.com/p/3970417239027976"
+          ]
+        }
+      ]
+    }
+  }
+}

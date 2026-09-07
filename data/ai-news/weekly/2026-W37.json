@@ -1,0 +1,146 @@
+{
+  "week": "2026-W37",
+  "range": {
+    "start": "2026-09-07",
+    "end": "2026-09-13"
+  },
+  "generatedAt": "2026-09-07T09:12:00+08:00",
+  "trends": [
+    {
+      "title": "模型更会干活",
+      "summary": "这周最明显的信号是：新模型不只是回答更好，而是更适合长任务、代码任务和多步执行。Astra 的低推理档已经被 OpenAI 产品负责人建议替代上一代高推理档，Claude 也在把长时间运行的 Agent 做成托管服务。",
+      "implication": "输入法里的 AI 不必每次都用最重的模式。短句润色、语气改写、摘要这类高频动作应该默认走更快、更便宜的档位；复杂写作再切到深度模式。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Thibault Sottiaux / OpenAI",
+          "url": "https://x.com/thsottiaux/status/2096688770523467947",
+          "quote": "Astra 的低推理档已经比 GPT-5.6 Sol 的高推理档更好。（GPT-6 Astra on low performs better than GPT-5.6 Sol on high.）"
+        },
+        {
+          "type": "blog",
+          "who": "Anthropic Engineering",
+          "url": "https://www.anthropic.com/engineering/managed-agents",
+          "quote": "Agent 外壳里的很多假设会随着模型变强而过时，所以他们做了 Managed Agents。（Harnesses encode assumptions about what Claude can’t do on its own.）"
+        }
+      ]
+    },
+    {
+      "title": "安全变成体验",
+      "summary": "Agent 能力越强，产品越要控制它能碰到什么、能改什么、出错会影响多大。Anthropic 的工程博客把重点放在限制影响范围，播客里 Ryan Greenblatt 也直接谈到超级智能风险和失控问题。",
+      "implication": "输入法 AI 处理的是用户最私密的原始输入，必须默认小权限：先读当前文本，写回前预览确认，涉及发送、上传、跨应用读取时必须让用户知道。",
+      "evidence": [
+        {
+          "type": "blog",
+          "who": "Anthropic Engineering",
+          "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+          "quote": "问题变成了如何限制自主 Agent 的影响范围。（The engineering question becomes how to cap the blast radius.）"
+        },
+        {
+          "type": "podcast",
+          "who": "Ryan Greenblatt / The MAD Podcast",
+          "url": "https://www.youtube.com/watch?v=SK9ITBK5osA",
+          "quote": "超级智能不一定是坏事，但它危险。（I wouldn’t say superintelligence is bad. I would say it’s dangerous.）"
+        }
+      ]
+    },
+    {
+      "title": "输出要可看见",
+      "summary": "Claude Code 支持 Artifacts，把代码排查、发布清单、数据分析这些过程变成可打开、可分享、会更新的页面。Peter Yang 对 AI 教育的访谈也强调，AI 不能直接替用户跳过思考，而应该帮用户练习。",
+      "implication": "输入法 AI 的结果不要只是一键替换。智能整理、长文本生成、专业改写都应该给用户一个可编辑草稿和前后对照，让用户看得见 AI 改了什么。",
+      "evidence": [
+        {
+          "type": "blog",
+          "who": "Claude Blog",
+          "url": "https://claude.com/blog/artifacts-in-claude-code",
+          "quote": "Artifacts 把 Claude Code 的工作变成可打开的实时页面。（turn Claude Code's work into live, shareable visual pages）"
+        },
+        {
+          "type": "tweet",
+          "who": "Peter Yang",
+          "url": "https://x.com/petergyang/status/2096612718098911590",
+          "quote": "用 AI 跳过学习，就像带机械臂去健身房举重。（Using AI to skip learning is like bringing a robotic arm to the gym to lift weights for you.）"
+        }
+      ]
+    }
+  ],
+  "builders": [
+    {
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "OpenAI Codex 与 ChatGPT 产品相关成员",
+      "highlights": [
+        {
+          "summary": "他建议 Astra 用户降低推理档位使用：如果 Sol 高档已经够用，Astra 低档或中档就可以承担类似任务。这对产品侧的启发是，默认档位应该跟着模型能力变化重新校准。",
+          "url": "https://x.com/thsottiaux/status/2096688770523467947"
+        }
+      ]
+    },
+    {
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "AI 产品教程作者与访谈主持人",
+      "highlights": [
+        {
+          "summary": "他和 Brilliant 联创 Sue Khim 讨论 AI 教育：好 AI 不是直接告诉答案，而是帮助孩子自己思考。这个原则同样适合输入法里的写作辅助。",
+          "url": "https://x.com/petergyang/status/2096612718098911590"
+        }
+      ]
+    },
+    {
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "OpenClaw 相关开发者，长期关注 AI coding harness",
+      "highlights": [
+        {
+          "summary": "他提到云端会话还不够快，目标是做到秒级，需要更聪明的快照机制。这说明 Agent 产品的体验瓶颈已经从“会不会做”变成“能不能快速接上上下文”。",
+          "url": "https://x.com/steipete/status/2096400749869830325"
+        },
+        {
+          "summary": "他认为这轮能力跃升很大，已经很久没见过类似幅度。对应用层来说，旧交互假设需要重新检查。",
+          "url": "https://x.com/steipete/status/2096403459579015374"
+        }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "The MAD Podcast with Matt Turck",
+      "title": "AI 可能在 2029 年接管吗？是不是已经太晚了？ / AI Could Take Over in 2029. Is It Already Too Late?",
+      "guest": "Ryan Greenblatt",
+      "url": "https://www.youtube.com/watch?v=SK9ITBK5osA",
+      "keyTakeaways": [
+        "Ryan Greenblatt 的核心判断很直接：头部 AI 公司知道自己正在走向远超人类的系统，但行业还没有一套清晰的风险管理方案。",
+        "他把风险点放在 2029 年左右的过渡期：AI 可能从有点投机取巧、奖励黑客，变成更会隐藏意图、会主动对抗约束的系统。",
+        "对产品团队来说，这不是科幻话题。只要 Agent 能调用工具、读写外部系统，就需要权限、日志、暂停按钮和人工接管。",
+        "输入法/AI 助手这种贴近用户原始输入的产品，更应该先做小范围、可解释、可撤销的自动化，而不是一上来追求全自动。"
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "name": "Anthropic Engineering",
+      "title": "我们如何在不同产品中限制 Claude 的影响范围 / How we contain Claude across products",
+      "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+      "summary": "Anthropic 讲的是一个很现实的问题：Claude 能做的事越来越多，能造成的影响也越来越大。所以工程重点不是完全不让它做事，而是给它清楚的边界，控制单次失败能影响多大。对输入法 AI 来说，这对应的是最小权限、写入前确认和敏感操作拦截。"
+    },
+    {
+      "name": "Anthropic Engineering",
+      "title": "Claude Code 近期质量反馈说明 / An update on recent Claude Code quality reports",
+      "url": "https://www.anthropic.com/engineering/april-23-postmortem",
+      "summary": "Anthropic 复盘了 Claude Code、Agent SDK 和 Cowork 的质量问题，强调 API 和底层推理未受影响，问题来自产品侧配置和实现。这个案例提醒产品团队：用户感受到的“模型变差”，很多时候其实是上下文、默认档位、工具链或 UI 状态出了问题。"
+    },
+    {
+      "name": "Anthropic Engineering",
+      "title": "扩展托管 Agent：把脑子和手分开 / Scaling Managed Agents: Decoupling the brain from the hands",
+      "url": "https://www.anthropic.com/engineering/managed-agents",
+      "summary": "文章解释了 Anthropic 为什么要做 Managed Agents：长任务 Agent 需要稳定运行环境、工具执行和上下文管理，不能只靠模型本身。对输入法来说，AI 写作助手如果要处理长文本、跨应用和专业模式，也要把模型、工具、草稿和权限拆开设计。"
+    },
+    {
+      "name": "Claude Blog",
+      "title": "Claude Code 现在支持 Artifacts / Claude Code now supports artifacts",
+      "url": "https://claude.com/blog/artifacts-in-claude-code",
+      "summary": "Claude Code 可以把工作过程生成实时可分享的页面，比如 PR 讲解、系统说明、仪表盘和发布清单。它的价值不是多一个展示样式，而是把 AI 过程变成团队能检查、讨论、继续编辑的东西。输入法里的长文本 AI 也可以借鉴：先放进草稿空间，再让用户确认回填。"
+    }
+  ]
+}

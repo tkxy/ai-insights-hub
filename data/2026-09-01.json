@@ -1,0 +1,248 @@
+{
+  "date": "2026-09-01",
+  "generated_at": "2026-09-07T08:40:00+08:00",
+  "daily_summary": "9 月 1 日的行业信号集中在 Agent 商业化和入口迁移：字节“豆包工作”、腾讯 WorkBuddy、OpenAI/Anthropic 模型更新与医疗、图片、浏览器等场景绑定，让 AI 从聊天框走向真实工作流。输入法相关的机会也更清晰：候选区不只是“出字”，而应成为轻量任务面板；同时，智能体安全、账号权限和云端处理边界会直接影响用户是否愿意把敏感输入交给 AI。",
+  "design_insights": [
+    {
+      "title": "办公 Agent 进入“多内容生成 + 权限体系”阶段",
+      "summary": "多篇报道提到豆包工作与飞书深度打通，可生成文档、表格、PPT、多媒体，并继承企业权限。",
+      "implication": "输入法的 AI 写作功能要补“权限感”和“交付形态”：生成结果不只是一段文字，还可一键转邮件、表格摘要、待办清单，并明确是否使用企业上下文。",
+      "sources": [
+        "腾讯新闻 / 36氪"
+      ],
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260902A02WOR00?refer=cp_1009",
+        "https://www.36kr.com/p/3964624489438728"
+      ],
+      "tags": [
+        "豆包工作",
+        "办公Agent",
+        "权限"
+      ]
+    },
+    {
+      "title": "AI 图片生成进入 Workspace，创作入口贴近文档场景",
+      "summary": "Google Pics/Nano Banana 进入 Docs 与 Slides，说明生成式 AI 正嵌入原有生产力工具而非另起入口。",
+      "implication": "输入法的图片/表情/皮肤 AI 入口不宜孤立，应贴合聊天与办公输入：根据当前文字生成表情、配图、语气化贴纸，减少跳转成本。",
+      "sources": [
+        "NeoDrop / AIStart"
+      ],
+      "source_urls": [
+        "https://neodrop.ai/post/TG8E1AIZI5f",
+        "https://aistart.ai/news?utm_source=jryx"
+      ],
+      "tags": [
+        "生成式UI",
+        "Workspace",
+        "输入场景"
+      ]
+    },
+    {
+      "title": "Claude 降价强化了“高频微任务可承受”的预期",
+      "summary": "Claude Fable 5.1 降低缓存读取和 agentic 任务成本，企业会更愿意把小任务交给 AI。",
+      "implication": "输入法适合高频微任务，应设计小步快跑的 AI 功能：一句话润色、摘要、礼貌化、翻译，不必每次打开完整助手，成本和响应都要轻。",
+      "sources": [
+        "NeoDrop / AIStart"
+      ],
+      "source_urls": [
+        "https://neodrop.ai/post/TG8E1AIZI5f",
+        "https://aistart.ai/news?utm_source=jryx"
+      ],
+      "tags": [
+        "降本",
+        "微任务",
+        "高频入口"
+      ]
+    },
+    {
+      "title": "Superhuman Go 的跨平台代理架构证明“写作层”可扩展为工作层",
+      "summary": "Superhuman Go 从 Grammarly 写作助手扩展为跨浏览器、桌面和多应用的 agents。",
+      "implication": "输入法若要长期成立，应从“文本修正层”扩展到“表达工作层”：保留轻量纠错优势，同时让用户在同一入口调用日程、资料、搜索和文档动作。",
+      "sources": [
+        "Superhuman Blog"
+      ],
+      "source_urls": [
+        "https://blog.superhuman.com/superhuman-go-cross-platform/"
+      ],
+      "tags": [
+        "写作助手",
+        "跨平台",
+        "表达工作流"
+      ]
+    },
+    {
+      "title": "OpenAI 广告收入与 AI 商业化让免费入口更依赖生态变现",
+      "summary": "多篇日报提到 ChatGPT 广告业务和 AI 商业化进展，免费/低价入口背后会绑定推荐与分发。",
+      "implication": "输入法要谨慎处理商业化：广告、推荐、皮肤和 AI 入口不能侵入候选区主链路，商业内容应与用户表达意图相关并可关闭，否则会损伤基础输入信任。",
+      "sources": [
+        "CSDN / AIPMClub"
+      ],
+      "source_urls": [
+        "https://fanjun.blog.csdn.net/article/details/164339983",
+        "https://new.qq.com/rain/a/20260901A0AS7000?refer=cp_1009"
+      ],
+      "tags": [
+        "商业化",
+        "广告",
+        "用户信任"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "候选区轻量任务面板",
+      "pain_point": "用户当前需要的是“把这句话变好/发出去”，不是打开完整 AI 对话。",
+      "opportunity": "在候选区上方加入场景化 AI chip：润色、转正式、提炼、继续写、生成回复，默认折叠，触发后原位展示结果。",
+      "priority": "high",
+      "evidence": "Claude 降价与 Workspace 集成说明高频微任务具备产品和成本基础。"
+    },
+    {
+      "title": "企业输入场景的权限继承",
+      "pain_point": "在企业聊天、文档和会议输入中，AI 若无法识别权限边界，用户不敢使用。",
+      "opportunity": "与办公应用建立“只读当前选中文本/当前文档摘要”的权限提示，敏感应用默认本地或手动授权。",
+      "priority": "high",
+      "evidence": "豆包工作与飞书权限体系打通是办公 Agent 的关键卖点。"
+    },
+    {
+      "title": "AI 生成内容的商业化干扰控制",
+      "pain_point": "输入法商业化容易打扰基础输入，用户对候选区广告和强推荐容忍度低。",
+      "opportunity": "建立 AI 推荐展示红线：不占首候选、不自动插入、不读取敏感字段、不默认推商业话术。",
+      "priority": "medium",
+      "evidence": "OpenAI 广告收入增长意味着 AI 入口商业化会加速，需要提前设体验边界。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "字节发布“豆包工作”并打通飞书生态",
+      "summary": "豆包工作支持任务拆解、工具调用、文档表格 PPT 等多内容产出。",
+      "source": "腾讯新闻",
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260902A02WOR00?refer=cp_1009"
+      ],
+      "tags": [
+        "豆包",
+        "办公Agent"
+      ]
+    },
+    {
+      "title": "Google Pics 进入 Workspace",
+      "summary": "Google 将 Nano Banana 驱动的图片生成编辑工具嵌入 Docs 和 Slides。",
+      "source": "NeoDrop",
+      "source_urls": [
+        "https://neodrop.ai/post/TG8E1AIZI5f"
+      ],
+      "tags": [
+        "Google",
+        "图片生成"
+      ]
+    },
+    {
+      "title": "OpenAI 推出 ChatGPT for Clinicians 数据插件",
+      "summary": "临床医生可连接 9 个公共医疗数据应用，且功能只读、不访问患者病历。",
+      "source": "NeoDrop",
+      "source_urls": [
+        "https://neodrop.ai/post/TG8E1AIZI5f"
+      ],
+      "tags": [
+        "OpenAI",
+        "医疗AI"
+      ]
+    },
+    {
+      "title": "AI 办公产品被 36氪定义为“生产力市场”",
+      "summary": "文章指出 Vibe coding 与 AI 办公智能体构成大厂新商业化滩头。",
+      "source": "36氪",
+      "source_urls": [
+        "https://www.36kr.com/p/3964624489438728"
+      ],
+      "tags": [
+        "AI办公",
+        "商业化"
+      ]
+    },
+    {
+      "title": "腾讯 WorkBuddy 被财报与行业报道点名",
+      "summary": "国内 AI 效率智能体进入组织和产品整合阶段。",
+      "source": "36氪",
+      "source_urls": [
+        "https://www.36kr.com/p/3964624489438728"
+      ],
+      "tags": [
+        "WorkBuddy",
+        "Agent"
+      ]
+    },
+    {
+      "title": "Claude Fable 5.1 降低企业使用成本",
+      "summary": "Anthropic 新模型降低典型工作负载成本，并优化企业防护。",
+      "source": "AIStart",
+      "source_urls": [
+        "https://aistart.ai/news?utm_source=jryx"
+      ],
+      "tags": [
+        "Claude",
+        "降价"
+      ]
+    },
+    {
+      "title": "Hugging Face 推出浏览器本地 WebGPU kernels",
+      "summary": "开源内核集合让 AI 模型可在浏览器端更高效运行。",
+      "source": "AIStart",
+      "source_urls": [
+        "https://aistart.ai/news?utm_source=jryx"
+      ],
+      "tags": [
+        "端侧AI",
+        "WebGPU"
+      ]
+    },
+    {
+      "title": "NVIDIA 与 CrowdStrike 宣布 SafeMind",
+      "summary": "双方面向自动化攻击防御推出 AI 驱动安全方案。",
+      "source": "AIStart",
+      "source_urls": [
+        "https://aistart.ai/news?utm_source=jryx"
+      ],
+      "tags": [
+        "AI安全",
+        "NVIDIA"
+      ]
+    },
+    {
+      "title": "AI 初创 AfterQuery 被报道快速进入独角兽行列",
+      "summary": "模型训练基础设施仍是投资热点。",
+      "source": "Buttondown LLM Daily",
+      "source_urls": [
+        "https://juejin.cn/post/7680510665505685542"
+      ],
+      "tags": [
+        "融资",
+        "基础设施"
+      ]
+    },
+    {
+      "title": "科大讯飞开源星火 X2.5 端侧百万 Token 模型",
+      "summary": "端侧长上下文能力继续提升，利于本地化 AI 应用。",
+      "source": "稀土掘金",
+      "source_urls": [
+        "https://juejin.cn/post/7680510665505685542"
+      ],
+      "tags": [
+        "讯飞",
+        "端侧模型"
+      ]
+    },
+    {
+      "title": "DeepSeek-V4-Flash-Vision-Exp 多模态权重开源",
+      "summary": "国内多模态开源模型继续补齐视觉能力。",
+      "source": "稀土掘金",
+      "source_urls": [
+        "https://juejin.cn/post/7680510665505685542"
+      ],
+      "tags": [
+        "DeepSeek",
+        "多模态"
+      ]
+    }
+  ]
+}

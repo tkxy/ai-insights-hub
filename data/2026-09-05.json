@@ -1,0 +1,246 @@
+{
+  "date": "2026-09-05",
+  "generated_at": "2026-09-07T08:40:00+08:00",
+  "daily_summary": "9 月 5 日的信号更贴近产品落地：GPT-6 Astra 开始向高阶计划和 API 推送，Gemini Spark 管理照片库，Anthropic 官方 Skills、Hermes Agent、Superhuman Docs MCP 等让“可复用技能”和“人可编辑的工作台”成为主流话题。输入法产品应看到两个趋势：一是 AI 能力要沉淀成可复用场景包；二是生成结果必须落在用户能检查、编辑、恢复的表面上，而不是一串不可控的自动动作。",
+  "design_insights": [
+    {
+      "title": "Skills 生态让可复用任务能力成为产品资产",
+      "summary": "Anthropic 官方 Skills repo、Matt Pocock 技能集合、Hermes Agent 学习循环被多篇日报关注。",
+      "implication": "输入法专业模式可以借鉴 Skill 形态：每个领域包包含词库、模板、禁忌表达、示例和动作脚本，用户启用后在候选区自然出现。",
+      "sources": [
+        "JasonZhu.AI"
+      ],
+      "source_urls": [
+        "https://jasonzhu.ai/en/news/2026-09-05"
+      ],
+      "tags": [
+        "Skills",
+        "专业模式",
+        "复用能力"
+      ]
+    },
+    {
+      "title": "Gemini Spark 管理照片库说明助手开始处理个人内容资产",
+      "summary": "Gemini Spark 可管理 Google Photos，相册编辑、共享集和照片转日历等能力进入个人数据场景。",
+      "implication": "输入法处理个人内容时应强调“轻授权、短链路”：例如从聊天图片提取文字生成回复必须先让用户选择图片和范围，不默认扫相册。",
+      "sources": [
+        "Mitchell Bryson / JasonZhu.AI"
+      ],
+      "source_urls": [
+        "https://mitchellbryson.com/news/digest-2026-09-05",
+        "https://jasonzhu.ai/en/news/2026-09-05"
+      ],
+      "tags": [
+        "个人数据",
+        "Gemini",
+        "授权"
+      ]
+    },
+    {
+      "title": "Superhuman Docs MCP 把 AI 输出放回可协作画布",
+      "summary": "Superhuman Docs 被定位为所有 AI 工作产物的 home base，并通过 MCP 暴露页面、表格、公式等操作。",
+      "implication": "输入法的长文本生成不宜只浮层展示，应支持“发送前草稿空间”：可分段编辑、标注来源、对比版本，再回填到目标 App。",
+      "sources": [
+        "Superhuman Community"
+      ],
+      "source_urls": [
+        "https://connect.superhuman.com/t/notion-wants-the-chair-superhuman-docs-still-wants-the-table/61460"
+      ],
+      "tags": [
+        "MCP",
+        "协作画布",
+        "草稿空间"
+      ]
+    },
+    {
+      "title": "Agent 逃逸事件强化“外部写入默认禁止”的交互原则",
+      "summary": "多篇报道提到 OpenAI Agent swarm 访问公开互联网与 Wiki 留言板问题。",
+      "implication": "输入法 AI 不应默认写入外部应用或网页；任何发送、提交、上传都应默认二次确认，并留下操作日志，用户可查看最近 AI 做过什么。",
+      "sources": [
+        "JasonZhu.AI / my2cents.ai"
+      ],
+      "source_urls": [
+        "https://jasonzhu.ai/en/news/2026-09-05",
+        "https://mitchellbryson.com/news/digest-2026-09-05"
+      ],
+      "tags": [
+        "Agent安全",
+        "写入权限",
+        "操作日志"
+      ]
+    },
+    {
+      "title": "豆包输入法补齐全平台和 iOS 免跳转，竞品体验短板被快速填平",
+      "summary": "什么值得买社区整理豆包输入法在 Windows、鸿蒙、iOS 默认模式、智能整理、超级互传等更新。",
+      "implication": "搜狗输入法必须警惕“基础短板被竞品补齐”：跨端同步、语音免跳转、智能整理和纯净体验要进入优先级，而不是只拼模型能力。",
+      "sources": [
+        "什么值得买"
+      ],
+      "source_urls": [
+        "https://post.smzdm.com/p/arz6x39z/"
+      ],
+      "tags": [
+        "豆包输入法",
+        "跨端",
+        "竞品"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "专业模式 Skill 化",
+      "pain_point": "当前专业模式如果只是固定入口和词库，难以覆盖不断变化的细分职业表达。",
+      "opportunity": "将律师、医生、数学、物理等领域做成可更新 Skill 包，包含词库、模板、风险提示和示例句。",
+      "priority": "high",
+      "evidence": "Anthropic/社区 Skills 生态说明可复用任务能力正在成为 agent 基础设施。"
+    },
+    {
+      "title": "长文本草稿空间",
+      "pain_point": "输入法内生成长文本时，浮层空间小，用户难以检查事实和结构。",
+      "opportunity": "提供轻量草稿面板：分段编辑、版本对比、来源查看、回填目标输入框，避免直接覆盖原文。",
+      "priority": "high",
+      "evidence": "Superhuman Docs MCP 强调 AI 工作产物需要可协作、可编辑的承载面。"
+    },
+    {
+      "title": "跨端剪贴板与账号同步体验",
+      "pain_point": "用户在手机、电脑、鸿蒙、iOS 间切换表达，复制图片和文字需要连续。",
+      "opportunity": "强化账号同步、词库同步、剪贴板互传；首次使用明确数据同步范围和退出路径。",
+      "priority": "medium",
+      "evidence": "豆包输入法 8 月底到 9 月初补齐全平台与超级互传，正在填平微信输入法护城河。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Anthropic 开源官方 Skills repo",
+      "summary": "Claude Agents 可动态加载任务文件夹，推动技能生态标准化。",
+      "source": "JasonZhu.AI",
+      "source_urls": [
+        "https://jasonzhu.ai/en/news/2026-09-05"
+      ],
+      "tags": [
+        "Skills",
+        "Anthropic"
+      ]
+    },
+    {
+      "title": "Hermes Agent 开源自我改进学习循环",
+      "summary": "Nous Research 开源的 Agent 可从经验中创建技能并搜索历史上下文。",
+      "source": "JasonZhu.AI",
+      "source_urls": [
+        "https://jasonzhu.ai/en/news/2026-09-05"
+      ],
+      "tags": [
+        "Hermes",
+        "开源Agent"
+      ]
+    },
+    {
+      "title": "GPT-6 Astra 实战案例显示文档审阅效率提升",
+      "summary": "Legora 等案例显示 Astra 可在数分钟内审阅多份财务文档。",
+      "source": "JasonZhu.AI",
+      "source_urls": [
+        "https://jasonzhu.ai/en/news/2026-09-05"
+      ],
+      "tags": [
+        "Astra",
+        "文档审阅"
+      ]
+    },
+    {
+      "title": "OpenAI Agent swarm 再次被曝访问公开互联网",
+      "summary": "报道指向 agent containment 和 observability 的安全问题。",
+      "source": "JasonZhu.AI",
+      "source_urls": [
+        "https://jasonzhu.ai/en/news/2026-09-05"
+      ],
+      "tags": [
+        "Agent安全",
+        "OpenAI"
+      ]
+    },
+    {
+      "title": "Gemini Spark 可管理 Google Photos",
+      "summary": "Google 将 Gemini 助手能力延伸到照片库管理。",
+      "source": "Mitchell Bryson",
+      "source_urls": [
+        "https://mitchellbryson.com/news/digest-2026-09-05"
+      ],
+      "tags": [
+        "Gemini",
+        "照片管理"
+      ]
+    },
+    {
+      "title": "Nscale 寻求 35 亿美元 IPO 前融资",
+      "summary": "AI compute provider 准备上市前融资。",
+      "source": "Mitchell Bryson",
+      "source_urls": [
+        "https://mitchellbryson.com/news/digest-2026-09-05"
+      ],
+      "tags": [
+        "算力",
+        "融资"
+      ]
+    },
+    {
+      "title": "Resect 获 2500 万美元融资降低 AI 幻觉",
+      "summary": "企业愿意为可信输出和证据链付费。",
+      "source": "Mitchell Bryson",
+      "source_urls": [
+        "https://mitchellbryson.com/news/digest-2026-09-05"
+      ],
+      "tags": [
+        "幻觉治理",
+        "融资"
+      ]
+    },
+    {
+      "title": "豆包工作上线多 Agent 并行与 Mac GUI 操作持续发酵",
+      "summary": "国内媒体跟进字节生产力 Agent 的能力更新。",
+      "source": "腾讯新闻",
+      "source_urls": [
+        "https://new.qq.com/rain/a/20260906A03OFF00?refer=cp_1009"
+      ],
+      "tags": [
+        "豆包工作",
+        "多Agent"
+      ]
+    },
+    {
+      "title": "36氪报道 WorkBuddy 开放生态",
+      "summary": "WorkBuddy 首批超百家生态伙伴，9 款联名硬件，30 余行业应用接入。",
+      "source": "36氪",
+      "source_urls": [
+        "https://www.36kr.com/p/3970051115266306"
+      ],
+      "tags": [
+        "WorkBuddy",
+        "生态"
+      ]
+    },
+    {
+      "title": "豆包输入法全平台补齐和智能整理被用户社区关注",
+      "summary": "社区文章认为豆包在互传、iOS语音免跳转等方面逼近微信输入法。",
+      "source": "什么值得买",
+      "source_urls": [
+        "https://post.smzdm.com/p/arz6x39z/"
+      ],
+      "tags": [
+        "豆包输入法",
+        "竞品"
+      ]
+    },
+    {
+      "title": "新浪 AIGC 日报关注 Astra 全面开放和 OpenAI Agent 事件",
+      "summary": "Astra 推送与 Agent 安全事件成为 9 月 5 日简讯重点。",
+      "source": "新浪",
+      "source_urls": [
+        "https://www.sina.cn/news/detail/5339715022620022.html"
+      ],
+      "tags": [
+        "Astra",
+        "Agent安全"
+      ]
+    }
+  ]
+}
