@@ -140,6 +140,68 @@ def health_check():
         return False, str(e)
 
 
+def list_voices(voice_type='all'):
+    """列出账号下所有音色 ID。
+
+    ⚠️ 官方限制：克隆音色（voice_cloning）创建后处于 inactive 状态，
+    必须先成功用于一次语音合成，才能被本接口查询到。
+    所以刚克隆完就来查，很可能是空列表 —— 这不是 bug。
+    这种情况直接去控制台网页看，或先拿 voice_id 合成一次。
+    """
+    api_key = os.environ.get('MINIMAX_API_KEY', '').strip()
+    if not api_key:
+        raise MiniMaxError(
+            '缺少 MINIMAX_API_KEY 环境变量。\n'
+            '  export MINIMAX_API_KEY="你的key"'
+        )
+
+    resp = requests.post(
+        f'{API_BASE}/get_voice',
+        headers={
+            'Authorization': f'Bearer {api_key}',
+            'Content-Type': 'application/json',
+        },
+        json={'voice_type': voice_type},
+        timeout=60,
+    )
+    if resp.status_code != 200:
+        raise MiniMaxError(f'HTTP {resp.status_code}: {resp.text[:300]}')
+
+    body = resp.json()
+    base = body.get('base_resp', {})
+    if base.get('status_code', -1) != 0:
+        raise MiniMaxError(
+            f'API 错误 {base.get("status_code")}: {base.get("status_msg")}')
+    return body
+
+
+def _print_voices(body):
+    cloning = body.get('voice_cloning') or []
+    generation = body.get('voice_generation') or []
+    system = body.get('system_voice') or []
+
+    print(f'\n🎙️  克隆音色 voice_cloning（{len(cloning)}）')
+    if cloning:
+        for v in cloning:
+            print(f'  ★ {v.get("voice_id")}'
+                  f'   创建于 {v.get("created_time", "?")}')
+    else:
+        print('  （空）刚克隆的音色需先成功合成一次才会出现在这里，')
+        print('       去控制台网页看更可靠：https://platform.minimaxi.com/')
+
+    if generation:
+        print(f'\n🔊 文生音色 voice_generation（{len(generation)}）')
+        for v in generation:
+            print(f'  - {v.get("voice_id")}   {v.get("created_time", "")}')
+
+    print(f'\n📚 系统预设音色 system_voice（{len(system)}）')
+    for v in system[:8]:
+        name = v.get('voice_name', '')
+        print(f'  - {v.get("voice_id")}' + (f'   {name}' if name else ''))
+    if len(system) > 8:
+        print(f'  ... 另有 {len(system) - 8} 个，加 --all-system 查看全部')
+
+
 def clone_voice(ref_audio_path, voice_id, model='speech-2.8-hd',
                 preview_text=None):
     """上传参考音频并克隆音色。返回 voice_id。
@@ -208,10 +270,27 @@ def main():
     parser.add_argument('--voice-id', default=None)
     parser.add_argument('--model', default=None)
     parser.add_argument('--health', action='store_true', help='只做凭据检查')
+    parser.add_argument('--list-voices', action='store_true',
+                        help='列出账号下所有音色 ID（含已克隆的）')
+    parser.add_argument('--all-system', action='store_true',
+                        help='配合 --list-voices，完整列出系统音色')
     parser.add_argument('--clone', metavar='REF_AUDIO',
                         help='克隆音色，传参考音频路径')
     parser.add_argument('--clone-id', help='克隆时指定的新 voice_id')
     args = parser.parse_args()
+
+    if args.list_voices:
+        try:
+            body = list_voices()
+        except MiniMaxError as e:
+            print(f'❌ {e}', file=sys.stderr)
+            sys.exit(1)
+        if args.all_system:
+            for v in (body.get('system_voice') or []):
+                print(f'{v.get("voice_id")}\t{v.get("voice_name", "")}')
+        else:
+            _print_voices(body)
+        return
 
     if args.health:
         ok, msg = health_check()
