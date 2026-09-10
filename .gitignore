@@ -26,3 +26,8 @@ ffmpeg_wrapper
 # IDE / tooling workspace
 .codebuddy/
 .workbuddy/
+
+# Secrets — MiniMax API key 等，绝不能进仓库
+.env
+.env.*
+!.env.example

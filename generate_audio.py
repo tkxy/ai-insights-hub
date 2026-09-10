@@ -168,11 +168,56 @@ def synthesize_segment(tts_url, text, voice='alex', retries=2):
     return None
 
 
+def prune_old_audio(keep_days, current_date_str):
+    """滚动清理旧音频目录。
+
+    GitHub Pages 站点硬限制 1GB，音频约 6-12MB/天。
+    不清理的话几个月就会撑爆部署。保留最近 keep_days 天即可 ——
+    前端对没有预生成音频的日期会自动回落到浏览器 TTS，不会报错。
+    """
+    if keep_days <= 0:
+        return []
+
+    import re as _re
+    from datetime import date as _date
+
+    if not os.path.isdir(AUDIO_DIR):
+        return []
+
+    date_re = _re.compile(r'^\d{4}-\d{2}-\d{2}$')
+    dirs = sorted(
+        d for d in os.listdir(AUDIO_DIR)
+        if date_re.match(d) and os.path.isdir(os.path.join(AUDIO_DIR, d))
+    )
+    # 保证当天一定保留
+    keep = set(dirs[-keep_days:]) | {current_date_str}
+    removed = []
+    for d in dirs:
+        if d in keep:
+            continue
+        path = os.path.join(AUDIO_DIR, d)
+        size = sum(
+            os.path.getsize(os.path.join(path, f))
+            for f in os.listdir(path)
+            if os.path.isfile(os.path.join(path, f))
+        )
+        import shutil as _shutil
+        _shutil.rmtree(path)
+        removed.append((d, size))
+    return removed
+
+
 def main():
     parser = argparse.ArgumentParser(description='播客音频预生成')
     parser.add_argument('date', nargs='?', default=None, help='日期 YYYY-MM-DD，默认今天')
-    parser.add_argument('--tts-url', default=DEFAULT_TTS_URL, help='TTS 服务地址')
-    parser.add_argument('--voice', default='alex', help='声音 ID')
+    parser.add_argument('--provider', default='minimax',
+                        choices=['minimax', 'local'],
+                        help='TTS 提供方，默认 minimax（云端，无需本地服务）')
+    parser.add_argument('--tts-url', default=DEFAULT_TTS_URL,
+                        help='本地 TTS 地址（仅 --provider local 时使用）')
+    parser.add_argument('--voice', default='alex', help='声音 ID（local 用）')
+    parser.add_argument('--keep-days', type=int, default=7,
+                        help='只保留最近 N 天音频，0 表示不清理。默认 7')
     args = parser.parse_args()
 
     # 确定日期
@@ -191,17 +236,30 @@ def main():
     with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
-    # 检查 TTS 服务
-    health_url = args.tts_url.replace('/tts', '/health')
-    try:
-        hc = requests.get(health_url, timeout=5)
-        if not hc.ok:
-            print(f'[ERROR] TTS 服务不健康: {hc.status_code}')
+    # 检查 TTS 可用性（失败即退出，不静默降级）
+    mm = None
+    if args.provider == 'minimax':
+        try:
+            import minimax_tts as mm
+        except ImportError as e:
+            print(f'[ERROR] 无法导入 minimax_tts: {e}')
             sys.exit(1)
-        print(f'[OK] TTS 服务就绪: {hc.json()}')
-    except requests.RequestException as e:
-        print(f'[ERROR] TTS 服务不可达: {e}')
-        sys.exit(1)
+        ok, msg = mm.health_check()
+        if not ok:
+            print(f'[ERROR] MiniMax 凭据检查失败: {msg}')
+            sys.exit(1)
+        print(f'[OK] MiniMax 就绪: {msg}')
+    else:
+        health_url = args.tts_url.replace('/tts', '/health')
+        try:
+            hc = requests.get(health_url, timeout=5)
+            if not hc.ok:
+                print(f'[ERROR] TTS 服务不健康: {hc.status_code}')
+                sys.exit(1)
+            print(f'[OK] 本地 TTS 就绪: {hc.json()}')
+        except requests.RequestException as e:
+            print(f'[ERROR] 本地 TTS 不可达: {e}')
+            sys.exit(1)
 
     # 生成对话段
     dialogue = generate_dialogue(data)
@@ -230,22 +288,38 @@ def main():
 
         print(f'  [{i + 1}/{len(dialogue)}] {text[:50]}...' if len(text) > 50 else f'  [{i + 1}/{len(dialogue)}] {text}')
 
-        audio_data = synthesize_segment(args.tts_url, text, voice=args.voice)
-        if audio_data:
-            wav_filename = f'{i:03d}.wav'
-            wav_path = os.path.join(out_dir, wav_filename)
-            with open(wav_path, 'wb') as f:
-                f.write(audio_data)
+        if args.provider == 'minimax':
+            # MiniMax 直接返回 mp3，不需要 ffmpeg 转码
+            try:
+                audio_data = mm.synthesize(text)
+            except mm.MiniMaxError as e:
+                print(f'    ❌ {e}')
+                audio_data = None
+        else:
+            audio_data = synthesize_segment(args.tts_url, text,
+                                            voice=args.voice)
 
-            # 尝试转 mp3
-            mp3_filename = f'{i:03d}.mp3'
-            mp3_path = os.path.join(out_dir, mp3_filename)
-            if wav_to_mp3(wav_path, mp3_path):
-                final_file = mp3_filename
-                final_size = os.path.getsize(mp3_path)
-            else:
-                final_file = wav_filename
+        if audio_data:
+            if args.provider == 'minimax':
+                final_file = f'{i:03d}.mp3'
+                with open(os.path.join(out_dir, final_file), 'wb') as f:
+                    f.write(audio_data)
                 final_size = len(audio_data)
+            else:
+                wav_filename = f'{i:03d}.wav'
+                wav_path = os.path.join(out_dir, wav_filename)
+                with open(wav_path, 'wb') as f:
+                    f.write(audio_data)
+
+                # 尝试转 mp3
+                mp3_filename = f'{i:03d}.mp3'
+                mp3_path = os.path.join(out_dir, mp3_filename)
+                if wav_to_mp3(wav_path, mp3_path):
+                    final_file = mp3_filename
+                    final_size = os.path.getsize(mp3_path)
+                else:
+                    final_file = wav_filename
+                    final_size = len(audio_data)
 
             total_bytes += final_size
             manifest['segments'].append({
@@ -274,6 +348,14 @@ def main():
     print(f'  总大小: {total_bytes / 1024:.0f} KB')
     print(f'  耗时: {manifest["duration_seconds"]}s')
     print(f'  输出: {out_dir}/')
+
+    # 滚动清理，避免仓库无限膨胀
+    removed = prune_old_audio(args.keep_days, date_str)
+    if removed:
+        freed = sum(s for _, s in removed) / 1024 / 1024
+        print(f'\n[PRUNE] 清理 {len(removed)} 天旧音频，释放 {freed:.0f} MB')
+        for d, s in removed:
+            print(f'  - {d} ({s / 1024 / 1024:.1f} MB)')
 
     if failed > 0:
         sys.exit(1)
