@@ -1881,12 +1881,6 @@
       <div class="current-date" id="currentMonth">3月</div>
       <button id="nextMonth">下月 →</button>
     </div>
-    <div class="date-nav" id="gh-week-nav" style="display:none;">
-      <button id="ghPrevWeek" onclick="navGhWeek(-1)">← 上周</button>
-      <select id="ghWeekSelect" class="current-date" onchange="jumpToGhWeek(this.value)" style="border:none;outline:none;font:inherit;cursor:pointer;padding:0 8px;background:transparent;"></select>
-      <button id="ghNextWeek" onclick="navGhWeek(1)">下周 →</button>
-      <button id="ghThisWeek" class="go-this-week" style="display:none;" onclick="navGhWeek(0)">本周</button>
-    </div>
   </div>
 </div>
 
@@ -4063,8 +4057,6 @@ function switchPage(id) {
   githubPage.style.display = id === 'github' ? 'block' : 'none';
   dayNav.style.display = id === 'insight' ? 'flex' : 'none';
   monthNav.style.display = id === 'map' ? 'flex' : 'none';
-  var ghWeekNav = document.getElementById('gh-week-nav');
-  if (ghWeekNav) ghWeekNav.style.display = id === 'github' ? 'flex' : 'none';
 
   if (id === 'map') {
     loadAndRenderMapClusters();
@@ -5712,8 +5704,8 @@ async function fetchGhWeeklyJson(fileName) {
   throw lastErr || new Error('GitHub weekly data fetch failed');
 }
 
-async function loadGhWeekly(weekKey) {
-  // 确保容器存在（插到主容器顶部，周切换才会立刻有可见变化）
+async function loadGhWeekly() {
+  // 确保容器存在
   var container = document.getElementById('ghp-weekly-section');
   if (!container) {
     var main = document.getElementById('github-picks-container');
@@ -5725,71 +5717,26 @@ async function loadGhWeekly(weekKey) {
   }
   container.innerHTML = '<div class="loading"><div class="spinner"></div><p>正在加载本周热门...</p></div>';
   try {
-    // 加载 index（只加载一次）
     if (!ghWeeklyState.index) {
       ghWeeklyState.index = await fetchGhWeeklyJson('index.json');
     }
     var idx = ghWeeklyState.index;
     if (!idx.weeks || !idx.weeks.length) throw new Error('无数据');
 
-    // 确定当前周
-    if (!weekKey) weekKey = idx.weeks[0].week;
+    // 只展示最新一份（索引倒序，最新在前）。
+    // fetch_github_weekly.py 在周一执行时抓的是「上一整周」的 Trending 周榜，
+    // 所以 weeks[0] 就是最近一个已结束的完整周。
+    var weekKey = idx.weeks[0].week;
     ghWeeklyState.currentWeek = weekKey;
 
-    // 加载数据（缓存）
     if (!ghWeeklyState.loaded[weekKey]) {
       ghWeeklyState.loaded[weekKey] = await fetchGhWeeklyJson(weekKey + '.json');
     }
     _ghWeeklyLoaded = true;
     renderGhWeekly(ghWeeklyState.loaded[weekKey]);
-    renderGhWeekNav();
   } catch(e) {
     container.innerHTML = '<div style="color:#888;text-align:center;padding:40px;">暂无数据，周一自动更新</div>';
   }
-}
-
-function renderGhWeekNav() {
-  var select = document.getElementById('ghWeekSelect');
-  var prevBtn = document.getElementById('ghPrevWeek');
-  var nextBtn = document.getElementById('ghNextWeek');
-  var thisBtn = document.getElementById('ghThisWeek');
-  if (!select) return;
-  var idx = ghWeeklyState.index;
-  if (!idx || !idx.weeks) return;
-  var weeks = idx.weeks;
-  var current = ghWeeklyState.currentWeek;
-
-  // 渲染下拉
-  var html = '';
-  weeks.forEach(function(w) {
-    var sel = w.week === current ? ' selected' : '';
-    var label = w.start.slice(5) + ' ~ ' + w.end.slice(5);
-    html += '<option value="' + w.week + '"' + sel + '>' + label + '</option>';
-  });
-  select.innerHTML = html;
-
-  // 前后按钮状态
-  var curIdx = weeks.findIndex(function(w) { return w.week === current; });
-  nextBtn.disabled = curIdx <= 0;
-  prevBtn.disabled = curIdx >= weeks.length - 1;
-  thisBtn.style.display = curIdx > 0 ? 'inline-block' : 'none';
-}
-
-function navGhWeek(delta) {
-  var idx = ghWeeklyState.index;
-  if (!idx || !idx.weeks) return;
-  var weeks = idx.weeks;
-  var current = ghWeeklyState.currentWeek;
-  var curIdx = weeks.findIndex(function(w) { return w.week === current; });
-  if (delta === 0) { loadGhWeekly(weeks[0].week); return; }
-  // weeks 是倒序的，所以 -1 是新 → 旧，+1 是旧 → 新
-  var newIdx = curIdx - delta;
-  if (newIdx < 0 || newIdx >= weeks.length) return;
-  loadGhWeekly(weeks[newIdx].week);
-}
-
-function jumpToGhWeek(weekKey) {
-  if (weekKey && weekKey !== ghWeeklyState.currentWeek) loadGhWeekly(weekKey);
 }
 
 function formatGhNum(n) {
@@ -5872,7 +5819,11 @@ function renderGhWeeklyRank(data) {
   var html = '<section class="ghp-section">';
   html += '<div class="ghp-section-head">';
   html += '<h2 class="ghp-section-title">GitHub 爆火项目榜</h2>';
-  html += '<p class="ghp-section-desc">TOP 7 · ' + (hasWeekly ? '本周新增星标精选' : '历史周总星标参考') + ' · 点击卡片查看项目详情</p>';
+  var ghRange = (data && data.range && data.range.start && data.range.end)
+    ? String(data.range.start).slice(5) + ' ~ ' + String(data.range.end).slice(5)
+    : '';
+  html += '<p class="ghp-section-desc">TOP 7 · ' + (hasWeekly ? '本周新增星标精选' : '历史周总星标参考')
+        + (ghRange ? ' · ' + ghRange : '') + ' · 点击卡片查看项目详情</p>';
   html += '</div>';
   html += '<div class="ghp-grid">';
   items.forEach(function(item, idx) {
