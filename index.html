@@ -4112,17 +4112,6 @@ if (window.location.hash === '#map' || window.location.hash === '#design' || win
 
 var aiNewsState = { currentWeek: null, loaded: {}, index: null };
 
-function getCurrentISOWeek() {
-  // 返回当前周的 'YYYY-Www' 标识
-  var d = new Date();
-  d.setHours(0, 0, 0, 0);
-  // ISO 周以周一为起点，周四决定年份
-  d.setDate(d.getDate() + 4 - (d.getDay() || 7));
-  var yearStart = new Date(d.getFullYear(), 0, 1);
-  var weekNum = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
-  return d.getFullYear() + '-W' + String(weekNum).padStart(2, '0');
-}
-
 // 加载周索引（用于判断本周是否已生成，以及回落到最新一周）
 async function loadNewsIndex() {
   if (aiNewsState.index) return aiNewsState.index;
@@ -4140,23 +4129,22 @@ async function loadAndRenderNewsPage() {
   var loading = document.getElementById('news-loading');
   var content = document.getElementById('news-content');
 
-  // 只展示当周：每次进入都重新按今天计算，不沿用上次浏览过的周
-  aiNewsState.currentWeek = getCurrentISOWeek();
-
   loading.style.display = 'block';
-  loading.textContent = '正在加载 ' + aiNewsState.currentWeek + ' 周的AI资讯...';
+  loading.textContent = '正在加载 Builders 周报...';
   content.style.display = 'none';
 
   await loadNewsIndex();
 
-  // 本周还没生成时回落到索引里最新那周，否则周一早上会白屏
-  var weekKey = aiNewsState.currentWeek;
+  // 只展示「周一生成的最新那一份」——直接取索引第一条（倒序，最新在前），
+  // 不按今天实时计算当周：周报是周一产出、内容覆盖上一整周，
+  // 实时算当周会在某周缺失时（如 2026-W36）绕进空数据。
   var weeks = aiNewsState.index.weeks || [];
-  var exists = weeks.some(function(w) { return w.week === weekKey; });
-  if (!exists && weeks.length > 0) {
-    aiNewsState.currentWeek = weeks[0].week;
-    weekKey = aiNewsState.currentWeek;
+  if (!weeks.length) {
+    loading.innerHTML = '<div style="color:#888;">还没有生成过 Builders 周报。<br><br><span style="font-size:12px;">在终端跑：python3 fetch_ai_news_daily.py &amp;&amp; python3 build_ai_news_weekly.py</span></div>';
+    return;
   }
+  var weekKey = weeks[0].week;
+  aiNewsState.currentWeek = weekKey;
 
   var data = aiNewsState.loaded[weekKey];
   if (!data) {
@@ -4175,6 +4163,25 @@ async function loadAndRenderNewsPage() {
   content.style.display = 'block';
 }
 
+// 周报在周一生成，内容覆盖的是「上一整周」，
+// 但数据里的 range 字段记的是生成周（如 09-07~09-13），两者差一周。
+// 这里按 range.start 往前推算出内容真正覆盖的区间用于展示。
+function newsCoverageLabel(data) {
+  var r = data && data.range;
+  if (!r || !r.start) return '';
+  var s = new Date(r.start + 'T00:00:00');
+  if (isNaN(s.getTime())) return '';
+  var end = new Date(s);
+  end.setDate(end.getDate() - 1);
+  var start = new Date(s);
+  start.setDate(start.getDate() - 7);
+  var fmt = function(d) {
+    return String(d.getMonth() + 1).padStart(2, '0') + '-' +
+           String(d.getDate()).padStart(2, '0');
+  };
+  return fmt(start) + ' ~ ' + fmt(end);
+}
+
 function renderNewsPage(data) {
   var content = document.getElementById('news-content');
   var html = '';
@@ -4184,6 +4191,10 @@ function renderNewsPage(data) {
   html += '  <div class="news-title-row">';
   html += '    <div class="news-h1">Builders 周报</div>';
   html += '  </div>';
+  var cover = newsCoverageLabel(data);
+  if (cover) {
+    html += '  <div class="news-week-pill" style="display:inline-block;margin-top:10px;">' + escapeHtml(cover) + '</div>';
+  }
   html += '  <div class="news-subtitle">追踪 25 位 AI 顶尖 builder（Karpathy、Sam Altman、Aaron Levie、Swyx 等）+ 6 个顶级 AI 播客 + Anthropic / Claude 官方博客的一周动态。聚焦交互范式、产品形态、商业化方向。</div>';
   html += '</div>';
 
