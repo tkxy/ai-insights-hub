@@ -4163,23 +4163,13 @@ async function loadAndRenderNewsPage() {
   content.style.display = 'block';
 }
 
-// 周报在周一生成，内容覆盖的是「上一整周」，
-// 但数据里的 range 字段记的是生成周（如 09-07~09-13），两者差一周。
-// 这里按 range.start 往前推算出内容真正覆盖的区间用于展示。
+// 周报覆盖区间：直接用数据里的 range。
+// build_ai_news_weekly.py 自 2026-09-11 起默认聚合「上一整周」，
+// range 记的就是内容真正覆盖的那一周，无需再做偏移推算。
 function newsCoverageLabel(data) {
   var r = data && data.range;
-  if (!r || !r.start) return '';
-  var s = new Date(r.start + 'T00:00:00');
-  if (isNaN(s.getTime())) return '';
-  var end = new Date(s);
-  end.setDate(end.getDate() - 1);
-  var start = new Date(s);
-  start.setDate(start.getDate() - 7);
-  var fmt = function(d) {
-    return String(d.getMonth() + 1).padStart(2, '0') + '-' +
-           String(d.getDate()).padStart(2, '0');
-  };
-  return fmt(start) + ' ~ ' + fmt(end);
+  if (!r || !r.start || !r.end) return '';
+  return String(r.start).slice(5) + ' ~ ' + String(r.end).slice(5);
 }
 
 function renderNewsPage(data) {

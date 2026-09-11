@@ -9,8 +9,11 @@ build_ai_news_weekly.py — 周维度聚合 AI 行业资讯
     产出最终周报 data/ai-news/weekly/YYYY-Www.json
 
 用法:
-    python3 build_ai_news_weekly.py              # 当前周
+    python3 build_ai_news_weekly.py              # 上一整周（默认，周一跑即覆盖刚结束的那周）
     python3 build_ai_news_weekly.py 2026-W19     # 指定周（ISO周）
+
+注意: 默认聚合的是「上一周」而非「当前周」。周报在周一产出，
+      此时当前周才刚开始、raw 只有当天一份，聚合当前周会得到「1 天冒充一周」。
 
 产物:
     data/ai-news/weekly/YYYY-Www.raw.json      — 聚合原料（供 LLM 读）
@@ -141,7 +144,8 @@ PROMPT_BRIEF_TEMPLATE = """# 生成本周 AI 行业资讯周报
 他的风格偏好：**大白话、禁止拗口造词、说人话**，反感生造英文和营销腔。
 
 ## 输入数据
-从 `{raw_file}` 读过去 7 天（{monday} ~ {sunday}）的原始数据：
+从 `{raw_file}` 读 {monday} ~ {sunday} 这一周的原始数据
+（实际覆盖 {coverage_days}/7 天的日快照；若不足 7 天，如实按拿到的内容写，**不要脑补缺失日期的动态**）：
 - tweets: {n_tweets} 条 AI 大佬推文（附 builder 信息）
 - podcasts: {n_podcasts} 期顶级 AI 播客（含完整转写）
 - blogs: {n_blogs} 篇 Anthropic / Claude 官方博客
@@ -207,11 +211,12 @@ PROMPT_BRIEF_TEMPLATE = """# 生成本周 AI 行业资讯周报
 
 
 def build_brief(week_key: str, monday: date, sunday: date, agg: dict,
-                raw_file: Path, output_file: Path) -> str:
+                raw_file: Path, output_file: Path, coverage_days: int = 7) -> str:
     return PROMPT_BRIEF_TEMPLATE.format(
         week_key=week_key,
         monday=monday.isoformat(),
         sunday=sunday.isoformat(),
+        coverage_days=coverage_days,
         n_tweets=agg["stats"]["tweets"],
         n_podcasts=agg["stats"]["podcasts"],
         n_blogs=agg["stats"]["blogs"],
@@ -226,7 +231,12 @@ def main() -> int:
     if len(sys.argv) > 1:
         week_key = sys.argv[1]
     else:
-        week_key = iso_week_key(date.today())
+        # 周报在周一产出，内容应覆盖「刚刚结束的那一整周」。
+        # 历史 bug：这里原本取 iso_week_key(date.today())，即「当前周」。
+        # 周一早上执行时当前周才刚开始，周二~周日的 raw 尚不存在，
+        # 于是只能读到当天 1 个 snapshot —— 「周报」实为「周一日报」。
+        # 改为回看 7 天，聚合上一整周。
+        week_key = iso_week_key(date.today() - timedelta(days=7))
 
     monday, sunday = week_range(week_key)
     print(f"→ Building AI news weekly for {week_key} ({monday} ~ {sunday})")
@@ -241,6 +251,20 @@ def main() -> int:
               file=sys.stderr)
         return 1
 
+    # 覆盖度提示：一整周应有 7 份日快照。缺得多说明日采集没跑满，
+    # 周报内容会偏薄 —— 明确告警，避免再次出现「1 天冒充一周」。
+    if len(snapshots) < 7:
+        missing = []
+        d = monday
+        while d <= sunday:
+            if not (RAW_DIR / f"{d.isoformat()}.json").exists():
+                missing.append(d.isoformat())
+            d += timedelta(days=1)
+        print(f"  ! 覆盖不全：{len(snapshots)}/7 天。缺失 {', '.join(missing)}",
+              file=sys.stderr)
+        print("    （日采集 fetch_ai_news_daily.py 需每天运行才能攒满一周）",
+              file=sys.stderr)
+
     agg = aggregate(snapshots)
     print(f"  · aggregated: {agg['stats']}")
 
@@ -251,13 +275,15 @@ def main() -> int:
     agg_out = {
         "week": week_key,
         "range": {"start": monday.isoformat(), "end": sunday.isoformat()},
+        "coverageDays": len(snapshots),
         "builtAt": datetime.now(timezone.utc).isoformat(),
         **agg,
     }
     with raw_file.open("w", encoding="utf-8") as f:
         json.dump(agg_out, f, ensure_ascii=False, indent=2)
 
-    brief = build_brief(week_key, monday, sunday, agg, raw_file, output_file)
+    brief = build_brief(week_key, monday, sunday, agg, raw_file, output_file,
+                        len(snapshots))
     with brief_file.open("w", encoding="utf-8") as f:
         f.write(brief)
 
@@ -306,6 +332,7 @@ def update_weekly_index() -> None:
     index_path = WEEKLY_DIR / "index.json"
     with index_path.open("w", encoding="utf-8") as f:
         json.dump(index, f, ensure_ascii=False, indent=2)
+        f.write("\n")  # 末尾补换行，避免每次 diff 都出现 "\ No newline at end of file"
     print(f"✓ {index_path.relative_to(ROOT)} ({len(entries)} weeks)")
 
 

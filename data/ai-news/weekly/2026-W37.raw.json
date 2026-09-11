@@ -4,8 +4,373 @@
     "start": "2026-09-07",
     "end": "2026-09-13"
   },
-  "builtAt": "2026-09-07T01:12:12.346287+00:00",
+  "coverageDays": 2,
+  "builtAt": "2026-09-11T02:42:12.650643+00:00",
   "tweets": [
+    {
+      "id": "2097935551735423464",
+      "text": "Finally got cloud sessions working *fast* in OpenClaw.\nRemote Terminal, WebVNC and CUA for computer use. https://t.co/VwbyGV5k2p",
+      "createdAt": "2026-09-10T06:29:47.000Z",
+      "url": "https://x.com/steipete/status/2097935551735423464",
+      "likes": 25,
+      "retweets": 0,
+      "replies": 9,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "steipete",
+      "_builderName": "Peter Steinberger"
+    },
+    {
+      "id": "2097920810543468551",
+      "text": "The world is going to be using coding agents for far more than anyone would have thought before. \n\nWe’ll be building tools in all new categories, building software for companies that couldn’t afford it before, using agents to protect systems from cyber risk, automating research in life sciences, processing insane amounts of data in complex workflows, upgrading legacy systems and infrastructures, and hundreds of other use cases.\n\nIn short, by lowering the cost of code, we are going to do so much more with it. This will result in software becoming more useful and the leverage of engineers going up dramatically, which coincidentally will mean we need more of them, not fewer.",
+      "createdAt": "2026-09-10T05:31:13.000Z",
+      "url": "https://x.com/levie/status/2097920810543468551",
+      "likes": 70,
+      "retweets": 10,
+      "replies": 14,
+      "isQuote": true,
+      "quotedTweetId": "2097762851788398971",
+      "_handle": "levie",
+      "_builderName": "Aaron Levie"
+    },
+    {
+      "id": "2097912273264095536",
+      "text": "One of the greatest joys is debating new model names with researchers. They come up with the most hilarious stuff",
+      "createdAt": "2026-09-10T04:57:17.000Z",
+      "url": "https://x.com/thsottiaux/status/2097912273264095536",
+      "likes": 2971,
+      "retweets": 58,
+      "replies": 808,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "thsottiaux",
+      "_builderName": "Thibault Sottiaux"
+    },
+    {
+      "id": "2097880507753382201",
+      "text": "Dashboards/Mini-Apps was something I pushed two months ago and now it replaced lots of custom tooling we built around OC. Everything’s a sidebar entry, a dashboard or a plugin now for our team server. https://t.co/sykNUwBqrX",
+      "createdAt": "2026-09-10T02:51:04.000Z",
+      "url": "https://x.com/steipete/status/2097880507753382201",
+      "likes": 161,
+      "retweets": 5,
+      "replies": 21,
+      "isQuote": true,
+      "quotedTweetId": "2097836892016558577",
+      "_handle": "steipete",
+      "_builderName": "Peter Steinberger"
+    },
+    {
+      "id": "2097870497505837478",
+      "text": "Finally https://t.co/7cyHiAyVQO",
+      "createdAt": "2026-09-10T02:11:17.000Z",
+      "url": "https://x.com/nikunj/status/2097870497505837478",
+      "likes": 44,
+      "retweets": 1,
+      "replies": 1,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "nikunj",
+      "_builderName": "Nikunj Kothari"
+    },
+    {
+      "id": "2097837950612717804",
+      "text": "AI Benchmarks with @Benchmark & @Vercel.\n\nIt's ① the most aptly named event in SF history and ② about one of the most important software categories of our generation.\n\nThe companies that benchmark models and guide the world towards skill, truth and efficiency.\n\nJoin us: https://t.co/9qRlfX4eGO",
+      "createdAt": "2026-09-10T00:01:58.000Z",
+      "url": "https://x.com/rauchg/status/2097837950612717804",
+      "likes": 183,
+      "retweets": 4,
+      "replies": 25,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "rauchg",
+      "_builderName": "Guillermo Rauch"
+    },
+    {
+      "id": "2097830230899769349",
+      "text": "This is brilliant. https://t.co/39dr9faUMC",
+      "createdAt": "2026-09-09T23:31:17.000Z",
+      "url": "https://x.com/steipete/status/2097830230899769349",
+      "likes": 1153,
+      "retweets": 72,
+      "replies": 90,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "steipete",
+      "_builderName": "Peter Steinberger"
+    },
+    {
+      "id": "2097829053147582782",
+      "text": "Happy to be building here with you all. Lots to explore",
+      "createdAt": "2026-09-09T23:26:36.000Z",
+      "url": "https://x.com/thsottiaux/status/2097829053147582782",
+      "likes": 5776,
+      "retweets": 74,
+      "replies": 1205,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "thsottiaux",
+      "_builderName": "Thibault Sottiaux"
+    },
+    {
+      "id": "2097828203658383674",
+      "text": "8 price cuts, fee removals and structure improvements, plus 16 model discounts… in the last 6 months alone. More to come… https://t.co/pCIUumUVEr",
+      "createdAt": "2026-09-09T23:23:14.000Z",
+      "url": "https://x.com/rauchg/status/2097828203658383674",
+      "likes": 211,
+      "retweets": 4,
+      "replies": 10,
+      "isQuote": true,
+      "quotedTweetId": "2097817302129603037",
+      "_handle": "rauchg",
+      "_builderName": "Guillermo Rauch"
+    },
+    {
+      "id": "2097796322145562900",
+      "text": "i love looking at the @every slack https://t.co/tQU2kjg1le",
+      "createdAt": "2026-09-09T21:16:33.000Z",
+      "url": "https://x.com/danshipper/status/2097796322145562900",
+      "likes": 16,
+      "retweets": 1,
+      "replies": 0,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "danshipper",
+      "_builderName": "Dan Shipper"
+    },
+    {
+      "id": "2097776310940569783",
+      "text": "Welcome, Paul.\n\nGrateful you are doing this, and all you have done for AI safety. Excited to work together again. https://t.co/k6NUqN6Lsd",
+      "createdAt": "2026-09-09T19:57:01.000Z",
+      "url": "https://x.com/sama/status/2097776310940569783",
+      "likes": 3349,
+      "retweets": 90,
+      "replies": 252,
+      "isQuote": true,
+      "quotedTweetId": "2097733214303645729",
+      "_handle": "sama",
+      "_builderName": "Sam Altman"
+    },
+    {
+      "id": "2097763574886375832",
+      "text": "When is this coming to mobile for Work and Remote Codex threads? Seems to be only available for Chat threads https://t.co/SjpzARwZfK",
+      "createdAt": "2026-09-09T19:06:25.000Z",
+      "url": "https://x.com/petergyang/status/2097763574886375832",
+      "likes": 214,
+      "retweets": 2,
+      "replies": 18,
+      "isQuote": true,
+      "quotedTweetId": "2083305352469352714",
+      "_handle": "petergyang",
+      "_builderName": "Peter Yang"
+    },
+    {
+      "id": "2097758891270697101",
+      "text": "this is a very good and well designed report\n\nhowever, two impt assumptions in it that significantly change the analysis once you start to play with it:\n\n1. the report assumes that jobs can be decomposed into tasks\n2. the report models human tasks created by automation always as a fraction of automated tasks. in other words, the underlying assumptions is automation always reduces human labor (or at best leaves it the same)\n\ntaken in reverse order:\n\ndoes automation always reduce human work?\nin my experience, the answer is no. automation often creates multiples more work for humans. \n\ni have a full argument here (https://t.co/Lb7SUCe2pO) for why this is structurally true. but i think any honest analysis of the economic impacts of AI has to take work creation seriously. \n\ncan jobs be decomposed into tasks?\nyes, that is a useful lens. but lists of tasks is a way of looking at jobs—one that makes the question of how much of a job is automatable actually tractable. therefore, it's useful.\n\nbut this is not the full picture, it's just jobs as exposed to our method of questioning. \n\na good example: under this model, where do the new tasks come from? are they just from bosses that add a list to the task list for workers to complete? where do those tasks come from? unless you can model that well you are missing a key term in the analysis (see the first point above.)\n\nanother way of looking at this, borrowing from wittgenstein and heidegger, is that a job is a particular way of seeing and caring about the world. an editor notices things a nurse doesn’t, and vice versa. what you care about shapes what you notice, what seems worth doing, and what counts as doing it well. you can make some of that explicit as a task list. but as your tools and circumstances change, the same cares can generate entirely new tasks. that process is part of the job.\n\nthe above is completely missing from this analysis (understandably because it's, by definition, very hard to model!) \n\nbut if you take it seriously, it shoudl substantially change your perspective automation and jobs",
+      "createdAt": "2026-09-09T18:47:48.000Z",
+      "url": "https://x.com/danshipper/status/2097758891270697101",
+      "likes": 189,
+      "retweets": 11,
+      "replies": 20,
+      "isQuote": true,
+      "quotedTweetId": "2097679796687769689",
+      "_handle": "danshipper",
+      "_builderName": "Dan Shipper"
+    },
+    {
+      "id": "2097752790177370535",
+      "text": "There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex. Everyone who used one in the affected time window is getting another one and an email to apologize.",
+      "createdAt": "2026-09-09T18:23:34.000Z",
+      "url": "https://x.com/thsottiaux/status/2097752790177370535",
+      "likes": 9117,
+      "retweets": 230,
+      "replies": 1980,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "thsottiaux",
+      "_builderName": "Thibault Sottiaux"
+    },
+    {
+      "id": "2097738533297689012",
+      "text": "The way to the reconcile capability level of AI vs. GDP impact is that the diffusion of AI will take much longer than people think. And it will also show up in ways that are hard to measure in GDP immediately. \n\nYou could bring the world’s greatest superintelligence to many workflows, and still be bound by the laws of corporate physics: getting data prepared and put into a pipeline, process reengineering and change management, aligning on how the new workflow should function, and so on.\n\nEven after you solve all that, you’re still bound by the speed of the real world: waiting for a customer to respond to a proposal, getting a permit for a project, a drug discovery pipeline taking years to eventually reach the consumer, and so on. Not to mention lots of positive daily AI use-cases are entirely net neutral to GDP, at least in the near term.\n\nAI diffusion is going to be the theme of the next decade. The upside is that there’s a tremendous amount of opportunity in building the bridges between superintelligence and real-world workflows.",
+      "createdAt": "2026-09-09T17:26:55.000Z",
+      "url": "https://x.com/levie/status/2097738533297689012",
+      "likes": 205,
+      "retweets": 28,
+      "replies": 39,
+      "isQuote": true,
+      "quotedTweetId": "2097478829363339369",
+      "_handle": "levie",
+      "_builderName": "Aaron Levie"
+    },
+    {
+      "id": "2097738051577422256",
+      "text": "To anyone questioning whether VCs can be up in the middle of the night like founders, we showed great grit at the latest-ever US open finish last night #inspiring https://t.co/m90uN1V7Et",
+      "createdAt": "2026-09-09T17:25:00.000Z",
+      "url": "https://x.com/mattturck/status/2097738051577422256",
+      "likes": 64,
+      "retweets": 0,
+      "replies": 10,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "mattturck",
+      "_builderName": "Matt Turck"
+    },
+    {
+      "id": "2097736851872153633",
+      "text": "More coming soon at SPC https://t.co/SOr7Xrr8UM",
+      "createdAt": "2026-09-09T17:20:14.000Z",
+      "url": "https://x.com/adityaag/status/2097736851872153633",
+      "likes": 3,
+      "retweets": 0,
+      "replies": 0,
+      "isQuote": true,
+      "quotedTweetId": "2095556324041822641",
+      "_handle": "adityaag",
+      "_builderName": "Aditya Agarwal"
+    },
+    {
+      "id": "2097736850244845898",
+      "text": "Spots limited, RSVP here https://t.co/gmW9Zvf1up",
+      "createdAt": "2026-09-09T17:20:13.000Z",
+      "url": "https://x.com/adityaag/status/2097736850244845898",
+      "likes": 3,
+      "retweets": 0,
+      "replies": 1,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "adityaag",
+      "_builderName": "Aditya Agarwal"
+    },
+    {
+      "id": "2097736847879192917",
+      "text": "One of the greatest examples of human-oriented technology is @Waymo.  \n\nBut it took a long road to get here.\n\n@dmitri_dolgov joined Google's self-driving project in 2009. He's now leading Waymo as co-CEO.\n\nHe's coming by @spc this month. https://t.co/Wy8ei9Q38x",
+      "createdAt": "2026-09-09T17:20:13.000Z",
+      "url": "https://x.com/adityaag/status/2097736847879192917",
+      "likes": 30,
+      "retweets": 4,
+      "replies": 1,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "adityaag",
+      "_builderName": "Aditya Agarwal"
+    },
+    {
+      "id": "2097729250505966046",
+      "text": "My favorite way to test a new model's thinking abilities:\n\nAsk it for brutally honest feedback about your blind spots that are holding you back with this prompt (just paste the whole image into ChatGPT).\n\nAstra's feedback was especially blunt :)\n\n📌 Read the full post here: https://t.co/mcF7mGuVhL",
+      "createdAt": "2026-09-09T16:50:01.000Z",
+      "url": "https://x.com/petergyang/status/2097729250505966046",
+      "likes": 95,
+      "retweets": 6,
+      "replies": 7,
+      "isQuote": true,
+      "quotedTweetId": "2097699515541365007",
+      "_handle": "petergyang",
+      "_builderName": "Peter Yang"
+    },
+    {
+      "id": "2097728692596486487",
+      "text": "Jane Kim: Big Talk, little respect for facts, outright falsehoods\n\nJane Kim is a NIMBY who helped create the SF doom loop, and now she's failing up: she wants to be CA Insurance Commissioner\n\nShe is no public servant. We should keep her out of office. \n\nhttps://t.co/ryRKwZVylb https://t.co/wdrSp3Sd15",
+      "createdAt": "2026-09-09T16:47:48.000Z",
+      "url": "https://x.com/garrytan/status/2097728692596486487",
+      "likes": 218,
+      "retweets": 18,
+      "replies": 22,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "garrytan",
+      "_builderName": "Garry Tan"
+    },
+    {
+      "id": "2097726586191851790",
+      "text": "Introducing Apple Orbital Strike https://t.co/rlFQx2rC38",
+      "createdAt": "2026-09-09T16:39:26.000Z",
+      "url": "https://x.com/thenanyu/status/2097726586191851790",
+      "likes": 56,
+      "retweets": 3,
+      "replies": 6,
+      "isQuote": true,
+      "quotedTweetId": "2097672038781763614",
+      "_handle": "thenanyu",
+      "_builderName": "Nan Yu"
+    },
+    {
+      "id": "2097719517057253527",
+      "text": "I instlaled @poteto's Dr Eggbot for making new Grok @bot (highly recommended!) but had to rename it to Dr Light so it doesn't become evil 😅 https://t.co/qMfmNxzOvb",
+      "createdAt": "2026-09-09T16:11:21.000Z",
+      "url": "https://x.com/petergyang/status/2097719517057253527",
+      "likes": 117,
+      "retweets": 1,
+      "replies": 9,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "petergyang",
+      "_builderName": "Peter Yang"
+    },
+    {
+      "id": "2097718982920855834",
+      "text": "If you're building on the Claude Platform, get listed and make it easier for our customers to buy your product: https://t.co/uZTPm62iKU",
+      "createdAt": "2026-09-09T16:09:13.000Z",
+      "url": "https://x.com/claudeai/status/2097718982920855834",
+      "likes": 107,
+      "retweets": 9,
+      "replies": 15,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "claudeai",
+      "_builderName": "Claude"
+    },
+    {
+      "id": "2097718980437831935",
+      "text": "New on Claude Marketplace: @CrowdStrike, @cursor_ai, @FactoryAI, @GammaApp, and @vercel.\n\nEnterprises can now use their Anthropic spend commitment to buy more Claude-powered products and agents.\n\nGet started: https://t.co/L14yHet6h3 https://t.co/ZdoWCw7th3 https://t.co/zX1HFU1iG2",
+      "createdAt": "2026-09-09T16:09:13.000Z",
+      "url": "https://x.com/claudeai/status/2097718980437831935",
+      "likes": 2858,
+      "retweets": 206,
+      "replies": 158,
+      "isQuote": true,
+      "quotedTweetId": "2059662933924123044",
+      "_handle": "claudeai",
+      "_builderName": "Claude"
+    },
+    {
+      "id": "2097696043492143157",
+      "text": "ocarina of time remake is the best news in a long time.\n\ni will be unavailable november 5 and 6; need to find a case of mountain dew.",
+      "createdAt": "2026-09-09T14:38:04.000Z",
+      "url": "https://x.com/sama/status/2097696043492143157",
+      "likes": 14897,
+      "retweets": 725,
+      "replies": 862,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "sama",
+      "_builderName": "Sam Altman"
+    },
+    {
+      "id": "2097695001341829212",
+      "text": "This would suck, but we will prioritize great service for customers until we can get back on top of things. https://t.co/Qi5ssKJic6",
+      "createdAt": "2026-09-09T14:33:56.000Z",
+      "url": "https://x.com/sama/status/2097695001341829212",
+      "likes": 7017,
+      "retweets": 181,
+      "replies": 577,
+      "isQuote": true,
+      "quotedTweetId": "2097559315150426222",
+      "_handle": "sama",
+      "_builderName": "Sam Altman"
+    },
+    {
+      "id": "2097599758391255259",
+      "text": "Idea is easy\nConviction is hard",
+      "createdAt": "2026-09-09T08:15:28.000Z",
+      "url": "https://x.com/zarazhangrui/status/2097599758391255259",
+      "likes": 114,
+      "retweets": 4,
+      "replies": 19,
+      "isQuote": false,
+      "quotedTweetId": null,
+      "_handle": "zarazhangrui",
+      "_builderName": "Zara Zhang"
+    },
     {
       "id": "2096688770523467947",
       "text": "To calibrate you all on which reasoning effort to use for Astra, know that GPT-6 Astra on low performs better than GPT-5.6 Sol on high.\n\nIf you were using high reasoning efforts with Sol and were happy, I suggest you move down to low or medium for Astra.",
@@ -105,6 +470,56 @@
       "name": "Peter Steinberger",
       "handle": "steipete",
       "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.\n@OpenClaw🦞 + @OpenAI"
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "bio": "@vercel CEO"
+    },
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "bio": "ceo @box - your business lives in content. unleash it with AI"
+    },
+    {
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop"
+    },
+    {
+      "name": "Matt Turck",
+      "handle": "mattturck",
+      "bio": "VC at @FirstMarkCap.  Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape."
+    },
+    {
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "bio": "Builder. Make something people want, then make people want it. Harvard’17. GitHub: https://t.co/KCuEaje1wd \nYouTube: https://t.co/8xzbGWsHgY"
+    },
+    {
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧"
+    },
+    {
+      "name": "Dan Shipper",
+      "handle": "danshipper",
+      "bio": "ceo @every | the only subscription you need to stay at the edge of AI"
+    },
+    {
+      "name": "Aditya Agarwal",
+      "handle": "adityaag",
+      "bio": "General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad"
+    },
+    {
+      "name": "Sam Altman",
+      "handle": "sama",
+      "bio": "The mission of OpenAI to ensure that AGI benefits all of humanity"
+    },
+    {
+      "name": "Claude",
+      "handle": "claudeai",
+      "bio": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app."
     }
   ],
   "podcasts": [
@@ -161,10 +576,10 @@
     }
   ],
   "stats": {
-    "tweets": 6,
-    "builders": 4,
+    "tweets": 34,
+    "builders": 14,
     "podcasts": 1,
     "blogs": 4,
-    "rawSnapshots": 1
+    "rawSnapshots": 2
   }
 }
