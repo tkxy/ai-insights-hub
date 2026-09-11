@@ -1881,12 +1881,6 @@
       <div class="current-date" id="currentMonth">3月</div>
       <button id="nextMonth">下月 →</button>
     </div>
-    <div class="date-nav" id="news-week-nav" style="display:none;">
-      <button id="newsPrevWeek" onclick="navNewsWeek(-1)">← 上周</button>
-      <select id="newsWeekSelect" class="current-date" onchange="jumpToNewsWeek(this.value)" style="border:none;outline:none;font:inherit;cursor:pointer;padding:0 8px;background:transparent;"></select>
-      <button id="newsNextWeek" onclick="navNewsWeek(1)">下周 →</button>
-      <button id="newsThisWeek" class="go-this-week" style="display:none;" onclick="navNewsWeek(0)">本周</button>
-    </div>
     <div class="date-nav" id="gh-week-nav" style="display:none;">
       <button id="ghPrevWeek" onclick="navGhWeek(-1)">← 上周</button>
       <select id="ghWeekSelect" class="current-date" onchange="jumpToGhWeek(this.value)" style="border:none;outline:none;font:inherit;cursor:pointer;padding:0 8px;background:transparent;"></select>
@@ -4069,8 +4063,6 @@ function switchPage(id) {
   githubPage.style.display = id === 'github' ? 'block' : 'none';
   dayNav.style.display = id === 'insight' ? 'flex' : 'none';
   monthNav.style.display = id === 'map' ? 'flex' : 'none';
-  var newsWeekNav = document.getElementById('news-week-nav');
-  if (newsWeekNav) newsWeekNav.style.display = id === 'news' ? 'flex' : 'none';
   var ghWeekNav = document.getElementById('gh-week-nav');
   if (ghWeekNav) ghWeekNav.style.display = id === 'github' ? 'flex' : 'none';
 
@@ -4131,27 +4123,7 @@ function getCurrentISOWeek() {
   return d.getFullYear() + '-W' + String(weekNum).padStart(2, '0');
 }
 
-function shiftWeek(weekKey, delta) {
-  // 'YYYY-Www' + delta 周 → 'YYYY-Www'
-  var parts = weekKey.split('-W');
-  var year = parseInt(parts[0], 10);
-  var wk = parseInt(parts[1], 10);
-  // 用 ISO 周一作为基准，加 delta*7 天
-  var jan4 = new Date(year, 0, 4);
-  var firstMonday = new Date(jan4);
-  firstMonday.setDate(jan4.getDate() - ((jan4.getDay() + 6) % 7));
-  var monday = new Date(firstMonday);
-  monday.setDate(firstMonday.getDate() + (wk - 1 + delta) * 7);
-  // 重新计算
-  var d = new Date(monday);
-  d.setHours(0, 0, 0, 0);
-  d.setDate(d.getDate() + 4 - (d.getDay() || 7));
-  var yearStart = new Date(d.getFullYear(), 0, 1);
-  var newWk = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
-  return d.getFullYear() + '-W' + String(newWk).padStart(2, '0');
-}
-
-// 加载周索引（所有已生成的周），供下拉使用
+// 加载周索引（用于判断本周是否已生成，以及回落到最新一周）
 async function loadNewsIndex() {
   if (aiNewsState.index) return aiNewsState.index;
   try {
@@ -4164,71 +4136,20 @@ async function loadNewsIndex() {
   return aiNewsState.index;
 }
 
-function formatWeekLabel(entry) {
-  // "05-04 ~ 05-10"（去掉 2026-W19 前缀）
-  if (entry.start && entry.end) {
-    return entry.start.slice(5) + ' ~ ' + entry.end.slice(5);
-  }
-  return entry.week;
-}
-
-function renderNewsWeekNav() {
-  var select = document.getElementById('newsWeekSelect');
-  var prevBtn = document.getElementById('newsPrevWeek');
-  var nextBtn = document.getElementById('newsNextWeek');
-  var thisBtn = document.getElementById('newsThisWeek');
-  if (!select) return;
-
-  var idx = aiNewsState.index;
-  var weeks = (idx && idx.weeks) ? idx.weeks : [];
-  var current = aiNewsState.currentWeek;
-
-  // 确保当前选中项在下拉里（即便没生成过，也显示一个占位）
-  var hasCurrent = weeks.some(function(w) { return w.week === current; });
-  var opts = weeks.slice();
-  if (!hasCurrent && current) {
-    opts.unshift({ week: current, start: null, end: null });
-  }
-
-  var html = '';
-  opts.forEach(function(w) {
-    var sel = (w.week === current) ? ' selected' : '';
-    html += '<option value="' + w.week + '"' + sel + '>' + formatWeekLabel(w) + '</option>';
-  });
-  select.innerHTML = html;
-
-  // 禁用边界按钮：只在已有的周范围里前后切
-  var weekList = weeks.map(function(w) { return w.week; });
-  var curIdx = weekList.indexOf(current);
-  if (curIdx === -1) {
-    // 当前周不在已生成列表里（如今日本周还没跑），允许 prev 跳最近一周，禁用 next
-    prevBtn.disabled = weekList.length === 0;
-    nextBtn.disabled = true;
-  } else {
-    // weekList 是倒序（最新在前）
-    prevBtn.disabled = curIdx >= weekList.length - 1;
-    nextBtn.disabled = curIdx <= 0;
-  }
-
-  // "本周" 按钮：当前不是最新周时才显示
-  var thisWeek = getCurrentISOWeek();
-  thisBtn.style.display = (current !== thisWeek) ? 'inline-block' : 'none';
-}
-
 async function loadAndRenderNewsPage() {
   var loading = document.getElementById('news-loading');
   var content = document.getElementById('news-content');
-  if (!aiNewsState.currentWeek) {
-    aiNewsState.currentWeek = getCurrentISOWeek();
-  }
+
+  // 只展示当周：每次进入都重新按今天计算，不沿用上次浏览过的周
+  aiNewsState.currentWeek = getCurrentISOWeek();
+
   loading.style.display = 'block';
   loading.textContent = '正在加载 ' + aiNewsState.currentWeek + ' 周的AI资讯...';
   content.style.display = 'none';
 
-  // 先拉索引（让下拉先可切换）
   await loadNewsIndex();
 
-  // 如果当前周没有数据，且索引里有其它周，自动跳到最新那周
+  // 本周还没生成时回落到索引里最新那周，否则周一早上会白屏
   var weekKey = aiNewsState.currentWeek;
   var weeks = aiNewsState.index.weeks || [];
   var exists = weeks.some(function(w) { return w.week === weekKey; });
@@ -4236,8 +4157,6 @@ async function loadAndRenderNewsPage() {
     aiNewsState.currentWeek = weeks[0].week;
     weekKey = aiNewsState.currentWeek;
   }
-
-  renderNewsWeekNav();
 
   var data = aiNewsState.loaded[weekKey];
   if (!data) {
@@ -4369,40 +4288,6 @@ function renderNewsPage(data) {
 
   content.innerHTML = html;
   window.scrollTo(0, 0);
-}
-
-function navNewsWeek(delta) {
-  if (delta === 0) {
-    aiNewsState.currentWeek = getCurrentISOWeek();
-    loadAndRenderNewsPage();
-    return;
-  }
-  // 在已生成周的列表里前后跳，避免跳到空周
-  var weeks = (aiNewsState.index && aiNewsState.index.weeks) ? aiNewsState.index.weeks : [];
-  if (!weeks.length) {
-    aiNewsState.currentWeek = shiftWeek(aiNewsState.currentWeek, delta);
-    loadAndRenderNewsPage();
-    return;
-  }
-  var list = weeks.map(function(w) { return w.week; }); // 倒序，最新在前
-  var curIdx = list.indexOf(aiNewsState.currentWeek);
-  if (curIdx === -1) {
-    // 当前周不在已生成里：往"上一周"就跳到最新一周，往"下一周"不动
-    if (delta < 0) aiNewsState.currentWeek = list[0];
-  } else {
-    // delta=-1(上周)→往旧走，index+1；delta=+1(下周)→往新走，index-1
-    var newIdx = curIdx - delta;
-    if (newIdx >= 0 && newIdx < list.length) {
-      aiNewsState.currentWeek = list[newIdx];
-    }
-  }
-  loadAndRenderNewsPage();
-}
-
-function jumpToNewsWeek(weekKey) {
-  if (!weekKey || weekKey === aiNewsState.currentWeek) return;
-  aiNewsState.currentWeek = weekKey;
-  loadAndRenderNewsPage();
 }
 
 function escapeHtml(s) {
