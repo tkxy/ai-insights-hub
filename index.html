@@ -1874,7 +1874,7 @@
       <button id="prevDay">← 上一周</button>
       <div class="current-date" id="currentDate">加载中...</div>
       <button id="nextDay">下一周 →</button>
-      <button id="goThisWeek" class="go-this-week" style="display:none;">本周</button>
+      <button id="goThisWeek" class="go-this-week" style="display:none;">最新</button>
     </div>
     <div class="date-nav" id="month-nav" style="display:none;">
       <button id="prevMonth">← 上月</button>
@@ -2734,6 +2734,43 @@ function formatWeekRange(monday) {
   return `${fmt(monday)} - ${fmt(sunday)}`;
 }
 
+// 「最新数据周」= 上一个已结束的完整周。
+// 数据在每周一生成，覆盖的是刚结束的那一周；当周（周一~周日）此时还没有日报。
+// 以前默认打开当前周，于是页面显示"9月7日 - 9月13日"却配着 8/31~9/6 的内容。
+function getLatestDataMonday() {
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const thisMonday = getWeekMonday(today);
+  thisMonday.setDate(thisMonday.getDate() - 7);
+  return thisMonday;
+}
+
+// design-weekly 的命名约定：文件名日期 = 内容周结束后的那个周一（即生成日）。
+// 例如内容覆盖 2026-08-31~2026-09-06 的周报，文件名是 design-weekly-2026-09-07.json。
+// 所以由「内容周周一」换算文件名要 +7 天。
+function designWeeklyFileFor(contentMonday) {
+  const d = new Date(contentMonday);
+  d.setDate(d.getDate() + 7);
+  return 'data/design-weekly-' + formatDate(d) + '.json';
+}
+
+// 从周报 JSON 里解析出它实际覆盖的内容周起始日（YYYY-MM-DD），解析不出返回 null。
+// ⚠️ 字段语义历史上不统一，只有下面两个可信：
+//   week_start            —— 明确的内容周起始
+//   week: "A ~ B"         —— 内容周范围，如 "2026-08-31 ~ 2026-09-06"
+// 而 week_of / date 记的是「生成周」（等于文件名日期），与内容周差一周，
+// 例如 design-weekly-2026-08-31.json 里 week_of="2026-08-31" 但内容覆盖 08-24~08-30。
+// 所以这两个字段不参与校验，避免用错误语义去否决正确数据。
+function parseWeeklyContentStart(weekly) {
+  if (!weekly) return null;
+  if (weekly.week_start) return String(weekly.week_start);
+  if (typeof weekly.week === 'string') {
+    const m = weekly.week.match(/(\d{4}-\d{2}-\d{2})/);
+    if (m) return m[1];
+  }
+  return null;
+}
+
 // 加载并聚合一周数据（并发 fetch 7 天）
 async function loadWeekData(monday) {
   const dates = [];
@@ -2820,28 +2857,24 @@ async function loadWeekData(monday) {
 
   // 兜底：有些周只生成 design-weekly-YYYY-MM-DD.json，没有 7 天日报 JSON。
   // 这种情况下直接把周汇总映射成 Insight 页需要的数据结构，避免页面空白。
+  // 注意命名约定：文件名日期 = 内容周结束后的那个周一，因此要用 monday+7 去取。
   try {
-    const weekResp = await fetchWithTimeout('data/design-weekly-' + formatDate(monday) + '.json?t=' + Date.now(), 8000);
+    const weekResp = await fetchWithTimeout(designWeeklyFileFor(monday) + '?t=' + Date.now(), 8000);
     if (weekResp && weekResp.ok) {
       const weekly = await weekResp.json();
       const expectedStart = formatDate(monday);
-      const expectedSunday = new Date(monday);
-      expectedSunday.setDate(monday.getDate() + 6);
-      const expectedEnd = formatDate(expectedSunday);
-      const hasExplicitRange = !!(weekly.week_start || weekly.week_end);
-      const rangeMatched = (!weekly.week_start || weekly.week_start === expectedStart) &&
-        (!weekly.week_end || weekly.week_end === expectedEnd);
-      const legacyDateMatched = !weekly.date || weekly.date === expectedStart;
 
-      // 防止把“上一周生成的周报”误挂到“本周周一”下面展示。
-      // 例如 design-weekly-2026-06-29.json 实际覆盖 2026-06-22 ~ 2026-06-28，
-      // 若不校验 week_start/week_end，就会在 6月29日 - 7月5日 误显示 9/3/3。
-      if ((hasExplicitRange && !rangeMatched) || (!hasExplicitRange && !legacyDateMatched)) {
+      // 防止把「别的周的周报」误挂到当前视图下展示。
+      // 历史故障：design-weekly-2026-06-29.json 实际覆盖 06-22~06-28，
+      // 却在 "6月29日 - 7月5日" 视图里显示，数字对不上。
+      // 旧校验只认 week_start/week_end/date，而实际文件用的是 week / week_of，
+      // 三个字段全缺时校验直接放行 —— 这就是错位一周仍被展示的原因。
+      const contentStart = parseWeeklyContentStart(weekly);
+      if (contentStart && contentStart !== expectedStart) {
         console.warn('[Insight] skip mismatched weekly fallback', {
-          requested: expectedStart + ' ~ ' + expectedEnd,
-          weekly_start: weekly.week_start,
-          weekly_end: weekly.week_end,
-          weekly_date: weekly.date
+          requested: expectedStart,
+          weeklyContentStart: contentStart,
+          file: designWeeklyFileFor(monday)
         });
         return null;
       }
@@ -3010,14 +3043,14 @@ function toISOWeekKey(date) {
 }
 
 // 判断当前是否在本周
+// 当前视图是否停在「最新数据周」（上一个已结束的完整周）
 function isCurrentWeek(date) {
-  const now = new Date();
-  const thisMonday = getWeekMonday(new Date(now.getFullYear(), now.getMonth(), now.getDate()));
+  const latestMonday = getLatestDataMonday();
   const viewMonday = getWeekMonday(date);
-  return formatDate(thisMonday) === formatDate(viewMonday);
+  return formatDate(latestMonday) === formatDate(viewMonday);
 }
 
-// 更新"本周"按钮可见性
+// 更新"最新"按钮可见性：只有离开最新数据周时才显示
 function updateGoThisWeekBtn() {
   const btn = document.getElementById('goThisWeek');
   if (btn) btn.style.display = isCurrentWeek(currentDate) ? 'none' : '';
@@ -3055,24 +3088,23 @@ document.getElementById('nextDay').addEventListener('click', () => {
 });
 
 document.getElementById('goThisWeek').addEventListener('click', () => {
-  const now = new Date();
-  const thisMonday = getWeekMonday(new Date(now.getFullYear(), now.getMonth(), now.getDate()));
-  currentDate = thisMonday;
-  navigateWeek(formatDate(thisMonday));
+  const latestMonday = getLatestDataMonday();
+  currentDate = latestMonday;
+  navigateWeek(formatDate(latestMonday));
 });
 
 document.getElementById('voicePlayButton').addEventListener('click', handleVoicePlayback);
 updateVoiceButtonAvailability();
 
 (async function init() {
-  const now = new Date();
-  currentDate = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-
-  // 先尝试当前周
-  let monday = getWeekMonday(currentDate);
+  // 默认打开「最新数据周」= 上一个已结束的完整周，而不是当前周。
+  // 当前周的日报要等下周一才生成，直接开当前周会显示一个空周
+  // （或被错位的周报兜底填上，导致标题写着本周、内容却是上周）。
+  let monday = getLatestDataMonday();
+  currentDate = new Date(monday);
   let data = await loadWeekData(monday);
 
-  // 如果当前周完全没数据，往前找最多4周
+  // 若最新数据周也没有数据，继续往前找最多 4 周
   if (!data) {
     for (let w = 1; w <= 4; w++) {
       const m = new Date(monday);
@@ -3082,7 +3114,6 @@ updateVoiceButtonAvailability();
     }
   }
 
-  const mondayStr = formatDate(monday);
   document.getElementById('currentDate').textContent = formatWeekRange(monday);
   document.getElementById('app').innerHTML = `<div class="loading"><div class="spinner"></div><p>正在加载本周数据...</p></div>`;
   updateGoThisWeekBtn();
