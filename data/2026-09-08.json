@@ -1,0 +1,276 @@
+{
+  "date": "2026-09-08",
+  "generated_at": "2026-09-14T08:45:00+08:00",
+  "daily_summary": "9 月 8 日对输入法赛道是密度最高的一天：网易有道推出首个 AI 原生语音 Agent「网易叭哥说」，明确把评价标准从「识别得准不准」推到「输出能不能直接用」，主打自研 Confucius4-R2T2 真流式 ASR、口语意图理解、124 语种互译、云端零留存、永久免费；同日字节发布豆包输入法 Windows 版 V0.9.0，长按右 Alt 唤起语音、弱网与离线可用。两件事叠加，意味着「语音 + 大模型整理」已经不是差异化功能，而是输入法的新基线。资本侧同样密集：Cognition 20 亿美元、Mistral 30 亿欧元同日官宣；模型侧 ChatGPT Images 2.5、Meta Muse、面壁 MiniCPM5-2B 开源、字节 DeerFlow 2.0 登顶 GitHub Trending。对我们的直接压力是：如果一年内还停留在「语音转文字 + 候选词」，用户会把输入法当成退化产品。",
+  "design_insights": [
+    {
+      "title": "网易叭哥说把语音输入的验收标准改写为「输出能不能直接用」",
+      "summary": "9 月 8 日上线的网易叭哥说不做机械转录，自动过滤停顿、改口、重复，把「下午三点开会，呃，不对，改成四点」直接整理为「下午四点开会，请通知设计团队」，官方称效率达键盘 5 倍、热词命中率超 99%。",
+      "implication": "输入法语音模块的北极星指标要从 CER/WER 换成「零编辑发送率」——即用户拿到结果后一个字都没改就发出去的比例。围绕这个指标重排优先级：改口消解、口头禅剔除、自动分段的收益远高于再抠 0.5 个点的识别率。",
+      "sources": [
+        "中国经济网科技频道",
+        "澎湃新闻"
+      ],
+      "source_urls": [
+        "http://scitech.ce.cn/sy/zx/202609/t20260908_3201112.shtml",
+        "https://www.163.com/dy/article/L6ATR0SE0514R9P4.html"
+      ],
+      "tags": [
+        "语音输入",
+        "北极星指标",
+        "口语整理"
+      ]
+    },
+    {
+      "title": "「云端零留存」被当成一级卖点写进官网，隐私从合规项变成转化项",
+      "summary": "叭哥说明确承诺语音加密传输、云端不保留任何语音与文本、数据不用于模型训练、输入历史仅存本地且可随时查看删除，并把这三条写在官网首屏。",
+      "implication": "输入法的隐私说明必须从「设置-隐私政策」的三级页面搬到语音权限授权的第一屏，用三条可验证的短句陈述（不上传/不训练/本地可删），并提供「一键清空本地输入历史」的显式入口。隐私不再是风险规避，而是拉新话术。",
+      "sources": [
+        "中国经济网科技频道",
+        "中华网家电"
+      ],
+      "source_urls": [
+        "http://scitech.ce.cn/sy/zx/202609/t20260908_3201112.shtml",
+        "https://hea.china.com/articles/20260910/202609101958418.html"
+      ],
+      "tags": [
+        "隐私设计",
+        "权限引导",
+        "信任建设"
+      ]
+    },
+    {
+      "title": "豆包输入法 PC 版把「唤起姿势」设计成单键长按",
+      "summary": "豆包输入法 Windows 版 V0.9.0 于 9 月 8 日发布，长按键盘右侧 Alt 键即刻启动语音输入，支持方言、中英混说、专业术语，弱网与完全离线状态下依然可用。",
+      "implication": "PC 端语音的最大阻力是「唤起成本」。右 Alt 这类闲置修饰键长按是接近零学习成本的方案，比组合键或托盘点击都轻。我们的 PC 侧栏若要接语音，应优先评估单键长按方案，并把松手即出结果、松手即发送做成两种可配置行为。",
+      "sources": [
+        "同花顺财经",
+        "中关村在线"
+      ],
+      "source_urls": [
+        "https://news.10jqka.com.cn/field/20260909/679719255.shtml"
+      ],
+      "tags": [
+        "PC输入法",
+        "唤起方式",
+        "快捷键设计"
+      ]
+    },
+    {
+      "title": "离线语音被单独列为卖点，说明「断网即失效」是真实痛点",
+      "summary": "豆包官方把飞行模式、地下停车场、地铁途中、网络不好单列为离线语音的适用场景，示例文案为「我在地下车库，马上上楼」。",
+      "implication": "输入法的语音能力应做成两档：端侧小模型保证基础可用（短句、常用词、无网），云端大模型负责增强（长句整理、翻译、专业词）。关键是降级过程必须无感——不弹错误弹窗，而是在候选区用一枚小标识说明当前处于离线模式、哪些能力暂不可用。",
+      "sources": [
+        "ChooseAI",
+        "IT之家"
+      ],
+      "source_urls": [
+        "https://www.chooseai.net/ai-news/detail/6745",
+        "https://news.10jqka.com.cn/field/20260909/679719255.shtml"
+      ],
+      "tags": [
+        "离线能力",
+        "优雅降级",
+        "弱网体验"
+      ]
+    },
+    {
+      "title": "应用层价值正在超过模型层：Cognition 与 Harvey 的收入增速快于估值",
+      "summary": "9 月 8-9 日三笔融资合计 60.5 亿美元：Cognition 20 亿美元（估值 480 亿）、Mistral 30 亿欧元、Harvey 5.5 亿美元；Cognition 的运行营收从 5 月的 4.92 亿美元涨到近 9 亿美元。",
+      "implication": "钱正在流向「把模型装进具体工作流」的产品，而不是模型本身。输入法的价值锚点应放在特定表达场景（工作汇报、跨语言沟通、客服话术、亲密关系表达）的成品质量上，而不是宣称接入了哪个大模型。",
+      "sources": [
+        "Stanford Tech Review"
+      ],
+      "source_urls": [
+        "https://stanfordtechreview.com/articles/ai-news-this-week-gpt-6-astra-iphone-duo-funding"
+      ],
+      "tags": [
+        "商业模式",
+        "应用层",
+        "场景化"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "语音口述的「零编辑发送率」优化专项",
+      "pain_point": "用户口述一段话后仍需手动删口头禅、补标点、理顺逻辑，节省下来的时间被后期编辑吃掉。",
+      "opportunity": "建立改口消解 + 口头禅剔除 + 智能分段的组合能力，并把「零编辑发送率」作为该模块的唯一考核指标，按场景（微信闲聊/工作群/邮件/文档）分别设定基线。",
+      "priority": "high",
+      "evidence": "叭哥说与豆包输入法同期均以「智能文字整理」为核心卖点，Google 公开数据称语音效率为键盘 2.5 倍、叭哥说称提升至 5 倍。"
+    },
+    {
+      "title": "PC 端语音唤起的低摩擦方案",
+      "pain_point": "PC 场景下用户要先找到语音按钮或记住组合键，唤起成本高到不如直接打字。",
+      "opportunity": "评估右 Alt/右 Ctrl 等闲置修饰键长按唤起，提供松手结束与松手直接发送两种模式，并允许用户自定义按键与是否需要焦点在输入框。",
+      "priority": "high",
+      "evidence": "豆包输入法 Windows 版以长按右 Alt 为核心交互；网易叭哥说默认按住 Fn 键说话，两家不约而同选择单键长按。"
+    },
+    {
+      "title": "隐私承诺的可视化与可验证化",
+      "pain_point": "用户对语音输入最大的顾虑是「我说的话去哪了」，而隐私政策文本无法消解这种顾虑。",
+      "opportunity": "在语音授权首屏用三条短句陈述数据流向，并提供「本地输入历史」页面让用户直接看到、直接删除，形成可自证的闭环。",
+      "priority": "medium",
+      "evidence": "叭哥说把云端零留存、不用于训练、历史仅本地三条承诺写进官网首屏，被多家媒体作为核心差异点报道。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "网易有道推出首个 AI 原生语音 Agent「网易叭哥说」",
+      "summary": "9 月 8 日上线，支持 Mac/Windows 双端、永久免费，官方称语音输入效率达键盘 5 倍，热词命中率超 99%，支持 124 语种实时互译，云端零留存。",
+      "source": "中国经济网科技频道",
+      "source_urls": [
+        "http://scitech.ce.cn/sy/zx/202609/t20260908_3201112.shtml",
+        "https://www.toutiao.com/article/7683073654418965046/"
+      ],
+      "tags": [
+        "网易有道",
+        "语音输入",
+        "AI Agent"
+      ]
+    },
+    {
+      "title": "字节发布豆包输入法 Windows 版 V0.9.0",
+      "summary": "支持 Win10/Win11 64 位系统，长按右 Alt 唤起语音，支持方言与中英混输，弱网离线可用，无广告无弹窗，支持拼音/双拼/五笔。",
+      "source": "同花顺财经",
+      "source_urls": [
+        "https://news.10jqka.com.cn/field/20260909/679719255.shtml"
+      ],
+      "tags": [
+        "豆包输入法",
+        "PC端",
+        "字节跳动"
+      ]
+    },
+    {
+      "title": "Cognition 完成 20 亿美元 E 轮，估值 480 亿美元",
+      "summary": "由 a16z 与 Accel 领投，运行营收从 5 月 4.92 亿美元增至近 9 亿美元，Devin 新增 Slack 告警自动修复与安全漏洞分诊能力。",
+      "source": "Stanford Tech Review",
+      "source_urls": [
+        "https://stanfordtechreview.com/articles/ai-news-this-week-gpt-6-astra-iphone-duo-funding",
+        "https://headsupai.io/ai-news-and-updates/this-month"
+      ],
+      "tags": [
+        "融资",
+        "Cognition",
+        "编码智能体"
+      ]
+    },
+    {
+      "title": "Mistral 完成 30 亿欧元融资，创欧洲私营科技融资纪录",
+      "summary": "由三星电子、PSG Equity 与欧盟支持的 Scaleup Europe Fund 联合领投，投后估值约 240 亿美元。",
+      "source": "Stanford Tech Review",
+      "source_urls": [
+        "https://stanfordtechreview.com/articles/ai-news-this-week-gpt-6-astra-iphone-duo-funding"
+      ],
+      "tags": [
+        "融资",
+        "Mistral",
+        "欧洲AI"
+      ]
+    },
+    {
+      "title": "OpenAI 上线 ChatGPT Images 2.5 并新增两个 API 模型",
+      "summary": "新增 GPT-Image-2.5 Flare 与 Sunburst，强化多步编辑一致性、版式与文字处理，并加入 C2PA 元数据与隐形水印。",
+      "source": "Zinbiel Tech Blog",
+      "source_urls": [
+        "https://zinbiel.net/daily-ai-engineering-brief-2026-09-12"
+      ],
+      "tags": [
+        "OpenAI",
+        "图像生成",
+        "内容溯源"
+      ]
+    },
+    {
+      "title": "Meta 发布个人智能体 Muse",
+      "summary": "Muse 定位为可处理多类任务的个人 AI 代理，支持个性化多模态交互，标志 Meta 从助手型聊天机器人转向智能体型消费产品。",
+      "source": "AI Daily",
+      "source_urls": [
+        "https://www.ainewslog.com/blog/ai-daily-2026-09-08-zh"
+      ],
+      "tags": [
+        "Meta",
+        "个人智能体"
+      ]
+    },
+    {
+      "title": "面壁联合 OpenBMB 开源 MiniCPM5-2B",
+      "summary": "34 项基准平均成绩超过 4B 档最优模型，延续端侧「智能密度」路线。",
+      "source": "AI 每日早报",
+      "source_urls": [
+        "https://ainewscycle.com/daily-ai-cloud-intelligence-brief-2026-09-09"
+      ],
+      "tags": [
+        "开源模型",
+        "端侧",
+        "面壁智能"
+      ]
+    },
+    {
+      "title": "字节 DeerFlow 2.0 登顶 GitHub Trending",
+      "summary": "开源智能体框架重写版，面向长程任务自动化，支持子智能体、记忆与沙箱执行。",
+      "source": "AI Daily",
+      "source_urls": [
+        "https://www.ainewslog.com/blog/ai-daily-2026-09-08-zh"
+      ],
+      "tags": [
+        "开源",
+        "智能体框架",
+        "字节跳动"
+      ]
+    },
+    {
+      "title": "Google 发布 Gemini 3.8 Flash",
+      "summary": "更快更便宜的模型版本，面向复杂问题求解如编码与职场任务，通过增加推理步骤提升结果质量，已向开发者与付费订阅用户开放。",
+      "source": "Innovation Profs",
+      "source_urls": [
+        "https://newsletter.innovationprofs.com/p/innovation-profs-9-8-2026"
+      ],
+      "tags": [
+        "Google",
+        "Gemini",
+        "模型发布"
+      ]
+    },
+    {
+      "title": "Google 发布 Gemini 3.5 Transcribe，提供录音与实时两套 API",
+      "summary": "自动识别 85 种以上语言，处理口语自我纠正，Smart 模式剔除填充词；Artificial Analysis 测得非流式词错率 2.6%、流式 4.0%。",
+      "source": "Towards AI Newsletter",
+      "source_urls": [
+        "https://newsletter.towardsai.net/feed"
+      ],
+      "tags": [
+        "语音识别",
+        "Google",
+        "实时转写"
+      ]
+    },
+    {
+      "title": "GitHub 发布 Project HydraFusion，Copilot CLI 实现多模型按需编排",
+      "summary": "通过多模型路由与 Cascade 策略按任务难度分配模型，官方称成本下降约 67%。",
+      "source": "DAMO 开发者矩阵",
+      "source_urls": [
+        "https://damodev.csdn.net/6a9f436648977663a5ddc5b2.html"
+      ],
+      "tags": [
+        "GitHub",
+        "多模型路由",
+        "成本优化"
+      ]
+    },
+    {
+      "title": "阿里 Qwen 发布开源多模态预览版 Qwen3.8-Flash-Next",
+      "summary": "125B 主模型 + 51B N-gram 嵌入参数，每 token 仅激活 6B，原生 262K 上下文可扩至 1M，权重在 Hugging Face 与魔搭开放。",
+      "source": "Towards AI Newsletter",
+      "source_urls": [
+        "https://newsletter.towardsai.net/feed"
+      ],
+      "tags": [
+        "阿里",
+        "Qwen",
+        "开源多模态"
+      ]
+    }
+  ]
+}

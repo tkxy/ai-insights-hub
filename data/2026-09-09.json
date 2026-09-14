@@ -1,0 +1,256 @@
+{
+  "date": "2026-09-09",
+  "generated_at": "2026-09-14T08:45:00+08:00",
+  "daily_summary": "9 月 9 日苹果「Surprise and Shine」发布会是全天焦点：新任 CEO John Ternus 首秀，带来首款折叠 iPhone Duo（外屏 5.4 英寸、内屏 7.6 英寸、1999 美元起）、iPhone 18 Pro 系列、A20 Pro，以及自 2011 年以来改动最大的 Siri——底层采用 Google Gemini 定制模型，苹果每年支付约 10 亿美元，Siri 可理解屏幕内容并跨 30 万个第三方 App 执行动作，但欧盟地区首发不支持。同日 2026 外滩大会在上海开幕，首次以「共创 AI 新经济」为主题；Harvey 完成 5.5 亿美元融资；Anthropic 研究员 Jacob Coxon 辞职并发出七连发警告，浏览量近 7600 万。对输入法来说，这一天有两个硬信号：折叠大屏成为主流形态需要键盘重新适配，系统级助手开始直接吃「跨 App 执行」这块蛋糕，输入法必须想清楚自己在系统助手之下还剩什么位置。",
+  "design_insights": [
+    {
+      "title": "折叠 iPhone Duo 落地，大屏键盘适配从可选项变为必答题",
+      "summary": "苹果 9 月 9 日发布 iPhone Duo，外屏 5.4 英寸展开为 7.6 英寸内屏，钛合金边框、IP68，10 月 23 日上市，1999 美元起；苹果在折叠品类上比三星晚了七年，但把价格定在笔记本级别。",
+      "implication": "内屏 7.6 英寸下，单手全键盘在物理上不成立。键盘必须按形态给出三套布局：外屏沿用单手布局、内屏默认分裂键盘 + 可拖拽定位、横屏时收敛为悬浮小键盘。切换必须由折叠状态自动触发且允许用户锁定，不能每次展开都要手动调。",
+      "sources": [
+        "Stanford Tech Review",
+        "Coinlive"
+      ],
+      "source_urls": [
+        "https://stanfordtechreview.com/articles/ai-news-this-week-gpt-6-astra-iphone-duo-funding",
+        "https://www.coinlive.com/en/news/tim-cook-built-apple-on-hardware-john-ternus-is-putting"
+      ],
+      "tags": [
+        "折叠屏",
+        "键盘布局",
+        "形态适配"
+      ]
+    },
+    {
+      "title": "Siri 接管跨 App 动作，输入法的护城河要退回到「表达质量」",
+      "summary": "重建版 Siri 可进行更自然的对话、理解屏幕上显示的内容，并在超过 30 万个第三方 App 中执行动作，无需用户反复解释意图；底层为 Google Gemini，苹果每年支付约 10 亿美元。",
+      "implication": "「帮我打开某 App 做某事」这类需求会被系统助手吃掉，输入法不应在这条线上正面硬碰。护城河要收敛到系统助手够不着的地方：光标所在位置的原位改写、跨应用的一致输入习惯与个人词库、以及不需要联网上传的本地表达增强。",
+      "sources": [
+        "Coinlive",
+        "Stanford Tech Review"
+      ],
+      "source_urls": [
+        "https://www.coinlive.com/en/news/tim-cook-built-apple-on-hardware-john-ternus-is-putting",
+        "https://stanfordtechreview.com/articles/ai-news-this-week-gpt-6-astra-iphone-duo-funding"
+      ],
+      "tags": [
+        "系统助手",
+        "竞争格局",
+        "产品定位"
+      ]
+    },
+    {
+      "title": "苹果「设备端模型 + 私有云计算」路由给了隐私分层的范本",
+      "summary": "新 Siri 架构结合设备端 AI 模型与 Private Cloud Compute 处理更复杂请求，苹果保留隐私路由与设备层控制，把外部智能作为能力补充。",
+      "implication": "输入法可以照搬这套分层：默认全部本地处理，只有当用户主动触发「整理/翻译/长文改写」这类重能力时才上云，并在触发瞬间用一枚轻量标识告诉用户「这次会联网」。让上云成为用户的主动选择，而不是默默发生的后台行为。",
+      "sources": [
+        "Coinlive",
+        "Reuters"
+      ],
+      "source_urls": [
+        "https://www.coinlive.com/en/news/tim-cook-built-apple-on-hardware-john-ternus-is-putting",
+        "https://www.dailytechreader.com/2026/09/ai-news_01411761071.html"
+      ],
+      "tags": [
+        "端云协同",
+        "隐私分层",
+        "架构设计"
+      ]
+    },
+    {
+      "title": "Siri AI 欧盟首发缺席，提示合规差异会直接切割功能地图",
+      "summary": "苹果确认 Siri AI 在首发时不支持欧盟地区的 iPhone 与 iPad；同期欧盟 AI 法案的透明度义务自 2026 年 8 月 2 日起已经适用，要求交互式 AI 披露与机器可读标记。",
+      "implication": "输入法如有出海计划，AI 功能必须做成可按地区开关的能力包，而不是硬编码在主流程里。同时要预留「AI 生成内容标识」的技术位——欧盟已要求机器可读标记，这会变成发版工程要求而不只是法务审查项。",
+      "sources": [
+        "Coinlive",
+        "Zinbiel Tech Blog"
+      ],
+      "source_urls": [
+        "https://www.coinlive.com/en/news/tim-cook-built-apple-on-hardware-john-ternus-is-putting",
+        "https://zinbiel.net/daily-ai-engineering-brief-2026-09-12"
+      ],
+      "tags": [
+        "合规",
+        "出海",
+        "功能开关"
+      ]
+    },
+    {
+      "title": "安全研究员辞职警告提醒：AI 功能的「刹车设计」需要被明确展示",
+      "summary": "Anthropic 研究员 Jacob Coxon 于 9 月 9 日辞职并发布七连发警告，称实验室正「直奔自我改进的超级智能并拿我们的命去赌」，浏览量近 7600 万；Anthropic 对齐负责人公开表示其判断正确。",
+      "implication": "公众对 AI 的不安正在上升，产品端要把「刹车」可视化：输入法的每个 AI 能力都应有明确的关闭开关、清晰的作用范围说明、以及「本次不使用 AI」的临时旁路，让用户随时能退回纯输入法。",
+      "sources": [
+        "Stanford Tech Review",
+        "华尔街日报"
+      ],
+      "source_urls": [
+        "https://stanfordtechreview.com/articles/ai-news-this-week-gpt-6-astra-iphone-duo-funding"
+      ],
+      "tags": [
+        "AI安全",
+        "用户控制",
+        "可关闭性"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "折叠内屏的分裂键盘与拇指可达区重排",
+      "pain_point": "7.6 英寸内屏展开后，标准全键盘中部按键超出双手拇指自然活动范围，长文输入姿势被迫改变。",
+      "opportunity": "提供随折叠状态自动切换的分裂键盘，支持左右两半独立纵向定位与整体高度调节，并允许用户锁定某一形态不再自动切换。",
+      "priority": "high",
+      "evidence": "苹果 iPhone Duo 于 9 月 9 日发布，内屏 7.6 英寸，10 月 23 日上市，折叠形态进入主流出货区间。"
+    },
+    {
+      "title": "AI 能力的地区化开关与生成内容标识",
+      "pain_point": "AI 功能在不同地区合规要求差异极大，硬编码在主流程会导致某地区无法发版或整体降级。",
+      "opportunity": "把 AI 能力拆成可独立开关的能力包，按地区配置下发，并在架构中预留 AI 生成内容的机器可读标记位。",
+      "priority": "medium",
+      "evidence": "苹果确认 Siri AI 欧盟首发缺席；欧盟 AI 法案透明度义务自 2026 年 8 月 2 日起已适用。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "苹果发布首款折叠手机 iPhone Duo",
+      "summary": "外屏 5.4 英寸、内屏 7.6 英寸，钛合金边框、IP68，展开后为史上最薄 iPhone，256GB 版 1999 美元起，10 月 16 日预售、10 月 23 日上市。",
+      "source": "Stanford Tech Review",
+      "source_urls": [
+        "https://stanfordtechreview.com/articles/ai-news-this-week-gpt-6-astra-iphone-duo-funding"
+      ],
+      "tags": [
+        "苹果",
+        "折叠屏",
+        "iPhone"
+      ]
+    },
+    {
+      "title": "重建版 Siri 亮相，底层采用 Google Gemini",
+      "summary": "Siri 获得 2011 年以来最大幅度改造，可理解屏幕内容并跨 30 万个第三方 App 执行动作，苹果每年为此向 Google 支付约 10 亿美元，欧盟地区首发不支持。",
+      "source": "Coinlive",
+      "source_urls": [
+        "https://www.coinlive.com/en/news/tim-cook-built-apple-on-hardware-john-ternus-is-putting"
+      ],
+      "tags": [
+        "苹果",
+        "Siri",
+        "Gemini"
+      ]
+    },
+    {
+      "title": "John Ternus 首场 CEO 主题演讲，把 AI 放到产品中心",
+      "summary": "接替库克八天后，Ternus 以「Surprise and Shine」发布会开场，强调 A20 Pro 是史上最快的 iPhone 芯片，并把设备定义为芯片、系统、应用与助手围绕 AI 协同的智能平台。",
+      "source": "Coinlive",
+      "source_urls": [
+        "https://www.coinlive.com/en/news/tim-cook-built-apple-on-hardware-john-ternus-is-putting"
+      ],
+      "tags": [
+        "苹果",
+        "CEO",
+        "战略转向"
+      ]
+    },
+    {
+      "title": "2026 外滩大会在上海开幕，首次聚焦「AI 新经济」",
+      "summary": "9 月 9 日至 12 日举行，报名突破 5 万人，设 1 场主论坛与 40 余场见解论坛，超 1.5 万平米展区汇集 300 多家企业与 30 余个智能体应用。",
+      "source": "AI 每日早报",
+      "source_urls": [
+        "https://ainewscycle.com/daily-ai-cloud-intelligence-brief-2026-09-09"
+      ],
+      "tags": [
+        "外滩大会",
+        "产业落地"
+      ]
+    },
+    {
+      "title": "Harvey 完成 5.5 亿美元融资，估值 155 亿美元",
+      "summary": "法律 AI 公司 ARR 突破 4 亿美元，九个月内估值接近翻倍，并计划用新资金训练自有模型而非继续租用 OpenAI 与 Anthropic 的能力。",
+      "source": "Stanford Tech Review",
+      "source_urls": [
+        "https://stanfordtechreview.com/articles/ai-news-this-week-gpt-6-astra-iphone-duo-funding"
+      ],
+      "tags": [
+        "融资",
+        "法律AI",
+        "Harvey"
+      ]
+    },
+    {
+      "title": "Anthropic 研究员 Jacob Coxon 辞职并发布警告，浏览量近 7600 万",
+      "summary": "这位在 OpenAI 与 Anthropic 做了三年预训练研究的 27 岁研究员称实验室正在「拿我们的命去赌」，Anthropic 对齐负责人 Evan Hubinger 公开表示其判断正确。",
+      "source": "Stanford Tech Review",
+      "source_urls": [
+        "https://stanfordtechreview.com/articles/ai-news-this-week-gpt-6-astra-iphone-duo-funding"
+      ],
+      "tags": [
+        "AI安全",
+        "Anthropic",
+        "行业争议"
+      ]
+    },
+    {
+      "title": "Anthropic 推出 Model Hardware Standard，让 AI 直接操控物理设备",
+      "summary": "MHS 提供大模型与可编程物理设备（制造、化学实验设备）的通用接口，把新设备集成时间从数周压缩，先以研究预览形态开放。",
+      "source": "AI 每日早报",
+      "source_urls": [
+        "https://ainewscycle.com/daily-ai-cloud-intelligence-brief-2026-09-09"
+      ],
+      "tags": [
+        "Anthropic",
+        "具身",
+        "标准接口"
+      ]
+    },
+    {
+      "title": "超过 100 家科技公司联署公开信，警告 AI 赋能的新型网络攻击",
+      "summary": "微软、OpenAI 等公司呼吁紧急加固防御，以应对由 AI 能力驱动的下一代攻击手法。",
+      "source": "AI 每日早报",
+      "source_urls": [
+        "https://ainewscycle.com/daily-ai-cloud-intelligence-brief-2026-09-09"
+      ],
+      "tags": [
+        "网络安全",
+        "联署",
+        "行业治理"
+      ]
+    },
+    {
+      "title": "AWS 与高通扩大 AI 芯片合作",
+      "summary": "AWS 将采用高通芯片做 AI 推理，高通则使用 Bedrock 设计自有芯片，被视为推理侧减少对传统 GPU 依赖的信号。",
+      "source": "AI NewsCycle",
+      "source_urls": [
+        "https://ainewscycle.com/daily-ai-cloud-intelligence-brief-2026-09-09"
+      ],
+      "tags": [
+        "AWS",
+        "高通",
+        "AI芯片"
+      ]
+    },
+    {
+      "title": "AWS Lambda 最大执行时长提升至 90 分钟",
+      "summary": "从短时任务扩展到可原生运行长时间模型微调与复杂批处理，无需迁移到 ECS 或 EKS。",
+      "source": "AI NewsCycle",
+      "source_urls": [
+        "https://ainewscycle.com/daily-ai-cloud-intelligence-brief-2026-09-09"
+      ],
+      "tags": [
+        "AWS",
+        "Serverless",
+        "长任务"
+      ]
+    },
+    {
+      "title": "微软 Copilot 在 SharePoint 中新增可复用个人技能",
+      "summary": "9 月更新允许用户创建可跨 SharePoint 站点与 OneDrive 复用的技能，并提供评估工具用于打磨这些技能。",
+      "source": "Daily Tech Reader",
+      "source_urls": [
+        "https://www.dailytechreader.com/2026/09/ai-news_01411761071.html"
+      ],
+      "tags": [
+        "微软",
+        "Copilot",
+        "技能复用"
+      ]
+    }
+  ]
+}

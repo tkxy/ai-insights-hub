@@ -1,0 +1,232 @@
+{
+  "date": "2026-09-12",
+  "generated_at": "2026-09-14T08:45:00+08:00",
+  "daily_summary": "9 月 12 日的主线是「主动踩刹车」。Anthropic CEO Dario Amodei 发表《We Must Pace the Frontier》，主张前沿实验室应刻意放慢能力推进让安全工作跟上，并单方面承诺第一步——给第三方评估者永久性的员工级访问权限；数小时后 Sam Altman 表示 OpenAI 会「做同样的事」，称独立评估者访问是个好主意。Hugging Face 随即发起 Open Alignment Initiative 并申请加入 Anthropic 的常驻评估者计划。产品侧，微软确认 xAI 的 Grok 模型可在 Copilot 中直接选用，DeepSeek App 开始灰度测试语音对话并新增四种朗读音色；蚂蚁在外滩大会发布 APASS 智能体信任基建与 HOP 3.0。资本侧英伟达洽谈以最高 100 亿美元做 Anthropic IPO 的基石投资者。对输入法而言，这一天的关键词是「可核查的克制」——行业正在把「愿意被检查」当成信用，产品侧对应的就是把 AI 的作用边界明写出来。",
+  "design_insights": [
+    {
+      "title": "行业开始把「可被外部检查」当作信用，产品需要等价物",
+      "summary": "Amodei 9 月 12 日发表《We Must Pace the Frontier》，提出三步计划，第一步是给第三方评估者永久性、员工级的访问权限，Anthropic 单方面承诺执行；数小时后 Altman 表示 OpenAI 会跟进；Hugging Face 随即申请加入该计划。",
+      "implication": "输入法可以做一份「AI 能力说明书」：逐条列出每个 AI 功能会读取什么、在哪里处理、保留多久、如何关闭，放在设置页一级入口而非隐私政策里。这是把「愿意被检查」翻译成产品语言——用户不需要读懂技术，但需要看到边界被写下来。",
+      "sources": [
+        "AI Briefing",
+        "Anthropic"
+      ],
+      "source_urls": [
+        "https://aibriefing.dev/",
+        "https://headsupai.io/ai-news-and-updates/this-month"
+      ],
+      "tags": [
+        "可核查性",
+        "能力说明",
+        "信任设计"
+      ]
+    },
+    {
+      "title": "模型可选进入 Copilot，「换模型」正在变成用户可见的开关",
+      "summary": "微软 CEO 纳德拉宣布 xAI 的 Grok 模型现已可在 Microsoft Copilot 中直接选用，用户可把请求路由到 Grok 而非微软默认模型；面向 Microsoft Frontier 计划客户先在 Word、Excel、PowerPoint 中推出。",
+      "implication": "「用哪个模型」正从后台决策变成前台选项。输入法不必暴露模型名（对普通用户无意义），但应该暴露等价的体验档位：快速档（端侧、低延迟、无网可用）与精修档（云端、更强整理）。让用户自己选，而不是替他们判断。",
+      "sources": [
+        "AI Briefing",
+        "HeadsUpAI"
+      ],
+      "source_urls": [
+        "https://aibriefing.dev/",
+        "https://headsupai.io/ai-news-and-updates/this-month"
+      ],
+      "tags": [
+        "模型选择",
+        "体验分档",
+        "用户控制"
+      ]
+    },
+    {
+      "title": "DeepSeek 灰度语音对话并提供四种音色，语音人格化成为标配",
+      "summary": "9 月 12 日 DeepSeek App 开始灰度测试语音对话，测试用户在右上角可见喇叭按钮，设置页新增「朗读音色」选项，提供四种音色可选。",
+      "implication": "语音输出的音色选择正在从增值功能变成基础配置。输入法若提供朗读/回听能力（例如口述后回听确认），应至少提供 2-3 种音色与语速调节，并把「回听确认」做成长文口述的默认步骤——听一遍比读一遍更容易发现口误残留。",
+      "sources": [
+        "每日经济新闻",
+        "砚数 AI 日报"
+      ],
+      "source_urls": [
+        "https://www.163.com/dy/article/L6OCHT0S0511D0T2.html"
+      ],
+      "tags": [
+        "语音输出",
+        "音色选择",
+        "回听确认"
+      ]
+    },
+    {
+      "title": "智能体信任基建成为独立赛道，可控性先于能力",
+      "summary": "蚂蚁集团 9 月 12 日在外滩大会发布 APASS 智能体信任基建、HOP 3.0 框架及百灵 2.0 落地进展，主题聚焦智能体的可信与可控。",
+      "implication": "在输入法里，「可控」的最小实现是三件事：AI 建议永不自动替换已输入内容、每次 AI 介入都有可见痕迹（一个可点开的小标记）、以及一键回退到介入前的状态。这三条应写进 AI 功能的设计准入标准。",
+      "sources": [
+        "稀土掘金 AI 日报"
+      ],
+      "source_urls": [
+        "https://www.163.com/dy/article/L6OCHT0S0511D0T2.html"
+      ],
+      "tags": [
+        "可控性",
+        "设计准入",
+        "痕迹可见"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "AI 能力说明书作为设置页一级入口",
+      "pain_point": "用户不知道输入法的 AI 功能到底读取了什么、数据去了哪、怎么关，只能凭感觉判断要不要开启。",
+      "opportunity": "在设置页一级入口提供逐条说明：读取范围、处理位置（端侧/云端）、保留时长、关闭方式，用短句与图标呈现而非法务文本。",
+      "priority": "high",
+      "evidence": "Amodei 提出常驻第三方评估者并被 OpenAI、Hugging Face 跟进，行业正把「可被检查」制度化。"
+    },
+    {
+      "title": "快速档与精修档的显式体验分层",
+      "pain_point": "统一的 AI 处理策略无法同时满足「秒出结果」和「整理得更好」两类期待，用户只能默默忍受。",
+      "opportunity": "提供快速档（端侧、低延迟、无网可用）与精修档（云端、更强整理）两个显式选项，记住用户在不同 App 下的选择。",
+      "priority": "medium",
+      "evidence": "微软在 Copilot 中开放 Grok 模型选择，模型/档位选择正从后台决策变为前台选项。"
+    },
+    {
+      "title": "长文口述的回听确认环节",
+      "pain_point": "口述长段落后用户直接发送，事后才发现残留口误或整理偏差，而通读文字很难察觉语义层面的错误。",
+      "opportunity": "为超过一定长度的口述结果提供一键回听（含音色与语速选择），把回听设为长文口述的默认建议步骤。",
+      "priority": "medium",
+      "evidence": "DeepSeek App 灰度语音对话并提供四种朗读音色，语音输出人格化正在成为标配能力。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Amodei 发表《We Must Pace the Frontier》，Altman 承诺跟进",
+      "summary": "Amodei 主张前沿实验室刻意放慢能力推进让安全工作跟上，第一步是给第三方评估者永久员工级访问权限；数小时后 Altman 表示 OpenAI 会做同样的事。该文在 Hacker News 获 550 分、784 条评论。",
+      "source": "AI Briefing",
+      "source_urls": [
+        "https://aibriefing.dev/"
+      ],
+      "tags": [
+        "Anthropic",
+        "OpenAI",
+        "AI治理"
+      ]
+    },
+    {
+      "title": "Hugging Face 发起 Open Alignment Initiative",
+      "summary": "由 Thomas Wolf 牵头提升 AI 安全透明度，并申请加入 Anthropic 的常驻评估者计划。",
+      "source": "HeadsUpAI",
+      "source_urls": [
+        "https://headsupai.io/ai-news-and-updates/this-month"
+      ],
+      "tags": [
+        "HuggingFace",
+        "对齐",
+        "开放倡议"
+      ]
+    },
+    {
+      "title": "微软确认 xAI 的 Grok 模型可在 Copilot 中选用",
+      "summary": "纳德拉宣布用户可把请求路由到 Grok 而非微软默认模型，面向 Microsoft Frontier 计划客户先在 Word、Excel、PowerPoint 中推出。",
+      "source": "AI Briefing",
+      "source_urls": [
+        "https://aibriefing.dev/",
+        "https://headsupai.io/ai-news-and-updates/this-month"
+      ],
+      "tags": [
+        "微软",
+        "xAI",
+        "模型选择"
+      ]
+    },
+    {
+      "title": "DeepSeek App 灰度测试语音对话，新增四种音色",
+      "summary": "测试用户在右上角可见喇叭按钮，设置页新增「朗读音色」选项提供四种音色可选。",
+      "source": "每日经济新闻",
+      "source_urls": [
+        "https://www.163.com/dy/article/L6OCHT0S0511D0T2.html"
+      ],
+      "tags": [
+        "DeepSeek",
+        "语音对话",
+        "灰度测试"
+      ]
+    },
+    {
+      "title": "蚂蚁集团在外滩大会密集发布智能体信任基建",
+      "summary": "发布 APASS 智能体信任基建、HOP 3.0 框架及百灵 2.0 落地进展，聚焦智能体的可信与可控。",
+      "source": "稀土掘金 AI 日报",
+      "source_urls": [
+        "https://www.163.com/dy/article/L6OCHT0S0511D0T2.html"
+      ],
+      "tags": [
+        "蚂蚁集团",
+        "智能体",
+        "可信AI"
+      ]
+    },
+    {
+      "title": "英伟达洽谈以最高 100 亿美元参与 Anthropic IPO",
+      "summary": "路透社报道英伟达正与 Anthropic 洽谈以基石投资者身份入局；Anthropic 计划融资至多 1000 亿美元、估值约 2 万亿美元。",
+      "source": "路透社/IT之家",
+      "source_urls": [
+        "https://www.163.com/dy/article/L6OCHT0S0511D0T2.html"
+      ],
+      "tags": [
+        "英伟达",
+        "Anthropic",
+        "IPO"
+      ]
+    },
+    {
+      "title": "Cerebras 上线阿里 Qwen3.8-27B",
+      "summary": "该稠密开源模型在 Cerebras Cloud 可用，Artificial Analysis 智能指数得分 34，Cerebras 称与 GPT-5.6 Luna、DeepSeek V4 Pro、Claude Sonnet 4.6 相当。",
+      "source": "HeadsUpAI",
+      "source_urls": [
+        "https://headsupai.io/ai-news-and-updates/this-month"
+      ],
+      "tags": [
+        "Cerebras",
+        "Qwen",
+        "推理加速"
+      ]
+    },
+    {
+      "title": "Andrew Ng 更新 AI 工程技能图谱，提出塑造构建的四项能力",
+      "summary": "包括驱动构建循环、做产品决策、沟通与领导、高能动性所有权，强调 AI 工程实践正从实现规格转向主动决定做什么。",
+      "source": "HeadsUpAI",
+      "source_urls": [
+        "https://headsupai.io/ai-news-and-updates/this-month"
+      ],
+      "tags": [
+        "AndrewNg",
+        "AI工程",
+        "方法论"
+      ]
+    },
+    {
+      "title": "小鹏 IRON 人形机器人在 IFA 柏林宣布量产",
+      "summary": "量产版高约 1.7 米、重约 65 公斤，全身 76 自由度、单手 21 自由度，目标场景为扫地、叠衣等家务。",
+      "source": "FutureX Physical AI Daily",
+      "source_urls": [
+        "https://www.163.com/dy/article/L6OCHT0S0511D0T2.html"
+      ],
+      "tags": [
+        "具身智能",
+        "小鹏",
+        "量产"
+      ]
+    },
+    {
+      "title": "Skild AI 联合英伟达发布 S1 机器人通用基础模型",
+      "summary": "主打仅凭单段人类视频演示即可学会未见过的长程操作任务，瞄准工业制造与仓储产线频繁变更流程的重编程难题。",
+      "source": "稀土掘金 AI 日报",
+      "source_urls": [
+        "https://www.163.com/dy/article/L6OCHT0S0511D0T2.html"
+      ],
+      "tags": [
+        "具身智能",
+        "英伟达",
+        "基础模型"
+      ]
+    }
+  ]
+}

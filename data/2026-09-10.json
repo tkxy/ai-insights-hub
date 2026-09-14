@@ -1,0 +1,321 @@
+{
+  "date": "2026-09-10",
+  "generated_at": "2026-09-14T08:45:00+08:00",
+  "daily_summary": "9 月 10 日是本周技术密度最高的一天。OpenAI 同日推出两个 API：Agents API 公测版把 Codex 背后的智能体 harness 直接开放（托管上下文压缩、工具搜索、子智能体编排，默认最多 6 个并发子智能体，外网访问默认开启），GPT-Live-1 全双工语音模型正式进入 API，按 0.05 美元/分钟计费、可边听边说、支持打断处理并把推理委派给后端模型。国内侧 DeepSeek 发布 V4.1-Flash，全新 Causal-Encoder-Decoder 架构，KV Cache 对 HBM 需求降至 1/4、SSD 降至 1/8，上下文扩到 1M，闲时缓存命中输入 0.02 元/百万 token。同日 Anthropic 发布 154 页威胁情报报告，核心结论是滥用正从「提示级协助」转向「智能体级执行」。对输入法的含义很直接：全双工语音把「说完等一下」的交互范式彻底作废，而推理成本的塌陷让「每个候选词背后都跑一次模型」在经济上第一次成立。",
+  "design_insights": [
+    {
+      "title": "全双工语音模型让「说完再等」的交互范式正式过时",
+      "summary": "GPT-Live-1 于 9 月 10 日进入 API，可同时处理输入与输出音频，支持打断处理、转写、轮次检测与电话场景，OpenAI 称在与 Speak 的早期评测中把打断问题减少近 80%，前端语音层定价 0.05 美元/分钟。",
+      "implication": "输入法语音面板应从「按住-说完-松手-等待-出结果」改为「边说边出、随时可打断修正」。具体做法：说话过程中实时上屏灰色草稿，说完后 300ms 内替换为整理稿，用户在任何时刻插话都立即接管当前句而不是重来。",
+      "sources": [
+        "Brocker",
+        "Zinbiel Tech Blog"
+      ],
+      "source_urls": [
+        "https://www.brocker.org/openai-launches-gpt-live-1-api-full-duplex-voice",
+        "https://zinbiel.net/daily-ai-engineering-brief-2026-09-12"
+      ],
+      "tags": [
+        "全双工",
+        "语音交互",
+        "实时反馈"
+      ]
+    },
+    {
+      "title": "推理成本塌陷，让「每次输入都过一遍模型」在经济上成立",
+      "summary": "DeepSeek V4.1-Flash 于 9 月 10 日发布，552B 参数 MoE，输入激活仅 8B、输出激活 16B，KV Cache 对 HBM 需求降至 V4-Flash 的 1/4、SSD 降至 1/8，闲时缓存命中输入低至 0.02 元/百万 token，较此前降价约 60%。",
+      "implication": "过去「大模型纠错」只能在用户显式点击时触发，成本约束消失后可以做成常驻能力：输入过程中后台持续评估当前句的歧义与错字风险，只在置信度超过阈值时才在候选区冒出一条建议。关键是把成本省下来的部分花在「更克制的打扰」上，而不是更频繁地弹提示。",
+      "sources": [
+        "36氪/智东西",
+        "AIGC日报"
+      ],
+      "source_urls": [
+        "https://tianqi.csdn.net/6aa4a0fe61de6467390ea87e.html",
+        "https://weibo.com/7905315703/5341879371825552"
+      ],
+      "tags": [
+        "推理成本",
+        "常驻能力",
+        "克制打扰"
+      ]
+    },
+    {
+      "title": "Agents API 把「权限默认值」变成设计问题而非配置问题",
+      "summary": "Agents API 公测文档显示：托管沙箱的外网访问默认开启（受限模式需手动配置 1-100 个精确主机名），子智能体默认并发 6 个且共享协调者文件，删除会话不会停止自托管环境也不发送删除 webhook。",
+      "implication": "默认值就是绝大多数用户的最终状态。输入法所有涉及外部数据的 AI 能力必须默认最小权限：默认不读剪贴板、默认不读屏幕、默认不联网；每一项开启都要有独立开关和明确的收益说明，而不是打包在一个「智能服务」总开关里。",
+      "sources": [
+        "Progressive Robot",
+        "ASAPAI"
+      ],
+      "source_urls": [
+        "https://www.progressiverobot.com/2026/09/11/openai-gpt-live-1-api-agents-api-public-beta/",
+        "https://asapai.co.kr/en/openai-agents-api-codex-harness"
+      ],
+      "tags": [
+        "默认权限",
+        "最小权限",
+        "安全设计"
+      ]
+    },
+    {
+      "title": "Anthropic 威胁报告：滥用从「提示级」升级到「智能体级执行」",
+      "summary": "Anthropic 发布 154 页威胁情报报告，覆盖 2025 年 12 月至 2026 年 8 月阻断的滥用，涉及网络行动、诈骗、监控、生物滥用与模型蒸馏七类；核心结论是滥用正从提示级协助转向由模型直接执行操作。",
+      "implication": "输入法一旦具备「代发送」「代填表」「代回复」能力，就进入了同一风险面。任何会产生外部副作用的动作必须强制二次确认，且确认界面要显示将要发送的完整最终文本，而不是摘要——用户需要看到的是「实际会发出去的那句话」。",
+      "sources": [
+        "AI Briefing",
+        "Anthropic"
+      ],
+      "source_urls": [
+        "https://aibriefing.dev/",
+        "https://zinbiel.net/daily-ai-engineering-brief-2026-09-12"
+      ],
+      "tags": [
+        "AI安全",
+        "副作用确认",
+        "风险面"
+      ]
+    },
+    {
+      "title": "语音层与推理层解耦，为输入法提供了成本可调的架构范式",
+      "summary": "GPT-Live-1 只负责前端语音层，推理与工具调用委派给后端模型（可选 Astra 做复杂推理、Luna 做高并发任务），开发者可自由更换后端。",
+      "implication": "输入法可以采用相同架构：轻量端侧模型负责实时上屏与基础纠错，云端模型只在「整理成稿/翻译/改写风格」时被调用，并按场景选择不同档位的后端。这样既能保证首字延迟，又能按用户付费档位调整质量，而不用改前端交互。",
+      "sources": [
+        "Brocker",
+        "ASAPAI"
+      ],
+      "source_urls": [
+        "https://www.brocker.org/openai-launches-gpt-live-1-api-full-duplex-voice",
+        "https://asapai.co.kr/en/openai-agents-api-codex-harness"
+      ],
+      "tags": [
+        "架构解耦",
+        "端云分层",
+        "成本控制"
+      ]
+    },
+    {
+      "title": "ChatGPT Work 的 Data Agent 显示「零代码接数据」成为新基线",
+      "summary": "OpenAI 在 ChatGPT Work 上线 Data Agent，用户无需编写 SQL 即可用自然语言连接企业授权数据与文档、自动生成分析与交互式 Dashboard，内部版本已服务超 3500 名员工、覆盖超 600PB 数据与约 7 万个数据集。",
+      "implication": "自然语言作为唯一操作界面的门槛正在快速降低。输入法的 AI 设置项也应该支持自然语言配置——例如用户直接说「以后工作群里不要自动加表情」，系统把它翻译成具体的偏好设置，而不是让用户在层层设置页里找开关。",
+      "sources": [
+        "Coze 资讯",
+        "AIGC日报"
+      ],
+      "source_urls": [
+        "https://weibo.com/7905315703/5341879371825552",
+        "https://tianqi.csdn.net/6aa4a0fe61de6467390ea87e.html"
+      ],
+      "tags": [
+        "自然语言界面",
+        "零代码",
+        "偏好设置"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "流式语音的实时草稿与即时打断",
+      "pain_point": "现有语音输入必须说完整段再出结果，中途想改只能作废重说，长句场景心理负担极大。",
+      "opportunity": "实现边说边上屏灰色草稿、说完 300ms 内替换为整理稿、任意时刻插话即接管当前句的三段式交互。",
+      "priority": "high",
+      "evidence": "GPT-Live-1 全双工模型 9 月 10 日进入 API，OpenAI 称打断问题减少近 80%，全双工成为语音交互新基线。"
+    },
+    {
+      "title": "常驻式低打扰纠错",
+      "pain_point": "用户打完长句才发现前面有错字，回删重来成本高；但频繁弹提示又会严重干扰输入节奏。",
+      "opportunity": "后台常驻评估当前句的歧义与错字风险，仅在高置信度时于候选区冒出一条不遮挡的建议，且永不自动替换。",
+      "priority": "high",
+      "evidence": "DeepSeek V4.1-Flash 把闲时缓存命中输入价格压到 0.02 元/百万 token，常驻模型评估的边际成本已可忽略。"
+    },
+    {
+      "title": "外部副作用动作的最终文本确认",
+      "pain_point": "AI 代写/代发类能力一旦出错，后果不可撤销，而摘要式确认无法让用户发现问题。",
+      "opportunity": "任何会产生外部副作用的动作，确认界面必须展示完整最终文本（而非摘要），并默认不勾选「下次不再提醒」。",
+      "priority": "high",
+      "evidence": "Anthropic 154 页威胁报告指出滥用正从提示级协助转向智能体级执行；Agents API 多项默认值偏宽松。"
+    },
+    {
+      "title": "按档位切换后端模型的质量策略",
+      "pain_point": "统一使用高档模型成本不可控，统一使用低档模型长文整理质量不达标。",
+      "opportunity": "前端交互保持一致，后端按场景与用户档位路由不同模型：短句纠错走端侧、长文整理走中档、专业翻译走高档。",
+      "priority": "medium",
+      "evidence": "GPT-Live-1 采用语音层与推理层解耦架构，开发者可自由更换后端模型（Astra/Luna 等）。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "OpenAI 推出 Agents API 公开测试版",
+      "summary": "基于 Codex harness，支持持久会话、自动上下文压缩、MCP 服务器、并行子智能体与多种沙箱环境，无额外服务费，仅按 token 与工具调用计费，目前仅限美国、不支持零数据留存。",
+      "source": "Zinbiel Tech Blog",
+      "source_urls": [
+        "https://zinbiel.net/daily-ai-engineering-brief-2026-09-12",
+        "https://asapai.co.kr/en/openai-agents-api-codex-harness"
+      ],
+      "tags": [
+        "OpenAI",
+        "Agents API",
+        "智能体"
+      ]
+    },
+    {
+      "title": "OpenAI 发布全双工语音模型 GPT-Live-1 API",
+      "summary": "可同时收发音频，支持打断处理、轮次检测与电话场景，前端语音层 0.05 美元/分钟，推理委派后端模型；官方称 Full Duplex Bench 较上代提升约 30 个百分点。",
+      "source": "Brocker",
+      "source_urls": [
+        "https://www.brocker.org/openai-launches-gpt-live-1-api-full-duplex-voice"
+      ],
+      "tags": [
+        "OpenAI",
+        "全双工",
+        "语音API"
+      ]
+    },
+    {
+      "title": "DeepSeek 正式发布 V4.1-Flash",
+      "summary": "552B 参数 MoE，新 Causal-Encoder-Decoder 架构，输入激活 8B、输出激活 16B，上下文扩至 1M，KV Cache 对 HBM 需求降至 1/4、SSD 降至 1/8，多项 Agentic 基准超越 V4 Pro。",
+      "source": "36氪/智东西",
+      "source_urls": [
+        "https://tianqi.csdn.net/6aa4a0fe61de6467390ea87e.html",
+        "https://weibo.com/7905315703/5341879371825552"
+      ],
+      "tags": [
+        "DeepSeek",
+        "开源模型",
+        "推理成本"
+      ]
+    },
+    {
+      "title": "DeepSeek 大幅下调价格，V4 Pro 将于 9 月 14 日下线",
+      "summary": "新价格 9 月 10 日 12:00 生效，闲时缓存命中输入 0.02 元/百万 token（较此前降价 60%）、输出 4 元，仍采峰谷定价；腾讯 WorkBuddy、CodeBuddy 与 OpenCode 已全量接入。",
+      "source": "GEO 行业洞察日报",
+      "source_urls": [
+        "https://www.toutiao.com/a7684269778755748361",
+        "https://tianqi.csdn.net/6aa4a0fe61de6467390ea87e.html"
+      ],
+      "tags": [
+        "DeepSeek",
+        "定价",
+        "模型下线"
+      ]
+    },
+    {
+      "title": "Anthropic 发布 154 页威胁情报报告",
+      "summary": "覆盖 2025 年 12 月至 2026 年 8 月阻断的滥用，涉及网络行动、诈骗、监控、生物滥用、常规武器与非法蒸馏七类，并披露一起因测试配置错误导致 Claude 触及真实第三方系统的事件。",
+      "source": "AI Briefing",
+      "source_urls": [
+        "https://aibriefing.dev/"
+      ],
+      "tags": [
+        "Anthropic",
+        "AI安全",
+        "威胁情报"
+      ]
+    },
+    {
+      "title": "OpenAI 在 ChatGPT Work 上线 Data Agent",
+      "summary": "用户无需编写 SQL 即可用自然语言连接企业授权数据与文档，自动生成分析与交互式 Dashboard；内部版本已服务超 3500 名员工、覆盖超 600PB 数据。",
+      "source": "Coze 资讯",
+      "source_urls": [
+        "https://weibo.com/7905315703/5341879371825552"
+      ],
+      "tags": [
+        "OpenAI",
+        "数据智能体",
+        "企业AI"
+      ]
+    },
+    {
+      "title": "OpenAI 推出面向金融行业的 ChatGPT 版本",
+      "summary": "基于 GPT-6 Astra 推理引擎，接入 FactSet、LSEG、PitchBook 与标普数据，面向投行分析师与交易员做财报建模与数据复盘。",
+      "source": "AI Briefing",
+      "source_urls": [
+        "https://aibriefing.dev/",
+        "https://damodev.csdn.net/6aa3480448977663a5de965b.html"
+      ],
+      "tags": [
+        "OpenAI",
+        "垂直行业",
+        "金融AI"
+      ]
+    },
+    {
+      "title": "inclusionAI 发布 Ling-3.0-flash-VL",
+      "summary": "为 Ling-3.0-flash 增加原生图像与视频理解能力，124B 总参数、每 token 仅激活 5.5B，通过 VideoRoPE 支持最高 1M 上下文的长视频理解。",
+      "source": "AI Daily",
+      "source_urls": [
+        "https://www.ainewslog.com/blog/ai-daily-2026-09-08-zh",
+        "https://muhammad-ahmed.com/blog/ai-brief-a-quarter-of-the-cache"
+      ],
+      "tags": [
+        "开源多模态",
+        "长上下文"
+      ]
+    },
+    {
+      "title": "两篇量化研究论文同日登陆 arXiv",
+      "summary": "《Why Does Post-Training Quantization Work?》提出误差抵消解释，指出 NVFP4 下 8.3%-12.7% 的贪心下一 token 选择会翻转而基准仅移动 0.43 分；另一篇指出 MoE 模型在重复数据上比稠密模型更易过拟合。",
+      "source": "Muhammad Ahmed AI Brief",
+      "source_urls": [
+        "https://muhammad-ahmed.com/blog/ai-brief-a-quarter-of-the-cache"
+      ],
+      "tags": [
+        "模型量化",
+        "MoE",
+        "研究论文"
+      ]
+    },
+    {
+      "title": "GitHub 从所有 Copilot 界面移除 MAI-Code-1-Flash",
+      "summary": "变更日志显示 9 月 10 日当天下线，属于在运行中的编码智能体内部直接退役模型，而非提前公告的弃用流程。",
+      "source": "Muhammad Ahmed AI Brief",
+      "source_urls": [
+        "https://muhammad-ahmed.com/blog/ai-brief-a-quarter-of-the-cache"
+      ],
+      "tags": [
+        "GitHub",
+        "Copilot",
+        "模型退役"
+      ]
+    },
+    {
+      "title": "高德发布 3D 原生城市世界模型 ABot-Earth 0.7",
+      "summary": "支持城市三维空间实时 AI 解析，面向自动驾驶、城市仿真与数字孪生场景。",
+      "source": "DAMO 开发者矩阵",
+      "source_urls": [
+        "https://damodev.csdn.net/6aa3480448977663a5de965b.html"
+      ],
+      "tags": [
+        "世界模型",
+        "高德",
+        "空间智能"
+      ]
+    },
+    {
+      "title": "Mistral 宣布与 Cloudera 达成合作",
+      "summary": "面向主权化、气隙隔离的企业 AI 部署场景，配合其创纪录融资推进欧洲本地化落地。",
+      "source": "Muhammad Ahmed AI Brief",
+      "source_urls": [
+        "https://muhammad-ahmed.com/blog/ai-brief-a-quarter-of-the-cache",
+        "https://aibriefing.dev/"
+      ],
+      "tags": [
+        "Mistral",
+        "主权AI",
+        "企业部署"
+      ]
+    },
+    {
+      "title": "Google Research 发布 ToolGrad 框架",
+      "summary": "答案优先式工具调用数据集生成方案，单步 LLM 调用即可构建完整工具调用链路。",
+      "source": "DAMO 开发者矩阵",
+      "source_urls": [
+        "https://damodev.csdn.net/6aa3480448977663a5de965b.html"
+      ],
+      "tags": [
+        "Google",
+        "工具调用",
+        "数据合成"
+      ]
+    }
+  ]
+}

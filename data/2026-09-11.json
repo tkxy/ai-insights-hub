@@ -1,0 +1,279 @@
+{
+  "date": "2026-09-11",
+  "generated_at": "2026-09-14T08:45:00+08:00",
+  "daily_summary": "9 月 11 日豆包输入法官宣完成全端支持，iOS、Android、HarmonyOS、Windows、macOS 五端闭环，同时推出智能文字整理、超级互传、离线语音三项能力，并把个人词库与输入习惯做成跨端同步。官方定调很清楚：输入法竞争已从「词库够不够大」转向「语音准不准、跨端顺不顺、AI 能否替用户整理」。同日小红书把「问一问」并入「点点」、AI 升级为一级部门 Dots，主打「搜索即对话」；月之暗面 Kimi K2.8 Preview 全量上线，把百万上下文从 199 元档下放到 49 元起的全部付费档位；工信部印发「AI+软件」专项行动方案。QuestMobile 报告还指出 AI 手机问答的信源策略已明显分化。这一天对我们最刺眼的是：豆包把「五端同一个账号、词库自动跟随」讲成了基础能力，而这恰恰是传统输入法最该守住、却最容易做得半途而废的地方。",
+  "design_insights": [
+    {
+      "title": "豆包五端闭环：跨端一致性正在成为输入法的新地基",
+      "summary": "9 月 11 日豆包输入法官宣完成 iOS、Android、HarmonyOS、Windows、macOS 五端覆盖，同一账号下个人词库与输入习惯跨端同步，手机随手加的词电脑端也能调用；鸿蒙版 8 月 22 日开启尝鲜，尝鲜期至 9 月 21 日。",
+      "implication": "跨端同步不能只同步词库，要同步「输入人格」：常用短语、称呼习惯、标点风格、emoji 偏好、纠错豁免词。并且要让用户看得见——在设置页提供「我的输入习惯」页面，展示系统学到了什么、允许逐条删除，否则同步越强用户越不安。",
+      "sources": [
+        "ChooseAI",
+        "微博@豆包官方"
+      ],
+      "source_urls": [
+        "https://www.chooseai.net/ai-news/detail/6745",
+        "https://weibo.com/1737694250/5341922638955058"
+      ],
+      "tags": [
+        "跨端同步",
+        "输入人格",
+        "可解释性"
+      ]
+    },
+    {
+      "title": "「智能文字整理」被做成两个入口，是值得抄的交互细节",
+      "summary": "豆包的智能文字整理提供两条路径：语音识别完成后工具栏直接出现整理按钮；以及长按选中已有文字后通过 AI 菜单触发整理，可选润色、精简、纠错、排版四种模式。",
+      "implication": "AI 能力必须同时覆盖「刚产生的内容」和「已存在的内容」两个时机。只做前者会让用户在编辑旧草稿时无从下手，只做后者会让语音用户多一次选择操作。两个入口共用同一套模式选项（润色/精简/纠错/排版），降低心智负担。",
+      "sources": [
+        "ChooseAI",
+        "今日头条"
+      ],
+      "source_urls": [
+        "https://www.chooseai.net/ai-news/detail/6745",
+        "https://www.toutiao.com/article/7684120841453306422/"
+      ],
+      "tags": [
+        "入口设计",
+        "文字整理",
+        "心智负担"
+      ]
+    },
+    {
+      "title": "超级互传把输入法做成跨设备剪贴板，扩展了输入法的边界",
+      "summary": "豆包超级互传支持图片与文字在多设备间互传，一台设备上复制的内容可在另一台设备直接粘贴，官方强调「减少中转步骤」——即不需要通过微信文件传输助手中转。",
+      "implication": "输入法是唯一在所有 App 里都在场的组件，天然适合承载跨设备剪贴板。这个能力的设计关键是「无感」：不需要打开任何界面，复制后在另一台设备的候选区顶部自动出现一条可粘贴项，超时自动消失，且内容不落盘。",
+      "sources": [
+        "微博@豆包官方",
+        "ChooseAI"
+      ],
+      "source_urls": [
+        "https://weibo.com/1737694250/5341922638955058",
+        "https://www.chooseai.net/ai-news/detail/6745"
+      ],
+      "tags": [
+        "跨设备",
+        "剪贴板",
+        "产品边界"
+      ]
+    },
+    {
+      "title": "「搜索即对话」改变信息获取路径，输入框的角色被重新定义",
+      "summary": "小红书 2026 年将 AI 升级为一级部门 Dots，9 月 3 日把「问一问」与「点点」合并统一为「点点」，主打「搜索即对话」，以站内真实笔记为差异化底座做「有人文气质的生活助手」。",
+      "implication": "当搜索框变成对话框，用户输入的长度和结构都会变（从关键词变成完整问句）。输入法要为长问句优化：长句联想、口语转书面、以及「把这段话变成一个问题」的快捷改写，而不是继续按关键词检索的假设做候选排序。",
+      "sources": [
+        "36氪",
+        "GEO 行业洞察日报"
+      ],
+      "source_urls": [
+        "https://www.toutiao.com/a7684269778755748361"
+      ],
+      "tags": [
+        "搜索对话化",
+        "长句输入",
+        "候选排序"
+      ]
+    },
+    {
+      "title": "QuestMobile：AI 问答信源策略分化，暴露生态内循环的体验风险",
+      "summary": "QuestMobile《2026 年智能手机市场研究报告》指出，AI 手机问答的信源策略已明显分化：豆包强依赖抖音生态内循环，千问的信源结构相对多元均衡。",
+      "implication": "输入法若接入 AI 问答或内容推荐，必须把信源多样性当作体验指标而非技术细节。建议在 AI 回答下方固定展示来源条（至少 2 个不同来源域名），让用户一眼看出这条回答是否只来自单一生态，这既是体验也是长期信任。",
+      "sources": [
+        "QuestMobile",
+        "GEO 行业洞察日报"
+      ],
+      "source_urls": [
+        "https://www.toutiao.com/a7684269778755748361"
+      ],
+      "tags": [
+        "信源多样性",
+        "内容生态",
+        "可信度"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "「我的输入习惯」可视化与逐条可删",
+      "pain_point": "跨端同步越强，用户对「系统到底记住了我什么」越不安，而现有输入法几乎不提供查看入口。",
+      "opportunity": "新增「我的输入习惯」页面，展示已学习的常用短语、称呼、标点风格、纠错豁免词，支持逐条删除与一键清空。",
+      "priority": "high",
+      "evidence": "豆包 9 月 11 日宣布个人词库与输入习惯跨五端同步；叭哥说把「输入历史仅存本地、可查可删」写进官网首屏。"
+    },
+    {
+      "title": "文字整理的双入口与统一模式",
+      "pain_point": "语音产出的新内容与输入框里已有的旧草稿，用户需要用完全不同的路径才能调用 AI 整理。",
+      "opportunity": "为两个时机提供入口并共用润色/精简/纠错/排版四种模式，模式选项位置与文案保持一致。",
+      "priority": "medium",
+      "evidence": "豆包智能文字整理提供语音后工具栏与长按选中两条路径，均可选润色、精简、纠错、排版。"
+    },
+    {
+      "title": "面向长问句的候选与改写策略",
+      "pain_point": "搜索对话化后用户输入从关键词变为完整问句，现有候选排序仍按短词高频假设，长句体验明显下滑。",
+      "opportunity": "为长句场景单独训练候选策略，并提供「口语转书面」「把这段话变成一个问题」的快捷改写入口。",
+      "priority": "medium",
+      "evidence": "小红书把问一问并入点点主打「搜索即对话」；Kimi K2.8 把百万上下文下放全付费档，长文本交互门槛持续降低。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "豆包输入法宣布完成全端支持，覆盖五大平台",
+      "summary": "9 月 11 日官宣覆盖 iOS、Android、HarmonyOS、Windows、macOS，同步带来智能文字整理、多设备内容互传、离线语音输入等能力，个人词库随账号跨端同步。",
+      "source": "微博@豆包官方",
+      "source_urls": [
+        "https://weibo.com/1737694250/5341922638955058",
+        "https://www.chooseai.net/ai-news/detail/6745"
+      ],
+      "tags": [
+        "豆包输入法",
+        "跨端",
+        "AI输入"
+      ]
+    },
+    {
+      "title": "鸿蒙版豆包输入法仍处尝鲜期，9 月 21 日到期",
+      "summary": "鸿蒙版 8 月 22 日在 AppGallery 开启尝鲜，版本号 0.9.1；官方长图将其与 Windows、macOS 并列标注 NEW，但截至 9 月 11 日无独立信息显示尝鲜期结束。",
+      "source": "ChooseAI",
+      "source_urls": [
+        "https://www.chooseai.net/ai-news/detail/6745"
+      ],
+      "tags": [
+        "鸿蒙",
+        "豆包输入法",
+        "版本状态"
+      ]
+    },
+    {
+      "title": "小红书 AI 升级为一级部门 Dots，「问一问」并入「点点」",
+      "summary": "Dots 下设模型研发、基础设施、工程、产品四个部门；9 月 3 日两款产品合并统一为「点点」，主打「搜索即对话」，以站内真实笔记为差异化底座。",
+      "source": "36氪",
+      "source_urls": [
+        "https://www.toutiao.com/a7684269778755748361"
+      ],
+      "tags": [
+        "小红书",
+        "AI搜索",
+        "组织调整"
+      ]
+    },
+    {
+      "title": "月之暗面 Kimi K2.8 Preview 全量上线，百万上下文下放全付费档",
+      "summary": "在 Kimi Code 与 Kimi Work 两条产品线全量上线，支持 low/high/max 三档推理强度并具备图像与视频输入；原仅 199 元/月以上可用的 100 万 token 上下文下放至 49 元起全部付费档位。",
+      "source": "读懂AI时代/ITBear",
+      "source_urls": [
+        "https://damodev.csdn.net/6aa3480448977663a5de965b.html"
+      ],
+      "tags": [
+        "Kimi",
+        "长上下文",
+        "商业化"
+      ]
+    },
+    {
+      "title": "工信部印发「AI+软件」专项行动方案",
+      "summary": "推动人工智能与软件产业深度融合，成为国内政策侧当日重点动向。",
+      "source": "AI 资讯日报",
+      "source_urls": [
+        "https://tianqi.csdn.net/6aa4a0fe61de6467390ea87e.html"
+      ],
+      "tags": [
+        "政策",
+        "工信部",
+        "AI+"
+      ]
+    },
+    {
+      "title": "商务部回应美方 AI 蒸馏指控",
+      "summary": "针对 Anthropic 报告点名多家中国实验室蒸馏 Claude 一事，中国商务部指出美方存在双重标准。",
+      "source": "AIGC日报",
+      "source_urls": [
+        "https://weibo.com/7905315703/5341879371825552",
+        "https://tianqi.csdn.net/6aa4a0fe61de6467390ea87e.html"
+      ],
+      "tags": [
+        "中美",
+        "模型蒸馏",
+        "政策回应"
+      ]
+    },
+    {
+      "title": "OpenAI 暂停 200 美元 ChatGPT Pro 套餐新订阅",
+      "summary": "因 GPT-6 Astra 上线后需求激增导致基础设施承压，现有用户不受影响。",
+      "source": "AIGC日报",
+      "source_urls": [
+        "https://weibo.com/7905315703/5341879371825552",
+        "https://aibriefing.dev/"
+      ],
+      "tags": [
+        "OpenAI",
+        "容量限制",
+        "订阅"
+      ]
+    },
+    {
+      "title": "Sakana AI 发布 Fugu Max 与 Fugu Ultra v2",
+      "summary": "多智能体编排系统的两种配置：Fugu Max 把任务路由到最精简的可胜任模型，成本降低 2 至 6 倍；Fugu Ultra v2 在 DeepSWE 与 Chartography 等基准上取得高分。",
+      "source": "HeadsUpAI",
+      "source_urls": [
+        "https://headsupai.io/ai-news-and-updates/this-month"
+      ],
+      "tags": [
+        "Sakana",
+        "模型路由",
+        "多智能体"
+      ]
+    },
+    {
+      "title": "彩云科技两次刷新 NanoGPT Speedrun 世界纪录",
+      "summary": "将达标训练时间压缩至 1 分 16 秒，相关代码已并入官方开源仓库，基于 DCMHA 与 MUDD 两项原创架构创新。",
+      "source": "36氪",
+      "source_urls": [
+        "https://36kr.com/newsflashes/3978747325316104"
+      ],
+      "tags": [
+        "彩云科技",
+        "训练效率",
+        "开源"
+      ]
+    },
+    {
+      "title": "月之暗面启动 Kimi 企业合作伙伴「登月计划」",
+      "summary": "在国内落地 FDE 前沿部署工程师模式，联合中软国际、金山云等伙伴推进大模型嵌入企业业务系统。",
+      "source": "DAMO 开发者矩阵",
+      "source_urls": [
+        "https://damodev.csdn.net/6aa3480448977663a5de965b.html"
+      ],
+      "tags": [
+        "Kimi",
+        "企业落地",
+        "生态"
+      ]
+    },
+    {
+      "title": "Meta 资深 AI 研究员 Andrew Tulloch 离职加入 Anthropic",
+      "summary": "将参与 Claude 系列模型研发，成为本周人才流动的代表性事件。",
+      "source": "DAMO 开发者矩阵",
+      "source_urls": [
+        "https://damodev.csdn.net/6aa3480448977663a5de965b.html"
+      ],
+      "tags": [
+        "人才流动",
+        "Meta",
+        "Anthropic"
+      ]
+    },
+    {
+      "title": "QuestMobile：AI 手机问答信源策略出现明显分化",
+      "summary": "《2026 年智能手机市场研究报告》指出豆包强依赖抖音生态内循环，千问的信源结构则相对多元均衡。",
+      "source": "QuestMobile",
+      "source_urls": [
+        "https://www.toutiao.com/a7684269778755748361"
+      ],
+      "tags": [
+        "QuestMobile",
+        "信源",
+        "AI手机"
+      ]
+    }
+  ]
+}

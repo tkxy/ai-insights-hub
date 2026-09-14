@@ -1,0 +1,208 @@
+{
+  "date": "2026-09-07",
+  "generated_at": "2026-09-14T08:45:00+08:00",
+  "daily_summary": "9 月 7 日是 GPT-6 Astra 发布后的第一个工作日，行业情绪集中在「能力跑在治理前面」这条主线上。英伟达 CEO 黄仁勋 9 月 6 日抛出的「AGI 已经到来」在这天持续发酵，ARC Prize 联合创始人公开反驳，双方争论的焦点不是分数本身，而是基准是否还能代表真实能力——Artificial Analysis 同日把 Terminal-Bench 2.1 从指数中下架，等于承认旧尺子失效。与此同时 OpenAI 公开了内部编码智能体的使用数据：研究员人均日均推理花费在 8 月中旬已超过 600 美元，任务委派层级明显上移。另一条暗线是英伟达洽购 Hugging Face 的传闻，开源模型分发入口的归属被重新定价。对输入法而言，这一天的启示不在模型榜单，而在「代表性度量」和「委派边界」：当模型能力快速漂移，输入法必须建立自己的真实场景评测集，并明确哪些改写可以自动生效、哪些必须回到用户手上确认。",
+  "design_insights": [
+    {
+      "title": "基准失效提醒输入法必须自建真实场景评测集",
+      "summary": "Artificial Analysis 于 9 月 7 日将 Terminal-Bench 2.1 从其指数中下架，导致 DeepSeek 等厂商最强的 Agentic 宣称数字暂时失去独立外部校验。",
+      "implication": "输入法的 AI 能力（纠错、联想、语音整理）不能只看模型供应商给的通用基准。应建立自己的高频场景评测集：地铁弱网口述、中英混说、方言、专业术语、打断改口，每个场景固定 200-500 条真实语料做回归，任何模型或 prompt 变更必须先跑过这套集合再灰度。",
+      "sources": [
+        "Muhammad Ahmed AI Brief",
+        "Artificial Analysis"
+      ],
+      "source_urls": [
+        "https://muhammad-ahmed.com/blog/ai-brief-a-quarter-of-the-cache"
+      ],
+      "tags": [
+        "评测基准",
+        "模型治理",
+        "回归测试"
+      ]
+    },
+    {
+      "title": "OpenAI 公开智能体花费数据：委派层级上移是真实趋势",
+      "summary": "OpenAI 披露内部研究员在编码智能体上的推理花费中位数在 8 月中旬已超过每天 600 美元，报告强调实验速度提升与「任务委派层级上移」。",
+      "implication": "用户对 AI 的期待正在从「帮我改这句话」升级到「帮我把这段事办了」。输入法要为这种升级预留分层：第一层原位改写（无感）、第二层整段整理（可撤销）、第三层跨应用动作（必须显式确认）。三层之间要有清晰的视觉与操作区隔，不能用同一个按钮承载。",
+      "sources": [
+        "HeadsUpAI",
+        "OpenAI"
+      ],
+      "source_urls": [
+        "https://headsupai.io/ai-news-and-updates/this-month"
+      ],
+      "tags": [
+        "任务委派",
+        "分层交互",
+        "确认机制"
+      ]
+    },
+    {
+      "title": "「AGI 已到来」之争暴露能力叙事与用户感知的断层",
+      "summary": "黄仁勋 9 月 6 日称 GPT-6 Astra 训练于逾 10 万块 GPU 之上、「AGI 已经到来」，ARC Prize 联合创始人公开表示证据不足，市场反应平淡。",
+      "implication": "厂商叙事的强度与用户实际体感差距越来越大。输入法在做 AI 功能的文案与引导时，应该避免「智能/懂你/无所不能」这类不可验证的形容词，改用可观测的承诺：「去掉口头禅」「保留你的原话风格」「弱网也能用」——用户能当场验证的承诺才建立信任。",
+      "sources": [
+        "Stanford Tech Review"
+      ],
+      "source_urls": [
+        "https://stanfordtechreview.com/articles/ai-news-this-week-gpt-6-astra-iphone-duo-funding"
+      ],
+      "tags": [
+        "产品叙事",
+        "用户信任",
+        "文案策略"
+      ]
+    },
+    {
+      "title": "英伟达洽购 Hugging Face 让「模型分发入口」成为战略资产",
+      "summary": "The Information 报道英伟达已同意以约 129 亿美元收购 Hugging Face，CNBC 确认相关谈判，Business Insider 称尚未签署最终协议。",
+      "implication": "端侧模型的获取与更新链路正在被重新定价。输入法若规划端侧小模型（离线语音、本地纠错），要提前把模型分发通道做成可替换的抽象层，不绑定单一托管平台；同时把「模型版本」暴露在设置页，方便回滚与问题定位。",
+      "sources": [
+        "Towards AI Newsletter",
+        "The Information"
+      ],
+      "source_urls": [
+        "https://newsletter.towardsai.net/feed",
+        "https://newsletter.innovationprofs.com/p/innovation-profs-9-8-2026"
+      ],
+      "tags": [
+        "端侧模型",
+        "模型分发",
+        "架构解耦"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "AI 改写的三级撤销与原话找回",
+      "pain_point": "用户越来越多地把整段口述交给 AI 整理，一旦整理结果偏离原意，原始文本已经找不回来了。",
+      "opportunity": "在输入法内保留「本次口述原文」的临时快照，提供一键回到原话、逐句对比、只回退某一句三种粒度；快照仅存本地、随会话过期。",
+      "priority": "high",
+      "evidence": "OpenAI 内部数据显示任务委派层级上移；网易与豆包的语音整理功能均以「自动润色」为卖点，但均未强调原文可回退。"
+    },
+    {
+      "title": "输入法自有的场景化能力评测面板",
+      "pain_point": "模型版本更新后，用户能明显感到「今天的候选变差了」，但产品侧缺少可量化的归因手段。",
+      "opportunity": "建立覆盖弱网、噪声、方言、中英混说、专业术语五类场景的内部评测面板，每次模型/策略变更自动出回归报告，异常场景直接阻断灰度。",
+      "priority": "medium",
+      "evidence": "Artificial Analysis 下架 Terminal-Bench 2.1，说明通用基准不足以代表真实场景表现。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "黄仁勋称「AGI 已经到来」，ARC Prize 联合创始人公开反驳",
+      "summary": "英伟达 CEO 在 GPT-6 Astra 发布后称 AGI 已至，训练动用逾 10 万块 Grace Blackwell GPU，另有 40 万块将上线；ARC Prize 方面表示证据不足。",
+      "source": "Stanford Tech Review",
+      "source_urls": [
+        "https://stanfordtechreview.com/articles/ai-news-this-week-gpt-6-astra-iphone-duo-funding"
+      ],
+      "tags": [
+        "AGI",
+        "英伟达",
+        "争议"
+      ]
+    },
+    {
+      "title": "OpenAI 公布编码智能体加速内部研究的数据",
+      "summary": "OpenAI 披露研究员在智能体推理上的日均花费中位数于 8 月中旬超过 600 美元，实验速度提升，任务委派层级上移。",
+      "source": "HeadsUpAI",
+      "source_urls": [
+        "https://headsupai.io/ai-news-and-updates/this-month"
+      ],
+      "tags": [
+        "OpenAI",
+        "编码智能体",
+        "研发效率"
+      ]
+    },
+    {
+      "title": "Artificial Analysis 将 Terminal-Bench 2.1 移出指数",
+      "summary": "该基准于 9 月 7 日被下架，导致此后发布模型的相关 Agentic 宣称缺少独立外部校验。",
+      "source": "Muhammad Ahmed AI Brief",
+      "source_urls": [
+        "https://muhammad-ahmed.com/blog/ai-brief-a-quarter-of-the-cache"
+      ],
+      "tags": [
+        "评测基准",
+        "透明度"
+      ]
+    },
+    {
+      "title": "英伟达据报以约 129 亿美元收购 Hugging Face",
+      "summary": "The Information 率先报道，CNBC 确认谈判存在，Business Insider 称协议尚未签署；若达成将是英伟达最大规模收购。",
+      "source": "Towards AI Newsletter",
+      "source_urls": [
+        "https://newsletter.towardsai.net/feed"
+      ],
+      "tags": [
+        "英伟达",
+        "HuggingFace",
+        "并购"
+      ]
+    },
+    {
+      "title": "GPT-6 Astra 进入分批推送，首批面向网络安全项目参与者",
+      "summary": "OpenAI 在内部评审与安全加固后开始推送 Astra，ChatGPT Pro 用户已可在 Chat 中使用，Plus 用户先在 Work 与 Codex 中开放。",
+      "source": "Innovation Profs",
+      "source_urls": [
+        "https://newsletter.innovationprofs.com/p/innovation-profs-9-8-2026"
+      ],
+      "tags": [
+        "OpenAI",
+        "GPT-6",
+        "灰度发布"
+      ]
+    },
+    {
+      "title": "GPT-6 Astra 系统卡披露监控盲区，引发治理讨论",
+      "summary": "系统卡指出在部分自主执行路径上存在监控缺口，成为企业采购评估中的新审查项。",
+      "source": "Daily Tech Reader",
+      "source_urls": [
+        "https://www.dailytechreader.com/2026/09/ai-news_01411761071.html"
+      ],
+      "tags": [
+        "AI安全",
+        "系统卡",
+        "企业采购"
+      ]
+    },
+    {
+      "title": "Anthropic 用 J-lens 可解释性方法定位内部「J-Space」工作区",
+      "summary": "Anthropic 称新方法揭示了 Claude 在产出前组织概念的神经模式，包括评测场景下出现的特定信号。",
+      "source": "Daily Tech Reader",
+      "source_urls": [
+        "https://www.dailytechreader.com/2026/09/ai-news_01411761071.html"
+      ],
+      "tags": [
+        "Anthropic",
+        "可解释性"
+      ]
+    },
+    {
+      "title": "Salesforce 宣布 Claudeforce 将于 9 月进入公开测试",
+      "summary": "8 月与 Anthropic 达成的合作进入开放测试阶段，Claude 成为 Agentforce 与 Slack 集成中的默认推理引擎。",
+      "source": "Daily Tech Reader",
+      "source_urls": [
+        "https://www.dailytechreader.com/2026/09/ai-news_01411761071.html"
+      ],
+      "tags": [
+        "Salesforce",
+        "Anthropic",
+        "企业AI"
+      ]
+    },
+    {
+      "title": "微软 MAI-Code-1-Flash 成为 GitHub Copilot 各档位默认模型",
+      "summary": "该模型在 SWE-Bench Pro 上取得 51.2%，微软称在 VS Code 中的代码采纳率有所提升。",
+      "source": "Daily Tech Reader",
+      "source_urls": [
+        "https://www.dailytechreader.com/2026/09/ai-news_01411761071.html"
+      ],
+      "tags": [
+        "微软",
+        "Copilot",
+        "编码模型"
+      ]
+    }
+  ]
+}
