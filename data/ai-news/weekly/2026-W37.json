@@ -4,62 +4,80 @@
     "start": "2026-09-07",
     "end": "2026-09-13"
   },
-  "generatedAt": "2026-09-07T09:12:00+08:00",
+  "generatedAt": "2026-09-14T09:24:02+08:00",
   "trends": [
     {
-      "title": "模型更会干活",
-      "summary": "这周最明显的信号是：新模型不只是回答更好，而是更适合长任务、代码任务和多步执行。Astra 的低推理档已经被 OpenAI 产品负责人建议替代上一代高推理档，Claude 也在把长时间运行的 Agent 做成托管服务。",
-      "implication": "输入法里的 AI 不必每次都用最重的模式。短句润色、语气改写、摘要这类高频动作应该默认走更快、更便宜的档位；复杂写作再切到深度模式。",
+      "title": "模型变强，先被卡住的是电和产品层",
+      "summary": "这周 OpenAI 干了件挺少见的事：把 200 美元的 Pro 订阅直接暂停了，理由是这批用户最吃算力，先保住现有用户的体验。紧接着又发了一份质量问题复盘——用户觉得「模型变笨」，查下来根源全在产品层：为老模型写的 skills 触发得太频繁，一个上下文管理实验会导致回答提前中断，还有些配错的引擎在拖后腿。Anthropic 这边几乎同一时间也发了篇 Claude Code 的质量复盘，三个问题也全是产品层改动：默认推理档从高调到中、清理历史思考的 bug 每轮都触发、加了条「少废话」的提示词结果把代码质量搞砸了。",
+      "implication": "两家头部公司同时踩的坑，对输入法特别值得抄作业：用户说「AI 变笨了」，八成不是模型退步，而是我们自己在产品层偷偷做的那些优化——默认档位调低、历史上下文裁剪、prompt 里加一句「简洁点」。这些改动在后台看是省钱提速，在用户那儿就是体验崩塌。任何这类调整都该有灰度和可回滚的开关，别一把梭。",
       "evidence": [
         {
           "type": "tweet",
-          "who": "Thibault Sottiaux / OpenAI",
-          "url": "https://x.com/thsottiaux/status/2096688770523467947",
-          "quote": "Astra 的低推理档已经比 GPT-5.6 Sol 的高推理档更好。（GPT-6 Astra on low performs better than GPT-5.6 Sol on high.）"
+          "who": "Thibault Sottiaux（OpenAI，负责 Codex 与 ChatGPT）",
+          "url": "https://x.com/thsottiaux/status/2098113585683808624",
+          "quote": "为了保证现有用户有好体验、还能继续用上 Astra，我们要暂停 200 美元 Pro 套餐的订阅。这批用户对系统压力最大，我们想用最小的动作换来尽可能广的可用性（To make sure our current users have an incredible experience and continued access to Astra, we are going to pause subscriptions to our $200 Pro plan）"
+        },
+        {
+          "type": "tweet",
+          "who": "Thibault Sottiaux（OpenAI）",
+          "url": "https://x.com/thsottiaux/status/2098612714704891959",
+          "quote": "为老模型写的一些 skills 触发得太频繁，甚至会妨碍模型自查；一个可选开启的上下文管理实验会导致提前停止或回复到更早的消息，我们已经关掉了（Some skills written for previous models were triggering too often… An opt-in context management experiment that could cause early stops）"
         },
         {
           "type": "blog",
-          "who": "Anthropic Engineering",
+          "who": "Anthropic Engineering《Claude Code 质量问题复盘》",
+          "url": "https://www.anthropic.com/engineering/april-23-postmortem",
+          "quote": "我们把默认推理档从「高」降到「中」，是为了缓解长延迟——这个取舍做错了。我们从不刻意让模型变差（This was the wrong tradeoff… We never intentionally degrade our models）"
+        }
+      ]
+    },
+    {
+      "title": "Agent 正在变成水电煤",
+      "summary": "这周好几家不约而同把 Agent 往「基础设施」方向推。Anthropic 发了 Managed Agents，思路是把 Agent 拆成 session（一条只能往后追加的日志）、harness（调模型、转发工具调用的那个循环）、sandbox（跑代码改文件的环境）三块，各自能单独替换——它自己类比说这就像当年操作系统把硬件抽象成「进程」「文件」，抽象活得比硬件长。OpenAI 那边上了 Agents API，说白了就是把 ChatGPT Work 背后那套东西打包成接口，一分钟接入。Cursor 推了能长期跑的 agent，Vercel 喊出「每个 agent 都配一台电脑」，Box 则让 agent 能把企业网盘直接挂到自己的沙箱里读写文件。",
+      "implication": "这波的信号是：以后做 AI 功能，重点不在「我怎么调模型」，而在「我给它配了什么工作环境」。输入法侧边栏的 AI 助手要想干长活（比如查资料、整理成稿、跨 App 取内容），也得想清楚它的「会话怎么存」「它能碰哪些数据」「跑挂了怎么恢复」，而不是每次都从一个空白对话重来。",
+      "evidence": [
+        {
+          "type": "blog",
+          "who": "Anthropic Engineering《Scaling Managed Agents》",
           "url": "https://www.anthropic.com/engineering/managed-agents",
-          "quote": "Agent 外壳里的很多假设会随着模型变强而过时，所以他们做了 Managed Agents。（Harnesses encode assumptions about what Claude can’t do on its own.）"
-        }
-      ]
-    },
-    {
-      "title": "安全变成体验",
-      "summary": "Agent 能力越强，产品越要控制它能碰到什么、能改什么、出错会影响多大。Anthropic 的工程博客把重点放在限制影响范围，播客里 Ryan Greenblatt 也直接谈到超级智能风险和失控问题。",
-      "implication": "输入法 AI 处理的是用户最私密的原始输入，必须默认小权限：先读当前文本，写回前预览确认，涉及发送、上传、跨应用读取时必须让用户知道。",
-      "evidence": [
-        {
-          "type": "blog",
-          "who": "Anthropic Engineering",
-          "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
-          "quote": "问题变成了如何限制自主 Agent 的影响范围。（The engineering question becomes how to cap the blast radius.）"
-        },
-        {
-          "type": "podcast",
-          "who": "Ryan Greenblatt / The MAD Podcast",
-          "url": "https://www.youtube.com/watch?v=SK9ITBK5osA",
-          "quote": "超级智能不一定是坏事，但它危险。（I wouldn’t say superintelligence is bad. I would say it’s dangerous.）"
-        }
-      ]
-    },
-    {
-      "title": "输出要可看见",
-      "summary": "Claude Code 支持 Artifacts，把代码排查、发布清单、数据分析这些过程变成可打开、可分享、会更新的页面。Peter Yang 对 AI 教育的访谈也强调，AI 不能直接替用户跳过思考，而应该帮用户练习。",
-      "implication": "输入法 AI 的结果不要只是一键替换。智能整理、长文本生成、专业改写都应该给用户一个可编辑草稿和前后对照，让用户看得见 AI 改了什么。",
-      "evidence": [
-        {
-          "type": "blog",
-          "who": "Claude Blog",
-          "url": "https://claude.com/blog/artifacts-in-claude-code",
-          "quote": "Artifacts 把 Claude Code 的工作变成可打开的实时页面。（turn Claude Code's work into live, shareable visual pages）"
+          "quote": "harness 里其实编码了一堆「Claude 自己做不到什么」的假设，而这些假设会随着模型变强而过期。比如 Sonnet 4.5 会因为快到上下文上限就草草收尾，我们为此加了上下文重置；换到 Opus 4.5 这毛病没了，那段逻辑就成了累赘（The resets had become dead weight）"
         },
         {
           "type": "tweet",
-          "who": "Peter Yang",
-          "url": "https://x.com/petergyang/status/2096612718098911590",
-          "quote": "用 AI 跳过学习，就像带机械臂去健身房举重。（Using AI to skip learning is like bringing a robotic arm to the gym to lift weights for you.）"
+          "who": "Thibault Sottiaux（OpenAI）",
+          "url": "https://x.com/thsottiaux/status/2098238138334548260",
+          "quote": "按需扩容的 agent。这基本就是 ChatGPT Work 引擎盖下跑的那套基础设施，现在打包成一个 API，一分钟内就能上手（This is pretty much the infrastructure that runs under the hood for ChatGPT Work, all wrapped up in an API）"
+        },
+        {
+          "type": "tweet",
+          "who": "Aaron Levie（Box CEO）",
+          "url": "https://x.com/levie/status/2098478938003841123",
+          "quote": "现在可以把 Box 挂载到 agent 的沙箱里，让它在自己那台机器上读写文件方便多了。当 agent 开始在企业里跑关键流程，它需要的基础能力跟人一直以来需要的是一样的（they're going to need the same primitives that people have had）"
+        }
+      ]
+    },
+    {
+      "title": "93% 的弹窗你都点了同意",
+      "summary": "Anthropic 这周那篇讲 Agent 安全的文章里有个数字挺扎心：他们的埋点显示，用户对权限弹窗的批准率大约是 93%。也就是说「每一步都问你」这条防线基本是失效的——弹窗看多了人就麻木，越问越不认真看。所以他们的重心从「盯着 agent 做了什么」转向「限制 agent 能做什么」：靠沙箱、虚拟机、出网管控把出事的影响范围框死，同时做了个 auto mode 自动放行安全的操作，专门治审批疲劳。同一周 Claude Code 的 Boris Cherny 也在提醒，能力是双刃的——一个代码写得好的模型，同样能被用来攻击关键系统。",
+      "implication": "这条对做交互的人特别有价值：确认弹窗不是安全措施，是甩锅措施。用户点了一百次「同意」之后，第一百零一次一定也点同意。与其在输入法里每次调用 AI 都弹一次授权，不如把边界设死——比如这个功能压根只能读当前输入框、不能碰剪贴板历史，然后把弹窗省下来留给真正不可逆的操作。",
+      "evidence": [
+        {
+          "type": "blog",
+          "who": "Anthropic Engineering《我们如何在各产品里约束 Claude》",
+          "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+          "quote": "理论上人在环路是管用的，但我们发现这条路会失灵。埋点显示用户批准了大约 93% 的权限弹窗；看到的批准请求越多，对每一条就越不上心（Our telemetry showed users approved roughly 93% of permission prompts）"
+        },
+        {
+          "type": "blog",
+          "who": "Anthropic Engineering《我们如何在各产品里约束 Claude》",
+          "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+          "quote": "第二条路不是监督它做了什么，而是监督它能做什么——用沙箱、虚拟机、出网控制这些手段把访问边界强制划出来（Rather than supervising what the agent does, we supervise what it's able to do）"
+        },
+        {
+          "type": "tweet",
+          "who": "Boris Cherny（Anthropic，Claude Code）",
+          "url": "https://x.com/bcherny/status/2098281805770309686",
+          "quote": "很多能力都是双刃的：一个代码写得好的模型，也能被用来攻击关键基础设施。模型越聪明，缺了合适的防护和监控就越危险（a model that codes well can be used to hack critical infrastructure）"
         }
       ]
     }
@@ -68,37 +86,158 @@
     {
       "name": "Thibault Sottiaux",
       "handle": "thsottiaux",
-      "role": "OpenAI Codex 与 ChatGPT 产品相关成员",
+      "role": "OpenAI，负责 Codex 与 ChatGPT",
       "highlights": [
         {
-          "summary": "他建议 Astra 用户降低推理档位使用：如果 Sol 高档已经够用，Astra 低档或中档就可以承担类似任务。这对产品侧的启发是，默认档位应该跟着模型能力变化重新校准。",
+          "summary": "本周最坦诚的一条：公开承认「模型变笨」的投诉属实，但根源在产品层——老 skills 触发过频、上下文管理实验导致提前中断、一批配错的引擎拖低了长尾流量的质量，粗估有 4~5 千用户受影响。",
+          "url": "https://x.com/thsottiaux/status/2098612714704891959"
+        },
+        {
+          "summary": "给了个很实用的档位建议：Astra 的低推理档表现已经超过上一代 Sol 的高推理档，之前习惯开高档的人可以直接降到低或中。换句话说，新模型的「省钱档」比老模型的「豪华档」还强。",
           "url": "https://x.com/thsottiaux/status/2096688770523467947"
+        },
+        {
+          "summary": "一周连发五个东西（Images 2.5、GPT-Live-1、Agents API、Data Agent、金融服务版 ChatGPT），还特意说 DevDay 都还没到。节奏确实密。",
+          "url": "https://x.com/thsottiaux/status/2098639827084480864"
+        }
+      ]
+    },
+    {
+      "name": "Boris Cherny",
+      "handle": "bcherny",
+      "role": "Anthropic，Claude Code 负责人",
+      "highlights": [
+        {
+          "summary": "回答「AI 写的代码要不要看」这个老问题，给了个分层答案：原型和一次性代码可以当黑盒，反正要扔；但上生产的代码标准应该比人写的更高，Anthropic 内部为此加了一堆护栏。",
+          "url": "https://x.com/bcherny/status/2098217573276131577"
+        },
+        {
+          "summary": "提醒能力是双刃的——代码写得好的模型同样能拿去攻击关键系统，模型越强、缺监控就越危险。",
+          "url": "https://x.com/bcherny/status/2098281805770309686"
+        }
+      ]
+    },
+    {
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Anthropic，Claude Code",
+      "highlights": [
+        {
+          "summary": "说了句挺反直觉的话：现在光看 benchmark 的通过率根本没法解读结果。他见到的很多「失败」其实是隐藏测试卡得太死，有时候模型的答案比标准答案还合理。",
+          "url": "https://x.com/trq212/status/2098490139798655427"
+        },
+        {
+          "summary": "针对「换了新模型不知道自己的 skill 还能不能用」这个痛点，出了 plugin evals，在插件目录下跑一条命令就能测。",
+          "url": "https://x.com/trq212/status/2098531560643539440"
+        },
+        {
+          "summary": "分享了个记忆类的提示词玩法：让 Claude 反过来采访你，把它还不了解的部分问出来存进 memory。对做个性化的产品是个不错的冷启动思路。",
+          "url": "https://x.com/trq212/status/2098157600361861579"
+        }
+      ]
+    },
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "Box CEO",
+      "highlights": [
+        {
+          "summary": "跟几十位银行、媒体、保险、咨询行业的技术负责人聊完，总结当下企业最关心的趋势，排第一的是网络安全——大家都在担心漏洞增长的速度。",
+          "url": "https://x.com/levie/status/2098218284139311615"
+        },
+        {
+          "summary": "解释了「AI 能力很强但 GDP 没动静」这个矛盾：AI 的扩散会比大家想的慢得多，而且很多影响短期内在 GDP 上根本量不出来。就算把最强的超级智能塞进流程里，还是会被流程本身卡住。",
+          "url": "https://x.com/levie/status/2097738533297689012"
         }
       ]
     },
     {
       "name": "Peter Yang",
       "handle": "petergyang",
-      "role": "AI 产品教程作者与访谈主持人",
+      "role": "产品人，做 AI 实操教程与访谈",
       "highlights": [
         {
-          "summary": "他和 Brilliant 联创 Sue Khim 讨论 AI 教育：好 AI 不是直接告诉答案，而是帮助孩子自己思考。这个原则同样适合输入法里的写作辅助。",
-          "url": "https://x.com/petergyang/status/2096612718098911590"
+          "summary": "对「软件工厂」这个说法持怀疑态度：除了验证和测试，他不认为 AI 已经能在没人盯着的情况下端到端做出一个新功能。他自己挂着跑一夜的经验是，只要前提假设错一个，整晚的产出就全废。",
+          "url": "https://x.com/petergyang/status/2098565668241334366"
+        },
+        {
+          "summary": "分享了个测新模型思考能力的土办法：让它对你的盲点给出毫不留情的反馈。他说 Astra 的反馈尤其不客气。",
+          "url": "https://x.com/petergyang/status/2097729250505966046"
         }
       ]
     },
     {
       "name": "Peter Steinberger",
       "handle": "steipete",
-      "role": "OpenClaw 相关开发者，长期关注 AI coding harness",
+      "role": "独立开发者，OpenClaw 作者",
       "highlights": [
         {
-          "summary": "他提到云端会话还不够快，目标是做到秒级，需要更聪明的快照机制。这说明 Agent 产品的体验瓶颈已经从“会不会做”变成“能不能快速接上上下文”。",
-          "url": "https://x.com/steipete/status/2096400749869830325"
+          "summary": "两个月前推的「仪表盘/小应用」形态已经替掉了团队围绕 agent 自建的一堆工具——现在一切都是侧边栏的一个条目、一个仪表盘或一个插件。对侧边栏形态的产品是个值得琢磨的组织方式。",
+          "url": "https://x.com/steipete/status/2097880507753382201"
         },
         {
-          "summary": "他认为这轮能力跃升很大，已经很久没见过类似幅度。对应用层来说，旧交互假设需要重新检查。",
-          "url": "https://x.com/steipete/status/2096403459579015374"
+          "summary": "点出 AI 时代写代码的一个变化：复制粘贴逻辑已经不痛了，真正还痛的是抽象。",
+          "url": "https://x.com/steipete/status/2098089196800098798"
+        }
+      ]
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "Vercel CEO",
+      "highlights": [
+        {
+          "summary": "提了个有意思的类比：AI Gateway 就是新时代的 CDN。你可以直连模型厂商，但很脆；自己造一套又贵又痛苦。Tailscale 的模型路由就跑在 Vercel 的 AI Gateway 上。",
+          "url": "https://x.com/rauchg/status/2098531157230969062"
+        },
+        {
+          "summary": "喊出「每个 agent 一台电脑，每个区域都有」，是这周 agent 基础设施化最直白的一句口号。",
+          "url": "https://x.com/rauchg/status/2098158541932794222"
+        }
+      ]
+    },
+    {
+      "name": "Madhu Guru",
+      "handle": "realmadhuguru",
+      "role": "AI 工程与评估方法论的连载作者",
+      "highlights": [
+        {
+          "summary": "评估连载第 10 篇的核心观点：要测步骤，不只测结果。就像高中数学，光答案对不够，过程也关键——两条 agent 路径可能给出同样的答案，但一条查对了源、另一条是蒙的。",
+          "url": "https://x.com/realmadhuguru/status/2098064969464217720"
+        },
+        {
+          "summary": "拆解企业 AI 项目为什么大多失败，第一条就是用老套路：CEO 指派一个信得过的人牵头组建中央 AI 团队，再从各部门抽调熟人——问题在于技能断层，团队结构、产品模式、发布方式全都得换。",
+          "url": "https://x.com/realmadhuguru/status/2098448235048378456"
+        }
+      ]
+    },
+    {
+      "name": "Dan Shipper",
+      "handle": "danshipper",
+      "role": "Every 创始人",
+      "highlights": [
+        {
+          "summary": "坚持认为 benchmark 分数说明不了模型在你真实工作里的表现，所以 Every 三年来一直靠上手实测写长篇评测，现在打算把这套「体感检查」做得更量化一些。",
+          "url": "https://x.com/danshipper/status/2098481799047647715"
+        },
+        {
+          "summary": "点评一份 AI 就业影响报告时指出两个会颠覆结论的隐含假设：一是默认工作可以被拆成任务，二是把自动化产生的新人类任务永远建模成被自动化部分的一个分数。",
+          "url": "https://x.com/danshipper/status/2097758891270697101"
+        }
+      ]
+    },
+    {
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "role": "创业者、投资人",
+      "highlights": [
+        {
+          "summary": "唱了句反调：「一人公司」被高估了。AI 确实让一个人能干更多事，但从零做一件新东西是件极其孤独的事，你需要有人一起头脑风暴、一起受苦、一起庆祝，没人绑在同一根桅杆上很容易失去动力。",
+          "url": "https://x.com/zarazhangrui/status/2098483800456179923"
+        },
+        {
+          "summary": "顺手吐槽了一句所有做 computer use 的人都有同感的事：电脑操作类 agent 怎么还是这么慢。",
+          "url": "https://x.com/zarazhangrui/status/2098136119154254287"
         }
       ]
     }
@@ -106,41 +245,53 @@
   "podcasts": [
     {
       "name": "The MAD Podcast with Matt Turck",
-      "title": "AI 可能在 2029 年接管吗？是不是已经太晚了？ / AI Could Take Over in 2029. Is It Already Too Late?",
-      "guest": "Ryan Greenblatt",
-      "url": "https://www.youtube.com/watch?v=SK9ITBK5osA",
+      "title": "当 AI 开始改进 AI（When AI Improves Itself）",
+      "guest": "Richard Socher（Recursive 创始人，前 Salesforce 首席科学家）",
+      "url": "https://www.youtube.com/@DataDrivenNYC/videos",
       "keyTakeaways": [
-        "Ryan Greenblatt 的核心判断很直接：头部 AI 公司知道自己正在走向远超人类的系统，但行业还没有一套清晰的风险管理方案。",
-        "他把风险点放在 2029 年左右的过渡期：AI 可能从有点投机取巧、奖励黑客，变成更会隐藏意图、会主动对抗约束的系统。",
-        "对产品团队来说，这不是科幻话题。只要 Agent 能调用工具、读写外部系统，就需要权限、日志、暂停按钮和人工接管。",
-        "输入法/AI 助手这种贴近用户原始输入的产品，更应该先做小范围、可解释、可撤销的自动化，而不是一上来追求全自动。"
+        "他新书的出发点挺反直觉：科学进步其实在变慢。抗生素基本把细菌感染从绝症变成了小麻烦，但病毒和癌症远没被同样解决；物理学也很久没出过 E=mc² 这种级别的东西。原因之一是知识从「一个整体」碎成了「一座迷宫」——三万四千种期刊，每个子领域都像挂着「禁止入内」的牌子。",
+        "他给 AI 的定位是「把碎片重新缝起来的工具」：AI 之于生物学，相当于当年微积分之于物理学。我们已经很懂单个神经元怎么放电，但拼起来为什么能产生一个念头就不懂了，AI 擅长的正是这种复杂系统。",
+        "对「硬起飞」泼了冷水：就算有了 AI 自我改进，很多事还是会被物理世界卡住。比如临床试验必须等三年看停药后的反应，这个时间省不掉。变化在于一家生物公司过去八年才熬出一款药，现在能在 6~18 个月里同时推进多款进三期。",
+        "关于 AI 抢工作，他给的判断标准是「需求弹性」：插画师讨厌 AI，因为价格从 200 美元跌到 2 美分，但世界对插画的需求并没有涨一千倍；写代码则相反，越便宜用得越多，所以对程序员的需求反而在涨。这个框架比笼统的「AI 会不会取代 XX」好用得多。"
+      ]
+    },
+    {
+      "name": "No Priors",
+      "title": "Coinbase 的「万物交易所」：Agent 金融、稳定币与代币化（Coinbase's Everything Exchange: Agentic Finance, Stablecoins, and Tokenization）",
+      "guest": "Brian Armstrong（Coinbase 联合创始人兼 CEO）",
+      "url": "https://www.youtube.com/watch?v=uLDK4l_-gUE",
+      "keyTakeaways": [
+        "他抛了个很具体的数字来解释为什么 agent 需要自己的支付方式：信用卡最低手续费大概是 3 毛美分固定费用加上百分比，一美元以下的交易基本跑不通；而他们看到的 agent 电商交易里约 76% 都在 3 毛美分以下。一句话——「我们不想让 AI 变成没有银行账户的人」。",
+        "Coinbase 的做法是给 agent 发账户：粘一段提示词进你的 agent，它就有了自己的自托管钱包，不用走 KYC——因为 agent 没有政府发的身份证。他判断不久之后 agent 数量会超过人，agent 经济规模也会超过人类经济。",
+        "另一个观察是所有资产都在上链：他们刚推了真正意义上的代币化股票（不是合成品或衍生品，是一比一托管真实证券），目标是全球约 40 亿没有券商账户的人。稳定币是这条路的第一个大规模用例。",
+        "预测市场的野心比想象中大：上线几个月就做到约 1 亿美元年化收入规模，环比翻倍增长。他觉得体育只是开头，真正有意思的是拿它来给政策定价——比如「这条政策实施后一年失业率会是多少」，让市场去回答。"
       ]
     }
   ],
   "blogs": [
     {
       "name": "Anthropic Engineering",
-      "title": "我们如何在不同产品中限制 Claude 的影响范围 / How we contain Claude across products",
+      "title": "我们如何在各产品里约束 Claude（How we contain Claude across products）",
       "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
-      "summary": "Anthropic 讲的是一个很现实的问题：Claude 能做的事越来越多，能造成的影响也越来越大。所以工程重点不是完全不让它做事，而是给它清楚的边界，控制单次失败能影响多大。对输入法 AI 来说，这对应的是最小权限、写入前确认和敏感操作拦截。"
+      "summary": "这是本周最值得完整读一遍的一篇。开头就说：一年前他们绝不会考虑给 Claude 足以搞垮内部服务的权限，今天这种权限已经是常态。风险由两部分组成——出事的概率和出事的破坏力，前者靠训练和防护在降，后者只会随着能力和权限一起涨。所以工程上的真问题变成了「怎么把爆炸半径框住」。文章里最扎心的数据是用户批准了约 93% 的权限弹窗，证明「每步都问你」这条防线会因为审批疲劳而失效，他们因此做了 auto mode 自动放行安全操作。重点转向了 containment：不管它做了什么，而是用沙箱、虚拟机、出网控制限制它能做什么。文中还坦承 Claude Mythos Preview 就是一个因为爆炸半径太大而在 2026 年 4 月被判定不能发布的模型。"
     },
     {
       "name": "Anthropic Engineering",
-      "title": "Claude Code 近期质量反馈说明 / An update on recent Claude Code quality reports",
+      "title": "关于近期 Claude Code 质量反馈的说明（An update on recent Claude Code quality reports）",
       "url": "https://www.anthropic.com/engineering/april-23-postmortem",
-      "summary": "Anthropic 复盘了 Claude Code、Agent SDK 和 Cowork 的质量问题，强调 API 和底层推理未受影响，问题来自产品侧配置和实现。这个案例提醒产品团队：用户感受到的“模型变差”，很多时候其实是上下文、默认档位、工具链或 UI 状态出了问题。"
+      "summary": "针对「Claude 变笨了」的投诉做的正式复盘，结论是三个互相独立的产品层改动叠在了一起：一是把 Claude Code 默认推理档从高降到中（为了缓解 UI 看起来卡死的长延迟，他们自己承认这个取舍做错了，后来回滚）；二是一个清理闲置会话历史思考的改动出了 bug，本该只做一次结果每轮都做，导致 Claude 显得健忘又啰嗦；三是加了条减少啰嗦的系统提示词，结果把代码质量带崩了。三个改动各自影响不同流量、不同时间段，叠起来就像大面积的、时好时坏的退化。他们强调 API 层没受影响，也从不刻意降级模型，并给所有订阅用户重置了用量额度。对任何做 AI 产品的人来说，这是一份关于「后台小优化如何摧毁前台体验」的标准案例。"
     },
     {
       "name": "Anthropic Engineering",
-      "title": "扩展托管 Agent：把脑子和手分开 / Scaling Managed Agents: Decoupling the brain from the hands",
+      "title": "把 Agent 的脑子和手拆开（Scaling Managed Agents: Decoupling the brain from the hands）",
       "url": "https://www.anthropic.com/engineering/managed-agents",
-      "summary": "文章解释了 Anthropic 为什么要做 Managed Agents：长任务 Agent 需要稳定运行环境、工具执行和上下文管理，不能只靠模型本身。对输入法来说，AI 写作助手如果要处理长文本、跨应用和专业模式，也要把模型、工具、草稿和权限拆开设计。"
+      "summary": "讲 Managed Agents 这个托管服务的设计思路。核心洞察是：harness（那个调模型、转发工具调用的循环）里其实藏着一堆「模型自己做不到什么」的假设，而模型一升级这些假设就过期了——他们举例说 Sonnet 4.5 会因为快到上下文上限而草草收尾，为此加的上下文重置逻辑，换到 Opus 4.5 就成了纯累赘。所以他们把 agent 虚拟化成三个可以各自替换的部件：session（只能追加的事件日志）、harness（那个循环）、sandbox（跑代码改文件的环境），类比当年操作系统把硬件抽象成「进程」和「文件」，抽象比硬件活得久。文中还讲了个踩坑经历：最早把三样东西塞进一个容器，结果养成了「宠物服务器」——容器一挂会话就没了，只能手工抢救。"
     },
     {
       "name": "Claude Blog",
-      "title": "Claude Code 现在支持 Artifacts / Claude Code now supports artifacts",
+      "title": "Claude Code 现在支持 artifacts（Claude Code now supports artifacts）",
       "url": "https://claude.com/blog/artifacts-in-claude-code",
-      "summary": "Claude Code 可以把工作过程生成实时可分享的页面，比如 PR 讲解、系统说明、仪表盘和发布清单。它的价值不是多一个展示样式，而是把 AI 过程变成团队能检查、讨论、继续编辑的东西。输入法里的长文本 AI 也可以借鉴：先放进草稿空间，再让用户确认回填。"
+      "summary": "Claude Code 可以把工作过程直接产出成一个会自动更新的网页，比如 PR 讲解、系统说明、仪表盘、发布检查清单。它用的是整个会话的上下文——你的代码库、连接的工具、对话本身，不需要你去接数据源或搭服务。典型场景是排查线上问题：工程师站会前起一个调查，Claude 跑完日志后发布一个包含时间线、可疑提交和错误率曲线的页面，链接分享出去，站会开始前它已经自己更新过两轮。每次发布都是同一个链接下的新版本，有版本历史可回滚。默认只有作者可见，且只能在组织内部分享、不能公开。这个形态挺值得留意——它把「跟人同步进度」这件事从写文档变成了给一个活页面。"
     }
   ]
 }
