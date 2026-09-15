@@ -1,0 +1,425 @@
+{
+  "date": "2026-09-15",
+  "fetchedAt": "2026-09-15T00:02:18.556465+00:00",
+  "source": "follow-builders feeds",
+  "x": {
+    "generatedAt": "2026-09-14T06:51:58.098Z",
+    "lookbackHours": 24,
+    "x": [
+      {
+        "source": "x",
+        "name": "Boris Cherny",
+        "handle": "bcherny",
+        "bio": "Claude Code @anthropicai",
+        "tweets": [
+          {
+            "id": "2099322487603634395",
+            "text": "Fable solved the Cyphral Distich (a 370 year old cypher). Super cool way to use Claude\n\nhttps://t.co/0fgTdITSfO",
+            "createdAt": "2026-09-14T02:20:59.000Z",
+            "url": "https://x.com/bcherny/status/2099322487603634395",
+            "likes": 1937,
+            "retweets": 86,
+            "replies": 133,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Peter Yang",
+        "handle": "petergyang",
+        "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6",
+        "tweets": [
+          {
+            "id": "2099345068893298816",
+            "text": "I'm really curious who's actually managing this account https://t.co/BWu6Imtxuy",
+            "createdAt": "2026-09-14T03:50:43.000Z",
+            "url": "https://x.com/petergyang/status/2099345068893298816",
+            "likes": 39,
+            "retweets": 0,
+            "replies": 7,
+            "isQuote": true,
+            "quotedTweetId": "2099324752863379523"
+          },
+          {
+            "id": "2099200231820963891",
+            "text": "While we're all debating whether AI will lead to a bad outcome for humanity, it's important to remember that most of the world hasn’t even started using it yet.\n\nPedro, Brex’s CEO, likes to refer to a specific chart (see the clip):\n\n“Each dot is 3.2 million people. Every gray box is someone that never used AI in the world (84%). Green boxes are free chatbot users (16%). Orange boxes are people who pay $20 a month for AI (~0.3%).\n\nAnd this tiny red box is people using agents effectively (~0.04%).”\n\nI think the chart is from February 2026, so things have probably picked up since then, but we're still super early.\n\n📌 Watch the full episode here: https://t.co/0E7XHvBEBR",
+            "createdAt": "2026-09-13T18:15:11.000Z",
+            "url": "https://x.com/petergyang/status/2099200231820963891",
+            "likes": 44,
+            "retweets": 5,
+            "replies": 10,
+            "isQuote": true,
+            "quotedTweetId": "2099139853170733280"
+          },
+          {
+            "id": "2099175305818890472",
+            "text": "Record &amp; Replay seems broken and won't trigger @nickbaumann_ @OpenAIDevs https://t.co/RYm8F1y3vT",
+            "createdAt": "2026-09-13T16:36:08.000Z",
+            "url": "https://x.com/petergyang/status/2099175305818890472",
+            "likes": 8,
+            "retweets": 0,
+            "replies": 3,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Nan Yu",
+        "handle": "thenanyu",
+        "bio": "(soon) member of product staff @openai. prev head of product @linear. I am grader.",
+        "tweets": [
+          {
+            "id": "2099216347138011190",
+            "text": "37 signals would have called the the Nuse Feed https://t.co/RigssbRcMo",
+            "createdAt": "2026-09-13T19:19:13.000Z",
+            "url": "https://x.com/thenanyu/status/2099216347138011190",
+            "likes": 13,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": true,
+            "quotedTweetId": "2099150117156888757"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Madhu Guru",
+        "handle": "realmadhuguru",
+        "bio": "Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.",
+        "tweets": [
+          {
+            "id": "2099224198732517750",
+            "text": "Stud traders like Kaushik love Muse! https://t.co/UPhEaGi5g6",
+            "createdAt": "2026-09-13T19:50:25.000Z",
+            "url": "https://x.com/realmadhuguru/status/2099224198732517750",
+            "likes": 6,
+            "retweets": 1,
+            "replies": 2,
+            "isQuote": true,
+            "quotedTweetId": "2099154608325267720"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Amjad Masad",
+        "handle": "amasad",
+        "bio": "ceo @replit. civilizationist",
+        "tweets": [
+          {
+            "id": "2099343474734911917",
+            "text": "Nominal determinism strikes again. https://t.co/rFD1V1y2D9",
+            "createdAt": "2026-09-14T03:44:22.000Z",
+            "url": "https://x.com/amasad/status/2099343474734911917",
+            "likes": 126,
+            "retweets": 4,
+            "replies": 14,
+            "isQuote": true,
+            "quotedTweetId": "2099320447057961233"
+          },
+          {
+            "id": "2099197117013340450",
+            "text": "It was painful to see so many users being priced out of AI coding for a while. But now it’s free to build again! https://t.co/LBe5fPBBGC https://t.co/VwkZ2a5QAN",
+            "createdAt": "2026-09-13T18:02:48.000Z",
+            "url": "https://x.com/amasad/status/2099197117013340450",
+            "likes": 179,
+            "retweets": 12,
+            "replies": 38,
+            "isQuote": true,
+            "quotedTweetId": "2097229192157188361"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Guillermo Rauch",
+        "handle": "rauchg",
+        "bio": "@vercel CEO",
+        "tweets": [
+          {
+            "id": "2099248037507797164",
+            "text": "You don't get it, I build software to relax",
+            "createdAt": "2026-09-13T21:25:08.000Z",
+            "url": "https://x.com/rauchg/status/2099248037507797164",
+            "likes": 2523,
+            "retweets": 213,
+            "replies": 165,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Aaron Levie",
+        "handle": "levie",
+        "bio": "ceo @box - your business lives in content. unleash it with AI",
+        "tweets": [
+          {
+            "id": "2099167992835924301",
+            "text": "“Pacing” can be somewhat of a trigger word because it sounds like an arbitrary slow down of capability or a way to hobble competitors through undue regulation. \n\nHowever, the specific improvement goals laid out in Dario’s are absolute necessities in AI development. We expect equivalent in areas like aerospace, life sciences, health care, and other industries, and AI development likely shouldn’t be that different. \n\nAI is going to be the technology underpinning our financial trading systems, our medical devices, our biotech breakthroughs, defense systems, government workflows, and many more mission critical domains. So it completely stands to reason that we want these systems to be safe and “aligned”. \n\nHow we get there -without meaningfully slowing down innovation progress or reducing competition- is one of the most complex questions in the 21st century, but the need is clearly real.",
+            "createdAt": "2026-09-13T16:07:04.000Z",
+            "url": "https://x.com/levie/status/2099167992835924301",
+            "likes": 168,
+            "retweets": 30,
+            "replies": 65,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Garry Tan",
+        "handle": "garrytan",
+        "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+        "tweets": [
+          {
+            "id": "2099181676039704870",
+            "text": "The content about startups we do is merely the teaser for the specific advice we give 1:1 when you actually are a YC startup https://t.co/MZ2tMlxLzJ",
+            "createdAt": "2026-09-13T17:01:27.000Z",
+            "url": "https://x.com/garrytan/status/2099181676039704870",
+            "likes": 219,
+            "retweets": 9,
+            "replies": 39,
+            "isQuote": true,
+            "quotedTweetId": "2099142144917159984"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Matt Turck",
+        "handle": "mattturck",
+        "bio": "VC at @FirstMarkCap.  Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+        "tweets": [
+          {
+            "id": "2099257395708879286",
+            "text": "Seed investor when a company he forgot about years ago gets acquired out of nowhere https://t.co/X6NWlHRNle",
+            "createdAt": "2026-09-13T22:02:20.000Z",
+            "url": "https://x.com/mattturck/status/2099257395708879286",
+            "likes": 333,
+            "retweets": 10,
+            "replies": 9,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Zara Zhang",
+        "handle": "zarazhangrui",
+        "bio": "Builder. Make something people want, then make people want it. Harvard’17. GitHub: https://t.co/KCuEaje1wd \nYouTube: https://t.co/8xzbGWsHgY",
+        "tweets": [
+          {
+            "id": "2099348631291883945",
+            "text": "Anyone else notices this problem with Astra?\n\nAstra: I have done X\nMe: This is wrong, you should do Y instead\nAstra: You're right. I should do Y\nMe: ...\n\nWhy doesn't it just go and do Y, like the other models??",
+            "createdAt": "2026-09-14T04:04:52.000Z",
+            "url": "https://x.com/zarazhangrui/status/2099348631291883945",
+            "likes": 170,
+            "retweets": 3,
+            "replies": 94,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Nikunj Kothari",
+        "handle": "nikunj",
+        "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+        "tweets": [
+          {
+            "id": "2099272635926671532",
+            "text": "All the questions to ask when you’re joining a startup https://t.co/m3c5GRQ7kI",
+            "createdAt": "2026-09-13T23:02:53.000Z",
+            "url": "https://x.com/nikunj/status/2099272635926671532",
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": true,
+            "quotedTweetId": "2000708700823335051"
+          },
+          {
+            "id": "2099271686969569309",
+            "text": "When a seed investor realizes their marked down investment is suddenly going to return half the fund..  https://t.co/5V4BhqW7Dx",
+            "createdAt": "2026-09-13T22:59:07.000Z",
+            "url": "https://x.com/nikunj/status/2099271686969569309",
+            "likes": 35,
+            "retweets": 1,
+            "replies": 1,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2099198567923765357",
+            "text": "I get at least 1x text a day from a founder facing this exact conundrum..\n\nApplicants your entry valuation being higher and your total comp being higher is often a bug and not a feature. \n\nJust because a company has raised at a higher valuation doesn’t mean they are realistically more secure and the better place to go. \n\nYou have to really look at the numbers objectively - what’s the market, what’s the traction and how well positioned are they. And if they are worth 100x ARR, well they have to grow into it. \n\nThen, do your own analysis on what do you think this company exits at. Not to mention your 409a prices and tax implications. \n\nIt’s so freaking important right now when everything is upside down and numbers are not rooted in reality.\n\nPS: I have first hand personal experience with this. I worked at a company that raised $60M from probably one of the best investors on this planet. And the company folded 3 years in, all equity wiped out.",
+            "createdAt": "2026-09-13T18:08:34.000Z",
+            "url": "https://x.com/nikunj/status/2099198567923765357",
+            "likes": 75,
+            "retweets": 1,
+            "replies": 3,
+            "isQuote": true,
+            "quotedTweetId": "2099189835982315905"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Peter Steinberger",
+        "handle": "steipete",
+        "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.\n@OpenClaw🦞 + @OpenAI",
+        "tweets": [
+          {
+            "id": "2099262092633411832",
+            "text": "And yes, I'll test this for a few weeks and if we see that this helps the majority of users I'll try to get this into codex!",
+            "createdAt": "2026-09-13T22:20:59.000Z",
+            "url": "https://x.com/steipete/status/2099262092633411832",
+            "likes": 45,
+            "retweets": 1,
+            "replies": 2,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2099201162922938418",
+            "text": "This is all written in Rust.\nBecause you can't escape Rust. https://t.co/WnauslO08k",
+            "createdAt": "2026-09-13T18:18:53.000Z",
+            "url": "https://x.com/steipete/status/2099201162922938418",
+            "likes": 102,
+            "retweets": 5,
+            "replies": 7,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2099197266636783989",
+            "text": "Next release (or dev channel) does worktrees ~80% faster via apfs/brtfs/xfs/ReFS folder clones.\n\nAlso saves lots of disk space.",
+            "createdAt": "2026-09-13T18:03:24.000Z",
+            "url": "https://x.com/steipete/status/2099197266636783989",
+            "likes": 643,
+            "retweets": 18,
+            "replies": 43,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Dan Shipper",
+        "handle": "danshipper",
+        "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+        "tweets": [
+          {
+            "id": "2099231248027730195",
+            "text": "started using Astra medium for simple tasks\n\ncall that pacing the frontier",
+            "createdAt": "2026-09-13T20:18:26.000Z",
+            "url": "https://x.com/danshipper/status/2099231248027730195",
+            "likes": 285,
+            "retweets": 7,
+            "replies": 24,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2099152769080828197",
+            "text": "we’re going to the moon https://t.co/f02uVIYNHS",
+            "createdAt": "2026-09-13T15:06:35.000Z",
+            "url": "https://x.com/danshipper/status/2099152769080828197",
+            "likes": 9,
+            "retweets": 0,
+            "replies": 1,
+            "isQuote": true,
+            "quotedTweetId": "2099152064072790468"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Aditya Agarwal",
+        "handle": "adityaag",
+        "bio": "General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
+        "tweets": [
+          {
+            "id": "2099259374544003527",
+            "text": "Imagine a world where we didn’t have to rely on any one organization to be good and virtuous. https://t.co/Vkz9lpNeE2",
+            "createdAt": "2026-09-13T22:10:11.000Z",
+            "url": "https://x.com/adityaag/status/2099259374544003527",
+            "likes": 12,
+            "retweets": 1,
+            "replies": 1,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Sam Altman",
+        "handle": "sama",
+        "bio": "The mission of OpenAI is to ensure that AGI benefits all of humanity",
+        "tweets": [
+          {
+            "id": "2099352016988614852",
+            "text": "There are two ways AI progress could go very badly and that we must avoid.\n\nFirst, we could lose control of the future to AI. This is unacceptable; we are unapologetically on Team Humanity, and AI must always serve people. To ensure that, we need ways to ensure that alignment and safety techniques stay ahead of progress in model capabilities.\n\nSecond, we could end up in a world with too much concentration of power. If an extraordinarily powerful AI is used by one person or company to impress their worldview onto everyone else, the results could be extremely dystopian.\n\nAvoiding these two threats requires walking a narrow middle path; for example, one country could gain too much power. Another example is one lab ending up with too much power.",
+            "createdAt": "2026-09-14T04:18:19.000Z",
+            "url": "https://x.com/sama/status/2099352016988614852",
+            "likes": 7540,
+            "retweets": 728,
+            "replies": 1680,
+            "isQuote": true,
+            "quotedTweetId": "2099348812305473766"
+          },
+          {
+            "id": "2099348812305473766",
+            "text": "The world deserves confidence that American companies developing increasingly capable AI will act responsibly, especially as the trajectory of progress has steepened. Every frontier lab must deliver on this, and there is no reason any of us should come to work if we cannot.\n\nWe welcome a federal framework that sets consistent safety requirements for frontier AI. But we do not believe we need to wait for an anti-trust exemption or legislation to begin the work of providing this confidence. Consistent rules to manage frontier risk so that we can maximize the benefits are a good idea (and we are excited by ideas like independent auditors).\n\nYears ago, companies like ours developed things like Responsible Scaling Policies and Preparedness Frameworks. Those were good for that moment, and focused primarily on the deployment of completed models, not what happens during their development process.\n\nToday's shift to focusing on safe development and evaluation will need new tools. For example, at OpenAI we now formulate explicit safety cases in advance of frontier reinforcement learning runs we expect to significantly increase capability, in addition to the safety work we have long done in advance of model releases.\n\nWe hope that other companies will learn from our approaches and propose their own; we think shared standards for misalignment, monitoring, and safety will lead to better outcomes. We look forward to collaborating with our colleagues across the industry to formulate the best version of these.\n\nWhen we talk about “pacing”, we do not mean “stopping”. Progress has been rapid and will continue to be. But it should be slower than it otherwise could be; interventions like safety cases and monitoring have significant costs.\n\nPacing will be well worth this cost; no amount of American competitive pressure should justify recklessness, or let capabilities get ahead of alignment and monitoring.\n\nWhere we will need the help of our government is for international coordination. But first we should do what we can ourselves.",
+            "createdAt": "2026-09-14T04:05:35.000Z",
+            "url": "https://x.com/sama/status/2099348812305473766",
+            "likes": 7781,
+            "retweets": 702,
+            "replies": 1503,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "xBuilders": 15,
+      "totalTweets": 24
+    }
+  },
+  "podcasts": {
+    "generatedAt": "2026-09-14T06:52:01.714Z",
+    "lookbackHours": 336,
+    "podcasts": [
+      {
+        "source": "podcast",
+        "name": "No Priors",
+        "title": "Redefining Chip Architecture with Arm CEO Rene Haas",
+        "guid": "8476d0dc-a726-11f1-86e6-bbc25e1787ef",
+        "url": "https://www.youtube.com/@NoPriorsPodcast",
+        "publishedAt": "2026-09-03T10:00:00.000Z",
+        "transcript": "Speaker 1 | 00:00 - 00:15\nThere's no computing problem that's ever been invented that doesn't utilize and can't utilize the microprocessor. It is the heart of everything. All roads lead through it, around it, past it. Something has to do the orchestration, arbitration decision around where those tokens go. That's what CPUs do.\n\nSpeaker 1 | 00:15 - 00:36\nChip design can take anywhere from twenty four to thirty six months depending on the complexity of the chip, etcetera, etcetera. The actual design is not the largest amount of time. The largest amount of time is in the verification, the validation, the debug. AI is really good at that. And if we were to shut it off, it's like being in the 1990s, you've got internet and you're now saying, you know, only internet between the hours of two and four.\n\nSpeaker 2 | 00:36 - 00:37\nYeah.\n\nSpeaker 1 | 00:37 - 00:42\nAfter that, go to the library that we have down the hall. It'd be anarchy. Yeah. The genie's out of the bottle and there's no stopping that.\n\nSpeaker 2 | 00:49 - 01:13\nHi, listeners. Welcome back to No Priors. Today, Elad and I are here with Renee Haas, the CEO of ARM and SoftBank Group International. We talk about the position of ARM within the chip industry, the resurgence of interest in chip innovation, the challenges of the supply chain, the future of robotics, energy, his place in the SoftBank Group, and how he sees workloads changing in the future and for ARM. Renee, thanks so much for doing this with us.\n\nSpeaker 1 | 01:13 - 01:13\nPleasure.\n\nSpeaker 2 | 01:14 - 01:36\nCongratulations on the chip presentation at hot chips and, you know, all of the progress that ARM has made. I think there's enormous amount of interest from the technology industry and the software industry and just sort better understanding the chip supply chain recently. For anybody who's not super familiar, can you explain Arm's position in it? And then we'll get into sort of more recent topics.\n\nSpeaker 1 | 01:36 - 02:14\nSo we have two positions in the chip supply chain. Our primary business is licensing IP, the CPU core that finds its way into smartphones, data centers, automobiles, you name it. Our customers are the ones who either build the chips themselves, a Samsung who's got their own fab, or the vast majority companies that take their chip designs and go to TSMC and get them taped out. So in that world, and this is the cool thing about ARM, because we're so broad in terms of the markets that we serve, we kind of see everything. We have a very good sense of what's going on in automotive, data center, smartphones.\n\nSpeaker 1 | 02:14 - 02:37\nSo we see the supply chain situation from all angles. We also introduced our first product last March, the one you just mentioned at Hotchips, the Army GI CPU. So now we're in that soup ourselves from the standpoint of we're also having to figure out how to buy substrates and buy wafers and buy memory, etcetera, etcetera. So we're up to our waste and everything on the supply side.\n\nSpeaker 3 | 02:37 - 02:54\nWhy'd you make the move now? So know, ARM, I believe, existed for a few decades now. The focus was always on IP, which is effectively like designing the way the different chip components are put together, then you license that out to other people to actually manufacture and incorporate into their designs. Why did you decide to start making some of your own CPUs?\n\nSpeaker 1 | 02:54 - 03:36\nYeah, was an evolution from the early days of where we just supplied simply the IP components, the pieces, the CPU IP, the GPU IP, the system IP, etcetera, etcetera. A few years ago, what we were starting to see was that product cycle times aren't slowing down, chip manufacturing times are extending, the ability to get solutions out faster was becoming more and more important. So we moved from these individual components into what we called compute subsystems. I used, when we did the road show a few years ago, I used the Lego analogy where essentially we're providing the blueprint on here's how you stitch it all together. Demand for that was insane.\n\nSpeaker 1 | 03:36 - 03:54\nAnd what we were finding was we were, and we initially, people thought, well, people aren't gonna want these subsystems because that's what a chip designer does. Why are you providing that piece? But it saved time to market. And it saved a whole lot of things in terms of cost, speed, etcetera, etcetera. The physical product was sort of the next leap, if you will.\n\nSpeaker 1 | 03:54 - 04:15\nAnd there are certain sets of customers that will license IP too, and they've got all the capability in the world to build chips based on ARM. There's a lot of companies who want to have product based on ARM. Not all of our customers build products that serve those markets. So Meta was that first example. They wanted a general purpose agentic CPU.\n\nSpeaker 1 | 04:15 - 04:23\nThere wasn't anybody out who could give it to them. They came to us and said, Hey, why don't we do this together? And that's how we got into it.\n\nSpeaker 2 | 04:23 - 04:27\nHow has that landed with the rest of your customer base?\n\nSpeaker 1 | 04:27 - 05:10\nSo one of the things that we were very careful about was getting, making sure the ecosystem was on board with this, because we do CPU IP, which is really only as good as the ecosystem, the ecosystem of chip people and the ecosystem of software folks and people who build around that. So we talked to just about everybody who were customers and said, you know, how do you feel about this is the direction we're going? And surprisingly, we got a lot less pushback than I thought. And the reason for that was the more software that's available in the wild, whether it's proprietary and or open source, benefits the broader ecosystem and the customers themselves. So whether it was Nvidia, Amazon, Microsoft, Google, all people who build ARM based server chips, they were all on board.\n\nSpeaker 1 | 05:10 - 05:26\nAnd I think the ultimate proof point was when we announced the product last March, we had Jensen, we had Ronnie Bulker, we had Ahman, we had James Hamilton, all the folks from those customers I mentioned all saying, congratulations, it's a great thing. So it's been okay.\n\nSpeaker 2 | 05:26 - 05:34\nWhere are you in the learning cycle as a business now selling physical chips that feels like a lot of new capabilities?\n\nSpeaker 1 | 05:35 - 05:52\nYeah. So obviously to deliver a product, we're a fabless semi company, right? We don't have a fab and we have no intention to build a fab, but we fit in that ecosystem. But that means you need supply chain operations people. You need to work with, as I said, the TSMC's and Samsung's of the world.\n\nSpeaker 1 | 05:53 - 06:17\nYou need to work with the Samsung's and the Micron's, the SK hynix to get memory allocation. And then on the engineering side, you need a lot more different capabilities. You need backend people, layout people, implementation people, bring up labs, physical stuff, right? We didn't have a lot of physical stuff, which was kind of the beauty of the business, the original business.\n\nSpeaker 2 | 06:17 - 06:21\nI remember discovering that Arm had a 98.5% gross margin.\n\nSpeaker 1 | 06:21 - 06:23\nYeah, kind of beautiful. I\n\nSpeaker 2 | 06:23 - 06:24\ndon't think I've seen that otherwise.\n\nSpeaker 1 | 06:25 - 06:43\nI came from Nvidia before I came over here. Most of my career was in the chip world. And I remember coming to ARM in 2013 and thinking, no inventory, no RMA, no scrap, what's not to like? So we had to add a lot of those capabilities. We have a lot of people on the leadership team who've come from that world.\n\nSpeaker 1 | 06:43 - 06:55\nI've got execs from Broadcom, Qualcomm, Nvidia. I work for Nvidia. So we have the leadership that's done this before in other companies. So we've been able to build up that muscle pretty quick.\n\nSpeaker 3 | 06:55 - 07:15\nHow have you approached AI adoption? So we were speaking earlier that there's news from Open Editor today about Jalapeno, and the chip that they designed. Their claim is it was a very fast time to market, and part of that was using AI tooling to sort of design chips faster. How much adoption have you seen there? I know other companies have also talked about things like adopting formal verification at Amazon or other places for their training chips.\n\nSpeaker 3 | 07:15 - 07:22\nSo I think the chip world is starting to evolve in terms of AI usage. I'm And just curious about how you've done that at R and\n\nSpeaker 1 | 07:22 - 07:58\nPersonally, I'm a huge believer in AI as a utility that's going to help productivity for every single industry. It is gonna be the great leveler in terms of companies that can get started super quickly. And for industries, whether it's healthcare, infrastructure, robotics, every industry is gonna use artificial intelligence as utility and stop. So since I'm such a believer in this, of course we use it very heavily inside of ARM. On the non engineering side, we're using it all over the place, but on the engineering side, we've seen huge, huge benefit.\n\nSpeaker 1 | 07:58 - 08:24\nYou mentioned verification. Chip design can take anywhere from twenty four to thirty six months, depending on the complexity of the chip, etcetera, etcetera. The actual design of the architecture, the RTL generation, if you will, the mapping of the architecture is not the largest amount of time. The largest amount of time is in the verification, the validation, the debug, the documentation, etcetera, etcetera. AI is really good at that.\n\nSpeaker 1 | 08:24 - 08:51\nAnd I would say we probably have 80 to 90% of engineers today in sidearm who use it on a daily basis. And if we were to shut it off, my analogy I give to people, it's like being in the 1990s, you've got internet, and you're now saying, only internet between the hours of two and four. After that, go to the library that we have down the hall, that's got all the books that you can go up and look all this information up. People, there'd be anarchy. So the genie's out of the bottle, right?\n\nSpeaker 1 | 08:51 - 09:20\nAnd there's no stopping that. Now there's certain things that the tools are still not that mature of. One of them is really around RTL generation, and then physical design and implementation in best of class. And that's simply because the models, they're trained on what's available publicly, and a lot of the information is quite proprietary. That being said, there's massive opportunity between the ecosystems and everyone in the industry to make that better.\n\nSpeaker 1 | 09:20 - 09:21\nIt's only gonna get better.\n\nSpeaker 3 | 09:21 - 09:25\nHave you been fine tuning models to try and address that gap, given the information that you\n\nSpeaker 1 | 09:25 - 09:54\nwant We've working with model makers around that, absolutely. And I think that's a big, big opportunity. And one of the things that I'm proud of at ARM is given our business, our core IP business, we probably have the richest IP portfolio, both in terms of not only the IP, and this is the killer, the documentation, the test benches, how you build the IP. I've worked for chip companies in the past that have said, Hey, why don't we license this IP that we've got? Because it's really, really valuable.\n\nSpeaker 1 | 09:54 - 09:58\nAnd then you get into, wait a minute, there's no documentation. There's no explanation on how\n\nSpeaker 2 | 09:58 - 09:59\nNo one's ever gonna be able to use this.\n\nSpeaker 1 | 09:59 - 10:15\nIt's unusable. It's untestable. And if it's unusable and untestable, it's actually untrainable. And if it's untrainable, it's not usable for AI. I think we have some built in advantages based on our business model that'll allow us to really be able to take advantage of the tools as they get better.\n\nSpeaker 3 | 10:15 - 10:34\nSo exciting. How much do you think, if you were to extrapolate out... And this is a little bit of an uncertain question. But if you extrapolate out two, three years, and all the tooling is likely to come in AI and the ability to fine tune models against some aspects of the design that you mentioned, do you think that twenty four to thirty six month cycle shrinks to a year to six months? Do think it stays roughly where it's at?\n\nSpeaker 3 | 10:34 - 10:43\nI'm a little bit curious about how does that really impact these cycles and time to market, because that has pre dramatic ramifications in terms of the clock speed of the entire industry.\n\nSpeaker 1 | 10:43 - 11:12\nI don't know if it's in two to three years away, but five plus years, can you go from idea to a GDS two file, with GDS two file being the file that you actually send to the fab to go get built for certain designs? Quite possible. So it takes that whole design piece out of the way. It takes that whole piece out of the way relative to the verification. So I think for the more straightforward designs, quite possible.\n\nSpeaker 1 | 11:12 - 11:34\nNow, if you go into the tool and say, design me something that's 10% faster than Verruvan, 20% cheaper, and 30% more efficient on this model, you're not gonna be able to get press a button and have it happen right away. But I think in five to ten years, you know, our industry as well, we're gonna see some amazing differences relative to how chips are designed.\n\nSpeaker 2 | 11:34 - 11:58\nHow does it change... I'm sure you had some prediction of this, but how does it change the way you look at the business given there's just a big diversity of large players and new players that all, you know, want to have their own chip designs now? And, you know, the Veras and the Gravitrons of the world, they all use ARM. It's a big step up for them. But it's a big diversification of the customer base, right?\n\nSpeaker 2 | 11:58 - 11:59\nThat can be only good.\n\nSpeaker 1 | 11:59 - 12:39\nOh, absolutely. I think what's going to matter, back to the earlier discussion we had on supply chain, it's understanding the supply chain impacts, how all of that gets built and put into ultimate end products. I think that's gonna become a much more important muscle as we go forward, because one thing to say it another way. There's a lot of really great young companies today doing AI chips, well known companies getting tons of funding, innovative designs, etcetera, etcetera, selling into an industry where the capital requirements are just massive. And the relationships with memory vendors is incredibly critical, or the relationship with substrate vendors.\n\nSpeaker 1 | 12:39 - 12:42\nSo companies are going to have to be much more-\n\nSpeaker 2 | 12:42 - 12:45\nMore access to a three nanometer line, a six nanometer line, advanced packaging line.\n\nSpeaker 1 | 12:45 - 13:12\nAll that. I think that's not going to stop in twelve months. It's not gonna stop in twenty four months. I think we're gonna be in this constrained environment for three to five years, at least. So long as the transformer is the unit of energy relative to how you generate AI training and AI inference by design, it's very compute intensive, it's very memory intensive.\n\nSpeaker 1 | 13:12 - 13:26\nSo if you think about that, that's going to drive a lot of demand on having supply chain acumen, which then goes back to people who've got great ideas on chip design, they're going to have to have need a lot of other things just to be able to get access to capital, wafers, everything you just talked about.\n\nSpeaker 3 | 13:27 - 13:47\nWe've just had a cascading series of things that have been the bottleneck to more compute for the AI industry. So, you know, two years ago or so, I think it was like packaging and packaging related items. And then eventually now, people want to talk about how it's memory and things like that that are in some sense limiting to certain systems being built at sufficient scale. Do you have a view of what is the next sort of bottleneck that's coming?\n\nSpeaker 1 | 13:47 - 15:00\nI think building out the data centers is going to be a bottleneck. And when I say building out, if you look at all the projects that are being done today, not a lot of them are ahead of schedule and needing less labor than they thought. And then when you layer on top of that, a lot of buzz that's coming from different parts of the country in The United States here, relative to slowing down data center development or putting restrictions around it, I think that infrastructure build out could be a headwind just relative to everything going on, which may be, end quote, okay, because if infrastructure build out was not a headwind, I think capacity for wafers, capacity for memory, that probably would be a headwind. So I think you're gonna see a number of different governors, if you will, not governors of states, but different things that are going to throttle the growth of this, which just expounding for a second, I had been on a bunch of panels and I a of questions about AI bubble and when's it going to stop? And there's setting aside the valuation bubbles, which is a stock market index component, the bubble in terms of, are we oversupply to demand?\n\nSpeaker 1 | 15:01 - 15:12\nNot even close. And I think again, that's because the demand is insatiable, just given the way these models work, And infrastructure build out, access to wafers, access to memory, all of that's combining.\n\nSpeaker 2 | 15:13 - 15:50\nYou mentioned that, and I think a lot of companies are learning today, that strategic use of the cap table access to capital in an era where you either need to consume a lot of compute or you need to put a lot of CapEx into the ground, or you're just doing big technical projects like coming up with CPU IP. You run SoftBank Group International. You have this one dominant shareholder. ARM itself as a business is just like a beautiful cash flow machine from the outside, right? I'm sure you think a lot about like the leverage of SoftBank and how to use that well.\n\nSpeaker 2 | 15:50 - 15:55\nLike what advice do you have for entrepreneurs navigating these CapEx intensive industries from what you said?\n\nSpeaker 1 | 15:55 - 16:40\nYeah. So one of the benefits we have at ARM, publicly traded, yes, but a very, very large single shareholder. So I have lots of informal investor meetings with my chief shareholder all the time about this. We have a big advantage in that there's a lot of things symbiotically we can do together that can help arm advance its initiatives by having SoftBank as our largest shareholder that we look to be very, very innovative around. To your point in terms of young companies, I would say strategic partnerships incredibly early, whether it's with people inside the supply chain, people in private equity, the banks themselves.\n\nSpeaker 1 | 16:40 - 16:49\nIt's a different game now. On one hand, semis are kind of back because you now have a wave of semiconductor startups. There\n\nSpeaker 3 | 16:49 - 16:49\nwas\n\nSpeaker 1 | 16:49 - 17:28\na long time where that was just not happening, investment in the industry. Now we've got a lot, but access to capital is going to be the gate for them in terms of how they get through that. So I think getting much more creative in terms of how they work with the ecosystem is going be super, super key. And we at SoftBank, that's one the things we look at very strategically. Companies that we can bring in into the portfolio that we can help, that we can provide a combination of either the backstop, you know, and or if you think about SoftBank, we just announced we being SoftBank SoftBank Neo, which is our intent to become a neo cloud.\n\nSpeaker 1 | 17:28 - 17:43\nAnd in that world, we could become a home for these young companies who have chip technology that in other worlds they'd have to go up and figure out how to get a design win at Microsoft or Google. We can provide a lot of interesting avenues for that.\n\nSpeaker 3 | 17:43 - 17:57\nCan you talk a little bit more about the portfolio of things that fall under your purview at SoftBank? I know it mentioned there's ARM, and then there's this sort of broader suite of things. So we'd love hear more about what else you're responsible for, and we had some specific questions for some of those as well.\n\nSpeaker 1 | 17:57 - 18:39\nYeah, so the way to think about it is SoftBank Group, which is headed in Japan, that is Masa, have a lot of different operating companies underneath them. One of the largest ones is SoftBank KK, which is essentially SoftBank Mobile. Inside The US, there's a lot of investment activity that's going on with SoftBank Group International. There's SoftBank Vision Fund. But increasingly a lot of the strategies that we're trying to do around SoftBank is helping the strategies that Masa talked about publicly at his shareholder meeting in Japan, which is around robotics, OpenAI, infrastructure, and ARM.\n\nSpeaker 1 | 18:39 - 19:06\nSo I've probably got my eyeballs on a lot of stuff, to be honest with you, in terms of helping Masa really realize the execution of that vision. So yes, I'm leading the direction of Ampere and Graphcore and another company called Stack AV that's doing things around autonomous. But maybe a better way to think about it, Elad, is that I'm kind of in the room on a lot of discussions that Moss is having and helping him sort of formulate that strategy and more importantly help execute it.\n\nSpeaker 2 | 19:07 - 19:19\nHow has being part of the SoftBank Group or working with all these different companies, even SP Energy and the broader ecosystem changed your point of view on what you can do with Arm?\n\nSpeaker 1 | 19:19 - 20:12\nWell, one thing it does, it gives us a huge bird's eye view relative to where the broader industry is going, whether it's around capital, whether it's around energy, but also you can imagine it could provide a home for our products, right? So it doesn't need to be the home, but it certainly can be a home, which is also a big help. When we think about the verticals that SoftBank's involved with robotics, energy, data center infrastructure, and then you look at the products that ARM has, the only one we've announced so far is the ARM AGI CPU. You can start to connect the dots and say, gosh, there could be some very interesting opportunities that could be an opportunity for ARM, which necessarily doesn't mean that we're getting into the broad merchant ship business. We could be just doing products simply back for SoftBank.\n\nSpeaker 2 | 20:13 - 20:40\nWe're a couple years into serious efforts in more generalized robotics at this point, right, if you compare it to like about a decade for LLMs. There's increasingly interesting demo results from companies on generalization of task and environment, more robustness, maybe even in context learning, but not like wide scale deployment quite yet. Yep. First, would you agree with that characterization?\n\nSpeaker 1 | 20:40 - 20:41\n100%.\n\nSpeaker 2 | 20:41 - 20:48\nWhat predictions do you have about the robotics market and any opportunity for ARM there?\n\nSpeaker 1 | 20:48 - 21:28\nOh, well, broadly speaking, I think whether it's humanoids or dedicated machines to do certain level of tasks that can be retrained is going to be enormous, right? The robotics 1.0, which is a purpose built industry. You had piece of mechanics designed to do a certain task, and the software that was optimized for that task. If you had to, a brand new automobile line came up, or some different piece of equipment, if the robots weren't well suited for that, rip up the line, etcetera, etcetera. So as you can imagine then the barrier was pretty high.\n\nSpeaker 1 | 21:28 - 22:03\nGetting to a world where the robots can learn just based upon either being trained or what they see. And then when you then combine that with, can you design something mechanically general purpose enough that can take advantage of being reprogrammed? And then when you layer on top of that, the costs coming down, you look at it say, oh my gosh, what will it not be able to do? So it's almost like something out of the Jetsons, right? Where a lot of things will ultimately be done by robots, construction, infrastructure, service, security.\n\nSpeaker 1 | 22:03 - 22:24\nRight now you see a lot of stuff on Instagram or TikTok of Olympic races with robots, etcetera, etcetera. I don't think anyone's gonna have any interest in watching a sports league of robots. There may be an enthusiast class who might be interested in that, but the broader utility is going to be around a lot of human labor tasks that can ultimately easily be replaced by robots. There's no questions right A\n\nSpeaker 3 | 22:24 - 22:44\nlot of the hypotheses people have about the form factor of robotics tends to split into two or three camps. One of the camps is that they're gonna be humanoid or roughly sort of the human footprint because so much of the physical world is already designed that way, and the tooling is designed that way. And so you can just slot robots right in. Others view it as there's gonna be much more sort of specialized task specific form factors. Do you have a hypothesis on\n\nSpeaker 1 | 22:44 - 22:44\nI think\n\nSpeaker 3 | 22:44 - 22:45\nit's both.\n\nSpeaker 1 | 22:45 - 23:03\nYeah, I think it's both. There are a lot of jobs and work tasks that are optimized around a person being six feet tall and having arms of a certain length, etcetera, etcetera. But I think it'll be both. And I think the fact that they're going to be smart and can learn. And to answer your earlier question, arm is going be everywhere.\n\nSpeaker 1 | 23:04 - 23:30\nWe have a tremendous amount of technology from a real time sensing standpoint around microprocessors that will be out at the fingers that can do perception and sensing. That's all going to be ARM based. Today, whether it's NVIDIA or some of the work that Qualcomm does, most of the brains, the brains that you see in the humanoids, those are all running on ARM today. So I think for us going forward, the robotic industry will be powered by ARM.\n\nSpeaker 3 | 23:30 - 23:50\nAre you seeing any early indications? I mean, have this great seat to your point where given the ubiquity of ARM and lot of these different types of devices, you can kind of see the future before others in terms of where adoption is happening or where shifts are happening from a technology perspective. Are there specific pockets that you think will be most likely the early adopters of robotics that you're starting to see some signal from?\n\nSpeaker 1 | 23:50 - 24:11\nI think it's still a little bit early because the business models have not been actually figured out. Cost of robots are so high, right? Because the cost of robots are so high, people buying the robots themselves, a tough model to sort of get people's heads around those that actually replace. So I think costs need to come down, and the business model need ultimately to vetted.\n\nSpeaker 3 | 24:11 - 24:24\nBecause right now robotic footprints tend to be things like automotive, or certain surgical robots, or distribution centers, right? There's a few very sort of bespoke applications that I think are mostly robotic sales today. And so that's why was a bit curious about\n\nSpeaker 1 | 24:24 - 24:47\nDistribution what centers for sure. I mean, that can ultimately go completely automated, right, relative to... And even ultimately to the delivery, right? And you can question, to me loosely speaking, a truck that has an autonomous, is a robot of sorts. So around factory automation and delivery and distribution, that will be one of the very first to be automated.\n\nSpeaker 1 | 24:48 - 24:48\nNo doubt.\n\nSpeaker 2 | 24:49 - 25:08\nThere is increasing debate and very quickly, like policy or EOs around supply chain controls and usage controls around both robotics and chips and data centers. Right? Sorry. I'm gonna throw export controls in there. So four types of controls.\n\nSpeaker 2 | 25:08 - 25:41\nAll of these controls are relevant for you. And now either from your end customer perspective or as a relatively new entrant to, you know, we're gonna own the end product and have a supply chain organization of your own. Like, what's your stance on, you know, how protectionists... I realize it's not an American company, but you do a lot of business here. How protectionists The US or the West should be about manufacturing of ships, creation of data centers, robotics?\n\nSpeaker 2 | 25:41 - 25:42\nLike, are your overall stances here?\n\nSpeaker 1 | 25:43 - 25:50\nSo putting my American citizen hat on for a moment, and Arm, as you said, is not an American company.\n\nSpeaker 2 | 25:50 - 25:51\nIt is a UK,\n\nSpeaker 1 | 25:51 - 26:19\ncorrect. Our HQ is in The UK, but we have a lot of employees. I wouldn't say half our employees, maybe 30% are in The US, think I 40% are in The UK and maybe 30% Asia. So we're a global company, but with a huge US footprint. But as an American citizen and someone who grew up in semiconductors, and I remember in the 1980s when The US was the leader in semis and Japan Inc.\n\nSpeaker 1 | 26:19 - 26:46\nStarted to really get very, very aggressive in terms of memory pricing and essentially taking a lot of market share. The US started something called Cematec back in the day, which is really around how to refortify the American semiconductor industry, which I thought at the time was the right move. And there was a lot of energy around that. Internet hit, SaaS companies were all the rage. People kind of forgot about semis being a strategically important asset.\n\nSpeaker 1 | 26:46 - 27:21\nBut I think it is critically important for The United States to have as much of that technology inside on US soil. I And would say the same thing to UK, lesser just because of the scale of The UK. But when you think about the size of The US market, the criticality of semiconductors to what The US does, whether it's Intel, whether it's Micron, I think we need more US fabs. It's critical for national security. It's also critical for diversification of supply chain.\n\nSpeaker 1 | 27:21 - 27:48\nSo I'm a big believer in terms of that as a strategy. I think it's really, really critical. As far as the export controls go, and we're going to limit the chips because we don't want China to win the race. Personal view is that it's an infinite game, I believe, first in terms of the race, that there's not going be a winner, the race is going to be over. But you could get to a situation where a lot of the critical technologies are not US based.\n\nSpeaker 1 | 27:49 - 28:29\nAnd that's not going be a good thing, right? Because will people say, well, the costs will go down and goods are cheaper. But ultimately, and I'm a big believer of this, number one, for both national security reasons and economic, you want to be at the forefront of technology because it drives innovation, but it also drives ecosystems. If you think about The US auto industry in the 1950s, post World War II, where Detroit was the center of the universe, you had spots across Wisconsin, Ohio, Illinois, whether it was Firestone or Bridgestone, or Bridgestone's Japanese, but other companies in that ecosystem that fit into it. Data centers are kind of the same way.\n\nSpeaker 1 | 28:29 - 28:59\nPeople look at data centers and say, Oh, it's a big Costco box and there's two cars in the parking lot. And all of that is being driven automatically. So there's no jobs. I call BS on that because if you think about whether it's around energy, liquid cooling, all of the things that make the data center better, those are all jobs that can be created and done here. So I think as a national policy, it's incredibly important for us to be investing, A, in The United States, and B, making sure that we stay in the lead.\n\nSpeaker 3 | 29:00 - 29:24\nOn the data center side in particular, it seems like a lot of the actions that are being taken to try and prevent future data centers feel more coordinated than not. I know it's phrased as grassroots efforts, but it seems like there's some coordinated function there. Do you have a hypothesis in terms of why there's been this sudden unexpected outcry on data centers from certain corners? I think there is a... We were maybe chatting about this a\n\nSpeaker 1 | 29:24 - 29:32\nbit earlier, that there's a fear that AI means job loss. And job loss means for all these things kind of implications. So I\n\nSpeaker 3 | 29:32 - 29:36\nthink unfortunately- And you think that fear is well grounded? Because sometimes it seems like it's only creating jobs.\n\nSpeaker 1 | 29:36 - 29:38\nNo, I don't think it's well grounded at all.\n\nSpeaker 2 | 29:39 - 29:45\nI think the Electricians Labor Union specifically said, please don't ban the data centers. We need these jobs very recently.\n\nSpeaker 1 | 29:45 - 30:01\nCompletely. And these are jobs that make people... That's a great example, right? Because here's one where there may have been a stigma to being an electrician, right? Electrician is either maybe viewed as a highly educated job or you don't need a PhD.\n\nSpeaker 1 | 30:01 - 30:18\nIt's a highly skilled job that requires a lot of training and certification. And you need tons of them to do this kind of work. And that's very, very critical to data centers. So I think to your question, I think part of the backlash is just from fear. There's just a fear that my jobs are going to go away.\n\nSpeaker 1 | 30:19 - 30:46\nThe AI boom for good or for bad has benefited a lot of people. And there's lot of people who have no benefit from it. And there's a lot of America, just again on the American political scene, who it's tough to make the mortgage, their paychecks haven't gone up, and now they've got this AI thing that just look, it's going be even harder. So I think the data centers are becoming a bullseye, unfortunately, for all the things that could be bad about AI, which I think is just...\n\nSpeaker 3 | 30:46 - 30:56\nPeople are holding up fake tanning water and claiming that it's ruining the water supply. So I feel like there's other kind of things that are just being made up about data centers as a way to try and create fear.\n\nSpeaker 1 | 30:56 - 31:00\nFor sure. For sure. And unfortunately, it's become the boogeyman for a lot of things.\n\nSpeaker 2 | 31:00 - 31:34\nI think it's also pretty clear that there's like, you know, organized media influence around these issues as well. I think, you know, you can have all three separate points here, including yours, Renee, which is there are benefits from the construction of essentially like a rapidly growing new industry that can create new technology and new jobs and create, you know, external wealth for the communities around them. But it's on the industry to go communicate that.\n\nSpeaker 1 | 31:34 - 31:46\nYeah. I mean, on first principles, whether it was smartphones, the internet, personal computers, fill in your favorite technology, there is no downside from being the leader. There's just not- This\n\nSpeaker 2 | 31:46 - 31:47\nis maybe the most important point.\n\nSpeaker 1 | 31:48 - 32:23\nThere's just not downside from being the leader. There are second and third order effects that you may not like, but to be the laggard, you are having the entire script dictated to you and everything that kind of comes with it. I mean, look at other parts of the world that are just not the leaders in this space. Economically and socially, they're left behind, and governments carry the large tax burden of it. So if you're on the wave of some technology innovation, and I would argue to some extent, AI is a little bit of the final frontier of what can be done with essentially intelligence.\n\nSpeaker 1 | 32:24 - 32:30\nOf course you want to be in the lead. Of course you want to be driving that because the benefits for society are going to be enormous. What are\n\nSpeaker 3 | 32:30 - 32:32\nyou most excited about in the coming year or two for ARM?\n\nSpeaker 1 | 32:33 - 32:58\nBeing in the center of all that. Yeah, honestly, I think we are... I feel fortunate every day that we are in the heart of all of this. And the fact that we can be a participant in that ecosystem, we can help drive the innovation, we can be involved with leadership companies, develop leadership products. We're right in the middle of it all because A, all the AI needs some level of compute.\n\nSpeaker 1 | 32:58 - 33:15\nThat's what ARM does. And that compute needs to be power efficient. That's what we're really, really good at. So those roads all lead through us. And I've been in this industry my entire career, had a lot of times thinking about, gosh, what's the next product we're going to need?\n\nSpeaker 1 | 33:15 - 33:32\nDo people really need another tablet? And does it need to be 8.9 inches or 9.2 inches? And now it's... The abundance of opportunity innovation is so great with AI. So yeah, I'm super excited and feel blessed to be leading a company that's in the center of it.\n\nSpeaker 2 | 33:32 - 34:00\nThe need for chips is driven by like massive change in workload, right? And we have continual massive change in workload. So no better place, time to, you know, go work on chip designs and sell to all of the people working on that innovation. My understanding of like the CPU opportunity in this era is, like, two core pieces and then, you know, future future devices and robotics as well. But there's there's the CPU in the rack.\n\nSpeaker 2 | 34:00 - 34:23\nThis is the Verus and the Gravitrons of the world. And then there's the use from an agent perspective, like, you know, sandboxes and agents being able to use all of the software we already have and API calls, tools, etcetera. Do you have any guess as to, you know, both these things are growing, but the scale of opportunity, or am I missing things that you guys are really excited about from the CPU perspective?\n\nSpeaker 1 | 34:23 - 34:48\nWell, from the CPU standpoint, and I think when the data center thing was kind of exploding with... Let me back up. When ChatGPT had the explosion and everything was all about the accelerators, I think there was so much focus on no matter what the question is, the answer to the accelerator. There's no computing problem that's ever been invented that doesn't utilize and can't utilize the microprocessor. It is the heart of everything.\n\nSpeaker 1 | 34:48 - 35:15\nAll roads lead through it, around it, past it, etcetera, etcetera. You look at fundamental system design and you have to have CPUs. They just don't kind of go away. They were a little bit forgotten as this accelerator thing kind of took off. But what then became very obvious was as more and more of the data was moving away from training, training is obviously very important to recursive learning, reinforcement learning, to inference, the use of the tokens, the use of the information.\n\nSpeaker 1 | 35:15 - 35:43\nWell, of course in a system problem, something has to do the orchestration, arbitration decision around where those tokens go. The token factory just generates all these tokens. It's like literally where are the trucks that are gonna take the tokens away and give them to the users? That's what CPUs do. So until something's invented that says the CPU has gone away, and we're now doing it through some other mechanism, has yet been defined or invented, the CPU is going be doing just fine.\n\nSpeaker 1 | 35:43 - 36:19\nAnd there's gonna be a lot of demand for it, a ton of demand, in addition to the accelerators that generate the tokens. But the way to think about it is it's a system, which again, going back to memory. Well, of course memory is needed because in a computer Von Neumann architecture or computing architecture, you have a CPU, you have some accelerator, whether it's a floating point, a GPU accelerator, and memory. System design hasn't changed. I think some of the focus kind of moved around, but for ARM, and by the way, that applies whether I'm talking about a data center, that applies when I'm talking about an automobile, a robot, a phone, wearables.\n\nSpeaker 1 | 36:19 - 36:45\nAnd in fact, as you get to the smaller footprints where more and more AI is going to take place, that's gonna be a sweet spot for ARM because the CPU's table stakes anyway, you have to have it to do all the things that are required in the edge device. But now we have an opportunity with our instructions and architecture to do a lot of things where you just can't put a 50 watt GPU on your head. Right? You're gonna have to do that AI processing somewhere locally. So it's a great place.\n\nSpeaker 2 | 36:48 - 37:04\nFind us on Twitter at no priors pod. Subscribe to our YouTube channel if you wanna see our faces. Follow the show on Apple Podcasts, Spotify, or wherever you listen. That way you get a new episode every week. And sign up for emails or find transcripts for every episode at knowpriors.com."
+      }
+    ],
+    "stats": {
+      "podcastEpisodes": 1
+    }
+  },
+  "blogs": {
+    "generatedAt": "2026-09-14T06:52:01.994Z",
+    "lookbackHours": 72,
+    "blogs": [],
+    "stats": {
+      "blogPosts": 0
+    }
+  }
+}
