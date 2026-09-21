@@ -1,0 +1,294 @@
+{
+  "date": "2026-09-17",
+  "generated_at": "2026-09-21T08:35:00+08:00",
+  "daily_summary": "9 月 17 日是「AI 挤进用户已有工作流」的一天。OpenAI 全球上线 Microsoft Word 的 ChatGPT 加载项，覆盖免费到企业全部档位，可在 Word 内起草、编辑、排版，并从 Outlook、SharePoint、Google Workspace、Dropbox 拉取上下文。xAI 的 Grok 补上语音模式，桌面与移动端同步推送。Google Labs 把 CC 智能体扩展到最多六人的家庭，它拥有自己的独立 Google 账号，每天推送共享的「Your Day Ahead」简报，能代填家长同意书、制定膳食计划。Anthropic 上线生命科学验证计划（LSVP），向经审核的机构开放此前高度受限的 Mythos 模型，并把 Claude Code Projects 重做为多线程协调器。国内侧，微信输入法 PC 版更新至 2.1.4.6，支持在微信聊天框直接推荐并发送表情、隔空传送支持文件夹。Cloudflare 新增「Disallow AI Training」设置，让站点可以说「可以索引我，但别拿去训练」。共同指向一件事：AI 不再要求用户搬家，而是搬到用户已经在的地方去。",
+  "design_insights": [
+    {
+      "title": "ChatGPT 进 Word：AI 的胜负手是「不要求用户换地方」",
+      "summary": "OpenAI 全球上线 Microsoft Word 的 ChatGPT 加载项，覆盖 Free、Go、Plus、Pro、Business、Enterprise、Edu 等全部档位，经 Microsoft Marketplace 安装，可在 Word 内起草、编辑、排版，并从 Outlook、SharePoint、Google Workspace、Dropbox 拉取上下文；商业/企业/教育版默认不用于训练。",
+      "implication": "这是对输入法最有利的一条行业趋势：它证明了「嵌入现有工作流」的价值高于「建一个新应用」，而输入法天生就是所有工作流的底层。但要真正吃到这个红利，必须补上 ChatGPT 在 Word 里做到的那件事——上下文感知。目前输入法基本对「用户在写什么」一无所知。可落地的第一步不是接大模型，而是建立轻量上下文：当前 App、输入框已有内容、最近三条剪贴板。有了这三项，「续写」「改写成正式语气」「补全收尾」才有意义，否则 AI 改写只能基于孤立的一句话，效果必然平庸。注意上下文读取必须端侧完成并可一键关闭。",
+      "sources": [
+        "Future Tools",
+        "AI News for Vibe Coders"
+      ],
+      "source_urls": [
+        "https://www.futuretools.io/news",
+        "https://ddsboston.com/blogs/vibe-code-academy/ai-news-for-vibe-coders-daily-2026-09-17"
+      ],
+      "tags": [
+        "嵌入工作流",
+        "上下文感知",
+        "改写"
+      ]
+    },
+    {
+      "title": "Grok 补上语音：语音模式已从差异化功能变成入场券",
+      "summary": "xAI 的 Grok 新增语音模式，桌面与移动端在数日内陆续推送，使其与已提供语音交互的 ChatGPT、Gemini 对齐。同期 OpenAI 通过 GPT-Live-1 让 Codex 支持手机语音。",
+      "implication": "当所有对话产品都有语音，「能语音」就不再是卖点，竞争转移到语音之后的处理质量。输入法的机会恰恰在这里：通用助手的语音是「说完给一段回答」，输入法的语音是「说完给一段可直接发出去的文字」——后者对口语整理的要求高得多，也更难被通用产品顺手做掉。建议把资源从「提高识别准确率」向「提高上屏可用率」倾斜，度量指标从字准率（CER）换成「上屏后未经编辑直接发送的比例」。这个指标才真正对应用户感受到的价值。",
+      "sources": [
+        "Future Tools",
+        "AI/TLDR"
+      ],
+      "source_urls": [
+        "https://www.futuretools.io/news",
+        "http://ai-tldr.dev/releases/bendlang-bend-2"
+      ],
+      "tags": [
+        "语音输入",
+        "口语整理",
+        "评估指标"
+      ]
+    },
+    {
+      "title": "Google CC 家庭智能体：AI 开始拥有自己的账号与边界",
+      "summary": "Google Labs 把 CC 智能体扩展到最多六人的家庭，CC 拥有独立且经验证的 Google 账号，每天推送共享的「Your Day Ahead」简报，自动跟踪日程与待办，可代填家长同意书、生成膳食计划；在对群组外部采取行动前会先征求许可。",
+      "implication": "「对群组外部行动前先征求许可」是一条值得直接抄进规范的设计原则。输入法一旦引入 AI 主动能力，同样需要一条清晰的内外边界：在输入框内改写、整理、补全属于「内部动作」，可以默认执行；任何会导致内容离开输入框的动作（自动发送、自动填表、跨 App 粘贴）属于「外部动作」，必须显式确认。建议把这条写成硬性设计准则并纳入评审 checklist——它比任何隐私声明都更能防止踩线，也能让 AI 功能在用户心里保持「助手」而非「代理」的定位。",
+      "sources": [
+        "Future Tools",
+        "TLDR AI"
+      ],
+      "source_urls": [
+        "https://www.futuretools.io/news",
+        "https://ai.tldr.tech/p/2026-09-18-tldr-ai"
+      ],
+      "tags": [
+        "内外边界",
+        "授权设计",
+        "设计准则"
+      ]
+    },
+    {
+      "title": "微信输入法 PC 2.1.4.6：把输入法做成微信生态的毛细血管",
+      "summary": "微信输入法 PC 版 9 月 17 日更新至 2.1.4.6，升级至微信 4.1.5 及以上后支持在微信聊天框内推荐并直接发送表情，跨设备功能支持自定义设备名称，隔空传送支持发送文件夹；此前 2.1.0 已具备自动去口水词、智能加标点分段、长内容自动归纳分点、理顺语序、精简重复表达等 AI 文字整理能力。",
+      "implication": "微信输入法走的是「生态深度」而非「功能广度」——表情直接发送、隔空传送文件夹，这些都是只有绑定微信才能做的事。对我们的启示是不要在它的主场硬碰硬，而要守住它的结构性短板：它只在微信生态内最强，跨 App 时优势归零。建议把「跨 App 一致性」做成明确的产品主张：同一份个人词库、同一套语气偏好、同一个口语整理风格，在微信、飞书、浏览器、备忘录里表现完全一致。另外它的 AI 文字整理已经相当完整（去口水词、加标点、分段、归纳分点），这条线上我们已经不占优势，应尽快补齐到同等水平再谈差异化。",
+      "sources": [
+        "微信输入法更新日志",
+        "下载集"
+      ],
+      "source_urls": [
+        "https://secure.mydown.com/soft/100/87600.shtml",
+        "https://www.xzji.com/soft/5822.html"
+      ],
+      "tags": [
+        "微信输入法",
+        "竞品",
+        "跨App一致性"
+      ]
+    },
+    {
+      "title": "Cloudflare 让站点说「可索引、不可训练」：分级授权正在成为常识",
+      "summary": "Cloudflare 新增「Disallow AI Training」设置，站点可以告诉 AI 爬虫「索引我，但不要拿我训练」，并公开发布该规则。",
+      "implication": "把「使用」和「学习」拆成两种授权，这个颗粒度值得输入法直接借鉴。当前输入法的隐私设置通常是一个「是否允许改进产品」的总开关，粗暴且让用户只能二选一。更合理的是拆成三档：本次使用（仅端侧即时处理）、个人学习（留在本机用于个性化）、产品改进（匿名上云）。三档独立可控，默认只开前两档。这样既不牺牲个性化体验，又把最敏感的那一档交还给用户决定，是可落地且用户能真正理解的隐私设计。",
+      "sources": [
+        "AI/TLDR",
+        "Cloudflare"
+      ],
+      "source_urls": [
+        "https://ai-tldr.dev/releases/google-home-mcp"
+      ],
+      "tags": [
+        "分级授权",
+        "隐私设计",
+        "数据使用"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "轻量端侧上下文让 AI 改写真正可用",
+      "pain_point": "输入法的 AI 改写只能看到孤立的一句话，不知道用户在哪个 App、输入框里已经写了什么、刚复制过什么，导致改写结果常常跑题或语气不符，用户宁可自己改。",
+      "opportunity": "建立端侧轻量上下文：当前 App 类型 + 输入框已有内容 + 最近三条剪贴板，全部本地处理、可一键关闭；在此基础上再提供续写、改写语气、补全收尾等能力。",
+      "priority": "high",
+      "evidence": "OpenAI 的 Word 加载项之所以有用，核心是能从 Outlook、SharePoint、Google Workspace、Dropbox 拉取上下文，而非模型本身更强。"
+    },
+    {
+      "title": "从字准率转向「上屏即用率」的语音评估",
+      "pain_point": "团队长期用字准率（CER）衡量语音输入，但用户真实痛点是「转出来的文字还要改一遍才能发」，高字准率不等于高可用性，指标与体验脱节。",
+      "opportunity": "把核心指标换成「上屏后未经编辑直接发送的比例」，并据此优化口语整理（去口水词、加标点、分段、理顺语序），而非继续堆识别准确率。",
+      "priority": "high",
+      "evidence": "Grok 9/17 补齐语音模式后，语音已成行业入场券而非差异点；微信输入法 2.1.0 起的 AI 文字整理正是围绕「可直接使用」而非「转写准确」构建。"
+    },
+    {
+      "title": "AI 数据使用的三档分级授权",
+      "pain_point": "现有隐私设置常是「是否允许改进产品」一个总开关，用户要么全给要么全不给；全不给会同时失去个性化，实际上是把用户逼到次优选择。",
+      "opportunity": "拆成三档独立开关：本次使用（端侧即时处理）、个人学习（留本机做个性化）、产品改进（匿名上云），默认仅开启前两档。",
+      "priority": "medium",
+      "evidence": "Cloudflare 新增 Disallow AI Training 设置，把「索引」与「训练」拆成两种独立授权并公开规则，证明分级授权已被主流基础设施接受。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "OpenAI 全球上线 Microsoft Word 的 ChatGPT 加载项",
+      "summary": "覆盖 Free、Go、Plus、Pro、Business、Enterprise、Edu、Teachers、K–12 全部档位，经 Microsoft Marketplace 安装，可在 Word 内起草、编辑、排版，并从 Outlook、SharePoint、Google Workspace、Dropbox 拉取上下文；商业、企业与教育版数据默认不用于训练。",
+      "source": "Future Tools",
+      "source_urls": [
+        "https://www.futuretools.io/news"
+      ],
+      "tags": [
+        "OpenAI",
+        "Office集成",
+        "嵌入工作流"
+      ]
+    },
+    {
+      "title": "xAI Grok 新增语音模式，桌面与移动端同步推送",
+      "summary": "Grok 聊天机器人获得语音模式，数日内在桌面与移动端陆续开放，使其与 ChatGPT、Gemini 的语音交互能力对齐。",
+      "source": "Future Tools",
+      "source_urls": [
+        "https://www.futuretools.io/news"
+      ],
+      "tags": [
+        "Grok",
+        "语音模式",
+        "xAI"
+      ]
+    },
+    {
+      "title": "Google Labs 把 CC 智能体扩展到家庭场景",
+      "summary": "支持最多六人家庭，CC 拥有独立且经验证的 Google 账号，每天推送共享「Your Day Ahead」简报，自动跟踪日程与待办，可代填家长同意书、生成膳食计划；基于 Antigravity 框架与 Gemini 模型，美国限定。",
+      "source": "Future Tools / TLDR AI",
+      "source_urls": [
+        "https://www.futuretools.io/news",
+        "https://ai.tldr.tech/p/2026-09-18-tldr-ai"
+      ],
+      "tags": [
+        "Google",
+        "家庭智能体",
+        "授权边界"
+      ]
+    },
+    {
+      "title": "Anthropic 上线生命科学验证计划 LSVP",
+      "summary": "向通过资质、安全与伦理审核的机构开放 Mythos、Opus、Sonnet 模型的放宽生物学限制访问，分标准使用与高风险使用两档，高风险授权每六个月续期；首批内测包括 Xaira Therapeutics、Edison Scientific、Manifold Bio。",
+      "source": "Future Tools / 果壳",
+      "source_urls": [
+        "https://www.futuretools.io/news",
+        "https://www.163.com/dy/article/L79SBIQL05118OGM.html"
+      ],
+      "tags": [
+        "Anthropic",
+        "生命科学",
+        "分级授权"
+      ]
+    },
+    {
+      "title": "Claude Code Projects 重做为多线程协调器",
+      "summary": "从简单的文件夹体系变为可拆解目标、分派并协调并行线程再汇总结果的协调器，可同时压测接口与提交 PR、跨多仓库迁移调用方；Projects 会沉淀共享记忆，学习偏好与决策。面向部分 Pro 与 Max 订阅者开放 beta。",
+      "source": "TLDR AI",
+      "source_urls": [
+        "https://ai.tldr.tech/p/2026-09-17-tldr-ai",
+        "https://ai.tldr.tech/p/2026-09-18-tldr-ai"
+      ],
+      "tags": [
+        "Claude Code",
+        "多线程Agent",
+        "共享记忆"
+      ]
+    },
+    {
+      "title": "微信输入法 PC 版更新至 2.1.4.6",
+      "summary": "升级至微信 4.1.5 及以上后支持在微信聊天框内推荐并直接发送表情，跨设备功能支持自定义设备名称，隔空传送支持发送文件夹；沿用 2.1.0 起的 AI 文字整理（去口水词、加标点分段、归纳分点、理顺语序）。",
+      "source": "微信输入法更新日志",
+      "source_urls": [
+        "https://secure.mydown.com/soft/100/87600.shtml",
+        "https://www.xzji.com/soft/5822.html"
+      ],
+      "tags": [
+        "微信输入法",
+        "竞品",
+        "生态集成"
+      ]
+    },
+    {
+      "title": "Cloudflare 新增「Disallow AI Training」设置",
+      "summary": "站点可以对 AI 爬虫声明「可以索引，但不要用于训练」，Cloudflare 公开发布该规则，把索引与训练拆成两种独立授权。",
+      "source": "AI/TLDR",
+      "source_urls": [
+        "https://ai-tldr.dev/releases/google-home-mcp"
+      ],
+      "tags": [
+        "Cloudflare",
+        "数据授权",
+        "版权"
+      ]
+    },
+    {
+      "title": "Runway 发布 Enhance Frame Rate，支持最高 120fps",
+      "summary": "可将任意视频（含非 Runway 素材）转换为 25、30、48、60、120fps，含 NTSC 59.94 与英国法定 25fps 广播标准；速度比竞品插帧模型快 7 倍、便宜 3 倍，支持 4K、时长五分钟以内。",
+      "source": "Future Tools",
+      "source_urls": [
+        "https://www.futuretools.io/news"
+      ],
+      "tags": [
+        "Runway",
+        "视频生成",
+        "插帧"
+      ]
+    },
+    {
+      "title": "Anthropic 开源 Claude 优化的生物模型加速套件",
+      "summary": "Claude 在四周内为 36 个开源生物模型（含 AlphaFold 3、Boltz-2、ColabFold）编写推理优化套件，以 Apache-2.0 发布；exact 模式提速 1.6 倍且输出一致，fast 模式约 4 倍，big 模式降低显存峰值。一次蛋白设计从约 1 万美元降至单张 H200 上约 150 美元。",
+      "source": "AI/TLDR",
+      "source_urls": [
+        "https://buttondown.com/ai-tldr/archive/aitldr-daily-digest-september-19-2026"
+      ],
+      "tags": [
+        "Anthropic",
+        "科学AI",
+        "开源"
+      ]
+    },
+    {
+      "title": "OpenAI 发布模型失准报告框架与六个案例",
+      "summary": "OpenAI 公开一套追踪、调查与披露模型失准行为的正式框架，并附六份真实异常行为案例报告。",
+      "source": "JasonZhu.AI",
+      "source_urls": [
+        "https://jasonzhu.ai/en/news/2026-09-17"
+      ],
+      "tags": [
+        "OpenAI",
+        "AI安全",
+        "透明度"
+      ]
+    },
+    {
+      "title": "Meta 发布官方 WhatsApp Business MCP 服务器",
+      "summary": "支持 Claude、Cursor、Codex、ChatGPT 等编码智能体自动完成账号设置、消息模板、测试与排障。",
+      "source": "AI News for Vibe Coders",
+      "source_urls": [
+        "https://ddsboston.com/blogs/vibe-code-academy/ai-news-for-vibe-coders-daily-2026-09-17"
+      ],
+      "tags": [
+        "Meta",
+        "MCP",
+        "商业消息"
+      ]
+    },
+    {
+      "title": "OpenAI 上线 ChatGPT Work 与 Codex 使用分析看板",
+      "summary": "帮助组织衡量 AI 采用度、追踪工具使用并把 AI 投入与业务成果关联，无需自建遥测。",
+      "source": "AI News for Vibe Coders",
+      "source_urls": [
+        "https://ddsboston.com/blogs/vibe-code-academy/ai-news-for-vibe-coders-daily-2026-09-17"
+      ],
+      "tags": [
+        "OpenAI",
+        "企业分析",
+        "采用度"
+      ]
+    },
+    {
+      "title": "Anthropic 称 Claude 已承担其四分之一 AI 研究工作",
+      "summary": "Claude 主导 26% 的 AI 研究工作，内部有数万个活跃智能体在运行；新指标同时追踪 AI 对下一代模型的贡献度、人类是否仍能监督这些智能体，以及背后的算力消耗。",
+      "source": "TLDR AI",
+      "source_urls": [
+        "https://ai.tldr.tech/p/2026-09-18-tldr-ai"
+      ],
+      "tags": [
+        "Anthropic",
+        "AI自研",
+        "监督"
+      ]
+    }
+  ]
+}

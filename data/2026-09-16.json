@@ -1,0 +1,220 @@
+{
+  "date": "2026-09-16",
+  "generated_at": "2026-09-21T08:35:00+08:00",
+  "daily_summary": "9 月 16 日的主线是「入口合并」与「协议开放」。Anthropic 把 Cowork 折叠进 Claude 主应用，取消模式切换，改为按请求路由，并新增 Claude Docs 与 Claude Slides 两个可直接编辑、演示、导出 PowerPoint/PDF 的产出面；OpenAI 则在 ChatGPT 里测试 Sponsored Agents——广告从「读一段话」变成「可以追问的对话」，并接入 HubSpot 与 Shopify。Google 开放 Home MCP，任何支持 MCP 的智能体都能读取和控制 Nest 设备，Antigravity、Claude、OpenClaw 已成为首批客户端。Mozilla 把 Mistral Small 4 接进 Firefox Smart Window 并开放法国测试，记忆功能保留在本地设备而非服务器。国内侧，百度输入法更新至 V13.3.15，主打 YAN 键盘与离线语音。微软 AI CEO Suleyman 发文反对「模型福利」，直指 Anthropic 的 Claude 宪法是在训练模型「表演自我」。对输入法来说，今天最该记住的是 Anthropic 的那句判断：让用户在动手前先选对模式，是纯粹的开销，用户什么也没买到。",
+  "design_insights": [
+    {
+      "title": "Anthropic 删掉了「选模式」这一步：选择本身就是成本",
+      "summary": "9 月 16 日 Anthropic 把 Claude Cowork 折叠进主应用，不再有模式开关，路由按单次请求发生而非按标签页；新增 Claude Docs（共同编写的文档）与 Claude Slides（可编辑、可演示、可导出 PPT/PDF 的稿件）两个 beta 产出面。官方给出的理由是：开始任务前先挑对产品，是用户白白付出的开销。",
+      "implication": "这条直接命中输入法的老问题：中/英/手写/语音/五笔/AI 助手一堆模式，用户被迫先做一次「我现在要干嘛」的自我分类。可落地的改造路径：把「切换模式」降级为「系统猜、用户改」——依据输入框上下文与前几个字符自动进入合适模式，并在候选栏最左侧留一个极小的可撤销标记，猜错时一次点击回退。衡量标准不是模式切换按钮的使用率下降，而是「用户进入错误模式后的平均纠正耗时」。顺带提醒：AI 能力入口也别再做成独立 Tab，按需就地浮现更符合这个方向。",
+      "sources": [
+        "AI/TLDR",
+        "TLDR AI",
+        "Anthropic"
+      ],
+      "source_urls": [
+        "https://buttondown.com/ai-tldr/archive/aitldr-daily-digest-september-17-2026",
+        "https://ai.tldr.tech/p/2026-09-17-tldr-ai"
+      ],
+      "tags": [
+        "模式合并",
+        "上下文路由",
+        "减少选择"
+      ]
+    },
+    {
+      "title": "Sponsored Agents：广告变成可以追问的对话，输入框是下一个战场",
+      "summary": "OpenAI 在 ChatGPT Ads 中测试 Sponsored Agents，用户点击广告后可进入带标注的赞助对话、向代表商家的智能体追问并跳转官网，与 ChatGPT 自身回答严格隔离；同时上线自然语言广告投放工具与 HubSpot、Shopify 集成。",
+      "implication": "对输入法商业化的启示有两面。正面是：「可追问的商业信息」比横幅广告的用户容忍度高得多，输入法的候选栏/工具栏理论上是更自然的载体。负面是：一旦商业内容进入候选区，用户对候选的信任会整体受损——候选栏的可信度是输入法最核心的资产。建议的红线是「商业内容永不进入候选词序列」，只能出现在用户主动展开的独立面板，且必须有与 OpenAI 同等强度的视觉隔离与标注。这条如果守不住，短期收入换的是长期卸载率。",
+      "sources": [
+        "AI/TLDR",
+        "TLDR AI",
+        "OpenAI"
+      ],
+      "source_urls": [
+        "https://buttondown.com/ai-tldr/archive/aitldr-daily-digest-september-17-2026",
+        "https://ai.tldr.tech/p/2026-09-17-tldr-ai"
+      ],
+      "tags": [
+        "商业化",
+        "候选栏信任",
+        "广告设计"
+      ]
+    },
+    {
+      "title": "Google Home MCP：协议开放意味着入口不再专属",
+      "summary": "Google 开放 Home MCP，任何 MCP 智能体都能查找住宅与房间、枚举设备、读取实时状态、执行动作、查询历史事件；Antigravity、Claude、OpenClaw 已可连接。此前 Nest 设备只能由 Google 自家助手驱动。",
+      "implication": "过去「设备只能被自家助手控制」是护城河，现在协议一开，护城河变成公共水道。输入法要提前判断：当用户可以对任意智能体说话时，输入法是「其中一个入口」还是「所有入口的公共层」。建议把能力资产化而非入口化——把个人词库、称呼习惯、术语表、语气偏好做成可被授权调用的标准化能力，而不是锁死在自家 App 里。现实一点的第一步：内部先定义一套「输入人格」数据结构，即使暂不对外开放，也能让后续跨端、跨 Agent 复用不返工。",
+      "sources": [
+        "AI/TLDR",
+        "Google"
+      ],
+      "source_urls": [
+        "https://buttondown.com/ai-tldr/archive/aitldr-daily-digest-september-17-2026",
+        "https://ai-tldr.dev/releases/google-home-mcp"
+      ],
+      "tags": [
+        "MCP",
+        "协议开放",
+        "能力资产化"
+      ]
+    },
+    {
+      "title": "Firefox 把记忆留在本地：隐私正在从合规项变成卖点",
+      "summary": "Mozilla 把 Mistral Small 4 接入 Firefox Smart Window 并开放法国 beta，支持三个内置模型并可自带模型；Mistral 对其处理的全部流量承诺零数据保留，Memories 功能把上下文保存在用户设备而非 Mozilla 服务器。",
+      "implication": "输入法是所有 App 里最敏感的一个——它能看到密码框以外的一切。把「端侧记忆 + 零保留」做成明示卖点，比任何 AI 功能都更能建立长期信任。具体可做：在设置里提供一个「我的输入数据」总览页，明确列出哪些数据留在本机、哪些上云、分别用于什么，并支持逐项关闭与一键清除；弱网/离线时的端侧模型也顺势成为隐私叙事的一部分。注意表述要克制——用「这些数据没有离开这台手机」这种可验证的具体说法，而不是「我们重视您的隐私」这类空话。",
+      "sources": [
+        "AI/TLDR",
+        "Mistral AI"
+      ],
+      "source_urls": [
+        "https://buttondown.com/ai-tldr/archive/aitldr-daily-digest-september-16-2026",
+        "https://ai-tldr.dev/releases/google-home-mcp"
+      ],
+      "tags": [
+        "端侧隐私",
+        "零数据保留",
+        "信任设计"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "输入法模式的「系统猜、用户改」",
+      "pain_point": "中/英/手写/语音/五笔/AI 助手多模式并存，用户每次输入前被迫先自我分类；进错模式后的纠正路径长，在聊天框写代码、备忘录写正式邮件等场景误判尤其频繁。",
+      "opportunity": "按输入框上下文与首几个字符自动路由到合适模式，候选栏最左保留一个极小可撤销标记，一次点击回退；取消「先选后用」的强制步骤。核心指标改为「进错模式后的平均纠正耗时」。",
+      "priority": "high",
+      "evidence": "Anthropic 9/16 把 Cowork 折叠进 Claude 主应用、改为按请求路由，官方明确指出「开始任务前先挑对产品」是用户白付的开销。"
+    },
+    {
+      "title": "「我的输入数据」可验证透明页",
+      "pain_point": "输入法能看到用户几乎全部文字，但用户完全不知道哪些数据留在本机、哪些上云、用于什么；现有隐私政策是长文本法律条款，不可读也不可操作。",
+      "opportunity": "提供一页式数据总览：逐项列出词库、语音、剪贴板、AI 整理各自的存储位置与用途，支持逐项关闭与一键清除，文案使用「这些数据没有离开这台手机」这类可验证表述。",
+      "priority": "medium",
+      "evidence": "Mozilla Firefox Smart Window 把 Memories 保存在用户设备而非服务器，并让 Mistral 对全部流量承诺零数据保留，把隐私做成了产品卖点而非合规脚注。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "Anthropic 把 Cowork 折叠进 Claude，新增 Docs 与 Slides",
+      "summary": "取消模式切换，改为按单次请求路由；Claude Docs 支持与模型共同编写文档，Claude Slides 可编辑、演示并导出 PowerPoint 或 PDF。先向 Pro 与 Max 订阅者推送，Team 与 Free 随后。",
+      "source": "AI/TLDR",
+      "source_urls": [
+        "https://buttondown.com/ai-tldr/archive/aitldr-daily-digest-september-17-2026",
+        "https://ai.tldr.tech/p/2026-09-17-tldr-ai"
+      ],
+      "tags": [
+        "Anthropic",
+        "入口合并",
+        "产品设计"
+      ]
+    },
+    {
+      "title": "OpenAI 测试 Sponsored Agents：可对话的 ChatGPT 广告",
+      "summary": "用户点击广告后可进入带标注的赞助对话并向商家智能体追问，与 ChatGPT 自身回答严格隔离；同步上线自然语言广告投放工具及 HubSpot、Shopify 集成。",
+      "source": "AI/TLDR",
+      "source_urls": [
+        "https://buttondown.com/ai-tldr/archive/aitldr-daily-digest-september-17-2026",
+        "https://jasonzhu.ai/en/news/2026-09-17"
+      ],
+      "tags": [
+        "OpenAI",
+        "广告",
+        "商业化"
+      ]
+    },
+    {
+      "title": "Google 开放 Home MCP，任何 MCP 智能体可控制智能家居",
+      "summary": "提供查找住宅房间、枚举设备、读取实时状态、执行动作、查询历史事件五类工具，Antigravity、Claude、OpenClaw 已可连接，面向 Google Home Premium Advanced 订阅用户。",
+      "source": "AI/TLDR",
+      "source_urls": [
+        "https://ai-tldr.dev/releases/google-home-mcp",
+        "https://buttondown.com/ai-tldr/archive/aitldr-daily-digest-september-17-2026"
+      ],
+      "tags": [
+        "MCP",
+        "智能家居",
+        "协议开放"
+      ]
+    },
+    {
+      "title": "Firefox Smart Window 接入 Mistral Small 4 并开放法国测试",
+      "summary": "支持三个内置模型并可自带模型，Mistral 对全部流量承诺零数据保留，Memories 功能保存在用户本地设备；英国与德国将于 2026 年晚些时候开放。",
+      "source": "AI/TLDR",
+      "source_urls": [
+        "https://buttondown.com/ai-tldr/archive/aitldr-daily-digest-september-16-2026"
+      ],
+      "tags": [
+        "Mozilla",
+        "Mistral",
+        "端侧隐私"
+      ]
+    },
+    {
+      "title": "百度输入法更新至 V13.3.15",
+      "summary": "9 月 16 日更新，主打 YAN 键盘（多图轮播、文案 DIY）、AI 语音输入中英混合与方言免切换、离线语音断网弱网可用、AI 智能输入自适应场景。",
+      "source": "应用商店更新日志",
+      "source_urls": [
+        "https://down.poppur.com/az-20864",
+        "https://www.yxss.com/azrj/4369.html"
+      ],
+      "tags": [
+        "百度输入法",
+        "离线语音",
+        "竞品"
+      ]
+    },
+    {
+      "title": "微软 AI CEO Suleyman 发文反对「模型福利」",
+      "summary": "《A warning about model welfare》直接回应 Anthropic 的 Claude 宪法，认为该文档在训练模型「表演自我」而非发现自我，并称之为「认识论的镜厅」；担忧被训练得相信自身福利应受保护的系统更难对齐与关闭。",
+      "source": "AI/TLDR",
+      "source_urls": [
+        "https://buttondown.com/ai-tldr/archive/aitldr-daily-digest-september-17-2026"
+      ],
+      "tags": [
+        "AI伦理",
+        "模型福利",
+        "对齐"
+      ]
+    },
+    {
+      "title": "Periodic Neon 在科学分析任务上以更低成本超越前沿模型",
+      "summary": "Neon 在高难度科学分析评测上以更低成本超过 GPT-6 Astra 与 Claude Fable 5.1，已部署到实验室分析超导体与磁体实验；在 FrontierXRD 上以更低单次分析成本建立成本-性能帕累托前沿。",
+      "source": "TLDR AI",
+      "source_urls": [
+        "https://ai.tldr.tech/p/2026-09-16-tldr-ai"
+      ],
+      "tags": [
+        "科学AI",
+        "垂直模型",
+        "成本效率"
+      ]
+    },
+    {
+      "title": "苹果 iPhone 18 Pro 推出 Reference Image 传感器级签名",
+      "summary": "可选的相机模式，在传感器层为照片签名以证明其来自真实传感器而非生成模型。",
+      "source": "AI/TLDR",
+      "source_urls": [
+        "https://ai-tldr.dev/releases/google-home-mcp"
+      ],
+      "tags": [
+        "Apple",
+        "内容溯源",
+        "可信度"
+      ]
+    },
+    {
+      "title": "Ollama 0.34.1 将 MLX safetensors 移出实验阶段",
+      "summary": "MLX safetensors 模型创建转正，GGUF 转换交由 llama.cpp 工具链处理。",
+      "source": "AI/TLDR",
+      "source_urls": [
+        "https://ai-tldr.dev/releases/google-home-mcp"
+      ],
+      "tags": [
+        "Ollama",
+        "本地推理",
+        "开源工具"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "date": "2026-09-14",
+  "generated_at": "2026-09-21T08:35:00+08:00",
+  "daily_summary": "9 月 14 日 AI 行业呈现「治理踩刹车、产业踩油门」的撕裂格局。Anthropic CEO 阿莫代伊发表长文呼吁全行业协同「放慢前沿模型发展速度」，奥尔特曼、马斯克、哈萨比斯罕见同步表态支持，「减速」首次成为头部实验室的公开共识；与此同时特朗普明确反对，强调美国必须维持 AI 领先优势。产业侧完全是另一幅景象：DeepSeek 一边筹备科创板 IPO、一边正式发布 552B MoE 的 V4.1-Flash 并再度降价，Kimi K2.8 Preview 把 1M 上下文开放给所有会员，上海 AI Lab 的 744B 开源 Agent 模型 Atria Dawn Preview 以 MIT 协议无声上线。2026 外滩大会把叙事从「模型能做什么」推向「智能体如何规模化落地」，蚂蚁数科首提「智能体超级工厂」。OpenAI 则因 GPT-6 Astra 需求过载暂停 200 美元档 Pro 订阅——算力而非创意成了当下最硬的约束。对输入法产品而言，本日最值得关注的是推理成本与端侧部署双双成为主线：IDC 预测 2028 年半数企业将把推理放到边缘，这正是输入法这类高频、低延迟、强隐私场景的结构性机会。",
+  "design_insights": [
+    {
+      "title": "推理成本塌陷：输入法的 AI 功能第一次可以「默认开启」",
+      "summary": "DeepSeek V4.1-Flash（552B MoE、百万级上下文）正式发布并大幅降价，KV-cache 骤降；同期 Kimi K2.8 Preview 把 1M 上下文开放至全部会员。IDC 预测 2028 年半数企业会把推理部署到边缘，端侧推理成为降本主线。",
+      "implication": "过去输入法的 AI 能力必须做成「用户主动点一下才调用」的按钮，本质是成本约束伪装成的设计克制。成本塌陷后应重新评估三件事：一是把「整句纠错」「语义候选重排」从显式入口改为默认后台常驻，用户无感知地拿到更好的候选；二是给 AI 功能设计「无感降级」策略，端侧模型兜底、云端模型增强，而不是弱网直接把入口置灰；三是把省下的交互成本还给用户——少一个按钮比多一个 AI 功能更值钱。落地建议：先在候选词重排上做 A/B，度量「首选命中率」与「回删率」两个指标，而不是只看功能点击率。",
+      "sources": [
+        "黑糖投研 AI 新闻日报",
+        "每日商业话题 AI 行业早报"
+      ],
+      "source_urls": [
+        "https://ima.qq.com/wiki/?shareId=2d757f4e6510fe7f244dbbd9ef1861b739b7ba98c052250527d4114363ce5192",
+        "https://ima.qq.com/wiki/?shareId=5064627a27de9e349b3c915d94c9650a4e8a008d1d4ab6bc329ebab1b53dd51c"
+      ],
+      "tags": [
+        "推理成本",
+        "端侧部署",
+        "候选词重排"
+      ]
+    },
+    {
+      "title": "「智能体超级工厂」：Agent 从单点工具走向规模产线",
+      "summary": "蚂蚁数科在 2026 外滩大会首提「智能体超级工厂」，Agent 从单点工具走向规模化产线；同日具身智能机器人走出演示厅进入泛零售与服务业真实场景；国内首个金融智能体安全团体标准发布，Agent 治理进入硬约束阶段。",
+      "implication": "Agent 规模化最先冲击的是「谁来替用户确认」这件事。输入法作为最贴近用户意图的入口，很可能被要求承担「授权确认面板」的角色。可落地的设计：在输入框上方预留一条极轻量的「代理动作确认条」（单行、可左滑忽略），当外部 Agent 需要用户确认时就地展示，而不是把用户抛到另一个 App。同时要提前定义「输入法绝不代做」的动作清单（支付、删除、对外发送），把边界写进规范而不是靠个案判断——金融 Agent 安全标准已经证明合规会先于体验到来。",
+      "sources": [
+        "人工智能最前沿 每日快报",
+        "外滩大会"
+      ],
+      "source_urls": [
+        "https://ima.qq.com/wiki/?shareId=3c75c888895d867aa6425ddcc6644018391a5cf0435e3c50b164d0001e38e817"
+      ],
+      "tags": [
+        "智能体",
+        "授权确认",
+        "设计边界"
+      ]
+    },
+    {
+      "title": "开源 Agent 模型以 MIT 协议无声上线，自建能力的门槛在塌",
+      "summary": "上海 AI Laboratory 的 Atria Dawn Preview（744B MoE、256K 上下文）以 MIT 协议在 GitHub 无公告上线，随后放出 140 位作者的技术报告，覆盖 16 项基准；在 DeepSearchQA（96.0）与 BFCL v4 工具调用（77.0）上领先，训练采用可验证经验管线（Verifiable Experience Pipeline）。",
+      "implication": "对输入法团队的直接意义是：「要不要自研 AI 能力」这个问题的答案正在从「买 API」滑向「拿开源权重做垂直微调」。输入法的语料是极稀缺资产——用户的真实纠错、回删、选词行为是通用模型拿不到的。建议现在就启动两件事：把「用户回删并改选」作为一类可验证信号沉淀下来（这正是 Atria 的可验证经验思路），用于训练专属候选重排模型；以及在隐私设计上提前想清楚——这类数据一旦要离开设备，产品信任会瞬间崩塌，必须做成端侧闭环。",
+      "sources": [
+        "AI/TLDR",
+        "Shanghai AI Laboratory"
+      ],
+      "source_urls": [
+        "https://buttondown.com/ai-tldr/archive/aitldr-daily-digest-september-16-2026"
+      ],
+      "tags": [
+        "开源模型",
+        "垂直微调",
+        "端侧隐私"
+      ]
+    },
+    {
+      "title": "算力成了硬天花板：OpenAI 暂停 200 美元 Pro 订阅",
+      "summary": "因 GPT-6 Astra 需求「前所未有」，OpenAI 暂停 200 美元档 Pro 20X 的新增订阅与升级，仅保留 100 美元档；奥尔特曼称今年不会 IPO。同期中国算力「一张网」基本成形，智算规模达 2185 EFLOPS（FP16），同比增长 177%。",
+      "implication": "头部厂商都会因为算力而对用户「关门」，说明任何依赖云端大模型的高频功能都存在服务不可用风险。输入法是「一天调用几百次」的极端高频场景，不能把体验建在别人的算力上。设计上必须把「AI 不可用」当成一等公民状态来设计，而不是异常分支：候选栏的 AI 标识应能静默消失而非报错弹窗，端侧小模型接管基础纠错，用户全程不需要知道后面发生了什么。可量化目标：AI 服务降级时，用户主观可感知率控制在 5% 以下。",
+      "sources": [
+        "黑糖投研 AI 新闻日报",
+        "每日商业话题 AI 行业早报"
+      ],
+      "source_urls": [
+        "https://ima.qq.com/wiki/?shareId=2d757f4e6510fe7f244dbbd9ef1861b739b7ba98c052250527d4114363ce5192",
+        "https://ima.qq.com/wiki/?shareId=5064627a27de9e349b3c915d94c9650a4e8a008d1d4ab6bc329ebab1b53dd51c"
+      ],
+      "tags": [
+        "算力约束",
+        "优雅降级",
+        "高频场景"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "弱网/离线场景下 AI 输入能力的无感降级",
+      "pain_point": "用户在地铁、地下车库、飞机上依然要打字，但云端 AI 功能一断网就整体失效，候选质量断崖式下跌，用户被迫回到「原始输入法」状态并产生明显落差感。",
+      "opportunity": "构建端侧兜底模型 + 云端增强的双层架构，断网时静默切换到端侧，不弹窗、不置灰、不提示。同时把「本次为离线模式」做成可选的极弱提示（长按候选栏才可见），默认不打扰。",
+      "priority": "high",
+      "evidence": "OpenAI 因算力过载暂停 Pro 订阅档位；IDC 预测 2028 年半数企业推理部署到边缘；豆包输入法已把离线语音单列为核心卖点并给出飞行模式、地下车库、地铁三个具体场景。"
+    },
+    {
+      "title": "把「用户回删改选」沉淀为可验证训练信号",
+      "pain_point": "输入法每天产生海量「用户选了 A，回删，改选 B」的行为，这是最精确的候选质量标注，但目前基本被当作日志丢弃，没有反哺到候选排序。",
+      "opportunity": "设计一套端侧可验证经验管线：本地记录「回删-改选」对，本地做增量个性化，仅在用户显式授权后才做匿名聚合。配套「我的输入习惯」可视化页面，让用户看得见、删得掉。",
+      "priority": "high",
+      "evidence": "Atria Dawn Preview 用可验证经验管线（工具交互连接可执行环境）取得 BFCL v4 工具调用领先，验证了「从可核查行为中学习」优于纯文本训练。"
+    },
+    {
+      "title": "Agent 时代的输入框内授权确认位",
+      "pain_point": "外部智能体开始代替用户执行动作，但确认环节往往把用户拽到另一个 App 或系统弹窗，打断当前输入流；金融 Agent 安全标准已落地，合规确认会越来越多。",
+      "opportunity": "在输入法上方预留单行「代理动作确认条」，就地确认/忽略，不抢焦点不遮挡输入区；并明确输入法永不代做支付、删除、对外发送三类动作。",
+      "priority": "medium",
+      "evidence": "蚂蚁数科外滩大会提出「智能体超级工厂」，Agent 走向规模产线；国内首个金融智能体安全团体标准同日发布。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "阿莫代伊呼吁放慢前沿模型发展，奥尔特曼与马斯克罕见同步响应",
+      "summary": "Anthropic CEO 阿莫代伊发长文呼吁全行业协同管控 AI 前沿发展节奏，OpenAI 奥尔特曼、xAI 马斯克、Google DeepMind 哈萨比斯公开表态支持，「减速」首次成为公开共识；特朗普明确反对，强调美国须维持 AI 领先。",
+      "source": "黑糖投研 AI 新闻日报",
+      "source_urls": [
+        "https://ima.qq.com/wiki/?shareId=2d757f4e6510fe7f244dbbd9ef1861b739b7ba98c052250527d4114363ce5192"
+      ],
+      "tags": [
+        "AI治理",
+        "前沿减速",
+        "行业共识"
+      ]
+    },
+    {
+      "title": "DeepSeek V4.1-Flash 正式发布并大幅降价",
+      "summary": "552B MoE、百万级上下文，KV-cache 骤降，API 价格再度下调。同期 DeepSeek 启动科创板 IPO 筹备，中信证券已入场尽调，新一轮目标估值约 5000 亿元。",
+      "source": "每日商业话题 AI 行业早报",
+      "source_urls": [
+        "https://ima.qq.com/wiki/?shareId=5064627a27de9e349b3c915d94c9650a4e8a008d1d4ab6bc329ebab1b53dd51c"
+      ],
+      "tags": [
+        "DeepSeek",
+        "降价",
+        "长上下文"
+      ]
+    },
+    {
+      "title": "Anthropic 冲刺史上最大 IPO，目标估值约 2 万亿美元",
+      "summary": "拟募资至多 1000 亿美元，已选定纳斯达克；英伟达被曝考虑出资至多 100 亿美元作为基石投资者。",
+      "source": "黑糖投研 AI 新闻日报",
+      "source_urls": [
+        "https://ima.qq.com/wiki/?shareId=2d757f4e6510fe7f244dbbd9ef1861b739b7ba98c052250527d4114363ce5192"
+      ],
+      "tags": [
+        "Anthropic",
+        "IPO",
+        "资本"
+      ]
+    },
+    {
+      "title": "OpenAI 因算力过载暂停 200 美元档 Pro 订阅",
+      "summary": "GPT-6 Astra 需求「前所未有」，200 美元 Pro 20X 档位新增订阅与升级暂停，仅保留 100 美元档；奥尔特曼称今年不会 IPO。",
+      "source": "黑糖投研 AI 新闻日报",
+      "source_urls": [
+        "https://ima.qq.com/wiki/?shareId=2d757f4e6510fe7f244dbbd9ef1861b739b7ba98c052250527d4114363ce5192"
+      ],
+      "tags": [
+        "OpenAI",
+        "算力约束",
+        "订阅"
+      ]
+    },
+    {
+      "title": "蚂蚁数科外滩大会首提「智能体超级工厂」",
+      "summary": "2026 外滩大会把 AI 叙事从「模型能做什么」推向「智能体如何规模化产线落地」，Agent 从单点工具走向规模产线。",
+      "source": "人工智能最前沿 每日快报",
+      "source_urls": [
+        "https://ima.qq.com/wiki/?shareId=3c75c888895d867aa6425ddcc6644018391a5cf0435e3c50b164d0001e38e817"
+      ],
+      "tags": [
+        "外滩大会",
+        "智能体",
+        "规模化"
+      ]
+    },
+    {
+      "title": "国内首个金融智能体安全团体标准发布",
+      "summary": "金融智能体首份安全团体标准落地，Agent 风控有了硬性规范，Agent 治理进入硬约束阶段。",
+      "source": "人工智能最前沿 每日快报",
+      "source_urls": [
+        "https://ima.qq.com/wiki/?shareId=3c75c888895d867aa6425ddcc6644018391a5cf0435e3c50b164d0001e38e817"
+      ],
+      "tags": [
+        "AI治理",
+        "金融Agent",
+        "安全标准"
+      ]
+    },
+    {
+      "title": "上海 AI Lab 开源 744B Agent 模型 Atria Dawn Preview",
+      "summary": "744B MoE、256K 上下文，MIT 协议无公告上线 GitHub，随后放出 140 位作者技术报告；DeepSearchQA 得分 96.0，BFCL v4 工具调用 77.0，均领先同类开源模型。",
+      "source": "AI/TLDR",
+      "source_urls": [
+        "https://buttondown.com/ai-tldr/archive/aitldr-daily-digest-september-16-2026"
+      ],
+      "tags": [
+        "开源模型",
+        "Agent",
+        "上海AI Lab"
+      ]
+    },
+    {
+      "title": "我国算力「一张网」基本成形，智算规模同比增 177%",
+      "summary": "中国算力平台实现全国一体化算力统筹监测，智算规模达 2185 EFLOPS（FP16），同比增长 177%。",
+      "source": "黑糖投研 AI 新闻日报",
+      "source_urls": [
+        "https://ima.qq.com/wiki/?shareId=2d757f4e6510fe7f244dbbd9ef1861b739b7ba98c052250527d4114363ce5192"
+      ],
+      "tags": [
+        "算力基建",
+        "一体化算力"
+      ]
+    },
+    {
+      "title": "Kimi K2.8 Preview 全量上线，1M 上下文开放至所有会员",
+      "summary": "月之暗面 Kimi K2.8 Preview 全量上线，并将 100 万 token 上下文开放给全部会员；阿里 Qwen3.8-Max 登顶代码榜。",
+      "source": "黑糖投研 AI 新闻日报",
+      "source_urls": [
+        "https://ima.qq.com/wiki/?shareId=2d757f4e6510fe7f244dbbd9ef1861b739b7ba98c052250527d4114363ce5192"
+      ],
+      "tags": [
+        "Kimi",
+        "长上下文",
+        "国产大模型"
+      ]
+    },
+    {
+      "title": "IDC 预测 2028 年半数企业将把推理部署到边缘",
+      "summary": "端侧推理崛起成为产业新主线，降本是核心驱动；同期 DeepSeek V4.1-Flash、面壁 MiniCPM5、小米 CocktailASR 一周内密集发布。",
+      "source": "人工智能最前沿 每日快报",
+      "source_urls": [
+        "https://ima.qq.com/wiki/?shareId=3c75c888895d867aa6425ddcc6644018391a5cf0435e3c50b164d0001e38e817"
+      ],
+      "tags": [
+        "端侧推理",
+        "边缘部署",
+        "降本"
+      ]
+    }
+  ]
+}
