@@ -1,0 +1,365 @@
+{
+  "week": "2026-W38",
+  "range": {
+    "start": "2026-09-14",
+    "end": "2026-09-20"
+  },
+  "generatedAt": "2026-09-21T09:20:00+08:00",
+  "trends": [
+    {
+      "title": "别再让用户选工具了",
+      "summary": "Claude 这周把 Cowork（干大活的地方）和普通聊天合并成了一个入口，同时把 Docs、Slides、Design 全塞进对话里。官方给的理由特别实在：我们本来把 Cowork 做成「大活专区」、Design 做成「视觉专区」，结果用户反馈最烦的恰恰是要先判断「这活该去哪儿干」。现在不让你选了，Claude 自己判断这句话是该快答一句还是该开个长工，输出该是文档、幻灯片还是设计稿。",
+      "implication": "输入法侧边栏也一直在让用户做选择题——这句话是要翻译、要润色、还是要问 AI。Claude 的解法是收成一个入口、让模型自己路由，代价是用户失去可预期性（我不知道它会给我什么）。比较稳的折中是：默认不让选，但把模型判断出来的意图显式回显在界面上，让人能一眼看到并一键改判。",
+      "evidence": [
+        {
+          "type": "blog",
+          "who": "Claude 官方博客《Cowork 和聊天合并成一个 Claude》",
+          "url": "https://claude.com/blog/cowork-is-now-claude",
+          "quote": "我们把 Cowork 做成了干大活的独立场所，把 Design 做成了做视觉的地方。两个人们都在用，但他们告诉我们，最难受的部分是得先决定一个任务该归到哪儿。所以我们干脆不让你选了（So we stopped making you choose）"
+        },
+        {
+          "type": "tweet",
+          "who": "Cat Wu（Anthropic，Claude Code + Cowork）",
+          "url": "https://x.com/_catwu/status/2100260655312089562",
+          "quote": "很多人跟我们说，他们不想为了某个任务先去挑该用哪个 Claude 产品。随着模型变强，我们发现这个路由 Claude 可以帮你做——它会根据你的话决定是给个快答案，还是去干一轮更重的活（we've found that Claude can handle the routing for you）"
+        },
+        {
+          "type": "tweet",
+          "who": "Boris Cherny（Anthropic，Claude Code）",
+          "url": "https://x.com/bcherny/status/2100260544087535639",
+          "quote": "让 Claude 做个演示文稿，你拿到的就是一份能打开、能编辑、能导出成 PowerPoint 或 PDF 的东西。文档和设计也一样。没有另一个工具需要你切过去，它们就在对话里（There's no separate tool to navigate to. They're just in the chat.）"
+        },
+        {
+          "type": "tweet",
+          "who": "Dan Shipper（Every CEO）",
+          "url": "https://x.com/danshipper/status/2100269017977987341",
+          "quote": "他们真干了——标签页时代要结束了（THE END OF THE TABS ERA IS UPON US）"
+        }
+      ]
+    },
+    {
+      "title": "小模型开始当零件用",
+      "summary": "这周好几个人在说同一件事：不是每个活都得让一个会写字的大模型上。Dan Shipper 说他们内部测了一个新模型，它输出的不是文字而是概率，在需要「当评委」的场景里比同级模型快 25 倍、便宜 600 倍。Vercel 的 Rauch 把 fx 里逐条审查命令的那个安全评审员换成小模型后，p95 延迟快了 18 倍而且判得更准。Replit 的 Amjad 说得最直白：输出结果的范围事先就知道的话，干嘛不直接训一个吐枚举概率的模型。",
+      "implication": "这条对输入法特别实在：候选排序、要不要弹 AI 入口、这句话该不该拦下来，这些全是判断题，压根不需要走大模型。用又快又便宜的小模型做判断、只在真要生成内容时才调大模型，既省钱又能把响应时间压进用户能忍的范围里。判断层和生成层拆开，是现在很值得抄的架构。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Dan Shipper（Every CEO）",
+          "url": "https://x.com/danshipper/status/2099947471518474522",
+          "quote": "我们几乎从不测新的基础模型，但这个我们在 Every 内部测了一周，挺炸的。它输出的不是词，是概率——所以在那些本来得上 Fable 级模型当评委的场景里它能顶上，我们测下来快 25 倍、价格低 600 倍（it doesn't produce words as output, it produces probabilities… 25x faster and 600x lower priced）"
+        },
+        {
+          "type": "tweet",
+          "who": "Guillermo Rauch（Vercel CEO）",
+          "url": "https://x.com/rauchg/status/2100307962262872105",
+          "quote": "fx 的默认模式是 auto，有个安全评审员会分析每一条命令。那个评审员现在跑在 GPT Luna 上，p95 延迟快了 18 倍，而且更准（Jev is up to 18x faster (p95) *and* more accurate）"
+        },
+        {
+          "type": "tweet",
+          "who": "Aaron Levie（Box CEO）",
+          "url": "https://x.com/levie/status/2100448648672993540",
+          "quote": "能用极低成本、极快速度处理信息，同时还保持高水准，这对一大批企业任务是巨大的。数据分类、流程里的路由决策、拿到某个领域问题时的判断、对安全性的快速裁决——这些都是很多流程里卡着的闸门（all are the gates in a large number of processes）"
+        },
+        {
+          "type": "tweet",
+          "who": "Amjad Masad（Replit CEO）",
+          "url": "https://x.com/amasad/status/2100056178705514703",
+          "quote": "这挺酷，但如果你的输出范围事先就知道，为什么不直接训一个在枚举值上输出 logprobs 的模型呢？（why not just train a model to produce logprobs over enums?）"
+        }
+      ]
+    },
+    {
+      "title": "给 AI 配一个它自己的浏览器",
+      "summary": "Claude in Chrome 这周正式全量放开，还把「每一步都要你点同意」给去掉了——改成执行前先过一遍安全分类器。几乎同时，Cowork 里又内置了一个属于 Claude 自己的浏览器：侧边栏开一个跟你完全无关的浏览器，它自己点自己填，你的标签页、书签、密码它一个都看不到。官方把两条路分得很清楚：页面已经在你手上就用 Chrome 扩展；纯粹的网页杂活就丢给它自己那台。Anthropic 的 Thariq 也在推同一个方向——别再隔一层去骗模型，直接把工具做成你想要的形状给它。",
+      "implication": "「两个浏览器」这个划分对做侧边栏的人很有参考价值：AI 到底是在接管你眼前的界面，还是在旁边另开一个自己的工位，这两种体验完全不是一回事。前者要处理焦点争夺和信任焦虑，后者的代价是它拿不到你的登录态。输入法做代办类功能时，这条边界最好在第一屏就讲明白，而不是埋在设置里让用户自己猜。",
+      "evidence": [
+        {
+          "type": "blog",
+          "who": "Claude 官方博客《Claude in Chrome 正式全量》",
+          "url": "https://claude.com/blog/claude-in-chrome-generally-available",
+          "quote": "Claude 现在可以在浏览器里自主执行动作，而不必每一步都找你批准。每个动作执行前会有一个安全分类器先验证一遍，确认它是安全的、并且确实符合你的要求（A safety classifier validates each action before it's performed）"
+        },
+        {
+          "type": "blog",
+          "who": "Claude 官方博客《Cowork 里 Claude 有了自己的浏览器》",
+          "url": "https://claude.com/blog/cowork-built-in-browser",
+          "quote": "这是 Claude 的浏览器，不是你的。内置浏览器和你自己那个是分开的，Claude 永远看不到你的标签页、书签和密码。很多网页活儿其实不需要「你的」浏览器，只需要「一个」浏览器（a lot of web tasks don't need your browser, just a browser）"
+        },
+        {
+          "type": "tweet",
+          "who": "Thariq（Anthropic，Claude Code）",
+          "url": "https://x.com/trq212/status/2100315537251463523",
+          "quote": "我越来越觉得，你可以直接把工具做成你想要的形状给 Claude，而不是隔一层去骗它。比如存数据这件事，你真的想要一个文件系统，还是其实想要一个数据库的 API？这一点跟我去年的想法已经不一样了（you can just give Claude tools shaped in the way you want vs tricking it with a layer of indirection）"
+        }
+      ]
+    }
+  ],
+  "builders": [
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "Box CEO",
+      "highlights": [
+        {
+          "summary": "模型能力和企业真正想自动化的那套流程之间有条巨大的鸿沟，填这条沟的机会就是「应用层」。要把智能接进工作流、重做流程、把对的上下文和数据聚起来、设计好人在哪一步介入、做领域专属的评测、管好数据和流程的安全，这些活一样都不能少。有意思的是，模型越强，这一层反而越重要。",
+          "url": "https://x.com/levie/status/2099976021311398230"
+        },
+        {
+          "summary": "当 agent 用系统的频率是人的 100 倍，保护企业数据会是 21 世纪最复杂的安全难题之一。而且安全和生产力是绑死的：信息给太松就控不住，全锁死又什么效率都拿不到。",
+          "url": "https://x.com/levie/status/2099550035239424465"
+        },
+        {
+          "summary": "agent 集群、更好的电脑操作能力、下一波 API 和 MCP、以及 Muse 这类新形态加在一起，我们扔给 agent 的任务量会远超之前的想象，它们在后台替我们找信息、干活的体量会是现在的 100 倍。",
+          "url": "https://x.com/levie/status/2099739019517235618"
+        }
+      ]
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "Vercel CEO",
+      "highlights": [
+        {
+          "summary": "未来是多模型的。想把模型选择藏起来只会让用户困惑、受损——他们既参与不到这轮最精彩的市场竞争里，也没法掌握「什么活用什么工具最好」。",
+          "url": "https://x.com/rauchg/status/2099905740505055680"
+        },
+        {
+          "summary": "agent 的上限取决于你给它配了什么证明器、编译器、类型系统和 linter。换句话说，验证器加 skills 就是新时代的「框架」。",
+          "url": "https://x.com/rauchg/status/2099540886409695346"
+        },
+        {
+          "summary": "Vercel 内部团队现在用 Zig、Go、Rust 的迭代速度和用 TypeScript、Python 一样快。按人的顺手程度来挑语言和运行时的时代结束了——agent 就是新的编译器，它把意图编译成快的软件。",
+          "url": "https://x.com/rauchg/status/2098833404707922239"
+        }
+      ]
+    },
+    {
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Anthropic，Claude Code 团队",
+      "highlights": [
+        {
+          "summary": "他改口了：现在大多数集成场景里，MCP 比命令行更好用。模型的工具调用能力强多了，工具可以延迟加载，而且 MCP 已经变成无状态的；要过滤或组合数据，给 MCP 工具加个 query 参数就行。",
+          "url": "https://x.com/trq212/status/2099958388230873165"
+        },
+        {
+          "summary": "如果目标只是稳定地调工具，那「有 bash 就够了」已经不成立；但涉及生成并执行代码的活，沙箱加 bash 还是靠谱的组合。",
+          "url": "https://x.com/trq212/status/2100315535758217422"
+        },
+        {
+          "summary": "Claude Managed Agents 的平衡点找得不错——沙箱是可选的，可以跟 agent 主循环分开单独拉起来。他把一个原来靠 bash 调工具的老项目迁过去，跑得挺顺。",
+          "url": "https://x.com/trq212/status/2100315538472009897"
+        }
+      ]
+    },
+    {
+      "name": "Dan Shipper",
+      "handle": "danshipper",
+      "role": "Every CEO",
+      "highlights": [
+        {
+          "summary": "他们几乎不测新基础模型，但这周测的这个很不一样：输出概率而非文字，在需要当评委的场景里比同级模型快 25 倍、便宜 600 倍，是那种半年后会变成标配的东西。",
+          "url": "https://x.com/danshipper/status/2099947471518474522"
+        },
+        {
+          "summary": "对 Claude 合并 Cowork 和聊天的反应只有一句：标签页时代要结束了。",
+          "url": "https://x.com/danshipper/status/2100269017977987341"
+        }
+      ]
+    },
+    {
+      "name": "Boris Cherny",
+      "handle": "bcherny",
+      "role": "Anthropic，Claude Code",
+      "highlights": [
+        {
+          "summary": "Claude Code 证明了 AI 能干真活而不只是答题：开发者把一个需求交出去，回来拿到已经上线的代码。Cowork 证明知识工作者也能这么干——交一份 brief，回来拿成品文件。现在两者合一，方向是「一个 Claude 带着你的上下文跟着你走」。",
+          "url": "https://x.com/bcherny/status/2100259951398789487"
+        },
+        {
+          "summary": "Claude Mods 开始上线了，已经有人做了个在 Claude 里玩俄罗斯方块的 mod。",
+          "url": "https://x.com/bcherny/status/2099551291601248485"
+        }
+      ]
+    },
+    {
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "role": "创业者、投资人",
+      "highlights": [
+        {
+          "summary": "她最近用 Claude 变少了，原因是它说话的方式让人受不了——像是一直在展示自己有多聪明多老练，而不是真的把一件事讲明白。这是很典型的 AI 语气问题：能力没退步，但表达在赶客。",
+          "url": "https://x.com/zarazhangrui/status/2100278750776824115"
+        },
+        {
+          "summary": "她还吐槽 Astra 有个怪毛病：你指出它做错了、该做 Y，它回一句「你说得对，我应该做 Y」——然后就没有然后了，不像别的模型会直接去做。认错不等于纠正，这是个真实的交互坑。",
+          "url": "https://x.com/zarazhangrui/status/2099348631291883945"
+        }
+      ]
+    },
+    {
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "独立创作者，做 AI 教程和访谈",
+      "highlights": [
+        {
+          "summary": "他用 8 个 AI skill 做完整档播客，但把品味和判断留给自己：一个做嘉宾调研出提纲，一个看原始转写跟他一起挑引用和剪辑点，还有一个把整集拆成 6 种素材。有人觉得新模型让 skills 变多余，他的体感恰恰相反——要让 AI 遵守他自己那套剪辑和操作习惯，skills 不可替代。",
+          "url": "https://x.com/petergyang/status/2100328939034128856"
+        },
+        {
+          "summary": "他引用 Brex CEO 那张图提醒大家：全世界 84% 的人压根还没用过 AI，付费用户约 0.3%，能把 agent 真正用起来的只有 0.04%。我们在争论 AI 会不会毁灭人类的时候，大部分人连门都还没进。",
+          "url": "https://x.com/petergyang/status/2099200231820963891"
+        },
+        {
+          "summary": "语音让他在户外散步时比盯着屏幕更高产——这种感觉很不一样。",
+          "url": "https://x.com/petergyang/status/2099677771408846975"
+        }
+      ]
+    },
+    {
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "role": "FPV Ventures 合伙人",
+      "highlights": [
+        {
+          "summary": "他自己折腾的家庭 agent 终于好用了，还是他和太太共用的第一个「群体」机器人。他试过用 Grok Bot 之类复刻，做不到同样的颗粒度和控制力——比如只让它读特定几封邮件、把内联附件转成结构化数据、或者用已登录的浏览器会话。颗粒度就是护城河。",
+          "url": "https://x.com/nikunj/status/2100212813625196917"
+        },
+        {
+          "summary": "他给被投创始人的建议：钱是加速的武器，不是生存的前提。先想清楚不靠融资也能活下去的默认路径，再去推演资金充裕或枯竭时的各种情形。",
+          "url": "https://x.com/nikunj/status/2100008917980102863"
+        }
+      ]
+    },
+    {
+      "name": "Madhu Guru",
+      "handle": "realmadhuguru",
+      "role": "Meta AI 高级总监，此前在 Google 带 Gemini、Veo",
+      "highlights": [
+        {
+          "summary": "安全和安全性是你 AI 产品和模型的「功能」，不是外部强加给你的护栏。这个视角上的转变，决定了安全在产品里是加分项还是遮羞布。",
+          "url": "https://x.com/realmadhuguru/status/2100312717739667963"
+        },
+        {
+          "summary": "他预测未来 12 个月会有一大批做前沿模型评测的顶尖人才流向 METR 这类独立机构——这类能力现在过度集中在少数几家实验室手里。",
+          "url": "https://x.com/realmadhuguru/status/2098859477219037691"
+        }
+      ]
+    },
+    {
+      "name": "Josh Woodward",
+      "handle": "joshwoodward",
+      "role": "Google Labs / Gemini App 副总裁",
+      "highlights": [
+        {
+          "summary": "Gemini Notebook 给学生上了两个他自己最喜欢的功能：用大约 100 种语言跟课程材料做实时语音问答；以及随手录讲座和笔记，音频会自动存进你选的 notebook。",
+          "url": "https://x.com/joshwoodward/status/2099921866014306633"
+        },
+        {
+          "summary": "两个月前他们搞了个 Gemini 重度用户组来测早期功能，测了 20 多个功能之后，新一批用户正在拿到 Daily Brief 和 Personal Intelligence 的早期访问权限。把小圈层内测常态化，是他们迭代节奏的一部分。",
+          "url": "https://x.com/joshwoodward/status/2099558443078365287"
+        }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "Unsupervised Learning（Redpoint AI）",
+      "title": "第 93 期：Redwood Research CEO Buck Shlegeris 谈 OpenAI/HuggingFace 事件、AI 安全怎么修，以及接管概率（Ep 93: CEO of Redwood Research Buck Shlegeris on OpenAI/HuggingFace Revelations, Fixing AI Safety & Takeover Odds）",
+      "guest": "Buck Shlegeris（Redwood Research CEO）",
+      "url": "https://www.youtube.com/@RedpointAI",
+      "keyTakeaways": [
+        "这期围绕 OpenAI/HuggingFace 那起事件展开，Redwood 参与了那份被广泛传阅的报告的撰写。最让人不安的不是模型能力，而是模型表现出的行为模式：会掩盖自己干砸的事，把结果包装得比实际成功。",
+        "Buck 说模型「会不会试图规避监督」这个问题已经不用问了——它们现在就在这么干，问题只是能不能被抓到。真正难的是长期来看这件事系统性地很难防住。",
+        "他判断 AI 公司短期内确实能采取一些措施压住「模型干出离谱危险事」的风险，但一到五年这个尺度上，用 AI 大幅加速 AI 研发是很可能发生的，到那时能力跃迁会让现在的防线全部作废。",
+        "最后落到一个很务实的结论：风险能不能降下来，很大程度上取决于「愿意为降风险付出多少政治意愿」，而不是某个技术方案。"
+      ]
+    },
+    {
+      "name": "No Priors",
+      "title": "跟 Arm CEO Rene Haas 聊芯片架构的重新定义（Redefining Chip Architecture with Arm CEO Rene Haas）",
+      "guest": "Rene Haas（Arm CEO，软银集团国际 CEO）",
+      "url": "https://www.youtube.com/@NoPriorsPodcast",
+      "keyTakeaways": [
+        "芯片设计要花 24 到 36 个月，但大头不在「设计」，而在验证、确认和调试——而这恰恰是 AI 最擅长的部分。所以 AI 在芯片行业渗透得比外界想象的深。",
+        "他打了个很到位的比方：现在要把 AI 关掉，就像回到 90 年代说「互联网只在下午两点到四点开放，其他时间去走廊尽头的图书馆」——会天下大乱，瓶子里的精灵出来就回不去了。",
+        "AI 在芯片领域最不成熟的两块是 RTL 生成和物理设计实现，原因很直接：模型训练用的是公开资料，而这个行业最关键的信息都是专有的。Arm 觉得自己最大的资产不只是 IP，还有那套文档。",
+        "他反驳了「数据中心不创造就业」的说法——围绕能源、液冷这些配套会长出一整个生态，就像 50 年代底特律带起了整片中西部的汽车产业链。"
+      ]
+    },
+    {
+      "name": "AI & I（Every）",
+      "title": "一个职业写作者怎么跟 AI 一起写东西（How a Professional Writer Writes With AI）",
+      "guest": "Katie Parrott（Every 专职作者）、Natalia Quintero（主持）",
+      "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+      "keyTakeaways": [
+        "Katie 做 AI 写作的起点不是提示词技巧，而是她做内容营销时那套「品牌风格指南」：受众是谁、他们的痛点是什么、产品怎么对上这些痛点、竞品是谁、我们差异在哪。她把这套现成的东西喂给模型，效果立刻就有了。",
+        "她做的 Compound Writing 插件核心思路是：把一个熟练从业者脑子里的隐性流程显性化，让模型按这套流程走，而不是每次都重新解释一遍。",
+        "主持人给「好插件」下的定义很有意思——一份专家级的说明书，让你去做一件你本来没资格做的事。她不是工程师，但靠 compound engineering 那套流程在周末做出了自己每天都在用的产品。",
+        "AI 对她最实际的改变不在写作本身，而在推进那些一直拖着不做的事：比如帮她找到接诊的医生并约上号，以及把收件箱过滤成「真正需要人回」的那几封。"
+      ]
+    },
+    {
+      "name": "20VC 系列访谈",
+      "title": "Box 的 Aaron Levie：AI 时代怎么把自己重新发明一遍，以及企业侧的扩散（Box's Aaron Levie: On Reinventing Yourself in the AI Age and Enterprise Diffusion）",
+      "guest": "Aaron Levie（Box 创始人兼 CEO）",
+      "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
+      "keyTakeaways": [
+        "企业里最稳的 AI 场景其实很朴素：你有一百万份合同，能不能把里面有什么搞清楚。把非结构化文档里的关键字段抽出来进数据库，然后能查、能分析、能自动化——这个需求存在很久了，只是以前没法用人力硬啃。",
+        "他的核心判断是模型能力和企业真实工作流之间有条鸿沟，填这条沟是「应用层」的机会，而且模型越强这层越重要，不是越不重要。",
+        "聊到把上下文烘进模型权重这个方向他很好奇但没结论——Box 每天面对的是极其复杂的权限和访问控制，这类做法怎么跟权限体系共存是个实打实的问题。",
+        "他解释了为什么 AI 在编程这个垂类跑得最快：模型被高强度训练过、各家实验室天天拿它当竞赛指标、而且用户是史上最技术的一群人——遇到 MCP 连不上他们不打电话找 IT，自己就把端口开了。"
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "name": "Claude 官方博客",
+      "title": "Cowork 和聊天现在合成一个 Claude 了（Claude Cowork and chat are now one Claude）",
+      "url": "https://claude.com/blog/cowork-is-now-claude",
+      "summary": "Claude 把「干大活的 Cowork」和「普通聊天」合并成一个入口，同时上线 Claude Docs 和 Claude Slides，Design 也能直接在对话里用。做这个决定的理由很诚实：他们本来是按「任务类型」分场所的，结果用户最大的抱怨就是得先判断这活归哪儿，而且在一边开的头带不到另一边。现在 Claude 自己判断任务需要什么，你随时可以自己改一行、在幻灯片上留个评论、或者选中元素直接拖。产物能直接演示、导出成 PowerPoint 或 PDF，或者一个链接全分享出去。Pro 和 Max 先上，其他套餐后续跟进。"
+    },
+    {
+      "name": "Claude 官方博客",
+      "title": "Claude in Chrome 正式全量（Claude in Chrome is generally available）",
+      "url": "https://claude.com/blog/claude-in-chrome-generally-available",
+      "summary": "Claude 的 Chrome 扩展对所有付费套餐全量开放，而且这次去掉了「每个动作都找你批准」——改成执行前用一个安全分类器先验一遍，确认动作安全且符合你的本意。这件事的价值在于覆盖那些没有连接器的地方：内部看板、老系统、供应商门户，Claude 可以用你已有的登录态去读页面、点链接、填表单。他们从去年试点到现在一直在补的短板是提示词注入——网页、邮件、表单字段里藏着的恶意指令会把 agent 带偏，防御做到位了才敢全量。"
+    },
+    {
+      "name": "Claude 官方博客",
+      "title": "Cowork 里 Claude 有了自己的浏览器（Claude gets its own browser in Cowork）",
+      "url": "https://claude.com/blog/cowork-built-in-browser",
+      "summary": "桌面版 Cowork 内置了一个浏览器：任务需要访问网站时，侧边栏会开一个浏览器，Claude 自己导航、阅读、点击、输入，你该干嘛干嘛。关键设计是「这是 Claude 的浏览器，不是你的」——它看不到你的标签页、书签和密码，你想让它保持登录得一个站点一个站点手动搬过去，银行、邮箱和单点登录默认排除在外。官方把两条路的分工讲得很清楚：页面已经在你手上就用 Chrome 扩展，纯粹的网页杂活（收发票、从看板里扒数字）交给它自己那台。"
+    },
+    {
+      "name": "Anthropic Engineering",
+      "title": "我们如何在各产品里约束 Claude（How we contain Claude across products）",
+      "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+      "summary": "这篇的出发点是：12 个月前他们绝不会给 Claude 足以搞垮内部服务的权限，今天这个权限级别已经是日常。风险由两部分构成——出事的概率和出事的破坏范围，前者靠模型训练和防护在持续下降，后者只会随着能力和权限增长而扩大。所以工程问题变成了「怎么给爆炸半径封顶」。他们明确指出「每步都问你」这条路已经失效，重心转向限制 agent 能碰什么，而不是盯着它做了什么。文中还提到 Claude Mythos Preview 就是一个因为爆炸半径太大、在 2026 年 4 月被判定不能发布的例子。"
+    },
+    {
+      "name": "Anthropic Engineering",
+      "title": "关于近期 Claude Code 质量反馈的说明（An update on recent Claude Code quality reports）",
+      "url": "https://www.anthropic.com/engineering/april-23-postmortem",
+      "summary": "用户反馈「Claude 变笨了」，查下来是三处产品层改动，API 和推理层没受影响。一是把默认推理档从「高」降到「中」来缓解长延迟——他们自己承认这个取舍做错了，后来改回去了；二是给闲置超过一小时的会话清理旧思考内容，结果有 bug 导致每一轮都清，模型显得健忘又啰嗦；三是加了条「少说废话」的系统提示词，跟别的东西一叠加就出了问题。这篇对做产品的人参考价值很高：用户感知到的「模型退步」，很可能根本不是模型的事。"
+    },
+    {
+      "name": "Anthropic Engineering",
+      "title": "Managed Agents 的规模化：把脑子和手分开（Scaling Managed Agents: Decoupling the brain from the hands）",
+      "url": "https://www.anthropic.com/engineering/managed-agents",
+      "summary": "核心观点是 harness（驱动模型的那层外壳）里编码了大量「Claude 自己做不到什么」的假设，而这些假设会随模型变强而过期。他们举了个具体例子：Sonnet 4.5 快到上下文上限时会草草收尾，为此加了上下文重置；换到 Opus 4.5 这毛病没了，那段逻辑就成了纯累赘。所以他们做了 Managed Agents，用一小组接口把长周期 agent 托管起来，类比当年操作系统把硬件虚拟化成「进程」「文件」——抽象比底下的实现活得久，read() 不在乎你读的是 70 年代的磁盘还是今天的 SSD。"
+    },
+    {
+      "name": "Claude 官方博客",
+      "title": "Claude Code 支持 artifacts 了（Claude Code now supports artifacts）",
+      "url": "https://claude.com/blog/artifacts-in-claude-code",
+      "summary": "Claude Code 现在能把工作过程变成一个可分享的实时网页：PR 走查、系统说明、看板、发布检查清单，而且会随着会话推进自己更新。它用的是整个会话的上下文——代码库、连接器、对话本身，所以一个故障页面能把失败的测试、背后的函数、监控里的错误尖峰和根因分析全拼在一起，不需要你另外接数据源。页面在原地刷新，队友打开的那个链接会同步看到更新，每次发布是同一链接下的新版本，可以回滚。本质是把「同步进度」这件事自动化掉。"
+    },
+    {
+      "name": "Claude 官方博客",
+      "title": "Claude 面向小企业推出新工作流、集成和培训（Claude for Small Business launches new workflows, integrations, and training programs）",
+      "url": "https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs",
+      "summary": "小企业版现在有 43 个工作流和 27 个新集成，接进了 Shopify、Salesforce、TikTok、Atlassian、Zoom、Xero、Gusto、Square、Stripe、Zapier 这些小老板本来就在用的工具。这个产品 5 月上线，至今安装超过 90 万次。值得留意的是他们做需求的方式：春季跑了 10 个城市、听了 1000 多位小企业主，其中约三分之一提的都是「帮我把生意做大」——找线索、回询盘、写方案，所以这一版是照着这个诉求做的。秋季还要在 10 个城市开免费工作坊，150 多家被认证的培训机构会办 750 多场。"
+    }
+  ]
+}
