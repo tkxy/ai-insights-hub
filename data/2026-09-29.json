@@ -1,0 +1,285 @@
+{
+  "date": "2026-09-29",
+  "generated_at": "2026-10-08T11:05:00+08:00",
+  "daily_summary": "OpenAI DevDay 2026 一口气放出二十多项更新，最核心的是 dots——常驻 agent，每个有自己的云电脑和浏览器，能连接四千多个应用，在 ChatGPT、Slack、Teams 里都能触达，由 GPT-6 Astra 驱动，关掉笔记本它还在干活。内置规则决定它什么时候可以自己动手，改密码这类敏感操作仍然交回给人。同场还有 ChatGPT Space（人和 agent 编辑同一份文档的共享空间）、GPT-6.1 Sol（接近 Astra 的能力、五分之一的价格）、企业 Marketplace（能用预付给 OpenAI 的额度去买 Salesforce、HubSpot、ServiceNow 等 32 家伙伴的软件）。同一天白宫午宴上，黄仁勋、皮查伊、扎克伯格、马斯克、Dario Amodei 和 Greg Brockman 六人签了一页纸的自愿承诺，没有罚则也没有监管机构。Meta 的 Muse 扩展到小微商家，接入 Shopify、Dropbox、Slack、Canva、Notion、Stripe。对输入法最直接的信号是：agent 从「对话助手」变成「能独自值班的同事」，而入口之争正在从模型转向谁持有上下文。",
+  "design_insights": [
+    {
+      "title": "dots 把 agent 变成「能独自值班的同事」，但敏感操作仍交回给人",
+      "summary": "OpenAI 在 DevDay 发布 dots：常驻 agent，每个拥有独立的云电脑与浏览器，可连接 4000 多个应用，持续工作、保留偏好，可在 ChatGPT、语音、Slack 与 Teams 中触达。内置规则决定 dot 何时可以自主行动，改密码这类敏感任务仍然留给人类确认。面向 Pro、Business Premium 与 Enterprise 推出，受管工作区默认关闭。",
+      "implication": "真正该抄的不是「常驻」，是那条分界线：哪些动作可以自己做、哪些必须回到人手里，并且这条线是写死在产品里而不是靠模型自觉。输入法正在长出同类能力——自动改写整段、自动填表、读剪贴板做转换。建议现在就把输入法的 AI 动作分成三档：可直接出结果（纠错、格式化）、出结果但需一次确认（整段改写、替换原文）、必须显式授权（读取剪贴板、调用联系人、联网检索）。档位固定、不随模型能力升级而放宽，这样用户的预期才稳定。",
+      "sources": [
+        "OpenAI DevDay Recap",
+        "Decrypt",
+        "方格子 vocus"
+      ],
+      "source_urls": [
+        "https://decrypt.co/379584/openai-ai-agents-computers-devday-2026-everything-announced",
+        "https://vocus.cc/article/6abcd9dcfd89780001197d1e"
+      ],
+      "tags": [
+        "Agent",
+        "授权分级",
+        "DevDay",
+        "交互范式"
+      ]
+    },
+    {
+      "title": "ChatGPT Space：人和 agent 编辑同一份文档，协作对象从人变成人机混合",
+      "summary": "OpenAI 同场推出 ChatGPT Space 与 Pages，人和 agent 可以在同一份文档上共同编辑。配合 dots 的常驻特性，形成「你下班了它还在改」的协作模式。Agents API 同时支持 computer use、子 agent、工具搜索与上下文管理。",
+      "implication": "共享文档里混进了一个不睡觉的协作者，这对输入场景提出一个新问题：用户需要一眼看出哪段是自己写的、哪段是 AI 改的。输入法作为文字的入口，有机会把这个标记做在源头——AI 生成或改写的片段带上轻量来源标记，粘贴到任何支持的编辑器里都能保留。这比在每个编辑器里各做一套标注更有杠杆。退一步讲，哪怕只在自家的剪贴板历史里保留「这段是 AI 写的」，也已经比现在好。",
+      "sources": [
+        "OpenAI DevDay Recap",
+        "Decrypt"
+      ],
+      "source_urls": [
+        "https://decrypt.co/379584/openai-ai-agents-computers-devday-2026-everything-announced"
+      ],
+      "tags": [
+        "人机协作",
+        "来源标记",
+        "文档"
+      ]
+    },
+    {
+      "title": "GPT-6.1 Sol：接近旗舰能力、五分之一价格，中端档成了主战场",
+      "summary": "GPT-6.1 Sol 以每百万输入 2 美元、输出 10 美元、缓存输入 0.1 美元的价格发布，OpenAI 称其在编码、计算机操作、文档与长周期任务上接近 GPT-6 Astra，而价格是后者的五分之一。Artificial Analysis 在最大努力档给出 52 分，仅比 Astra 低 1 分。同场还为 Astra 增加了六倍标准价的 Ultrafast 档。",
+      "implication": "缓存输入从 0.2 降到 0.1 美元这个细节对输入法比主价更重要。输入法每次请求都携带大量稳定前缀——用户词库、人设设定、当前应用场景、最近几轮上下文。把这些整理成严格不变的前缀块放在 prompt 最前面，让缓存稳定命中，成本和首字延迟会同时下降。反过来，如果前缀里混进了时间戳、随机 ID 这类每次都变的内容，缓存就全废了。这件事值得做一次专项排查。",
+      "sources": [
+        "OpenAI",
+        "Capital & Compute",
+        "Info-Tech"
+      ],
+      "source_urls": [
+        "https://capitalandcompute.net/blog/new-ai-models-september-2026",
+        "https://www1.infotech.com/research/big-5-ai-vendor-roundup-week-of-september-28-2026"
+      ],
+      "tags": [
+        "GPT-6.1Sol",
+        "前缀缓存",
+        "成本",
+        "首字延迟"
+      ]
+    },
+    {
+      "title": "OpenAI Marketplace：模型厂商开始站到软件采购的中间位置",
+      "summary": "企业客户可以把预付给 OpenAI 的承诺额度用于购买合作伙伴软件，首批 32 家包括 Salesforce、HubSpot、ServiceNow。配合插件发现改进与企业市场，OpenAI 把 agent 运行层扩展成更完整的平台，并预览了基于机密计算的 Private Inference。",
+      "implication": "这件事提醒我们注意入口的转移方向：当模型变得可替换，不可替换的是 agent 工作时所依赖的那份上下文。输入法手里其实握着一份别人拿不到的上下文——用户的长期用词习惯、常用短语、纠错偏好、场景切换规律。短期内这是体验优势，长期看它是护城河。值得尽早定义：这份数据的归属与可迁移性对用户怎么说清楚，以及我们是否愿意开放给用户导出。谁持有上下文、它是否跟着用户走，会比模型选型更早决定格局。",
+      "sources": [
+        "Decrypt",
+        "The Authentic .AI"
+      ],
+      "source_urls": [
+        "https://decrypt.co/379584/openai-ai-agents-computers-devday-2026-everything-announced",
+        "https://www.theauthentic.ai/ourthoughts/ai-insights-of-the-week-2026-10-05"
+      ],
+      "tags": [
+        "平台化",
+        "上下文资产",
+        "采购",
+        "护城河"
+      ]
+    },
+    {
+      "title": "白宫自愿协议：一页纸、六个签名、没有罚则",
+      "summary": "9 月 29 日白宫午宴后，黄仁勋、皮查伊、扎克伯格、马斯克、Dario Amodei 与 OpenAI 总裁 Greg Brockman 签署一页纸的《前沿责任联合承诺》，内容包括针对网络、生物与化学风险的内部控制、防止模型以非预期方式访问系统的监测、独立外部审计、董事会层面监督。协议没有执行机制，微软与亚马逊未在六位签署者之列。",
+      "implication": "把它当供应商尽调的清单，而不是安全保证。对输入法这类要接多家模型的产品，这份清单恰好可以转成选型问卷：这家厂商有没有独立审计、有没有对「模型以非预期方式访问系统」的监测、出了事谁担责。合同条款比新闻稿可靠。",
+      "sources": [
+        "NPR",
+        "The Hill",
+        "Info-Tech"
+      ],
+      "source_urls": [
+        "https://www.ctrlai.com/",
+        "https://www1.infotech.com/research/big-5-ai-vendor-roundup-week-of-september-28-2026"
+      ],
+      "tags": [
+        "AI治理",
+        "供应商尽调",
+        "合规"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "输入法 AI 动作的三档授权模型",
+      "pain_point": "输入法的 AI 能力正从「给候选」滑向「替你做」，但产品里没有一条清晰的界线说明哪些动作可以直接生效、哪些需要确认。用户一旦被某次自动替换搞砸过，就会把整个 AI 功能关掉。",
+      "opportunity": "把所有 AI 动作固定分成三档：直接出结果（纠错、格式化、单位换算）、出结果但需一次确认（整段改写、替换已输入内容）、必须显式授权（读剪贴板、取联系人、联网检索）。档位写死在产品规则里，不随模型能力提升而自动放宽。",
+      "priority": "high",
+      "evidence": "OpenAI dots 用内置规则决定 agent 何时可自主行动，改密码等敏感任务仍交回人类确认，受管工作区默认关闭。"
+    },
+    {
+      "title": "AI 生成内容的来源标记随文字走",
+      "pain_point": "AI 改写过的句子一旦粘贴出去就和手写内容混为一谈，用户自己过几天也分不清哪句是自己想的、哪句是 AI 给的，在工作文档里尤其麻烦。",
+      "opportunity": "输入法作为文字源头，给 AI 生成或改写的片段打上轻量来源标记，至少在自家剪贴板历史与输入记录里保留，有条件时随富文本粘贴一起带走。",
+      "priority": "medium",
+      "evidence": "ChatGPT Space 让人与常驻 agent 共同编辑同一份文档，人机混合创作成为常态后，区分作者来源成为协作刚需。"
+    },
+    {
+      "title": "稳定前缀重排以提升缓存命中",
+      "pain_point": "输入法每次 AI 请求都携带词库、人设、场景等大量上下文，但这些内容里混杂着时间戳、会话 ID 等每次都变的字段，导致服务端前缀缓存几乎无法命中，成本和首字延迟都被推高。",
+      "opportunity": "对 prompt 做一次结构化重排：把严格不变的内容集中到最前端形成稳定前缀块，把易变字段后置。配合缓存读取降价（GPT-6.1 Sol 已降至每百万 0.1 美元），成本与首字延迟可同时改善。",
+      "priority": "high",
+      "evidence": "GPT-6.1 Sol 将缓存输入价格从 0.2 美元halved 至 0.1 美元每百万 token，前缀缓存成为中端模型降本的主要杠杆。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "OpenAI DevDay 2026：发布 dots 常驻 agent 等 20 多项更新",
+      "summary": "dots 每个拥有独立云电脑与浏览器，连接 4000 多个应用，由 GPT-6 Astra 驱动，可在 ChatGPT、语音、Slack、Teams 中触达，关掉笔记本仍持续工作。内置规则决定何时自主行动，敏感操作交回人类。",
+      "source": "Decrypt / OpenAI 官方",
+      "source_urls": [
+        "https://decrypt.co/379584/openai-ai-agents-computers-devday-2026-everything-announced",
+        "https://vocus.cc/article/6abcd9dcfd89780001197d1e"
+      ],
+      "tags": [
+        "OpenAI",
+        "DevDay",
+        "Agent"
+      ]
+    },
+    {
+      "title": "GPT-6.1 Sol 发布：五分之一价格逼近 Astra 能力",
+      "summary": "每百万输入 2 美元、输出 10 美元，缓存输入从 0.2 降至 0.1 美元。Artificial Analysis 最大努力档 52 分，仅比 GPT-6 Astra 低一分。同场为 Astra 增加六倍标准价的 Ultrafast 档。",
+      "source": "OpenAI / Capital & Compute",
+      "source_urls": [
+        "https://capitalandcompute.net/blog/new-ai-models-september-2026"
+      ],
+      "tags": [
+        "OpenAI",
+        "模型发布",
+        "定价"
+      ]
+    },
+    {
+      "title": "OpenAI 推出企业 Marketplace，首批 32 家伙伴",
+      "summary": "企业客户可将预付给 OpenAI 的承诺额度用于购买合作伙伴软件，Salesforce、HubSpot、ServiceNow 在首批名单中，模型厂商由此进入企业软件采购链条的中间位置。",
+      "source": "Decrypt / The Authentic .AI",
+      "source_urls": [
+        "https://decrypt.co/379584/openai-ai-agents-computers-devday-2026-everything-announced",
+        "https://www.theauthentic.ai/ourthoughts/ai-insights-of-the-week-2026-10-05"
+      ],
+      "tags": [
+        "OpenAI",
+        "平台化",
+        "企业软件"
+      ]
+    },
+    {
+      "title": "ChatGPT Space 与 Pages 上线，人与 agent 共编同一文档",
+      "summary": "OpenAI 推出共享工作区，人和 agent 可在同一份文档上协作编辑，配合 dots 的常驻能力形成跨时段的人机混合创作模式。",
+      "source": "OpenAI DevDay Recap",
+      "source_urls": [
+        "https://decrypt.co/379584/openai-ai-agents-computers-devday-2026-everything-announced"
+      ],
+      "tags": [
+        "OpenAI",
+        "协作",
+        "文档"
+      ]
+    },
+    {
+      "title": "六位 AI 领袖在白宫签署自愿承诺，无罚则无监管机构",
+      "summary": "黄仁勋、皮查伊、扎克伯格、马斯克、Dario Amodei 与 Greg Brockman 签署一页纸《前沿责任联合承诺》，涵盖内部控制、非预期访问监测、外部审计与董事会监督。微软与亚马逊未在签署名单。",
+      "source": "NPR / The Hill / SiliconANGLE",
+      "source_urls": [
+        "https://www.ctrlai.com/"
+      ],
+      "tags": [
+        "AI治理",
+        "白宫",
+        "自愿承诺"
+      ]
+    },
+    {
+      "title": "Meta Muse 扩展至小微商家，接入六大常用工具",
+      "summary": "Muse agent 新增 Shopify、Dropbox、Slack、Canva、Notion、Stripe 等集成，可连接 Instagram、Facebook 与广告账户，协助小微商家运营与获客。免费版有用量限制。",
+      "source": "TechCrunch / 方格子",
+      "source_urls": [
+        "https://vocus.cc/article/6abcd9dcfd89780001197d1e"
+      ],
+      "tags": [
+        "Meta",
+        "Agent",
+        "中小企业"
+      ]
+    },
+    {
+      "title": "Agents API 扩展：支持 computer use、子 agent 与上下文管理",
+      "summary": "OpenAI 的 Agents API 新增计算机操作、子 agent、工具搜索、上下文管理，以及 OpenAI 或客户自选的沙箱环境，同时扩展 Codex 云环境并预览基于机密计算的 Private Inference。",
+      "source": "Info-Tech Research Group",
+      "source_urls": [
+        "https://www1.infotech.com/research/big-5-ai-vendor-roundup-week-of-september-28-2026"
+      ],
+      "tags": [
+        "OpenAI",
+        "API",
+        "Agent基础设施"
+      ]
+    },
+    {
+      "title": "Thomson Reuters v. ROSS：首个 AI 训练合理使用的联邦上诉判决",
+      "summary": "第三巡回法院认定 ROSS Intelligence 复制 Westlaw 摘要构建竞品不属于合理使用，成为首个关于 AI 训练合理使用的联邦上诉审判决。法院特别指出 ROSS 产品不生成新文本，并明确回避了仍在审理的生成式 AI 案件。",
+      "source": "BYOBot All Things Agentic",
+      "source_urls": [
+        "https://byobot.ai/ai-news/all-things-agentic-october-5-2026"
+      ],
+      "tags": [
+        "版权",
+        "判例",
+        "训练数据"
+      ]
+    },
+    {
+      "title": "Runway 成为 OpenAI Marketplace 上线伙伴",
+      "summary": "企业可在同一工作区内使用 Gen-4.5 等视频模型，视频生成能力被纳入 OpenAI 的企业采购体系。",
+      "source": "方格子 vocus",
+      "source_urls": [
+        "https://vocus.cc/article/6abcd9dcfd89780001197d1e"
+      ],
+      "tags": [
+        "Runway",
+        "视频生成",
+        "生态"
+      ]
+    },
+    {
+      "title": "Pro 500 方案推出，月费 500 美元",
+      "summary": "OpenAI 在 DevDay 同场推出月费 500 美元的 Pro 500 方案，面向重度使用 dots 与 Codex 云环境的个人与小团队。",
+      "source": "方格子 vocus",
+      "source_urls": [
+        "https://vocus.cc/article/6abcd9dcfd89780001197d1e"
+      ],
+      "tags": [
+        "OpenAI",
+        "订阅",
+        "定价"
+      ]
+    },
+    {
+      "title": "Cruz 参议员阻止设立联邦 AI 安全委员会的法案",
+      "summary": "该法案原本将赋予委员会在前沿模型发布前 45 天获得访问权限的权力。阻止动作与同周的白宫自愿协议形成对照，显示美国 AI 监管路径仍未定型。",
+      "source": "The Hill / Sen. Warner",
+      "source_urls": [
+        "https://www.ctrlai.com/"
+      ],
+      "tags": [
+        "立法",
+        "监管",
+        "美国"
+      ]
+    },
+    {
+      "title": "NVIDIA OpenShell 发布",
+      "summary": "NVIDIA 把 agent 的权限约束下沉到芯片与运行时层，理由是提示词无法可靠承载权限边界，与本周多家厂商「把决策变小、变可测」的方向一致。",
+      "source": "NVIDIA / MarkTechPost",
+      "source_urls": [
+        "https://byobot.ai/ai-news/all-things-agentic-october-5-2026"
+      ],
+      "tags": [
+        "NVIDIA",
+        "Agent安全",
+        "硬件"
+      ]
+    }
+  ]
+}

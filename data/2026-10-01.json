@@ -1,0 +1,196 @@
+{
+  "date": "2026-10-01",
+  "generated_at": "2026-10-08T11:05:00+08:00",
+  "daily_summary": "OpenAI 解雇了三名安全研究员，理由是向外部安全组织分享机密信息；两天后负责发布安全报告的 David Robinson 辞职，在《大西洋月刊》撰文说公司文化已经崩坏。同期 FTC 的 agent 调查正式推进。产品侧相对安静：Cohere 发布 Embed 5，Ideogram 更新到 4.5。本周一个不太起眼但值得记的技术趋势是「决策模型」——Cloudflare、Amazon、OpenAI 在三天内各自推出了同一类东西：不生成文本，只对给定选项打分返回置信度。因为 agent 内部大部分工作其实是多选题（要不要升级、调哪个工具、这份文档归哪类），把这些判断路由到 2B 或 9B 的小模型，比调前沿模型便宜得多，而且一个带置信度的数字可以自动校验，一段话不行。这个思路对输入法几乎是现成的：候选排序、场景识别、要不要触发 AI，本来就都是多选题。",
+  "design_insights": [
+    {
+      "title": "决策模型：把「多选题」从前沿模型手里拿回来",
+      "summary": "Cloudflare、Amazon 与 OpenAI 在 9 月 29 日至 10 月 1 日之间分别推出决策模型。这类模型不写文本，接收一个问题和一组选项，返回每个选项的分数。因为 agent 内部大量工作本质是多选——是否升级、调用哪个工具、文档归属哪类——把这些路由到 2B 或 9B 参数的模型，比调用前沿模型更便宜、更快，也更容易自动化测试，因为带置信度的数字可以被校验，而一段话不能。",
+      "implication": "输入法里一大半的 AI 决策本来就是多选题：这次输入该不该触发 AI 帮写、候选怎么排序、当前属于聊天还是正式写作场景、要不要启用专业词库。这些现在要么写死在规则里（不够准），要么顺手丢给大模型（太贵且不可测）。决策模型给了第三条路——小模型打分 + 置信度阈值，低置信度时回落到规则。更关键的是它可测：有置信度就能建回归集，模型换代时能自动比对，不用靠人肉体验。",
+      "sources": [
+        "BYOBot All Things Agentic",
+        "Cloudflare",
+        "Amazon"
+      ],
+      "source_urls": [
+        "https://byobot.ai/ai-news/all-things-agentic-october-5-2026"
+      ],
+      "tags": [
+        "决策模型",
+        "小模型",
+        "候选排序",
+        "可测试性"
+      ]
+    },
+    {
+      "title": "OpenAI 连续两起安全人事变动，暴露内部流程与对外承诺的落差",
+      "summary": "OpenAI 解雇三名安全研究员，称其向外部安全组织分享了机密信息。两天后，负责 OpenAI 发布安全报告的 David Robinson 辞职，并在《大西洋月刊》撰文称公司文化已经崩坏。此前一周 OpenAI 刚因 alignment 回归取消了 GPT-6.1 Astra 的发布。",
+      "implication": "对依赖外部模型的产品来说，这类新闻的价值是提醒我们别把安全性外包给供应商的流程。输入法接入第三方模型时，自己这一侧应该有独立的防线：敏感字段在出端前就脱敏、输入内容的上传范围由端侧规则决定而非模型决定、关键能力保留端侧降级路径。供应商的内部治理会波动，我们能控制的是自己这一段。",
+      "sources": [
+        "TechCrunch",
+        "The Atlantic",
+        "Ctrl AI"
+      ],
+      "source_urls": [
+        "https://www.ctrlai.com/",
+        "https://www.toutiao.com/a7692693104054305299"
+      ],
+      "tags": [
+        "AI安全",
+        "供应商风险",
+        "端侧脱敏"
+      ]
+    },
+    {
+      "title": "Cohere Embed 5 与 Ideogram 4.5：基础组件在安静迭代",
+      "summary": "Cohere 发布 Embed 5 嵌入模型，Ideogram 更新至 4.5。在旗舰模型集中发布的一周里，这类基础组件的更新容易被忽略，但嵌入质量直接决定检索与个性化召回的上限。",
+      "implication": "嵌入模型对输入法的价值被低估了。个性化词库的召回、历史输入的语义检索、「我以前是怎么说这句话的」这类能力，底层都是嵌入。而且嵌入可以做在端侧——模型小、可离线、不涉及内容上传，正好绕开隐私顾虑。相比追逐生成模型的版本号，升级嵌入层可能是性价比更高的一步。",
+      "sources": [
+        "BYOBot All Things Agentic"
+      ],
+      "source_urls": [
+        "https://byobot.ai/ai-news/all-things-agentic-october-5-2026"
+      ],
+      "tags": [
+        "Embedding",
+        "端侧",
+        "个性化召回"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "用决策模型重构触发与排序逻辑",
+      "pain_point": "输入法里「要不要触发 AI 帮写」「候选怎么排」「当前是什么场景」这些判断，现在要么是硬编码规则（覆盖不全、改一次要发版），要么顺手交给大模型（贵、慢、结果不可复现）。",
+      "opportunity": "引入决策模型做这类多选判断：小模型对候选打分并给出置信度，高置信度直接采纳，低置信度回落到既有规则。带置信度的输出可以建自动回归集，模型换代时自动比对，不依赖人工体验。",
+      "priority": "high",
+      "evidence": "Cloudflare、Amazon、OpenAI 在三天内各自推出决策模型，共同理由是 agent 内部多数工作是多选题，路由到 2B/9B 模型更便宜且可自动校验。"
+    },
+    {
+      "title": "端侧嵌入驱动的个人表达检索",
+      "pain_point": "用户经常想复用自己以前说过的某句话或某种表达方式，但输入法只能按字面前缀召回历史，换个说法就找不到，个性化停留在词频层面。",
+      "opportunity": "在端侧部署轻量嵌入模型，对用户的历史输入建立语义索引，支持「我之前怎么表达这个意思」的语义召回。嵌入模型体积小、可离线，内容不出端，天然规避隐私顾虑。",
+      "priority": "medium",
+      "evidence": "Cohere 发布 Embed 5，嵌入质量决定检索与个性化召回上限；端侧嵌入是少数能在不上传内容的前提下提升个性化的路径。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "OpenAI 解雇三名安全研究员",
+      "summary": "OpenAI 称三人向外部安全组织分享了机密信息。此事发生在 FTC 调查启动与 GPT-6.1 Astra 取消发布之后，加剧了外界对其内部安全治理的关注。",
+      "source": "TechCrunch",
+      "source_urls": [
+        "https://www.ctrlai.com/"
+      ],
+      "tags": [
+        "OpenAI",
+        "人事",
+        "AI安全"
+      ]
+    },
+    {
+      "title": "OpenAI 安全报告负责人辞职，撰文称公司文化崩坏",
+      "summary": "负责 OpenAI 发布安全报告的 David Robinson 在解雇事件两天后辞职，并在《大西洋月刊》发表文章批评公司文化。",
+      "source": "The Atlantic / TechCrunch",
+      "source_urls": [
+        "https://www.ctrlai.com/",
+        "https://www.toutiao.com/a7692693104054305299"
+      ],
+      "tags": [
+        "OpenAI",
+        "离职",
+        "治理"
+      ]
+    },
+    {
+      "title": "FTC 正式推进 AI agent 调查",
+      "summary": "针对 OpenAI、Anthropic 与 METR 的调查进入实质阶段，FTC 计划发出正式信息调取要求并要求高管作证，关注 agent 造成损害时的责任归属。",
+      "source": "Tech Times / BYOBot",
+      "source_urls": [
+        "https://byobot.ai/ai-news/all-things-agentic-october-5-2026",
+        "https://www.ctrlai.com/"
+      ],
+      "tags": [
+        "FTC",
+        "监管",
+        "Agent"
+      ]
+    },
+    {
+      "title": "Cohere 发布 Embed 5",
+      "summary": "新一代嵌入模型发布，面向检索增强与语义召回场景，在旗舰模型密集发布的一周中属于容易被忽略但影响面广的基础组件更新。",
+      "source": "BYOBot All Things Agentic",
+      "source_urls": [
+        "https://byobot.ai/ai-news/all-things-agentic-october-5-2026"
+      ],
+      "tags": [
+        "Cohere",
+        "Embedding",
+        "检索"
+      ]
+    },
+    {
+      "title": "Ideogram 更新至 4.5",
+      "summary": "图像生成模型 Ideogram 发布 4.5 版本，继续强化文字渲染与版式控制能力。",
+      "source": "BYOBot All Things Agentic",
+      "source_urls": [
+        "https://byobot.ai/ai-news/all-things-agentic-october-5-2026"
+      ],
+      "tags": [
+        "Ideogram",
+        "图像生成"
+      ]
+    },
+    {
+      "title": "决策模型成为本周隐性主线",
+      "summary": "Cloudflare、Amazon、OpenAI 在三天内各自推出不生成文本、只对选项打分的决策模型，把 agent 内部的多选判断从前沿模型下放到 2B/9B 小模型。",
+      "source": "BYOBot All Things Agentic",
+      "source_urls": [
+        "https://byobot.ai/ai-news/all-things-agentic-october-5-2026"
+      ],
+      "tags": [
+        "决策模型",
+        "成本优化",
+        "架构"
+      ]
+    },
+    {
+      "title": "行业开始用「完成多少活」而非 token 计价",
+      "summary": "随着 agent 承担完整任务，计价方式从按 token 转向按完成的工作量，评论指出「每百万 token 多少钱」作为选型标尺正在失效。",
+      "source": "今日头条",
+      "source_urls": [
+        "https://www.toutiao.com/a7692693104054305299"
+      ],
+      "tags": [
+        "商业模式",
+        "计价",
+        "趋势"
+      ]
+    },
+    {
+      "title": "Anthropic 承诺 1 亿美元培训 1 万名前向部署工程师",
+      "summary": "配合 Claude for Government 正式可用，Anthropic 加码企业与政府落地的人才供给，显示竞争正从模型能力转向交付能力。",
+      "source": "Info-Tech Research Group",
+      "source_urls": [
+        "https://www1.infotech.com/research/big-5-ai-vendor-roundup-week-of-september-28-2026"
+      ],
+      "tags": [
+        "Anthropic",
+        "生态",
+        "人才"
+      ]
+    },
+    {
+      "title": "AI 实验室计划成立行业自律组织 SAFA",
+      "summary": "OpenAI、Anthropic、Meta、Google、英伟达等在签署自愿承诺之外，计划共同成立名为 SAFA 的行业自律组织。",
+      "source": "今日头条",
+      "source_urls": [
+        "https://www.toutiao.com/a7692693104054305299"
+      ],
+      "tags": [
+        "行业自律",
+        "AI治理"
+      ]
+    }
+  ]
+}
