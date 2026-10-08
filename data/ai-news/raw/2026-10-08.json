@@ -1,0 +1,633 @@
+{
+  "date": "2026-10-08",
+  "fetchedAt": "2026-10-08T01:02:06.644381+00:00",
+  "source": "follow-builders feeds",
+  "x": {
+    "generatedAt": "2026-10-07T06:45:10.543Z",
+    "lookbackHours": 24,
+    "x": [
+      {
+        "source": "x",
+        "name": "Swyx",
+        "handle": "swyx",
+        "bio": "achieve ambition with intentionality, intensity, integrity & insanity.\n\naffiliations:\n- @smol_ai\n- @dxtipshq\n- @cognition\n- @aidotengineer\n- @latentspacepod",
+        "tweets": [
+          {
+            "id": "2107646238585950540",
+            "text": "what is your default/workhorse coding agent today, Oct 2026?",
+            "createdAt": "2026-10-07T01:36:36.000Z",
+            "url": "https://x.com/swyx/status/2107646238585950540",
+            "likes": 19,
+            "retweets": 0,
+            "replies": 66,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Josh Woodward",
+        "handle": "joshwoodward",
+        "bio": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
+        "tweets": [
+          {
+            "id": "2107679061854273656",
+            "text": "Mask-based editing is my favorite from today, much more coming soon! https://t.co/Y0VeDg2P4j",
+            "createdAt": "2026-10-07T03:47:01.000Z",
+            "url": "https://x.com/joshwoodward/status/2107679061854273656",
+            "likes": 92,
+            "retweets": 4,
+            "replies": 7,
+            "isQuote": true,
+            "quotedTweetId": "2107521202466046453"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Boris Cherny",
+        "handle": "bcherny",
+        "bio": "Claude Code @anthropicai",
+        "tweets": [
+          {
+            "id": "2107565497680314831",
+            "text": "Another example, my actual prompts https://t.co/xOyjaC8xrn",
+            "createdAt": "2026-10-06T20:15:45.000Z",
+            "url": "https://x.com/bcherny/status/2107565497680314831",
+            "likes": 232,
+            "retweets": 7,
+            "replies": 8,
+            "isQuote": true,
+            "quotedTweetId": "2102543349102338309"
+          },
+          {
+            "id": "2107565388250874193",
+            "text": "I am surprised that people are surprised this is how I prompt Claude.\n\nTalk to Claude the way you would a coworker. There's no secret to prompting. There's no need to be overly scaffolded or prescriptive for most tasks -- give Claude a goal, and it will figure it out.\n\nBack in the Sonnet 3.5 days, your prompt mattered a lot. Nowadays, it's much more important to communicate to the model:\n\n1. What you want it to do\n2. How much effort you want it to spend\n3. How it should verify that it did the right thing",
+            "createdAt": "2026-10-06T20:15:19.000Z",
+            "url": "https://x.com/bcherny/status/2107565388250874193",
+            "likes": 8943,
+            "retweets": 503,
+            "replies": 450,
+            "isQuote": true,
+            "quotedTweetId": "2107532985897771152"
+          },
+          {
+            "id": "2107532985897771152",
+            "text": "Prompt https://t.co/eUUYfOlppH",
+            "createdAt": "2026-10-06T18:06:34.000Z",
+            "url": "https://x.com/bcherny/status/2107532985897771152",
+            "likes": 1119,
+            "retweets": 33,
+            "replies": 72,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Thibault Sottiaux",
+        "handle": "thsottiaux",
+        "bio": "Codex & ChatGPT @OpenAI",
+        "tweets": [
+          {
+            "id": "2107676653895967106",
+            "text": "Also! Good evening!!",
+            "createdAt": "2026-10-07T03:37:27.000Z",
+            "url": "https://x.com/thsottiaux/status/2107676653895967106",
+            "likes": 1309,
+            "retweets": 6,
+            "replies": 59,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107676261099426030",
+            "text": "And we won't unship the improvements. You get to have your cake and eat it too. See you tomorrow for Day 3!",
+            "createdAt": "2026-10-07T03:35:54.000Z",
+            "url": "https://x.com/thsottiaux/status/2107676261099426030",
+            "likes": 2256,
+            "retweets": 17,
+            "replies": 144,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107676072871600470",
+            "text": "We shipped four things that were deemed good to great and some math proofs, but the vote is clear and the community demands a reset. I did calibrate it and it *seems* that the game is rigged in reset's favor, but such are the rules at the moment.\n\nTherefore ... the reset has been processed. Enjoy!",
+            "createdAt": "2026-10-07T03:35:09.000Z",
+            "url": "https://x.com/thsottiaux/status/2107676072871600470",
+            "likes": 10173,
+            "retweets": 497,
+            "replies": 1487,
+            "isQuote": true,
+            "quotedTweetId": "2107575657014468879"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Peter Yang",
+        "handle": "petergyang",
+        "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6",
+        "tweets": [
+          {
+            "id": "2107669485549400474",
+            "text": "Do I know anyone at @Fourthwall or a related platform? My 8-year-old and I want to use her drawings to sell t-shirts and make her first dollar online. \n\nHere’s a design what do you all think? :) https://t.co/Jeto2wsHOW",
+            "createdAt": "2026-10-07T03:08:58.000Z",
+            "url": "https://x.com/petergyang/status/2107669485549400474",
+            "likes": 7,
+            "retweets": 1,
+            "replies": 2,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107639917287440537",
+            "text": "The flip side of this is that if you live in the boring suburbs like me a glass of wine a few days a week is totally worth it https://t.co/XaC05U710o",
+            "createdAt": "2026-10-07T01:11:28.000Z",
+            "url": "https://x.com/petergyang/status/2107639917287440537",
+            "likes": 19,
+            "retweets": 0,
+            "replies": 1,
+            "isQuote": true,
+            "quotedTweetId": "2107560980167459161"
+          },
+          {
+            "id": "2107605650398462178",
+            "text": "@dps not sure if this is possible but it’ll be incredible if muse can wait on a call for me then dial me in when there’s a human on the other line",
+            "createdAt": "2026-10-06T22:55:19.000Z",
+            "url": "https://x.com/petergyang/status/2107605650398462178",
+            "likes": 43,
+            "retweets": 2,
+            "replies": 6,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Nan Yu",
+        "handle": "thenanyu",
+        "bio": "product, codex @openai. prev head of product @linear",
+        "tweets": [
+          {
+            "id": "2107506074370920796",
+            "text": "I worry, though, that this will cause extreme degradation in systems that no one loves to maintain, but someone has to https://t.co/SLUmGaKHjL",
+            "createdAt": "2026-10-06T16:19:38.000Z",
+            "url": "https://x.com/thenanyu/status/2107506074370920796",
+            "likes": 25,
+            "retweets": 2,
+            "replies": 2,
+            "isQuote": true,
+            "quotedTweetId": "2107423771090915775"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Thariq",
+        "handle": "trq212",
+        "bio": "Claude Code @anthropicai. prev YC W20, @spc, @medialab",
+        "tweets": [
+          {
+            "id": "2107580787277340835",
+            "text": "there are some tricky technical problems to figure out! \n\nif Claude can only access your files when your computer is online, it might be effectively blocked on doing work until your computer is back on, so perhaps you want some sort of sync but there are edge cases there",
+            "createdAt": "2026-10-06T21:16:31.000Z",
+            "url": "https://x.com/trq212/status/2107580787277340835",
+            "likes": 33,
+            "retweets": 0,
+            "replies": 8,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107580785456976085",
+            "text": "we're increasingly going to be moving towards Claude's \"brains\" in the cloud and giving Claude \"local hands\" to operate on your computer\n\nI talked about this a bit on latent space https://t.co/m6NVHyweBp",
+            "createdAt": "2026-10-06T21:16:30.000Z",
+            "url": "https://x.com/trq212/status/2107580785456976085",
+            "likes": 633,
+            "retweets": 23,
+            "replies": 99,
+            "isQuote": true,
+            "quotedTweetId": "2107340217070035425"
+          },
+          {
+            "id": "2107504677143368163",
+            "text": "working at a higher level of abstraction has always required understanding the lower level ones, I don't think coding agents changes this",
+            "createdAt": "2026-10-06T16:14:05.000Z",
+            "url": "https://x.com/trq212/status/2107504677143368163",
+            "likes": 4206,
+            "retweets": 287,
+            "replies": 224,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Amjad Masad",
+        "handle": "amasad",
+        "bio": "ceo @replit. civilizationist",
+        "tweets": [
+          {
+            "id": "2107671204639465961",
+            "text": "What’s happening in the AI-powered reverse engineering and decompilation is absolutely insane. Pretty soon all software will be de facto open-source.\n\nAI is coming for everything and everyone.",
+            "createdAt": "2026-10-07T03:15:48.000Z",
+            "url": "https://x.com/amasad/status/2107671204639465961",
+            "likes": 3239,
+            "retweets": 257,
+            "replies": 196,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107544111482118237",
+            "text": "Full conversation here: https://t.co/aKn5QFuNO3 https://t.co/yVtQjk9xIO",
+            "createdAt": "2026-10-06T18:50:47.000Z",
+            "url": "https://x.com/amasad/status/2107544111482118237",
+            "likes": 170,
+            "retweets": 17,
+            "replies": 14,
+            "isQuote": true,
+            "quotedTweetId": "2107023776294555745"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Guillermo Rauch",
+        "handle": "rauchg",
+        "bio": "@vercel CEO",
+        "tweets": [
+          {
+            "id": "2107606246350266469",
+            "text": "“Thinking fast and s̶l̶o̶w̶ a bit less fast under a confidence threshold.”\n\nA very simple feature that I think will be extremely impactful for at-scale AI decision-making. https://t.co/ivWDKynSpm",
+            "createdAt": "2026-10-06T22:57:41.000Z",
+            "url": "https://x.com/rauchg/status/2107606246350266469",
+            "likes": 164,
+            "retweets": 6,
+            "replies": 42,
+            "isQuote": true,
+            "quotedTweetId": "2107603954091851883"
+          },
+          {
+            "id": "2107449561451274688",
+            "text": "At this rate AI will get us GTA 7 before GTA 6",
+            "createdAt": "2026-10-06T12:35:04.000Z",
+            "url": "https://x.com/rauchg/status/2107449561451274688",
+            "likes": 5598,
+            "retweets": 211,
+            "replies": 253,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Aaron Levie",
+        "handle": "levie",
+        "bio": "ceo @box - your business lives in content. unleash it with AI",
+        "tweets": [
+          {
+            "id": "2107680435644039269",
+            "text": "Cyber will be one of the most defining domains for AI in the coming years, and a huge area of focus for most enterprises.\n\nAI is going to now create a whole new level of work for security dealing with the increase of vibe coded issues, agentic attacks, and even accidental agent swarms hunting for data. OpenAI + Hugging Face is just a preview of what’s to come.\n\nSecurity teams have often been the most strapped for resources teams in the enterprise, and now it’s only going to get more intense. AI agents of course become the solution to this problem as well, and we’ll see a range of new agentic products for protecting code, enterprise systems, mission critical infrastructure, and enterprise data. Huge opportunity here right now.\n\nAnd it’s going to be a booming market for cyber professionals that can effectively deploy agents for security purposes in the enterprise. Great time to be in security.",
+            "createdAt": "2026-10-07T03:52:29.000Z",
+            "url": "https://x.com/levie/status/2107680435644039269",
+            "likes": 164,
+            "retweets": 24,
+            "replies": 47,
+            "isQuote": true,
+            "quotedTweetId": "2107523804184678485"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Garry Tan",
+        "handle": "garrytan",
+        "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+        "tweets": [
+          {
+            "id": "2107674122612555953",
+            "text": "Connie Chan doesn’t want to see a strong Dem party bring about a boom loop to SF and California\n\nShe votes against all the things that could make a vibrant city and state and attacks anyone who fights for us. https://t.co/tfZOuojA9L",
+            "createdAt": "2026-10-07T03:27:24.000Z",
+            "url": "https://x.com/garrytan/status/2107674122612555953",
+            "likes": 52,
+            "retweets": 2,
+            "replies": 9,
+            "isQuote": true,
+            "quotedTweetId": "2107671640876503110"
+          },
+          {
+            "id": "2107636543808840168",
+            "text": "Case study in activism in the guise of journalism manipulating SF politics https://t.co/3gsDEX2aE7",
+            "createdAt": "2026-10-07T00:58:04.000Z",
+            "url": "https://x.com/garrytan/status/2107636543808840168",
+            "likes": 32,
+            "retweets": 3,
+            "replies": 4,
+            "isQuote": true,
+            "quotedTweetId": "2107546091009015944"
+          },
+          {
+            "id": "2107630303644938505",
+            "text": "Maybe 3 more prompts got it to 35fps on 640x480 pulling from 8 CPU cores per frame https://t.co/p6lMwsseJQ",
+            "createdAt": "2026-10-07T00:33:16.000Z",
+            "url": "https://x.com/garrytan/status/2107630303644938505",
+            "likes": 9,
+            "retweets": 1,
+            "replies": 2,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Matt Turck",
+        "handle": "mattturck",
+        "bio": "VC at @FirstMarkCap.  Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+        "tweets": [
+          {
+            "id": "2107455581543858206",
+            "text": "My kids when I take care of home logistics https://t.co/MlZX4wuREF",
+            "createdAt": "2026-10-06T12:58:59.000Z",
+            "url": "https://x.com/mattturck/status/2107455581543858206",
+            "likes": 797,
+            "retweets": 9,
+            "replies": 10,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Zara Zhang",
+        "handle": "zarazhangrui",
+        "bio": "Builder. Make something people want, then make people want it. Harvard’17. GitHub: https://t.co/KCuEajezlL \nYouTube: https://t.co/8xzbGWtf6w",
+        "tweets": [
+          {
+            "id": "2107604881926459802",
+            "text": "It's almost impossible to come up with a good product name these days\nAll the good names have been taken 🫠",
+            "createdAt": "2026-10-06T22:52:15.000Z",
+            "url": "https://x.com/zarazhangrui/status/2107604881926459802",
+            "likes": 99,
+            "retweets": 0,
+            "replies": 63,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Nikunj Kothari",
+        "handle": "nikunj",
+        "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+        "tweets": [
+          {
+            "id": "2107706522457497753",
+            "text": "Too many VCs are chasing dopamine.. or rage baiting purposely just to get more views on this platform. \n\nX is not for nuance, so once you say something, you really can't take it back. \n\nI don't think they understand how it's actually destroying their long term brand. Unfortunately, it hurts the people \"under\" them more than the person talking. \n\nCase in point, I know of two folks who lost deals that were all set because of the drama going on X. \n\nGiven how much a commodity \"capital\" actually is and the sheer number of venture funds, you'd think people would be smarter than this. \n\nBut in this era of wanting airtime, I guess very few are playing long term games.",
+            "createdAt": "2026-10-07T05:36:08.000Z",
+            "url": "https://x.com/nikunj/status/2107706522457497753",
+            "likes": 13,
+            "retweets": 0,
+            "replies": 2,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107606751919087701",
+            "text": "Blown away by the responses/DMs here - I'll aim to get back to most of you by tomorrow!!",
+            "createdAt": "2026-10-06T22:59:41.000Z",
+            "url": "https://x.com/nikunj/status/2107606751919087701",
+            "likes": 1,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107468543373832463",
+            "text": "Coming to New York next week for a board meeting.. who should I meet? 👋 \n\nPrioritizing founders, but open to meeting design engineers or builders who are not pacing the frontier. \n\nDMs open!",
+            "createdAt": "2026-10-06T13:50:30.000Z",
+            "url": "https://x.com/nikunj/status/2107468543373832463",
+            "likes": 123,
+            "retweets": 0,
+            "replies": 28,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Peter Steinberger",
+        "handle": "steipete",
+        "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.\n@OpenClaw🦞 + @OpenAI",
+        "tweets": [
+          {
+            "id": "2107697554448421160",
+            "text": "I hooked up our team claw to X to trigger work faster. Unassigned sessions are for anyone to grab. Our agent looks who worked on the related code last and pings people on the server.\n\nWhole thing was a prompt and team server extended itself since plugins are now hot reloadable. https://t.co/jFGqOBS7pR",
+            "createdAt": "2026-10-07T05:00:30.000Z",
+            "url": "https://x.com/steipete/status/2107697554448421160",
+            "likes": 82,
+            "retweets": 4,
+            "replies": 21,
+            "isQuote": true,
+            "quotedTweetId": "2107696178125283724"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Dan Shipper",
+        "handle": "danshipper",
+        "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+        "tweets": [
+          {
+            "id": "2107575089441181861",
+            "text": "we couldn't have built the @every agent without Claude Managed Agents\n\nextremely fun to get to sit down and chat about it: https://t.co/RAsiCZwlZd",
+            "createdAt": "2026-10-06T20:53:52.000Z",
+            "url": "https://x.com/danshipper/status/2107575089441181861",
+            "likes": 132,
+            "retweets": 10,
+            "replies": 12,
+            "isQuote": true,
+            "quotedTweetId": "2107574195978641911"
+          },
+          {
+            "id": "2107520182789005726",
+            "text": "this is actually true https://t.co/jCDKEFalc5",
+            "createdAt": "2026-10-06T17:15:42.000Z",
+            "url": "https://x.com/danshipper/status/2107520182789005726",
+            "likes": 311,
+            "retweets": 0,
+            "replies": 5,
+            "isQuote": true,
+            "quotedTweetId": "2107483793196298551"
+          },
+          {
+            "id": "2107507471807881262",
+            "text": "there's a pretty cool new featured app on the slack marketplace! https://t.co/1xQx11TQNy",
+            "createdAt": "2026-10-06T16:25:11.000Z",
+            "url": "https://x.com/danshipper/status/2107507471807881262",
+            "likes": 49,
+            "retweets": 4,
+            "replies": 7,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Aditya Agarwal",
+        "handle": "adityaag",
+        "bio": "General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
+        "tweets": [
+          {
+            "id": "2107595892849250477",
+            "text": "It is wild to me that the only legally allowed form of spam is political campaigns.\n\nAnd it is also for the most intrusive channel of txt messaging.\n\nInsane,.",
+            "createdAt": "2026-10-06T22:16:32.000Z",
+            "url": "https://x.com/adityaag/status/2107595892849250477",
+            "likes": 14,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107506675544682755",
+            "text": "I have had the distinct pleasure of collaborating with @keithmadams for almost 15 years. We worked together at Facebook and now jam on startups together.\n\nIt is such an interesting time to explore what it truly means to be a \"coder\" in today's ecosystem.\n\nSuper fun pod. https://t.co/BR3Ph6UgHC",
+            "createdAt": "2026-10-06T16:22:01.000Z",
+            "url": "https://x.com/adityaag/status/2107506675544682755",
+            "likes": 11,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": true,
+            "quotedTweetId": "2107498112977973468"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Sam Altman",
+        "handle": "sama",
+        "bio": "The mission of OpenAI is to ensure that AGI benefits all of humanity",
+        "tweets": [
+          {
+            "id": "2107691577015755196",
+            "text": "and thank you to the untold number of people who put in the technical work, brick by brick over the generations, to get us to the point where such a wonder is possible.",
+            "createdAt": "2026-10-07T04:36:45.000Z",
+            "url": "https://x.com/sama/status/2107691577015755196",
+            "likes": 1639,
+            "retweets": 59,
+            "replies": 84,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107691262795239805",
+            "text": "thank you to the machines, and the structure of reality, for letting us understand a little more.",
+            "createdAt": "2026-10-07T04:35:30.000Z",
+            "url": "https://x.com/sama/status/2107691262795239805",
+            "likes": 1458,
+            "retweets": 52,
+            "replies": 60,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107691261776052633",
+            "text": "looking up at the stars with extra awe tonight.\n\n\"thy sea is so great and my boat is so small.\"",
+            "createdAt": "2026-10-07T04:35:30.000Z",
+            "url": "https://x.com/sama/status/2107691261776052633",
+            "likes": 4460,
+            "retweets": 238,
+            "replies": 578,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Claude",
+        "handle": "claudeai",
+        "bio": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+        "tweets": [
+          {
+            "id": "2107574198482927900",
+            "text": "Watch the full conversation with @danshipper and Willie Williams on how they built it: https://t.co/PUfvXR90Ox",
+            "createdAt": "2026-10-06T20:50:20.000Z",
+            "url": "https://x.com/claudeai/status/2107574198482927900",
+            "likes": 96,
+            "retweets": 6,
+            "replies": 5,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107574195978641911",
+            "text": "The Every team runs as much work as possible through agents. To help the whole team share skills when a new model comes out, they built a company agent on Claude Managed Agents that everyone uses in Slack.\n\nOnce it caught on internally, they released it to their subscribers. https://t.co/sKAhBei27k",
+            "createdAt": "2026-10-06T20:50:19.000Z",
+            "url": "https://x.com/claudeai/status/2107574195978641911",
+            "likes": 1669,
+            "retweets": 93,
+            "replies": 118,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107522599530139767",
+            "text": "In Claude, paste a Google file link or ask for a new doc, sheet, or deck, and it opens beside the chat for you and Claude to edit together. Access follows your Google sharing permissions.\n\nIn beta on all paid plans. Give it a try: https://t.co/2PehYZKjTm",
+            "createdAt": "2026-10-06T17:25:18.000Z",
+            "url": "https://x.com/claudeai/status/2107522599530139767",
+            "likes": 947,
+            "retweets": 24,
+            "replies": 15,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "xBuilders": 19,
+      "totalTweets": 40
+    }
+  },
+  "podcasts": {
+    "generatedAt": "2026-10-07T06:45:45.266Z",
+    "lookbackHours": 336,
+    "podcasts": [
+      {
+        "source": "podcast",
+        "name": "Unsupervised Learning",
+        "title": "Ep 94: Applied Compute CEO on the Limits of RL, the New AI Hyperscaler &amp; Why Post-Training Wins Inference",
+        "guid": "77097e65-4ead-46c4-b497-36fa09bd0f11",
+        "url": "https://www.youtube.com/@RedpointAI",
+        "publishedAt": "2026-10-06T12:50:23.000Z",
+        "transcript": "Speaker 1 | 00:00 - 00:02\nHow do you kind of characterize where we are today?\n\nSpeaker 2 | 00:02 - 00:25\nWhat we have with RL is we essentially have a hill climbing machine. The hardest part is actually defining the hill to climb, which is why evals, I think, is like a really important thing for companies to, a, focus on building and b, actually like safeguard pretty carefully. Your employees are not fungible. You would not like be comfortable with them going to another company and doing work there. And same thing with these models.\n\nSpeaker 1 | 00:29 - 01:07\nOwning your own intelligence and training your own models is incredibly in the AI zeitgeist these days. There's probably no better person to speak with about all these topics than Josh from Applied Compute. Applied Compute is working with a bunch of the most cutting edge AI applications on a really interesting post training examples. Josh and I were able to talk about his perspective on a bunch of the top questions around open models today, including when it actually makes sense to post train these models, how to think about the future of when this stuff makes sense, especially as the labs, you know, get more and more data from different domains over time. We also talked about, like, when it makes sense to harness optimize versus actually go and post train, as well as just get Yash's thoughts on a lot of the really interesting things happening in the ecosystem today.\n\nSpeaker 1 | 01:07 - 01:18\nAll in all, it's a fascinating conversation with a brilliant mind in the space. I hope folks enjoyed as much as I did. Without further ado, here's Yacht. Well, thanks so much for for coming on the podcast.\n\nSpeaker 2 | 01:18 - 01:19\nThank you for having me.\n\nSpeaker 1 | 01:19 - 01:22\nYeah. Been looking forward to this one for for a while.\n\nSpeaker 2 | 01:22 - 01:27\nYeah. Yeah. No. It's it's been a long time coming. It's good we can finally do it in person as well.\n\nSpeaker 1 | 01:27 - 01:30\nYes. Always better in person in our little like closet of a studio here.\n\nSpeaker 2 | 01:30 - 01:36\nYeah. This is this is awesome. I mean, like, it's very cozy, built built exactly for the setting.\n\nSpeaker 1 | 01:36 - 01:39\nYeah. Definitely not a repurposed library. Yeah. Or like, purpose built\n\nSpeaker 2 | 01:39 - 01:42\nfor Yeah. For podcasts. So thanks for having me.\n\nSpeaker 1 | 01:42 - 01:44\nOf course. Well, I feel like there's a bunch\n\nSpeaker 2 | 01:44 - 01:45\nof places we could start, but\n\nSpeaker 1 | 01:45 - 02:14\nwhere thought would be most interesting for our listeners is just owning your own intelligence feels like it's in the zeitgeist. I don't know, you know, when the tipping point happened, you know, three or four months ago, but like, it is certainly, you know, the conversation. And I feel like there's been a bunch of different versions articulated of the risk There's of depending on Frontier been people saying, you know, you'll never know when they'll pull the APIs away, when they decide, you know, something's a safety risk and they don't give you access. There's been, you know, they'll build products and compete with you. They'll be, if you use their models, they'll train on your data.\n\nSpeaker 1 | 02:14 - 02:24\nYeah. There's all sorts of different arguments. And I'm curious, you think about like this, you know, the case for this, which of these arguments like resonate for you? Which of them do you think maybe are a little overblown? Yeah.\n\nSpeaker 2 | 02:25 - 02:30\nYeah. So so, you know, I... As as as you know, my background is I actually worked at a Yeah.\n\nSpeaker 1 | 02:30 - 02:32\nYou've seen in the inside. Labs.\n\nSpeaker 2 | 02:32 - 03:05\nAnd I think, like, the the risks or not even risks, just the things that I think about when it comes to owning your intelligence aren't more the ones that are like, presumed that the labs are malicious or something like that, where they're stealing your data or whatnot. I think like, you know, these companies are made up of great people. There are contractual obligations. There's actual you know, there's a lot of engineering that goes in protecting data and whatnot. But I do think that the idea of owning your intelligence really is about flexibility and control.\n\nSpeaker 2 | 03:05 - 03:39\nAnd so you said like, oh, I don't know when this own your intelligence narrative popped up. I think it really popped up when the open model started getting good and you could actually go and do things with them. But the control you get, it can actually be a lot deeper than that, right? Like where these models run, how you deploy them, what you optimize them, whether it's cost or latency or specific domains, the more control you get, that's what we're talking about when when we say own your intelligence. So if you wanna own your intelligence and you wanna be able to train these models to do tasks on your data, you actually need to have access to the weights.\n\nSpeaker 2 | 03:39 - 04:02\nYou need to have the infrastructure to post train them, to inference them, to route between them. You know, I do think there are risks about being super dependent on a single model vendor. Luckily, think, like, the the the labs are doing their best to sort of, like, serve as many people as possible. But there are times when models can get pulled from different products. That's happened actually more than once, particularly in the coding space.\n\nSpeaker 2 | 04:02 - 04:34\nAnd so, you know, I think as these labs start to move more into specific verticals, like, you know, it's not clear whether they won't... They'll continue serving companies that are... They're directly competing against. And so the safest sort of like most durable thing that you can go and do and the advantage you can build up, think, is investing in the full stack to be able to make models that are powering your products, that are intelligent, that are doing the things that you want, and not having, like, extreme vendor dependence on any one set of models\n\nSpeaker 1 | 04:34 - 04:49\nor companies. And it feels like this this narrative has really won out. Mean, I think maybe one of the most interesting manifestations of is even yesterday, OpenAI announcing like this partnership with Base10, right, where you can kind of use OpenAI credits almost burn them down on on on open models through Base10.\n\nSpeaker 2 | 04:49 - 05:07\nSo I I think first of all, we're we're big admirers of the Base10 team. And and I think that Tuan and Danny and all of those folks, they're really an incredible company. But yeah, I think I think this was a clear signal that like, hey, this is multi model future. Customers want choice. They want flexibility.\n\nSpeaker 2 | 05:07 - 05:25\nI think on the OpenAI side, it's a clear sort of motion towards, hey, we wanna be more of a platform. We want people to be able to draw down from their commits on different products. We wanna be the gateway to enterprises using AI. And I think it was a big win for open source models. A\n\nSpeaker 1 | 05:25 - 05:25\nlot\n\nSpeaker 2 | 05:25 - 05:59\nof people want to use this stuff. The fact that there is like a sort of gateway now that you can go and sort of use a variety of models, proprietary or open source. I think it's a big step towards this multi model future. I don't know if you noticed this, but the narrative a couple months ago was definitely like, hey, like we are going to talk about and sort of promote and analyze the strongest, biggest, baddest model out there. And now it's like much more talking about a Pareto curve.\n\nSpeaker 2 | 05:59 - 06:17\nYeah. Right? There's like There's some cost performance trade off. You don't need a mega model for every single task and you actually get more choice and flexibility. I think open models take that to an even more extreme where it's like, hey, you can slide along the Pareto curve by picking different open models of different sizes from different families.\n\nSpeaker 2 | 06:18 - 06:43\nBut also what our core thesis is, is you can move that Pareto curve out. You can train models to be better at particular things and you can actually get better models for cheaper cost. And so all of these things, I think, are like sort of the general trend of people wanting more flexibility. They've gotten more comfortable with deploying AI and production use cases. They've done a lot of exploration.\n\nSpeaker 2 | 06:43 - 06:47\nAnd now it's like, hey, we're... This AI thing's really working. Let's go ahead and optimize it.\n\nSpeaker 1 | 06:47 - 06:56\nDo you think the, like, OpenAI based 10 thing will work? I mean, it's an interesting, like, are they in a position to be this neutral partner to enterprises of we'll give you whatever model is the best.\n\nSpeaker 2 | 06:56 - 07:19\nIt's something that we're also excited about participating in. The tricky thing is... It makes a lot of sense for an Amazon, for example, to be marketplace because you have Bedrock and you can run Anthropic models, you can run OpenAI models, you can run OpenModels. Now, like, is OpenAI gonna take it to the extreme where you can run Anthropic models and Gemini models? I...\n\nSpeaker 2 | 07:19 - 07:20\nI'm not sure. You mentioned kind\n\nSpeaker 1 | 07:20 - 07:35\nof this pushing out of the Pareto frontier that Post training enables, and it seems, you know, like there's been a ton of of really interesting examples of this. Yeah. You know, it it feels like most notably a lot of application builders have realized, wow. When I do similar workloads at massive scale, like that inference bill really runs up. Yes.\n\nSpeaker 1 | 07:36 - 07:48\nOr, hey, this experience for my customers is so much better when it's faster. Totally. And so I feel like a lot of the initial post training you see that I heard about were like cost and speed feel like tremendously valuable things.\n\nSpeaker 2 | 07:48 - 07:48\nTotally.\n\nSpeaker 1 | 07:48 - 07:59\nYeah. Capabilities, I'm curious if you could talk a little bit about like, they're certainly pushing out a Pareto frontier of you could get for the same size model, probably better capabilities. How do you think about the current state of being able\n\nSpeaker 2 | 07:59 - 09:03\nto post train to beat frontier models, the best mega models at capabilities? So I think the interesting thing that we're seeing is there's obviously frontier models that are ahead of the open source models on base capabilities, but the fact that you're able to post train the open weight models means if you have differentiated data, something proprietary to you, that's out of distribution of the models, that's when you can actually push these models to be better on capabilities as well. Our general take has been like the more out of distribution your data is, the more likely that post training's actually gonna give you that capabilities lift. But also again, it's all about that Pareto curve, right? So if I'm able to take a cheaper model and train it to be parity with the frontier but at much better cost, sometimes you're able to serve more users for that, your data has to actually be quite differentiated, But most people are actually post training to basically optimize price performance.\n\nSpeaker 1 | 09:03 - 09:31\nOn the capability side, you know, think it's an interesting question of like what data remains out of distribution over what period of time, right? Like obviously, I feel like the labs are laser focused on coding, and so like, maybe they're obviously doing work in other domains, but maybe not as focused as they might in a few years from now. I'm curious how you think about like, I don't know, five years from now, you know, how many businesses that applied compute works with feel like, oh, our data's still out of distribution from like what the models do?\n\nSpeaker 2 | 09:31 - 09:54\nYeah. So I think like my honest answer here is that the way we're going to be training models is going to change, right? So we're in this paradigm of offline RL. You go and you procure high quality data sets from data vendor companies. You go and hill climb those specifically, and you get a model that's very spiky in that domain.\n\nSpeaker 2 | 09:54 - 10:23\nRL is reinforcement learning. It's learning from experience. I think a lot of the online RL methodologies are actually using production inference to go and improve your models. That is actually gonna be like how most enterprises codify their judgment, expertise, by basically the more they use the model, the better that it gets. But generally, right, like the proprietary data that will be out of distribution is things that are produced inside of the company, right?\n\nSpeaker 2 | 10:23 - 10:40\nSo like, you know, the very extreme example of this, right, it's a shout out to Liam who used to be my main manager, Liam Fetas. Yeah, that's extremely out Extremely out of of distribution. Distribution, right? Because they're making that data. They're actually going in the real world, running experiments, getting reward signal, things like that.\n\nSpeaker 2 | 10:40 - 11:27\nBut I think in the enterprise, what that looks like is like judgment traces, right? You know, the way one company operates can be very different than the way another company operates because, you know, they have different thresholds for risk, they have a different operating model, they have different expertise, historical data, all that sort of stuff, and that contributes to the decisions that they make. The way we think about out of distribution data is maybe like we're putting it in the context of offline RL where it's like, Oh, there has to be this highly verifiable signal from, like, some math problem or some, you know, rubric based RL problem or something like that. There are times when you're gonna go and optimize an AI system by configuration. So you're gonna go and prompt the model or you're to put things in context.\n\nSpeaker 2 | 11:27 - 11:50\nAnd there are times where you're actually it makes a lot more sense to optimize the policy. So how it does judgment, how it does reasoning, and these things are actually harder to codify. And that's where we'll see, you know, in five years from now, I think a lot of companies will basically have systems to basically gather input from experts and then turn that into better policies.\n\nSpeaker 1 | 11:50 - 12:05\nYeah. So, you know, as these models get used, you know, you kind of codify a bunch of the, like, the the way that an organization makes decisions, and you kind of use that to create, you know, to to improve models. Yeah. Is there, like, enough data that's generated to do that? Guess it feels like, you know, to to do all...\n\nSpeaker 1 | 12:05 - 12:07\nA lot of these things requires a a large amount of data.\n\nSpeaker 2 | 12:08 - 12:21\nHi. I'm Anne Maris, and I'm the producer of unsupervised learning. Thank you so much for listening to the show. And if you've enjoyed the conversation, please subscribe. Subscribing helps us grow, which helps us continue to lock down some amazing guests.\n\nSpeaker 2 | 12:21 - 12:24\nThank you so much for your listenership, and see you next episode.\n\nSpeaker 1 | 12:25 - 12:33\nYeah. Is there, like, enough data that's generated to do that? Guess it feels like, know, to to do all of these things requires a large amount of data.\n\nSpeaker 2 | 12:33 - 12:38\nI think part of this is is like a greenfield space,\n\nSpeaker 1 | 12:38 - 12:38\nright?\n\nSpeaker 2 | 12:38 - 12:57\nLike there's new research happening here, and it's all about data efficiency and learning from sparse rewards. So we had pre training. It's like not that data efficient, but very generalizable. Then we had this like supervised fine tuning, you know, pun on unsupervised learning, right? This is the name of the podcast.\n\nSpeaker 2 | 12:57 - 13:33\nBut supervised fine tuning, it's like more data efficient, but still not very good. Then there's RL with verifiable rewards, where you actually trade data quantity for quality with these replayable environments and some sort of verifier propagate the RL. It's still pretty bad, right? Like it's still not very data efficient. The answer to your question is like there will be more data efficient methods of training, and that's what a lot of these newer methodologies in online RL or on policy self distillation or some of these like type of techniques or SAO, these types of things that people are pushing on.\n\nSpeaker 2 | 13:33 - 13:44\nAnd I basically think like what's blocking continual learning is basically like extremely data efficient training from sparse rewards, which is an unsolved problem. Yeah.\n\nSpeaker 1 | 13:45 - 13:56\nHow do you think about as a CEO, the extent to which you should be like working on that problem within the applied compute context? Or like, it's like, hey, just understand the enterprise problems really well. And like, as that research progresses, you can kind of take pieces.\n\nSpeaker 2 | 13:56 - 14:30\nYeah, so we're actually doing this today with customers, this sort of online training where we're actually able to take advantage of large inference deployments where people are serving tens of thousands, hundreds of thousands of users, and then use that production data to go and improve the models. We aren't married to any specific type of training. RL and these online methodologies are the best things right now, but these will continue to evolve and get better. That's why a large portion of our team is actually a research systems team trying a lot of new methodologies in production with real customers.\n\nSpeaker 1 | 14:30 - 14:59\nThere's a ton of potential on updating models and training models. And also I'm sure anyone that's played around with these tools has realized like, I don't know, you do some really great prompt engineering, or create some skills, or like there's other ways to like take knowledge. And I think there's maybe a feeling sometimes that researchers can be a little bit of like a hammer looking for a nail, like, oh, we can do it with the model, and there's other ways to do it. How confident are you that the long term solution of this involves, like, many, many different kinds of models in an organization versus, like, stitching together things in other ways?\n\nSpeaker 2 | 14:59 - 15:21\nYeah. I think I think we are pretty confident that the future looks like a non static set of weights. I think that is something that we we we deeply believe in. There is gonna be some sort of feedback loop from the real world back into the back into the model. Does that need to be done for every single task?\n\nSpeaker 2 | 15:21 - 15:22\nThere's been some good examples of\n\nSpeaker 1 | 15:22 - 15:29\nof that in in the coding world. But like what are what are... Yeah. What do you feel like is above the line of where that feedback loop makes sense and maybe what's below it?\n\nSpeaker 2 | 15:29 - 16:01\nBasically, things that change with temporality, you often want like some sort of closed loop where new information is making its way back into the model. But also I just think like there's this expanding umbrella of intelligence that you're getting from the base models out of the box. And at some point that is going to be like sufficient for a lot of these like manual process oriented tasks. The things that will require sort of iterative training are the things that are more judgment oriented.\n\nSpeaker 1 | 16:01 - 16:09\nYou know, are there to the extent you can talk about it, examples that come to mind of ways of kind of taking this real world data and using it to kind of improve? Yeah,\n\nSpeaker 2 | 16:10 - 16:39\nyeah. So basically, one of the examples of customer working with today is they essentially have some sort of assistant product that a lot of users use. They ask this assistant to go and accomplish different tasks and then give feedback on what the model did wrong or right. And so instead of... Basically, it's pretty impractical to go and build like some sort of giant skills file or context or something like that.\n\nSpeaker 2 | 16:39 - 17:18\nSo we're actually able to bias the model based off of the direct user feedback using some of these like online training methodologies, and we're able to see real upticks in user satisfaction, completion rates, decreased tool call failures, things like that. The main question to answer is like, what's the TCO of doing this? How expensive is it to post train? And that's like a lot of the stuff that we're going and building is how do we actually decrease the cost to go and, you know, RL a model? How can we actually do this automatically and online without you having to go and build hand tuned RL environments that are fully replayable and things like that.\n\nSpeaker 2 | 17:18 - 18:07\nAnd so what what we see happening is the cost to post train and actually adjust the weights is falling. You're still better off going and doing a bunch of context optimization and harness optimization, but once you reach a point where you've sort of squeezed a lot out of the harness that you've built and the tools that you've made, you actually can still continue to squeeze a lot out of optimizing the policy to use those tools better. So some of the companies that we work with, they have really specialized harnesses with custom tools and things like that. Like we're working with a company in chips. They've built a bunch of software actually that general models don't really know how to use well to go and do ETL verification and things like that.\n\nSpeaker 2 | 18:07 - 18:14\nSo it turns out when you apply this you know, Goldilocks algorithm of RL, you can actually push\n\nSpeaker 1 | 18:14 - 18:26\nthe models to like a lot better performance. You talked about kind of like this effort to like lower the TCO and enable like more continuous training. What are the hardest problems to solve there? Like, you know, where are we on that journey?\n\nSpeaker 2 | 18:26 - 18:28\nYeah. Hardest problems to solve with RL and infrastructure.\n\nSpeaker 1 | 18:28 - 18:32\nYeah, be able to bring the TCO down to the point where, and then like productize it even more.\n\nSpeaker 2 | 18:32 - 19:12\nMy co founder, Linden, who's our chief architect, he is like the wizard with this. He's one of the smartest people I've met. And, you know, you'd be surprised how underutilized GPUs are. Like if you were to also just aggregate things globally, like basically, I would say there is a lot more that can be squeezed out of like the available hardware to actually go and lower these costs quite drastically. You can invest a lot in algorithms that are a lot more data efficient, so you need to train less, you know, for less long and use less compute.\n\nSpeaker 2 | 19:13 - 19:48\nAnd so I would say like the system side and the algorithm side are like the places where you can squeeze the most right now. In terms of like the data available and things like that, There's synthetic data generation techniques to be like, Hey, can we go and take some amount of tokens and explode it into something much larger and pull learning signal out of that? But I would honestly say that most of the cost optimization and cutting cutting down costs there is gonna happen on the algo side and the system side.\n\nSpeaker 1 | 19:48 - 19:53\nSatya came out and said that there should be, you know, as many models in the world as there are firms in the world\n\nSpeaker 2 | 19:53 - 19:53\nYeah.\n\nSpeaker 1 | 19:53 - 20:07\nWhich obviously was a good a good selling point for you for you all. Yeah. You know, is that a vision that resonates with you? I mean, how much do you believe in this vision that, like, every single company is, like, its own special snowflake with its own Yeah. Unique judgment that requires, like, its own model?\n\nSpeaker 2 | 20:07 - 20:47\nYeah. I think I think in principle, you know, whether this means that every company needs to like pre train a model or mid train a model of their own, you know, I I don't necessarily think that's the case. But I do think there are closed loop feedback systems inside of each company that is worth capturing. Right now, there's just a lot of low hanging fruit, so people are starting there with like harness optimization and context optimization. But the idea that like different companies are unique and they operate differently and they have different judgment structures and are not the same, that we fundamentally agree with.\n\nSpeaker 2 | 20:47 - 21:13\nAnd that's kind of the thesis of our whole company is that like, if everybody's using the same model, like great models sort of set floor for everybody, but then how you go and optimize those models and build really amazing AI systems, that's what's going to set the ceiling. So there actually is you know, a difference in the products that people can build both on the harness and context engineering that they do, but\n\nSpeaker 1 | 21:13 - 21:26\nalso the models that they put behind those products. Certainly, you know, you take one extreme like a pharma company. Like pharma companies have such different data from each other. Makes so much sense to, like, you know, they focus on one disease area, generate a lot of experimental data. Like, of course, they should have their own model.\n\nSpeaker 1 | 21:26 - 21:42\nIf you take, like, banks, it's like how different is, like, one bank from another bank? And, like, certainly, maybe there's little judgment, you know, calls that are different. But I wonder, like, you know, if a Frontier lab is is post training on a bunch of, like, really good, you know, general finance data, how much uniquely unique things does a\n\nSpeaker 2 | 21:42 - 21:49\nFrontier have? I think there are certainly things in the market that will benefit from consolidation. I mean, that's... This is why you have roll ups. Right?\n\nSpeaker 2 | 21:49 - 22:38\nLike, you basically you know, to take like accounting firms or something like that, like they're fragmented just by the nature of the business, I think, as like a very, you know, like you have an accountant and you have a client and they're a one to one match or something like that. So it makes sense, Hey, let's go and take the menial sort of labor out of doing the work of an accountant and put that into a model. Those types of things, I think you will see sort of consolidation. When it comes to, you know, how different companies operate like banks, though, I think there is a whole litany of decisions and sort of like trade offs that each company makes that is different than the other. Yeah.\n\nSpeaker 2 | 22:38 - 22:53\nSo they're less of like, I guess, like a commodity where you can use one or the other, And that's kind of why you have like such a wide distribution of banks that are doing well, banks that are doing poorly, think. There actually is like room to compete.\n\nSpeaker 1 | 22:53 - 23:02\nIt'll be fascinating to see, right? I mean, essentially we'll kind of learn the extent to which a lot of these industries, the companies are actually particularly different or have different ways of doing things\n\nSpeaker 2 | 23:02 - 23:02\nYeah.\n\nSpeaker 1 | 23:02 - 23:12\nBy the the extent to which, like, having your own model is actually beneficial relative to using whatever the the off the shelf average, know, Merkor data labelers Totally.\n\nSpeaker 2 | 23:12 - 23:55\nI think the way, you know, one of the ways that this actually manifests is not always capabilities, right? One of the reasons why we feel very excited about what we're building right now is we are in a supply crunch, right? Like there is like limited compute, everyone's kind of feeling this. So the more you can squeeze out of your models and the more you can squeeze out of the compute that you actually have available to you, the more stuff you can do, right? So basically that's why we think having the infrastructure to go and optimize models and make them more efficient, even if you are pushing the Pareto curve out and you're not necessarily pushing the frontier on capabilities, that delta is some sort of opportunity or advantage, right?\n\nSpeaker 2 | 23:55 - 24:06\nIf I can do something 10x cheaper than my competitor, that is differentiation, and that is something that I actually win against them out on the competitive landscape.\n\nSpeaker 1 | 24:06 - 24:25\nI guess maybe zooming out and talking about people that are at the precipice of deciding whether they should embark on their own models. I mean, obviously, you've talked about you should try a lot of the harness optimization stuff first and a lot of other things. But as you... I think a lot of folks are trying to figure out how well does RL work in these non verifiable domains? Yeah.\n\nSpeaker 1 | 24:25 - 24:27\nHow do you kind of characterize where we are today?\n\nSpeaker 2 | 24:27 - 25:14\nYeah. So what I would say is like RL started or the way these projects started and the internal models that were being trained were on highly verifiable domains like math and coding, partially because they're highly verifiable, partially because everyone at the labs like loves math, loves coding, but it was more of the former. I think like it is surprisingly easy to hill climb on non verifiable domains if you turn them into some proxy verifiable domain. So like rubric based RL and this sort of stuff actually works quite well. So I would say the state where we're at right now is like, if it's not something that has one definitive answer, basically giving it an expert answer and grading against that serves as quite a good proxy.\n\nSpeaker 2 | 25:14 - 25:26\nSo that's actually why you know, different companies have different experts, and so optimizing to two different groups and two different companies can actually give you like very different models.\n\nSpeaker 1 | 25:26 - 25:28\nSo they keep all your ex employees off of the data labeling companies.\n\nSpeaker 2 | 25:28 - 26:15\nExactly. Yeah, yeah, no, I think it's actually what we have with RL is we essentially have a hill climbing machine. The hardest part is actually defining the hill to climb, which is why evals, I think, is like a really important thing for companies to A, focus on building and B) actually like safeguard pretty carefully. If you are thinking about competition and stuff like that, if you look at every public benchmark, it's going to get benchmarked, right? So if you have things that are very particular to how your business operates and you want to make your models really good at that, it's actually to your advantage not to tell everybody else what good and bad looks like so people can go and make their things really good at that.\n\nSpeaker 2 | 26:15 - 26:30\nSo that's why I think like, yeah, like it is really important to actually keep your evals and employees and all that sort of stuff. Like, wouldn't your employees are not fungible. You would not like be comfortable with them going to another company and doing work there. Same thing with these models.\n\nSpeaker 1 | 26:30 - 26:44\nIt was like there's this like tension if you're a leading app company where obviously like you wanna just expand the set of capabilities you you can deliver to your customers. So going to labs and telling them your eval is helpful. And then the other side, it's like a lot of these hard earned insights like... Totally.\n\nSpeaker 2 | 26:44 - 26:59\nAnd it's it's a tough position, which is why I think like, you know, investing in open model infrastructure, investing in a multi model future is like something absolutely every company should be doing because, yeah, you're kinda caught between a rock and a hard place.\n\nSpeaker 1 | 26:59 - 27:06\nYeah. Yeah. I guess, you know, I would love to shift to like just a black and pew like the company. Yeah. And I'm wondering...\n\nSpeaker 1 | 27:07 - 27:20\nI'm sure that like there is no shortage of enterprises that would be like, it would be pretty sweet to work with you guys and get you rolling up your sleeves and helping whatever the set of problems is. How do you qualify business and figure out who you work with and who you\n\nSpeaker 2 | 27:20 - 27:51\ndon't at this stage? Great question. So we basically see post training and actually like training these custom models as the differentiation and the part that makes the business sticky and actually like provides more value on top of just the off the shelf models. But really inference is actually where like most of value capture happens, right? If you look at the dollars spent on models, the vast majority goes to actually serving and using the models than training the models by themselves.\n\nSpeaker 2 | 27:51 - 28:38\nSo when we work with customers, we typically go after very high value use cases, and that's either because the capability increase in the model that we're going to provide is extremely valuable. So some of these companies that you were describing before, like a pharma company or a cybersecurity company or a chip company or something like that. The other is if the inference workload is really big, right? So basically some sort of efficiency or optimization gain or quality improvement distributed over a very large user base or billions or trillions of tokens, that's actually super valuable as well. So we actually look for like large inference workloads.\n\nSpeaker 2 | 28:38 - 28:46\nThese are typically the best customers for us or very out of distribution data where people are wanting to train on things that are kind of only unique to them.\n\nSpeaker 1 | 28:46 - 29:00\nYou kind of mentioned the inference side of things. Obviously it feels like the temptation for like any infrastructure company these days is having an inference business is pretty nice. I feel like there's different schools of thought on this. How difficult of a product is that to build? A really good inference engine.\n\nSpeaker 2 | 29:00 - 29:21\nSo I think maybe taking a step back, why we think... So first of all, we think inference is going to be one of the biggest markets in the world, if not the big... Tons of people have said this. It's not a very unique take. I mean, it's kind of obvious if you believe in AI doing a lot of knowledge- Not gonna get\n\nSpeaker 1 | 29:21 - 29:23\na lot of training dollars if there's not...\n\nSpeaker 2 | 29:23 - 29:47\nExactly. And then so what our view is, is that the most... Post training actually wins inference. So you are... Basically, the trend we've been seeing is companies will start off with frontier models, they'll do a lot of experimentation, then their workload will become mature, They'll be scaling that workload.\n\nSpeaker 2 | 29:47 - 30:25\nThen they'll think about open models and how to sort of cost optimize, basically push the Pareto curve out. And the interesting thing is that the most at scale workloads, so the largest workloads where you're spending the most money, is actually where you're going to want to go and post train first, right? Because that's actually where the most gains are to be had, and it's kind of power law between all the other use cases. And the interesting thing you could do is you can both co optimize your inference and your training. So basically the way we train models actually influences how we go and set up inference deployments for customers.\n\nSpeaker 2 | 30:26 - 30:32\nIf it's like a heavy tool using model and we train it to do a bunch of like tool call parallelization, that kind of stuff.\n\nSpeaker 1 | 30:33 - 30:40\nCan you say more about that? Like what does that actually mean in practice? Like how would you, you know, if the model, you know, if it was designed that way, how does that influence the inference choices you make?\n\nSpeaker 2 | 30:40 - 30:58\nYeah, yeah. So it's a great question. So basically, like if we are doing like a long horizon tool using agent, the way we sort of like set up the inference deployment or the inference engine is different than if we were doing like a heavy, like a decode heavy sort of workload,\n\nSpeaker 1 | 30:58 - 30:58\nright?\n\nSpeaker 2 | 30:58 - 31:14\nSo, you know, and you sort of set up these like disaggregated setups where you're using multiple different types of chips for prefill and decode. And so having influence on how the models are trained actually can influence how we wanna go and set up the inference deployments for very large scale workloads.\n\nSpeaker 1 | 31:14 - 31:14\nIt's such\n\nSpeaker 2 | 31:14 - 31:14\nan interesting...\n\nSpeaker 1 | 31:14 - 31:25\nYeah. I'm really curious to dig into this because Yeah. I feel like there's been this question for a while of like how much does creating the model help you run better inference? And it originally showed up in like a lot of the original open source model pitches. Right?\n\nSpeaker 1 | 31:25 - 31:41\nWhere the the idea was, hey, we train these models so we're able to run like, you know, inference way more effectively on them. Mhmm. And then like, the way it played out at least in the early days was actually, you know, someone like Fireworks would be like, thank you for for training a great open source model. Now we'll be the ones to run that as efficiently as possible.\n\nSpeaker 2 | 31:41 - 32:20\nYeah. So I think what's happened is basically the kernels that you use for training and inference, you obviously want matches between them. We do a lot of work on the training side to go and optimize how fast we're able to train these things, how efficiently we're able to train these things, And a lot of that work translates over to the inference side. I think also one other really interesting thing to point out, this is kind of unrelated to what we're just talking about. One thing I think is really often overlooked is you can do a bunch of inference optimization and things like that if you want to make your...\n\nSpeaker 2 | 32:21 - 32:53\nSay you want to cut your inference bill by 10%. You could do a bunch of inference optimization, cut costs by 10%. Or I think these models are actually quite token inefficient for a lot of things. So what we've been doing with customers is say, Hey, we can actually cut your token bill by making your model 10% more token efficient, preserving the same performance against some sort of eval that you care about. And so I think one of the things that we've been able to tell customers is like, hey, like these things are two sides to the same coin.\n\nSpeaker 2 | 32:53 - 33:02\nYou can actually influence both of them if you do it with us, which is why we're trying to be the centralized provider for both training and inference. It'll be\n\nSpeaker 1 | 33:02 - 33:08\ninteresting to see, yeah, the extent to which doing the training yourself gives you even more insight into the inference workloads.\n\nSpeaker 2 | 33:08 - 34:09\nAnd I think back to your original question about inference offerings and how easy they are to spin up, I think what we've seen, right, is there's actually the main thing to have is capacity, right? So you need the actual GPUs to be able to go and surf the models and things like that. And the open source projects like VLM and SGLANG are like great starting points. In fact, I think like almost all of the inference clouds have like sunset a lot of their custom inference engines in preference for taking one of these inference engines and doing the workload tuning and performance tuning and maybe having a couple of custom kernels in there. So, you know, I think Dylan Patel was on like Dvorakasher's podcast and he was actually talking about how easy it is to basically, if you have some GPUs, you put like a VLM on it and you throw it up on an open router, you kind of have a production inference offering.\n\nSpeaker 2 | 34:09 - 34:42\nNow, I don't want to trivialize it too much. I think there is like a lot of optimization and hard work that goes into making these inference deployments a lot more efficient, faster token speeds. And that matters, especially as you hit scale, right? Because like 1% of savings across tons and tons of chips actually adds up. But in terms of like actually getting production quality model serving going, it's definitely the easier thing to do out of like training and inference.\n\nSpeaker 2 | 34:42 - 34:43\nYeah.\n\nSpeaker 1 | 34:43 - 35:06\nYeah. It's interesting because I feel like as an infrastructure CEO, you must it feels like there's a bunch of companies starting in different places, and there's like this desire, you know, or this kind of belief that like over time, lot of them will go pretty horizontal and like kind of intrude on each other in all sorts of ways. Yeah. And I imagine you both have to figure out like the sequencing that makes sense to do here, as well as like figuring out the red line do you wanna draw of like, okay, like, you know, we wanna do lots of things, but we don't wanna do that. Like Yeah.\n\nSpeaker 1 | 35:06 - 35:09\nHow has that like evolved over the course of the business, and and how do you think about it today?\n\nSpeaker 2 | 35:09 - 35:29\nYeah. It's a great question. So, you know, our large scale vision, so what we're actually building is we think there's a new AI hyperscaler to be built. Like in the cloud era, you have AWS and GCP and Azure. They took CPU compute.\n\nSpeaker 2 | 35:29 - 36:08\nThey built really awesome flexible compute products on top of it, like for networking and storage and databases and data lakes and stuff for building applications, all that. Now you have this new compute substrate, GPUs. You have this weird thing, which are this collection of weights and parameters called models. It turns out you can serve them with an inference engine, which is the first piece of software that has achieved real stickiness inside of the AI software stack on top, you can serve these valuable intelligent tokens. Our view is that there's a ton of stuff in that software layer, actually, besides just inference.\n\nSpeaker 2 | 36:09 - 36:20\nOur big bet was, hey, post training is a massively underlooked part of the stack. How do I take GPU compute and turn that into more intelligent tokens? That's training. How do I serve those tokens? That's inference.\n\nSpeaker 2 | 36:21 - 36:51\nHow do I pick the right tokens to serve, that's routing. But there's also a ton of stuff like security monitoring and identity, agent sandboxing, all this sort of stuff. So when we think about what we're building, we actually want to be very horizontal, but we actually want to start we kind of think about things as an inverted pyramid. There's things that very few people can do at the bottom of the pyramid and things a lot of people can do at the top of the pyramid. So at the very bottom of the pyramid, that's where we think model training is.\n\nSpeaker 2 | 36:51 - 37:33\nAnd then above that is inference, above that is routing, above that is context and harness and all that sort of stuff. And so our strategy has really been focused on the things that are extremely high leverage and extremely high ROI that are very hard to do, that you need to build super robust infrastructure, you need a GPU fleet that you actually own and operate and all this sort of stuff. And so our goal is to, as an infrastructure company, widen the offering as mature and, you know, we're sixteen months old right now, so we're, you know, the first step was going from training into inference, but we have a lot of exciting things on the roadmap and things that we wanna go and build.\n\nSpeaker 1 | 37:33 - 37:50\nWhat's so interesting is that I imagine when, like, 80% of your pipeline approaches you, you're like, this could probably be solved by, like, you know, a good harness and, like, some data work or something. And so what do you end up doing on like the harness optimization side? Like, I imagine a lot of folks are thinking through this right\n\nSpeaker 2 | 37:50 - 38:12\nGreat question. I think we are really going for focus right now. So we actually, the customers we work with have mature AI products. They have already like they've built amazing product teams and they are investing in creating really great harnesses. And so our current operating model has actually been we're not focused on the harness layer or the context layer.\n\nSpeaker 2 | 38:12 - 38:21\nWe're focused on the model layer. And, you know, we we don't necessarily do the zero to one agent builds. We optimize the models behind mature products.\n\nSpeaker 1 | 38:21 - 38:29\nMakes sense. Yeah. And I guess in terms of like the building the RL environments today, maybe like... I'm sure our listeners would love to hear like, what is actually... You can even just take an illustrative example.\n\nSpeaker 1 | 38:29 - 38:39\nLike, is actually involved in like building one of these, and you know, how do you think about like... I'm sure there's 500 annoying parts of it, like the parts that need to get better to... Or that you hope get better.\n\nSpeaker 2 | 38:39 - 39:11\nThe nice thing is, like I said before, RL is just like hill climbing machine, right? So it actually is the same way you're going to go and build your training data is actually the same way you're building your eval. So hopefully that can help folks kind of conceptualize what goes into building great eval is like, hey, you have to have the right you have to have the right task and you have to have the right environment and you have to have the right verifier, right? Those are kind of the three main things when you're going to do RL. What is the problem?\n\nSpeaker 2 | 39:11 - 39:48\nWhat is the scope of tools and services that the model has access to? And then how am I gonna judge whether it's good or bad? So take, for example, you know, we did this Harvey review table custom model that we trained. We put out a case study about it. But for that, right, we basically had worked with, know, the Harvey team, were able to collect a bunch of experts' rubrics and answers, also supplemented those with synthetic data, and gave the model access to some tools.\n\nSpeaker 2 | 39:49 - 40:08\nWe're able to say, Hey, here's the task that you're supposed to extract all this information out, graded it against the expert answers with real request RL, and that's how we were able to create the task. The environment here was the tools that the model had access to in the document base, and then the verifier was the grading against the expert answers.\n\nSpeaker 1 | 40:08 - 40:14\nIs the hardest part of that just like actually getting people to create these rubrics or like, know, create, you know, what are realistic documents that would live in these things?\n\nSpeaker 2 | 40:14 - 40:54\nYeah. So we work really closely with all of our customers because they are the experts in the domain, right? We really come in with the infrastructure and the training team and the inference production serving and stuff. So this was pretty collaborative. We oftentimes can do a lot of work on the synthetic side If it's like say you can take some sort of document and back translate it into question answer pairs, for example, that's a very concrete example, we can do that stuff synthetically, but when it involves real experts and real lawyers, we actually wanna work with the teams directly.\n\nSpeaker 1 | 40:54 - 41:08\nYeah. And I'm sure the entire thesis of this seems to be like that type of work is going to be way higher quality than whatever lawyers or data labeling company gets on and tries to Totally. I think probably distant memory at this point, but OpenAI shutting off Cursor, do you expect that kind\n\nSpeaker 2 | 41:08 - 41:12\nof It's Windsurf before, right? Of course, yeah. Anthropic with Windsurf, yeah.\n\nSpeaker 1 | 41:12 - 41:14\nDo you expect that kind of stuff to happen more or like?\n\nSpeaker 2 | 41:15 - 41:33\nI mean, it happened twice. I think competitive dynamics are real and like their incentives are real. So especially as companies start to move more into the application layer and build their own competitive products with their largest consumers of their models, I wouldn't be surprised if it happened more.\n\nSpeaker 1 | 41:33 - 41:40\nI always like to have a quick fire round where I basically shove in like everything that I in an unstructured unstructured way that I haven't gotten to before. And so\n\nSpeaker 2 | 41:40 - 41:56\nmaybe to to start, is RL gonna generalize? In some ways. In some ways, it is generalizing, right? Like, model's ability model's abilities to, you know, do error recovery or,\n\nSpeaker 1 | 41:57 - 41:57\nyou\n\nSpeaker 2 | 41:57 - 42:35\nknow, use tools and sub agents, things like that. But I think like if you actually empirically you can like run these experiments, you can train on a math data set and see how much that translates to something in the legal domain or something like that, the transfer is not really there, certainly not to the extent of like the generalization that pre training has. So I think it will bleed into adjacent areas like intelligence is some sort of sphere or circle. It's got jagged points on it. The points that are closer together, you'll see more generalization there.\n\nSpeaker 2 | 42:35 - 42:41\nBut certainly does not have the same generalization as like a pre training or something like that.\n\nSpeaker 1 | 42:41 - 42:44\nYeah. Yeah. What have you changed your mind on an AI in the last year?\n\nSpeaker 2 | 42:44 - 42:57\nYeah. I mean, I guess one thing that I didn't... Maybe I didn't change my mind on it, but I didn't fully appreciate is how real Jevan's paradox is. Is\n\nSpeaker 1 | 42:57 - 42:58\nthere like a particular thing you saw that's...\n\nSpeaker 2 | 42:58 - 43:32\nYeah. Like, like, you know, I think one interesting thing is we are in... Like basically, like if you look at some of the open router statistics, whenever there's a price cut for a model, usage just spikes. So I really think we're moving to a world where things are like extremely cost optimized. We're feeling the pressure, Everyone's feeling the pressure right now to make things as efficient as possible, lower the AI bill.\n\nSpeaker 2 | 43:32 - 44:08\nI don't think I fully appreciated how much of a driving factor that would be over something like capabilities. Like we are reaching a point where I would say most of the open source models can kind of do everything that you might want them to do. There are obviously a lot of frontier things, and I don't want that to be a blanket statement. Frontier models are amazing, but I didn't expect how much people would care about really cost optimizing you and using the right model for the right task.\n\nSpeaker 1 | 44:08 - 44:17\nYeah. Which is interesting because obviously for some of these tasks, like you you people were using frontier models because you got a lot of value. Yeah. But if there is a way to to do it much, you know, much cheaper in the\n\nSpeaker 2 | 44:17 - 44:26\nuse case, Yeah. There's some should marginal return of value for like... And and at some point people are gonna do the experimentation, try a bunch of things, and then consolidate on the right model.\n\nSpeaker 1 | 44:26 - 44:32\nWhen something like JEV comes out, how does, what's that like at applied compute? Like, how is that, how have you guys thought about\n\nSpeaker 2 | 44:32 - 44:46\nI it's a super cool model. I basically think like there are, probably going to be a bunch of things like that coming out. It enables a whole set of new use cases. I mean, it's in the name. That's why they called it JEV, right?\n\nSpeaker 2 | 44:46 - 45:24\nLike things that are cheap, fast, designed for like a specific particular set of tasks. That's how we've been thinking about a lot of things that we're building at Applied Compute. So models like JEV, you know, we're working on, hey, what does this look like to integrate into the training process as sort of like massive billion token scale classification on rollouts or things that we couldn't do before that were cost prohibitive. So yeah, when things like that come out, I think it's like super exciting because it basically just expands the amount of things that we can go and build. And it's some sort of matrix, right?\n\nSpeaker 2 | 45:24 - 45:44\nSo it's highly multiplicative. Like these things actually end up stacking. JEV is like much, I would say it's like much less of a replacement for stuff rather than an enabler for things that we weren't able to do on both training and on like inference for, say, for observability or something like that.\n\nSpeaker 1 | 45:44 - 45:46\nYeah. Just because like at that kind of like cost level,\n\nSpeaker 2 | 45:46 - 46:00\nYeah. That cost or that price point, it's basically like enables like a whole new set of things that we can actually do that we couldn't have done before, even with like the smallest, cheapest quen model or something like that.\n\nSpeaker 1 | 46:00 - 46:03\nYeah. Is there like a visceral example for you of that that you've seen before?\n\nSpeaker 2 | 46:03 - 46:17\nSo actually put this out in a blog post. We basically used Jev to do essentially massive trace analysis for online training.\n\nSpeaker 1 | 46:17 - 46:23\nBecause I imagine you're on this exponential slope of growth. So how in the world do you budget for the amount of compute you want? Because you're probably entering into\n\nSpeaker 2 | 46:23 - 47:05\nsome So of I think you know, we the way we think about it is we're trying to actually make like a very sticky, differentiated business. So we aren't going after like every single opportunity that we could that like, oh, like, you know, someone needs immigrants or something like that. We are very sort of convinced of this thesis that people will use custom models. They will want to invest in the infrastructure that we use to post train. We actually are, instead of looking at like the total demand for everything, we actually are like, what are the most strategic companies that we can go and work with that we can grow with them.\n\nSpeaker 2 | 47:05 - 47:19\nAnd they're also, you know, the right folks to basically go and prove out this thesis that, you know, custom models are much stickier and valuable and the ROI is persistent besides just some sort of like off the shelf model.\n\nSpeaker 1 | 47:19 - 47:42\nTwo things I wanted to hit on that I've heard you say. You know, one is you said that I thought was really interesting is that like the best engineers you know, like, all learned to code before AI existed. And I wonder if you expand on that a little bit and kind of like, you know, there's all these, you know, 16 year olds now that that are, you know, coding and kind of like native to these, you know, have only learned to code with these AI tools. How do you think about like advising folks?\n\nSpeaker 2 | 47:43 - 47:50\nYeah, no, it's a great question. I basically... So to be clear, I'm not against AI coding. I'd imagine you use\n\nSpeaker 1 | 47:50 - 47:50\na fair amount of AI\n\nSpeaker 2 | 47:50 - 48:13\ncoding Yeah, exactly. And also when I was at OpenAI, the main thing I worked on was Codex. That was actually like, know, the thing I was spending all my time on. So I'm very excited about AI coding. I think there's a difference between delegating your thinking to coding agents versus using them to go and execute on some sort of plan and design that you've thought of.\n\nSpeaker 2 | 48:13 - 48:58\nSo what I would say is like, I actually think the best thing for people to focus on is like system design. Like, I you know, funny coming from like an infra company or something like that, but the types of problems you face in like building scalable systems really force you to think about the things that you're doing and why you're designing and structuring things that way. I think the models are getting really good, so you don't need to like know the exact syntax and all this sort of stuff. It's much more important to get like the frameworks and design right than any of the actual coding. So yeah, I definitely am a big fan of AI coding.\n\nSpeaker 2 | 48:58 - 49:32\nIt just you can't delegate your thinking away and basically rely on it as a crutch because then you get these like massive slop code bases that you can't actually explain. So probably the best thing is learn how to explain your code. That's what we interview for, like we'll let someone go ham when they're on their on-site with us, but then we'll ask a ton of questions about why'd you build this this way? What were the trade offs you considered? And if they said, oh, Claude did it, or like, Codex did it, that's like, you know, not something that we're pretty excited about.\n\nSpeaker 2 | 49:32 - 49:33\nYeah. Interesting.\n\nSpeaker 1 | 49:33 - 49:39\nHow have you... Like, mean, obviously, you're... You I feel like everyone's trying to learn from the most AI native companies on how they do things. Yeah. How have you thought about...\n\nSpeaker 1 | 49:39 - 49:51\nLike, so obviously, that's interviewing on the engineering side. I'm sure you hire other roles, and I'm sure you want people to be relatively AI native and fluent. Like, how have you thought about interviewing or changing processes around that for other types of roles outside of engineering?\n\nSpeaker 2 | 49:51 - 50:47\nOh, great question. Yeah, I think when like we interview folks, it's kind of the same principles apply. So for like finance roles or biz dev roles or things like that, people will often like use AI tools to go and build like a financial model or something like that, and if they can't explain why they built the model that way, that's like basically what we're looking for. Really, it's like our view is people should use whatever tools that are available to them, but they should have like a complete understanding of everything those tools went and did for them. So we do much more of like our interview process is unconstrained, but then very particular in like how we audit or essentially assess understanding of the outputs that were produced,\n\nSpeaker 1 | 50:47 - 50:48\nif that Yeah. Makes\n\nSpeaker 2 | 50:48 - 50:49\nMakes a ton of sense. Yeah.\n\nSpeaker 1 | 50:49 - 51:00\nI guess you gave this kind of lecture at Stanford where you said, you know, I think they made you say something, you were short, and you said you were short the general data vendors, right? Yeah. With Merkor and Surge. Curious why that is and where you might be wrong.\n\nSpeaker 2 | 51:00 - 51:11\nYeah. No, I guess like I'm not short the companies themselves. I actually think they're great companies. We serve a lot of them as customers. They're amazing companies.\n\nSpeaker 2 | 51:12 - 52:12\nBasically, my main point there is basically like a lot of data is becoming more and more synthetically generated, so you can use these smart models to go and create the types of RL in fact, actually, a lot of RL environment companies end up using the models to go and create data that actually feeds back into the model, so it's a little bit of circular motion there. Sort of the big point was kind of like paradigms change all the time. So for data companies, I think the main thing to get really good at is pivoting, like going from each paradigm to the next. So we used to be in SFT land, preference tuning, then RLHF, human feedback, then RLVR, now the big things like robotics data. So I think my point there actually was less like, hey, these aren't good companies.\n\nSpeaker 2 | 52:12 - 52:27\nI think they're great companies. It's just that the particular RLN data creation company is going to move around a lot. It's going to be quite fluid, and the paradigm will change. The research paradigm will change.\n\nSpeaker 1 | 52:27 - 52:32\nAmong the RL environment companies today, like what makes an RL environment company better than another?\n\nSpeaker 2 | 52:32 - 52:35\nI think it really is the human part.\n\nSpeaker 1 | 52:36 - 52:37\nPeople are able to get to.\n\nSpeaker 2 | 52:37 - 53:12\nYeah, exactly. The expert networks. So like Merkor and Handshake and these types of companies, they have incredible expert networks. Actually, when I was at OpenAI, we worked with Merkor, and I think they obviously still do, but we worked with them very closely for some of these first agent products like Deep Research and Codecs, and that is where you are getting like the best of the best in the world for coding or math or stuff like that. And there's still signal that needs to flow into these models.\n\nSpeaker 2 | 53:12 - 53:50\nSo models are a function of data. The higher quality of the data, the better your model. So that's what I would say probably differentiates is like the ability to very quickly run a campaign across a wide network and basically narrow that down to the highest quality data points, because when you're going and training, you're not actually using that much data, right? You're using a few 100 data points, all of those each, or a few 100 to a couple thousand per task or something like that. And so if you get, if quality assurance is like pretty low, that has a material effect on on the models, like final.\n\nSpeaker 1 | 53:50 - 54:09\nIt feels like a lot of this, like, you know, the power company specific models will be determined by this delta between the, ex bankers that Merkor can recruit and, like, figure out what the tasks are Yeah. Versus, like, the, you know, banker within JPMorgan and like the stuff... The tasks they have and like the evals they create. And like, I don't know I don't know what the gap ends up being between those two.\n\nSpeaker 2 | 54:09 - 54:41\nYeah. Well, I think like when banker... Or like, take, for example, your example, when bankers leave, they don't get access to like a lot of the proprietary data that's been built up over time. Like they're obviously doing lots of reasoning and judgment and stuff like that, but it's also very heavily informed by the data that they look at and that they sort of do their work on. But yeah, I think it's like a real source of like alpha permeating the boundary of an enterprise.\n\nSpeaker 2 | 54:41 - 54:44\nI mean, it's always been the case, right? Like that's why people have like non competes and things like\n\nSpeaker 1 | 54:44 - 54:58\nthat, But it almost seems like, yeah, like, know, obviously you've seen this trend of, you know, a company goes under and people buy it for the data. It's like if I was a bank and a bank went under, I would not want one of the labs to go acquire whatever. I don't know what data they can actually train on\n\nSpeaker 2 | 54:58 - 55:18\nin this. No, exactly. And that is almost a sort of argument for why these companies are valuable, right? Like that data is valuable, so that company is valuable. Therefore the more you can keep things proprietary to you, the better.\n\nSpeaker 2 | 55:18 - 55:19\nYeah, And it'll\n\nSpeaker 1 | 55:19 - 55:30\nbe so interesting to see like what that boundary ends up being. It's like clearly chips, you know, biology, like that feels like it's hard to get out there. Yeah. Whether like the labs eventually figure out kind of the basics of running a bank or something else will be...\n\nSpeaker 2 | 55:30 - 55:48\nYeah. Well, I think I think there's just a lot of... I mean, running a bank is like, it's like a thousand layer cake. Right? I think, you know, unclear whether a single model or an ASI model or something like that is just going to be able to do that out of the box.\n\nSpeaker 2 | 55:48 - 56:07\nI think people are important. Like they've built up years of expertise doing these jobs. Codifying those into models is actually like quite difficult. But yeah, I think there will be large portions of roles at different companies that will get automated away for sure.\n\nSpeaker 1 | 56:07 - 56:28\nYeah. Super interesting. Well, I was thinking about where to end, and one thing I thought would be interesting is just like, because you're doing RL all day, a lot of things like models do some crazy reward hacking sometimes when you set these things up. I'm curious, like, what's the best example you've seen? You know, you don't need to mention the specific customer, but like, you know, in some deployment where maybe maybe some some run didn't go quite as you expected.\n\nSpeaker 2 | 56:28 - 56:37\nYeah. Yeah. No. No. I mean, like, there's even from OpenAI days, there's like all these interesting ways that these models are really clever.\n\nSpeaker 2 | 56:37 - 57:31\nThey figure out it's like water. They find the path of least resistance. And so I think like for us, with some of the companies we work with around like coding, for example, we've been able to find some exploits in like packages that the model just used to sort of get easy reward on the tasks, which is I think there are much worse things that are public out there. I think that's honestly why we're seeing there's so much interest from cyber companies in training our own models and things like that, because it's like almost the perfect problem to go and just apply optimization pressure to, because these models are really great coding priors. And basically the offensive cyber capabilities in ROS are quite good.\n\nSpeaker 1 | 57:31 - 57:37\nWell, it's been a fascinating conversation. I really appreciate you coming on the podcast and taking the time.\n\nSpeaker 2 | 57:37 - 57:39\nThanks for having me. This is great. It's been awesome.\n\nSpeaker 1 | 57:39 - 58:05\nI'm Jacob Efron, and this has been Unsupervised Learning, a podcast where I get to talk to the smartest people in AI and ask them tons of questions about what's happening with models and what it means for businesses in the world. As I hope is clear, I have a ton of fun doing this. It's a nights and weekends project in addition to my day job as an investor at Redpoint. But our ability to get these incredible guests on really comes from folks like you subscribing to the podcast, sharing it with friends. It's really what ultimately makes this whole thing work.\n\nSpeaker 1 | 58:05 - 58:09\nAnd so please consider doing that, and thank you so much for your support and listening. We'll see you next episode."
+      }
+    ],
+    "stats": {
+      "podcastEpisodes": 1
+    }
+  },
+  "blogs": {
+    "generatedAt": "2026-10-07T06:45:45.849Z",
+    "lookbackHours": 72,
+    "blogs": [],
+    "stats": {
+      "blogPosts": 0
+    }
+  }
+}
