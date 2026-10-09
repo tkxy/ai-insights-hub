@@ -1,0 +1,644 @@
+{
+  "date": "2026-10-09",
+  "fetchedAt": "2026-10-09T00:02:28.262513+00:00",
+  "source": "follow-builders feeds",
+  "x": {
+    "generatedAt": "2026-10-08T06:47:17.990Z",
+    "lookbackHours": 24,
+    "x": [
+      {
+        "source": "x",
+        "name": "Boris Cherny",
+        "handle": "bcherny",
+        "bio": "Claude @anthropicai",
+        "tweets": [
+          {
+            "id": "2108013947144085714",
+            "text": "Ok back to reading https://t.co/Kdph4vZuGt",
+            "createdAt": "2026-10-08T01:57:44.000Z",
+            "url": "https://x.com/bcherny/status/2108013947144085714",
+            "likes": 55,
+            "retweets": 0,
+            "replies": 10,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2108008010253533397",
+            "text": "It was one prompt, claude verified pretty well too! No bugs so far https://t.co/jjnUzGkdoC",
+            "createdAt": "2026-10-08T01:34:09.000Z",
+            "url": "https://x.com/bcherny/status/2108008010253533397",
+            "likes": 28,
+            "retweets": 0,
+            "replies": 5,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2108006118966665463",
+            "text": "Try it https://t.co/isXGOnEXd5",
+            "createdAt": "2026-10-08T01:26:38.000Z",
+            "url": "https://x.com/bcherny/status/2108006118966665463",
+            "likes": 57,
+            "retweets": 0,
+            "replies": 9,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Thibault Sottiaux",
+        "handle": "thsottiaux",
+        "bio": "Codex & ChatGPT @OpenAI",
+        "tweets": [
+          {
+            "id": "2108084615349170480",
+            "text": "Day 3 (encore)/\n\nWe silently re-shipped codex cloud. It’s pretty good now https://t.co/Fau14sCke8",
+            "createdAt": "2026-10-08T06:38:33.000Z",
+            "url": "https://x.com/thsottiaux/status/2108084615349170480",
+            "likes": 433,
+            "retweets": 23,
+            "replies": 116,
+            "isQuote": true,
+            "quotedTweetId": "2107836671605551217"
+          },
+          {
+            "id": "2108040921044639779",
+            "text": "Confirmed landed across all accounts. How are we doing so far? https://t.co/tzw7dNX4pN",
+            "createdAt": "2026-10-08T03:44:55.000Z",
+            "url": "https://x.com/thsottiaux/status/2108040921044639779",
+            "likes": 4525,
+            "retweets": 72,
+            "replies": 1158,
+            "isQuote": true,
+            "quotedTweetId": "2107913674593644711"
+          },
+          {
+            "id": "2107913738791596286",
+            "text": "Will be there by EOD PST.",
+            "createdAt": "2026-10-07T19:19:33.000Z",
+            "url": "https://x.com/thsottiaux/status/2107913738791596286",
+            "likes": 2203,
+            "retweets": 22,
+            "replies": 180,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Peter Yang",
+        "handle": "petergyang",
+        "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6",
+        "tweets": [
+          {
+            "id": "2108046949291315385",
+            "text": ".@suno is so damn good honestly. It's probably going to overtake Spotify at some point.",
+            "createdAt": "2026-10-08T04:08:52.000Z",
+            "url": "https://x.com/petergyang/status/2108046949291315385",
+            "likes": 40,
+            "retweets": 2,
+            "replies": 13,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2108032922527862851",
+            "text": "AI already solved images, music, and video. It’s going to solve gaming soon",
+            "createdAt": "2026-10-08T03:13:08.000Z",
+            "url": "https://x.com/petergyang/status/2108032922527862851",
+            "likes": 45,
+            "retweets": 2,
+            "replies": 34,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107981547102245101",
+            "text": "It seems like anything you ship can now be decompiled and rebuilt by AI.\n\nI think it'll soon be incredibly hard to make money from software unless you have proprietary data, distribution, or some other edge.\n\nTraditional SaaS is especially vulnerable, since it's expensive and full of features built for humans that agents don't need.",
+            "createdAt": "2026-10-07T23:48:59.000Z",
+            "url": "https://x.com/petergyang/status/2107981547102245101",
+            "likes": 6,
+            "retweets": 1,
+            "replies": 1,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Nan Yu",
+        "handle": "thenanyu",
+        "bio": "product, codex @openai. prev head of product @linear",
+        "tweets": [
+          {
+            "id": "2108049498648051747",
+            "text": "Dread it. Run from it. The One True Productivity App Layout arrives all the same. https://t.co/fczbE1PHEk",
+            "createdAt": "2026-10-08T04:19:00.000Z",
+            "url": "https://x.com/thenanyu/status/2108049498648051747",
+            "likes": 21,
+            "retweets": 0,
+            "replies": 1,
+            "isQuote": true,
+            "quotedTweetId": "2107535687482576996"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Cat Wu",
+        "handle": "_catwu",
+        "bio": "claude code + cowork @anthropicai, prev: @dagster, @scale_ai",
+        "tweets": [
+          {
+            "id": "2107967210467803152",
+            "text": "One of my favorite PM use cases for Claude is asking \"who used &lt;feature&gt; the most last week? make me a artifact of the top 10 by usage, then reach out and schedule 15 min to chat.\" It's the fastest way to get user feedback! https://t.co/SYL4JOitsB",
+            "createdAt": "2026-10-07T22:52:01.000Z",
+            "url": "https://x.com/_catwu/status/2107967210467803152",
+            "likes": 246,
+            "retweets": 8,
+            "replies": 20,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Thariq",
+        "handle": "trq212",
+        "bio": "Claude Code @anthropicai. prev YC W20, @spc, @medialab",
+        "tweets": [
+          {
+            "id": "2108021248966135891",
+            "text": "and because agents make it easier, almost everyone is operating outside their expertise at some point\n\nbut luckily, you can just ask the model to teach you what you don't know",
+            "createdAt": "2026-10-08T02:26:45.000Z",
+            "url": "https://x.com/trq212/status/2108021248966135891",
+            "likes": 148,
+            "retweets": 7,
+            "replies": 21,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2108021247301062894",
+            "text": "the most common failure case I see is when people are working outside their domain of expertise and don't know how to be precise with their prompts and plans, so they have to spend a lot of turns iterating imprecisely https://t.co/mRT3knojCP",
+            "createdAt": "2026-10-08T02:26:45.000Z",
+            "url": "https://x.com/trq212/status/2108021247301062894",
+            "likes": 1296,
+            "retweets": 41,
+            "replies": 86,
+            "isQuote": true,
+            "quotedTweetId": "2107959902174142725"
+          },
+          {
+            "id": "2107957206327173484",
+            "text": "I think it's probably an incredible time to be a game dev content creator, for many people making games is a form of having fun and they're willing to pay for it! https://t.co/iS08bGZZnJ",
+            "createdAt": "2026-10-07T22:12:16.000Z",
+            "url": "https://x.com/trq212/status/2107957206327173484",
+            "likes": 453,
+            "retweets": 17,
+            "replies": 44,
+            "isQuote": true,
+            "quotedTweetId": "2107879332609667481"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Google Labs",
+        "handle": "GoogleLabs",
+        "bio": "Google’s home for our latest AI tools and experiments.",
+        "tweets": [
+          {
+            "id": "2107800195748737042",
+            "text": "🚨NEW EXPERIMENT 🚨\n\nPlayground is an experimental gaming platform that lets you create your own games with zero coding experience. If you can think it, you can play it.\n\nGo to https://t.co/fRUukpuoqM to learn more! Available to users 18+ in the US. https://t.co/p0X8JR7JMn",
+            "createdAt": "2026-10-07T11:48:22.000Z",
+            "url": "https://x.com/GoogleLabs/status/2107800195748737042",
+            "likes": 23081,
+            "retweets": 2384,
+            "replies": 771,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Amjad Masad",
+        "handle": "amasad",
+        "bio": "ceo @replit. civilizationist",
+        "tweets": [
+          {
+            "id": "2107934939287273551",
+            "text": "Math was bound to fall first. The purer the field the easier it is for AI to crack. https://t.co/OETDJ1JSIz",
+            "createdAt": "2026-10-07T20:43:47.000Z",
+            "url": "https://x.com/amasad/status/2107934939287273551",
+            "likes": 1095,
+            "retweets": 90,
+            "replies": 76,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107927076926038273",
+            "text": "That’s because Replit is not a consumer app. Most of our creators are building businesses or working on one. https://t.co/B70WFQldgU",
+            "createdAt": "2026-10-07T20:12:33.000Z",
+            "url": "https://x.com/amasad/status/2107927076926038273",
+            "likes": 513,
+            "retweets": 21,
+            "replies": 38,
+            "isQuote": true,
+            "quotedTweetId": "2107591815511826740"
+          },
+          {
+            "id": "2107926712277438503",
+            "text": "Desktop AI apps are great but expose users to supply-chain attacks and catastrophic mistakes by agents.\n\nWe’re building a powerful desktop experience with focus on security &amp; reliability.\n\nExcited to partner with @Microsoft on this and be an early adopter of @nvidia’s OpenShell. https://t.co/YixaxIXhpb",
+            "createdAt": "2026-10-07T20:11:06.000Z",
+            "url": "https://x.com/amasad/status/2107926712277438503",
+            "likes": 224,
+            "retweets": 12,
+            "replies": 48,
+            "isQuote": true,
+            "quotedTweetId": "2107896848044437766"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Guillermo Rauch",
+        "handle": "rauchg",
+        "bio": "@vercel CEO",
+        "tweets": [
+          {
+            "id": "2107962327169675566",
+            "text": "One thing the engineering community will (re)discover is that every program can be ① hardened (edge cases squashed, inputs tightened, errors handled) and ② optimized (profiled, benchmarked, rewritten) basically ad infinitum.\n\nThere are real costs in every direction: time, attention, opportunity. You can literally explore input spaces that will never be hit or optimize performance of something that will never be used (\"you have no users\".) Even in an infinite token world, you need to know when to stop and what tradeoffs to accept. Agents will happily drill no matter what.",
+            "createdAt": "2026-10-07T22:32:37.000Z",
+            "url": "https://x.com/rauchg/status/2107962327169675566",
+            "likes": 605,
+            "retweets": 39,
+            "replies": 100,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107861196506595398",
+            "text": "gm from the best city in the world https://t.co/aPDFNR7KhT",
+            "createdAt": "2026-10-07T15:50:46.000Z",
+            "url": "https://x.com/rauchg/status/2107861196506595398",
+            "likes": 784,
+            "retweets": 11,
+            "replies": 50,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Alex Albert",
+        "handle": "alexalbert__",
+        "bio": "Research @AnthropicAI. Opinions are my own!",
+        "tweets": [
+          {
+            "id": "2107912771568554415",
+            "text": "For reference, Haiku 4.5 came out on October 15th, 2025 so these two columns are less than a year apart. \n\nand oh yeah Haiku 5.5 is also much faster and 75% cheaper... https://t.co/1Zt19kdTYC",
+            "createdAt": "2026-10-07T19:15:42.000Z",
+            "url": "https://x.com/alexalbert__/status/2107912771568554415",
+            "likes": 349,
+            "retweets": 15,
+            "replies": 46,
+            "isQuote": true,
+            "quotedTweetId": "2107894042235166750"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Aaron Levie",
+        "handle": "levie",
+        "bio": "ceo @box - your business lives in content. unleash it with AI",
+        "tweets": [
+          {
+            "id": "2108056577697882402",
+            "text": "The compute needed for the stage of AI we’re about to enter is going to be insane. \n\nPersonal agents, agent swarms defending enterprises, agents that review all of our code for security issues, agents that process nearly all enterprise data in workflows, background agents working on tasks 24/7, and on and on. \n\nThis will take a mix of inference volume that is going to keep growing by orders of magnitude, as well as infrastructure that agents need alongside the tokens. They need computers, networking, file systems, and so on.\n\nWe’re only in the early stages of what this buildout is going to look like.",
+            "createdAt": "2026-10-08T04:47:08.000Z",
+            "url": "https://x.com/levie/status/2108056577697882402",
+            "likes": 812,
+            "retweets": 65,
+            "replies": 89,
+            "isQuote": true,
+            "quotedTweetId": "2107844402294960584"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Matt Turck",
+        "handle": "mattturck",
+        "bio": "VC at @FirstMarkCap.  Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+        "tweets": [
+          {
+            "id": "2107876612679020855",
+            "text": "Fun fact: Ben Affleck, the successful AI founder and Python/CNN/GPU expert, had a prior career in the entertainment industry. https://t.co/BZwIs5mQhU",
+            "createdAt": "2026-10-07T16:52:01.000Z",
+            "url": "https://x.com/mattturck/status/2107876612679020855",
+            "likes": 158,
+            "retweets": 8,
+            "replies": 9,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107853622402805803",
+            "text": "Ofc everything is on X is mind-blowing, but having seen the beta version, this is... truly mind-blowing. https://t.co/wdySOkrsUd",
+            "createdAt": "2026-10-07T15:20:40.000Z",
+            "url": "https://x.com/mattturck/status/2107853622402805803",
+            "likes": 40,
+            "retweets": 3,
+            "replies": 7,
+            "isQuote": true,
+            "quotedTweetId": "2107850981614489957"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Zara Zhang",
+        "handle": "zarazhangrui",
+        "bio": "Builder. Make something people want, then make people want it. Harvard’17. GitHub: https://t.co/KCuEajezlL \nYouTube: https://t.co/8xzbGWtf6w",
+        "tweets": [
+          {
+            "id": "2108085347297161399",
+            "text": "I love @stripepress because I absolutely judge a book by its cover https://t.co/YMBUiprxUX",
+            "createdAt": "2026-10-08T06:41:27.000Z",
+            "url": "https://x.com/zarazhangrui/status/2108085347297161399",
+            "likes": 3,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2108047745936466373",
+            "text": "Who has the coolest personal website?",
+            "createdAt": "2026-10-08T04:12:02.000Z",
+            "url": "https://x.com/zarazhangrui/status/2108047745936466373",
+            "likes": 108,
+            "retweets": 7,
+            "replies": 71,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2108027410256166930",
+            "text": "Remember that coding is a means to an end. The end matters more than the means",
+            "createdAt": "2026-10-08T02:51:14.000Z",
+            "url": "https://x.com/zarazhangrui/status/2108027410256166930",
+            "likes": 139,
+            "retweets": 11,
+            "replies": 30,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Nikunj Kothari",
+        "handle": "nikunj",
+        "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+        "tweets": [
+          {
+            "id": "2108060822698357240",
+            "text": "Moving @askalphaxiv to the dock is the best thing I have done this week..\n\nWent from 0 to ~30 mins of reading papers on my phone whenever I’m waiting on things. https://t.co/aPwn0LgfcY",
+            "createdAt": "2026-10-08T05:04:00.000Z",
+            "url": "https://x.com/nikunj/status/2108060822698357240",
+            "likes": 4,
+            "retweets": 0,
+            "replies": 2,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107960134446235985",
+            "text": "To all the people visiting SF for tech week..\n\n1) the best builders are probably at their own offices. so DM them and try to meet them there. \n\n2) don't be a tourist\n\nhttps://t.co/3YGQQjuyGD",
+            "createdAt": "2026-10-07T22:23:54.000Z",
+            "url": "https://x.com/nikunj/status/2107960134446235985",
+            "likes": 152,
+            "retweets": 5,
+            "replies": 13,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107883642295144958",
+            "text": "https://t.co/gn6cYt7bqh",
+            "createdAt": "2026-10-07T17:19:57.000Z",
+            "url": "https://x.com/nikunj/status/2107883642295144958",
+            "likes": 2,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Peter Steinberger",
+        "handle": "steipete",
+        "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.\n@OpenClaw🦞 + @OpenAI",
+        "tweets": [
+          {
+            "id": "2107911769767440832",
+            "text": "While everyone's talking about agents, I've been exploring how teams can use them to work better together.\n\nHere’s my take, from OpenAI DevDay 2026. https://t.co/W3rVoiTo84",
+            "createdAt": "2026-10-07T19:11:43.000Z",
+            "url": "https://x.com/steipete/status/2107911769767440832",
+            "likes": 671,
+            "retweets": 40,
+            "replies": 59,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Dan Shipper",
+        "handle": "danshipper",
+        "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+        "tweets": [
+          {
+            "id": "2107930827669557713",
+            "text": "tfw your ChatGPT app is controlling your Claude app is controlling your ChatGPT app https://t.co/i3QO9tLFSB",
+            "createdAt": "2026-10-07T20:27:27.000Z",
+            "url": "https://x.com/danshipper/status/2107930827669557713",
+            "likes": 49,
+            "retweets": 2,
+            "replies": 7,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107890633486582208",
+            "text": "OpenAI’s Dots launched last week and they've taken over @every.\n\nA few things that stand out:\n\nThey protect your attention. Over the weekend, my Dot posted my model-testing results to Slack and brought back replies. I could keep working without opening Slack and disappearing down a rabbit hole. My weekend stayed pretty clear and calm.\n\nThey’re useful for the little things you miss. People at Every are using them to pull important information out of school emails, catch missed Slack messages, and flag account-access requests.\n\nVoice makes them useful away from your laptop. Our head of video was talking his Dot through video edits while running around getting our launch out.\n\nThe ecosystem matters. Dots feel roughly at feature parity with Muse, Instinct, and Grok bots. But having an agent connected to the ecosystem you already use for work and life is a real advantage. If you use ChatGPT, I recommend trying one.\n\nPermissions are still frustrating. I have to approve the same basic thing multiple times, and sometimes even after I approve it, my Dot says it can’t do it. That needs to get fixed.\n\nI’m less convinced we’ll stay loyal to the characters. Mine is named Boo, and I’m attached to him. But I felt that way about my OpenClaw agent, too. When something better comes along, I switch. In a year, I expect to be using a persistent agent. Boo will probably be dead. RIP, Boo.\n\nI get into all of this at the start of this week’s podcast, and then sit down with @bigwilliestyle to talk about where we go from here.\n\nIn a lot of ways, Dots and GrokBots remind me of a wave we went through with OpenClaw eight months ago. We talk about personal vs. company agents, why we built our own company agent, and whether companies will end up with a whole shadow org chart of agents.\n\nFull episode below.",
+            "createdAt": "2026-10-07T17:47:44.000Z",
+            "url": "https://x.com/danshipper/status/2107890633486582208",
+            "likes": 94,
+            "retweets": 7,
+            "replies": 19,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107827332752826790",
+            "text": "Love to see it!! https://t.co/jmPN04jKZz",
+            "createdAt": "2026-10-07T13:36:12.000Z",
+            "url": "https://x.com/danshipper/status/2107827332752826790",
+            "likes": 11,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": true,
+            "quotedTweetId": "2107823004314927405"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Aditya Agarwal",
+        "handle": "adityaag",
+        "bio": "General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
+        "tweets": [
+          {
+            "id": "2107934826686759310",
+            "text": "My first time in a @Waymo felt like a religious experience.\n\nCo-CEO @dmitri_dolgov and I talked about it. In a Waymo.  \n\nFull conversation at @spc releasing tomorrow. https://t.co/CdwA6yI5n6",
+            "createdAt": "2026-10-07T20:43:20.000Z",
+            "url": "https://x.com/adityaag/status/2107934826686759310",
+            "likes": 52,
+            "retweets": 7,
+            "replies": 3,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107865115831988530",
+            "text": "What should an ambitious software engineer do today?\n\nTen years ago, being a great software engineer gave you an unusual advantage: a rare skill you could apply to almost any industry.\n\nYou could build a payments company, improve how hospitals operated, or create a new way for people to communicate. The same underlying ability opened doors into wildly different businesses.\n\nSoftware was eating the world, and knowing how to build it gave you a seat at the head of almost every table.\n\n“Get really good at software engineering” was remarkably versatile advice. You could acquire the skill first and figure out where to apply it later.\n\nAI is making the ability to produce working software much more widely available. People who couldn’t have built a product a few years ago can now get surprisingly far. Experienced engineers can attempt projects that previously required a team.\n\nGreat engineering is still rare. But “I can build it” is becoming a weaker answer to why you, specifically, have an advantage.\n\nThe way I see it, there are three paths.\n\n1. Go work on the thing that’s eating software\n\nHelp create the technology that is making software engineering more accessible.\n\nThat could mean AI research, or the infrastructure, systems, and tools needed to make new capabilities useful. Find problems where technical ability remains a serious constraint, and where solving them expands what other people can do.\n\n2. Find a world-class domain expert and team up\n\nSomeone who has spent fifteen years in an industry may know where the expensive mistakes happen, why previous attempts to fix them failed, and who would buy a solution. That knowledge is hard to acquire from the outside.\n\nAt SPC, we’re seeing more people become promising founders without much prior software engineering experience. They bring deep domain knowledge and strong instincts about what needs to exist.\n\nThese are people worth getting to know. A great engineering partner can see possibilities they haven’t considered and help build something neither person could have imagined alone.\n\n3. Write vanilla code… by shepherding a bunch of agents\n\nThis is the direction I find least compelling: doing roughly the same work inside a company, except now you supervise coding agents.\n\nThere will be valuable jobs like this. But if your ambition extends only to completing the same backlog faster, you’re underusing the moment.\n\nI’d still get very good at engineering. Then I’d be deliberate about what that ability sits next to: a technical frontier that needs advancing, or deep knowledge of a problem worth solving.\n\nUse the fact that you can build more to take responsibility for something bigger.",
+            "createdAt": "2026-10-07T16:06:20.000Z",
+            "url": "https://x.com/adityaag/status/2107865115831988530",
+            "likes": 179,
+            "retweets": 13,
+            "replies": 19,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Sam Altman",
+        "handle": "sama",
+        "bio": "The mission of OpenAI is to ensure that AGI benefits all of humanity",
+        "tweets": [
+          {
+            "id": "2107924677801001381",
+            "text": "Have been waiting for this one for a long time, and I would hate to have to go back to the old version of Chat!",
+            "createdAt": "2026-10-07T20:03:01.000Z",
+            "url": "https://x.com/sama/status/2107924677801001381",
+            "likes": 548,
+            "retweets": 9,
+            "replies": 100,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107924408597950702",
+            "text": "ChatGPT can now generate a custom UI for you! https://t.co/ZdGRMAEjQX",
+            "createdAt": "2026-10-07T20:01:57.000Z",
+            "url": "https://x.com/sama/status/2107924408597950702",
+            "likes": 8052,
+            "retweets": 337,
+            "replies": 467,
+            "isQuote": true,
+            "quotedTweetId": "2107894997538525580"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Claude",
+        "handle": "claudeai",
+        "bio": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+        "tweets": [
+          {
+            "id": "2107894060229034197",
+            "text": "One more thing: we’re halving the price of cache reads on Claude Sonnet 5.5, to $0.10 per million tokens. That makes Sonnet 5.5 around 20% cheaper to run on most long-running work.",
+            "createdAt": "2026-10-07T18:01:21.000Z",
+            "url": "https://x.com/claudeai/status/2107894060229034197",
+            "likes": 10304,
+            "retweets": 517,
+            "replies": 195,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107894057615987198",
+            "text": "Haiku 5.5 is available now on all platforms, including Amazon Web Services, Google Cloud, and Microsoft Azure.\n\nRead more: https://t.co/InzZXcEcRP",
+            "createdAt": "2026-10-07T18:01:20.000Z",
+            "url": "https://x.com/claudeai/status/2107894057615987198",
+            "likes": 1462,
+            "retweets": 33,
+            "replies": 18,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2107894054142787877",
+            "text": "Haiku 5.5 shows major improvements across almost all of our alignment evaluations relative to Haiku 4.5, with far fewer instances of misaligned behavior.",
+            "createdAt": "2026-10-07T18:01:19.000Z",
+            "url": "https://x.com/claudeai/status/2107894054142787877",
+            "likes": 1507,
+            "retweets": 22,
+            "replies": 18,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "xBuilders": 19,
+      "totalTweets": 41
+    }
+  },
+  "podcasts": {
+    "generatedAt": "2026-10-08T06:47:57.708Z",
+    "lookbackHours": 336,
+    "podcasts": [
+      {
+        "source": "podcast",
+        "name": "AI & I by Every",
+        "title": "Why Every Traded Personal Agents for One Company Agent",
+        "guid": "flightcast:01M4BDW19ZFPED9TQ4S5DP60PY",
+        "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+        "publishedAt": "2026-10-07T17:11:13.000Z",
+        "transcript": "Speaker 1 | 00:00 - 00:12\nThe hot thing right now is dots. They're persistent agents from OpenAI. I was there at Dev Day when they launched them. I interviewed Sam about them, and I've been using dots since before they came out. And now we're into week two of dots.\n\nSpeaker 1 | 00:12 - 00:46\nSo how's it going? If you read my vibe check, you know that I thought they were a little bit rough to begin with, but that the idea of a persistent proactive agent was obviously the future. Even before DOTS launched, they'd become my main way of interacting with ChatGPT, and they're still that way after launch. I'm really excited about the little things they've been doing to make the experience less buggy and more complete, and I think it'll get even better over the next couple weeks. What's been really interesting, though, is seeing the team at Every.\n\nSpeaker 1 | 00:46 - 01:20\nWe've got about 30 people seeing them start to adopt it and some of the use cases that have started to emerge. So in case you're looking for some use cases, I actually had my dot collect some use cases to talk to you about. So one thing that dots are really useful for is keeping up with school emails. So Kieran Klassen, who works at Every, says that it scans all of the school emails he gets from his kid's school and tells him what he needs to know. Another thing that DOTS are really good for is catching access requests or, like, little things, little messages you might have missed in Slack and making sure that you get them.\n\nSpeaker 1 | 01:20 - 02:04\nSo Ariel Shipper, our head of operations, heard Dot caught a few people asking for different accounts across the company and asked if she wanted it to just approve access. Dots are also really good for working when you're not at your computer or your hands are full. So our head of video, Randy Kunzman, was running around yesterday trying to get our launch video out for the Every Agent which launched, and he was doing work for that launch just on the phone with his dot, talking it through different video edits and different things he needed to get done. I also think this is something that came up in my interview with Sam, and I I feel this too. Dots are really good for filtering out all of the noise that you don't really want to see and only showing you stuff that really matters.\n\nSpeaker 1 | 02:04 - 02:43\nSo for example, I was doing a lot of model testing over the weekend, and normally, testing requires me to be in the every Slack, which once I'm in Slack, it's just like this rabbit hole of I'm just going down doing tons and tons and tons of work. And what was amazing about using my dot doing model testing was I was able to post the results of all the experiments I was running in Slack. And if someone responded, that my dot would tell me about the response, which would help me stay up to date on what the team was thinking without getting me sucked into the whole rabbit hole of everything going on in Slack. And that helped keep my weekend pretty clear and calm. And I think that's a huge, huge thing for dots.\n\nSpeaker 1 | 02:43 - 03:05\nSo what's the overall vibe? If you don't have a dot, I highly recommend you get one, especially if you're in the Chachapati ecosystem. If you're using Muse or Instinct or Grockbots, you should check it out. I think that they're pretty much at feature parity right now, but there's something really good about having something that's hooked into the entire rest of the ecosystem that you use for your work and your life. There are still rough edges, though.\n\nSpeaker 1 | 03:05 - 03:30\nThe whole permission structure of DOTS is, like, completely a mystery to me and is extremely annoying. So for example, I often have to give multiple approvals to my DOT to do something basic, and even when I give it approval, it says it can't do it. So they really need to figure that stuff out to make the experience awesome. But I would expect in a year, this is the default way that you're interacting with all your AIs. You're probably not going to have it be a cute character.\n\nSpeaker 1 | 03:30 - 03:47\nThat would be my other, like, little hot take. Mine is named Boo. He's super cute. But my experience using Open Claws and other named agents like this is that as soon as something better comes along, you throw away the cute little character you develop. So my guess is I'll be using a persistent agent in in a year, but Boo will probably be dead.\n\nSpeaker 1 | 03:47 - 04:10\nRIP Boo. We've also actually been working on our own persistent agent that's not a personal agent. It's a company agent, and that's actually come from this whole journey we've been on starting with open clause inside of every... And everybody having a personal agent and realizing how valuable it was for the company to have a personal agent. So we built one for ourselves, and then we just released it to all of our subscribers.\n\nSpeaker 1 | 04:10 - 04:44\nSo I brought Willie Williams on, our head of platform, who was instrumental in bringing the agent to life to talk about personal agents versus company agents, what it's like to build an agent at the frontier right now, and what that means for engineering teams going forward. I hope you enjoy. Willie, welcome to the show. Oh, thank for having me. For people who don't know, you are the head of platform.\n\nSpeaker 1 | 04:44 - 05:17\nYou are one of the driving forces behind the Every Agent, which we... Well, by the time this comes out, we'll have launched. Launching And I want to talk to you about the whole agent phenomenon. Because I think we're in this world right now where personal agents are the hot thing. And there's like a little bit of Groundhog's Day for me, I assume for you, because we went through our personal agent phase, like, nine months ago or eight months ago with the original Open Claw phase, and I feel like we learned a lot from that.\n\nSpeaker 1 | 05:17 - 05:45\nAnd then now I feel like there's this whole new era of people who are experiencing the same thing and maybe will learn the same lessons. We for us, we went from Open Claw, everyone in the company's got a personal agent to we have a company agent and we liked the company agent so much that we actually just made a company agent for other people to use. But I want to just talk about that and try to talk about it as honestly as we can because it's possible we're wrong. Yeah. But I do think we've learned some things that are important.\n\nSpeaker 1 | 05:45 - 05:53\nMaybe let's start with Open Claw because we actually disagreed and I think you ended up being right. Tell\n\nSpeaker 2 | 05:53 - 05:53\nus\n\nSpeaker 1 | 05:53 - 05:57\nabout the Open Claw situation and sort of your take and then talk about why I was wrong.\n\nSpeaker 2 | 05:58 - 06:10\nWell, think the funniest thing was, actually at the time, it was called Claudius? Claudius? Claudius. It was like the earlier version before... Because it was Clawbot, right?\n\nSpeaker 2 | 06:10 - 06:15\nOh. Right? And even before that Interesting. It's called multiple of Moltbot. No.\n\nSpeaker 2 | 06:15 - 06:15\nThere was there\n\nSpeaker 1 | 06:15 - 06:16\nwas the...\n\nSpeaker 2 | 06:16 - 06:26\nWe forget about the Yeah. The Molt Bot. Shout out to to Ash, actually, who was like... Who I think first messaged me about it. He was like...\n\nSpeaker 2 | 06:26 - 06:46\nAsh is one of our contributing writers and he was like, dude, this thing is awesome. And I remember because I I I knew, like, Peter's name from, like, the top token burners leaderboard, like Mhmm. He was up there and just, like, I was like, oh, man, this is all... These these folks are burning a lot of tokens, right? And they were just like, oh, yeah.\n\nSpeaker 2 | 06:46 - 06:54\nThey're making... He's doing this thing called Claude... Claudis. And I was like, oh, this is kind of a weird thing, you know, kind of follow the project. Mhmm.\n\nSpeaker 2 | 06:55 - 07:06\nAnd then Ash came back and was like, oh, yeah, dude. This is really cool. And so we started trying it and then I think Brandon was the first one who was like, okay, I've got one. Yeah. You know, I've got one and I started was Osha.\n\nSpeaker 2 | 07:06 - 07:08\nHe's like, I'm starting to like wire it up, right?\n\nSpeaker 1 | 07:08 - 07:09\nRIP Osha.\n\nSpeaker 2 | 07:09 - 07:47\nRIP Osha. And I think, you know, and then it really kicked off in January because we went to went to Think Week, right, and for folks who don't know, it's like our semiannual gathering of every where we sort of like think about the future, you know, and that was a place where we were finally all in person, we're like, oh, I can show you what's going on, right, I think there's a lot, this is a reoccurring theme of showing people how to use AI is a very transformed thing, but telling them is sort of like lands flat. And so we had a bunch of people who were open claw pilled who were like, oh, yeah, this is this is cool. Like, this is what I do. I order my groceries.\n\nSpeaker 2 | 07:47 - 07:50\nI've got it in my group chat with my my family, you know.\n\nSpeaker 1 | 07:50 - 08:10\nIt really spread. Like, we we were all in Panama together and I I remember coming out of that. I think there was a model drop on the day we left. And the claws just started working way better. And then I made this like internal place for them to like talk and they started talking to each other in our Slack and it was like, woah, this is crazy.\n\nSpeaker 2 | 08:10 - 08:23\nYeah. Yeah. There a there was a... It was it was like a funny thing where we were like, okay, the first the first blocker is it's just a little bit too technical. And so we went through a couple iterations of like, how do we do it for the team or the less technical members of the team?\n\nSpeaker 2 | 08:23 - 09:35\nAnd there was, like, we've got a template, so we're spinning up info for that. And then we made a little service where anyone could enter, like, kinda walk through people through the setup and then we get there. But we also looked at it and we were like, oh man, security's hard for all of these things, but we sort of like, I think we powered through a lot of that and I mean, I have this vivid memory of just so many bots in our Slack, like so many bots, like absolute chaos, because you also have more than one, Brendan being like just having so many bots running around doing various things. And I think, I mean, I think the big takeaway was one, it was so valuable for people to see other people using AI and up until this point it was like, oh, I built this gigantic clawed or codex command center on my local machine, I've got it doing everything, but the only thing people would see was the output of it, and so once we had OpenClaws inside it was like, oh, I didn't know I could use it that way, Oh, that's actually pretty cool.\n\nSpeaker 1 | 09:35 - 09:47\nAnd I didn't know that you prompted in this way. Like, there's always little things people do when they're using their AI that you never got to see and it was like, oh, I'm learning every time I look into Slack.\n\nSpeaker 2 | 09:48 - 10:24\nYeah. And the other thing I think that was really big was, I think we liked our personal bots. And I think this is another thing that I think we're seeing now again is that you sort of form, you're like, oh, I'm attached to, mine was last, I'm attached to last, and what it does, and it's like a customization, so for folks who are like tinkerers, folks who are builders who like playing with these things, it was like a great... These setups are great, you know? For folks who aren't, folks who are a little bit more in terms of the operator thing, it was just like, oh, is...\n\nSpeaker 2 | 10:24 - 10:28\nThere's a bunch of security worries, it's super complex, how do I get it set up?\n\nSpeaker 1 | 10:28 - 10:30\nIt keeps breaking, like,\n\nSpeaker 2 | 10:30 - 10:52\nAnd then if you don't invest in it, it of fades, it keep going with the rest of it, and I think that was, that for us was the striking point where it was sort of like, we want, instead of everyone investing in their own agents and making them better day to day over time, it's like, why don't we take all that energy and put it into one agent that the whole company benefits from?\n\nSpeaker 1 | 10:52 - 11:10\nIf you're enjoying this show, you should subscribe to Every. Every is the only subscription you need to stay at the edge of AI. And for a limited time, we're giving all of the viewers and listeners of this show fourteen days for free to get all the education and equipment you need to stay at the edge. If that sounds like you, you should subscribe. The link's in the description.\n\nSpeaker 1 | 11:10 - 11:58\nI think also what happened is everyone had open claws and for sure, one of the coolest things was your claw became a little bit of an extension of you. I remember one of the first people who well, Brandon was like a big driving force And then the second person who like really took it to a new level was Austin, who was at the time our head of growth. And he had like a growth claw that you could ask all growth questions to and that was like really interesting. But I think at least my memory of what happened is then we started we were like, oh, we're gonna build a platform for anyone to make own claws, even if you're non technical called plus one, RIP plus one. But I don't think at that point it was really company agent.\n\nSpeaker 1 | 11:58 - 12:00\nIt was just like make a claw, like one click claw\n\nSpeaker 2 | 12:00 - 12:01\nmaker. And\n\nSpeaker 1 | 12:03 - 12:25\nwe tried that and we were having a lot of internal debates about should it be one agent for everyone or an agent per person? You were very one agent for everyone. I was very like agent per person. I think you had a lot of hesitancies about the idea of building up our own platform infrastructure to support this like claw as a service thing. We're like, fuck it.\n\nSpeaker 1 | 12:25 - 12:45\nLike, let's do it anyway. Yeah. Like, okay. Which I appreciate but also like, in retrospect, was like not the best idea. And like we so we launched that in beta and I think basically found that it was there was a lot of demand, especially at that time there was a lot of demand for it.\n\nSpeaker 1 | 12:45 - 13:14\nBut OpenCLO itself, it was very hard to build a platform on. It was like moving so fast and it was completely vibe coded and like, it's just hard to make the entire technical stack and then have some have like an open source product that's not really designed to be platform like as the thing you're serving. That was like messy and through that process, I think all of our claws basically died. -Yeah. -Because we just stopped.\n\nSpeaker 1 | 13:14 - 13:54\nI remember my claws named R2C2 and I felt like, oh yeah, I had this like really attached relationship to R2C2 and then at some point, like someone knocked the Mac mini power off and then like it disappeared but I didn't restart it, you know? Because like at that point, was using Codex and I was like, this is fine. Like, I don't need that. And that that was like a really interesting thing for me to realize like, oh, okay. There's all these people in the org who don't really who don't really want to maintain their own claws and then the people who do want to do it, like, you kind of get tired of it if there's a better option.\n\nSpeaker 1 | 13:54 - 14:17\nAnd what we ended up doing is we I think we were always starting to use like Claude or Codex and then there are a couple of these company agents that we tried that were like really sort of changed how we thought about this. So Victor being one, which was just really, really well designed. And I think at that point, we started to realize, oh, having a single company agent makes a huge difference.\n\nSpeaker 2 | 14:18 - 14:26\nYeah, there's a lot, I mean, it even just boils down to naming, remembering which agent had which expertise was\n\nSpeaker 1 | 14:27 - 14:28\nAnnoying.\n\nSpeaker 2 | 14:28 - 15:05\nWas annoying and hard. And I remember Austin's agent Montane, was like, oh, it sort of became the gravitational center because he built it up to be so good at the growth job that it was like, well, could add, I'm already using it for myself, minor growth jobs, I could invest in my agent or I could just add on to maintaining everyone else sort of gains from that. And I think I think there were a lot of pressures there. But of course, counteracting this, again, was like, I think we really liked our personal agents. We're like, we're trying to keep it there.\n\nSpeaker 2 | 15:05 - 15:34\nBut, the other thing I think is underappreciated is that when you're building AI products now, the surface area for products and agents is really large. Before it was like, oh, I've got a SaaS app, I can map out all the user flows and you go and build it and you sort of know how users will interact with your product. In the AI world, it's just... And with Plus One, when we noticed it oh, we didn't even realize that you wanted to go do this thing and how do you support it? So there was always...\n\nSpeaker 2 | 15:34 - 16:20\nI talked a lot about complexity, building and managing complexity for builders versus operators is a hard job, builders wanna be exposed to the complexity because everything you wanna do is going in there and tinkering and turning knobs and whatnot. But if you're trying to run a business, you're not really, you don't wanna do that. Mostly you just want something that just works for you. And I think over time what we realized was, for us, we wanted something that just worked. We didn't wanna deal with all of the little knobs and bells and whistles, and for the jobs that we were using an agent for, like a lot of project management and operations and whatnot, it was better to have something solid.\n\nSpeaker 1 | 16:20 - 16:29\nYeah. And to have it be sort of shared. So when you use it, you're pretty confident that it's the right thing to be using for your company.\n\nSpeaker 2 | 16:29 - 16:29\nYeah.\n\nSpeaker 1 | 16:29 - 16:40\nAnd someone has thought about it. Yes. Know, thought about the skill or the feature or whatever. And so now we're in this place where we're launching the every agent. It's something that we use every day, like many many times a day.\n\nSpeaker 1 | 16:40 - 17:06\nThe company would kind of like fall over if we didn't have it. We have bunch of beta customers. And we're also in this moment where, example, I'm using my dot all the time from OpenAI and there's Muse and Instinct on the personal agent side. One of the thing, I'm curious for your bet here. One of the things that I feel is I think I will be using something like my dot in a year in Slack.\n\nSpeaker 1 | 17:06 - 17:20\nSpecifically because I use it inside of like, it's basically just a portal to my codex. But I probably won't. Mine is named Boo and like, it probably won't be named Boo. Like, Boo is going be dead in eight years. Yeah, sure.\n\nSpeaker 1 | 17:20 - 17:32\nLike lifespan six months maybe, you know, because the personal thing or the personality thing is cool. But particularly in a work context, I mostly just care like it does it do the thing.\n\nSpeaker 2 | 17:32 - 17:33\nYeah.\n\nSpeaker 1 | 17:33 - 18:04\nYeah. And the minute there's like, like I'm like, oh, I have this personal connection, but the minute there's something that performs better, even if it doesn't have it, I'll just switch. I think there's much more room for that on the truly personal side. So I think that's my bet with dots is like you still actually need a company agent like the every agent and then that needs to play well with everyone having their own dot or dot like thing that is basically a portal to their command center. What do you think?\n\nSpeaker 2 | 18:04 - 19:13\nYeah, we can see the line between professional and personal shaping up very solidly. I think on the professional side, I do think it's a one agent per company or org structure because there are so many advantages, again, to it learning the workflows and what you do and everyone contributing just by working with it and making it better that it shapes itself to your company and it's like the advantage of bringing a personal agent in, it's just gonna be, it doesn't have that context here, it's gonna be hard to teach. It needs to have been there a year to really get up to speed, and so I think we're gonna have that for the workplace and I really don't see us or the industry repeating the chaos of every worker gets their coworker and we're all gonna double our company size, you know? But on the personal side, I actually think the, I was talking about the forces, the opposing force, the one of personalization, I think is actually huge. The thing that you love is that you have an agent that is just yours.\n\nSpeaker 2 | 19:13 - 19:56\nAnd before, the downsides there were like, it was open cloud, how do I do security, how do I manage it, how do I run it? There are all these questions that prevented it from gaining larger adoption, and now that you have bigger players coming in and more money, it's just like, oh, we're starting to get closer to a better consumer personal agent experience and it's gonna be incredibly attractive. And so I think we're gonna see a split, I think we're gonna see, I go to work and I work with my company agent at the company because we all are working together towards this collective goal, and at home it might just be me or me and my family that is using a personal agent to help us do very similar things, but it's personalized to us. One thing that\n\nSpeaker 1 | 19:56 - 20:06\nI'm really interested, we've been talking about this a lot, I think you have a very good perspective on and I just want to hear more about it is you've had a long career in tech,\n\nSpeaker 2 | 20:06 - 20:07\ndoing\n\nSpeaker 1 | 20:09 - 20:31\nengineering management at great startups, bigger companies. You've founded your own companies. You led the engineering for this effort with a team of, I don't know, five to seven ish people. How has engineering management changed, especially over the last couple months? And what have you learned in the process of bringing this to market you didn't necessarily know?\n\nSpeaker 2 | 20:32 - 21:02\nIronically, engineering management feels the most similar out of any of the jobs Interesting. That I've done before in the present day, especially now getting to come back to it and see what it's like in the age of AI. I think there are lots of advantages. For an engineering manager, lot of your leverage comes from the ability to, how much of the field you can see, and so in previous years you would spend a lot of time trying to gather that information.\n\nSpeaker 1 | 21:02 - 21:05\nWhat would be an example of something that's on the field that you need to see?\n\nSpeaker 2 | 21:05 - 21:42\nOh, there are a lot of Slack channels, keeping up with Slack channels and emails and customer reports and how are you doing the integration of all of this into a single place and like, I run a 10 feed, right, that does this where it consolidates it all into a single feed and during the day I can just kinda go through and it really gives me a much better vision into everything going on related to the project. It's like, okay, is marketing happening over here? Are we seeing customer reports over there? Which normally would have been meetings, right?\n\nSpeaker 1 | 21:42 - 22:13\nThat makes sense, yeah. So for people listening who don't know, Tend is this open source app I made that you can create custom feeds for yourself where you hook up data sources, so in this case it's meetings or Notion notes or anything like that. Then your AI can just automatically turn those data sources into a feed that either has decisions you need to make or is like, FYI, this thing happened in a meeting, here's what you want. And it sort of learns over time what you want, so you can make a feed for yourself. So you have one for your engineering stuff, I have one for just the full company.\n\nSpeaker 1 | 22:13 - 22:19\nWhat are a couple things that you've learned, maybe even in the last week from reading that, that you might not have known otherwise?\n\nSpeaker 2 | 22:19 - 23:07\nYeah, a lot on the marketing side of launching a product. So normally when you're building a product, you're sort of in it with your teammates and you're looking at screens and designs and user error bug reports and whatnot, and you kind of have a feel for everything going on. But launching a product, there's a lot of things and conversations and meetings that happen that are public, but they're just out in places where you don't necessarily have the time to check or the attention, and so it's like, how do you go and grab those things and just make sure that, one, they're going the way you want them to, and two, that you know who to give guidance to. Sometimes the rumor mill of a company comes back and it's like, oh, did you hear we're doing this sort of thing? It's like, well, no, we shouldn't be doing that, but then who do I talk to?\n\nSpeaker 2 | 23:07 - 23:12\nIs a huge question. And as a\n\nSpeaker 1 | 23:12 - 23:13\nmanager, that's your leverage, right?\n\nSpeaker 2 | 23:13 - 23:26\nIt's like, I need to be able to go and talk to and set guidance and set vision for all this. And so having this higher field marshal level view of a lot of things is just so helpful, even for a small team.\n\nSpeaker 1 | 23:26 - 24:01\nYeah. I think you've been the beneficiary or I don't know if beneficiary, maybe it's the opposite beneficiary on the receiving end of a few times where I'm like, hey, I like read this thing and intend like that this happened in a meeting, like, what's going on here? Like, just just to put my thumb on it or whatever. It's, I mean, for as a manager, it's like it's like the coolest thing and it can be like weird for employees, but like, yeah, I'm very curious to see how that changes. Now would be a time as a manager, an engineering manager, where you could actually like be ripping tokens while you're managing a fairly large team.\n\nSpeaker 1 | 24:01 - 24:03\nLike, your take on that?\n\nSpeaker 2 | 24:03 - 24:22\nI think a lot of it comes down to people. I think the job of the manager is still a force multiplier on folks. And so it's like, where do I spend my epsilon extra piece of energy? And the... It's really probably not on tokens for coding.\n\nSpeaker 2 | 24:22 - 24:32\nRight? And it's surprise... This is the part that's actually surprisingly very much the same is going... It's like a people... Still very much a people job and you want it to be a people job.\n\nSpeaker 2 | 24:32 - 25:08\nNow, the difference is your leverage has increased because their leverage has increased. And so, the most valuable things for me recently have just been like, what are the bottlenecks? And how do we go and remove the bottlenecks? And so, it's funny as I sort of transition from doing more technical work back into engineering management, you see my token usage just fall off a cliff, right, because I'm using it and it's sort of gathering all this information, but when it comes to action, there's no billion dollar, or sorry, billion token move I can make. It's mostly like, we still need to sit down and have a conversation.\n\nSpeaker 2 | 25:08 - 25:45\nNow, there's a whole bunch of routing functions in there now, help with AI, we can do summaries, like how do we summarize and pass information, a lot of jobs that managers used to do and a lot of the things that you used to be responsible for in terms of ops and the health of the team in the company are much less manual now. Have you automated that? I mean, for the agent team, it's just like, we're good. It was just amazing to me having built a lot of dashboards and a lot of learning systems. Was like, oh no, we're...\n\nSpeaker 2 | 25:45 - 25:49\nBecause it's really definable and really testable and a lot of agents are great at.\n\nSpeaker 1 | 25:50 - 25:58\nLike, what's an example of, because I don't, to be honest, I don't look at a lot of agent team health metrics that you're looking at. Like, what's an example of\n\nSpeaker 2 | 25:58 - 26:06\nsome of those dashboards? Well, some of them are what you might call performance dashboards, right? It's like, how many errors are our API\n\nSpeaker 1 | 26:06 - 26:06\nYeah. Yeah.\n\nSpeaker 2 | 26:07 - 26:15\nThrowing. Right? It's like a, okay, there's a dashboard for that. Same thing on the product side. It's like, oh, how many users are using them?\n\nSpeaker 2 | 26:15 - 26:44\nBut the real magic now is before it was like you had to set, alerting systems were were, even just few zero were still pretty, neolithic. Right? It was it was sort of like, I'm gonna set an alert, I'm gonna set some bars, you know, it's usually above this or below this. And one place that just the magic is there, it's just like you can put an agent, like, look at this every five minutes and see if there's an anomaly. If there's an anomaly, do intelligent routing.\n\nSpeaker 2 | 26:44 - 27:05\nThey'll alert me. There's always things like setting up on call structures where you're like, okay, this person needs to be on call and this person needs to be on call and now you have an agent on call as the first person all the time, don't have to worry about vacation. You're not scheduling around. All these, like, sort of below the line pieces of engineering management have gotten much better.\n\nSpeaker 1 | 27:05 - 27:07\nThat's interesting.\n\nSpeaker 2 | 27:07 - 27:10\nI wanna throw it back at you. I'm curious, we were sort of on opposite sides before.\n\nSpeaker 1 | 27:10 - 27:25\nWhere... How do you think this personal agent dynamic is gonna play I mean, my take on technology is you're never wrong. You're just too early usually. So I'm still holding holding out that I might be right. No.\n\nSpeaker 2 | 27:25 - 27:25\nI think\n\nSpeaker 1 | 27:27 - 27:59\nmy current feeling is a big... And I think you probably disagree with this, but a big reason why we went from everyone has their own to a company is they were just too hard to maintain. Yeah. And that we will start to go from there's a company one which will continue to exist, and then that will start to subdivide into teams, which we already kind of have. We sort of also have a couple of these agents like Claudia or Bill or there's a couple other ones that are floating around that different teams maintain that are just for that team.\n\nSpeaker 1 | 28:00 - 28:34\nAnd then that will probably again bifurcate a little bit and maybe that's just a dot, an extension of your personal codex, but maybe it's something else. So I do think we will probably get to the shadow org chart at some point. I thought it might be a more bottoms up, like everyone has their own and then we kind of coalesce into, but now it seems like actually it's more likely to be... You make something really great that's at the top and then you kind of split that out every once in a while when you need the specialization.\n\nSpeaker 2 | 28:34 - 29:21\nYeah, I mean, that sort of dovetails to a little bit of what we've seen of folks who are trying to do AI transformation, right, is like usually if you're a line engineer, you're not the one trying to do AI transformation in your company, you're like... Usually, it's the CEO or someone high up who's like, we really need to accelerate and like we're struggling to do it and let's drop an agent in here that everyone can use and see other people using. I'm also really intrigued by if people are going to have separate agents for each role. So one of the things is funny enough in my... On the personal side, like, in Grock Bot, I use Grock Bot and I was like, I will run, like, I have, like, a lot of coaches.\n\nSpeaker 1 | 29:21 - 29:21\nMhmm.\n\nSpeaker 2 | 29:21 - 29:30\nRight? And for whatever reason, that mental model is like, works really well for me. Maybe because it maps to humans, so it's like, you have a you have a coach for this, a coach for this... What are\n\nSpeaker 1 | 29:30 - 29:32\nyour different coaches?\n\nSpeaker 2 | 29:33 - 29:46\nI'm like, I'm a terrible swimmer, which is really funny because I like to surf, but like, I'm like a really bad lap swimmer for a reason. I was like, okay, I need I need someone who's gonna keep me on like a lap swimming cadence,\n\nSpeaker 1 | 29:47 - 29:52\nyou know. And why... But, like, why not have that just be, like, part of a bigger bot that, like, does a bunch of different things?\n\nSpeaker 2 | 29:52 - 30:07\nYeah. I mean, this is where it's like an interesting sort of, like, why is it psychologically that I'm, like, I need this sort of, like, this separation for this one role, you know? It's like, do I have that and then I have, like, a therapist? It's like, do they talk together, you know?\n\nSpeaker 1 | 30:07 - 30:07\nYeah, yeah,\n\nSpeaker 2 | 30:07 - 30:29\nAnd it's funny because I can kind of line them up on jobs to be done, but, like, not in the way that I think that if I rationally was trying to explain it, what it would look like. I have to deal with a storage unit. I don't have a storage unit bot that's dealing with it. But I do for maybe it's like, is this a throwaway person? Do expect to never interact with them again?\n\nSpeaker 2 | 30:29 - 30:39\nIf it's transactional, it's like a threat in Codex. If it's like, I'm building a relationship, know, one day I will FaceTime my Grok bot into my workouts, you know, that...\n\nSpeaker 1 | 30:40 - 31:02\nThat is interesting. Yeah, I think that there's something about- it's almost saying to yourself, planting a flag, this is an area I care about and will care about for a long time that maybe you want a little bot for. Right now, my closest thing to that is pinned tabs and codecs. But now those are totally outmoded because I just use dot, but there's no like you can't have multiple dots. So...\n\nSpeaker 2 | 31:03 - 31:39\nI wonder And I also wonder how much context comes with it. So it's think the really interesting thing that's happening now is we're ratcheting up the amount of proactivity we allow. And so Instinct and Muse and Rockfire are doing these things where they're starting to reach out. And I think when you have AIs that are reaching out, if it's all in Codex or Claude coming at you and it's like, you have to remember what thread it was, but if it's like, Willie's swimming coach is reaching out, like, I'm like, okay, this is the swimming coach. You know, I can instantly place you in the conversation of like, what?\n\nSpeaker 2 | 31:39 - 31:43\nOkay, I didn't swim enough, you know. Yeah. Yeah.\n\nSpeaker 1 | 31:44 - 32:33\nI love the productivity thing is a big deal and that's something that we are just baking into the agent that I'm super excited about because this is very related to tend to. Like, there's this whole thing that's starting to happen, which is it used to be that in order to make a feed of anything, you had to be a gigantic corporation with like hundreds of millions of users and a lot of money, and now everyone can have their own feed. Companies like ours can, you know, for example, in every agent, it has frontier alerts that are just like, okay, like this thing happened, here's what it means for you, which I'm super excited about. I think there's like so many places to go in that sort of proactively telling you what you need to know at the right time that it used to be that AI was not able to do that in a way that was good, but now with JEV and some of these other things like Decisions API, it's like happening.\n\nSpeaker 2 | 32:33 - 32:37\nYeah. I mean, we very\n\nSpeaker 1 | 32:37 - 32:37\nmuch\n\nSpeaker 2 | 32:37 - 33:02\nhave a feed based world, right, across everything, which is... And it's attention because I spend a lot of time on X like probably everyone, I assume. Spends time on X. And for me, it's a funny sort of explore exploit problem, which is like I'm on there mostly to see the new ideas emerging and hear how people debate them. There's also a lot of trash.\n\nSpeaker 2 | 33:02 - 33:27\nAnd my cognitive defenses say that they have to be up, I have to have my protections up when I'm reading it just because it's like, I don't wanna be dragged into this flame war or this whatever. I'm trying to sift out the nuggets from this stream of jostens. It would be great if I didn't have to be that thing, right? If I had an agent that could take the brunt of that and then I get out the nuggets.\n\nSpeaker 1 | 33:27 - 33:37\nThat's actually something that's been helpful for me with my dot is it does especially I mean, this is not a feed, but like for Slack, like just telling me, here's a couple things that you probably missed.\n\nSpeaker 2 | 33:37 - 33:38\nI think Slack's a\n\nSpeaker 1 | 33:38 - 33:43\nfeed too. So helpful. I think Slack's helpful. Yeah. Willie, always a pleasure.\n\nSpeaker 2 | 33:43 - 33:44\nAlways a pleasure.\n\nSpeaker 1 | 33:44 - 33:45\nThanks for joining."
+      }
+    ],
+    "stats": {
+      "podcastEpisodes": 1
+    }
+  },
+  "blogs": {
+    "generatedAt": "2026-10-08T06:47:58.147Z",
+    "lookbackHours": 72,
+    "blogs": [],
+    "stats": {
+      "blogPosts": 0
+    }
+  }
+}
