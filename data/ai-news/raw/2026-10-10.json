@@ -1,0 +1,516 @@
+{
+  "date": "2026-10-10",
+  "fetchedAt": "2026-10-10T00:54:05.334593+00:00",
+  "source": "follow-builders feeds",
+  "x": {
+    "generatedAt": "2026-10-09T06:47:11.550Z",
+    "lookbackHours": 24,
+    "x": [
+      {
+        "source": "x",
+        "name": "Swyx",
+        "handle": "swyx",
+        "bio": "achieve ambition with intentionality, intensity, integrity & insanity.\n\naffiliations:\n- @smol_ai\n- @dxtipshq\n- @cognition\n- @aidotengineer\n- @latentspacepod",
+        "tweets": [
+          {
+            "id": "2108391703488958475",
+            "text": "to paraphrase modern family, there are 5 things wrong in this tweet. the talented {role} will already have posts covering most of them \nhttps://t.co/TEtI8UL5TA",
+            "createdAt": "2026-10-09T02:58:48.000Z",
+            "url": "https://x.com/swyx/status/2108391703488958475",
+            "likes": 2,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": true,
+            "quotedTweetId": "2108273380298461240"
+          },
+          {
+            "id": "2108391663827849390",
+            "text": "to paraphrase modern family, there are 5 things wrong in this tweet. the talented {role} will already have posts covering most of them \nhttps://t.co/TEtI8ULDJ8",
+            "createdAt": "2026-10-09T02:58:39.000Z",
+            "url": "https://x.com/swyx/status/2108391663827849390",
+            "likes": 2,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": true,
+            "quotedTweetId": "2108273380298461240"
+          },
+          {
+            "id": "2108388128390086675",
+            "text": "if you cant hire for it, my team will do oneoff consult for you, get in touch business@latent.space \n\nhttps://t.co/TrsDS8PK4l",
+            "createdAt": "2026-10-09T02:44:36.000Z",
+            "url": "https://x.com/swyx/status/2108388128390086675",
+            "likes": 15,
+            "retweets": 0,
+            "replies": 1,
+            "isQuote": true,
+            "quotedTweetId": "2107888314254815483"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Thibault Sottiaux",
+        "handle": "thsottiaux",
+        "bio": "Codex & ChatGPT @OpenAI",
+        "tweets": [
+          {
+            "id": "2108349826727588000",
+            "text": "Today, we are announcing ChatGPT.\n\nIt is here: https://t.co/Pgk3THSyOJ",
+            "createdAt": "2026-10-09T00:12:24.000Z",
+            "url": "https://x.com/thsottiaux/status/2108349826727588000",
+            "likes": 19591,
+            "retweets": 486,
+            "replies": 2071,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2108275041276420573",
+            "text": "Day 4/\n\nWe have improved steering to be instant, leading to the model now reacting much faster to adjustments you make, allowing you to course-correct direction in realtime and not have the model waste effort.\n\nAlso releasing GPT-6.1 Sol ultrafast. The two work very well together.",
+            "createdAt": "2026-10-08T19:15:14.000Z",
+            "url": "https://x.com/thsottiaux/status/2108275041276420573",
+            "likes": 8346,
+            "retweets": 268,
+            "replies": 1544,
+            "isQuote": true,
+            "quotedTweetId": "2108262812489531498"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Peter Yang",
+        "handle": "petergyang",
+        "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6",
+        "tweets": [
+          {
+            "id": "2108412799684915576",
+            "text": "I don't understand how Grok @bot's new email feature works. I just tagged it on a thread and it doesn't seem to reply? What are ppl using it for?",
+            "createdAt": "2026-10-09T04:22:38.000Z",
+            "url": "https://x.com/petergyang/status/2108412799684915576",
+            "likes": 36,
+            "retweets": 0,
+            "replies": 12,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2108410706546905437",
+            "text": "@poteto @thsottiaux If you enjoyed this, sign up for free to my newsletter to get my best AI and product guides.\n\nJoin 110,000+ subscribers here:\nhttps://t.co/yz9xcsfrhF",
+            "createdAt": "2026-10-09T04:14:19.000Z",
+            "url": "https://x.com/petergyang/status/2108410706546905437",
+            "likes": 3,
+            "retweets": 0,
+            "replies": 1,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2108285232055263734",
+            "text": "Just insane 😂 https://t.co/IwE5WF1sKX",
+            "createdAt": "2026-10-08T19:55:44.000Z",
+            "url": "https://x.com/petergyang/status/2108285232055263734",
+            "likes": 18,
+            "retweets": 1,
+            "replies": 1,
+            "isQuote": true,
+            "quotedTweetId": "2108068632991256995"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Nan Yu",
+        "handle": "thenanyu",
+        "bio": "product, codex @openai. prev head of product @linear",
+        "tweets": [
+          {
+            "id": "2108354844658737637",
+            "text": "huge https://t.co/TBeAH6PxED",
+            "createdAt": "2026-10-09T00:32:20.000Z",
+            "url": "https://x.com/thenanyu/status/2108354844658737637",
+            "likes": 27,
+            "retweets": 0,
+            "replies": 2,
+            "isQuote": true,
+            "quotedTweetId": "2108349826727588000"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Madhu Guru",
+        "handle": "realmadhuguru",
+        "bio": "Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.",
+        "tweets": [
+          {
+            "id": "2108236391641706813",
+            "text": "There are massive startup opportunities hiding in plain sight : every layer of the computing stack will need to be rebuilt for agents.\n\nFor the last few years, most of the focus has been on making enterprise software agent-ready: APIs, connectors, MCPs.\n\nNow personal agents are forcing the same conversation for consumer products - e-commerce is an early example.\n\nThis is just the tip of the iceberg.\n\nNow think about the rest of the stack:\n\nDesktop and mobile OSes where agents are first-class users\n\nCloud infra built for agents to operate directly.\n\nidentity, permissions and security designed for thousands of agents acting on our behalf.\n\nInterfaces designed for agent and human users or both working together.\n\nIf you’re looking for startup ideas, go through each layer of the computing stack and ask: what has to change when the primary user is an agent?",
+            "createdAt": "2026-10-08T16:41:39.000Z",
+            "url": "https://x.com/realmadhuguru/status/2108236391641706813",
+            "likes": 387,
+            "retweets": 36,
+            "replies": 9,
+            "isQuote": true,
+            "quotedTweetId": "2108213283144810958"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Thariq",
+        "handle": "trq212",
+        "bio": "Claude Code @anthropicai. prev YC W20, @spc, @medialab",
+        "tweets": [
+          {
+            "id": "2108312751202537946",
+            "text": "here's what I got today https://t.co/ua7zBXbpDP",
+            "createdAt": "2026-10-08T21:45:05.000Z",
+            "url": "https://x.com/trq212/status/2108312751202537946",
+            "likes": 30,
+            "retweets": 0,
+            "replies": 1,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2108312534222778407",
+            "text": "whoops I hit send and went to a meeting, didn't realize the repo wasnt public- it is now! \n\nit's a chrome extension I use every day now https://t.co/OroAeTafj0 https://t.co/3AE65z3VqK",
+            "createdAt": "2026-10-08T21:44:13.000Z",
+            "url": "https://x.com/trq212/status/2108312534222778407",
+            "likes": 1248,
+            "retweets": 52,
+            "replies": 55,
+            "isQuote": true,
+            "quotedTweetId": "2108301668828004396"
+          },
+          {
+            "id": "2108301672409960922",
+            "text": "and read more about how to enable the API credits for yourself here: https://t.co/dXXsfLbxH6",
+            "createdAt": "2026-10-08T21:01:03.000Z",
+            "url": "https://x.com/trq212/status/2108301672409960922",
+            "likes": 92,
+            "retweets": 1,
+            "replies": 5,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Guillermo Rauch",
+        "handle": "rauchg",
+        "bio": "@vercel CEO",
+        "tweets": [
+          {
+            "id": "2108399406009798764",
+            "text": "Few things more enjoyable in work and life than discovering new talent. Seeing greatness in people, sometimes even before they fully see it themselves.",
+            "createdAt": "2026-10-09T03:29:25.000Z",
+            "url": "https://x.com/rauchg/status/2108399406009798764",
+            "likes": 528,
+            "retweets": 20,
+            "replies": 36,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Aaron Levie",
+        "handle": "levie",
+        "bio": "ceo @box - your business lives in content. unleash it with AI",
+        "tweets": [
+          {
+            "id": "2108426594054533545",
+            "text": "This sounds weird, but it is actually probably a good policy. \n\nEven if you don’t believe AI is conscious (I don’t), it stands to reason that you don’t want future models trained on endless content of humans being rude to models. \n\nThe models only understand the data they’ve been trained on, or what they run into in their interactions, so if you want safe and aligned models we probably want AI to have lots of good interactions in their training data. \n\nAnthropic may have more extreme beliefs than this (though even if they didn’t, you may want to word policies like this), but this is sort of an easy Pascal’s wager for AI. Just be nice to the AI.",
+            "createdAt": "2026-10-09T05:17:27.000Z",
+            "url": "https://x.com/levie/status/2108426594054533545",
+            "likes": 337,
+            "retweets": 24,
+            "replies": 69,
+            "isQuote": true,
+            "quotedTweetId": "2108244808494154089"
+          },
+          {
+            "id": "2108279490510193078",
+            "text": "We built Box Mount to allow developers to mount Box as a file system directly in any agent sandbox. As agents do more complex work, they need to be able to work with files and data just like a person would. The future is headless. https://t.co/hGBx3Tv4NL",
+            "createdAt": "2026-10-08T19:32:55.000Z",
+            "url": "https://x.com/levie/status/2108279490510193078",
+            "likes": 99,
+            "retweets": 16,
+            "replies": 32,
+            "isQuote": true,
+            "quotedTweetId": "2108240529268039871"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Garry Tan",
+        "handle": "garrytan",
+        "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+        "tweets": [
+          {
+            "id": "2108433505038606620",
+            "text": "Logical: in the future ICs with agents will be more productive and create better outcomes than equivalent people managers from prior eras https://t.co/mzsCcyOanP",
+            "createdAt": "2026-10-09T05:44:55.000Z",
+            "url": "https://x.com/garrytan/status/2108433505038606620",
+            "likes": 43,
+            "retweets": 5,
+            "replies": 23,
+            "isQuote": true,
+            "quotedTweetId": "2108292836072513799"
+          },
+          {
+            "id": "2108408546128011351",
+            "text": "Actually truth already stranger than fiction https://t.co/OyAxJ67GmI",
+            "createdAt": "2026-10-09T04:05:44.000Z",
+            "url": "https://x.com/garrytan/status/2108408546128011351",
+            "likes": 13,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": true,
+            "quotedTweetId": "2107910658876731754"
+          },
+          {
+            "id": "2108408297988723076",
+            "text": "GTA SF omg https://t.co/JLqrVjFjRG",
+            "createdAt": "2026-10-09T04:04:45.000Z",
+            "url": "https://x.com/garrytan/status/2108408297988723076",
+            "likes": 68,
+            "retweets": 1,
+            "replies": 7,
+            "isQuote": true,
+            "quotedTweetId": "2108262529571144176"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Matt Turck",
+        "handle": "mattturck",
+        "bio": "VC at @FirstMarkCap.  Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+        "tweets": [
+          {
+            "id": "2108223142699110727",
+            "text": "Full transcript here:\n\nhttps://t.co/psAlOnufeY",
+            "createdAt": "2026-10-08T15:49:00.000Z",
+            "url": "https://x.com/mattturck/status/2108223142699110727",
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2108223141055180992",
+            "text": "This conversation with the great @andy_pavlo is also available on Spotify, Apple Podcasts and here on YouTube - like and subscribe!\n\nhttps://t.co/HsxVxJvjyF",
+            "createdAt": "2026-10-08T15:49:00.000Z",
+            "url": "https://x.com/mattturck/status/2108223141055180992",
+            "likes": 2,
+            "retweets": 0,
+            "replies": 1,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2108223135673696504",
+            "text": "Special treat for the @andy_pavlo fans out there: an in-depth discussion about what happens to databases when billions of AI agents hit them, his move to build a research lab at @ClickHouseDB, and plently of hot takes on the database market (Postgres, vector, graph, GPU etc)\n\n00:00 Cold open & Intro\n01:21 From vector databases and RAG to the age of agents\n04:09 Neon's stat: agents create 80% of databases? 07:25 Why agents keep deleting production databases 08:19 Guardrails: the toddler-and-stairs rule\n10:51 The four eras of database volume: 10–100x more queries\n15:10 Agent memory: files vs. databases (\"everything is a database\")\n18:24 Which database do AI models recommend? \n19:25 \"It cites me back to myself\"\n23:14 MCP for databases, and text-to-SQL from 60% to 99.5%\n27:09 Trust an agent the way you'd trust a junior developer\n27:47 Can AI build an entire database? Opus 4 and the CMU projects\n29:57 60% of open-source databases now have AI commits\n30:43 Ten years of self-driving databases, Peloton to today\n33:52 What LLMs changed: 85% of the tuning in 15 minutes\n35:42 Should anyone still study databases?\n38:27 Free CMU courses, the DJ, and the Wu-Tang final exam\n42:09 Why start a research lab inside ClickHouse?\n45:53 Why ClickHouse looked like vaporware in 2016\n47:46 What makes ClickHouse fast: columns, vectors, Snowflake's lineage\n52:22 Why Databricks, Snowflake and ClickHouse all added Postgres\n58:15 Vector, graph and GPU databases: thumbs up or down?\n1:08:34 Is the database market stagnant? \"A cheetah on cocaine in a Ferrari\"\n1:10:14 The relational model is arithmetic; SQL as the new assembly\n1:11:59 Larry Ellison, Linux, and why databases still matter",
+            "createdAt": "2026-10-08T15:48:59.000Z",
+            "url": "https://x.com/mattturck/status/2108223135673696504",
+            "likes": 109,
+            "retweets": 18,
+            "replies": 14,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Nikunj Kothari",
+        "handle": "nikunj",
+        "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+        "tweets": [
+          {
+            "id": "2108410378233549106",
+            "text": "Met a close friend who’s also a seed stage founder today..\n\nThey have been growing but runway is dwindling and he wanted advice on what he should do next. Stellar customers, getting close to a $1M in revenue. Not a rocket ship, but not bad at all. He thinks he’s a bit early since the models haven’t caught up to the capabilities he wants but he also really feels the opportunity cost. \n\nI have this same exact  conversation at least 2x a week. \n\nIn this moment, you only have essentially three options:\n\n1) if you have intense belief in the company, be a cockroach and get to default profitable. once the capabilities get there, you feel the demand, then go raise a large round and go for the jugular. \n\n2) find an orthogonal area that is much more relevant and growing like crazy. ride the coat tails of new existing capabilities and push hard to capture them quickly using unfair advantages. and if you don’t have that, then.. \n\n3) sell / get acquihired and join a far more ambitious company that has figured out a lot of the things you haven’t. And then get back to starting a new company 1-2 years later when you find the next thing you want to build. \n\nIt’s hard but honestly those are the three options you have. And it really depends what category you’re in. The bar continues to get harder every month on how to cross the chasm from seed -> series A. The old school metrics are just not relevant anymore and in this consensus market there’s only a few categories where there’s tremendous pull on the VC front. \n\nYou could lament that this is the state of the market, but it’s better to know it’s happening than be oblivious on what is actually happening.\n\nI get to share this directly which makes me uncomfortable but at least someone has to say it out loud 🙈",
+            "createdAt": "2026-10-09T04:13:01.000Z",
+            "url": "https://x.com/nikunj/status/2108410378233549106",
+            "likes": 222,
+            "retweets": 5,
+            "replies": 19,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Peter Steinberger",
+        "handle": "steipete",
+        "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.\n@OpenClaw🦞 + @OpenAI",
+        "tweets": [
+          {
+            "id": "2108374513931165759",
+            "text": "WE GOT IT! .claw incoming! https://t.co/wn0a7q3FdL",
+            "createdAt": "2026-10-09T01:50:30.000Z",
+            "url": "https://x.com/steipete/status/2108374513931165759",
+            "likes": 781,
+            "retweets": 45,
+            "replies": 66,
+            "isQuote": true,
+            "quotedTweetId": "2108372568843448769"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Dan Shipper",
+        "handle": "danshipper",
+        "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+        "tweets": [
+          {
+            "id": "2108216876853596486",
+            "text": "yup https://t.co/bQ3CAPqhnZ",
+            "createdAt": "2026-10-08T15:24:06.000Z",
+            "url": "https://x.com/danshipper/status/2108216876853596486",
+            "likes": 44,
+            "retweets": 0,
+            "replies": 5,
+            "isQuote": true,
+            "quotedTweetId": "2108008870689788366"
+          },
+          {
+            "id": "2108215087030800657",
+            "text": "NEW JOB ALERT:\n\n@every we've built a personal benchmarking platform, Checks, to help anyone measure how good new models are for their real work\n\nwe're looking for someone who understands why this is so important, and wants to help us build it into the future of how great human work gets done with AI:\n\nhttps://t.co/Rikke9hbOP",
+            "createdAt": "2026-10-08T15:17:00.000Z",
+            "url": "https://x.com/danshipper/status/2108215087030800657",
+            "likes": 147,
+            "retweets": 10,
+            "replies": 23,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Aditya Agarwal",
+        "handle": "adityaag",
+        "bio": "General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
+        "tweets": [
+          {
+            "id": "2108260509241991586",
+            "text": "@Waymo @dmitri_dolgov @spc Full conversation out now https://t.co/WcPgl3BW1P",
+            "createdAt": "2026-10-08T18:17:29.000Z",
+            "url": "https://x.com/adityaag/status/2108260509241991586",
+            "likes": 2,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": true,
+            "quotedTweetId": "2108232022883766415"
+          },
+          {
+            "id": "2108255511443542176",
+            "text": "Full conversation at @spc https://t.co/5fNQdHCLwp",
+            "createdAt": "2026-10-08T17:57:38.000Z",
+            "url": "https://x.com/adityaag/status/2108255511443542176",
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2108254520744517652",
+            "text": "When is an autonomous vehicle actually good enough? https://t.co/VQTbWP1Jfj https://t.co/MA8e3UAYgb",
+            "createdAt": "2026-10-08T17:53:41.000Z",
+            "url": "https://x.com/adityaag/status/2108254520744517652",
+            "likes": 19,
+            "retweets": 2,
+            "replies": 3,
+            "isQuote": true,
+            "quotedTweetId": "2108232022883766415"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Claude",
+        "handle": "claudeai",
+        "bio": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+        "tweets": [
+          {
+            "id": "2108404561413349695",
+            "text": "We’ve loved seeing so many founders join the Claude Startups program. Unfortunately, we underestimated demand for the program, and we need to pause the Claude Team and $1,000 API credit offers.\n\nWith hundreds of thousands of applicants, we're re-reviewing applications so the program can serve as many startups as possible.\n\nIf you’ve already claimed the Claude offers, they’ll still remain in your account.\n\nIf you applied or were approved and haven’t claimed the offer, we're re-reviewing your application. Unfortunately, this means that some accounts who had already been approved will not get access to the offer. We know this is disappointing and we’re very sorry.\n\nAll accepted program members still have access to the Startup Stack and Applied AI office hours. If you're on a Claude Max or Team plan, your monthly API credits are available in Console as usual.\n\nWe appreciate your patience, and we're working to get you building as quickly as we can.\nhttps://t.co/cq6ce8VKlE",
+            "createdAt": "2026-10-09T03:49:54.000Z",
+            "url": "https://x.com/claudeai/status/2108404561413349695",
+            "likes": 79,
+            "retweets": 8,
+            "replies": 54,
+            "isQuote": true,
+            "quotedTweetId": "2108401845563806150"
+          },
+          {
+            "id": "2108271561337606300",
+            "text": "When a question needs deeper analysis, send the dashboard to your analytics tool. When an animation needs finishing touches, open it in your video editor.\n\nSee the full list of supported tools: https://t.co/9PSMNUDtDg",
+            "createdAt": "2026-10-08T19:01:24.000Z",
+            "url": "https://x.com/claudeai/status/2108271561337606300",
+            "likes": 584,
+            "retweets": 19,
+            "replies": 17,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2108271559928389679",
+            "text": "Starting today, Claude Docs, Slides, and Design are out of beta and available on every plan including Free.\n\nYour team and Claude can edit the same doc, deck, or design together.",
+            "createdAt": "2026-10-08T19:01:24.000Z",
+            "url": "https://x.com/claudeai/status/2108271559928389679",
+            "likes": 868,
+            "retweets": 24,
+            "replies": 20,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "xBuilders": 15,
+      "totalTweets": 32
+    }
+  },
+  "podcasts": {
+    "generatedAt": "2026-10-09T06:47:48.944Z",
+    "lookbackHours": 336,
+    "podcasts": [
+      {
+        "source": "podcast",
+        "name": "Training Data",
+        "title": "Google's AI Infrastructure Chief, Amin Vahdat, on the Physics &amp; Economics of Frontier AI",
+        "guid": "28c38604-c0da-11f1-8b1e-33a0102fe4b6",
+        "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
+        "publishedAt": "2026-10-06T09:00:00.000Z",
+        "transcript": "Speaker 1 | 00:00 - 00:35\nIn hardware, again, as you know, there is this opportunity where the more you specialize to a particular workload, the less flexible it is, the faster, the more power efficient the hardware is gonna be. So it is this art, and it's this projection of what are you designing to and how persistent is that workload. In other words, if it's gonna go away after a month or two months or three months, even if it's big for those three months, you got a really narrow window to intercept it. So it has to be somewhat durable, and you have to be able to project exact... Exactly what win you can get for specializing to it.\n\nSpeaker 2 | 00:52 - 00:56\nThrilled to welcome Amin Vedat to the show. Amin, thank you for joining us for today.\n\nSpeaker 1 | 00:56 - 00:59\nIt's really exciting to be here. I'm really looking forward to it.\n\nSpeaker 2 | 00:59 - 01:21\nI am very excited for today's topic because we are in the middle of the biggest CapEx build out in human history. You are in the middle of it. Google alone is expected to spend more than $200,000,000,000 on CapEx this year, most of which is going into building data centers. You're at the center of it all. You were named the head of Google's AI infra at the end of last year.\n\nSpeaker 2 | 01:22 - 01:30\nSo you are the man spearheading the efforts of one of the most capital intensive build outs in human history. And so I am really excited to get into it with you today.\n\nSpeaker 1 | 01:30 - 01:46\nYeah, it's a huge year, for sure, of course, across the industry, including at Google. Really, I don't think we've ever seen anything like this, honestly. Certainly not Google, but as you said, I think in the history of humanity in terms of the build outs and the pace of transformation, really unbelievable.\n\nSpeaker 2 | 01:46 - 01:55\nBefore we get into it, maybe just just crash course for the audience. What is an AI data center, and how is it different from a non AI data center?\n\nSpeaker 1 | 01:55 - 02:18\nIt's a very good question in that AI data center and a non AI data center do have a lot of similarities, actually, and they're not radically different. I mean, it consists of concrete, an enclosure. It consists of electrical yards, mechanical yards, cooling. You have row after row of power being distributed. There's a huge amount of network infrastructure there.\n\nSpeaker 1 | 02:18 - 02:43\nIn other words, we connect large amounts of computes to one another. A fair amount of storage infrastructure goes in there. I think that the big difference that we're seeing with AI infrastructure is specialization. In the past, when we're building a data center, it really is a twenty, twenty five, thirty year building investment. And we're thinking about how it's going to be evolving over that twenty, twenty five, thirty year period.\n\nSpeaker 1 | 02:43 - 02:59\nYou might have servers go into it. You might have networking storage. You might have some accelerators, GPUs, TPUs, whatever they might be going into it. But it's a twenty five, thirty year planning horizon. And the lifetime of the hardware might be six years.\n\nSpeaker 1 | 02:59 - 03:21\nSo many generations that we have to plan for. An AI data center oftentimes is going to be more purpose built. So in other words, we are oftentimes co designing the building with the hardware that might go into it. We might be saying, you know what, actually, we're not going to put a lot of storage into this building. Why?\n\nSpeaker 1 | 03:21 - 03:56\nBecause a storage rack might have 10, 20, 30, 40 kilowatts of power. You put that next to a TP rack or a GP rack that easily is hitting hundreds of kilowatts today, might hit megawatts people are talking about that in the next few years. Designing a building that might take 30 storage racks in a row versus one or two AI racks in that same row very, very different design. Just think of it in terms of the size. Think of it in terms of the power and how that would be distributed across the building, etcetera.\n\nSpeaker 1 | 03:56 - 04:27\nNetworking would be the same. The amount of networking that you would need for a storage rack, tiny, especially if it's hard drives, compared to an AI rack. So if you're trying to make it fully fungible, you'll probably make it too big and too overbuilt, fungible over certainly a thirty year period. An AI data center likely is gonna be much more purpose built, co designed with the hardware, even to the point of cooling and power distribution, etcetera. So a lot more co optimization.\n\nSpeaker 2 | 04:27 - 04:38\nYou all delivered a big bilirubin cluster to one of my portfolio companies, Inaffable Intelligence, and I saw the photographs of it as it went out. That is a thing of beauty.\n\nSpeaker 1 | 04:38 - 04:39\nIt is. It is.\n\nSpeaker 2 | 04:39 - 04:49\nIt's one of those things where, similar to looking at the biggest construction projects in human history, you look at that data center and it's like, wow, that is a monument to what mankind can do.\n\nSpeaker 1 | 04:49 - 05:14\nNo, we got a nice picture of it, and this is just a couple of racks. The cabling, the fiber distribution for it is really beautiful. Beauty is not the beholder, but for folks like me and probably yourself and others in the audience as well, it is a thing of beauty. We put this picture up on social media and people love the fact that ineffable, they're a huge fan of what they're doing, fantastic team. That got a lot of attention.\n\nSpeaker 1 | 05:14 - 05:29\nOkay, great rack for ineffable, but actually people just loved seeing the pictures of the fiber and the fractal nature of the fiber. One of the most popular posts that we've ever had actually was around that. So yeah, absolutely. We're really, really excited about that.\n\nSpeaker 2 | 05:29 - 05:42\nYeah, I had goosebumps seeing the picture. How do you measure and hold yourselves accountable in the middle of this big build out? We were talking right before the show about how FLOPS is a vanity metric, and you prefer an alternate metric. Can you say more?\n\nSpeaker 1 | 05:42 - 06:13\nYeah, so I think one thing to note is that whether it's FLOPS or pick your other favorite chip centric metric, these are in theory. In other words, under some conditions, for whatever chip you have, this is the maximum amount of FLOPS that you can deliver. What we really care about in the end is what's the performance delivered by workload. That's what we're looking at. And rarely, it happens, but actually relatively rarely, is that performance determined by a single chip.\n\nSpeaker 1 | 06:13 - 06:47\nIt's FLOPS, it's HBM, it's SRAM capacity, etcetera. Those are all super important. But it might be how two, four, eight, 16, 1,000, 10,000 more of these chips composed together with not just the accelerators, again, whether TPUs or GPUs, but then the CPUs that might feed them the data, the network that connects them all together. So what is the workload that you're running, and what is the performance of that workload? One measure that is interesting is what's your FLOP's utilization.\n\nSpeaker 1 | 06:47 - 07:00\nSo for example, for a particular workload, if you have, in theory, TeraFLOP or a PedaFLOP capable for your workload, what fraction of that are you delivering? Now, that's a measure of good put.\n\nSpeaker 2 | 07:00 - 07:01\nWhat is that? What is good put?\n\nSpeaker 1 | 07:01 - 07:18\nSo you can think of throughput, which is a well known term. That's the throughput that is possible. But now let's consider some other considerations. One is, what is the slowdown of the workload? Again, just inherent to the workload, but other aspects of it that really hits our reliability.\n\nSpeaker 1 | 07:18 - 08:06\nSo in terms of how we hold ourselves accountable, if we have a chip failing for a synchronous workload, and many of these workloads, whether training or serving or agentic workloads, they're synchronous. There's many, many components that are working together simultaneously. Now if you have, let's say, 1,000, 10,000, 100,000 of these components working together simultaneously, and they're really needing to coordinate at microsecond or millisecond granularity. One of them fails, it might actually bring the whole thing to a stop because everyone is counting on everyone else to do that part of the job in order to come up with the answer to a really tough question. One of them stops, now we have to figure out what happened, which one stopped, what's a checkpoint that we have of the computation at some previous state in time, how do we restore that checkpoint, how do we restart?\n\nSpeaker 1 | 08:07 - 08:32\nWorst case, we have to restart from the beginning. That would be really bad, but that can happen in certain cases, especially the inference side. The point here is that if you now then have to go back and redo a bunch of computation, if you then have to pause and wait to figure out what happened for the failure, all that work is work. It's not actually helping you get the answer. Terms of, let's say that you're working out a problem on paper.\n\nSpeaker 1 | 08:32 - 08:59\nStep one, step two, step three, step four. If you have to go back to step one because you've made a mistake, yes, you're still doing work, that's throughput, you're doing work, but what is the good put in delivering your answer? It's basically the total amount of time it took you to solve the problem. That's what matters. And if you have failures, if you have failure recovery, if you have whatever it is that's interrupting your work, that's part of the issue.\n\nSpeaker 1 | 08:59 - 09:16\nSo now, how do we hold ourselves accountable? It's delivered goodput, not theoretical benchmark throughput or goodness in theory, but actually for a workload, for real failure conditions, what's happening. And the unfortunate reality is that at 100,000 accelerator scale...\n\nSpeaker 2 | 09:16 - 09:18\nI was going to say at that scale, something's filling all All the time,\n\nSpeaker 1 | 09:19 - 09:36\nthe time. And each one of these, as you're aware, each one of these chips is a wonder of nature. I mean, they're at the very bleeding edge of what's possible to manufacture. And so again, to me, it's stunning. And now, actually, these chips aren't just one chip.\n\nSpeaker 1 | 09:36 - 10:01\nThey're packages made up of, in many cases, two, four, eight, maybe more chiplets that are composing together. And then, of course, HPM off to the side, network connectivity, maybe things like co packaged optics. No criticism, lots of things can fail. And now if you've 100,000 of them, something is going to fail. You have to be prepared for that, detect that in near real time, recover from that in near real time.\n\nSpeaker 1 | 10:02 - 10:24\nDoing all that, it's really like finding the telemetry problem is massive. It's like finding a needle in the haystack continuously across certainly seconds and minutes, but for some of these jobs, hours and days and even weeks. Just continuous and online. How we hold ourselves accountable is what's the good put that we deliver for the workloads that actually matter in the data center.\n\nSpeaker 2 | 10:24 - 10:26\nIs good put a Google term or is it an industry term?\n\nSpeaker 1 | 10:26 - 10:31\nIt's a Google term, but I think more and more people across the industry are starting to pick it up.\n\nSpeaker 2 | 10:31 - 10:39\nAnd then just to calibrate me, 100,000 accelerator scale, are we talking it's going to fail once a minute, once a day?\n\nSpeaker 1 | 10:39 - 10:52\nMany 100 times thousand accelerators. So let me see. I think that it is definitely going to be at the scale of multiple times a day and perhaps depending on the exact configuration, multiple times an hour, something is going to fail.\n\nSpeaker 2 | 10:52 - 10:54\nAnd what are the most common failure reasons?\n\nSpeaker 1 | 10:54 - 11:10\nThis is the problem. Actually, a very good question. If there were a common failure reason, we'd have figured it out and fixed it. It is a long tail of constant discovery. Whenever we have a new product that's being introduced, there's going to be something that hits us.\n\nSpeaker 1 | 11:11 - 11:27\nIn many cases, frankly, because again, it's at the very bleeding edge, it might be network related. It might be how we connect these things together at super high speed. That might be something to do with the hardware. Those things we work through. But then a lot of the issues could be software.\n\nSpeaker 1 | 11:27 - 11:52\nSo this is the other aspect of how we hold ourselves accountable. Again, the chip might be capable of a certain level of flops. But if you have a compiler bug, a runtime bug, a model issue, something else, operating system issue, doesn't matter, that's going to impact the end to end system performance. So you might have perfect hardware, fully reliable, but then you might have software issues that hurt you.\n\nSpeaker 2 | 11:52 - 12:12\nIs there a standard reference stack from the accelerator companies, from NVIDIA or from the TPU team of, here is the optimal system to build around our accelerators. And as long as you build to that system, you're good? Or how much of your own kind of data center design do have to do above and beyond what the semiconductor companies give you?\n\nSpeaker 1 | 12:13 - 12:26\nRight. So there's a reference stack. And I mean, would say that NVIDIA is an incredible whole systems company. They're obviously a semiconductor company, but they're not just a semiconductor company. They give you a really, really strong reference stack.\n\nSpeaker 1 | 12:27 - 12:53\nBut I would say that many, we find that the way I'd put it is most of our customers leverage that reference stack, but many also specialize. So in other words, they might find that as natural for their particular use case, They have an optimization opportunity or something different that they need to do, and they're going to do that. Similarly for the TPU side, we have a reference stack. But then most people will leverage that. Many will specialize it as well, though.\n\nSpeaker 2 | 12:53 - 13:04\nGot it. And then I guess in terms of overall capacity, you've told your teams that Google has to roughly double the serving capacity every six months or so. Is that right?\n\nSpeaker 1 | 13:04 - 13:33\nWell, to be clear, this is in terms of effective available capacity from the way in the end that we look at it is from a serving perspective, its token generation capability. So capacity, and this is where I would say it's a combination of software and hardware. The hardware might have some quote unquote inherent level of flops. What I'm saying here is not necessarily you have to double the number of flops every six months. That's one one path.\n\nSpeaker 1 | 13:33 - 13:59\nYou have to double the capability of that hardware to generate tokens every six months. And as much or more of that is going to come from software as it is from hardware. So in other words, it could be a model optimization that delivers that. It could be some runtime optimization that delivers that. It's really probably going to be dozens or hundreds of individual optimizations that are just landing again and again and again to make it all possible.\n\nSpeaker 1 | 13:59 - 14:03\nBut yes, the rate of capacity improvement is incredible.\n\nSpeaker 2 | 14:03 - 14:27\nI guess we've had a few years of data center build out now and a few years of model progress and software progress. What has been the empirical breakdown of how much capacity maybe as measured by intelligence per watt, how much capacity increase has come from the silicon itself versus the models versus other software and any other kind of big components?\n\nSpeaker 1 | 14:27 - 14:51\nYeah, it's a really good question. I don't have the exact breakdown, but I would say that in our experience, most of the benefits come from model side improvements in terms of intelligence per watt. And by way, intelligence per watt is a fantastic metric. We also, for us, it's good put per watt, and we can come back to why the watts need to be the denominator. Good put could well be a measure of the intelligence delivered per watt.\n\nSpeaker 1 | 14:51 - 15:07\nIn other words, good put is a workload specific metric. But I would say most of the gains often come from the model side. Software system, quite a bit. Why? Because they're able to actually make sure that the hardware that you have is being used effectively.\n\nSpeaker 1 | 15:07 - 15:32\nAnd then the hardware, it is pretty stunning. In other words, we're living in a world right now where 2x or more year over year performance improvements is absolutely possible. And so the hardware does support it. And if you want, it's a free multiplier not free, but everyone else above it can count on it in terms of that being a multiplier that lifts everyone else up year over year.\n\nSpeaker 2 | 15:32 - 15:45\nI'd love to talk a bit about the TPU program and co design. So Google started building custom silicon more than a decade ago. It was contrarian call at the time. How has the TPU program evolved?\n\nSpeaker 1 | 15:45 - 16:03\nQuite a lot. Mean, when the program started 2013, it was really a contrarian call. And I mean, I think that at the time, it's hard to put yourself back into the moment 2013, conventional wisdom. All the smartest, wisest people would say, you don't build a custom built accelerator for a single workload. Why?\n\nSpeaker 1 | 16:03 - 16:15\nBecause Moore's Law is there, doubling of performance every whatever it is, eighteen or twenty four months is there. You get to leverage standard programming models, all your C plus plus code, etcetera, Java, Python, whatever it might be.\n\nSpeaker 2 | 16:16 - 16:17\nLike the bitter lesson of chips.\n\nSpeaker 1 | 16:17 - 16:45\nYes, exactly. It's like the bitter lesson of chips is that specialization never wins. But in this particular case, was we have this one application, or a few, a small number of them, that would benefit tremendously and that would require an unimaginable amount of general purpose CPU to support. So really, in 2013, was a bet. And there were quite a few people, even within the company, I would say, who were not sure that it would work out.\n\nSpeaker 1 | 16:45 - 17:04\nSo it was a bet. It turned out to be a massively successful bet. So the first chip was all about inference. The second chip was, hey, actually, we can take the same idea and build a training chip. From there, it got picked up for more and more use cases.\n\nSpeaker 1 | 17:04 - 17:30\nAround the time the second chip came out, transformers were invented. This was a major, major moment, and that actually completely shifted the TPU program. We, of course, learned that recommender systems could run really, really well on the TPUs. And so ads and related use cases came along. So I would say that change in evolution has been one of expansion in scope and impact.\n\nSpeaker 1 | 17:30 - 17:55\nIn other words, to start with a really impactful use case of a couple of applications for inference serving. This was language translation primarily and voice recognition to then training to then transformers, recommender systems, and continuing to generalize as, I guess, the Gen AI moment took a hold to ever larger, ever more scalable systems as well.\n\nSpeaker 2 | 17:55 - 18:13\nYou mentioned the moment the transformer came through being a major moment. I'm curious to explore, the TP was like a specific architecture, but it wasn't specific to the transformer specific. How do you kind of straddle the fine line of how specific you want your chip to be for the workload?\n\nSpeaker 1 | 18:13 - 18:37\nThis is a great question. And I think that it really comes down to the applicability of the chip to a particular workload. So in other words, in the end, we've been thinking about this for every generation. Would we further specialize? The question that we were facing, let's say, two years ago or a little bit more was, in 2026, should we have two chips or one?\n\nSpeaker 1 | 18:37 - 19:38\nWe could have one chip that could do inference and training simultaneously and do both quite well. Or we could have two chips, one that was further specialized for inference and the second one that was further specialized for training. This analysis and this work led to the release of two chips this year, 8I for inference, 8T for training. And in the end, what we realized is that it wasn't the case necessarily a couple of years ago, but by 'twenty six, we saw inference and serving really taking off. And so having a chip that would be significantly faster for serving that we thought might be 30%, 40%, 50%, 60% of the market in its lifetime started making a lot of sense for us relative to if we projected inference to be 2% or 5% of the market, even if that specialized chip is, let's say, 2x faster, it might not make sense, because you'd actually go for the one general purpose chip that's not fully optimized.\n\nSpeaker 1 | 19:39 - 19:58\nThat's Okay because you now have the uniformity, etcetera. So really, it does come down to a calculus question of, Okay, you further specialize? How big is that workload? How big is that workload projected to be in couple of three, four years? Is this a sustained growth for a particular workload?\n\nSpeaker 1 | 19:58 - 20:34\nIn hardware, again, as you know, there is this opportunity where the more you specialize to a particular workload, the less flexible it is, the faster, the more power efficient the hardware is going be. So it is this art, and it's this projection of what are you designing to and how persistent is that workload. In other words, if it's going to go away after a month or two months or three months, even if it's big for those three months, you've got a really narrow window to intercept it. So it has to be somewhat durable and you have to be able to project exactly what win you can get for specializing to\n\nSpeaker 2 | 20:34 - 20:40\nSo the rough trade off is there's a large fixed cost to support a new program.\n\nSpeaker 1 | 20:40 - 20:40\nYes.\n\nSpeaker 2 | 20:40 - 20:45\nAnd you basically have to think that there's going to be enough demand for that specific program to justify\n\nSpeaker 1 | 20:46 - 21:08\nthe Exactly. And to some extent, for example, for our 8i and 8T chips, both chips can do the other workload. This is also key. If 8i could only do inference and it couldn't do training at all, it had zero performance for training, and then vice versa. If 8T was amazing at training and had zero performance for inference, that would have also been a key limitation.\n\nSpeaker 1 | 21:08 - 21:34\nWhy? Because we would have to predict ahead of time, over a six year period, lifetime of the hardware, exactly how much we need of each. In this case, it was nice because both chips are better at what they're specialized for. But if you needed to, if you had leftover capacity in one place or the other, both can actually do the other's job. Depending on the specialization you do, you might get so specialized that you actually limit yourself from being flexible, fungible.\n\nSpeaker 2 | 21:34 - 21:48\nAnd if the rough trade off then is kind of size of program on the other end, it seems to me that so much of the modern AI market is transformer based. And so maybe just ask a provocative question, why not just burn the transformer architecture into the chip?\n\nSpeaker 1 | 21:48 - 22:16\nYeah, so I think that it's transformer based, but then the next level of question would be transformers in the end are about vector and matrix multiply operations. And a softmax, there's a range of essentially linear algebra primitives. We have those, and others do as well, roughly baked into the hardware. It's all transformer based, but then your model architecture is, Okay, how many layers do you have? How do you go through the layers?\n\nSpeaker 1 | 22:16 - 22:35\nHow do you go across the layers? For each dimension, what exact shape of matrices and vectors are you applying? You could go further and specialize to not just the transformer, but your model. That's the next level of specialization. I think there are a number of companies out there that are thinking about that.\n\nSpeaker 1 | 22:35 - 22:37\nI think it's a very, very interesting direction as well.\n\nSpeaker 2 | 22:38 - 22:48\nOkay. So at this point in time, do your customers view TPU and GPU as roughly fungible equivalents? Or is there a certain set of problems that is better suited for one or the other?\n\nSpeaker 1 | 22:48 - 23:04\nThere's for sure a better set of problems that are better suited for one or the other. GPUs are more general purpose than TPUs, for one. That is clear. They're incredible products at Google and Google Cloud. We sell a lot of GPUs.\n\nSpeaker 1 | 23:04 - 23:21\nWe use GPUs internally. But I think it really then comes down to the specifics of your problem. So I think that our customers there is overlap between the two. But our customers then evaluate their workload and evaluate their options. What we like to do at Google is give our customers choice.\n\nSpeaker 1 | 23:21 - 23:29\nIn other words, we want to have the right solution for their needs and, of course, provide the solution that best meets their needs for them.\n\nSpeaker 2 | 23:30 - 23:37\nWhat is the case for co design from the chip to the network to the software? And then what is the case against co design?\n\nSpeaker 1 | 23:37 - 24:09\nYeah. So there's huge optimization opportunities with co design. And so what you can imagine is that if you have a n layer stack and you want to be able to pick and choose whatever component you want let's say you're running across many clouds or you're running across many pieces of hardware, many pieces of software you could design abstraction layers that would basically say, I can run on any hardware. I can run on any software. I can run on any network topology, any amount of network that you give me.\n\nSpeaker 1 | 24:10 - 24:21\nNo problem. And my system is going to be fully adaptive. Very likely, so now you have a great capability. You can move anywhere. New capacity becomes available.\n\nSpeaker 1 | 24:21 - 25:00\nOvernight, you're up and running because you've designed your system that way to actually be able to take advantage of anything. You have not hard coded or specialized at all to anyone's particular infrastructure. Downside is you probably leave a lot of performance on the table if you become fully fungible, if you become fully flexible to anybody's hardware, software, network, storage, compute, etcetera, stack. So the case for co designing is between each one of those layers, there's a big impedance mismatch if you try to get full generality. And so there might be 10%, 20%, 2x across each of these layers.\n\nSpeaker 1 | 25:00 - 25:34\nYou start multiplying those optimization opportunities through, and all of a sudden, you're left with a big end to end opportunity in terms of whatever you want to say, intelligence per watt or good put per watt that you can leverage, even again, all the way down to power delivery and power availability, software optimizations, etcetera, etcetera. So pros are you can run anywhere, anytime. You have no lock in. Cons are you're leaving significant, in all likelihood, significant amounts of performance on the table.\n\nSpeaker 2 | 25:34 - 25:54\nSo my understanding is that if you took OpenAI and Anthropic, OpenAI was kind of primarily building on a homogenous compute stack and Anthropic was building a roughly more heterogeneous compute stack. Do you think that's part of the reason, that co design is part of the reason why they converged on what is rumored to be very different architectures for their models?\n\nSpeaker 1 | 25:55 - 26:12\nI can't speculate. I don't want to speculate in terms of what OpenAI and Anthropic are doing. It's one possibility. But I think that without knowing the details of what they're doing, I would imagine that there could be many reasons for why they wind up with different Well, what about\n\nSpeaker 2 | 26:12 - 26:23\nfor Google then? I'm curious what the working relationship looks like between your team and DeepMind. Who's in the room, at what stage of model development, and how are you making decisions together on co design?\n\nSpeaker 1 | 26:23 - 26:48\nIt's one of the most fun and frankly gratifying parts of being at Google, is the opportunity to work really shoulder to shoulder with the DeepMind team in terms of co design of our hardware and models. There's a third element to it in terms of that we also get to extend that with the consumer services and cloud. I'll put that aside for a moment. I can come back to that. But with respect to DeepMind, it really is a deep partnership.\n\nSpeaker 1 | 26:48 - 27:38\nSo from the past, I can give you examples where they have come up with model optimizations, let's say, to transformers or to particular math that they might want to do. And we might have a chip in progress, not quite done. But then they say, oh my gosh, if we had hardware support for this, our end to end training or serving might get significantly faster, more efficient. What would it take to actually now change our hardware definition that we might be in execution on to accommodate? And this then leads to our engineers and researchers getting together intensely in the same room for a few days, a week, two weeks, saying, Okay, yes, we can do this.\n\nSpeaker 1 | 27:38 - 27:57\nMore likely, we couldn't quite do what you wanted, but we can do this other thing. And then maybe you can change your model architecture in this other direction. That gives you 98% that gives us 90% of what we were looking for. And yes, we can then go back and intercept the hardware. And or we can say, you know what?\n\nSpeaker 1 | 27:57 - 28:18\nWe're going to delay the tape out by a week or two weeks because, wow, for this level of benefit, it's totally worth it. Similarly, when we're projecting our roadmap out and it's time for... We have many generations of chips that are essentially in progress at any one point in time. We have the chips that are in production. That's one.\n\nSpeaker 1 | 28:18 - 28:44\nWe have the chips that we're working on getting into production. They're already back from the manufacturer, we're debugging them, making them work. We have the chips that are in implementation that are about to tape out and go to the manufacturer. We have the chips that are in design phase, and then we have the chips that are in concept phase. So it's really this five, six stage, many, many year pipeline from in production to in your mind, etcetera.\n\nSpeaker 1 | 28:44 - 29:18\nThe collaboration with DeepMind in production is significant because we get to work together in maximizing delivered intelligence or delivered good put per watt. And we know exactly what's happening in the model, and we know exactly what's happening in the hardware and everything in between. We also get to collaborate deeply on the chips that are actually just about to tape out. Why? Because we can intercept, and we can make changes to the chip literally, chip architecture in flight, which would be somewhere between hard and impossible to do if we were working across company boundaries.\n\nSpeaker 1 | 29:19 - 29:50\nNot impossible, but it would be much harder for us to say, oh my gosh, we're a few weeks or a few months away from getting this chip done, and now let's get in the same room shoulder to shoulder and figure out if we should disrupt the program. It's possible, but harder is what I would say. And then, of course, for the chips that are in design, we have many architectures we can evaluate together. We can then ask our colleagues in DeepMind, where do you see model architectures going in two, three years' time? Here's the Pareto of things that we can do.\n\nSpeaker 1 | 29:50 - 30:15\nHere's the Pareto of where model architecture is going. We have actually deep and significant simulation infrastructures that can predict how the workloads are going to map to different hardware architectures. Deep, deep and fast iteration. It really isn't the teams are working separately. It's same building, same rooms many times, deep daily interaction.\n\nSpeaker 1 | 30:15 - 30:23\nI talk to whether that's Coray or Demis multiple times a week, etcetera. So it really is a super fun aspect of the work.\n\nSpeaker 2 | 30:23 - 30:27\nThat's awesome. And eventually their models will help with chip design.\n\nSpeaker 1 | 30:27 - 30:30\nWe're using Gemini to design hardware for future Geminis as well.\n\nSpeaker 2 | 30:30 - 30:49\nThat's very cool. I want to come back to that On a little bit the collaboration itself, I guess, is there an impedance mismatch still of just... I figure the cycle times are probably just slower when dealing with hardware than your DeepMind folks get to deal with on the software side. And I figure your planning cycles are much further ahead.\n\nSpeaker 1 | 30:50 - 30:50\nFor sure.\n\nSpeaker 2 | 30:51 - 30:53\nAnd so how much room do you actually have to adjust?\n\nSpeaker 1 | 30:54 - 31:12\nYeah, it's a really good question. We are planning hardware two, three, four, five years in advance. No question. In other words, we talked about TPU-eight, I and AT, just now that we announced. But you can imagine that nine, ten, and maybe some others are in concept execution to something else.\n\nSpeaker 1 | 31:12 - 31:44\nAnd they might be years out. If you're working with model architecture, by default, you're not going be thinking years out. But I think this is also the great thing about how the company has grown up together. And in other words, Google Research and DeepMind and Transformers being invented, all of this was happening in these overlapping rooms as well. So in other words, there's a whole generation of researchers who've grown accustomed to being able to influence the hardware and knowing that the hardware is operating on multiyear cycles.\n\nSpeaker 1 | 31:44 - 32:19\nAnd they also know that, look, if they have a small tweak that's going to deliver like 1% or 0.5% or something like that for a chip that's about to tape out, they're probably not going to come to us. Because they know enough to know that actually it's not like software where you can just do a change list and it's going to ship to production in two weeks' time. Actually stopping a tape out is a big deal. But they also know if they've got a really good opportunity, yes, we're absolutely going to work together to figure out if we can get it in there. So as I said, it's multiplicative in terms of where the benefits come from.\n\nSpeaker 1 | 32:19 - 32:33\nThe hardware does lift all the tides. And so significant portions of the DeepMind team, we're so grateful for it. It's an amazing team. But significant portions of it are thinking about how do I influence the roadmap? Because it's actually a pipeline.\n\nSpeaker 1 | 32:33 - 32:41\nLike the idea I had two years ago, it's in production now. And it's helping all the workloads at Google go faster. That's a good feeling.\n\nSpeaker 2 | 32:41 - 32:54\nTotally. It seems like an impossible task, though, to predict in five years what workloads will be most common and what algorithmic breakthroughs will have occurred. Doesn't it seem like an impossible task?\n\nSpeaker 1 | 32:54 - 33:25\nI hear you that it would seem like an impossible task, but here's the awesome thing. And actually, we're working on writing this in great detail, and it's lot of fun to do it. The stunning thing is that the TPU architecture at a medium level of detail, not at a super high level of detail, at a medium level of detail hasn't really changed since TPU v1. One way to look at it is the instruction set architecture for a CPU. You've got loads, and you've got stores, and you've got adds, and you've got subtracts and branches.\n\nSpeaker 1 | 33:26 - 33:39\nAnd yet, what has the software on top of it done over that period of time? Same thing with TPUs. We have some fundamental instructions and some fundamental primitives. Of course, we've extended it. It's not like the instruction set hasn't gotten changed at all.\n\nSpeaker 1 | 33:39 - 34:15\nBut the primitives there in terms of specializing the numerics to very big, very large matrix multiply units, a sparse core that manages vector operations and scatter gather operations, etcetera. There's five or six things that really define a remote load store. That's another one, actually. We can read and write remote memory through our ICI network. The fundamentals have been there, and they've extended just to many generations of models, many generations of even deep neural network algorithms and model structures.\n\nSpeaker 2 | 34:16 - 34:27\nOkay, speaking of shifting workloads, it seems like one of the biggest changes in workloads over the last year or so, I think it really started at beginning of this calendar year, was the rise of the long horizon agent.\n\nSpeaker 1 | 34:27 - 34:27\nAnd\n\nSpeaker 2 | 34:29 - 34:37\nI would guess that's a very different shape of workload than the quick turn LLM conversations of years past. What does that mean in terms of data center needs?\n\nSpeaker 1 | 34:38 - 35:00\nYeah. So I think there's two huge aspects to this. One is it's no longer human to, whatever you want to say, accelerate interaction. In other words, when you are typing at a prompt on a web browser or on your phone or whatever, of course, in response to your prompt, there's going to be a bunch of work that happens. But then when the response comes back, you've got to read it.\n\nSpeaker 1 | 35:00 - 35:30\nYou've got to think about it, and then maybe you have a follow-up. That's going to be multiple seconds of interaction time. Now on Deep Horizon agents, there's no human in the loop that is going to naturally rate limits how quickly requests are going to go to the model. So this, what went from seconds, maybe tens of seconds in terms of interaction time, is now going into perhaps milliseconds. As soon as I get a response back, I can parse it, I can reason about it perhaps a bit, and I can figure out what my next request is going to be.\n\nSpeaker 1 | 35:31 - 36:03\nSo that's big change one. Big change two is all that reasoning and all that parsing is going to probably happen on a CPU. And that CPU is then going to have to probably think about, okay, what other state do I need to go gather before making my next prompt back into the model? Like, in other words, I've learned something from this response. I'm going to take another step, but I actually need to go grab some context, maybe from DRAM, local to me, maybe from someone else's DRAM, on another CPU, maybe on SSD, or maybe on HDD, somewhere else.\n\nSpeaker 1 | 36:03 - 36:24\nSo now a huge amount of orchestration has to take place as well. So the design actually is changing pretty significantly, where the demand for accelerated compute is going up. But the demand for CPU and networking and storage, the traditional data center CPU, etcetera, is also going through the roof.\n\nSpeaker 2 | 36:24 - 36:28\nSo does that mean you're putting more CPUs alongside your GPU racks then?\n\nSpeaker 1 | 36:29 - 36:54\nGPU racks? Yeah, GPU, TPU racks. This is the key question, going back to this question of optimization and specialization. If we start putting lots of CPU racks and it is a question next to the GPUs and TPUs, that means that actually we can't fully specialize to the density and network requirements, let's say, of a TP rack relative to a CP rack. A TP rack is going be more dense than a CP rack.\n\nSpeaker 1 | 36:55 - 37:20\nIt's probably going need more networking than a CP rack. So in other words, now our building design is going to change. Another option is maintain your uniformity, put your TPUs or your GPUs all in one building. And the building next door, maybe put your CPUs. Maybe, by the way, the hard drives have to be in another building on the other side because they have yet another set of requirements.\n\nSpeaker 1 | 37:21 - 37:47\nNow you need networking between these buildings at a pretty significant level. So once you leave a building, the networking complexity goes up significantly. From a reliability perspective, from a cost perspective, latency goes up probably acceptably, but still now you might go to hundreds of microseconds, potentially more with queuing between the components. So the considerations do change in pretty interesting ways.\n\nSpeaker 2 | 37:47 - 37:48\nYour job is hard.\n\nSpeaker 1 | 37:48 - 37:51\nIt's fun. It's fun. It's fun. Yeah.\n\nSpeaker 2 | 37:51 - 38:04\nWhat's happening on the networking side? And I've heard that Google's always been at the forefront of the newest in networking, including optical. Can you say a word on what is the state of optical networking?\n\nSpeaker 1 | 38:04 - 38:46\nWe at Google, this was probably fifteen, sixteen years ago, were among the first to bring essentially what's called wave division multiplexing, where you could put multiple signals on a single fiber within the data center. And we actually leverage that for all of our communication between racks. At the same time, we introduced technology along with wave division multiplexing called optical circuit switching. And essentially what optical circuit switching does is, in contrast with traditional electrical packet switching, what it does is it transmits and moves data entirely in the optical domain. The great thing about that is...\n\nSpeaker 1 | 38:46 - 39:03\nAnd so let me describe the technology that underpins it. In a in a packet switch, you would take a packet that has a header. You would look at it, in the electric domain, figure out where the packet is headed. In its header, it might have an IP address that says, okay, where do I head it? You look up...\n\nSpeaker 1 | 39:03 - 39:28\nOkay. For that destination, you look up in a table, what port do I forward it along? So, basically, billions, billions and billions, perhaps trillions of packets coming through at super high speed per second, you're forwarding them along. Optical circuit switching says, I'm not touching these bits in the electrical domain. What I'm going to do is I'm going to figure out for an input port which output port to send the light to.\n\nSpeaker 1 | 39:29 - 39:45\nOkay? And now I have... There's multiple ways to do this. The one that we started with is called MEMS switches, microelectrical motors, that basically control mirrors in three d. So we can now programmatically take a box that might have...\n\nSpeaker 1 | 39:45 - 40:30\nYou pick 128 ports, 256 ports, some number like that, and we can configure every input port for fiber that comes into it, map it to an output port, and then change the rotation of mirrors where the light literally shines down on these mirrors and gets reflected to the right output port. Initially, the reason we did this twofold was to create locality between groups of racks. Let's say I had a compute cluster and a storage cluster, and both of them were in support of, again, making it up search. We knew that these two clusters would talk to each other a lot, so we would configure the mirrors to create shortcuts purely optically between those two clusters, clusters of racks. That was reason number one.\n\nSpeaker 1 | 40:30 - 41:02\nReason number two was we wanted to be able to expand the network and contract the network without actually moving any fiber. And without working into the details, I could draw this on a board. The optical circuit switch would allow you to actually reconfigure the spine of the network to expand it or to shrink it without a human being, having to do anything other than be literally a controller that would manage that. Now fast forward to TPUs. A TPU has a torus topology that connects all the TPUs to one another directly.\n\nSpeaker 1 | 41:03 - 41:27\nI talked about throughput and goodput earlier. One of the things that we can do is if we have a TPU rack that fails, we can replace it with another TPU rack without moving any fiber. Again, I'd have to wave my hands or draw out a whiteboard. But, essentially, we can say we have a spare rack available at all times. And when a rack fails, we redirect the light to that new rack.\n\nSpeaker 1 | 41:27 - 41:30\nAnd that can be done in milliseconds.\n\nSpeaker 2 | 41:31 - 41:32\nDo you have the fiber at all then?\n\nSpeaker 1 | 41:32 - 41:40\nAs opposed to fully free space. Yeah. Yeah. It's a very good question. Attenuation loss and the bandwidth would drop dramatically.\n\nSpeaker 1 | 41:40 - 42:14\nFurthermore, across the range of a very large building, aiming everything without the benefit of fiber to connect it all together in three d would be challenging to possibly impossible. We've talked about it. We've talked about it, actually, and there have been some really interesting discussions. Yes, it's mostly in fiber, but then when they hit the optical circuit switch, essentially the light then literally shines down on these tiny chips. So that's one big direction of networking, but there's a lot.\n\nSpeaker 1 | 42:14 - 42:21\nI would say networking is exploding in terms of its capabilities and need, frankly, in the data center.\n\nSpeaker 2 | 42:21 - 42:23\nSo cool. We're have an entire conversation on\n\nSpeaker 1 | 42:23 - 42:25\nYes, it is very, very cool.\n\nSpeaker 2 | 42:25 - 42:29\nEven going back to the picture from ineffable, it was all the cables that cut out Exactly. Of these\n\nSpeaker 1 | 42:30 - 42:35\nYeah, and those cables, eventually, of them wind up at optical circuit switch in our data centers.\n\nSpeaker 2 | 42:35 - 42:47\nMakes sense. Okay, I want to flip to talking about power. You've been talking about good put per watt and other units per watt. Makes me think per watt means power is kind of the binding constraints or the scarce constraints or the expensive constraints in some way.\n\nSpeaker 1 | 42:47 - 43:00\nSo I get asked this question, what is the biggest constraint that we face? And the reality is there is no single biggest constraint that we face. They're all constraints. They're all super hard. And they shift continuously.\n\nSpeaker 1 | 43:00 - 43:37\nBut if I had to answer fundamentally, I would say that power is the single most fundamental constraint that we face. Everything else seems like we know how to solve them, and it's a question of solving them over some period of time. Power, I think the way that you put it is really nice. It's a binding long term issue that we do not have a I mean, Perhaps nuclear is going to abundant clean energy, which would solve a lot of problems for sure. When that happens and when it happens at scale, still unknown.\n\nSpeaker 2 | 43:37 - 43:51\nAnd so how does it work in practice? You're standing up a new data center. It needs a gigawatt of power. I imagine you can't just call PG and E and say, Hey, please send a gigawatt of power. So what does provisioning power actually look like?\n\nSpeaker 2 | 43:51 - 43:58\nAnd are you having to actually vertically integrate all the way down doing your own turbines? How do you solve the power bottleneck?\n\nSpeaker 1 | 43:58 - 44:10\nYeah. Again, it's a big question, an important question. Our preferred model at Google is always to be connected, to be grid connected. So it's the equivalent of calling your...\n\nSpeaker 2 | 44:11 - 44:12\nOh, so you can't just call PG and E.\n\nSpeaker 1 | 44:12 - 44:29\nExactly. You call very politely your favorite utility, wherever it is that your data center is. Of course, you give them many, many years of notice. In So other words, if we're talking about a gigawatt scale, it's not something that you can say, hey, I need a gigawatt tomorrow. When can you start billing me?\n\nSpeaker 1 | 44:29 - 45:16\nIt's something that we co plan together. For us, it's something that we also take very seriously from the perspective of ensuring that when we work with these utilities, the costs of putting that infrastructure in place, we could get into long conversations just on this topic as well, that we cover those costs because with the way that billing works, it actually could be that by the act of the utility building up capacity for us, let's say, other people's rates could go up. In theory, what we ensure is that actually, let's say the transmission lines that have to be built, upgraded, additional utility base stations, etcetera, that we pay for those as well. So it is a long planning process. It can absolutely be the case that, let's say, that we need a gigawatt in I'll make up a date 2028.\n\nSpeaker 1 | 45:17 - 45:37\nAnd the utility can get us a gigawatt in 2029. That can get us, let's say, 700 megawatts in 2028. So now we might be left with a question of, how do we cover those 300 megawatts? Well, one answer is just wait. Another answer is to say, Okay, well, would we figure out how we generate some subset of that power ourselves?\n\nSpeaker 1 | 45:37 - 46:14\nAnd maybe that would be with solar cells or with batteries as a backup, etcetera. Would it be for other sources? So then we again work with the utility. So it might also be a combination where we might maintain some power generation local and have the capability even when the utility comes online fully at, let's say, the gigawatt scale, where we could actually provide power back to the grid, so having that when they need it as well. So in other words, one way to look at it is there might be the two weeks of the year, maybe it's the hottest two weeks of the year, where there's huge amount of residential demand.\n\nSpeaker 1 | 46:14 - 46:23\nIf we have some local generation, we can then provide that back to the grid as well. So it really is working over multiple years with the utilities for us.\n\nSpeaker 2 | 46:23 - 46:32\nWhy is your preference to do that versus to of go... Like to work with the utilities as opposed to kind of vertically integrate yourselves?\n\nSpeaker 1 | 46:32 - 47:04\nYeah, so the main reason is flexibility and uplift on both sides. So one way to look at it is statistical multiplexing, or if you want, the law of large numbers. If we need to have a gigawatt of power, let's say we wanted to have that with 99.99% plus reliability, It probably means we have to build two gigawatts of power. At that level of 99.99 or 99.999, you have to have one plus one redundancy. That gets expensive.\n\nSpeaker 1 | 47:04 - 47:32\nAnd then making sure that that's going to be ideally a clean energy source, probably right next to our data center, that can also be challenging. Now, we partner with the data center, again, maybe we have some amount of that that we can bring ourselves, that we can give to the grid when they need it less, that we can take their power. So in other words, by leveraging that statistical multiplexing over a much larger base, actually everybody wins. We win, the grid wins, residences win, etcetera. We prefer that.\n\nSpeaker 1 | 47:32 - 47:48\nAnd in rare, rare cases, we will do it, let's say, behind the meter. But even then, we're doing it under the assumption that we're going work with the utility where it might be a year later. We want to be connected to the grid. Again, it's an uplift for us, it's an uplift for the grid.\n\nSpeaker 2 | 47:48 - 47:52\nMakes sense. How do you decide how big to make a data center?\n\nSpeaker 1 | 47:52 - 48:07\nYeah, that's an art, and it's a source of significant debate. At some point, we had a debate. I remember even ten plus years ago, fifteen years ago, big debate at Should we just put everything into one data center? Back then, it was going to be a gigawatt, which was\n\nSpeaker 2 | 48:08 - 48:08\nSimpler times.\n\nSpeaker 1 | 48:08 - 48:27\nYeah, different times, like ten, fifteen years ago. We're going have a gigawatt data center. So one obvious concern there is single point of failure. If you're looking at things from a thirty year perspective, that's a huge concern. On the other hand, if you're talking about training workloads today, bigger is better.\n\nSpeaker 1 | 48:28 - 48:54\nBecause from a networking perspective, actually, you want to have things concentrated in as small a distance as possible. But then again, two issues, single point of failure, but then also now power availability. While a gigawatt was huge ten or fifteen years ago, but imaginable, there's no way anywhere in the country or the world we're going to get the total requirements of Google built in one place. It's just not going to be possible. So now what's the optimum size?\n\nSpeaker 1 | 48:55 - 49:12\nAgain, we have models for this, simulators, etcetera. It also depends on But look, in some places, we're going to be at the edge of the network or we're going to be in country. That might be tens of megawatts. We actually partner with ISPs. That might be Iraq.\n\nSpeaker 1 | 49:13 - 49:23\nLiterally, it could be Iraq. This is a training cluster. Maybe that's going to be closer to a gigawatt. Some other sites might be hundreds of megawatts, etcetera.\n\nSpeaker 2 | 49:23 - 49:46\nInteresting. I'd love to understand how you think about the portfolio lifecycle management. So I guess my guess would be that the biggest, newest clusters are used for training the latest frontier model, and then you kind of recycle the other stuff and run inference on Is that a fair framework? Are you also standing up inference specific clusters? How does that all work?\n\nSpeaker 1 | 49:46 - 50:24\nVery reasonable framework that you're thinking about, and I think it makes a lot of sense. But I would say that the demand for inference is such that we can't just rely on older training clusters that are no longer being fully used just for training as the basis for inference. And also, if you think about it, we might centralize again in a particular year into a small number of large sites or training clusters. And there is benefits to keeping the network distance between them small. So now wherever they're located in the world, they're probably going to be, let's say, on the same continent, or they might be even in the same portion of a continent in a particular year.\n\nSpeaker 1 | 50:24 - 50:46\nSo now you might be left with not enough serving capacity on the other continents, etcetera. So then, actually, then have to go build this specialized inference elsewhere across the world. So I think your intuition is spot on, but not wholly. In other words, it really does have to be, Okay, here are the training clusters. Yes, probably they're going be used for serving in some number of years.\n\nSpeaker 1 | 50:47 - 50:50\nBut then we're also having to build the serving clusters as well.\n\nSpeaker 2 | 50:50 - 50:58\nAnd your serving clusters, are they different than the training clusters? Are they smaller? Are they cheaper per megawatt?\n\nSpeaker 1 | 50:58 - 51:30\nNot necessarily cheaper, actually, because for serving, there is more need to co locate compute, networking, and storage. And so then we get to the inability to specialize. So for training, you actually have this big density, uniform deployment, etcetera, whereas for serving, you're going to have to have the mix of storage, compute, and accelerators. Furthermore, it's a very interesting aspect of this that we could go into more detail on as well. But for serving, you actually don't want to have too much in one place.\n\nSpeaker 1 | 51:30 - 51:55\nYou want to be serving your workloads from all over the planet. But now we wind up having individual model endpoints, and there actually can be variations of models. So now we have to spread these models out across the world, also accounting for locality. So they will be smaller. They'll actually be less vertically integrated probably on the inference side.\n\nSpeaker 2 | 51:55 - 52:16\nSuper interesting. So if you made a data center five years ago, state of the art accelerator five years ago was very different, vastly less efficient than the ones that are being made today. Do you actually go back and swap out the chips in those old data centers? And I know this kind of relates to there's been an ongoing debate, I think, of what is the actual useful life of a chip?\n\nSpeaker 1 | 52:16 - 52:29\nYeah. So I've been on record of saying this in one of my more. I was surprised by how much pickup this had. I said that our seven and eight year old TPUs are still at 100% utilization.\n\nSpeaker 2 | 52:29 - 52:32\nWow. Think I saw this. I didn't\n\nSpeaker 1 | 52:32 - 52:52\nknow if this was mistake. I didn't mean for it to be statement, but it was a meaningful statement apparently. So our older GPUs, but our older TPUs are seeing significant utilization. We do replace them. In the end, there's a question of, okay, depreciation lifetime is approximately six years.\n\nSpeaker 1 | 52:52 - 53:17\nSo once they're fully depreciated and given the power efficiency of newer generations, etcetera, it does make sense to replace them and upgrade them. We do replace the chips, but it's really the systems. So in other words, we think in terms of pods. So a TPU, let's say, 8T pod might be 9,600 chips. And it might be 140 something, 152 racks, etcetera.\n\nSpeaker 1 | 53:17 - 53:38\nSo then we would say, Okay, we're going to pull out that pod, and we're going to replace it with a, whatever it is, TPU 12 or 13 or 14 pod. It might not be a perfect fit. Then we have to in other words, the new pod's footprint might not be a perfect fit for the old pod's vacancy. We then just have to account for that. And we have to figure out how we would retrofit.\n\nSpeaker 1 | 53:38 - 53:53\nWe can't plan that because we don't know what that many generations of TPUs are going to be. So then it's, again, a bit of an art to figure out how we would, and it's actually hard work, figure out how we would decom and then replace as quickly as possible with new TPUs.\n\nSpeaker 2 | 53:53 - 53:57\nYou've written publicly about open standards. Can you say a word on that?\n\nSpeaker 1 | 53:58 - 54:29\nYeah. So I think that's the we talked about this interoperability question. And so for us, while we support vertical integration and we make it possible to extract just as much performance as you want, for us, it's really important to not force lock in and not force a sort of walled garden in terms of how the system works end to end. So I'll give one example. At Google, we've developed a model development framework called JAX.\n\nSpeaker 1 | 54:29 - 54:43\nWe like it a lot. We think it's really, really good. And we use it extensively internally. Many of our customers like PyTorch. And so one thing we could say is, hey, if you want to run on TPUs, you've to use JAX.\n\nSpeaker 1 | 54:43 - 54:58\nIt's the best. I'm being facetious a little bit, but maybe it is, maybe it isn't. We think it's the best, and that's your only choice because it's so great. Or we could say, look, if you like JAKs, we like JAX. If you like JAX, you can use it.\n\nSpeaker 1 | 54:58 - 55:17\nBut if you like PyTorch, we have Torch TPU where your unmodified models, etcetera, can run. And we've seen this throughout history, actually, with many, many examples. I've used the example of IP. Why did the internet protocol win? There were actually many competing protocols to IP.\n\nSpeaker 1 | 55:17 - 55:42\nThis is ancient history in the '70s and early '80s. Why did IP win? It was because it was open standard, it was this narrow waist to the hourglass where anything could run on top in terms of software and anything could run underneath it in terms of hardware. So open standard, interoperable. Anyone who brought IP could plug into a router port and become part of the internet.\n\nSpeaker 1 | 55:43 - 56:03\nIt was beautiful. And that's what allowed the internet to explode in its growth and reach across the world. So we really do believe in those open standards in terms of plug in points. Now, if you want to plug in something highly specialized, you can. If think that you've got a better thing to plug into our framework, you absolutely can.\n\nSpeaker 1 | 56:03 - 56:08\nBut we want to really support open standards, ideally open source around it as well.\n\nSpeaker 2 | 56:08 - 56:14\nIt's too big and too important of a build out to be any one vendor's closed proprietary standard.\n\nSpeaker 1 | 56:14 - 56:23\nYeah, we really believe that. And it's got to be one of choice. And that's also why, for example, we fully support and have TPUs, GPUs, other accelerators, etcetera.\n\nSpeaker 2 | 56:23 - 56:30\nYeah. How has day to day life for your team changed with AI? Where is it changing your function the most?\n\nSpeaker 1 | 56:31 - 57:16\nSo I think the, whatever you want to say, the easiest answer is on the software engineering side, where it's been documented externally quite a bit. So I think that we are, at Google and my team, using it to great effect in terms of our software development capabilities, but also, frankly, tests, rollouts, even helping with design, etcetera. But there have been, on the hardware side, which has maybe gotten less external coverage, also significant change. In other words, my hardware engineers I was just looking at the numbers earlier today, in fact are using AI, using whatever the token counts, if you want. Not the best metric, but it's still a metric.\n\nSpeaker 1 | 57:16 - 57:34\nOur hardware engineers are using AI as much as the software engineers are. And productivity has gone up. Time from design kickoff to tape out is shrinking. Time for bring up is shrinking. So in other words, productivity is going up significantly.\n\nSpeaker 1 | 57:34 - 58:09\nBut then other maybe less expected changes, how we do data center design has changed significantly. In other words, and how we evaluate you mentioned, hey, do we do a gigawatt building or 100 megawatt campus or a 200 megawatt campus? In the past, this would be very detailed, very spreadsheet driven, human driven processes. And it still is to some extent, but there's a lot of AI now involved that really streamlines the process in terms of planning and development as well.\n\nSpeaker 2 | 58:09 - 58:11\nInteresting. Is it reasoning models?\n\nSpeaker 1 | 58:12 - 58:28\nI wouldn't say quite yet reasoning models. It's replacing human judgment, but it's making it much easier to bring the necessary information together in one place and basically put the right information in front of the humans making the decisions.\n\nSpeaker 2 | 58:29 - 58:53\nOkay, I'm going to bring us home with two out there fun questions. Question number one, orbital data centers. I've seen that Google is thinking about this quite seriously, and you want me to comment on that. But does the fact that people are seriously running the numbers on orbital computes mean that there are serious binding constraints on Earth? And what do you think of orbital data centers?\n\nSpeaker 1 | 58:53 - 59:32\nYeah, it's an exciting direction. We are actually pursuing it, and we've referred to it with no tongue in cheek as a moonshot, as one of our big efforts that we're excited about investing in. It goes back to the earlier part of the conversation where you raised, I think, correctly that in terms of fundamental constraints, energy and energy production is a key, key challenge. And so really, line is, from a fundamentals perspective, in space, you have something like 40% more power available because of lack of attenuation in the atmosphere, etcetera. In other words, there's just more solar capacity, 1.4 x.\n\nSpeaker 1 | 59:32 - 1:00:05\nSo that's one part of it. But in a, sun synchronous orbit, you have 90% to 100% coverage of sunlight on your solar cells relative to 2830%, maybe 35% on land. So in other words, just this enormous amount of power, obviously the sun. You take the 1.4x and you take the 3x to 4x in terms of number of hours per day. You remove batteries more or less from the equation.\n\nSpeaker 1 | 1:00:06 - 1:00:18\nAnd now you have the potential for something that can really... And of course, carbon free. Lots of benefits, lots of challenges. Lots and lots of challenges. So in other words, okay, now what about cooling?\n\nSpeaker 1 | 1:00:19 - 1:00:31\nNaively, you might think cooling in space is easier, but it's actually harder. Reliability. We talked about how these things fail sometimes. Repairs becomes harder, not impossible, but it becomes harder in space. Can we\n\nSpeaker 2 | 1:00:31 - 1:00:32\npull the robot up with\n\nSpeaker 1 | 1:00:32 - 1:00:45\nthe costume? Exactly. So perhaps this model is a promising direction. Redundancy will probably be your friend. Prescient question on free space optics is now going to become reality.\n\nSpeaker 1 | 1:00:45 - 1:00:59\nWe're probably not going to be stringing fiber between these components, so it will actually be free space. And we're going to have the lasers pointing at the receivers and calibrating in real time. There are no showstoppers here, no fundamental showstoppers.\n\nSpeaker 2 | 1:00:59 - 1:01:17\nLast question. I've had this image of the ineffable big supercomputer that you built them in my head this whole time. And so here's the question. Ten years from now, what will the most frontier supercomputer look like?\n\nSpeaker 1 | 1:01:17 - 1:01:45\nOh my gosh. Yeah, so ten years is right at that edge where it's, I would say, in all sincerity, probably some people are thinking about what the 2036 computer looks like. We might have a few thinking that far ahead. But wow, the cone of uncertainty there is way, way too wide. In other words, if you look at the trends, the level of integration is going to be tremendous.\n\nSpeaker 1 | 1:01:45 - 1:02:36\nSo we saw the beautiful fiber and the VR200 racks that we put together for ineffable. My guess is it's going to be more integrated, less fiber to I won't say no fiber in 2036, but I think that probably from a rack perspective, the rack will look much more tightly integrated. The amount of fiber there'll be maybe a small fiber bundle coming out of the rack. And then, so in other words, one view you might have from a modular manufacturing perspective is these racks, likely in 2036, are going to be manufactured centrally. And so whether they have 72 or 144 or two eighty eight or probably more, five seventy six or eleven fifty two, pick your favorite multiple of GPUs since we're talking about the ineffable case, but then be the same for the TPUs.\n\nSpeaker 1 | 1:02:36 - 1:02:50\nDeeply integrated into a rack. Would a rack be multiple megawatts? We don't know exactly how, but 2036, we get to imagine things. Could be multiple megawatts in a single rack. And now you bring water, and you bring power, and you bring fiber.\n\nSpeaker 1 | 1:02:50 - 1:02:59\nYou wheel that rack in, you plug those three things in, and you're off to the races as well.\n\nSpeaker 2 | 1:02:59 - 1:03:01\nOkay, so it's not going be like a big alien orb then?\n\nSpeaker 1 | 1:03:02 - 1:03:18\nUp in space. By 2036, I wouldn't say that it's not possible for 2036 for it to be then directly launched into space and then maybe taken by a robotic arm at some space station and then plugged into the right module. Maybe that's for 2036.\n\nSpeaker 2 | 1:03:19 - 1:03:19\nFun.\n\nSpeaker 1 | 1:03:19 - 1:03:20\nFun to think about.\n\nSpeaker 2 | 1:03:20 - 1:03:22\nI really enjoyed this conversation.\n\nSpeaker 1 | 1:03:22 - 1:03:22\nYes, it's ton\n\nSpeaker 2 | 1:03:22 - 1:03:32\nof This is the most intense, biggest CapEx build out in history, but I also think it's a technology\n\nSpeaker 1 | 1:03:32 - 1:03:33\nRevolution.\n\nSpeaker 2 | 1:03:33 - 1:03:47\nRevolution that is a thing of beauty. And I think you have such a grasp over the beauty of the technology and the binding constraints and how to balance this all. Google is in good hands. Thank you for taking the time to share\n\nSpeaker 1 | 1:03:47 - 1:03:53\nwhat you do. It's a ton of fun. We get to live through this and we get to define it. Thank you very much. It's a great conversation.\n\nSpeaker 2 | 1:03:53 - 1:03:54\nThank you.\n\nSpeaker 1 | 1:03:54 - 1:03:54\nThanks."
+      }
+    ],
+    "stats": {
+      "podcastEpisodes": 1
+    },
+    "errors": [
+      "Podcast: Transcript error for \"What Happens When Billions of AI Agents Hit Your Database? (Andy Pavlo)\": HTTP 404: {\"status\":\"error\",\"message\":\"Episode not found\"}"
+    ]
+  },
+  "blogs": {
+    "generatedAt": "2026-10-09T06:47:49.423Z",
+    "lookbackHours": 72,
+    "blogs": [],
+    "stats": {
+      "blogPosts": 0
+    }
+  }
+}
