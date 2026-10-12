@@ -1,0 +1,235 @@
+{
+  "date": "2026-10-07",
+  "generated_at": "2026-10-07T09:12:00+08:00",
+  "daily_summary": "今天的主线是「生成变便宜，验证变昂贵」。OpenAI 公开了一个未发布内部模型产出的 722 篇数学手稿，归并为 372 个结果族，部分附带可被机器校验的 Lean 形式化，平均每个结果约消耗三小时 ChatGPT Pro 级算力。数学界随即反弹：约 40 位被 OpenAI 召集过的数学家此前已要求成果以论文形式发表而非博客或推文，该要求被忽略。另一侧，Anthropic 把 Claude 装进 Google Docs、Sheets、Slides 的侧边栏，默认「编辑前询问」，AI 从复制粘贴助手变成了在文档内部直接动手的角色。溯源基础设施同步铺开：Google 向全球开放 SynthID Detector，OpenAI 为欧盟用户默认开启文本水印以符合 AI 法案。成本面继续塌陷：Google DeepMind 开源 7.4 亿参数的多模态嵌入模型 EmbeddingGemma 2（Apache 2.0，纯文本量化后约 191MB），Nano Banana 2.1 图像价格腰斩，GPT-6 Astra 与 6.1 Sol 通过服务端优化提速约 50%。",
+  "design_insights": [
+    {
+      "title": "EmbeddingGemma 2：端侧多模态检索的成本门槛被打掉",
+      "summary": "Google DeepMind 开源 EmbeddingGemma 2，7.4 亿参数、Apache 2.0 许可，把文本、代码、图像、音频、视频映射到同一个 768 维空间。纯文本配置只需 2.7 亿参数，量化后约 191MB，完整多模态版约 567MB，可在 Pixel 11 Pro 上本地运行；Matryoshka 截断可把向量压到 128 维，存储节省最多 6 倍。",
+      "implication": "这直接解锁了输入法一直想做但算不过账的能力：端侧的个人语料检索。用户攒了十年的个人短语、常用词、历史输入、剪贴板记录，过去只能做字面匹配，现在可以在不上传任何内容的前提下做语义检索。具体可落地的是两件事——其一，表情包与图片的语义搜索（打「累了想躺平」能搜出对应表情），这正是当前关键词搜索最差的地方；其二，个人历史表达的语义召回（写邮件时自动想起上次类似场景怎么写的）。两者都是纯本地推理，隐私口径干净，且正好击中用户换输入法时最舍不得的那部分积累。",
+      "sources": [
+        "Google DeepMind",
+        "AIMAGICK",
+        "Daily AI Thread"
+      ],
+      "source_urls": [
+        "https://aimagick.cc/en/ai-news-7-oktober-2026",
+        "https://www.dailyaithread.com/en/archive/2026-10-07.html"
+      ],
+      "tags": [
+        "端侧",
+        "语义检索",
+        "表情搜索",
+        "隐私"
+      ]
+    },
+    {
+      "title": "Claude 进驻 Google Docs 侧边栏，并把「编辑前询问」设为默认",
+      "summary": "Anthropic 在所有付费 Claude 方案上开放 Google Workspace 公测：安装扩展后 Claude 以侧边栏形式出现在打开的文档中，可读取内容、回答问题并直接修改文件；也可把文件链接粘进 Claude 从应用侧操作。「Ask before edits」为默认设置，团队与企业版需管理员启用连接器。",
+      "implication": "最值得抄的不是侧边栏形态，而是把「编辑前询问」做成了默认值而非高级选项。这与输入法当前的默认设定正好相反——很多 AI 辅助是静默生效的（自动纠错、自动替换专有名词），用户往往事后才发现自己的原话被改了。建议对输入法的 AI 动作重新梳理默认值：读取类（理解上下文给建议）默认开启，修改类（替换已输入内容、整段改写）默认需要一次确认，且确认动作要轻到不打断输入节奏（例如候选条上直接出现改写版本，点了才替换，不点就当没发生）。默认值是最强的设计表态，它决定了产品在用户心里是助手还是代笔。",
+      "sources": [
+        "Anthropic Claude",
+        "AI Impact Hub",
+        "Zarza AI Digest"
+      ],
+      "source_urls": [
+        "https://www.aiimpacthub.com/ai-news/2026-10-09",
+        "https://en.zarza.com/podcasts/iris-ai-digest-7793332/episodio/ai-digest-october-7-2026"
+      ],
+      "tags": [
+        "默认值",
+        "授权",
+        "交互范式",
+        "改写"
+      ]
+    },
+    {
+      "title": "溯源基础设施全球铺开：AI 生成内容的标注开始变成合规底座",
+      "summary": "Google 向全球开放 SynthID Detector，任何人可检测图像、视频、音频中的隐形水印，覆盖 Google 自家及 OpenAI、NVIDIA、Kakao 等伙伴模型，苹果预计跟进；Google 称自 2023 年起已水印超 1800 亿张图像视频与 24 万年时长的音频。同期 OpenAI 为欧盟用户默认开启 textGrain 文本水印以符合 AI 法案，其检测器对 200 token 段落在 1% 误报率下命中约 80%。",
+      "implication": "文本水印落地意味着「这段话是不是 AI 写的」会从社交争议变成可检测的事实，而输入法恰好是 AI 文本进入社交场景的最大入口。这里有一个必须提前想清楚的问题：如果输入法的 AI 润色功能在用户的聊天记录里留下可被检测的水印，用户是否知情、是否接受。建议把它做成明示而非默认——在 AI 改写类功能的说明中直接告诉用户输出可能携带来源标记，并为对此敏感的场景（如个人社交）提供纯端侧、不带水印的轻量改写路径。这件事现在做是产品透明度，等到有人在社交平台上被检测出来再做，就是公关事故。",
+      "sources": [
+        "Google",
+        "The Verge",
+        "The AI Rankings"
+      ],
+      "source_urls": [
+        "https://theairankings.com/daily/2026-10-07",
+        "https://aimagick.cc/en/ai-news-7-oktober-2026"
+      ],
+      "tags": [
+        "水印",
+        "溯源",
+        "合规",
+        "透明度"
+      ]
+    },
+    {
+      "title": "722 篇数学手稿与数学家的反弹：产出过剩时稀缺的是接收能力",
+      "summary": "OpenAI 公开未发布内部模型产出的 722 篇数学手稿（372 个结果族），源自约 4000 道开放问题，平均每个结果约三小时 ChatGPT Pro 级算力，部分附 Lean 形式化。西北大学 Bryna Kra 称 8 月 OpenAI 召集的约 40 位数学家曾要求成果以论文而非博客、推文形式发布，该要求被忽略。",
+      "implication": "这是一个关于「产出速度超过接收能力」的典型案例，而输入法正在制造同样的问题。AI 让生成建议的成本趋近于零，于是产品很容易变成不断向用户推送候选改写、推送回复建议、推送表达优化——但用户在一次输入里能够评估和采纳的建议数量是恒定的，而且很低。建议建立一条反向约束：AI 建议的展示位数量设上限并且不随模型能力提升而扩张，宁可做得更准、更少。衡量指标也要从「AI 功能触发次数」改为「AI 建议采纳率」和「采纳后未被用户二次修改的比例」，否则产品会在数据上一路向好，体验上一路变吵。",
+      "sources": [
+        "OpenAI",
+        "The AI Rankings",
+        "Daily AI Thread"
+      ],
+      "source_urls": [
+        "https://theairankings.com/daily/2026-10-07",
+        "https://www.dailyaithread.com/en/archive/2026-10-07.html"
+      ],
+      "tags": [
+        "信息过载",
+        "建议密度",
+        "度量指标",
+        "采纳率"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "端侧语义检索重做表情与个人历史表达召回",
+      "pain_point": "表情包搜索依赖关键词字面匹配，用户想表达的情绪（如「累了想躺平」）搜不到对应表情；十年积累的个人短语和历史输入也只能字面查找，换设备或换输入法后这部分积累基本作废。",
+      "opportunity": "用约 191MB 的端侧多模态嵌入模型建立本地语义索引，支持表情与图片的情绪语义搜索，以及写作时对个人历史表达的语义召回。全程本地推理，隐私口径干净，且直指用户最舍不得迁移的那部分资产。",
+      "priority": "high",
+      "evidence": "Google DeepMind 开源 EmbeddingGemma 2（Apache 2.0，7.4 亿参数，纯文本量化约 191MB，可在 Pixel 11 Pro 本地运行），Matryoshka 截断最多节省 6 倍存储。"
+    },
+    {
+      "title": "AI 修改类动作的默认值从静默生效改为一次轻确认",
+      "pain_point": "输入法大量 AI 辅助是静默生效的（自动纠错、自动替换专有名词），用户常在事后才发现原话被改，尤其在专业术语、人名、方言表达上造成反向损害，长期削弱对 AI 功能的信任。",
+      "opportunity": "按读取类与修改类拆分默认值：读取类默认开启，修改类默认需要一次极轻的确认（如候选条直接展示改写版本，点击才替换），既保留效率也把控制权交还用户。",
+      "priority": "high",
+      "evidence": "Anthropic 把 Claude 接入 Google Docs/Sheets/Slides 时将「Ask before edits」设为默认，而非高级选项，团队与企业版连接器还需管理员显式启用。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "OpenAI 公开 722 篇 AI 生成数学手稿，数学界集体反弹",
+      "summary": "手稿来自未发布的内部模型，归并为 372 个结果族，源自约 4000 道开放问题，平均每个结果约三小时 ChatGPT Pro 算力，部分附 Lean 形式化。约 40 位数学家曾要求以论文形式发表，该要求被忽略。",
+      "source": "OpenAI / The AI Rankings",
+      "source_urls": [
+        "https://theairankings.com/daily/2026-10-07"
+      ],
+      "tags": [
+        "OpenAI",
+        "数学",
+        "争议"
+      ]
+    },
+    {
+      "title": "Google 向全球开放 SynthID Detector 水印检测",
+      "summary": "任何人可检测图像、视频、音频中的隐形水印，覆盖 Google 及 OpenAI、NVIDIA、Kakao 等伙伴模型，苹果预计跟进。Google 称已水印超 1800 亿张图像视频与 24 万年时长音频。",
+      "source": "Google / AIMAGICK",
+      "source_urls": [
+        "https://aimagick.cc/en/ai-news-7-oktober-2026"
+      ],
+      "tags": [
+        "水印",
+        "溯源",
+        "Google"
+      ]
+    },
+    {
+      "title": "Claude 进入 Google Docs、Sheets、Slides 侧边栏",
+      "summary": "Anthropic 在所有付费方案上开放 Workspace 公测，Claude 可读取并直接编辑打开的文件，默认设置为「编辑前询问」，团队与企业版连接器需管理员启用。",
+      "source": "Anthropic / AI Impact Hub",
+      "source_urls": [
+        "https://www.aiimpacthub.com/ai-news/2026-10-09"
+      ],
+      "tags": [
+        "Anthropic",
+        "办公",
+        "Agent"
+      ]
+    },
+    {
+      "title": "Google 开源 EmbeddingGemma 2 多模态嵌入模型",
+      "summary": "7.4 亿参数、Apache 2.0 许可，把文本、代码、图像、音频、视频映射到同一 768 维空间；纯文本配置 2.7 亿参数、量化后约 191MB，可在手机本地运行。",
+      "source": "Google DeepMind / AIMAGICK",
+      "source_urls": [
+        "https://aimagick.cc/en/ai-news-7-oktober-2026"
+      ],
+      "tags": [
+        "开源",
+        "嵌入模型",
+        "端侧"
+      ]
+    },
+    {
+      "title": "OpenAI 为欧盟用户默认开启文本水印",
+      "summary": "ChatGPT 与 Codex 输出将默认带 textGrain 水印以符合欧盟 AI 法案溯源要求，其检测器对 200 token 段落在 1% 误报率下命中约 80%，仅对获批研究者开放。",
+      "source": "The Verge / The AI Rankings",
+      "source_urls": [
+        "https://theairankings.com/daily/2026-10-07"
+      ],
+      "tags": [
+        "水印",
+        "欧盟",
+        "合规"
+      ]
+    },
+    {
+      "title": "Anthropic 称 Mythos 四个月帮伙伴发现 12.9 万个漏洞",
+      "summary": "4 月至 7 月间伙伴使用 Claude 发现 12.9 万个确认漏洞，其中超 3.3 万被评为严重或高危。Anthropic 同时把 Cyber Verification Program 拆成三档，向通过审核的安全团队放宽限制。",
+      "source": "Anthropic / The AI Rankings",
+      "source_urls": [
+        "https://theairankings.com/daily/2026-10-07"
+      ],
+      "tags": [
+        "Anthropic",
+        "安全",
+        "漏洞"
+      ]
+    },
+    {
+      "title": "Nano Banana 2.1 图像生成价格腰斩",
+      "summary": "基于 Gemini 3.6 Flash 的 Nano Banana 2.1 标准处理每张 1K 图 0.0336 美元、2K 0.0504 美元、4K 0.113 美元，1K 与 2K 价格约为上一代一半，批处理另有更低价格线。",
+      "source": "Google / AIMAGICK",
+      "source_urls": [
+        "https://aimagick.cc/en/ai-news-7-oktober-2026"
+      ],
+      "tags": [
+        "Google",
+        "图像生成",
+        "降价"
+      ]
+    },
+    {
+      "title": "Google 签下 3.6 吉瓦电力，含 890 兆瓦新增核电",
+      "summary": "Constellation 将投入 43 亿美元升级 11 座反应堆，首批新增电力预计 2028 年到位，其余来自现有电厂并分 15 年交付。",
+      "source": "The AI Rankings",
+      "source_urls": [
+        "https://theairankings.com/daily/2026-10-07"
+      ],
+      "tags": [
+        "算力",
+        "能源",
+        "核电"
+      ]
+    },
+    {
+      "title": "OpenAI 安全员工 David Robinson 辞职，称公司文化已崩坏",
+      "summary": "他曾领导安全团队的透明度工作，在周六发表于《大西洋月刊》的文章中呼吁行业采用核电站级别的安全防护标准。",
+      "source": "The AI Rankings",
+      "source_urls": [
+        "https://theairankings.com/daily/2026-10-07"
+      ],
+      "tags": [
+        "OpenAI",
+        "AI安全",
+        "组织"
+      ]
+    },
+    {
+      "title": "GPT-6 Astra 与 6.1 Sol 通过服务端优化提速约 50%",
+      "summary": "OpenAI 称通过修复服务器处理逻辑使两款模型推理速度提升约 50%；同期 Lambda 积压订单三个月内从 150 亿美元增至 500 亿美元，大部分增量疑似来自一份 Anthropic 合同。",
+      "source": "Daily AI Thread",
+      "source_urls": [
+        "https://www.dailyaithread.com/en/archive/2026-10-07.html"
+      ],
+      "tags": [
+        "OpenAI",
+        "性能",
+        "算力"
+      ]
+    }
+  ]
+}
