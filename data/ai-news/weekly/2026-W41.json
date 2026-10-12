@@ -1,0 +1,295 @@
+{
+  "week": "2026-W41",
+  "range": {
+    "start": "2026-10-05",
+    "end": "2026-10-11"
+  },
+  "generatedAt": "2026-10-12T09:25:00+08:00",
+  "trends": [
+    {
+      "title": "AI 开始自己画界面",
+      "summary": "以前你问 AI 一句话，它回你一段文字，要用还得自己去别的软件里折腾。这周变了：ChatGPT 能根据你的问题现场生成一个专属界面，Claude 把文档、幻灯片、设计稿三件套从内测放开到所有人（包括免费用户），而且是你和 AI 在同一份文件上一起改。Google Labs 那边更直接，Playground 让完全不会写代码的人把脑子里想的游戏做出来。共同点是：AI 的交付物不再是一段话，而是一个能点、能改、能继续用的东西。",
+      "implication": "对输入法侧边栏来说，这意味着「回答」这个概念本身要重新定义。用户问「帮我算下这几个房贷方案哪个划算」，最好的答案不是三段文字，而是一个能拖滑块的小控件。短期可以先从高频场景入手，让 AI 的输出带上可交互的结构（可勾选的清单、可切换的多版本文案），而不是每次都吐一坨纯文本让用户自己复制粘贴。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Sam Altman（OpenAI CEO）",
+          "url": "https://x.com/sama/status/2107924408597950702",
+          "quote": "ChatGPT 现在能给你生成专属的界面了（ChatGPT can now generate a custom UI for you!）"
+        },
+        {
+          "type": "tweet",
+          "who": "Claude 官方账号",
+          "url": "https://x.com/claudeai/status/2108271559928389679",
+          "quote": "从今天起，Claude 的文档、幻灯片和设计功能结束内测，所有套餐都能用，免费版也包含在内。你的团队和 Claude 可以一起改同一份文档、同一份 PPT、同一份设计稿（Your team and Claude can edit the same doc, deck, or design together.）"
+        },
+        {
+          "type": "tweet",
+          "who": "Google Labs",
+          "url": "https://x.com/GoogleLabs/status/2107800195748737042",
+          "quote": "Playground 是个实验性的游戏平台，零代码基础也能做出自己的游戏。你想得出来，就能玩得到（If you can think it, you can play it.）"
+        },
+        {
+          "type": "tweet",
+          "who": "Nan Yu（OpenAI Codex 产品负责人，前 Linear 产品头）",
+          "url": "https://x.com/thenanyu/status/2108049498648051747",
+          "quote": "怕它也好，躲它也罢，那个「唯一正确的生产力应用布局」照样会来（Dread it. Run from it. The One True Productivity App Layout arrives all the same.）"
+        }
+      ]
+    },
+    {
+      "title": "个人智能体正在被公司智能体取代",
+      "summary": "Every 这个 30 人的团队把自己踩过的坑完整讲了一遍：他们最早是全员人手一个 OpenClaw 个人助手，每个人给自己那只起名字、养得挺有感情。结果养着养着发现两个问题——不爱折腾的人根本配不起来，爱折腾的人一旦有更好的工具就把旧的扔了，断电重启都懒得弄。最后他们把所有人的精力并到一个公司共用的智能体上。同一周 Dan Shipper 在聊 OpenAI 的 Dots（常驻的主动型助手）时也说，一年后他肯定还在用常驻助手，但那个可爱的名字和人设大概率已经没了。",
+      "implication": "这条对做 AI 助手人设的团队是盆冷水：用户对「我的专属 AI」的感情没有想象中牢固，真正留得住的是沉淀下来的能力和数据，不是那张脸。输入法这种全员高频场景更该想清楚——与其每个用户各自调教一个记不住事的助手，不如把共性能力做厚、把个性化收敛到真正有用的那几项（常用表达、行业词、语气偏好）。另外 Dan 吐槽 Dots 权限弹窗反复确认还执行不了，这正是我们做授权交互时最该避开的坑。",
+      "evidence": [
+        {
+          "type": "podcast",
+          "who": "Willie Williams（Every 平台负责人）做客 AI & I by Every",
+          "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+          "quote": "与其让每个人各自养自己的智能体、每天一点点喂好，不如把这些精力全投进一个全公司都能受益的智能体里（why don't we take all that energy and put it into one agent that the whole company benefits from?）"
+        },
+        {
+          "type": "tweet",
+          "who": "Dan Shipper（Every CEO）",
+          "url": "https://x.com/danshipper/status/2107890633486582208",
+          "quote": "它们在帮你守住注意力。周末我的 Dot 把模型测试结果发到 Slack，还把别人的回复带回来给我。我不用打开 Slack 掉进兔子洞，周末因此过得挺清静（They protect your attention… My weekend stayed pretty clear and calm.）"
+        },
+        {
+          "type": "tweet",
+          "who": "Peter Steinberger（OpenClaw 作者）",
+          "url": "https://x.com/steipete/status/2107697554448421160",
+          "quote": "我把团队的 claw 接到了 X 上，好让活儿跑得更快。没人认领的会话谁都能抢。我们的智能体会看谁最近改过相关代码，然后在服务器上点名他（Our agent looks who worked on the related code last and pings people on the server.）"
+        }
+      ]
+    },
+    {
+      "title": "模型变快变便宜还能随时打断",
+      "summary": "这周几家同时在往「反应快」这个方向使劲。OpenAI 把纠偏做成了即时生效——你中途改主意，模型立刻掉头，不会继续浪费算力往错方向跑，同时放出了主打超快的 GPT-6.1 Sol。Anthropic 那边 Haiku 5.5 比不到一年前的 4.5 快很多、便宜 75%，Sonnet 5.5 的缓存读取价格也砍了一半。Vercel 的 Rauch 还提了个很聪明的做法：不是所有问题都值得慢慢想，只在模型自己没把握（低于置信阈值）的时候才切慢思考。",
+      "implication": "输入法是对延迟最敏感的场景之一，这波降价提速对我们是直接利好。两件事值得立刻看：一是「随时能打断、改了马上变」应该成为 AI 侧边栏的基础交互，而不是等它吐完一大段再推倒重来；二是按置信度分档——有把握的直接秒回，没把握的才走重模型并给出等待反馈。把这两件事做对，用户感知到的「快」远比参数表上的快更重要。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Thibault Sottiaux（OpenAI，Codex 与 ChatGPT）",
+          "url": "https://x.com/thsottiaux/status/2108275041276420573",
+          "quote": "我们把纠偏做成了即时生效，模型对你的调整反应快了很多，你可以实时把方向掰回来，不让它白费力气（allowing you to course-correct direction in realtime and not have the model waste effort）"
+        },
+        {
+          "type": "tweet",
+          "who": "Alex Albert（Anthropic 研究员）",
+          "url": "https://x.com/alexalbert__/status/2107912771568554415",
+          "quote": "参照一下，Haiku 4.5 是 2025 年 10 月 15 日发的，这两列数据之间还不到一年。对了，Haiku 5.5 还快得多，而且便宜 75%（Haiku 5.5 is also much faster and 75% cheaper）"
+        },
+        {
+          "type": "tweet",
+          "who": "Claude 官方账号",
+          "url": "https://x.com/claudeai/status/2107894060229034197",
+          "quote": "还有一件事：Sonnet 5.5 的缓存读取价格减半，降到每百万 token 一毛钱。大多数长时间跑的活儿因此便宜了大概 20%（around 20% cheaper to run on most long-running work）"
+        },
+        {
+          "type": "tweet",
+          "who": "Guillermo Rauch（Vercel CEO）",
+          "url": "https://x.com/rauchg/status/2107606246350266469",
+          "quote": "「快思考，以及在置信度不够时稍微慢一点思考。」一个特别简单的功能，但我觉得它对大规模的 AI 决策会非常有用（A very simple feature that I think will be extremely impactful for at-scale AI decision-making.）"
+        }
+      ]
+    }
+  ],
+  "builders": [
+    {
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Anthropic Claude Code 团队",
+      "highlights": [
+        {
+          "summary": "他判断未来是「大脑在云端、手在本地」——Claude 的思考放在云上跑，但给它一双能操作你本机的手。难点在于如果只有开机时才能碰你的文件，活就得停在那儿等，所以得做同步，而同步又一堆边界情况。",
+          "url": "https://x.com/trq212/status/2107580785456976085"
+        },
+        {
+          "summary": "他见过最常见的失败不是模型不行，是人在自己不擅长的领域里说不清需求，于是来回磨好多轮。好消息是现在可以直接让模型先教你不懂的部分，再提需求。",
+          "url": "https://x.com/trq212/status/2108021247301062894"
+        },
+        {
+          "summary": "有人说智能体让大家不用懂底层了，他不同意：在更高的抽象层干活，从来都要求你得懂下面那一层，智能体没改变这一点。",
+          "url": "https://x.com/trq212/status/2107504677143368163"
+        }
+      ]
+    },
+    {
+      "name": "Boris Cherny",
+      "handle": "bcherny",
+      "role": "Anthropic Claude Code 负责人",
+      "highlights": [
+        {
+          "summary": "他说大家对他的提示词那么朴素感到意外才奇怪：就像跟同事说话一样跟 Claude 说话就行，没什么秘诀。Sonnet 3.5 那会儿提示词很关键，现在更重要的是讲清三件事——你要它干什么、你希望它花多大力气、它该怎么验证自己做对了。",
+          "url": "https://x.com/bcherny/status/2107565388250874193"
+        }
+      ]
+    },
+    {
+      "name": "Dan Shipper",
+      "handle": "danshipper",
+      "role": "Every CEO",
+      "highlights": [
+        {
+          "summary": "用了两周 Dots（OpenAI 的常驻助手）后他的观察：最大的价值是帮人挡住注意力黑洞——周末把测试结果发进 Slack、把回复带回来，人不用真的掉进 Slack 里。但权限机制是一团浆糊，一件小事要批准好几次，批了还说干不了。",
+          "url": "https://x.com/danshipper/status/2107890633486582208"
+        }
+      ]
+    },
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "Box CEO",
+      "highlights": [
+        {
+          "summary": "Box 做了个 Box Mount，让开发者把 Box 当成文件系统直接挂进任何智能体沙箱里。他的逻辑是：智能体要干复杂活，就得能像人一样读写文件和数据，未来是无界面的。",
+          "url": "https://x.com/levie/status/2108279490510193078"
+        },
+        {
+          "summary": "他说接下来这个阶段需要的算力会很离谱——个人助手、守企业的智能体群、24 小时在后台干活的智能体，推理量会按数量级往上翻，而且它们还需要计算机、网络、文件系统这些配套，不只是 token。",
+          "url": "https://x.com/levie/status/2108056577697882402"
+        },
+        {
+          "summary": "他认为安全会是 AI 接下来最关键的战场之一：随手写出来的代码带来的漏洞、智能体发起的攻击、甚至意外失控到处找数据的智能体群，都会让本来就缺人的安全团队更吃紧。",
+          "url": "https://x.com/levie/status/2107680435644039269"
+        }
+      ]
+    },
+    {
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "产品人，写 AI 实用教程",
+      "highlights": [
+        {
+          "summary": "他的担心挺现实：现在你发出去的东西几乎都能被 AI 反编译重建，再想靠卖软件赚钱会很难，除非你手上有独家数据或渠道。传统 SaaS 尤其危险，又贵、又堆满了给人用但智能体根本不需要的功能。",
+          "url": "https://x.com/petergyang/status/2107981547102245101"
+        }
+      ]
+    },
+    {
+      "name": "Amjad Masad",
+      "handle": "amasad",
+      "role": "Replit CEO",
+      "highlights": [
+        {
+          "summary": "他说 AI 驱动的逆向工程和反编译进展快得离谱，用不了多久所有软件事实上都会变成开源的。",
+          "url": "https://x.com/amasad/status/2107671204639465961"
+        },
+        {
+          "summary": "桌面端 AI 应用体验好，但把用户暴露在供应链攻击和智能体灾难性误操作之下。Replit 正在做一个主打安全和可靠的桌面版本。",
+          "url": "https://x.com/amasad/status/2107926712277438503"
+        }
+      ]
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "Vercel CEO",
+      "highlights": [
+        {
+          "summary": "他提醒了一件工程圈会重新发现的事：任何程序都可以无止境地加固和优化下去，但时间和注意力都是真实成本。哪怕 token 无限，你也得知道什么时候停、接受哪些取舍——智能体可不管这些，你让它钻它就一直钻。",
+          "url": "https://x.com/rauchg/status/2107962327169675566"
+        },
+        {
+          "summary": "他看好一个很小但很有用的设计：只在置信度低于某个阈值时才切慢思考，其余时候快答。",
+          "url": "https://x.com/rauchg/status/2107606246350266469"
+        }
+      ]
+    },
+    {
+      "name": "Madhu Guru",
+      "handle": "realmadhuguru",
+      "role": "Meta AI 高级总监，曾在 Google 主导 Gemini / Veo / Nano Banana",
+      "highlights": [
+        {
+          "summary": "他觉得机会就明摆着：计算栈的每一层都得为智能体重做一遍。过去几年大家只忙着把企业软件改成智能体能用的样子（API、连接器、MCP），现在个人助手正逼着消费级产品走同一条路，电商只是开头。再往后是桌面和手机操作系统要把智能体当一等公民、云基础设施让智能体直接操作、身份和权限体系重新设计。",
+          "url": "https://x.com/realmadhuguru/status/2108236391641706813"
+        }
+      ]
+    },
+    {
+      "name": "Nan Yu",
+      "handle": "thenanyu",
+      "role": "OpenAI Codex 产品负责人，前 Linear 产品头",
+      "highlights": [
+        {
+          "summary": "他担心一个副作用：那些没人爱维护、但总得有人维护的系统，会被 AI 加速烂掉。",
+          "url": "https://x.com/thenanyu/status/2107506074370920796"
+        }
+      ]
+    },
+    {
+      "name": "Cat Wu",
+      "handle": "_catwu",
+      "role": "Anthropic，Claude Code + Cowork",
+      "highlights": [
+        {
+          "summary": "她最喜欢的 PM 用法：直接问 Claude「上周谁用某功能最多？给我做个 Top 10 的清单，然后挨个联系约 15 分钟聊聊」，拿用户反馈最快的路子。",
+          "url": "https://x.com/_catwu/status/2107967210467803152"
+        }
+      ]
+    },
+    {
+      "name": "Aditya Agarwal",
+      "handle": "adityaag",
+      "role": "SPC 合伙人，前 Dropbox CTO",
+      "highlights": [
+        {
+          "summary": "他写了篇长文回答「今天一个有野心的工程师该做什么」。十年前「把工程做到极好」是条万能建议，因为软件能力本身就是通往各行各业的门票；现在这个前提正在松动。",
+          "url": "https://x.com/adityaag/status/2107865115831988530"
+        }
+      ]
+    },
+    {
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "role": "FPV Ventures 合伙人",
+      "highlights": [
+        {
+          "summary": "他一周要聊两次同样的话题：种子轮公司有增长、快到百万收入，但钱快烧完，创始人觉得模型还没强到能做他真正想做的事。他给的只有三条路，第一条是真信这件事就当蟑螂活下去、先做到默认盈利。",
+          "url": "https://x.com/nikunj/status/2108410378233549106"
+        }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "AI & I by Every",
+      "title": "《为什么 Every 把人手一个的个人智能体换成了一个公司智能体》（Why Every Traded Personal Agents for One Company Agent）",
+      "guest": "Willie Williams（Every 平台负责人）",
+      "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+      "keyTakeaways": [
+        "Every 全员玩 OpenClaw 的那段时间，最大的收获其实不是智能体本身干了多少活，而是大家终于能在 Slack 里看见别人怎么用 AI——以前每个人在自己电脑上搭的指挥中心，别人只看得到结果，看不到过程。「演示给人看」比「讲给人听」有效太多。",
+        "个人智能体的两个死法：不爱折腾的人嫌配置复杂、老出问题、还有安全顾虑；爱折腾的人一旦出现更好的工具就不管了，Mac mini 被人碰掉电源都懒得重启。",
+        "他们试过做一个「一键造 claw」的平台（Plus One），失败了。OpenClaw 本身迭代太快、又是纯凭感觉写出来的，拿它当平台底座撑不住。",
+        "转向公司智能体的直接动机很朴素：记不住哪只智能体擅长什么太烦了。有人把自己的增长智能体养得特别好，于是它自然成了重心——与其各养各的，不如往一个上面投。",
+        "做 AI 产品和做传统 SaaS 的根本区别：SaaS 你能把用户路径画完整再开工，AI 产品的表面积大到你压根想不到用户会拿它干什么。"
+      ]
+    },
+    {
+      "name": "Unsupervised Learning",
+      "title": "第 94 期：Applied Compute CEO 聊强化学习的边界、新一代 AI 超大规模厂商，以及为什么后训练能赢下推理（Ep 94: Applied Compute CEO on the Limits of RL, the New AI Hyperscaler & Why Post-Training Wins Inference）",
+      "guest": "Applied Compute CEO",
+      "url": "https://www.youtube.com/@RedpointAI",
+      "keyTakeaways": [
+        "他把强化学习比作一台爬山机器：机器本身不难，难的是先定义清楚要爬哪座山——所以评测集（evals）才是公司最该认真建、也最该当核心资产保护好的东西。",
+        "「拥有自己的智能」这件事，重点不是防着大模型厂商作恶，而是灵活性和控制权：模型跑在哪、怎么部署、按成本还是按延迟优化、要不要针对某个领域特调，这些主动权你得有。",
+        "风向已经从「比谁的模型最大最强」变成了「看帕累托曲线」——不是每个任务都需要一个巨无霸模型，按成本和效果取舍更现实。开源模型让你能在这条曲线上随意滑动，而后训练能把整条曲线往外推。",
+        "OpenAI 和 Base10 的合作是个明确信号：未来是多模型的，用户要的是选择权和灵活度，大厂也在往平台和网关的位置上靠。"
+      ]
+    },
+    {
+      "name": "Training Data",
+      "title": "《Google AI 基础设施负责人 Amin Vahdat 聊前沿 AI 的物理学与经济学》（Google's AI Infrastructure Chief, Amin Vahdat, on the Physics & Economics of Frontier AI）",
+      "guest": "Amin Vahdat（Google AI 基础设施负责人）",
+      "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
+      "keyTakeaways": [
+        "AI 数据中心和普通数据中心的最大区别是「专用」：普通数据中心按 25 到 30 年规划、什么都能塞；AI 数据中心是和要装进去的硬件一起设计的，连供电和散热都围着那批芯片来。",
+        "硬件设计永远在做同一道取舍题——越针对某个具体负载优化，速度和能效越高，但也越不通用。所以关键是判断这个负载能持续多久，如果两三个月就没了，再大也来不及回本。",
+        "数据密度差异大到会反过来决定楼怎么盖：一个存储机柜几十千瓦，一个 TPU/GPU 机柜轻松几百千瓦、未来可能上兆瓦，一排放 30 个存储机柜和放一两个 AI 机柜，是完全不同的建筑设计。",
+        "他认为 FLOPS 是个虚荣指标，衡量这轮投入该看别的东西。"
+      ]
+    }
+  ],
+  "blogs": []
+}
