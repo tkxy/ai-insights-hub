@@ -1,0 +1,461 @@
+{
+  "date": "2026-10-25",
+  "fetchedAt": "2026-10-25T00:02:30.259551+00:00",
+  "source": "follow-builders feeds",
+  "x": {
+    "generatedAt": "2026-10-24T06:39:06.255Z",
+    "lookbackHours": 24,
+    "x": [
+      {
+        "source": "x",
+        "name": "Swyx",
+        "handle": "swyx",
+        "bio": "achieve ambition with intentionality, intensity, integrity & insanity.\n\naffiliations:\n- @smol_ai\n- @cognition\n- @temporalio\n- @aidotengineer\n- @latentspacepod",
+        "tweets": [
+          {
+            "id": "2113863570018685091",
+            "text": "psa to all vc’s trying to slide in our dms https://t.co/99Q7g85sxQ https://t.co/Qzvln9wy1K",
+            "createdAt": "2026-10-24T05:22:03.000Z",
+            "url": "https://x.com/swyx/status/2113863570018685091",
+            "likes": 84,
+            "retweets": 1,
+            "replies": 13,
+            "isQuote": true,
+            "quotedTweetId": "2113844051938054167"
+          },
+          {
+            "id": "2113811349281345578",
+            "text": "fake news btw i got him https://t.co/jc8Au9agl5 https://t.co/eunzDKSyLt",
+            "createdAt": "2026-10-24T01:54:33.000Z",
+            "url": "https://x.com/swyx/status/2113811349281345578",
+            "likes": 276,
+            "retweets": 2,
+            "replies": 12,
+            "isQuote": true,
+            "quotedTweetId": "2113783040979640732"
+          },
+          {
+            "id": "2113755882022752556",
+            "text": "reject vc founder grind\n\nif u are hot corgi/wasian you should be sliding into dms for post economic bootstrapped ai founders with a bunch of angel exits and even more friends than money and complete control of their destiny https://t.co/yVnwKlEIwo",
+            "createdAt": "2026-10-23T22:14:08.000Z",
+            "url": "https://x.com/swyx/status/2113755882022752556",
+            "likes": 90,
+            "retweets": 2,
+            "replies": 14,
+            "isQuote": true,
+            "quotedTweetId": "2113701890798260476"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Thibault Sottiaux",
+        "handle": "thsottiaux",
+        "bio": "Codex & ChatGPT @OpenAI",
+        "tweets": [
+          {
+            "id": "2113838156193894447",
+            "text": "The difference between having a tool and being a tool is subtle these days and it’s easy to accidentally build yourself into being a tool. Don’t be a tool.",
+            "createdAt": "2026-10-24T03:41:04.000Z",
+            "url": "https://x.com/thsottiaux/status/2113838156193894447",
+            "likes": 4375,
+            "retweets": 208,
+            "replies": 668,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2113770862860222611",
+            "text": "On codex cli updates. We've added reusable prompt presets, inline model and permission settings, and enterprise MCP sign-in. We've also fixed failures when resuming long sessions and added Windows corporate-proxy authentication.\n\nSurprisingly the CLI has grown 2X in usage since devday.",
+            "createdAt": "2026-10-23T23:13:40.000Z",
+            "url": "https://x.com/thsottiaux/status/2113770862860222611",
+            "likes": 1281,
+            "retweets": 25,
+            "replies": 165,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2113770573994299544",
+            "text": "Day 19/ Small updates. Calls connect much faster for dots, changing reasoning in codex &amp; work mid conversation does not invalidate cache anymore and a we've also updated the codex cli.",
+            "createdAt": "2026-10-23T23:12:31.000Z",
+            "url": "https://x.com/thsottiaux/status/2113770573994299544",
+            "likes": 6132,
+            "retweets": 176,
+            "replies": 983,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Peter Yang",
+        "handle": "petergyang",
+        "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6",
+        "tweets": [
+          {
+            "id": "2113672812909191292",
+            "text": "I think most ambitious people don't reflect and realize that at some point, their time > their money.   \n\nBeing in the sandwich generation with young kids and aging parents has made me realize this sooner than most and I'm privileged to be in a position where I can make the choice to pursue agency over my time.  \n\nBut many tech people are also in this position and just don't stop to reflect on this.\n\n📌 See my chat with Adam for more: https://t.co/qUu5y8R1GD",
+            "createdAt": "2026-10-23T16:44:03.000Z",
+            "url": "https://x.com/petergyang/status/2113672812909191292",
+            "likes": 31,
+            "retweets": 1,
+            "replies": 12,
+            "isQuote": true,
+            "quotedTweetId": "2113667277425881554"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Thariq",
+        "handle": "trq212",
+        "bio": "Claude Code @anthropicai. prev YC W20, @spc, @medialab",
+        "tweets": [
+          {
+            "id": "2113844560074019213",
+            "text": "also can someone at gmail make it so you can't scan for deactivated email addresses 🫩? I was hoping for a relaxing Friday night",
+            "createdAt": "2026-10-24T04:06:31.000Z",
+            "url": "https://x.com/trq212/status/2113844560074019213",
+            "likes": 971,
+            "retweets": 3,
+            "replies": 15,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2113844051938054167",
+            "text": "I’ve left Anthropic after more than a year of working on Claude Code and seeing it scale larger than I ever imagined.\n\nI have really loved working at Ant and believe deeply in the mission, and most of all, the idea of a race to the top.\n\nThe idea that if we work hard and responsibly, we can raise the bar and inspire others to great outcomes. And if we all push each other to be better, things can be radically good. I will carry the spirit of this with me forever.\n\nMy colleagues at Anthropic are the most talented, thoughtful, competent, and earnest people I have ever met. I am glad they are at the wheel and trust them deeply.\n\nTo the community on X, thank you for everything. You’ve made this the most fun (and sometimes stressful) job I’ve ever had.\n\nFor me, it is time for a bit of a break before diving into something new.\n\nIf you want more excellent Claude Code content, you should follow @addyosmani , @lydiahallie, @_catwu, @ClaudeDevs  and of course @bcherny who started it all.",
+            "createdAt": "2026-10-24T04:04:29.000Z",
+            "url": "https://x.com/trq212/status/2113844051938054167",
+            "likes": 10516,
+            "retweets": 356,
+            "replies": 967,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Amjad Masad",
+        "handle": "amasad",
+        "bio": "ceo @replit. civilizationist",
+        "tweets": [
+          {
+            "id": "2113736007111827606",
+            "text": "Thrilled to welcome Jeff and the Chroma team to Replit!\n\nThey’re pioneers in AI. They were building RAG before it was even a thing!\n\nAt Replit, they’ll help solve one of the hardest problems in AI: giving agents the context and memory they need to do real work.\n\nMassive step toward the self-driving company.",
+            "createdAt": "2026-10-23T20:55:10.000Z",
+            "url": "https://x.com/amasad/status/2113736007111827606",
+            "likes": 330,
+            "retweets": 19,
+            "replies": 89,
+            "isQuote": true,
+            "quotedTweetId": "2113677289334706274"
+          },
+          {
+            "id": "2113676717105787192",
+            "text": "Excited to announce Replit for Government and welcome Michael Greenwald to the team!\n\nMichael brings a wealth of experience, having previously led AWS’s public sector business. Looking forward to working together to transform how governments build and operate software. https://t.co/Aj35Gg0EdQ https://t.co/STbQ82Dqw0",
+            "createdAt": "2026-10-23T16:59:34.000Z",
+            "url": "https://x.com/amasad/status/2113676717105787192",
+            "likes": 146,
+            "retweets": 7,
+            "replies": 44,
+            "isQuote": true,
+            "quotedTweetId": "2113315161608221070"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Guillermo Rauch",
+        "handle": "rauchg",
+        "bio": "@vercel CEO",
+        "tweets": [
+          {
+            "id": "2113759533801877920",
+            "text": "Agents can play \"Ouija\" in the cloud.\n\nThis class of timing attacks on shared-host VMs has been known since at least 2015¹. With no full solution.\n\nThe world’s cyber infrastructure runs on “yes, that attack is theoretically possible, but who would have the ingenuity & gall to go that far!” Enter, agents.\n\nI'd describe this particular OpenAI find as a 'noisy neighbor' attack. If two agents are on the same machine, one can make enough noise (through the CPU caches!) that the other one can detect it by timing its own computation and cache accesses.\n\nThe only \"complete\" solution would be for each agent to run on its own dedicated hardware, which obviously has significant economic consequences.\n\nFor Vercel Sandbox, we've deployed every practical mitigation possible to this class of attack, complementing it with always-on monitoring and red-teaming (similar to where OpenAI arrived).\n\n¹ https://t.co/ZBhPMfnaj3 (and even further back)",
+            "createdAt": "2026-10-23T22:28:39.000Z",
+            "url": "https://x.com/rauchg/status/2113759533801877920",
+            "likes": 169,
+            "retweets": 7,
+            "replies": 101,
+            "isQuote": true,
+            "quotedTweetId": "2113723697022521819"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Aaron Levie",
+        "handle": "levie",
+        "bio": "ceo @box - your business lives in content. unleash it with AI",
+        "tweets": [
+          {
+            "id": "2113738768645808277",
+            "text": "Agent swarms for cyber defense is about to be one of the biggest categories in AI. We are going to have agents reviewing our code and infra, testing every permutation of risk, processing gobs of data, and more. \n\nSecurity is one of the best use-cases for swarms because it’s an obvious area where more compute in equals more value out. There’s a wide range of testing that people can never get around to - or at least quickly enough - that agents have no problem going after. \n\nGoing to be a wild time in cyber.",
+            "createdAt": "2026-10-23T21:06:08.000Z",
+            "url": "https://x.com/levie/status/2113738768645808277",
+            "likes": 358,
+            "retweets": 43,
+            "replies": 75,
+            "isQuote": true,
+            "quotedTweetId": "2113728305220239739"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Garry Tan",
+        "handle": "garrytan",
+        "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+        "tweets": [
+          {
+            "id": "2113742461160046736",
+            "text": "That the machine might actually win this time makes me sick to my stomach\n\nThis is someone who actively works to make our communities unsafe https://t.co/kLvPG0kTUh",
+            "createdAt": "2026-10-23T21:20:48.000Z",
+            "url": "https://x.com/garrytan/status/2113742461160046736",
+            "likes": 16,
+            "retweets": 1,
+            "replies": 3,
+            "isQuote": true,
+            "quotedTweetId": "2056554821789073613"
+          },
+          {
+            "id": "2113742026999267330",
+            "text": "Connie Chan is a regressive and terrible bureaucrat who wants rents to be $10,000 per month in SF\n\nAnti tech, anti housing, anti prosperity, pro grift, pro crime\n\nThat the Pelosi machine threw their weight behind her and Gary McCoy is a disgraceful joke https://t.co/qqWXGI0atz",
+            "createdAt": "2026-10-23T21:19:05.000Z",
+            "url": "https://x.com/garrytan/status/2113742026999267330",
+            "likes": 249,
+            "retweets": 8,
+            "replies": 16,
+            "isQuote": true,
+            "quotedTweetId": "2113655061725532667"
+          },
+          {
+            "id": "2113683853156192695",
+            "text": "Horseshoe theory is real\n\nThe NIMBY left (nonprofit extractors) and the NIMBY right (boomer landlords) just want to destroy housing affordability and the economy for their own comfort and grift \n\nMeanwhile we are just trying to build abundance https://t.co/Ki5lBwIpik",
+            "createdAt": "2026-10-23T17:27:55.000Z",
+            "url": "https://x.com/garrytan/status/2113683853156192695",
+            "likes": 265,
+            "retweets": 10,
+            "replies": 18,
+            "isQuote": true,
+            "quotedTweetId": "2113404966165774492"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Zara Zhang",
+        "handle": "zarazhangrui",
+        "bio": "Builder.  Harvard’17. Instagram: https://t.co/aJqTEMrL2L GitHub: https://t.co/KCuEajezlL",
+        "tweets": [
+          {
+            "id": "2113747119924478162",
+            "text": "https://t.co/cPA8hDsbFj",
+            "createdAt": "2026-10-23T21:39:19.000Z",
+            "url": "https://x.com/zarazhangrui/status/2113747119924478162",
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": true,
+            "quotedTweetId": "2113676956885807406"
+          },
+          {
+            "id": "2113747026425139493",
+            "text": "https://t.co/cPA8hDsbFj",
+            "createdAt": "2026-10-23T21:38:57.000Z",
+            "url": "https://x.com/zarazhangrui/status/2113747026425139493",
+            "likes": 3,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": true,
+            "quotedTweetId": "2113676956885807406"
+          },
+          {
+            "id": "2113676956885807406",
+            "text": "I'm hosting an event in the Bay Area (San Mateo) on Nov 7 (Saturday) where you can come build/rebuild your personal website!\n\nWe’ll show you the coolest personal sites out there, and you can make or remake your site, alongside other wonderful people. \n\nZERO coding/design experience needed (beginners preferred). RSVP here: https://t.co/XKE7Qgp4DN",
+            "createdAt": "2026-10-23T17:00:31.000Z",
+            "url": "https://x.com/zarazhangrui/status/2113676956885807406",
+            "likes": 147,
+            "retweets": 10,
+            "replies": 16,
+            "isQuote": true,
+            "quotedTweetId": "2113148949842534482"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Nikunj Kothari",
+        "handle": "nikunj",
+        "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+        "tweets": [
+          {
+            "id": "2113844657637687631",
+            "text": "Experience it by texting someone https://t.co/OdfTgavRhC",
+            "createdAt": "2026-10-24T04:06:54.000Z",
+            "url": "https://x.com/nikunj/status/2113844657637687631",
+            "likes": 4,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2113844360572027321",
+            "text": "It truly feels magical - recommend adding to your website 😅 https://t.co/aVYV27xDuY https://t.co/U5s64SJlg3",
+            "createdAt": "2026-10-24T04:05:43.000Z",
+            "url": "https://x.com/nikunj/status/2113844360572027321",
+            "likes": 93,
+            "retweets": 2,
+            "replies": 7,
+            "isQuote": true,
+            "quotedTweetId": "2113288415546638515"
+          },
+          {
+            "id": "2113785018497831076",
+            "text": "Anthropic did go 10x in revenue even without launching Duet, but called it 😅 https://t.co/nHK3SoMlxp https://t.co/7UZjEtRtf3",
+            "createdAt": "2026-10-24T00:09:55.000Z",
+            "url": "https://x.com/nikunj/status/2113785018497831076",
+            "likes": 34,
+            "retweets": 0,
+            "replies": 1,
+            "isQuote": true,
+            "quotedTweetId": "2113733206050816125"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Peter Steinberger",
+        "handle": "steipete",
+        "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.\n@OpenClaw🦞 + @OpenAI",
+        "tweets": [
+          {
+            "id": "2113788999303385180",
+            "text": "I’ll wait a bit before thinking about a new phone. https://t.co/6NBtpaSCko https://t.co/Dp5I3B1gim",
+            "createdAt": "2026-10-24T00:25:44.000Z",
+            "url": "https://x.com/steipete/status/2113788999303385180",
+            "likes": 481,
+            "retweets": 23,
+            "replies": 38,
+            "isQuote": true,
+            "quotedTweetId": "2113732424932946266"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Dan Shipper",
+        "handle": "danshipper",
+        "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+        "tweets": [
+          {
+            "id": "2113693510629281895",
+            "text": "the best configuration of teams in AI is only two people: pirates and architects https://t.co/R4ET7IJwG9",
+            "createdAt": "2026-10-23T18:06:18.000Z",
+            "url": "https://x.com/danshipper/status/2113693510629281895",
+            "likes": 48,
+            "retweets": 1,
+            "replies": 22,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Aditya Agarwal",
+        "handle": "adityaag",
+        "bio": "General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
+        "tweets": [
+          {
+            "id": "2113681343502787070",
+            "text": "Ok, more math with Mr @ScottWu46. https://t.co/3A03bJSQ8w",
+            "createdAt": "2026-10-23T17:17:57.000Z",
+            "url": "https://x.com/adityaag/status/2113681343502787070",
+            "likes": 146,
+            "retweets": 6,
+            "replies": 0,
+            "isQuote": true,
+            "quotedTweetId": "2113680065846251821"
+          },
+          {
+            "id": "2113666949259362479",
+            "text": "Full conversation at @spc https://t.co/r7mFzXspBC",
+            "createdAt": "2026-10-23T16:20:45.000Z",
+            "url": "https://x.com/adityaag/status/2113666949259362479",
+            "likes": 2,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2113666947766169868",
+            "text": "Some of the biggest advances in AI have come from solving many problems together, rather than training specialized systems for individual tasks.\n\n@svlevine (@physical_int) talks about the same principle for robotics. Make the problem bigger. https://t.co/1GxLuuNmu3",
+            "createdAt": "2026-10-23T16:20:45.000Z",
+            "url": "https://x.com/adityaag/status/2113666947766169868",
+            "likes": 35,
+            "retweets": 3,
+            "replies": 3,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Claude",
+        "handle": "claudeai",
+        "bio": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+        "tweets": [
+          {
+            "id": "2113736176737845353",
+            "text": "Here’s the deeper look at how Claude Duet handles safety, privacy, and security: https://t.co/li45PvRyyM",
+            "createdAt": "2026-10-23T20:55:50.000Z",
+            "url": "https://x.com/claudeai/status/2113736176737845353",
+            "likes": 98,
+            "retweets": 15,
+            "replies": 15,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "xBuilders": 14,
+      "totalTweets": 28
+    }
+  },
+  "podcasts": {
+    "generatedAt": "2026-10-24T06:39:41.667Z",
+    "lookbackHours": 336,
+    "podcasts": [
+      {
+        "source": "podcast",
+        "name": "No Priors",
+        "title": "Democratizing Security for the Agentic Web with Cloudflare CTO Dane Knecht",
+        "guid": "1b967280-ce7b-11f1-8a29-072c10b8d7bc",
+        "url": "https://www.youtube.com/@NoPriorsPodcast",
+        "publishedAt": "2026-10-23T10:00:00.000Z",
+        "transcript": "Speaker 1 | 00:00 - 00:11\nAI has become the tool that's causing this kind of security apocalypse. Is also the tool that can help us solve it faster as well. It went from how to get everyone just using AI. Now all of sudden, everyone's racing to figure out what AI security means.\n\nSpeaker 2 | 00:11 - 00:36\nI've heard serious technical people say things like air gap, everything important, and we're, like, not gonna be able to trust the Internet for a while, and we just assume all the critical infrastructure and government services fall down at some point. Is that your expectation for what happens? Dane, I'm so excited to do this with you.\n\nSpeaker 1 | 00:36 - 00:38\nYeah. Thank you. Thanks for coming here too.\n\nSpeaker 2 | 00:38 - 00:47\nI'm sure I'm not the first person to make this joke, but your last name, Connect. That's pretty good for the Cloudflare value prop.\n\nSpeaker 1 | 00:47 - 00:50\nYeah. Yeah. There's been some jokes about renaming the show next year. So...\n\nSpeaker 2 | 00:51 - 00:58\nSo with everything that CloudFare is doing, what are your top few priorities as CTO right now?\n\nSpeaker 1 | 00:58 - 01:30\nWell, mean, this past year, feels like ten years compacted into one. So those priorities are constantly shifting. But, you know, it all goes back to our mission of helping build a better Internet. And that really hasn't changed over the last fifteen years where we wanna make sure that the Internet's secure, that everyone has access to be able to get their content online easily and scale it up. And just, you know, over the arc of the AI changes in the past year, you know, it went from, you know, how do get everyone just using AI?\n\nSpeaker 1 | 01:30 - 01:48\nHow do you make it easy for them to deploy and their agents deploy? To like most technical transitions, security is kind of an afterthought. And now all of sudden, everyone's racing to figure out what AI security means. And it means things are... Different sides view it kind of differently.\n\nSpeaker 1 | 01:48 - 02:35\nOne side as company is how do you keep your data safe from AI leaking the data out? But it's also how do you keep people from getting in as well too? And over the last, I would say, three to six months, just the number of vulnerabilities that are being reported in CDEs has has just gone up exponentially. You know, previously on the Internet, we would see these Log4j moments or these Shellshock type of incidents maybe once a year. And it would be all hands on deck internally at Cloudflare to make sure how we protect not just our enterprise customers, but also all of our free customers because we view it as a public code of making sure that the Internet stays safe.\n\nSpeaker 1 | 02:35 - 03:13\nSo these things are now happening weekly. Not all of them are publicly reported on, but there are things that are as serious as the Log4j type things, but just something at a greater frequency. I expect that through the rest of this year and in the next year, by the next eighteen months, majority of Teams' time is going to be spent on security. I think there was a stat that was put up earlier today during one of our keynotes where it was showing that I think over 50% of engineering time is going to be spent on security. I don't think that will last forever.\n\nSpeaker 1 | 03:13 - 03:54\nThink that will be a short transition. At some point, the AI will have surveyed majority of the code and found most of the bugs or found most of the shortcuts. There's one that's kind of coming out today and has been started to be blogged about and tweeted about where one of the keys on the Internet that protects all TLS and WebPKI, which just secures all your connections, was secured by the number four. Literally, they basically used... If know about cryptography, it's all about randomness, right?\n\nSpeaker 1 | 03:55 - 04:32\nThat's why software has our lava lamps is so that you can get good randomness. And when a key out there is they use the seed, they use the initial thing to kind of create it with a single number four is going to be reverse engineered. AI can just do all these things that doesn't sleep. It's not like the one engineer you had that was red teaming things. Last week, think OpenAI found the seeds for the NIST curves were back in 2000 that were released.\n\nSpeaker 1 | 04:33 - 04:59\nThese things are just moving so fast and the bar is going up and the models are just getting so good at cybersecurity. Midtest was just kind of the tip of the iceberg there where... Since then, it's not just been the models getting better, it's the harnesses. It's how people know how to... How humans know how to use them and use those frontier models in order to find those exploits.\n\nSpeaker 2 | 04:59 - 05:24\nGiven your, you know, visibility, what do you know about the humans behind, you know, these attacks and harnessing these models taking the volume of vulnerability discovery up so quickly? Like, are they, you know, nation state actors? Are they script kitties? Like, what what can you say about how the the attacker landscape has changed?\n\nSpeaker 1 | 05:25 - 05:38\nWell, I actually think for some of these some of these larger vulnerabilities that have come out more recently actually haven't been nation states. They've they've been, you know, high school kids even that are\n\nSpeaker 2 | 05:38 - 05:39\nWe're gonna call them agent kitties now.\n\nSpeaker 1 | 05:39 - 05:52\nYeah. Yeah. That are that are just spending their time, you know, like they used to do, kinda capture the flag security contest. They're pointing their agents at an area and doing that. There's also...\n\nSpeaker 1 | 05:52 - 06:12\nAnd there's financial award for them. There's bug bounties that they get paid out of sizable amounts. But it's given the tools that, honestly, the nation states have had in some forms for much longer either through agents or just through, you know, sure number of people that were working on the problems, giving it to the masses.\n\nSpeaker 2 | 06:12 - 06:34\nThis is the first time in fifteen years I've heard serious technical people say things like, well, we should just like air gap everything important. And we're like, you know, not gonna be able to trust the Internet for a while. And we just assume all the critical infrastructure and and government services fall down at some point. Is that your expectation for what happens?\n\nSpeaker 1 | 06:35 - 06:52\nHumans, we are pretty adaptable and we can move fast when we need to. And I've seen the industry kind of partner together. When things like this happen. People that usually think of competitors are no longer competitors. We are just literally protecting critical infrastructure, as you said.\n\nSpeaker 1 | 06:53 - 07:28\nAnd I think when those kind of critical moments happen, people will rise to that challenge. So I'm a little less doomsday. I do think that a lot of the things that we've done over the past five to ten years, moving away from a kind of a castle moat infrastructure for security to moving to more of a zero trust does put a lot of companies in a better position where, you know, you're saying this office is completely air gapped. You're saying, you know, these devices, these these flows are secured in a different way, everything's going to be tightened.\n\nSpeaker 2 | 07:28 - 07:58\nWhat is it going to take for organizations to do what you're describing? Like, 50% of engineers do not work on security right now. I had Greg Brockman from OpenAI on No Priors podcast last week, and he said that he thought in 2027, people are going to spend as much money on tokens for security as engineering? Like you're saying, related idea. What is going to drive that shift?\n\nSpeaker 1 | 07:58 - 08:28\nJust emergency. Right? So you're going to move forward all your security spend over the next eighteen months, both from the red team side, which is more of the offensive, trying to actively try to exploit things as well as the defensive side, how you prepare things. But I don't think that's going to be last forever. I see a world in eighteen months where new software productivity goes way up because all those resources are back focused on that.\n\nSpeaker 1 | 08:28 - 08:34\nBut there's definitely this period where security usually on everybody's mind.\n\nSpeaker 2 | 08:35 - 09:05\nWhat are some of the key elements of getting to a better place in terms of overall software and Internet security? I think people discover, of course, that there are libraries and services everyone use that had vulnerabilities that took effort to discover and now do not. And I think we'll hit some of those. What else is important there? Because part of the concern that I have is the rate of software production is also going up a great deal.\n\nSpeaker 2 | 09:05 - 09:13\nRight? So to some degree, we gotta go like patch everything that we have already made and then keep up and get ahead of the pace of delivery.\n\nSpeaker 1 | 09:13 - 09:40\nYeah. Well, so I mean, for one, we're right now we're patching seventy years of of software out there. So so some of it is just catch up. And then on on a go forward basis, you know, I think this the software development life cycle, the agent development life cycle is going to need to change. Luckily, the same way that we can use security right now for Red King and things like that, it'll just be built into the process every step of the way.\n\nSpeaker 1 | 09:43 - 09:46\nI think the software will just get more secure over time.\n\nSpeaker 2 | 09:46 - 10:15\nWhat have you learned about building secure production software internally already that you think people can learn from? Like, does that mean? Like shift left and like, can we... And there there are there are many theories of how to do this including, you know, broader use of formal verification, using agents for security in the development process. Like, what what do you think is going to create better software from first delivery?\n\nSpeaker 1 | 10:15 - 10:46\nI kind go back to first principles there is you want to reduce your attack surface area. The easiest thing you can do is to give less places for there to be vulnerabilities. So looking at all your software and saying, How can I simplify this? How can I reduce footprint, the code? Then beyond that, things like formal verification and things that are safer programming languages and things that are built into the runtimes that make everything safer will come.\n\nSpeaker 1 | 10:46 - 11:16\nBut I think it just starts with AI, at least the early AI is very verbose. It likes to create complexity. So AI in a sense of what we've been dealing with is actually not been helping build a more secure stuff right now, but I think we'll get there. I think that's where humans still come in and human judgment comes in and making sure that we design the software in a way that can stand on its own securely.\n\nSpeaker 2 | 11:16 - 11:29\nThat was actually going to be my reaction when you say we want to reduce the surface area. I'm like, Oh yes, of course, in principle. And that's not the natural inclination of today's models. Mhmm. Right?\n\nSpeaker 2 | 11:29 - 11:42\nAnd, you know, I asked him to do something and I'm like, well, like, with one tenth the complexity, please try again. Is is that the role of engineering and security engineering today? Is that something that's gonna be solved at the model level?\n\nSpeaker 1 | 11:42 - 12:09\nThe the way that humans did before agents is it needs to be solved kind of at all levels. You need to train the engineers that are writing the code, the product engineers. The security teams still need to be involved in making sure that they're getting checks and balances, second set of eyes on things. You need to build in processes. We've gone to defining things a lot more internally on how we build at Cloudflare, writing down our principles.\n\nSpeaker 1 | 12:09 - 12:32\nWe have a document called the Codex, which is kind of like buildup of a lot of RFCs that the teams have built for it. Here's how you build secure software in Cloudflare. Here's how you build available software in Cloudflare. Here's our best practices. And then it kind of gets pulled up into some 10 commandments that the agents know how to follow and use in every part of the review process that can help enforce those things.\n\nSpeaker 1 | 12:32 - 12:48\nSo you have agents out there that are just writing a lot of the slop, and then you have deeper down the factory, you have people that are doing the performance runs and the security runs. Just like helping company operate before, you need those adversarial reviews.\n\nSpeaker 2 | 12:49 - 13:18\nWhen you zoom out a little bit and just look at overall traffic on the Internet and how much of it has become agent driven over the last year, I think it's outpaced most people's expectations. What has updated in your worldview of what web a year from now looks like either from an economic model perspective or a security or requisite infrastructure perspective?\n\nSpeaker 1 | 13:18 - 13:57\nYeah. I mean, I kind of think of it as we're in the messy middle right now where humans and agents are riding the same rails on the Internet, where, you know, agents are trying to parse a human web when one is just inefficient and was designed for humans that could do things at different speeds. Going to a website and being able to read and see the ads and participate in more of the full economic model versus an agent that now can go to a thousand web pages in the same period of time, which is great. It's just you need to find a new economic model to support that. Do we\n\nSpeaker 2 | 13:57 - 14:05\nget parallel webs? Is there like a human web and a machine web? Like, everybody's trying to do... What's it called? AEO now?\n\nSpeaker 2 | 14:05 - 14:06\nYeah.\n\nSpeaker 1 | 14:07 - 14:28\nI mean, yes. I think we do. I think we find ways to deliver the content and agents and humans where they are as opposed to trying to meet them in the same place. Right now, there's translation layers. There's a lot of companies that help an agent view a web page.\n\nSpeaker 1 | 14:29 - 14:51\nThese are just all extra burning of tokens for things that probably don't need to happen. The website usually knows what data... We've had things like this called... We've had APIs, ways that computers talk to each other for years. APIs only covered a small fraction of the information on the Internet, and agents have a thirst to understand everything.\n\nSpeaker 1 | 14:51 - 15:20\nSo they're going out and trying to explore the human Internet, and we need to make it easier for them. We need to make it less costly for the site owners, and we need to find a way for them to get compensated. I think it's a world where you can get very simple. Most likely, it's a good content website, like a Substack. They know what their CPM is for how much money they should be making on ads for that site.\n\nSpeaker 1 | 15:20 - 16:01\nAnd so if an agent's reading the site, I think there is a world where you get to the point where an agent can decide whether or not they want to read the content, and then they can decide if they want to pay the CPM rate. Right? And that's where you need to then get new payment rails for the Internet that can do millions of transactions a second for all these little micro payments. All these things that we've been talking about for years, micro payments always are two away. I think agents will actually push that forward and actually we will see a world where actually there is a new economic model for content creators.\n\nSpeaker 2 | 16:01 - 16:20\nWho do you think the players are or what are the variations of that infrastructure? Like, think obviously Cloudflare has an important role to play here, but the rise of personal agents like Instinct and Muse have also made this like an immediate question from a transactional perspective.\n\nSpeaker 1 | 16:20 - 16:39\nI don't think everyone knows on the, you know, on the other side what the business outcome is going to look like. You know, everyone's been through these transformations where the Internet, you know, if I was going to kill Main Street, it didn't kill Main Street. There's small businesses that are still thriving. But there weren't people that were displaced. So there's always kind of some skepticism there.\n\nSpeaker 1 | 16:39 - 17:18\nAnd so there's some natural inclination to just block them out. Right? You saw Amazon just say, no personal shopping there from an agent. I I think these are all people that that messy middle where they're trying to figure out what that path forward is and trying to keep some of the negotiation leverage there. I think we will get to a place where Muse and Dots and all those personal agents will be able to accomplish tasks seamlessly as you as a human could do even easier.\n\nSpeaker 1 | 17:18 - 17:23\nBut I don't know if the technology's quite caught up to that yet and the business models either.\n\nSpeaker 2 | 17:23 - 17:36\nIs there anything you're personally excited about on the roadmap or just from a technical exploration perspective on the Cloudflare front that you feel like is going to enable this ecosystem in the future?\n\nSpeaker 1 | 17:37 - 18:24\nWell, yeah, absolutely. On the content side, we've released a conference monetization gateway where we make it easy for people to put their sites behind us and take microtransactions for their content. Including providing wallets for agents to use and a stablecoin that's going to be able to help facilitate that transaction as well. We're also doing things with OpenAI, a project called signals where we're making it easier for agents to actually discover content instead of having to crawl the entire Internet and continually go back to pages. We're making it easier for them to know what's new content and actually kind of more proactive to do that.\n\nSpeaker 1 | 18:24 - 19:09\nSo it's a win for the AI labs, as well as a win for the site owners not having to get constantly crawled and pay for that infrastructure. So there's a whole set of new laws on the Internet that I'm really excited to see all those of grow to see X402 from when Stripe came out with it, I loved it because it went back to the four zero two HTTP code, which was Tim Burns Lee created twenty plus years ago or thirty plus years ago for payments. So you kind of always knew that you needed a better payments rail on the Internet, but we haven't been able to kind of figure it out. And I think agents will lead us to that as well.\n\nSpeaker 2 | 19:09 - 19:33\nWhen you think about these initial products that you've released, is there... What what would success for a content creator or somebody who ostensibly had a website on the Internet that they were monetizing with ads before? Like, what's the what's the killer success case you guys need to see or show the world where it just becomes like a default to do this?\n\nSpeaker 1 | 19:33 - 20:03\nWell, I mean, I think we're instead of them paying us, we're paying them. Right? Where it's covering their infrastructure costs, it's providing money that supports their livelihood. We can actually increase the number of content creators out there, which the last generation of the Internet has done very well, like with YouTube and TikTok and it's... I mean, actually making it even exponentially larger.\n\nSpeaker 2 | 20:03 - 20:17\nAnd when you look at the Workspace OS release and ecosystem work that you guys have been doing, what is... What are you hoping are the biggest use cases of it coming up?\n\nSpeaker 1 | 20:17 - 21:15\nThis is transitioning a little to a new release called Cloudflare OS. And Cloudflare OS is our internal platform for how our employees use AI every day, where we... And it actually goes back to security roots where we were very worried about customer data, internal data leaking out, and we wanted to make sure that our employees could use all the new AI tools and models, but have a way to safely deploy them internally to understand how that data is being used and flowing and good governance over that. In addition, the reason my company called CloudflareOS is we started to realize that as we have more and more agents, we needed to be able to teach them what made Cloudflare special, how we build at Cloudflare. And for humans, we did that through Cloudflare University and the onboarding process and meeting your colleagues and working with them.\n\nSpeaker 1 | 21:15 - 21:36\nBut we needed to kind of more clearly define that and document that for agents. And so Cloudflare OS is both the platform where our employees can build anything that they want in a secure way without having to... Security is not something that they have to think about. The BER that's trying to create a call list, they don't have to worry about security. It's just built in there for them.\n\nSpeaker 1 | 21:36 - 21:42\nBut they also know that it's being done in a way that is consistent with the themes and values of how software works.\n\nSpeaker 2 | 21:42 - 22:01\nAnd why release... I think of this as somewhat different from the other products that Cloudflare offers today in that it is not infrastructure. It's like an end user facing product for managing AI use within the organization. Why release it? Or do you think of it as a departure?\n\nSpeaker 1 | 22:01 - 22:40\nYeah. I mean, for one, it's kind of reference architecture really. Over the past ten years, we've built our developer platform where we started with just a simple serverless compute primitive and now over 100 different developer platform tools from storage to databases to durable objects. We wanted to show how you can build it completely on Cloudflare and how we build things internally and kind of give people the option to fork it and build their own version of their own company OS on top of it.\n\nSpeaker 2 | 22:40 - 22:47\nAnd what is a way in which it is helping your people and your organization that you think is like clear success?\n\nSpeaker 1 | 22:48 - 23:28\nIt's actually used more by our go to market teams and our G and A teams than it is used by our engineering It's giving them a very fast... Early on, I thought we saw training was the biggest gap for people using AI. And when you just point them at a chat interface or another by putting tool, it's too much of a blank slate for them. And so this is a platform that's designed... You design everything for it for how your business works, and they immediately can go there and get access to all the data that they need.\n\nSpeaker 1 | 23:28 - 24:00\nThey can get guided and taken through where they quickly realize, Oh, this is not trying to replace me. This is trying to make me better at my job. That's been really exciting to see just all the different ways people at the company have done that. A lot of how the company got put together, the marketing team built hundreds of internal tools where previously they would have to go out and work with different agencies, but the speed that they can move with a smaller team now is just amazing.\n\nSpeaker 2 | 24:00 - 24:18\nAssuming this is a continuation starting in May, you guys did this restructuring to be an AI first organization. What else reflecting on the last number of months has worked or not worked that you would recommend to others?\n\nSpeaker 1 | 24:18 - 24:35\nYeah. I mean, so restructuring was hard saying goodbye to some our colleagues. It was the first time Cloudflare ever did it. Had always been very careful not to overhire. This was for different reasons.\n\nSpeaker 1 | 24:35 - 25:03\nThis is because we saw the way AI was transforming some teams and how they work. Kind of thought of it as like a factory floor where you needed to actually rebuild, rethink how things happen. There were some processes or some... The way a product inventor would send an email before to customers, it involved three teams. It involved a team where you went to BI to go get a cohort of the people that you wanted to send an email to.\n\nSpeaker 1 | 25:03 - 25:28\nYou went to the marketing team to help you design the email and get the voice right. You went to the marketing operations team to get the email out. Where you're never going to be able to actually redesign that process unless you kind make some hard changes and force people to kind of rethink, well, what actually is the right way to do that? And it might not involve those three teams at all. It might just involve a new way of doing things.\n\nSpeaker 1 | 25:28 - 25:49\nSo what came out of that was a tool where a product manager now goes in and describes the cohort. They write an email. It rewrites it in Cloudflare's voice. It sends it to their manager, and the manager can click approve if they like it, and it goes out. We didn't go from three teams getting faster at doing that.\n\nSpeaker 1 | 25:49 - 25:56\nWe went to one tool that can kind of let a product manager now become a superpower they didn't have before.\n\nSpeaker 2 | 25:56 - 26:19\nWhen you think of all of the different workflows and tasks within an organization that's got about 5,000 people like Cloudflare. Do you decide who the owner is of rethinking that process? Was it bottoms up from one of those teams in this case? Is it an organizational leader When you have so many of these things that could change to be faster and make more sense as you described.\n\nSpeaker 1 | 26:19 - 26:40\nYeah. I mean, CloudForm has always had a thousand more things that we could could ever do, whether it was products and features or things like this. And so we always look for people that are going to take initiative in ownership. And so, you know, it doesn't really matter if you're ordering it, you know, one to a 100 and try and prioritize it. Any one of those 100 things are are probably safe if someone's passionate about it.\n\nSpeaker 1 | 26:40 - 27:05\nSo, you know, we we kind of gave people at the beginning of last year the the tools and started seeing how they were experimenting. And people quickly kind of broke out in different cohorts of people that were really leaning in and just naturally doing those things and taking ownership of them. So I think it was very bottoms up from the... How we're going to do those things.\n\nSpeaker 2 | 27:05 - 27:22\nIt's been a major topic of conversation for organizations as to how they should think about token budgeting. Right? Like, you know, what's a reasonable amount to spend? How do I think about this versus human capital? We should get tokens even within our organization.\n\nSpeaker 2 | 27:22 - 27:24\nLike, what is your philosophy on this now?\n\nSpeaker 1 | 27:24 - 27:40\nIt's definitely changed. You know, each model kind of makes you rethink it as the the cost dynamics change. But, know, in in general, you know, I think it's kinda silly that we're actually asking humans to decide which model to do each task.\n\nSpeaker 2 | 27:41 - 27:43\nLike, it should be intelligently routed. Yeah.\n\nSpeaker 1 | 27:43 - 27:55\nExactly. Like, humans just aren't aren't gonna ever be good at that. Right? Like, you know... But, you know, early on, you do it kind of brute force, and you you know, people you get people to experiment, and you say, hey.\n\nSpeaker 1 | 27:55 - 28:19\nWell, let's try for the planning part. Let's use the top frontier models for that. And then once the plan's written out and agreed upon and iterated on, then potentially some more the open source models can go do that. Then you go back and you have one of the frontier models do the reviews and the red teaming and things like that. Now all of that today is fairly manual.\n\nSpeaker 1 | 28:20 - 28:47\nBut I think as we start to learn and experiment, I think people will become intelligent over time, there'll be more governance on that. Kafware has been a place where largely we've let people use the models and tools that they see fit for the job. We don't have a token leaderboard. We don't encourage it. We encourage people to focus on the output.\n\nSpeaker 1 | 28:50 - 29:06\nThey're not graded on if they use it, they're graded on what they've shipped and what they've built. But then, you know, we do have some kind of... We found, like, just kind of like giving people notices. Like, you know, if you happen to use 300 a day, they'll just get an email. Right?\n\nSpeaker 1 | 29:06 - 29:18\nLike, says, hey. Did you know... And because most of the time people didn't realize they were doing it. And they're like, oh, And then I think if it gets to like 500, it goes to your manager. If it goes to a thousand, goes to a VP in a day.\n\nSpeaker 1 | 29:18 - 29:25\nBut it's... You know, those things rarely happen, and and usually it's it's it's... People are actually happy to get those notices.\n\nSpeaker 2 | 29:26 - 29:40\nWhere do you think you are in your overall evolution of, like, take things just for the current level of capabilities of of models? Assume no new development of, you know, rethinking the way different things at Cloudflare are done from go to market to engineering to be\n\nSpeaker 1 | 29:41 - 30:00\nI think we're still so early. Know, comfort is something... You know, two years ago, had about 200 interns. And what we saw was those interns were, you know, really the first, you know, fully kind of AI native, you know, where you took AI away from them. I don't think they would be able to work.\n\nSpeaker 1 | 30:01 - 30:02\nOh, no. And\n\nSpeaker 2 | 30:02 - 30:03\nIs that good?\n\nSpeaker 1 | 30:04 - 30:17\nActually, I think it is. I I think they know how to use the tools better than us. It's just you took Google away from me over the last ten years. How would I learn anything? That's where they reached to first.\n\nSpeaker 1 | 30:17 - 30:30\nWe actually saw the managers that had interns from summer actually adopt AI faster. So then this past summer, this past year, we decided we're gonna hire a thousand interns. So that's, you know...\n\nSpeaker 2 | 30:30 - 30:31\nFor a 5,000 person company?\n\nSpeaker 1 | 30:31 - 30:34\nYes. Wow. Yeah. Over the course of the year.\n\nSpeaker 2 | 30:34 - 30:35\nYeah. Still.\n\nSpeaker 1 | 30:35 - 30:57\nYeah. And it's it's just been amazing because, you know, one, just the number of ideas that come from the interns. You know, that's something that, you know, with AI, less people experiment faster, and so having more ideas, getting more people in there. But also just seeing the the way that they use AI. They need to fill out a form.\n\nSpeaker 1 | 30:57 - 31:08\nThey reach for AI. I still find myself, there's so many things where I'm like, Oh, wait, just been doing this manually still. Then I'm like, Yeah. Oh, wait. Actually, I should be using AI.\n\nSpeaker 1 | 31:08 - 31:19\nI don't think that that's a natural natural for most of us yet. And I think that will take time. And so, yeah, I think we're still barely in our AI journey.\n\nSpeaker 2 | 31:19 - 31:51\nI love it though. The mass intern strategy. I run a very small partnership and we always have a, you know, an intern or two floating around a team of about a dozen for, you know, ideas and intern energy and all that. But we just converted one of our, you know, in college interns to full time in in Jed and had him drop out and everything. And I I I think that you're right where maybe, like, the dial should be turned up on the amount of DNA that is really, really native to these tools.\n\nSpeaker 1 | 31:51 - 32:12\nYeah. And I think it's great for them as well too. I mean, you see these schools like Waterloo and Northeastern, like, with these these co op programs. From what we've seen is people that get that type of real work experience are some of our best employees many years then and go on to do great things.\n\nSpeaker 2 | 32:13 - 32:42\nIt is interesting or encouraging though that instead of it being like, Hey, here's a master plan. We're going to map out every department and sub department at Cloudflare and be like, Here are the key workflows. We're going try to reengineer the workflows. It is instead a strategy of assume people are rational about their tokens if given information about their usage, hire a bunch of interns, and assume high agency people we have here are going to go shift those workflows to something more intelligent over Yeah.\n\nSpeaker 1 | 32:42 - 33:00\nAnd then and then brute force and just try things. Early on, we had an email alias called agents at Cloudflare, where we... This is back in January of last... Of this year, where we just told people to, you you curious, can I use AI for this? Email in your jobs to be done.\n\nSpeaker 1 | 33:00 - 33:31\nAnd that email list would reply back to the skill file. And for a while, thought it was actually thought it was all AI and automated. It was actually a bunch of interns that were helping people write skill files. But that let us kind of get to see in a way that's not going out in like hiring a consulting firm to come out and catalog every single thing to be done. It's people that are recognizing, hey, this seems harder than it needs to be.\n\nSpeaker 1 | 33:31 - 33:33\nI wonder if an agent can help me here.\n\nSpeaker 2 | 33:33 - 33:43\nIs there anything else about the last year that's changed beyond the intern level, like your hiring philosophy? What you look for in people to bring on?\n\nSpeaker 1 | 33:44 - 34:19\nWell, I mean, one of the biggest things we always look for is curiosity. And so if people aren't using AI at home in their personal life and all that, that's a pretty big red flag. How can you not be embracing AI if you have a level of curiosity out there. So I think just doubling down on some of those key characteristics of drive and curiosity and empathy play even better for this next set of people?\n\nSpeaker 2 | 34:20 - 34:46\nWell, I mean, I'm a alpha user of all products and technology forever. But I think the answer is fear and skepticism. Right? And so I guess implicit in this claim about curiosity including an experimentation with Frontier Tools is like that needs to be a core principle for people who work at Flare.\n\nSpeaker 1 | 34:46 - 35:10\nYeah. I mean, a lot of things that we're doing, we're not... We're inventing new ways of doing things. Mean, scale that we operate at for the number of sites behind us and the the amount of free services we give away, it's just not possible with off the shelf technology. So you you need people that can come in and literally invent new things, and and that that starts with curiosity.\n\nSpeaker 2 | 35:11 - 35:42\nI have a couple questions for you to to close out. And so mainly about security both and how to do that in a new way both at at Cloudflare and then how you think it's gonna work in the in the broader ecosystem. What do you think is the, like, process by which if half the engineering team is going to go work on security and just fix seventy years of vulnerability? How do you attack that problem? Internally, assuming that not all software is perfect, even amazing production internet scale software, and then, you know, we'll talk about the ecosystem.\n\nSpeaker 1 | 35:42 - 36:03\nYeah. I mean, I think largely today we have one red team. I think by the end of the year next year, we will probably have four or five red teams. So break people out into groups that are actually being more adversarial and actually going out and actively trying to find vulnerabilities.\n\nSpeaker 2 | 36:04 - 36:12\nWhy is that the approach when instead of, Oh, we're finally going to get our patching systems right, our processes right.\n\nSpeaker 1 | 36:12 - 36:19\nI mean, processes and those things can always be better. We have a VOLM process. We have a patching process. Are they perfect? No.\n\nSpeaker 1 | 36:20 - 37:02\nBut, you know, the best way I found for those sorts of things to get better is to out of crisis kind of comes that's how you get those things fixed. When the volumes get too big for the engineering team to just do them using their normal processes, Engineers are inherently lazy in a good way. And so they automate away those things as they need to, as they kind of realize that there's no other way to do that. So I think the focus needs to be on the discovery side and people will do the right thing and figure out how to patch it in a scalable way over time.\n\nSpeaker 2 | 37:02 - 37:24\nDo you express a philosophy on just prioritization of this versus shipping new features? Because I guess my understanding of... It's not as if we didn't have a backlog of vulnerabilities vulnerabilities in every large piece of software to go fix. It was just whether or not that was a priority for engineering teams previously as one common state.\n\nSpeaker 1 | 37:24 - 37:39\nI I think you need to figure out how to do both. It might come at the expense of cost optimization or other things, but I mean, companies, if you're not shipping, you're dying. This is how we think about it.\n\nSpeaker 2 | 37:39 - 37:41\nSo it's not gonna be freeze in order Yeah. To do\n\nSpeaker 1 | 37:41 - 38:16\nOh, no. Absolutely not. You be need able to continue building and shipping new things, but you need to be able to make sure that you're doing it securely and patching and fixing bugs. Think if we do it right, we'll actually be able to do them both faster with AI. While AI has become the tool that's causing this kind of security apocalypse, vuln apocalypse to happen, it is also the tool that can help us solve it faster as well.\n\nSpeaker 1 | 38:16 - 38:18\nRight? So it's on both sides of it.\n\nSpeaker 2 | 38:19 - 38:51\nWhere do you fall in this debate of the role, like good and bad, of open and closed models on the cyber front? Right? Because the argument, the broad argument is, well, having defensive and offensive cyber vulner... Cyber capabilities, you know, they're parallel in the same model despite safety and guardrails being being built into them. And so you can't have open defensive models without them also being offensive.\n\nSpeaker 2 | 38:51 - 39:08\nAnd then the argument sort of... Or the concern around only having security capabilities in a a set of frontier closed models as well, how are you gonna release them and you can't possibly get them out to the distributed set of actors that need to defend? What do you think, or did I characterize that correctly?\n\nSpeaker 1 | 39:08 - 39:14\nYeah. Mean, I think over time it'll ask you open because everyone's gonna get access to it anyways.\n\nSpeaker 2 | 39:17 - 39:18\nThat's how open source tends to work. Yes.\n\nSpeaker 1 | 39:19 - 39:36\nThe bad guys are going to find a way to get it. So all URs and the top companies will have a way of getting it as well. So you're just excluding a mass population that just doesn't have the access that probably needs it.\n\nSpeaker 2 | 39:36 - 39:57\nAnd then so final question just because Cloudflare, very mission oriented, does carry the weight of some Internet resilience on on its back. What about all of the people who can't afford to have four red teams or, like, never had a red team to begin with that run important systems? Like, how do they how do they protect themselves?\n\nSpeaker 1 | 39:57 - 40:17\nWell, so, you know, I I would say your sites behind Cloudflare. Put your protection behind Cloudflare. Build on Cloudflare. When these major vulnerabilities come out, like the React one last year, we don't just give it to our paid customers who have the advanced firewall and WAF capabilities. We give it to everyone.\n\nSpeaker 1 | 40:17 - 40:47\nWe view those kind of things as part of the utility that we offer. Want to provide that And just like we want to provide performance for everyone. Before Cloudflare started, there were probably 3,000 sites in the world that had a large scale CDN to cache their stuff at the edge. Now there's hundreds of millions of sites that do. Koppers always viewed our goals providing democratizing those security and performance for everyone.\n\nSpeaker 2 | 40:47 - 40:57\nAwesome. Thanks so much for doing this, Dane. You guys heard it first. Have the agent kitties and the Vulnkapocalypse. Am I pronouncing that right?\n\nSpeaker 2 | 40:57 - 41:01\nYeah. Yeah. But but it's resolvable. Alright. Thanks so much, guys.\n\nSpeaker 2 | 41:01 - 41:16\nThanks. Find us on Twitter at no priors pod. Subscribe to our YouTube channel if you wanna see our faces. Follow the show on Apple Podcasts, Spotify, or wherever you listen. That way you get a new episode every week.\n\nSpeaker 2 | 41:16 - 41:21\nAnd sign up for emails or find transcripts for every episode at no-priors.com."
+      }
+    ],
+    "stats": {
+      "podcastEpisodes": 1
+    }
+  },
+  "blogs": {
+    "generatedAt": "2026-10-24T06:39:42.082Z",
+    "lookbackHours": 72,
+    "blogs": [],
+    "stats": {
+      "blogPosts": 0
+    }
+  }
+}
