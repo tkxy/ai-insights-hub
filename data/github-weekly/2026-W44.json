@@ -1,0 +1,571 @@
+{
+  "week": "2026-W44",
+  "range": {
+    "start": "2026-10-26",
+    "end": "2026-11-01"
+  },
+  "generatedAt": "2026-11-02T01:21:09.659137+00:00",
+  "count": 20,
+  "items": [
+    {
+      "name": "pbakaus/impeccable",
+      "title": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+      "url": "https://github.com/pbakaus/impeccable",
+      "stars": 99353,
+      "weeklyStars": 12017,
+      "forks": 0,
+      "language": "Rust",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "AI 生成内容的下一阶段不是更能写，而是更像人、更有审美。社区开始把「去 AI 味」「设计品味」「语言质感」做成可复用 skill，说明输出质量正在从功能问题变成风格问题。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "Nutlope/hallmark",
+      "title": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "url": "https://github.com/Nutlope/hallmark",
+      "stars": 44899,
+      "weeklyStars": 11566,
+      "forks": 0,
+      "language": "CSS",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "AI 生成内容的下一阶段不是更能写，而是更像人、更有审美。社区开始把「去 AI 味」「设计品味」「语言质感」做成可复用 skill，说明输出质量正在从功能问题变成风格问题。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "cloudflare/security-audit-skill",
+      "title": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "stars": 56398,
+      "weeklyStars": 10069,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "Agent 产品竞争开始进入「运行框架」阶段。社区关注的不再只是接哪个模型，而是技能、记忆、安全、评估这些让 Agent 长期稳定工作的底层系统。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "pingdotgg/t3code",
+      "title": "暂无描述",
+      "url": "https://github.com/pingdotgg/t3code",
+      "stars": 38052,
+      "weeklyStars": 6926,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "其他",
+      "insight": "t3code 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "YuJunZhiXue/dsh-purge",
+      "title": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐ 如要二开，请查看署名要求部分",
+      "url": "https://github.com/YuJunZhiXue/dsh-purge",
+      "stars": 15365,
+      "weeklyStars": 6644,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "category": "其他",
+      "insight": "dsh-purge 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
+      "cases": [
+        {
+          "name": "Prompt 工程优化",
+          "desc": "系统提示词的管理、版本控制和 A/B 测试"
+        },
+        {
+          "name": "AI 应用调优",
+          "desc": "通过 prompt 模板提升生成质量和一致性"
+        },
+        {
+          "name": "团队 Prompt 库",
+          "desc": "跨团队共享和复用高质量提示词"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "affaan-m/ECC",
+      "title": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "url": "https://github.com/affaan-m/ECC",
+      "stars": 294817,
+      "weeklyStars": 6299,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "Agent 产品竞争开始进入「运行框架」阶段。社区关注的不再只是接哪个模型，而是技能、记忆、安全、评估这些让 Agent 长期稳定工作的底层系统。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "obra/superpowers",
+      "title": "An agentic skills framework & software development methodology that works.",
+      "url": "https://github.com/obra/superpowers",
+      "stars": 310643,
+      "weeklyStars": 5896,
+      "forks": 0,
+      "language": "Shell",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "Agent 产品竞争开始进入「运行框架」阶段。社区关注的不再只是接哪个模型，而是技能、记忆、安全、评估这些让 Agent 长期稳定工作的底层系统。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "thedotmack/claude-mem",
+      "title": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "stars": 109319,
+      "weeklyStars": 5852,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "AI 工程的瓶颈正在从模型能力转向上下文成本。能压缩日志、工具输出和 RAG chunk 的项目走热，说明开发者开始认真治理「给模型看的信息」，而不是一味堆更大的上下文窗口。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "JetBrains/thinkrail",
+      "title": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+      "url": "https://github.com/JetBrains/thinkrail",
+      "stars": 6974,
+      "weeklyStars": 5760,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "category": "其他",
+      "insight": "thinkrail 不是简单的热门项目，它代表了一个具体技术方向正在被社区快速验证。需要结合它解决的问题判断是否能迁移到我们的输入法 AI、知识管理或设计工程流程里。",
+      "cases": [
+        {
+          "name": "技术选型参考",
+          "desc": "了解该领域最新技术方向和社区趋势"
+        },
+        {
+          "name": "团队分享素材",
+          "desc": "适合作为技术分享或设计组内部交流的案例"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "TauricResearch/TradingAgents",
+      "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "stars": 119546,
+      "weeklyStars": 5432,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "TradingAgents 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "Leonxlnx/taste-skill",
+      "title": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "stars": 107799,
+      "weeklyStars": 5336,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "Agent 产品竞争开始进入「运行框架」阶段。社区关注的不再只是接哪个模型，而是技能、记忆、安全、评估这些让 Agent 长期稳定工作的底层系统。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "AgriciDaniel/claude-seo",
+      "title": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
+      "url": "https://github.com/AgriciDaniel/claude-seo",
+      "stars": 25553,
+      "weeklyStars": 5034,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "文档解析正在成为 RAG 和企业 AI 的基础设施。真正难的不是把文件转成文本，而是稳定保留结构、表格、标题层级，让后续问答和总结有可靠上下文。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "multica-ai/andrej-karpathy-skills",
+      "title": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "stars": 228007,
+      "weeklyStars": 4459,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "Agent 产品竞争开始进入「运行框架」阶段。社区关注的不再只是接哪个模型，而是技能、记忆、安全、评估这些让 Agent 长期稳定工作的底层系统。",
+      "cases": [
+        {
+          "name": "编码效率提升",
+          "desc": "代码补全、重构建议、Bug 定位辅助"
+        },
+        {
+          "name": "代码审查自动化",
+          "desc": "PR Review 的 AI 辅助和规范检查"
+        },
+        {
+          "name": "技术文档生成",
+          "desc": "从代码自动生成 API 文档和注释"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "anthropics/skills",
+      "title": "Public repository for Agent Skills",
+      "url": "https://github.com/anthropics/skills",
+      "stars": 186373,
+      "weeklyStars": 2600,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "Agent 产品竞争开始进入「运行框架」阶段。社区关注的不再只是接哪个模型，而是技能、记忆、安全、评估这些让 Agent 长期稳定工作的底层系统。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "jakubkrehel/skills",
+      "title": "A collection of agent skills that help you build great interfaces.",
+      "url": "https://github.com/jakubkrehel/skills",
+      "stars": 10086,
+      "weeklyStars": 1607,
+      "forks": 0,
+      "language": "Markdown",
+      "topics": [],
+      "category": "AI / 生成式",
+      "insight": "Agent 产品竞争开始进入「运行框架」阶段。社区关注的不再只是接哪个模型，而是技能、记忆、安全、评估这些让 Agent 长期稳定工作的底层系统。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "ghostty-org/ghostty",
+      "title": "👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.",
+      "url": "https://github.com/ghostty-org/ghostty",
+      "stars": 63181,
+      "weeklyStars": 589,
+      "forks": 0,
+      "language": "Zig",
+      "topics": [],
+      "category": "UI / 组件",
+      "insight": "UI 组件项目的热度反映出设计工程化继续加速。现在的组件不只是样式复用，还要承载动效、状态、可访问性和品牌表达。",
+      "cases": [
+        {
+          "name": "设计系统建设",
+          "desc": "企业级组件库的搭建和跨团队规范落地"
+        },
+        {
+          "name": "快速原型搭建",
+          "desc": "用现成组件快速实现产品原型和 Demo"
+        },
+        {
+          "name": "品牌差异化",
+          "desc": "在通用组件上叠加品牌动效和视觉个性"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "excalidraw/excalidraw",
+      "title": "Virtual whiteboard for sketching hand-drawn like diagrams",
+      "url": "https://github.com/excalidraw/excalidraw",
+      "stars": 134986,
+      "weeklyStars": 0,
+      "forks": 15959,
+      "language": "TypeScript",
+      "topics": [
+        "canvas",
+        "collaboration",
+        "diagrams",
+        "drawing",
+        "hacktoberfest"
+      ],
+      "category": "画布 / 空间界面",
+      "insight": "画布型交互继续升温，说明复杂任务更适合空间化组织。对设计来说，画布不是白板皮肤，而是一套选择、拖拽、连接、撤销和协作的基础语言。",
+      "cases": [
+        {
+          "name": "协作白板",
+          "desc": "团队脑暴、需求评审、用户旅程图的可视化协作"
+        },
+        {
+          "name": "AI 工作流编排",
+          "desc": "Agent/自动化任务的节点式可视化配置"
+        },
+        {
+          "name": "知识图谱可视化",
+          "desc": "将文档/概念关系以画布形式空间化呈现"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "mrdoob/three.js",
+      "title": "JavaScript 3D Library.",
+      "url": "https://github.com/mrdoob/three.js",
+      "stars": 117376,
+      "weeklyStars": 0,
+      "forks": 36880,
+      "language": "JavaScript",
+      "topics": [
+        "3d",
+        "augmented-reality",
+        "canvas",
+        "html5",
+        "javascript"
+      ],
+      "category": "3D / 空间计算",
+      "insight": "3D Web 项目的关注上升，说明空间界面正在从营销页走向真实产品层。设计师需要开始理解场景、视角、遮挡和空间控件，而不只是平面组件。",
+      "cases": [
+        {
+          "name": "产品 3D 展示",
+          "desc": "电商商品、硬件产品的在线 3D 预览和交互"
+        },
+        {
+          "name": "数字孪生",
+          "desc": "园区/工厂的 3D 实时监控和数据叠加"
+        },
+        {
+          "name": "XR 应用界面",
+          "desc": "VR/AR 场景中的空间 UI 和交互设计"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "OpenHands/OpenHands",
+      "title": "🙌 OpenHands: AI-Driven Development",
+      "url": "https://github.com/OpenHands/OpenHands",
+      "stars": 92444,
+      "weeklyStars": 0,
+      "forks": 12317,
+      "language": "TypeScript",
+      "topics": [
+        "agent",
+        "artificial-intelligence",
+        "chatgpt",
+        "claude-ai",
+        "cli"
+      ],
+      "category": "AI / 生成式",
+      "insight": "OpenHands 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    },
+    {
+      "name": "koala73/worldmonitor",
+      "title": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "url": "https://github.com/koala73/worldmonitor",
+      "stars": 89955,
+      "weeklyStars": 0,
+      "forks": 13886,
+      "language": "TypeScript",
+      "topics": [
+        "agent",
+        "ai",
+        "dashboard",
+        "geopolitics",
+        "mcp"
+      ],
+      "category": "AI / 生成式",
+      "insight": "worldmonitor 的走热说明 AI 应用正在拆成更小的能力模块。值得看的不是项目本身多火，而是它解决了 AI 产品链路里的一个具体断点：上下文、记忆、工具、内容生成或评估。",
+      "cases": [
+        {
+          "name": "智能对话产品",
+          "desc": "集成到客服、助手类产品中提升对话质量和自主能力"
+        },
+        {
+          "name": "内容生产工具",
+          "desc": "文案、代码、图片等内容的 AI 辅助生成"
+        },
+        {
+          "name": "企业知识库",
+          "desc": "基于 RAG 的企业文档问答和知识检索"
+        }
+      ],
+      "isNew": false
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "week": "2026-W44",
+  "range": {
+    "start": "2026-10-26",
+    "end": "2026-11-01"
+  },
+  "generatedAt": "2026-11-02T09:20:47+08:00",
+  "coverageNote": "本周原料只覆盖 1/7 天（仅 2026-10-26 的日快照，10-27~11-01 的采集缺失），以下内容按实际拿到的素材写，没有补写缺失日期的动态。",
+  "trends": [
+    {
+      "title": "会判断的 AI",
+      "summary": "这周最值得看的一件事是 JEV 这类「不输出文字、只输出判断」的模型被认真讨论起来。它不写回答，而是直接给你一组概率：这封邮件急不急 0.85、要不要升级 0.3，由你自己定阈值。背后的理由很朴素——现在的 AI 像个挂在侧边的聊天框，自己演自己的戏，跟软件根本接不上。",
+      "implication": "输入法里很多场景其实不需要 AI 写一段话，只需要它做一个小判断：这句要不要提示转表情、要不要唤起 AI 润色、这段是不是在写代码。把这些拆成一个个能单独测准确率的小开关，比在一个大 prompt 里塞满「如果……就……」要可控得多。",
+      "evidence": [
+        {
+          "type": "podcast",
+          "who": "Diogo Almeida（TypeSafe CEO）在 The MAD Podcast",
+          "url": "https://www.youtube.com/@DataDrivenNYC/videos",
+          "quote": "大家心里的 AI 永远是挂在旁边那个聊天框，自己演自己的戏，因为它跟软件压根合不上（AI is always like the chat box to the side that happens to be the main character in its own little show because it doesn't play nicely with software）"
+        },
+        {
+          "type": "podcast",
+          "who": "Diogo Almeida 讲 JEV 怎么替代大 prompt",
+          "url": "https://www.youtube.com/@DataDrivenNYC/videos",
+          "quote": "你可以给每件事单独做一个分类器，就像聪明的 if 语句——以前在软件里没法表达的东西，现在能表达了（You can actually make individual classifiers for each of these things. Like smart if statements. Like, can now express things that you couldn't express in software before）"
+        },
+        {
+          "type": "tweet",
+          "who": "Nikunj Kothari（FPV Ventures 合伙人）",
+          "url": "https://x.com/nikunj/status/2113994081345126486",
+          "quote": "这篇把我想说的说得清楚多了——从喂上下文，到搭脚手架，再到交出判断权，是怎么一步步演进的（This describes much more eloquently what I meant what evolving from context -> harnesses -> judgement means）"
+        }
+      ]
+    },
+    {
+      "title": "带 AI 干活的火候",
+      "summary": "这周有个说法很实在：跟 AI 配合最难的不是会不会写 prompt，而是火候——管太多，它本来比你聪明，被你带傻了；管太松，它就跑偏、丢上下文。Vercel CEO 直接说这是他招人时看的第一位能力。另一边也有人在琢磨，跟模型说话到底需要多少词，可能比我们想的少得多。",
+      "implication": "这件事对侧边栏助手是个直接提醒：我们现在的交互基本是「用户写一大段要求」，但真正该做的是把火候做进产品里——默认少管（给个干净起点），需要时再给几个明确的收紧按钮，而不是逼用户自己学会写长指令。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Guillermo Rauch（Vercel CEO）",
+          "url": "https://x.com/rauchg/status/2114085432749347086",
+          "quote": "有时候你会把 AI 管得太死——它其实比你聪明；有时候又管得太松——它会跑偏、带着错的偏见、丢掉上下文。能不能拿捏住这个分寸，是我招人时看的第一位能力（How well you manage this superpower is the #0 skill I look for）"
+        },
+        {
+          "type": "tweet",
+          "who": "Guillermo Rauch 聊跟模型说话要用多少词",
+          "url": "https://x.com/rauchg/status/2114164830403989880",
+          "quote": "我莫名喜欢模型那套工程腔：门禁、证据、元凶、持久、溯源、契约……我很好奇，要把活干成，最少需要多少英文（I wonder what the *minimum viable English* in fact is to be productive）"
+        },
+        {
+          "type": "podcast",
+          "who": "Diogo Almeida 吐槽 system prompt 越写越长",
+          "url": "https://www.youtube.com/@DataDrivenNYC/videos",
+          "quote": "你本质上就是在用自然语言写一个巨大的 system prompt，复杂度一上来，错误率就越来越高——到最后你只是在求模型别犯那些错（you're basically programming in natural language this giant system prompt. And as the complexity rises, the error rates get higher and higher）"
+        }
+      ]
+    },
+    {
+      "title": "AI 越强人味越贵",
+      "summary": "这周一批做 AI 的人反过来在聊「人」。有人说自己被 AI 洗脑越深，就越珍惜和家人朋友面对面的时间；有人回顾自己是靠一次次撞墙、失败、再来才练出手艺的；还有人拆解了一个真正让孩子坚持几个月的学习 App，结论是赢在习惯和一点点轻游戏化，不在 AI 多猛。",
+      "implication": "做 AI 功能很容易陷进「能力越多越好」，但留住人的往往是习惯和一点人味。输入法这种天天打开的产品尤其吃这套：一个让人愿意每天回来的小仪式，可能比再加三个 AI 入口更值钱。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Aditya Agarwal（SPC 普通合伙人，前 Dropbox CTO）",
+          "url": "https://x.com/adityaag/status/2114135237806760097",
+          "quote": "被 AI 彻底洗脑之后有个奇怪的副作用：我开始特别珍惜跟家人朋友面对面的时间。放点 techno，和朋友跳舞，带孩子去公园。让 agent 自己跑去吧——但看在上帝面上，为人类庆祝一下（But dear god, celebrate humans）"
+        },
+        {
+          "type": "tweet",
+          "who": "Ryo Lu（做过 Cursor、Notion、Stripe 的设计师）",
+          "url": "https://x.com/ryolu_/status/2114187405251219954",
+          "quote": "我是靠一次次尝试、失败、再尝试，才学会编程和设计的。撞墙了就琢磨怎么爬过去。做过的很多东西都不怎么好，但轮数够了，总有一个成了（i learned programming and design by trying, failing, and trying again. when i hit a wall, i figured out how to climb it）"
+        },
+        {
+          "type": "tweet",
+          "who": "Peter Yang（AI 教程与访谈作者）",
+          "url": "https://x.com/petergyang/status/2114042708105060501",
+          "quote": "试过的所有学习 App 里，只有这个我和四岁的孩子坚持了好几个月。因为它逼你每天和孩子一起学，还有拍张傻照片这种轻游戏化，上满 30 课会寄实体书来（It builds a habit where you need to learn with your kid daily / It has lightweight gamification）"
+        }
+      ]
+    }
+  ],
+  "builders": [
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "Vercel CEO",
+      "highlights": [
+        {
+          "summary": "跟 AI 配合的分寸感是第一位能力：管太多会把比你聪明的模型带傻，管太松它就跑偏丢上下文。",
+          "url": "https://x.com/rauchg/status/2114085432749347086"
+        },
+        {
+          "summary": "注意到模型爱用一套工程词汇（门禁、证据、元凶、溯源、契约），猜是因为工程工作大半是调试和查案；顺带在想跟模型高效沟通到底需要多少词，可能远少于简化技术英语那 900 个。",
+          "url": "https://x.com/rauchg/status/2114164830403989880"
+        }
+      ]
+    },
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "Box CEO",
+      "highlights": [
+        {
+          "summary": "判断很快会有比今天多上千倍的 token 流过各种自动化 agent，攻击面跟着一起涨，大公司以前勉强扛得住、绝大多数公司根本扛不住；接下来只能靠能同时铺开、会用各种安全工具的 agent 群去顶。",
+          "url": "https://x.com/levie/status/2114187326406766604"
+        }
+      ]
+    },
+    {
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "role": "FPV Ventures 合伙人，早期投资人",
+      "highlights": [
+        {
+          "summary": "把这波 AI 产品的演进概括成三段：先拼命喂上下文，再搭脚手架约束模型，最后是把判断权交出去。他在找这个方向上已经动手做东西的人聊。",
+          "url": "https://x.com/nikunj/status/2113994081345126486"
+        }
+      ]
+    },
+    {
+      "name": "Ryo Lu",
+      "handle": "ryolu_",
+      "role": "设计过 Cursor、Notion、Stripe 的设计师",
+      "highlights": [
+        {
+          "summary": "复盘自己怎么练出手艺：全靠尝试、失败、再来，撞墙就想办法爬过去，读半懂的东西、拆东西、求人帮忙、重头再来。做的东西大多不好，但轮数够多总有一个成了，当初费劲的事最后变成了直觉——能在说得清之前先感觉到哪里不对。",
+          "url": "https://x.com/ryolu_/status/2114187405251219954"
+        }
+      ]
+    },
+    {
+      "name": "Aditya Agarwal",
+      "handle": "adityaag",
+      "role": "SPC 普通合伙人，前 Dropbox CTO",
+      "highlights": [
+        {
+          "summary": "越是重度用 AI，越开始珍惜线下和家人朋友相处的时间。让 agent 自己跑着，人该去跳舞、带孩子去公园——别忘了为人类本身庆祝。",
+          "url": "https://x.com/adityaag/status/2114135237806760097"
+        }
+      ]
+    },
+    {
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "AI 教程与访谈作者",
+      "highlights": [
+        {
+          "summary": "拆解了唯一让他和四岁孩子坚持几个月的学习 App：一是逼着你每天陪孩子学、把习惯建起来；二是轻量游戏化（每课后拍张傻照片）；三是满 30 课寄实体书，给孩子一次明确的成就感。结果孩子有时会主动选书而不是 YouTube。",
+          "url": "https://x.com/petergyang/status/2114042708105060501"
+        }
+      ]
+    },
+    {
+      "name": "Alex Albert",
+      "handle": "alexalbert__",
+      "role": "Anthropic 研究团队",
+      "highlights": [
+        {
+          "summary": "在致谢长串名单时点出了两个产品名：Claude Managed Agents 和 Duet，可以当作 Anthropic 这周在 agent 托管和协作方向上的动向信号（原推只是列贡献者，没有功能细节）。",
+          "url": "https://x.com/alexalbert__/status/2114145588686233612"
+        }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "The MAD Podcast with Matt Turck",
+      "title": "会做判断而不是写文字的 AI，为什么会改变一切（Jev: The AI That Makes Decisions, Not Text - and Why It Changes Everything）",
+      "guest": "Diogo Almeida（TypeSafe CEO，JEV 作者，RLHF 共同发明人之一）",
+      "url": "https://www.youtube.com/@DataDrivenNYC/videos",
+      "keyTakeaways": [
+        "JEV 不输出文字，输出的是概率。你问它「这封邮件是不是生气了」，它回 0.85，阈值由开发者自己定——因为 Disney 和 Character AI 对同一件事的容忍度本来就不一样，硬塞一个「是/否」是在替开发者做决定。",
+        "他把现在的 AI 比成「95% 爱因斯坦，5% 憨豆先生」。真问题不是偶尔犯傻，而是它不告诉你什么时候在犯傻——不知道这个，自动化根本无从下手。",
+        "他认为 RLHF（他自己是共同发明人）把模型训成了讨人喜欢的样子：风格永远漂亮、从不显得离谱，但该做对的决定照样做错，还顺手把大家对 AI 能自动化多少事的预期抬得过高。",
+        "大 prompt 这条路会越走越窄：用自然语言一条条写「如果是投资人就这样、如果是陌生销售就那样」，复杂度一上来错误率只会涨，最后只能整套拆掉换人工。换成一堆能单独测准确率的小分类器，系统才看得清、改得动。",
+        "他对软件的类比值得记：软件之所以强，不是因为谁在业务里画了多少 if，而是先把一个小单元做到极可靠，再一层层套成大积木。AI 到现在最大的遗憾是「除了跟别的 AI 玩，跟谁都合不上」——能被组合进代码，才是它真正变值钱的那一步。"
+      ]
+    }
+  ],
+  "blogs": []
+}

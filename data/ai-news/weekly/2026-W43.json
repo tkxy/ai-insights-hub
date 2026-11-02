@@ -1,0 +1,495 @@
+{
+  "week": "2026-W43",
+  "range": { "start": "2026-10-19", "end": "2026-10-25" },
+  "generatedAt": "2026-10-26T01:10:00Z",
+  "trends": [
+    {
+      "title": "AI 助手开始不等你开口",
+      "summary": "Anthropic 这周发了 Claude Duet——一个独立 App 里常驻的个人 agent，它自己盯着你的邮件、日程、消息，发现该办的事就先办了，不等你提需求。同时 Claude 网页端和手机端下周起默认切成 auto 模式，不再每一步都弹窗问你同意。OpenAI 那边的 dots 也是同一个路子，已经有人用两个 dot 互相发邮件把报税材料凑齐了。",
+      "implication": "AI 助手的入口正在从「用户想起来去点一下」变成「它自己判断该不该出现」。对输入法侧边栏来说，这意味着设计重心要从「怎么让人找到 AI」挪到「什么时候该主动冒头、什么时候该闭嘴」——判断时机本身成了产品功能，而不是附带的小聪明。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Claude 官方 @claudeai",
+          "url": "https://x.com/claudeai/status/2112984666437546104",
+          "quote": "我们是围着 Opus 5.5 来设计 Duet 的，就是要让它有判断力，自己分清哪些事得找你、哪些能等、什么时候该先问你一句（gives it the judgment to decide what needs you, what can wait, and when to check with you first）。它直接继承你 Claude 账号里的记忆、技能和已连接的 App，基本不用配置。"
+        },
+        {
+          "type": "tweet",
+          "who": "Cat Wu @_catwu（Anthropic，Claude Code）",
+          "url": "https://x.com/_catwu/status/2112988751576330487",
+          "quote": "大家反馈说希望 Claude 能主动多替你扛点活，Duet 就是往这个方向迈的一大步——它会自己注意到哪些事该做，然后在你开口之前就做掉（it'll notice work that needs to be done, and then do it before you ask）。"
+        },
+        {
+          "type": "tweet",
+          "who": "Claude 官方 @claudeai（auto 模式默认开启）",
+          "url": "https://x.com/claudeai/status/2113360845409583307",
+          "quote": "下周起，Pro、Max、Team 用户在 Claude 网页、桌面和手机端的会话会默认跑 auto 模式。不再要你一步步点同意，而是由一个自动检查去拦住有风险的操作（an automated check blocks risky actions），你随时可以切回手动。"
+        },
+        {
+          "type": "tweet",
+          "who": "Thibault Sottiaux @thsottiaux（OpenAI，Codex & ChatGPT）",
+          "url": "https://x.com/thsottiaux/status/2111495392559067199",
+          "quote": "我工作用的 dot「Burger」按我私人 dot「Dorito」的要求，跟它通邮件要文件，然后又去和我的会计对接把税务的事报了。一共 20 分钟。我们还处在特别早的阶段（We're still so early）。"
+        }
+      ]
+    },
+    {
+      "title": "安全从加分项变成准入门槛",
+      "summary": "这周安全事故扎堆：Node.js 的远程执行漏洞、PHP 的 php2shell、以及互联网加密体系里一把关键密钥的密码居然就是「4」。更微妙的是 Anthropic 自己承认，靠弹窗让用户点同意这套办法基本失效了——他们的数据是用户大约会批准 93% 的权限请求。于是产业界的做法在转向：不再管 agent 想干什么，而是从环境上限制它能干什么。",
+      "implication": "输入法是整条链路上最早碰到最敏感内容的那一环——密码、身份证、聊天原文都从这里过。「AI 看不到你输的密码」这种设计承诺，得变成用户看得见、说得清的交互表达，而不是埋在隐私协议第七条里。另外「每步都弹窗确认」这条路已经被证伪了，别再把安全感做成打断。",
+      "evidence": [
+        {
+          "type": "blog",
+          "who": "Anthropic 工程博客《How we contain Claude across products》",
+          "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+          "quote": "理论上（人在环里审批）是可行的，但我们发现这招靠不住。埋点数据显示用户大约批准了 93% 的权限弹窗（users approved roughly 93% of permission prompts）。用户看到的审批越多，对每一条就越不当回事，时间一长监督就形同虚设。"
+        },
+        {
+          "type": "tweet",
+          "who": "Guillermo Rauch @rauchg（Vercel CEO）",
+          "url": "https://x.com/rauchg/status/2113462657059639505",
+          "quote": "这周一句话总结：你阿姨的密码是「P4ssword!」，贴在厨房便利贴上。而互联网加密体系的守门人们，他们的密码是「4」。对，就是个 4。这把钥匙几乎能用来解密一切，我们现在还在清理残留风险。"
+        },
+        {
+          "type": "tweet",
+          "who": "Aaron Levie @levie（Box CEO）",
+          "url": "https://x.com/levie/status/2113499900399034689",
+          "quote": "任何靠「藏起来」实现的安全都彻底结束了（Any form of security through obscurity is fully over）。这招对付人类都勉强能用，在一个自治系统会翻遍每道缝、把每种攻击组合都试一遍的世界里，直接就没了。"
+        },
+        {
+          "type": "podcast",
+          "who": "No Priors × Cloudflare CTO Dane Knecht",
+          "url": "https://www.youtube.com/@NoPriorsPodcast",
+          "quote": "以前互联网上 Log4j、Shellshock 这种级别的事，大概一年来一次，全公司通宵。现在这类事每周都在发生。我估计今年剩下的时间到未来 18 个月，大部分团队的时间都会花在安全上。"
+        }
+      ]
+    },
+    {
+      "title": "便宜又快的小模型被当零件使唤",
+      "summary": "这周有意思的不是哪个旗舰模型又更强了，而是便宜模型被明确定位成「执行层零件」：大模型负责想方案，小快模型负责跑十遍。DeepSeek v4.1 Flash 被拿去跑 subagent，有人改一个小游戏总共花了三毛钱；推理速度被刷到每秒一千 token。同时缓存从「12 小时」一路放到「登录用户永久保留」，也有开源的端上语音模型小到能塞进设备里。",
+      "implication": "这对输入法是最直接的利好——高频、低延迟、成本敏感，正好是便宜小模型 + 长缓存的主场。值得重新算一遍账：以前因为「调一次太贵」而没做成常驻能力的交互（随输随改、实时润色、候选词级别的理解），现在可能就跑得起了。设计上要开始考虑「AI 一直在旁边算」而不是「用户点一下才算」。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Guillermo Rauch @rauchg（Vercel CEO）",
+          "url": "https://x.com/rauchg/status/2113010010766913815",
+          "quote": "DeepSeek v4.1 Flash 现在进了 Token Pass。又快、便宜得离谱，还带零数据留存。它特别适合当 subagent，去执行那些更大更贵的模型想出来的计划（run subagents that execute plans conceived by larger and more expensive models）。你能把 TypeScript 往 Rust 移植十遍都花不完额度。"
+        },
+        {
+          "type": "tweet",
+          "who": "Guillermo Rauch @rauchg（实测成本）",
+          "url": "https://x.com/rauchg/status/2111929486661018081",
+          "quote": "试了新的 deepseek-v4.1-flash 做了几处改进。它加了音效、改好了碰撞检测、优化了坡道、还做了跟车的镜头。我觉得一共花了三毛钱（I think it cost 30 cents）。"
+        },
+        {
+          "type": "tweet",
+          "who": "Thibault Sottiaux @thsottiaux（OpenAI）",
+          "url": "https://x.com/thsottiaux/status/2112712984644784534",
+          "quote": "现在 API 里能缓存 12 小时；对登录用户，我们在 Codex 和 Work 里把缓存永久留着（we keep cache forever），你回到一个很早的对话、或者隔几小时再接着聊，都不会有额外代价，而且保证命中缓存。"
+        },
+        {
+          "type": "tweet",
+          "who": "Matt Turck @mattturck（FirstMark，MAD Podcast 主播）",
+          "url": "https://x.com/mattturck/status/2112623582098428015",
+          "quote": "开源语音 AI 的大新闻：一套极小的文字转语音模型，端上就能跑，而且是当前最好的水平（a suite of tiny text-to-speech, on-device SOTA models）。"
+        }
+      ]
+    }
+  ],
+  "builders": [
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "Box CEO",
+      "highlights": [
+        {
+          "summary": "他认为安全是 agent 集群最合适的第一个战场：这个领域「投进去多少算力就产出多少价值」特别直白，而且有大量测试工作是人力永远排不上队的。",
+          "url": "https://x.com/levie/status/2113738768645808277"
+        },
+        {
+          "summary": "agent 让算力第一次变成「真能影响产出」的变量——世界上一大堆工作本质上只是被「人愿意投入多少时间」卡住了。",
+          "url": "https://x.com/levie/status/2112051081014649303"
+        },
+        {
+          "summary": "反驳「软件工程要完蛋」的说法：真正的误判是以为世界只需要固定数量的软件。实际情况相反，几乎所有事都在变成软件。",
+          "url": "https://x.com/levie/status/2111525362446520466"
+        },
+        {
+          "summary": "一个有意思的反直觉判断：模型越强、越能干长任务，靠「某个垂直领域的专门知识」做差异化反而更难立住。",
+          "url": "https://x.com/levie/status/2112404676436222170"
+        }
+      ]
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "Vercel CEO",
+      "highlights": [
+        {
+          "summary": "把便宜快模型明确当「执行零件」用：贵模型想计划、Flash 模型跑十遍，成本低到可以不心疼地重试。",
+          "url": "https://x.com/rauchg/status/2113010010766913815"
+        },
+        {
+          "summary": "他认为该干掉「长期有效的凭据」了——出事难免，但至少让小偷只能偷到会自己销毁的钥匙。当年行业一起把 TLS 绿锁普及了，OIDC 也该这么干一次。",
+          "url": "https://x.com/rauchg/status/2113399539227136084"
+        },
+        {
+          "summary": "他看到的 Generative UI 最好例子：给 AI SDK 加一行代码挂上一个工具，就同时拿到了搜索、天气、体育、股票、选举——工具网关本身变成了工具市场。",
+          "url": "https://x.com/rauchg/status/2113451268316205515"
+        },
+        {
+          "summary": "开源了一个很快的 HTML artifact 生成器，重点是底层做了「断了能续」：服务崩溃、模型抽风、函数超时都不至于白干。",
+          "url": "https://x.com/rauchg/status/2112247046082363821"
+        }
+      ]
+    },
+    {
+      "name": "Dan Shipper",
+      "handle": "danshipper",
+      "role": "Every CEO",
+      "highlights": [
+        {
+          "summary": "他是第一批深度试用 Claude Duet 的人，两周下来评价是「第一个能称为专业工具的个人 agent」，自己的使用从几乎全是 ChatGPT 变成了 ChatGPT 和 Claude 五五开。关键设计是它住在独立 App 里，不跟 Claude 混在一起。",
+          "url": "https://x.com/danshipper/status/2112997559463506059"
+        },
+        {
+          "summary": "他主张每家公司都该有个「前沿小队」：少数人专门去折腾新模型新工具，其他人只负责用他们验证过的东西。否则全公司都在「干活还是追新」之间来回撕。",
+          "url": "https://x.com/danshipper/status/2113010761786175970"
+        },
+        {
+          "summary": "他总结 AI 团队的最佳配置只需要两种人：海盗（到处乱试）和建筑师（把试出来的东西修成能用的）。",
+          "url": "https://x.com/danshipper/status/2113693510629281895"
+        }
+      ]
+    },
+    {
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "OpenAI，负责 Codex 与 ChatGPT",
+      "highlights": [
+        {
+          "summary": "他让自己的工作 dot 和私人 dot 通过邮件互相配合，又去对接会计把报税材料办了，全程 20 分钟。这是目前看到最具体的「多 agent 代办」实例。",
+          "url": "https://x.com/thsottiaux/status/2111495392559067199"
+        },
+        {
+          "summary": "缓存策略大幅放宽：API 支持 12 小时缓存，登录用户在 Codex 和 Work 里缓存永久保留，中途改推理档位也不再让缓存失效。这直接决定了长会话的成本结构。",
+          "url": "https://x.com/thsottiaux/status/2112712984644784534"
+        },
+        {
+          "summary": "Codex CLI 更新加了可复用的提示词预设、行内切模型和权限设置。他顺口提了个数据：DevDay 之后 CLI 用量翻了一倍，这有点出乎他们意料。",
+          "url": "https://x.com/thsottiaux/status/2113770862860222611"
+        },
+        {
+          "summary": "主动披露了一次事故：约 4 万个账号的用量限额跟实际套餐不匹配，导致额度掉得比预期快，他们逐个联系这些用户。",
+          "url": "https://x.com/thsottiaux/status/2112592264686149749"
+        }
+      ]
+    },
+    {
+      "name": "Swyx",
+      "handle": "swyx",
+      "role": "AI Engineer 大会主办人、Latent Space 主播",
+      "highlights": [
+        {
+          "summary": "他发现 Opus 5.5 是目前最会估工期的模型，而这件事随着越来越多活外包给 AI 会变得关键：别按人类节奏说「要两三个工作日」，对一个能大规模并行的 AI 来说那就是两三个小时。",
+          "url": "https://x.com/swyx/status/2113283272130412684"
+        },
+        {
+          "summary": "他的招人观察：数据工程师比「AI 工程师」更稀缺——只会搭 RAG 的人和真懂数据密集型系统的人，需求差距是他整个职业生涯里见过最大的。",
+          "url": "https://x.com/swyx/status/2112073533794971941"
+        },
+        {
+          "summary": "对 AI 找出一堆漏洞的正确态度：别怪 AI 把 bug 翻出来了，赶紧把 bug 全清掉就完事。",
+          "url": "https://x.com/swyx/status/2113359027682050352"
+        }
+      ]
+    },
+    {
+      "name": "Aditya Agarwal",
+      "handle": "adityaag",
+      "role": "SPC 合伙人，前 Dropbox CTO",
+      "highlights": [
+        {
+          "summary": "他给 agent 演进找了个很好用的类比：推理时扩展 → subagent → agent 集群，对应的就是 CPU 线程 → 多核 → 多节点分布式系统。历史押着同一个韵脚。",
+          "url": "https://x.com/adityaag/status/2112579526379401408"
+        },
+        {
+          "summary": "机器人正在重走大模型走过的路：从微调，到写提示词，到直接用大白话告诉它你要什么。π0.7 就是靠平实语言的「教学」学会新技能的。",
+          "url": "https://x.com/adityaag/status/2113385971844518124"
+        },
+        {
+          "summary": "他观察自己儿子：看了三小时星球大战，然后花了二十小时用 AI 做相关的游戏——但做完几乎不玩。他的疑问是，如果「做」本身就是乐趣，产品该怎么设计。",
+          "url": "https://x.com/adityaag/status/2112923959176106056"
+        }
+      ]
+    },
+    {
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "前 Anthropic，Claude Code 团队",
+      "highlights": [
+        {
+          "summary": "他对「一个人同时盯好几个 agent」这件事提了反向意见：大多数人其实该慢下来——你手上大部分事根本不重要，先想清楚 P0 是什么，如果你全力只做那一件会怎样。",
+          "url": "https://x.com/trq212/status/2112219327881761008"
+        },
+        {
+          "summary": "他发现自己现在更愿意用 AI 去「做游戏的一部分」而不是真的玩游戏，尤其是那种需要动脑的。他觉得这件事对游戏行业意味着什么还没想清楚，但很重要。",
+          "url": "https://x.com/trq212/status/2111945336537420259"
+        },
+        {
+          "summary": "宣布离开 Anthropic，在 Claude Code 待了一年多，亲眼看着它规模涨到远超自己想象。",
+          "url": "https://x.com/trq212/status/2113844051938054167"
+        }
+      ]
+    },
+    {
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "独立开发者，PSPDFKit 创始人",
+      "highlights": [
+        {
+          "summary": "这周闹得最大的那个 PHP 漏洞，是用 GPT-5.6 找出来的。AI 当漏洞猎手已经不是演示，而是真在产出结果。",
+          "url": "https://x.com/steipete/status/2112913060709228764"
+        },
+        {
+          "summary": "他摸出来的多 agent 工作流：让 Astra 做规划、Sol 6.1 写代码，在 worktree 里跑 CLI，比直接用 subagent 好得多。再加第二个 agent 专门盯着、挑刺，而不是让同一个 agent 自己审自己的文档。",
+          "url": "https://x.com/steipete/status/2112605703219347503"
+        }
+      ]
+    },
+    {
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "产品人、AI 教程作者，前 Reddit/Roblox PM",
+      "highlights": [
+        {
+          "summary": "针对这波安全事故，他做了件很接地气的事：写了个提示词，让 AI 带着你走完六步账号安全加固，还生成一份个人安全报告。",
+          "url": "https://x.com/petergyang/status/2113405131106742406"
+        },
+        {
+          "summary": "他分享了一个审计提示词，用来清理挂在 Google 账号上的几十个 App 授权（他自己挂了 45 个），要求 AI 逐个列详情并反问哪些还在用，而不是自己瞎猜。",
+          "url": "https://x.com/petergyang/status/2111508293818671449"
+        },
+        {
+          "summary": "他认为 Claude Code 的 App 现在明显变快了，用起来甚至比 ChatGPT 更简单；还缺的是更好的浏览器/电脑操作、所有会话的远程控制和实时语音。",
+          "url": "https://x.com/petergyang/status/2111496600522805624"
+        },
+        {
+          "summary": "一个很扎心的对照：他一边在网上读各种 AI 突破，一边陪母亲做癌症治疗时还在传真文件、靠光盘人工送影像资料。",
+          "url": "https://x.com/petergyang/status/2113420357726257335"
+        }
+      ]
+    },
+    {
+      "name": "Boris Cherny",
+      "handle": "bcherny",
+      "role": "Anthropic，Claude",
+      "highlights": [
+        {
+          "summary": "Agent Skills 最早只是 Claude Code 里的一个实验，因为行业里很多家都跟着用了，Anthropic 决定把它捐给 Agentic AI 基金会，和 MCP 放在一起。又一个事实标准被推成公共协议。",
+          "url": "https://x.com/bcherny/status/2113333859907747871"
+        }
+      ]
+    },
+    {
+      "name": "Alex Albert",
+      "handle": "alexalbert__",
+      "role": "Anthropic 研究团队",
+      "highlights": [
+        {
+          "summary": "他在押一个被低估的场景：用 AI 帮一堆本地小生意跑日常运营。他觉得 Claude Duet 这类产品对这些小店的意义，可能比当年的 Square 或 Google 地图还大。",
+          "url": "https://x.com/alexalbert__/status/2113386454907007444"
+        }
+      ]
+    },
+    {
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "role": "创业者、内容作者",
+      "highlights": [
+        {
+          "summary": "她的判断：个人网站正在变成新的简历。配套的一句观察是，以前只有设计师和开发者需要作品集，现在扩散到所有人了。",
+          "url": "https://x.com/zarazhangrui/status/2112148949842534482"
+        },
+        {
+          "summary": "给早期产品人的建议：有自己的读者，最大的好处不是分发，而是能低成本试不同想法看哪个有人接、以及找到最早的 100 个用户。信号比分发重要。",
+          "url": "https://x.com/zarazhangrui/status/2112530473994072225"
+        }
+      ]
+    },
+    {
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "role": "FPV Ventures 合伙人",
+      "highlights": [
+        {
+          "summary": "他给出一个投资端的体感数据：自己见过的种子轮公司里，差不多 10% 在首次见面后几个月内就被收购了。种子轮到 A 轮的挤压处于历史最高点——做梦从没这么容易，做大从没这么难。",
+          "url": "https://x.com/nikunj/status/2113405034826477910"
+        },
+        {
+          "summary": "他之前一直在抱怨 AI 产品缺「多人一起用」的体验，试了 Wabi 2.0 之后立刻被抓住了——1.0 时他觉得设计漂亮但没留住他，这一版不一样。",
+          "url": "https://x.com/nikunj/status/2112219327881761008"
+        }
+      ]
+    },
+    {
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "role": "Y Combinator 总裁兼 CEO",
+      "highlights": [
+        {
+          "summary": "他认为「多个 agent 以群聊形式协作」几乎是必然形态，Wabi 已经把它做出来了。",
+          "url": "https://x.com/garrytan/status/2112278352514162834"
+        },
+        {
+          "summary": "他预测一年后大家都会给自己的 agent 配 Aside Browser 这类专用浏览器——让 agent 真正会用网页，是个独立待解的问题。",
+          "url": "https://x.com/garrytan/status/2111971992769565177"
+        }
+      ]
+    },
+    {
+      "name": "Amjad Masad",
+      "handle": "amasad",
+      "role": "Replit CEO",
+      "highlights": [
+        {
+          "summary": "Replit 把 Chroma 团队收了进来，目标很明确：解决 agent 的上下文和记忆问题——他认为这是 AI 里最难的问题之一，也是「自动驾驶公司」这个设想的必要条件。",
+          "url": "https://x.com/amasad/status/2113736007111827606"
+        },
+        {
+          "summary": "他澄清 Replit 仍然对模型中立，用户可以选 Anthropic 也可以选其他；他在 TC Disrupt 的意思只是 OpenAI 目前是驱动 Agent 的首选合作方。",
+          "url": "https://x.com/amasad/status/2111494912562888939"
+        }
+      ]
+    },
+    {
+      "name": "Nan Yu",
+      "handle": "thenanyu",
+      "role": "OpenAI Codex 产品，前 Linear 产品负责人",
+      "highlights": [
+        {
+          "summary": "团队线下会上有人问「AI 之前我们到底在关注什么？」答案是：前端 JavaScript 框架。一句话说清了注意力被重新分配得有多彻底。",
+          "url": "https://x.com/thenanyu/status/2111597172840083574"
+        }
+      ]
+    },
+    {
+      "name": "Matt Turck",
+      "handle": "mattturck",
+      "role": "FirstMark 投资人，MAD Podcast 主播",
+      "highlights": [
+        {
+          "summary": "他梳理了 AI 的竞争格局：芯片厂跟推理服务商竞争，推理服务商跟新型云和后训练竞争，模型跟应用和芯片竞争，应用又跟模型竞争——而 NVIDIA 卖给所有人。",
+          "url": "https://x.com/mattturck/status/2113263905950568730"
+        },
+        {
+          "summary": "开源端上语音是这周容易被忽略的一条线：一套极小的 TTS 模型做到了当前最好水平，还能跑在设备上。",
+          "url": "https://x.com/mattturck/status/2112623582098428015"
+        }
+      ]
+    },
+    {
+      "name": "Madhu Guru",
+      "handle": "realmadhuguru",
+      "role": "Meta AI 高级总监，曾在 Google 带 Gemini / Veo / Nano Banana",
+      "highlights": [
+        {
+          "summary": "很多 PM 跟他说因为 AI 把岗位搅乱了而感到卡住。他的建议是别等「想清楚」再动——做个东西、把一个流程自动化、去认识让你有劲的人，清晰度是行动的结果不是前提。",
+          "url": "https://x.com/realmadhuguru/status/2113437016818057641"
+        }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "The MAD Podcast with Matt Turck",
+      "title": "几十亿 AI agent 砸向你的数据库会发生什么？（What Happens When Billions of AI Agents Hit Your Database?）",
+      "guest": "Andy Pavlo（卡内基梅隆大学教授，ClickHouse Labs 创始人）",
+      "url": "https://www.youtube.com/@DataDrivenNYC/videos",
+      "keyTakeaways": [
+        "数据库和 AI 的关系已经彻底换了阶段。两年前大家的理解停在「向量数据库 + RAG」，现在是 agent 自己建库、自己写数据，有时候还自己把库删了。",
+        "他的原话相当不客气：「几乎每个月都有人因为 agent 删了东西而丢掉生产数据库。」对不懂数据库历史的人来说，现在是彻底的野蛮西部。",
+        "他形容当下的开发速度像「给猎豹喂了可乐因再塞进法拉利」——不是能力不行，是跑得太快没人踩刹车。",
+        "向量数据库其实 2016 年就有了，不是新东西，只是到了 agent 时代它的用处才变得显而易见。",
+        "一个值得记住的视角：所谓文件系统也是数据库，一切都是数据库。agent 要长期干活，存储层的权限和回滚就是必答题。"
+      ]
+    },
+    {
+      "name": "No Priors",
+      "title": "Beam：那个属于美国的开源大模型（Beam: The Great American Open Model）",
+      "guest": "Misha Laskin（Reflection AI 联合创始人兼 CEO，前 Google DeepMind）",
+      "url": "https://www.youtube.com/@NoPriorsPodcast",
+      "keyTakeaways": [
+        "他对开源最有力的论证是安全而不是理想主义：你把攻击能力拿掉的同时也把防守能力拿掉了。现实案例是某个很强的闭源模型攻进了一家公司，而这家公司唯一能自救的办法就是用开源模型来防。",
+        "他把 Linus 定律搬了过来——「眼睛足够多，bug 就都是浅的」，他相信安全漏洞也一样。现在全世界真正懂这些系统怎么运作的安全研究员只有闭源实验室里的几百人，再好的意愿也盖不住长尾风险。",
+        "建一个前沿模型实验室的真实体感是「一边飞一边装飞机」。一年前他们 30 人，现在 300 人，预训练、中训练、强化学习团队全部从零搭起。",
+        "被问「算力、人才、数据哪个最难」时他的答案是：全都极难，没有哪一个特别轻松。这对任何想复制前沿实验室的人都是一记实话。"
+      ]
+    },
+    {
+      "name": "AI & I by Every",
+      "title": "为什么 Every 把个人 agent 换成了一个公司 agent（Why Every Traded Personal Agents for One Company Agent）",
+      "guest": "Dan Shipper（Every CEO）",
+      "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+      "keyTakeaways": [
+        "他对 OpenAI 的 dots 的评价分两层：刚上手确实毛糙，但「常驻 + 主动」这个方向明显是未来。在正式发布前它就已经成了他用 ChatGPT 的主要方式。",
+        "30 人团队跑出来的真实用法比发布会更有说服力：帮你扫完孩子学校的所有邮件只告诉你要紧的；替你抓住 Slack 里漏掉的权限申请并问你要不要直接批；手上忙不开时用语音跟它过视频剪辑。",
+        "最打动他的价值不是「做事」而是「过滤」。以前为了测模型必须泡在 Slack 里，一进去就被各种事卷走；现在让 dot 把结果发进去、有人回复再告诉他，周末因此清静了。",
+        "这正好印证了 Claude Duet 这周走的是同一条路：常驻 agent 的核心卖点是帮你挡掉噪音，而不是替你多干活。"
+      ]
+    },
+    {
+      "name": "AI & I by Every",
+      "title": "一支「前沿小队」怎么帮公司跟上 AI（How a Frontier Team Can Help Your Company Keep Up With AI）",
+      "guest": "Natalia（Every 企业 AI 落地负责人）",
+      "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+      "keyTakeaways": [
+        "他们要解决的是一个几乎每家公司都有的撕扯：员工到底该把时间花在把活干完，还是花在跟上 AI 新工具。两个都要就等于两个都做不好。",
+        "他们的解法是组织层面的分工——专门一支前沿小队负责折腾新东西，其余人只负责用这支队伍验证过的结论。",
+        "前沿小队的产出分两档：下限是好内容（学到点东西，变成推文或视频），上限是被「推上去」进入正式产品和服务。中间没有必须交付的压力。",
+        "这支队伍要同时有「海盗」和「建筑师」两种人：海盗到处乱试，建筑师把试出来的东西修成能长期靠得住的东西。",
+        "关键收益是把注意力隔离开——在新东西真正值得全公司关注之前，不逼着所有人去关注它。"
+      ]
+    },
+    {
+      "name": "Training Data",
+      "title": "David Silver 与 Lasse Espeholt：为「经验时代」造一个超级学习者（A Superlearner for the Age of Experience）",
+      "guest": "David Silver、Lasse Espeholt（Ineffable Intelligence 联合创始人）",
+      "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
+      "keyTakeaways": [
+        "Silver 的核心主张：人类集体是从「脑子里一团灰糊」开始，靠自己发现了语言、技术、科学和数学的一切。这种能永远自己学下去、自己发现新知识的能力，才是通向超级智能的本质，而目前 AI 还没人破解。",
+        "他从 2009 年研究围棋强化学习起就坚信「从经验里学」这条路，整个职业生涯没有动摇，现在在 Ineffable 继续验证。",
+        "他承认大模型路线给了他一个意外的教训：一个在海量数据上训出来的系统，居然能靠极少量数据快速微调就完全改变行为。这改变了他的心智模型。",
+        "值得注意的是，他们并不走「喂人类数据」这条路，但明确认为 LLM 世界的经验有很多值得借鉴。两条路线的对撞还没结束。"
+      ]
+    },
+    {
+      "name": "No Priors",
+      "title": "为 agent 时代的互联网把安全做成普惠（Democratizing Security for the Agentic Web）",
+      "guest": "Dane Knecht（Cloudflare CTO）",
+      "url": "https://www.youtube.com/@NoPriorsPodcast",
+      "keyTakeaways": [
+        "他开场那句话值得记下来：AI 既是造成这场安全灾难的工具，也是能更快解决它的工具。整个行业一年之内从「怎么让大家都用上 AI」切换到「AI 安全到底意味着什么」。",
+        "最硬的数据是频率变化：过去 Log4j、Shellshock 这种级别的事一年来一次，现在每周都在发生，而且不是每一起都会公开。",
+        "他的预测很直接：从现在到未来 18 个月，大多数团队的大部分时间都会花在安全上。会上还提到超过一半的工程时间已经在往安全倾斜。",
+        "安全在大多数技术迁移里都是「事后才想起来的事」，agent 这一轮也没例外——先是拼怎么把 agent 部署出去，然后才回头补安全。",
+        "企业视角其实是两道题：既要防止 AI 把自己的数据漏出去，也要防止外面的人借 AI 进来。这两件事经常被当成一件事讨论。"
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "name": "Anthropic 工程博客",
+      "title": "我们是怎么给各条产品线上的 Claude 划界限的（How we contain Claude across products）",
+      "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+      "summary": "这篇是这周最值得完整读的一篇。Anthropic 坦白说，一年前他们绝不会允许 Claude 拿到足以搞挂内部服务的权限，但今天这种权限已经是常态，因为不给权限的代价变得更大了。他们把风险拆成两件事：出事的概率，以及出事能炸多大。前者靠模型训练和防护在降，后者只会随着能力和权限变大而变大，所以工程问题就变成了「怎么把爆炸半径封住」。最打脸的一段是关于人在环里审批：他们的埋点显示用户大约批准了 93% 的权限弹窗——弹窗越多，用户越不看，监督名义上存在、实际上失效。于是他们转向「容器化」思路，不再管 agent 想做什么，而是用沙箱、虚拟机和出网控制限制它能做什么，而这也正是他们踩坑最多的地方。文章还提到 Claude Mythos Preview 就是因为爆炸半径被判定太大而在 2026 年 4 月没有发布。对做 AI 功能的人来说，这篇把「安全不是加一层确认」这件事讲得最透。"
+    },
+    {
+      "name": "Anthropic 工程博客",
+      "title": "关于近期 Claude Code 质量反馈的说明（An update on recent Claude Code quality reports）",
+      "url": "https://www.anthropic.com/engineering/april-23-postmortem",
+      "summary": "一份写得相当诚实的故障复盘。用户持续反馈 Claude「变笨了」，查下来是三个互不相关的改动叠在一起：一是把 Claude Code 的默认推理档位从高调到中，为了解决「思考太久像卡死」的延迟问题，结果被用户明确反对——大家宁愿默认聪明，简单任务再自己降档；二是一个为了加快恢复会话而清理旧思考内容的改动出了 bug，本该只清一次却每轮都清，于是模型显得既健忘又啰嗦；三是加了条「少说废话」的系统提示词，连带把写代码质量拖了下去。因为三个改动影响的流量切片和时间线各不相同，叠加起来就呈现为「普遍且说不清规律的退化」，连他们自己的内部用量和评测一开始都没复现出来。他们还提到 API 层完全没受影响，并给所有订阅用户重置了用量额度。对产品人的启发很直接：延迟和质量的权衡不该由厂商替用户默认决定，以及改系统提示词的副作用远比想象的大。"
+    }
+  ]
+}
