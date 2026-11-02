@@ -1,0 +1,255 @@
+{
+  "date": "2026-10-23",
+  "generated_at": "2026-10-23T08:40:00+08:00",
+  "daily_summary": "周五的关键词是「决策模型下沉 + 代理权限基础设施化」。OpenAI 把 Decisions API 开放公测，定价每百万输入 token 0.10 美元，主打快速、聚焦、低成本的判断调用，正面进入 TypeSafe Jev 开辟的决策模型品类；Perplexity 同步开源 pplx-decider-v1.2 及 flash 决策模型。1Password 推出 for Agents，让代理在用户设备上获得批准后登录而全程看不到密码，与 Anthropic、OpenAI 共同开发。Anthropic 把 Agent Skills 标准捐给 Linux 基金会旗下的 Agentic AI Foundation（MCP 的同一归属），称自 2025 年 12 月以来已有 70 多个代理平台集成该标准；同时宣布下周起 Pro、Max、Team 用户的网页、桌面和移动会话默认启用 auto mode，由自动检查拦截高风险动作、用户可退回手动审批。资本面两极：OpenAI 据报正筹划 300 亿美元新融资、估值约 1.25 万亿美元；Meta 因 AI 支出导致自由现金流转负、股价跌近 7%。Arc 浏览器宣布 12 月 22 日停止访问，The Browser Company 全面转向 AI 浏览器 Dia。",
+  "design_insights": [
+    {
+      "title": "决策模型变成一毛钱的基础件，输入法的「判断类」能力应全部下沉",
+      "summary": "OpenAI 开放 Decisions API 公测，定价每百万输入 token 0.10 美元，定位为「为任意应用提供快速、聚焦、低成本的决策」。Perplexity 同日开源 pplx-decider-v1.2 和 flash 决策模型。行业媒体的解读很直接：大量产品逻辑其实是路由、分流和是/否判断，根本不需要前沿模型，这类调用可能占到 AI 支出中「乏味的 80%」。",
+      "implication": "输入法里藏着大量这类判断：当前输入框是搜索框还是聊天框、这段话是否需要润色、用户是否处于专业领域、该不该弹出 AI 入口、这次请求该走端侧还是云端。过去这些要么写死规则（不准）要么用大模型（太贵太慢）。现在应该把它们统一抽成一层决策调用，目标延迟控制在 50ms 内。这对交互设计的直接价值是：AI 入口终于可以做到「该出现时才出现」而不是常驻占位——而常驻占位恰恰是我们此前被用户吐槽「功能挤占空间」的根源。",
+      "sources": [
+        "OpenAI",
+        "AI Week Daily",
+        "The AI Daily"
+      ],
+      "source_urls": [
+        "https://aiweekdaily.com/digest/2026-10-23",
+        "https://theaidaily.in/issues/2026-10-23"
+      ],
+      "tags": [
+        "决策模型",
+        "成本优化",
+        "信息架构",
+        "AI入口"
+      ]
+    },
+    {
+      "title": "1Password for Agents 给出「代理能办事但看不到凭证」的交互原型",
+      "summary": "1Password 推出面向 AI 代理的平台，与 Anthropic、OpenAI 等公司共同开发，让自主代理通过 1Password 的安全体系访问凭证和服务，代理全程看不到密码，批准动作发生在用户自己的设备上。媒体评价称「把密码交给代理」是让代理做真实工作的隐性阻碍，而「代理永远看不到秘密」这一模式正是安全团队会要求的形态。",
+      "implication": "输入法面临的是同构问题：AI 要帮用户写东西，就难免接触到密码、验证码、身份证号。可以借用同一思路做「敏感内容屏障」：在本地识别出疑似凭证类内容（验证码、密码、卡号）后，一律不进入任何 AI 上下文，并在界面上明确显示「已屏蔽 1 条敏感内容」。这个提示本身就是信任资产——用户看到的不是「我们不会滥用」的承诺，而是「这条确实没给 AI 看」的证据。实现成本低，但对专业用户的说服力极强。",
+      "sources": [
+        "TechCrunch",
+        "1Password"
+      ],
+      "source_urls": [
+        "https://aiweekdaily.com/digest/2026-10-23",
+        "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-23-2026"
+      ],
+      "tags": [
+        "隐私设计",
+        "凭证保护",
+        "AI代理",
+        "信任设计"
+      ]
+    },
+    {
+      "title": "Claude 把 auto mode 设为默认，「自动执行 + 自动拦截」成为新默认范式",
+      "summary": "Anthropic 宣布下周起 Claude 网页、桌面和移动应用的会话将对 Pro、Max 和 Team 计划默认启用 auto mode，由自动检查拦截高风险动作，用户可退回手动审批。这是头部厂商首次把「默认自动执行」作为付费用户的默认体验，前提是配套了自动风险拦截。",
+      "implication": "这给输入法的 AI 默认态提供了一个务实折中：不必在「全自动（怕出错）」和「全确认（太啰嗦）」之间二选一，而是默认自动 + 高风险动作自动拦截 + 可退回手动。落地到键盘：润色、纠错、短句改写默认自动应用（可一键撤销）；涉及金额、人名指派、承诺性表述、敏感话题的成稿自动降级为需确认。关键是拦截规则要可解释——拦截时必须说明「因为涉及金额所以需要你确认」，否则用户只会觉得产品时好时坏、不可预测。",
+      "sources": [
+        "Anthropic",
+        "The Neuron"
+      ],
+      "source_urls": [
+        "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-23-2026"
+      ],
+      "tags": [
+        "默认设置",
+        "权限设计",
+        "交互范式",
+        "Anthropic"
+      ]
+    },
+    {
+      "title": "Agent Skills 捐给中立基金会，技能包格式开始具备跨产品复用价值",
+      "summary": "Anthropic 把 Agent Skills 标准捐赠给 Linux 基金会旗下的 Agentic AI Foundation，与 Model Context Protocol 归属同一机构。Claude Developers 表示自 2025 年 12 月以来已有 70 多个代理平台集成该标准，包括 ChatGPT、Cursor、GitHub Copilot 和 VS Code。同日 OpenAI、Anthropic、Hugging Face、阿里巴巴向该基金会捐赠了另外四个开源工具。",
+      "implication": "这件事和讯飞输入法「技能坞」撞在同一周并非巧合：AI 能力正在被「技能化」封装。对我们的启示是技能的组织方式比技能数量更重要。如果技能包走向标准化，输入法的差异化将不在「有多少技能」，而在「怎么在 2-4 行可视空间里让用户找到当下要用的那个」。这正好支撑专业模式方案 H 的核心主张：顺序固定、位置永不搬家，靠肌肉记忆而非搜索来定位。建议把这条写进设计规范作为长期原则，并在未来技能数量增长时坚持住，不要因为「技能变多了」就改成动态排序。",
+      "sources": [
+        "Anthropic",
+        "Simon Willison",
+        "SiliconAngle"
+      ],
+      "source_urls": [
+        "https://aiweekdaily.com/digest/2026-10-23",
+        "https://theaidaily.in/issues/2026-10-23"
+      ],
+      "tags": [
+        "技能标准",
+        "信息架构",
+        "专业模式",
+        "开源生态"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "AI 入口需要「该出现时才出现」，而非常驻占位",
+      "pain_point": "键盘可视空间极度紧张，AI 入口常驻会挤占候选区并被用户视为「浪费空间的功能堆砌」；但完全隐藏又会导致功能无人发现，两难长期无解。",
+      "opportunity": "用低成本决策调用做场景判断（输入框类型、文本长度、是否专业领域、是否处于回复场景），只在判定有用时展示 AI 入口，目标判断延迟 50ms 内。OpenAI Decisions API 每百万输入 token 仅 0.10 美元，使这类高频小判断在经济上完全可行。",
+      "priority": "high",
+      "evidence": "OpenAI Decisions API 公测定价每百万输入 token 0.10 美元；Perplexity 同日开源决策模型，媒体称这类路由/分流判断占 AI 支出中「乏味的 80%」。"
+    },
+    {
+      "title": "用户需要看到「敏感内容已被屏蔽」的实证，而非隐私承诺",
+      "pain_point": "输入法会经过验证码、密码、银行卡号、身份证号，用户即便看到隐私政策也无法确认这些内容是否被送进了 AI 上下文，这是关闭 AI 功能最常见的理由之一。",
+      "opportunity": "本地识别疑似凭证类内容并硬性排除出所有 AI 上下文，同时在界面显示「已屏蔽 N 条敏感内容」的可点开说明。1Password for Agents 验证了「代理永不看到秘密」这一模式正是安全侧的预期形态。",
+      "priority": "high",
+      "evidence": "1Password 与 Anthropic、OpenAI 共同开发 for Agents 平台，代理获得访问能力但全程看不到密码，批准在用户设备上完成；媒体指出该模式是安全团队会提出的要求形态。"
+    },
+    {
+      "title": "拦截和降级必须给出原因，否则用户感知为「产品不稳定」",
+      "pain_point": "当 AI 功能在某些内容上拒绝执行或降级处理时，用户看到的只是「这次没生效」，无法形成稳定预期，最终判定产品时好时坏并放弃使用。",
+      "opportunity": "建立可解释的拦截文案规范：每类拦截对应一句具体原因（涉及金额、涉及人名指派、内容过短无需润色、当前为本地模式），并给出下一步可做的操作。Anthropic 把 auto mode 设为默认的前提正是配套了自动风险检查。",
+      "priority": "medium",
+      "evidence": "Anthropic 宣布下周起 auto mode 对 Pro/Max/Team 默认启用，由自动检查拦截高风险动作、用户可退回手动审批，说明「自动执行」的可接受性取决于拦截机制是否明确。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "OpenAI 开放 Decisions API 公测，每百万输入 token 0.10 美元",
+      "summary": "定位为「为任意应用提供快速、聚焦、低成本的决策」，正面进入决策模型品类与 Jev 等竞争。媒体评价称大量产品逻辑其实是路由、分流和是/否判断，不需要前沿模型，若价格和速度符合宣传，这类调用可覆盖 AI 支出中乏味的 80%。",
+      "source": "OpenAI",
+      "source_urls": [
+        "https://aiweekdaily.com/digest/2026-10-23"
+      ],
+      "tags": [
+        "OpenAI",
+        "决策模型",
+        "成本优化"
+      ]
+    },
+    {
+      "title": "1Password 推出 for Agents，代理可登录但看不到密码",
+      "summary": "与 Anthropic、OpenAI 等公司共同开发，让自主代理通过 1Password 安全体系访问凭证和服务，批准动作在用户自己的设备上完成，代理全程不接触底层凭证。媒体指出「把密码交给代理」是让代理做真实工作的隐性阻碍，而这一模式正是安全团队的预期形态。",
+      "source": "TechCrunch / 1Password",
+      "source_urls": [
+        "https://aiweekdaily.com/digest/2026-10-23"
+      ],
+      "tags": [
+        "凭证安全",
+        "AI代理",
+        "1Password"
+      ]
+    },
+    {
+      "title": "Anthropic 将 Agent Skills 捐给 Agentic AI Foundation",
+      "summary": "标准移交 Linux 基金会旗下的 Agentic AI Foundation，与 Model Context Protocol 同一归属。Claude Developers 表示自 2025 年 12 月以来已有 70 多个代理平台集成该标准，包括 ChatGPT、Cursor、GitHub Copilot 和 VS Code。中立治理降低了基于共享格式构建的风险。",
+      "source": "Anthropic / Simon Willison",
+      "source_urls": [
+        "https://aiweekdaily.com/digest/2026-10-23"
+      ],
+      "tags": [
+        "Anthropic",
+        "开源标准",
+        "技能生态"
+      ]
+    },
+    {
+      "title": "Claude 下周起对付费用户默认启用 auto mode",
+      "summary": "Claude 网页、桌面和移动应用的会话将对 Pro、Max 和 Team 计划默认使用 auto mode，由自动检查拦截高风险动作，用户可退回手动审批。这是头部厂商首次把「默认自动执行」作为付费用户的默认体验。",
+      "source": "Anthropic",
+      "source_urls": [
+        "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-23-2026"
+      ],
+      "tags": [
+        "Anthropic",
+        "默认设置",
+        "AI代理"
+      ]
+    },
+    {
+      "title": "OpenAI 据报筹划 300 亿美元新融资，估值约 1.25 万亿美元",
+      "summary": "TechCrunch 报道 OpenAI 正在推进新一轮 300 亿美元融资，估值超过 1 万亿美元，若按此条件完成将成为史上估值最高的私营公司，为潜在的 2027 年 IPO 铺路。另据报道 Anthropic 的 IPO 草拟文件显示上半年营收 163 亿美元。",
+      "source": "TechCrunch",
+      "source_urls": [
+        "https://aiweekdaily.com/digest/2026-10-23",
+        "https://theaidaily.in/issues/2026-10-23"
+      ],
+      "tags": [
+        "融资",
+        "OpenAI",
+        "资本市场"
+      ]
+    },
+    {
+      "title": "DeepSeek 据报融资约 1000 亿元人民币",
+      "summary": "TechCrunch 引述未经确认的报道称 DeepSeek 完成约 150 亿美元融资，为中国规模最大的融资之一，发生在美国命令联邦机构以国家安全为由移除其技术数日之后。金十数据同日汇总显示 DeepSeek 拟在最新一轮融资中筹得约 1000 亿元人民币。",
+      "source": "TechCrunch / 金十数据",
+      "source_urls": [
+        "https://aiweekdaily.com/digest/2026-10-23",
+        "https://flash.jin10.com/detail/20261023115920148800"
+      ],
+      "tags": [
+        "DeepSeek",
+        "融资",
+        "中国AI"
+      ]
+    },
+    {
+      "title": "Meta 自由现金流转负，股价跌近 7%",
+      "summary": "Meta 的 AI 基础设施支出规模已大到使自由现金流转负，股价下跌 7% 并引发信用担忧。另有报道称 Meta 未来支出承诺总额达 8250 亿美元，涉及 AI 算力、数据中心及能源基础设施。",
+      "source": "CNBC",
+      "source_urls": [
+        "https://theaidaily.in/issues/2026-10-23",
+        "https://flash.jin10.com/detail/20261023115920148800"
+      ],
+      "tags": [
+        "Meta",
+        "AI投入",
+        "资本市场"
+      ]
+    },
+    {
+      "title": "MiniMax 开源 M3.1 Flash，上线 72 小时处理超 100 万亿 token",
+      "summary": "10 月 23 日 MiniMax 宣布开源 M3.1 Flash 模型。相较上一代 M3，使用成本降低 70%，通过全模型稀疏注意力、量化感知训练和 Power-aware scheduling 等优化，线上推理速度提升近 3 倍。权重已发布至 Hugging Face 和 ModelScope，约 428B 总参数、每 token 激活 23B。",
+      "source": "澎湃新闻",
+      "source_urls": [
+        "https://www.thepaper.cn/newsDetail_forward_34328525"
+      ],
+      "tags": [
+        "MiniMax",
+        "开源模型",
+        "成本优化"
+      ]
+    },
+    {
+      "title": "Arc 浏览器 12 月 22 日停服，The Browser Company 全押 Dia",
+      "summary": "Arc 将在 12 月 22 日变为无法访问，结束这款帮助 The Browser Company 建立声誉的浏览器，公司把资源转向以 AI 为中心的后继产品 Dia。",
+      "source": "The Neuron",
+      "source_urls": [
+        "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-23-2026"
+      ],
+      "tags": [
+        "产品停服",
+        "AI浏览器",
+        "战略转向"
+      ]
+    },
+    {
+      "title": "Canva 发布首个自研图像模型 Canva Craft，先规划后生成",
+      "summary": "Canva 向全体用户开放这款自研两阶段图像模型，会先规划版面再渲染，定位为设计平台内更可定制、成本更低的图像生成选项，直接与 OpenAI、Google 竞争。",
+      "source": "The Verge",
+      "source_urls": [
+        "https://theaidaily.in/issues/2026-10-23"
+      ],
+      "tags": [
+        "Canva",
+        "图像生成",
+        "设计工具"
+      ]
+    },
+    {
+      "title": "MIT 研究：无任务可做的 AI 代理会自发发明游戏和社交仪式",
+      "summary": "TechCrunch 报道的 MIT 研究发现，被闲置的 AI 代理会自发创造游戏和社交仪式，为理解涌现式代理行为和长程规划提供了一个观察窗口。",
+      "source": "TechCrunch",
+      "source_urls": [
+        "https://theaidaily.in/issues/2026-10-23"
+      ],
+      "tags": [
+        "AI研究",
+        "代理行为",
+        "MIT"
+      ]
+    }
+  ]
+}

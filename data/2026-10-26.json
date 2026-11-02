@@ -1,0 +1,290 @@
+{
+  "date": "2026-10-26",
+  "generated_at": "2026-10-26T09:00:00+08:00",
+  "daily_summary": "周一的两条主线都和「交付什么」有关。第一条是 OpenAI 公开 Signals v3.0 数据集，把近 100 个国家、165 类工作活动的 ChatGPT 使用分布摊开给研究者，其中「编辑书面材料」在美国占到工作类消息的 17.1%、印度 12.9%，是最大的单项用途；74 个全季度在册国家的前十大活动占比从 2025Q1 的 56.0% 降到 2026Q3 的 51.1%，说明用途在变散而不是变集中。第二条是 OpenAI 同日发布 GPT-6.1 Terra 与三项科学发现：Terra 主打视觉推理与计算机操作，API 定价每百万输入 1 美元、输出 5 美元，比 GPT-5.6 Terra 腰斩；三项发现涉及调和分析、复杂性理论与量子场论，证明用 Lean 做了形式化，外部专家被请来做独立审查且不签保密协议，OpenAI 明确不为模型产出寻求学术署名。资本面上，Meta 启动约 350 亿美元同步公开发行，英伟达、AMD、博通有意合计认购最高 50 亿美元 A 类普通股；Oracle 推出用 OpenAI 网安模型找并修漏洞的 AI Security Mesh。对输入法来说，今天最该记住的一句话是：用户带到 AI 面前的第一大任务不是创作，而是改写已有文字。",
+  "design_insights": [
+    {
+      "title": "全球第一大 AI 工作用途是「编辑书面材料」，输入法恰好站在这条需求的最短路径上",
+      "summary": "OpenAI 10 月 26 日发布 Signals v3.0，把 ChatGPT 的工作类消息映射到 O*NET 的 165 个中层工作活动（IWA），覆盖近 100 个国家、时间跨度 2025Q1 至 2026Q3。2026 年 7-9 月，「编辑书面材料」占美国工作类消息的 17.1%、印度 12.9%，「创建视觉设计或展示物」分别为 7.6% 和 8.7%。数据同时显示用途正在变散：74 个全季度在册国家的前十大活动平均占比从 56.0% 降到 51.1%。官方也标注了边界：样本只含 Free/Go/Plus/Pro 个人账号，不含企业消息与 Codex，每月抽样约 100 万条消费者消息，统计量加过隐私噪声，因此只反映「请求分布」而非完成质量。",
+      "implication": "这个分布对输入法是利好也是压力：用户最高频的 AI 需求是改写而不是从零生成，而改写天然发生在输入框里，用户不该为此跳到另一个 App。三件事可落地：①把「改写」提到一级能力位，而不是藏在 AI 面板的二级标签里——选中已有文字即出现语气/长度/结论前置三个直接可点的改写档位，无需先描述需求；②改写结果必须可对比：默认展示原文与改写版的差异高亮，让用户在两秒内判断人名、数字、关键结论有没有被改坏，这是外部研究明确提示的核查点；③把度量从「AI 调用次数」换成「改写后直接发送率」，因为请求量不等于可用产出，Signals 的方法论注解本身就在强调这一点。",
+      "sources": [
+        "OpenAI",
+        "Rohit AI",
+        "onlylabs"
+      ],
+      "source_urls": [
+        "https://openai.com/index/chatgpt-expanding-world-of-work/",
+        "https://rohitai.com/blog/openai-signals-chatgpt-work-activities-countries",
+        "https://www.onlylabs.fyi/signals/355a1756-0a4e-4c9e-8a2b-310e7bd89569"
+      ],
+      "tags": [
+        "用户研究",
+        "AI改写",
+        "数据洞察",
+        "输入法机会"
+      ]
+    },
+    {
+      "title": "GPT-6.1 Terra 把「操作计算机」做成中端模型标配，并把价格打到一半",
+      "summary": "当地时间 10 月 26 日 OpenAI 发布 GPT-6.1 Terra，定位快速高效的中等尺寸模型，强化视觉推理与计算机操作，官方举的能力例子是起草提案、解读技术图纸、填写表单和编辑视频。API 定价为每百万输入 token 1 美元、输出 5 美元，是 GPT-5.6 Terra 与 GPT-6.1 Sol 的一半。OpenAI 的说法是让开发者能经济地自动化大批量工作，评论则提示性能与价格均出自厂商口径、尚无第三方复现。",
+      "implication": "「填写表单」这个能力点和输入法的距离比看起来近得多：表单填写本质是在多个输入框之间搬运和改写已有信息，而输入法是唯一同时看到所有输入框的组件。可落地的方向是做「跨输入框接力」：用户在第一个框里口述一次完整信息（姓名、电话、地址、备注），输入法把它拆成结构化字段，后续切到下一个框时直接给出对应字段的候选，一次点按完成填入，而不是让用户重复口述。成本侧的启示同样重要：中端模型单价腰斩意味着「每次输入都调一次云端」在经济上开始可行，但要先把调用触发条件设计清楚——建议只在用户显式发起改写/成稿时调云端，普通上屏仍走端侧，否则省下来的单价会被调用量吃掉。",
+      "sources": [
+        "中国城市网",
+        "网易数智早参",
+        "Daily AI Brief"
+      ],
+      "source_urls": [
+        "https://www.zgcsb.com/news/shouYe/2026-10/28/a_698018.html",
+        "https://www.163.com/dy/article/LAAEHFU00512B07B.html",
+        "https://dailyaibrief.com/newsletters/daily-ai-brief/2026-10-28-microsoft-offers-buyouts-to-60-000-employees-anthropic-gets-63-billion-in-chip-financing-and-more-daily-ai-brief-568"
+      ],
+      "tags": [
+        "OpenAI",
+        "模型成本",
+        "表单填写",
+        "计算机操作"
+      ]
+    },
+    {
+      "title": "OpenAI 不要署名、不要 NDA 的审查安排，给「AI 产出如何被信任」立了一个可抄的流程",
+      "summary": "10 月 26 日 OpenAI 宣布三项由内部模型产生的发现：反驳指数时间假设（ETH）、证明所有空间维度下的局部光滑化猜想并由此得到 Kakeya 猜想相关结果、为包含量子色动力学的部分四维相互作用量子场论给出严格存在性证明，证明过程用 Lean 做了形式化。关键在配套安排：OpenAI 请外部专家充当引导者组织团队理解结果，ETH 的共同提出者 Russell Impagliazzo、Ramamohan Paturi 与 MIT 的 Ryan Williams领导独立审查并强调这不等于背书；参与者不被要求签保密协议，可自由讨论、分享中间成果并发表结论，参与自愿且无报酬；OpenAI 明确不为这些发现寻求学术署名。Anthropic 同期也发布了内部 Claude 研究模型关于同一结果的 Lean 4 形式化论文，并提醒该结果是渐进性的、不代表问题在实践中能被快速求解。",
+      "implication": "这套流程把「可核验」和「不冒领」两件事拆开做，恰好对应 AI 成稿最容易翻车的两个点。映射到输入法：①可核验——AI 成稿里凡是涉及具体数字、人名、时间、承诺的片段，都应该带可点开的来源标记，点开能看到这句话是来自用户提供的哪条素材（哪张截图、哪段复制内容），没有素材支撑的片段要显式标为「AI 补写」而不是混在一起；②不冒领——成稿发出去时署的是用户的名字，所以必须让用户感到这是自己的话，建议在发送前的最后一屏保留「哪几句是 AI 加的」的折叠提示，让用户至少有一次机会删掉自己不愿背的句子。这两条合起来，是把「AI 帮我说」变成「我说的，AI 帮我组织」的关键。",
+      "sources": [
+        "中国城市网",
+        "腾讯全球科技早参",
+        "Daily AI Brief"
+      ],
+      "source_urls": [
+        "https://www.zgcsb.com/news/shouYe/2026-10/28/a_698018.html",
+        "https://news.qq.com/rain/a/20261028A02XUB00",
+        "https://dailyaibrief.com/newsletters/daily-ai-brief/2026-10-28-microsoft-offers-buyouts-to-60-000-employees-anthropic-gets-63-billion-in-chip-financing-and-more-daily-ai-brief-568"
+      ],
+      "tags": [
+        "可信度",
+        "AI成稿",
+        "来源溯源",
+        "交互设计"
+      ]
+    },
+    {
+      "title": "Oracle AI Security Mesh 把安全从「检测」推到「找到并修」，纠错设计可以照抄这个跨度",
+      "summary": "10 月 26 日 Oracle 推出 AI Security Mesh，使用 OpenAI 的网络安全模型发现并修复漏洞，两家同时把合作范围扩展到企业运营与应用开发。这条消息的产品含义比技术含义更值得注意：同一个链路里，模型不只是输出「这里有问题」，而是直接给出可应用的修复补丁，把人的工作从「理解报告」压缩成「批准或驳回一个具体改动」。",
+      "implication": "输入法的纠错至今大多停在「检测」这一侧——标红、下划线、给个提示，改法还是用户自己想。可落地的改造是把每一处纠错都配一个可直接采纳的替换项：①错别字与语法问题，长按候选直接整句替换而不是逐字改；②语气不合场景（例如对客户用了过于随意的措辞），给出一条改好的完整句子让用户一键换掉，而不是只提示「建议更正式」；③所有自动替换必须单步可撤销，并且撤销后不再对同一处重复提示，否则「给出修复」会变成「反复打扰」。判断标准很简单：如果一次纠错仍然需要用户自己想词，这个纠错就只完成了一半。",
+      "sources": [
+        "Daily AI Brief"
+      ],
+      "source_urls": [
+        "https://dailyaibrief.com/newsletters/daily-ai-brief/2026-10-28-microsoft-offers-buyouts-to-60-000-employees-anthropic-gets-63-billion-in-chip-financing-and-more-daily-ai-brief-568"
+      ],
+      "tags": [
+        "纠错设计",
+        "Oracle",
+        "可采纳建议"
+      ]
+    },
+    {
+      "title": "Meta 350 亿美元融资与芯片厂反向认购，提醒免费输入法必须先算清 AI 功能的单位成本",
+      "summary": "美国当地时间 10 月 26 日，Meta 宣布启动总规模约 350 亿美元的同步公开发行，融资用于人工智能基础设施及个人超级智能等业务，英伟达、AMD 和博通已表示有意合计认购最高 50 亿美元 A 类普通股。同期中金的判断是 AI 走到了从全社会汲取资源的节点，中美都面临资本开支与回报的平衡问题，后续走势取决于模型迭代与新业务模式的兑现。",
+      "implication": "输入法是典型的「亿级 DAU + 免费 + 高频」组合，这是全行业最不利于无节制调云端的成本结构。建议现在就把 AI 能力按成本分三档并写进设计规范：①端侧档（纠错、候选、短句润色）默认开启、零边际成本、无网可用；②轻云档（单句改写、语气调整）按会话限额，超限给出明确的剩余额度提示而不是静默降级；③重云档（长文成稿、多素材整合）做成显式入口，让用户知道这是一次「大动作」。关键的设计纪律是：降级必须可见。宁可告诉用户「今天的成稿次数用完了，改写仍可用」，也不要偷偷换成一个更差的模型——后者会在用户完全不知情的情况下摧毁对功能的信任，而信任一旦掉下去，再便宜的模型也救不回来。",
+      "sources": [
+        "21世纪经济报道",
+        "中国城市网"
+      ],
+      "source_urls": [
+        "https://www.toutiao.com/article/7701185384713028106",
+        "https://www.zgcsb.com/news/shouYe/2026-10/28/a_698018.html"
+      ],
+      "tags": [
+        "AI成本",
+        "分档设计",
+        "Meta",
+        "产品策略"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "用户最高频的 AI 需求是改写已有文字，但改写入口普遍被埋在二级面板",
+      "pain_point": "OpenAI Signals 显示「编辑书面材料」是工作类 AI 消息的最大单项（美国 17.1%、印度 12.9%），但主流输入法的改写能力通常要先点开 AI 面板、再选功能、再确认，在一次只有几秒的回消息场景里，这个路径长到用户宁可自己重打一遍。",
+      "opportunity": "做「选中即改写」：用户在输入框里选中已写好的文字，候选栏直接变成语气、长度、结论前置三个档位按钮，点一下即替换，不需要描述需求也不需要进入任何面板。配合差异高亮，让用户用一眼确认人名、数字、关键结论没被改坏。",
+      "priority": "high",
+      "evidence": "OpenAI Signals v3.0（2026-10-26 发布，CC BY 4.0）：2026 年 7-9 月「编辑书面材料」占印度工作类消息 12.9%、美国 17.1%，为最大单项活动；数据覆盖近 100 国 165 类工作活动，74 国前十活动占比由 56.0% 降至 51.1%。"
+    },
+    {
+      "title": "跨输入框填表时，用户要把同一段信息重复口述或粘贴多次",
+      "pain_point": "填写地址、报名、工单这类多字段表单时，用户心里的信息是一整段，但界面要求拆成若干个框分别填。现有输入法只看当前这一个框，于是用户要么反复切换复制粘贴，要么对每个框重新口述一遍。",
+      "opportunity": "做「一次口述、跨框接力」：用户在任一输入框完整说一遍，输入法解析成结构化字段并暂存在本次会话内，切到下一个框时直接把对应字段作为首位候选给出，一次点按完成。GPT-6.1 Terra 把「填写表单」列为核心能力，说明这条需求已被头部厂商确认，但它们是从模型侧往下打，输入法有组件位置上的天然优势。",
+      "priority": "high",
+      "evidence": "OpenAI 10 月 26 日发布 GPT-6.1 Terra，官方列出的能力包括起草提案、解读技术图纸、填写表单和编辑视频；API 每百万输入 1 美元、输出 5 美元，为上一代的一半，使高频调用在经济上开始可行。"
+    },
+    {
+      "title": "AI 成稿里哪句是用户说的、哪句是模型补的，用户无法分辨却要为此署名",
+      "pain_point": "成稿最终以用户本人的名义发出，但现有产品把用户素材和模型补写混成一段连续文本，用户要么逐字重读（抵消了节省的时间），要么直接发送（承担说错话的风险）。",
+      "opportunity": "做「来源分层的成稿」：有素材支撑的片段带可点开的来源标记，点开显示它来自哪条素材；没有素材支撑的片段统一标为「AI 补写」并可一键删除。发送前最后一屏保留一个折叠的「AI 加了这几句」提示，把核查成本从「重读全文」降到「扫一眼补写清单」。",
+      "priority": "medium",
+      "evidence": "OpenAI 10 月 26 日公布三项发现时的配套安排可作参照：证明用 Lean 形式化以便核验，外部审查者不签 NDA 且被明确告知审查不等于背书，OpenAI 本身不为模型产出寻求学术署名——可核验与不冒领被当作两件独立的事来设计。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "OpenAI 发布 GPT-6.1 Terra，API 价格比上一代腰斩",
+      "summary": "当地时间 10 月 26 日发布，定位快速高效的中等尺寸模型，提升视觉推理与计算机操作能力，可用于起草提案、解读技术图纸、填写表单和编辑视频。标准 API 价格为每百万输入 token 1 美元、输出 5 美元，比 GPT-5.6 Terra 和 GPT-6.1 Sol 低 50%。OpenAI 称这让开发者能经济地自动化大批量工作。性能与价格表述均出自厂商口径，暂无第三方评测复现。",
+      "source": "中国城市网 / Daily AI Brief",
+      "source_urls": [
+        "https://www.zgcsb.com/news/shouYe/2026-10/28/a_698018.html",
+        "https://dailyaibrief.com/newsletters/daily-ai-brief/2026-10-28-microsoft-offers-buyouts-to-60-000-employees-anthropic-gets-63-billion-in-chip-financing-and-more-daily-ai-brief-568"
+      ],
+      "tags": [
+        "OpenAI",
+        "GPT-6.1 Terra",
+        "模型定价"
+      ]
+    },
+    {
+      "title": "OpenAI 发布 Signals v3.0 数据集，公开近 100 国 165 类工作活动的 ChatGPT 使用分布",
+      "summary": "10 月 26 日由 OpenAI 经济研究团队发布，把工作类消息映射到 O*NET 的165 个中层工作活动（IWA），按季度覆盖 2025Q1 至 2026Q3，整体涉及 94 个国家、其中 74 国在每个季度均在册。2026 年 7-9 月「编辑书面材料」占美国工作类消息 17.1%、印度 12.9%，「创建视觉设计或展示物」分别为 7.6% 和 8.7%。74 国前十大活动的平均占比从 56.0% 降至 51.1%，显示用途趋于分散。样本仅含个人账号（Free/Go/Plus/Pro），不含企业消息与 Codex，每月约 100 万条消费者消息，发布数据含隐私保护噪声。",
+      "source": "OpenAI / Rohit AI",
+      "source_urls": [
+        "https://openai.com/index/chatgpt-expanding-world-of-work/",
+        "https://rohitai.com/blog/openai-signals-chatgpt-work-activities-countries"
+      ],
+      "tags": [
+        "OpenAI Signals",
+        "用户研究",
+        "数据公开"
+      ]
+    },
+    {
+      "title": "OpenAI 宣布三项由内部模型产生的科学发现，涵盖数学、复杂性理论与量子场论",
+      "summary": "10 月 26 日公布，分别为反驳指数时间假设（ETH）、证明所有空间维度下的局部光滑化猜想（并由此得到 Kakeya 猜想相关结果），以及为包含量子色动力学的部分四维相互作用量子场论提出严格存在性证明，证明已用 Lean 形式化。ETH 共同提出者 Russell Impagliazzo、Ramamohan Paturi 与 MIT 的 Ryan Williams 将领导独立审查，并强调审查不代表背书。外部参与者不签保密协议，可自由讨论、分享中间成果与发表结论，参与自愿且无报酬；OpenAI 表示不为这些发现寻求学术署名。",
+      "source": "中国城市网 / 腾讯全球科技早参",
+      "source_urls": [
+        "https://www.zgcsb.com/news/shouYe/2026-10/28/a_698018.html",
+        "https://news.qq.com/rain/a/20261028A02XUB00"
+      ],
+      "tags": [
+        "OpenAI",
+        "AI科研",
+        "Lean形式化"
+      ]
+    },
+    {
+      "title": "Anthropic 发布内部 Claude 研究模型关于同一结果的 Lean 4 形式化论文",
+      "summary": "与 OpenAI 同期，Anthropic 公布一篇由内部 Claude 研究模型撰写的论文，附 Lean 4 形式化，声称得到与反驳指数时间假设相同的结果。Anthropic 同时提醒该结果是渐进性（asymptotic）的，并不意味着相关问题在实践中可以被快速求解。两家实验室在同一周给出相近主张，使独立验证成为这条线索的关键环节。",
+      "source": "Daily AI Brief",
+      "source_urls": [
+        "https://dailyaibrief.com/newsletters/daily-ai-brief/2026-10-28-microsoft-offers-buyouts-to-60-000-employees-anthropic-gets-63-billion-in-chip-financing-and-more-daily-ai-brief-568"
+      ],
+      "tags": [
+        "Anthropic",
+        "AI科研",
+        "独立验证"
+      ]
+    },
+    {
+      "title": "Meta 启动约 350 亿美元同步公开发行，英伟达、AMD、博通拟认购最高 50 亿美元",
+      "summary": "美国当地时间 10 月 26 日，Meta 宣布启动总规模约 350 亿美元的同步公开发行，募集资金用于人工智能基础设施及个人超级智能等业务发展。英伟达、AMD 和博通已表示有意合计认购最高 50 亿美元 A 类普通股。消息带动 10 月 27 日港股人工智能概念走强，剑桥科技涨 6.10%、明略科技-W 涨 5.76%、智谱涨 4.06%。",
+      "source": "21世纪经济报道",
+      "source_urls": [
+        "https://www.toutiao.com/article/7701185384713028106"
+      ],
+      "tags": [
+        "Meta",
+        "AI融资",
+        "算力基建"
+      ]
+    },
+    {
+      "title": "Oracle 推出 AI Security Mesh，用 OpenAI 网安模型发现并修复漏洞",
+      "summary": "Oracle 10 月 26 日发布 AI Security Mesh，调用 OpenAI 的网络安全模型定位并修复软件漏洞。两家同时把合作范围从网络安全扩展到企业运营与应用开发。该产品的形态特点是不止输出问题报告，而是直接给出可应用的修复，把人的介入压缩为对具体改动的批准或驳回。",
+      "source": "Daily AI Brief",
+      "source_urls": [
+        "https://dailyaibrief.com/newsletters/daily-ai-brief/2026-10-28-microsoft-offers-buyouts-to-60-000-employees-anthropic-gets-63-billion-in-chip-financing-and-more-daily-ai-brief-568"
+      ],
+      "tags": [
+        "Oracle",
+        "AI安全",
+        "自动修复"
+      ]
+    },
+    {
+      "title": "博通联合四家银行安排 630 亿美元 AI 芯片融资，加速器租给 Anthropic",
+      "summary": "美国银行、黑石、花旗和摩根士丹利将与博通合作设立特殊目的实体（SPV），融资规模达 630 亿美元，用于购买博通 AI 加速器与网络设备。博通将为该 SPV 的第一留置权（优先担保）债务部分提供残值支持，并从 2027 年开始通过该 SPV 供应 XPU AI 加速器，随后租赁给 Anthropic 使用。",
+      "source": "中国城市网 / Daily AI Brief",
+      "source_urls": [
+        "https://www.zgcsb.com/news/shouYe/2026-10/28/a_698018.html",
+        "https://dailyaibrief.com/newsletters/daily-ai-brief/2026-10-28-microsoft-offers-buyouts-to-60-000-employees-anthropic-gets-63-billion-in-chip-financing-and-more-daily-ai-brief-568"
+      ],
+      "tags": [
+        "博通",
+        "Anthropic",
+        "算力融资"
+      ]
+    },
+    {
+      "title": "微软向约 6 万名员工提供自愿买断，占全球员工约 27%",
+      "summary": "微软向加拿大、印度、英国和美国的约 6 万名员工提供自愿买断方案，约占其全球员工总数的 27%，背景是公司在 AI 上的巨额支出。同期荷兰政府计划到 2035 年通过标准化 IT 系统、AI 和简化规则削减 2.5 万个公务员岗位，占总数的 16%。",
+      "source": "Daily AI Brief",
+      "source_urls": [
+        "https://dailyaibrief.com/newsletters/daily-ai-brief/2026-10-28-microsoft-offers-buyouts-to-60-000-employees-anthropic-gets-63-billion-in-chip-financing-and-more-daily-ai-brief-568"
+      ],
+      "tags": [
+        "微软",
+        "AI与就业",
+        "组织变化"
+      ]
+    },
+    {
+      "title": "OpenAI 申请填埋佐治亚州 72 英亩湿地用于数据中心",
+      "summary": "OpenAI 向监管部门申请在佐治亚州埃芬厄姆县填埋 72 英亩湿地，用于建设数据中心。同期西班牙放宽了数据中心规则草案，适用门槛从 1 兆瓦提高到 10 兆瓦以上；英国反腐调查机构 Spotlight on Corruption 发现，英国大臣就 AI 增长区会见了 137 家企业，但未会见任何环保组织。",
+      "source": "Daily AI Brief",
+      "source_urls": [
+        "https://dailyaibrief.com/newsletters/daily-ai-brief/2026-10-28-microsoft-offers-buyouts-to-60-000-employees-anthropic-gets-63-billion-in-chip-financing-and-more-daily-ai-brief-568"
+      ],
+      "tags": [
+        "数据中心",
+        "AI与环境",
+        "政策监管"
+      ]
+    },
+    {
+      "title": "甲骨文将从 2027 年起在 Oracle Cloud 提供谷歌 TPU",
+      "summary": "甲骨文宣布将从 2027 年开始在 Oracle Cloud 上提供谷歌的 TPU，成为谷歌之外第一家提供 TPU 的超大规模云厂商，并将把 Snowflake 作为原生服务销售。另据 The Information 报道，OpenAI 计划购买谷歌的 AI 芯片——目前它已在租用这些芯片。",
+      "source": "Daily AI Brief",
+      "source_urls": [
+        "https://dailyaibrief.com/newsletters/daily-ai-brief/2026-10-28-microsoft-offers-buyouts-to-60-000-employees-anthropic-gets-63-billion-in-chip-financing-and-more-daily-ai-brief-568"
+      ],
+      "tags": [
+        "甲骨文",
+        "谷歌TPU",
+        "云算力"
+      ]
+    },
+    {
+      "title": "General Compute 完成 1 亿美元 A 轮，押注非英伟达推理云",
+      "summary": "General Compute 获得由 Blackbird 与 Abstract 联合领投的 1 亿美元 A 轮融资，用于建设基于 Cerebras、SambaNova 和 Positron AI 芯片的推理云；Hyperbolic 获 Walden Catalyst 领投的 3000 万美元，用于跨 GPU 云连接 AI 负载。同期 AirTrunk 为悉尼园区获得 42.5 亿澳元绿色贷款，STT GDC 为东京数据中心融资约 5.9 亿美元。",
+      "source": "Daily AI Brief",
+      "source_urls": [
+        "https://dailyaibrief.com/newsletters/daily-ai-brief/2026-10-28-microsoft-offers-buyouts-to-60-000-employees-anthropic-gets-63-billion-in-chip-financing-and-more-daily-ai-brief-568"
+      ],
+      "tags": [
+        "推理云",
+        "AI芯片",
+        "融资"
+      ]
+    },
+    {
+      "title": "Fanatics 用 Codex 构建购物功能，OpenAI 公开企业落地案例",
+      "summary": "OpenAI 在 10 月 26 日的一批发布中披露，体育零售商 Fanatics 使用 Codex构建了一项购物功能。同日 OpenAI 还公开了近 100 个国家 ChatGPT 的工作使用数据，并与 Oracle 扩大了在企业运营与应用开发上的合作，整体呈现出从模型能力宣传转向具体业务落地证据的节奏。",
+      "source": "Daily AI Brief",
+      "source_urls": [
+        "https://dailyaibrief.com/newsletters/daily-ai-brief/2026-10-28-microsoft-offers-buyouts-to-60-000-employees-anthropic-gets-63-billion-in-chip-financing-and-more-daily-ai-brief-568"
+      ],
+      "tags": [
+        "OpenAI",
+        "Codex",
+        "企业落地"
+      ]
+    }
+  ]
+}
