@@ -1,0 +1,318 @@
+{
+  "week": "2026-W45",
+  "range": { "start": "2026-11-02", "end": "2026-11-08" },
+  "generatedAt": "2026-11-09T09:15:00+08:00",
+  "coverageNote": "本周日快照只采到 3/7 天（11-02、11-03、11-04），11-05~11-08 因采集任务失败缺失，以下内容只基于已拿到的原料。",
+  "trends": [
+    {
+      "title": "AI 得有自己的工位",
+      "summary": "这周好几个人在吵同一件事：给 AI 一个用完就扔的临时环境根本不够用。它得有自己固定的工位——自己的身份、自己的记忆、自己能翻的资料和代码。每次都从白纸开始，它就只能干一次性的小活。",
+      "implication": "输入法侧边栏的 AI 不该是「每次打开都重新自我介绍」。用户的常用表达、行业词、改写偏好得攒在它自己那儿，下次接着用，这比换个更强的模型更能让人感觉到它变聪明了。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Guillermo Rauch（Vercel CEO）",
+          "url": "https://x.com/rauchg/status/2117338179535810957",
+          "quote": "拿「无状态沙箱」当标准就是跑偏了。AI 只有带着自己的工作区才有用——身份、技能、代码库、记忆，一样都不能少（Stateless sandboxes are the wrong benchmark. Agents are only useful if they have their workspace with them）"
+        },
+        {
+          "type": "tweet",
+          "who": "Amjad Masad（Replit CEO）",
+          "url": "https://x.com/amasad/status/2117499074496872882",
+          "quote": "AI 应该跑在公司自己管得住的专用环境里，每个任务只给它够用的那点权限（AI agents should operate in dedicated, organization-controlled environments with limited access to the resources each task requires）"
+        },
+        {
+          "type": "tweet",
+          "who": "Guillermo Rauch（Vercel CEO）",
+          "url": "https://x.com/rauchg/status/2116988333096370443",
+          "quote": "智能得是自己的。外壳、数据、连接、运行环境，都得归你自己（Own your intelligence. Own your harness, data, connections, runtime: your agents）"
+        },
+        {
+          "type": "podcast",
+          "who": "Aman Singh（Arca，AI 原生财富管理公司）· Latent Space",
+          "url": "https://www.youtube.com/@LatentSpacePod",
+          "quote": "我们看好各家实验室的模型，但不想把「managed agents」这类产品当依赖——因为记忆和运营知识归谁管，决定了你还能不能做出跟别人不一样的东西。把智能交出去，控制权就没了"
+        }
+      ]
+    },
+    {
+      "title": "从自己干活到带一队 AI",
+      "summary": "过去是 AI 帮你把活干得快一点，现在反过来——你在帮 AI 把活干完。好几个人同一周说到这个转变：手里不是一个助手，而是一队，你的工作变成分派、盯进度、挑毛病。",
+      "implication": "如果用户要同时带好几个 AI 干活，输入法这种「一直在手边」的入口其实很占位置：它天然适合做那个随时下指令、随时看回话的地方。但前提是别把多个任务揉进一个聊天框里。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Aaron Levie（Box CEO）",
+          "url": "https://x.com/levie/status/2117134917847093491",
+          "quote": "我们正从「AI 帮我们把活干得好一点、快一点」，走向「我们帮 AI 把它的活干完」。这让这些岗位上的人都从干活的人变成了带一队 AI 的管理者（us helping agents do their work... a manager of a team of agents）"
+        },
+        {
+          "type": "tweet",
+          "who": "Garry Tan（YC CEO）",
+          "url": "https://x.com/garrytan/status/2117410016730964358",
+          "quote": "一夜之间我修问题的吞吐量涨了大概五倍。能在多个 AI 和多条子线程之间协调，这个解锁太猛了（coordinate across captains and subthreads is an insane unlock）"
+        },
+        {
+          "type": "tweet",
+          "who": "Swyx（Latent Space / Cognition）",
+          "url": "https://x.com/swyx/status/2116773135668404286",
+          "quote": "低投入 + 反复挑错，比一上来就拉满那套强（low effort + critique loop > superultramaxhighwhatever）"
+        },
+        {
+          "type": "tweet",
+          "who": "Aaron Levie（Box CEO）",
+          "url": "https://x.com/levie/status/2116652002830963114",
+          "quote": "这是检验你用 AI 用得够不够狠的试纸：半年前你最多是把本来能做出来的东西做快一点，现在 AI 的产出应该明显超过你原来能做到的水平"
+        }
+      ]
+    },
+    {
+      "title": "模型够强了，卡在外壳上",
+      "summary": "这周抱怨最集中的不是模型不行，而是包在模型外面那层太烂——改稿建议写得好，但没法直接落到你正在写的那篇里，只能人工来回复制粘贴。反过来也有人在问更狠的问题：这个产品是不是根本不需要人来点界面。",
+      "implication": "对输入法最直接：模型选谁已经不是胜负点了，差距在「结果能不能原地落到用户正在打字的地方」。少一次复制粘贴，体验差别就是天和地。另外值得想想哪些功能根本不该有界面，直接出结果。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Peter Yang（AI 产品内容创作者）",
+          "url": "https://x.com/petergyang/status/2117333424403042330",
+          "quote": "写作改稿最强的那个模型，被它自己的外壳拖住了。Gemini 给的修改建议非常好，但我得把它的改动全部手动粘回浏览器里才能用（The best model for writing & editing is held back by its harness）"
+        },
+        {
+          "type": "tweet",
+          "who": "jacalulu（Google Labs 产品总监）· 转自 Peter Yang",
+          "url": "https://x.com/petergyang/status/2116987415319740756",
+          "quote": "这真让人反思：你为什么希望产品里有个人？你的产品真的需要界面吗？要创作、要学东西的时候我有理由动手；但想被娱乐、想消费点东西的时候，有些产品我其实非常乐意不亲自用（Is your product something that needs a UI?）"
+        },
+        {
+          "type": "tweet",
+          "who": "Nan Yu（OpenAI Codex 产品负责人，前 Linear 产品负责人）",
+          "url": "https://x.com/thenanyu/status/2117432599559716940",
+          "quote": "除了极少数场景，群聊是个糟糕透顶的多人 AI 体验形式，基本保证出来一堆废话（group chat is a terrible multiplayer AI experience. Literally guaranteed slop）"
+        },
+        {
+          "type": "podcast",
+          "who": "Jacob Lauritzen（Legora CTO）· Latent Space",
+          "url": "https://www.youtube.com/@LatentSpacePod",
+          "quote": "我们之前有个引用标注不准的问题，下一代模型一发就从 70% 变 99%，我们什么都没干。所以真正的活是别的：把数据管好、能打标能排序、以及做出表格这种形态——它比我们试过的任何形式都更容易一眼看懂和复核"
+        }
+      ]
+    }
+  ],
+  "builders": [
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "Vercel CEO",
+      "highlights": [
+        {
+          "summary": "一次性沙箱是错的标准：AI 必须带着自己的工作区——身份、技能、代码库、记忆。",
+          "url": "https://x.com/rauchg/status/2117338179535810957"
+        },
+        {
+          "summary": "「智能得是自己的」。反对这件事的人一般都有东西要卖给你。本地模型要继续普及，外壳、数据、连接、运行时都该握在自己手里。",
+          "url": "https://x.com/rauchg/status/2116988333096370443"
+        },
+        {
+          "summary": "很看好 WebMCP——让网页本身变成 AI 能直接调用的接口。",
+          "url": "https://x.com/rauchg/status/2117419661654720671"
+        }
+      ]
+    },
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "Box CEO",
+      "highlights": [
+        {
+          "summary": "工作方式在反转：以后不是 AI 帮你干活，而是你帮一队 AI 把活干完，每个人都变成管理者。信息密集的岗位冲击最大。",
+          "url": "https://x.com/levie/status/2117134917847093491"
+        },
+        {
+          "summary": "判断自己用 AI 用得够不够狠，看产出有没有明显超过你原来的水平——只是「更快做出原本的东西」已经过时了。",
+          "url": "https://x.com/levie/status/2116652002830963114"
+        }
+      ]
+    },
+    {
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "AI 产品教程与访谈作者",
+      "highlights": [
+        {
+          "summary": "最强的改稿模型被外壳拖死：建议质量很高，但落不到你正在写的东西里，只能手动搬运。",
+          "url": "https://x.com/petergyang/status/2117333424403042330"
+        },
+        {
+          "summary": "转述 Google Labs 产品总监的狠话：你的产品真的需要界面吗？创作和学习时人想动手，消费和娱乐时人其实乐得不碰。",
+          "url": "https://x.com/petergyang/status/2116987415319740756"
+        },
+        {
+          "summary": "想只用一个 AI 工具但做不到，各品类现在各有赢家：浏览器/电脑操作用 ChatGPT+Codex，设计和「品味」活用 Claude，全天候定时任务用 Grok Bot，写作上 Gemini 被低估。",
+          "url": "https://x.com/petergyang/status/2116946320674152810"
+        }
+      ]
+    },
+    {
+      "name": "Amjad Masad",
+      "handle": "amasad",
+      "role": "Replit CEO",
+      "highlights": [
+        {
+          "summary": "AI 应该跑在公司自己管得住的专用环境里，每个任务只给够用的最小权限。",
+          "url": "https://x.com/amasad/status/2117499074496872882"
+        },
+        {
+          "summary": "正在享受补贴价 AI 订阅的人，准备好被拉地毯——现在的价格撑不住。",
+          "url": "https://x.com/amasad/status/2116998155925360965"
+        },
+        {
+          "summary": "Replit 上开个开关就能把网站的用户反馈直接变成 AI 的改造指令，反馈即需求单。",
+          "url": "https://x.com/amasad/status/2117010858845089805"
+        }
+      ]
+    },
+    {
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "role": "YC 总裁兼 CEO，设计师/工程师出身",
+      "highlights": [
+        {
+          "summary": "多个 AI + 子线程协同让他修问题的吞吐涨了约五倍，关键不在单个更强，而在能互相协调。",
+          "url": "https://x.com/garrytan/status/2117410016730964358"
+        },
+        {
+          "summary": "小模型的新玩法值得留意：直接操作权重，而不是只改提示词。",
+          "url": "https://x.com/garrytan/status/2117384926052135106"
+        },
+        {
+          "summary": "Particle-1 在「AI 自己翻资料」这类任务上能打平大得多的模型，价格只有二十三分之一。",
+          "url": "https://x.com/garrytan/status/2117137390016073977"
+        }
+      ]
+    },
+    {
+      "name": "Swyx",
+      "handle": "swyx",
+      "role": "Latent Space 主办人，Cognition",
+      "highlights": [
+        {
+          "summary": "别一上来就把算力拉满：低投入 + 反复挑错的循环更划算，吞吐受限的人尤其该这么干。",
+          "url": "https://x.com/swyx/status/2116773135668404286"
+        },
+        {
+          "summary": "对「用多大力气」这件事有执念就像这个时代的 tab vs 空格之争——Karpathy 做 HackerTube 用的也只是中档设置，按口味调就行。",
+          "url": "https://x.com/swyx/status/2116782055665402157"
+        }
+      ]
+    },
+    {
+      "name": "Nan Yu",
+      "handle": "thenanyu",
+      "role": "OpenAI Codex 产品负责人，前 Linear 产品负责人",
+      "highlights": [
+        {
+          "summary": "群聊几乎是最差的多人 AI 形态，结果基本注定是一堆废话——多人协作要另找形式。",
+          "url": "https://x.com/thenanyu/status/2117432599559716940"
+        }
+      ]
+    },
+    {
+      "name": "Andrej Karpathy",
+      "handle": "karpathy",
+      "role": "前特斯拉 AI 总监、OpenAI 创始成员",
+      "highlights": [
+        {
+          "summary": "周末两小时做了个 HackerTube：让 Claude 把 HN 二十年、4300 万条评论筛成 6454 个一直被人推荐的视频，不用登录、缩略图取视频中段真实画面，比 YouTube 推荐好用得多。原始数据打包放出，让别人也能做自己那版。",
+          "url": "https://x.com/karpathy/status/2116957135661945283"
+        }
+      ]
+    },
+    {
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "前 Anthropic Claude Code 成员",
+      "highlights": [
+        {
+          "summary": "用了一周的结论：不需要无限额度也能干出好活，200 美元档就很够；而且现在是智能最贵的时候，以后只会更便宜。",
+          "url": "https://x.com/trq212/status/2117305792923889731"
+        }
+      ]
+    },
+    {
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "OpenAI Codex & ChatGPT",
+      "highlights": [
+        {
+          "summary": "透露产品方向：由系统自己替你挑模型，不同环节调不同模型，用户不用再选。",
+          "url": "https://x.com/thsottiaux/status/2117283355427495983"
+        }
+      ]
+    },
+    {
+      "name": "Aditya Agarwal",
+      "handle": "adityaag",
+      "role": "SPC 普通合伙人，前 Dropbox CTO",
+      "highlights": [
+        {
+          "summary": "语音输入产品 Wispr Flow 刚完成 2.8 亿美元 B 轮，估值 20 亿美元——语音输入这条线融资热度仍在往上走。",
+          "url": "https://x.com/adityaag/status/2117313674981355761"
+        }
+      ]
+    },
+    {
+      "name": "Dan Shipper",
+      "handle": "danshipper",
+      "role": "Every CEO",
+      "highlights": [
+        {
+          "summary": "新工具 Argon 实测很能打，反过来说 Antigravity 还停在 2025 年的思路、功能和复杂度都没跟上。",
+          "url": "https://x.com/danshipper/status/2117363007340609556"
+        }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "Latent Space",
+      "title": "让 AI 干跨周期的金融活儿（Using Agents for Long-Horizon Financial Work）",
+      "guest": "Aman Singh（Arca，AI 平台负责人）",
+      "url": "https://www.youtube.com/@LatentSpacePod",
+      "keyTakeaways": [
+        "他们不是卖软件的，自己就是那家财富管理公司——所以能顺手把「活该怎么干」标准化，AI 才插得进去。这点很关键：流程没标准化，AI 根本没地方站。",
+        "AI 的角色不是替掉顾问，而是替掉顾问身边所有的杂活。客户完全接触不到 AI，感受到的只是「服务好到以前做不到」。",
+        "最反直觉的一句：在他们这儿是 AI 更多地来问人，而不是人去问 AI——系统 7×24 跑着，发现信号就主动把该出面的人拉进来。",
+        "刻意不依赖大厂的「托管 AI」产品。因为记忆和运营知识一旦交给别人管，你就失去了做出差异化的那部分控制权。",
+        "做法是长期记忆 + 每天复盘当下情况，靠这两样判断什么时候该找人。"
+      ]
+    },
+    {
+      "name": "Unsupervised Learning",
+      "title": "第 95 期：Modal CEO 聊推理的未来、GPU 市场的混乱，以及当年押注沙箱的由来（Ep 95: Modal CEO on the Future of Inference, the Chaos of the GPU Market & Origins of the Sandbox Bet）",
+      "guest": "Erik Bernhardsson（Modal 创始人兼 CEO）",
+      "url": "https://www.youtube.com/@RedpointAI",
+      "keyTakeaways": [
+        "算力市场离「有效市场」还很远。他形容去年的 GTC 像个露天黑市，到处是在酒店大厅交换号码找 GPU 的人；算力形态太杂，不像能挂到交易所上买卖的标准合约。",
+        "不是找不到算力，是得接受更高的价格和更长的合约期。他们现在一周要谈两三笔算力交易，对接 25 家云。",
+        "客户从「开发者」变成「AI 自己」，产品该怎么改？他说变化比预想的小得多——AI 想要的和工程师想要的其实一样：反馈快、报错清楚、文档好。",
+        "但有个真实的坑：废弃旧功能变难了。因为 AI 是拿网上的老代码训出来的，你把功能从文档里删掉也没用，它还在训练数据里，用户让 AI 生成的代码照样用废弃接口。他们因此大幅拉长了废弃周期。",
+        "应对办法是搭自动流水线，让模型不停地写自家的代码并跑起来，专门抓 AI 容易踩的坑。"
+      ]
+    },
+    {
+      "name": "Latent Space",
+      "title": "看不到数据，怎么做法律 AI（Building Legal Agents When You Can't See the Data）",
+      "guest": "Jacob Lauritzen（Legora CTO）",
+      "url": "https://www.youtube.com/@LatentSpacePod",
+      "keyTakeaways": [
+        "有个最省钱的经验：他们有个引用标注不准的问题，准确率 70%，等下一代模型发布直接变 99%，自己什么都没改。所以要分清哪些问题该自己修、哪些等模型就行。",
+        "既然模型能力是公共的，真正的活就在别处：把数据管好、能打标能排序、以及做对界面形态。他们选了表格——一眼能看出全局、每个格子都带回原文的引用、能高亮和评论，复核起来比任何其他形式都快。",
+        "有个很实用的小设计：用户先在前 10 行反复调，调到结果满意了再放开跑全量。省算力也省耐心。",
+        "他们专门养了一支做评测的团队，按法律细分领域 × 任务画成一张大热力图。重要发现：新模型发布经常是有的指标涨、有的指标反而退，这种情况比想象中频繁得多。",
+        "数据信任是真门槛：律所当年明确说不信 AWS 和 Google，但接受微软（因为已经在用 365 并过了安全审查），所以他们被迫把全部基础设施放在 Azure 上。",
+        "CTO 自己在想的问题是：产品里有多少部分可以干脆就是那个 AI，剩下的壳还需要多少。"
+      ]
+    }
+  ],
+  "blogs": []
+}
