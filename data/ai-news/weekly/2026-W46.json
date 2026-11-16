@@ -1,0 +1,344 @@
+{
+  "week": "2026-W46",
+  "range": { "start": "2026-11-09", "end": "2026-11-15" },
+  "generatedAt": "2026-11-16T09:45:00+08:00",
+  "trends": [
+    {
+      "title": "新模型一来先回头扫旧活",
+      "summary": "这周 Claude Fable 5.2 和 Gemini 4 Carbon 前后脚发布，但最有意思的不是跑分，是一堆人拿到新模型的第一反应都一样：把手里的老项目翻出来重扫一遍。以前将就的毛病、懒得改的细节，现在一句话就能批量清掉。",
+      "implication": "对输入法/AI 助手的启发：每次模型升级别只在发布页加个新功能。更值钱的动作是让 AI 回头扫用户攒下来的历史内容——旧词库、旧短语、总被手动改掉的候选词，把将就很久的地方自动修一遍，用户才真感觉到「它变聪明了」。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Alex Albert（Anthropic 研究）",
+          "url": "https://x.com/alexalbert__/status/2119884951550386671",
+          "quote": "每次出新模型，我都对所有项目跑同一句话：『把整个项目读一遍，找出所有坏掉的、前后矛盾的、低效的、已经没用的东西。你确定的直接改，剩下的列给我看。』强烈推荐试试。（Read this entire project and find everything that's broken, inconsistent, inefficient, or no longer needed. Fix what you're sure about and list the rest for me to review.）"
+        },
+        {
+          "type": "tweet",
+          "who": "Garry Tan（YC CEO）",
+          "url": "https://x.com/garrytan/status/2119882192088391751",
+          "quote": "大日子：出一个新的前沿模型，等于你手上每一个项目都白捡一次台阶式提升。（New frontier model = every one of your projects gets a step function improvement）"
+        },
+        {
+          "type": "tweet",
+          "who": "Garry Tan（YC CEO）",
+          "url": "https://x.com/garrytan/status/2119612084220842483",
+          "quote": "一旦你意识到软件在前沿模型面前这么好改，那些小 bug 就变得无法忍受了。顺带也很明显：按需现做的个人软件是躲不掉的未来。（personal just-in-time software will be inevitable）"
+        },
+        {
+          "type": "tweet",
+          "who": "Guillermo Rauch（Vercel CEO）",
+          "url": "https://x.com/rauchg/status/2119878364794372162",
+          "quote": "我们提前测了这个模型，一句话总结：聪明得吓人。这代模型能同时吞下前所未有的并行工作量——你的瓶颈现在只剩两样：你的野心，和你手上的并行算力。（Your bottleneck is now ① your ambition and ② your parallel computing power.）"
+        }
+      ]
+    },
+    {
+      "title": "别把聪明甩给用户",
+      "summary": "Nan Yu（OpenAI Codex 产品，前 Linear 产品负责人）这周连发三条，核心就一句：先选最笨那个能跑的做法，不是最简洁的。他的理由很扎人——你做得聪明，用户就得跟着一样聪明才能看懂你的聪明。好几个人同一周从不同角度说到同一件事：技术被用户忘掉的那一刻，才算真做成了。",
+      "implication": "这条几乎是冲着输入法说的：AI 能力越多，越容易把「选哪个模式、挑哪个模型、调什么语气」这些决定推给用户，看着像给了自由，实际是把活丢回去。先做最笨那版——默认就对、不用选、不解释，用户根本注意不到 AI 在哪，才算做对了。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Nan Yu（OpenAI Codex 产品，前 Linear 产品负责人）",
+          "url": "https://x.com/thenanyu/status/2119462979179892925",
+          "quote": "软件的各个层面基本都成立：选能跑起来的最笨架构，选把事办成的最笨设计。你搞得聪明，意味着你的用户也得一样聪明才能理解你的聪明。（Being clever means your users also have to be just as clever to understand your cleverness）"
+        },
+        {
+          "type": "tweet",
+          "who": "Nan Yu（OpenAI Codex 产品，前 Linear 产品负责人）",
+          "url": "https://x.com/thenanyu/status/2119493015190249556",
+          "quote": "「最笨」要优先于「最简」。简洁是你一轮轮迭代出来的结果，笨才是正确的起点——否则你会开始自作聪明。（Simple is something you iterate to. Dumb is the correct starting point.）"
+        },
+        {
+          "type": "tweet",
+          "who": "Zara Zhang（创业者）",
+          "url": "https://x.com/zarazhangrui/status/2120429971718156375",
+          "quote": "技术只有在观众忘记技术存在的那一刻，才算完成了它最重要的工作。（Technology only finishes its most important work once the audience forgets the technology）"
+        },
+        {
+          "type": "tweet",
+          "who": "Guillermo Rauch（Vercel CEO）",
+          "url": "https://x.com/rauchg/status/2120601000176439478",
+          "quote": "提醒一下：做出好产品依然需要大量的人的专注、投入、动力和热爱。还有注意力。（creating wonderful products still requires extraordinary amounts of human focus, effort, motivation, and love. And an attention span.）"
+        }
+      ]
+    },
+    {
+      "title": "AI 该给能上手的东西",
+      "summary": "这周产品侧动作很集中：Claude 开始把 Adobe、Atlassian、Box 的完整界面直接开在对话旁边，你能自己动手改，也能让它陪你改；Claude Data 能把指标写成数据故事和配旁白的视频。个人侧也一样——有人把达芬奇五百年前的手稿 PDF 变成能上手互动的发明，有人三分钟一次成型做出一个 4.7 万条视频的站。产出形态在从「一段文字」变成「一个能继续动手的东西」。",
+      "implication": "侧边栏助手别只吐文字。整理完会议记录直接给一张能改的表，查完资料给一个能点开比对的小页面——产出本身就能继续操作，用户才不用再把结果搬去别的工具里返工一遍。Thariq 那句提醒也值得记：少做一次成型的炫技 demo，多做能让人边做边改的工具。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Claude（Anthropic 官方账号）",
+          "url": "https://x.com/claudeai/status/2120206375137484875",
+          "quote": "新增交互式连接器：现在你可以在 Claude 里直接打开一个工具的完整版本。在对话旁边用 Adobe、Atlassian、Box，自己改，或者让 Claude 陪你一起改。（you can now open the full version of a tool inside Claude）"
+        },
+        {
+          "type": "tweet",
+          "who": "Claude（Anthropic 官方账号）",
+          "url": "https://x.com/claudeai/status/2120206372478566799",
+          "quote": "Claude Data（原 Dashboards）正式开放。除了看板，Claude 还能把你的指标写成数据故事、做成带旁白的视频，你过一遍再分享出去。（Claude can draft data stories and narrated videos from your metrics）"
+        },
+        {
+          "type": "tweet",
+          "who": "Alex Albert（Anthropic 研究）",
+          "url": "https://x.com/alexalbert__/status/2119916954337349737",
+          "quote": "我把达芬奇五百年前一本手稿的 PDF 丢给 Fable 5.2，它把他的发明做成了我能上手玩的东西。做教育真是赶上好时候了——任何过去只能躺在纸上的历史，现在都能变成可以探索的东西。（Anything from history that's been stuck on a page can now be something you explore.）"
+        },
+        {
+          "type": "tweet",
+          "who": "Thariq（前 Claude Code 团队）",
+          "url": "https://x.com/trq212/status/2120223476279869875",
+          "quote": "我们需要的不是更多一次成型的 demo，而是更多能让你跟模型一起把想法做出来的工具。（we need fewer one shot demos and more tools that show how you can collaborate with models to bring your vision to life）"
+        },
+        {
+          "type": "tweet",
+          "who": "Andrej Karpathy",
+          "url": "https://x.com/karpathy/status/2119114537442189652",
+          "quote": "Tristan 发了他最爱的 YouTube 频道清单，看着太好了，我就顺手做成了 TristanTube：4.7 万条极客视频，还带一个躺着看的 TV 模式。（用 Claude Code 三分钟一次成型）（One-shotted with Claude Code in 3 minutes）"
+        }
+      ]
+    }
+  ],
+  "builders": [
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "Box CEO",
+      "highlights": [
+        { "summary": "一群 agent 一起扑同一个目标，会把产出再推上一个台阶。过去是聊天让你快一点，但受你来回打字的限制；后来 agent 能整件事包办；现在是一群 agent 自己找路把项目做完，上限基本看不到了。", "url": "https://x.com/levie/status/2120385739342897469" },
+        { "summary": "生产力提升从「20%~50%」变成「说不出上限」。你给一组 agent 设一个问题，它们能干任意大的工作量，结果会是质变而不是量变。", "url": "https://x.com/levie/status/2119592025440092192" },
+        { "summary": "agent 跟企业文件打交道的频率，将来会是人的 100 倍。所以 Box 和 Anthropic 打通了读写：agent 不只能把内容调出来用，还能把改动写回 Box，并在 Claude 里直接看。", "url": "https://x.com/levie/status/2120261416733036905" },
+        { "summary": "AI 领域一个好习惯：每 3~6 个月回头试一次以前做不到的事。过去半年在电脑操作、工具调用、上下文不衰减、推理和专业领域上的进展，让「能自主干的活」又多了一大片。", "url": "https://x.com/levie/status/2119502716770902234" },
+        { "summary": "动画、影视、游戏、制造、建筑、产品设计、机器人这些行业还没迎来自己的 Claude Code 时刻，但快了——会出现一批「能自主干活的同事」。", "url": "https://x.com/levie/status/2119987129204047894" },
+        { "summary": "一个反常识的点：AI 对延迟不那么敏感，所以长时间跑的 agent 可以把活丢去远端「AI 工厂」做完再把结果吐回来，数据加密进去、用完就丢。", "url": "https://x.com/levie/status/2118953909524050288" }
+      ]
+    },
+    {
+      "name": "Nan Yu",
+      "handle": "thenanyu",
+      "role": "OpenAI Codex 产品，前 Linear 产品负责人",
+      "highlights": [
+        { "summary": "选能跑起来的最笨架构、最笨设计。你搞得聪明，用户就得一样聪明才看得懂你的聪明。", "url": "https://x.com/thenanyu/status/2119462979179892925" },
+        { "summary": "「最笨」优先于「最简」——简洁是迭代出来的结果，笨才是正确起点，不然你会开始自作聪明。", "url": "https://x.com/thenanyu/status/2119493015190249556" },
+        { "summary": "知道自己要做什么的话，做软件变容易多了；不知道的话反而更难——以前你会啥也发不出来，现在你会花一堆钱发出一堆垃圾。", "url": "https://x.com/thenanyu/status/2119462224721002560" },
+        { "summary": "夸了一个听写应用的细节：把苹果那颗听写键（F5 的特殊变体）映射上了，还同时支持按住说、双击、单击三种触发。这种边角做对了才叫做好。", "url": "https://x.com/thenanyu/status/2120203450223104012" }
+      ]
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "Vercel CEO",
+      "highlights": [
+        { "summary": "新一代模型能吃下前所未有的并行工作量，所以云端沙箱是必需品，没得商量。瓶颈从模型换成了你的野心和你手上的并行算力。", "url": "https://x.com/rauchg/status/2119878364794372162" },
+        { "summary": "很看好 MCP，它的价值超出「模型」那个 M——让所有系统用一套通用开放协议对话，是文明级别的成就。原来缺的一块是跨会话回调：MCP 以前能读能写，但没法事后告诉你「这事发生了」，MCP Events 补上了，agent 部署完可以订阅而不用一直轮询。", "url": "https://x.com/rauchg/status/2119891138450755670" },
+        { "summary": "Rust 很好，但它是 agent 编程之前发明的。有了 agent，新语言会冒出来，甚至为单一用途定制的语言、看场合用的 C 乃至汇编都行。AI 是流动的，不再有一招通吃。", "url": "https://x.com/rauchg/status/2120337388178379178" },
+        { "summary": "安全审查上线不到一周的实测数据：发现 57,897 个漏洞，其中 6,029 个严重或高危，14,665 个已被 agent 自动修掉。他自己最惊讶两点——没人发现的严重漏洞居然这么多，以及 agent 修起来居然这么轻松。", "url": "https://x.com/rauchg/status/2120188488628977819" },
+        { "summary": "提醒一句：做出好产品依然需要大量的人的专注、投入、动力和热爱，还有注意力。", "url": "https://x.com/rauchg/status/2120601000176439478" },
+        { "summary": "用 WebGL2 和 Web Audio 做了个黑胶唱机的物理模拟：把歌转成沟槽的物理形状，模拟唱针每秒刮 38.4 万次，噼啪声、抖晃、内圈发闷全是模拟出来的副产品，不是贴上去的音效。", "url": "https://x.com/rauchg/status/2119536313712230802" }
+      ]
+    },
+    {
+      "name": "Alex Albert",
+      "handle": "alexalbert__",
+      "role": "Anthropic 研究",
+      "highlights": [
+        { "summary": "每次出新模型就对所有项目跑同一句话：读完整个项目，把坏的、矛盾的、低效的、没用的全找出来，确定的直接改，其余列出来等我看。", "url": "https://x.com/alexalbert__/status/2119884951550386671" },
+        { "summary": "把达芬奇手稿 PDF 丢给模型，它把那些发明做成了能上手互动的东西——过去只能躺在纸上的历史，现在能探索了。", "url": "https://x.com/alexalbert__/status/2119916954337349737" },
+        { "summary": "顺带预判一句：机器人也会倒在「苦涩的教训」下——堆算力和通用方法最终会赢过手工堆规则。", "url": "https://x.com/alexalbert__/status/2119869925288558799" }
+      ]
+    },
+    {
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "role": "YC 总裁兼 CEO",
+      "highlights": [
+        { "summary": "出一个新前沿模型，等于手上每个项目都白捡一次台阶式提升。这种日子他说自己永远不会腻。", "url": "https://x.com/garrytan/status/2119882192088391751" },
+        { "summary": "一旦意识到软件在前沿模型面前这么好改，那些小 bug 就变得无法忍受；按需现做的个人软件看起来躲不掉。", "url": "https://x.com/garrytan/status/2119612084220842483" },
+        { "summary": "「你会非常想拥有自己的软件工厂。」——他对个人/小团队产能的判断。", "url": "https://x.com/garrytan/status/2119615647592395037" },
+        { "summary": "自己跑了一个复现实验：拿一篇工程文章让 gstack-evals 项目复刻，结论复现成功，而且换成 particle-1 效果更好。遇到结论先自己复现一遍的习惯值得学。", "url": "https://x.com/garrytan/status/2119624260675350605" }
+      ]
+    },
+    {
+      "name": "Dan Shipper",
+      "handle": "danshipper",
+      "role": "Every CEO",
+      "highlights": [
+        { "summary": "新模型上手当天的实测：有人三天做出一个把 Premiere、Descript 常用功能捏在一起、还内置 agent 的视频编辑器；团队里出现一波创造力爆发，有人做自己的创作软件、给孩子做游戏、用纪录片代替 PPT。", "url": "https://x.com/danshipper/status/2119869228207546638" },
+        { "summary": "Gemini 4 Carbon 当天实测：编码明显比上一代强（内部资深工程师基准 44% vs 21%），但不太知道什么时候该停——给它 6 个任务的 backlog，它直接干了 15 个。写作上他还是留着上一代。", "url": "https://x.com/danshipper/status/2120187507396530309" },
+        { "summary": "他自己一周在会议缝隙里做完了分析客户问卷、给团队做游戏、发现一个新商机、搭 CRM、开始外联——换成 2020 年得五个人、二十万美元。但他的反问更关键：那为什么还需要团队？", "url": "https://x.com/danshipper/status/2120539547620790424" }
+      ]
+    },
+    {
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "role": "创业者",
+      "highlights": [
+        { "summary": "技术只有在观众忘记技术存在的那一刻，才算完成了它最重要的工作。", "url": "https://x.com/zarazhangrui/status/2120429971718156375" },
+        { "summary": "用户不回来，20% 是因为不喜欢你的产品，80% 是因为压根忘了你存在。", "url": "https://x.com/zarazhangrui/status/2120235104194932841" },
+        { "summary": "她几乎不再用「vibe coding」这个词了——它暗示你没花心思、产出是 AI 垃圾，但很多人用 AI 写代码时是真投入了心力的。这两件事不矛盾，只是缺一个更好的说法。", "url": "https://x.com/zarazhangrui/status/2119592080318341128" },
+        { "summary": "分享作品的第一步：别等做完、别等完美，先把半成品发出来——有时候这才是你判断值不值得做完的方式。", "url": "https://x.com/zarazhangrui/status/2120041030951297033" },
+        { "summary": "做产品的乐趣来自两种东西撞在一起：技术行为的可预测，和人的行为的不可预测。", "url": "https://x.com/zarazhangrui/status/2119342420412510686" }
+      ]
+    },
+    {
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "前 Claude Code 团队",
+      "highlights": [
+        { "summary": "少做一次成型的炫技 demo，多做能让人跟模型一起把想法落地的工具。", "url": "https://x.com/trq212/status/2120223476279869875" },
+        { "summary": "他在大会上讲的主题叫「苦涩教训的甜味那一面」，内容是他认为明年用编码 agent 的体验会变成什么样、以及我们怎么去塑造它。", "url": "https://x.com/trq212/status/2120620900785820143" }
+      ]
+    },
+    {
+      "name": "Andrej Karpathy",
+      "handle": "karpathy",
+      "role": "前特斯拉 AI 总监、OpenAI 创始团队成员",
+      "highlights": [
+        { "summary": "看到一份好的 YouTube 频道清单，顺手做成了一个 4.7 万条视频的站，还带「躺着看」的 TV 模式——三分钟一次成型。这类「看到就顺手做出来」的节奏本身就是信号。", "url": "https://x.com/karpathy/status/2119114537442189652" }
+      ]
+    },
+    {
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "独立开发者（OpenClaw）",
+      "highlights": [
+        { "summary": "转述了一个很说明问题的案例：某公司给约 700 套系统做诊断，查出 10,500 个漏洞，开了紧急发布会、花三个月修完；结果换新模型再扫一遍，又确认了 35,000 个新漏洞。当事人原话是「老实说，我们彻底累垮了」。", "url": "https://x.com/steipete/status/2120228665946710248" },
+        { "summary": "Asahi 项目当年做的就是把封闭的东西打开，现在反过来加限制、让别的项目更难在上面搭东西，不是正路；顺带说那条「拒绝 AI」的规定挺傻。", "url": "https://x.com/steipete/status/2119264334627090514" }
+      ]
+    },
+    {
+      "name": "Madhu Guru",
+      "handle": "realmadhuguru",
+      "role": "Meta AI 高级总监，曾在 Google 带 Gemini、Veo、Nano Banana",
+      "highlights": [
+        { "summary": "给产品负责人的一个小练习：把你的产品生命周期画出来（摸市场→设计→开发→上市），你会发现 PM 在某些阶段待得特别久——不是因为产品需要，而是组织结构或个人舒适区。这是个交接重、信息会丢的流程。然后问自己：用 AI，PM 在每个阶段能挖多深？", "url": "https://x.com/realmadhuguru/status/2119999748086362466" }
+      ]
+    },
+    {
+      "name": "Aditya Agarwal",
+      "handle": "adityaag",
+      "role": "SPC 普通合伙人，前 Dropbox CTO",
+      "highlights": [
+        { "summary": "现在只有两类公司值得做：一类是把 AI 推到活儿发生的地方（今天的垂类 SaaS），会出一堆好公司；另一类是推进 AI 的前沿——用 AI 加速科学进步，再从进展里做产品，更难看懂但动静更大。", "url": "https://x.com/adityaag/status/2120578134177464356" },
+        { "summary": "如果建数据中心变难，那该重仓已有算力的人（超大云厂）——对算力的需求只会继续涨。代价是新模型训练的速度会被拖慢。", "url": "https://x.com/adityaag/status/2119157297167372646" }
+      ]
+    },
+    {
+      "name": "Ryo Lu",
+      "handle": "ryolu_",
+      "role": "Cursor 设计负责人，曾设计 Notion、Stripe",
+      "highlights": [
+        { "summary": "魔法发生在人和人一起干活的地方，不是各自在孤岛里指挥自己的 agent 军队。", "url": "https://x.com/ryolu_/status/2120337691661443081" },
+        { "summary": "我们做软件不只是为了优化、完成任务、或者把自己的约束塞给别人，而是为了造一个把人请进来的世界——让人去做他们以前做不到的事、去创造、去找到自己，就像导演和音乐人那样。", "url": "https://x.com/ryolu_/status/2120380317429350654" },
+        { "summary": "他在上海 AI 工程大会的完整演讲上线，题目是「当我们什么都能做，还知道自己想要什么吗」。每张幻灯片手工做，中英双语字幕。", "url": "https://x.com/ryolu_/status/2119586846657454152" }
+      ]
+    },
+    {
+      "name": "Amjad Masad",
+      "handle": "amasad",
+      "role": "Replit CEO",
+      "highlights": [
+        { "summary": "回应「vibe 出来的应用谁来维护」这个经典质疑：那就让软件自己会修自己。", "url": "https://x.com/amasad/status/2119893236747780567" },
+        { "summary": "贴了一篇「更好的教训（The Better Lesson）」——算是对「苦涩的教训」那套叙事的回应。", "url": "https://x.com/amasad/status/2119217304953053419" }
+      ]
+    },
+    {
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "OpenAI Codex / ChatGPT",
+      "highlights": [
+        { "summary": "Dots 除了默认自带的那台小云电脑，现在能同时控制多台机器了。", "url": "https://x.com/thsottiaux/status/2120021043876106429" },
+        { "summary": "澄清套餐口径：所有 Pro 档都没有 5 小时限制，用量相对 Plus 分别是 10 倍、20 倍、50 倍，最高档还能用超快通道。", "url": "https://x.com/thsottiaux/status/2119296267545419987" }
+      ]
+    },
+    {
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "role": "FPV Ventures 合伙人",
+      "highlights": [
+        { "summary": "他扒了 803 家公司公示的分包商清单，看 AI 原生公司到底在用什么基础设施：44% 同时列了两家以上模型供应商（3 月时是 33%），Anthropic 的增速是 OpenAI 的两倍；33% 列了专门的推理服务商（3 月 22%）；中国模型主要是从视频这条线进来的，而不是文本。", "url": "https://x.com/nikunj/status/2120669243918418237" },
+        { "summary": "提醒一句很扎心的话：如果你以为别人看不出你把什么都丢给 AI 再把结果倒回来，其实人家看得出来——因为他们手里同样的 agent 早就给过类似答案了。", "url": "https://x.com/nikunj/status/2119850705901191339" }
+      ]
+    },
+    {
+      "name": "Boris Cherny",
+      "handle": "bcherny",
+      "role": "Anthropic（Claude）",
+      "highlights": [
+        { "summary": "新模型顺带改了额度规则：订阅时间越长，给的额度重置次数越多——Pro 一次，Max/Ultra/团队高级版最多三次。把「老用户忠诚度」直接做进了用量设计里。", "url": "https://x.com/bcherny/status/2119873095129550880" }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "AI & I by Every",
+      "title": "自动化之后，什么才算好的人类工作（A New Vision for Human Work After Automation）",
+      "guest": "Dan Shipper（Every 联创兼 CEO）",
+      "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+      "keyTakeaways": [
+        "他先把最吓人的那张图摆出来：OpenAI 的 GDPval 基准上，AI 在专家工作上胜过人类专家的比例从 2024 年的 12.4% 涨到 2026 年约 83%。然后用自己一周的经历印证——会议缝隙里分析完客户问卷、做了个团队游戏、搭了个 CRM、开始外联，换成 2020 年要五个人和二十万美元。",
+        "但他说这张表里缺了东西：他们团队 30 个人照样在。关键证据是同一份问卷——他看出的是「可以卖给团队」，而同事看出的完全是另一些结论，并且那位同事直接写了个 PR 去改他想改的那个数字。",
+        "「那我能不能直接让模型猜同事会说什么？」他们真试了：评测负责人能 93% 准确预测他在群里会说什么——但前提是模型每个问题能给 400 个答案。也就是说模型能生成，但排不出序。",
+        "所以真正值钱的东西是排序和筛选：每个人基于自己的职责和视角，决定世界上哪一小块值得关心。默认答案谁都能拿到，你带给模型的视角才稀缺。",
+        "他把这套叫「分配经济」：以后评价你不看你知道多少，而看你能多好地分配和管理智能这种资源。顺带一个翻转——评价 AI 的方式也该改：现在都在测「大家公认值得解的问题」，但真实工作里值得解的问题往往是不公认的。"
+      ]
+    },
+    {
+      "name": "Latent Space",
+      "title": "为 agent 做设计（Designing for Agents — Zeno Rocha, Resend）",
+      "guest": "Zeno Rocha（Resend CEO）",
+      "url": "https://www.youtube.com/@LatentSpacePod",
+      "keyTakeaways": [
+        "他们 MCP 刚上线时大概 20 个工具甚至更少，现在有 80 多个，而且还在加。以前大家担心「工具太多模型会糊」，他说现在基本看不到这个问题了，长尾工具该补就补。",
+        "但真正难的是覆盖率：让 MCP 能干到控制台能干的 90% 不难，做到 100% 非常难——用量、账单、邀请成员、开通账号、注销，这些到底该不该开成接口，是真问题。",
+        "他自己用 MCP 的体感吐槽很有参考价值：工具调用默认都是折叠的，他总得一个个点开看它到底干了什么；有次联系人没写全，他第一反应是「我们是不是往客户端塞了太多数据」。可观察性不是开发者功能，是信任问题。",
+        "反垃圾邮件那段讲的其实是产品哲学：别的服务让你先证明自己是好人（像一出生就进监狱待十八年），他们选了反过来的路子——默认信任、出问题再处理。顺带一个具体坑：别把追踪链接重写到自家域名，一个客户发钓鱼就能把整个域名拉黑名单，几天到几周才洗得掉。",
+        "AEO（面向 AI 的内容优化）这块他承认没做什么特别的事，是靠早期口碑自然被模型记住的；现在的 AEO 工具大多只是分析报表，没有当年 SEO 工具那种明确主张。"
+      ]
+    },
+    {
+      "name": "Latent Space",
+      "title": "斯坦福怎么教「AI 原生」的工程（How Stanford Teaches AI-Native Engineering）",
+      "guest": "Mihail Eric（斯坦福兼职教授、Monaco AI 负责人）",
+      "url": "https://www.youtube.com/watch?v=dpY7YzZo4kE",
+      "keyTakeaways": [
+        "他的课（斯坦福 CS 146S「现代软件开发者」）在圈内刷屏，因为它直接按 AI 原生的工作方式重排了课程顺序：先把代码库改造成 agent 能干活的样子、先建代码评审，安全评审排到第七周才上——被主持人当场拿来开玩笑。",
+        "最反复强调的一点：产出变多不等于你在进步。一行提示能吐出几万行代码和一整套结构，看着很有生产力，但你会被踢出回路。写代码变容易了，理解没有任何借口可以省。",
+        "他们公司自己搭了后台 agent 平台（基于 Coder），还有一个泡在群里的机器人，同时兼 AI 运维、客户成功和测试三种角色。有意思的细节是：他们得专门设计这个机器人面对销售和面对开发时的不同人格。",
+        "对「软件工厂／黑灯工厂」的降温提醒：连最前沿、把工厂当服务卖的那批人，也只敢说三成多的贡献是真正由 agent 驱动的；还有人一路冲到极端之后公开说「我错了」。",
+        "一个值得偷的判断：很多公司都会变成某种「编码 agent 公司」——只要你手里有用户行为或产品洞察，就能顺手把「这儿坏了，去修」这条链闭上。做工具还有一条老经验：想清楚公司里谁是你的铁杆用户，如果说是所有人，那就是没有人。"
+      ]
+    },
+    {
+      "name": "Latent Space",
+      "title": "前沿实验室到底在买什么数据（What Frontier Labs Buy: A Data Deep Dive with Handshake AI）",
+      "guest": "Garrett Lord（Handshake CEO）及团队",
+      "url": "https://www.youtube.com/@LatentSpacePod",
+      "keyTakeaways": [
+        "数据生意的做法变了：不是等客户提需求，而是自己先造出「有意思的数据集」，再去跟实验室说「这块对生物学的未来很关键，你们和别家的模型都做不好，这是个重要缺口」。",
+        "他们现场拆了一个病理切片的判读题：训练过的病理医生很容易挑出正确的两张，而最新模型多挑了一张明显不该在里面的。如果这是真实诊断，被多圈进来的那位患者就会被错误治疗。",
+        "财务建模那个例子更适合拿来讲「怎么审 AI 的活」：两千六百多个公式、四千多个单元格，模型都做对了，但第 16 行一处错误让现金流偏了约 10%，并且之后每一期都跟着错——而它没有把这处标记为风险就直接交了出去。",
+        "咨询和投行卖的是信任和专业度，所以这种「表面严谨、深处崩掉」的交付物是最危险的一类，审起来也最难。",
+        "安全不能是训练末尾挂上去的一层。模型安不安全，很多时候是在用户长期反复互动里才显出来的，而训练时的奖励往往只看单次短任务；面对确认是恶意的使用，还需要分级升级的处置手段，而且对手也在进化，这事不是一次做完就完了。"
+      ]
+    },
+    {
+      "name": "No Priors",
+      "title": "代币化、agent 交易与 Harmonic：Robinhood 想把「拥有权」扩大（Tokenization, Agentic Trading, Harmonic）",
+      "guest": "Vlad Tenev（Robinhood 创始人兼 CEO）",
+      "url": "https://www.youtube.com/@NoPriorsPodcast",
+      "keyTakeaways": [
+        "agent 交易已经跑出来了：上线几个月，超过 15 万名客户开了 agent 交易账户，工具调用量沿着一条平滑的指数往上走，最近公布的数字是每天约 3000 万次。",
+        "产品形态值得注意：他们一开始只给了个 MCP，后来把 harness 和整套界面都搬进了 Robinhood 账户内部——可以理解成一个为交易优化的 Claude Code／Codex，你能让它每天跑一遍自己的策略、调仓、找机会。",
+        "更有意思的是他们把编码 agent 那一套概念整体平移了过来：有 skills（比如一键调仓），还开了个 agent 应用商店，比如接一路卫星数据，做一个数「零售商停车场里有多少车」的策略。他说接下来就是照着编码 harness 有的能力，一样样做成交易员看得懂的版本。",
+        "他对 AI 做数学的批评值得听：现在太集中了——大实验室、大数据中心、内部员工用保密模型闷头做。如果当初找些数学家一起合作，而不是搞成「一家公司包办所有科学发现」的样子，接受度会好得多。",
+        "他做代币化和「Robinhood 风投基金」的底层逻辑是同一个：加密货币之所以在政治上打得动，是因为它从一开始就是散户广泛持有、机构后来才进场；AI 恰好相反。所以他想把个人投资者推到种子轮和 A 轮的股东名册里去。"
+      ]
+    }
+  ],
+  "blogs": []
+}
