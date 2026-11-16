@@ -1,0 +1,283 @@
+{
+  "date": "2026-11-14",
+  "generated_at": "2026-11-16T09:45:00+08:00",
+  "daily_summary": "11 月 14 日是周末前的整理日，两条线索最值得记。其一是腾讯 AI 输入工具 Chatterfly 持续迭代（1.0.0.5516），加入全局快捷键与本地历史记录面板，移动端仍标注「即将上线」，产品团队基本保持每周一版；其二是语音输入赛道的定价对照被媒体系统性摊开：Wispr Flow 没有买断方案、年付 144 美元，而 Off Grid AI Pro 119 美元买断覆盖三平台五台设备，Superwhisper 终身版 249 美元，VoiceInk 25 美元买断——订阅与买断的分野，本质是「语音是否必须上云」。同日阿里云开放 Qwen4-Max-Preview、谷歌推出 Gemini Robotics 2.5，第十一届中国开源年会首次落地杭州。",
+  "design_insights": [
+    {
+      "title": "Chatterfly 用「每周一版」的节奏做输入法：桌面端正在被语音工具从侧翼切开",
+      "summary": "腾讯 AI 原生语音输入工具 Chatterfly 于 11 月 14 日更新至 1.0.0.5516，新增全局快捷键与本地历史记录面板，移动端仍标注「即将上线」。产品定位是「表达辅助」而非输入法：Fn 键唤起、口述即成稿、内置会议纪要/工作汇报/项目推进/营销文案/邮件润色/Vibe Coding 提示词优化六类 Skills、语音指令可直接联网问答与追问、支持翻译模式（说中文出英文）、可导入搜狗词库、录音与转写默认存本机。据体验报道，内测阶段基本保持每周迭代。",
+      "implication": "这款产品最该让我们警惕的不是功能，而是它的形态选择：它不做键盘，只做「全局唤起 + 成稿 + Skills」，因此完全没有候选区、词库、皮肤这些历史包袱，可以纯粹围绕「说一句话得到一份能用的稿」来设计。这在桌面端是很聪明的错位竞争——绕开键盘，直接切走「写长文、写邮件、写汇报」这块最高价值的输入场景。我们的应对不是做一个同样的工具，而是把「成稿」能力装回键盘：让用户在聊天框里也能一键把一段口语变成得体的消息，而不是切到另一个应用。另外它「录音默认存本机」的默认值值得直接抄——隐私应该是默认值而不是选项。",
+      "sources": [
+        "攻壳智能体 Chatterfly 产品说明",
+        "AI 产品库《腾讯 Chatterfly 上手：语音输入的下一站来了》",
+        "魔趣网 Chatterfly 输入法 1.0.0.5516"
+      ],
+      "source_urls": [
+        "https://gongke.net/tools/chatterfly",
+        "https://aiproducthub.cn/newsflash/tencent-chatterfly-voice-input-hands-on-review/",
+        "https://www.mfunz.com/pcsoft/167.html"
+      ],
+      "tags": [
+        "错位竞争",
+        "成稿能力",
+        "本地存储",
+        "腾讯"
+      ]
+    },
+    {
+      "title": "语音工具的定价对照被摊开：订阅制的软肋是「语音必须上云」",
+      "summary": "11 月 14 日核对的横向比价显示：Wispr Flow 没有买断方案，按年付 144 美元（月付 12 或 15 美元），三年合计约 432 至 540 美元；Off Grid AI Pro 一次付费 119 美元，覆盖 Mac、Windows、Linux 与最多 5 台设备，转写由本机模型完成，可选 Whisper 或 Qwen3-ASR 引擎；Superwhisper 终身版 249 美元、免费版含 15 分钟 Pro 功能；VoiceInk 25 美元起（GPL v3，Mac 本机转写）；Handy 为 MIT 许可的免费开源方案。Wispr Flow 免费额度为桌面 2000 字/周、iPhone 1000 字/周、Android 无上限。",
+      "implication": "这张表把竞争的真实分界线画出来了：订阅制之所以能收 144 美元/年，靠的是云端模型持续升级；而买断制产品的共同点全是「本地跑」。我们的离线能力恰好让这两条路都能走。建议明确打一套组合：①主产品免费 + 离线不限量，直接把「断网也能用、还不花钱」做成对Wispr 的正面差异；②付费点放在「整理与结构化」而不是「转写次数」；③在定价页做一张和这张表结构相同的对比，把「语音是否离开你的设备」作为第一行而不是最后一行。",
+      "sources": [
+        "网易《119 美元买断，Wispr Flow 却要每年 144 美元》",
+        "Voisty《Superwhisper vs Wispr Flow（2026）》",
+        "皮米 AI《Wispr Flow vs Xmind》价格查核（2026-11-13）"
+      ],
+      "source_urls": [
+        "https://www.163.com/dy/article/LBNRMI8S05561FZW_pdya11y.html",
+        "https://voisty.com/zh/superwhisper-vs-wispr-flow/",
+        "https://ampm-aiops.com/compare/wispr-flow-vs-xmind"
+      ],
+      "tags": [
+        "定价策略",
+        "离线",
+        "订阅疲劳",
+        "Wispr Flow"
+      ]
+    },
+    {
+      "title": "谷歌智能眼镜把「双向隐私」写进条款：可穿戴的隐私设计开始有硬约束",
+      "summary": "11 月 12 日至 13 日，谷歌开启 Gemini 智能眼镜预购，395 美元起、12 月 10 日发售，由谷歌联合三星、Gentle Monster、Warby Parker 打造。最值得注意的是条款设计：首次把「双向隐私」写入服务条款，同时保护拍摄者与周围路人，对试图绕过隐私机制、违规拍摄或滥用设备功能的行为严格禁止，并明确保留远程锁机的权力。",
+      "implication": "「双向隐私」这个概念值得借到语音输入上。现在我们的隐私叙事只讲「保护用户」，没讲「保护被录音的对方」——会议、通话、线下对话里，被录的人往往不知情。建议补上这一层：①录音开始时给出可被旁人看见的明显提示（屏幕或声音）；②提供「仅本地、不入库」的临时模式，用于敏感对话；③在隐私说明里明确「不会用于训练」并给出可验证的开关。这套设计不会立刻带来增长，但会在企业采购与合规审查时成为通行证。",
+      "sources": [
+        "模达科技 AI 大模型周报（11月15日）",
+        "AI 资讯日报 2026年11月15日"
+      ],
+      "source_urls": [
+        "http://mp.weixin.qq.com/s?__biz=MzkwMjcyMzc5OA==&mid=2247490100&idx=1&sn=eb4a3e8547146ff176f0c1f534d6cac6",
+        "https://tianqi.csdn.net/6af908f6e5f4ca4eff9185fb.html"
+      ],
+      "tags": [
+        "双向隐私",
+        "合规",
+        "可穿戴",
+        "Google"
+      ]
+    },
+    {
+      "title": "Vibe Coding 被做进输入法的 Skills：场景化模版比通用改写更有价值",
+      "summary": "Chatterfly 的六类 Skills 里有一项是「Vibe Coding 提示词优化」，把「把口语需求整理成结构化 Prompt」做成一个可选技能。同周 Claude Code 推出 Code Mode、Cloudflare 开源智能体浏览器、Claude for Manufacturing 上线 17 项技能，「按场景封装」正在取代「通用对话」成为产品化的主流形态。",
+      "implication": "这条路对输入法特别合适，因为输入法天然知道用户正在哪个应用里输入——这就是场景信号。建议把 AI 能力从「一个改写按钮」扩展成「一组按宿主应用自动切换的技能」：在聊天软件里给「高情商回复」，在文档里给「扩写/精简/改语气」，在代码编辑器里给「提示词优化」，在邮件里给「正式化」。关键是自动化选择而非让用户手动切换——用户不该为了用 AI 而先选一个场景。",
+      "sources": [
+        "攻壳智能体 Chatterfly 产品说明",
+        "AIToolsRecap AI News, 15 November 2026",
+        "Orizon Design《Command-Driven UX: Why Keyboard-First Interfaces Are Taking Over》"
+      ],
+      "source_urls": [
+        "https://gongke.net/tools/chatterfly",
+        "https://aitoolsrecap.com/Blog/ai-news-november-15-2026",
+        "https://www.orizon.co/blog/command-driven-ux-why-keyboard-first-interfaces-are-taking-over"
+      ],
+      "tags": [
+        "场景化技能",
+        "宿主适配",
+        "封装",
+        "Chatterfly"
+      ]
+    },
+    {
+      "title": "命令式界面回潮：键盘正在从「输入字符」变成「调度意图」",
+      "summary": "11 月 14 日前后一篇关于命令式交互（Command-Driven UX）的分析指出，Linear、Raycast、Cursor、Notion 都把键盘当作产品的主通道，命令面板（⌘K）的兴起不是快捷键的堆叠，而是「让用户直接说要做的事，跳过产品结构」。文章给了一条可执行的判据：命令面板应该缩小意图与动作之间的距离，而不是在混乱的导航上再加一层快捷方式；同时必须可发现、即时、上下文相关、可组合。另一篇关于键盘未来的分析则提出，AI 承担更多执行后，用户的主要工作变成「审阅」，界面必须支持输出出现之后的决策——Approve 键要说清会发生什么，Undo 键不该暗示一切可逆。",
+      "implication": "这两篇合起来给了我们一个清晰的产品隐喻：输入法正在从「字符输入器」变成「意图调度器」。候选区就是最小的命令面板。可落地的四条：①候选区在检测到任务型输入时（订会议、查路线、写邮件）直接给出可执行的一跳，而不是只做文字补全；②所有 AI 动作的按钮文案要说清后果（「替换原文」而非「优化」）；③撤销必须真实可逆，不能只是视觉回退；④为高频动作提供可组合的链式操作（转写 → 整理 → 发送），但每一步都能中断。",
+      "sources": [
+        "Orizon Design《Command-Driven UX: Why Keyboard-First Interfaces Are Taking Over》",
+        "Medium《The Future of the Keyboard: Do We Still Need Every Letter on a Key?》",
+        "Zeus Systems《The Interface After Touchscreens》"
+      ],
+      "source_urls": [
+        "https://www.orizon.co/blog/command-driven-ux-why-keyboard-first-interfaces-are-taking-over",
+        "https://medium.com/@arupchakraborty2004/the-future-of-the-keyboard-do-we-still-need-every-letter-on-a-key-4c1955f71786",
+        "https://zeusit.us/the-interface-after-touchscreens-could-people-control-computers-through-intent-rather-than-input/"
+      ],
+      "tags": [
+        "命令面板",
+        "意图调度",
+        "撤销语义",
+        "交互范式"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "订阅制对语音输入的心理门槛过高，用户更接受买断",
+      "pain_point": "Wispr Flow 年付 144 美元、无买断方案，三年约 432 至 540 美元；而买断制产品 25 至 249 美元一次付清。对只需要「说话变文字」这一件事的用户，订阅的心理成本远高于功能价值，流失往往发生在第一年续费时。",
+      "opportunity": "提供「基础能力买断 + 高级能力订阅」的混合结构：离线转写与基础整理买断，云端结构化、跨端同步、团队词库走订阅；同时在定价页第一行就写清「语音是否离开设备」，把本地处理作为价值锚点。",
+      "priority": "high",
+      "evidence": "11 月 14 日核对的比价显示 Wispr Flow 无买断、年付 144 美元；Off Grid AI Pro 119 美元买断覆盖三平台五台设备、本机转写；Superwhisper 终身 249 美元；VoiceInk 25 美元起。买断制产品的共同点是本地运行。"
+    },
+    {
+      "title": "被录音的对方没有被保护，企业场景过不了合规",
+      "pain_point": "会议、通话、线下对话里，被录的一方通常不知情。产品隐私条款只覆盖「保护用户本人」，缺少对第三方的提示与授权机制，这会让企业客户在采购审查阶段直接否掉方案。",
+      "opportunity": "加入「双向隐私」设计：录音开始时给出旁人可感知的提示；提供不留存的临时模式；在隐私说明中明确不用于训练并提供可验证开关；为企业版提供统一的录音策略配置与审计日志。",
+      "priority": "medium",
+      "evidence": "谷歌 11 月 12 日开启预购的 Gemini 智能眼镜首次把「双向隐私」写入服务条款，同时保护拍摄者与路人，并对绕过隐私机制的行为保留远程锁机权力。"
+    },
+    {
+      "title": "AI 动作的按钮文案说不清后果，用户不敢点",
+      "pain_point": "「优化」「润色」「整理」这类词在界面上大量使用，但用户无法预判点击后原文会不会被覆盖、能不能撤回、范围有多大。不确定导致大量用户宁可不点，AI 能力的使用率被文案卡住。",
+      "opportunity": "把所有 AI 动作的按钮改成后果描述式：写「替换原文（可撤销）」「在下方新增一段」「仅加标点」；点击前用 200ms 的预览显示改动范围；撤销入口固定在结果区域，且真实可逆。",
+      "priority": "high",
+      "evidence": "Medium 关于键盘未来的分析明确指出，AI 承担更多执行后界面必须支持「输出出现之后的决策」，Approve 键要说清会发生什么、Undo 键不该暗示一切可逆；命令式交互分析也强调命令必须即时且有明确反馈。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "腾讯 Chatterfly 更新至 1.0.0.5516，新增全局快捷键与本地历史面板",
+      "summary": "AI 原生语音输入工具，Fn 键唤起、口述即成稿，内置会议纪要、工作汇报、项目推进、营销文案、邮件润色、提示词优化六类 Skills；支持语音指令联网问答与追问、翻译模式、导入搜狗词库；录音与转写默认存本机。移动端仍标注即将上线。",
+      "source": "魔趣网 / AI 产品库 / 攻壳智能体",
+      "source_urls": [
+        "https://www.mfunz.com/pcsoft/167.html",
+        "https://aiproducthub.cn/newsflash/tencent-chatterfly-voice-input-hands-on-review/",
+        "https://gongke.net/tools/chatterfly"
+      ],
+      "tags": [
+        "竞品",
+        "腾讯",
+        "语音输入"
+      ]
+    },
+    {
+      "title": "语音工具横向比价：Wispr Flow 年付 144 美元无买断，Off Grid 119 美元买断",
+      "summary": "核对时点为 11 月 14 日。Wispr Flow 无买断方案、年付 144 美元；Off Grid AI Pro 119 美元买断覆盖 Mac/Windows/Linux 与 5 台设备、本机转写；Superwhisper 终身 249 美元；VoiceInk 25 美元起；Handy 免费开源（MIT）。",
+      "source": "网易 / Voisty / 皮米 AI",
+      "source_urls": [
+        "https://www.163.com/dy/article/LBNRMI8S05561FZW_pdya11y.html",
+        "https://voisty.com/zh/superwhisper-vs-wispr-flow/",
+        "https://ampm-aiops.com/compare/wispr-flow-vs-xmind"
+      ],
+      "tags": [
+        "定价",
+        "竞品",
+        "离线"
+      ]
+    },
+    {
+      "title": "阿里云开放 Qwen4-Max-Preview 预览",
+      "summary": "支持百万 token 与多模态输入，面向编程、办公与复杂智能体任务开放。",
+      "source": "AI 模型动态追踪",
+      "source_urls": [
+        "https://cnaihot.com/",
+        "https://lmmarketcap.com/zh/new-ai-models"
+      ],
+      "tags": [
+        "模型发布",
+        "阿里"
+      ]
+    },
+    {
+      "title": "谷歌推出 Gemini Robotics 2.5，先向机器人合作伙伴开放",
+      "summary": "VLA 模型向合作伙伴开放，奔驰产线概念验证中 Apptronik Apollo 2 分拣成功率 96%。",
+      "source": "AI 模型动态追踪 / 厂商公告",
+      "source_urls": [
+        "https://cnaihot.com/",
+        "http://mp.weixin.qq.com/s?__biz=Mzg5NDA4MTA4NA==&mid=2247484963&idx=1&sn=b22ae6c597bfca794dbe8a15e71437b3"
+      ],
+      "tags": [
+        "具身智能",
+        "Google"
+      ]
+    },
+    {
+      "title": "第十一届中国开源年会首次落地杭州",
+      "summary": "发布《中国人工智能开源生态蓝皮书》中英文版、首批「开源导师」名单，以及 OPC 九级 AI 人才能力标准（试行）。",
+      "source": "央广网 / 腾讯新闻",
+      "source_urls": [
+        "http://mp.weixin.qq.com/s?__biz=Mzg5NDA4MTA4NA==&mid=2247484963&idx=1&sn=b22ae6c597bfca794dbe8a15e71437b3"
+      ],
+      "tags": [
+        "开源",
+        "生态",
+        "标准"
+      ]
+    },
+    {
+      "title": "Kimi K3.1 Pro 权重与 Hosted Agents 持续推进",
+      "summary": "2.8 万亿参数、激活 1040 亿、MXFP4 量化约 1.56TB；Hosted Agents 提供 Inference Hook 在推理前拦截敏感数据。",
+      "source": "模型动态追踪",
+      "source_urls": [
+        "https://cnaihot.com/",
+        "https://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/848080073964/index.phtml"
+      ],
+      "tags": [
+        "开源",
+        "Kimi",
+        "权重"
+      ]
+    },
+    {
+      "title": "蚂蚁 Ling-3.2-flash 上线",
+      "summary": "轻量模型面向高频调用场景，与同周多家国产模型形成密集上新。",
+      "source": "模型动态追踪",
+      "source_urls": [
+        "https://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/848080073964/index.phtml",
+        "https://lmmarketcap.com/zh/new-ai-models"
+      ],
+      "tags": [
+        "模型发布",
+        "蚂蚁"
+      ]
+    },
+    {
+      "title": "Chinese open-weight models continue global adoption at Web Summit 2026",
+      "summary": "2026 网络峰会显示，以智谱 GLM 系列为代表的中国开源模型凭成本可控、部署便捷进入更多海外企业生产系统。",
+      "source": "AI 资讯日报 11/15",
+      "source_urls": [
+        "https://tianqi.csdn.net/6af908f6e5f4ca4eff9185fb.html"
+      ],
+      "tags": [
+        "开源",
+        "出海",
+        "中国模型"
+      ]
+    },
+    {
+      "title": "OpenAI 与 Meta 的智能体互操作标准推进",
+      "summary": "Sierra 与 Meta 发布 Poppy 协议，与 OpenAI 支付能力、Cloudflare 智能体浏览器共同构成智能体基础设施层。",
+      "source": "AI 资讯日报 11/15",
+      "source_urls": [
+        "https://tianqi.csdn.net/6af908f6e5f4ca4eff9185fb.html"
+      ],
+      "tags": [
+        "协议",
+        "智能体",
+        "标准"
+      ]
+    },
+    {
+      "title": "ChatGPT 企业资料与 Business Agents 进入测试",
+      "summary": "企业可管理在 ChatGPT 中的呈现、追踪被提及次数与官网点击；Business Agents 暂仅面向美国符合条件的电商与在线服务企业。",
+      "source": "OpenAI / AI Weekly",
+      "source_urls": [
+        "http://mp.weixin.qq.com/s?__biz=MzkwMjcyMzc5OA==&mid=2247490100&idx=1&sn=eb4a3e8547146ff176f0c1f534d6cac6",
+        "https://www.quadradigitalsolutions.com/daily-ai-briefing"
+      ],
+      "tags": [
+        "商业化",
+        "OpenAI"
+      ]
+    },
+    {
+      "title": "Llama.cpp 发布 1.0.0，本地推理首个稳定大版本",
+      "summary": "ggml 同步 1.0.0，变更超 200 项，端侧与本地部署的工程基线进一步稳定。",
+      "source": "AI 资讯日报 11/15",
+      "source_urls": [
+        "https://tianqi.csdn.net/6af908f6e5f4ca4eff9185fb.html"
+      ],
+      "tags": [
+        "开源",
+        "本地推理",
+        "端侧"
+      ]
+    }
+  ]
+}

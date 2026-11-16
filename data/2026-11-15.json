@@ -1,0 +1,300 @@
+{
+  "date": "2026-11-15",
+  "generated_at": "2026-11-16T09:45:00+08:00",
+  "daily_summary": "11 月 15 日，易观《中国移动端第三方输入法市场年度研究2026》的详细数据被广泛解读，给这一周的行业变化补上了量化底座：中国移动端第三方输入法活跃用户 8.54 亿、渗透率 78%，人均单日使用 57.6 分钟；语音输入「常用」比例 64%、「近期更频繁」54%，与拼音的「近期更频繁」49% 只差 5 个百分点；TOP3（搜狗、讯飞、百度）覆盖超六成用户；用户最高付费意愿仅 28%，53% 认为免费够用，47% 接受订阅制。资本侧，Anthropic IPO 定价区间 70 至 78 美元、拟 11 月 19 日以 ANT 登陆纳斯达克，英伟达牵头七家以 260 亿美元参与私募；华为开源 MACaQ 4-bit 量化工具。",
+  "design_insights": [
+    {
+      "title": "易观年报给出量化底座：语音与拼音的「增量差」只剩 5 个百分点",
+      "summary": "易观《中国移动端第三方输入法市场年度研究2026》（2026 年 10 月，40 页）显示：截至 2026 年 7 月，中国移动端第三方输入法活跃用户8.54 亿、全网渗透率 78.0%；人均单日使用时长从 2022 年 54.0 分钟升至 57.6 分钟，启动次数从 29.6 次降至 28.3 次。拼音仍是「常用」基本盘 69%，但「近期使用更频繁」仅 49%；语音「常用」64%、「近期更频繁」高达 54%。2026 年前七个月新安装：讯飞 1.23 亿、搜狗 9021 万、百度 3395 万，微信输入法与豆包输入法均破千万。六维评估（技术模型 20%、基础能力 18%、AI 表达场景 20%、隐私合规 15%、商业生态 12%、全场景体验 15%）中讯飞居首。增长最快人群是 40 至 49 岁（TGI 129）与二线城市（TGI 116）。",
+      "implication": "这组数字直接改变了我们做设计的优先级排序。第一，「启动次数下降、使用时长上升」意味着用户不再是「打几个字就关」，而是在键盘里做事——这支持把键盘做成一个可停留的界面，而不是一次性的输入条。第二，语音的增量主要来自中年与二线城市用户，这批人对手写、方言、大字号、容错的要求都高于 Z 世代，我们现有的「年轻化视觉」很可能错配了增量人群。第三，付费意愿仅 28% 说明商业化不能靠「卖 AI 次数」，要卖确定性收益（节省的时间、少改的字）。建议把下一个版本的设计目标从「提升 AI 感知」改为「提升增量人群的语音可用性」：默认开启方言包、放大候选字号、把「改一个字」的路径缩到一步。",
+      "sources": [
+        "易观分析《中国移动端第三方输入法市场年度研究2026》",
+        "中国日报网 / 易观输入法年报解读"
+      ],
+      "source_urls": [
+        "http://mp.weixin.qq.com/s?__biz=Mzk2NDYwNzE0MQ==&mid=2247490848&idx=1&sn=bae6f37e3dcfc2edda0db362c5f58372",
+        "https://ex.chinadaily.com.cn/exchange/partners/82/rss/channel/cn/columns/snl9a7/stories/WS6ae45f75e4b09a165c792ae7.html"
+      ],
+      "tags": [
+        "市场数据",
+        "增量人群",
+        "设计优先级",
+        "易观"
+      ]
+    },
+    {
+      "title": "讯飞登顶六维评估靠的是「AI 表达场景」，不是模型分",
+      "summary": "易观六维评估中，讯飞在技术模型能力、基础能力、AI 表达场景、隐私合规、商业生态、全场景体验六个维度综合居首；搜狗并列五星但 D1 模型能力分项略低；豆包、百度、微信均为四星。报告对讯飞的描述是「长期迭代的基础输入能力突出、全栈自研模型、AI 表达场景覆盖广、隐私安全合规领先」，对豆包的描述是「底层模型强劲，但基础输入能力和生态融合作为新入局者还在补全」。口碑侧，讯飞与微信输入法净推荐值居前两位，但理由不同：讯飞靠多场景语音与识别精准度，微信靠广告弹窗体验与界面布局。",
+      "implication": "这张评分表最有价值的一句是「豆包底层模型强劲，但基础输入能力还在补全」。它说明模型强不等于输入法强，在输入法这个品类里，基础输入能力的权重是 18%、AI 表达场景是 20%，两者几乎等重。对我们的启示很直接：不要用「我们模型更好」去解释体验差距，也不要用「加更多 AI 功能」去追分。真正该投入的是「AI 表达场景的覆盖面」——即用户在多少种真实场景里能一键得到可用的结果（回复老板、拒绝邀约、写周报、改邮件语气、整理会议），这是一份可以被穷举和排期的清单，比模型选型更可控。",
+      "sources": [
+        "易观分析《中国移动端第三方输入法市场年度研究2026》",
+        "中国日报网 / 易观输入法年报解读",
+        "腾讯应用宝 / 讯飞输入法 V16.0.2 应用说明"
+      ],
+      "source_urls": [
+        "http://mp.weixin.qq.com/s?__biz=Mzk2NDYwNzE0MQ==&mid=2247490848&idx=1&sn=bae6f37e3dcfc2edda0db362c5f58372",
+        "https://ex.chinadaily.com.cn/exchange/partners/82/rss/channel/cn/columns/snl9a7/stories/WS6ae45f75e4b09a165c792ae7.html",
+        "https://down.ming4.com/az-17033"
+      ],
+      "tags": [
+        "竞争格局",
+        "能力结构",
+        "场景覆盖",
+        "讯飞"
+      ]
+    },
+    {
+      "title": "付费意愿 28%、53% 觉得免费够用：商业模式必须换锚点",
+      "summary": "易观调研显示，用户对 AI 输入功能的最高付费意愿仅 28%，53% 认为「现有免费功能已经足够使用」，40% 认为「输入法本来就该是免费的」；但意愿最高的两类功能是实时翻译（28%）与 AI 创作（27%），都是重 AI 任务；47% 的用户愿意接受订阅制（月/年付费）。广告模式则在收紧：搜狗 2026 年启动全端广告治理，累计下线 20 多个广告位，并上线键盘广告关闭功能。",
+      "implication": "「免费够用」是输入法最难破的心理账户，因为用户从来不觉得输入法值钱。三个可落地的换锚思路：①不要卖「次数」，卖「场景包」——面向特定人群的一次性能力（律师的法条引用、医生的病历模板、跨境电商的多语翻译），这类需求有明确 ROI，付费意愿远高于通用 AI；②把 B 端私有化与信创当作确定性收入，2027 年底央企信创替代是硬时点；③免费版要保留「完整体验」但不能保留「完整产出」——例如免费可转写可整理，导出为可分享文档才收费。",
+      "sources": [
+        "易观分析《中国移动端第三方输入法市场年度研究2026》",
+        "中国日报网 / 易观输入法年报解读",
+        "谷普下载站 搜狗输入法安卓版更新日志"
+      ],
+      "source_urls": [
+        "http://mp.weixin.qq.com/s?__biz=Mzk2NDYwNzE0MQ==&mid=2247490848&idx=1&sn=bae6f37e3dcfc2edda0db362c5f58372",
+        "https://ex.chinadaily.com.cn/exchange/partners/82/rss/channel/cn/columns/snl9a7/stories/WS6ae45f75e4b09a165c792ae7.html",
+        "http://www.gupuxiazai.com/azrj/100086.html"
+      ],
+      "tags": [
+        "商业模式",
+        "付费意愿",
+        "场景包",
+        "信创"
+      ]
+    },
+    {
+      "title": "Anthropic IPO 定价 70 至 78 美元：一级市场的钱在向「有收入的前沿实验室」集中",
+      "summary": "11 月 15 日，Anthropic 设定每股 70 至 78 美元区间，发行约 8.25 亿股 A 类股，定价预计 11 月 18 日、11 月 19 日以代码 ANT 登陆纳斯达克；按区间上限加上 260 亿美元同步私募，估值接近 1 万亿美元，将成美国史上第二大 IPO，仅次于 SpaceX 今年 750 亿美元的上市。私募由英伟达牵头，AMD、博通、谷歌、美光、微软、台积电参与，均以 IPO 价格认购无投票权 Class N 股票。台积电董事会另批准最高 10 亿美元分别投向 OpenAI 与 Anthropic。",
+      "implication": "这条与产品设计的关联看似很远，但它决定了未来半年的资源环境：钱在向「已经能收到钱」的方向集中，纯体验型、难以归因的项目会最先被砍。对我们的建议是提前把设计价值翻译成财务语言：把「Zero Edit Rate 提升 X%」换算成「每次语音少改 2 个字 × 日活 × 频次 = 每天节省多少分钟」，把「付费点前置」换算成转化率。设计稿旁边附一列这样的换算，在预算收紧时是最有效的护身符。",
+      "sources": [
+        "Quadra Daily AI Briefing, Sunday 15 November 2026",
+        "AIToolsRecap AI News, 15 November 2026",
+        "一周国内外 AI 新闻（11月9-15日）"
+      ],
+      "source_urls": [
+        "https://www.quadradigitalsolutions.com/daily-ai-briefing",
+        "https://aitoolsrecap.com/Blog/ai-news-november-15-2026",
+        "http://mp.weixin.qq.com/s?__biz=Mzg5NDA4MTA4NA==&mid=2247484963&idx=1&sn=b22ae6c597bfca794dbe8a15e71437b3"
+      ],
+      "tags": [
+        "资本环境",
+        "资源",
+        "价值翻译",
+        "Anthropic"
+      ]
+    },
+    {
+      "title": "华为开源 MACaQ：64 分钟把 122B 压到 4-bit，端侧能力边界再外扩",
+      "summary": "11 月 15 日前后，华为开源 MACaQ 4-bit 量化工具，面向 vLLM 与 llama.cpp 等主流推理栈，称在单张 32.5GB GPU 上 64 分钟即可把122B 参数模型量化到 4-bit，显著降低大模型在廉价硬件上的运行成本。同周 llama.cpp 发布 1.0.0 稳定版、ggml 同步。两件事合起来把「端侧能跑多大的模型」这条线又往外推了一格。",
+      "implication": "端侧能力的扩张直接决定输入法的隐私叙事能不能成立。现在我们的离线语音包大约百兆级，只能做识别；如果 4-bit 量化成熟，端侧就能承载「整理 + 判断」，那时「语音不出设备」才是一句完整的话。建议做一个 12 个月的技术假设：假设端侧能跑 4-bit 的 8B 到 30B 模型，产品的哪一部分会重构？我的判断是候选排序、轻纠错、私密场景整理会全部下沉到端侧，云端只保留长文与跨端同步。设计上要提前准备的是「端侧 / 云端」的可见状态与能力差异说明。",
+      "sources": [
+        "Quadra Daily AI Briefing, Sunday 15 November 2026",
+        "AI 资讯日报 2026年11月15日"
+      ],
+      "source_urls": [
+        "https://www.quadradigitalsolutions.com/daily-ai-briefing",
+        "https://tianqi.csdn.net/6af908f6e5f4ca4eff9185fb.html"
+      ],
+      "tags": [
+        "端侧",
+        "量化",
+        "隐私叙事",
+        "华为"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "增量人群是中年与二线城市，产品视觉与容错却是按年轻用户做的",
+      "pain_point": "易观数据显示语音增长最快的人群是 40 至 49 岁（TGI 129）与二线城市（TGI 116），但这批用户的实际需求——方言、大字号、少误触、可回退——与当前输入法偏年轻化的视觉与交互假设存在错配。",
+      "opportunity": "为增量人群做一套「低风险默认值」：首次启动即下载常用方言包、候选字号默认偏大、误触后提供一步撤销、AI 结果默认只加标点不改字；同时把长辈模式从「设置里的开关」提升为「首次引导可选项」。",
+      "priority": "high",
+      "evidence": "易观《中国移动端第三方输入法市场年度研究2026》显示 40 至 49 岁人群 TGI 129、二线城市 TGI 116，语音输入「近期更频繁」达 54%，与拼音的 49% 仅差 5 个百分点。"
+    },
+    {
+      "title": "用户不知道自己的数据用在哪，透明性缺可操作入口",
+      "pain_point": "调研显示用户关注「数据使用是否透明」，但产品通常只给一份长隐私政策，没有可操作的查看与关闭入口。用户无法确认某一次录音是否被上传、是否用于训练，因此对 AI 能力保持距离。",
+      "opportunity": "提供「数据账本」：按次记录是否上云、用途、保留时长，可逐条删除；提供「永不上云」总开关并明确能力降级范围；在结果页给一个常驻的「本地/云端」标识，点击即看这次处理的详情。",
+      "priority": "medium",
+      "evidence": "中国日报网对易观年报的解读指出，受访用户关注「AI 能否适时出现而不造成打扰，以及数据使用是否透明」，报告把这种期待概括为「无感、可信、可进化」；谷歌智能眼镜亦把「双向隐私」写入服务条款。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "易观发布《中国移动端第三方输入法市场年度研究2026》",
+      "summary": "截至 2026 年 7 月活跃用户 8.54 亿、渗透率 78.0%，人均单日 57.6 分钟、启动 28.3 次；语音常用 64%、近期更频繁 54%，拼音常用 69%、近期更频繁 49%；TOP3 覆盖超六成；AI 功能最高付费意愿 28%、53% 认为免费够用、47% 接受订阅；HarmonyOS 份额 19% 超 iOS。",
+      "source": "易观分析 / 中国日报网",
+      "source_urls": [
+        "http://mp.weixin.qq.com/s?__biz=Mzk2NDYwNzE0MQ==&mid=2247490848&idx=1&sn=bae6f37e3dcfc2edda0db362c5f58372",
+        "https://ex.chinadaily.com.cn/exchange/partners/82/rss/channel/cn/columns/snl9a7/stories/WS6ae45f75e4b09a165c792ae7.html"
+      ],
+      "tags": [
+        "市场研究",
+        "输入法",
+        "易观"
+      ]
+    },
+    {
+      "title": "Anthropic 设定 IPO 价格区间 70-78 美元，拟 11 月 19 日登陆纳斯达克",
+      "summary": "发行约 8.25 亿股 A 类股，定价预计 11 月 18 日，代码 ANT；按区间上限加 260 亿美元同步私募，估值接近 1 万亿美元，将成美国史上第二大 IPO，仅次于 SpaceX 的 750 亿美元。",
+      "source": "CNBC / Quadra Daily Briefing",
+      "source_urls": [
+        "https://www.quadradigitalsolutions.com/daily-ai-briefing",
+        "https://aitoolsrecap.com/Blog/ai-news-november-15-2026"
+      ],
+      "tags": [
+        "资本",
+        "IPO",
+        "Anthropic"
+      ]
+    },
+    {
+      "title": "英伟达牵头七家以 260 亿美元参与 Anthropic 私募",
+      "summary": "英伟达领投，AMD、博通、谷歌、美光、微软、台积电参与，均以 IPO 价格认购无投票权 Class N 股票。",
+      "source": "AIToolsRecap 11/15",
+      "source_urls": [
+        "https://aitoolsrecap.com/Blog/ai-news-november-15-2026",
+        "http://mp.weixin.qq.com/s?__biz=Mzg5NDA4MTA4NA==&mid=2247484963&idx=1&sn=b22ae6c597bfca794dbe8a15e71437b3"
+      ],
+      "tags": [
+        "资本",
+        "Anthropic",
+        "英伟达"
+      ]
+    },
+    {
+      "title": "台积电批准最高 10 亿美元分别投资 OpenAI 与 Anthropic",
+      "summary": "董事会 11 月 10 日批准，各设 5 亿美元上限，另设 5 亿美元半导体专项基金；对 OpenAI 为优先股、对 Anthropic 为 IPO 定价普通股。",
+      "source": "Ars Technica / AIToolsRecap",
+      "source_urls": [
+        "https://www.quadradigitalsolutions.com/daily-ai-briefing",
+        "https://aitoolsrecap.com/Blog/ai-news-november-15-2026"
+      ],
+      "tags": [
+        "资本",
+        "台积电"
+      ]
+    },
+    {
+      "title": "华为开源 MACaQ 4-bit 量化工具",
+      "summary": "面向 vLLM 与 llama.cpp，称单张 32.5GB GPU 上 64 分钟可将 122B 模型量化至 4-bit，降低大模型在廉价硬件上的运行成本。",
+      "source": "arXiv / GitHub",
+      "source_urls": [
+        "https://www.quadradigitalsolutions.com/daily-ai-briefing"
+      ],
+      "tags": [
+        "开源",
+        "量化",
+        "端侧",
+        "华为"
+      ]
+    },
+    {
+      "title": "谷歌 Antigravity 将 Weil 猜想证明形式化为 180 万行 Lean 4",
+      "summary": "Gemini 驱动的多智能体系统把 Deligne 1974 年的证明转写为机器可验证形式，并对 2013 年提出的 Courtade–Kumar 信息论猜想给出分析性界；同轮研究还复现了 Navier–Stokes 爆破证明，并把 Fuchsia Zircon 微内核剩余 C++ 移植为约 80 万行 Rust 且在 ARM64 上通过测试。",
+      "source": "kantan.news",
+      "source_urls": [
+        "https://www.quadradigitalsolutions.com/daily-ai-briefing"
+      ],
+      "tags": [
+        "AI 研究",
+        "形式化验证",
+        "Google"
+      ]
+    },
+    {
+      "title": "Mirendil 完成 10 亿美元 A 轮融资",
+      "summary": "由 Kleiner Perkins 与 Clearlake Capital 领投、谷歌参投，为此前 2 亿美元种子轮的 5 倍。公司称一名研究员借助 AI 智能体在 3.5 个月内以不到 1000 万美元算力完成 Mirendil-Base 编码模型预训练，未披露估值。",
+      "source": "Bytevyte Daily Brief",
+      "source_urls": [
+        "https://bytevyte.com/daily-brief-nvidia-financing-2026-11-15",
+        "https://rainvent.ai/genai-daily-november-15-2026-chatgpt-wallet-lets-agents-pay-deepseek-opens-its-app-stack-via-api-nvidias-open-source-questions"
+      ],
+      "tags": [
+        "融资",
+        "Anthropic 系",
+        "Mirendil"
+      ]
+    },
+    {
+      "title": "英伟达 5000 亿美元 AI 融资计划在黄仁勋卸任后无新增贷款",
+      "summary": "该计划 8 月与六家华尔街机构共同宣布，目前仍未落地。10-Q 显示最大担保敞口 1085 亿美元，对应现金与可售债券 566 亿美元；另有 360 亿美元 AI 云服务承诺作为表外兜底。",
+      "source": "Bytevyte / CNBC 分析",
+      "source_urls": [
+        "https://bytevyte.com/daily-brief-nvidia-financing-2026-11-15"
+      ],
+      "tags": [
+        "算力",
+        "融资",
+        "英伟达"
+      ]
+    },
+    {
+      "title": "LangChain 完成 3 亿美元 C 轮，估值 30 亿美元",
+      "summary": "由 Alphabet 旗下 CapitalG 领投，GIC、DFJ Growth、IVP、Sapphire Ventures 参与，估值较一年前 12.5 亿美元翻倍；LangSmith 客户达 7000 家。",
+      "source": "AI 资讯日报 11/15",
+      "source_urls": [
+        "https://tianqi.csdn.net/6af908f6e5f4ca4eff9185fb.html"
+      ],
+      "tags": [
+        "融资",
+        "智能体",
+        "LangChain"
+      ]
+    },
+    {
+      "title": "OpenAI 将于 12 月 11 日退役 ChatGPT Voice 的 Advanced 与 Standard 模式",
+      "summary": "两档语音模式从 ChatGPT Voice 下线，统一至新语音栈；同期 Scribe v3 支持百余种语言实时转写。",
+      "source": "GenAI Daily 11/15",
+      "source_urls": [
+        "https://rainvent.ai/genai-daily-november-15-2026-chatgpt-wallet-lets-agents-pay-deepseek-opens-its-app-stack-via-api-nvidias-open-source-questions"
+      ],
+      "tags": [
+        "语音",
+        "产品调整",
+        "OpenAI"
+      ]
+    },
+    {
+      "title": "Gemini 智能眼镜 395 美元起开启预购，12 月 10 日发售",
+      "summary": "由谷歌联合三星、Gentle Monster、Warby Parker 打造，首次把「双向隐私」写入服务条款并对违规行为保留远程锁机权力。",
+      "source": "AI 资讯日报 11/15 / 模达科技周报",
+      "source_urls": [
+        "https://tianqi.csdn.net/6af908f6e5f4ca4eff9185fb.html",
+        "http://mp.weixin.qq.com/s?__biz=MzkwMjcyMzc5OA==&mid=2247490100&idx=1&sn=eb4a3e8547146ff176f0c1f534d6cac6"
+      ],
+      "tags": [
+        "硬件",
+        "隐私",
+        "Google"
+      ]
+    },
+    {
+      "title": "智元 G2 完成便利店 24 小时连续作业",
+      "summary": "在上海便利店累计完成 1730 项门店任务，四台通过最终性能评估，直播观看超 200 万人次。",
+      "source": "AI 资讯日报 11/15",
+      "source_urls": [
+        "https://tianqi.csdn.net/6af908f6e5f4ca4eff9185fb.html"
+      ],
+      "tags": [
+        "具身智能",
+        "机器人"
+      ]
+    },
+    {
+      "title": "谷歌 Antigravity v2.29 推出远程智能体与语音模式",
+      "summary": "远程智能体可在笔记本合上的情况下于云端运行，面向 Google AI Pro 与 Ultra 订阅用户。",
+      "source": "AIToolsRecap 11/15",
+      "source_urls": [
+        "https://aitoolsrecap.com/Blog/ai-news-november-15-2026"
+      ],
+      "tags": [
+        "智能体",
+        "Google",
+        "订阅"
+      ]
+    }
+  ]
+}

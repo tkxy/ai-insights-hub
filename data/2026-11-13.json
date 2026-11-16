@@ -1,0 +1,272 @@
+{
+  "date": "2026-11-13",
+  "generated_at": "2026-11-16T09:45:00+08:00",
+  "daily_summary": "11 月 13 日晚，DeepSeek 开放「全家桶应用 API」：在原有接口开启参数即可获得深度思考搜索、文件输入、阅读链接与安全校验，并把 Search、Fetch、OCR、ASR、TTS 拆成独立接口，语音识别定价 0.39 元/小时（限时五折）、语音合成 1.5 元/万字符，开发者可 1:1 复刻完整 App。同周 OpenAI 财务数据披露：第三财季营收约 100 亿美元、环比增 50%，营业亏损由 101 亿扩大至 109 亿美元；Anthropic 同期营收 170 亿美元、营业亏损 5.67 亿美元。OpenAI 推出 ChatGPT Wallet，用一次性支付令牌替代真实卡号。ASR 价格被打到分角级，是本周对语音输入最直接的结构性冲击。",
+  "design_insights": [
+    {
+      "title": "ASR 被拆成 0.39 元/小时的独立接口：语音识别的能力溢价正式归零",
+      "summary": "11 月 13 日晚 DeepSeek 开放全家桶应用 API，除对话功能外，把 Search、Fetch、OCR、ASR、TTS 拆成可单独调用的独立接口，语音识别 0.39 元/小时（限时五折，刊例价 0.78 元）、语音合成 1.5 元/万字符（五折后，刊例 3 元），文字识别 1.5 元/千页，搜索与抓取各 5 元/千次。官方明确开发者可 1:1 复刻出完整的 DeepSeek App。这是继 10 月上线独立 Search/Fetch API 后的进一步开放。",
+      "implication": "这条对我们是三重重击也是三重机会。重击：任何人都能在一天内做出一个「转写很准」的语音输入，字准率不再是壁垒。机会：①把自研资源从「追字准率」转到「转写之后」——整理、结构化、可追溯，这三件事没有现成 API；②离线仍是护城河，0.39 元/小时虽便宜但依赖网络，断网场景只有本地模型能覆盖；③成本结构可以重算，若云端转写成本降到可忽略，就该把免费额度做大，用「不限量转写」换使用频次。建议在下一版方案里明确写：字准率目标维持不掉队即可，不再作为核心指标。",
+      "sources": [
+        "澎湃新闻《DeepSeek 宣布开放全家桶应用 API》",
+        "北京商报《DeepSeek 开放全家桶应用 API》"
+      ],
+      "source_urls": [
+        "http://mp.weixin.qq.com/s?__biz=MjM5MzI5NTU3MQ==&mid=2652585728&idx=2&sn=dc7d563474221c487a3bac9c1463d28f",
+        "https://www.bbtnews.com.cn/2026/1114/611243.shtml"
+      ],
+      "tags": [
+        "ASR 商品化",
+        "护城河转移",
+        "成本结构",
+        "DeepSeek"
+      ]
+    },
+    {
+      "title": "OpenAI 与 Anthropic 的财报对照：一边买增长，一边控亏损",
+      "summary": "11 月 11 日披露的数据显示，OpenAI 第三财季营收约 100 亿美元、环比增长 50%，但营业亏损由 101 亿扩大至 109 亿美元；同期 Anthropic 营收 170 亿美元、营业亏损 5.67 亿美元。11 月 15 日 Anthropic 招股书财务摘要显示，截至 9 月 30 日营收约 170 亿美元、季度净亏损 23.3 亿美元，其中约 94% 来自非现金会计项目，调整后营业利润率约 15%（约 25 亿美元）。",
+      "implication": "这组数字对我们的现实意义是「补贴不会永远在」。输入法长期靠免费 + 广告，现在 AI 能力的边际成本虽然降了，但不可能无限补贴。建议现在就把单位经济模型算清楚：一个日活用户每天用 10 次语音、3 次 AI 整理，月成本是多少；对应 28% 的付费意愿与 47% 的订阅接受度，需要多少付费率才能打平。这个数字应该在方案评审时就必须有，而不是上线后再补。",
+      "sources": [
+        "一周国内外 AI 新闻（11月9-15日）",
+        "Quadra Daily AI Briefing, Sunday 15 November 2026",
+        "易观分析《中国移动端第三方输入法市场年度研究2026》"
+      ],
+      "source_urls": [
+        "http://mp.weixin.qq.com/s?__biz=Mzg5NDA4MTA4NA==&mid=2247484963&idx=1&sn=b22ae6c597bfca794dbe8a15e71437b3",
+        "https://www.quadradigitalsolutions.com/daily-ai-briefing",
+        "http://mp.weixin.qq.com/s?__biz=Mzk2NDYwNzE0MQ==&mid=2247490848&idx=1&sn=bae6f37e3dcfc2edda0db362c5f58372"
+      ],
+      "tags": [
+        "单位经济",
+        "补贴",
+        "商业化",
+        "OpenAI"
+      ]
+    },
+    {
+      "title": "ChatGPT Wallet 用一次性令牌替代卡号：授权粒度是信任设计的核心",
+      "summary": "11 月 13 日 OpenAI 推出 ChatGPT Wallet，与美国运通、万事达、Visa 合作，用一次性支付令牌替代真实卡号；dots 智能体可在用户逐笔 Face ID 等生物识别授权后完成下单付款。首批仅面向美国成年 Pro 用户，初期不抽成。",
+      "implication": "这套设计的精髓是「逐笔授权」——不是一次授权永久可用，而是每一笔都要用户在场。输入法做自动化时最该学这一点：把一次性的「允许访问剪贴板」「允许读取通讯录」改成按次授权，且授权界面直接说明这一次要拿什么、用在哪。虽然会增加操作步骤，但它换来的是用户敢开权限。建议优先在三个动作上做按次授权：读取剪贴板、调用通讯录、向外发送消息。",
+      "sources": [
+        "一周国内外 AI 新闻（11月9-15日）",
+        "GenAI Daily, November 15 2026"
+      ],
+      "source_urls": [
+        "http://mp.weixin.qq.com/s?__biz=Mzg5NDA4MTA4NA==&mid=2247484963&idx=1&sn=b22ae6c597bfca794dbe8a15e71437b3",
+        "https://rainvent.ai/genai-daily-november-15-2026-chatgpt-wallet-lets-agents-pay-deepseek-opens-its-app-stack-via-api-nvidias-open-source-questions"
+      ],
+      "tags": [
+        "授权粒度",
+        "信任设计",
+        "支付",
+        "OpenAI"
+      ]
+    },
+    {
+      "title": "OpenAI 将于 12 月 11 日下线 ChatGPT 语音的 Advanced/Standard 档：语音能力也在做减法",
+      "summary": "11 月 13 日前后披露，OpenAI 将于 2026 年 12 月 11 日从 ChatGPT Voice 中退役 Advanced 与 Standard 两档语音模式，统一到新的语音栈。同期 Scribe v3 语音转写模型发布，支持百余种语言实时转写。一边收掉旧档位，一边升级底座，说明语音产品也在经历「减档位、强底座」的整理。",
+      "implication": "这对我们的启示是「档位要做减法」。输入法的语音设置里有识别引擎、方言包、离线包、标点风格、口头禅过滤、快捷键、麦克风选择……用户根本记不住。建议把语音设置收敛成三个档：快速（低延迟、短句）、准确（长句、专业词）、本地（离线、隐私），其余选项收进「高级」。用三档替代十几个开关，是提升语音使用率最便宜的办法。",
+      "sources": [
+        "GenAI Daily, November 15 2026",
+        "AI 资讯日报 2026年11月15日"
+      ],
+      "source_urls": [
+        "https://rainvent.ai/genai-daily-november-15-2026-chatgpt-wallet-lets-agents-pay-deepseek-opens-its-app-stack-via-api-nvidias-open-source-questions",
+        "https://tianqi.csdn.net/6af908f6e5f4ca4eff9185fb.html"
+      ],
+      "tags": [
+        "档位减法",
+        "设置收敛",
+        "语音",
+        "OpenAI"
+      ]
+    },
+    {
+      "title": "Claude Code 新增 Code Mode：把多次往返压成一次，是延迟设计的通用解法",
+      "summary": "11 月 13 日前后 Claude Code v2.1.323 推出实验性 Code Mode，可编写 JavaScript 调用自身工具，把多步任务的往返调用压缩为一次，默认关闭。同期 Cloudflare 以 Apache 2.0 开源面向智能体的无状态浏览器 Kitesurf，可部署在 Workers 上。",
+      "implication": "「把多次往返压成一次」对输入法同样成立。目前我们的 AI 整理往往是：转写 → 纠错 → 分段 → 调语气 → 生成标题，五步串行，每一步都给用户一次等待。改成一次调用内完成多步（类似 Code Mode 的思路），用户只等一次，感知延迟大幅下降。技术上可以用本地小模型做前置规整、云端一次完成剩余步骤。建议把它作为下一版语音体验的核心优化项。",
+      "sources": [
+        "AIToolsRecap AI News, 15 November 2026",
+        "GenAI Daily, November 15 2026"
+      ],
+      "source_urls": [
+        "https://aitoolsrecap.com/Blog/ai-news-november-15-2026",
+        "https://rainvent.ai/genai-daily-november-15-2026-chatgpt-wallet-lets-agents-pay-deepseek-opens-its-app-stack-via-api-nvidias-open-source-questions"
+      ],
+      "tags": [
+        "延迟设计",
+        "批处理",
+        "AI 整理",
+        "Claude Code"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "语音设置项过多，用户找不到「让它更准」的开关",
+      "pain_point": "识别引擎、方言包、离线包、标点风格、口头禅过滤、快捷键、麦克风选择等十余个开关并列在设置里，用户遇到识别不准时不知道调哪个，多数人索性放弃调整，形成「这输入法语音不行」的结论。",
+      "opportunity": "把语音设置收敛为三档预设（快速/准确/本地），每档用一句话说明适用场景；高级选项折叠；识别不准时在结果下方直接给「改用准确模式」的一键入口，而不是引导用户去设置页。",
+      "priority": "medium",
+      "evidence": "OpenAI 将于 12 月 11 日下线 ChatGPT Voice 的 Advanced 与 Standard 两档模式，统一到新语音栈，反映语音产品正在收敛档位；豆包输入法电脑版 1.0.0.23 的功能列表中也并列了方言包、离线包、麦克风切换、标点风格等多项语音设置。"
+    },
+    {
+      "title": "云端转写成本塌了，但免费额度没跟上",
+      "pain_point": "DeepSeek 把 ASR 打到 0.39 元/小时（限时五折），云端转写的边际成本已接近零，但多数输入法的语音免费额度仍按旧成本设计，用户仍在被「额度用完」打断，形成不必要的付费墙感知。",
+      "opportunity": "重新核算语音成本后放宽免费额度，把「不限量转写」作为拉新点；付费点从「转写次数」转移到「整理与结构化」这类高价值能力；同时保留离线包作为无网与隐私场景的差异化卖点。",
+      "priority": "high",
+      "evidence": "DeepSeek 11 月 13 日开放的全家桶 API 中，语音识别定价 0.39 元/小时（刊例 0.78 元、当前五折），语音合成 1.5 元/万字符（刊例 3 元、当前五折），并支持单独或组合调用。"
+    },
+    {
+      "title": "用户不知道 AI 改了什么，条款也说不清「不改什么」",
+      "pain_point": "AI 整理会改动数字、时间、人名、否定词等高风险内容，用户事后才发现意思变了。产品条款通常只写隐私与数据用途，很少承诺「哪些内容 AI 不会动」，导致用户对自动整理天然戒备。",
+      "opportunity": "在设置与结果页明确列出「AI 不会改动的四类内容」（数字、时间、专名、否定词），并对涉及这四类的改动逐处要求确认；提供「只加标点不改字」的保守模式，作为首次使用的默认档。",
+      "priority": "high",
+      "evidence": "DeepSeek 全家桶 API 在开放能力的同时要求开发者开启安全校验参数、承担内容安全审核与大模型登记义务，说明能力开放正伴随明确的责任边界；ChatGPT Wallet 亦采用逐笔生物识别授权替代一次性授权。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "DeepSeek 开放全家桶应用 API，可 1:1 复刻 App",
+      "summary": "11 月 13 日晚开放，在原有 API 开启对应参数即可获得深度思考搜索、文件输入、阅读链接等对话功能；Search、Fetch、OCR、ASR、TTS 开放为独立接口。定价：文字/图片搜索与网页抓取各 5 元/千次，文字识别 1.5 元/千页，语音识别 0.39 元/小时、语音合成 1.5 元/万字符（均处限时五折）。",
+      "source": "澎湃新闻 / 北京商报 / 新蓝网",
+      "source_urls": [
+        "http://mp.weixin.qq.com/s?__biz=MjM5MzI5NTU3MQ==&mid=2652585728&idx=2&sn=dc7d563474221c487a3bac9c1463d28f",
+        "https://www.bbtnews.com.cn/2026/1114/611243.shtml"
+      ],
+      "tags": [
+        "API",
+        "DeepSeek",
+        "定价"
+      ]
+    },
+    {
+      "title": "OpenAI 第三财季营收约 100 亿美元，营业亏损扩大至 109 亿",
+      "summary": "WSJ 报道其第三财季营收约 100 亿美元、环比增长 50%，营业亏损由 101 亿扩大至 109 亿美元；同期 Anthropic 第三财季营收 170 亿美元、营业亏损 5.67 亿美元。彭博报道 OpenAI 新一轮融资估值 1.25 万亿美元，IPO 已推迟至 2027 年。",
+      "source": "华尔街日报 / 彭博",
+      "source_urls": [
+        "http://mp.weixin.qq.com/s?__biz=Mzg5NDA4MTA4NA==&mid=2247484963&idx=1&sn=b22ae6c597bfca794dbe8a15e71437b3",
+        "https://www.quadradigitalsolutions.com/daily-ai-briefing"
+      ],
+      "tags": [
+        "财报",
+        "OpenAI",
+        "资本"
+      ]
+    },
+    {
+      "title": "OpenAI 推出 ChatGPT Wallet，用一次性支付令牌替代卡号",
+      "summary": "与美国运通、万事达、Visa 合作，dots 智能体可在用户逐笔 Face ID 等生物识别授权后完成下单付款；首批仅面向美国成年 Pro 用户，初期不抽成。",
+      "source": "OpenAI / 财联社 / 金融界",
+      "source_urls": [
+        "http://mp.weixin.qq.com/s?__biz=Mzg5NDA4MTA4NA==&mid=2247484963&idx=1&sn=b22ae6c597bfca794dbe8a15e71437b3",
+        "https://rainvent.ai/genai-daily-november-15-2026-chatgpt-wallet-lets-agents-pay-deepseek-opens-its-app-stack-via-api-nvidias-open-source-questions"
+      ],
+      "tags": [
+        "支付",
+        "Agent",
+        "OpenAI"
+      ]
+    },
+    {
+      "title": "Claude Code 推出实验性 Code Mode",
+      "summary": "v2.1.323 版本可编写 JavaScript 调用自身工具，把多步任务的往返调用压缩为一次，默认关闭。",
+      "source": "AI 资讯日报 11/15",
+      "source_urls": [
+        "https://tianqi.csdn.net/6af908f6e5f4ca4eff9185fb.html"
+      ],
+      "tags": [
+        "开发工具",
+        "Claude Code"
+      ]
+    },
+    {
+      "title": "Cloudflare 开源 Kitesurf 智能体浏览器",
+      "summary": "面向 AI 智能体的无状态浏览器引擎以 Apache 2.0 开源，可部署在 Cloudflare Workers 上。",
+      "source": "AIToolsRecap 11/15",
+      "source_urls": [
+        "https://aitoolsrecap.com/Blog/ai-news-november-15-2026"
+      ],
+      "tags": [
+        "开源",
+        "智能体",
+        "Cloudflare"
+      ]
+    },
+    {
+      "title": "Scribe v3 语音转写模型发布，支持百余种语言实时转写",
+      "summary": "新版本把实时转写覆盖扩展到百余种语言，语音识别的多语种门槛进一步降低。",
+      "source": "AI 资讯日报 11/15",
+      "source_urls": [
+        "https://tianqi.csdn.net/6af908f6e5f4ca4eff9185fb.html"
+      ],
+      "tags": [
+        "语音",
+        "转写",
+        "多语种"
+      ]
+    },
+    {
+      "title": "Claude for Manufacturing 上线 17 项技能与 4 个连接器",
+      "summary": "连接 Autodesk Fusion、Infor、Microsoft 365 与 Oracle NetSuite，在任意 Claude 企业版套餐免费开放，垂直行业封装成为新方向。",
+      "source": "AIToolsRecap 11/15",
+      "source_urls": [
+        "https://aitoolsrecap.com/Blog/ai-news-november-15-2026"
+      ],
+      "tags": [
+        "垂直行业",
+        "Anthropic",
+        "技能"
+      ]
+    },
+    {
+      "title": "谷歌发布 Gemini Robotics 2.5 并推进奔驰产线验证",
+      "summary": "VLA 模型在奔驰产线概念验证中，Apptronik Apollo 2 分拣成功率达 96%。",
+      "source": "厂商公告",
+      "source_urls": [
+        "http://mp.weixin.qq.com/s?__biz=Mzg5NDA4MTA4NA==&mid=2247484963&idx=1&sn=b22ae6c597bfca794dbe8a15e71437b3"
+      ],
+      "tags": [
+        "具身智能",
+        "Google"
+      ]
+    },
+    {
+      "title": "Runway 以 Apache 2.0 开源 27.2B 世界动作模型 Praxis-1",
+      "summary": "RoboLab-120 成功率 46.2%（厂商自测），开源许可允许商业使用，世界模型进入可复现阶段。",
+      "source": "厂商公告 / 模型发布追踪站",
+      "source_urls": [
+        "http://mp.weixin.qq.com/s?__biz=Mzg5NDA4MTA4NA==&mid=2247484963&idx=1&sn=b22ae6c597bfca794dbe8a15e71437b3"
+      ],
+      "tags": [
+        "开源",
+        "世界模型",
+        "Runway"
+      ]
+    },
+    {
+      "title": "NVIDIA 发布 GR00T 2 与 Isaac Lab 3.0",
+      "summary": "面向人形机器人的基础模型与仿真训练框架同步升级，与 Gemini Robotics 2.5 形成同周竞争。",
+      "source": "厂商公告",
+      "source_urls": [
+        "http://mp.weixin.qq.com/s?__biz=Mzg5NDA4MTA4NA==&mid=2247484963&idx=1&sn=b22ae6c597bfca794dbe8a15e71437b3"
+      ],
+      "tags": [
+        "具身智能",
+        "英伟达"
+      ]
+    },
+    {
+      "title": "OpenAI 宣布 12 月 11 日退役 ChatGPT Voice 的 Advanced 与 Standard 模式",
+      "summary": "两档语音模式将从 ChatGPT Voice 下线，统一至新语音栈，开发者需在此前检查语音集成。",
+      "source": "GenAI Daily 11/15",
+      "source_urls": [
+        "https://rainvent.ai/genai-daily-november-15-2026-chatgpt-wallet-lets-agents-pay-deepseek-opens-its-app-stack-via-api-nvidias-open-source-questions"
+      ],
+      "tags": [
+        "语音",
+        "产品调整",
+        "OpenAI"
+      ]
+    }
+  ]
+}
