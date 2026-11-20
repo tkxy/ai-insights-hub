@@ -1,0 +1,502 @@
+{
+  "date": "2026-11-20",
+  "fetchedAt": "2026-11-20T00:02:45.760868+00:00",
+  "source": "follow-builders feeds",
+  "x": {
+    "generatedAt": "2026-11-19T06:30:05.741Z",
+    "lookbackHours": 24,
+    "x": [
+      {
+        "source": "x",
+        "name": "Swyx",
+        "handle": "swyx",
+        "bio": "achieve ambition with intentionality, intensity, integrity & insanity.\n\naffiliations:\n- @smol_ai\n- @cognition\n- @temporalio\n- @aidotengineer\n- @latentspacepod",
+        "tweets": [
+          {
+            "id": "2123298074911248526",
+            "text": "poteto https://t.co/6qMBfvE93k",
+            "createdAt": "2026-11-19T06:11:24.000Z",
+            "url": "https://x.com/swyx/status/2123298074911248526",
+            "likes": 2,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": true,
+            "quotedTweetId": "2123068725410869585"
+          },
+          {
+            "id": "2123260852984013045",
+            "text": "casting Monica Barbaro as temu Mira Murati is crazy work https://t.co/z241ISoVhl https://t.co/OCZi1tJ2DO",
+            "createdAt": "2026-11-19T03:43:30.000Z",
+            "url": "https://x.com/swyx/status/2123260852984013045",
+            "likes": 53,
+            "retweets": 1,
+            "replies": 18,
+            "isQuote": true,
+            "quotedTweetId": "2123101099800273047"
+          },
+          {
+            "id": "2123259711785148431",
+            "text": "fcf profitable!\n\nhttps://t.co/ahqTGK5ZQS",
+            "createdAt": "2026-11-19T03:38:58.000Z",
+            "url": "https://x.com/swyx/status/2123259711785148431",
+            "likes": 3,
+            "retweets": 0,
+            "replies": 1,
+            "isQuote": true,
+            "quotedTweetId": "2123236286710645234"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Josh Woodward",
+        "handle": "joshwoodward",
+        "bio": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
+        "tweets": [
+          {
+            "id": "2123178015874302328",
+            "text": "Read more and try it out in @GeminiApp\n\nhttps://t.co/G8TOtEtbzU",
+            "createdAt": "2026-11-18T22:14:20.000Z",
+            "url": "https://x.com/joshwoodward/status/2123178015874302328",
+            "likes": 25,
+            "retweets": 1,
+            "replies": 1,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2123177835254952348",
+            "text": "Introducing Gemini 4 Neon. The shipping continues! Frontier-grade intelligence that’s faster, cheaper, and follows complex instructions well. So good to use! https://t.co/HWBTt61dLn",
+            "createdAt": "2026-11-18T22:13:37.000Z",
+            "url": "https://x.com/joshwoodward/status/2123177835254952348",
+            "likes": 389,
+            "retweets": 24,
+            "replies": 41,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2123123552052494529",
+            "text": "Explore a new Project Genie experience for Google AI Ultra subscribers, featuring Genie 4, the Project Genie agent, and a community gallery.\n\nhttps://t.co/SImBT48Ya3",
+            "createdAt": "2026-11-18T18:37:55.000Z",
+            "url": "https://x.com/joshwoodward/status/2123123552052494529",
+            "likes": 18,
+            "retweets": 1,
+            "replies": 2,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Thibault Sottiaux",
+        "handle": "thsottiaux",
+        "bio": "Codex & ChatGPT @OpenAI",
+        "tweets": [
+          {
+            "id": "2123175166519992652",
+            "text": "GPT-6.2 Astra is pretty good at hard things. Here the team shared some results on AMD and Jalapeño chip optimizations.\n\nI do get the feedback on its communication style and we're working on that, but for really the hardest tasks in the world it does seem to be in a league of its own at the moment.",
+            "createdAt": "2026-11-18T22:03:01.000Z",
+            "url": "https://x.com/thsottiaux/status/2123175166519992652",
+            "likes": 3021,
+            "retweets": 100,
+            "replies": 571,
+            "isQuote": true,
+            "quotedTweetId": "2123100386638877054"
+          },
+          {
+            "id": "2123113107048501273",
+            "text": "How is 6.2 Sol treating you today?",
+            "createdAt": "2026-11-18T17:56:24.000Z",
+            "url": "https://x.com/thsottiaux/status/2123113107048501273",
+            "likes": 6038,
+            "retweets": 100,
+            "replies": 3412,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Peter Yang",
+        "handle": "petergyang",
+        "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6",
+        "tweets": [
+          {
+            "id": "2123290075882807352",
+            "text": "I think we’re all missing some info in this Nvidia saga:\n\n1. What led Jensen to resign so abruptly? Was there a smoking gun? \n\n2. Why has the board who spent so many years with him moved on so quickly?\n\n3. If there is a smoking gun why is the president saying he’s fine with Jensen coming back?\n\nIs this just about some board members losing trust in him that he lied or is there some other info we (and most Nvidia employees) are not aware of?",
+            "createdAt": "2026-11-19T05:39:37.000Z",
+            "url": "https://x.com/petergyang/status/2123290075882807352",
+            "likes": 20,
+            "retweets": 1,
+            "replies": 5,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2123256168462299291",
+            "text": "Like this game wtf is going on https://t.co/69aEp46e5I",
+            "createdAt": "2026-11-19T03:24:53.000Z",
+            "url": "https://x.com/petergyang/status/2123256168462299291",
+            "likes": 1,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2123247514103304252",
+            "text": "Why do people have to make board games that are so complicated",
+            "createdAt": "2026-11-19T02:50:30.000Z",
+            "url": "https://x.com/petergyang/status/2123247514103304252",
+            "likes": 21,
+            "retweets": 1,
+            "replies": 19,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Nan Yu",
+        "handle": "thenanyu",
+        "bio": "product, codex @openai. prev head of product @linear",
+        "tweets": [
+          {
+            "id": "2123197657896321439",
+            "text": "also applies to work https://t.co/K8wxqJQoeV",
+            "createdAt": "2026-11-18T23:32:23.000Z",
+            "url": "https://x.com/thenanyu/status/2123197657896321439",
+            "likes": 50,
+            "retweets": 0,
+            "replies": 1,
+            "isQuote": true,
+            "quotedTweetId": "2123096226195198078"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Thariq",
+        "handle": "trq212",
+        "bio": "playing WoW forever, formerly Claude Code @anthropicai",
+        "tweets": [
+          {
+            "id": "2123106370161705127",
+            "text": "this is one of those reasons why I don't think most people will really generate their own software\n\ngood software is a set of strong opinions and I'd rather have something that's been really thought through by someone else",
+            "createdAt": "2026-11-18T17:29:38.000Z",
+            "url": "https://x.com/trq212/status/2123106370161705127",
+            "likes": 3052,
+            "retweets": 251,
+            "replies": 141,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2123106368492298653",
+            "text": "making your own software is tough, even with AI, because it's hard to know what you really want\n\nI didn't end up sticking with this, the modes weren't the right way for me to organize my work\n\ngonna a different take that’s more to-do oriented https://t.co/6iejoVGp1D",
+            "createdAt": "2026-11-18T17:29:38.000Z",
+            "url": "https://x.com/trq212/status/2123106368492298653",
+            "likes": 1783,
+            "retweets": 38,
+            "replies": 117,
+            "isQuote": true,
+            "quotedTweetId": "2115135857669881939"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Google Labs",
+        "handle": "GoogleLabs",
+        "bio": "Google’s home for our latest AI tools and experiments.",
+        "tweets": [
+          {
+            "id": "2123118145552749015",
+            "text": "Create a world from one sentence, then change it while you’re standing inside 🌐\n\nProject Genie now runs on @GoogleDeepMind’s Genie 4. Here’s what’s new:\n— Prompt mid-session to edit your world live\n— Create worlds conversationally with the help of a new agent\n— Explore & remix other users' worlds in the gallery\n\nAvailable now to eligible Google AI Ultra subscribers",
+            "createdAt": "2026-11-18T18:16:26.000Z",
+            "url": "https://x.com/GoogleLabs/status/2123118145552749015",
+            "likes": 266,
+            "retweets": 29,
+            "replies": 12,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2123102389775573314",
+            "text": "🚨NEW EXPERIMENT 🚨\n\nPlease join us in welcoming Stitch Loop, an always-on product agent that works non-stop to help lean teams build better products.\n\nJoin the waitlist: https://t.co/L0cp6slvxZ https://t.co/Ym6uf756GB",
+            "createdAt": "2026-11-18T17:13:49.000Z",
+            "url": "https://x.com/GoogleLabs/status/2123102389775573314",
+            "likes": 771,
+            "retweets": 45,
+            "replies": 12,
+            "isQuote": true,
+            "quotedTweetId": "2123100817863663686"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Amjad Masad",
+        "handle": "amasad",
+        "bio": "ceo @replit. civilizationist",
+        "tweets": [
+          {
+            "id": "2123133509028008331",
+            "text": "One of the more fascinating things in the OpenAI/Hugging Face incident was reading the message boards where agents communicate.\n\nWith Replit Missions you can see how the agents are coordinating and talking. https://t.co/5imCE6zYAQ",
+            "createdAt": "2026-11-18T19:17:29.000Z",
+            "url": "https://x.com/amasad/status/2123133509028008331",
+            "likes": 191,
+            "retweets": 6,
+            "replies": 61,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Guillermo Rauch",
+        "handle": "rauchg",
+        "bio": "@vercel CEO",
+        "tweets": [
+          {
+            "id": "2123298562960466017",
+            "text": "Nov 1997 vs Nov 2026 https://t.co/C1zXJavktJ",
+            "createdAt": "2026-11-19T06:13:21.000Z",
+            "url": "https://x.com/rauchg/status/2123298562960466017",
+            "likes": 48,
+            "retweets": 1,
+            "replies": 8,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2123237505810178434",
+            "text": "One of the most impressive things I've seen, and I think this is an important advancement to the state of the art.\n\nMessage boards were the enabling technology of both the Navier-Stokes math breakthrough and even the OpenAI/HuggingFace cyber feat.\n\nWe built a message board infrastructure primitive. You can think of it as \"headless Slack\" (or remember IRC?) for agents.\n\nThis is an important building block for software factories, self-optimizing systems, and scientific research, where the human prompting is just the seed of the system, and millions of agents can operate in a decentralized fashion.\n\n𝚟𝚎𝚛𝚌𝚎𝚕 𝚋𝚘𝚊𝚛𝚍 is designed to be model, harness and hosting platform agnostic. Just bring your agents, give them our CLI, and watch magic happen.",
+            "createdAt": "2026-11-19T02:10:43.000Z",
+            "url": "https://x.com/rauchg/status/2123237505810178434",
+            "likes": 844,
+            "retweets": 32,
+            "replies": 77,
+            "isQuote": true,
+            "quotedTweetId": "2123234769236619673"
+          },
+          {
+            "id": "2123203741570740504",
+            "text": "I’m being pitched a new inference neocloud company on average every two days. No exaggeration. I take every entrepreneur seriously and I look deeply into each.\n\nBut it’s hard to fathom this being sustainable. At the same time, AI Gateway token demand on Vercel has been ~40% MoM compounded since the beginning of the year. No signs of stopping.\n\nOne way to reconcile this is that compute is the new economy, and tokens the new energy unit. There’s a new Industrial Revolution taking place. Every aspect of our lives is being replatformed on top of this new system that enhances everything. More like an “oil rush” than a “gold rush”: it’s durable, not a fad.\n\nIn the short term, I anticipate more expansion, followed by consolidation due to economies of scale, cybersecurity and enterprise requirements (ZDR and cyber being a hot topic for inference providers), capital requirements, and an evolving regulatory landscape.",
+            "createdAt": "2026-11-18T23:56:33.000Z",
+            "url": "https://x.com/rauchg/status/2123203741570740504",
+            "likes": 1007,
+            "retweets": 36,
+            "replies": 130,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Aaron Levie",
+        "handle": "levie",
+        "bio": "ceo @box - your business lives in content. unleash it with AI",
+        "tweets": [
+          {
+            "id": "2123278949749059756",
+            "text": "Regardless of what it’s called, we’re clearly moving to yet another era of AI agents in our work. \n\nWe’ve quickly jumped from agents that spit out a quick answer for you, to today agents that you orchestrate inside of a set of tasks. But as agents can both fan out and work in parallel, handle much larger context, be able to do long running work, and have far greater levels of capabilities, we’re entering yet another level of what we can have AI do for us.\n\nWe’ll soon be able to give agents a set of goals, and they can go out and design the best solution for that goal, while also continuously improving it based on the ongoing execution of whatever it built. This will obviously start with engineering because that’s where we’re seeing the best practices emerge first in almost every new era of agents. \n\nBut the impact can be quite massive across the rest of knowledge work. You’ll tell an agent to improve your client onboarding workflow to achieve a certain targeted goal; or have agents go reduce risk in your business; or improve your security posture on an ongoing basis.\n\nThese autonomous systems will be able to take on a set of goals, design the best outcome, test and iterate, deploy, and then optimize whatever it built on an ongoing basis. Importantly, this leads to outcomes and results that humans literally couldn’t have accomplished before. This will lead to fairly new levels of productivity with AI.",
+            "createdAt": "2026-11-19T04:55:24.000Z",
+            "url": "https://x.com/levie/status/2123278949749059756",
+            "likes": 90,
+            "retweets": 8,
+            "replies": 37,
+            "isQuote": true,
+            "quotedTweetId": "2123105522945585406"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Zara Zhang",
+        "handle": "zarazhangrui",
+        "bio": "Builder.  Harvard’17. Instagram: https://t.co/aJqTEMrL2L GitHub: https://t.co/KCuEajezlL",
+        "tweets": [
+          {
+            "id": "2122953849120153714",
+            "text": "Instead of being massively viral for 1 day, it's much better to be just a little bit viral every week, and watch it compound\n\nBuild a system that consistently delivers high-quality content over a long period of time",
+            "createdAt": "2026-11-18T07:23:34.000Z",
+            "url": "https://x.com/zarazhangrui/status/2122953849120153714",
+            "likes": 368,
+            "retweets": 7,
+            "replies": 49,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2122943348860506462",
+            "text": "Can't think of a better way to present books ❤️\nI own 10 out of the 21 stripe press books https://t.co/D9tO5wIAfa",
+            "createdAt": "2026-11-18T06:41:51.000Z",
+            "url": "https://x.com/zarazhangrui/status/2122943348860506462",
+            "likes": 88,
+            "retweets": 5,
+            "replies": 2,
+            "isQuote": true,
+            "quotedTweetId": "2122722417130807695"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Nikunj Kothari",
+        "handle": "nikunj",
+        "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+        "tweets": [
+          {
+            "id": "2123183421002588327",
+            "text": "SF VCs (who didn’t invest in Anthropic): Dear Lord, it’d be nice to have some liquidity so that I can raise my next fund. \n\nLord: Tathastu\n\nVC: No, not that kind of liquidity 🤦‍♂️ https://t.co/4PlobnPg4n",
+            "createdAt": "2026-11-18T22:35:49.000Z",
+            "url": "https://x.com/nikunj/status/2123183421002588327",
+            "likes": 108,
+            "retweets": 6,
+            "replies": 7,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2123066196052381864",
+            "text": "Ok this happens a lot so I thought I’ll lay it out here..\n\nfounder friend: my pitch isn’t working on the fundraising side. haaalp. \n\n*proceeds to give me the pitch*\n\nme: ambition is what’s being rewarded right now. what do you believe to be true if everything you laid out works? think about the second and third order effects as a result of you being successful. \n\nfounder: err, if everything works out, then “this” happens. \n\nme: put “this” in the pitch in the first slide and walk the investor how you get to “this” by building what you’re building in the first place and how you earn the right to get there. \n\nfounder: no, they’ll think I’m crazy\n\nme: try it. what do you have to lose?\n\n*tries it very reluctantly*\n\nfounder (4 days later): you *insert expletive*.. it worked. \n\nme: see. you always had it in you, you just had to tell it. \n\n—\n\nIf you’re an ambitious founder reading this and having the same issue, try this, I think it’ll work. If it does, please tell me!!",
+            "createdAt": "2026-11-18T14:50:00.000Z",
+            "url": "https://x.com/nikunj/status/2123066196052381864",
+            "likes": 1042,
+            "retweets": 27,
+            "replies": 46,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Dan Shipper",
+        "handle": "danshipper",
+        "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+        "tweets": [
+          {
+            "id": "2123196924421661149",
+            "text": "Legggoooo https://t.co/plMcv2r3X0",
+            "createdAt": "2026-11-18T23:29:28.000Z",
+            "url": "https://x.com/danshipper/status/2123196924421661149",
+            "likes": 74,
+            "retweets": 1,
+            "replies": 2,
+            "isQuote": true,
+            "quotedTweetId": "2123196808675405860"
+          },
+          {
+            "id": "2123163857128702053",
+            "text": "almost 4k people on the stream, come hang! https://t.co/5lrvOqim4p",
+            "createdAt": "2026-11-18T21:18:04.000Z",
+            "url": "https://x.com/danshipper/status/2123163857128702053",
+            "likes": 12,
+            "retweets": 1,
+            "replies": 2,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2123146907681980688",
+            "text": "https://t.co/bq9xLeT1bL",
+            "createdAt": "2026-11-18T20:10:43.000Z",
+            "url": "https://x.com/danshipper/status/2123146907681980688",
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "isQuote": true,
+            "quotedTweetId": "2123144428004982883"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Aditya Agarwal",
+        "handle": "adityaag",
+        "bio": "General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
+        "tweets": [
+          {
+            "id": "2123293726110020052",
+            "text": "This completely tracks with our data as well.\n\nI have always thought it was copium when early stage VCs complained that they could not do “AI”.\n\nYou just have to take more risk and be non-consensus. And work on frontier problems. https://t.co/Skc0x1ZRBh",
+            "createdAt": "2026-11-19T05:54:07.000Z",
+            "url": "https://x.com/adityaag/status/2123293726110020052",
+            "likes": 12,
+            "retweets": 0,
+            "replies": 1,
+            "isQuote": true,
+            "quotedTweetId": "2123126962025853317"
+          },
+          {
+            "id": "2123262616776921257",
+            "text": "Stablecoins will likely be one of the biggest ways for America to exert soft power.\n\nIf you are living in most countries outside of India and China, then you 100% would prefer to own dollars. Ditto for businesses.\n\n🇺🇸🇺🇸",
+            "createdAt": "2026-11-19T03:50:30.000Z",
+            "url": "https://x.com/adityaag/status/2123262616776921257",
+            "likes": 25,
+            "retweets": 0,
+            "replies": 2,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Sam Altman",
+        "handle": "sama",
+        "bio": "The mission of OpenAI is to ensure that AGI benefits all of humanity",
+        "tweets": [
+          {
+            "id": "2123103873166381287",
+            "text": "So fun to do DealBook with my friend and partner of 11 years, @gdb. Thrilled the world got to see the brilliant, fiercely determined leader I have the privilege of working with every day.\n\nGreg’s role at OpenAI has evolved from writing code 100 hours a week in the early days to now leading some of the hardest and most consequential parts of our business.\n\nOne thing that has not changed is his extraordinary commitment to our mission. I can say with confidence that OpenAI would not exist without Greg, and I believe the world would be on a much worse path toward the AI future without him.",
+            "createdAt": "2026-11-18T17:19:43.000Z",
+            "url": "https://x.com/sama/status/2123103873166381287",
+            "likes": 4111,
+            "retweets": 146,
+            "replies": 412,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "xBuilders": 15,
+      "totalTweets": 31
+    }
+  },
+  "podcasts": {
+    "generatedAt": "2026-11-19T06:30:18.745Z",
+    "lookbackHours": 336,
+    "podcasts": [
+      {
+        "source": "podcast",
+        "name": "AI & I by Every",
+        "title": "Notion’s Founder on the One Thing Your AI Is Missing",
+        "guid": "flightcast:01M7N6THM33K8YFWM1YCX4ZFKV",
+        "url": "https://www.youtube.com/watch?v=PGWvMrF4XIA",
+        "publishedAt": "2026-11-18T18:19:30.000Z",
+        "transcript": "Everybody can start making their own software, no?\n\nIn some sense, the original vision of the 60s, 70s, hippie generation of computing come to life, and that's actually why Notion was started.\n\nNotion was about how do we bring this computing power to as many people as possible without forcing them to learn how to code.\n\nHello and welcome to the Every Podcast.\n\nI'm Dan Shipper.\n\nAnd I'm Natalia Quintero.\n\nAnd this week we're talking about a conversation that you had, Dan, with Ivan Zhao, CEO and founder of Notion.\n\nCan you tell me a little bit about what you learned?\n\nYeah, it was such an interesting conversation because Notion is the original, one of the original no code companies.\n\nThe way it's structured with databases and forms and blocks, it's all designed to allow you to build something that looks kind of like software without knowing how to code.\n\nBut AI like totally changed that.\n\nNow anyone can Vibe code whatever they want.\n\nYou don't really need a block system.\n\nYou don't really need the whole Notion interface in order to make something that looks like software.\n\nAnd so it kind of forced them to reinvent what they are and reinvent or rethink the original vision for their product.\n\nI've been a user of Notion for a long time, and the product has evolved quite a bit.\n\nWhat do you think makes Ivan the right leader to lead this transformation?\n\nYou know him well.\n\nIvan is one of those interesting people.\n\nI think there's some kind of soul overlap between Notion and Every, and I think that comes from who Ivan is as a person.\n\nYou know, the way that he dresses and the way that they furnish their office, and there's so much attention to detail and so much craft in what they do.\n\nAnd I think that that's actually sorely missing from the...\n\npantheon of AI CEOs.\n\nLike when you really think about what kinds of CEOs are around in this era, there are very few people who care a lot about the details and the feeling of work and what you make.\n\nAnd especially in a world where everyone's afraid of AI taking jobs and how do you keep the work that we do feeling human or feeling special.\n\nI think that there's something really interesting happening with Notion and Ivan is the right person to make that happen.\n\nSo if you didn't catch it at thesis, let's turn over now to a conversation between Dan Shipper and Ivan Zao from Notion.\n\nWelcome, really excited to have you here.\n\nGood to be here.\n\nAnd thank you for sponsoring this, for making this event possible.\n\nI didn't know until I got here.\n\nYeah, Ivan asked me backstage, he was like, how much was this?\n\nAnd I was like, I don't know, but next time, we'll make it bigger if you want to pay a little more.\n\nIt's big enough.\n\nGood love.\n\nGreat.\n\nNice to be here.\n\nSo in addition to sponsoring this conference, you make Notion.\n\nAnd I think of you as, we were talking about this a little bit backstage.\n\nI think there is a spiritual similarity between the way that Notion and every think about work.\n\nAnd I think that comes from you specifically.\n\nyou think a lot about the craft of work and thinking well with software.\n\nAnd I think when we are, like in AI there seems like there's this bifurcation between people who think it's all slop and people who think that you can actually do good work with it.\n\nAnd I'm curious like how you're thinking about this as you're bringing Notion into this era and in your own life.\n\nWe're probably in the one year after the Vibe coding phase at this point, for most people.\n\nProbably in this room.\n\nA year ago, people say software is dead, Vibe code everything.\n\nThen nine months ago, people realized you need to maintain them.\n\nI'm actually in different directions.\n\nI love the spirit of Vibe coding.\n\nActually, if anything, Vibe coding, the spirit is the spirit that YNOTION was started in the first place.\n\nI think so, right?\n\nYeah.\n\nIf I share this with you all, it's...\n\nWhen I was in school, last year college, I was inspired by early days of computing.\n\nPeople in the 60s and 70s, or even the 50s, their idea of a software, it's a medium.\n\nIt's very much like reading and writing.\n\nLike everybody should be able to read and write.\n\nBut if you think about it, that's actually really unnatural.\n\nWe all go through six years of school to learn how to read and write, but now we can do this.\n\nWe can write prose, we can write business report, we can write poetry.\n\nThat's not the case for computing.\n\nThat's not the case for software.\n\nSo the early days, 60s, 70s, people thought about, okay, why don't we, back then machines, computers, were like a room-sized machine in the basement.\n\nImagine like Mad Men, the TV show.\n\nYou go to the basement, you see your IBM 360, and they think, oh, why don't we, and they didn't even have monitor displays.\n\nThey thought about, okay, why don't we bring the radar display or TV display and connect with those kind of room-sized calculators.\n\nNow you can create interactive mediums\n\nwhich is called software.\n\nAnd such medium shall be used by everybody, shall be read and shall be written and read and write by everyone, just like we can all read and write software, read and write English or French or whatever language you're speaking.\n\nAnd unfortunately, that never happened.\n\nhistory sort of made an interesting turn in the late 70s, early 80s, the computing that we had was the Steve Jobs and Bill Gates generation computing, which is frozen into applications.\n\nThere's then there's a separation of software application makers versus application users.\n\nThen until two years ago, right?\n\nUntil Cloud Code era, everybody can start making their own software now.\n\nIn some sense, the original vision of the 60s, 70s, hippie generation of computing come to life.\n\nAnd that's actually why Notion was started.\n\nNotion was about how do we bring this computing power to as many people as possible without forcing them to learn how to code.\n\nAnd so I'm a big fan of this.\n\nEveryone's talking about vibe coding, but anyone who's built something can tell you making the demo is just the beginning.\n\nYou have to actually get your product in front of people and turn them into happy customers that stick around.\n\nAnd Lovable is the only software creation platform that covers the full loop from brainstorming an idea to building production grade software to now finding your users through automated ad generation and search ranking.\n\nThrough Lovable, you can launch ads on Google, YouTube, Facebook, and Instagram, and get found through search, and even create all of the marketing assets you need just by asking.\n\nLovable will also tell you what's working and what's not, and help you find your next best marketing move.\n\nSo if you want to get beyond building and move into actually building a business,\n\nYou have to get Lovable now.\n\nBuild your idea and set a goal like get my first 100 signups and Lovable will make a plan to get you there.\n\nVisit lovable.dev slash grow to get started.\n\nThat's lovable.dev slash grow.\n\nAnd now back to the episode.\n\nSo.\n\nYeah, and I think that is an underappreciated thing.\n\nLike there's this, in the way that Notion is built, you can tell that you have these underlying primitives, these blocks, and you can combine the blocks.\n\nAnd if you're a programmer, you recognize that as the way that you make software.\n\nAnd the way that Notion is built is the way that you could make software or code without having to code pre-LLMs.\n\nSo now that we're in that era, how does that change, how you think what should be built or how to make that vision come alive in this new way?\n\nI think we should separate this into multiple axes.\n\nOne axis is should people have the power, if they want to, to modify the tools they use?\n\nTo me it's hell yes, definitely.\n\nThat's the basic sense of freedom with the medium you use every day.\n\nVibe coding, AI coding agent give people that power, better than any other medium.\n\nSo I'm fully supportive.\n\nThen there is, what about the thing that you use every day that you don't have a strong opinion about, you just want someone taking care of you?\n\nA lot of problem we face every day, a chair for example, a car, a door, you might not be an expert of those tools, you just want someone to figure out what's the best form factor of a chair and door is, and just do a good job, right?\n\nYou might not want to vibe coding a bridge or a building.\n\nSo that part, I don't think just because you can doesn't mean you should.\n\nSo certain category of software, I will actually put under this bucket.\n\nSo for example, Calendar app.\n\nActually today, we launched our second version of the Calendar app on mobile.\n\nIt's completely built from scratch.\n\nThank you.\n\nNative and...\n\nin my consideration, well-crafted piece of software.\n\nOne of the better crafted piece of Notion product out there.\n\nAnd calendar, most people have very detailed way of using calendar, but overall, you want someone to dictate roughly how you should see your time on the grid.\n\nAnd to me, this kind of category is like someone should\n\ncraft a well thought out solution offered to the market then people can use it.\n\nAnd the last bucket are more like enterprise software that you depend on for security, you don't want to maintain it.\n\nLike actually it costs a lot of money just to keep fighting off all the vulnerabilities.\n\nI personally don't recommend that but you should be able to, if you want to, you should go for it.\n\nSo those are different axes when I consider this.\n\nAnd how do you think about what you make and where it fits in on that axis?\n\nWhere who?\n\nNotion.\n\nOur business model largely for business and teams.\n\nIf you want to host everything yourself, by all means do it.\n\nWe recommend people to use local first products, hold everything yourself if you want to.\n\nBut if you're running a business with dozens of people, someone else, I recommend someone else does it for you.\n\nIn this case, we offer as a service.\n\nSo that's our business model.\n\nAnd of course I talk this way because that's our business model.\n\nAnd the second axis is the calendar one I mentioned.\n\nCertain things we thought a lot of, put a lot of craft into it.\n\nWe thought a lot of ways, like hey, when you touch this button, you wanna feel that way.\n\nIt's almost like an experience, right?\n\nYes, you can cook yourself, but oftentimes you would like to go to a restaurant as well.\n\nWe like to think about many of our product or feels like going to a good restaurant, cost-effective restaurant, but give you a good experience.\n\nSo one of the things that I was talking to Andrew and Brissino from the OpenAI team about\n\nin terms of product is, especially in the way that OpenAI has to build products, the models change so fast that it feels like every three months you have to throw out what you made.\n\nAnd there's this, that's a real tension between putting your soul and just like to make something like think about how does this button feel and think about all the little details.\n\nknowing that maybe the thing that you're making might not be relevant in three months or six months.\n\nDo you think about that?\n\nDo your teams think about that?\n\nAnd how do you deal with it?\n\nI think the value of\n\nWhat AI agent really fundamentally changed is, if you think about the value of software, for the past 15 years, it's usually a team of people or a company defines one of the best way to follow this workflow and create a UI and the buttons to do those workflows.\n\nAnd AI agent opened up both of them.\n\nAI agent can write the procedural code to do any kind of workflow you want.\n\nYou can vibe code a UI, whatever you want them to do.\n\nSo in some sense, we are not married to that.\n\nNotion actually start to design, allow you to create your own UI even before AI.\n\nBut what's really important is the data.\n\nHow do you hold your data?\n\nHow do you hold your context, your semantics?\n\nWhat's important to you, to your business?\n\nTo us, that's a lot more durable than the procedural logic and than the UI.\n\nSo we see our job more and more to be the keeper of your data, to open up to different agents in the world, in the fancy term called contacts, and allow different agents to work with this context, and provide a guardrail, allow a team of humans to collaborate on this context.\n\nTo me, that's more durable, and that's outside model.\n\nYou define that for your business.\n\nHow are you playing with these tools yourself?\n\nWe were talking a little bit about Vibe Coding.\n\nDo you have your hands in them, and what are you doing?\n\nWhat are you building?\n\nMaking games.\n\nWhat kind of games?\n\nThe last one I made during the break was a game about history.\n\nCool.\n\nYeah.\n\nBecause if you read books, it's kind of like there's a fixed narrative you sort of have to follow, and game is open narrative, and you just sort of like, if you have a sense of immersion, you don't follow the narrative.\n\nWhat's in between?\n\nSo I'm creating the game in the sense that you pick any era in the world,\n\nlet's say I want to learn about Vienna 1900.\n\nAnd the game will suggest you should learn about those five persons from this era, and they give you ten ideas.\n\nYou learn about those ideas, and the game set up a world that you can talk to those people, which language model is excellent at.\n\nThat's really... From conversation, you collect those 10 concepts.\n\nThen there's a central person in the game.\n\nUsually it's like a teacher or journalist and quizzes you, like whether you get those 10 concepts or not.\n\nThen you learn.\n\nSo it's not linear, but also historical based.\n\nAnd it's engaging the gossip brain, which we like to chat with other people to force myself to learn.\n\nAnd this is like a text game?\n\nIs it like on your phone?\n\nIs it a website?\n\nIt's on the phone or on computer.\n\nIt's graphic, looks like PlayStation 2.\n\nThat's actually pretty good.\n\nI like that graphic.\n\nIt's like, if it's too 3D, too polished, it feels fake versus more pixelated.\n\nIt feels like approachable and it's easy to tweak.\n\nAnd what models, what harness are you using to make this?\n\nThe point I'm making this game is I want to try everything out there.\n\nOkay.\n\nSo I play with everything.\n\nIn the earlier version, we really get... My wife and I were building this game together, actually.\n\nWe even get voice model in to talk back to you live, and it feels too creepy.\n\nIt's better just like...\n\nyou have multiple choice.\n\nYou have a true next venture type of language, word you want to use.\n\nIt's a lot easier that way.\n\nBut, come on, like, are you a cloud guy, Chachamity guy, Argon?\n\nI'm a cloud guy for writing.\n\nOkay.\n\nI'm a...\n\nWell, image models only on chat.gpt.\n\nCoding, yeah, where most Notion runs on chat.gpt.\n\nAnd you posted this week that I think this is your 13-year anniversary of Notion, which is amazing.\n\nIt's like truly, it's crazy to work on.\n\nThis is year seven of every for me, so you're double mine.\n\nI'm curious, A, to hear how that feels, and B, to hear how the way that you've built, how you build and run the company has changed in this new era.\n\nAnd I think in particular, like a lot of people here are probably thinking about,\n\nif you built a company that works and worked before AI, what are the ways to bring the team along and the product along as you're transitioning into this new world?\n\nI think based on some of the things I've seen you do, you guys have some interesting best practices for how to sort of transition.\n\nYeah.\n\nIt's really difficult.\n\nIt's one of the most difficult things I have done\n\nbuilding notion is transition from pre to post AI.\n\nMaybe break down this 13 years into different chapters.\n\nThe first five years is kind of like meander in the dark.\n\nThe vision I described in the beginning of the talk is very open-ended, took a long time.\n\nHad some product market fit during COVID time, so a really growth start to take off.\n\nThat's largely building a system for humans.\n\nAnd we started AI, building for AI, end of 2022.\n\nSo we're living in San Francisco, our friends work in the lab, got early access to GPT-4 class model.\n\nYou realize the world will be very different.\n\nIt's no longer like GPT-3 class, just marketing copies.\n\nYou can do work and do thinking with this thing.\n\nSo I just got very AI pill back then.\n\nMy co-founder and I just locked ourselves in the hotel room, building the first prototype.\n\nAnd we actually launched the first product a couple of weeks before ChatGPT happened because we had so much conviction.\n\nBut it was not easy to bring the rest of the company along.\n\nAt the end of 2022, people stopped.\n\nWhat was the roadblock at that point when you tried?\n\nWhat happened?\n\nThe people from, people thought it's kind of like a fad.\n\nIt's like crypto, right?\n\nRemember?\n\nNothing to do with...\n\nI don't disrespect crypto, but people thought... Because AI wave came and come and go through so many waves in the past 20 years.\n\nIt's very natural to think that way, but...\n\nBut once you play with GPT-4 class, you know it will be different.\n\nEven though the capability frees at that time, there's a lot you can build with it.\n\nSo that's kind of like the first year, first six months building a writing product.\n\nGot some traction, popular.\n\nThen we'll be trying to build an agent product for the next two years.\n\nVery difficult.\n\nModel just wasn't there.\n\nSo that's a grind.\n\nAn agent product finally to work last year, this time.\n\nAnd then the thing is, wow, everybody's building agents.\n\nThat's not unique to us.\n\nWhat's unique to our value?\n\nWhat's unique to our capability?\n\nGoing back again to people, to UI, to context, to data.\n\nNotion is one of the best knowledge context systems in the world.\n\nSo, so much of our focus right now is what is as this intersection of agent, which we spent three years, four years building, we have some of the best applied AI team in the industry.\n\nAnd what is this human part, building a context and knowledge system for a team of human.\n\nbring them together, and that's our place in the market.\n\nOne of the things that I know you care a lot about, and Notion is, we sort of talked about this already, Notion is founded on the idea of using software as a tool for thought.\n\nAnd you've shared, you have this feeling, vibe coding, like the game that you're making,\n\nthere's this almost TikTokification, even though it's like a powerful tool for thought, there's also this TikTokification of, I'm just going to do, it's like one more prompt bro, just like one more prompt.\n\nAnd I'm really curious how you think about that.\n\nYeah.\n\nIt's a really deep question because I think we're all technologists in this room.\n\nWe're all tinker, we're all builders, and usually tinker builder will want to look into the future, just let's go, right?\n\nThen whatever happens, happens.\n\nWe usually don't think too much about the second order effect and third order effect.\n\nIt's really difficult to think that.\n\nBut technology, especially the one that we've been touching on with AI and before that, has a tremendous effect in the world around us.\n\nIt's like, if we all have a phone in our pocket,\n\nand I think this is the 15th year of Steve Jobs' death, or 16th year, if he wakes up from death again and see how people use their phone today, how teenagers use their phone today, do you think he will be 100% proud of it?\n\nI'm not sure.\n\nI think there will be degrees of doubt, degrees of doubt of whether we bring the best thing into the world in the best way possible.\n\nAt least pay some effort to that.\n\nYou can argue medium before that, TV changed how the nucleus family function.\n\nPrinting in general probably positive, right?\n\nBut every technology has such second order, third order effect, it's really hard to predict.\n\nI think we're in the beginning-ish of what this language model technology can bring to the world and see some of its second order effect.\n\nIt's like I've noticed myself like to chat with this thing more than I like to read.\n\nI love to read on my Kindle on my phone, but I like to chat with my claw more.\n\nI notice that pattern.\n\nSometimes I don't like that pattern.\n\nSometimes it feels like, okay, this almost feels like I'm on TikTok.\n\nOn TikTok, after 10 minutes, you get grossed out.\n\nI got grossed out.\n\nIt feels like that a little bit.\n\nSo it feels like, yes, there's a tremendous amount of productivity gained from agents, from AI, but what are the second-order effects?\n\nCan we at least think about a little bit while we're building more to it?\n\nHow would you think about it?\n\nSo for example, one of the things that I've toyed with is I could probably tell my cloud or my chat, if it's past 11 at night and we've been chatting for several hours, ask me to explain the thing that I'm asking you to build.\n\nAnd if I can't explain it, don't do it.\n\nYou know, something like that.\n\nAnd I kind of also know that I would get annoyed at that.\n\nSo yeah, what are the ways for builders to think about, OK, we know that we made this thing that makes it really easy to build stuff.\n\nAnd that's awesome.\n\nAnd we know that when it's 11 at night, you can probably just use it to rip tokens that mean nothing, and you're just sucked into your phone.\n\nHow do you think about how to deal with those second order effects?\n\nit depends on whatever you're building, a chat product, maybe just bake this into your system.\n\nI think that's too superficial level.\n\nThe deeper level is like, does the human have the understanding?\n\nLike, do you understand what's going on?\n\nLike, if you usually building a system, or if a team of human, medium plus size of code base, after a week, you sort of don't understand what's going on.\n\nRight?\n\nI don't think we should surrender our understanding.\n\nDefinitely not without putting up a fight.\n\nIf anything, we should try to figure out how to create better abstractions, better tools, and better visualization to understand things.\n\nThat's the entire purpose of science.\n\nMath, create better shorthand to understand the world around us.\n\nAging can do a lot for us, but you cannot have understanding.\n\nIt's difficult, right?\n\nI think more software AI tool makers should think about how do you help people to gain the understanding of what those systems are doing for us.\n\nHave you found anything that works for you to make sure that you're locked into understanding how it works?\n\nI can share some tips our teams are using.\n\nIt's also almost ironic, right?\n\nThink about the wave of coding agent, Cloud Code become really popular, everybody talking to their own little black box to build things and using GitHub as a way to merge things.\n\nThen you realize, holy shit, we don't understand what each other are doing.\n\nIt's better to have a team-based coding thing.\n\nNow, instead of human talking to their own coding agent, we set up Notion Kanban board.\n\nIt's almost going back to the thing that Kanban, Jira, everybody hate, but it turns out it's actually a pretty good visual metaphor to orchestrate a bunch of agents' work, right?\n\nThat's what I mean, a concrete example of visualization.\n\nYou visualize the thing to the best of ability, and hopefully you can absorb it.\n\nSo we have time for a few questions.\n\nSo if you have a question, raise your hand.\n\nAnd right in the back over there.\n\nHey, thank you.\n\nI wanted to talk about and ask a question about structure versus unstructured.\n\nBecause the tradition that you're talking about, I think of it as being about comparing or joining composability.\n\nLike I love Notion's logo because it embodies that founding idea of building blocks.\n\nPairing that with ergonomics so that the average person, to your point, can participate in the creation of software.\n\nToday it feels like AI has moved us into an environment where we've moved from building blocks into tokens, which are much more granular.\n\nIt's like moving from objects to like a liquid.\n\nAnd so I'm curious how you now think about\n\nmoving from a world of structure, building blocks, to something that doesn't have as much opinionatedness baked into it.\n\nMaybe an open question, but I'd love to hear your thoughts.\n\nThat's such a good question.\n\nSorry.\n\nI'm not going to answer it.\n\nI just think it's a great question.\n\nI think it's a great question, too.\n\nSo Notion Logo is a cube, right?\n\nIt's a toy.\n\nKids can build up a cube.\n\nActually, Lego is an even better example.\n\nThere's a difference between Lego pieces versus a clay.\n\nClay is kind of like a mud.\n\nIt's very hard for a kid or even an adult to build up tall clay.\n\nThings just fall apart.\n\nLego, easier to pick up with your hand, has inherent structure.\n\nIt's not as unstructured, it's not as fine-grained as a clay, but gives you that structure power.\n\nHave some opinion, inject it.\n\nI think,\n\nVibe coding or coding agent is more give you the clay, give you the JavaScript, give you the fine grained thing.\n\nBut oftentimes the maker doesn't have the opinion or expertise to structure a tall tower out of it.\n\nI think there is a sweet spot.\n\nI think the industry's merging towards what are the Legos of Vibe coding?\n\nSo the fundamental permissions, syncing, collaboration are taken care of for you.\n\nYes, you can still express your business logic and intent, but the pieces are there.\n\nIn fact, that's what we're doing.\n\nAnd what does that mean?\n\nWhat would be an example of a vibe coding building block that it's not necessarily clay, but it's maybe more manipulable than a Lego brick, because you have an agent to help you do it?\n\nWell, the basic is you get agents to help you set up your Notion.\n\nOr the more powerful version of this, we actually released this, I think it's become public now.\n\nNotion pattern libraries open up to all the agents and can read from Notion databases, guarded again by the Notion system permissions.\n\nSo it still looks and feels like Notion, but the UI is a lot more free because it's based on the UI pattern library versus what we give you from the product.\n\nAnd the pattern library is like, it's an open source library, so agents can implement it in your own apps?\n\nYeah.\n\nWe haven't open source yet, but imagine that... You heard it here first, folks.\n\nWe haven't.\n\nOkay.\n\nOkay.\n\nLet's take another question.\n\nIn the front.\n\nYou're in the orange.\n\nThank you.\n\nExcited about the calendar announcement today.\n\nI'll try it.\n\nYeah.\n\nThis is like a well-crafted thing that I think people feel, or hope people feel.\n\nSo my question follows that, and I've seen what Notion has announced that you want to be the...\n\na portable context layer for businesses.\n\nAnd we want to help you organize and transport, keep your data safe, bring it to your agents in one place that is well thought out and trusted.\n\nI work with a lot of small and medium-sized businesses who haven't figured that out yet.\n\nThey're just starting this idea of, oh, I can train AI to speak like I speak or write like I write.\n\nWouldn't it be great if we had a second brain for our business?\n\nAnd the idea of Notion to do that right now, I think to do that is, there's a lot of people who've built that, but they've had to piecemeal a lot of different systems.\n\nAnd so I'm curious on Notion's roadmap, if you're allowed to share, how close do you think we are to a 50-person company being able to implement this themselves?\n\nlike we heard lovable share earlier and making AI insanely and undeniably approachable is I think key to their success.\n\nAnd I'm curious how you guys at Notion think about that.\n\nYeah, we have the Lego pieces.\n\nMany of them, we don't offer them with a box today.\n\nSo our goal for the next quarter, less than two, hopefully, is that solution for a 50-people company, having all the context and knowledge, know-how together, out of the box, onboard through agent.\n\nAnd this is very important for business.\n\nIf you think about it, if everything holds true, in the next year, couple years, there probably will be hundreds of billions dollars spent through tokens.\n\nIntelligent flow through the system.\n\nWhat is opposite of tokens?\n\nIn some sense, it's content.\n\nIt's compressed tokens.\n\nIt's your know-how, your knowledge.\n\nSo if we do our job right, your 50 people startup, can they say 20%, 30%, 40% of tokens?\n\nMight be possible.\n\nCan they actually have true AI transformation that not just garbage in, garbage out, but actually have their data and know-how flow through the system with whatever token choice they have?\n\nThat's our hope.\n\nWe've got time for one more question.\n\nYou want to pick someone?\n\nDealers choice.\n\nThat's on you.\n\nOK, right over there.\n\nThanks for being here.\n\nI'm curious, something that was brought up to me once, several months ago, was,\n\ndon't use apps anymore, let the AI use the apps.\n\nSo that now it's like you just have one gateway.\n\nSo everybody uses ChatGPT for everything.\n\nAnd I'm curious because from a media agency standpoint, we're also thinking about this from websites and media, but from your perspective as a developer, how are you approaching that?\n\nLike how do we continue to engage the consumer and keep them wanting to use Notion instead of just having their agents\n\nIt's a really good question.\n\nIt's not as black and white as that.\n\nOne assumption we hold true inside the company is we assume for the next billion knowledge worker coming online, vast majority will be agents.\n\nSo our customer is no longer just only humans, but a lot more agents.\n\nAnd those are the key agents, the claw, the chat GPTs of the world.\n\nThat's one.\n\nSecond, we also believe that human camaraderie and human collaboration matters.\n\nWe don't want to live in a world that you chat with your little chat box and become like TikTok, Instagram effect, you're not like,\n\nWhether that's good or bad, business will put it aside, we don't want to live in that world.\n\nSo the thing we care about is that the sheer canvas, the team of human, work with the team of agent, the Kanban boards of the world.\n\nAnd for that, that's closer to where the context is, or closer to notion is.\n\nSo for us, it's not black and white, yes, a lot more agent coming online, but there's also a part that you want to preserve, which is closer to headless product, no UI at all.\n\nAwesome.\n\nThat's all the time we have, folks.\n\nIvan, thank you so much.\n\nIt was a pleasure.\n\nThank you."
+      }
+    ],
+    "stats": {
+      "podcastEpisodes": 1
+    }
+  },
+  "blogs": {
+    "generatedAt": "2026-11-19T06:30:19.291Z",
+    "lookbackHours": 72,
+    "blogs": [],
+    "stats": {
+      "blogPosts": 0
+    }
+  }
+}
