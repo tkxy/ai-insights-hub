@@ -1,0 +1,320 @@
+{
+  "date": "2026-11-17",
+  "generated_at": "2026-11-17T23:30:00+08:00",
+  "daily_summary": "周二是本周信息量最大的一天，三件事同时落地。OpenAI 发布 GPT-6.2 Astra 与 Sol，旗舰档 API 降价约 20% 到每百万输入 8 美元、输出 40 美元，缓存输入 0.40 美元，并首次把自家模型的「AI 自我改进」能力评级为高、把网络安全评级标为关键。微软 Ignite 2026 在旧金山开幕，纳德拉直接把 Copilot 定义为「新的工作操作系统」，Word、Excel、PowerPoint 正式进入 Copilot 内运行，同时发布七款自研 MAI 模型，全部以「接近头部性能、几分之一价格」为卖点。第三件是苹果：iOS/iPadOS/macOS 27.3 测试版开始为 Siri AI 和 Apple Intelligence 设每日免费额度，并把额度提升与 iCloud+ 订阅档位绑定，最高 20 倍。资本面则是黄仁勋离职后英伟达的首份财报：营收 1158 亿美元、同比增长 103%、高于 1080 亿美元预期，下季度指引 1300 亿美元。输入法赛道这一天也有动作：搜狗输入法 v20.20.0 推出免登录的跨设备复制粘贴，并把专业模式升级到药品名、法律术语直接成词、专业符号随输随用的程度。",
+  "design_insights": [
+    {
+      "title": "苹果给 Siri AI 设每日额度并绑定 iCloud+：系统级 AI 第一次明确标价",
+      "summary": "据 MacRumors 11 月 17 日报道，苹果已在 iOS 27.3、iPadOS 27.3、macOS 27.3 测试版中加入AI 每日免费额度机制。受限的是四类依赖云端的功能：复杂 Siri AI 请求、图乐园图像生成与照片应用的Clean Up/Extend/Spatial Reframing、依赖 AFM Cloud 与 AFM Cloud Pro 的快捷指令工作流、以及第三方应用通过苹果基础模型在 Private Cloud Compute 中运行的 AI 功能。设置计时器、发短信这类单步骤指令不受影响。iCloud+ 档位对应额度倍数：200GB（2.99 美元/月）2 倍、2TB（9.99 美元/月）5 倍、6TB（29.99 美元/月）10 倍、12TB（59.99 美元/月）20 倍，50GB 免费档不增加。额度按设备而非按账户计算、当日不累积、约在用户所在时区午夜重置，家庭共享成员以先到先得方式共用。",
+      "implication": "这件事把一个我们一直回避的问题摆到了台面上：AI 功能是有单位成本的，用户早晚要面对额度。苹果的做法里有三个可以直接借用的设计决策。第一是分层——简单指令永久免费、复杂云端请求才计额度，这给了我们一个清晰的切分原则：打字、候选、本地标点这类基础能力永远不该计费或限额，一旦越线会直接伤害输入法的工具属性。第二是提前预警——苹果会在接近上限时提醒，而不是用完才报错，这正是 DeepSeek 这周挨骂的反面教材。第三是把额度绑在已有订阅上而不是新开一个AI 订阅，降低了用户的决策成本。对我们的具体建议：现在就把 AI 能力按「本地免费 / 云端计量」做一次清单划分，并为云端部分设计一套额度可视化与预警文案，不要等到成本压力来了再临时加限制——那个时候任何限制都会被读成背叛。",
+      "sources": [
+        "MacRumors / IT之家",
+        "AITOP AI热报",
+        "华商网数码"
+      ],
+      "source_urls": [
+        "https://aitop.news/item/59763",
+        "https://digi.hsw.cn/system/2026/1117/178597.shtml"
+      ],
+      "tags": [
+        "苹果",
+        "额度设计",
+        "商业化",
+        "预警文案"
+      ]
+    },
+    {
+      "title": "纳德拉把 Copilot 定义为「工作操作系统」，Office 反过来跑在 Copilot 里",
+      "summary": "微软 Ignite 2026 于 11 月 17 日至 20 日在旧金山举行，纳德拉在 11 月 17 日的主题演讲中称 Copilot 是「新的工作操作系统」。Office in Copilot 正式可用——Word、Excel、PowerPoint 直接在 Copilot 窗口内运行，文件仍可在原生应用中打开编辑；Copilot Home（Chat 与 Cowork 两种模式）正式可用；Copilot Workspaces（人与智能体共享上下文的协作空间）、Autopilot（有独立身份与记忆的长期自主智能体）、Copilot Code（自然语言搭建仪表板与应用，计划 12 月正式可用）通过 Frontier 早期访问计划推出。底层是新的 Microsoft IQ 上下文层，整合 Work IQ、Fabric IQ、Foundry IQ 与 Web IQ，并接入 350 多个第三方连接器。Agent 365 已登记超过 5000 万个智能体。纳德拉以对 11 月 12 日 Microsoft 365 宕机的致歉开场。",
+      "implication": "最该被我们注意的不是 Copilot 多强，而是这次「容器反转」——以前 AI 是应用里的侧边栏，现在应用是 AI 里的工具。输入法在这个结构里的位置非常危险：如果用户不再打开 Word 写文档，而是对 Copilot 描述需求，那么「在文档里打字」这个场景的输入量会结构性下降。但同时也出现了新机会：用户对 AI 描述需求的那段话，本身就是高价值的自然语言输入，而且往往很长、很口语、需要反复修改——这恰好是键盘最薄弱、语音最有优势的地方。建议做三件事：第一，重新定义我们的战场，从「用户在哪些应用里打字」改为「用户在哪些界面里表达需求」，并把 AI 对话框列为一类独立的宿主场景做专门适配；第二，为长口语指令设计专门的输入体验——说一长段、可边说边改口、结束后给出结构化而非一长串的结果；第三，承认并规划「传统文档输入量下降」这个趋势，不要把下一个版本的目标继续压在提升文档场景的输入效率上。",
+      "sources": [
+        "Techlantis Ignite 报道",
+        "TechOrCoffee",
+        "TheNextWeb"
+      ],
+      "source_urls": [
+        "https://thetechlantis.com/news/microsoft-ignite-copilot-new-os-for-work",
+        "https://techorcoffee.com/blog/microsoft-ignite-2026-copilot-is-now-the-new-os-for-work",
+        "https://thenextweb.com/news/microsoft-office-in-copilot-nadella-ignite-agi-pilled"
+      ],
+      "tags": [
+        "微软",
+        "容器反转",
+        "场景适配",
+        "平台威胁"
+      ]
+    },
+    {
+      "title": "搜狗输入法 v20.20.0 把专业模式做到「专业符号随输随用」，并把跨设备复制粘贴免登录化",
+      "summary": "搜狗输入法 v20.20.0（11 月 12 日发布，11 月中旬各应用商店陆续更新）更新两块内容。一是跨设备复制粘贴：Android 与 Windows 设备协同，无需登录即可使用。二是近期的专业模式升级：药品名、法律术语等专业词不用拆开逐字打、直接成词；专业符号随输随用，打「处方药」出 ℞；输入缩写关联全称，打「DMSO」出「二甲基亚砜」。",
+      "implication": "这三个专业模式的例子值得逐条拆，因为它们代表三种不同的交互模型，而我们过去把它们混成了一件事。「专业词直接成词」解决的是分词问题，属于词库能力；「打中文出符号」解决的是符号检索问题，本质是一个映射表，用户不需要知道 ℞ 怎么打，只需要知道它叫什么；「缩写出全称」解决的是记忆负担，属于联想能力。三者的失败成本完全不同——词库错了用户多打几下，符号映射错了用户会输出一个看不懂的字符，这在医疗法律场景是严重问题。建议：第一，把专业模式的能力拆成词库、符号映射、缩写联想三条独立的产品线分别定目标，不要再用「专业词覆盖量」一个指标笼统衡量；第二，符号映射这类高风险输出必须在候选上标注符号名称（候选区显示「℞ 处方药」而不是裸符号），让用户上屏前能确认；第三，「免登录跨设备」这个决策很聪明——它把隐私顾虑最大的功能做成了不需要账号，这条产品原则（能力不绑账号）建议我们在跨端能力上全面采用。",
+      "sources": [
+        "豌豆荚搜狗输入法版本记录",
+        "东坡下载版本日志"
+      ],
+      "source_urls": [
+        "https://www.wandoujia.com/apps/604311/history_v2650",
+        "https://m.uzzf.com/mipu/808344.html"
+      ],
+      "tags": [
+        "竞品动态",
+        "搜狗输入法",
+        "专业模式",
+        "符号输入"
+      ]
+    },
+    {
+      "title": "GPT-6.2 双档发布：旗舰降价两成，首次把「自我改进」评为高风险",
+      "summary": "OpenAI 于 11 月 17 日发布 GPT-6.2 Astra 与 GPT-6.2 Sol。Astra 面向复杂专业与科学工作，API 价格较 GPT-6 Astra 降约 20%，为每百万输入 8 美元、缓存输入 0.40 美元、输出 40 美元；Sol 面向日常与智能体任务，维持每百万输入 2 美元、输出 10 美元。在 Agents' Last Exam 上 Astra 以约 5% 的成本比 Claude Fable 5.2 高出 5.5 分。Astra 是 OpenAI 首个被自评为「AI 自我改进能力：高」的模型，两款在网络安全维度均被评为关键。两款已向 ChatGPT Work 与 Codex 的 Plus、Pro、Enterprise、Edu 用户开放，并支持 Ultrafast 高速模式。值得注意的是接收端评价并不一致：VentureBeat 引述部分重度用户称新模型「在实际工作中基本不可用」。",
+      "implication": "对设计最有用的不是降价，而是「榜单领先与实际好用可以同时为真」这个落差本身。这正是我们每次上线 AI 能力后都会遇到的现象：内部评测通过了，用户却说变差了。原因通常不在模型质量，而在期望管理与可控性——用户不接受的是「我无法预测它会怎么改我的话」。三条可落地建议：第一，任何 AI 能力上线前，除了准确率指标，必须补一条「结果可预测性」的主观评估，让 10 个真实用户判断「这次输出是不是你预期的方向」；第二，提供档位而不是单一最优——参考 Ultrafast 与 effort 这类设计，让用户在快与准之间自己选，比我们替他做决定更容易被接受；第三，降价会让云端 AI 的使用门槛继续下降，这意味着「有 AI」很快不再是卖点，差异会全部落到交互层，我们的投入重点应该从接能力转向做体验。",
+      "sources": [
+        "OpenAI 官方 / 彭博社 / 路透社",
+        "Best AI Utility 周度综述",
+        "腾讯新闻"
+      ],
+      "source_urls": [
+        "https://www.dataguy.in/ai-developments/",
+        "https://www.bestaiutility.com/blog/ai-news-roundup-november-19-2026",
+        "https://news.qq.com/rain/a/20261118A0GIVL00"
+      ],
+      "tags": [
+        "OpenAI",
+        "降价",
+        "可预测性",
+        "档位设计"
+      ]
+    },
+    {
+      "title": "微软七款 MAI 模型全部按「性价比」定位，专用小模型的时代到了",
+      "summary": "微软在 Ignite 2026 发布七款自研 AI 模型，覆盖代码、网络安全、图像生成、实时语音、医疗转录与智能决策，统一卖点是以更低成本提供接近头部模型的性能。具体口径：MAI Cyber 2 Flash 在网络安全评测中达到 GPT-6 Astra 水平、单项任务成本不到其 2%；MAI Code 2 编程表现达 GPT-6.1 Sol 的 98%、价格约 40%，SWE-bench Verified 解决率 74.2%、支持百万 token；MAI Code 2 Flash 首 token 延迟低于 150 毫秒、日常编程接近 Claude Haiku 5.5、价格仅 20%；MAI Image 2.7 在图像编辑评测排名第一、价格约为 GPT Image 2.6 的五分之一；MAI Realtime 1 支持实时语音对话、起价每分钟 0.01 美元；Dragon Copilot Transcribe 已用于医疗场景、每月处理约 1000 万次医患对话、多语言转录错误率降低一半；Decision 1.1 用于智能任务调度、速度达 GPT-6.1 Sol 的 50 倍、成本约其 1/79。以上均为厂商自报数据。",
+      "implication": "这组数字对输入法的意义是：我们需要的每一类能力，现在都有对应的专用小模型，而且便宜到可以按场景混搭。MAI Realtime 1 每分钟 0.01 美元的实时语音、Decision 1.1 的 50 倍速度用于路由判断、Code 2 Flash 的 150 毫秒首 token 延迟，这些指标直接对应我们产品里的三个痛点：语音实时反馈、该不该调用 AI 的判断、改写的首字等待。建议三件事：第一，把我们的 AI 功能按「需要什么模型能力」重新拆解，不要再用一个通用大模型包打天下，尤其是路由判断这类高频低难度任务；第二，首 token 延迟应该成为我们对接任何 AI 能力时的第一道硬门槛，150 毫秒是一个已经被证明可达的参考线；第三，厂商自报数据必须自测复核，特别是转录错误率这类与我们核心能力重叠的指标，用我们自己的真实语料跑一遍再决定。",
+      "sources": [
+        "腾讯新闻 AI 圈汇总",
+        "AI DAILY",
+        "DEV Community Ignite 汇总"
+      ],
+      "source_urls": [
+        "https://news.qq.com/rain/a/20261118A0GIVL00",
+        "https://sns.style/",
+        "https://practicaldev-herokuapp-com.freetls.fastly.net/amananandrai/microsoft-ignite-2026-every-announcement-sorted-models-github-copilot-azure-windows-more-4gk4"
+      ],
+      "tags": [
+        "专用模型",
+        "微软",
+        "延迟",
+        "选型"
+      ]
+    }
+  ],
+  "demand_mining": [
+    {
+      "title": "AI 能力没有分层定价，一旦成本压力到来就只能全局降级",
+      "pain_point": "目前所有 AI 能力共用一套无差别的免费调用策略，没有区分基础能力与云端重计算能力。一旦算力成本超预算，只能统一限速或降级，必然同时伤到最核心的打字体验。",
+      "opportunity": "按「本地免费 / 云端计量」做一次能力清单划分，明确打字、候选、本地标点永不限额；为云端能力设计额度可视化、接近上限预警与清晰的降级说明，并优先考虑绑定已有会员体系而非新开一个 AI 订阅。",
+      "priority": "high",
+      "evidence": "苹果在 iOS/iPadOS/macOS 27.3 测试版中仅对复杂云端请求计额度，单步骤 Siri 指令保持免费，并把额度倍数绑定在已有 iCloud+ 档位上（200GB 2 倍至 12TB 20 倍），接近上限时提前提醒；而 DeepSeek 同周的无预警限额引发大规模差评。"
+    },
+    {
+      "title": "专业符号类输出缺少上屏前确认，在医疗法律场景是责任风险",
+      "pain_point": "打中文出专业符号这类映射能力，用户无法从候选区的裸符号判断是否正确，一旦映射错误会直接输出一个用户看不懂的字符，在处方、合同等场景后果严重。",
+      "opportunity": "候选区对符号类结果强制显示「符号 + 名称」双联展示（如「℞ 处方药」），并把专业模式拆成词库、符号映射、缩写联想三条独立产品线分别定目标与错误率红线。",
+      "priority": "medium",
+      "evidence": "搜狗输入法 v20.20.0 的专业模式升级同时包含三种机制：专业词直接成词、打「处方药」出 ℞ 的符号映射、打「DMSO」出「二甲基亚砜」的缩写联想，三者失败成本差异极大但在产品中被并列呈现。"
+    },
+    {
+      "title": "AI 结果不可预测，用户宁愿不用也不愿冒险",
+      "pain_point": "用户无法预判 AI 改写会往哪个方向改，一旦出现一次意外改动就会长期关闭该功能，表现为入口点击率尚可但二次使用率极低。",
+      "opportunity": "为所有 AI 能力补一条「结果可预测性」的主观评估门槛（10 名真实用户判断输出是否符合预期方向），并把单一最优改为显式档位（快 / 准、轻改 / 重写），把方向选择权交回用户。",
+      "priority": "high",
+      "evidence": "GPT-6.2 Astra 在 Agents' Last Exam 上以约 5% 成本领先 Claude Fable 5.2 达 5.5 分，却被 VentureBeat 引述的部分重度用户称为「在实际工作中基本不可用」，说明榜单领先与实际可用性可以同时为真。"
+    },
+    {
+      "title": "传统文档场景的输入量会结构性下降，但「对 AI 描述需求」是全新的长口语输入场景",
+      "pain_point": "当应用开始运行在 AI 容器内，用户不再打开文档逐字写，而是对 AI 描述需求。我们现有的输入体验是为短消息设计的，承载不了一长段带改口的口语指令。",
+      "opportunity": "把 AI 对话框列为一类独立宿主场景做专门适配：支持长段连续语音、支持说话过程中改口澄清、结束后给出结构化而非一长串的结果，并允许在发送前整段编辑。",
+      "priority": "medium",
+      "evidence": "微软 Ignite 2026 上 Office in Copilot 正式可用，Word、Excel、PowerPoint 在 Copilot 窗口内运行，纳德拉称 Copilot 是「新的工作操作系统」，Agent 365 已登记超过 5000 万个智能体。"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "OpenAI 发布 GPT-6.2 Astra 与 Sol，旗舰 API 降价约 20%",
+      "summary": "Astra 每百万输入 8 美元、缓存 0.40 美元、输出 40 美元；Sol 维持 2 美元与 10 美元。Agents' Last Exam 上 Astra 以约 5% 成本高出 Claude Fable 5.2 五点五分；Astra 首次被自评为 AI 自我改进能力「高」，两款在网络安全维度均评为「关键」。",
+      "source": "OpenAI / 彭博社 / 路透社",
+      "source_urls": [
+        "https://www.dataguy.in/ai-developments/",
+        "https://aidaily.media/en/daily/2026-11-18"
+      ],
+      "tags": [
+        "OpenAI",
+        "模型发布",
+        "降价"
+      ]
+    },
+    {
+      "title": "微软 Ignite 2026：纳德拉称 Copilot 是「新的工作操作系统」",
+      "summary": "Office in Copilot 与 Copilot Home 正式可用，Word、Excel、PowerPoint 在 Copilot 内运行；Workspaces、Autopilot、Copilot Code 通过 Frontier 早期访问推出，Code 计划 12 月正式可用；新增 Microsoft IQ 上下文层与 350 多个连接器；Agent 365 已登记超 5000 万个智能体。",
+      "source": "Techlantis / TechOrCoffee / TheNextWeb",
+      "source_urls": [
+        "https://thetechlantis.com/news/microsoft-ignite-copilot-new-os-for-work",
+        "https://techorcoffee.com/blog/microsoft-ignite-2026-copilot-is-now-the-new-os-for-work"
+      ],
+      "tags": [
+        "微软",
+        "Copilot",
+        "Ignite"
+      ]
+    },
+    {
+      "title": "微软发布七款 MAI 模型，主打「接近头部性能、几分之一价格」",
+      "summary": "MAI Cyber 2 Flash 成本不到 GPT-6 Astra 的 2%；MAI Code 2 达 GPT-6.1 Sol 的 98% 性能、价格约 40%、SWE-bench Verified 74.2%；Code 2 Flash 首 token 延迟低于 150 毫秒；MAI Image 2.7 图像编辑评测第一、价格约五分之一；MAI Realtime 1 起价每分钟 0.01 美元；Decision 1.1 速度达 50 倍、成本约 1/79。数据均为厂商自报。",
+      "source": "腾讯新闻 / AI DAILY",
+      "source_urls": [
+        "https://news.qq.com/rain/a/20261118A0GIVL00",
+        "https://sns.style/"
+      ],
+      "tags": [
+        "微软",
+        "专用模型",
+        "性价比"
+      ]
+    },
+    {
+      "title": "苹果在 iOS 27.3 测试版为 Siri AI 设每日免费额度，iCloud+ 可提升 2 至 20 倍",
+      "summary": "受限功能包括复杂 Siri 请求、图乐园与照片编辑、AFM Cloud 快捷指令工作流、第三方通过 Private Cloud Compute 调用的 AI 功能；计时器、短信等单步骤指令不受影响。额度按设备计算、当日不累积、午夜重置，接近上限会提醒。",
+      "source": "MacRumors / IT之家 / AI热报",
+      "source_urls": [
+        "https://aitop.news/item/59763",
+        "https://digi.hsw.cn/system/2026/1117/178597.shtml"
+      ],
+      "tags": [
+        "苹果",
+        "额度",
+        "Apple Intelligence"
+      ]
+    },
+    {
+      "title": "英伟达黄仁勋离职后首份财报：营收 1158 亿美元，同比增长 103%",
+      "summary": "季度营收 1158 亿美元，高于 1080 亿美元预期，同比增长 103%；下季度指引 1300 亿美元，2028 财年预计增长约 75%，仍有 2273 亿美元回购额度。财报后股价盘后上涨约 4%，此前自辞任消息以来已下跌 10%。",
+      "source": "TechCrunch / AI Daily",
+      "source_urls": [
+        "https://aidaily.media/en/daily/2026-11-18"
+      ],
+      "tags": [
+        "英伟达",
+        "财报",
+        "资本面"
+      ]
+    },
+    {
+      "title": "Anthropic 获纳斯达克上市批准，招股书披露亚马逊与谷歌持股近 30%",
+      "summary": "代码 ANT，进入最终定价阶段，目标估值接近 1.4 万亿美元。文件显示 IPO 后亚马逊持股 14.7%、谷歌 13.7%，均无投票权；若亚马逊转换剩余票据，持股可达 23.8%。由 AMD、博通、美光、微软、英伟达、台积电等组成的联合体将购入 260 亿美元此类股份。",
+      "source": "路透社 / TechCrunch",
+      "source_urls": [
+        "https://www.dataguy.in/ai-developments/",
+        "https://aidaily.media/en/daily/2026-11-18"
+      ],
+      "tags": [
+        "Anthropic",
+        "IPO",
+        "资本面"
+      ]
+    },
+    {
+      "title": "搜狗输入法 v20.20.0：免登录跨设备复制粘贴，专业模式支持专业符号随输随用",
+      "summary": "Android 与 Windows 设备协同，无需登录即可跨设备复制粘贴；近期专业模式升级支持药品名、法律术语直接成词，打「处方药」出 ℞，打「DMSO」出「二甲基亚砜」。",
+      "source": "豌豆荚 / 东坡下载",
+      "source_urls": [
+        "https://www.wandoujia.com/apps/604311/history_v2650",
+        "https://m.uzzf.com/mipu/808344.html"
+      ],
+      "tags": [
+        "竞品动态",
+        "搜狗输入法",
+        "专业模式"
+      ]
+    },
+    {
+      "title": "Anthropic 在招股书中改口：已判定达到「AI 加速 AI 研发」安全门槛",
+      "summary": "依据是对未来模型能力的预期，而非当前模型的实测表现，该表述出现在上市前披露文件中。",
+      "source": "AI News Log",
+      "source_urls": [
+        "https://www.ainewslog.com/zh"
+      ],
+      "tags": [
+        "Anthropic",
+        "安全门槛",
+        "披露"
+      ]
+    },
+    {
+      "title": "华尔街日报：美国拟评选二十多家「AI 国家冠军」对外推销",
+      "summary": "名单据报包括英伟达、OpenAI、Anthropic 等，将以打包形式进行对外推介。",
+      "source": "华尔街日报 / AI News Log",
+      "source_urls": [
+        "https://www.ainewslog.com/zh"
+      ],
+      "tags": [
+        "政策",
+        "产业",
+        "美国"
+      ]
+    },
+    {
+      "title": "微软 Maia 200 进入量产，Cobalt 200 虚拟机与 HorizonDB 同步发布",
+      "summary": "Maia 200 AI 加速器进入量产并被称有能效提升；Cobalt 200 Arm 虚拟机正式可用、官方称比 Cobalt 100 快最多 50%；HorizonDB 为分布式托管 PostgreSQL，正式可用。",
+      "source": "Techlantis / DEV Community",
+      "source_urls": [
+        "https://thetechlantis.com/news/microsoft-ignite-copilot-new-os-for-work",
+        "https://practicaldev-herokuapp-com.freetls.fastly.net/amananandrai/microsoft-ignite-2026-every-announcement-sorted-models-github-copilot-azure-windows-more-4gk4"
+      ],
+      "tags": [
+        "微软",
+        "芯片",
+        "基础设施"
+      ]
+    },
+    {
+      "title": "纳德拉以道歉开场：11 月 12 日 Microsoft 365 全球宕机「本该提前测试」",
+      "summary": "宕机导致 Outlook 与 Teams 全球不可用。纳德拉称问题源于例行测试中特定流量条件下暴露的缺陷，并表示 AI 代码与 AI 部署并非原因，内部 AI 工具帮助工程师更快修复。",
+      "source": "TheNextWeb / Techlantis",
+      "source_urls": [
+        "https://thenextweb.com/news/microsoft-office-in-copilot-nadella-ignite-agi-pilled",
+        "https://thetechlantis.com/news/microsoft-ignite-copilot-new-os-for-work"
+      ],
+      "tags": [
+        "可靠性",
+        "微软",
+        "事故"
+      ]
+    },
+    {
+      "title": "微软推出 AI 透明度倡议，联合 40 家组织制定开放标准",
+      "summary": "纳德拉称当前模型是「嵌套的黑箱」，可以看到模型接触了什么但看不到内部发生了什么。倡议将扩展与 NIST 智能体标准倡议的合作，并把同一套标准内建到微软自家产品中，目前尚未给出首批交付物与时间表。",
+      "source": "Techlantis / TheNextWeb",
+      "source_urls": [
+        "https://thetechlantis.com/news/microsoft-ignite-copilot-new-os-for-work",
+        "https://thenextweb.com/news/microsoft-office-in-copilot-nadella-ignite-agi-pilled"
+      ],
+      "tags": [
+        "透明度",
+        "标准",
+        "治理"
+      ]
+    },
+    {
+      "title": "讯飞输入法安卓版更新至 v16.0.3",
+      "summary": "延续 V16.0 的「个性化 AI 键盘、意图成稿」主线：复杂场景 1 分钟 400 字忠实记录、支持语音输入过程中改口澄清、行业首创「AI 键」与「交给 AI」、技能坞可按场景配置专属技能组。",
+      "source": "豌豆荚 / 极速资源网",
+      "source_urls": [
+        "https://m.wandoujia.com/apps/com.iflytek.inputmethod/history_200434829",
+        "http://www.xiazaicc.com/k/shurufa/"
+      ],
+      "tags": [
+        "竞品动态",
+        "讯飞输入法",
+        "意图成稿"
+      ]
+    }
+  ]
+}
