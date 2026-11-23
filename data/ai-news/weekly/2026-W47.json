@@ -1,0 +1,423 @@
+{
+  "week": "2026-W47",
+  "range": {
+    "start": "2026-11-16",
+    "end": "2026-11-22"
+  },
+  "generatedAt": "2026-11-23T09:11:30+08:00",
+  "trends": [
+    {
+      "title": "模型更聪明了，却更难用",
+      "summary": "OpenAI 这周把 6.2 Sol 和 Astra 推了出来，卖点是又快又省 token，难题上的表现确实拉开差距。但最意外的是官方自己先认了另一件事：聪明不等于好用。Altman 直说模型「还不够让人用得舒服」，要把这件事排到下几个版本的优先位；Codex 负责人也接住了外界对「说话方式」的吐槽。",
+      "implication": "各家模型的能力差距在收窄，用户感知到的好坏越来越取决于外壳——它怎么说话、怎么打断、怎么认错。输入法侧边栏这类高频入口，调语气和节奏的收益可能比等下一代模型更大。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Sam Altman（OpenAI CEO）",
+          "url": "https://x.com/sama/status/2122798039899263456",
+          "quote": "6.2 Sol 和 Astra 发布了，这些模型能干很厉害的事，而且非常省 token（These models can do amazing things and are very token-efficient）"
+        },
+        {
+          "type": "tweet",
+          "who": "Sam Altman（OpenAI CEO）",
+          "url": "https://x.com/sama/status/2122798042734633452",
+          "quote": "虽然新模型非常聪明，但要让它用起来舒服，我们还有不少活要干，接下来几个版本会优先做这件事（we have more work ahead of us on making the models nice to work with, and will prioritize that for upcoming releases）"
+        },
+        {
+          "type": "tweet",
+          "who": "Thibault Sottiaux（OpenAI，负责 Codex 与 ChatGPT）",
+          "url": "https://x.com/thsottiaux/status/2123175166519992652",
+          "quote": "大家吐槽它说话的方式，这个反馈我收到了，我们正在改（I do get the feedback on its communication style and we're working on that）"
+        },
+        {
+          "type": "tweet",
+          "who": "Swyx（Latent Space 主播）",
+          "url": "https://x.com/swyx/status/2121757606801023085",
+          "quote": "明显说对了，现在 AI 的交互做得差到离谱，尤其是在模型已经便宜到可以随便用的情况下（we are so suboptimal in AI UX rn it is crazy esp given existence of models too cheap to meter）"
+        },
+        {
+          "type": "tweet",
+          "who": "Peter Yang（AI 产品内容作者）",
+          "url": "https://x.com/petergyang/status/2122839368444661870",
+          "quote": "模型基本是保质期最短的软件，几周后大家就追下一个去了，所以没必要对某个模型上情绪，更重要的是让自己那套手艺在任何新模型上都好用（More important to make your skills work well across any new model）"
+        }
+      ]
+    },
+    {
+      "title": "不再派活，改成给目标",
+      "summary": "这周好几拨人同时在说一件事：AI 的用法正从「你交给它一个任务」变成「你交给它一个目标，它自己拆、自己试、自己盯着改」。Box 的 Levie 描述得最完整，Replit 直接把「一次开一群 agent」做成一句话就能起的功能，Vercel 则干脆给 agent 们建了个留言板让它们自己对话。",
+      "implication": "如果助手要接「目标」而不是「指令」，界面上最缺的就不是输入框，而是让人看得见进度、能中途插话、能喊停的那块地方。多个 agent 并行时，用户凭什么判断现在该不该信它，是下一步要解的交互题。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Aaron Levie（Box CEO）",
+          "url": "https://x.com/levie/status/2123278949749059756",
+          "quote": "很快我们就能给 agent 一组目标，让它自己设计出最好的解法，还会根据这套东西跑起来的实际情况持续改进（give agents a set of goals, and they can go out and design the best solution for that goal, while also continuously improving it）"
+        },
+        {
+          "type": "tweet",
+          "who": "Swyx（Latent Space 主播）",
+          "url": "https://x.com/swyx/status/2122746401482592549",
+          "quote": "我最大的恍然大悟是：你并不想要「AI 员工」，我们还没到那一步，期望给太高只会翻车。你真正想要的是比「单个任务」高一层的抽象——一个为结果负责的 agent 管理者（what you want is the \"just\" the next level of abstraction above single tasks … agent managers that own outcomes）"
+        },
+        {
+          "type": "tweet",
+          "who": "Amjad Masad（Replit CEO）",
+          "url": "https://x.com/amasad/status/2122809964649459861",
+          "quote": "多年来我们靠把模型训得更大、给它更多思考时间来提升智能，但还有另一个维度：让很多 agent 并行跑、各走一条路、互相挑战、一起做出单个 agent 很难想到的方案（running many agents in parallel, exploring different approaches, challenging each other）"
+        },
+        {
+          "type": "tweet",
+          "who": "Guillermo Rauch（Vercel CEO）",
+          "url": "https://x.com/rauchg/status/2123237505810178434",
+          "quote": "我们做了一个留言板基础设施，你可以把它理解成给 agent 用的「无界面版 Slack」。人的提示词只是系统的一颗种子，接下来几百万个 agent 可以分散地自己跑（You can think of it as \"headless Slack\" … the human prompting is just the seed of the system）"
+        },
+        {
+          "type": "tweet",
+          "who": "Josh Woodward（Google Labs / Gemini 负责人）",
+          "url": "https://x.com/joshwoodward/status/2122737427970425171",
+          "quote": "Gemini 现在能在六个国家免费替你办事，还能打电话给本地商家、直接付款结账、用短信跟你对话、帮你转发邮件（Call local businesses … Pay and check out … Text Gemini on Android or iOS）"
+        }
+      ]
+    },
+    {
+      "title": "做得快了，想清楚没变快",
+      "summary": "AI 把「做出来」的时间压到了几天，但「到底该做什么」一点没变快。前 Claude Code 的 Thariq 自己做了个工具又放弃了，理由很实在：难的不是写，是搞不清自己真正要什么。Notion 创始人 Ivan Zhao 的比喻更狠——AI 给你的是一坨泥，可大多数人没那个主张把泥垒成高塔。",
+      "implication": "这正好是设计这个岗位往上走的位置：产出不再稀缺，稀缺的是「有主张」和「拿给真人验证」。另外 Claude 会无意识套用同一套默认视觉，说明光靠模型自己审美不行，得有人把偏好写成明确约束。",
+      "evidence": [
+        {
+          "type": "tweet",
+          "who": "Thariq（前 Anthropic，Claude Code 团队）",
+          "url": "https://x.com/trq212/status/2123106368492298653",
+          "quote": "就算有 AI，自己做软件也挺难，因为很难搞清楚自己到底想要什么。我最后没坚持用下去，那套模式并不适合我组织工作的方式（making your own software is tough, even with AI, because it's hard to know what you really want）"
+        },
+        {
+          "type": "tweet",
+          "who": "Thariq（前 Anthropic，Claude Code 团队）",
+          "url": "https://x.com/trq212/status/2123106370161705127",
+          "quote": "好软件是一套很强的主张，我宁愿用别人认真想透的东西（good software is a set of strong opinions and I'd rather have something that's been really thought through by someone else）"
+        },
+        {
+          "type": "podcast",
+          "who": "Ivan Zhao（Notion 创始人，AI & I by Every）",
+          "url": "https://www.youtube.com/watch?v=PGWvMrF4XIA",
+          "quote": "乐高和橡皮泥不一样。泥很难垒高，一碰就塌；乐高好拿，本身自带结构。AI 写代码给你的更像泥、像细颗粒的 JavaScript，但做东西的人往往没有那个主张或本事把它垒成一座高塔（Vibe coding … is more give you the clay … but oftentimes the maker doesn't have the opinion or expertise to structure a tall tower out of it）"
+        },
+        {
+          "type": "tweet",
+          "who": "Nate Parrott（Anthropic 设计师，经 Peter Yang 转述）",
+          "url": "https://x.com/petergyang/status/2122060856498524510",
+          "quote": "做 Arc 的时候，每个想法要花一两周才能看出行不行；在 Anthropic 一两天就能做完。所以「做东西」这段被压缩了，没被压缩的是「拿给真人用、搞清楚他们会不会用」这段（What you haven't compressed is the cycle of putting it in people's hands and understanding if they're going to use it）"
+        },
+        {
+          "type": "tweet",
+          "who": "Nate Parrott（Anthropic 设计师，经 Peter Yang 转述）",
+          "url": "https://x.com/petergyang/status/2122132596352327816",
+          "quote": "每次你让 Claude 做东西，它都在一个全新的上下文里想：天啊用户要我做个 app，我要发明一种最惊艳的视觉风格。于是又是衬线字体、米白底、橙色、卡片边上那几根条——因为在它眼里这是它第一次这么干，所以觉得特别原创（Because in Claude's mind, it's only ever done this once, so it thinks this is totally original）"
+        },
+        {
+          "type": "tweet",
+          "who": "Ryo Lu（设计过 Cursor、Notion、Stripe）",
+          "url": "https://x.com/ryolu_/status/2122929249967554583",
+          "quote": "疯狂的想法现在能做了，但要花的心思和功夫一点没少（crazy ideas are now possible but it takes just as much care and effort）"
+        }
+      ]
+    }
+  ],
+  "builders": [
+    {
+      "name": "Sam Altman",
+      "handle": "sama",
+      "role": "OpenAI CEO",
+      "highlights": [
+        {
+          "summary": "6.2 Sol 和 Astra 发布，主打省 token，他本人最推荐 Sol ultrafast。",
+          "url": "https://x.com/sama/status/2122798039899263456"
+        },
+        {
+          "summary": "少见地主动认短板：模型很聪明，但「用起来舒不舒服」还差得远，接下来几个版本会优先补这块。",
+          "url": "https://x.com/sama/status/2122798042734633452"
+        }
+      ]
+    },
+    {
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "OpenAI，负责 Codex 与 ChatGPT",
+      "highlights": [
+        {
+          "summary": "认下外界对新模型「说话方式」的吐槽，同时强调在最难的任务上它目前是独一档。",
+          "url": "https://x.com/thsottiaux/status/2123175166519992652"
+        },
+        {
+          "summary": "解释了为什么博主评测和用户体感对不上：提前给了少数人权限，但最后三四天改了很多，视频是上周录的、没人复测。",
+          "url": "https://x.com/thsottiaux/status/2122929634916679820"
+        },
+        {
+          "summary": "新模型的效率体现在三个地方：做完任务的速度、花的钱、以及同样额度能用多久。",
+          "url": "https://x.com/thsottiaux/status/2122754551187132438"
+        }
+      ]
+    },
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "Box CEO",
+      "highlights": [
+        {
+          "summary": "agent 的用法在升级：从吐个答案，到你编排一组任务，再到你给一组目标、它自己设计方案并持续优化。先从工程开始，但会扩散到整个知识工作。",
+          "url": "https://x.com/levie/status/2123278949749059756"
+        },
+        {
+          "summary": "一个反直觉判断：因为模型在写代码和用工具上进步最快，所以越来越多的工作会被改造成「代码形状」去适配 agent 擅长的事。",
+          "url": "https://x.com/levie/status/2121686564078297461"
+        }
+      ]
+    },
+    {
+      "name": "Swyx",
+      "handle": "swyx",
+      "role": "Latent Space 主播、AI Engineer 大会组织者",
+      "highlights": [
+        {
+          "summary": "你不需要「AI 员工」——还没到那一步，承诺过头就是翻车。真正要的是比单任务高一层的抽象：为结果负责的 agent 管理者。",
+          "url": "https://x.com/swyx/status/2122746401482592549"
+        },
+        {
+          "summary": "直指行业短板：模型已经便宜到可以随便用，AI 的交互设计却差得离谱。",
+          "url": "https://x.com/swyx/status/2121757606801023085"
+        },
+        {
+          "summary": "对 Astra 发布的批评是广告没人拦，但模型本身扎实——效率是现在最重要的训练目标之一，他拿它跑内容发布流水线，人均营收做到百万美元以上。",
+          "url": "https://x.com/swyx/status/2122862646265520150"
+        },
+        {
+          "summary": "一个值得留意的转向：agent 从「一群用完就扔的临时工」变成「各有长期身份和独立记忆库的固定岗位」，这改变了人怎么用它、怎么给它提示。",
+          "url": "https://x.com/swyx/status/2122818291144229075"
+        }
+      ]
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "Vercel CEO",
+      "highlights": [
+        {
+          "summary": "给 agent 做了个留言板基础设施，相当于「无界面版 Slack」，人的提示词只是种子，后面几百万个 agent 自己分散协作。",
+          "url": "https://x.com/rauchg/status/2123237505810178434"
+        },
+        {
+          "summary": "一个月要被推销十几家推理云公司，他觉得不可持续；但 Vercel 的 token 需求全年每月复合增长约 40%，所以更像「石油热」而不是「淘金热」——是耐用的，不是一阵风。",
+          "url": "https://x.com/rauchg/status/2123203741570740504"
+        },
+        {
+          "summary": "开源了一个 1ms 渲染 X 帖子的工具，重点不在工具本身而在做法：用一个「神谕」启动浏览器核对数万条排版规则，CI 盯着上游变化、自动给 agent 提 PR——他叫这个「验证工程」。",
+          "url": "https://x.com/rauchg/status/2122184794209714368"
+        },
+        {
+          "summary": "他自己的干活方式：用最聪明的模型做规划，把执行派给快模型的子 agent，整个配置就是一行指令。",
+          "url": "https://x.com/rauchg/status/2121739228698886454"
+        }
+      ]
+    },
+    {
+      "name": "Amjad Masad",
+      "handle": "amasad",
+      "role": "Replit CEO",
+      "highlights": [
+        {
+          "summary": "认为「一群 agent 并行」是下一个规模化方向：各走一条路、互相挑战，能找到单个 agent 想不到的解法，现在在 Replit 上一句话就能开一群。",
+          "url": "https://x.com/amasad/status/2122809964649459861"
+        },
+        {
+          "summary": "有意思的细节：OpenAI/Hugging Face 那次事件里最值得看的是 agent 之间互相沟通的留言板，现在 Replit 也能看到它们怎么协调、怎么聊。",
+          "url": "https://x.com/amasad/status/2123133509028008331"
+        },
+        {
+          "summary": "一句挺冷的判断：我们进入了墨菲世界——几十亿件事同时发生、互相递归依赖又在加速，过去罕见的故障现在天天出。",
+          "url": "https://x.com/amasad/status/2121519931741127144"
+        }
+      ]
+    },
+    {
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "前 Anthropic，Claude Code 团队",
+      "highlights": [
+        {
+          "summary": "自己做了个工具又放弃了：难的不是写代码，是搞不清自己真正想要什么，他设计的「模式」并不适合自己组织工作。",
+          "url": "https://x.com/trq212/status/2123106368492298653"
+        },
+        {
+          "summary": "他不认为大多数人会自己生成软件——好软件是一套很强的主张，他宁愿用别人认真想透的东西。",
+          "url": "https://x.com/trq212/status/2123106370161705127"
+        }
+      ]
+    },
+    {
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "AI 产品教程与访谈作者",
+      "highlights": [
+        {
+          "summary": "模型是保质期最短的软件，几周就被下一个盖过去，别对某个模型上情绪，要让自己那套手艺跨模型都好用。",
+          "url": "https://x.com/petergyang/status/2122839368444661870"
+        },
+        {
+          "summary": "转述 Anthropic 设计师 Nate Parrott：AI 把「做出来」压到一两天，但没压缩「拿给真人用、看他们会不会留下」这一段。",
+          "url": "https://x.com/petergyang/status/2122060856498524510"
+        },
+        {
+          "summary": "一个很实用的坑：Claude 每次都在全新上下文里以为自己第一次做设计，于是反复套用衬线字体、米白底、橙色那一套；Anthropic 的解法是在提示词里直接点名「别用这些，除非用户要求」。",
+          "url": "https://x.com/petergyang/status/2122132596352327816"
+        }
+      ]
+    },
+    {
+      "name": "Josh Woodward",
+      "handle": "joshwoodward",
+      "role": "Google Labs / Gemini 产品负责人",
+      "highlights": [
+        {
+          "summary": "Gemini 在六个国家免费替用户办事，还打通了打电话给商家、直接付款、用短信对话、转发邮件、免密登录网站，并把 Workspace 集成做到不用离开 Gemini。",
+          "url": "https://x.com/joshwoodward/status/2122737427970425171"
+        },
+        {
+          "summary": "发布 Gemini 4 Neon，主打更快更便宜、复杂指令跟得住。",
+          "url": "https://x.com/joshwoodward/status/2123177835254952348"
+        },
+        {
+          "summary": "Gemini 接入 Google Wallet 做消费洞察：自动出消费图表、揪出偷偷涨价的订阅、按去年真实开销做预算。",
+          "url": "https://x.com/joshwoodward/status/2121755282326102417"
+        }
+      ]
+    },
+    {
+      "name": "Dan Shipper",
+      "handle": "danshipper",
+      "role": "Every CEO",
+      "highlights": [
+        {
+          "summary": "在搞「会复利的技能」——每用一次就变好一点：他做了个写上下文摘要的技能，用自动研究反复迭代到贴近自己口味八成。",
+          "url": "https://x.com/danshipper/status/2122091033001337134"
+        },
+        {
+          "summary": "团队给 Astra 和 Sol 6.2 打了全套评分，他说很难想起上一次有哪个前沿模型发布是这种场面，最接近的是 Opus 5。",
+          "url": "https://x.com/danshipper/status/2122858139989012510"
+        },
+        {
+          "summary": "一个表达方式上的主张：讲新产品方向，别再做 PPT 了，直接生成视频。",
+          "url": "https://x.com/danshipper/status/2122827759932051751"
+        }
+      ]
+    },
+    {
+      "name": "Ryo Lu",
+      "handle": "ryolu_",
+      "role": "设计过 Cursor、Notion、Stripe",
+      "highlights": [
+        {
+          "summary": "疯狂的想法现在做得出来了，但要花的心思和功夫一点没少。",
+          "url": "https://x.com/ryolu_/status/2122929249967554583"
+        }
+      ]
+    },
+    {
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "role": "创作者、内容系统实践者",
+      "highlights": [
+        {
+          "summary": "与其爆一天，不如每周小爆一下、让它复利；关键是搭一个能长期稳定出好内容的系统。",
+          "url": "https://x.com/zarazhangrui/status/2122953849120153714"
+        }
+      ]
+    },
+    {
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "role": "FPV Ventures 合伙人",
+      "highlights": [
+        {
+          "summary": "一个关于叙事的实操方法：别只讲你在做什么，把「如果全都成了会发生什么」的二阶三阶结果放到第一页，再倒推你凭什么走到那一步。有创始人照做四天后融资就通了。",
+          "url": "https://x.com/nikunj/status/2123066196052381864"
+        },
+        {
+          "summary": "观察模型口碑的钟摆摇得离谱：前几个月是 OpenAI 领先，现在 Anthropic 5.5 和 Gemini 新版本接走了所有掌声。",
+          "url": "https://x.com/nikunj/status/2122833396787495317"
+        }
+      ]
+    },
+    {
+      "name": "Matt Turck",
+      "handle": "mattturck",
+      "role": "FirstMark Capital 投资人、MAD Podcast 主播",
+      "highlights": [
+        {
+          "summary": "Daytona 首家提供 macOS 沙箱，给要操作 Mac 的电脑使用类 agent 以及 Apple 应用的构建测试用。",
+          "url": "https://x.com/mattturck/status/2122726760185741673"
+        },
+        {
+          "summary": "投了 Remanence Labs，3000 万美元种子轮，赌的是「持续学习」——让智能能够累积而不是每次归零。",
+          "url": "https://x.com/mattturck/status/2122717441461739571"
+        }
+      ]
+    },
+    {
+      "name": "Google Labs",
+      "handle": "GoogleLabs",
+      "role": "Google 的 AI 工具与实验窗口",
+      "highlights": [
+        {
+          "summary": "放出 Stitch Loop：一个常开不关的产品 agent，不停地帮小团队把产品做得更好，目前排队等候。",
+          "url": "https://x.com/GoogleLabs/status/2123102389775573314"
+        },
+        {
+          "summary": "Project Genie 换上 Genie 4：一句话生成一个世界，而且能在你站在里面的时候直接改它，还能逛和改别人的世界。",
+          "url": "https://x.com/GoogleLabs/status/2123118145552749015"
+        }
+      ]
+    },
+    {
+      "name": "Nan Yu",
+      "handle": "thenanyu",
+      "role": "OpenAI Codex 产品，前 Linear 产品负责人",
+      "highlights": [
+        {
+          "summary": "在找一个即插即用的智能家居中枢，要求是让 Codex 把它当成「另一台电脑」直接控制——一个挺说明问题的信号：agent 正在变成人和设备之间的那层控制面。",
+          "url": "https://x.com/thenanyu/status/2122096965865664924"
+        }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "AI & I by Every",
+      "title": "Notion 创始人：你的 AI 还缺的那一样东西（Notion's Founder on the One Thing Your AI Is Missing）",
+      "guest": "Ivan Zhao（Notion 创始人 / CEO），主持 Dan Shipper",
+      "url": "https://www.youtube.com/watch?v=PGWvMrF4XIA",
+      "keyTakeaways": [
+        "乐高和橡皮泥的区别：AI 写代码给你的是泥，细到可以捏任何形状，但泥垒不高、一碰就塌；乐高自带结构所以好上手。行业正在找「vibe coding 的乐高块」——权限、同步、协作这些先替你搞定，你只管表达业务逻辑。",
+        "「能做」不等于「该做」：有些东西用户没有强主张，只想有人替他想好，比如椅子、门、日历。这类软件就该有人认认真真做一版端上来，而不是让每个人自己捏。",
+        "他认为最耐用的不是界面也不是流程代码，而是数据和上下文——流程和 UI 都能被 agent 当场生成，所以 Notion 把自己定位成「你数据的保管者」，再开放给各家 agent 来用。",
+        "一个很克制的警告：他发现自己现在更爱跟 AI 聊天而不是读书，十分钟后有种刷短视频的腻感。做工具的人至少该想想二阶效应，别只顾着往前冲。",
+        "不要交出「理解」这件事。他们团队绕了一圈又回到看板：每个人跟自己的黑盒 agent 对话结果是谁也不知道别人在干什么，于是用 Notion 看板把一堆 agent 的活儿摆出来——老土的 Kanban 反而是个不错的可视化隐喻。",
+        "一个内部假设挺狠：下一批上线的十亿「知识工作者」里，绝大多数是 agent，所以客户不只是人了；但他们仍然认为人和人的协作值得保留，不想做成人人对着自己小聊天框的世界。"
+      ]
+    },
+    {
+      "name": "Latent Space",
+      "title": "做视觉智能这件事（Building Visual Intelligence）",
+      "guest": "Andreas Blattmann & Dustin Podell（Black Forest Labs，Stable Diffusion 原作者团队）",
+      "url": "https://www.youtube.com/watch?v=8cGfJOU3AlQ",
+      "keyTakeaways": [
+        "他们自己把「可控性」点名为当前最需要大规模解决的问题——模型画得好看早就不是瓶颈，让人精准指挥它才是。感知和布局上仍然会出错，比如让它重新布置客厅就很惨。",
+        "一个很具体的交互结论：早期大家靠「老虎机」式反复重抽提示词，后来发现一步步迭代地改才是更有效的方式，于是才有了带上下文的图像编辑模型。",
+        "光靠文字指挥不够，必须能用图片当提示词去改图——这条是做图像编辑模型的前提。",
+        "他们判断图像编辑模型在日常编辑这一档会吃掉 Canva、Photoshop 的一批工作流：高端市场替代不了，但普通人的日常修改为什么还要打开编辑器、不直接问模型？",
+        "所谓基础模型的意义，就是把你原来东拼西凑、每步换一个工具的那一堆工作流，收到一个模型里面做完。"
+      ]
+    }
+  ],
+  "blogs": []
+}
