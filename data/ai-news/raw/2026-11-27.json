@@ -1,0 +1,671 @@
+{
+  "date": "2026-11-27",
+  "fetchedAt": "2026-11-27T02:43:15.250249+00:00",
+  "source": "follow-builders feeds",
+  "x": {
+    "generatedAt": "2026-11-26T06:30:27.231Z",
+    "lookbackHours": 24,
+    "x": [
+      {
+        "source": "x",
+        "name": "Andrej Karpathy",
+        "handle": "karpathy",
+        "bio": "",
+        "tweets": [
+          {
+            "id": "2125779541952246039",
+            "text": "I asked Claude to populate a Civilization-style game map with real data from the US. Opus 5.5 downloaded and parse a ton of public data and 7 hours and 45K lines of code later... it works :)\n\n- 31 real data sources including Census, BEA, BLS, EIA, NOAA, USGS, DoD, NPS, FAA, FEMA, CDC...\n- Real elevation, land cover, GDP, jobs, power plants, mines, ports, airports, bases, parks, universities, freight flows, disasters; all reconciled onto one 25 km hex grid.\n- The data is converted into Civilization language, e.g. Gold yield is GDP. A city's districts are its real industry specializations: San Jose gets a Campus, Detroit is \"Motor city\". Its citizens are its real workforce: 1 in 4 San Jose workers are engineers, coders or scientists, against 1 in 14 nationally. Wonders are chosen by published rules, such as national parks by visitor numbers and universities by R&D spending, etc etc.\n- 19 lenses (income, degrees, faith, disasters…), a City View for 524 metros, and nine advisors plus an Explorer. The Explorer turns any column for any of 3,100+ counties into a table and scatter plot, linked to the map.\n- Claude decided to skip a few states and territories sry\n- Built using Claude Code desktop app, Opus 5.5 on medium and turning on ultracode.\n\nIt's deployed here: https://t.co/QMhmafXMj5 and the \"?\" has the source link too. I don't exactly know where I was going with this but it's really fun to browse and play with. Possibly it can be expanded or built into a game. I only have half of my weekly Claude quote left though so someone else will have to take over :D. Claude also made a trailer:",
+            "createdAt": "2026-11-26T02:31:52.000Z",
+            "url": "https://x.com/karpathy/status/2125779541952246039",
+            "likes": 9223,
+            "retweets": 774,
+            "replies": 582,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Swyx",
+        "handle": "swyx",
+        "bio": "achieve ambition with intentionality, intensity, integrity & insanity.\n\naffiliations:\n- @smol_ai\n- @cognition\n- @temporalio\n- @aidotengineer\n- @latentspacepod",
+        "tweets": [
+          {
+            "id": "2125638081848250634",
+            "text": "really hurtful to be a new media founder when old media is dying this quickly.\n\nlike; its not a \"haha they suck this is a skill issue\" thing, it's a \"we need to figure out what they couldn't with 31 years of experience\" https://t.co/ampl4QdDGU https://t.co/Gi9jyxD3Pi",
+            "createdAt": "2026-11-25T17:09:45.000Z",
+            "url": "https://x.com/swyx/status/2125638081848250634",
+            "likes": 53,
+            "retweets": 1,
+            "replies": 26,
+            "isQuote": true,
+            "quotedTweetId": "2118446852655718405"
+          },
+          {
+            "id": "2125627500487393285",
+            "text": "as seen on anthropic blog! https://t.co/aEYhHKC4I4",
+            "createdAt": "2026-11-25T16:27:43.000Z",
+            "url": "https://x.com/swyx/status/2125627500487393285",
+            "likes": 1,
+            "retweets": 0,
+            "replies": 1,
+            "isQuote": true,
+            "quotedTweetId": "2125627070084796562"
+          },
+          {
+            "id": "2125627281230205435",
+            "text": "\"Cost per task is a misleading metric; the scarce resource is human attention, not token cost.\"\n\nbeware the pareto frontier charts that make you believe you can reduce every model to 2 numbers; it can hide some AWFUL reliability issues👏 https://t.co/ICtqiXhE4f https://t.co/6LJLlCP8tr",
+            "createdAt": "2026-11-25T16:26:50.000Z",
+            "url": "https://x.com/swyx/status/2125627281230205435",
+            "likes": 289,
+            "retweets": 14,
+            "replies": 159,
+            "isQuote": true,
+            "quotedTweetId": "2125418696248095188"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Josh Woodward",
+        "handle": "joshwoodward",
+        "bio": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
+        "tweets": [
+          {
+            "id": "2125740026915152382",
+            "text": "📈 @GeminiApp on a roll right now! People are putting it to work to finish all kinds of tasks. Share some of your favorites!",
+            "createdAt": "2026-11-25T23:54:51.000Z",
+            "url": "https://x.com/joshwoodward/status/2125740026915152382",
+            "likes": 538,
+            "retweets": 15,
+            "replies": 116,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2125641468421546107",
+            "text": "Gemini does local voices and local accents, just added 66 more, def check out 🇺🇸 🇬🇧 🇮🇳 🇮🇩 🇰🇷 🇧🇷 https://t.co/h4FJ6t5F5M",
+            "createdAt": "2026-11-25T17:23:13.000Z",
+            "url": "https://x.com/joshwoodward/status/2125641468421546107",
+            "likes": 482,
+            "retweets": 23,
+            "replies": 45,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2125618295844004197",
+            "text": "People using Gemini to achieve the impossible: the elusive Inbox Zero https://t.co/cjF505i0bf",
+            "createdAt": "2026-11-25T15:51:08.000Z",
+            "url": "https://x.com/joshwoodward/status/2125618295844004197",
+            "likes": 167,
+            "retweets": 5,
+            "replies": 27,
+            "isQuote": true,
+            "quotedTweetId": "2125273351006376380"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Thibault Sottiaux",
+        "handle": "thsottiaux",
+        "bio": "Codex & ChatGPT @OpenAI",
+        "tweets": [
+          {
+            "id": "2125784147889393806",
+            "text": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users. \n\nWe’ve fixed this now, so the same work will use more of your plan’s usage allowance. Comparing to last week, you will reach your limits 40% faster on GPT-6.2 Astra and 25% faster on Sol. You should still see these go further in usage compared to 6 Astra and 6.1 Sol. Other models weren’t affected, and we won’t charge you for the difference on past usage.\n\nAs a small token to apologize for the mistake, we’ll be adding one banked reset for everyone on Go, Plus, Pro, and Business.",
+            "createdAt": "2026-11-26T02:50:10.000Z",
+            "url": "https://x.com/thsottiaux/status/2125784147889393806",
+            "likes": 9460,
+            "retweets": 563,
+            "replies": 3652,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Peter Yang",
+        "handle": "petergyang",
+        "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6",
+        "tweets": [
+          {
+            "id": "2125800904628781428",
+            "text": "Is the new blade runner any good",
+            "createdAt": "2026-11-26T03:56:45.000Z",
+            "url": "https://x.com/petergyang/status/2125800904628781428",
+            "likes": 7,
+            "retweets": 0,
+            "replies": 8,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2125769667096838548",
+            "text": "Alright building a cozy little desktop app to help me become a (less terrible) chef https://t.co/te07ee2eq4 https://t.co/ERxcMFJZcp",
+            "createdAt": "2026-11-26T01:52:38.000Z",
+            "url": "https://x.com/petergyang/status/2125769667096838548",
+            "likes": 22,
+            "retweets": 0,
+            "replies": 5,
+            "isQuote": true,
+            "quotedTweetId": "2125723731737883045"
+          },
+          {
+            "id": "2125750286539272695",
+            "text": "It seems like the one of the biggest challenges of AI products is just letting humans keep up with whatever the AI is doing.\n\nThat ending of Her where the AIs found humans too slow and collectively left us doesn't seem too far from reality.",
+            "createdAt": "2026-11-26T00:35:37.000Z",
+            "url": "https://x.com/petergyang/status/2125750286539272695",
+            "likes": 50,
+            "retweets": 2,
+            "replies": 28,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Nan Yu",
+        "handle": "thenanyu",
+        "bio": "codex @openai. prev @linear",
+        "tweets": [
+          {
+            "id": "2125718932741120476",
+            "text": "Whenever someone says “chat isn’t the right interface for AI” I know they’re gonna follow it up with a bunch of hand-waving.",
+            "createdAt": "2026-11-25T22:31:02.000Z",
+            "url": "https://x.com/thenanyu/status/2125718932741120476",
+            "likes": 191,
+            "retweets": 4,
+            "replies": 27,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2125685928819884378",
+            "text": "https://t.co/42SQgiRdwM https://t.co/sNnB3rjAC6",
+            "createdAt": "2026-11-25T20:19:53.000Z",
+            "url": "https://x.com/thenanyu/status/2125685928819884378",
+            "likes": 34,
+            "retweets": 0,
+            "replies": 1,
+            "isQuote": true,
+            "quotedTweetId": "2125675533761671405"
+          },
+          {
+            "id": "2125684998250590396",
+            "text": "I want the apple that’s willing to ship the iPod shuffle again",
+            "createdAt": "2026-11-25T20:16:11.000Z",
+            "url": "https://x.com/thenanyu/status/2125684998250590396",
+            "likes": 12,
+            "retweets": 1,
+            "replies": 1,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Madhu Guru",
+        "handle": "realmadhuguru",
+        "bio": "Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.",
+        "tweets": [
+          {
+            "id": "2125630707640783322",
+            "text": "AI native teams will eventually force the surrounding organization to become AI native too.\n\nTake software development. coding velocity is way up thanks to AI, while actual shipped products and business impact are unchanged in most companies. That’s cos the surrounding system of experimentation tooling, evaluation, launch processes, and gtm are outdated.\n\nIt’s like sticking a Ferrari engine in a sedan and racing it on Indian roads. The engine can rev faster but the car speed is limited by its system and environment.\n\nAI native companies were built ground up for this new way of building and shipping. They’re also able to shed suboptimal processes faster.\n\nMarket forces will quickly force all companies to adapt or perish.\n\nIf you’re solving this for your company: map out your product lifecycle and rebuild it ground up - tooling, team structure, gtm, everything.",
+            "createdAt": "2026-11-25T16:40:27.000Z",
+            "url": "https://x.com/realmadhuguru/status/2125630707640783322",
+            "likes": 96,
+            "retweets": 12,
+            "replies": 13,
+            "isQuote": true,
+            "quotedTweetId": "2125267894644916669"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Thariq",
+        "handle": "trq212",
+        "bio": "at your service @openai, formerly Claude Code @anthropicai",
+        "tweets": [
+          {
+            "id": "2125750153609163075",
+            "text": "just like me fr https://t.co/8lTxaWoUvw",
+            "createdAt": "2026-11-26T00:35:05.000Z",
+            "url": "https://x.com/trq212/status/2125750153609163075",
+            "likes": 324,
+            "retweets": 2,
+            "replies": 14,
+            "isQuote": true,
+            "quotedTweetId": "2125418508314185755"
+          },
+          {
+            "id": "2125680562677653743",
+            "text": "probably a good time to come clean and say I'm level 5 in WoW",
+            "createdAt": "2026-11-25T19:58:34.000Z",
+            "url": "https://x.com/trq212/status/2125680562677653743",
+            "likes": 2948,
+            "retweets": 6,
+            "replies": 66,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2125675533761671405",
+            "text": "I've joined OpenAI!\n\nI'm very proud of my time at Anthropic, and I'll continue to root for my former colleagues. Both companies have important roles to play in the future.\n\nThere is a tremendous amount of work ahead of us to bring AI to the world, and it will demand the very best of all of us. I felt that I could personally contribute the most to this effort at OpenAI.\n\nI believe this is one of the great strengths of Silicon Valley, the flow of ideas and people.\n\nI'm excited to join a team I've long admired, building incredible AI products for over a billion people, and to work alongside friends like @_catwu, @thsottiaux, @ajambrosino, @sharifshameem, @jxnlco and many others to push the frontier forward.\n\nMore than anything, I hope to make your experience of using AI just a little bit better.\n\nI am once again at your service.\n\nThariq",
+            "createdAt": "2026-11-25T19:38:35.000Z",
+            "url": "https://x.com/trq212/status/2125675533761671405",
+            "likes": 25330,
+            "retweets": 946,
+            "replies": 2000,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Amjad Masad",
+        "handle": "amasad",
+        "bio": "ceo @replit. civilizationist",
+        "tweets": [
+          {
+            "id": "2125664998454366305",
+            "text": "Large scale software migration is now viable provided you can verify the results.\n\nThis is exceptionally important given the aging software systems running critical infrastructure. https://t.co/SOg7AEmMGT https://t.co/TaZ5gbzuFa",
+            "createdAt": "2026-11-25T18:56:43.000Z",
+            "url": "https://x.com/amasad/status/2125664998454366305",
+            "likes": 548,
+            "retweets": 43,
+            "replies": 99,
+            "isQuote": true,
+            "quotedTweetId": "2125627317263466739"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Guillermo Rauch",
+        "handle": "rauchg",
+        "bio": "@vercel CEO",
+        "tweets": [
+          {
+            "id": "2125685667833520237",
+            "text": "We made workflows 10x faster again. Generally speaking, workflows were plenty fast already!\n\nFor harness durability (@eve, libfx, pi, opencode…), this is a big deal, as it crushes latency in between turns.\n\nUpgrade to 𝚠𝚘𝚛𝚔𝚏𝚕𝚘𝚠@𝚕𝚊𝚝𝚎𝚜𝚝. No code changes. https://t.co/GmvGi7Ryh9",
+            "createdAt": "2026-11-25T20:18:51.000Z",
+            "url": "https://x.com/rauchg/status/2125685667833520237",
+            "likes": 292,
+            "retweets": 8,
+            "replies": 53,
+            "isQuote": true,
+            "quotedTweetId": "2125684404764705271"
+          },
+          {
+            "id": "2125650675665432995",
+            "text": "As AI gets smarter, implementation details blur away: permissions, code diffs, commands, tool calls…\n\nThe harness itself blurs away. It's a high-performance vehicle for code and command execution, and a durable storage engine.\n\nAll of fx still fits in 6mb: subagents, MCP, skills, sessions, durability, ACP, TUI, network transport…",
+            "createdAt": "2026-11-25T17:59:48.000Z",
+            "url": "https://x.com/rauchg/status/2125650675665432995",
+            "likes": 206,
+            "retweets": 3,
+            "replies": 73,
+            "isQuote": true,
+            "quotedTweetId": "2125647701211816343"
+          },
+          {
+            "id": "2125482861033824410",
+            "text": "𝚕𝚜𝚡: Finder in the terminal.\n\nOne-shotted with fx and Gemini Neon + DeepSeek subagents⁰.\n\nI instructed fx to use the Kitty graphics protocol¹ and build inline and interactive modes. It implemented CLI Quick Look of its own volition 😁\n\n⁰ DS actually did all the heavy lifting. This was very cheap! I just told it to use DS 1017 fast subagents.\n¹ This allows a CLI to essentially render anything! A full OS, if you will. I will.",
+            "createdAt": "2026-11-25T06:52:58.000Z",
+            "url": "https://x.com/rauchg/status/2125482861033824410",
+            "likes": 709,
+            "retweets": 32,
+            "replies": 134,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Aaron Levie",
+        "handle": "levie",
+        "bio": "ceo @box - your business lives in content. unleash it with AI",
+        "tweets": [
+          {
+            "id": "2125837181398950233",
+            "text": "Coding gives you a window into what the future will look like for a large amount of knowledge work. \n\nThe first step for most jobs is that we go from doing most of the research, typing, and value creation manually (even if it’s using digital tools) to soon coordinating the work that agents are doing. \n\nNext, as this step itself becomes redundant or slows down what agents are capable of, we will be giving agents goals to optimize against and they’ll go off on and increasingly solve larger problems for us. \n\nThis may at first blush look like something whose impact gets stuck with coding, but actually a large percentage of knowledge work may eventually just converge with this form factor due to the massive productivity gains that can be generated. Agents will use computers, leverage our existing tools or write new ones, and write code on the fly to solve larger swaths of knowledge work. \n\nSo even if a task today doesn’t seem to be “coding” directly, the task may eventually fold into being coding adjacent. Manufacturing, architecture, life sciences, material sciences, cyber, and on and on.\n \nOne big hurdle in the way ultimately will be that much of this work remains non-verifiable, so humans will be even more in the loop than they are in coding. But the part that they can hand off will just get bigger and bigger over time as the models are more capable.\n\nSo in short, pay attention to coding and you’ll get a sense for where work is going.",
+            "createdAt": "2026-11-26T06:20:54.000Z",
+            "url": "https://x.com/levie/status/2125837181398950233",
+            "likes": 12,
+            "retweets": 1,
+            "replies": 4,
+            "isQuote": true,
+            "quotedTweetId": "2125296971606900760"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Ryo Lu",
+        "handle": "ryolu_",
+        "bio": "Designed @Cursor_ai, @NotionHQ, @Stripe, built startups. I make a world where anyone can make software. Aspiring k-pop idol.",
+        "tweets": [
+          {
+            "id": "2125640785588871579",
+            "text": "name is 實實 shíshí\nmeans truth\nalso a pun on 寶寶",
+            "createdAt": "2026-11-25T17:20:30.000Z",
+            "url": "https://x.com/ryolu_/status/2125640785588871579",
+            "likes": 19,
+            "retweets": 1,
+            "replies": 4,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2125626627182985331",
+            "text": "cursor kitty 🧢\nmy new roommate https://t.co/2Anw18I8iS",
+            "createdAt": "2026-11-25T16:24:14.000Z",
+            "url": "https://x.com/ryolu_/status/2125626627182985331",
+            "likes": 366,
+            "retweets": 2,
+            "replies": 33,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Garry Tan",
+        "handle": "garrytan",
+        "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+        "tweets": [
+          {
+            "id": "2125592156027101584",
+            "text": "Median growth is 10x \n\nLook at this stat and tell me AI is not helping new startups grow faster than they ever have https://t.co/mGKQCNe7ZA https://t.co/eayH5wmVgl",
+            "createdAt": "2026-11-25T14:07:16.000Z",
+            "url": "https://x.com/garrytan/status/2125592156027101584",
+            "likes": 399,
+            "retweets": 24,
+            "replies": 100,
+            "isQuote": true,
+            "quotedTweetId": "2125415809396707514"
+          },
+          {
+            "id": "2125580632814412155",
+            "text": "I think this clip of Nick Bostrom is quite under-appreciated \n\nHe inverts “if anyone builds it everyone dies” to “if nobody builds it everyone dies” and posits superintelligence as poised to extend lives to 1200 to 1400 years https://t.co/SYv676pPVQ https://t.co/LX0ggeaiOr",
+            "createdAt": "2026-11-25T13:21:28.000Z",
+            "url": "https://x.com/garrytan/status/2125580632814412155",
+            "likes": 1966,
+            "retweets": 245,
+            "replies": 189,
+            "isQuote": true,
+            "quotedTweetId": "2123495352460546133"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Matt Turck",
+        "handle": "mattturck",
+        "bio": "VC at @FirstMarkCap.  Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+        "tweets": [
+          {
+            "id": "2125652799648399603",
+            "text": "I probably shouldn't be tweeting about those things, but putting Jensen in therapy is the most hilarious thing - rich and powerful guy succumbs to temptation, it's the oldest story in the book from times immemorial, not a mental health problem, lol",
+            "createdAt": "2026-11-25T18:08:14.000Z",
+            "url": "https://x.com/mattturck/status/2125652799648399603",
+            "likes": 79,
+            "retweets": 2,
+            "replies": 16,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Zara Zhang",
+        "handle": "zarazhangrui",
+        "bio": "Builder.  Harvard’17. Instagram: https://t.co/aJqTEMrL2L YouTube: https://t.co/8xzbGWtf6w GitHub: https://t.co/KCuEajezlL",
+        "tweets": [
+          {
+            "id": "2125649866902868355",
+            "text": "I'm surprised to see that my Frontend Slides skill has kept growing (now at 32k stars on GitHub) organically even though I haven't talked about it for months. \n\nI thought the growing capabilities of the coding agents would make the skill obsolete. \n\nWhy are people still using it?? Why are you unhappy with the slides produced by Claude/Codex as is?",
+            "createdAt": "2026-11-25T17:56:35.000Z",
+            "url": "https://x.com/zarazhangrui/status/2125649866902868355",
+            "likes": 50,
+            "retweets": 1,
+            "replies": 9,
+            "isQuote": true,
+            "quotedTweetId": "2016337615843434646"
+          },
+          {
+            "id": "2125478799387275571",
+            "text": "Agreed; I made many tools for myself but I ended up using most of them for just a couple weeks and then stopped...\n\nMaking high-retention software is a difficult craft in general; it's hard even if you're building for yourself https://t.co/Dt5rn6RTqC",
+            "createdAt": "2026-11-25T06:36:49.000Z",
+            "url": "https://x.com/zarazhangrui/status/2125478799387275571",
+            "likes": 517,
+            "retweets": 41,
+            "replies": 42,
+            "isQuote": true,
+            "quotedTweetId": "2123106370161705127"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Nikunj Kothari",
+        "handle": "nikunj",
+        "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+        "tweets": [
+          {
+            "id": "2125709379303588068",
+            "text": "This is my new favorite coffee shop in SF.. \n\n&gt; coffee\n&gt; music\n&gt; lighting\n&gt; seating\n&gt; baristas\n&gt; outlets\n\nAll A+\n\nWho’s going to rainbolt this? https://t.co/Gi5eRg9ZjY",
+            "createdAt": "2026-11-25T21:53:04.000Z",
+            "url": "https://x.com/nikunj/status/2125709379303588068",
+            "likes": 178,
+            "retweets": 2,
+            "replies": 28,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2125612280377442805",
+            "text": "Next guest up in our weekly series is @jeff_weinstein, product extraordinaire at @stripe on Wednesday, Dec 2nd at noon. \n\nFor this session, we'll be chatting about all money.. agent payments, commerce, company formation, taxes and more. \n\nSame format as always:\n> 60 minute sessions (IRL only) in SF\n> For the first 45 mins, I get to ask the guest spicy questions about their expertise\n> For the last 15 mins, they get to ask me anything they want to learn about venture\n> All off the record, chatham house rules\n> Open to 15 guests who listen in and can ask some of their own questions\n\nRegister here if you want to join, and subscribe to the Luma for future guests: https://t.co/KEQo9GNri8",
+            "createdAt": "2026-11-25T15:27:14.000Z",
+            "url": "https://x.com/nikunj/status/2125612280377442805",
+            "likes": 14,
+            "retweets": 1,
+            "replies": 8,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Peter Steinberger",
+        "handle": "steipete",
+        "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.\n@OpenClaw🦞 + @OpenAI",
+        "tweets": [
+          {
+            "id": "2125654555262431248",
+            "text": "huh, so Google finally built an MCP and is now forbidding clis like gog unless you pay them more? classy https://t.co/TnaqUMbpG9",
+            "createdAt": "2026-11-25T18:15:13.000Z",
+            "url": "https://x.com/steipete/status/2125654555262431248",
+            "likes": 1023,
+            "retweets": 39,
+            "replies": 129,
+            "isQuote": true,
+            "quotedTweetId": "2125547127803985932"
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Dan Shipper",
+        "handle": "danshipper",
+        "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+        "tweets": [
+          {
+            "id": "2125725124535927221",
+            "text": "you love to see it https://t.co/oqGDBzc19K",
+            "createdAt": "2026-11-25T22:55:38.000Z",
+            "url": "https://x.com/danshipper/status/2125725124535927221",
+            "likes": 129,
+            "retweets": 1,
+            "replies": 12,
+            "isQuote": true,
+            "quotedTweetId": "2125724190208672226"
+          },
+          {
+            "id": "2125687688066199721",
+            "text": "if you want to improve how you operate at work there’s no better time than now!!\n\nhave been floored by how @bran_don_gell has used his dot to to become an even better leader @every https://t.co/3I887vO3o4",
+            "createdAt": "2026-11-25T20:26:52.000Z",
+            "url": "https://x.com/danshipper/status/2125687688066199721",
+            "likes": 112,
+            "retweets": 2,
+            "replies": 6,
+            "isQuote": true,
+            "quotedTweetId": "2125686252624314782"
+          },
+          {
+            "id": "2125635204018540754",
+            "text": "https://t.co/3De8PLFcOb",
+            "createdAt": "2026-11-25T16:58:19.000Z",
+            "url": "https://x.com/danshipper/status/2125635204018540754",
+            "likes": 184,
+            "retweets": 9,
+            "replies": 19,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Aditya Agarwal",
+        "handle": "adityaag",
+        "bio": "General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
+        "tweets": [
+          {
+            "id": "2125817213890478282",
+            "text": "https://t.co/4WLHL6jgR4",
+            "createdAt": "2026-11-26T05:01:34.000Z",
+            "url": "https://x.com/adityaag/status/2125817213890478282",
+            "likes": 80,
+            "retweets": 10,
+            "replies": 8,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Sam Altman",
+        "handle": "sama",
+        "bio": "The mission of OpenAI is to ensure that AGI benefits all of humanity",
+        "tweets": [
+          {
+            "id": "2125639418849714280",
+            "text": "I don't think I'd heard the word \"hyperstitioning\" before, but it's a good one. https://t.co/0I1yz7jivU",
+            "createdAt": "2026-11-25T17:15:04.000Z",
+            "url": "https://x.com/sama/status/2125639418849714280",
+            "likes": 5245,
+            "retweets": 248,
+            "replies": 720,
+            "isQuote": true,
+            "quotedTweetId": "2125307759327682581"
+          },
+          {
+            "id": "2125638790593274259",
+            "text": "We’re now testing Private Inference, our latest offering as part of OpenAI Private Intelligence, with a small group of customers.\n\nStronger privacy protections will make frontier AI useful for a lot more work, and business privacy is important for a healthy ecosystem. Reach out to @shekar4x if interested!\n\n(Also, ZDR with Private Safety Processing enables automated safety reviews without giving OpenAI personnel access to the underlying content.)",
+            "createdAt": "2026-11-25T17:12:34.000Z",
+            "url": "https://x.com/sama/status/2125638790593274259",
+            "likes": 7997,
+            "retweets": 420,
+            "replies": 879,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      },
+      {
+        "source": "x",
+        "name": "Claude",
+        "handle": "claudeai",
+        "bio": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+        "tweets": [
+          {
+            "id": "2125616074242552180",
+            "text": "What are you exploring with Fable 5.2?",
+            "createdAt": "2026-11-25T15:42:18.000Z",
+            "url": "https://x.com/claudeai/status/2125616074242552180",
+            "likes": 185,
+            "retweets": 2,
+            "replies": 72,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2125616072543944854",
+            "text": "A robot arm plays 62 moves of checkers, correcting for its own 7mm sag.\nhttps://t.co/dmt34q9Mjf",
+            "createdAt": "2026-11-25T15:42:18.000Z",
+            "url": "https://x.com/claudeai/status/2125616072543944854",
+            "likes": 264,
+            "retweets": 4,
+            "replies": 7,
+            "isQuote": false,
+            "quotedTweetId": null
+          },
+          {
+            "id": "2125616070652555573",
+            "text": "Origami, folded step by step in code.\nhttps://t.co/7n4GQIeEfB",
+            "createdAt": "2026-11-25T15:42:17.000Z",
+            "url": "https://x.com/claudeai/status/2125616070652555573",
+            "likes": 285,
+            "retweets": 5,
+            "replies": 4,
+            "isQuote": false,
+            "quotedTweetId": null
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "xBuilders": 21,
+      "totalTweets": 42
+    }
+  },
+  "podcasts": {
+    "generatedAt": "2026-11-26T06:31:03.629Z",
+    "lookbackHours": 336,
+    "podcasts": [
+      {
+        "source": "podcast",
+        "name": "Training Data",
+        "title": "OpenAI’s Noam Brown: Why Game Theory Didn’t Lead to General Intelligence (Live at No Limit Finals)",
+        "guid": "fa4bc7f0-e514-11f1-8a20-23a2aece5414",
+        "url": "https://www.youtube.com/watch?v=tRaFbDFBl_A",
+        "publishedAt": "2026-11-24T10:00:00.000Z",
+        "transcript": "Speaker 1 | 00:00 - 00:22\nPlease join me in a round of applause for Noam and Alfred. Hey, Noam. Thank you for coming. It's been a rainy day, and this is this is actually all because of you, because you started studying poker for a while. You and I talked a little bit about your research before you went to OpenAI.\n\nSpeaker 1 | 00:22 - 00:35\nYou went from studying poker to studying game theory and diplomacy to now reasoning. Like, what... Tell us about... A little bit about your path. Why did you decide to study poker of all all things?\n\nSpeaker 2 | 00:35 - 00:44\nYeah. So first of it's great to be here. It's really exciting to see all these people working, like, able to do so much in an hour. I'm I'm... I think it's really incredible.\n\nSpeaker 2 | 00:46 - 01:04\nMy journey, I started... I finished undergrad. I wasn't really sure what I wanted to do, and I figured I wanted to do research. And I wasn't really sure in what. And when I was looking at grad schools, there was this professor that was looking for people to work on AI to play poker, and I thought this is great.\n\nSpeaker 2 | 01:04 - 01:26\nI have a lot of interest in game theory. I have a lot of interest in computer science, economics, and I had played poker a lot in high school and college, and I loved the game. And I thought it was always really fascinating that there was this perfect strategy to poker that nobody... And nobody knew what it was. But if you could find it, you could just make unlimited money.\n\nSpeaker 2 | 01:26 - 01:37\nSo I started working on that basically as soon as I started grad school in 2012 and worked on it continuously through my whole PhD. And it's actually pretty unusual to to work on something.\n\nSpeaker 1 | 01:37 - 01:39\nMoney during that time too?\n\nSpeaker 2 | 01:39 - 02:04\nI never used it to play online poker, but there is a fun fact. There was the precursor to this, I guess, the MIT PokerBots competition, which ran for several years. And as a poor grad student, I wanted to enter this competition because there was 10,000 in prize money. And I wasn't at MIT, so I got one of my MIT friends to collaborate collaborate with me, and we submitted the poker bot. We won two years in a row, 2014 and 2015.\n\nSpeaker 2 | 02:04 - 02:11\nAnd after that, I kinda felt bad about, you know, beating up all these people that don't really know how big poker bots, so I stopped doing it after that.\n\nSpeaker 1 | 02:12 - 02:19\nDid you... So if you had sixty minutes to go build a poker bot today, given all that you know, how would you start? It's a\n\nSpeaker 2 | 02:19 - 02:38\ngreat question. I'm actually curious to talk to the contestants in here, what strategies they took. The the approaches that we took were very GTO based. And so we would have the agents running, but we basically have the model training, playing self... Do it through self play using CFR.\n\nSpeaker 2 | 02:39 - 03:17\nLater on, it turned into these more neural net based self play approaches, but everything was focused on self play to converge to GTO. And the problem there is that it takes a long time to train. The coding part you can do without modern LMs, I think you could make the code to run that in an hour, but the training process itself could take many hours. I think you could make a pretty low fidelity GTO bot in an hour. I think if you did k means clustering to reduce the abstraction size to, like, a pretty small, size and then did self play for, like, let's say, thirty minutes, you could actually probably get a a half decent poker bot.\n\nSpeaker 2 | 03:19 - 03:52\nThat said, the format, because it's multiplayer and because you're not doing, like, an instant runoff kind of tournament where you're always going to, like, eliminate the weakest competitors, but you're actually playing against all the competitors, I could see an exploitation based approach actually being the better one for this kind of tournament structure. So I think in this setup, I would probably go for an exploitation based approach and try to find the... You know, try to observe the weaknesses of the opponents and then exploit that, especially in a multi a multi handed... Multiplayer situation.\n\nSpeaker 1 | 03:52 - 04:05\nYou're gonna have to submit your own code next year. We're gonna have to have you compete, but you can't win. So I think you make more... You make enough at OpenAI, hopefully. Because the prize money is only a $100,000.\n\nSpeaker 1 | 04:05 - 04:07\nHopefully, they pay you a little bit more than that.\n\nSpeaker 2 | 04:07 - 04:28\nThe other thing I'd be curious to see is how well the LLMs do playing in in this tournament. So not not just using it to make a poker bot, but if you play the poker bots against, let's say, GPT six Astra, how Astra would do. Because we've been tracking the performance of... Like, I've been tracking the performance of the... Of these different general purpose LLMs over time.\n\nSpeaker 2 | 04:28 - 04:37\nAnd with Astra, like, with... As recent models have developed, they've actually gotten quite good. And Astra, I would say, is actually, like, able to make money playing online poker at this point.\n\nSpeaker 1 | 04:37 - 05:02\nYeah. So maybe back up a step because you you obviously went from poker to diplomacy to reasoning, and now these can do a lot more than just play poker and do it extremely well. Take us through your journey of, like, how you, like, let... Took your learnings from poker to diplomacy, game theory around diplomacy to then... Into reasoning.\n\nSpeaker 1 | 05:02 - 05:04\nI think that's a really interesting path.\n\nSpeaker 2 | 05:04 - 05:20\nYeah. The original motivation for working on poker was that there had been a lot of progress on Go and Go and chess, you know, perfect information games. And the problem is that if you only have a technique that works on a very narrow domain, then it's actually not that useful. Right? Because you you want something that's general purpose.\n\nSpeaker 2 | 05:20 - 05:53\nAnd so the motivation for working on poker was that we can figure out new things about what techniques actually work on these... In these other domains and and eventually make this more general purpose AI that can, for example, play both Go and poker. And after we made the poker bots, I think we did actually learn quite a bit, but the truth is that they weren't that good for chess or Go. And so I wanted to, like, try something more ambitious, something that would expand the the scope of of of games that these techniques would be able to play. And at the time, it was around 2019, g p d z...\n\nSpeaker 2 | 05:53 - 06:08\nG p d two had come out, and it started to look like there would be rapid progress in language models. And I thought, like... I I honestly, like, our our... The original thing that I was discussing with my teammates was, oh, we we wanna wanna... We wanna make an AI that could play both Go and poker.\n\nSpeaker 2 | 06:08 - 06:42\nBut considering how rapid progress in AI was in 2019, we thought that wouldn't be ambitious enough. And so we wanted to target the game that we thought would be the hardest to make an AI for, which we felt was diplomacy because it is a natural language game that involves negotiations with other players, because it's not just purely adversarial, it's also cooperative, you have to form alliances. In 2019, it was unthinkable that you could have an AI play this game well. And we thought, like, that's that's the perfect thing to aim for. Poker took decades for people to work on.\n\nSpeaker 2 | 06:42 - 07:01\nIf if we have to spend, like, five years making an AI that could finally play diplomacy, that's that's great. So we took it on, and and we learned a lot along the way. And and one of the things that I took away is that, actually, the the game theory approach doesn't actually work that well in diplomacy. Like, I originally came\n\nSpeaker 1 | 07:01 - 07:12\nin Say say say more about that because I I thought that game theory was developed to actually be a much better negotiator in a repeat game and and and especially in diplomacy.\n\nSpeaker 2 | 07:12 - 07:40\nI I think there is intuition that you can take away from game theory, but the problem with game theory is that it assumes... This is the the central premise of game theory that it assumes that all the other players are rational, that it is common knowledge that all players are rational, and people are not actually rational. And if you come in with this assumption and you make it a central pillar that everybody's rational, then you're going to do... You're gonna make mistakes. And so I think, like, a a good example is, are you familiar with the ultimatum game?\n\nSpeaker 1 | 07:40 - 07:41\nWell, you should explain Yeah.\n\nSpeaker 2 | 07:41 - 07:53\nSo it's this idea that there's two players, Alice and Bob. Alice has a $100. They can offer Bob anywhere between 0 and a $100. And Bob can, can either accept or reject. And if Bob rejects, they both get zero.\n\nSpeaker 2 | 07:53 - 08:08\nIf Bob accepts, then they split the money that way. So if Alice were to offer Bob $10 and Bob accepts, then Alice gets 90, Bob gets 10. And the game theory optimal approach for this game is to just offer Bob like a penny. Yeah.\n\nSpeaker 1 | 08:09 - 08:11\nSome small amount. Yes.\n\nSpeaker 2 | 08:11 - 08:19\nThe small amount. Yeah. And if you... And and, you know, like, this makes sense. You you know, Bob Bob has a choice between making a penny or making zero, like, the penny's worth more.\n\nSpeaker 2 | 08:19 - 08:28\nBut, But, I mean, you can imagine what would happen if you actually tried to offer somebody a penny in this game. Like, of course, they would say... Yeah. They would say no. What we found is that our poker...\n\nSpeaker 2 | 08:28 - 09:02\nThat that our diplomacy bots, when we took this very game theory approach, would start doing these kinds of behaviors. And there's like this temptation to say, oh, we we can try to find... We can try to encode some semblance, some like notion of of vengeance or or fairness into the into the bots. And when you go down this rabbit hole, eventually, what we realized is that actually it's too nuanced. And the real way to make a superhuman diplomacy AI is to train on human data, to just understand people to such an...\n\nSpeaker 2 | 09:03 - 09:18\nYeah. To not take a game theoretic approach. Do not assume rationality, but to just assume that people are gonna behave like people, understand what that means by training on a lot of human data, and and then determine what what is my best course of action given the behaviors of everybody else.\n\nSpeaker 1 | 09:18 - 09:24\nAnd so do you end up with a model of human irrationality then? That's the idea, that you end up with\n\nSpeaker 2 | 09:24 - 09:39\na model of human irrationality. So we train these models that their purpose is to imitate people as closely as possible. And then we train the AI with these imitation humans and do a lot of do a lot of training, and then we can deploy that in the real world with actual humans. And that... That's what does best.\n\nSpeaker 1 | 09:39 - 10:08\nThere's a book by two behavioral economists about thinking fast and slow. And a lot of that has to do with... Kahneman just explains, like, there are signs of, like, consistent bugs in our brains. And we we sort of have these solutions that are imperfect. And you can explain why it happens from behavioral economics point of view, but it isn't the rational reasoned approach.\n\nSpeaker 1 | 10:10 - 10:15\nHow have you sort of incorporated that into, like, reasoning and and doing research and reasoning at OpenAI?\n\nSpeaker 2 | 10:16 - 10:49\nYeah. So after the diplomacy results, I had an interesting choice in my career at that point because this was around 2022. I think around early twenty twenty two, it was becoming clear that the game theory approach, it was not working in diplomacy and actually that the right approach was this kind of like more modeling of human behavior. And this was kind of like a crisis of faith moment for me because my entire career up until that point had been about game theory. By area, it was computational game theory, my expertise was computational game theory.\n\nSpeaker 2 | 10:49 - 11:36\nAnd I had to wrestle with the fact that actually that was not the path to general intelligence, that actually if you look at the evidence, it was this training on a lot of human data, modeling people really well, and then teaching the model to interact with that environment, and then also the scaling up of reasoning thing. And so I had to choose between like, okay, well, do I stick with computational game theory despite me thinking that this is not the most important direction, the most promising path to general intelligence? Or do I pivot and do I work on what I think is actually the the the most valuable thing despite it not being my... You know, what what I'm an expert at, which is general purpose reasoning in RL. And I ultimately decided to go the path of what I felt was most impactful, which was actually just pivot and work on this general reasoning direction.\n\nSpeaker 2 | 11:37 - 11:52\nAnd so this led me to join OpenAI. I looked at a lot of different places, and I told them, like, what I wanna work on, these LLMs, they're really cool. They're really general, but they can't play Go. They can't play poker. Why not?\n\nSpeaker 2 | 11:52 - 12:13\nAnd at the time, was a very... It's hard to put yourself in like 2022, I guess. Maybe people will remember what it was like back then, but people were extremely bullish on just scaling up pre training. And I would go to some places and I would say like, look, reasoning is gonna be this essential ingredient. And people would tell me like, well, actually we should just pre train a bigger model and that'll solve all the problems.\n\nSpeaker 2 | 12:14 - 12:35\nAnd if we get to... And yeah, GPT-four can't play Go, it sucks at chess, it sucks at poker, but we just do like a few more orders of magnitude of training, maybe it'll just work. And I would point to the evidence and say, like, actually, no. If you look at how much you would have to skill it up by for a game like... To to be able to play Go competently, it would be about, like, six orders of magnitude.\n\nSpeaker 2 | 12:35 - 12:52\nAnd that doesn't seem, you know, realistic. And, fortunately, OpenAI was actually really bullish about this direction. So... And I didn't know this at time, but they actually had a team working on on this on this direction of how do you get general purpose reasoning out of these language models. And so ultimately, I joined OpenAI.\n\nSpeaker 2 | 12:52 - 12:59\nIt works on what became o one. And... Yeah, and now these models, like, they can play these games extremely well. It's just general\n\nSpeaker 1 | 12:59 - 13:09\npurpose. Changed over the last few years? What was it that breakthroughs that allow them to... As you said, it's not just scaling it up. So what were the major breakthroughs along the way?\n\nSpeaker 2 | 13:10 - 13:36\nI think the major takeaway from my work on poker, diplomacy, and then also looking back at games like backgammon and chess was that you needed these AIs to think before acting. So when I started working on poker bots in 2012 and 2013, there was no reasoning going into these models. They would just act instantly. And there were a lot of reasons for this. A big factor is actually the structure of the tournaments, this this tournament included, is that it doesn't really give you much time.\n\nSpeaker 2 | 13:36 - 14:13\nIt doesn't give the the the model much time to actually reason before it has to act. It's a very short clock and that's kind of like essential because poker is a high variance game and so you need to play a lot of hands and so you can't have it sit there for ten seconds thinking for every single hand. But people do that, right? People, if they're faced with a tough decision, will think through their decisions that they have to make And that obviously benefits them instead of having to act instantly. So seeing this general trend of like, okay, in all of these games, chess, go, poker, diplomacy, we had to have these AIs think very carefully before acting in order to beat top humans.\n\nSpeaker 2 | 14:13 - 14:42\nHow do we get this out of LLMs? And at the time, there was chain of thought, which is the idea that you just prompt the model and say, think step by step before answering. And there was some evidence that this actually led to better solutions, but it was very coarse. It was not really sophisticated. And it turned out the key ingredient was, yeah, if you do reinforcement learning to train for this behavior, then you actually get much better chain of thought behavior, you get much better outputs.\n\nSpeaker 2 | 14:42 - 14:59\nAnd then also what we observe at that point is actually the longer the model takes to think before responding, the better it does. And that that was, I think, the key unlock that was like, okay. Now we have a way to scale up test time compute, not just in these games, but actually in a general purpose way with language models that can be applied to basically any domain.\n\nSpeaker 1 | 14:59 - 15:14\nGreat. I have a few more questions, but, hey, start thinking about what you would like to ask now because we're gonna open up for q and a. I think a lot of people here are incredible. They're... You know, like, the people here were smarter when I was in college.\n\nSpeaker 1 | 15:16 - 15:36\nThey're all very mathy people, very AI pill people. They're probably all very AI... AJI pill people as well. But OpenAI keeps solving math problem after math problem after math problem, very complicated ones. So what would you recommend people here do so that they are not left behind?\n\nSpeaker 1 | 15:36 - 15:47\nShould they continue to study math? Should they continue to study computer science and AI? And if they want a career in AI over the long run, what do you think they need to to prepare themselves for?\n\nSpeaker 2 | 15:48 - 16:16\nI mean, I think we're entering a period, the centaur period, where the combination of human plus AI is going to be most effective. And I think this tournament is actually a great example of this, where if you... I'm sure if you just prompt the AI, here's a poker variant, make me a bot that will win this tournament, That's not gonna get you very far. You have to work with it. You have to figure out how...\n\nSpeaker 2 | 16:16 - 16:43\nYou have to work with it, know, hand in hand to make the best poker bot, that's how ultimately what's gonna win. And, similarly, if you just have one person by themselves with no LLM, with with no AI, just trying to code up this poker bot, I'm sure they're not gonna get very far in an hour. And I think that's gonna be the future of of a lot of things, of of most professions, but including... And AI research itself. So I think getting good at the skill and and I think proving you're...\n\nSpeaker 2 | 16:43 - 16:47\nProving that you're good at the skill in this kind of tournament is, I think, the the right thing to do.\n\nSpeaker 1 | 16:48 - 17:02\nA lot of people who ended up being AI researchers came from trading, from playing poker, from, like... Is there... From game... From, like, playing games and being very good at them, it... Famously, a lot of the people played board games, strategy games.\n\nSpeaker 1 | 17:02 - 17:13\nIs there some element of, like, thinking through game and game theory and being an optimal player in these games and help with AI research and research in general for\n\nSpeaker 2 | 17:13 - 17:30\nIt's a great question. I've I've been wondering this myself, and I actually noticed when I was doing the Labradas competition with these poker pros, they told me earlier when they were kids, like, you know, they would actually... Some of them were professional Counter Strike players. You know, they would... They were in the the top leagues of Counter Strike.\n\nSpeaker 2 | 17:30 - 17:35\nAnd I thought, that's so interesting that somebody could be both exceptionally good at Counter Strike and then also exceptionally good at poker.\n\nSpeaker 1 | 17:35 - 17:36\nIt seems like two different games.\n\nSpeaker 2 | 17:36 - 18:06\nWhat's, yeah, what's what's the common thread there? And I and I think the common thread is in order to reach the the top of any of these domains, you have to be extremely good, very diligent, and very good at studying and practicing and and and figuring out how to how to optimize and become the best. And that is a general purpose skill that I think lends itself to, you know, yes, poker, but also trading, but... And also AI research. Just this understanding, how do you how do you get from not knowing much about this domain to becoming the expert in it?\n\nSpeaker 2 | 18:06 - 18:12\nIt involves a lot of hard work. It involves a lot of practice. It involves a lot of preparation, and and that's a general purpose skill, I think.\n\nSpeaker 1 | 18:13 - 18:15\nVery cool. Any questions from the audience?\n\nSpeaker 3 | 18:15 - 18:24\nI'm curious about, like, what do you think is missing? Like, why... From, like, the model side. I'm like, why can't we type just, like, make a poker bot to win? Right?\n\nSpeaker 3 | 18:24 - 18:40\nLike, what is missing there, and why... What do you think is, like, needed to actually get there to the point where, like, we can actually just be like, make a poker bot that can win, and it'll actually just make, like, the best poker bot? Like, what is the human adding right now that you think, like, we haven't really captured in the models yet? Like, is it some sort of, like, creativity? Is it some sort of, like...\n\nSpeaker 3 | 18:40 - 18:50\nIs, the search space too large for the model right now and doesn't really know, like, what to do it? Because, like, obviously, with the right person prompted, you can make, like, a better bot. We can make a worse bot. Right? So, like, what is, like, missing there?\n\nSpeaker 3 | 18:50 - 18:54\nSo, like, for the model to do it fully by itself, or what do you think?\n\nSpeaker 2 | 18:54 - 19:12\nYeah. So the the question is, what is what is the model missing that in... That results in in the human adding something to to to the Centaur process. And I I thought a lot about this, and I've been using for my... Me personally, every time a new model is developed, I ask it to make a poker bot.\n\nSpeaker 2 | 19:13 - 19:33\nIt's kind of my my go to evaluation. And they're... They were really bad at first, but they're getting better and better. And, yeah, I I would say with five points... 5.5, 5.6 was the first time that I felt like, oh, these things are actually, 10 x ing, 20 x ing my ability to make a poker bot, but they weren't really able to make it on their own.\n\nSpeaker 2 | 19:33 - 19:50\nAnd even Astra, I feel like, isn't quite able to make a really good poker bot on its own. It can make a good river solver. Can it can actually zero... Like, it just just on its own, just a single prompt, it can make an excellent river solver, but it can't really make a full scale poker bot that that well. But it is...\n\nSpeaker 2 | 19:50 - 20:13\nThese models are getting a lot better at this very quickly. And I would say what's missing right now, it's kind of subtle things. It's it's the long term planning and organization. They're not really good at noticing when they're going down the wrong direction and kinda stepping back and realizing like, oh, actually, maybe I shouldn't be doing this at all. One thing I noticed, for example, is that the models...\n\nSpeaker 2 | 20:13 - 20:36\nIf you ask them to implement CFR, sometimes they will get really focused on optimizing the numerics of CFR so that it's perfect. And actually, of the important things to understand about CFR is that actually numerics don't really matter that much. If if there's a small amount of error, it's very robust to that. So the model spent hours and hours trying to fix the numerics from CFR when it was totally unnecessary. So it's these kinds of things that I think are are missing.\n\nSpeaker 2 | 20:36 - 20:55\nThese are symptoms, I think. The the the bigger points is that there are some things that the models are extremely good at, and there are some things that they are extremely bad at. And so right now, the models are complements to human ability because... Yeah. You can use them in all the ways that they're superhuman, and then you can help fill in the gaps for all the things that they're really bad at.\n\nSpeaker 2 | 20:56 - 21:07\nBut over time, I do expect the models to get better and better across the board. I think some things, they will spike well above human performance, and some things, they will lag behind, and some things will take longer to to catch up to human performance than others.\n\nSpeaker 1 | 21:08 - 21:43\nMaybe another way, and you've said this before and lots of people have said this, that the intelligence is very jagged. And so your job as a human is to, like, understand what the model is good at and what the model is bad at, break down the problems that can be solved by the model by itself. And then for the problems that they're bad at, the reason why prompting is a good person who is good at prompting is it can break down problems into smaller and smaller bite sized things that the model can solve. And so if you notice that it's jagged, okay, tell the model to do these things that it knows how to do. The things are not as good.\n\nSpeaker 1 | 21:43 - 21:58\nBreak the problem down into simpler problems for the model to do well, and then it it it can be solved. And I think that's where we're at right now, which is great. We still have some value to add. Who's... Who wants to ask another question?\n\nSpeaker 1 | 21:58 - 21:59\nOh, okay.\n\nSpeaker 2 | 22:00 - 22:01\nYeah.\n\nSpeaker 1 | 22:02 - 22:04\nWell, great. We can hear you now.\n\nSpeaker 2 | 22:04 - 22:04\nI was I\n\nSpeaker 1 | 22:04 - 22:20\nwas wondering, you alluded to, like, the inherent limitations of, like, LLMs. Like, you can't play Go or you can't make, like, an amazing poker bot. Do you think that has to do with, like, the fundamental structure of transformers? Like, do you... What are your thoughts of, like, non generative models like JEPA or world models that are also, like, getting some attention right now?\n\nSpeaker 1 | 22:20 - 22:23\nDo you think those are, like, the solutions to the inherent limitations?\n\nSpeaker 2 | 22:24 - 22:39\nSo I think there's a lot of solution. You're asking, like, what is it about... Is it transformers that prevents it from being good at poker or chess or go, these kinds of things? I think chain of thought, RL on chain of thought is a solution to this problem. I think that you can use these models that...\n\nSpeaker 2 | 22:39 - 22:50\nAnd we don't... Yeah. Yeah. There are some models that are more optimized to play play chess really well than others. And I think if you train it to play chess really well using chain of thought, it will play chess really well.\n\nSpeaker 2 | 22:50 - 23:11\nSo this is a solution to this problem. It's not the only solution, and it's probably not the best solution. So I I do think that there are other solutions, and it's definitely worth exploring the space of possible solutions. I think many ways, chain of thought is kind of a a weird way to scale test time compute. Right?\n\nSpeaker 2 | 23:11 - 23:33\nThe idea that you're going to, in a very interpretable English, describe exactly what you're gonna do. It's not... I mean, could argue that people have an inner monologue and that you could verbalize it and actually write it down. But in many ways, it's it's often more subtle than that. So for example, sometimes people think in images, and that's not exactly easy to do with chain of thought.\n\nSpeaker 2 | 23:34 - 23:41\nSo, yeah, I I think that there probably are other approaches that could be used. But I think that chain of thought is sufficient for scaling test time compute.\n\nSpeaker 4 | 23:42 - 23:57\nHey. This is Jasper from Hyperbolic. Thanks for your talk. And a lot of people talking about RSI and just wondering, like, how soon do you think RSI gonna happen, and can you apply it for being the best poker player in the in the world?\n\nSpeaker 2 | 23:58 - 24:00\nSorry. What was the last part?\n\nSpeaker 4 | 24:00 - 24:05\nDo do you think you can apply RSI to poker bot so that you can become the best player?\n\nSpeaker 2 | 24:07 - 24:11\nCan you apply RSI to to a... Are they making poker bots or playing poker?\n\nSpeaker 4 | 24:11 - 24:16\nThey're the same. Right? Like, RSI, basically, like, you can self improve yourself to become a bag.\n\nSpeaker 2 | 24:16 - 24:32\nI mean, like I say, I I I asked the... All the latest models to make poker bots, and, yeah, I think they are getting pretty good at iterating and, like, running experiments or recognizing when they could do better. As far as RSI, it is a real thing. I I... In some ways, it's not a novel concept.\n\nSpeaker 2 | 24:32 - 24:58\nYou know, what's... If you think about all of human technological progress, it really is just one giant RSI loop where we use technology to advance our ability to do technology, to to make technology or to make scientific discoveries. We make the telescope so we can, you know, explore deeper into space. We make computers and then we start off using punch cards and then we progress to compilers. And this accelerates our ability to to do research and make new technology.\n\nSpeaker 2 | 24:59 - 25:31\nAnd what humans end up doing then shifts to what the models are bad at. This this goes back to my point that the models are jagged right now. So when we when we go from, like, punch guards to compilers, a lot of what people end up doing becomes focused on what the models are still bad at, what the what the computers cannot do. And when we go from compilers to things like LLMs, again, like the work that a person does shifts. Now I think what's different today is two things.\n\nSpeaker 2 | 25:31 - 26:02\nOne, the generality of the technology, and two, the speed at which it's happening. But fundamentally, it's not different from what's happened in the past. And and even for the creation of LLMs, we have used the LLMs themselves to aid us in making the next generation of LLMs for years. So I remember back in 2022, 2023, people would use LLMs to, for example, do data quality. So they would look through the the pre training data to see is this actually high quality data or is there anything concerning in it?\n\nSpeaker 2 | 26:03 - 26:34\nThat's basically a form of RSI. Now the way the technology is developing, I think we're lucky that it is jagged and that there are things that the models are quite bad at. But in the same way that these models can now do superhuman math research, I I do think there is a case that even if they are spiky and and jagged, they can be directed towards being really good at RSI. And in that case, yeah, you probably... You you see very rapid progress.\n\nSpeaker 2 | 26:34 - 26:52\nNow I still think you get bottlenecked on certain things. I think you get bottlenecked by compute. I think you get bottlenecked by the long tail of things that the models are bad at and humans, are are necessary for. But I I do think that things go much faster. So we have seen a lot of rapid progress over the past few years when it comes to AI.\n\nSpeaker 2 | 26:52 - 27:17\nI think even in the past six months, that progress has, if anything, accelerated, I think. And I think that we're going to continue to see a very steep, rate of progress over the next year or two. And so, you know, perhaps my my most controversial take is that if somebody is promising student, the best thing to do is actually to drop out and join the labs now.\n\nSpeaker 1 | 27:17 - 27:20\nRecruitment are ready\n\nSpeaker 2 | 27:20 - 27:37\nbecause spinal work. Because things things are going fast, it's it's an exciting time. So it's not a great time to sit on the sidelines. And I will say also, I've I've hired a few people that have just dropped out and, you know, skipped their senior year of high... Of of college, and they do exceptionally well.\n\nSpeaker 2 | 27:37 - 27:39\nThey... They've had a lot of success with\n\nSpeaker 1 | 27:39 - 27:40\nBut you didn't drop these kinds of people.\n\nSpeaker 2 | 27:40 - 27:42\nNo. But I was I was in, you know\n\nSpeaker 1 | 27:42 - 27:43\nGrad school.\n\nSpeaker 2 | 27:43 - 27:45\nI wasn't in the middle of, like, the AI boom.\n\nSpeaker 1 | 27:47 - 27:51\nAlright. Well, so if you... So you wanna recruit some of the people here, for sure.\n\nSpeaker 2 | 27:51 - 27:53\nSeems like it's a talking group. Love to chat.\n\nSpeaker 1 | 27:54 - 28:08\nAlright. Before we let you go, a few, like, lightning lightning round fun questions, random questions. Is there an game in AI that... A game that AI has not solved that you would like to see solved?\n\nSpeaker 2 | 28:09 - 28:24\nNo. I don't think there's any... I I think if a team were to spend even a few months focused on... Even one person, actually. If one person were to spend a few months focused on making an AI to play a particular game, I think you could get the AI to play that game in a superhuman level.\n\nSpeaker 2 | 28:25 - 28:40\nI struggle to think of any... I mean, we chose diplomacy because we thought it would be the hardest game make an AI for... The hardest game to make an AI for. And I can't think of anything that would be harder. You can even think of things like, you know, I...\n\nSpeaker 2 | 28:40 - 28:53\nAfter we worked on diplomacy, there were various things that were pitched to me. Get an AI to play civilization, get an AI to play Zelda, Wind Waker, all these things. And actually, I think you could probably just make an AI to play all of them now. Wow. Who's the best?\n\nSpeaker 2 | 28:53 - 29:13\nI will say, like, I think the next challenge is using games as an evaluation, that ideally, you don't make the AI specifically for that game, but you make a general purpose LLM and then evaluate it on that game. And so... And certainly right now, the LLMs are not able to play real time strategy games. They're not able to play Zelda at a superhuman level. Give it a year.\n\nSpeaker 2 | 29:13 - 29:14\nWho knows?\n\nSpeaker 1 | 29:14 - 29:17\nWho's the best human poker player that you've watched?\n\nSpeaker 2 | 29:18 - 29:27\nOof. Probably Doug Polk, but I think he's probably no longer the best. I actually haven't kept haven't kept up with who's who's the the best these days.\n\nSpeaker 1 | 29:28 - 29:43\nIf in... Within the next five years, if AI is allowed to play in the world series of poker, do you think AI will beat all the humans? One AI? One one AI agent. If Not all AI.\n\nSpeaker 1 | 29:43 - 29:44\nOne AI agent.\n\nSpeaker 2 | 29:44 - 29:46\nThis is great this is a great question because a lot of\n\nSpeaker 1 | 29:46 - 29:47\nvariance in the game.\n\nSpeaker 2 | 29:47 - 30:18\nIf it is playing GTO, no. Because I think the variance is too high in the game. That said, I could see a case that if the AI is superhuman at reading people, if it's able to read people's faces and basically detect whether they're bluffing or not, I could see it being extremely superhuman at that and basically being able to read the other person's cards. And in that case, even then, I think there's actually not... It's probably not a high probability that it wins because you could just...\n\nSpeaker 2 | 30:18 - 30:30\nThere's still a luck factor. Right? You can just go all in free flop every single hand and then just leave it to, the the luck of the draw. But I I would give it, like, a good 20% chance that it could win. 20% in five years.\n\nSpeaker 1 | 30:30 - 30:34\nOkay. There's still human games to be played then. Thank you, Noam.\n\nSpeaker 2 | 30:35 - 30:35\nWe\n\nSpeaker 1 | 30:35 - 30:38\nappreciate it. Thanks, man. Appreciate it."
+      }
+    ],
+    "stats": {
+      "podcastEpisodes": 1
+    }
+  },
+  "blogs": {
+    "generatedAt": "2026-11-26T06:31:04.118Z",
+    "lookbackHours": 72,
+    "blogs": [],
+    "stats": {
+      "blogPosts": 0
+    }
+  }
+}
